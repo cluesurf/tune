@@ -20,7 +20,7 @@
 
 ## Summary
 
-_Note: Tune is just in the prototype phases right now. Check out the [website](https://tune.surf) for the latest grammar, lexicon, and other things._
+_Note: Tune is just in the prototype phases right now. Check out the [website](https://tune.surf) for the latest grammar, lexicon, and other things. And a recent [spreadsheet](https://docs.google.com/spreadsheets/d/1h-Hh9Wc49DwuVRBM5Im0kjiZM0dlLjERYJLKajg_SF0/edit?usp=sharing) too._
 
 ## License
 
