@@ -942,7 +942,7 @@ In Tibetan Buddhism, for one, there are many layers of beings, from animals, to 
 
 ## Projects at Term Surf
 
-The projects by TermSurf are for unrolling the carpet of these patterns and processes for everyone to see and gain a whole new awareness about reality. Together as a team we can slowly find a whole array of patterns of various types and kinds, but for now we have just experienced a few of them so far, and wanted to share the notes in the form of various web projects.
+The projects by ClueSurf are for unrolling the carpet of these patterns and processes for everyone to see and gain a whole new awareness about reality. Together as a team we can slowly find a whole array of patterns of various types and kinds, but for now we have just experienced a few of them so far, and wanted to share the notes in the form of various web projects.
 
 The projects range from a language system involving the programming framework Nest, on top of the source code written in Note text, to a writing system Tone, using simple reflections and tails on 3 base glyphs generated from 3 base vowels, to write, using a pen or a rock etch, our spoken language, or the programming language. And a spoken language Tune to bridge the gap between computational information and natural imagination. They also include some digital tools to make life better and explore the patterns more intricately, such as natural language dictionaries, musical tracks, common reusable data, and other important things for preserving the knowledge (in concise form) of what we have unraveled so far up to today.
 

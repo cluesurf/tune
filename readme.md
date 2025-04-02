@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/termsurf/tune/blob/make/view/view.svg?raw=true' height='222'/>
+  <img src='https://github.com/cluesurf/tune/blob/make/view/view.svg?raw=true' height='222'/>
 </p>
 
 <h3 align='center'>tune</h3>
@@ -24,7 +24,7 @@ _Note: Tune is just in the prototype phases right now. Check out the [website](h
 
 ## License
 
-Copyright 2021-2024 <a href='https://term.surf'>TermSurf</a>
+Copyright 2021-2024 <a href='https://clue.surf'>ClueSurf</a>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -38,6 +38,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-## TermSurf
+## ClueSurf
 
-This is being developed by the folks at [TermSurf](https://term.surf), a California-based project for helping humanity master information and computation. Find us on [Twitter](https://twitter.com/_termsurf), [LinkedIn](https://www.linkedin.com/company/termsurf), and [Facebook](https://www.facebook.com/termsurf). Check out our other [GitHub projects](https://github.com/termsurf) as well!
+This is being developed by the folks at [ClueSurf](https://clue.surf), a California-based project for helping humanity master information and computation. Find us on [Twitter](https://twitter.com/_cluesurf), [LinkedIn](https://www.linkedin.com/company/cluesurf), and [Facebook](https://www.facebook.com/cluesurf). Check out our other [GitHub projects](https://github.com/cluesurf) as well!
