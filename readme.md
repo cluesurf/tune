@@ -15,8 +15,6 @@
 </p>
 
 <br/>
-<br/>
-<br/>
 
 <p align="center">
 <em>These are the parts your mouth and tongue shape.</em><br/>
@@ -53,6 +51,8 @@
 <em>Filling the memory with energy from brook and field.</em><br/>
 <em>If you've made it this far it's the stone that you wield.</em><br/>
 </p>
+<br/>
+<br/>
 
 ## Summary
 
