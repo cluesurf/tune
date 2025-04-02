@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  A Middle Tongue
+  A Technical Language
 </p>
 
 <br/>
