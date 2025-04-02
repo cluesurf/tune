@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  The Middle Tongue
+  A Middle Tongue
 </p>
 
 <br/>
