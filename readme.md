@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  A Technical Language
+  A Thinking Language
 </p>
 
 <br/>
