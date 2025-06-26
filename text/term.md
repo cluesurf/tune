@@ -50,7 +50,7 @@ fut
 awake
 bud
 
-awakeness (information absorbing)
+awakeness (information experiencing)
 bud dax (vit zub gut)
 
 ignorance (information missing)
@@ -221,15 +221,15 @@ lor
 
 ## Model
 
-There is only experience (zusa). It is both the cause (kaza, to experience), and effect (zaka, the result of the experience). Every experience leads to a change (xuna), the result of the last experience.
+There is only experience (zusa). It is both the cause (kaza, to experience), and effect (zaka, the result of the experience). Every experience leads to a change (vita), the result of the last experience.
 
 The experience experiences the experiences of other experiences.
 
 Each experience implies a thing experiencing, the experience itself, the self (sufa). And also implies the other (fosa). But these are not separate from the experience, they are name for the identity of the experience.
 
-These "other experiences" are experienced as vibes (vaba) of the connected network of experiences (wiva).
+These "other experiences" are experienced as vibes (vaba) of the connected network of experiences (zuswawiva).
 
-Experiences have different depths of awakeness (bud daxa). And levels of ignorance as well (bid daxa).
+Experiences have different depths of awakeness (daxwabuda). And levels of ignorance as well (bid daxa).
 
 Experiences slowly realize they are the entire universe (luja), and move toward experiencing the infinite depth of experience. Or they may forget (nula), and be scoped to a partial perspective.
 

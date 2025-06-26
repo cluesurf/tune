@@ -33,8 +33,8 @@ mog,meaning,,,english
 mod,mode,,,
 mop,twelve,,,
 mot,mountain,,,
-mok,align,,,english
-moz,hash,,,
+zok,align,,,english
+nez,hash,,,
 moj,emerge,,,
 mox,immutable,,,
 mol,high,,,
@@ -45,9 +45,9 @@ mug,(past particle),,,
 mud,mood,,,english
 mut,mutate,,,english
 muk,earth (dirt),,,
-mus,mercy,,חֶסֶד,hebrew
+bus,mercy,,חֶסֶד,hebrew
 muv,move,,,
-muz,pain,,,
+mez,pain,,,
 muj,message,,,english
 muc,mouth,,,
 mul,unreal,,,english
@@ -69,7 +69,8 @@ nan,negate,,,
 naq,,,,
 nak,knock,,,
 nas,nest,,,
-nav,center,,,
+bid,center,,,
+nav,,,,
 naz,as,,,english
 nal,neutral,,,
 nar,person,nára,नर,sanskrit
@@ -78,7 +79,7 @@ nop,no,,,english
 not,note,,,english
 noz,nose,,,english
 nox,notion,,,english
-nol,toward,,,
+nol,,,,
 num,know,,,
 nuq,bond,,,
 nub,separate,,,
@@ -130,6 +131,7 @@ dif,define,,,
 div,drive,,,
 det,datetime stamp/instance in time,,,
 dez,dynamic,,,
+diq,dynamics,,,
 dej,orange,,,
 dam,morality,dhárma,धर्म,sanskrit
 dan,the,,,
@@ -199,7 +201,7 @@ bul,blue,,,
 pim,permeate,,,english
 piq,request,,,
 pip,individual,,,
-pit,pure,,,english
+pul,pure,,,english
 pik,master,,,
 pem,they (communicating-agent-external-reference-focus),hem,הֵם,hebrew
 peq,pay,,,english
@@ -217,7 +219,7 @@ pop,property (of object),,,english
 pot,honorific (address),,,
 por,poor,chasheng,差生,chinese
 pum,time (count),,,
-pul,pull,,,english
+puq,pull,,,english
 tim,team,,,english
 tin,between,,,english
 tiq,mental experience,tov,טוֹב,hebrew
@@ -232,14 +234,14 @@ teq,like (as if),,,
 tet,signal,le'ot(e)t,לְאוֹתֵת,hebrew
 tek,take,,,english
 tef,left,,,english
-tam,meditate,,,
+zum,meditate,,,
 taq,tongue,,,
 tad,tail,tail,,english
 tab,stable,,,
 tat,sibling,,,
 tak,talk,,,
 tas,test,,,
-taf,good,tov,טוֹב,hebrew
+tof,good,tov,טוֹב,hebrew
 taj,down (to be cool with something),,,
 tac,set (get),,,
 tal,tell,,,english
@@ -264,6 +266,7 @@ kim,climb,,,english
 kiq,action,,,
 kid,could,,,english
 kip,tune,,,
+xuq,,,,
 kik,kick,,,
 kis,bottom,,,
 kiv,intent,,,
@@ -340,7 +343,7 @@ hoz,cardinal number,,,
 hol,whole,,,english
 hum,chime,,,
 hum,urge,,,
-hun,illusion,,,english
+kic,illusion,,,english
 huq,uh,,,
 hud,hide,,,
 hub,x-axis,,,
@@ -355,14 +358,14 @@ sit,medium,,,
 sik,seek,,,
 sif,purple,,,
 siv,perceive,,,english
-siz,peace,,,
+xam,peace,,,
 six,all encompasing thing,,,
 siC,hush,,,
 sil,more (-er),,,
 sem,same (sym-),,,
 sep,swipe,,,english
 sek,percept,,,
-sef,continue,yos(e)f,יוֹסֵף,hebrew
+sof,continue,yos(e)f,יוֹסֵף,hebrew
 sev,save,,,english
 sez,sir,,,
 seC,etc.,,,
@@ -393,18 +396,18 @@ sub,I,,,
 sup,above (super)/hover,,,
 sut,store,,,english
 suk,top,,,
-suf,self (auto-),,,
+sef,self (auto-),,,
 suv,observe,,,english
 suC,three,,,
 sul,still (time),,,
 sur,assert,,,
-sur,out,,,
+ris,out,,,
 fim,female,,,
 fid,next,,,
 fid,food,,,
 fix,belief,,,
 fil,feel,,,engllish
-fet,eight,,,
+fut,eight,,,
 fek,fake,,,english
 fes,face,,,english
 fam,family,,,english
@@ -422,7 +425,7 @@ fun,wind (air),,,english
 fuq,function,,,english
 fug,figure (it out),,,
 fup,borrow,,,
-fut,bad,,,
+fet,bad,,,
 fus,discontinuous,,,
 fuz,fusion,,,
 fuj,refuge,,,english
@@ -434,7 +437,7 @@ viq,everything,,,
 vig,start,,,
 vid,veer,,,
 vip,six,,,
-vit,information,,,
+far,information,,,
 vis,see,,,spanish
 vix,preserve,,,
 vic,bit,,,
@@ -467,7 +470,7 @@ vuq,foundation,,,english
 vus,flex,,,
 vuc,catch,,,
 vul,via,,,english
-zim,pleasure,,,
+zom,pleasure,,,
 zin,decision,,,english
 ziq,zing,,,english
 zig,gain,,,
@@ -484,11 +487,11 @@ zak,effect,,,
 zaf,equal (iso-),,,
 zav,lie,kaḏaba,كَذَبَ,arabic
 zar,vowel,svara,स्वर,sanskrit
-zom,so/great,,,
-zon,zone,,,
-zok,try,,,
+zon,so/great,,,
+zod,zone,,,
+cad,try,,,
 zox,sense,,,
-zum,zoom,,,
+zoman,zoom,,,
 zub,absorb,,,english
 zut,identity,zehut,זֶהוּת,hebrew
 zuk,where,,,
@@ -507,7 +510,7 @@ jas,just (close-focus),,,english
 jom,pattern,,,
 jul,universe,,,
 jul,flow,,,
-xim,speech,,,english
+xum,speech,,,english
 xin,machine,,,english
 xiq,will,,,
 xid,grey,,,
@@ -518,15 +521,15 @@ xiv,destroy,,,
 xic,eye,,,
 xen,result,,,
 xed,should,,,english
-xam,heaven,,,
+xim,heaven,,,
 xab,seven,,,
 xat,or,,,
 xax,eternal,,,
 xal,share,,,english
-xom,now,,,
+vut,now,,,
 xok,copy,,,
 xol,show,,,english
-xum,sky,,,
+xom,sky,,,
 xun,change,,,
 xud,quiet,,,
 xup,ship,,,
@@ -540,8 +543,8 @@ Ciz,kaledoscope,,,
 Cev,without,,,
 cam,then,,,english
 Can,than/compare,,,english
-cad,life,,,
-cat,mud,,leðja,icelandic
+mok,life,,,
+cord,mud,,leðja,icelandic
 cak,thank,,,english
 Cas,thus,,,english
 Car,there (abstract reference),,,
@@ -584,7 +587,7 @@ wum,womb,,,english
 wun,woo,,,
 wug,emanate,,,
 wut,what,,,
-wux,system,,,
+gex,system,,,
 lin,learn,,,english
 liq,simulate,,,english
 lig,square root,,,english
@@ -609,7 +612,8 @@ lak,like,,,english
 laf,four,,,
 lav,love,,,english
 laz,very much of (-some),,,
-lax,add,,,
+lix,add,,,
+wax,dynamic cycle,,,
 lal,y-axis,,,
 lom,plural (many),,,
 lon,loan,,,
@@ -638,13 +642,13 @@ rib,ribbit,,,
 rip,rich,,,
 rit,soil,pṛthvī,पृथ्वी,sanskrit
 rik,up,fawq,فوق,arabic
-ris,express,,,
+pris,express,,,
 rif,close (near),,,
 riv,to/arrive,,,
 riz,rise,,,
 ric,straight,,,
 riC,algorithm,,,english
-ril,relation,,,
+rup,relation,,,
 ren,rain,,,
 reg,edit,,,
 red,red,,,
@@ -653,7 +657,7 @@ ref,success,,,
 rex,array,,,english
 reC,progress,,,
 ram,dark,rāma,राम,sanskrit
-ran,frog,,,
+fag,frog,,,
 ran,,,,
 raq,wrong,,,
 rad,,,,
@@ -661,11 +665,11 @@ rab,ride,,,english
 rap,wrap,,,
 rat,write,,,
 rak,rock,,,
-ras,in,,,
+sur,in,,,
 raf,reference,,,
 rav,particle,ravā,रवा,
 raz,resonate,,,english
-raj,range,,,english
+rag,range,,,english
 raC,rhythm,,,
 ral,raw,,,english
 rar,rare,,,english
@@ -681,7 +685,7 @@ run,glyph,,,
 rug,this,,,
 rud,update,,,
 rub,logarithm,,,english
-rup,right (time),,,
+ruc,right (time),,,
 ruk,location,,,
 ruv,local,,,
 ruz,consonant,,,
@@ -694,7 +698,7 @@ yev,sort,,,
 yam,day,yom,יוֹם,hebrew
 yan,vehicle,yana,यान,sanskrit
 yaq,permanent,yongjiu,永久,chinese
-yad,away,yuǎn,遠,chinese
+yad,,,,
 yap,yep,,,english
 yat,way,,,
 yaj,measure,,,
@@ -840,7 +844,7 @@ djud,jew,,,english
 djus,juice,,,english
 djul,jewel,,,
 drim,dream,,,
-drig,degree,,,english
+rez,degree,,,english
 drib,10^6,,,
 driv,fate,,,
 drix,direction,,,
@@ -1019,7 +1023,7 @@ trap,trap,,,english
 trat,tight,,,
 trak,track (path),maslul,מַסְלוּל,hebrew
 tras,torus,,,
-trom,spectrum,,,english
+tam,spectrum,,,english
 kiqk,10^15,,,
 kirn,cure,,,english
 kedj,accept,,,
@@ -1127,7 +1131,7 @@ saqk,sign,,,english
 sadj,beside,,,
 satx,such,,,english
 saft,soft,,,english
-salk,circle,,,english
+seq,circle,,,english
 sals,celsius,,,english
 sard,side,,,english
 sart,certain,,,english
@@ -1139,7 +1143,7 @@ solp,swap,,,
 sorm,some,,,english
 sorg,recent,,,
 sorf,surface,,,
-sutx,set (math),,,english
+tan,set (math),,,english
 smin,meson,,,
 smil,smell,,,english
 smek,smack,,,english
@@ -1234,7 +1238,7 @@ farv,10^24,,,
 farC,feather,,,english
 folg,fungus,fungus,,english
 fold,fold,,,english
-form,form,,,english
+fom,form,,,
 forn,fine (good),,,
 fort,fort,,,english
 fork,ant (animal),,,latin
@@ -1324,7 +1328,7 @@ xort,sure,,,english
 xlik,shriek,,,english
 xlav,calculate,leHax(e)v,לְחַשֵּׁב,hebrew
 xlum,mushroom,,,english
-ciqk,think,,,english
+cat,think,,,english
 cets,mole (measurement),,,
 carn,ion,,,english
 Carv,forever,,,
@@ -1378,7 +1382,7 @@ larp,lepton,,,
 lart,let,,,
 larv,larva,,,english
 larx,10^12,,,
-lorn,line,,,
+yoq,line,,,
 lorg,log (diary),yoman,יוֹמָן,hebrew
 lurv,leave,,,english
 riqk,rhyme,,,english
@@ -1729,7 +1733,7 @@ dilut,illuminate,dyut,द्युत्,sanskrit
 dilur,accommodate,diyur,דִּיּוּר,hebrew
 direk,directory,,,
 dirad,deride,,,english
-dirat,direct,,,
+dat,direct,,,
 dirak,direct (focus),,,english
 denim,responsible,,दायिनी,sanskrit
 dendj,danger,,,
@@ -2788,7 +2792,7 @@ zisol,final,zuì hòu,最后,chinese
 zisum,pollute,zihum,זִיהוּם,hebrew
 zifat,tar,zefet,זֶפֶת,hebrew
 zivon,style,tzivyon,צִבְיוֹן,hebrew
-zizoq,ultimate,zuì zhōng,最终,chinese
+hul,ultimate,,,english
 zizut,haste,pzizut,פְּזִיזוּת,hebrew
 zixak,beneath,zhīxià,之下,chinese
 zixal,least,zhìshǎo,至少,chinese
@@ -3734,7 +3738,7 @@ bligur,beleaguer,,,english
 blizan,belligerent,,,english
 blemix,blemish,,,english
 blanit,blah,,,
-blants,balance,,,
+mas,balance,,,
 blagiq,blog,,,
 blagan,mess,balagan,בָּלָגָן,hebrew
 blabaq,blab,,,english
@@ -3809,7 +3813,7 @@ paktor,pact,,,
 pakziv,disappoint,le'aHz(e)v,לְאַכְזֵב,hebrew
 pakxur,puncture,,,english
 paklis,populate,le'aHl(e)s,לְאַכְלֵס,hebrew
-pasbal,possible,,,english
+parm,possible,,,english
 pastal,pastel,,,english
 paskal,pascal (measurement),,,english
 paskon,period (mark),pasuq,פָּסוּק,hebrew
@@ -4089,7 +4093,7 @@ txubal,rowdy,cū bào,粗暴,chinese
 txusim,trend,qushi,趋势,chinese
 txusan,perspire,chuhan,出汗,chinese
 txusuk,retrieve,quhui,取回,chinese
-txufin,differentiate,qufen,区分,chinese
+ran,differentiate,,,
 txulik,dispose,chuli,处理,chinese
 txulok,flood,,ཆུ་ལོག,tibetan
 txulup,rude,cū lǔ,粗鲁,chinese
@@ -4952,7 +4956,7 @@ forCun,makeup,,förðun,icelandic
 fumget,fumigate,,,
 furnis,furnace,,,
 furnaq,fern,,,
-flidan,flee,,,
+voq,flee,,,
 flibur,flea,,,
 flitiq,fleeting,,,english
 flikot,flick,,,
@@ -5106,7 +5110,7 @@ cintan,thin,,,
 citarq,get along,,,
 cistut,institute,,,english
 cislas,unless,,,
-centor,short,,,
+cort,short,,,
 ceksaz,excise,,,english
 cespaz,espouse,,,english
 camput,impute,,,
@@ -5762,7 +5766,7 @@ kaqgres,congress,,,english
 kapstet,incapacitate,,,english
 kapslet,encapsulate,,,
 katpult,catapult,,,
-katlist,catalyst,catalyst,,english
+klist,catalyst,catalyst,,english
 kakrotx,cockroach,,,
 kasplen,explain,,,english
 kastget,castigate,,,english
@@ -5830,7 +5834,7 @@ hinstad,instead,,,
 hinflit,inflict,,,
 hinflem,inflame,,,
 hinvort,invertebrate,,,
-hiqgret,integrate,,,
+guq,integrate,,,
 histark,hysterical,,,english
 hempost,hemp,,,
 hemrald,emerald,,,english
@@ -6197,3 +6201,6 @@ harbtradj,arbitrage,,,english
 sobstants,substance,,,english
 fregrants,fragrance,,,
 strindjant,stringent,,,english
+fal,defilement,,,english
+pir,away,,,
+rup,toward
