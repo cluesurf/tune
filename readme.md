@@ -56,15 +56,19 @@
 
 ## Summary
 
-_Note: Tune is just in the prototype phases right now. Check out the [website](https://tune.surf) for the latest grammar, lexicon, and other things. And a recent [spreadsheet](https://docs.google.com/spreadsheets/d/1h-Hh9Wc49DwuVRBM5Im0kjiZM0dlLjERYJLKajg_SF0/edit?usp=sharing) too._
+_Note: Tune is just in the prototype phases right now. Check out the
+[website](https://tune.surf) for the latest grammar, lexicon, and other
+things. And a recent
+[spreadsheet](https://docs.google.com/spreadsheets/d/1h-Hh9Wc49DwuVRBM5Im0kjiZM0dlLjERYJLKajg_SF0/edit?usp=sharing)
+too._
 
 ## License
 
 Copyright 2021-2025 <a href='https://clue.surf'>ClueSurf</a>
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
 
@@ -76,4 +80,11 @@ limitations under the License.
 
 ## ClueSurf
 
-This is being developed by the folks at [ClueSurf](https://clue.surf), a California-based project for helping humanity master information and computation. Find us on [Twitter](https://twitter.com/_cluesurf), [LinkedIn](https://www.linkedin.com/company/cluesurf), and [Facebook](https://www.facebook.com/cluesurf). Check out our other [GitHub projects](https://github.com/cluesurf) as well!
+Made by [ClueSurf](https://clue.surf), meditating on the universe ¤.
+Follow the work on [YouTube](https://youtube.com/@cluesurf),
+[X](https://x.com/cluesurf),
+[Instagram](https://instagram.com/cluesurf),
+[Substack](https://cluesurf.substack.com),
+[Facebook](https://facebook.com/cluesurf), and
+[LinkedIn](https://linkedin.com/company/cluesurf), and browse more of
+our open-source work here on [GitHub](https://github.com/cluesurf).
