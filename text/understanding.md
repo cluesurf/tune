@@ -75,7 +75,7 @@ But you break this down, and it can be thought of in multiple aspects:
 - The quality or tone of experience (kup).
 - The code/rules/tune of the system (puk).
 - Non-experience (hypothetical) (siz).
-- Will to act (him).
+- Tune (him).
 - Oneness (dub).
 
 The awareness spectrum is more or less, rise or fall, so it fits the binary spectrum. Moves from center, away, and back. One pole, radiating outward. It can also be seen as moving from one side to the other. Two poles, and it goes between.
