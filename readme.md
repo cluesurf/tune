@@ -108,6 +108,8 @@ These are the allowed _base_ word patterns for the foreseeable future:
 | `2`       | `5`        | `CVCVC`           |    ~2,000 |     171,475 |
 | `3`       | `7`        | `CVCVCVC`         |   ~50,000 |  16,290,125 |
 
+_The reason for the estimated/theoretical difference: theoretical is the mathematical number of possible combinations given the 22 consonants and 5 vowels in those patterns, but the estimated is a much smaller set mostly because of the rules put in place to filter out words that sound similar or have hard/undesirable pronunciations._
+
 Note: 1 syllable, 5-characters not supported, and 2-syllable, 6+
 characters not supported (primarily because they would look like
 "joined" words, and there needs to be a way to distinguish joined words
