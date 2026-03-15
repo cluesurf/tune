@@ -177,7 +177,7 @@ Each candidate has:
 npx tsx deck/tune/make/sounds.ts
 ```
 
-Output goes to `deck/tune/text/`.
+Output goes to `./text` folder.
 
 ## Summary
 
