@@ -56,58 +56,135 @@
 
 ## Sounds
 
-| mark | sound | note |
-|:---:|:------|:----|
-| `m` | `mark` | |
-| `n` | `note` | |
-| `q` | `sing` |  the -ng sound |
-| `g` | `gift` | |
-| `d` | `deed` | |
-| `b` | `band` | |
-| `p` | `play` | |
-| `t` | `time` | |
-| `k` | `king` | |
-| `h` | `heal` | |
-| `s` | `soul` | |
-| `f` | `fire` | |
-| `v` | `vibe` | |
-| `z` | `zone` | |
-| `j` | `measure` |  the "s" sound here, "zh" |
-| `x` | `ship` |  the "sh" sound |
-| `c` | `thor` |  the voiceless "th" sound |
-| `C` | `this` |  the voiced "th" sound |
-| `w` | `wave` | |
-| `l` | `love` | |
-| `r` | `rise` | but with spanish, arabic, or indian accent |
-| `y` | `yard` | |
+| mark | sound     | note                                       |
+| :--: | :-------- | :----------------------------------------- |
+| `m`  | `mark`    |                                            |
+| `n`  | `note`    |                                            |
+| `q`  | `sing`    | the -ng sound                              |
+| `g`  | `gift`    |                                            |
+| `d`  | `deed`    |                                            |
+| `b`  | `band`    |                                            |
+| `p`  | `play`    |                                            |
+| `t`  | `time`    |                                            |
+| `k`  | `king`    |                                            |
+| `h`  | `heal`    |                                            |
+| `s`  | `soul`    |                                            |
+| `f`  | `fire`    |                                            |
+| `v`  | `vibe`    |                                            |
+| `z`  | `zone`    |                                            |
+| `j`  | `measure` | the "s" sound here, "zh"                   |
+| `x`  | `ship`    | the "sh" sound                             |
+| `c`  | `thor`    | the voiceless "th" sound                   |
+| `C`  | `this`    | the voiced "th" sound                      |
+| `w`  | `wave`    |                                            |
+| `l`  | `love`    |                                            |
+| `r`  | `rise`    | but with spanish, arabic, or indian accent |
+| `y`  | `yard`    |                                            |
 
 (vowels are like spanish `i e a o u` sounds).
 
+## Words
+
+- A word is a
+
 ## Word Rules
 
-- `w` is reserved for joining words beyond the "compact" 2-3 word joining method, used as `-wa-`, so `w` is not used anywhere else in words.
+- `w` is reserved for joining words beyond the "compact" 2-3 word
+  joining method, used as `-wa-`, so `w` is not used anywhere else in
+  words.
 - `y` and `h` can only appear at the beginning of words.
-- `q` can only appear in the middle or end of words, so not at the beginning.
+- `q` can only appear in the middle or end of words, so not at the
+  beginning.
 - For multi-syllable words, emphasis is on last vowel.
+
+### Word Pattern Rules
+
+These are the allowed _base_ word patterns for the foreseeable future:
+
+| syllables | characters | patterns          | estimated | theoretical |
+| :-------- | :--------- | :---------------- | --------: | ----------: |
+| `1`       | `3`        | `CVC`             |      ~700 |       1,805 |
+| `1`       | `4`        | `CCVC` and `CVCC` |      ~700 |       6,460 |
+| `2`       | `5`        | `CVCVC`           |    ~2,000 |     171,475 |
+| `3`       | `7`        | `CVCVCVC`         |   ~50,000 |  16,290,125 |
+
+Note: 1 syllable, 5-characters not supported, and 2-syllable, 6+
+characters not supported (primarily because they would look like
+"joined" words, and there needs to be a way to distinguish joined words
+and their base word parts, vs. base words by themselves, even though you
+can't 100% tell exactly the join word parts, because of merging dynamics
+at join points, hard to reverse-engineer fully, but that's okay, not a
+major goal or need, just kind of neat to realize what a joined word is
+composed of sometimes, like when you know a word's etymology).
 
 ### Word Joining Rules
 
-Compose 2-3 root syllables into compound words. At each join point, the coda of word 1 meets the onset of word 2, forming a consonant cluster.
+Compose 2-3 root syllables into compound words. At each join point, the
+coda of word 1 meets the onset of word 2, forming a consonant cluster.
 
 - Junction must have at least 2 consonants (CC minimum)
-- Resolution priority: keep intact > overlap > onset/coda match > mapped > assimilated > partial drop > geminate
-- **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
-- **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
-- **Geminate separator**: when same or confusable consonants meet, insert a separator and keep both (voice-assimilating the second to match the first). `q` always becomes `n`.
-  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second voice-assimilated (e.g. `sz` -> `sls`, `sv` -> `slf`, `vf` -> `vlv`, `fC` -> `flc`)
-  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` -> `nzm`, `qn` -> `nzn`)
-  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` -> `bzd`, `db` -> `dzb`)
-  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` -> `psk`, `kt` -> `kst`)
-  - Mixed voiced/voiceless stops: separator based on first, second voice-assimilated (e.g. `bt` -> `bzd`, `tb` -> `tsp`, `gk` -> `gzg`)
-- `wa` sequence is reserved for tier-3 word joining, not used in compact joins
-- Candidates scored by phoneme preservation, cluster ease, and word length
+- Resolution priority: keep intact > overlap > onset/coda match >
+  mapped > assimilated > partial drop > geminate
+- **Overlap**: if coda ends with same consonant onset starts with, merge
+  them (e.g. `nt` + `tr` -> `ntr`)
+- **Partial drop**: for 3-4C clusters, drop one consonant to make it
+  pronounceable
+- **Geminate separator**: when same or confusable consonants meet,
+  insert a separator and keep both (voice-assimilating the second to
+  match the first). `q` always becomes `n`.
+  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second
+    voice-assimilated (e.g. `sz` -> `sls`, `sv` -> `slf`, `vf` -> `vlv`,
+    `fC` -> `flc`)
+  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` -> `nzm`, `qn` ->
+    `nzn`)
+  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` -> `bzd`,
+    `db` -> `dzb`)
+  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` ->
+    `psk`, `kt` -> `kst`)
+  - Mixed voiced/voiceless stops: separator based on first, second
+    voice-assimilated (e.g. `bt` -> `bzd`, `tb` -> `tsp`, `gk` -> `gzg`)
+- `wa` sequence is reserved for tier-3 word joining, not used in compact
+  joins
+- Candidates scored by phoneme preservation, cluster ease, and word
+  length
 
-Because of this joining logic, it's actually deterministic, so there's a map from source joining cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
+Because of this joining logic, it's actually deterministic, so there's a
+map from source joining cluster to target
+[here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
+
+Here are some examples of how joins may look in the end:
+
+| syllables | words | characters | join                        | pattern             |
+| :-------- | :---- | :--------- | :-------------------------- | :------------------ |
+| `2`       | `2`   | `6`        | `CVC` + `CVC`               | `CVC·CVC`           |
+| `2`       | `2`   | `7`        | `CVC` + `CCVC`              | `CVC·CCVC`          |
+| `2`       | `2`   | `7`        | `CVC` + `CVCC`              | `CVC·CVCC`          |
+| `2`       | `2`   | `7`        | `CCVC` + `CVC`              | `CCVC·CVC`          |
+| `2`       | `2`   | `7`        | `CVCC` + `CVC`              | `CVCC·CVC`          |
+| `2`       | `2`   | `8`        | `CCVC` + `CCVC`             | `CCVC·CCVC`         |
+| `2`       | `2`   | `8`        | `CCVC` + `CVCC`             | `CCVC·CVCC`         |
+| `2`       | `2`   | `8`        | `CVCC` + `CCVC`             | `CVCC·CCVC`         |
+| `2`       | `2`   | `8`        | `CVCC` + `CVCC`             | `CVCC·CVCC`         |
+| `3`       | `2`   | `8`        | `CVC` + `CVCVC`             | `CVC·CVCVC`         |
+| `3`       | `2`   | `8`        | `CVCVC` + `CVC`             | `CVCVC·CVC`         |
+| `3`       | `2`   | `9`        | `CCVC` + `CVCVC`            | `CCVC·CVCVC`        |
+| `3`       | `2`   | `9`        | `CVCC` + `CVCVC`            | `CVCC·CVCVC`        |
+| `3`       | `2`   | `9`        | `CVCVC` + `CCVC`            | `CVCVC·CCVC`        |
+| `3`       | `2`   | `9`        | `CVCVC` + `CVCC`            | `CVCVC·CVCC`        |
+| `4`       | `2`   | `10`       | `CVC` + `CVCVCVC`           | `CVC·CVCVCVC`       |
+| `4`       | `2`   | `10`       | `CVCVC` + `CVCVC`           | `CVCVC·CVCVC`       |
+| `4`       | `2`   | `10`       | `CVCVCVC` + `CVC`           | `CVCVCVC·CVC`       |
+| `4`       | `2`   | `11`       | `CCVC` + `CVCVCVC`          | `CCVC·CVCVCVC`      |
+| `4`       | `2`   | `11`       | `CVCC` + `CVCVCVC`          | `CVCC·CVCVCVC`      |
+| `4`       | `2`   | `11`       | `CVCVCVC` + `CCVC`          | `CVCVCVC·CCVC`      |
+| `4`       | `2`   | `11`       | `CVCVCVC` + `CVCC`          | `CVCVCVC·CVCC`      |
+| `5`       | `2`   | `12`       | `CVCVC` + `CVCVCVC`         | `CVCVC·CVCVCVC`     |
+| `5`       | `2`   | `12`       | `CVCVCVC` + `CVCVC`         | `CVCVCVC·CVCVC`     |
+| `6`       | `2`   | `14`       | `CVCVCVC` + `CVCVCVC`       | `CVCVCVC·CVCVCVC`   |
+| `3`       | `3`   | `9`        | `CVC` + `CVC` + `CVC`       | `CVC·CVC·CVC`       |
+| `4`       | `3`   | `11`       | `CVC` + `CVC` + `CVCVC`     | `CVC·CVC·CVCVC`     |
+| `5`       | `3`   | `13`       | `CVC` + `CVCVC` + `CVCVC`   | `CVC·CVCVC·CVCVC`   |
+| `6`       | `3`   | `15`       | `CVCVC` + `CVCVC` + `CVCVC` | `CVCVC·CVCVC·CVCVC` |
 
 ### Word Selection Rules
 
@@ -119,12 +196,17 @@ Because of this joining logic, it's actually deterministic, so there's a map fro
 - No `h`, `y`, `q` in center consonant (position 2)
 - No `el`, `er`, `il`, `ir` sequences anywhere
 - `j` only at start of word
-- No mixed-voicing stop pairs across vowels: `d-t`, `t-d`, `b-p`, `p-b`, `g-k`, `k-g` blocked
-- Fricative pairs across vowels: same pair always blocked (`s-s`/`s-z`/`z-s`/`z-z`, likewise `f↔v`, `c↔C`, `j↔x`). Cross-pair allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
+- No mixed-voicing stop pairs across vowels: `d-t`, `t-d`, `b-p`, `p-b`,
+  `g-k`, `k-g` blocked
+- Fricative pairs across vowels: same pair always blocked
+  (`s-s`/`s-z`/`z-s`/`z-z`, likewise `f↔v`, `c↔C`, `j↔x`). Cross-pair
+  allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
 - Max 1 of `x`/`j`/`c`/`C` total per word
 - **Too close** if words differ by 1 position
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant, and vowel is off by 1 notch (`ieaou` order)
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant, vowel off by 2+, but consonant stays in the same broad group:
+- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
+  and vowel is off by 1 notch (`ieaou` order)
+- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
+  vowel off by 2+, but consonant stays in the same broad group:
   - Stops/nasals: `b m p n q d g t k`
   - Fricatives: `h s f v z x j c C`
   - Liquids: `l r`
@@ -133,7 +215,8 @@ Because of this joining logic, it's actually deterministic, so there's a map fro
 
 - All 5-letter rules above, plus:
 - No `h`, `y`, `q` in interior consonants (positions 2, 4)
-- No sequential same consonant across vowels (positions 0-2, 2-4, 4-6) for `r l f v z x j C c s`
+- No sequential same consonant across vowels (positions 0-2, 2-4, 4-6)
+  for `r l f v z x j C c s`
 - Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
 - Every word guaranteed at least one `a`
 
@@ -141,7 +224,9 @@ Because of this joining logic, it's actually deterministic, so there's a map fro
 
 ### Word Composition
 
-Compose 2-3 root syllables into coined words. Each root can be a single syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions between roots always have at least 2 consonants.
+Compose 2-3 root syllables into coined words. Each root can be a single
+syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions
+between roots always have at least 2 consonants.
 
 ```ts
 import { composeWordCandidates } from './code/compose'
@@ -158,12 +243,15 @@ composeWordCandidates(['malik', 'tos'])
 ```
 
 Each candidate has:
+
 - **word** - the composed word
 - **pattern** - structural pattern label
 - **junctions** - consonant clusters at each join point
 - **score** - quality score (higher is better)
 
-**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable as described in the joining rules section above.
+**Junction rules.** When two roots meet, the coda of the first and onset
+of the second form a consonant cluster. This cluster gets simplified to
+something pronounceable as described in the joining rules section above.
 
 **Regenerate cluster mappings:**
 
