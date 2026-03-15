@@ -191,7 +191,7 @@ Here are some examples of how joins may look in the end:
 | `5`       | `2`   | `12`       | `CVCVC` + `CVCVCVC`   | <code>CVCV<strong>CC</strong>VCVCVC</code>   |      100M |        2.8T |
 | `5`       | `2`   | `12`       | `CVCVCVC` + `CVCVC`   | <code>CVCVCV<strong>CC</strong>VCVC</code>   |      100M |        2.8T |
 | `6`       | `2`   | `14`       | `CVCVCVC` + `CVCVCVC` | <code>CVCVCV<strong>CC</strong>VCVCVC</code> |      2.5B |        265T |
-|           |       |            |                       | **total**                                    | **~2.9B** |   **~270T** |
+|           |       |            |                       | **total**                                    |   **~3B** |   **~270T** |
 
 _Note: this is just showing all the possible 2-word combinations, but
 there's *tons* of 3 word combinations in theory, so number gets large.
