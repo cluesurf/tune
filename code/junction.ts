@@ -21,8 +21,6 @@ import {
   HARD_THRESHOLD,
   ONSET_CLUSTERS,
   CODA_CLUSTERS,
-  voiced,
-  manner,
 } from './phonology'
 
 const MIN_JUNCTION = 2
@@ -71,67 +69,20 @@ export function lookupMapping(cluster: string): string | null {
 
 // ─── Assimilation ──────────────────────────────────────
 
-const VOICELESS_OF: Record<string, string> = {
-  d: 't',
-  b: 'p',
-  g: 'k',
-  z: 's',
-  v: 'f',
-  j: 'x',
-  C: 'c',
-}
-
-function isVoicingPair(a: string, b: string): boolean {
-  return VOICELESS_OF[a] === b || VOICELESS_OF[b] === a
-}
-
 /**
  * Apply natural phonological assimilation.
- * Merges voicing pairs and collapses geminates.
+ * Drops internal h and collapses stop+nasal sequences,
+ * but preserves minimum 2C for junction use.
  */
 
 export function assimilate(cluster: string): string {
-  let chars = cluster.split('')
-
-  const merged: string[] = []
-  for (let i = 0; i < chars.length; i++) {
-    const ch = chars[i]
-    const next = chars[i + 1]
-
-    if (next && isVoicingPair(ch, next)) {
-      const after = chars[i + 2]
-      if (after) {
-        merged.push(
-          voiced(after)
-            ? voiced(ch)
-              ? ch
-              : next
-            : !voiced(ch)
-              ? ch
-              : next,
-        )
-      } else {
-        merged.push(voiced(ch) ? next : ch)
-      }
-      i++
-      continue
-    }
-    merged.push(ch)
-  }
-  chars = merged
+  const chars = cluster.split('')
 
   const result: string[] = []
   for (let i = 0; i < chars.length; i++) {
     const ch = chars[i]
-    const next = chars[i + 1]
 
     if (ch === 'h' && i > 0) continue
-
-    if (next && manner(ch) === 'stop' && manner(next) === 'nasal') {
-      continue
-    }
-
-    if (next && ch === next) continue
 
     result.push(ch)
   }
@@ -315,20 +266,28 @@ export function resolveJunction(input: {
 
   /**
    * 8. Geminate/confusable resolution: insert a separator consonant
-   * when the join point would be ambiguous or identical.
+   * when the same or confusable consonants meet at the join point.
+   * Keep both consonants, but voice-assimilate the second to match
+   * the first. q always becomes n.
    *
-   * Same consonant:
-   *   Voiced stops/nasals (nn, mm, bb, dd, gg) -> insert z
-   *   Voiceless stops (pp, tt, kk) -> insert s
-   *   Sibilants (ss, zz, jj, xx) -> insert l
-   *   Dentals (cc, CC) -> insert l
+   * Fricatives (f v s z c C j x):
+   *   Any pair -> {first}l{first}  (e.g. sz -> sls, fv -> flf)
    *
-   * Cross-confusable pairs:
-   *   Any [j,x,s,z] + any [j,x,s,z] -> insert l
-   *   Either [c,C] + either [c,C] -> insert l
+   * Nasals (n m q): keep both, insert z, q->n
+   *   e.g. nm -> nzm, qn -> nzn, qm -> nzm
+   *
+   * Voiced stops (b d g): keep both, insert z
+   *   e.g. bd -> bzd, db -> dzb
+   *
+   * Voiceless stops (p t k): keep both, insert s
+   *   e.g. pk -> psk, kt -> kst
+   *
+   * Mixed voiced/voiceless stops: insert z/s based on first,
+   * voice-assimilate second to match first
+   *   e.g. bt -> bzd, td -> tsp... wait no: tb -> tsp, gk -> gzg
    */
   if (coda.length > 0 && onset.length > 0) {
-    const codaLast = coda[coda.length - 1]
+    let codaLast = coda[coda.length - 1]
     let onsetFirst = onset[0]
 
     /**
@@ -337,27 +296,57 @@ export function resolveJunction(input: {
      */
     if (onsetFirst === 'h') onsetFirst = 's'
 
-    const SIBILANT_SET = new Set(['j', 'x', 's', 'z'])
-    const DENTAL_SET = new Set(['c', 'C'])
-    const Z_SET = new Set(['n', 'm', 'b', 'd', 'g'])
-    const S_SET = new Set(['p', 't', 'k'])
+    /** q always becomes n */
+    if (codaLast === 'q') codaLast = 'n'
+    if (onsetFirst === 'q') onsetFirst = 'n'
 
-    const bothSibilant = SIBILANT_SET.has(codaLast) && SIBILANT_SET.has(onsetFirst)
-    const bothDental = DENTAL_SET.has(codaLast) && DENTAL_SET.has(onsetFirst)
-    const sameConsonant = codaLast === onsetFirst
+    const FRICATIVE_SET = new Set(['f', 'v', 's', 'z', 'c', 'C', 'j', 'x'])
+    const NASAL_SET = new Set(['n', 'm'])
+    const VOICED_STOP_SET = new Set(['b', 'd', 'g'])
+    const VOICELESS_STOP_SET = new Set(['p', 't', 'k'])
+    const ALL_VOICED = new Set([...NASAL_SET, ...VOICED_STOP_SET])
+    const ALL_STOP = new Set([...VOICED_STOP_SET, ...VOICELESS_STOP_SET])
 
-    if (bothSibilant || bothDental) {
-      add(coda + 'l' + onset, 'geminate', 0.6)
-    } else if (sameConsonant) {
-      if (Z_SET.has(codaLast)) {
-        add(coda + 'z' + onset, 'geminate', 0.6)
-      } else if (S_SET.has(codaLast)) {
-        add(coda + 's' + onset, 'geminate', 0.6)
-      } else {
-        /** Fallback for other same-consonants (l, r, f, v, h, w, y, q). */
-        add(coda + 'z' + onset, 'geminate', 0.55)
-        add(coda + 's' + onset, 'geminate', 0.5)
-      }
+    /** Voice-assimilate: convert a stop to match voicing of reference */
+    const VOICE_MAP: Record<string, string> = { p: 'b', t: 'd', k: 'g' }
+    const UNVOICE_MAP: Record<string, string> = { b: 'p', d: 't', g: 'k' }
+
+    function voiceAssimilate(target: string, referenceIsVoiced: boolean): string {
+      if (referenceIsVoiced && UNVOICE_MAP[target]) return target
+      if (referenceIsVoiced && VOICE_MAP[target]) return VOICE_MAP[target]
+      if (!referenceIsVoiced && VOICE_MAP[target]) return target
+      if (!referenceIsVoiced && UNVOICE_MAP[target]) return UNVOICE_MAP[target]
+      return target
+    }
+
+    const bothFricative = FRICATIVE_SET.has(codaLast) && FRICATIVE_SET.has(onsetFirst)
+    const bothNasal = NASAL_SET.has(codaLast) && NASAL_SET.has(onsetFirst)
+    const bothVoicedStop = VOICED_STOP_SET.has(codaLast) && VOICED_STOP_SET.has(onsetFirst)
+    const bothVoicelessStop = VOICELESS_STOP_SET.has(codaLast) && VOICELESS_STOP_SET.has(onsetFirst)
+    const firstVoicedStop = ALL_VOICED.has(codaLast) && ALL_STOP.has(onsetFirst)
+    const firstVoicelessStop = VOICELESS_STOP_SET.has(codaLast) && ALL_STOP.has(onsetFirst)
+
+    /** Rebuild coda with q->n normalization */
+    const normCoda = coda.slice(0, -1) + codaLast
+    const restOnset = onset.slice(1)
+
+    if (bothFricative) {
+      add(normCoda + 'l' + codaLast + restOnset, 'geminate', 0.6)
+    } else if (bothNasal) {
+      add(normCoda + 'z' + onsetFirst + restOnset, 'geminate', 0.6)
+    } else if (bothVoicedStop) {
+      add(normCoda + 'z' + onsetFirst + restOnset, 'geminate', 0.6)
+    } else if (bothVoicelessStop) {
+      add(normCoda + 's' + onsetFirst + restOnset, 'geminate', 0.6)
+    } else if (firstVoicedStop) {
+      const assimilated = voiceAssimilate(onsetFirst, true)
+      add(normCoda + 'z' + assimilated + restOnset, 'geminate', 0.6)
+    } else if (firstVoicelessStop) {
+      const assimilated = voiceAssimilate(onsetFirst, false)
+      add(normCoda + 's' + assimilated + restOnset, 'geminate', 0.6)
+    } else if (codaLast === onsetFirst) {
+      /** Fallback for other same-consonants (l, r, h, w, y). */
+      add(normCoda + 'z' + onsetFirst + restOnset, 'geminate', 0.55)
     }
   }
 

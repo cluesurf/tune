@@ -97,13 +97,13 @@ Compose 2-3 root syllables into compound words. At each join point, the coda of 
 - Junction must have at least 2 consonants (CC minimum)
 - Resolution priority: keep intact > overlap > onset/coda match > mapped > assimilated > partial drop > geminate
 - **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
-- **Assimilation**: voicing pairs merge (`d`+`t` -> `t`), geminates collapse (`nn` -> `n`), stop+nasal drops the stop
 - **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
-- **Geminate separator**: when same or confusable consonants meet at the join:
-  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted (e.g. `man` + `nak` -> `manznak`)
-  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted (e.g. `hit` + `tos` -> `hitstos`)
-  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted (e.g. `bas` + `sim` -> `baslsim`)
-  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted (e.g. `tac` + `cob` -> `taclcob`)
+- **Geminate separator**: when same or confusable consonants meet, insert a separator and keep both (voice-assimilating the second to match the first). `q` always becomes `n`.
+  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second becomes first (e.g. `sz` -> `sls`, `fv` -> `flf`)
+  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` -> `nzm`, `qn` -> `nzn`)
+  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` -> `bzd`, `db` -> `dzb`)
+  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` -> `psk`, `kt` -> `kst`)
+  - Mixed voiced/voiceless stops: separator based on first, second voice-assimilated (e.g. `bt` -> `bzd`, `tb` -> `tsp`, `gk` -> `gzg`)
 - `wa` sequence is reserved for tier-3 word joining, not used in compact joins
 - Candidates scored by phoneme preservation, cluster ease, and word length
 
