@@ -1,44 +1,9 @@
 import fs from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 
 const consonants = 'mnqgdbptkhsfvzjxcCwlry'.split('')
 const vowels = 'ieaou'.split('')
-
-const similarGroups: string[][] = [
-  ['m', 'n', 'q'], // nasals
-  ['b', 'p'], // bilabial stops
-  ['d', 't'], // alveolar stops
-  ['b', 'd'], // voiced stops
-  ['p', 't'], // voiceless stops
-  ['g', 'k'],      // velar stops
-  ['s', 'z'], // alveolar fricatives
-  ['x', 'j'], // postalveolar fricatives
-  ['c', 'C'], // dental fricatives
-  ['f', 'v'], // labiodental fricatives
-  ['s', 'c'], // voiceless alveolar/dental
-  ['z', 'C'], // voiced alveolar/dental
-  ['j', 'C'], // voiced postalveolar/dental
-  ['x', 'c'], // voiceless postalveolar/dental
-  ['f', 'c'], // voiceless labio/dental
-  ['C', 'v'], // voiced dental/labio
-  ['l', 'r'], // liquids
-]
-
-const similarMap = new Map<string, Set<string>>()
-for (const ch of consonants) {
-  similarMap.set(ch, new Set([ch]))
-}
-for (const group of similarGroups) {
-  for (const a of group) {
-    for (const b of group) {
-      similarMap.get(a)!.add(b)
-    }
-  }
-}
-
-function areSimilar(a: string, b: string): boolean {
-  return similarMap.get(a)?.has(b) ?? false
-}
 
 function isVowel(ch: string): boolean {
   return vowels.includes(ch)
@@ -131,8 +96,6 @@ function validWord(word: string): boolean {
   return true
 }
 
-import { fileURLToPath } from 'url'
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const textDir = path.resolve(__dirname, '..', 'text')
 
@@ -203,21 +166,6 @@ for (const candidate of allWords) {
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])
 const filteredInitial = initialRaw.filter(t => !excludeSet.has(t))
-// const consonantOrder = 'mnqgdbptkhsfvzjxcCwlry'
-// function charRank(ch: string): number {
-//   const vi = vowelOrder.indexOf(ch)
-//   if (vi >= 0) return vi
-//   return vowelOrder.length + consonantOrder.indexOf(ch)
-// }
-// added.sort((a, b) => {
-//   // Sort by vowels first (positions 1, 3), then consonants (positions 0, 2, 4)
-//   const order = [1, 3, 0, 2, 4]
-//   for (const i of order) {
-//     const d = charRank(a[i]) - charRank(b[i])
-//     if (d !== 0) return d
-//   }
-//   return 0
-// })
 const outLines = [...filteredInitial, '', ...added]
 const outPath = path.join(textDir, '5.more.csv')
 fs.writeFileSync(outPath, outLines.join('\n') + '\n')

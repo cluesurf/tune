@@ -5,51 +5,11 @@ import { fileURLToPath } from 'url'
 const consonants = 'mnqgdbptkhsfvzjxcCwlry'.split('')
 const vowels = 'ieaou'.split('')
 
-const similarGroups: string[][] = [
-  ['m', 'n', 'q'], // nasals
-  ['b', 'p'], // bilabial stops
-  ['d', 't'], // alveolar stops
-  ['b', 'd'], // voiced stops
-  ['p', 't'], // voiceless stops
-  ['g', 'k'],      // velar stops
-  ['s', 'z'], // alveolar fricatives
-  ['x', 'j'], // postalveolar fricatives
-  ['c', 'C'], // dental fricatives
-  ['f', 'v'], // labiodental fricatives
-  ['s', 'c'], // voiceless alveolar/dental
-  ['z', 'C'], // voiced alveolar/dental
-  ['j', 'C'], // voiced postalveolar/dental
-  ['x', 'c'], // voiceless postalveolar/dental
-  ['f', 'c'], // voiceless labio/dental
-  ['C', 'v'], // voiced dental/labio
-  ['l', 'r'], // liquids
-]
-
-const similarMap = new Map<string, Set<string>>()
-for (const ch of consonants) {
-  similarMap.set(ch, new Set([ch]))
-}
-for (const group of similarGroups) {
-  for (const a of group) {
-    for (const b of group) {
-      similarMap.get(a)!.add(b)
-    }
-  }
-}
-
-function areSimilar(a: string, b: string): boolean {
-  return similarMap.get(a)?.has(b) ?? false
-}
-
 function isVowel(ch: string): boolean {
   return vowels.includes(ch)
 }
 
 const adjacentVowels = new Set(['ie', 'ei', 'ea', 'ae', 'ao', 'oa', 'ou', 'uo'])
-
-function vowelsClose(a: string, b: string): boolean {
-  return a === b || adjacentVowels.has(a + b)
-}
 
 const vowelOrder = 'ieaou'
 
@@ -71,47 +31,71 @@ function sameBroadGroup(a: string, b: string): boolean {
   return broadMap.get(a) === broadMap.get(b)
 }
 
-// CVCVCVC: positions 0=c1, 1=v1, 2=c2, 3=v2, 4=c3, 5=v3, 6=c4
-function tooClose(a: string, b: string): boolean {
-  if (a.length !== 7 || b.length !== 7) return false
+// Consonant positions and vowel positions in CVCVCVC
+const cPositions = [0, 2, 4, 6]
+const vPositions = [1, 3, 5]
 
-  // Both must be CVCVCVC
+// For each vowel position, its neighboring consonant positions
+const vowelNeighborCs: Record<number, number[]> = {
+  1: [0, 2],
+  3: [2, 4],
+  5: [4, 6],
+}
+
+// Generate all words that would be "too close" to the given word
+function generateBlocked(word: string): string[] {
+  const chars = word.split('')
+  const blocked: string[] = []
+
+  // Rule 1: differ by exactly 1 position
   for (let i = 0; i < 7; i++) {
-    if (isVowel(a[i]) !== isVowel(b[i])) return false
+    const alts = isVowel(chars[i]) ? vowels : consonants
+    for (const alt of alts) {
+      if (alt === chars[i]) continue
+      const copy = [...chars]
+      copy[i] = alt
+      blocked.push(copy.join(''))
+    }
   }
-
-  // Count differences
-  const diffs: number[] = []
-  for (let i = 0; i < 7; i++) {
-    if (a[i] !== b[i]) diffs.push(i)
-  }
-
-  // Rule 1: differ by exactly 1 position → too close
-  if (diffs.length <= 1) return true
 
   // Rule 2: differ by exactly 2 positions (1 vowel + 1 neighboring consonant)
-  if (diffs.length === 2) {
-    const [d1, d2] = diffs
-    const d1IsV = isVowel(a[d1])
-    const d2IsV = isVowel(a[d2])
+  for (const vi of vPositions) {
+    const origV = chars[vi]
+    const origVIdx = vowelOrder.indexOf(origV)
 
-    // One vowel, one consonant
-    if (d1IsV !== d2IsV) {
-      const vi = d1IsV ? d1 : d2
-      const ci = d1IsV ? d2 : d1
+    for (const ci of vowelNeighborCs[vi]) {
+      const origC = chars[ci]
+      const origCGroup = broadMap.get(origC)!
 
-      const isNeighbor = Math.abs(vi - ci) === 1
-      if (isNeighbor) {
-        const vowelDist = Math.abs(vowelOrder.indexOf(a[vi]) - vowelOrder.indexOf(b[vi]))
-        // Vowel off by 1 → always too close
-        if (vowelDist <= 1) return true
-        // Vowel off by 2+ but consonant in same broad group → too close
-        if (sameBroadGroup(a[ci], b[ci])) return true
+      for (const altV of vowels) {
+        if (altV === origV) continue
+        const altVIdx = vowelOrder.indexOf(altV)
+        const vowelDist = Math.abs(origVIdx - altVIdx)
+
+        for (const altC of consonants) {
+          if (altC === origC) continue
+
+          let blocked2 = false
+          if (vowelDist <= 1) {
+            // Vowel off by 1 → always too close regardless of consonant
+            blocked2 = true
+          } else if (broadMap.get(altC) === origCGroup) {
+            // Vowel off by 2+ but consonant in same broad group → too close
+            blocked2 = true
+          }
+
+          if (blocked2) {
+            const copy = [...chars]
+            copy[vi] = altV
+            copy[ci] = altC
+            blocked.push(copy.join(''))
+          }
+        }
       }
     }
   }
 
-  return false
+  return blocked
 }
 
 const noStart = new Set(['q', 'w', 'y'])
@@ -238,44 +222,40 @@ function ensureA(chars: string[]): void {
   chars[candidates[candidates.length - 1].pos] = 'a'
 }
 
-// Generate CVCVCVC words via weighted random sampling
-const allWords = new Set<string>()
-const TARGET = 50000
+// Build rejection set from existing words
+const blockedSet = new Set<string>()
+for (const word of existing) {
+  if (word.length === 7) {
+    blockedSet.add(word)
+    for (const b of generateBlocked(word)) blockedSet.add(b)
+  }
+}
 
-while (allWords.size < TARGET) {
+console.log(`Rejection set size from existing: ${blockedSet.size}`)
+
+// Generate and filter CVCVCVC words via weighted random sampling
+const added: string[] = []
+const finalSet = new Set(existing)
+const TARGET = 100000
+let generated = 0
+let rejected = 0
+
+while (generated < TARGET) {
   const chars = [pickConsonant(), pickVowel(), pickConsonant(), pickVowel(), pickConsonant(), pickVowel(), pickConsonant()]
   ensureA(chars)
   const word = chars.join('')
-  if (validWord(word)) allWords.add(word)
-}
+  if (!validWord(word)) continue
+  generated++
 
-const candidates = [...allWords]
-
-// Shuffle
-for (let i = candidates.length - 1; i > 0; i--) {
-  const j = Math.floor(Math.random() * (i + 1))
-  ;[candidates[i], candidates[j]] = [candidates[j], candidates[i]]
-}
-
-// Filter candidates
-const added: string[] = []
-const finalSet = new Set(existing)
-
-for (const candidate of candidates) {
-  if (finalSet.has(candidate)) continue
-
-  let close = false
-  for (const word of finalSet) {
-    if (tooClose(candidate, word)) {
-      close = true
-      break
-    }
+  if (blockedSet.has(word)) {
+    rejected++
+    continue
   }
 
-  if (!close) {
-    added.push(candidate)
-    finalSet.add(candidate)
-  }
+  added.push(word)
+  finalSet.add(word)
+  blockedSet.add(word)
+  for (const b of generateBlocked(word)) blockedSet.add(b)
 }
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])
@@ -284,8 +264,8 @@ const outLines = [...filteredInitial, '', ...added]
 const outPath = path.join(textDir, '7.more.csv')
 fs.writeFileSync(outPath, outLines.join('\n') + '\n')
 
-console.log(`Valid candidates sampled: ${candidates.length}`)
+console.log(`Generated: ${generated}, Rejected: ${rejected}, Accepted: ${added.length}`)
+console.log(`Rejection set final size: ${blockedSet.size}`)
 console.log(`Initial: ${initialRaw.length} (${filteredInitial.length} after excluding tsv/done)`)
-console.log(`Added: ${added.length}`)
 console.log(`Total: ${filteredInitial.length + added.length}`)
 console.log(`Wrote to ${outPath}`)
