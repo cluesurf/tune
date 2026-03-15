@@ -274,7 +274,7 @@ something pronounceable as described in the joining rules section above.
 **Regenerate cluster mappings:**
 
 ```sh
-npx tsx deck/tune/make/sounds.ts
+npx tsx ./make/sounds.ts
 ```
 
 Output goes to `./text/`.
