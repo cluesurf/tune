@@ -148,12 +148,9 @@ function validWord(word: string): boolean {
   for (let i = 1; i < word.length; i++) {
     if (word[i] === 'j') return false
   }
-  // max 1 x per word
-  const xCount = word.split('').filter(ch => ch === 'x').length
-  if (xCount > 1) return false
-  // max 1 c/C per word
-  const cCCount = word.split('').filter(ch => ch === 'c' || ch === 'C').length
-  if (cCCount > 1) return false
+  // max 1 of x/j/c/C total per word
+  const rareCount = word.split('').filter(ch => ch === 'x' || ch === 'j' || ch === 'c' || ch === 'C').length
+  if (rareCount > 1) return false
   return true
 }
 
