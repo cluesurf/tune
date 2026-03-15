@@ -101,15 +101,19 @@
 
 These are the allowed _base_ word patterns for the foreseeable future:
 
-| syllables | characters | patterns          | estimated | theoretical |
-| :-------- | :--------- | :---------------- | --------: | ----------: |
-| `1`       | `3`        | `CVC`             |      ~700 |       1,805 |
-| `1`       | `4`        | `CCVC` and `CVCC` |      ~700 |       6,460 |
-| `2`       | `5`        | `CVCVC`           |    ~2,000 |     171,475 |
-| `3`       | `7`        | `CVCVCVC`         |   ~50,000 |  16,290,125 |
+| syllables | characters | patterns          |   estimated |    theoretical |
+| :-------- | :--------- | :---------------- | ----------: | -------------: |
+| `1`       | `3`        | `CVC`             |        ~700 |          1,805 |
+| `1`       | `4`        | `CCVC` and `CVCC` |        ~700 |          6,460 |
+| `2`       | `5`        | `CVCVC`           |      ~2,000 |        171,475 |
+| `3`       | `7`        | `CVCVCVC`         |     ~50,000 |     16,290,125 |
 |           |            | **total**         | **~54,000** | **16,469,865** |
 
-The reason for the estimated/theoretical difference: theoretical is the mathematical number of possible combinations given the 22 consonants and 5 vowels in those patterns, but the estimated is a much smaller set mostly because of the rules put in place to filter out words that sound similar or have hard/undesirable pronunciations.
+The reason for the estimated/theoretical difference: theoretical is the
+mathematical number of possible combinations given the 22 consonants and
+5 vowels in those patterns, but the estimated is a much smaller set
+mostly because of the rules put in place to filter out words that sound
+similar or have hard/undesirable pronunciations.
 
 Note: 1 syllable, 5-characters not supported, and 2-syllable, 6+
 characters not supported (primarily because they would look like
@@ -120,7 +124,8 @@ at join points, hard to reverse-engineer fully, but that's okay, not a
 major goal or need, just kind of neat to realize what a joined word is
 composed of sometimes, like when you know a word's etymology).
 
-**Bottom line**: Since there's **~54k** possible base words, that should cover most stuff. Everything else can be compound words.
+**Bottom line**: Since there's **~54k** possible base words, that should
+cover most stuff. Everything else can be compound words.
 
 ### Word Joining Rules
 
@@ -159,36 +164,39 @@ map from source joining cluster to target
 
 Here are some examples of how joins may look in the end:
 
-| syllables | words | characters | pattern                                       | estimated | theoretical |
-| :-------- | :---- | :--------- | :-------------------------------------------- | --------: | ----------: |
-| `2`       | `2`   | `6`        | <code>CV<strong>CC</strong>VC</code>          |      490K |        3.3M |
-| `2`       | `2`   | `7`        | <code>CV<strong>CCC</strong>VC</code>         |      245K |        3.1M |
-| `2`       | `2`   | `7`        | <code>CV<strong>CC</strong>VCC</code>         |      245K |        8.6M |
-| `2`       | `2`   | `7`        | <code>CCVC<strong>CC</strong>VC</code>        |      245K |        3.1M |
-| `2`       | `2`   | `7`        | <code>CVCC<strong>CC</strong>VC</code>        |      245K |        8.6M |
-| `2`       | `2`   | `8`        | <code>CCVC<strong>CCC</strong>VC</code>       |      122K |        2.9M |
-| `2`       | `2`   | `8`        | <code>CCVC<strong>CC</strong>VCC</code>       |      122K |        8.1M |
-| `2`       | `2`   | `8`        | <code>CVCC<strong>CCC</strong>VC</code>       |      122K |        8.1M |
-| `2`       | `2`   | `8`        | <code>CVCC<strong>CC</strong>VCC</code>       |      122K |       22.6M |
-| `3`       | `2`   | `8`        | <code>CV<strong>CC</strong>VCVC</code>        |      1.4M |        310M |
-| `3`       | `2`   | `8`        | <code>CVCVC<strong>CC</strong>VC</code>       |      1.4M |        310M |
-| `3`       | `2`   | `9`        | <code>CCVC<strong>CC</strong>VCVC</code>      |      700K |        293M |
-| `3`       | `2`   | `9`        | <code>CVCC<strong>CC</strong>VCVC</code>      |      700K |        815M |
-| `3`       | `2`   | `9`        | <code>CVCVC<strong>CCC</strong>VC</code>      |      700K |        293M |
-| `3`       | `2`   | `9`        | <code>CVCVC<strong>CC</strong>VCC</code>      |      700K |        815M |
-| `4`       | `2`   | `10`       | <code>CV<strong>CC</strong>VCVCVC</code>      |       35M |       29.4B |
-| `4`       | `2`   | `10`       | <code>CVCVC<strong>CC</strong>VCVC</code>     |        4M |       29.4B |
-| `4`       | `2`   | `10`       | <code>CVCVCVC<strong>CC</strong>VC</code>     |       35M |       29.4B |
-| `4`       | `2`   | `11`       | <code>CCVC<strong>CC</strong>VCVCVC</code>    |     17.5M |       27.9B |
-| `4`       | `2`   | `11`       | <code>CVCC<strong>CC</strong>VCVCVC</code>    |     17.5M |       77.4B |
-| `4`       | `2`   | `11`       | <code>CVCVCVC<strong>CCC</strong>VC</code>    |     17.5M |       27.9B |
-| `4`       | `2`   | `11`       | <code>CVCVCVC<strong>CC</strong>VCC</code>    |     17.5M |       77.4B |
-| `5`       | `2`   | `12`       | <code>CVCVC<strong>CC</strong>VCVCVC</code>   |      100M |        2.8T |
-| `5`       | `2`   | `12`       | <code>CVCVCVC<strong>CC</strong>VCVC</code>   |      100M |        2.8T |
-| `6`       | `2`   | `14`       | <code>CVCVCVC<strong>CC</strong>VCVCVC</code> |      2.5B |        265T |
-|           |       |            | **total**                                     | **~2.9B** |   **~271T** |
+| syllables | words | characters | source                | pattern                                      | estimated | theoretical |
+| :-------- | :---- | :--------- | :-------------------- | :------------------------------------------- | --------: | ----------: |
+| `2`       | `2`   | `6`        | `CVC` + `CVC`         | <code>CV<strong>CC</strong>VC</code>         |      490K |        3.3M |
+| `2`       | `2`   | `7`        | `CVC` + `CCVC`        | <code>CV<strong>CCC</strong>VC</code>        |      245K |        3.1M |
+| `2`       | `2`   | `7`        | `CVC` + `CVCC`        | <code>CV<strong>CC</strong>VCC</code>        |      245K |        8.6M |
+| `2`       | `2`   | `7`        | `CCVC` + `CVC`        | <code>CCV<strong>CC</strong>VC</code>        |      245K |        3.1M |
+| `2`       | `2`   | `7`        | `CVCC` + `CVC`        | <code>CV<strong>CCC</strong>VC</code>        |      245K |        8.6M |
+| `2`       | `2`   | `8`        | `CCVC` + `CCVC`       | <code>CCV<strong>CCC</strong>VC</code>       |      122K |        2.9M |
+| `2`       | `2`   | `8`        | `CCVC` + `CVCC`       | <code>CCV<strong>CC</strong>VCC</code>       |      122K |        8.1M |
+| `2`       | `2`   | `8`        | `CVCC` + `CCVC`       | <code>CV<strong>CCCC</strong>VC</code>       |      122K |        8.1M |
+| `2`       | `2`   | `8`        | `CVCC` + `CVCC`       | <code>CV<strong>CCC</strong>VCC</code>       |      122K |       22.6M |
+| `3`       | `2`   | `8`        | `CVC` + `CVCVC`       | <code>CV<strong>CC</strong>VCVC</code>       |      1.4M |        310M |
+| `3`       | `2`   | `8`        | `CVCVC` + `CVC`       | <code>CVCV<strong>CC</strong>VC</code>       |      1.4M |        310M |
+| `3`       | `2`   | `9`        | `CCVC` + `CVCVC`      | <code>CCV<strong>CC</strong>VCVC</code>      |      700K |        293M |
+| `3`       | `2`   | `9`        | `CVCC` + `CVCVC`      | <code>CV<strong>CCC</strong>VCVC</code>      |      700K |        815M |
+| `3`       | `2`   | `9`        | `CVCVC` + `CCVC`      | <code>CVCV<strong>CCC</strong>VC</code>      |      700K |        293M |
+| `3`       | `2`   | `9`        | `CVCVC` + `CVCC`      | <code>CVCV<strong>CC</strong>VCC</code>      |      700K |        815M |
+| `4`       | `2`   | `10`       | `CVC` + `CVCVCVC`     | <code>CV<strong>CC</strong>VCVCVC</code>     |       35M |       29.4B |
+| `4`       | `2`   | `10`       | `CVCVC` + `CVCVC`     | <code>CVCV<strong>CC</strong>VCVC</code>     |        4M |       29.4B |
+| `4`       | `2`   | `10`       | `CVCVCVC` + `CVC`     | <code>CVCVCV<strong>CC</strong>VC</code>     |       35M |       29.4B |
+| `4`       | `2`   | `11`       | `CCVC` + `CVCVCVC`    | <code>CCV<strong>CC</strong>VCVCVC</code>    |     17.5M |       27.9B |
+| `4`       | `2`   | `11`       | `CVCC` + `CVCVCVC`    | <code>CV<strong>CCC</strong>VCVCVC</code>    |     17.5M |       77.4B |
+| `4`       | `2`   | `11`       | `CVCVCVC` + `CCVC`    | <code>CVCVCV<strong>CCC</strong>VC</code>    |     17.5M |       27.9B |
+| `4`       | `2`   | `11`       | `CVCVCVC` + `CVCC`    | <code>CVCVCV<strong>CC</strong>VCC</code>    |     17.5M |       77.4B |
+| `5`       | `2`   | `12`       | `CVCVC` + `CVCVCVC`   | <code>CVCV<strong>CC</strong>VCVCVC</code>   |      100M |        2.8T |
+| `5`       | `2`   | `12`       | `CVCVCVC` + `CVCVC`   | <code>CVCVCV<strong>CC</strong>VCVC</code>   |      100M |        2.8T |
+| `6`       | `2`   | `14`       | `CVCVCVC` + `CVCVCVC` | <code>CVCVCV<strong>CC</strong>VCVCVC</code> |      2.5B |        265T |
+|           |       |            |                       | **total**                                    | **~2.9B** |   **~271T** |
 
-_Note: this is just showing all the possible 2-word combinations, but there's *tons* of 3 word combinations in theory, so number gets large_.
+_Note: this is just showing all the possible 2-word combinations, but
+there's *tons* of 3 word combinations in theory, so number gets large.
+Also, since we have that joining map simplification logic, the numbers
+might not be totally perfect, but they are reasonable ballparks._.
 
 ### Word Selection Rules
 
