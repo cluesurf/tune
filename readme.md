@@ -129,7 +129,7 @@ cover most stuff. Everything else can be compound words.
 
 ### Word Joining Rules
 
-Compose 2-3 root syllables into compound words. At each join point, the
+Compose **2-3** root words into compound words. At each join point, the
 coda of word 1 meets the onset of word 2, forming a consonant cluster.
 
 - Junction must have at least 2 consonants (CC minimum)
@@ -196,7 +196,9 @@ Here are some examples of how joins may look in the end:
 _Note: this is just showing all the possible 2-word combinations, but
 there's *tons* of 3 word combinations in theory, so number gets large.
 Also, since we have that joining map simplification logic, the numbers
-might not be totally perfect, but they are reasonable ballparks._.
+might not be totally perfect, but they are reasonable ballparks._
+
+Also! You can join words arbitrarily in casual or scientific contexts to create unlimited compounds to your heart's content, by using the `-wa-` joiner too.
 
 ### Word Selection Rules
 
