@@ -195,10 +195,10 @@ Here are some examples of how joins may look in the end:
 | 6         | 2     | 14         | `CVCVCVC` + `CVCVCVC` | <code>CVCVCV<strong>CC</strong>VCVCVC</code> |      250M |        265T |
 |           |       |            |                       | **total**                                    | **~290M** |   **~270T** |
 
-_Note: This is just showing all the possible 2-word combinations, but
+Note: This is just showing all the possible 2-word combinations, but
 there's *tons* of 3 word combinations in theory, so number gets large.
 Also, since we have that joining map simplification logic, the numbers
-might not be totally perfect, but they are reasonable ballparks._
+might not be totally perfect, but they are reasonable ballparks.
 
 Also! You can join words arbitrarily in casual or scientific contexts to create unlimited compounds to your heart's content, by using the `-wa-` joiner too.
 
