@@ -120,6 +120,8 @@ at join points, hard to reverse-engineer fully, but that's okay, not a
 major goal or need, just kind of neat to realize what a joined word is
 composed of sometimes, like when you know a word's etymology).
 
+**Bottom line**: Since there's **~54k** possible base words, that should cover most stuff. Everything else can be compound words.
+
 ### Word Joining Rules
 
 Compose 2-3 root syllables into compound words. At each join point, the
