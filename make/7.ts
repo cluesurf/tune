@@ -161,19 +161,42 @@ const doneTerms = extractTermsFromTsv(path.join(textDir, 'tune.7.done.tsv'))
 
 const existing = new Set([...initialRaw, ...tsvTerms, ...doneTerms])
 
-// Generate CVCVCVC words via random sampling (full enumeration is too large)
+// Weighted sampling
+const vowelWeights: Record<string, number> = {
+  i: 5.9, e: 4, a: 9, o: 7, u: 6,
+}
+const consonantWeights: Record<string, number> = {
+  m: 10, n: 10, q: 8, g: 9, d: 9, b: 9, p: 9, t: 10, k: 10,
+  h: 5.6, s: 10, f: 8, v: 8, z: 8, j: 0.3, x: 9, c: 0.4, C: 0.3,
+  w: 0, l: 7, r: 8, y: 9,
+}
+
+function buildWeightedPicker(items: string[], weights: Record<string, number>): () => string {
+  const filtered = items.filter(ch => (weights[ch] ?? 0) > 0)
+  const cumulative: { ch: string; cumWeight: number }[] = []
+  let total = 0
+  for (const ch of filtered) {
+    total += weights[ch] ?? 0
+    cumulative.push({ ch, cumWeight: total })
+  }
+  return () => {
+    const r = Math.random() * total
+    for (const entry of cumulative) {
+      if (r < entry.cumWeight) return entry.ch
+    }
+    return cumulative[cumulative.length - 1].ch
+  }
+}
+
+const pickVowel = buildWeightedPicker(vowels, vowelWeights)
+const pickConsonant = buildWeightedPicker(consonants, consonantWeights)
+
+// Generate CVCVCVC words via weighted random sampling
 const allWords = new Set<string>()
 const TARGET = 50000
 
 while (allWords.size < TARGET) {
-  const c1 = consonants[Math.floor(Math.random() * consonants.length)]
-  const v1 = vowels[Math.floor(Math.random() * vowels.length)]
-  const c2 = consonants[Math.floor(Math.random() * consonants.length)]
-  const v2 = vowels[Math.floor(Math.random() * vowels.length)]
-  const c3 = consonants[Math.floor(Math.random() * consonants.length)]
-  const v3 = vowels[Math.floor(Math.random() * vowels.length)]
-  const c4 = consonants[Math.floor(Math.random() * consonants.length)]
-  const word = c1 + v1 + c2 + v2 + c3 + v3 + c4
+  const word = pickConsonant() + pickVowel() + pickConsonant() + pickVowel() + pickConsonant() + pickVowel() + pickConsonant()
   if (validWord(word)) allWords.add(word)
 }
 

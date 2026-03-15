@@ -54,6 +54,35 @@
 <br/>
 <br/>
 
+## Sounds
+
+| symbol | sound gist |
+|:---:|:------|
+| m | "mark" |
+| n | "note" |
+| q | "sing", the -ng sound |
+| g | "gift" |
+| d | "deed" |
+| b | "band" |
+| p | "play" |
+| t | "time" |
+| k | "king" |
+| h | "heal" |
+| s | "soul" |
+| f | "fire" |
+| v | "vibe" |
+| z | "zone" |
+| j | "measure", the "s" sound here, "zh" |
+| x | "ship", the "sh" sound |
+| c | "thor", the voiceless "th" sound |
+| C | "this", the voiced "th" sound |
+| w | "wave" |
+| l | "love" |
+| r | "rise" but with spanish, arabic, or indian accent |
+| y | "yard" |
+
+(vowels are like spanish `i e a o u` sounds).
+
 ## Word Composition
 
 Compose 2-3 root syllables into coined words. Each root can be a single syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions between roots always have at least 2 consonants.
