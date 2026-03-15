@@ -196,7 +196,7 @@ Here are some examples of how joins may look in the end:
 |           |       |            |                       | **total**                                    | **~290M** |   **~270T** |
 
 Note: This is just showing all the possible 2-word combinations, but
-there's *tons* of 3 word combinations in theory, so number gets large.
+there's *tons* of 3 word combinations in theory too! So numbers gets large.
 Also, since we have that joining map simplification logic, the numbers
 might not be totally perfect, but they are reasonable ballparks.
 
