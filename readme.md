@@ -83,7 +83,9 @@
 
 (vowels are like spanish `i e a o u` sounds).
 
-## Word Composition
+## Code Library
+
+### Word Composition
 
 Compose 2-3 root syllables into coined words. Each root can be a single syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions between roots always have at least 2 consonants.
 
