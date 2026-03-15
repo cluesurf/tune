@@ -1,21 +1,3 @@
-mpfpl
-mpfpr
-mpftr
-ndspl
-ndspr
-ndstr
-ndskl
-ndskr
-ntspl
-ntspr
-ntstr
-ntskl
-ntskr
-ntxpl
-ntxpr
-ntxtr
-ntxkl
-ntxkr
 qktx
 qksm
 qksp
@@ -98,7 +80,6 @@ rft
 rfl
 rvn
 rvl
-mm
 mn
 mg
 md
@@ -115,7 +96,6 @@ mx
 ml
 mr
 nm
-nn
 ng
 nd
 nb
@@ -133,7 +113,6 @@ nr
 qk
 gm
 gn
-gg
 gd
 gb
 gp
@@ -150,7 +129,6 @@ gr
 dm
 dn
 dg
-dd
 db
 dp
 dt
@@ -167,7 +145,6 @@ bm
 bn
 bg
 bd
-bb
 bp
 bt
 bk
@@ -184,7 +161,6 @@ pn
 pg
 pd
 pb
-pp
 pt
 pk
 ps
@@ -201,7 +177,6 @@ tg
 td
 tb
 tp
-tt
 tk
 ts
 tf
@@ -219,7 +194,6 @@ kd
 kb
 kp
 kt
-kk
 ks
 kf
 kv
@@ -229,7 +203,6 @@ kx
 kw
 kl
 kr
-hh
 sm
 sn
 sg
@@ -238,7 +211,6 @@ sb
 sp
 st
 sk
-ss
 sf
 sv
 sz
@@ -256,7 +228,6 @@ fp
 ft
 fk
 fs
-ff
 fv
 fz
 fj
@@ -273,7 +244,6 @@ vt
 vk
 vs
 vf
-vv
 vz
 vj
 vx
@@ -290,7 +260,6 @@ zk
 zs
 zf
 zv
-zz
 zj
 zx
 zl
@@ -307,7 +276,6 @@ js
 jf
 jv
 jz
-jj
 jx
 jl
 jr
@@ -324,12 +292,8 @@ xf
 xv
 xz
 xj
-xx
 xl
 xr
-cc
-CC
-ww
 lm
 ln
 lg
@@ -345,7 +309,6 @@ lz
 lj
 lx
 lc
-ll
 lr
 rm
 rn
@@ -362,5 +325,3 @@ rz
 rj
 rx
 rl
-rr
-yy

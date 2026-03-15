@@ -215,14 +215,15 @@ export function resolveJunction(input: {
     const d = clusterDifficulty(consonants)
 
     /**
-     * Allow geminates at min junction length.
+     * Allow geminates and geminate-with-separator forms.
      * Many languages have geminates (Italian, Finnish, Japanese).
      */
     const isGeminate =
       consonants.length === 2 && consonants[0] === consonants[1]
-    if (d >= 99 && !isGeminate) return
+    const isGeminateForm = form === 'geminate'
+    if (d >= 99 && !isGeminate && !isGeminateForm) return
 
-    const effectiveD = isGeminate ? 1 : d
+    const effectiveD = isGeminate || isGeminateForm ? 1 : d
     results.push({ consonants, form, score: score - effectiveD * 0.1 })
   }
 
@@ -312,9 +313,51 @@ export function resolveJunction(input: {
     }
   }
 
-  /** 8. Geminate fallback: if junction is exactly 2C same letter. */
+  /**
+   * 8. Geminate/confusable resolution: insert a separator consonant
+   * when the join point would be ambiguous or identical.
+   *
+   * Same consonant:
+   *   Voiced stops/nasals (nn, mm, bb, dd, gg) -> insert z
+   *   Voiceless stops (pp, tt, kk) -> insert s
+   *   Sibilants (ss, zz, jj, xx) -> insert l
+   *   Dentals (cc, CC) -> insert l
+   *
+   * Cross-confusable pairs:
+   *   Any [j,x,s,z] + any [j,x,s,z] -> insert l
+   *   Either [c,C] + either [c,C] -> insert l
+   */
+  if (coda.length > 0 && onset.length > 0) {
+    const codaLast = coda[coda.length - 1]
+    const onsetFirst = onset[0]
+
+    const SIBILANT_SET = new Set(['j', 'x', 's', 'z'])
+    const DENTAL_SET = new Set(['c', 'C'])
+    const Z_SET = new Set(['n', 'm', 'b', 'd', 'g'])
+    const S_SET = new Set(['p', 't', 'k'])
+
+    const bothSibilant = SIBILANT_SET.has(codaLast) && SIBILANT_SET.has(onsetFirst)
+    const bothDental = DENTAL_SET.has(codaLast) && DENTAL_SET.has(onsetFirst)
+    const sameConsonant = codaLast === onsetFirst
+
+    if (bothSibilant || bothDental) {
+      add(coda + 'l' + onset, 'geminate', 0.6)
+    } else if (sameConsonant) {
+      if (Z_SET.has(codaLast)) {
+        add(coda + 'z' + onset, 'geminate', 0.6)
+      } else if (S_SET.has(codaLast)) {
+        add(coda + 's' + onset, 'geminate', 0.6)
+      } else {
+        /** Fallback for other same-consonants (l, r, f, v, h, w, y, q). */
+        add(coda + 'z' + onset, 'geminate', 0.55)
+        add(coda + 's' + onset, 'geminate', 0.5)
+      }
+    }
+  }
+
+  /** 9. Plain geminate fallback (same letter doubled). */
   if (junction.length === 2 && junction[0] === junction[1]) {
-    add(junction, 'geminate', 0.6)
+    add(junction, 'geminate', 0.5)
   }
 
   results.sort((a, b) => b.score - a.score)

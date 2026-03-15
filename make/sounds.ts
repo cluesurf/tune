@@ -71,6 +71,7 @@ const startConsonantClusters = [...ONSET_CLUSTERS]
 const endConsonantClusters = [...CODA_CLUSTERS]
 
 const MIN_OUTPUT = 2
+const MAX_OUTPUT = 4
 
 // ─── Cluster Joining ────────────────────────────────────────
 
@@ -241,8 +242,9 @@ function generateCandidates(cluster: string): Candidate[] {
       ? (assimilate(result) || result)
       : result
 
-    /** Enforce minimum 2C output. */
+    /** Enforce min 2C and max 4C output. */
     if (final.length < MIN_OUTPUT) return
+    if (final.length > MAX_OUTPUT) return
 
     if (seen.has(final)) return
     seen.add(final)
@@ -337,7 +339,6 @@ function addEntries(source: string, clusters: string[]) {
   }
 }
 
-addEntries('single', consonants)
 addEntries('start', startConsonantClusters)
 addEntries('end', endConsonantClusters)
 addEntries('end+start', endStartJoined)
@@ -525,6 +526,13 @@ function postProcess(output: string): string {
     current = current + current
   }
 
+  /** Cap at max output length. Keep simplifying if too long. */
+  while (current.length > MAX_OUTPUT) {
+    const reduced = simplifyOnce(current)
+    if (reduced === current || reduced.length < MIN_OUTPUT) break
+    current = reduced
+  }
+
   return current
 }
 
@@ -619,6 +627,8 @@ writeFileSync(csvPath, csvContent)
 
 const mappingObj: Record<string, string> = {}
 for (const r of allRows) {
+  /** Never store single-char keys. Junctions must be >= 2C. */
+  if (r.cluster.length < MIN_OUTPUT) continue
   const simplified = r.changed ? r.simplified : r.cluster
   if (!mappingObj[r.cluster]) {
     mappingObj[r.cluster] = simplified

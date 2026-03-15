@@ -170,7 +170,7 @@ describe('composeWordCandidates', () => {
 
   // ─── Geminate handling ────────────────────────────────
 
-  it('handles geminate junction (same consonant)', () => {
+  it('handles geminate junction (same consonant) with separator', () => {
     const candidates = composeWordCandidates(['hit', 'tos'])
     expect(candidates.length).toBeGreaterThan(0)
     for (const c of candidates) {
@@ -178,6 +178,27 @@ describe('composeWordCandidates', () => {
         expect(j.length).toBeGreaterThanOrEqual(2)
       }
     }
+  })
+
+  it('geminate s+s inserts l (e.g., mas + sak -> maslsak)', () => {
+    const candidates = composeWordCandidates(['mas', 'sak'])
+    expect(candidates.length).toBeGreaterThan(0)
+    const hasSLS = candidates.some(c => c.word.includes('sls'))
+    expect(hasSLS).toBe(true)
+  })
+
+  it('geminate n+n inserts z (e.g., man + nak -> manznak)', () => {
+    const candidates = composeWordCandidates(['man', 'nak'])
+    expect(candidates.length).toBeGreaterThan(0)
+    const hasNZN = candidates.some(c => c.word.includes('nzn'))
+    expect(hasNZN).toBe(true)
+  })
+
+  it('geminate t+t inserts s (e.g., hit + tos -> hitstos)', () => {
+    const candidates = composeWordCandidates(['hit', 'tos'])
+    expect(candidates.length).toBeGreaterThan(0)
+    const hasTST = candidates.some(c => c.word.includes('tst'))
+    expect(hasTST).toBe(true)
   })
 
   // ─── Never drops vowels ───────────────────────────────
@@ -213,6 +234,37 @@ describe('composeWordCandidates', () => {
     const candidates = composeWordCandidates(['kit', 'mal'])
     for (const c of candidates) {
       expect(c.word).not.toContain('wa')
+    }
+  })
+
+  // ─── Multi-syllable inputs ──────────────────────────────
+
+  it('composes CVCVC + CVC', () => {
+    const candidates = composeWordCandidates(['malik', 'tos'])
+    expect(candidates.length).toBeGreaterThan(0)
+    for (const c of candidates) {
+      expect(c.word.startsWith('m')).toBe(true)
+      expect(c.word).toContain('a')
+      expect(c.word).toContain('i')
+      expect(c.word).toContain('o')
+    }
+  })
+
+  it('composes CVC + CVCVC', () => {
+    const candidates = composeWordCandidates(['hit', 'malik'])
+    expect(candidates.length).toBeGreaterThan(0)
+    for (const c of candidates) {
+      expect(c.word.startsWith('h')).toBe(true)
+      expect(c.word.endsWith('k')).toBe(true)
+    }
+  })
+
+  it('composes CVCVC + CVCVC', () => {
+    const candidates = composeWordCandidates(['malik', 'tabin'])
+    expect(candidates.length).toBeGreaterThan(0)
+    for (const c of candidates) {
+      expect(c.word.startsWith('m')).toBe(true)
+      expect(c.word.endsWith('n')).toBe(true)
     }
   })
 })

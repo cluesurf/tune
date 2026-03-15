@@ -1,16 +1,17 @@
 /**
  * Word Composition
  *
- * Takes 2-3 CVC/CVCC/CCVC syllables and merges them into
- * candidate words. Uses junction resolution to simplify
- * consonant clusters at join points.
+ * Takes 2-3 words/syllables and merges them into candidate words.
+ * Uses junction resolution to simplify consonant clusters at
+ * join points.
  *
  * Minimum junction = 2 consonants (CC).
  *
- * Syllable shapes:
- *   CVC  (3 chars): hit, mot, raz
- *   CVCC (4 chars): bant, molk (coda cluster)
- *   CCVC (4 chars): bran, trik (onset cluster)
+ * Input shapes:
+ *   CVC   (3 chars): hit, mot, raz
+ *   CVCC  (4 chars): bant, molk (coda cluster)
+ *   CCVC  (4 chars): bran, trik (onset cluster)
+ *   CVCVC (5 chars): malik, tabin (multi-syllable)
  *
  * 2-syllable output shapes (min 2C junction):
  *   CVC  + CVC  -> C+V+CC+V+C       (6 letters)
@@ -50,48 +51,94 @@ export type ComposeCandidate = {
   score: number
 }
 
-type ParsedSyllable = {
+type ParsedWord = {
   onset: string
   vowel: string
   coda: string
-  shape: 'CVC' | 'CVCC' | 'CCVC'
   raw: string
 }
 
-// ─── Syllable Parser ───────────────────────────────────
+// ─── Word Parser ────────────────────────────────────────
 
-function parseSyllable(syllable: string): ParsedSyllable | null {
-  if (syllable.length < 3 || syllable.length > 4) return null
+/**
+ * Parse a word into leading consonants (onset), all vowels+middle
+ * consonants (core), and trailing consonants (coda).
+ *
+ * Handles single syllables (CVC, CVCC, CCVC) and multi-syllable
+ * words (CVCVC, CVCCVC, etc.).
+ *
+ * The "onset" is the leading consonant cluster before the first vowel.
+ * The "vowel" is everything from the first vowel to the last vowel (inclusive).
+ * The "coda" is the trailing consonant cluster after the last vowel.
+ */
 
-  let vowelIdx = -1
+function parseWord(word: string): ParsedWord | null {
+  if (word.length < 2) return null
+
+  /** Find first and last vowel positions. */
+  let firstVowel = -1
+  let lastVowel = -1
   let vowelCount = 0
-  for (let i = 0; i < syllable.length; i++) {
-    if (isVowel(syllable[i])) {
-      if (vowelIdx < 0) vowelIdx = i
+  for (let i = 0; i < word.length; i++) {
+    if (isVowel(word[i])) {
+      if (firstVowel < 0) firstVowel = i
+      lastVowel = i
       vowelCount++
     }
   }
 
-  if (vowelCount !== 1 || vowelIdx < 1) return null
+  if (vowelCount === 0) return null
+  if (firstVowel === 0) return null
 
-  const onset = syllable.slice(0, vowelIdx)
-  const vowel = syllable[vowelIdx]
-  const coda = syllable.slice(vowelIdx + 1)
+  const onset = word.slice(0, firstVowel)
+  const vowelCore = word.slice(firstVowel, lastVowel + 1)
+  const coda = word.slice(lastVowel + 1)
 
-  if (onset.length === 0 || coda.length === 0) return null
-  if (onset.length > 2 || coda.length > 2) return null
+  if (coda.length === 0) return null
+
+  /** Validate onset consonants. */
   if (!onset.split('').every(isConsonant)) return null
-  if (!coda.split('').every(isConsonant)) return null
-
   if (onset.length === 2 && !ONSET_CLUSTERS.has(onset)) return null
+  if (onset.length > 2) return null
+
+  /** Validate coda consonants. */
+  if (!coda.split('').every(isConsonant)) return null
   if (coda.length === 2 && !CODA_CLUSTERS.has(coda)) return null
+  if (coda.length > 2) return null
 
-  let shape: ParsedSyllable['shape']
-  if (onset.length === 1 && coda.length === 1) shape = 'CVC'
-  else if (onset.length === 2) shape = 'CCVC'
-  else shape = 'CVCC'
+  /**
+   * For single-syllable: vowelCore is 1 vowel.
+   * For multi-syllable (e.g., CVCVC): vowelCore is like "i_o" where
+   * _ is a consonant cluster. Validate internal clusters.
+   */
+  if (vowelCount === 1) {
+    /** Single vowel. Just check it's a vowel. */
+    if (!isVowel(vowelCore)) return null
+  } else {
+    /**
+     * Multi-vowel. Validate that vowels are separated by at least
+     * one consonant (no diphthongs). Also validate internal clusters.
+     */
+    let prevWasVowel = false
+    let run = ''
+    for (const ch of vowelCore) {
+      if (isConsonant(ch)) {
+        run += ch
+        prevWasVowel = false
+      } else {
+        /** Adjacent vowels not allowed. */
+        if (prevWasVowel) return null
+        if (run.length > 0) {
+          /** Internal clusters must be pronounceable. */
+          if (run.length > 3) return null
+          run = ''
+        }
+        prevWasVowel = true
+      }
+    }
+  }
 
-  return { onset, vowel, coda, shape, raw: syllable }
+  return { onset, vowel: vowelCore, coda, raw: word }
 }
 
 // ─── Helpers ───────────────────────────────────────────
@@ -101,8 +148,17 @@ function isEasyCluster(cluster: string): boolean {
   return clusterDifficulty(cluster) < HARD_THRESHOLD
 }
 
+/**
+ * Check if a consonant cluster is a geminate-with-separator pattern.
+ * e.g., nzn, nsn, sls, zlz
+ */
+function isGeminateWithSeparator(cluster: string): boolean {
+  if (cluster.length !== 3) return false
+  return cluster[0] === cluster[2]
+}
+
 function wordIsPronounceable(word: string): boolean {
-  if (word.length === 0 || word.length > 14) return false
+  if (word.length === 0 || word.length > 18) return false
 
   let run = ''
   for (const ch of word) {
@@ -110,9 +166,9 @@ function wordIsPronounceable(word: string): boolean {
       run += ch
     } else if (isVowel(ch)) {
       if (run.length >= 2 && !isEasyCluster(run)) {
-        /** Allow geminates. */
         const isGeminate = run.length === 2 && run[0] === run[1]
-        if (!isGeminate) return false
+        const isGemSep = isGeminateWithSeparator(run)
+        if (!isGeminate && !isGemSep) return false
       }
       run = ''
     } else {
@@ -122,7 +178,8 @@ function wordIsPronounceable(word: string): boolean {
 
   if (run.length >= 2 && !isEasyCluster(run)) {
     const isGeminate = run.length === 2 && run[0] === run[1]
-    if (!isGeminate) return false
+    const isGemSep = isGeminateWithSeparator(run)
+    if (!isGeminate && !isGemSep) return false
   }
   return true
 }
@@ -186,8 +243,8 @@ function scoreCandidate(input: {
     clusterCount > 0 ? totalDifficulty / clusterCount : 0
   const easeScore = Math.max(0, 1 - avgDifficulty / HARD_THRESHOLD)
 
-  /** Length: shorter words preferred. Normalize 6-10 range. */
-  const lengthScore = Math.max(0, 1 - (word.length - 6) / 5)
+  /** Length: shorter words preferred. Normalize 6-14 range. */
+  const lengthScore = Math.max(0, 1 - (word.length - 6) / 8)
 
   return (
     transparency * 0.5 +
@@ -210,11 +267,11 @@ function classifyJunction(jr: JunctionOption): string {
   return 'CC'
 }
 
-// ─── 2-Syllable Composition ────────────────────────────
+// ─── 2-Word Composition ───────────────────────────────
 
 function compose2(
-  s1: ParsedSyllable,
-  s2: ParsedSyllable,
+  s1: ParsedWord,
+  s2: ParsedWord,
   originalPhonemes: string,
 ): Array<ComposeCandidate> {
   const candidates: Array<ComposeCandidate> = []
@@ -247,12 +304,12 @@ function compose2(
   return candidates
 }
 
-// ─── 3-Syllable Composition ────────────────────────────
+// ─── 3-Word Composition ───────────────────────────────
 
 function compose3(
-  s1: ParsedSyllable,
-  s2: ParsedSyllable,
-  s3: ParsedSyllable,
+  s1: ParsedWord,
+  s2: ParsedWord,
+  s3: ParsedWord,
   originalPhonemes: string,
 ): Array<ComposeCandidate> {
   const candidates: Array<ComposeCandidate> = []
@@ -307,10 +364,10 @@ function compose3(
 // ─── Public API ────────────────────────────────────────
 
 /**
- * Compose 2-3 syllables into candidate words.
+ * Compose 2-3 words/syllables into candidate words.
  *
- * Each syllable must be CVC, CVCC, or CCVC.
- * Junction between syllables always has at least 2 consonants.
+ * Each input can be CVC, CVCC, CCVC, or multi-syllable (CVCVC, etc.).
+ * Junction between inputs always has at least 2 consonants.
  * Returns candidates sorted by score (best first), deduplicated.
  */
 
@@ -324,10 +381,10 @@ export function composeWordCandidates(
   }
 
   const parsed = syllables.map(s => {
-    const p = parseSyllable(s)
+    const p = parseWord(s)
     if (!p) {
       throw new Error(
-        `"${s}" is not a valid syllable (CVC/CVCC/CCVC)`,
+        `"${s}" is not a valid syllable (CVC/CVCC/CCVC/CVCVC/...)`,
       )
     }
     return p
