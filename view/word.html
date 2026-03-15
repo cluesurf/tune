@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tune</title>
+    <style>
+      @font-face {
+        font-family: 'ToneEtch';
+        src: url('ToneEtch.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'CrowMark';
+        src: url('CrowMark.otf') format('opentype');
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'CrowMark', system-ui, -apple-system, sans-serif;
+        letter-spacing: 0.07em;
+        line-height: 1.5;
+        transform: scaleY(0.9);
+        transform-origin: top center;
+        padding: 32px;
+        background: #fff;
+        color: #111;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 32px 0 16px;
+        font-family: monospace;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+        max-width: 832px;
+        margin: 0 auto;
+        gap: 8px;
+      }
+      .card {
+        padding: 24px 16px;
+        padding-top: 32px;
+        text-align: center;
+        border: 1px solid #e5e7eb;
+        border-radius: 4px;
+      }
+      .tone {
+        font-family: 'ToneEtch', sans-serif;
+        font-size: 48px;
+        color: #030712;
+        margin-bottom: 8px;
+      }
+      .term {
+        font-size: 32px;
+        color: #9ca3af;
+      }
+      .meaning {
+        margin-top: 4px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tune Dictionary</h1>
+    <script src="word.js"></script>
+    <script>
+      for (const [seq, words] of Object.entries(LIST)) {
+        const h2 = document.createElement('h2')
+        h2.textContent = seq
+        document.body.appendChild(h2)
+
+        const grid = document.createElement('div')
+        grid.className = 'grid'
+        document.body.appendChild(grid)
+
+        for (const [term, meaning] of Object.entries(words)) {
+          const card = document.createElement('div')
+          card.className = 'card'
+
+          const tone = document.createElement('div')
+          tone.className = 'tone'
+          tone.textContent = term
+
+          const t = document.createElement('div')
+          t.className = 'term'
+          t.textContent = term
+
+          const m = document.createElement('div')
+          m.className = 'meaning'
+          m.textContent = meaning
+
+          card.appendChild(tone)
+          card.appendChild(t)
+          card.appendChild(m)
+          grid.appendChild(card)
+        }
+      }
+    </script>
+  </body>
+</html>
