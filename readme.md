@@ -54,6 +54,14 @@
 <br/>
 <br/>
 
+## Introduction
+
+Tune is a constructed language designed to organize knowledge with clarity and precision. Its goal is to express ideas using a minimal set of base concepts that combine in predictable ways, reducing ambiguity while remaining easy to speak and understand. By structuring meaning systematically, Tune aims to make complex ideas easier to grasp and communicate.
+
+The language is built to scale from everyday conversation to highly technical domains. Scientific terms, abstract ideas, and specialized jargon can be expressed by composing simple core concepts, allowing new discoveries and technologies to be named in a consistent and intelligible way. Instead of memorizing thousands of opaque terms, speakers can follow the internal logic of the language to understand unfamiliar concepts.
+
+Ultimately, Tune is meant to serve as a flexible conceptual framework rather than just a vocabulary. It provides a structured way to describe the world, allowing knowledge to be organized, extended, and shared across disciplines and cultures. As human understanding grows, the language is designed to grow with it while preserving clarity and coherence.
+
 ## Sounds
 
 | mark | sound     | note                                       |
