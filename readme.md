@@ -163,7 +163,7 @@ Each candidate has:
 - **junctions** - consonant clusters at each join point
 - **score** - quality score (higher is better)
 
-**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable as described in the joining section above.
+**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable as described in the joining rules section above.
 
 **Regenerate cluster mappings:**
 
