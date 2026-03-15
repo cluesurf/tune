@@ -202,7 +202,7 @@ might not be totally perfect, but they are reasonable ballparks._
 
 Also! You can join words arbitrarily in casual or scientific contexts to create unlimited compounds to your heart's content, by using the `-wa-` joiner too.
 
-The `-wa-` joined words are considered just "regular compound words", which have _sort-of_ the feeling of being a single word, but you can tell quickly they are separate words joined together, but still, because it's one word technically, your mind feels it as a formal concept rather than a descriptive phrase. _(The reason for the `-wa-` is to distinguish "unified/standard concepts" from "arbitrary phrases". For example, in English we have "black bird" as a generic description, but we have "blackbird" as a specific type of word. Tune's system is intentionally a lot more structured than English in this sense, to make things a ton less ambiguous/a lot clearer)._
+The `-wa-` joined words are considered just "regular compound words", which have _sort-of_ the feeling of being a single word, but you can tell quickly they are separate words joined together, but still, because it's one word technically, your mind feels it as a formal concept rather than a descriptive phrase. _(The purpose of `-wa-` is to distinguish "unified/standard concepts" from "arbitrary phrases". For example, in English we have "black bird" as a generic description, but we have "blackbird" as a specific type of word. Tune's system is intentionally a lot more structured than English in this sense, to make things a ton less ambiguous/a lot clearer)._
 
 ### Word Selection Rules
 
