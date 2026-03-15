@@ -101,9 +101,13 @@ function validWord(word: string): boolean {
   if (pattern === 'CCVC') {
     const onset = word.slice(0, 2)
     if (!ONSET_CLUSTERS.has(onset)) return false
+    const xj = new Set(['x', 'j'])
+    if (xj.has(onset[0]) || xj.has(onset[1])) return false
   } else if (pattern === 'CVCC') {
     const coda = word.slice(2)
     if (!CODA_CLUSTERS.has(coda)) return false
+    const xj = new Set(['x', 'j'])
+    if (xj.has(coda[0]) || xj.has(coda[1])) return false
   }
   return true
 }
