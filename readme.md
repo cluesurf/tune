@@ -164,7 +164,7 @@ map from source joining cluster to target
 
 Here are some examples of how joins may look in the end:
 
-| syllables | words | characters | source                | pattern                                      | estimated | theoretical |
+| syllables | words | characters | sources               | patterns                                     | estimated | theoretical |
 | :-------- | :---- | :--------- | :-------------------- | :------------------------------------------- | --------: | ----------: |
 | `2`       | `2`   | `6`        | `CVC` + `CVC`         | <code>CV<strong>CC</strong>VC</code>         |      490K |        3.3M |
 | `2`       | `2`   | `7`        | `CVC` + `CCVC`        | <code>CV<strong>CCC</strong>VC</code>        |      245K |        3.1M |
