@@ -119,7 +119,8 @@ Because of this joining logic, it's actually deterministic, so there's a map fro
 - No `h`, `y`, `q` in center consonant (position 2)
 - No `el`, `er`, `il`, `ir` sequences anywhere
 - `j` only at start of word
-- Fricative pairs across vowels in CVC sequences: same pair always blocked (`s-s`, `s-z`, `z-s`, `z-z`, and likewise `f-f`/`f-v`/`v-f`/`v-v`, `c-c`/`c-C`/`C-c`/`C-C`, `j-j`/`j-x`/`x-j`/`x-x`). Cross-pair allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
+- No mixed-voicing stop pairs across vowels: `d-t`, `t-d`, `b-p`, `p-b`, `g-k`, `k-g` blocked
+- Fricative pairs across vowels: same pair always blocked (`s-s`/`s-z`/`z-s`/`z-z`, likewise `f↔v`, `c↔C`, `j↔x`). Cross-pair allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
 - Max 1 of `x`/`j`/`c`/`C` total per word
 - **Too close** if words differ by 1 position
 - **Too close** if words differ by 1 vowel + 1 neighboring consonant, and vowel is off by 1 notch (`ieaou` order)

@@ -103,17 +103,21 @@ const noEnd = new Set(['h', 'w', 'y'])
 const badPairs = new Set(['er', 'el', 'ir', 'il'])
 const noRepeatC = new Set(['r', 'l', 'f', 'v', 'z', 'x', 'j', 'C', 'c', 's'])
 
-// Fricative voicing pairs: same pair blocked across vowels
-const fricativePairs: Record<string, string> = {
+// Voicing pairs blocked across vowels
+const voicingPartner: Record<string, string> = {
   s: 'z', z: 's', f: 'v', v: 'f', c: 'C', C: 'c', j: 'x', x: 'j',
+  d: 't', t: 'd', b: 'p', p: 'b', g: 'k', k: 'g',
 }
-const voicedFricatives = new Set(['z', 'v', 'C', 'j'])
-const allFricatives = new Set(['s', 'z', 'f', 'v', 'c', 'C', 'j', 'x'])
 
-function badFricativePair(a: string, b: string): boolean {
+function badConsonantPair(a: string, b: string): boolean {
+  // Mixed voicing pair (d-t, b-p, g-k, s-z, f-v, c-C, j-x): blocked
+  if (voicingPartner[a] === b) return true
+  // For fricatives: same pair and cross-pair voicing mismatch also blocked
+  const allFricatives = new Set(['s', 'z', 'f', 'v', 'c', 'C', 'j', 'x'])
   if (!allFricatives.has(a) || !allFricatives.has(b)) return false
-  // Same pair (s/z, f/v, c/C, j/x): always blocked
-  if (a === b || fricativePairs[a] === b) return true
+  const voicedFricatives = new Set(['z', 'v', 'C', 'j'])
+  // Same pair: always blocked (caught above for mixed, catch same here)
+  if (a === b) return true
   // Cross-pair: must match voicing
   if (voicedFricatives.has(a) !== voicedFricatives.has(b)) return true
   return false
@@ -137,7 +141,7 @@ function validWord(word: string): boolean {
   }
   // no bad fricative pairs across vowels
   for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
-    if (badFricativePair(word[a], word[b])) return false
+    if (badConsonantPair(word[a], word[b])) return false
   }
   // no e-e, i-i, u-u across consonants in VCV sequences
   const noRepeatV = new Set(['e', 'i', 'u'])
