@@ -117,6 +117,16 @@ const outPath = path.resolve(__dirname, '..', 'view', 'word.js')
 const json = JSON.stringify(ordered, null, 2)
 fs.writeFileSync(outPath, `const LIST = ${json}\n`)
 
+const noteDir = path.resolve(__dirname, '..', 'note')
+fs.mkdirSync(noteDir, { recursive: true })
+for (const [seq, words] of Object.entries(ordered)) {
+  const rows = ['term,meaning']
+  for (const [term, meaning] of Object.entries(words)) {
+    rows.push(`${term},${meaning}`)
+  }
+  fs.writeFileSync(path.join(noteDir, `${seq}.csv`), rows.join('\n') + '\n')
+}
+
 console.log(
-  `Wrote ${Object.keys(ordered).length} sequences to ${outPath}`,
+  `Wrote ${Object.keys(ordered).length} sequences to ${outPath} and ${noteDir}/`,
 )

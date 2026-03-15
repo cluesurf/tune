@@ -1,0 +1,686 @@
+term,meaning
+min,not know
+miq,motion
+mid,positive
+mit,meet
+mis,miss (longing)
+miv,idea
+mix,network
+mir,bright
+men,main
+meq,mine
+mek,make
+mes,month
+mej,model
+mam,mother
+man,mind
+maq,harmony
+mag,fruit
+mad,middle
+mab,source
+map,map (map/reduce)
+mat,forward
+mak,meat
+maf,male
+mav,many
+maz,flow (speech utterance)
+maj,magenta
+mac,great
+mal,molecule
+mar,symbol
+moq,about/encompass
+mog,meaning
+mod,mode
+mop,twelve
+mot,mountain
+mok,align
+moz,hash
+moj,emerge
+mox,immutable
+mol,high
+mor,the model of the action (e.g. the transform)
+mun,gut sense
+muq,mmm
+mug,(past particle)
+mud,mood
+mut,mutate
+muk,earth (dirt)
+mus,mercy
+muv,move
+muz,pain
+muj,message
+muc,mouth
+mul,unreal
+niq,omniscient
+nid,need
+nik,pink
+nif,a (isolated-element-focus)
+niz,nest (structure)
+nix,listen
+nir,nerd
+ned,static
+nep,nature
+net,knit
+nek,neck
+nes,nice
+nev,off
+nam,name
+nan,negate
+nak,knock
+nas,nest
+nav,center
+naz,as
+nal,neutral
+nar,person
+non,not (un- or -im)
+nop,no
+not,note
+noz,nose
+nox,notion
+nol,toward
+num,know
+nuq,bond
+nub,separate
+nuv,empty
+nuz,distribute
+nuj,hell
+nuc,long
+nul,forget
+gim,magic
+gin,sync
+gib,guide
+git,infinite
+gik,user
+gis,will (future)
+gif,give
+giz,position
+gir,that
+gem,game
+gan,garden
+gag,child
+gad,god
+gab,eat
+gav,how (missing-action-focus)
+gaz,possess
+gaC,gather
+gal,too
+gar,language
+goq,job
+god,gold
+got,antenna
+gol,goal
+gum,come
+gun,representation
+gub,like (filler)
+gut,gut
+gus,back (front)
+guv,end
+guz,lose
+guj,memory
+gul,exponent
+dim,you
+dig,sine
+did,deed
+dib,connect
+dip,tree
+dis,number
+dif,define
+div,drive
+det,datetime stamp/instance in time
+dez,dynamic
+dej,orange
+dam,morality
+dan,the
+dag,dog
+dad,content
+dat,word
+dak,physical
+das,understand
+daf,previous
+dav,divine
+dac,death
+dal,matter (physics)
+dom,state
+dob,two
+doz,here
+dor,door
+dum,negative
+dun,join (to one)
+dug,drink
+dud,friend
+dub,aware
+duk,minute
+dus,reduce
+duz,do
+dux,condition (general state)
+dul,delete
+bim,target
+biq,being
+big,go
+bid,ignorant
+bib,we
+bip,output
+bit,beat
+biz,intense
+bil,limit/restrict
+beq,bang
+bed,bite
+beb,baby
+bet,under
+bes,base
+bam,create
+ban,together/bind
+baq,be
+bag,insect
+bad,tangent (math)
+bab,father
+bat,beauty
+bak,send
+bax,bird
+baC,by
+bar,bear (carry)
+bot,boat
+bos,possessive plural
+bov,debug
+boz,private
+bor,condition (case)
+bum,boom
+bug,cosine
+bud,awake
+bub,boob
+bup,energy
+but,unstable
+buz,bosom
+bux,bundle (matter condensing)
+bul,blue
+pim,permeate
+piq,request
+pip,individual
+pit,pure
+pik,master
+pem,they (communicating-agent-external-reference-focus)
+peq,pay
+pam,pray
+pan,yes
+paq,response
+pat,dimension
+pak,package
+pas,space
+pac,path
+par,depart/from
+pom,different
+pod,free
+pop,property (of object)
+pot,honorific (address)
+por,poor
+pum,time (count)
+pul,pull
+tim,team
+tin,between
+tiq,mental experience
+tip,step
+tiv,conscious
+tiz,ellipse
+tix,tingle
+tic,fourteen
+tir,TRUE
+ten,tan (color)
+teq,like (as if)
+tet,signal
+tek,take
+tef,left
+tam,meditate
+taq,tongue
+tad,tail
+tab,stable
+tat,sibling
+tak,talk
+tas,test
+taf,good
+taj,down (to be cool with something)
+tac,set (get)
+tal,tell
+tar,tire (sleep)
+tom,atom
+ton,agent (one who does x)
+tod,term
+tok,structure
+tos,task
+toz,position (cardinal)
+tox,text
+tor,before
+tuq,type
+tub,tube
+tup,impure
+tuv,input (computing)
+tuz,because
+tux,intuition
+tuc,emotion
+tul,tool
+tur,turf
+kim,climb
+kiq,action
+kid,could
+kip,tune
+kik,kick
+kis,bottom
+kiv,intent
+kiz,if
+kix,process
+kil,cyan
+ken,communicate
+kep,clone
+ket,but
+kek,agree
+kes,case (situation)
+kam,calm
+kan,aggregate
+kaq,object
+kab,receive
+kat,focus
+kaf,cough
+kaz,cause
+kax,perfect
+kal,time
+kar,call
+kom,five
+kon,and
+kod,code
+kop,scope
+kok,disagree
+kof,default
+kov,cover
+koz,z-axis
+koj,fool
+kox,cell (biology)
+kol,all
+kum,back area
+kuq,manner
+kud,miss (didn't touch)
+kub,cube
+kup,tone
+kus,constant
+kuf,clue
+kuv,divide
+kul,cool (interjection)
+kur,down
+him,nothing
+hin,hi
+hid,not hidden
+hip,group
+hit,heat
+hik,hike
+his,snake
+hix,peach (color)
+hir,hear
+hem,hey
+heq,hang
+hek,hour
+hez,every
+ham,hmm
+han,zero
+had,head
+hap,event
+hat,at
+hak,hack (work)
+has,hyper
+haz,have
+hal,how
+har,era
+hom,home
+hoq,hold
+hod,period of x (-hood)
+hop,hope
+hok,okay
+hov,floating point
+hoz,cardinal number
+hol,whole
+hum,urge
+hun,illusion
+huq,uh
+hud,hide
+hub,x-axis
+hut,heed
+huk,hook
+huv,handle
+huz,duration
+sig,front
+sid,seed
+sip,asleep
+sit,medium
+sik,seek
+sif,purple
+siv,perceive
+siz,peace
+six,all encompasing thing
+siC,hush
+sil,more (-er)
+sem,same (sym-)
+sep,swipe
+sek,percept
+sef,continue
+sev,save
+sez,sir
+seC,etc.
+sam,sound
+san,sun
+saq,song
+sag,beyond (extra- or hyper-)
+sab,describe
+sap,present (now)
+sat,sight
+sas,parent
+sav,silver
+saz,emphasize
+saj,etc
+sax,wash
+sal,like (similar)
+sar,surf
+som,drug
+sog,reason
+sod,mystery
+sop,so/transition
+sok,around/surround
+sof,each
+soz,also
+sol,soul
+sor,file (computer)
+sub,I
+sup,above (super)/hover
+sut,store
+suk,top
+suf,self (auto-)
+suv,observe
+suC,three
+sul,still (time)
+sur,out
+fim,female
+fid,food
+fix,belief
+fil,feel
+fet,eight
+fek,fake
+fes,face
+fam,family
+fan,find
+fak,fuck
+faz,green
+fon,device
+fot,right (direction)
+fok,halt
+fos,else
+for,fire
+fun,wind (air)
+fuq,function
+fug,figure (it out)
+fup,borrow
+fut,bad
+fus,discontinuous
+fuz,fusion
+fuj,refuge
+ful,fuel
+fur,fail
+vim,way/style
+vin,fill (-full)
+viq,everything
+vig,start
+vid,veer
+vip,six
+vit,information
+vis,see
+vix,preserve
+vic,bit
+vil,manifest
+vir,remote (far)
+ved,study or science of (-ology)
+veb,byte
+vek,filter
+ves,vessel
+vex,reveal
+van,having the nature of (-ivity)
+vab,vibe
+vat,body
+vak,multiply
+vas,aspect
+vav,repeat
+vax,it
+val,value
+var,variable
+von,sin
+vog,black
+vod,void
+vot,vote
+vov,axis
+voz,voice
+vun,on
+vuq,foundation
+vus,flex
+vuc,catch
+vul,via
+zim,pleasure
+zin,decision
+ziq,zing
+zig,gain
+zip,graph
+zil,perspective
+zir,pertaining to x (pleasantry)
+zem,plasma (matter)
+zet,olive (color)
+zan,one
+zaq,presence
+zab,public
+zap,zap
+zak,effect
+zaf,equal (iso-)
+zav,lie
+zar,vowel
+zom,so/great
+zon,zone
+zok,try
+zox,sense
+zum,zoom
+zub,absorb
+zut,identity
+zuk,where
+zus,experience
+zuz,converse (talk)
+zul,animal
+zur,fall
+jin,paradise
+jit,digit
+jil,stream
+jet,throw
+jan,spirit
+jaq,count
+jak,wisdom
+jas,just (close-focus)
+jom,pattern
+jul,flow
+xim,speech
+xin,machine
+xiq,will
+xid,grey
+xip,imagine
+xit,provide
+xik,computation
+xiv,destroy
+xic,eye
+xen,result
+xed,should
+xam,heaven
+xab,seven
+xat,or
+xax,eternal
+xal,share
+xom,now
+xok,copy
+xol,show
+xum,sky
+xun,change
+xud,quiet
+xup,ship
+xut,shelter
+xuv,return
+xul,subtract
+ciq,thing (hatchling)
+cit,get
+cam,then
+cad,life
+cat,mud
+cak,thank
+cok,spec
+cov,brown
+cub,torture
+cuk,eleven
+cuv,field (ether)
+cux,key
+Ciz,kaledoscope
+Cev,without
+Can,than/compare
+Cas,thus
+Car,other
+Con,transition
+Cog,though/regard
+Coz,except
+,when (time location)
+,kaleidoscope
+,inverse
+,neighborhood (math)
+,solve
+,wait
+,wave
+,fifteen
+,why
+,um
+,white
+,walk
+,exist
+,water
+,while
+,wear
+,well (good)
+,problem
+,wow
+,forceful (like hard hit)
+,womb
+,woo
+,emanate
+,what
+,system
+lin,learn
+liq,simulate
+lig,square root
+lid,lead
+lip,chain
+lit,light
+lik,link
+lif,leaf
+lij,orient
+lil,boolean
+lem,low
+lep,push
+lek,collect
+les,air
+leC,point
+lam,real
+lan,land
+laq,object feature type
+lag,organ (body)
+lad,yellow
+lak,like
+laf,four
+lav,love
+laz,very much of (-some)
+lax,add
+lal,y-axis
+lom,plural (many)
+lon,loan
+log,glimmer
+lod,load
+lob,error
+lot,lot (land)
+lok,place (space location)
+los,less of (-less) empty
+lox,string (computing)
+lor,lord
+lum,branch
+lun,moon
+luq,question
+lup,loop
+luk,look
+luf,far (large-distance-focus)
+luj,logic
+rin,run
+rid,read
+rib,ribbit
+rip,rich
+rit,soil
+rik,up
+ris,express
+rif,close (near)
+riv,to/arrive
+riz,rise
+ric,straight
+riC,algorithm
+ril,relation
+ren,rain
+reg,edit
+red,red
+ret,after
+ref,success
+rex,array
+reC,progress
+ram,dark
+ran,frog
+raq,wrong
+rab,ride
+rap,wrap
+rat,write
+rak,rock
+ras,in
+raf,reference
+rav,particle
+raz,resonate
+raj,range
+raC,rhythm
+ral,raw
+rar,rare
+ron,environment
+rog,thirteen
+rot,FALSE
+ros,force
+rov,copper
+roz,rose
+rol,cycle
+rum,realm
+run,glyph
+rug,this
+rud,update
+rub,logarithm
+rup,right (time)
+ruk,location
+ruv,local
+ruz,consonant
+rul,rule (in system)
+yiq,impermanent
+yit,night
+yix,something
+yem,yum (food)
+yev,sort
+yam,day
+yan,vehicle
+yaq,permanent
+yad,away
+yap,yep
+yat,way
+yaj,measure
+yal,turquoise
+yar,year
+yog,practice of focusing on x (-ism)
+yov,of
+yol,yell
+yut,yet
+yuv,view
+yuz,use
+yuc,with (con-)
+yul,polynomial

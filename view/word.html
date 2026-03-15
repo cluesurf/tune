@@ -70,20 +70,27 @@
         font-weight: 600;
         color: #4b5563;
       }
+      .wrap {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
-    <h1>Tune Dictionary</h1>
+    <div class="wrap" id="wrap">
+      <h1>Tune Dictionary</h1>
+    </div>
     <script src="word.js"></script>
     <script>
+      const wrap = document.getElementById('wrap')
       for (const [seq, words] of Object.entries(LIST)) {
         const h2 = document.createElement('h2')
         h2.textContent = seq
-        document.body.appendChild(h2)
+        wrap.appendChild(h2)
 
         const grid = document.createElement('div')
         grid.className = 'grid'
-        document.body.appendChild(grid)
+        wrap.appendChild(grid)
 
         for (const [term, meaning] of Object.entries(words)) {
           const card = document.createElement('div')
