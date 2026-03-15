@@ -191,12 +191,61 @@ function buildWeightedPicker(items: string[], weights: Record<string, number>): 
 const pickVowel = buildWeightedPicker(vowels, vowelWeights)
 const pickConsonant = buildWeightedPicker(consonants, consonantWeights)
 
+// Inverse vowel weights for replacement priority (lower weight = more likely to be replaced)
+const vowelReplacePriority: Record<string, number> = {}
+const maxVowelWeight = Math.max(...vowels.map(v => vowelWeights[v]))
+for (const v of vowels) {
+  vowelReplacePriority[v] = maxVowelWeight - vowelWeights[v] + 0.1
+}
+
+// Slot weights: position 1 (v1) = 1, position 3 (v2) = 1.34, position 5 (v3) = 2
+const slotWeights = [1, 1.34, 2]
+
+function ensureA(chars: string[]): void {
+  if (chars[1] === 'a' || chars[3] === 'a' || chars[5] === 'a') return
+
+  // Group vowel slots by their vowel value
+  const slotsByVowel = new Map<string, number[]>()
+  for (const si of [0, 1, 2]) {
+    const vi = si * 2 + 1 // vowel positions: 1, 3, 5
+    const ch = chars[vi]
+    if (!slotsByVowel.has(ch)) slotsByVowel.set(ch, [])
+    slotsByVowel.get(ch)!.push(si)
+  }
+
+  // Build weighted candidates: weight = replacePriority * slotWeight
+  // For duplicate vowels, slot weight depends on count: [1, 1.34, 2]
+  const candidates: { pos: number; weight: number }[] = []
+  for (const [ch, slots] of slotsByVowel) {
+    const priority = vowelReplacePriority[ch]
+    for (let idx = 0; idx < slots.length; idx++) {
+      const sw = slotWeights[idx]
+      candidates.push({ pos: slots[idx] * 2 + 1, weight: priority * sw })
+    }
+  }
+
+  // Weighted pick
+  let total = 0
+  for (const c of candidates) total += c.weight
+  let r = Math.random() * total
+  for (const c of candidates) {
+    r -= c.weight
+    if (r <= 0) {
+      chars[c.pos] = 'a'
+      return
+    }
+  }
+  chars[candidates[candidates.length - 1].pos] = 'a'
+}
+
 // Generate CVCVCVC words via weighted random sampling
 const allWords = new Set<string>()
 const TARGET = 50000
 
 while (allWords.size < TARGET) {
-  const word = pickConsonant() + pickVowel() + pickConsonant() + pickVowel() + pickConsonant() + pickVowel() + pickConsonant()
+  const chars = [pickConsonant(), pickVowel(), pickConsonant(), pickVowel(), pickConsonant(), pickVowel(), pickConsonant()]
+  ensureA(chars)
+  const word = chars.join('')
   if (validWord(word)) allWords.add(word)
 }
 
