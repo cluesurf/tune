@@ -1,20 +1,68 @@
-           	miq       	motion
-           	mid       	positive
-           	mik       	meet
            	mis
            	miv
            	mir
-           	men       	main
            	meq
-           	mek       	make
            	mes
            	mej
-           	mam       	mother
            	mad
            	mab
             suz         source
            	map
            	mak
+           	mol
+           	mud
+           	mut
+           	muk
+           	mus
+body       	muc
+           	nir
+           	net
+           	nek
+           	nes
+           	naq
+           	nak
+           	nas
+           	giz
+           	gop
+body       	gut
+           	bod
+           	vor
+            moc         mouth
+           	vus
+           	zin
+           	ziq
+           	zig
+           	zab
+           	zap
+           	zav
+           	zum
+           	zub
+           	zuz
+            Cad         white
+           	xit
+           	xen
+           	xal
+           	xok
+           	xut
+           	xut
+           	cak
+code       	cok
+           	cub
+           	liq
+            sim         simulate
+           	log
+           	rip
+           	reg
+           	rad         ride
+           	rap
+           	yol
+math       	yul
+           	miq       	motion
+           	mid       	positive
+           	mik       	meet
+           	men       	main
+           	mek       	make
+           	mam       	mother
            	maf       	male/man
 color      	maj       	magenta
            	moq       	about/encompass
@@ -22,29 +70,16 @@ number     	mop       	twelve
            	mok       	align
 code       	hax       	hash
            	mox       	immutable
-           	mol
            	mun       	gut sense
            	muq       	mmm
            	zum       	(past particle)
-           	mud
-           	mut
-           	muk
-           	mus
-body       	muc
            	mul       	unreal
            	niq       	omniscient
            	nid       	need
            	nik       	pink
            	nos       	nest (recursion)
-           	nir
-           	net
-           	nek
-           	nes
            	nev       	off
            	nen       	negate
-           	naq
-           	nak
-           	nas
            	niz       	as
            	nal       	neutral
            	nop       	no
@@ -63,7 +98,6 @@ x          	nub       	separate
            	gib       	guide
            	git       	infinite
            	gik       	user
-           	giz
            	gir       	that
            	gem       	game
            	gan       	garden
@@ -74,12 +108,10 @@ x          	nub       	separate
            	gar       	language
            	gaC       	gather
            	goq       	job
-           	gop
            	got       	antenna
            	gol       	goal
            	gum       	come
            	gub       	like (filler)
-body       	gut
            	guv       	end
            	guz       	lose
 math       	gul       	exponent
@@ -121,7 +153,6 @@ math       	bad       	tangent (math)
            	bab       	father
            	bat       	beauty
            	baC       	by
-           	bod
            	bos       	possessive plural
 code       	bov       	debug
            	boz       	private
@@ -297,62 +328,38 @@ code       	veb       	byte
            	vod       	void
            	vot       	vote
            	vov       	axis
-           	vor
-            moc         mouth
            	vun       	on
            	vuq       	foundation
-           	vus
            	vuc       	catch
            	vul       	via
-           	zin
-           	ziq
-           	zig
            	zip       	graph
            	zil       	perspective
            	zir       	pertaining to x (pleasantry)
 color      	zet       	olive (color)
-           	zab
-           	zap
-           	zav
            	zar       	vowel
            	zon       	zone
            	zok       	try
            	zox       	sense
-           	zum
-           	zub
            	zuk       	where
            	zus       	experience
-           	zuz
            	zur       	fall
            	jin       	paradise
            	jit       	digit
-            Cad         white
            	jat       	throw
            	jaq       	count
            	jas       	just (close-focus)
            	jul       	flow
 color      	xid       	gray
            	xip       	imagine
-           	xit
 code       	xik       	computation
-           	xen
            	xed       	should
 number     	xab       	seven
-           	xal
-           	xok
            	xud       	quiet
-           	xut
-           	xut
            	xul       	subtract
            	cet       	get
            	xaq       	life
-           	cak
-code       	cok
-           	cub
 number     	cuk       	eleven
 code       	cux       	key
-           	liq
-            sim         simulate
            	lid       	lead
            	lij       	orient
 code       	bun       	boolean
@@ -367,7 +374,6 @@ code       	bun       	boolean
            	lax       	add
            	lal       	y-axis
            	lon       	loan
-           	log
            	lod       	load
            	lof       	error
            	lot       	lot (land)
@@ -378,19 +384,15 @@ code       	lup       	loop
            	luj       	logic
            	rin       	run
            	rid       	read
-           	rip
            	xis       	express
            	riv       	to/arrive
            	riz       	rise
            	ral       	relation
 code       	roc       	algorithm
-           	reg
            	ref       	success
 code       	rex       	array
            	reC       	progress
            	raq       	wrong
-           	rad         ride
-           	rap
            	rat       	write
            	ras       	in
            	raf       	reference
@@ -416,11 +418,9 @@ sound      	ruz       	consonant
 color      	yal       	turquoise
            	yog       	practice of focusing on x
            	yov       	of
-           	yol
            	yut       	yet
            	yuv       	view
            	yuc       	with (con-)
-math       	yul
            	Ciz       	kaledoscope
            	Cev       	without
            	Con       	than/compare
