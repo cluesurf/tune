@@ -135,7 +135,7 @@ Compose 2-3 root syllables into compound words. At each join point, the coda of 
 - `wa` sequence is reserved for tier-3 word joining, not used in compact joins
 - Candidates scored by phoneme preservation, cluster ease, and word length
 
-Because of this joining logic, it's actually deterministic, so there's a map from source joinng cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
+Because of this joining logic, it's actually deterministic, so there's a map from source joining cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
 
 ## Code Library
 
