@@ -106,8 +106,8 @@ These are the allowed _base_ word patterns for the foreseeable future:
 | 1         | 3          | `CVC`             |        ~700 |          1,805 |
 | 1         | 4          | `CCVC` and `CVCC` |        ~700 |          6,460 |
 | 2         | 5          | `CVCVC`           |      ~2,000 |        171,475 |
-| 3         | 7          | `CVCVCVC`         |     ~50,000 |     16,290,125 |
-|           |            | **total**         | **~54,000** | **16,469,865** |
+| 3         | 7          | `CVCVCVC`         |     ~47,000 |     16,290,125 |
+|           |            | **total**         | **~50,000** | **16,469,865** |
 
 The reason for the estimated/theoretical difference: theoretical is the
 mathematical number of possible combinations given the 22 consonants and
@@ -124,7 +124,7 @@ at join points, hard to reverse-engineer fully, but that's okay, not a
 major goal or need, just kind of neat to realize what a joined word is
 composed of sometimes, like when you know a word's etymology).
 
-**Bottom line**: Since there's **~54k** possible base words, that should
+**Bottom line**: Since there's **~50k** possible base words, that should
 cover most stuff. Everything else can be compound words.
 
 ### Word Joining Rules
