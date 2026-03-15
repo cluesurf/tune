@@ -163,13 +163,7 @@ Each candidate has:
 - **junctions** - consonant clusters at each join point
 - **score** - quality score (higher is better)
 
-**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable while keeping at least 2 consonants.
-
-**Geminate handling.** When the same consonant (or confusable pair) meets at a join point, a separator is inserted:
-- Voiced stops/nasals (`nn, mm, bb, dd, gg`) get `z` (e.g. `man + nak` -> `manznak`)
-- Voiceless stops (`pp, tt, kk`) get `s` (e.g. `hit + tos` -> `hitstos`)
-- Sibilants (`ss, zz, jj, xx` and cross-pairs like `s+z, j+x`) get `l`
-- Dentals (`cc, CC` and cross-pairs like `c+C`) get `l`
+**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable as described in the joining section above.
 
 **Regenerate cluster mappings:**
 
