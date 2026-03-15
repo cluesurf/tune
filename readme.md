@@ -83,11 +83,14 @@
 
 (vowels are like spanish `i e a o u` sounds).
 
-## Word Selection Rules
+## Word Rules
 
 - `w` is reserved for joining words beyond the "compact" 2-3 word joining method, used as `-wa-`, so `w` is not used anywhere else in words.
 - `y` and `h` can only appear at the beginning of words.
 - `q` can only appear in the middle or end of words, so not at the beginning.
+- For multi-syllable words, emphasis is on last vowel.
+
+## Word Selection Rules
 
 ### 5-letter words (CVCVC)
 
