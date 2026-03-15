@@ -128,12 +128,14 @@ Compose 2-3 root syllables into compound words. At each join point, the coda of 
 - **Assimilation**: voicing pairs merge (`d`+`t` -> `t`), geminates collapse (`nn` -> `n`), stop+nasal drops the stop
 - **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
 - **Geminate separator**: when same or confusable consonants meet at the join:
-  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted
-  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted
-  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted
-  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted
+  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted (e.g. `man` + `nak` -> `manznak`)
+  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted (e.g. `hit` + `tos` -> `hitstos`)
+  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted (e.g. `bas` + `sim` -> `baslsim`)
+  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted (e.g. `tac` + `cob` -> `taclcob`)
 - `wa` sequence is reserved for tier-3 word joining, not used in compact joins
 - Candidates scored by phoneme preservation, cluster ease, and word length
+
+Because of this joining logic, it's actually deterministic, so there's a map from source joinng cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
 
 ## Code Library
 
