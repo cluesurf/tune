@@ -94,8 +94,9 @@ const CODA_CLUSTERS = new Set(
 function validWord(word: string): boolean {
   if (noEnd.has(word[word.length - 1])) return false
   if (word.includes('w')) return false
-  const tail = word.slice(-2)
-  if (badTails.has(tail)) return false
+  for (let i = 0; i < word.length - 1; i++) {
+    if (badTails.has(word[i] + word[i + 1])) return false
+  }
 
   const pattern = getPattern(word)
   if (pattern === 'CCVC') {

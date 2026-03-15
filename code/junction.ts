@@ -329,7 +329,13 @@ export function resolveJunction(input: {
    */
   if (coda.length > 0 && onset.length > 0) {
     const codaLast = coda[coda.length - 1]
-    const onsetFirst = onset[0]
+    let onsetFirst = onset[0]
+
+    /**
+     * Treat onset 'h' as 's' for junction purposes.
+     * h is a weak fricative that behaves like s at join points.
+     */
+    if (onsetFirst === 'h') onsetFirst = 's'
 
     const SIBILANT_SET = new Set(['j', 'x', 's', 'z'])
     const DENTAL_SET = new Set(['c', 'C'])

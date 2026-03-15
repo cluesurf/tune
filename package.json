@@ -10,6 +10,7 @@
   },
   "version": "2.0.0",
   "devDependencies": {
+    "compromise": "^14.15.0",
     "csv-parse": "6.1.0",
     "marked": "17.0.2",
     "puppeteer": "24.37.3",
