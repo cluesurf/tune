@@ -56,30 +56,30 @@
 
 ## Sounds
 
-| symbol | sound gist |
-|:---:|:------|
-| m | "mark" |
-| n | "note" |
-| q | "sing", the -ng sound |
-| g | "gift" |
-| d | "deed" |
-| b | "band" |
-| p | "play" |
-| t | "time" |
-| k | "king" |
-| h | "heal" |
-| s | "soul" |
-| f | "fire" |
-| v | "vibe" |
-| z | "zone" |
-| j | "measure", the "s" sound here, "zh" |
-| x | "ship", the "sh" sound |
-| c | "thor", the voiceless "th" sound |
-| C | "this", the voiced "th" sound |
-| w | "wave" |
-| l | "love" |
-| r | "rise" but with spanish, arabic, or indian accent |
-| y | "yard" |
+| symbol | sound | note |
+|:---:|:------|:----|
+| m | `mark` | |
+| n | `note` | |
+| q | `sing` |  the -ng sound |
+| g | `gift` | |
+| d | `deed` | |
+| b | `band` | |
+| p | `play` | |
+| t | `time` | |
+| k | `king` | |
+| h | `heal` | |
+| s | `soul` | |
+| f | `fire` | |
+| v | `vibe` | |
+| z | `zone` | |
+| j | `measure` |  the "s" sound here, "zh" |
+| x | `ship` |  the "sh" sound |
+| c | `thor` |  the voiceless "th" sound |
+| C | `this` |  the voiced "th" sound |
+| w | `wave` | |
+| l | `love` | |
+| r | `rise` | but with spanish, arabic, or indian accent |
+| y | `yard` | |
 
 (vowels are like spanish `i e a o u` sounds).
 
