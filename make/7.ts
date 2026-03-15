@@ -102,7 +102,22 @@ const noStart = new Set(['q', 'w', 'y'])
 const noEnd = new Set(['h', 'w', 'y'])
 const badPairs = new Set(['er', 'el', 'ir', 'il'])
 const noRepeatC = new Set(['r', 'l', 'f', 'v', 'z', 'x', 'j', 'C', 'c', 's'])
-const sibilants = new Set(['s', 'z', 'c', 'C', 'j', 'x'])
+
+// Fricative voicing pairs: same pair blocked across vowels
+const fricativePairs: Record<string, string> = {
+  s: 'z', z: 's', f: 'v', v: 'f', c: 'C', C: 'c', j: 'x', x: 'j',
+}
+const voicedFricatives = new Set(['z', 'v', 'C', 'j'])
+const allFricatives = new Set(['s', 'z', 'f', 'v', 'c', 'C', 'j', 'x'])
+
+function badFricativePair(a: string, b: string): boolean {
+  if (!allFricatives.has(a) || !allFricatives.has(b)) return false
+  // Same pair (s/z, f/v, c/C, j/x): always blocked
+  if (a === b || fricativePairs[a] === b) return true
+  // Cross-pair: must match voicing
+  if (voicedFricatives.has(a) !== voicedFricatives.has(b)) return true
+  return false
+}
 
 function validWord(word: string): boolean {
   if (noStart.has(word[0])) return false
@@ -120,9 +135,9 @@ function validWord(word: string): boolean {
   for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
     if (word[a] === word[b] && noRepeatC.has(word[a])) return false
   }
-  // no consecutive sibilants across vowels
+  // no bad fricative pairs across vowels
   for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
-    if (sibilants.has(word[a]) && sibilants.has(word[b])) return false
+    if (badFricativePair(word[a], word[b])) return false
   }
   // no e-e, i-i, u-u across consonants in VCV sequences
   const noRepeatV = new Set(['e', 'i', 'u'])

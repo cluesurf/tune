@@ -100,7 +100,21 @@ function generateBlocked(word: string): string[] {
 const noStart = new Set(['q', 'w', 'y'])
 const noEnd = new Set(['h', 'w', 'y'])
 const badTails = new Set(['er', 'el', 'ir', 'il'])
-const sibilants = new Set(['s', 'z', 'c', 'C', 'j', 'x'])
+// Fricative voicing pairs: same pair blocked across vowels
+const fricativePairs: Record<string, string> = {
+  s: 'z', z: 's', f: 'v', v: 'f', c: 'C', C: 'c', j: 'x', x: 'j',
+}
+const voicedFricatives = new Set(['z', 'v', 'C', 'j'])
+const allFricatives = new Set(['s', 'z', 'f', 'v', 'c', 'C', 'j', 'x'])
+
+function badFricativePair(a: string, b: string): boolean {
+  if (!allFricatives.has(a) || !allFricatives.has(b)) return false
+  // Same pair (s/z, f/v, c/C, j/x): always blocked
+  if (a === b || fricativePairs[a] === b) return true
+  // Cross-pair: must match voicing
+  if (voicedFricatives.has(a) !== voicedFricatives.has(b)) return true
+  return false
+}
 
 function validWord(word: string): boolean {
   if (noStart.has(word[0])) return false
@@ -111,9 +125,9 @@ function validWord(word: string): boolean {
   for (let i = 1; i < word.length; i++) {
     if (word[i] === 'j') return false
   }
-  // no consecutive sibilants across vowels: (0,2), (2,4)
+  // no bad fricative pairs across vowels: (0,2), (2,4)
   for (const [a, b] of [[0, 2], [2, 4]] as const) {
-    if (sibilants.has(word[a]) && sibilants.has(word[b])) return false
+    if (badFricativePair(word[a], word[b])) return false
   }
   const xCount = word.split('').filter(ch => ch === 'x').length
   if (xCount > 1) return false // max 1 x per word
