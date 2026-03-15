@@ -193,7 +193,7 @@ Here are some examples of how joins may look in the end:
 | `6`       | `2`   | `14`       | `CVCVCVC` + `CVCVCVC` | <code>CVCVCV<strong>CC</strong>VCVCVC</code> |      2.5B |        265T |
 |           |       |            |                       | **total**                                    |   **~3B** |   **~270T** |
 
-_Note: this is just showing all the possible 2-word combinations, but
+_Note: This is just showing all the possible 2-word combinations, but
 there's *tons* of 3 word combinations in theory, so number gets large.
 Also, since we have that joining map simplification logic, the numbers
 might not be totally perfect, but they are reasonable ballparks._
