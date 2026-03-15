@@ -101,6 +101,7 @@ function generateBlocked(word: string): string[] {
 const noStart = new Set(['q', 'w', 'y'])
 const noEnd = new Set(['h', 'w', 'y'])
 const badPairs = new Set(['er', 'el', 'ir', 'il'])
+const noRepeatC = new Set(['r', 'l', 'f', 'v', 'z', 'x', 'j', 'C', 'c', 's'])
 
 function validWord(word: string): boolean {
   if (noStart.has(word[0])) return false
@@ -114,9 +115,18 @@ function validWord(word: string): boolean {
   for (let i = 0; i < word.length - 1; i++) {
     if (badPairs.has(word[i] + word[i + 1])) return false
   }
-  // max 1 x/j per word
-  const xjCount = word.split('').filter(ch => ch === 'x' || ch === 'j').length
-  if (xjCount > 1) return false
+  // no sequential duplicate consonants across vowels (e.g. no s_s in sasab)
+  // consonant pairs: (0,2), (2,4), (4,6)
+  for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
+    if (word[a] === word[b] && noRepeatC.has(word[a])) return false
+  }
+  // j only at start
+  for (let i = 1; i < word.length; i++) {
+    if (word[i] === 'j') return false
+  }
+  // max 1 x per word
+  const xCount = word.split('').filter(ch => ch === 'x').length
+  if (xCount > 1) return false
   // max 1 c/C per word
   const cCCount = word.split('').filter(ch => ch === 'c' || ch === 'C').length
   if (cCCount > 1) return false
@@ -236,7 +246,7 @@ console.log(`Rejection set size from existing: ${blockedSet.size}`)
 // Generate and filter CVCVCVC words via weighted random sampling
 const added: string[] = []
 const finalSet = new Set(existing)
-const TARGET = 100000
+const TARGET = 1000000
 let generated = 0
 let rejected = 0
 

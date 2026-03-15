@@ -36,46 +36,65 @@ function sameBroadGroup(a: string, b: string): boolean {
 }
 
 // CVCVC: positions 0=c1, 1=v1, 2=c2, 3=v2, 4=c3
-function tooClose(a: string, b: string): boolean {
-  if (a.length !== 5 || b.length !== 5) return false
+// Vowel positions and their neighboring consonant positions
+const vPositions = [1, 3]
+const vowelNeighborCs: Record<number, number[]> = {
+  1: [0, 2],
+  3: [2, 4],
+}
 
-  // Both must be CVCVC
+// Generate all words that would be "too close" to the given word
+function generateBlocked(word: string): string[] {
+  const chars = word.split('')
+  const blocked: string[] = []
+
+  // Rule 1: differ by exactly 1 position
   for (let i = 0; i < 5; i++) {
-    if (isVowel(a[i]) !== isVowel(b[i])) return false
+    const alts = isVowel(chars[i]) ? vowels : consonants
+    for (const alt of alts) {
+      if (alt === chars[i]) continue
+      const copy = [...chars]
+      copy[i] = alt
+      blocked.push(copy.join(''))
+    }
   }
-
-  // Count differences
-  const diffs: number[] = []
-  for (let i = 0; i < 5; i++) {
-    if (a[i] !== b[i]) diffs.push(i)
-  }
-
-  // Rule 1: differ by exactly 1 position → too close
-  if (diffs.length <= 1) return true
 
   // Rule 2: differ by exactly 2 positions (1 vowel + 1 neighboring consonant)
-  if (diffs.length === 2) {
-    const [d1, d2] = diffs
-    const d1IsV = isVowel(a[d1])
-    const d2IsV = isVowel(a[d2])
+  for (const vi of vPositions) {
+    const origV = chars[vi]
+    const origVIdx = vowelOrder.indexOf(origV)
 
-    // One vowel, one consonant
-    if (d1IsV !== d2IsV) {
-      const vi = d1IsV ? d1 : d2
-      const ci = d1IsV ? d2 : d1
+    for (const ci of vowelNeighborCs[vi]) {
+      const origC = chars[ci]
+      const origCGroup = broadMap.get(origC)!
 
-      const isNeighbor = Math.abs(vi - ci) === 1
-      if (isNeighbor) {
-        const vowelDist = Math.abs(vowelOrder.indexOf(a[vi]) - vowelOrder.indexOf(b[vi]))
-        // Vowel off by 1 → always too close
-        if (vowelDist <= 1) return true
-        // Vowel off by 2+ but consonant in same broad group → too close
-        if (sameBroadGroup(a[ci], b[ci])) return true
+      for (const altV of vowels) {
+        if (altV === origV) continue
+        const altVIdx = vowelOrder.indexOf(altV)
+        const vowelDist = Math.abs(origVIdx - altVIdx)
+
+        for (const altC of consonants) {
+          if (altC === origC) continue
+
+          let isBlocked = false
+          if (vowelDist <= 1) {
+            isBlocked = true
+          } else if (broadMap.get(altC) === origCGroup) {
+            isBlocked = true
+          }
+
+          if (isBlocked) {
+            const copy = [...chars]
+            copy[vi] = altV
+            copy[ci] = altC
+            blocked.push(copy.join(''))
+          }
+        }
       }
     }
   }
 
-  return false
+  return blocked
 }
 
 const noStart = new Set(['q', 'w', 'y'])
@@ -87,8 +106,12 @@ function validWord(word: string): boolean {
   if (noEnd.has(word[word.length - 1])) return false
   if (word.includes('w')) return false
   if (word[2] === 'h' || word[2] === 'y' || word[2] === 'q') return false // no h/y/q in center consonant
-  const xjCount = word.split('').filter(ch => ch === 'x' || ch === 'j').length
-  if (xjCount > 1) return false // max 1 x/j per word
+  // j only at start
+  for (let i = 1; i < word.length; i++) {
+    if (word[i] === 'j') return false
+  }
+  const xCount = word.split('').filter(ch => ch === 'x').length
+  if (xCount > 1) return false // max 1 x per word
   const cCCount = word.split('').filter(ch => ch === 'c' || ch === 'C').length
   if (cCCount > 1) return false // max 1 c/C per word
   const tail = word.slice(-2)
@@ -133,35 +156,34 @@ for (const c1 of consonants) {
   }
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[arr[i], arr[j]] = [arr[j], arr[i]]
-  }
-  return arr
+// Shuffle
+for (let i = allWords.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1))
+  ;[allWords[i], allWords[j]] = [allWords[j], allWords[i]]
 }
 
-shuffle(allWords)
+// Build rejection set from existing words
+const blockedSet = new Set<string>()
+for (const word of existing) {
+  if (word.length === 5) {
+    blockedSet.add(word)
+    for (const b of generateBlocked(word)) blockedSet.add(b)
+  }
+}
+
+console.log(`Rejection set size from existing: ${blockedSet.size}`)
 
 // Filter candidates
 const added: string[] = []
 const finalSet = new Set(existing)
 
 for (const candidate of allWords) {
-  if (finalSet.has(candidate)) continue
+  if (blockedSet.has(candidate)) continue
 
-  let close = false
-  for (const word of finalSet) {
-    if (tooClose(candidate, word)) {
-      close = true
-      break
-    }
-  }
-
-  if (!close) {
-    added.push(candidate)
-    finalSet.add(candidate)
-  }
+  added.push(candidate)
+  finalSet.add(candidate)
+  blockedSet.add(candidate)
+  for (const b of generateBlocked(candidate)) blockedSet.add(b)
 }
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])

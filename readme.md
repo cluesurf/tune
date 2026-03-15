@@ -83,6 +83,37 @@
 
 (vowels are like spanish `i e a o u` sounds).
 
+## Word Selection Rules
+
+- `w` is reserved for joining words beyond the "compact" 2-3 word joining method, used as `-wa-`, so `w` is not used anywhere else in words.
+- `y` and `h` can only appear at the beginning of words.
+- `q` can only appear in the middle or end of words, so not at the beginning.
+
+### 5-letter words (CVCVC)
+
+- No `w` anywhere
+- No `q`, `w`, `y` at start
+- No `h`, `w`, `y` at end
+- No `h`, `y`, `q` in center consonant (position 2)
+- No `el`, `er`, `il`, `ir` sequences anywhere
+- `j` only at start of word
+- Max 1 `x` per word
+- Max 1 `c`/`C` per word
+- **Too close** if words differ by 1 position
+- **Too close** if words differ by 1 vowel + 1 neighboring consonant, and vowel is off by 1 notch (`ieaou` order)
+- **Too close** if words differ by 1 vowel + 1 neighboring consonant, vowel off by 2+, but consonant stays in the same broad group:
+  - Stops/nasals: `b m p n q d g t k`
+  - Fricatives: `h s f v z x j c C`
+  - Liquids: `l r`
+
+### 7-letter words (CVCVCVC)
+
+- All 5-letter rules above, plus:
+- No `h`, `y`, `q` in interior consonants (positions 2, 4)
+- No sequential same consonant across vowels (positions 0-2, 2-4, 4-6) for `r l f v z x j C c s`
+- Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
+- Every word guaranteed at least one `a`
+
 ## Code Library
 
 ### Word Composition
