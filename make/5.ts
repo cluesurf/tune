@@ -100,6 +100,7 @@ function generateBlocked(word: string): string[] {
 const noStart = new Set(['q', 'w', 'y'])
 const noEnd = new Set(['h', 'w', 'y'])
 const badTails = new Set(['er', 'el', 'ir', 'il'])
+const sibilants = new Set(['s', 'z', 'c', 'C', 'j', 'x'])
 
 function validWord(word: string): boolean {
   if (noStart.has(word[0])) return false
@@ -109,6 +110,10 @@ function validWord(word: string): boolean {
   // j only at start
   for (let i = 1; i < word.length; i++) {
     if (word[i] === 'j') return false
+  }
+  // no consecutive sibilants across vowels: (0,2), (2,4)
+  for (const [a, b] of [[0, 2], [2, 4]] as const) {
+    if (sibilants.has(word[a]) && sibilants.has(word[b])) return false
   }
   const xCount = word.split('').filter(ch => ch === 'x').length
   if (xCount > 1) return false // max 1 x per word
@@ -185,6 +190,15 @@ for (const candidate of allWords) {
   blockedSet.add(candidate)
   for (const b of generateBlocked(candidate)) blockedSet.add(b)
 }
+
+// Sort: regular words first, then j words, then c words, then C words
+function sortRank(word: string): number {
+  if (word.includes('C')) return 3
+  if (word.includes('c')) return 2
+  if (word.includes('j')) return 1
+  return 0
+}
+added.sort((a, b) => sortRank(a) - sortRank(b))
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])
 const filteredInitial = initialRaw.filter(t => !excludeSet.has(t))

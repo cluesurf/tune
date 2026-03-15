@@ -97,6 +97,7 @@
 - No `h`, `y`, `q` in center consonant (position 2)
 - No `el`, `er`, `il`, `ir` sequences anywhere
 - `j` only at start of word
+- No consecutive sibilants (`s z c C j x`) across vowels in CVC sequences
 - Max 1 `x` per word
 - Max 1 `c`/`C` per word
 - **Too close** if words differ by 1 position

@@ -102,6 +102,7 @@ const noStart = new Set(['q', 'w', 'y'])
 const noEnd = new Set(['h', 'w', 'y'])
 const badPairs = new Set(['er', 'el', 'ir', 'il'])
 const noRepeatC = new Set(['r', 'l', 'f', 'v', 'z', 'x', 'j', 'C', 'c', 's'])
+const sibilants = new Set(['s', 'z', 'c', 'C', 'j', 'x'])
 
 function validWord(word: string): boolean {
   if (noStart.has(word[0])) return false
@@ -115,10 +116,13 @@ function validWord(word: string): boolean {
   for (let i = 0; i < word.length - 1; i++) {
     if (badPairs.has(word[i] + word[i + 1])) return false
   }
-  // no sequential duplicate consonants across vowels (e.g. no s_s in sasab)
-  // consonant pairs: (0,2), (2,4), (4,6)
+  // no sequential duplicate consonants across vowels
   for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
     if (word[a] === word[b] && noRepeatC.has(word[a])) return false
+  }
+  // no consecutive sibilants across vowels
+  for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
+    if (sibilants.has(word[a]) && sibilants.has(word[b])) return false
   }
   // j only at start
   for (let i = 1; i < word.length; i++) {
@@ -246,7 +250,7 @@ console.log(`Rejection set size from existing: ${blockedSet.size}`)
 // Generate and filter CVCVCVC words via weighted random sampling
 const added: string[] = []
 const finalSet = new Set(existing)
-const TARGET = 1000000
+const TARGET = 2000000
 let generated = 0
 let rejected = 0
 
@@ -267,6 +271,19 @@ while (generated < TARGET) {
   blockedSet.add(word)
   for (const b of generateBlocked(word)) blockedSet.add(b)
 }
+
+// Sort with j/c/C words gradually increasing toward end
+// Exponent < 1 biases random() toward 1.0 (end of list)
+function sortKey(word: string): number {
+  if (word.includes('C')) return Math.random() ** 0.3
+  if (word.includes('c')) return Math.random() ** 0.4
+  if (word.includes('j')) return Math.random() ** 0.6
+  return Math.random()
+}
+const sortKeys = added.map(w => ({ w, k: sortKey(w) }))
+sortKeys.sort((a, b) => a.k - b.k)
+added.length = 0
+for (const { w } of sortKeys) added.push(w)
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])
 const filteredInitial = initialRaw.filter(t => !excludeSet.has(t))
