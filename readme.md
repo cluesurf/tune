@@ -90,7 +90,7 @@
 - `q` can only appear in the middle or end of words, so not at the beginning.
 - For multi-syllable words, emphasis is on last vowel.
 
-## Word Joining
+### Word Joining Rules
 
 Compose 2-3 root syllables into compound words. At each join point, the coda of word 1 meets the onset of word 2, forming a consonant cluster.
 
@@ -109,9 +109,9 @@ Compose 2-3 root syllables into compound words. At each join point, the coda of 
 
 Because of this joining logic, it's actually deterministic, so there's a map from source joining cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
 
-## Word Selection Rules
+### Word Selection Rules
 
-### 5-letter words (CVCVC)
+#### 5-letter words (CVCVC)
 
 - No `w` anywhere
 - No `q`, `w`, `y` at start
@@ -129,7 +129,7 @@ Because of this joining logic, it's actually deterministic, so there's a map fro
   - Fricatives: `h s f v z x j c C`
   - Liquids: `l r`
 
-### 7-letter words (CVCVCVC)
+#### 7-letter words (CVCVCVC)
 
 - All 5-letter rules above, plus:
 - No `h`, `y`, `q` in interior consonants (positions 2, 4)
