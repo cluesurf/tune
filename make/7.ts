@@ -124,6 +124,11 @@ function validWord(word: string): boolean {
   for (const [a, b] of [[0, 2], [2, 4], [4, 6]] as const) {
     if (sibilants.has(word[a]) && sibilants.has(word[b])) return false
   }
+  // no e-e, i-i, u-u across consonants in VCV sequences
+  const noRepeatV = new Set(['e', 'i', 'u'])
+  for (const [a, b] of [[1, 3], [3, 5]] as const) {
+    if (word[a] === word[b] && noRepeatV.has(word[a])) return false
+  }
   // j only at start
   for (let i = 1; i < word.length; i++) {
     if (word[i] === 'j') return false

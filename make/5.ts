@@ -191,14 +191,17 @@ for (const candidate of allWords) {
   for (const b of generateBlocked(candidate)) blockedSet.add(b)
 }
 
-// Sort: regular words first, then j words, then c words, then C words
-function sortRank(word: string): number {
-  if (word.includes('C')) return 3
-  if (word.includes('c')) return 2
-  if (word.includes('j')) return 1
-  return 0
+// Sort with j/c/C words gradually increasing toward end
+function sortKey(word: string): number {
+  if (word.includes('C')) return Math.random() ** 0.3
+  if (word.includes('c')) return Math.random() ** 0.4
+  if (word.includes('j')) return Math.random() ** 0.6
+  return Math.random()
 }
-added.sort((a, b) => sortRank(a) - sortRank(b))
+const sortKeys = added.map(w => ({ w, k: sortKey(w) }))
+sortKeys.sort((a, b) => a.k - b.k)
+added.length = 0
+for (const { w } of sortKeys) added.push(w)
 
 const excludeSet = new Set([...tsvTerms, ...doneTerms])
 const filteredInitial = initialRaw.filter(t => !excludeSet.has(t))
