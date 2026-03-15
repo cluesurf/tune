@@ -54,6 +54,46 @@
 <br/>
 <br/>
 
+## Word Composition
+
+Compose 2-3 root syllables into coined words. Each root can be a single syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions between roots always have at least 2 consonants.
+
+```ts
+import { composeWordCandidates } from './code/compose'
+
+const candidates = composeWordCandidates(['hit', 'mot'])
+// Returns ranked candidates like:
+// [{ word: 'hitmot', pattern: '...', junctions: ['tm'], score: 0.85 }, ...]
+
+// 3 roots
+composeWordCandidates(['hit', 'mot', 'raz'])
+
+// Multi-syllable roots
+composeWordCandidates(['malik', 'tos'])
+```
+
+Each candidate has:
+- **word** - the composed word
+- **pattern** - structural pattern label
+- **junctions** - consonant clusters at each join point
+- **score** - quality score (higher is better)
+
+**Junction rules.** When two roots meet, the coda of the first and onset of the second form a consonant cluster. This cluster gets simplified to something pronounceable while keeping at least 2 consonants.
+
+**Geminate handling.** When the same consonant (or confusable pair) meets at a join point, a separator is inserted:
+- Voiced stops/nasals (`nn, mm, bb, dd, gg`) get `z` (e.g. `man + nak` -> `manznak`)
+- Voiceless stops (`pp, tt, kk`) get `s` (e.g. `hit + tos` -> `hitstos`)
+- Sibilants (`ss, zz, jj, xx` and cross-pairs like `s+z, j+x`) get `l`
+- Dentals (`cc, CC` and cross-pairs like `c+C`) get `l`
+
+**Regenerate cluster mappings:**
+
+```sh
+npx tsx deck/tune/make/sounds.ts
+```
+
+Output goes to `deck/tune/text/`.
+
 ## Summary
 
 _Note: Tune is just in the prototype phases right now. Check out the
