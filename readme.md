@@ -118,6 +118,23 @@
 - Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
 - Every word guaranteed at least one `a`
 
+## Word Joining
+
+Compose 2-3 root syllables into compound words. At each join point, the coda of word 1 meets the onset of word 2, forming a consonant cluster.
+
+- Junction must have at least 2 consonants (CC minimum)
+- Resolution priority: keep intact > overlap > onset/coda match > mapped > assimilated > partial drop > geminate
+- **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
+- **Assimilation**: voicing pairs merge (`d`+`t` -> `t`), geminates collapse (`nn` -> `n`), stop+nasal drops the stop
+- **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
+- **Geminate separator**: when same or confusable consonants meet at the join:
+  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted
+  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted
+  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted
+  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted
+- `wa` sequence is reserved for tier-3 word joining, not used in compact joins
+- Candidates scored by phoneme preservation, cluster ease, and word length
+
 ## Code Library
 
 ### Word Composition
