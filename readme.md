@@ -107,7 +107,7 @@ These are the allowed _base_ word patterns for the foreseeable future:
 | `1`       | `4`        | `CCVC` and `CVCC` |      ~700 |       6,460 |
 | `2`       | `5`        | `CVCVC`           |    ~2,000 |     171,475 |
 | `3`       | `7`        | `CVCVCVC`         |   ~50,000 |  16,290,125 |
-|           |            | **total**         | **~53,400** | **16,469,865** |
+|           |            | **total**         | **~54,000** | **16,469,865** |
 
 The reason for the estimated/theoretical difference: theoretical is the mathematical number of possible combinations given the 22 consonants and 5 vowels in those patterns, but the estimated is a much smaller set mostly because of the rules put in place to filter out words that sound similar or have hard/undesirable pronunciations.
 
