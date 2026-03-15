@@ -90,6 +90,25 @@
 - `q` can only appear in the middle or end of words, so not at the beginning.
 - For multi-syllable words, emphasis is on last vowel.
 
+## Word Joining
+
+Compose 2-3 root syllables into compound words. At each join point, the coda of word 1 meets the onset of word 2, forming a consonant cluster.
+
+- Junction must have at least 2 consonants (CC minimum)
+- Resolution priority: keep intact > overlap > onset/coda match > mapped > assimilated > partial drop > geminate
+- **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
+- **Assimilation**: voicing pairs merge (`d`+`t` -> `t`), geminates collapse (`nn` -> `n`), stop+nasal drops the stop
+- **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
+- **Geminate separator**: when same or confusable consonants meet at the join:
+  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted (e.g. `man` + `nak` -> `manznak`)
+  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted (e.g. `hit` + `tos` -> `hitstos`)
+  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted (e.g. `bas` + `sim` -> `baslsim`)
+  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted (e.g. `tac` + `cob` -> `taclcob`)
+- `wa` sequence is reserved for tier-3 word joining, not used in compact joins
+- Candidates scored by phoneme preservation, cluster ease, and word length
+
+Because of this joining logic, it's actually deterministic, so there's a map from source joining cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
+
 ## Word Selection Rules
 
 ### 5-letter words (CVCVC)
@@ -117,25 +136,6 @@
 - No sequential same consonant across vowels (positions 0-2, 2-4, 4-6) for `r l f v z x j C c s`
 - Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
 - Every word guaranteed at least one `a`
-
-## Word Joining
-
-Compose 2-3 root syllables into compound words. At each join point, the coda of word 1 meets the onset of word 2, forming a consonant cluster.
-
-- Junction must have at least 2 consonants (CC minimum)
-- Resolution priority: keep intact > overlap > onset/coda match > mapped > assimilated > partial drop > geminate
-- **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
-- **Assimilation**: voicing pairs merge (`d`+`t` -> `t`), geminates collapse (`nn` -> `n`), stop+nasal drops the stop
-- **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
-- **Geminate separator**: when same or confusable consonants meet at the join:
-  - Voiced stops/nasals (`nn`, `mm`, `bb`, `dd`, `gg`) get `z` inserted (e.g. `man` + `nak` -> `manznak`)
-  - Voiceless stops (`pp`, `tt`, `kk`) get `s` inserted (e.g. `hit` + `tos` -> `hitstos`)
-  - Sibilants (`ss`, `zz`, `jj`, `xx`, or cross-pairs like `s`+`z`) get `l` inserted (e.g. `bas` + `sim` -> `baslsim`)
-  - Dentals (`cc`, `CC`, or cross-pairs) get `l` inserted (e.g. `tac` + `cob` -> `taclcob`)
-- `wa` sequence is reserved for tier-3 word joining, not used in compact joins
-- Candidates scored by phoneme preservation, cluster ease, and word length
-
-Because of this joining logic, it's actually deterministic, so there's a map from source joining cluster to target [here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
 
 ## Code Library
 
