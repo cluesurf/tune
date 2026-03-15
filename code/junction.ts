@@ -307,17 +307,23 @@ export function resolveJunction(input: {
     const ALL_VOICED = new Set([...NASAL_SET, ...VOICED_STOP_SET])
     const ALL_STOP = new Set([...VOICED_STOP_SET, ...VOICELESS_STOP_SET])
 
-    /** Voice-assimilate: convert a stop to match voicing of reference */
-    const VOICE_MAP: Record<string, string> = { p: 'b', t: 'd', k: 'g' }
-    const UNVOICE_MAP: Record<string, string> = { b: 'p', d: 't', g: 'k' }
+    /** Voice-assimilate: convert consonant to match voicing of reference */
+    const VOICE_MAP: Record<string, string> = {
+      p: 'b', t: 'd', k: 'g',       // voiceless stop -> voiced
+      f: 'v', s: 'z', c: 'C', x: 'j', // voiceless fricative -> voiced
+    }
+    const UNVOICE_MAP: Record<string, string> = {
+      b: 'p', d: 't', g: 'k',       // voiced stop -> voiceless
+      v: 'f', z: 's', C: 'c', j: 'x', // voiced fricative -> voiceless
+    }
 
     function voiceAssimilate(target: string, referenceIsVoiced: boolean): string {
-      if (referenceIsVoiced && UNVOICE_MAP[target]) return target
-      if (referenceIsVoiced && VOICE_MAP[target]) return VOICE_MAP[target]
-      if (!referenceIsVoiced && VOICE_MAP[target]) return target
-      if (!referenceIsVoiced && UNVOICE_MAP[target]) return UNVOICE_MAP[target]
-      return target
+      if (referenceIsVoiced) return VOICE_MAP[target] ?? target
+      return UNVOICE_MAP[target] ?? target
     }
+
+    const VOICED_FRICATIVES = new Set(['v', 'z', 'C', 'j'])
+    const isFirstFricativeVoiced = VOICED_FRICATIVES.has(codaLast)
 
     const bothFricative = FRICATIVE_SET.has(codaLast) && FRICATIVE_SET.has(onsetFirst)
     const bothNasal = NASAL_SET.has(codaLast) && NASAL_SET.has(onsetFirst)
@@ -331,7 +337,8 @@ export function resolveJunction(input: {
     const restOnset = onset.slice(1)
 
     if (bothFricative) {
-      add(normCoda + 'l' + codaLast + restOnset, 'geminate', 0.6)
+      const assimilated = voiceAssimilate(onsetFirst, isFirstFricativeVoiced)
+      add(normCoda + 'l' + assimilated + restOnset, 'geminate', 0.6)
     } else if (bothNasal) {
       add(normCoda + 'z' + onsetFirst + restOnset, 'geminate', 0.6)
     } else if (bothVoicedStop) {

@@ -99,7 +99,7 @@ Compose 2-3 root syllables into compound words. At each join point, the coda of 
 - **Overlap**: if coda ends with same consonant onset starts with, merge them (e.g. `nt` + `tr` -> `ntr`)
 - **Partial drop**: for 3-4C clusters, drop one consonant to make it pronounceable
 - **Geminate separator**: when same or confusable consonants meet, insert a separator and keep both (voice-assimilating the second to match the first). `q` always becomes `n`.
-  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second becomes first (e.g. `sz` -> `sls`, `fv` -> `flf`)
+  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second voice-assimilated (e.g. `sz` -> `sls`, `sv` -> `slf`, `vf` -> `vlv`, `fC` -> `flc`)
   - Nasals (`n m`): insert `z`, keep both (e.g. `nm` -> `nzm`, `qn` -> `nzn`)
   - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` -> `bzd`, `db` -> `dzb`)
   - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` -> `psk`, `kt` -> `kst`)
