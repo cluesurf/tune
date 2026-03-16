@@ -157,6 +157,33 @@ function isGeminateWithSeparator(cluster: string): boolean {
   return cluster[0] === cluster[2]
 }
 
+const MAX_CLUSTER = 3
+
+const VOICED_OBSTRUENTS = new Set(['b', 'd', 'g', 'z', 'v', 'C', 'j'])
+const VOICELESS_OBSTRUENTS = new Set(['p', 't', 'k', 's', 'f', 'c', 'x'])
+const ALL_OBSTRUENTS = new Set([...VOICED_OBSTRUENTS, ...VOICELESS_OBSTRUENTS])
+
+/**
+ * Check that adjacent obstruents in a consonant cluster share voicing.
+ * Nasals (m, n, q) and liquids (l, r) are neutral and reset the chain.
+ */
+function hasConsistentVoicing(cluster: string): boolean {
+  let requiredVoiced: boolean | null = null
+  for (const ch of cluster) {
+    if (!ALL_OBSTRUENTS.has(ch)) {
+      requiredVoiced = null
+      continue
+    }
+    const isVoiced = VOICED_OBSTRUENTS.has(ch)
+    if (requiredVoiced === null) {
+      requiredVoiced = isVoiced
+    } else if (isVoiced !== requiredVoiced) {
+      return false
+    }
+  }
+  return true
+}
+
 function wordIsPronounceable(word: string): boolean {
   if (word.length === 0 || word.length > 18) return false
 
@@ -164,11 +191,15 @@ function wordIsPronounceable(word: string): boolean {
   for (const ch of word) {
     if (isConsonant(ch)) {
       run += ch
+      if (run.length > MAX_CLUSTER) return false
     } else if (isVowel(ch)) {
-      if (run.length >= 2 && !isEasyCluster(run)) {
-        const isGeminate = run.length === 2 && run[0] === run[1]
-        const isGemSep = isGeminateWithSeparator(run)
-        if (!isGeminate && !isGemSep) return false
+      if (run.length >= 2) {
+        if (!hasConsistentVoicing(run)) return false
+        if (!isEasyCluster(run)) {
+          const isGeminate = run.length === 2 && run[0] === run[1]
+          const isGemSep = isGeminateWithSeparator(run)
+          if (!isGeminate && !isGemSep) return false
+        }
       }
       run = ''
     } else {
@@ -176,10 +207,14 @@ function wordIsPronounceable(word: string): boolean {
     }
   }
 
-  if (run.length >= 2 && !isEasyCluster(run)) {
-    const isGeminate = run.length === 2 && run[0] === run[1]
-    const isGemSep = isGeminateWithSeparator(run)
-    if (!isGeminate && !isGemSep) return false
+  if (run.length > MAX_CLUSTER) return false
+  if (run.length >= 2) {
+    if (!hasConsistentVoicing(run)) return false
+    if (!isEasyCluster(run)) {
+      const isGeminate = run.length === 2 && run[0] === run[1]
+      const isGemSep = isGeminateWithSeparator(run)
+      if (!isGeminate && !isGemSep) return false
+    }
   }
   return true
 }

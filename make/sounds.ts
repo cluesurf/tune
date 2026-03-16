@@ -71,7 +71,7 @@ const startConsonantClusters = [...ONSET_CLUSTERS]
 const endConsonantClusters = [...CODA_CLUSTERS]
 
 const MIN_OUTPUT = 2
-const MAX_OUTPUT = 4
+const MAX_OUTPUT = 3
 
 // ─── Cluster Joining ────────────────────────────────────────
 
@@ -242,7 +242,7 @@ function generateCandidates(cluster: string): Candidate[] {
       ? (assimilate(result) || result)
       : result
 
-    /** Enforce min 2C and max 4C output. */
+    /** Enforce min 2C and max 3C output. */
     if (final.length < MIN_OUTPUT) return
     if (final.length > MAX_OUTPUT) return
 
@@ -486,6 +486,31 @@ console.log(`Stable matching: ${iterations} iterations`)
  * Cascading simplification. Never reduces below 2C.
  */
 
+const VOICE_PAIRS: Record<string, string> = {
+  p: 'b', t: 'd', k: 'g', s: 'z', f: 'v', c: 'C', x: 'j',
+  b: 'p', d: 't', g: 'k', z: 's', v: 'f', C: 'c', j: 'x',
+}
+const VOICED_OBS = new Set(['b', 'd', 'g', 'z', 'v', 'C', 'j'])
+const ALL_OBS = new Set(['b', 'd', 'g', 'p', 't', 'k', 's', 'z', 'f', 'v', 'c', 'C', 'x', 'j'])
+
+function voiceAssimilateCluster(cluster: string): string {
+  const chars = cluster.split('')
+  let requiredVoiced: boolean | null = null
+  for (let i = 0; i < chars.length; i++) {
+    if (!ALL_OBS.has(chars[i])) {
+      requiredVoiced = null
+      continue
+    }
+    const isVoiced = VOICED_OBS.has(chars[i])
+    if (requiredVoiced === null) {
+      requiredVoiced = isVoiced
+    } else if (isVoiced !== requiredVoiced) {
+      chars[i] = VOICE_PAIRS[chars[i]] ?? chars[i]
+    }
+  }
+  return chars.join('')
+}
+
 function postProcess(output: string): string {
   let current = output
   let maxLoops = 5
@@ -499,19 +524,10 @@ function postProcess(output: string): string {
     maxLoops--
   }
 
-  /** q at junction always needs k release. */
-  if (current.length >= 2 && current[0] === 'q' && current[1] !== 'k') {
-    const expanded = 'qk' + current.slice(1)
-    if (clusterDifficulty(expanded) >= HARD_THRESHOLD) {
-      const shorter = 'qk' + current[1]
-      if (clusterDifficulty(shorter) < HARD_THRESHOLD) {
-        current = shorter
-      } else {
-        current = 'qk'
-      }
-    } else {
-      current = expanded
-    }
+  /** q at junction: drop q, keep the rest (q -> n in joining rules). */
+  if (current.length >= 2 && current[0] === 'q') {
+    current = current.slice(1)
+    if (current.length < MIN_OUTPUT) current = 'qk'
   }
 
   /** Single q expands to qk (already 2C). */
@@ -532,6 +548,9 @@ function postProcess(output: string): string {
     if (reduced === current || reduced.length < MIN_OUTPUT) break
     current = reduced
   }
+
+  /** Voice-assimilate adjacent obstruents. */
+  current = voiceAssimilateCluster(current)
 
   return current
 }

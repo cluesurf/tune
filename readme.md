@@ -93,7 +93,15 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 
 ## Words
 
-- A word is a
+- "Base" words can be 1, 2, or 3 syllables
+- "Compound base words" can be 2 to 9 syllables in theory
+  - ...but more likely 2-4 syllables, maybe 5
+  - Composed of 2 or 3 joined base words
+- "Compound _extension_ words" can be composed of any number of words, joined with `-wa-`
+  - But mentally more than a few words as a single unit seems like it would be hard to mentally parse
+- All words must start and end with a consonant
+- Consonants on base words can come in flowing clusters of max length **2** (e.g. `gotxin`)
+- Compound base word consonant clusters can become max **3** in length (e.g. `lamproq`)
 
 ## Word Rules
 
@@ -104,6 +112,7 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 - `q` can only appear in the middle or end of words, so not at the
   beginning.
 - For multi-syllable words, emphasis is on last vowel.
+- Adjacent obstruents (`b d g p t k s z f v c C x j`) in consonant clusters must share voicing, determined by the leftmost one (e.g. `ks` OK, `kz` becomes `ks`). Nasals and liquids are neutral.
 
 ### Word Pattern Rules
 
@@ -210,7 +219,7 @@ might not be totally perfect, but they are reasonable ballparks.
 
 Also! You can join words arbitrarily in casual or scientific contexts to create unlimited compounds to your heart's content, by using the `-wa-` joiner too.
 
-The `-wa-` joined words are considered just "regular compound words", which have _sort-of_ the feeling of being a single word, but you can tell quickly they are separate words joined together, but still, because it's one word technically, your mind feels it as a formal concept rather than a descriptive phrase. _(The purpose of `-wa-` is to distinguish "unified/standard concepts" from "arbitrary phrases". For example, in English we have "black bird" as a generic description, but we have "blackbird" as a specific type of bird species. Kinda vague/not that ideal when you start splitting hairs. Tune's system is intentionally a lot more structured than English in this sense, to make things a ton less ambiguous/a lot clearer)._
+The `-wa-` joined words are considered just "compound extension words", which have _sort-of_ the feeling of being a single word, but you can tell quickly they are separate words joined together, but still, because it's one word technically, your mind feels it as a formal concept rather than a descriptive phrase. _(The purpose of `-wa-` is to distinguish "unified/standard concepts" from "arbitrary phrases". For example, in English we have "black bird" as a generic description, but we have "blackbird" as a specific type of bird species. Kinda vague/not that ideal when you start splitting hairs. Tune's system is intentionally a lot more structured than English in this sense, to make things a ton less ambiguous/a lot clearer)._
 
 ### Word Selection Rules
 

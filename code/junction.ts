@@ -24,6 +24,39 @@ import {
 } from './phonology'
 
 const MIN_JUNCTION = 2
+const MAX_JUNCTION = 3
+
+// ─── Voice Assimilation ─────────────────────────────────
+
+const VOICE_PAIRS: Record<string, string> = {
+  p: 'b', t: 'd', k: 'g', s: 'z', f: 'v', c: 'C', x: 'j',
+  b: 'p', d: 't', g: 'k', z: 's', v: 'f', C: 'c', j: 'x',
+}
+const VOICED_OBS = new Set(['b', 'd', 'g', 'z', 'v', 'C', 'j'])
+const ALL_OBS = new Set(['b', 'd', 'g', 'p', 't', 'k', 's', 'z', 'f', 'v', 'c', 'C', 'x', 'j'])
+
+/**
+ * Voice-assimilate a consonant cluster: adjacent obstruents
+ * must share voicing, determined by the leftmost obstruent.
+ * Nasals and liquids are neutral and reset the chain.
+ */
+function voiceAssimilateCluster(cluster: string): string {
+  const chars = cluster.split('')
+  let requiredVoiced: boolean | null = null
+  for (let i = 0; i < chars.length; i++) {
+    if (!ALL_OBS.has(chars[i])) {
+      requiredVoiced = null
+      continue
+    }
+    const isVoiced = VOICED_OBS.has(chars[i])
+    if (requiredVoiced === null) {
+      requiredVoiced = isVoiced
+    } else if (isVoiced !== requiredVoiced) {
+      chars[i] = VOICE_PAIRS[chars[i]] ?? chars[i]
+    }
+  }
+  return chars.join('')
+}
 
 // ─── Precomputed Mapping ────────────────────────────────
 
@@ -155,11 +188,13 @@ export function resolveJunction(input: {
   const seen = new Set<string>()
 
   function add(
-    consonants: string,
+    rawConsonants: string,
     form: JunctionOption['form'],
     score: number,
   ) {
+    const consonants = voiceAssimilateCluster(rawConsonants)
     if (consonants.length < MIN_JUNCTION) return
+    if (consonants.length > MAX_JUNCTION) return
     if (seen.has(consonants)) return
     seen.add(consonants)
 
