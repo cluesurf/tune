@@ -16,13 +16,22 @@ Start and end consonants are mutually exclusive sets, making word joining trivia
 
 ## Word Patterns
 
-| syllables | characters | pattern      |    count |
-| :-------- | :--------- | :----------- | -------: |
-| 1         | 3          | `CVC`        |      281 |
-| 2         | 5          | `CVCVC`      |   12,975 |
-| 2         | 6          | `CVC`+`CVC`  |   54,400 |
-| 3         | 7          | `CVCVCVC`    |   79,796 |
-|           |            | **total**    | **147,452** |
+| syllables | characters | pattern   |     count |
+| :-------- | :--------- | :-------- | --------: |
+| 1         | 3          | `CVC`     |       281 |
+| 2         | 5          | `CVCVC`   |    12,975 |
+| 3         | 7          | `CVCVCVC` |    79,796 |
+|           |            | **total** | **93,052** |
+
+## Word Join Patterns
+
+| syllables | words | characters | source                | count      |
+| :-------- | :---- | :--------- | :-------------------- | ---------: |
+| 2         | 2     | 6          | `CVC` + `CVC`         | 54,400     |
+| 3         | 2     | 8          | `CVC` + `CVCVC`       | ~3.6M      |
+| 3         | 2     | 8          | `CVCVC` + `CVC`       | ~3.6M      |
+| 3         | 3     | 9          | `CVC` + `CVC` + `CVC` | ~10.5M     |
+|           |       |            |                       | **~17.7M** |
 
 ## Constraints
 
