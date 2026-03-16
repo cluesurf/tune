@@ -100,8 +100,6 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 - "Compound _extension_ words" can be composed of any number of words, joined with `-wa-`
   - But mentally more than a few words as a single unit seems like it would be hard to mentally parse
 - All words must start and end with a consonant
-- Consonants on base words can come in flowing clusters of max length **2** (e.g. `gotxin`)
-- Compound base word consonant clusters can become max **3** in length (e.g. `lamproq`)
 
 ## Word Rules
 
@@ -111,6 +109,8 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 - `y` and `h` can only appear at the beginning of words.
 - `q` can only appear in the middle or end of words, so not at the
   beginning.
+- Consonants on base words can come in flowing clusters of max length **2** (e.g. `gotxin`).
+- Compound base word consonant clusters can become max **3** in length (e.g. `lamproq`).
 - For multi-syllable words, emphasis is on last vowel.
 - Adjacent obstruents (`b d g p t k s z f v c C x j`) in consonant clusters must share voicing, determined by the leftmost one (e.g. `ks` ok, `kz` becomes `ks`). Nasals and liquids are neutral. This becomes particularly important at the join part in compound words, where consonant clusters are 2-3 in length.
 
