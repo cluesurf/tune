@@ -112,7 +112,7 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 - `q` can only appear in the middle or end of words, so not at the
   beginning.
 - For multi-syllable words, emphasis is on last vowel.
-- Adjacent obstruents (`b d g p t k s z f v c C x j`) in consonant clusters must share voicing, determined by the leftmost one (e.g. `ks` OK, `kz` becomes `ks`). Nasals and liquids are neutral.
+- Adjacent obstruents (`b d g p t k s z f v c C x j`) in consonant clusters must share voicing, determined by the leftmost one (e.g. `ks` ok, `kz` becomes `ks`). Nasals and liquids are neutral. This becomes particularly important at the join part in compound words, where consonant clusters are 2-3 in length.
 
 ### Word Pattern Rules
 
