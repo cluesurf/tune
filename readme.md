@@ -155,23 +155,23 @@ coda of word 1 meets the onset of word 2, forming a consonant cluster.
 - Resolution priority: keep intact > overlap > onset/coda match >
   mapped > assimilated > partial drop > geminate
 - **Overlap**: if coda ends with same consonant onset starts with, merge
-  them (e.g. `nt` + `tr` -> `ntr`)
+  them (e.g. `nt` + `tr` → `ntr`)
 - **Partial drop**: for 3-4C clusters, drop one consonant to make it
   pronounceable
 - **Geminate separator**: when same or confusable consonants meet,
   insert a separator and keep both (voice-assimilating the second to
   match the first). `q` always becomes `n`.
   - Fricatives (`f v s z c C j x`): any pair inserts `l`, second
-    voice-assimilated (e.g. `sz` -> `sls`, `sv` -> `slf`, `vf` -> `vlv`,
-    `fC` -> `flc`)
-  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` -> `nzm`, `qn` ->
+    voice-assimilated (e.g. `sz` → `sls`, `sv` → `slf`, `vf` → `vlv`,
+    `fC` → `flc`)
+  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` → `nzm`, `qn` →
     `nzn`)
-  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` -> `bzd`,
-    `db` -> `dzb`)
-  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` ->
-    `psk`, `kt` -> `kst`)
+  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` → `bzd`,
+    `db` → `dzb`)
+  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` →
+    `psk`, `kt` → `kst`)
   - Mixed voiced/voiceless stops: separator based on first, second
-    voice-assimilated (e.g. `bt` -> `bzd`, `tb` -> `tsp`, `gk` -> `gzg`)
+    voice-assimilated (e.g. `bt` → `bzd`, `tb` → `tsp`, `gk` → `gzg`)
 - `wa` sequence is reserved for tier-3 word joining, not used in compact
   joins
 - Candidates scored by phoneme preservation, cluster ease, and word
