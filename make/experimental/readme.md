@@ -20,8 +20,8 @@ Start and end consonants are mutually exclusive sets, making word joining trivia
 | :-------- | :--------- | :-------- | --------: |
 | 1         | 3          | `CVC`     |       281 |
 | 2         | 5          | `CVCVC`   |    12,975 |
-| 3         | 7          | `CVCVCVC` |    79,796 |
-|           |            | **total** | **93,052** |
+| 3         | 7          | `CVCVCVC` |    80,054 |
+|           |            | **total** | **93,310** |
 
 ## Word Join Patterns
 

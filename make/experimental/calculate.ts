@@ -476,6 +476,8 @@ const posAlts: string[][] = [
 function generateBlockedVariants7(word: string): string[] {
   const blocked: string[] = [word]
   const chars = word.split('')
+
+  // Block all 1-position variants (any position)
   for (let i = 0; i < 7; i++) {
     for (const alt of posAlts[i]) {
       if (alt === chars[i]) continue
@@ -484,6 +486,31 @@ function generateBlockedVariants7(word: string): string[] {
       blocked.push(copy.join(''))
     }
   }
+
+  // Block words where ALL consonants are pair-equivalent and vowels are identical.
+  // Consonant positions: 0, 2, 4, 6. For each, generate same + pair partner.
+  // Then combine all combos (keeping vowels fixed).
+  const cPos = [0, 2, 4, 6]
+  const cAlts: string[][] = cPos.map(i => {
+    const ch = chars[i]
+    const partner = allPairs[ch]
+    return partner ? [ch, partner] : [ch]
+  })
+
+  // Generate all combos of pair-equivalent consonants with same vowels
+  for (const c0 of cAlts[0]) {
+    for (const c1 of cAlts[1]) {
+      for (const c2 of cAlts[2]) {
+        for (const c3 of cAlts[3]) {
+          // Skip the word itself (already blocked)
+          if (c0 === chars[0] && c1 === chars[2] && c2 === chars[4] && c3 === chars[6]) continue
+          const w = c0 + chars[1] + c1 + chars[3] + c2 + chars[5] + c3
+          blocked.push(w)
+        }
+      }
+    }
+  }
+
   return blocked
 }
 
