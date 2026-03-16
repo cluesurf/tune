@@ -535,12 +535,10 @@ console.log(`CVCVCVC generated: ${cvcvcvcTotal.toLocaleString()}`)
 console.log(`CVCVCVC rejected: ${cvcvcvcRejected.toLocaleString()}`)
 console.log(`CVCVCVC accepted: ${cvcvcvc.length.toLocaleString()}`)
 
-const CVCVCVC_LIMIT = 50000
-const cvcvcvcOut = cvcvcvc.slice(0, CVCVCVC_LIMIT)
-writeFileSync(resolve(dataDir, '7.csv'), cvcvcvcOut.join('\n') + '\n')
-console.log(`Writing first ${cvcvcvcOut.length.toLocaleString()} to data/7.csv`)
+writeFileSync(resolve(dataDir, '7.csv'), cvcvcvc.join('\n') + '\n')
+console.log(`Wrote ${cvcvcvc.length.toLocaleString()} to data/7.csv`)
 
 console.log('\n=== Sample CVCVCVC words (first 40) ===')
-for (const w of cvcvcvcOut.slice(0, 40)) {
+for (const w of cvcvcvc.slice(0, 40)) {
   console.log(`  ${w}`)
 }
