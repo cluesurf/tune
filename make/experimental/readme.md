@@ -1,4 +1,4 @@
-# Experimental: Exclusive Start/End Consonant Sets
+# Tune (Experimental v2)
 
 ## Core Idea
 
