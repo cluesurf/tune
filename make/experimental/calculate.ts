@@ -432,19 +432,19 @@ console.log(`Total: ${(filtered.length + twoWordCount + threeWordCount).toLocale
 // ─── Write CSVs ─────────────────────────────────────────
 
 // Already in correct order from generation (start, vowel, end)
-writeFileSync(resolve(dataDir, '3.csv'), filtered.join('\n') + '\n')
+writeFileSync(resolve(dataDir, '3.csv'), 'word\n' + filtered.join('\n') + '\n')
 console.log(`\nWrote ${filtered.length} base words to data/3.csv`)
 
 const twoWordJoins = generate2WordJoins(filtered)
 shuffle(twoWordJoins)
-writeFileSync(resolve(dataDir, '6.csv'), twoWordJoins.join('\n') + '\n')
+writeFileSync(resolve(dataDir, '6.csv'), 'word\n' + twoWordJoins.join('\n') + '\n')
 console.log(`Wrote ${twoWordJoins.length} 2-word joins to data/6.csv`)
 
 // 5.csv: CVCVC words
 console.log('\n=== CVCVC generation (deterministic) ===')
 const cvcvc = generateCVCVC()
 console.log(`CVCVC words: ${cvcvc.length.toLocaleString()}`)
-writeFileSync(resolve(dataDir, '5.csv'), cvcvc.join('\n') + '\n')
+writeFileSync(resolve(dataDir, '5.csv'), 'word\n' + cvcvc.join('\n') + '\n')
 console.log(`Wrote ${cvcvc.length.toLocaleString()} words to data/5.csv`)
 
 // Show samples
@@ -535,7 +535,7 @@ console.log(`CVCVCVC generated: ${cvcvcvcTotal.toLocaleString()}`)
 console.log(`CVCVCVC rejected: ${cvcvcvcRejected.toLocaleString()}`)
 console.log(`CVCVCVC accepted: ${cvcvcvc.length.toLocaleString()}`)
 
-writeFileSync(resolve(dataDir, '7.csv'), cvcvcvc.join('\n') + '\n')
+writeFileSync(resolve(dataDir, '7.csv'), 'word\n' + cvcvcvc.join('\n') + '\n')
 console.log(`Wrote ${cvcvcvc.length.toLocaleString()} to data/7.csv`)
 
 console.log('\n=== Sample CVCVCVC words (first 40) ===')
