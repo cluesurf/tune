@@ -107,8 +107,8 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
   joining method, used as `-wa-`, so `w` is not used anywhere else in
   words.
 - `y` and `h` can only appear at the beginning of words.
-- `q` can only appear in the middle or end of words, so not at the
-  beginning.
+- `q` can only appear at the end of words, so not at the
+  beginning or middle, except it can be in the middle as `qk`.
 - Consonants on base words can come in flowing clusters of max length **2** (e.g. `gotxin`).
 - Compound base word consonant clusters can become max **3** in length (e.g. `lamproq`).
 - For multi-syllable words, emphasis is on last vowel.
