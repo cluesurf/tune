@@ -80,7 +80,7 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 | `f`  | `fire`    |                                            |
 | `v`  | `vibe`    |                                            |
 | `z`  | `zone`    |                                            |
-| `j`  | `measure` | the "s" sound here, "zh"                   |
+| `j`  | `beige`   | the "g" sound here, "zh"                   |
 | `x`  | `ship`    | the "sh" sound                             |
 | `c`  | `thor`    | the voiceless "th" sound                   |
 | `C`  | `this`    | the voiced "th" sound                      |
