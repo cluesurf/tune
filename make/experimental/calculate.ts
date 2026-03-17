@@ -1,14 +1,18 @@
 /**
- * Experimental: Start/End exclusive consonant sets.
+ * Word generation for 4 consonant set combinations.
  *
- * Start consonants (11): m n b d g p t k h y w
- * End consonants (11):   q s z f v x j c C l r
- * Vowels (5):            i e a o u
+ * Combo 1: Stops/nasals start, fricatives/liquids end (exclusive)
+ * Combo 2: Fricatives/liquids start, stops/nasals end (exclusive)
+ * Combo 3: Stops/nasals both sides (overlapping)
+ * Combo 4: Fricatives/liquids both sides (overlapping)
  *
- * Deterministic word generation with alternating end-consonant pairs.
- * Start consonants ordered as pairs: (m,n), (b,d), (g,p), (t,k), h, y, w
- * Each pair member alternates which side of end pairs (s/z, f/v, x/j, c/C)
- * they get, flipping per vowel.
+ * Mid cycling (all combos):
+ *   3-group exclusion: G0={s,j,b,l} G1={z,c,x,v} G2={C,f,h,p,r}
+ *   Binary (mod 2): m↔n, d↔t, g↔k
+ *   No w or y in mid or end positions.
+ *
+ * Usage:
+ *   pnpm tsx deck/tune/make/experimental/calculate.ts
  */
 
 import { writeFileSync, mkdirSync } from 'fs'
@@ -16,262 +20,473 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const dataDir = resolve(__dirname, 'data/combo-1')
-mkdirSync(dataDir, { recursive: true })
-
 const vowels = 'ieaou'.split('')
 
-// Start consonants in pair order
-// Pairs: (m,n), (b,d), (g,p), (t,k). Solos: h, y, w
-// Pairs: (m,n), (b,d), (g,p), (t,k), (h), (y,w)
-const startOrder = ['m', 'n', 'b', 'd', 'g', 'p', 't', 'k', 'h', 'y', 'w']
+// ─── Exclusion Graph ────────────────────────────────────
 
-// End consonant pairs: [A-side, B-side]
-// P1=(s,z), P2=(j,x), P3=(f,v), P4=(C,c)
-const endPairs: [string, string][] = [
-  ['z', 's'],
-  ['x', 'j'],
-  ['v', 'f'],
+const ALL_EXCLUSION_PAIRS: [string, string][] = [
+  ['s', 'z'], ['s', 'f'], ['s', 'x'], ['s', 'c'], ['s', 'h'],
+  ['f', 'v'], ['f', 'c'],
+  ['x', 'j'], ['x', 'h'],
   ['c', 'C'],
+  ['z', 'j'], ['z', 'C'],
+  ['v', 'C'], ['v', 'b'],
+  ['b', 'p'],
+  ['j', 'C'],
+  ['y', 'w'],
+  ['m', 'n'], ['d', 't'], ['g', 'k'],
 ]
-const endUnpaired = ['q', 'l', 'r']
-const endC = [...endPairs.flat(), ...endUnpaired]
 
-const badTails = new Set(['el', 'il', 'er', 'ir'])
+const exclusionEdges = new Set<string>()
+for (const [a, b] of ALL_EXCLUSION_PAIRS) {
+  exclusionEdges.add(`${a}-${b}`)
+  exclusionEdges.add(`${b}-${a}`)
+}
 
-// 4-phase end cycling: rotates pair groups across vowels
-// Phase = si % 4
-const endPhases: string[][][] = [
-  // Phase 0 (15): s j | v c q | f C l | z x q r | f C l
+function areExclusive(a: string, b: string): boolean {
+  return a === b || exclusionEdges.has(`${a}-${b}`)
+}
+
+// ─── 3-Group Exclusion (mid positions) ──────────────────
+
+const exclusionGroups: [string[], string[], string[]] = [
+  ['s', 'j', 'b', 'l'],   // G0 (y removed)
+  ['z', 'c', 'x', 'v'],   // G1 (w removed)
+  ['C', 'f', 'h', 'p', 'r'],
+]
+
+const midBinaryPairs: [string, string][] = [
+  ['m', 'n'], ['d', 't'], ['g', 'k'],
+]
+
+const groupOf: Record<string, number> = {}
+for (let gi = 0; gi < exclusionGroups.length; gi++) {
+  for (const c of exclusionGroups[gi]) groupOf[c] = gi
+}
+
+const midBinaryIdx: Record<string, number> = {}
+for (const [a, b] of midBinaryPairs) {
+  midBinaryIdx[a] = 0
+  midBinaryIdx[b] = 1
+}
+
+function availableByExclusion(pool: string[], phaseSum: number): string[] {
+  const p3 = ((phaseSum % 3) + 3) % 3
+  const p2 = ((phaseSum % 2) + 2) % 2
+  return pool.filter(c => {
+    if (c in groupOf) return groupOf[c] === p3
+    if (c in midBinaryIdx) return midBinaryIdx[c] === p2
+    return true
+  })
+}
+
+// Mid pool: all consonants except w, y
+const midPool = [
+  's', 'z', 'f', 'v', 'x', 'j', 'c', 'C',
+  'l', 'r', 'm', 'n', 'b', 'd', 'g', 'p',
+  't', 'k', 'h',
+]
+
+// ─── Sort Order ─────────────────────────────────────────
+
+const CHAR_ORDER = 'i e a o u m n q g d b p t k h s z v f x j C c y r l w'.split(' ')
+const CHAR_RANK = new Map(CHAR_ORDER.map((c, i) => [c, i]))
+
+function compareWords(a: string, b: string): number {
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    const ra = CHAR_RANK.get(a[i]) ?? 99
+    const rb = CHAR_RANK.get(b[i]) ?? 99
+    if (ra !== rb) return ra - rb
+  }
+  return 0
+}
+
+function sortChars(arr: string[]): string[] {
+  return [...arr].sort((a, b) => (CHAR_RANK.get(a) ?? 99) - (CHAR_RANK.get(b) ?? 99))
+}
+
+// ─── EndMap ─────────────────────────────────────────────
+
+type EndMap = Map<string, string[]>
+
+function sortEndMap(map: EndMap): EndMap {
+  const sorted = new Map<string, string[]>()
+  for (const [key, ends] of map) {
+    sorted.set(key, [...ends].sort((a, b) => (CHAR_RANK.get(a) ?? 99) - (CHAR_RANK.get(b) ?? 99)))
+  }
+  return sorted
+}
+
+// ─── Combo 1: 4-Phase End Cycling ──────────────────────
+//
+// Pairs: P1=(s,z), P2=(j,x), P3=(f,v), P4=(C,c)
+// Unpaired: q, l, r
+// Phase = si % 4. Rotates which pair group leads.
+
+const combo1Phases: string[][][] = [
   [['s','j'], ['v','c','q'], ['f','C','l'], ['z','x','q','r'], ['f','C','l']],
-  // Phase 1 (16): z x q | f C | v c q r | s j l | v c q r
   [['z','x','q'], ['f','C'], ['v','c','q','r'], ['s','j','l'], ['v','c','q','r']],
-  // Phase 2 (15): f C | z x q | s j l | v c q r | s j l
   [['f','C'], ['z','x','q'], ['s','j','l'], ['v','c','q','r'], ['s','j','l']],
-  // Phase 3 (16): v c q | s j | v c q r | f C l | z x q r
   [['v','c','q'], ['s','j'], ['v','c','q','r'], ['f','C','l'], ['z','x','q','r']],
 ]
 
-// ─── Deterministic Generation ─────────────────────────────
-
-function generateCVC(): string[] {
-  const words: string[] = []
-
-  for (let si = 0; si < startOrder.length; si++) {
-    const c1 = startOrder[si]
+function generateCombo1EndMap(numStarts: number): EndMap {
+  const map: EndMap = new Map()
+  for (let si = 0; si < numStarts; si++) {
     const phase = si % 4
+    for (let vi = 0; vi < 5; vi++) {
+      map.set(`${si}-${vi}`, combo1Phases[phase][vi])
+    }
+  }
+  return map
+}
 
+// ─── Combo 2: Weaving End Pattern ──────────────────────
+//
+// Stop/nasal ends. Two binary pair groups cycle with (si + vi) % 2.
+//   Group A: [m, p, d, k]   Group B: [n, b, t, g]
+// Four weaving patterns select 2 of 4 positions.
+// Pattern index = (si + vi + floor(si/4)*2) % 4
+
+function generateCombo2EndMap(numStarts: number): EndMap {
+  const pairGroupA = ['m', 'p', 'd', 'k']
+  const pairGroupB = ['n', 'b', 't', 'g']
+  const patterns: number[][] = [
+    [0, 2], // +-+-
+    [2, 3], // --++
+    [1, 3], // -+-+
+    [0, 1], // ++--
+  ]
+  const map: EndMap = new Map()
+  for (let si = 0; si < numStarts; si++) {
+    for (let vi = 0; vi < 5; vi++) {
+      const pool = (si + vi) % 2 === 0 ? pairGroupA : pairGroupB
+      const groupOffset = Math.floor(si / 4) * 2
+      const patternIdx = (si + vi + groupOffset) % 4
+      map.set(`${si}-${vi}`, patterns[patternIdx].map(pos => pool[pos]))
+    }
+  }
+  return map
+}
+
+// ─── Structured Matching (Combos 3, 4) ─────────────────
+//
+// 4 binary pairs forming 9 derangement-based perfect matchings.
+// Each (start, vowel) cell gets 1 from sideA + 1 from sideB.
+// One pair doubled at two vowels. All 8 consonants covered per start.
+
+function rotateRight<T>(arr: T[], n: number): T[] {
+  const len = arr.length
+  const shift = ((n % len) + len) % len
+  return [...arr.slice(len - shift), ...arr.slice(0, len - shift)]
+}
+
+function matchingOverlap(a: [string, string][], b: [string, string][]): number {
+  const setA = new Set(a.map(([x, y]) => `${x}-${y}`))
+  let count = 0
+  for (const [x, y] of b) {
+    if (setA.has(`${x}-${y}`)) count++
+  }
+  return count
+}
+
+function generateStructuredEndMap(input: {
+  numStarts: number
+  sideABase: string[]
+  matchings: [string, string][][]
+  extras?: { char: string, eligibleVowels: number[] }[]
+}): EndMap {
+  const { numStarts, sideABase, matchings, extras = [] } = input
+  const map: EndMap = new Map()
+  const usedMatchings: [string, string][][] = []
+  const doubledPairs = new Set<string>()
+
+  for (let si = 0; si < numStarts; si++) {
+    const rotated = rotateRight(sideABase, si % sideABase.length)
+
+    let bestM = matchings[0]
+    let bestScore = -Infinity
+    for (const m of matchings) {
+      const maxOverlap = usedMatchings.length === 0 ? 0 :
+        Math.max(...usedMatchings.map(um => matchingOverlap(um, m)))
+      const novelCount = m.filter(([a, b]) =>
+        !doubledPairs.has(`${a}-${b}`)
+      ).length
+      const score = -maxOverlap * 10 + novelCount
+      if (score > bestScore) {
+        bestScore = score
+        bestM = m
+      }
+    }
+    usedMatchings.push(bestM)
+
+    const pairMap = new Map<string, string>()
+    for (const [a, b] of bestM) pairMap.set(a, b)
+
+    const preferIdx = (si + 1) % sideABase.length
+    const preferA = rotated[preferIdx]
+    const preferKey = `${preferA}-${pairMap.get(preferA)}`
+
+    let doubleA: string
+    if (!doubledPairs.has(preferKey)) {
+      doubleA = preferA
+    } else {
+      const novel = rotated.find(a =>
+        !doubledPairs.has(`${a}-${pairMap.get(a)}`)
+      )
+      doubleA = novel ?? preferA
+    }
+    doubledPairs.add(`${doubleA}-${pairMap.get(doubleA)}`)
+
+    const d1 = (si + 1) % 5
+    const d2 = (si + 3) % 5
+    const doubleRotIdx = rotated.indexOf(doubleA)
+    const nonDoubleA = rotated.filter((_, i) => i !== doubleRotIdx)
+    const nonDoubleVowels = [0, 1, 2, 3, 4].filter(v => v !== d1 && v !== d2)
+
+    const cells: string[][] = [[], [], [], [], []]
+    cells[d1] = [doubleA, pairMap.get(doubleA)!]
+    cells[d2] = [doubleA, pairMap.get(doubleA)!]
+    for (let i = 0; i < nonDoubleA.length; i++) {
+      const a = nonDoubleA[i]
+      cells[nonDoubleVowels[i]] = [a, pairMap.get(a)!]
+    }
+
+    if (extras.length > 0) {
+      const extraUsage: Record<string, number> = {}
+      for (const e of extras) extraUsage[e.char] = 0
+      for (const vi of [0, 2, 3, 4]) {
+        const eligible = extras
+          .filter(e => e.eligibleVowels.includes(vi))
+          .map(e => e.char)
+        if (eligible.length === 0) continue
+        eligible.sort((a, b) => extraUsage[a] - extraUsage[b])
+        cells[vi].push(eligible[0])
+        extraUsage[eligible[0]]++
+      }
+    }
+
+    for (let vi = 0; vi < 5; vi++) {
+      map.set(`${si}-${vi}`, cells[vi])
+    }
+  }
+
+  return map
+}
+
+// Combo 3: stop/nasal derangements (m,p,d,k ↔ n,b,t,g)
+const B_SIDE_A = ['m', 'p', 'd', 'k']
+const B_MATCHINGS: [string, string][][] = [
+  [['m','b'], ['p','t'], ['d','g'], ['k','n']],
+  [['m','t'], ['p','g'], ['d','n'], ['k','b']],
+  [['m','g'], ['p','t'], ['d','b'], ['k','n']],
+  [['m','b'], ['p','n'], ['d','g'], ['k','t']],
+  [['m','t'], ['p','g'], ['d','b'], ['k','n']],
+  [['m','b'], ['p','g'], ['d','n'], ['k','t']],
+  [['m','g'], ['p','n'], ['d','b'], ['k','t']],
+  [['m','t'], ['p','n'], ['d','g'], ['k','b']],
+  [['m','g'], ['p','t'], ['d','n'], ['k','b']],
+]
+
+// Combo 4: voiceless↔voiced fricative derangements (x,s,c,f ↔ z,v,j,C)
+const C_SIDE_A = ['x', 's', 'c', 'f']
+const C_MATCHINGS: [string, string][][] = [
+  [['s','v'], ['f','C'], ['x','z'], ['c','j']],
+  [['s','j'], ['f','z'], ['x','C'], ['c','v']],
+  [['s','C'], ['f','j'], ['x','v'], ['c','z']],
+  [['s','v'], ['f','z'], ['x','C'], ['c','j']],
+  [['s','j'], ['f','C'], ['x','z'], ['c','v']],
+  [['s','v'], ['f','j'], ['x','C'], ['c','z']],
+  [['s','C'], ['f','z'], ['x','v'], ['c','j']],
+  [['s','j'], ['f','C'], ['x','v'], ['c','z']],
+  [['s','C'], ['f','j'], ['x','z'], ['c','v']],
+]
+
+// Combo 4: hardcoded end assignments for 8 fricative starts
+const combo4Hardcoded: string[][][] = [
+  // s- double (s,v)
+  [['q','z','x'], ['s','v'], ['q','c','j'], ['s','v','l'], ['f','C','r']],
+  // z- double (s,j)
+  [['f','z'], ['x','C'], ['s','j','l'], ['c','v','r'], ['q','s','j','l']],
+  // v- double (x,z)
+  [['q','x','z'], ['c','v'], ['q','j','s'], ['C','f','l'], ['x','z','r']],
+  // f- double (x,C)
+  [['c','v'], ['s','j'], ['x','C','l'], ['f','z','r'], ['q','x','C','l']],
+  // x- double (c,v)
+  [['c','v'], ['j','f'], ['C','s','l'], ['x','z','r'], ['q','c','v','r']],
+  // j- double (c,j)
+  [['q','f','C'], ['x','z'], ['q','c','j'], ['s','v','l'], ['c','j','r']],
+  // C- double (f,z)
+  [['s','j'], ['c','j'], ['f','z','l'], ['C','s','r'], ['q','f','z','l']],
+  // c- double (f,C)
+  [['q','f','C'], ['x','z'], ['q','s','j'], ['c','v','l'], ['f','C','r']],
+]
+
+// ─── Config ─────────────────────────────────────────────
+
+type ComboConfig = {
+  name: string
+  starts: string[]
+  ends: string[]
+  endMap: EndMap
+  badTails: Set<string>
+  overlapping: boolean
+}
+
+function getEnds(cfg: ComboConfig, si: number, vi: number): string[] {
+  return cfg.endMap.get(`${si}-${vi}`) ?? []
+}
+
+function getEndsCVCVC(cfg: ComboConfig, si: number, v1i: number, v2i: number): string[] {
+  const esi = (si + v1i) % cfg.starts.length
+  return cfg.endMap.get(`${esi}-${v2i}`) ?? []
+}
+
+function getEndsCVCVCVC(cfg: ComboConfig, si: number, v1i: number, v2i: number, v3i: number): string[] {
+  const esi = (si + v1i + v2i) % cfg.starts.length
+  return cfg.endMap.get(`${esi}-${v3i}`) ?? []
+}
+
+// ─── Build Configs ──────────────────────────────────────
+
+const combo1Starts = ['m', 'n', 'b', 'd', 'g', 'p', 't', 'k', 'h', 'y', 'w']
+const combo2Starts = ['s', 'z', 'v', 'f', 'x', 'j', 'C', 'c', 'r', 'l']
+const combo3Starts = ['m', 'n', 'b', 'd', 'g', 'p', 't', 'k', 'h', 'y', 'w']
+const combo4Starts = ['s', 'z', 'v', 'f', 'x', 'j', 'C', 'c', 'r', 'l']
+
+const endMap1 = sortEndMap(generateCombo1EndMap(combo1Starts.length))
+const endMap2 = sortEndMap(generateCombo2EndMap(combo2Starts.length))
+const endMap3 = sortEndMap(generateStructuredEndMap({
+  numStarts: combo3Starts.length,
+  sideABase: B_SIDE_A,
+  matchings: B_MATCHINGS,
+}))
+
+// Combo 4: hardcoded for 8 fricatives, generated for r, l
+const endMap4Raw: EndMap = new Map()
+for (let si = 0; si < combo4Hardcoded.length; si++) {
+  for (let vi = 0; vi < 5; vi++) {
+    endMap4Raw.set(`${si}-${vi}`, combo4Hardcoded[si][vi])
+  }
+}
+const endMap4Tail = generateStructuredEndMap({
+  numStarts: 2,
+  sideABase: C_SIDE_A,
+  matchings: C_MATCHINGS,
+  extras: [
+    { char: 'q', eligibleVowels: [0, 2, 4] },
+    { char: 'l', eligibleVowels: [2, 3, 4] },
+    { char: 'r', eligibleVowels: [2, 3, 4] },
+  ],
+})
+for (let si = 0; si < 2; si++) {
+  for (let vi = 0; vi < 5; vi++) {
+    endMap4Raw.set(`${si + 8}-${vi}`, endMap4Tail.get(`${si}-${vi}`) ?? [])
+  }
+}
+const endMap4 = sortEndMap(endMap4Raw)
+
+const combo1: ComboConfig = {
+  name: '1',
+  starts: combo1Starts,
+  ends: sortChars(['q', 's', 'z', 'f', 'v', 'x', 'j', 'c', 'C', 'l', 'r']),
+  endMap: endMap1,
+  badTails: new Set(['el', 'il', 'er', 'ir']),
+  overlapping: false,
+}
+
+const combo2: ComboConfig = {
+  name: '2',
+  starts: combo2Starts,
+  ends: sortChars(['m', 'n', 'b', 'd', 'g', 'p', 't', 'k']),
+  endMap: endMap2,
+  badTails: new Set([]),
+  overlapping: false,
+}
+
+const combo3: ComboConfig = {
+  name: '3',
+  starts: combo3Starts,
+  ends: sortChars(['m', 'n', 'b', 'd', 'g', 'p', 't', 'k']),
+  endMap: endMap3,
+  badTails: new Set([]),
+  overlapping: true,
+}
+
+const combo4: ComboConfig = {
+  name: '4',
+  starts: combo4Starts,
+  ends: sortChars(['q', 's', 'z', 'f', 'v', 'x', 'j', 'c', 'C', 'l', 'r']),
+  endMap: endMap4,
+  badTails: new Set(['el', 'il', 'er', 'ir']),
+  overlapping: true,
+}
+
+// ─── CVC Generation ────────────────────────────────────
+
+function generateCVC(cfg: ComboConfig): string[] {
+  const words: string[] = []
+  for (let si = 0; si < cfg.starts.length; si++) {
+    const c1 = cfg.starts[si]
     for (let vi = 0; vi < vowels.length; vi++) {
       const v = vowels[vi]
-
-      for (const c2 of endPhases[phase][vi]) {
-        if (!badTails.has(v + c2)) {
+      for (const c2 of getEnds(cfg, si, vi)) {
+        if (!cfg.badTails.has(v + c2)) {
           words.push(c1 + v + c2)
         }
       }
     }
   }
-
-  return words
+  return words.sort(compareWords)
 }
 
-// ─── CVCVC Generation ───────────────────────────────────────
+// ─── CVCVC Generation ──────────────────────────────────
 
-// Fricative-type pairs: no two adjacent consonants from the same pair
-const fricPairs: Record<string, string> = {
-  s: 'z', z: 's', f: 'v', v: 'f', x: 'j', j: 'x', c: 'C', C: 'c',
-}
-function sameTypeFric(a: string, b: string): boolean {
-  return a === b || fricPairs[a] === b
-}
-
-// Middle consonant pairs (iterate once per pair, pick member based on phase)
-const midConsonantPairs: [string, string][] = [
-  ['m', 'n'],
-  ['b', 'p'],
-  ['d', 't'],
-  ['g', 'k'],
-  ['s', 'z'],
-  ['f', 'v'],
-  ['x', 'j'],
-  ['c', 'C'],
-]
-// Unpaired mid consonants: h, y, w, l, r
-const midUnpaired = ['h', 'y', 'w', 'l', 'r']
-
-function generateCVCVC(): string[] {
+function generateCVCVC(cfg: ComboConfig): string[] {
   const words: string[] = []
-
-  for (let si = 0; si < startOrder.length; si++) {
-    const c1 = startOrder[si]
-
+  for (let si = 0; si < cfg.starts.length; si++) {
+    const c1 = cfg.starts[si]
     for (let v1i = 0; v1i < vowels.length; v1i++) {
       const v1 = vowels[v1i]
-
-      // Iterate mid consonant pairs, picking member based on phase
-      for (let mpi = 0; mpi < midConsonantPairs.length; mpi++) {
-        const [midA, midB] = midConsonantPairs[mpi]
-
+      const availMid = availableByExclusion(midPool, si + v1i)
+      for (const cm of availMid) {
+        if (areExclusive(c1, cm)) continue
         for (let v2i = 0; v2i < vowels.length; v2i++) {
           const v2 = vowels[v2i]
-
-          // Mid consonant alternates by (si + v1i + v2i) % 2
-          const midPhase = (si + v1i + v2i) % 2
-          const cm = midPhase === 0 ? midA : midB
-
-          // No adjacent fricative pairs (c1↔cm)
-          if (sameTypeFric(c1, cm)) continue
-
-          // End consonants from 4-phase system
-          const ep = (si + v1i + mpi) % 4
-          for (const c2 of endPhases[ep][v2i]) {
-            if (!badTails.has(v2 + c2)) {
-              if (sameTypeFric(cm, c2)) continue
-              words.push(c1 + v1 + cm + v2 + c2)
-            }
-          }
-        }
-      }
-
-      // Unpaired mid consonants: include only on one v1 phase
-      const unpairedPhase = (si + v1i) % 2
-      if (unpairedPhase === 0) {
-        for (const cm of midUnpaired) {
-          if (sameTypeFric(c1, cm)) continue
-          for (let v2i = 0; v2i < vowels.length; v2i++) {
-            const v2 = vowels[v2i]
-
-            const ep = (si + v1i) % 4
-            for (const c2 of endPhases[ep][v2i]) {
-              if (!badTails.has(v2 + c2)) {
-                if (sameTypeFric(cm, c2)) continue
-                if (cm === 'r' && c2 === 'r') continue
-                words.push(c1 + v1 + cm + v2 + c2)
-              }
-            }
+          for (const c2 of getEndsCVCVC(cfg, si, v1i, v2i)) {
+            if (areExclusive(cm, c2)) continue
+            if (cfg.badTails.has(v2 + c2)) continue
+            words.push(c1 + v1 + cm + v2 + c2)
           }
         }
       }
     }
   }
-
-  return words
+  return words.sort(compareWords)
 }
 
-// ─── CVCVCVC Generation ─────────────────────────────────────
+// ─── CVCVCVC Generation ────────────────────────────────
 
-// Check if 3 consonants are all the "same type" (same or pair partner)
-const allPairs: Record<string, string> = {
-  m: 'n', n: 'm', b: 'p', p: 'b', d: 't', t: 'd', g: 'k', k: 'g',
-  s: 'z', z: 's', f: 'v', v: 'f', x: 'j', j: 'x', c: 'C', C: 'c',
-}
-function sameType(a: string, b: string): boolean {
-  return a === b || allPairs[a] === b
-}
-
-function* generateCVCVCVC(): Generator<string> {
-  for (let si = 0; si < startOrder.length; si++) {
-    const c1 = startOrder[si]
-
+function generateCVCVCVC(cfg: ComboConfig): string[] {
+  const words: string[] = []
+  for (let si = 0; si < cfg.starts.length; si++) {
+    const c1 = cfg.starts[si]
     for (let v1i = 0; v1i < vowels.length; v1i++) {
       const v1 = vowels[v1i]
-
-      // Mid1 pairs
-      for (let mp1i = 0; mp1i < midConsonantPairs.length; mp1i++) {
-        const [mid1A, mid1B] = midConsonantPairs[mp1i]
-
+      const avail1 = availableByExclusion(midPool, si + v1i)
+      for (const cm1 of avail1) {
+        if (areExclusive(c1, cm1)) continue
         for (let v2i = 0; v2i < vowels.length; v2i++) {
           const v2 = vowels[v2i]
-
-          // Mid1 alternates by (si + v1i + v2i)
-          const mid1Phase = (si + v1i + v2i) % 2
-          const cm1 = mid1Phase === 0 ? mid1A : mid1B
-
-          // No adjacent fricative pairs (c1↔cm1)
-          if (sameTypeFric(c1, cm1)) continue
-
-          // Mid2 pairs
-          for (let mp2i = 0; mp2i < midConsonantPairs.length; mp2i++) {
-            const [mid2A, mid2B] = midConsonantPairs[mp2i]
-
+          const avail2 = availableByExclusion(midPool, si + v1i + v2i)
+          for (const cm2 of avail2) {
+            if (areExclusive(cm1, cm2)) continue
             for (let v3i = 0; v3i < vowels.length; v3i++) {
               const v3 = vowels[v3i]
-
-              // Mid2 alternates by (si + v1i + v2i + v3i)
-              const mid2Phase = (si + v1i + v2i + v3i) % 2
-              const cm2 = mid2Phase === 0 ? mid2A : mid2B
-
-              // No r-r between mid1 and mid2
-              if (cm1 === 'r' && cm2 === 'r') continue
-              // No 3 consonants of same type in a row (c1, cm1, cm2)
-              if (sameType(c1, cm1) && sameType(cm1, cm2)) continue
-              // No adjacent fricative pairs (cm1↔cm2)
-              if (sameTypeFric(cm1, cm2)) continue
-
-              // End consonants from 4-phase system
-              const ep7a = (si + v1i + mp1i + mp2i) % 4
-              for (const c2 of endPhases[ep7a][v3i]) {
-                if (!badTails.has(v3 + c2)) {
-                  if (cm2 === 'r' && c2 === 'r') continue
-                  if (sameTypeFric(cm2, c2)) continue
-                  yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
-                }
-              }
-            }
-          }
-
-          // Mid2 unpaired consonants: include on one phase
-          const mid2UnpairedPhase = (si + v1i + v2i) % 2
-          if (mid2UnpairedPhase === 0) {
-            for (const cm2 of midUnpaired) {
-              if (cm1 === 'r' && cm2 === 'r') continue
-              if (sameType(c1, cm1) && sameType(cm1, cm2)) continue
-
-              for (let v3i = 0; v3i < vowels.length; v3i++) {
-                const v3 = vowels[v3i]
-                const ep7b = (si + v1i + mp1i) % 4
-                for (const c2 of endPhases[ep7b][v3i]) {
-                  if (!badTails.has(v3 + c2)) {
-                    if (cm2 === 'r' && c2 === 'r') continue
-                    if (sameTypeFric(cm2, c2)) continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      // Mid1 unpaired consonants
-      const mid1UnpairedPhase = (si + v1i) % 2
-      if (mid1UnpairedPhase === 0) {
-        for (const cm1 of midUnpaired) {
-          if (sameTypeFric(c1, cm1)) continue
-          for (let mp2i = 0; mp2i < midConsonantPairs.length; mp2i++) {
-            const [mid2A, mid2B] = midConsonantPairs[mp2i]
-
-            for (let v2i = 0; v2i < vowels.length; v2i++) {
-              const v2 = vowels[v2i]
-
-              for (let v3i = 0; v3i < vowels.length; v3i++) {
-                const v3 = vowels[v3i]
-
-                const mid2Phase = (si + v1i + v2i + v3i) % 2
-                const cm2 = mid2Phase === 0 ? mid2A : mid2B
-
-                if (cm1 === 'r' && cm2 === 'r') continue
-                if (sameType(c1, cm1) && sameType(cm1, cm2)) continue
-                if (sameTypeFric(cm1, cm2)) continue
-
-                const ep7c = (si + v1i + mp2i) % 4
-                for (const c2 of endPhases[ep7c][v3i]) {
-                  if (!badTails.has(v3 + c2)) {
-                    if (cm2 === 'r' && c2 === 'r') continue
-                    if (sameTypeFric(cm2, c2)) continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
-                  }
-                }
+              for (const c2 of getEndsCVCVCVC(cfg, si, v1i, v2i, v3i)) {
+                if (areExclusive(cm2, c2)) continue
+                if (cfg.badTails.has(v3 + c2)) continue
+                words.push(c1 + v1 + cm1 + v2 + cm2 + v3 + c2)
               }
             }
           }
@@ -279,59 +494,87 @@ function* generateCVCVCVC(): Generator<string> {
       }
     }
   }
+  return words.sort(compareWords)
 }
 
-// ─── Join Logic ─────────────────────────────────────────────
+// ─── Join Logic ────────────────────────────────────────
 
-// Words starting with h cannot be joined as 2nd/3rd part
-const noJoinStart = new Set(['h'])
+const fricativeSet = new Set(['s', 'z', 'f', 'v', 'x', 'j', 'c', 'C'])
 
-// Obstruent voicing at join point must match
-const voicedObs = new Set(['z', 'v', 'j', 'C', 'b', 'd', 'g'])
-const voicelessObs = new Set(['s', 'f', 'x', 'c', 'p', 't', 'k'])
-
-function validJoinPair(w1: string, w2: string): boolean {
-  if (noJoinStart.has(w2[0])) return false
-  const last = w1[w1.length - 1]
-  const first = w2[0]
-  // Both obstruents: voicing must match
-  if (voicedObs.has(last) && voicelessObs.has(first)) return false
-  if (voicelessObs.has(last) && voicedObs.has(first)) return false
-  // Disallow ry and rr joins
-  if (last === 'r' && first === 'y') return false
-  if (last === 'r' && first === 'r') return false
+function validJoinChars(last: string, first: string): boolean {
+  // Same letter
+  if (last === first) return false
+  // Voicing pair
+  if (allPairs[last] === first) return false
+  // Any two from fricative set
+  if (fricativeSet.has(last) && fricativeSet.has(first)) return false
+  // Exclude dy, ty, ry
+  if (first === 'y' && (last === 'd' || last === 't' || last === 'r')) return false
   return true
 }
 
-function count2WordJoins(words: string[]): number {
+function validJoinPair(w1: string, w2: string): boolean {
+  return validJoinChars(w1[w1.length - 1], w2[0])
+}
+
+// Unordered 2-word joins: count {w1, w2} where w1 ≠ w2
+// and at least one of w1→w2 or w2→w1 is a valid join.
+function countJoinsUnordered(words: string[]): number {
   let count = 0
-  for (const w1 of words) {
-    for (const w2 of words) {
-      if (validJoinPair(w1, w2)) count++
+  for (let i = 0; i < words.length; i++) {
+    for (let j = i + 1; j < words.length; j++) {
+      if (validJoinPair(words[i], words[j]) || validJoinPair(words[j], words[i])) {
+        count++
+      }
     }
   }
   return count
 }
 
-function count3WordJoins(words: string[]): number {
-  // Pre-compute valid followers for each possible last consonant
-  const validFollowers = new Map<string, string[]>()
-  for (const ec of [...new Set(words.map(w => w[w.length - 1]))]) {
-    validFollowers.set(ec, words.filter(w => {
-      if (noJoinStart.has(w[0])) return false
-      if (voicedObs.has(ec) && voicelessObs.has(w[0])) return false
-      if (voicelessObs.has(ec) && voicedObs.has(w[0])) return false
-      if (ec === 'r' && w[0] === 'y') return false
-      if (ec === 'r' && w[0] === 'r') return false
-      return true
-    }))
+// Unordered cross-size joins: count {w1, w2} where w1 ∈ set1, w2 ∈ set2
+// and at least one direction is a valid join.
+function countCrossJoinsUnordered(words1: string[], words2: string[]): number {
+  let count = 0
+  for (const w1 of words1) {
+    for (const w2 of words2) {
+      if (validJoinPair(w1, w2) || validJoinPair(w2, w1)) {
+        count++
+      }
+    }
+  }
+  return count
+}
+
+// Unordered 3-word joins: count {w1, w2, w3} (all distinct)
+// where at least one of the 6 orderings forms a valid join chain.
+function count3WordJoinsUnordered(words: string[]): number {
+  const n = words.length
+  // Precompute join matrix for fast lookup
+  const matrix = new Uint8Array(n * n)
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (i !== j && validJoinPair(words[i], words[j])) {
+        matrix[i * n + j] = 1
+      }
+    }
   }
 
   let count = 0
-  for (const w1 of words) {
-    const w2s = validFollowers.get(w1[w1.length - 1]) ?? []
-    for (const w2 of w2s) {
-      count += (validFollowers.get(w2[w2.length - 1]) ?? []).length
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      for (let k = j + 1; k < n; k++) {
+        // Check all 6 orderings: ijk, ikj, jik, jki, kij, kji
+        if (
+          (matrix[i * n + j] && matrix[j * n + k]) ||
+          (matrix[i * n + k] && matrix[k * n + j]) ||
+          (matrix[j * n + i] && matrix[i * n + k]) ||
+          (matrix[j * n + k] && matrix[k * n + i]) ||
+          (matrix[k * n + i] && matrix[i * n + j]) ||
+          (matrix[k * n + j] && matrix[j * n + i])
+        ) {
+          count++
+        }
+      }
     }
   }
   return count
@@ -339,12 +582,83 @@ function count3WordJoins(words: string[]): number {
 
 function generate2WordJoins(words: string[]): string[] {
   const results: string[] = []
-  for (const w1 of words) {
-    for (const w2 of words) {
-      if (validJoinPair(w1, w2)) results.push(w1 + w2)
+  for (let i = 0; i < words.length; i++) {
+    for (let j = i + 1; j < words.length; j++) {
+      if (validJoinPair(words[i], words[j]) || validJoinPair(words[j], words[i])) {
+        results.push(words[i] + words[j])
+      }
     }
   }
   return results
+}
+
+// ─── CVCVCVC Hamming Distance Blocking ─────────────────
+
+const allPairs: Record<string, string> = {
+  m: 'n', n: 'm', b: 'p', p: 'b', d: 't', t: 'd', g: 'k', k: 'g',
+  s: 'z', z: 's', f: 'v', v: 'f', x: 'j', j: 'x', c: 'C', C: 'c',
+}
+
+function blockCVCVCVC(words: string[], cfg: ComboConfig): string[] {
+  // Position alternatives for hamming distance check
+  const posAlts: string[][] = [
+    cfg.starts,   // pos 0: start
+    vowels,       // pos 1: v1
+    midPool,      // pos 2: mid1
+    vowels,       // pos 3: v2
+    midPool,      // pos 4: mid2
+    vowels,       // pos 5: v3
+    cfg.ends,     // pos 6: end
+  ]
+
+  function blockedVariants(word: string): string[] {
+    const blocked: string[] = [word]
+    const chars = word.split('')
+
+    // Block all 1-position variants
+    for (let i = 0; i < 7; i++) {
+      for (const alt of posAlts[i]) {
+        if (alt === chars[i]) continue
+        const copy = [...chars]
+        copy[i] = alt
+        blocked.push(copy.join(''))
+      }
+    }
+
+    // Block pair-equivalent consonant combos (same vowels)
+    const cPos = [0, 2, 4, 6]
+    const cAlts: string[][] = cPos.map(i => {
+      const ch = chars[i]
+      const partner = allPairs[ch]
+      return partner ? [ch, partner] : [ch]
+    })
+
+    for (const c0 of cAlts[0]) {
+      for (const c1 of cAlts[1]) {
+        for (const c2 of cAlts[2]) {
+          for (const c3 of cAlts[3]) {
+            if (c0 === chars[0] && c1 === chars[2] && c2 === chars[4] && c3 === chars[6]) continue
+            blocked.push(c0 + chars[1] + c1 + chars[3] + c2 + chars[5] + c3)
+          }
+        }
+      }
+    }
+
+    return blocked
+  }
+
+  const blockedSet = new Set<string>()
+  const accepted: string[] = []
+
+  for (const word of words) {
+    if (blockedSet.has(word)) continue
+    accepted.push(word)
+    for (const v of blockedVariants(word)) {
+      blockedSet.add(v)
+    }
+  }
+
+  return accepted
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -355,136 +669,108 @@ function shuffle<T>(arr: T[]): T[] {
   return arr
 }
 
-// ─── Main ───────────────────────────────────────────────
+// ─── Run ───────────────────────────────────────────────
 
-console.log('=== Base word generation (deterministic) ===')
-const filtered = generateCVC()
-console.log(`Base CVC words: ${filtered.length}`)
+function runCombo(cfg: ComboConfig) {
+  console.log(`\n${'='.repeat(60)}`)
+  console.log(`Combo ${cfg.name}: Start [${cfg.starts.join(' ')}] / End [${cfg.ends.join(' ')}]`)
+  console.log(`${'='.repeat(60)}`)
 
-console.log('\n=== 2-word compounds ===')
-const twoWordCount = count2WordJoins(filtered)
-console.log(`Valid 2-word joins: ${twoWordCount.toLocaleString()}`)
-
-console.log('\n=== 3-word compounds ===')
-const threeWordCount = count3WordJoins(filtered)
-console.log(`Valid 3-word joins: ${threeWordCount.toLocaleString()}`)
-
-console.log('\n=== Summary ===')
-console.log(`Base CVC words: ${filtered.length}`)
-console.log(`2-word compounds (CVC+CVC): ${twoWordCount.toLocaleString()}`)
-console.log(`3-word compounds (CVC+CVC+CVC): ${threeWordCount.toLocaleString()}`)
-console.log(`Total: ${(filtered.length + twoWordCount + threeWordCount).toLocaleString()}`)
-
-// ─── Write CSVs ─────────────────────────────────────────
-
-// Already in correct order from generation (start, vowel, end)
-writeFileSync(resolve(dataDir, '3.csv'), 'word\n' + filtered.join('\n') + '\n')
-console.log(`\nWrote ${filtered.length} base words to data/3.csv`)
-
-const twoWordJoins = generate2WordJoins(filtered)
-shuffle(twoWordJoins)
-writeFileSync(resolve(dataDir, '6.csv'), 'word\n' + twoWordJoins.join('\n') + '\n')
-console.log(`Wrote ${twoWordJoins.length} 2-word joins to data/6.csv`)
-
-// 5.csv: CVCVC words
-console.log('\n=== CVCVC generation (deterministic) ===')
-const cvcvc = generateCVCVC()
-console.log(`CVCVC words: ${cvcvc.length.toLocaleString()}`)
-writeFileSync(resolve(dataDir, '5.csv'), 'word\n' + cvcvc.join('\n') + '\n')
-console.log(`Wrote ${cvcvc.length.toLocaleString()} words to data/5.csv`)
-
-// Show samples
-console.log('\n=== Sample CVC base words ===')
-for (const w of filtered.slice(0, 40)) {
-  console.log(`  ${w}`)
-}
-
-console.log('\n=== Sample CVCVC words (first 60) ===')
-for (const w of cvcvc.slice(0, 60)) {
-  console.log(`  ${w}`)
-}
-
-// 7.csv: CVCVCVC words, filtered so no two differ by only 1 position
-console.log('\n=== CVCVCVC generation (deterministic, min distance 2) ===')
-
-// Alternatives for each position in CVCVCVC
-const allMidC = [...midConsonantPairs.flat(), ...midUnpaired]
-const posAlts: string[][] = [
-  startOrder,  // pos 0: start consonant
-  vowels,      // pos 1: v1
-  allMidC,     // pos 2: mid1
-  vowels,      // pos 3: v2
-  allMidC,     // pos 4: mid2
-  vowels,      // pos 5: v3
-  endC,        // pos 6: end consonant
-]
-
-function generateBlockedVariants7(word: string): string[] {
-  const blocked: string[] = [word]
-  const chars = word.split('')
-
-  // Block all 1-position variants (any position)
-  for (let i = 0; i < 7; i++) {
-    for (const alt of posAlts[i]) {
-      if (alt === chars[i]) continue
-      const copy = [...chars]
-      copy[i] = alt
-      blocked.push(copy.join(''))
+  // Print end assignment with usage stats
+  for (let si = 0; si < cfg.starts.length; si++) {
+    const parts: string[] = []
+    for (let vi = 0; vi < vowels.length; vi++) {
+      const ends = cfg.endMap.get(`${si}-${vi}`) ?? []
+      parts.push(`${vowels[vi]}:[${ends.join(',')}]`)
     }
+    console.log(`  ${cfg.starts[si]}: ${parts.join('  ')}`)
   }
-
-  // Block words where ALL consonants are pair-equivalent and vowels are identical.
-  // Consonant positions: 0, 2, 4, 6. For each, generate same + pair partner.
-  // Then combine all combos (keeping vowels fixed).
-  const cPos = [0, 2, 4, 6]
-  const cAlts: string[][] = cPos.map(i => {
-    const ch = chars[i]
-    const partner = allPairs[ch]
-    return partner ? [ch, partner] : [ch]
-  })
-
-  // Generate all combos of pair-equivalent consonants with same vowels
-  for (const c0 of cAlts[0]) {
-    for (const c1 of cAlts[1]) {
-      for (const c2 of cAlts[2]) {
-        for (const c3 of cAlts[3]) {
-          // Skip the word itself (already blocked)
-          if (c0 === chars[0] && c1 === chars[2] && c2 === chars[4] && c3 === chars[6]) continue
-          const w = c0 + chars[1] + c1 + chars[3] + c2 + chars[5] + c3
-          blocked.push(w)
-        }
-      }
-    }
+  const usage: Record<string, number> = {}
+  for (const ends of cfg.endMap.values()) {
+    for (const c of ends) usage[c] = (usage[c] ?? 0) + 1
   }
+  console.log(`  Usage: ${Object.entries(usage).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c}=${n}`).join(' ')}`)
 
-  return blocked
+  // CVC
+  const cvc = generateCVC(cfg)
+  console.log(`\nCVC: ${cvc.length}`)
+
+  const endDist: Record<string, number> = {}
+  for (const w of cvc) {
+    const last = w[w.length - 1]
+    endDist[last] = (endDist[last] ?? 0) + 1
+  }
+  console.log(`CVC end dist: ${Object.entries(endDist).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c}=${n}`).join(' ')}`)
+
+  // CVCVC
+  const cvcvc = generateCVCVC(cfg)
+  console.log(`CVCVC: ${cvcvc.length.toLocaleString()}`)
+
+  console.log(`\nSample CVC (first 30):`)
+  for (const w of cvc.slice(0, 30)) console.log(`  ${w}`)
+
+  const dir = resolve(__dirname, `data/combo-${cfg.name}`)
+  mkdirSync(dir, { recursive: true })
+  writeFileSync(resolve(dir, '3.csv'), 'word\n' + cvc.join('\n') + '\n')
+  writeFileSync(resolve(dir, '5.csv'), 'word\n' + cvcvc.join('\n') + '\n')
+
+  // 2-word joins file
+  const twoWordJoins = generate2WordJoins(cvc)
+  shuffle(twoWordJoins)
+  writeFileSync(resolve(dir, '6.csv'), 'word\n' + twoWordJoins.join('\n') + '\n')
+
+  // CVCVCVC with hamming distance blocking
+  console.log(`Generating CVCVCVC...`)
+  const cvcvcvcRaw = generateCVCVCVC(cfg)
+  console.log(`CVCVCVC raw: ${cvcvcvcRaw.length.toLocaleString()}`)
+  const cvcvcvc = blockCVCVCVC(cvcvcvcRaw, cfg)
+  console.log(`CVCVCVC blocked: ${cvcvcvc.length.toLocaleString()}`)
+  writeFileSync(resolve(dir, '7.csv'), 'word\n' + cvcvcvc.join('\n') + '\n')
+
+  console.log(`Wrote to data/combo-${cfg.name}/`)
+
+  return {
+    cvcWords: cvc, cvcvcWords: cvcvc,
+    cvc: cvc.length, cvcvc: cvcvc.length, cvcvcvc: cvcvcvc.length, cvcvcvcRaw: cvcvcvcRaw.length,
+  }
 }
 
-const blocked7 = new Set<string>()
-const cvcvcvc: string[] = []
-let cvcvcvcTotal = 0
-let cvcvcvcRejected = 0
+// ─── Main ──────────────────────────────────────────────
 
-for (const word of generateCVCVCVC()) {
-  cvcvcvcTotal++
-  if (blocked7.has(word)) {
-    cvcvcvcRejected++
-    continue
-  }
-  cvcvcvc.push(word)
-  for (const v of generateBlockedVariants7(word)) {
-    blocked7.add(v)
-  }
+const results: Record<string, ReturnType<typeof runCombo>> = {}
+results['1'] = runCombo(combo1)
+results['2'] = runCombo(combo2)
+results['3'] = runCombo(combo3)
+results['4'] = runCombo(combo4)
+
+console.log(`\n${'='.repeat(60)}`)
+console.log('SUMMARY')
+console.log(`${'='.repeat(60)}`)
+console.log(`\n| Combo | CVC | CVCVC | CVCVCVC raw | CVCVCVC |`)
+console.log(`| :--- | ---: | ---: | ---: | ---: |`)
+for (const [name, r] of Object.entries(results)) {
+  console.log(`| ${name} | ${r.cvc} | ${r.cvcvc.toLocaleString()} | ${r.cvcvcvcRaw.toLocaleString()} | ${r.cvcvcvc.toLocaleString()} |`)
 }
 
-console.log(`CVCVCVC generated: ${cvcvcvcTotal.toLocaleString()}`)
-console.log(`CVCVCVC rejected: ${cvcvcvcRejected.toLocaleString()}`)
-console.log(`CVCVCVC accepted: ${cvcvcvc.length.toLocaleString()}`)
+// Unified joins across all combos
+console.log(`\n${'='.repeat(60)}`)
+console.log('UNIFIED JOINS (all combos pooled)')
+console.log(`${'='.repeat(60)}`)
 
-writeFileSync(resolve(dataDir, '7.csv'), 'word\n' + cvcvcvc.join('\n') + '\n')
-console.log(`Wrote ${cvcvcvc.length.toLocaleString()} to data/7.csv`)
+const allCvc = Object.values(results).flatMap(r => r.cvcWords)
+const allCvcvc = Object.values(results).flatMap(r => r.cvcvcWords)
+console.log(`\nTotal CVC: ${allCvc.length}`)
+console.log(`Total CVCVC: ${allCvcvc.length}`)
 
-console.log('\n=== Sample CVCVCVC words (first 40) ===')
-for (const w of cvcvcvc.slice(0, 40)) {
-  console.log(`  ${w}`)
-}
+const joinsCvcCvc = countJoinsUnordered(allCvc)
+console.log(`CVC+CVC: ${joinsCvcCvc.toLocaleString()}`)
+
+const joinsCvcCvcvc = countCrossJoinsUnordered(allCvc, allCvcvc)
+console.log(`CVC↔CVCVC: ${joinsCvcCvcvc.toLocaleString()}`)
+
+console.log(`Computing CVC+CVC+CVC (${allCvc.length} words, ${(allCvc.length * (allCvc.length - 1) * (allCvc.length - 2) / 6).toLocaleString()} triples)...`)
+const joinsCvcCvcCvc = count3WordJoinsUnordered(allCvc)
+console.log(`CVC+CVC+CVC: ${joinsCvcCvcCvc.toLocaleString()}`)
+
+const totalJoins = joinsCvcCvc + joinsCvcCvcvc + joinsCvcCvcCvc
+console.log(`Total: ${totalJoins.toLocaleString()}`)
