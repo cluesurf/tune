@@ -7,6 +7,7 @@
 
 // ─── Inventory ──────────────────────────────────────────────
 
+export const SORT_ORDER = 'ieaoumnqgdbptkhszvfxjCcyrlw'.split('')
 export const CONSONANTS = new Set('mnqgdbptkhsfvzjxcCwlry'.split(''))
 export const VOWELS = new Set('ieaou'.split(''))
 

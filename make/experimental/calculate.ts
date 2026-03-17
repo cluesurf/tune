@@ -16,7 +16,7 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const dataDir = resolve(__dirname, 'data')
+const dataDir = resolve(__dirname, 'data/combo-1')
 mkdirSync(dataDir, { recursive: true })
 
 const vowels = 'ieaou'.split('')
@@ -26,9 +26,8 @@ const vowels = 'ieaou'.split('')
 // Pairs: (m,n), (b,d), (g,p), (t,k), (h), (y,w)
 const startOrder = ['m', 'n', 'b', 'd', 'g', 'p', 't', 'k', 'h', 'y', 'w']
 
-// End consonant pairs: [group A, group B]
-// Group A: z, x, v, c
-// Group B: s, j, f, C
+// End consonant pairs: [A-side, B-side]
+// P1=(s,z), P2=(j,x), P3=(f,v), P4=(C,c)
 const endPairs: [string, string][] = [
   ['z', 's'],
   ['x', 'j'],
@@ -40,6 +39,19 @@ const endC = [...endPairs.flat(), ...endUnpaired]
 
 const badTails = new Set(['el', 'il', 'er', 'ir'])
 
+// 4-phase end cycling: rotates pair groups across vowels
+// Phase = si % 4
+const endPhases: string[][][] = [
+  // Phase 0 (15): s j | v c q | f C l | z x q r | f C l
+  [['s','j'], ['v','c','q'], ['f','C','l'], ['z','x','q','r'], ['f','C','l']],
+  // Phase 1 (16): z x q | f C | v c q r | s j l | v c q r
+  [['z','x','q'], ['f','C'], ['v','c','q','r'], ['s','j','l'], ['v','c','q','r']],
+  // Phase 2 (15): f C | z x q | s j l | v c q r | s j l
+  [['f','C'], ['z','x','q'], ['s','j','l'], ['v','c','q','r'], ['s','j','l']],
+  // Phase 3 (16): v c q | s j | v c q r | f C l | z x q r
+  [['v','c','q'], ['s','j'], ['v','c','q','r'], ['f','C','l'], ['z','x','q','r']],
+]
+
 // ─── Deterministic Generation ─────────────────────────────
 
 function generateCVC(): string[] {
@@ -47,31 +59,14 @@ function generateCVC(): string[] {
 
   for (let si = 0; si < startOrder.length; si++) {
     const c1 = startOrder[si]
+    const phase = si % 4
 
     for (let vi = 0; vi < vowels.length; vi++) {
       const v = vowels[vi]
 
-      // Phase alternates by start index + vowel index
-      const phase = (si + vi) % 2
-
-      // Group A: z, x, v, c  with unpaired q, r
-      // Group B: s, j, f, C  with unpaired l
-      const groupAUnpaired = ['q', 'r']
-      const groupBUnpaired = ['l']
-
-      // Pick all 4 from the active group
-      for (const [a, b] of endPairs) {
-        const pick = phase === 0 ? a : b
-        if (!badTails.has(v + pick)) {
-          words.push(c1 + v + pick)
-        }
-      }
-
-      // Unpaired consonants assigned to the active group
-      const unpaired = phase === 0 ? groupAUnpaired : groupBUnpaired
-      for (const u of unpaired) {
-        if (!badTails.has(v + u)) {
-          words.push(c1 + v + u)
+      for (const c2 of endPhases[phase][vi]) {
+        if (!badTails.has(v + c2)) {
+          words.push(c1 + v + c2)
         }
       }
     }
@@ -113,7 +108,7 @@ function generateCVCVC(): string[] {
     for (let v1i = 0; v1i < vowels.length; v1i++) {
       const v1 = vowels[v1i]
 
-      // Iterate mid consonant pairs, picking member based on v2
+      // Iterate mid consonant pairs, picking member based on phase
       for (let mpi = 0; mpi < midConsonantPairs.length; mpi++) {
         const [midA, midB] = midConsonantPairs[mpi]
 
@@ -127,23 +122,12 @@ function generateCVCVC(): string[] {
           // No adjacent fricative pairs (c1↔cm)
           if (sameTypeFric(c1, cm)) continue
 
-          // End consonant phase
-          const endPhase = (si + v1i + mpi + v2i) % 2
-
-          for (const [a, b] of endPairs) {
-            const pick = endPhase === 0 ? a : b
-            if (!badTails.has(v2 + pick)) {
-              // No adjacent fricative pairs (cm↔end)
-              if (sameTypeFric(cm, pick)) continue
-              words.push(c1 + v1 + cm + v2 + pick)
-            }
-          }
-
-          const unpaired = endPhase === 0 ? ['q', 'r'] : ['l']
-          for (const u of unpaired) {
-            if (!badTails.has(v2 + u)) {
-              if (cm === 'r' && u === 'r') continue
-              words.push(c1 + v1 + cm + v2 + u)
+          // End consonants from 4-phase system
+          const ep = (si + v1i + mpi) % 4
+          for (const c2 of endPhases[ep][v2i]) {
+            if (!badTails.has(v2 + c2)) {
+              if (sameTypeFric(cm, c2)) continue
+              words.push(c1 + v1 + cm + v2 + c2)
             }
           }
         }
@@ -156,21 +140,13 @@ function generateCVCVC(): string[] {
           if (sameTypeFric(c1, cm)) continue
           for (let v2i = 0; v2i < vowels.length; v2i++) {
             const v2 = vowels[v2i]
-            const endPhase = (si + v1i + v2i) % 2
 
-            for (const [a, b] of endPairs) {
-              const pick = endPhase === 0 ? a : b
-              if (!badTails.has(v2 + pick)) {
-                if (sameTypeFric(cm, pick)) continue
-                words.push(c1 + v1 + cm + v2 + pick)
-              }
-            }
-
-            const unpaired = endPhase === 0 ? ['q', 'r'] : ['l']
-            for (const u of unpaired) {
-              if (!badTails.has(v2 + u)) {
-                if (cm === 'r' && u === 'r') continue
-                words.push(c1 + v1 + cm + v2 + u)
+            const ep = (si + v1i) % 4
+            for (const c2 of endPhases[ep][v2i]) {
+              if (!badTails.has(v2 + c2)) {
+                if (sameTypeFric(cm, c2)) continue
+                if (cm === 'r' && c2 === 'r') continue
+                words.push(c1 + v1 + cm + v2 + c2)
               }
             }
           }
@@ -232,23 +208,13 @@ function* generateCVCVCVC(): Generator<string> {
               // No adjacent fricative pairs (cm1↔cm2)
               if (sameTypeFric(cm1, cm2)) continue
 
-              // End consonant phase
-              const endPhase = (si + v1i + mp1i + v2i + mp2i + v3i) % 2
-
-              for (const [a, b] of endPairs) {
-                const pick = endPhase === 0 ? a : b
-                if (!badTails.has(v3 + pick)) {
-                  if (cm2 === 'r' && pick === 'r') continue
-                  if (sameTypeFric(cm2, pick)) continue
-                  yield c1 + v1 + cm1 + v2 + cm2 + v3 + pick
-                }
-              }
-
-              const unpaired = endPhase === 0 ? ['q', 'r'] : ['l']
-              for (const u of unpaired) {
-                if (!badTails.has(v3 + u)) {
-                  if (cm2 === 'r' && u === 'r') continue
-                  yield c1 + v1 + cm1 + v2 + cm2 + v3 + u
+              // End consonants from 4-phase system
+              const ep7a = (si + v1i + mp1i + mp2i) % 4
+              for (const c2 of endPhases[ep7a][v3i]) {
+                if (!badTails.has(v3 + c2)) {
+                  if (cm2 === 'r' && c2 === 'r') continue
+                  if (sameTypeFric(cm2, c2)) continue
+                  yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
                 }
               }
             }
@@ -263,22 +229,12 @@ function* generateCVCVCVC(): Generator<string> {
 
               for (let v3i = 0; v3i < vowels.length; v3i++) {
                 const v3 = vowels[v3i]
-                const endPhase = (si + v1i + mp1i + v2i + v3i) % 2
-
-                for (const [a, b] of endPairs) {
-                  const pick = endPhase === 0 ? a : b
-                  if (!badTails.has(v3 + pick)) {
-                    if (cm2 === 'r' && pick === 'r') continue
-                    if (sameTypeFric(cm2, pick)) continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + pick
-                  }
-                }
-
-                const unpaired = endPhase === 0 ? ['q', 'r'] : ['l']
-                for (const u of unpaired) {
-                  if (!badTails.has(v3 + u)) {
-                    if (cm2 === 'r' && u === 'r') continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + u
+                const ep7b = (si + v1i + mp1i) % 4
+                for (const c2 of endPhases[ep7b][v3i]) {
+                  if (!badTails.has(v3 + c2)) {
+                    if (cm2 === 'r' && c2 === 'r') continue
+                    if (sameTypeFric(cm2, c2)) continue
+                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
                   }
                 }
               }
@@ -308,22 +264,12 @@ function* generateCVCVCVC(): Generator<string> {
                 if (sameType(c1, cm1) && sameType(cm1, cm2)) continue
                 if (sameTypeFric(cm1, cm2)) continue
 
-                const endPhase = (si + v1i + v2i + mp2i + v3i) % 2
-
-                for (const [a, b] of endPairs) {
-                  const pick = endPhase === 0 ? a : b
-                  if (!badTails.has(v3 + pick)) {
-                    if (cm2 === 'r' && pick === 'r') continue
-                    if (sameTypeFric(cm2, pick)) continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + pick
-                  }
-                }
-
-                const unpaired = endPhase === 0 ? ['q', 'r'] : ['l']
-                for (const u of unpaired) {
-                  if (!badTails.has(v3 + u)) {
-                    if (cm2 === 'r' && u === 'r') continue
-                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + u
+                const ep7c = (si + v1i + mp2i) % 4
+                for (const c2 of endPhases[ep7c][v3i]) {
+                  if (!badTails.has(v3 + c2)) {
+                    if (cm2 === 'r' && c2 === 'r') continue
+                    if (sameTypeFric(cm2, c2)) continue
+                    yield c1 + v1 + cm1 + v2 + cm2 + v3 + c2
                   }
                 }
               }
