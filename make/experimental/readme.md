@@ -29,8 +29,8 @@ Graph coloring divides consonants into 3 groups. All exclusion edges cross group
 
 Plus 3 binary pairs cycling independently: `m` ↔ `n`, `d` ↔ `t`, `g` ↔ `k`.
 
-Phase computation: `S = sum of preceding indices`.
-Available consonants: `groups[S % 3]` + `binaryPairs[*][S % 2]`.
+- Phase computation: `S = sum of preceding indices`.
+- Available consonants: `groups[S % 3]` + `binaryPairs[*][S % 2]`.
 
 **No `w` or `y` in mid or end positions.** They only appear as starts.
 
@@ -83,10 +83,10 @@ Words from any combo can join with words from any other combo. No two consonants
 
 4-phase rotation of fricative pairs. Phase = `si % 4`.
 
-Phase 0: i:[s,j] e:[v,c,q] a:[f,C,l] o:[z,x,q,r] u:[f,C,l]
-Phase 1: i:[z,x,q] e:[f,C] a:[v,c,q,r] o:[s,j,l] u:[v,c,q,r]
-Phase 2: i:[f,C] e:[z,x,q] a:[s,j,l] o:[v,c,q,r] u:[s,j,l]
-Phase 3: i:[v,c,q] e:[s,j] a:[v,c,q,r] o:[f,C,l] u:[z,x,q,r]
+- Phase 0: i:[s,j] e:[v,c,q] a:[f,C,l] o:[z,x,q,r] u:[f,C,l]
+- Phase 1: i:[z,x,q] e:[f,C] a:[v,c,q,r] o:[s,j,l] u:[v,c,q,r]
+- Phase 2: i:[f,C] e:[z,x,q] a:[s,j,l] o:[v,c,q,r] u:[s,j,l]
+- Phase 3: i:[v,c,q] e:[s,j] a:[v,c,q,r] o:[f,C,l] u:[z,x,q,r]
 
 ## Combo 2: Fricatives Start, Stops End
 
@@ -107,6 +107,7 @@ Phase 3: i:[v,c,q] e:[s,j] a:[v,c,q,r] o:[f,C,l] u:[z,x,q,r]
 ### End cycling (weaving)
 
 Binary pair groups alternate by `(si + vi) % 2`.
+
 - Group A: `m p d k`
 - Group B: `n b t g`
 
