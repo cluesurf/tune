@@ -342,6 +342,7 @@ const combo4Hardcoded: string[][][] = [
 
 type ComboConfig = {
   name: string
+  type: string
   starts: string[]
   ends: string[]
   endMap: EndMap
@@ -409,6 +410,7 @@ const bannedCV = new Set(['yi', 'wu', 'wo', 'ye', 'wa', 'we'])
 
 const combo1: ComboConfig = {
   name: '1',
+  type: 'a',
   starts: combo1Starts,
   ends: sortChars(['q', 's', 'z', 'f', 'v', 'x', 'j', 'c', 'C', 'l', 'r']),
   endMap: endMap1,
@@ -420,6 +422,7 @@ const combo1: ComboConfig = {
 
 const combo2: ComboConfig = {
   name: '2',
+  type: 'a',
   starts: combo2Starts,
   ends: sortChars(['m', 'n', 'b', 'd', 'g', 'p', 't', 'k']),
   endMap: endMap2,
@@ -431,6 +434,7 @@ const combo2: ComboConfig = {
 
 const combo3: ComboConfig = {
   name: '3',
+  type: 'a',
   starts: combo3Starts,
   ends: sortChars(['m', 'n', 'b', 'd', 'g', 'p', 't', 'k']),
   endMap: endMap3,
@@ -442,6 +446,7 @@ const combo3: ComboConfig = {
 
 const combo4: ComboConfig = {
   name: '4',
+  type: 'a',
   starts: combo4Starts,
   ends: sortChars(['q', 's', 'z', 'f', 'v', 'x', 'j', 'c', 'C', 'l', 'r']),
   endMap: endMap4,
@@ -959,7 +964,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 function runCombo(cfg: ComboConfig) {
   console.log(`\n${'='.repeat(60)}`)
-  console.log(`Combo ${cfg.name}: Start [${cfg.starts.join(' ')}] / End [${cfg.ends.join(' ')}]`)
+  console.log(`Combo ${cfg.name} (type ${cfg.type}): Start [${cfg.starts.join(' ')}] / End [${cfg.ends.join(' ')}]`)
   console.log(`${'='.repeat(60)}`)
 
   // Print end assignment with usage stats
@@ -997,7 +1002,7 @@ function runCombo(cfg: ComboConfig) {
   console.log(`\nSample CVC (first 30):`)
   for (const w of cvc.slice(0, 30)) console.log(`  ${w}`)
 
-  const dir = resolve(__dirname, `data/combo-${cfg.name}`)
+  const dir = resolve(__dirname, `data/combo-${cfg.name}-${cfg.type}`)
   mkdirSync(dir, { recursive: true })
   writeFileSync(resolve(dir, '3.csv'), 'word\n' + cvc.join('\n') + '\n')
   writeFileSync(resolve(dir, '5.csv'), 'word\n' + cvcvc.join('\n') + '\n')
@@ -1015,7 +1020,7 @@ function runCombo(cfg: ComboConfig) {
   console.log(`CVCVCVC blocked: ${cvcvcvc.length.toLocaleString()}`)
   writeFileSync(resolve(dir, '7.csv'), 'word\n' + cvcvcvc.join('\n') + '\n')
 
-  console.log(`Wrote to data/combo-${cfg.name}/`)
+  console.log(`Wrote to data/combo-${cfg.name}-${cfg.type}/`)
 
   return {
     cvcWords: cvc, cvcvcWords: cvcvc, cvcvcvcWords: cvcvcvc,
@@ -1023,13 +1028,89 @@ function runCombo(cfg: ComboConfig) {
   }
 }
 
+// ─── Combo 1 Type B: Hardcoded End Spec ─────────────────
+
+type EndSpec = Record<string, string[]>
+
+function buildEndMapFromSpecs(specs: EndSpec[]): EndMap {
+  const vowelIdx: Record<string, number> = { i: 0, e: 1, a: 2, o: 3, u: 4 }
+  const map: EndMap = new Map()
+  for (let si = 0; si < specs.length; si++) {
+    const spec = specs[si]
+    const cells: string[][] = [[], [], [], [], []]
+    for (const [endCh, vows] of Object.entries(spec)) {
+      for (const v of vows) {
+        cells[vowelIdx[v]].push(endCh)
+      }
+    }
+    for (let vi = 0; vi < 5; vi++) {
+      map.set(`${si}-${vi}`, cells[vi])
+    }
+  }
+  return sortEndMap(map)
+}
+
+const patternA: EndSpec = {
+  q: ['i','a','u'], s: ['i','a','u'], z: ['e','o'], f: ['e','o'],
+  v: ['i','a','u'], x: ['i','a','u'], j: ['e','o'], c: ['e','o'],
+  C: ['i','a','o'], l: ['a','u'], r: ['o'],
+}
+
+const patternB: EndSpec = {
+  q: ['i','a','u'], s: ['e','o'], z: ['i','a','u'], f: ['i','a','u'],
+  v: ['e','o'], x: ['e','o'], j: ['i','a','u'], c: ['i','a','u'],
+  C: ['e','o'], l: ['a','u'], r: ['o'],
+}
+
+const patternY: EndSpec = {
+  q: ['i','a','u'], s: ['o'], z: ['a','u'], f: ['a','u'],
+  v: ['o'], x: ['o'], j: ['a','u'], c: ['a','u'],
+  C: ['o'], l: ['a','u'], r: ['o'],
+}
+
+const patternW: EndSpec = {
+  q: ['i'], s: ['e'], z: ['i'], f: ['i'],
+  v: ['e'], x: ['e'], j: ['i'], c: ['i'],
+  C: ['e'], l: ['i'], r: ['e'],
+}
+
+// m=A, n=B, b=A, p=B, t=A, d=B, g=A, k=B, h=A, y=Y, w=W
+const combo1bSpecs: EndSpec[] = [
+  patternA, // m
+  patternB, // n
+  patternA, // b
+  patternB, // p
+  patternA, // t
+  patternB, // d
+  patternA, // g
+  patternB, // k
+  patternA, // h
+  patternY, // y
+  patternW, // w
+]
+
+const endMap1b = buildEndMapFromSpecs(combo1bSpecs)
+
+const combo1b: ComboConfig = {
+  name: '1',
+  type: 'b',
+  starts: combo1Starts,
+  ends: sortChars(['q', 's', 'z', 'f', 'v', 'x', 'j', 'c', 'C', 'l', 'r']),
+  endMap: endMap1b,
+  badTails: new Set(['el', 'il', 'er', 'ir']),
+  bannedVC,
+  bannedCV,
+  overlapping: false,
+}
+
 // ─── Main ──────────────────────────────────────────────
 
 const results: Record<string, ReturnType<typeof runCombo>> = {}
-results['1'] = runCombo(combo1)
-results['2'] = runCombo(combo2)
-results['3'] = runCombo(combo3)
-results['4'] = runCombo(combo4)
+results['1a'] = runCombo(combo1)
+results['1b'] = runCombo(combo1b)
+results['2a'] = runCombo(combo2)
+results['3a'] = runCombo(combo3)
+results['4a'] = runCombo(combo4)
 
 console.log(`\n${'='.repeat(60)}`)
 console.log('SUMMARY')
