@@ -205,8 +205,8 @@ Words from any combo can join with words from any other combo. No two consonants
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        152 |
 | 2         | 5          | `CVCVC`   |      3,524 |
-| 3         | 7          | `CVCVCVC` |     61,632 |
-|           |            | **total** | **65,308** |
+| 3         | 7          | `CVCVCVC` |     56,981 |
+|           |            | **total** | **60,657** |
 
 ### End cycling
 
@@ -230,8 +230,8 @@ Words from any combo can join with words from any other combo. No two consonants
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        100 |
 | 2         | 5          | `CVCVC`   |      1,955 |
-| 3         | 7          | `CVCVCVC` |     54,179 |
-|           |            | **total** | **56,234** |
+| 3         | 7          | `CVCVCVC` |     29,281 |
+|           |            | **total** | **31,336** |
 
 
 ### End cycling (weaving)
@@ -256,8 +256,8 @@ Weaving selects 2 of 4 per cell using 4 patterns.
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |         98 |
 | 2         | 5          | `CVCVC`   |      2,466 |
-| 3         | 7          | `CVCVCVC` |     67,608 |
-|           |            | **total** | **70,172** |
+| 3         | 7          | `CVCVCVC` |     36,059 |
+|           |            | **total** | **38,623** |
 
 ### End cycling (structured matching)
 
@@ -292,10 +292,11 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | Sets exclusive? | yes | yes | **no** | **no** |
 | CVC | 152 | 100 | 98 | 137 |
 | CVCVC | 3,524 | 1,955 | 2,466 | 3,284 |
-| CVCVCVC | 61,632 | 54,179 | 67,608 | 48,106 |
+| CVCVCVC | 56,981 | 29,281 | 36,059 | 46,098 |
 | Texture | percussive to flow | flow to snap | percussive | airy/flowing |
-| End cycling | 4-phase rotation | weaving (2 of 4) | structured matching | hardcoded + matching |
-| Mid cycling | 3-group exclusion | 3-group exclusion | 3-group exclusion | 3-group exclusion |
+| End cycling | ring `s v j c z f C x` + q/l/r specials | ring `d g p t k m n b` | ring `p t k m n b d g` | ring `j c z f C x s v` + q/l/r specials |
+| Mid1 cycling | ring `f C x s v j c z` + l/r | ring `c z f C x s v j` + l/r | ring `C x s v j c z f` + l/r | ring `z f C x s v j c` + l/r |
+| Mid2 cycling | ring `m g d b n k p t` + h/w/y | ring `t k m n b d g p` + h/w/y | ring `b d g p t k m n` + h/w/y | ring `t k m n b d g p` + h/w/y |
 
 ## Total Word Counts (all combos)
 
