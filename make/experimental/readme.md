@@ -204,9 +204,9 @@ Words from any combo can join with words from any other combo. No two consonants
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        152 |
-| 2         | 5          | `CVCVC`   |      1,237 |
-| 3         | 7          | `CVCVCVC` |     17,419 |
-|           |            | **total** | **18,808** |
+| 2         | 5          | `CVCVC`   |      3,524 |
+| 3         | 7          | `CVCVCVC` |     61,632 |
+|           |            | **total** | **65,308** |
 
 ### End cycling
 
@@ -229,9 +229,9 @@ Words from any combo can join with words from any other combo. No two consonants
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        100 |
-| 2         | 5          | `CVCVC`   |        733 |
-| 3         | 7          | `CVCVCVC` |     10,456 |
-|           |            | **total** | **11,289** |
+| 2         | 5          | `CVCVC`   |      1,955 |
+| 3         | 7          | `CVCVCVC` |     54,179 |
+|           |            | **total** | **56,234** |
 
 
 ### End cycling (weaving)
@@ -255,9 +255,9 @@ Weaving selects 2 of 4 per cell using 4 patterns.
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |         98 |
-| 2         | 5          | `CVCVC`   |      1,003 |
-| 3         | 7          | `CVCVCVC` |     13,193 |
-|           |            | **total** | **14,294** |
+| 2         | 5          | `CVCVC`   |      2,466 |
+| 3         | 7          | `CVCVCVC` |     67,608 |
+|           |            | **total** | **70,172** |
 
 ### End cycling (structured matching)
 
@@ -275,9 +275,9 @@ Side A `m p d k`, Side B `n b t g`. 9 derangements. Each cell gets 2 ends. One p
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        137 |
-| 2         | 5          | `CVCVC`   |        922 |
-| 3         | 7          | `CVCVCVC` |     10,793 |
-|           |            | **total** | **11,852** |
+| 2         | 5          | `CVCVC`   |      3,284 |
+| 3         | 7          | `CVCVCVC` |     48,106 |
+|           |            | **total** | **51,527** |
 
 ### End cycling (hardcoded + structured matching)
 
@@ -291,8 +291,8 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | End count | 11 | 8 | 8 | 11 |
 | Sets exclusive? | yes | yes | **no** | **no** |
 | CVC | 152 | 100 | 98 | 137 |
-| CVCVC | 1,237 | 733 | 1,003 | 922 |
-| CVCVCVC | 17,419 | 10,456 | 13,193 | 10,793 |
+| CVCVC | 3,524 | 1,955 | 2,466 | 3,284 |
+| CVCVCVC | 61,632 | 54,179 | 67,608 | 48,106 |
 | Texture | percussive to flow | flow to snap | percussive | airy/flowing |
 | End cycling | 4-phase rotation | weaving (2 of 4) | structured matching | hardcoded + matching |
 | Mid cycling | 3-group exclusion | 3-group exclusion | 3-group exclusion | 3-group exclusion |
@@ -302,9 +302,9 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        487 |
-| 2         | 5          | `CVCVC`   |      3,895 |
-| 3         | 7          | `CVCVCVC` |     51,861 |
-|           |            | **total** | **56,243** |
+| 2         | 5          | `CVCVC`   |     11,229 |
+| 3         | 7          | `CVCVCVC` |    231,525 |
+|           |            | **total** | **243,241** |
 
 ## Word Join Patterns (all combos unified)
 
