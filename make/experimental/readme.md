@@ -276,8 +276,8 @@ Side A `m p d k`, Side B `n b t g`. 9 derangements. Each cell gets 2 ends. One p
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        137 |
 | 2         | 5          | `CVCVC`   |      3,284 |
-| 3         | 7          | `CVCVCVC` |     48,106 |
-|           |            | **total** | **51,527** |
+| 3         | 7          | `CVCVCVC` |     46,098 |
+|           |            | **total** | **49,519** |
 
 ### End cycling (hardcoded + structured matching)
 
@@ -288,6 +288,8 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | Property | 1 (stop start, fric end) | 2 (fric start, stop end) | 3 (stop both) | 4 (fric both) |
 | :--- | :--- | :--- | :--- | :--- |
 | Start count | 11 | 10 | 11 | 10 |
+| Mid1 count | 8 + l/r | 8 + l/r | 8 + l/r | 8 + l/r |
+| Mid2 count | 8 + h/w/y | 8 + h/w/y | 8 + h/w/y | 8 + h/w/y |
 | End count | 11 | 8 | 8 | 11 |
 | Sets exclusive? | yes | yes | **no** | **no** |
 | CVC | 152 | 100 | 98 | 137 |
@@ -304,8 +306,8 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        487 |
 | 2         | 5          | `CVCVC`   |     11,229 |
-| 3         | 7          | `CVCVCVC` |    231,525 |
-|           |            | **total** | **243,241** |
+| 3         | 7          | `CVCVCVC` |    168,419 |
+|           |            | **total** | **180,135** |
 
 ## Word Join Patterns (all combos unified)
 
