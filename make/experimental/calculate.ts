@@ -405,7 +405,7 @@ for (let si = 0; si < 2; si++) {
 const endMap4 = sortEndMap(endMap4Raw)
 
 const bannedVC = new Set(['el', 'il', 'er', 'ir'])
-const bannedCV = new Set(['yi', 'wu', 'wo', 'ye'])
+const bannedCV = new Set(['yi', 'wu', 'wo', 'ye', 'wa', 'we'])
 
 const combo1: ComboConfig = {
   name: '1',

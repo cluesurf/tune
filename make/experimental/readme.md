@@ -1,6 +1,95 @@
-# Tune (Experimental)
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-Four consonant set combinations sharing vowels `i e a o u` (Spanish-style).
+<p align='center'>
+  <img src='https://github.com/cluesurf/tune/blob/make/view/moon.svg?raw=true' height='222'/>
+</p>
+
+<h3 align='center'>tune</h3>
+<p align='center'>
+  A Thinking Language
+</p>
+
+<br/>
+
+<p align="center">
+<em>These are the parts your mouth and tongue shape.</em><br/>
+<em>Sharing yourself in new ways to the lake.</em><br/>
+<em>These are the symbols representing sound bits.</em><br/>
+<em>Combining into a rhythm like the drum hits.</em><br/>
+<em>Soon you'll notice that each twist and turn fits.</em><br/>
+</p>
+<p align="center">
+<em>These are the wholes that link the speech tones.</em><br/>
+<em>Morphing our intelligence as we play with each stone.</em><br/>
+<em>These are the words we separate with spaces.</em><br/>
+<em>Defining them carefully so we get down to the basics.</em><br/>
+<em>You'll soon learn how to use them in statements.</em><br/>
+</p>
+<p align="center">
+<em>These are the threads that frame what you speak.</em><br/>
+<em>Giving others a peek at your inner geek.</em><br/>
+<em>These are the sentences your voice brings in the night.</em><br/>
+<em>Manifesting the invisible in the mind's eye.</em><br/>
+<em>Now you're a chat master, next is an invite.</em><br/>
+</p>
+<p align="center">
+<em>These are the structures that make the light whiter.</em><br/>
+<em>Making it possible to communicate about the higher.</em><br/>
+<em>These are the trees in which we mold information.</em><br/>
+<em>Seeing ourselves and the universe as one big computation.</em><br/>
+<em>The key thing to remember is patterns and patience.</em><br/>
+</p>
+<p align="center">
+<em>These are the networks merging everything into one.</em><br/>
+<em>Connecting knowledge together like the moon and the sun.</em><br/>
+<em>These are the primary thing the earth yields.</em><br/>
+<em>Filling the memory with energy from brook and field.</em><br/>
+<em>If you've made it this far it's the stone that you wield.</em><br/>
+</p>
+<br/>
+<br/>
+
+## Introduction
+
+**Tune** is a constructed language designed to organize knowledge with clarity and precision. Its goal is to express ideas using a minimal set of base concepts that combine in predictable ways, reducing ambiguity while remaining easy to speak and understand. By structuring meaning systematically, Tune aims to make complex ideas easier to grasp and communicate.
+
+The language is built to scale from everyday conversation to highly technical domains. Scientific terms, abstract ideas, and specialized jargon can be expressed by composing simple core concepts, allowing new discoveries and technologies to be named in a consistent and intelligible way. Instead of memorizing thousands of opaque terms, speakers can follow the internal logic of the language to understand unfamiliar concepts.
+
+Ultimately, Tune is meant to serve as a flexible conceptual framework rather than just a vocabulary. It provides a structured way to describe the world, allowing knowledge to be organized, extended, and shared across disciplines and cultures. As human understanding grows, the language is designed to grow with it while preserving clarity and coherence.
+
+## Sounds
+
+| mark | sound     | note                                       |
+| :--: | :-------- | :----------------------------------------- |
+| `m`  | `mark`    |                                            |
+| `n`  | `note`    |                                            |
+| `q`  | `sing`    | the -ng sound                              |
+| `g`  | `gift`    |                                            |
+| `d`  | `deed`    |                                            |
+| `b`  | `band`    |                                            |
+| `p`  | `play`    |                                            |
+| `t`  | `time`    |                                            |
+| `k`  | `king`    |                                            |
+| `h`  | `heal`    |                                            |
+| `s`  | `soul`    |                                            |
+| `f`  | `fire`    |                                            |
+| `v`  | `vibe`    |                                            |
+| `z`  | `zone`    |                                            |
+| `j`  | `beige`   | the "g" sound here, "zh"                   |
+| `x`  | `ship`    | the "sh" sound                             |
+| `c`  | `thor`    | the voiceless "th" sound                   |
+| `C`  | `this`    | the voiced "th" sound                      |
+| `w`  | `wave`    |                                            |
+| `l`  | `love`    |                                            |
+| `r`  | `rise`    | but with spanish, arabic, or indian accent |
+| `y`  | `yard`    |                                            |
+
+(vowels are like spanish `i e a o u` sounds).
 
 ## Shared Systems
 
@@ -43,7 +132,7 @@ No two adjacent consonant positions (start ↔ mid, mid ↔ end, mid ↔ mid) ma
 
 **Banned VC:** No `el`, `il`, `er`, `ir` anywhere in a word. All VC positions in CVCVC and CVCVCVC (all combos), plus CVC tails (combos 1, 4).
 
-**Banned CV:** No `yi`, `wu`, `wo`, `ye` anywhere in a word. All CV positions (all lengths, all combos).
+**Banned CV:** No `yi`, `wu`, `wo`, `ye`, `wa`, `we` anywhere in a word. All CV positions (all lengths, all combos).
 
 ### Adjacent consonant constraint (CVCVC, CVCVCVC)
 
@@ -114,10 +203,10 @@ Words from any combo can join with words from any other combo. No two consonants
 
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
-| 1         | 3          | `CVC`     |        158 |
-| 2         | 5          | `CVCVC`   |      1,295 |
-| 3         | 7          | `CVCVCVC` |     18,372 |
-|           |            | **total** | **19,825** |
+| 1         | 3          | `CVC`     |        152 |
+| 2         | 5          | `CVCVC`   |      1,237 |
+| 3         | 7          | `CVCVCVC` |     17,419 |
+|           |            | **total** | **18,808** |
 
 ### End cycling
 
@@ -165,10 +254,10 @@ Weaving selects 2 of 4 per cell using 4 patterns.
 
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
-| 1         | 3          | `CVC`     |        102 |
-| 2         | 5          | `CVCVC`   |      1,048 |
-| 3         | 7          | `CVCVCVC` |     13,949 |
-|           |            | **total** | **15,099** |
+| 1         | 3          | `CVC`     |         98 |
+| 2         | 5          | `CVCVC`   |      1,003 |
+| 3         | 7          | `CVCVCVC` |     13,193 |
+|           |            | **total** | **14,294** |
 
 ### End cycling (structured matching)
 
@@ -201,9 +290,9 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | Start count | 11 | 10 | 11 | 10 |
 | End count | 11 | 8 | 8 | 11 |
 | Sets exclusive? | yes | yes | **no** | **no** |
-| CVC | 158 | 100 | 102 | 137 |
-| CVCVC | 1,295 | 733 | 1,048 | 922 |
-| CVCVCVC | 18,372 | 10,456 | 13,949 | 10,793 |
+| CVC | 152 | 100 | 98 | 137 |
+| CVCVC | 1,237 | 733 | 1,003 | 922 |
+| CVCVCVC | 17,419 | 10,456 | 13,193 | 10,793 |
 | Texture | percussive to flow | flow to snap | percussive | airy/flowing |
 | End cycling | 4-phase rotation | weaving (2 of 4) | structured matching | hardcoded + matching |
 | Mid cycling | 3-group exclusion | 3-group exclusion | 3-group exclusion | 3-group exclusion |
@@ -212,22 +301,22 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
-| 1         | 3          | `CVC`     |        497 |
-| 2         | 5          | `CVCVC`   |      3,998 |
-| 3         | 7          | `CVCVCVC` |     53,570 |
-|           |            | **total** | **58,065** |
+| 1         | 3          | `CVC`     |        487 |
+| 2         | 5          | `CVCVC`   |      3,895 |
+| 3         | 7          | `CVCVCVC` |     51,861 |
+|           |            | **total** | **56,243** |
 
 ## Word Join Patterns (all combos unified)
 
-497 CVC, 3,998 CVCVC, and 53,570 CVCVCVC words pooled across all 4 combos. Order-independent (each combination counted once). All words in a join must be distinct.
+487 CVC, 3,895 CVCVC, and 51,861 CVCVCVC words pooled across all 4 combos. Order-independent (each combination counted once). All words in a join must be distinct.
 
 | syllables | words | characters | source                    |         count |       5% |
 | :-------- | :---- | :--------- | :------------------------ | ------------: | -------: |
-| 2         | 2     | 6          | `CVC` + `CVC`             |       102,072 |    5,104 |
-| 3         | 2     | 8          | `CVC` + `CVCVC`           |     1,682,389 |   84,119 |
-| 4         | 2     | 10         | `CVC` + `CVCVCVC`         |    22,662,195 | 1,133,110 |
-| 3         | 3     | 9          | `CVC` + `CVC` + `CVC`     |    16,102,777 |  805,139 |
-|           |       |            |                           | **~40.5M** | **~2.0M** |
+| 2         | 2     | 6          | `CVC` + `CVC`             |        97,157 |    4,858 |
+| 3         | 2     | 8          | `CVC` + `CVCVC`           |     1,592,248 |   79,612 |
+| 4         | 2     | 10         | `CVC` + `CVCVCVC`         |    21,294,212 | 1,064,711 |
+| 3         | 3     | 9          | `CVC` + `CVC` + `CVC`     |    14,973,648 |  748,682 |
+|           |       |            |                           | **~38.0M** | **~1.9M** |
 
 ### Key Tradeoff
 
