@@ -91,15 +91,7 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 
 (vowels are like spanish `i e a o u` sounds).
 
-## Tune Language Core
-
-Tune is a minimal, compositional language built from consonant roots and five vowel forms.
-Each root expresses a core concept, and each vowel maps that concept into a different functional role.
-
-All words follow a consonant–vowel–consonant pattern (or extended forms like CVCVC, CVCVCVC).
-Every vowel has a consistent, global meaning.
-
-### Word Forms
+## Word Forms
 
 For a root `R`:
 
@@ -112,9 +104,9 @@ Re   relation / link
 Ro   operator / control
 ```
 
-### The Five Roles
+## The Five Roles
 
-#### `-a` Entity
+### `-a` Entity
 
 The **thing form**.
 Represents a concrete or abstract entity.
@@ -125,7 +117,7 @@ loka = dog
 nara = person
 ```
 
-#### `-i` Action
+### `-i` Action
 
 The **process form**.
 Represents actions, events, or changes.
@@ -136,7 +128,7 @@ luki = see
 tili = strike
 ```
 
-#### `-u` Feature
+### `-u` Feature
 
 The **property form**.
 Represents qualities, states, or aspects.
@@ -147,7 +139,7 @@ luku = visible
 tilu = forceful
 ```
 
-#### `-e` Relation
+### `-e` Relation
 
 The **link form**.
 Connects two expressions.
@@ -164,7 +156,7 @@ General form:
 A Re B
 ```
 
-#### `-o` Operator
+### `-o` Operator
 
 The **control form**.
 Modifies how expressions are interpreted, combined, or evaluated.
@@ -172,7 +164,7 @@ Modifies how expressions are interpreted, combined, or evaluated.
 This is not a noun, verb, property, or relation.
 It operates at the **logic / discourse level**.
 
-### Core Idea of `-o`
+## Core Idea of `-o`
 
 > `-o` introduces an operator that affects the meaning of a full expression.
 
@@ -182,11 +174,11 @@ Ro X
 
 → apply operator `R` to expression `X`
 
-### Common Operator Functions
+## Common Operator Functions
 
 These arise naturally from roots:
 
-#### Negation
+### Negation
 
 ```text
 nego nara luki loka
@@ -194,7 +186,7 @@ nego nara luki loka
 
 → the person does not see the dog
 
-#### Conjunction
+### Conjunction
 
 ```text
 ando nara luki loka  nara tili doma
@@ -202,7 +194,7 @@ ando nara luki loka  nara tili doma
 
 → the person sees the dog AND strikes the house
 
-#### Alternative
+### Alternative
 
 ```text
 oro nara luki loka  nara tili doma
@@ -210,7 +202,7 @@ oro nara luki loka  nara tili doma
 
 → OR
 
-#### Contrast
+### Contrast
 
 ```text
 buto nara luki loka  nara tili doma
@@ -218,7 +210,7 @@ buto nara luki loka  nara tili doma
 
 → BUT
 
-#### Question
+### Question
 
 ```text
 queso nara luki loka
@@ -226,7 +218,7 @@ queso nara luki loka
 
 → does the person see the dog?
 
-#### Emphasis / Restriction
+### Emphasis / Restriction
 
 ```text
 onlyo nara luki loka
@@ -234,7 +226,7 @@ onlyo nara luki loka
 
 → only the person sees the dog
 
-### Modifier (Bare Root)
+## Modifier (Bare Root)
 
 The bare root modifies the next expression.
 
@@ -244,9 +236,9 @@ fas nara = fast person
 sil luki = see softly
 ```
 
-### Basic Sentence Forms
+## Basic Sentence Forms
 
-#### Action Form
+### Action Form
 
 ```text
 A Ri B
@@ -258,7 +250,7 @@ nara luki loka
 
 → person sees dog
 
-#### Relational Form
+### Relational Form
 
 ```text
 A Re B
@@ -270,7 +262,7 @@ nara mare doma
 
 → person in house
 
-#### Operator Form
+### Operator Form
 
 ```text
 Ro X
@@ -282,7 +274,7 @@ nego nara luki loka
 
 → not (person sees dog)
 
-### Design Principles
+## Design Principles
 
 Tune is built on five irreducible roles:
 
@@ -292,7 +284,7 @@ Tune is built on five irreducible roles:
 * `-e` → how things connect
 * `-o` → how meaning is controlled
 
-### Key Properties
+## Key Properties
 
 * Fully compositional
 * Minimal and regular
@@ -300,7 +292,7 @@ Tune is built on five irreducible roles:
 * No irregular grammar
 * Logic and discourse built into the core
 
-### Summary
+## Summary
 
 Tune separates:
 
