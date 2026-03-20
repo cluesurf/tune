@@ -91,6 +91,230 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 
 (vowels are like spanish `i e a o u` sounds).
 
+## Tune Language Core
+
+Tune is a minimal, compositional language built from consonant roots and five vowel forms.
+Each root expresses a core concept, and each vowel maps that concept into a different functional role.
+
+All words follow a consonant–vowel–consonant pattern (or extended forms like CVCVC, CVCVCVC).
+Every vowel has a consistent, global meaning.
+
+### Word Forms
+
+For a root `R`:
+
+```text
+R    modifier (bare root)
+Ra   entity / thing
+Ri   action / process
+Ru   feature / property
+Re   relation / link
+Ro   operator / control
+```
+
+### The Five Roles
+
+#### `-a` Entity
+
+The **thing form**.
+Represents a concrete or abstract entity.
+
+```text
+doma = house
+loka = dog
+nara = person
+```
+
+#### `-i` Action
+
+The **process form**.
+Represents actions, events, or changes.
+
+```text
+domi = build
+luki = see
+tili = strike
+```
+
+#### `-u` Feature
+
+The **property form**.
+Represents qualities, states, or aspects.
+
+```text
+domu = built / structural
+luku = visible
+tilu = forceful
+```
+
+#### `-e` Relation
+
+The **link form**.
+Connects two expressions.
+
+```text
+mare nara = person in/at house
+loke nara = person with dog
+tile doma = against the house
+```
+
+General form:
+
+```text
+A Re B
+```
+
+#### `-o` Operator
+
+The **control form**.
+Modifies how expressions are interpreted, combined, or evaluated.
+
+This is not a noun, verb, property, or relation.
+It operates at the **logic / discourse level**.
+
+### Core Idea of `-o`
+
+> `-o` introduces an operator that affects the meaning of a full expression.
+
+```text
+Ro X
+```
+
+→ apply operator `R` to expression `X`
+
+### Common Operator Functions
+
+These arise naturally from roots:
+
+#### Negation
+
+```text
+nego nara luki loka
+```
+
+→ the person does not see the dog
+
+#### Conjunction
+
+```text
+ando nara luki loka  nara tili doma
+```
+
+→ the person sees the dog AND strikes the house
+
+#### Alternative
+
+```text
+oro nara luki loka  nara tili doma
+```
+
+→ OR
+
+#### Contrast
+
+```text
+buto nara luki loka  nara tili doma
+```
+
+→ BUT
+
+#### Question
+
+```text
+queso nara luki loka
+```
+
+→ does the person see the dog?
+
+#### Emphasis / Restriction
+
+```text
+onlyo nara luki loka
+```
+
+→ only the person sees the dog
+
+### Modifier (Bare Root)
+
+The bare root modifies the next expression.
+
+```text
+brk doma = bright house
+fas nara = fast person
+sil luki = see softly
+```
+
+### Basic Sentence Forms
+
+#### Action Form
+
+```text
+A Ri B
+```
+
+```text
+nara luki loka
+```
+
+→ person sees dog
+
+#### Relational Form
+
+```text
+A Re B
+```
+
+```text
+nara mare doma
+```
+
+→ person in house
+
+#### Operator Form
+
+```text
+Ro X
+```
+
+```text
+nego nara luki loka
+```
+
+→ not (person sees dog)
+
+### Design Principles
+
+Tune is built on five irreducible roles:
+
+* `-a` → what exists
+* `-i` → what happens
+* `-u` → what something is like
+* `-e` → how things connect
+* `-o` → how meaning is controlled
+
+### Key Properties
+
+* Fully compositional
+* Minimal and regular
+* Open-ended root system
+* No irregular grammar
+* Logic and discourse built into the core
+
+### Summary
+
+Tune separates:
+
+* **content** (things, actions, properties, relations)
+* **control** (operators)
+
+This allows simple structures like:
+
+```text
+nego nara luki loka
+```
+
+to express complex meaning without extra grammar.
+
 ## Shared Systems
 
 ### Exclusion edges
