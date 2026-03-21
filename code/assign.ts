@@ -68,8 +68,14 @@ export function assignConstraintFirst(
 
     if (!mostConstrained) break
 
-    /** Assign the best available match. */
-    const bestMatch = mostConstrained.matches.find(m => !used.has(m.word))
+    /** Assign the best available match (highest adjustedScore that isn't used). */
+    let bestMatch: MatchedCandidate | undefined
+    for (const m of mostConstrained.matches) {
+      if (!used.has(m.word)) {
+        bestMatch = m
+        break
+      }
+    }
     if (!bestMatch) {
       remaining.delete(mostConstrained.english)
       continue

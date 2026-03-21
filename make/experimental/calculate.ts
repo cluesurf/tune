@@ -596,6 +596,111 @@ const cyclingConfigs: Record<string, CyclingConfig> = {
   },
 }
 
+// ─── Unified CVCVC Generator ────────────────────────────
+//
+// C1: all consonants
+// V1: i e a o u
+// C3 (mid): all consonants
+// V2: i e a o u
+// C5 (end): 5 independent sub-cycles covering all valid ends
+//
+// No h/w/y at end. bannedCV and badTails still apply.
+
+const ALL_CONSONANTS = ['m', 'n', 'g', 'd', 'b', 'p', 't', 'k', 'h', 's', 'z', 'v', 'f', 'x', 'j', 'C', 'c', 'y', 'r', 'l', 'w']
+
+// End sub-cycles (5 independent global cursors)
+const END_A = [  // fricatives: cycle of 4, pairs of 2
+  ['s', 'v'],
+  ['x', 'C'],
+  ['z', 'f'],
+  ['c', 'j'],
+]
+const END_B = [  // stops: cycle of 6, singles
+  ['p'],
+  ['d'],
+  ['k'],
+  ['b'],
+  ['g'],
+  ['t'],
+]
+const END_C = ['n', 'm']  // nasals: cycle of 2
+const END_D = ['l', 'r']  // liquids: cycle of 2
+// E: q on/off
+
+const badTailsUnified = new Set(['el', 'il', 'er', 'ir'])
+
+function generateCVCVC_unified(): string[] {
+  const words: string[] = []
+  let v4Offset = 0
+
+  for (const c1 of ALL_CONSONANTS) {
+    for (let v1i = 0; v1i < vowels.length; v1i++) {
+      const v1 = vowels[v1i]
+      if (bannedCV.has(c1 + v1)) continue
+
+      for (let v2i = 0; v2i < vowels.length; v2i++) {
+        if (v1i === v2i && (v1i === 0 || v1i === 1 || v1i === 4)) continue // no i-i, e-e, u-u
+        const v2 = vowels[v2i]
+
+        // End cycling resets at each V4, but with incrementing offset
+        let endACursor = v4Offset
+        let endBCursor = v4Offset
+        let endCCursor = v4Offset
+        let endDCursor = v4Offset
+        let endEOn = v4Offset % 2 === 1  // q: off first, then on
+        v4Offset++
+
+        // For this V4, loop through all C3 mids
+        for (const cm of ALL_CONSONANTS) {
+          if (bannedVC.has(v1 + cm)) continue
+          if (bannedCV.has(cm + v2)) continue
+
+          // Collect ends from all 5 sub-cycles
+          const ends: string[] = []
+
+          // A: fricative cycle of 6
+          const aGroup = END_A[endACursor % END_A.length]
+          for (const e of aGroup) ends.push(e)
+          endACursor++
+
+          // B: stop cycle of 4
+          const bGroup = END_B[endBCursor % END_B.length]
+          for (const e of bGroup) ends.push(e)
+          endBCursor++
+
+          // C: nasal cycle of 3 (m, n, skip)
+          const cVal = END_C[endCCursor % END_C.length]
+          if (cVal) ends.push(cVal)
+          endCCursor++
+
+          // D: liquid cycle of 2
+          ends.push(END_D[endDCursor % END_D.length])
+          endDCursor++
+
+          // E: q off/on
+          if (endEOn) ends.push('q')
+          endEOn = !endEOn
+
+
+          for (const c2 of ends) {
+            // No h/w/y at end
+            if (c2 === 'h' || c2 === 'w' || c2 === 'y') continue
+            if (badTailsUnified.has(v2 + c2)) continue
+            if (c1 === cm && cm === c2) continue
+            const cCcount = [c1, cm, c2].filter(x => x === 'c' || x === 'C').length
+            if (cCcount > 1) continue
+            words.push(c1 + v1 + cm + v2 + c2)
+          }
+        }
+      }
+    }
+  }
+
+  return words.sort(compareWords)
+}
+
+// ─── Generic cycling CVCVC (combos 1, 3, 4) ────────────
+
 function generateCVCVC_cycling(cfg: ComboConfig): string[] {
   const cc = cyclingConfigs[cfg.name]
   if (!cc) throw new Error(`No cycling config for combo ${cfg.name}`)
@@ -642,7 +747,7 @@ function generateCVCVC_cycling(cfg: ComboConfig): string[] {
           if (cfg.bannedVC.has(v1 + cm)) continue
 
           for (let v2i = 0; v2i < vowels.length; v2i++) {
-            if (v1i === 4 && v2i === 4) continue
+            if (v1i === v2i && (v1i === 0 || v1i === 1 || v1i === 4)) continue // no i-i, e-e, u-u
             const v2 = vowels[v2i]
             if (cfg.bannedCV.has(cm + v2)) continue
 
@@ -701,130 +806,82 @@ function generateCVCVC_cycling(cfg: ComboConfig): string[] {
   return words.sort(compareWords)
 }
 
-// ─── CVCVCVC Generation ────────────────────────────────
+// ─── Unified CVCVCVC Generation ─────────────────────────
 
-function generateCVCVCVC(cfg: ComboConfig): string[] {
-  const cc = cyclingConfigs[cfg.name]
-  if (!cc) throw new Error(`No cycling config for combo ${cfg.name}`)
-
+function generateCVCVCVC_unified(): string[] {
   const words: string[] = []
-  // Each mid ring gets TWO cursors: one for mid1 position, one for mid2 position
-  const mid1Cursors = cc.midRings.map(() => 0)
-  const mid2Cursors = cc.midRings.map(() => 0)
-  let endCursor = 0
-  let specialMid1Toggle = 0
-  let specialMid2Toggle = 0
-  let specialEndToggle = 0
+  let v3Offset = 0
 
-  for (const c1 of cc.startOrder) {
+  for (const c1 of ALL_CONSONANTS) {
     for (let v1i = 0; v1i < vowels.length; v1i++) {
       const v1 = vowels[v1i]
-      if (cfg.bannedCV.has(c1 + v1)) continue
+      if (bannedCV.has(c1 + v1)) continue
 
-      // Mid1: iterate all mid rings for position 1
-      for (let r1i = 0; r1i < cc.midRings.length; r1i++) {
-        const midRing1 = cc.midRings[r1i]
-        const m1 = pull3(midRing1.ring, mid1Cursors[r1i])
-        mid1Cursors[r1i] = m1.next
-        const mids1 = [...m1.items]
+      for (const cm1 of ALL_CONSONANTS) {
+        if (bannedVC.has(v1 + cm1)) continue
 
-        if (midRing1.lrAlternating) {
-          const p = specialMid1Toggle++ % 2
-          if (p === 0) { mids1.push('l'); if (v1i % 2 === 1) mids1.push('r') }
-          else { mids1.push('r'); if (v1i % 2 === 1) mids1.push('l') }
-        }
-        if (midRing1.hwyRestricted) mids1.push('h', 'w', 'y')
+        for (let v2i = 0; v2i < vowels.length; v2i++) {
+          if (v1i === v2i && (v1i === 0 || v1i === 1 || v1i === 4)) continue
+          const v2 = vowels[v2i]
+          if (bannedCV.has(cm1 + v2)) continue
 
-        for (const cm1 of mids1) {
-          if (!adjacentOk(c1, cm1)) continue
-          if (cfg.bannedVC.has(v1 + cm1)) continue
+          for (const cm2 of ALL_CONSONANTS) {
+            if (bannedVC.has(v2 + cm2)) continue
 
-          for (let v2i = 0; v2i < vowels.length; v2i++) {
-            if (v1i === 4 && v2i === 4) continue
-            const v2 = vowels[v2i]
-            if (cfg.bannedCV.has(cm1 + v2)) continue
+            // No 3 same character in a row
+            if (c1 === cm1 && cm1 === cm2) continue
+            // No 3 fricatives in a row
+            if (fricativeSet.has(c1) && fricativeSet.has(cm1) && fricativeSet.has(cm2)) continue
+            // Max 1 c/C total so far
+            if ([c1, cm1, cm2].filter(x => x === 'c' || x === 'C').length > 1) continue
 
-            if (midRing1.hwyRestricted) {
-              if (cm1 === 'h' && v2i !== 4) continue
-              if (cm1 === 'w' && v2i !== 0) continue
-              if (cm1 === 'y' && v2i !== 2) continue
-            }
+            for (let v3i = 0; v3i < vowels.length; v3i++) {
+              if (v2i === v3i && (v2i === 0 || v2i === 1 || v2i === 4)) continue
+              const v3 = vowels[v3i]
+              // Must contain at least one 'a'
+              if (v1i !== 2 && v2i !== 2 && v3i !== 2) continue
+              if (bannedCV.has(cm2 + v3)) continue
 
-            // Mid2: iterate all mid rings for position 2
-            for (let r2i = 0; r2i < cc.midRings.length; r2i++) {
-              const midRing2 = cc.midRings[r2i]
-              const m2 = pull3(midRing2.ring, mid2Cursors[r2i])
-              mid2Cursors[r2i] = m2.next
-              const mids2 = [...m2.items]
+              // End cycling resets per V3 with offset
+              let endACursor = v3Offset
+              let endBCursor = v3Offset
+              let endCCursor = v3Offset
+              let endDCursor = v3Offset
+              let endEOn = v3Offset % 2 === 1
+              v3Offset++
 
-              if (midRing2.lrAlternating) {
-                const p = specialMid2Toggle++ % 2
-                if (p === 0) { mids2.push('l'); if (v2i % 2 === 1) mids2.push('r') }
-                else { mids2.push('r'); if (v2i % 2 === 1) mids2.push('l') }
-              }
-              if (midRing2.hwyRestricted) mids2.push('h', 'w', 'y')
+              // Collect ends from 5 sub-cycles
+              const ends: string[] = []
 
-              for (const cm2 of mids2) {
-                if (!adjacentOk(cm1, cm2)) continue
-                if (cfg.bannedVC.has(v2 + cm2)) continue
+              // A: fricative cycle of 4
+              const aGroup = END_A[endACursor % END_A.length]
+              for (const e of aGroup) ends.push(e)
 
-                if (midRing2.hwyRestricted) {
-                  if (cm2 === 'h' && true) continue // h/w/y only valid for v3, skip in mid2 for now
-                  if (cm2 === 'w') continue
-                  if (cm2 === 'y') continue
-                }
+              // B: stop cycle of 6
+              const bGroup = END_B[endBCursor % END_B.length]
+              for (const e of bGroup) ends.push(e)
 
-                // No 3 same character in a row
-                if (c1 === cm1 && cm1 === cm2) continue
+              // C: nasal cycle of 2
+              ends.push(END_C[endCCursor % END_C.length])
+
+              // D: liquid cycle of 2
+              ends.push(END_D[endDCursor % END_D.length])
+
+              // E: q off/on
+              if (endEOn) ends.push('q')
+
+              for (const c2 of ends) {
+                if (c2 === 'h' || c2 === 'w' || c2 === 'y') continue
+                if (badTailsUnified.has(v3 + c2)) continue
+                // No 3 same character
+                if (cm1 === cm2 && cm2 === c2) continue
                 // No 3 fricatives in a row
-                if (fricativeSet.has(c1) && fricativeSet.has(cm1) && fricativeSet.has(cm2)) continue
-
-                for (let v3i = 0; v3i < vowels.length; v3i++) {
-                  if (v2i === 4 && v3i === 4) continue
-                  const v3 = vowels[v3i]
-                  // Must contain at least one 'a'
-                  if (v1i !== 2 && v2i !== 2 && v3i !== 2) continue
-                  if (cfg.bannedCV.has(cm2 + v3)) continue
-
-                  // Pull 3 ends
-                  const e = pull3(cc.endRing, endCursor)
-                  endCursor = e.next
-                  const ends = [...e.items]
-
-                  if (cc.endSpecials.qlr) {
-                    const ePat = specialEndToggle++ % 4
-                    if (ePat === 0) {
-                      if (v3i === 2) ends.push('l')
-                      if (v3i === 3) ends.push('r')
-                    } else if (ePat === 1) {
-                      if (v3i === 2) ends.push('q')
-                      if (v3i === 3) ends.push('l')
-                      if (v3i === 4) ends.push('r')
-                    } else if (ePat === 2) {
-                      if (v3i === 2) ends.push('r')
-                      if (v3i === 3) ends.push('l')
-                    } else {
-                      if (v3i === 2) ends.push('q')
-                      if (v3i === 3) ends.push('r')
-                      if (v3i === 4) ends.push('l')
-                    }
-                  }
-
-                  for (const c2 of ends) {
-                    if (!cfg.ends.includes(c2)) continue
-                    if (!adjacentOk(cm2, c2)) continue
-                    if (cfg.badTails.has(v3 + c2)) continue
-                    // No 3 same character
-                    if (cm1 === cm2 && cm2 === c2) continue
-                    // No 3 fricatives
-                    if (fricativeSet.has(cm1) && fricativeSet.has(cm2) && fricativeSet.has(c2)) continue
-                    // Max 1 c/C total
-                    if ([c1, cm1, cm2, c2].filter(x => x === 'c' || x === 'C').length > 1) continue
-                    // Max 3 fricatives total
-                    if ([c1, cm1, cm2, c2].filter(x => fricativeSet.has(x)).length > 3) continue
-                    words.push(c1 + v1 + cm1 + v2 + cm2 + v3 + c2)
-                  }
-                }
+                if (fricativeSet.has(cm1) && fricativeSet.has(cm2) && fricativeSet.has(c2)) continue
+                // Max 1 c/C total
+                if ([c1, cm1, cm2, c2].filter(x => x === 'c' || x === 'C').length > 1) continue
+                // Max 3 fricatives total
+                if ([c1, cm1, cm2, c2].filter(x => fricativeSet.has(x)).length > 3) continue
+                words.push(c1 + v1 + cm1 + v2 + cm2 + v3 + c2)
               }
             }
           }
@@ -1237,11 +1294,8 @@ function runCombo(cfg: ComboConfig) {
   }
   console.log(`CVC end dist: ${Object.entries(endDist).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c}=${n}`).join(' ')}`)
 
-  // CVCVC with hamming distance blocking
-  const cvcvcRaw = generateCVCVC_cycling(cfg)
-  console.log(`CVCVC raw: ${cvcvcRaw.length.toLocaleString()}`)
-  const cvcvc = blockCVCVC(cvcvcRaw, cfg)
-  console.log(`CVCVC blocked: ${cvcvc.length.toLocaleString()}`)
+  // CVCVC now uses unified generator (run separately)
+  const cvcvc: string[] = []
 
   console.log(`\nSample CVC (first 30):`)
   for (const w of cvc.slice(0, 30)) console.log(`  ${w}`)
@@ -1256,24 +1310,40 @@ function runCombo(cfg: ComboConfig) {
   shuffle(twoWordJoins)
   writeFileSync(resolve(dir, '6.csv'), 'word\n' + twoWordJoins.join('\n') + '\n')
 
-  // CVCVCVC with hamming distance blocking
-  console.log(`Generating CVCVCVC...`)
-  const cvcvcvcRaw = generateCVCVCVC(cfg)
-  console.log(`CVCVCVC raw: ${cvcvcvcRaw.length.toLocaleString()}`)
-  const cvcvcvc = blockCVCVCVC(cvcvcvcRaw, cfg)
-  console.log(`CVCVCVC blocked: ${cvcvcvc.length.toLocaleString()}`)
-  writeFileSync(resolve(dir, '7.csv'), 'word\n' + cvcvcvc.join('\n') + '\n')
+  // CVCVCVC now uses unified generator (run separately)
+  const cvcvcvc: string[] = []
 
   console.log(`Wrote to data/combo-${cfg.name}/`)
 
   return {
     cvcWords: cvc, cvcvcWords: cvcvc, cvcvcvcWords: cvcvcvc,
-    cvc: cvc.length, cvcvc: cvcvc.length, cvcvcRaw: cvcvcRaw.length, cvcvcvc: cvcvcvc.length, cvcvcvcRaw: cvcvcvcRaw.length,
+    cvc: cvc.length, cvcvc: cvcvc.length, cvcvcRaw: 0, cvcvcvc: cvcvcvc.length, cvcvcvcRaw: 0,
   }
 }
 
 // ─── Main ──────────────────────────────────────────────
 
+// Unified CVCVC (all consonants, one generator)
+console.log(`\n${'='.repeat(60)}`)
+console.log('UNIFIED CVCVC (all consonants)')
+console.log(`${'='.repeat(60)}`)
+const unifiedCvcvc = generateCVCVC_unified()
+console.log(`CVCVC unified: ${unifiedCvcvc.length.toLocaleString()}`)
+const unifiedDir = resolve(__dirname, 'data/unified')
+mkdirSync(unifiedDir, { recursive: true })
+writeFileSync(resolve(unifiedDir, '5.csv'), 'word\n' + unifiedCvcvc.join('\n') + '\n')
+console.log(`Wrote to data/unified/5.csv`)
+
+// Unified CVCVCVC
+console.log(`\n${'='.repeat(60)}`)
+console.log('UNIFIED CVCVCVC (all consonants)')
+console.log(`${'='.repeat(60)}`)
+const unifiedCvcvcvc = generateCVCVCVC_unified()
+console.log(`CVCVCVC unified: ${unifiedCvcvcvc.length.toLocaleString()}`)
+writeFileSync(resolve(unifiedDir, '7.csv'), 'word\n' + unifiedCvcvcvc.join('\n') + '\n')
+console.log(`Wrote to data/unified/7.csv`)
+
+// Per-combo runs (CVC still uses combo system)
 const results: Record<string, ReturnType<typeof runCombo>> = {}
 results['1'] = runCombo(combo1)
 results['2'] = runCombo(combo2)
@@ -1295,8 +1365,8 @@ console.log('UNIFIED JOINS (all combos pooled)')
 console.log(`${'='.repeat(60)}`)
 
 const allCvc = Object.values(results).flatMap(r => r.cvcWords)
-const allCvcvc = Object.values(results).flatMap(r => r.cvcvcWords)
-const allCvcvcvc = Object.values(results).flatMap(r => r.cvcvcvcWords)
+const allCvcvc = unifiedCvcvc
+const allCvcvcvc = unifiedCvcvcvc
 console.log(`\nTotal CVC: ${allCvc.length}`)
 console.log(`Total CVCVC: ${allCvcvc.length}`)
 console.log(`Total CVCVCVC: ${allCvcvcvc.length}`)

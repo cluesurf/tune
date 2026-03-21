@@ -188,7 +188,7 @@ export function walkTrieForMatches(
                   bestSim(v1Char, wantV1, 'onset', true) +
                   bestSim(c2Char, wantC2, 'onset', false) * 2 +
                   bestSim(v2Char, wantV2, 'onset', true) +
-                  bestSim(c3Char, wantC3, 'coda', false) * 2.5 +
+                  bestSim(c3Char, wantC3, 'coda', false) * 4 +
                   bestAlive * 0.3,
                 tier: c3Node.tier,
               })
@@ -206,6 +206,13 @@ export function walkTrieForMatches(
    */
   const matched: Array<MatchedCandidate> = []
 
+  /**
+   * C1 preservation bonus: if a trie word's C1 matches the top
+   * raw candidate's C1, add a bonus. C1 is the most recognizable
+   * part of the word and should be strongly preserved.
+   */
+  const topC1 = sortedCandidates[0]?.word[0] ?? ''
+
   for (const [word, { tier }] of found) {
     let bestScore = -Infinity
     let bestCandidate: CVCVCCandidate | null = null
@@ -213,8 +220,17 @@ export function walkTrieForMatches(
 
     for (const c of candidates) {
       const dist = wordPhoneticDistance(c.word, word)
-      const score =
-        c.total - dist * 3 + (TIER_BONUS[tier] ?? 0)
+      /**
+       * Distance multiplier is 2 (not 4). The wordPhoneticDistance
+       * already has position weights built in (C1*5, C3*4, C2*2),
+       * so multiplying by 4 again was double-penalizing mismatches
+       * and letting exact-match h-prefix words beat better-sounding
+       * consonant-initial alternatives.
+       */
+      let score =
+        c.total - dist * 2 + (TIER_BONUS[tier] ?? 0)
+      /** Bonus for preserving the top candidate's C1. */
+      if (word[0] === topC1) score += 20
       if (score > bestScore) {
         bestScore = score
         bestCandidate = c

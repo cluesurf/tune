@@ -95,8 +95,7 @@ const CLUSTER_MAP: Record<string, Array<ScoredOption>> = {
   'tx': [{ tune: 'x', score: 90 }],   // tʃ -> x (as in "church")
   'ts': [{ tune: 's', score: 80 }, { tune: 't', score: 60 }],
   'dz': [{ tune: 'z', score: 80 }, { tune: 'd', score: 60 }],
-  'ks': [{ tune: 'k', score: 80 }, { tune: 's', score: 60 }],
-  'gz': [{ tune: 'g', score: 80 }, { tune: 'z', score: 60 }],
+  /** ks and gz: keep as separate segments for better CVCVC distribution. */
   /**
    * s+stop onset clusters: do NOT merge these.
    * They should be kept as two separate consonants (s at C1, stop at C2).
@@ -528,8 +527,11 @@ function collapseToCVCVC(segments: Array<Segment>): { levels: FiveSlots } {
     s4 = [filterC1(c1Opts), v1Opts, c2Opts, v2Opts, filterC3(c3Opts)]
   }
 
+  /** Strategy 5: Syllable-aware rules. */
+  const s5 = strategySyllableAware(segments, cs, vs, startsWithVowel)
+
   /** Return merged levels where each position has options from all strategies. */
-  const all = [s1, s2, s3]
+  const all = [s1, s2, s3, s5]
   if (s4) all.push(s4)
   const merged = mergeLevels(all)
 
@@ -554,7 +556,8 @@ function mergeLevels(strategies: Array<FiveSlots>): FiveSlots {
     for (let i = 0; i < 5; i++) {
       for (const opt of strat[i]) {
         if (!result[i].some(o => o.tune === opt.tune)) {
-          result[i].push(opt)
+          /** Create a copy so we don't mutate shared constants. */
+          result[i].push({ tune: opt.tune, score: opt.score })
         } else {
           /** Keep the higher score. */
           const existing = result[i].find(o => o.tune === opt.tune)!
@@ -795,6 +798,168 @@ function strategyByProminence(
   const v2: CandidateLevel = vs.length > 1
     ? vs[vs.length - 1].options
     : echoVowel(v1)
+
+  return [filterC1(c1), v1, c2, v2, filterC3(c3)]
+}
+
+/**
+ * Strategy 5: Syllable-aware rules.
+ *
+ * Analyzes the segment pattern to determine syllable structure,
+ * then applies specific rules for 1-syl, 2-syl, 3-syl words.
+ *
+ * Key principles:
+ *   1-syl: C1 = first consonant, C3 = LAST consonant (highest priority)
+ *   1-syl onset cluster: C1 = cluster[0], C2 = cluster[1] or lastC
+ *   1-syl coda cluster: C2 = cluster[0], C3 = cluster[-1]
+ *   2-syl: natural CVCVC mapping, medial clusters -> onset of next syl
+ *   3-syl: can center on stressed syllable
+ */
+function strategySyllableAware(
+  segments: Array<Segment>,
+  cs: Array<Segment>,
+  vs: Array<Segment>,
+  startsWithVowel: boolean,
+): FiveSlots {
+  const vowelCount = vs.length
+  const consonantCount = cs.length
+
+  /**
+   * Identify cluster positions relative to vowels.
+   */
+  const vowelPositions: Array<number> = []
+  for (let i = 0; i < segments.length; i++) {
+    if (segments[i].type === 'V') vowelPositions.push(i)
+  }
+
+  const firstV = vowelPositions[0] ?? -1
+  const lastV = vowelPositions[vowelPositions.length - 1] ?? -1
+
+  const onset = firstV > 0
+    ? segments.slice(0, firstV).filter(s => s.type === 'C')
+    : []
+  const coda = lastV >= 0 && lastV < segments.length - 1
+    ? segments.slice(lastV + 1).filter(s => s.type === 'C')
+    : []
+  const between = firstV >= 0 && lastV > firstV
+    ? segments.slice(firstV + 1, lastV).filter(s => s.type === 'C')
+    : []
+
+  let c1: CandidateLevel
+  let v1: CandidateLevel
+  let c2: CandidateLevel
+  let v2: CandidateLevel
+  let c3: CandidateLevel
+
+  if (startsWithVowel) {
+    /**
+     * Vowel-initial. For 3-syl, start from first real consonant.
+     * For 1-2 syl, use h-prefix.
+     */
+    if (vowelCount >= 3 && cs.length >= 2) {
+      /** 3-syl vowel-initial: start from first consonant. */
+      c1 = cs[0].options
+      v1 = vs.length > 1 ? vs[1].options : vs[0].options
+      c2 = cs.length > 1 ? cs[1].options : INSERT_CONSONANTS
+      v2 = vs.length > 2 ? vs[2].options : echoVowel(v1)
+      c3 = cs.length > 2 ? cs[cs.length - 1].options : INSERT_C3
+    } else {
+      c1 = H_OPTION
+      v1 = vs[0]?.options ?? INSERT_VOWELS
+      c2 = cs[0]?.options ?? INSERT_CONSONANTS
+      v2 = vs.length > 1 ? vs[1].options : echoVowel(v1)
+      c3 = cs.length > 1 ? cs[cs.length - 1].options : INSERT_C3
+    }
+  } else if (vowelCount <= 1) {
+    /**
+     * 1-syllable word.
+     * Key rule: LAST consonant has highest priority for C3.
+     */
+    const firstC = cs[0]?.options ?? INSERT_CONSONANTS
+    const lastC = cs[cs.length - 1]?.options ?? INSERT_C3
+
+    if (onset.length >= 2 && coda.length >= 2) {
+      /** Onset + coda clusters (e.g., bridge bɹɪdʒ -> b,d,j). */
+      c1 = onset[0].options                   // first onset char
+      c2 = coda[0].options                    // first coda char (more prominent)
+      c3 = coda[coda.length - 1].options      // last coda char
+    } else if (onset.length >= 2 && coda.length === 1) {
+      /** Onset cluster + single coda (e.g., grease gɹiːs). */
+      c1 = onset[0].options                   // first onset char
+      c2 = onset[onset.length - 1].options    // second onset char
+      c3 = coda[0].options                    // last consonant = highest priority
+    } else if (onset.length === 1 && coda.length >= 2) {
+      /** Single onset + coda cluster (e.g., milk mɪlk). */
+      c1 = onset[0].options                   // onset
+      c2 = coda[0].options                    // first coda cluster char
+      c3 = coda[coda.length - 1].options      // LAST consonant
+    } else if (onset.length === 1 && coda.length === 1) {
+      /** Simple CVC (e.g., cat kæt). */
+      c1 = firstC
+      c2 = lastC                              // echo last consonant
+      c3 = lastC.map(o => ({ ...o, score: Math.round(o.score * 0.8) }))
+      /** Also add filler options for C3. */
+      const fillers = INSERT_C3.filter(f => !c3.some(o => o.tune === f.tune))
+      c3 = [...c3, ...fillers]
+    } else {
+      c1 = firstC
+      c2 = cs.length > 1 ? cs[1].options : INSERT_CONSONANTS
+      c3 = lastC
+    }
+
+    v1 = vs[0]?.options ?? INSERT_VOWELS
+    v2 = echoVowel(v1)
+  } else if (vowelCount === 2) {
+    /**
+     * 2-syllable word.
+     * Natural CVCVC: C1=onset, C2=medial (onset of 2nd syl), C3=coda.
+     * Medial clusters: prefer onset of next syllable.
+     */
+    c1 = onset.length > 0 ? onset[onset.length > 1 ? 0 : 0].options : INSERT_CONSONANTS
+
+    if (between.length >= 2) {
+      /** Medial cluster: pick last (onset of next syllable). */
+      c2 = between[between.length - 1].options
+    } else if (between.length === 1) {
+      c2 = between[0].options
+    } else {
+      c2 = coda.length > 0 ? coda[0].options : INSERT_CONSONANTS
+    }
+
+    c3 = coda.length > 0
+      ? coda[coda.length - 1].options
+      : INSERT_C3
+
+    v1 = vs[0]?.options ?? INSERT_VOWELS
+    v2 = vs[1]?.options ?? echoVowel(v1)
+  } else {
+    /**
+     * 3+ syllable word.
+     * Can center on stressed syllable.
+     * Default: C1=first C, C2=middle area, C3=last C.
+     *
+     * For stressed-syllable centering, the strategies above
+     * already handle some of this. Here we add another option:
+     * keep word-initial C1 but pick C2 from stressed syllable area.
+     */
+    c1 = cs[0]?.options ?? INSERT_CONSONANTS
+    c3 = cs[cs.length - 1]?.options ?? INSERT_C3
+
+    /** Pick C2 from between (onset of middle/stressed syllable). */
+    if (between.length > 0) {
+      /** Pick the one closest to the second vowel (onset of next syl). */
+      c2 = between[between.length - 1].options
+    } else if (cs.length >= 3) {
+      /** No between consonants, use middle of full consonant list. */
+      const midIdx = Math.floor(cs.length / 2)
+      c2 = cs[midIdx].options
+    } else {
+      c2 = cs.length > 1 ? cs[1].options : INSERT_CONSONANTS
+    }
+
+    v1 = vs[0]?.options ?? INSERT_VOWELS
+    v2 = vs.length > 1 ? vs[vs.length - 1].options : echoVowel(v1)
+  }
 
   return [filterC1(c1), v1, c2, v2, filterC3(c3)]
 }

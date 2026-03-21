@@ -227,12 +227,18 @@ export function wordPhoneticDistance(a: string, b: string): number {
    * C3: last consonant, very audible (x2.5), CODA position
    * Vowels: flexible (x1)
    */
-  /** C1 is sacred. Even voicing-pair swaps (t->d) are very costly. */
+  /**
+   * Position weights:
+   * C1: most important, sacred (x5)
+   * C2: middle anchor (x2)
+   * C3: last consonant, very audible, nearly as important as C1 (x4)
+   * Vowels: flexible (x1)
+   */
   const c1Dist = consonantDistanceAt(a[0], b[0], 'onset') * 5
   const v1Dist = vowelDistance(a[1], b[1])
   const c2Dist = consonantDistanceAt(a[2], b[2], 'onset') * 2
   const v2Dist = vowelDistance(a[3], b[3])
-  const c3Dist = consonantDistanceAt(a[4], b[4], 'coda') * 2.5
+  const c3Dist = consonantDistanceAt(a[4], b[4], 'coda') * 4
 
   return c1Dist + v1Dist + c2Dist + v2Dist + c3Dist
 }
