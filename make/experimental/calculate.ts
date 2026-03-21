@@ -528,6 +528,53 @@ function generateCVC(cfg: ComboConfig): string[] {
   return words.sort(compareWords)
 }
 
+// ─── Unified CVC Generation ─────────────────────────────
+
+function generateCVC_unified(): string[] {
+  const words: string[] = []
+  let endACursor = 0
+  let endBCursor = 0
+  let endCCursor = 0
+  let endDCursor = 0
+  let endEOn = false // q: off first
+
+  for (const c1 of ALL_CONSONANTS) {
+    for (let vi = 0; vi < vowels.length; vi++) {
+      const v = vowels[vi]
+      if (bannedCV.has(c1 + v)) continue
+
+      const ends: string[] = []
+
+      const aGroup = END_A[endACursor % END_A.length]
+      for (const e of aGroup) ends.push(e)
+      endACursor++
+
+      const bGroup = END_B[endBCursor % END_B.length]
+      for (const e of bGroup) ends.push(e)
+      endBCursor++
+
+      ends.push(END_C[endCCursor % END_C.length])
+      endCCursor++
+
+      ends.push(END_D[endDCursor % END_D.length])
+      endDCursor++
+
+      if (endEOn) ends.push('q')
+      endEOn = !endEOn
+
+      for (const c2 of ends) {
+        if (c2 === 'h' || c2 === 'w' || c2 === 'y') continue
+        if (badTailsUnified.has(v + c2)) continue
+        if (c1 === c2) continue // no same start and end
+        const cCcount = [c1, c2].filter(x => x === 'c' || x === 'C').length
+        if (cCcount > 1) continue
+        words.push(c1 + v + c2)
+      }
+    }
+  }
+  return words.sort(compareWords)
+}
+
 // ─── Global-Cursor CVCVC Generation ────────────────────
 
 type MidRingConfig = {
@@ -1323,14 +1370,24 @@ function runCombo(cfg: ComboConfig) {
 
 // ─── Main ──────────────────────────────────────────────
 
+const unifiedDir = resolve(__dirname, 'data/unified')
+mkdirSync(unifiedDir, { recursive: true })
+
+// Unified CVC
+console.log(`\n${'='.repeat(60)}`)
+console.log('UNIFIED CVC (all consonants)')
+console.log(`${'='.repeat(60)}`)
+const unifiedCvc = generateCVC_unified()
+console.log(`CVC unified: ${unifiedCvc.length.toLocaleString()}`)
+writeFileSync(resolve(unifiedDir, '3.csv'), 'word\n' + unifiedCvc.join('\n') + '\n')
+console.log(`Wrote to data/unified/3.csv`)
+
 // Unified CVCVC (all consonants, one generator)
 console.log(`\n${'='.repeat(60)}`)
 console.log('UNIFIED CVCVC (all consonants)')
 console.log(`${'='.repeat(60)}`)
 const unifiedCvcvc = generateCVCVC_unified()
 console.log(`CVCVC unified: ${unifiedCvcvc.length.toLocaleString()}`)
-const unifiedDir = resolve(__dirname, 'data/unified')
-mkdirSync(unifiedDir, { recursive: true })
 writeFileSync(resolve(unifiedDir, '5.csv'), 'word\n' + unifiedCvcvc.join('\n') + '\n')
 console.log(`Wrote to data/unified/5.csv`)
 
@@ -1364,7 +1421,7 @@ console.log(`\n${'='.repeat(60)}`)
 console.log('UNIFIED JOINS (all combos pooled)')
 console.log(`${'='.repeat(60)}`)
 
-const allCvc = Object.values(results).flatMap(r => r.cvcWords)
+const allCvc = unifiedCvc
 const allCvcvc = unifiedCvcvc
 const allCvcvcvc = unifiedCvcvcvc
 console.log(`\nTotal CVC: ${allCvc.length}`)
