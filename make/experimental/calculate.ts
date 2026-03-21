@@ -619,15 +619,15 @@ function generateCVCVC_cycling(cfg: ComboConfig): string[] {
         midCursors[ri] = m.next
         const mids = [...m.items]
 
-        // Special mids: l/r alternating
+        // Special mids: l/r alternate across all vowels in mid position
         if (midRing.lrAlternating) {
           const lrPat = specialMidToggle % 2
           if (lrPat === 0) {
-            if (v1i === 2) mids.push('l')  // a
-            if (v1i === 3) mids.push('r')  // o
+            mids.push('l')
+            if (v1i % 2 === 1) mids.push('r')
           } else {
-            if (v1i === 2) mids.push('r')
-            if (v1i === 3) mids.push('l')
+            mids.push('r')
+            if (v1i % 2 === 1) mids.push('l')
           }
           specialMidToggle++
         }
@@ -724,8 +724,8 @@ function generateCVCVCVC(cfg: ComboConfig): string[] {
 
         if (midRing1.lrAlternating) {
           const p = specialMid1Toggle++ % 2
-          if (p === 0) { if (v1i === 2) mids1.push('l'); if (v1i === 3) mids1.push('r') }
-          else { if (v1i === 2) mids1.push('r'); if (v1i === 3) mids1.push('l') }
+          if (p === 0) { mids1.push('l'); if (v1i % 2 === 1) mids1.push('r') }
+          else { mids1.push('r'); if (v1i % 2 === 1) mids1.push('l') }
         }
         if (midRing1.hwyRestricted) mids1.push('h', 'w', 'y')
 
@@ -753,8 +753,8 @@ function generateCVCVCVC(cfg: ComboConfig): string[] {
 
               if (midRing2.lrAlternating) {
                 const p = specialMid2Toggle++ % 2
-                if (p === 0) { if (v2i === 2) mids2.push('l'); if (v2i === 3) mids2.push('r') }
-                else { if (v2i === 2) mids2.push('r'); if (v2i === 3) mids2.push('l') }
+                if (p === 0) { mids2.push('l'); if (v2i % 2 === 1) mids2.push('r') }
+                else { mids2.push('r'); if (v2i % 2 === 1) mids2.push('l') }
               }
               if (midRing2.hwyRestricted) mids2.push('h', 'w', 'y')
 
@@ -1226,7 +1226,7 @@ function runCombo(cfg: ComboConfig) {
   console.log(`CVC end dist: ${Object.entries(endDist).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c}=${n}`).join(' ')}`)
 
   // CVCVC with hamming distance blocking
-  const cvcvcRaw = cyclingConfigs[cfg.name] ? generateCVCVC_cycling(cfg) : generateCVCVC(cfg)
+  const cvcvcRaw = generateCVCVC_cycling(cfg)
   console.log(`CVCVC raw: ${cvcvcRaw.length.toLocaleString()}`)
   const cvcvc = blockCVCVC(cvcvcRaw, cfg)
   console.log(`CVCVC blocked: ${cvcvc.length.toLocaleString()}`)
