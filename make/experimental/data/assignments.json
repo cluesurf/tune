@@ -1,0 +1,9912 @@
+[
+  {
+    "english": "waterfall",
+    "ipa": "ˈwɔːtəɹfɔːl",
+    "talk": "ˈwɔːtəɹfɔːl",
+    "tuneWord": "vuval",
+    "score": 326.1,
+    "tier": 4,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fever",
+    "ipa": "ˈfiːvəɹ",
+    "talk": "ˈfiːvəɹ",
+    "tuneWord": "vavan",
+    "score": 365.3,
+    "tier": 2,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "itch",
+    "ipa": "ɪtʃ",
+    "talk": "ɪtʃ",
+    "tuneWord": "hijaq",
+    "score": 341.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shale",
+    "ipa": "ʃeɪl",
+    "talk": "ʃeɪl",
+    "tuneWord": "jalut",
+    "score": 344.3,
+    "tier": 2,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shoal",
+    "ipa": "ʃoʊl",
+    "talk": "ʃoʊl",
+    "tuneWord": "jolin",
+    "score": 364.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shield",
+    "ipa": "ʃiːld",
+    "talk": "ʃiːld",
+    "tuneWord": "jalan",
+    "score": 365.3,
+    "tier": 2,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shawl",
+    "ipa": "ʃɔːl",
+    "talk": "ʃɔːl",
+    "tuneWord": "joliq",
+    "score": 364.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shallows",
+    "ipa": "ˈʃæloʊz",
+    "talk": "ˈʃæloʊz",
+    "tuneWord": "jaluz",
+    "score": 412.1,
+    "tier": 4,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "jar",
+    "ipa": "dʒɑːɹ",
+    "talk": "dʒɑːɹ",
+    "tuneWord": "xaren",
+    "score": 279.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ostrich",
+    "ipa": "ˈɑːstɹɪtʃ",
+    "talk": "ˈɑːstɹɪtʃ",
+    "tuneWord": "hozan",
+    "score": 387.2,
+    "tier": 3,
+    "distance": 21,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hatchet",
+    "ipa": "ˈhætʃɪt",
+    "talk": "ˈhætʃɪt",
+    "tuneWord": "hajet",
+    "score": 426.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "giraffe",
+    "ipa": "dʒəˈɹæf",
+    "talk": "dʒəˈɹæf",
+    "tuneWord": "xarif",
+    "score": 334.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shelf",
+    "ipa": "ʃɛlf",
+    "talk": "ʃɛlf",
+    "tuneWord": "jalis",
+    "score": 345.1,
+    "tier": 4,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "oasis",
+    "ipa": "oʊˈeɪsɪs",
+    "talk": "oʊˈeɪsɪs",
+    "tuneWord": "hozet",
+    "score": 406.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "house",
+    "ipa": "haʊs",
+    "talk": "haʊs",
+    "tuneWord": "hozul",
+    "score": 361.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "asteroid",
+    "ipa": "ˈæstəɹɔɪd",
+    "talk": "ˈæstəɹɔɪd",
+    "tuneWord": "hozun",
+    "score": 363.2,
+    "tier": 3,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ash",
+    "ipa": "æʃ",
+    "talk": "æʃ",
+    "tuneWord": "hajem",
+    "score": 344.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "estuary",
+    "ipa": "ˈɛstʃuˌɛɹi",
+    "talk": "ˈɛstʃuˌɛɹi",
+    "tuneWord": "hizul",
+    "score": 394.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "isthmus",
+    "ipa": "ˈɪsməs",
+    "talk": "ˈɪsməs",
+    "tuneWord": "hizaq",
+    "score": 426.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "watch",
+    "ipa": "wɑːtʃ",
+    "talk": "wɑːtʃ",
+    "tuneWord": "vajut",
+    "score": 331.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "forehead",
+    "ipa": "ˈfɔːɹhɛd",
+    "talk": "ˈfɔːɹhɛd",
+    "tuneWord": "fohut",
+    "score": 414.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "season",
+    "ipa": "ˈsiːzən",
+    "talk": "ˈsiːzən",
+    "tuneWord": "sesal",
+    "score": 464.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "server",
+    "ipa": "ˈsɜːɹvəɹ",
+    "talk": "ˈsɜːɹvəɹ",
+    "tuneWord": "sofin",
+    "score": 344.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shovel",
+    "ipa": "ˈʃʌvəl",
+    "talk": "ˈʃʌvəl",
+    "tuneWord": "xafal",
+    "score": 436.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hedgehog",
+    "ipa": "ˈhɛdʒhɔːɡ",
+    "talk": "ˈhɛdʒhɔːɡ",
+    "tuneWord": "hajan",
+    "score": 425.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "greenhouse",
+    "ipa": "ˈɡɹiːnhaʊs",
+    "talk": "ˈɡɹiːnhaʊs",
+    "tuneWord": "gihuz",
+    "score": 426.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "vest",
+    "ipa": "vɛst",
+    "talk": "vɛst",
+    "tuneWord": "vizin",
+    "score": 360.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bank",
+    "ipa": "bæŋk",
+    "talk": "bæŋk",
+    "tuneWord": "banul",
+    "score": 347.4,
+    "tier": 1,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sauce",
+    "ipa": "sɔːs",
+    "talk": "sɔːs",
+    "tuneWord": "sesen",
+    "score": 321.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ice",
+    "ipa": "aɪs",
+    "talk": "aɪs",
+    "tuneWord": "hizan",
+    "score": 334.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "iceberg",
+    "ipa": "ˈaɪsbɜːɹɡ",
+    "talk": "ˈaɪsbɜːɹɡ",
+    "tuneWord": "hozog",
+    "score": 359.2,
+    "tier": 3,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "waist",
+    "ipa": "weɪst",
+    "talk": "weɪst",
+    "tuneWord": "wisaq",
+    "score": 363.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sink",
+    "ipa": "sɪŋk",
+    "talk": "sɪŋk",
+    "tuneWord": "senek",
+    "score": 340.3,
+    "tier": 2,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hanger",
+    "ipa": "ˈhæŋəɹ",
+    "talk": "ˈhæŋəɹ",
+    "tuneWord": "hanus",
+    "score": 347.4,
+    "tier": 1,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tongue",
+    "ipa": "tʌŋ",
+    "talk": "tʌŋ",
+    "tuneWord": "tanul",
+    "score": 362.4,
+    "tier": 1,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "song",
+    "ipa": "sɔːŋ",
+    "talk": "sɔːŋ",
+    "tuneWord": "sonal",
+    "score": 357.1,
+    "tier": 4,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fish",
+    "ipa": "fɪʃ",
+    "talk": "fɪʃ",
+    "tuneWord": "fixen",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sofa",
+    "ipa": "ˈsoʊfə",
+    "talk": "ˈsoʊfə",
+    "tuneWord": "sofan",
+    "score": 480.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "haze",
+    "ipa": "heɪz",
+    "talk": "heɪz",
+    "tuneWord": "hozaq",
+    "score": 356.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "reservoir",
+    "ipa": "ˈɹɛzəɹˌvwɑːɹ",
+    "talk": "ˈɹɛzəɹˌvwɑːɹ",
+    "tuneWord": "hozev",
+    "score": 379.4,
+    "tier": 1,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hose",
+    "ipa": "hoʊz",
+    "talk": "hoʊz",
+    "tuneWord": "hizin",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "visor",
+    "ipa": "ˈvaɪzəɹ",
+    "talk": "ˈvaɪzəɹ",
+    "tuneWord": "vizaq",
+    "score": 388.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shellfish",
+    "ipa": "ˈʃɛlfɪʃ",
+    "talk": "ˈʃɛlfɪʃ",
+    "tuneWord": "xofit",
+    "score": 436.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "peach",
+    "ipa": "piːtʃ",
+    "talk": "piːtʃ",
+    "tuneWord": "poxan",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "faucet",
+    "ipa": "ˈfɔːsɪt",
+    "talk": "ˈfɔːsɪt",
+    "tuneWord": "fosan",
+    "score": 436.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "forest",
+    "ipa": "ˈfɔːɹəst",
+    "talk": "ˈfɔːɹəst",
+    "tuneWord": "foset",
+    "score": 449.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "face",
+    "ipa": "feɪs",
+    "talk": "feɪs",
+    "tuneWord": "fisen",
+    "score": 388.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "voice",
+    "ipa": "vɔɪs",
+    "talk": "vɔɪs",
+    "tuneWord": "vozal",
+    "score": 365.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "vise",
+    "ipa": "vaɪs",
+    "talk": "vaɪs",
+    "tuneWord": "vozit",
+    "score": 363.3,
+    "tier": 2,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "phosphor",
+    "ipa": "ˈfɑːsfɔːɹ",
+    "talk": "ˈfɑːsfɔːɹ",
+    "tuneWord": "fisiq",
+    "score": 396.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lung",
+    "ipa": "lʌŋ",
+    "talk": "lʌŋ",
+    "tuneWord": "lunon",
+    "score": 350.3,
+    "tier": 2,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "warehouse",
+    "ipa": "ˈwɛɹhaʊs",
+    "talk": "ˈwɛɹhaʊs",
+    "tuneWord": "vohun",
+    "score": 346.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "weasel",
+    "ipa": "ˈwiːzəl",
+    "talk": "ˈwiːzəl",
+    "tuneWord": "wises",
+    "score": 451.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "whisper",
+    "ipa": "ˈwɪspəɹ",
+    "talk": "ˈwɪspəɹ",
+    "tuneWord": "wipen",
+    "score": 402.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pitch",
+    "ipa": "pɪtʃ",
+    "talk": "pɪtʃ",
+    "tuneWord": "pexin",
+    "score": 372.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "wave",
+    "ipa": "weɪv",
+    "talk": "weɪv",
+    "tuneWord": "wivat",
+    "score": 363.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "winter",
+    "ipa": "ˈwɪntəɹ",
+    "talk": "ˈwɪntəɹ",
+    "tuneWord": "witek",
+    "score": 402.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "path",
+    "ipa": "pæθ",
+    "talk": "pæθ",
+    "tuneWord": "pacus",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "beach",
+    "ipa": "biːtʃ",
+    "talk": "biːtʃ",
+    "tuneWord": "buxaq",
+    "score": 379.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pisces",
+    "ipa": "ˈpaɪsiːz",
+    "talk": "ˈpaɪsiːz",
+    "tuneWord": "pizez",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pencil",
+    "ipa": "ˈpɛnsəl",
+    "talk": "ˈpɛnsəl",
+    "tuneWord": "pesaq",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "college",
+    "ipa": "ˈkɑːlɪdʒ",
+    "talk": "ˈkɑːlɪdʒ",
+    "tuneWord": "kales",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cartilage",
+    "ipa": "ˈkɑːɹtəlɪdʒ",
+    "talk": "ˈkɑːɹtəlɪdʒ",
+    "tuneWord": "kalin",
+    "score": 460.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "coal",
+    "ipa": "koʊl",
+    "talk": "koʊl",
+    "tuneWord": "kolet",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cloak",
+    "ipa": "kloʊk",
+    "talk": "kloʊk",
+    "tuneWord": "koluk",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "clay",
+    "ipa": "kleɪ",
+    "talk": "kleɪ",
+    "tuneWord": "koles",
+    "score": 366.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "call",
+    "ipa": "kɔːl",
+    "talk": "kɔːl",
+    "tuneWord": "kolan",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "koala",
+    "ipa": "koʊˈɑːlə",
+    "talk": "koʊˈɑːlə",
+    "tuneWord": "kolaz",
+    "score": 450.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "clock",
+    "ipa": "klɑːk",
+    "talk": "klɑːk",
+    "tuneWord": "kalak",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cloud",
+    "ipa": "klaʊd",
+    "talk": "klaʊd",
+    "tuneWord": "kalod",
+    "score": 397.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cloth",
+    "ipa": "klɔːθ",
+    "talk": "klɔːθ",
+    "tuneWord": "kolac",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cliff",
+    "ipa": "klɪf",
+    "talk": "klɪf",
+    "tuneWord": "kalof",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "colon",
+    "ipa": "ˈkoʊlən",
+    "talk": "ˈkoʊlən",
+    "tuneWord": "golaq",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "beef",
+    "ipa": "biːf",
+    "talk": "biːf",
+    "tuneWord": "bifot",
+    "score": 415.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "paste",
+    "ipa": "peɪst",
+    "talk": "peɪst",
+    "tuneWord": "pesin",
+    "score": 402.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "swell",
+    "ipa": "swɛl",
+    "talk": "swɛl",
+    "tuneWord": "sewin",
+    "score": 386.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "leaf",
+    "ipa": "liːf",
+    "talk": "liːf",
+    "tuneWord": "lifas",
+    "score": 425.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "garlic",
+    "ipa": "ˈɡɑːɹlɪk",
+    "talk": "ˈɡɑːɹlɪk",
+    "tuneWord": "galat",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "glass",
+    "ipa": "ɡlæs",
+    "talk": "ɡlæs",
+    "tuneWord": "galus",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "glue",
+    "ipa": "ɡluː",
+    "talk": "ɡluː",
+    "tuneWord": "galaq",
+    "score": 401.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gale",
+    "ipa": "ɡeɪl",
+    "talk": "ɡeɪl",
+    "tuneWord": "golut",
+    "score": 371.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "glow",
+    "ipa": "ɡloʊ",
+    "talk": "ɡloʊ",
+    "tuneWord": "galon",
+    "score": 352.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "goggles",
+    "ipa": "ˈɡɑːɡəlz",
+    "talk": "ˈɡɑːɡəlz",
+    "tuneWord": "galoz",
+    "score": 455.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gluon",
+    "ipa": "ˈɡluːɒn",
+    "talk": "ˈɡluːɒn",
+    "tuneWord": "golam",
+    "score": 336.2,
+    "tier": 3,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "glove",
+    "ipa": "ɡlʌv",
+    "talk": "ɡlʌv",
+    "tuneWord": "goluv",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gulf",
+    "ipa": "ɡʌlf",
+    "talk": "ɡʌlf",
+    "tuneWord": "golaf",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "glyph",
+    "ipa": "ɡlɪf",
+    "talk": "ɡlɪf",
+    "tuneWord": "golif",
+    "score": 388.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gold",
+    "ipa": "ɡoʊld",
+    "talk": "ɡoʊld",
+    "tuneWord": "golos",
+    "score": 372.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "bakery",
+    "ipa": "ˈbeɪkəɹi",
+    "talk": "ˈbeɪkəɹi",
+    "tuneWord": "begiq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wedge",
+    "ipa": "wɛdʒ",
+    "talk": "wɛdʒ",
+    "tuneWord": "wijaq",
+    "score": 353.4,
+    "tier": 1,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pickaxe",
+    "ipa": "ˈpɪkæks",
+    "talk": "ˈpɪkæks",
+    "tuneWord": "pakas",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "page",
+    "ipa": "peɪdʒ",
+    "talk": "peɪdʒ",
+    "tuneWord": "pujin",
+    "score": 367.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tree",
+    "ipa": "tɹiː",
+    "talk": "tɹiː",
+    "tuneWord": "toran",
+    "score": 380.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "truck",
+    "ipa": "tɹʌk",
+    "talk": "tɹʌk",
+    "tuneWord": "tarin",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tar",
+    "ipa": "tɑːɹ",
+    "talk": "tɑːɹ",
+    "tuneWord": "toret",
+    "score": 295.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "terrace",
+    "ipa": "ˈtɛɹəs",
+    "talk": "ˈtɛɹəs",
+    "tuneWord": "tares",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "track",
+    "ipa": "tɹæk",
+    "talk": "tɹæk",
+    "tuneWord": "tarak",
+    "score": 357.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "torch",
+    "ipa": "tɔːɹtʃ",
+    "talk": "tɔːɹtʃ",
+    "tuneWord": "tores",
+    "score": 310.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "taurus",
+    "ipa": "ˈtɔːɹəs",
+    "talk": "ˈtɔːɹəs",
+    "tuneWord": "toraz",
+    "score": 324.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "train",
+    "ipa": "tɹeɪn",
+    "talk": "tɹeɪn",
+    "tuneWord": "darul",
+    "score": 329.4,
+    "tier": 1,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "terrain",
+    "ipa": "təˈɹeɪn",
+    "talk": "təˈɹeɪn",
+    "tuneWord": "darus",
+    "score": 319.4,
+    "tier": 1,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "trail",
+    "ipa": "tɹeɪl",
+    "talk": "tɹeɪl",
+    "tuneWord": "daron",
+    "score": 329.2,
+    "tier": 3,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "trowel",
+    "ipa": "ˈtɹaʊəl",
+    "talk": "ˈtɹaʊəl",
+    "tuneWord": "doraq",
+    "score": 391.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tower",
+    "ipa": "ˈtaʊəɹ",
+    "talk": "ˈtaʊəɹ",
+    "tuneWord": "tarod",
+    "score": 327.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "trap",
+    "ipa": "tɹæp",
+    "talk": "tɹæp",
+    "tuneWord": "tarib",
+    "score": 355.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "term",
+    "ipa": "tɜːɹm",
+    "talk": "tɜːɹm",
+    "tuneWord": "darim",
+    "score": 284.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "deer",
+    "ipa": "dɪɹ",
+    "talk": "dɪɹ",
+    "tuneWord": "doros",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "door",
+    "ipa": "dɔːɹ",
+    "talk": "dɔːɹ",
+    "tuneWord": "dorul",
+    "score": 291.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "drawer",
+    "ipa": "drɔːɹ",
+    "talk": "drɔːɹ",
+    "tuneWord": "dorut",
+    "score": 316.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dream",
+    "ipa": "dɹiːm",
+    "talk": "dɹiːm",
+    "tuneWord": "daraq",
+    "score": 386.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "drought",
+    "ipa": "dɹaʊt",
+    "talk": "dɹaʊt",
+    "tuneWord": "darat",
+    "score": 357.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "drill",
+    "ipa": "dɹɪl",
+    "talk": "dɹɪl",
+    "tuneWord": "daram",
+    "score": 315.2,
+    "tier": 3,
+    "distance": 25,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "drone",
+    "ipa": "dɹoʊn",
+    "talk": "dɹoʊn",
+    "tuneWord": "dorum",
+    "score": 325.2,
+    "tier": 3,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dress",
+    "ipa": "dɹɛs",
+    "talk": "dɹɛs",
+    "tuneWord": "dariz",
+    "score": 336.4,
+    "tier": 1,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "drawing",
+    "ipa": "ˈdɹɔːɪŋ",
+    "talk": "ˈdɹɔːɪŋ",
+    "tuneWord": "doram",
+    "score": 314.2,
+    "tier": 3,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "basil",
+    "ipa": "ˈbæzəl",
+    "talk": "ˈbæzəl",
+    "tuneWord": "bazan",
+    "score": 440.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "prison",
+    "ipa": "ˈpɹɪzən",
+    "talk": "ˈpɹɪzən",
+    "tuneWord": "pizen",
+    "score": 465.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "coffee",
+    "ipa": "ˈkɔːfi",
+    "talk": "ˈkɔːfi",
+    "tuneWord": "kefiq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "offspring",
+    "ipa": "ˈɔːfsprɪŋ",
+    "talk": "ˈɔːfsprɪŋ",
+    "tuneWord": "hofiq",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "drink",
+    "ipa": "dɹɪŋk",
+    "talk": "dɹɪŋk",
+    "tuneWord": "denal",
+    "score": 357.4,
+    "tier": 1,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bucket",
+    "ipa": "ˈbʌkɪt",
+    "talk": "ˈbʌkɪt",
+    "tuneWord": "bakin",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "breast",
+    "ipa": "bɹɛst",
+    "talk": "bɹɛst",
+    "tuneWord": "beson",
+    "score": 395.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cough",
+    "ipa": "kɔːf",
+    "talk": "kɔːf",
+    "tuneWord": "kofan",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "basin",
+    "ipa": "ˈbeɪsən",
+    "talk": "ˈbeɪsən",
+    "tuneWord": "besat",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "heaven",
+    "ipa": "ˈhɛvən",
+    "talk": "ˈhɛvən",
+    "tuneWord": "hefaq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "earthglobe",
+    "ipa": "ˈɜːɹθɡloʊb",
+    "talk": "ˈɜːɹθɡloʊb",
+    "tuneWord": "huCaq",
+    "score": 367.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lever",
+    "ipa": "ˈlɛvəɹ",
+    "talk": "ˈlɛvəɹ",
+    "tuneWord": "lefun",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "liver",
+    "ipa": "ˈlɪvəɹ",
+    "talk": "ˈlɪvəɹ",
+    "tuneWord": "laven",
+    "score": 376.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "broccoli",
+    "ipa": "ˈbɹɑːkəli",
+    "talk": "ˈbɹɑːkəli",
+    "tuneWord": "bakiz",
+    "score": 470.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ridge",
+    "ipa": "ɹɪdʒ",
+    "talk": "ɹɪdʒ",
+    "tuneWord": "rajen",
+    "score": 315.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "peak",
+    "ipa": "piːk",
+    "talk": "piːk",
+    "tuneWord": "pakaq",
+    "score": 401.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ledge",
+    "ipa": "lɛdʒ",
+    "talk": "lɛdʒ",
+    "tuneWord": "lexin",
+    "score": 367.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "horsefly",
+    "ipa": "ˈhɔːɹsflaɪ",
+    "talk": "ˈhɔːɹsflaɪ",
+    "tuneWord": "hofal",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "desert",
+    "ipa": "ˈdɛzəɹt",
+    "talk": "ˈdɛzəɹt",
+    "tuneWord": "desas",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "torso",
+    "ipa": "ˈtɔːɹsoʊ",
+    "talk": "ˈtɔːɹsoʊ",
+    "tuneWord": "tozul",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "drizzle",
+    "ipa": "ˈdɹɪzəl",
+    "talk": "ˈdɹɪzəl",
+    "tuneWord": "dazal",
+    "score": 465.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "diesel",
+    "ipa": "ˈdiːzəl",
+    "talk": "ˈdiːzəl",
+    "tuneWord": "diziq",
+    "score": 476.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "heath",
+    "ipa": "hiːθ",
+    "talk": "hiːθ",
+    "tuneWord": "hical",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "canyon",
+    "ipa": "ˈkænjən",
+    "talk": "ˈkænjən",
+    "tuneWord": "kanas",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "trousers",
+    "ipa": "ˈtɹaʊzəɹz",
+    "talk": "ˈtɹaʊzəɹz",
+    "tuneWord": "tozaq",
+    "score": 422.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rabbit",
+    "ipa": "ˈɹæbɪt",
+    "talk": "ˈɹæbɪt",
+    "tuneWord": "rebin",
+    "score": 357.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "orbit",
+    "ipa": "ˈɔːɹbɪt",
+    "talk": "ˈɔːɹbɪt",
+    "tuneWord": "rebon",
+    "score": 370.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lizard",
+    "ipa": "ˈlɪzəɹd",
+    "talk": "ˈlɪzəɹd",
+    "tuneWord": "lizen",
+    "score": 445.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bison",
+    "ipa": "ˈbaɪsən",
+    "talk": "ˈbaɪsən",
+    "tuneWord": "busat",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "base",
+    "ipa": "beɪs",
+    "talk": "beɪs",
+    "tuneWord": "besud",
+    "score": 365.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "badger",
+    "ipa": "ˈbædʒəɹ",
+    "talk": "ˈbædʒəɹ",
+    "tuneWord": "bajen",
+    "score": 393.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rash",
+    "ipa": "ɹæʃ",
+    "talk": "ɹæʃ",
+    "tuneWord": "rexan",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "arch",
+    "ipa": "ɑːɹtʃ",
+    "talk": "ɑːɹtʃ",
+    "tuneWord": "rexaq",
+    "score": 310.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "orchard",
+    "ipa": "ˈɔːɹtʃəɹd",
+    "talk": "ˈɔːɹtʃəɹd",
+    "tuneWord": "rexut",
+    "score": 350.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mist",
+    "ipa": "mɪst",
+    "talk": "mɪst",
+    "tuneWord": "misan",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "leather",
+    "ipa": "ˈlɛðəɹ",
+    "talk": "ˈlɛðəɹ",
+    "tuneWord": "leCut",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "brother",
+    "ipa": "ˈbɹʌðəɹ",
+    "talk": "ˈbɹʌðəɹ",
+    "tuneWord": "boCot",
+    "score": 407.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tundra",
+    "ipa": "ˈtʌndɹə",
+    "talk": "ˈtʌndɹə",
+    "tuneWord": "tedal",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "glacier",
+    "ipa": "ˈɡleɪʃəɹ",
+    "talk": "ˈɡleɪʃəɹ",
+    "tuneWord": "gixiq",
+    "score": 390.4,
+    "tier": 1,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bathhouse",
+    "ipa": "ˈbæθhaʊs",
+    "talk": "ˈbæθhaʊs",
+    "tuneWord": "bacun",
+    "score": 429.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "dolphin",
+    "ipa": "ˈdɑːlfɪn",
+    "talk": "ˈdɑːlfɪn",
+    "tuneWord": "dafin",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "book",
+    "ipa": "bʊk",
+    "talk": "bʊk",
+    "tuneWord": "bugon",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pig",
+    "ipa": "pɪɡ",
+    "talk": "pɪɡ",
+    "tuneWord": "pugan",
+    "score": 369.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "rope",
+    "ipa": "ɹoʊp",
+    "talk": "ɹoʊp",
+    "tuneWord": "rubon",
+    "score": 345.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "belly",
+    "ipa": "ˈbɛli",
+    "talk": "ˈbɛli",
+    "tuneWord": "boliq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "taste",
+    "ipa": "teɪst",
+    "talk": "teɪst",
+    "tuneWord": "tesit",
+    "score": 387.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "death",
+    "ipa": "dɛθ",
+    "talk": "dɛθ",
+    "tuneWord": "ducin",
+    "score": 366.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "coastline",
+    "ipa": "ˈkoʊstlaɪn",
+    "talk": "ˈkoʊstlaɪn",
+    "tuneWord": "kasaq",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pulley",
+    "ipa": "ˈpʊli",
+    "talk": "ˈpʊli",
+    "tuneWord": "polaq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pillow",
+    "ipa": "ˈpɪloʊ",
+    "talk": "ˈpɪloʊ",
+    "tuneWord": "palon",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "palate",
+    "ipa": "ˈpælət",
+    "talk": "ˈpælət",
+    "tuneWord": "palaq",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "plateau",
+    "ipa": "plæˈtoʊ",
+    "talk": "plæˈtoʊ",
+    "tuneWord": "pales",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "palace",
+    "ipa": "ˈpælɪs",
+    "talk": "ˈpælɪs",
+    "tuneWord": "palat",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plow",
+    "ipa": "plaʊ",
+    "talk": "plaʊ",
+    "tuneWord": "baliq",
+    "score": 364.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plain",
+    "ipa": "pleɪn",
+    "talk": "pleɪn",
+    "tuneWord": "polut",
+    "score": 371.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pool",
+    "ipa": "puːl",
+    "talk": "puːl",
+    "tuneWord": "polid",
+    "score": 378.2,
+    "tier": 3,
+    "distance": 14,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plane",
+    "ipa": "pleɪn",
+    "talk": "pleɪn",
+    "tuneWord": "poles",
+    "score": 366.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plate",
+    "ipa": "pleɪt",
+    "talk": "pleɪt",
+    "tuneWord": "paliz",
+    "score": 357.4,
+    "tier": 1,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pulse",
+    "ipa": "pʌls",
+    "talk": "pʌls",
+    "tuneWord": "palus",
+    "score": 410.4,
+    "tier": 1,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pillar",
+    "ipa": "ˈpɪləɹ",
+    "talk": "ˈpɪləɹ",
+    "tuneWord": "balan",
+    "score": 345.2,
+    "tier": 3,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plum",
+    "ipa": "plʌm",
+    "talk": "plʌm",
+    "tuneWord": "palim",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pea",
+    "ipa": "piː",
+    "talk": "piː",
+    "tuneWord": "pinut",
+    "score": 403.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pie",
+    "ipa": "paɪ",
+    "talk": "paɪ",
+    "tuneWord": "paniq",
+    "score": 402.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "barley",
+    "ipa": "ˈbɑːɹli",
+    "talk": "ˈbɑːɹli",
+    "tuneWord": "bolan",
+    "score": 395.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bowl",
+    "ipa": "boʊl",
+    "talk": "boʊl",
+    "tuneWord": "bolis",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "blood",
+    "ipa": "blʌd",
+    "talk": "blʌd",
+    "tuneWord": "balin",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "belt",
+    "ipa": "bɛlt",
+    "talk": "bɛlt",
+    "tuneWord": "bolos",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bolt",
+    "ipa": "boʊlt",
+    "talk": "boʊlt",
+    "tuneWord": "bolun",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "blade",
+    "ipa": "bleɪd",
+    "talk": "bleɪd",
+    "tuneWord": "bolet",
+    "score": 366.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bracelet",
+    "ipa": "ˈbɹeɪslət",
+    "talk": "ˈbɹeɪslət",
+    "tuneWord": "balaz",
+    "score": 435.4,
+    "tier": 1,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "breastplate",
+    "ipa": "ˈbɹɛstpleɪt",
+    "talk": "ˈbɹɛstpleɪt",
+    "tuneWord": "bolaz",
+    "score": 358.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bluff",
+    "ipa": "blʌf",
+    "talk": "blʌf",
+    "tuneWord": "balof",
+    "score": 422.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "bladder",
+    "ipa": "ˈblædəɹ",
+    "talk": "ˈblædəɹ",
+    "tuneWord": "beden",
+    "score": 383.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "blizzard",
+    "ipa": "ˈblɪzəɹd",
+    "talk": "ˈblɪzəɹd",
+    "tuneWord": "bizaq",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "bay",
+    "ipa": "beɪ",
+    "talk": "beɪ",
+    "tuneWord": "bonut",
+    "score": 371.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bow",
+    "ipa": "boʊ",
+    "talk": "boʊ",
+    "tuneWord": "buson",
+    "score": 381.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "basalt",
+    "ipa": "bəˈsɔːlt",
+    "talk": "bəˈsɔːlt",
+    "tuneWord": "bazut",
+    "score": 444.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plasma",
+    "ipa": "ˈplæzmə",
+    "talk": "ˈplæzmə",
+    "tuneWord": "palam",
+    "score": 440.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "polymer",
+    "ipa": "ˈpɑːlɪməɹ",
+    "talk": "ˈpɑːlɪməɹ",
+    "tuneWord": "pamot",
+    "score": 450.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "planet",
+    "ipa": "ˈplænɪt",
+    "talk": "ˈplænɪt",
+    "tuneWord": "panas",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "platinum",
+    "ipa": "ˈplætɪnəm",
+    "talk": "ˈplætɪnəm",
+    "tuneWord": "pinam",
+    "score": 433.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "butte",
+    "ipa": "bjuːt",
+    "talk": "bjuːt",
+    "tuneWord": "bunaq",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "peninsula",
+    "ipa": "pəˈnɪnsjələ",
+    "talk": "pəˈnɪnsjələ",
+    "tuneWord": "pusal",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "porcelain",
+    "ipa": "ˈpɔːɹsəlɪn",
+    "talk": "ˈpɔːɹsəlɪn",
+    "tuneWord": "pusiq",
+    "score": 429.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "balancebeam",
+    "ipa": "ˈbælənsbiːm",
+    "talk": "ˈbælənsbiːm",
+    "tuneWord": "busim",
+    "score": 456.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "butterfly",
+    "ipa": "ˈbʌtəɹflaɪ",
+    "talk": "ˈbʌtəɹflaɪ",
+    "tuneWord": "bofal",
+    "score": 435.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "buffalo",
+    "ipa": "ˈbʌfəloʊ",
+    "talk": "ˈbʌfəloʊ",
+    "tuneWord": "bifos",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brewery",
+    "ipa": "ˈbɹuːəɹi",
+    "talk": "ˈbɹuːəɹi",
+    "tuneWord": "budaq",
+    "score": 309.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "boulder",
+    "ipa": "ˈboʊldəɹ",
+    "talk": "ˈboʊldəɹ",
+    "tuneWord": "bodat",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "blanket",
+    "ipa": "ˈblæŋkɪt",
+    "talk": "ˈblæŋkɪt",
+    "tuneWord": "balak",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brook",
+    "ipa": "bɹʊk",
+    "talk": "bɹʊk",
+    "tuneWord": "boluk",
+    "score": 295.2,
+    "tier": 3,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "plant",
+    "ipa": "plænt",
+    "talk": "plænt",
+    "tuneWord": "punis",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "barrel",
+    "ipa": "ˈbæɹəl",
+    "talk": "ˈbæɹəl",
+    "tuneWord": "bamon",
+    "score": 307.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "beard",
+    "ipa": "bɪɹd",
+    "talk": "bɪɹd",
+    "tuneWord": "bedaq",
+    "score": 236.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bruise",
+    "ipa": "bɹuːz",
+    "talk": "bɹuːz",
+    "tuneWord": "budiz",
+    "score": 321.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brass",
+    "ipa": "bɹæs",
+    "talk": "bɹæs",
+    "tuneWord": "bakiq",
+    "score": 295.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "barn",
+    "ipa": "bɑːɹn",
+    "talk": "bɑːɹn",
+    "tuneWord": "bedit",
+    "score": 231.2,
+    "tier": 3,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bread",
+    "ipa": "bɹɛd",
+    "talk": "bɹɛd",
+    "tuneWord": "bedon",
+    "score": 296.2,
+    "tier": 3,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "beer",
+    "ipa": "bɪɹ",
+    "talk": "bɪɹ",
+    "tuneWord": "bimaq",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brain",
+    "ipa": "bɹeɪn",
+    "talk": "bɹeɪn",
+    "tuneWord": "bebiq",
+    "score": 297.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "birth",
+    "ipa": "bɜːɹθ",
+    "talk": "bɜːɹθ",
+    "tuneWord": "bolec",
+    "score": 232.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brick",
+    "ipa": "bɹɪk",
+    "talk": "bɹɪk",
+    "tuneWord": "bipaq",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "breeze",
+    "ipa": "bɹiːz",
+    "talk": "bɹiːz",
+    "tuneWord": "binan",
+    "score": 320.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bird",
+    "ipa": "bɜːɹd",
+    "talk": "bɜːɹd",
+    "tuneWord": "bedis",
+    "score": 231.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "boar",
+    "ipa": "bɔːɹ",
+    "talk": "bɔːɹ",
+    "tuneWord": "banes",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "birch",
+    "ipa": "bɜːɹtʃ",
+    "talk": "bɜːɹtʃ",
+    "tuneWord": "begal",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bear",
+    "ipa": "bɛɹ",
+    "talk": "bɛɹ",
+    "tuneWord": "besas",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bridge",
+    "ipa": "bɹɪdʒ",
+    "talk": "bɹɪdʒ",
+    "tuneWord": "bital",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bark",
+    "ipa": "bɑːɹk",
+    "talk": "bɑːɹk",
+    "tuneWord": "bebal",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "berry",
+    "ipa": "ˈbɛɹi",
+    "talk": "ˈbɛɹi",
+    "tuneWord": "bicas",
+    "score": 310.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bee",
+    "ipa": "biː",
+    "talk": "biː",
+    "tuneWord": "bizot",
+    "score": 391.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "breath",
+    "ipa": "bɹɛθ",
+    "talk": "bɹɛθ",
+    "tuneWord": "beduc",
+    "score": 296.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "brush",
+    "ipa": "bɹʌʃ",
+    "talk": "bɹʌʃ",
+    "tuneWord": "balox",
+    "score": 329.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "balcony",
+    "ipa": "ˈbælkəni",
+    "talk": "ˈbælkəni",
+    "tuneWord": "banaq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bright",
+    "ipa": "bɹaɪt",
+    "talk": "bɹaɪt",
+    "tuneWord": "bamit",
+    "score": 297.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "box",
+    "ipa": "bɑːks",
+    "talk": "bɑːks",
+    "tuneWord": "bakus",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "plaster",
+    "ipa": "ˈplæstəɹ",
+    "talk": "ˈplæstəɹ",
+    "tuneWord": "patin",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "plastic",
+    "ipa": "ˈplæstɪk",
+    "talk": "ˈplæstɪk",
+    "tuneWord": "patik",
+    "score": 460.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "broth",
+    "ipa": "bɹɔːθ",
+    "talk": "bɹɔːθ",
+    "tuneWord": "bomac",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "basket",
+    "ipa": "ˈbæskɪt",
+    "talk": "ˈbæskɪt",
+    "tuneWord": "bakon",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "biscuit",
+    "ipa": "ˈbɪskɪt",
+    "talk": "ˈbɪskɪt",
+    "tuneWord": "besik",
+    "score": 460.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "basecamp",
+    "ipa": "ˈbeɪskæmp",
+    "talk": "ˈbeɪskæmp",
+    "tuneWord": "bamap",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "parrot",
+    "ipa": "ˈpæɹət",
+    "talk": "ˈpæɹət",
+    "tuneWord": "papis",
+    "score": 305.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "badland",
+    "ipa": "ˈbædlænd",
+    "talk": "ˈbædlænd",
+    "tuneWord": "batat",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pike",
+    "ipa": "paɪk",
+    "talk": "paɪk",
+    "tuneWord": "paken",
+    "score": 402.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pork",
+    "ipa": "pɔːɹk",
+    "talk": "pɔːɹk",
+    "tuneWord": "papiq",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "port",
+    "ipa": "pɔːɹt",
+    "talk": "pɔːɹt",
+    "tuneWord": "pifal",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "porch",
+    "ipa": "pɔːɹtʃ",
+    "talk": "pɔːɹtʃ",
+    "tuneWord": "paviq",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pear",
+    "ipa": "pɛɹ",
+    "talk": "pɛɹ",
+    "tuneWord": "pegas",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "porridge",
+    "ipa": "ˈpɔːɹɪdʒ",
+    "talk": "ˈpɔːɹɪdʒ",
+    "tuneWord": "pimet",
+    "score": 297.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pendant",
+    "ipa": "ˈpɛndənt",
+    "talk": "ˈpɛndənt",
+    "tuneWord": "punal",
+    "score": 450.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pigment",
+    "ipa": "ˈpɪɡmənt",
+    "talk": "ˈpɪɡmənt",
+    "tuneWord": "panal",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "banana",
+    "ipa": "bəˈnænə",
+    "talk": "bəˈnænə",
+    "tuneWord": "banus",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "parchment",
+    "ipa": "ˈpɑːɹtʃmənt",
+    "talk": "ˈpɑːɹtʃmənt",
+    "tuneWord": "puxal",
+    "score": 439.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pine",
+    "ipa": "paɪn",
+    "talk": "paɪn",
+    "tuneWord": "punos",
+    "score": 359.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pupil",
+    "ipa": "ˈpjuːpəl",
+    "talk": "ˈpjuːpəl",
+    "tuneWord": "puyaq",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pants",
+    "ipa": "pænts",
+    "talk": "pænts",
+    "tuneWord": "potiq",
+    "score": 385.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "parent",
+    "ipa": "ˈpɛɹənt",
+    "talk": "ˈpɛɹənt",
+    "tuneWord": "puniq",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bronze",
+    "ipa": "bɹɑːnz",
+    "talk": "bɹɑːnz",
+    "tuneWord": "baniz",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "paint",
+    "ipa": "peɪnt",
+    "talk": "peɪnt",
+    "tuneWord": "pinid",
+    "score": 360.2,
+    "tier": 3,
+    "distance": 14,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "painting",
+    "ipa": "ˈpeɪntɪŋ",
+    "talk": "ˈpeɪntɪŋ",
+    "tuneWord": "pites",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pan",
+    "ipa": "pæn",
+    "talk": "pæn",
+    "tuneWord": "panoz",
+    "score": 353.4,
+    "tier": 1,
+    "distance": 14,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pond",
+    "ipa": "pɑːnd",
+    "talk": "pɑːnd",
+    "tuneWord": "pinod",
+    "score": 390.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pen",
+    "ipa": "pɛn",
+    "talk": "pɛn",
+    "tuneWord": "ponod",
+    "score": 341.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pain",
+    "ipa": "peɪn",
+    "talk": "peɪn",
+    "tuneWord": "pimul",
+    "score": 329.4,
+    "tier": 1,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pin",
+    "ipa": "pɪn",
+    "talk": "pɪn",
+    "tuneWord": "ponin",
+    "score": 338.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "panda",
+    "ipa": "ˈpændə",
+    "talk": "ˈpændə",
+    "tuneWord": "pudos",
+    "score": 411.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bean",
+    "ipa": "biːn",
+    "talk": "biːn",
+    "tuneWord": "bunes",
+    "score": 380.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bin",
+    "ipa": "bɪn",
+    "talk": "bɪn",
+    "tuneWord": "binep",
+    "score": 332.7,
+    "tier": 3,
+    "distance": 22.5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bone",
+    "ipa": "boʊn",
+    "talk": "boʊn",
+    "tuneWord": "bomiq",
+    "score": 346.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "prairie",
+    "ipa": "ˈpɹɛɹi",
+    "talk": "ˈpɹɛɹi",
+    "tuneWord": "pical",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pump",
+    "ipa": "pʌmp",
+    "talk": "pʌmp",
+    "tuneWord": "pamun",
+    "score": 410.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pasta",
+    "ipa": "ˈpɑːstə",
+    "talk": "ˈpɑːstə",
+    "tuneWord": "putan",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "proof",
+    "ipa": "pɹuːf",
+    "talk": "pɹuːf",
+    "tuneWord": "pudaf",
+    "score": 326.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bat",
+    "ipa": "bæt",
+    "talk": "bæt",
+    "tuneWord": "baton",
+    "score": 383.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bed",
+    "ipa": "bɛd",
+    "talk": "bɛd",
+    "tuneWord": "bedos",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "body",
+    "ipa": "ˈbɑːdi",
+    "talk": "ˈbɑːdi",
+    "tuneWord": "budes",
+    "score": 464.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bitumen",
+    "ipa": "bɪˈtuːmən",
+    "talk": "bɪˈtuːmən",
+    "tuneWord": "bitiq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "branch",
+    "ipa": "bɹæntʃ",
+    "talk": "bɹæntʃ",
+    "tuneWord": "botix",
+    "score": 385.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bottle",
+    "ipa": "ˈbɑːtəl",
+    "talk": "ˈbɑːtəl",
+    "tuneWord": "buton",
+    "score": 431.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "butter",
+    "ipa": "ˈbʌtəɹ",
+    "talk": "ˈbʌtəɹ",
+    "tuneWord": "botaq",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "battery",
+    "ipa": "ˈbætəɹi",
+    "talk": "ˈbætəɹi",
+    "tuneWord": "butin",
+    "score": 456.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "boat",
+    "ipa": "boʊt",
+    "talk": "boʊt",
+    "tuneWord": "botul",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "boot",
+    "ipa": "buːt",
+    "talk": "buːt",
+    "tuneWord": "bodon",
+    "score": 386.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "broom",
+    "ipa": "bɹuːm",
+    "talk": "bɹuːm",
+    "tuneWord": "buyal",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "button",
+    "ipa": "ˈbʌtən",
+    "talk": "ˈbʌtən",
+    "tuneWord": "potal",
+    "score": 419.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pottery",
+    "ipa": "ˈpɑːtəɹi",
+    "talk": "ˈpɑːtəɹi",
+    "tuneWord": "podin",
+    "score": 461.2,
+    "tier": 3,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "protein",
+    "ipa": "ˈpɹoʊtiːn",
+    "talk": "ˈpɹoʊtiːn",
+    "tuneWord": "pudiq",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "powder",
+    "ipa": "ˈpaʊdəɹ",
+    "talk": "ˈpaʊdəɹ",
+    "tuneWord": "pudal",
+    "score": 381.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "potato",
+    "ipa": "pəˈteɪtoʊ",
+    "talk": "pəˈteɪtoʊ",
+    "tuneWord": "pitus",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "proton",
+    "ipa": "ˈpɹoʊtɒn",
+    "talk": "ˈpɹoʊtɒn",
+    "tuneWord": "putem",
+    "score": 393.2,
+    "tier": 3,
+    "distance": 29,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pot",
+    "ipa": "pɑːt",
+    "talk": "pɑːt",
+    "tuneWord": "potes",
+    "score": 393.4,
+    "tier": 1,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pastry",
+    "ipa": "ˈpeɪstɹi",
+    "talk": "ˈpeɪstɹi",
+    "tuneWord": "pusin",
+    "score": 450.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bamboo",
+    "ipa": "bæmˈbuː",
+    "talk": "bæmˈbuː",
+    "tuneWord": "bimut",
+    "score": 456.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "palm",
+    "ipa": "pɑːm",
+    "talk": "pɑːm",
+    "tuneWord": "piman",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "poem",
+    "ipa": "ˈpoʊəm",
+    "talk": "ˈpoʊəm",
+    "tuneWord": "pomaq",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pumice",
+    "ipa": "ˈpʌmɪs",
+    "talk": "ˈpʌmɪs",
+    "tuneWord": "pimes",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "bog",
+    "ipa": "bɔːɡ",
+    "talk": "bɔːɡ",
+    "tuneWord": "bogaq",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "doctrine",
+    "ipa": "ˈdɑːktɹɪn",
+    "talk": "ˈdɑːktɹɪn",
+    "tuneWord": "dakiq",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "diagram",
+    "ipa": "ˈdaɪəɡɹæm",
+    "talk": "ˈdaɪəɡɹæm",
+    "tuneWord": "digaq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tooth",
+    "ipa": "tuːθ",
+    "talk": "tuːθ",
+    "tuneWord": "tuCal",
+    "score": 401.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "back",
+    "ipa": "bæk",
+    "talk": "bæk",
+    "tuneWord": "bakal",
+    "score": 372.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "picture",
+    "ipa": "ˈpɪktʃəɹ",
+    "talk": "ˈpɪktʃəɹ",
+    "tuneWord": "pexal",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "kerosene",
+    "ipa": "ˈkɛɹəˌsiːn",
+    "talk": "ˈkɛɹəˌsiːn",
+    "tuneWord": "kusin",
+    "score": 449.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "crest",
+    "ipa": "kɹɛst",
+    "talk": "kɹɛst",
+    "tuneWord": "kasun",
+    "score": 380.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "key",
+    "ipa": "kiː",
+    "talk": "kiː",
+    "tuneWord": "kinaq",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "coast",
+    "ipa": "koʊst",
+    "talk": "koʊst",
+    "tuneWord": "kuson",
+    "score": 381.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "caldera",
+    "ipa": "kælˈdɛɹə",
+    "talk": "kælˈdɛɹə",
+    "tuneWord": "kedan",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "courtyard",
+    "ipa": "ˈkɔːɹtjɑːɹd",
+    "talk": "ˈkɔːɹtjɑːɹd",
+    "tuneWord": "kotas",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "clinic",
+    "ipa": "ˈklɪnɪk",
+    "talk": "ˈklɪnɪk",
+    "tuneWord": "kines",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "machine",
+    "ipa": "məˈʃiːn",
+    "talk": "məˈʃiːn",
+    "tuneWord": "mixiq",
+    "score": 476.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "clamp",
+    "ipa": "klæmp",
+    "talk": "klæmp",
+    "tuneWord": "komin",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cow",
+    "ipa": "kaʊ",
+    "talk": "kaʊ",
+    "tuneWord": "komon",
+    "score": 322.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "adze",
+    "ipa": "ædz",
+    "talk": "ædz",
+    "tuneWord": "hedul",
+    "score": 310.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "case",
+    "ipa": "keɪs",
+    "talk": "keɪs",
+    "tuneWord": "kezul",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "vinegar",
+    "ipa": "ˈvɪnɪɡəɹ",
+    "talk": "ˈvɪnɪɡəɹ",
+    "tuneWord": "vagis",
+    "score": 445.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "message",
+    "ipa": "ˈmɛsɪdʒ",
+    "talk": "ˈmɛsɪdʒ",
+    "tuneWord": "mesaq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "moose",
+    "ipa": "muːs",
+    "talk": "muːs",
+    "tuneWord": "muzin",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "raven",
+    "ipa": "ˈɹeɪvən",
+    "talk": "ˈɹeɪvən",
+    "tuneWord": "rifas",
+    "score": 431.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ravine",
+    "ipa": "ɹəˈviːn",
+    "talk": "ɹəˈviːn",
+    "tuneWord": "rifaq",
+    "score": 376.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "navel",
+    "ipa": "ˈneɪvəl",
+    "talk": "ˈneɪvəl",
+    "tuneWord": "nivaq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "nostril",
+    "ipa": "ˈnɑːstɹəl",
+    "talk": "ˈnɑːstɹəl",
+    "tuneWord": "nasal",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "moss",
+    "ipa": "mɔːs",
+    "talk": "mɔːs",
+    "tuneWord": "mosal",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gasoline",
+    "ipa": "ˈɡæsəliːn",
+    "talk": "ˈɡæsəliːn",
+    "tuneWord": "giset",
+    "score": 444.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "galaxy",
+    "ipa": "ˈɡæləksi",
+    "talk": "ˈɡæləksi",
+    "tuneWord": "gukiq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "goose",
+    "ipa": "ɡuːs",
+    "talk": "ɡuːs",
+    "tuneWord": "guzin",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pasture",
+    "ipa": "ˈpæstʃəɹ",
+    "talk": "ˈpæstʃəɹ",
+    "tuneWord": "puxiq",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tavern",
+    "ipa": "ˈtævəɹn",
+    "talk": "ˈtævəɹn",
+    "tuneWord": "tavul",
+    "score": 429.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "microphone",
+    "ipa": "ˈmaɪkɹəˌfoʊn",
+    "talk": "ˈmaɪkɹəˌfoʊn",
+    "tuneWord": "mafan",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "noise",
+    "ipa": "nɔɪz",
+    "talk": "nɔɪz",
+    "tuneWord": "nozaq",
+    "score": 389.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "crow",
+    "ipa": "kɹoʊ",
+    "talk": "kɹoʊ",
+    "tuneWord": "kopes",
+    "score": 295.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "carrot",
+    "ipa": "ˈkæɹət",
+    "talk": "ˈkæɹət",
+    "tuneWord": "kasos",
+    "score": 307.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "castle",
+    "ipa": "ˈkæsəl",
+    "talk": "ˈkæsəl",
+    "tuneWord": "kasan",
+    "score": 440.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cluster",
+    "ipa": "ˈklʌstəɹ",
+    "talk": "ˈklʌstəɹ",
+    "tuneWord": "katom",
+    "score": 422.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "corn",
+    "ipa": "kɔːɹn",
+    "talk": "kɔːɹn",
+    "tuneWord": "kanis",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cabbage",
+    "ipa": "ˈkæbɪdʒ",
+    "talk": "ˈkæbɪdʒ",
+    "tuneWord": "kabas",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mesa",
+    "ipa": "ˈmeɪsə",
+    "talk": "ˈmeɪsə",
+    "tuneWord": "miset",
+    "score": 453.2,
+    "tier": 3,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lagoon",
+    "ipa": "ləˈɡuːn",
+    "talk": "ləˈɡuːn",
+    "tuneWord": "lagus",
+    "score": 500.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cove",
+    "ipa": "koʊv",
+    "talk": "koʊv",
+    "tuneWord": "kofun",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "riverbank",
+    "ipa": "ˈɹɪvəɹbæŋk",
+    "talk": "ˈɹɪvəɹbæŋk",
+    "tuneWord": "huvan",
+    "score": 406.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ripple",
+    "ipa": "ˈɹɪpəl",
+    "talk": "ˈɹɪpəl",
+    "tuneWord": "rapin",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tributary",
+    "ipa": "ˈtɹɪbjəˌtɛɹi",
+    "talk": "ˈtɹɪbjəˌtɛɹi",
+    "tuneWord": "deniq",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cabin",
+    "ipa": "ˈkæbɪn",
+    "talk": "ˈkæbɪn",
+    "tuneWord": "kabaq",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "corral",
+    "ipa": "kəˈɹæl",
+    "talk": "kəˈɹæl",
+    "tuneWord": "kadiq",
+    "score": 291.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cry",
+    "ipa": "kɹaɪ",
+    "talk": "kɹaɪ",
+    "tuneWord": "kaniq",
+    "score": 297.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cord",
+    "ipa": "kɔːɹd",
+    "talk": "kɔːɹd",
+    "tuneWord": "kaled",
+    "score": 242.2,
+    "tier": 3,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "crown",
+    "ipa": "kɹaʊn",
+    "talk": "kɹaʊn",
+    "tuneWord": "kabul",
+    "score": 295.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "switch",
+    "ipa": "swɪtʃ",
+    "talk": "swɪtʃ",
+    "tuneWord": "sewiq",
+    "score": 402.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cancer",
+    "ipa": "ˈkænsəɹ",
+    "talk": "ˈkænsəɹ",
+    "tuneWord": "kasor",
+    "score": 358.4,
+    "tier": 1,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cascade",
+    "ipa": "kæˈskeɪd",
+    "talk": "kæˈskeɪd",
+    "tuneWord": "kaset",
+    "score": 460.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "crab",
+    "ipa": "kɹæb",
+    "talk": "kɹæb",
+    "tuneWord": "kalib",
+    "score": 307.2,
+    "tier": 3,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cart",
+    "ipa": "kɑːɹt",
+    "talk": "kɑːɹt",
+    "tuneWord": "kemaq",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "car",
+    "ipa": "kɑːɹ",
+    "talk": "kɑːɹ",
+    "tuneWord": "kegal",
+    "score": 230.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cousin",
+    "ipa": "ˈkʌzən",
+    "talk": "ˈkʌzən",
+    "tuneWord": "kozal",
+    "score": 455.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "creek",
+    "ipa": "kɹiːk",
+    "talk": "kɹiːk",
+    "tuneWord": "kipaq",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "july",
+    "ipa": "dʒʊˈlaɪ",
+    "talk": "dʒʊˈlaɪ",
+    "tuneWord": "jalaq",
+    "score": 368.6,
+    "tier": 4,
+    "distance": 25.5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "roof",
+    "ipa": "ɹuːf",
+    "talk": "ɹuːf",
+    "tuneWord": "rifen",
+    "score": 315.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "reef",
+    "ipa": "ɹiːf",
+    "talk": "ɹiːf",
+    "tuneWord": "rofal",
+    "score": 315.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ring",
+    "ipa": "ɹɪŋ",
+    "talk": "ɹɪŋ",
+    "tuneWord": "renat",
+    "score": 272.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "throat",
+    "ipa": "θɹoʊt",
+    "talk": "θɹoʊt",
+    "tuneWord": "corun",
+    "score": 385.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "thread",
+    "ipa": "θɹɛd",
+    "talk": "θɹɛd",
+    "tuneWord": "corot",
+    "score": 356.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "theory",
+    "ipa": "ˈθɪɹi",
+    "talk": "ˈθɪɹi",
+    "tuneWord": "carat",
+    "score": 376.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "iris",
+    "ipa": "ˈaɪɹɪs",
+    "talk": "ˈaɪɹɪs",
+    "tuneWord": "hariq",
+    "score": 347.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "resin",
+    "ipa": "ˈɹɛzɪn",
+    "talk": "ˈɹɛzɪn",
+    "tuneWord": "rizal",
+    "score": 380.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cave",
+    "ipa": "keɪv",
+    "talk": "keɪv",
+    "tuneWord": "kefin",
+    "score": 378.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "crate",
+    "ipa": "kɹeɪt",
+    "talk": "kɹeɪt",
+    "tuneWord": "kegiq",
+    "score": 297.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dusk",
+    "ipa": "dʌsk",
+    "talk": "dʌsk",
+    "tuneWord": "deson",
+    "score": 407.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dust",
+    "ipa": "dʌst",
+    "talk": "dʌst",
+    "tuneWord": "desin",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "desk",
+    "ipa": "dɛsk",
+    "talk": "dɛsk",
+    "tuneWord": "desal",
+    "score": 380.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dye",
+    "ipa": "daɪ",
+    "talk": "daɪ",
+    "tuneWord": "desiq",
+    "score": 387.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "toe",
+    "ipa": "toʊ",
+    "talk": "toʊ",
+    "tuneWord": "tomin",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hall",
+    "ipa": "hɔːl",
+    "talk": "hɔːl",
+    "tuneWord": "hoyan",
+    "score": 351.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "oil",
+    "ipa": "ɔɪl",
+    "talk": "ɔɪl",
+    "tuneWord": "hiyan",
+    "score": 297.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "heel",
+    "ipa": "hiːl",
+    "talk": "hiːl",
+    "tuneWord": "heyaq",
+    "score": 359.4,
+    "tier": 1,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "awl",
+    "ipa": "ɔːl",
+    "talk": "ɔːl",
+    "tuneWord": "huyas",
+    "score": 309.4,
+    "tier": 1,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "electron",
+    "ipa": "ɪˈlɛktɹɒn",
+    "talk": "ɪˈlɛktɹɒn",
+    "tuneWord": "heyan",
+    "score": 384.2,
+    "tier": 3,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "alcohol",
+    "ipa": "ˈælkəhɔːl",
+    "talk": "ˈælkəhɔːl",
+    "tuneWord": "hayaq",
+    "score": 361.4,
+    "tier": 1,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "alloy",
+    "ipa": "ˈælɔɪ",
+    "talk": "ˈælɔɪ",
+    "tuneWord": "hayan",
+    "score": 345.2,
+    "tier": 3,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hail",
+    "ipa": "heɪl",
+    "talk": "heɪl",
+    "tuneWord": "hewiq",
+    "score": 330.4,
+    "tier": 1,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ale",
+    "ipa": "eɪl",
+    "talk": "eɪl",
+    "tuneWord": "hewis",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "owl",
+    "ipa": "aʊl",
+    "talk": "aʊl",
+    "tuneWord": "hawis",
+    "score": 298.4,
+    "tier": 1,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hill",
+    "ipa": "hɪl",
+    "talk": "hɪl",
+    "tuneWord": "hiyaz",
+    "score": 321.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "aluminum",
+    "ipa": "əˈluːmɪnəm",
+    "talk": "əˈluːmɪnəm",
+    "tuneWord": "hayam",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hue",
+    "ipa": "hjuː",
+    "talk": "hjuː",
+    "tuneWord": "huyal",
+    "score": 262.9,
+    "tier": 1,
+    "distance": 22.5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "algae",
+    "ipa": "ˈældʒiː",
+    "talk": "ˈældʒiː",
+    "tuneWord": "hawij",
+    "score": 378.4,
+    "tier": 1,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "capital",
+    "ipa": "ˈkæpɪtəl",
+    "talk": "ˈkæpɪtəl",
+    "tuneWord": "ketal",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "custom",
+    "ipa": "ˈkʌstəm",
+    "talk": "ˈkʌstəm",
+    "tuneWord": "katem",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gauge",
+    "ipa": "ɡeɪdʒ",
+    "talk": "ɡeɪdʒ",
+    "tuneWord": "gejin",
+    "score": 397.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tea",
+    "ipa": "tiː",
+    "talk": "tiː",
+    "tuneWord": "tinat",
+    "score": 410.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "measure",
+    "ipa": "ˈmɛʒəɹ",
+    "talk": "ˈmɛʒəɹ",
+    "tuneWord": "mejin",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "wednesday",
+    "ipa": "ˈwɛnzdeɪ",
+    "talk": "ˈwɛnzdeɪ",
+    "tuneWord": "witen",
+    "score": 386.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cabinet",
+    "ipa": "ˈkæbɪnət",
+    "talk": "ˈkæbɪnət",
+    "tuneWord": "kanal",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "muscle",
+    "ipa": "ˈmʌsəl",
+    "talk": "ˈmʌsəl",
+    "tuneWord": "mosen",
+    "score": 440.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mask",
+    "ipa": "mæsk",
+    "talk": "mæsk",
+    "tuneWord": "mazet",
+    "score": 374.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mosque",
+    "ipa": "mɑːsk",
+    "talk": "mɑːsk",
+    "tuneWord": "mosek",
+    "score": 393.2,
+    "tier": 3,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mouse",
+    "ipa": "maʊs",
+    "talk": "maʊs",
+    "tuneWord": "misun",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "monastery",
+    "ipa": "ˈmɑːnəˌstɛɹi",
+    "talk": "ˈmɑːnəˌstɛɹi",
+    "tuneWord": "mataq",
+    "score": 476.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mosquito",
+    "ipa": "məˈskiːtoʊ",
+    "talk": "məˈskiːtoʊ",
+    "tuneWord": "mekos",
+    "score": 465.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gas",
+    "ipa": "ɡæs",
+    "talk": "ɡæs",
+    "tuneWord": "gesaq",
+    "score": 377.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gust",
+    "ipa": "ɡʌst",
+    "talk": "ɡʌst",
+    "tuneWord": "gazet",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "canvas",
+    "ipa": "ˈkænvəs",
+    "talk": "ˈkænvəs",
+    "tuneWord": "kaval",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gravel",
+    "ipa": "ˈɡɹævəl",
+    "talk": "ˈɡɹævəl",
+    "tuneWord": "geval",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gorge",
+    "ipa": "ɡɔːɹdʒ",
+    "talk": "ɡɔːɹdʒ",
+    "tuneWord": "gidaq",
+    "score": 236.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gear",
+    "ipa": "ɡɪɹ",
+    "talk": "ɡɪɹ",
+    "tuneWord": "gidan",
+    "score": 236.2,
+    "tier": 3,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "greave",
+    "ipa": "ɡɹiːv",
+    "talk": "ɡɹiːv",
+    "tuneWord": "gidav",
+    "score": 326.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "grease",
+    "ipa": "ɡɹiːs",
+    "talk": "ɡɹiːs",
+    "tuneWord": "gimaq",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "current",
+    "ipa": "ˈkɜːɹənt",
+    "talk": "ˈkɜːɹənt",
+    "tuneWord": "gunal",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "canal",
+    "ipa": "kəˈnæl",
+    "talk": "kəˈnæl",
+    "tuneWord": "kanez",
+    "score": 415.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "kitchen",
+    "ipa": "ˈkɪtʃən",
+    "talk": "ˈkɪtʃən",
+    "tuneWord": "kaxal",
+    "score": 455.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hoe",
+    "ipa": "hoʊ",
+    "talk": "hoʊ",
+    "tuneWord": "honit",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cage",
+    "ipa": "keɪdʒ",
+    "talk": "keɪdʒ",
+    "tuneWord": "kijen",
+    "score": 383.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tunic",
+    "ipa": "ˈtuːnɪk",
+    "talk": "ˈtuːnɪk",
+    "tuneWord": "duniq",
+    "score": 444.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dish",
+    "ipa": "dɪʃ",
+    "talk": "dɪʃ",
+    "tuneWord": "dixet",
+    "score": 412.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "salad",
+    "ipa": "ˈsæləd",
+    "talk": "ˈsæləd",
+    "tuneWord": "salon",
+    "score": 435.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ceiling",
+    "ipa": "ˈsiːlɪŋ",
+    "talk": "ˈsiːlɪŋ",
+    "tuneWord": "salin",
+    "score": 416.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "solid",
+    "ipa": "ˈsɑːlɪd",
+    "talk": "ˈsɑːlɪd",
+    "tuneWord": "saliq",
+    "score": 480.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sole",
+    "ipa": "soʊl",
+    "talk": "soʊl",
+    "tuneWord": "solin",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "seal",
+    "ipa": "siːl",
+    "talk": "siːl",
+    "tuneWord": "solat",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "soil",
+    "ipa": "sɔɪl",
+    "talk": "sɔɪl",
+    "tuneWord": "solis",
+    "score": 356.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sleep",
+    "ipa": "sliːp",
+    "talk": "sliːp",
+    "tuneWord": "salap",
+    "score": 401.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sludge",
+    "ipa": "slʌdʒ",
+    "talk": "slʌdʒ",
+    "tuneWord": "salik",
+    "score": 420.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "silt",
+    "ipa": "sɪlt",
+    "talk": "sɪlt",
+    "tuneWord": "solaq",
+    "score": 375.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "slate",
+    "ipa": "sleɪt",
+    "talk": "sleɪt",
+    "tuneWord": "solon",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "salt",
+    "ipa": "sɔːlt",
+    "talk": "sɔːlt",
+    "tuneWord": "soleg",
+    "score": 370.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "silk",
+    "ipa": "sɪlk",
+    "talk": "sɪlk",
+    "tuneWord": "saleg",
+    "score": 346.3,
+    "tier": 2,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "slope",
+    "ipa": "sloʊp",
+    "talk": "sloʊp",
+    "tuneWord": "zolut",
+    "score": 364.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cellar",
+    "ipa": "ˈsɛləɹ",
+    "talk": "ˈsɛləɹ",
+    "tuneWord": "salud",
+    "score": 350.3,
+    "tier": 2,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sleet",
+    "ipa": "sliːt",
+    "talk": "sliːt",
+    "tuneWord": "zolan",
+    "score": 359.3,
+    "tier": 2,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "slime",
+    "ipa": "slaɪm",
+    "talk": "slaɪm",
+    "tuneWord": "salim",
+    "score": 402.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sulfur",
+    "ipa": "ˈsʌlfəɹ",
+    "talk": "ˈsʌlfəɹ",
+    "tuneWord": "sifet",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "saw",
+    "ipa": "sɔː",
+    "talk": "sɔː",
+    "tuneWord": "soniq",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "solvent",
+    "ipa": "ˈsɑːlvənt",
+    "talk": "ˈsɑːlvənt",
+    "tuneWord": "salov",
+    "score": 455.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "silver",
+    "ipa": "ˈsɪlvəɹ",
+    "talk": "ˈsɪlvəɹ",
+    "tuneWord": "sifan",
+    "score": 381.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "soy",
+    "ipa": "sɔɪ",
+    "talk": "sɔɪ",
+    "tuneWord": "senul",
+    "score": 358.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sword",
+    "ipa": "sɔːɹd",
+    "talk": "sɔːɹd",
+    "tuneWord": "sedan",
+    "score": 236.3,
+    "tier": 2,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cyclone",
+    "ipa": "ˈsaɪkloʊn",
+    "talk": "ˈsaɪkloʊn",
+    "tuneWord": "sokon",
+    "score": 445.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "slipper",
+    "ipa": "ˈslɪpəɹ",
+    "talk": "ˈslɪpəɹ",
+    "tuneWord": "sapiq",
+    "score": 397.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "syrup",
+    "ipa": "ˈsɪɹəp",
+    "talk": "ˈsɪɹəp",
+    "tuneWord": "sagon",
+    "score": 307.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "surf",
+    "ipa": "sɜːɹf",
+    "talk": "sɜːɹf",
+    "tuneWord": "solaf",
+    "score": 237.1,
+    "tier": 4,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "scroll",
+    "ipa": "skɹoʊl",
+    "talk": "skɹoʊl",
+    "tuneWord": "somit",
+    "score": 295.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sea",
+    "ipa": "siː",
+    "talk": "siː",
+    "tuneWord": "simat",
+    "score": 425.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "scythe",
+    "ipa": "saɪð",
+    "talk": "saɪð",
+    "tuneWord": "sagit",
+    "score": 312.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sage",
+    "ipa": "seɪdʒ",
+    "talk": "seɪdʒ",
+    "tuneWord": "zezin",
+    "score": 307.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "saturate",
+    "ipa": "ˈsætʃəˌɹeɪt",
+    "talk": "ˈsætʃəˌɹeɪt",
+    "tuneWord": "sebet",
+    "score": 345.3,
+    "tier": 2,
+    "distance": 35,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sunrise",
+    "ipa": "ˈsʌnɹaɪz",
+    "talk": "ˈsʌnɹaɪz",
+    "tuneWord": "sapiz",
+    "score": 351.1,
+    "tier": 4,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "savanna",
+    "ipa": "səˈvænə",
+    "talk": "səˈvænə",
+    "tuneWord": "senaq",
+    "score": 445.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sensor",
+    "ipa": "ˈsɛnsəɹ",
+    "talk": "ˈsɛnsəɹ",
+    "tuneWord": "sonot",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "signal",
+    "ipa": "ˈsɪɡnəl",
+    "talk": "ˈsɪɡnəl",
+    "tuneWord": "sagaq",
+    "score": 465.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cement",
+    "ipa": "səˈmɛnt",
+    "talk": "səˈmɛnt",
+    "tuneWord": "zanek",
+    "score": 444.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sandbar",
+    "ipa": "ˈsændbɑːɹ",
+    "talk": "ˈsændbɑːɹ",
+    "tuneWord": "sebiq",
+    "score": 385.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spinach",
+    "ipa": "ˈspɪnɪtʃ",
+    "talk": "ˈspɪnɪtʃ",
+    "tuneWord": "sapem",
+    "score": 406.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sunset",
+    "ipa": "ˈsʌnsɛt",
+    "talk": "ˈsʌnsɛt",
+    "tuneWord": "zaniq",
+    "score": 432.1,
+    "tier": 4,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "snare",
+    "ipa": "snɛɹ",
+    "talk": "snɛɹ",
+    "tuneWord": "senag",
+    "score": 315.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "strand",
+    "ipa": "stɹænd",
+    "talk": "stɹænd",
+    "tuneWord": "satek",
+    "score": 398.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sign",
+    "ipa": "saɪn",
+    "talk": "saɪn",
+    "tuneWord": "senen",
+    "score": 337.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "snake",
+    "ipa": "sneɪk",
+    "talk": "sneɪk",
+    "tuneWord": "senig",
+    "score": 372.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sand",
+    "ipa": "sænd",
+    "talk": "sænd",
+    "tuneWord": "sonag",
+    "score": 338.3,
+    "tier": 2,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sound",
+    "ipa": "saʊnd",
+    "talk": "saʊnd",
+    "tuneWord": "zanal",
+    "score": 346.1,
+    "tier": 4,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "substance",
+    "ipa": "ˈsʌbstəns",
+    "talk": "ˈsʌbstəns",
+    "tuneWord": "sones",
+    "score": 410.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sunday",
+    "ipa": "ˈsʌndeɪ",
+    "talk": "ˈsʌndeɪ",
+    "tuneWord": "saten",
+    "score": 351.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sun",
+    "ipa": "sʌn",
+    "talk": "sʌn",
+    "tuneWord": "senes",
+    "score": 375.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "snow",
+    "ipa": "snoʊ",
+    "talk": "snoʊ",
+    "tuneWord": "sonus",
+    "score": 370.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "skunk",
+    "ipa": "skʌŋk",
+    "talk": "skʌŋk",
+    "tuneWord": "sikin",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "zinc",
+    "ipa": "zɪŋk",
+    "talk": "zɪŋk",
+    "tuneWord": "zanen",
+    "score": 328.3,
+    "tier": 2,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "swamp",
+    "ipa": "swɑːmp",
+    "talk": "swɑːmp",
+    "tuneWord": "sawiq",
+    "score": 410.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "september",
+    "ipa": "sɛpˈtɛmbəɹ",
+    "talk": "sɛpˈtɛmbəɹ",
+    "tuneWord": "seban",
+    "score": 410.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "spice",
+    "ipa": "spaɪs",
+    "talk": "spaɪs",
+    "tuneWord": "sapun",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "spine",
+    "ipa": "spaɪn",
+    "talk": "spaɪn",
+    "tuneWord": "sapen",
+    "score": 394.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "spire",
+    "ipa": "ˈspaɪəɹ",
+    "talk": "ˈspaɪəɹ",
+    "tuneWord": "sapot",
+    "score": 383.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "speaker",
+    "ipa": "ˈspiːkəɹ",
+    "talk": "ˈspiːkəɹ",
+    "tuneWord": "sikan",
+    "score": 425.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "script",
+    "ipa": "skɹɪpt",
+    "talk": "skɹɪpt",
+    "tuneWord": "sikal",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "spoon",
+    "ipa": "spuːn",
+    "talk": "spuːn",
+    "tuneWord": "sapal",
+    "score": 401.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sap",
+    "ipa": "sæp",
+    "talk": "sæp",
+    "tuneWord": "sebun",
+    "score": 356.3,
+    "tier": 2,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spring",
+    "ipa": "spɹɪŋ",
+    "talk": "spɹɪŋ",
+    "tuneWord": "sebal",
+    "score": 369.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spray",
+    "ipa": "spɹeɪ",
+    "talk": "spɹeɪ",
+    "tuneWord": "zepin",
+    "score": 366.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spark",
+    "ipa": "spɑːɹk",
+    "talk": "spɑːɹk",
+    "tuneWord": "sebuk",
+    "score": 361.3,
+    "tier": 2,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "space",
+    "ipa": "speɪs",
+    "talk": "speɪs",
+    "tuneWord": "zepiq",
+    "score": 366.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spear",
+    "ipa": "spɪɹ",
+    "talk": "spɪɹ",
+    "tuneWord": "zepat",
+    "score": 309.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "speech",
+    "ipa": "spiːtʃ",
+    "talk": "spiːtʃ",
+    "tuneWord": "zepal",
+    "score": 377.1,
+    "tier": 4,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spindle",
+    "ipa": "ˈspɪndəl",
+    "talk": "ˈspɪndəl",
+    "tuneWord": "sedaq",
+    "score": 480.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "spade",
+    "ipa": "speɪd",
+    "talk": "speɪd",
+    "tuneWord": "zepon",
+    "score": 359.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "spider",
+    "ipa": "ˈspaɪdəɹ",
+    "talk": "ˈspaɪdəɹ",
+    "tuneWord": "sedut",
+    "score": 380.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "soup",
+    "ipa": "suːp",
+    "talk": "suːp",
+    "tuneWord": "subaq",
+    "score": 401.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stable",
+    "ipa": "ˈsteɪbəl",
+    "talk": "ˈsteɪbəl",
+    "tuneWord": "sataq",
+    "score": 465.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "skeleton",
+    "ipa": "ˈskɛlətən",
+    "talk": "ˈskɛlətən",
+    "tuneWord": "sedam",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "soap",
+    "ipa": "soʊp",
+    "talk": "soʊp",
+    "tuneWord": "zopin",
+    "score": 364.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sponge",
+    "ipa": "spʌndʒ",
+    "talk": "spʌndʒ",
+    "tuneWord": "sapuj",
+    "score": 410.1,
+    "tier": 4,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "squall",
+    "ipa": "skwɔːl",
+    "talk": "skwɔːl",
+    "tuneWord": "sokal",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sky",
+    "ipa": "skaɪ",
+    "talk": "skaɪ",
+    "tuneWord": "sagul",
+    "score": 371.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "skull",
+    "ipa": "skʌl",
+    "talk": "skʌl",
+    "tuneWord": "sagen",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "scar",
+    "ipa": "skɑːɹ",
+    "talk": "skɑːɹ",
+    "tuneWord": "sokin",
+    "score": 335.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "scale",
+    "ipa": "skeɪl",
+    "talk": "skeɪl",
+    "tuneWord": "sokiq",
+    "score": 378.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "skirt",
+    "ipa": "skɜːɹt",
+    "talk": "skɜːɹt",
+    "tuneWord": "sugit",
+    "score": 352.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "circuit",
+    "ipa": "ˈsɜːɹkɪt",
+    "talk": "ˈsɜːɹkɪt",
+    "tuneWord": "sugen",
+    "score": 412.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "scarf",
+    "ipa": "skɑːɹf",
+    "talk": "skɑːɹf",
+    "tuneWord": "sikuf",
+    "score": 376.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sock",
+    "ipa": "sɑːk",
+    "talk": "sɑːk",
+    "tuneWord": "sikiq",
+    "score": 396.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "synagogue",
+    "ipa": "ˈsɪnəɡɑːɡ",
+    "talk": "ˈsɪnəɡɑːɡ",
+    "tuneWord": "sugaq",
+    "score": 450.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "school",
+    "ipa": "skuːl",
+    "talk": "skuːl",
+    "tuneWord": "zukaq",
+    "score": 389.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "screw",
+    "ipa": "skɹuː",
+    "talk": "skɹuː",
+    "tuneWord": "sugon",
+    "score": 398.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "skin",
+    "ipa": "skɪn",
+    "talk": "skɪn",
+    "tuneWord": "zekal",
+    "score": 357.1,
+    "tier": 4,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sickle",
+    "ipa": "ˈsɪkəl",
+    "talk": "ˈsɪkəl",
+    "tuneWord": "zekon",
+    "score": 429.3,
+    "tier": 2,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "screen",
+    "ipa": "skɹiːn",
+    "talk": "skɹiːn",
+    "tuneWord": "zeken",
+    "score": 368.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sinkhole",
+    "ipa": "ˈsɪŋkhoʊl",
+    "talk": "ˈsɪŋkhoʊl",
+    "tuneWord": "sokom",
+    "score": 430.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "scorpio",
+    "ipa": "ˈskɔːɹpiˌoʊ",
+    "talk": "ˈskɔːɹpiˌoʊ",
+    "tuneWord": "sikup",
+    "score": 404.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sister",
+    "ipa": "ˈsɪstəɹ",
+    "talk": "ˈsɪstəɹ",
+    "tuneWord": "sitan",
+    "score": 405.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "saturn",
+    "ipa": "ˈsætəɹn",
+    "talk": "ˈsætəɹn",
+    "tuneWord": "satun",
+    "score": 429.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "starch",
+    "ipa": "stɑːɹtʃ",
+    "talk": "stɑːɹtʃ",
+    "tuneWord": "satul",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "station",
+    "ipa": "ˈsteɪʃən",
+    "talk": "ˈsteɪʃən",
+    "tuneWord": "sitax",
+    "score": 456.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "street",
+    "ipa": "stɹiːt",
+    "talk": "stɹiːt",
+    "tuneWord": "sitaq",
+    "score": 425.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "steam",
+    "ipa": "stiːm",
+    "talk": "stiːm",
+    "tuneWord": "sitam",
+    "score": 425.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "star",
+    "ipa": "stɑːɹ",
+    "talk": "stɑːɹ",
+    "tuneWord": "satem",
+    "score": 345.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "steel",
+    "ipa": "stiːl",
+    "talk": "stiːl",
+    "tuneWord": "situl",
+    "score": 403.1,
+    "tier": 4,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "string",
+    "ipa": "stɹɪŋ",
+    "talk": "stɹɪŋ",
+    "tuneWord": "sitog",
+    "score": 365.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stream",
+    "ipa": "stɹiːm",
+    "talk": "stɹiːm",
+    "tuneWord": "situm",
+    "score": 403.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stair",
+    "ipa": "stɛɹ",
+    "talk": "stɛɹ",
+    "tuneWord": "satig",
+    "score": 315.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "city",
+    "ipa": "ˈsɪti",
+    "talk": "ˈsɪti",
+    "tuneWord": "zetin",
+    "score": 444.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stem",
+    "ipa": "stɛm",
+    "talk": "stɛm",
+    "tuneWord": "sedum",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "steppe",
+    "ipa": "stɛp",
+    "talk": "stɛp",
+    "tuneWord": "sitep",
+    "score": 372.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "strait",
+    "ipa": "stɹeɪt",
+    "talk": "stɹeɪt",
+    "tuneWord": "sedul",
+    "score": 371.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "strap",
+    "ipa": "stɹæp",
+    "talk": "stɹæp",
+    "tuneWord": "satop",
+    "score": 383.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cider",
+    "ipa": "ˈsaɪdəɹ",
+    "talk": "ˈsaɪdəɹ",
+    "tuneWord": "sudan",
+    "score": 363.3,
+    "tier": 2,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "story",
+    "ipa": "ˈstɔːɹi",
+    "talk": "ˈstɔːɹi",
+    "tuneWord": "sitas",
+    "score": 395.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "storm",
+    "ipa": "stɔːɹm",
+    "talk": "stɔːɹm",
+    "tuneWord": "satum",
+    "score": 369.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sandstone",
+    "ipa": "ˈsændstoʊn",
+    "talk": "ˈsændstoʊn",
+    "tuneWord": "sudaq",
+    "score": 421.1,
+    "tier": 4,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stomach",
+    "ipa": "ˈstʌmək",
+    "talk": "ˈstʌmək",
+    "tuneWord": "somaq",
+    "score": 455.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "stuff",
+    "ipa": "stʌf",
+    "talk": "stʌf",
+    "tuneWord": "satof",
+    "score": 422.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "storehouse",
+    "ipa": "ˈstɔːɹhaʊs",
+    "talk": "ˈstɔːɹhaʊs",
+    "tuneWord": "zutan",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stew",
+    "ipa": "stuː",
+    "talk": "stuː",
+    "tuneWord": "zutaq",
+    "score": 389.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "saturday",
+    "ipa": "ˈsætəɹdeɪ",
+    "talk": "ˈsætəɹdeɪ",
+    "tuneWord": "situt",
+    "score": 376.3,
+    "tier": 2,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stove",
+    "ipa": "stoʊv",
+    "talk": "stoʊv",
+    "tuneWord": "sitiv",
+    "score": 370.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "stone",
+    "ipa": "stoʊn",
+    "talk": "stoʊn",
+    "tuneWord": "zutem",
+    "score": 352.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "soot",
+    "ipa": "sʊt",
+    "talk": "sʊt",
+    "tuneWord": "zeton",
+    "score": 328.3,
+    "tier": 2,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sagittarius",
+    "ipa": "ˌsædʒɪˈtɛəɹiəs",
+    "talk": "ˌsædʒɪˈtɛəɹiəs",
+    "tuneWord": "satus",
+    "score": 390.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cedar",
+    "ipa": "ˈsiːdəɹ",
+    "talk": "ˈsiːdəɹ",
+    "tuneWord": "zidan",
+    "score": 389.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "seed",
+    "ipa": "siːd",
+    "talk": "siːd",
+    "tuneWord": "zidal",
+    "score": 389.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sandal",
+    "ipa": "ˈsændəl",
+    "talk": "ˈsændəl",
+    "tuneWord": "sedog",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "zebra",
+    "ipa": "ˈzɛbɹə",
+    "talk": "ˈzɛbɹə",
+    "tuneWord": "zaban",
+    "score": 425.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "symbol",
+    "ipa": "ˈsɪmbəl",
+    "talk": "ˈsɪmbəl",
+    "tuneWord": "ziban",
+    "score": 444.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "myth",
+    "ipa": "mɪθ",
+    "talk": "mɪθ",
+    "tuneWord": "mecit",
+    "score": 412.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mirror",
+    "ipa": "ˈmɪɹəɹ",
+    "talk": "ˈmɪɹəɹ",
+    "tuneWord": "midaq",
+    "score": 280.4,
+    "tier": 1,
+    "distance": 28,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mouth",
+    "ipa": "maʊθ",
+    "talk": "maʊθ",
+    "tuneWord": "macis",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "august",
+    "ipa": "ˈɔːɡəst",
+    "talk": "ˈɔːɡəst",
+    "tuneWord": "hegas",
+    "score": 386.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "december",
+    "ipa": "dɪˈsɛmbəɹ",
+    "talk": "dɪˈsɛmbəɹ",
+    "tuneWord": "damen",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cat",
+    "ipa": "kæt",
+    "talk": "kæt",
+    "tuneWord": "katen",
+    "score": 398.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cactus",
+    "ipa": "ˈkæktəs",
+    "talk": "ˈkæktəs",
+    "tuneWord": "ketas",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cotton",
+    "ipa": "ˈkɑːtən",
+    "talk": "ˈkɑːtən",
+    "tuneWord": "katun",
+    "score": 440.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "kettle",
+    "ipa": "ˈkɛtəl",
+    "talk": "ˈkɛtəl",
+    "tuneWord": "kotal",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "crystal",
+    "ipa": "ˈkɹɪstəl",
+    "talk": "ˈkɹɪstəl",
+    "tuneWord": "kitan",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "crater",
+    "ipa": "ˈkɹeɪtəɹ",
+    "talk": "ˈkɹeɪtəɹ",
+    "tuneWord": "ketiq",
+    "score": 402.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "curtain",
+    "ipa": "ˈkɜːɹtən",
+    "talk": "ˈkɜːɹtən",
+    "tuneWord": "kudal",
+    "score": 432.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "coat",
+    "ipa": "koʊt",
+    "talk": "koʊt",
+    "tuneWord": "kotiq",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "candle",
+    "ipa": "ˈkændəl",
+    "talk": "ˈkændəl",
+    "tuneWord": "kadal",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "kidney",
+    "ipa": "ˈkɪdni",
+    "talk": "ˈkɪdni",
+    "tuneWord": "kudiq",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cardboard",
+    "ipa": "ˈkɑːɹdbɔːɹd",
+    "talk": "ˈkɑːɹdbɔːɹd",
+    "tuneWord": "katot",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cream",
+    "ipa": "kɹiːm",
+    "talk": "kɹiːm",
+    "tuneWord": "kijaq",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gorilla",
+    "ipa": "ɡəˈɹɪlə",
+    "talk": "ɡəˈɹɪlə",
+    "tuneWord": "gigal",
+    "score": 325.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "camel",
+    "ipa": "ˈkæməl",
+    "talk": "ˈkæməl",
+    "tuneWord": "kimat",
+    "score": 433.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "comet",
+    "ipa": "ˈkɑːmət",
+    "talk": "ˈkɑːmət",
+    "tuneWord": "kumal",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "camera",
+    "ipa": "ˈkæmɹə",
+    "talk": "ˈkæmɹə",
+    "tuneWord": "komat",
+    "score": 425.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "garment",
+    "ipa": "ˈɡɑːɹmənt",
+    "talk": "ˈɡɑːɹmənt",
+    "tuneWord": "gamal",
+    "score": 440.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gum",
+    "ipa": "ɡʌm",
+    "talk": "ɡʌm",
+    "tuneWord": "gamon",
+    "score": 422.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "chromium",
+    "ipa": "ˈkɹoʊmiəm",
+    "talk": "ˈkɹoʊmiəm",
+    "tuneWord": "kimin",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "camp",
+    "ipa": "kæmp",
+    "talk": "kæmp",
+    "tuneWord": "kumiq",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "grotto",
+    "ipa": "ˈɡɹɑːtoʊ",
+    "talk": "ˈɡɹɑːtoʊ",
+    "tuneWord": "ganon",
+    "score": 375.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "grass",
+    "ipa": "ɡɹæs",
+    "talk": "ɡɹæs",
+    "tuneWord": "gamis",
+    "score": 295.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ground",
+    "ipa": "ɡɹaʊnd",
+    "talk": "ɡɹaʊnd",
+    "tuneWord": "ganit",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "grain",
+    "ipa": "ɡɹeɪn",
+    "talk": "ɡɹeɪn",
+    "tuneWord": "genis",
+    "score": 297.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "granite",
+    "ipa": "ˈɡɹænɪt",
+    "talk": "ˈɡɹænɪt",
+    "tuneWord": "guniq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "grape",
+    "ipa": "ɡɹeɪp",
+    "talk": "ɡɹeɪp",
+    "tuneWord": "gepip",
+    "score": 297.2,
+    "tier": 3,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pumpkin",
+    "ipa": "ˈpʌmpkɪn",
+    "talk": "ˈpʌmpkɪn",
+    "tuneWord": "pakit",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "peg",
+    "ipa": "pɛɡ",
+    "talk": "pɛɡ",
+    "tuneWord": "pogiq",
+    "score": 372.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "penguin",
+    "ipa": "ˈpɛŋɡwɪn",
+    "talk": "ˈpɛŋɡwɪn",
+    "tuneWord": "pegis",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "towel",
+    "ipa": "ˈtaʊəl",
+    "talk": "ˈtaʊəl",
+    "tuneWord": "toyas",
+    "score": 388.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "smoke",
+    "ipa": "smoʊk",
+    "talk": "smoʊk",
+    "tuneWord": "somen",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "smell",
+    "ipa": "smɛl",
+    "talk": "smɛl",
+    "tuneWord": "somon",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "summer",
+    "ipa": "ˈsʌməɹ",
+    "talk": "ˈsʌməɹ",
+    "tuneWord": "simon",
+    "score": 398.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ceramic",
+    "ipa": "səˈɹæmɪk",
+    "talk": "səˈɹæmɪk",
+    "tuneWord": "simin",
+    "score": 436.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "summit",
+    "ipa": "ˈsʌmɪt",
+    "talk": "ˈsʌmɪt",
+    "tuneWord": "zamen",
+    "score": 432.3,
+    "tier": 2,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "island",
+    "ipa": "ˈaɪlənd",
+    "talk": "ˈaɪlənd",
+    "tuneWord": "hiyak",
+    "score": 372.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "elephant",
+    "ipa": "ˈɛləfənt",
+    "talk": "ˈɛləfənt",
+    "tuneWord": "heyaf",
+    "score": 356.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "eye",
+    "ipa": "aɪ",
+    "talk": "aɪ",
+    "tuneWord": "homis",
+    "score": 357.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wheel",
+    "ipa": "wiːl",
+    "talk": "wiːl",
+    "tuneWord": "winaq",
+    "score": 325.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wool",
+    "ipa": "wʊl",
+    "talk": "wʊl",
+    "tuneWord": "vuyaq",
+    "score": 275.1,
+    "tier": 4,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "well",
+    "ipa": "wɛl",
+    "talk": "wɛl",
+    "tuneWord": "wibiq",
+    "score": 284.4,
+    "tier": 1,
+    "distance": 34,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "world",
+    "ipa": "wɜːɹld",
+    "talk": "wɜːɹld",
+    "tuneWord": "vuwiq",
+    "score": 254.1,
+    "tier": 4,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "calf",
+    "ipa": "kæf",
+    "talk": "kæf",
+    "tuneWord": "kefal",
+    "score": 377.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cavern",
+    "ipa": "ˈkævəɹn",
+    "talk": "ˈkævəɹn",
+    "tuneWord": "kavut",
+    "score": 429.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "honey",
+    "ipa": "ˈhʌni",
+    "talk": "ˈhʌni",
+    "tuneWord": "haniq",
+    "score": 500.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "avenue",
+    "ipa": "ˈævəˌnuː",
+    "talk": "ˈævəˌnuː",
+    "tuneWord": "havun",
+    "score": 450.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "anvil",
+    "ipa": "ˈænvɪl",
+    "talk": "ˈænvɪl",
+    "tuneWord": "haviq",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "oven",
+    "ipa": "ˈʌvən",
+    "talk": "ˈʌvən",
+    "tuneWord": "haval",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "river",
+    "ipa": "ˈɹɪvəɹ",
+    "talk": "ˈɹɪvəɹ",
+    "tuneWord": "hifat",
+    "score": 327.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ocean",
+    "ipa": "ˈoʊʃən",
+    "talk": "ˈoʊʃən",
+    "tuneWord": "hinot",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ant",
+    "ipa": "ænt",
+    "talk": "ænt",
+    "tuneWord": "hatin",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "iron",
+    "ipa": "ˈaɪəɹn",
+    "talk": "ˈaɪəɹn",
+    "tuneWord": "harin",
+    "score": 347.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "acid",
+    "ipa": "ˈæsɪd",
+    "talk": "ˈæsɪd",
+    "tuneWord": "hudit",
+    "score": 406.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "geyser",
+    "ipa": "ˈɡaɪzəɹ",
+    "talk": "ˈɡaɪzəɹ",
+    "tuneWord": "gazul",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "darkness",
+    "ipa": "ˈdɑːɹknəs",
+    "talk": "ˈdɑːɹknəs",
+    "tuneWord": "dunas",
+    "score": 449.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "dune",
+    "ipa": "duːn",
+    "talk": "duːn",
+    "tuneWord": "dunal",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "dew",
+    "ipa": "djuː",
+    "talk": "djuː",
+    "tuneWord": "duyaq",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "town",
+    "ipa": "taʊn",
+    "talk": "taʊn",
+    "tuneWord": "tanaq",
+    "score": 372.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tool",
+    "ipa": "tuːl",
+    "talk": "tuːl",
+    "tuneWord": "tuwin",
+    "score": 348.2,
+    "tier": 3,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tin",
+    "ipa": "tɪn",
+    "talk": "tɪn",
+    "tuneWord": "tonat",
+    "score": 360.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dawn",
+    "ipa": "dɔːn",
+    "talk": "dɔːn",
+    "tuneWord": "danot",
+    "score": 375.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tunnel",
+    "ipa": "ˈtʌnəl",
+    "talk": "ˈtʌnəl",
+    "tuneWord": "tanas",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tone",
+    "ipa": "toʊn",
+    "talk": "toʊn",
+    "tuneWord": "tonin",
+    "score": 350.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tendon",
+    "ipa": "ˈtɛndən",
+    "talk": "ˈtɛndən",
+    "tuneWord": "teden",
+    "score": 465.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "titanium",
+    "ipa": "taɪˈteɪniəm",
+    "talk": "taɪˈteɪniəm",
+    "tuneWord": "tatim",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tornado",
+    "ipa": "tɔːɹˈneɪdoʊ",
+    "talk": "tɔːɹˈneɪdoʊ",
+    "tuneWord": "tudiq",
+    "score": 399.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "thyme",
+    "ipa": "taɪm",
+    "talk": "taɪm",
+    "tuneWord": "timan",
+    "score": 388.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tile",
+    "ipa": "taɪl",
+    "talk": "taɪl",
+    "tuneWord": "tawin",
+    "score": 330.2,
+    "tier": 3,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "textile",
+    "ipa": "ˈtɛkstaɪl",
+    "talk": "ˈtɛkstaɪl",
+    "tuneWord": "tegaq",
+    "score": 416.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tomato",
+    "ipa": "təˈmeɪtoʊ",
+    "talk": "təˈmeɪtoʊ",
+    "tuneWord": "temas",
+    "score": 450.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hospital",
+    "ipa": "ˈhɑːspɪtəl",
+    "talk": "ˈhɑːspɪtəl",
+    "tuneWord": "haton",
+    "score": 455.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "engine",
+    "ipa": "ˈɛndʒɪn",
+    "talk": "ˈɛndʒɪn",
+    "tuneWord": "hedij",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "orange",
+    "ipa": "ˈɔːɹɪndʒ",
+    "talk": "ˈɔːɹɪndʒ",
+    "tuneWord": "hanij",
+    "score": 399.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "range",
+    "ipa": "ɹeɪndʒ",
+    "talk": "ɹeɪndʒ",
+    "tuneWord": "hedaq",
+    "score": 396.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hinge",
+    "ipa": "hɪndʒ",
+    "talk": "hɪndʒ",
+    "tuneWord": "hedat",
+    "score": 405.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "history",
+    "ipa": "ˈhɪstəɹi",
+    "talk": "ˈhɪstəɹi",
+    "tuneWord": "hedin",
+    "score": 456.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "head",
+    "ipa": "hɛd",
+    "talk": "hɛd",
+    "tuneWord": "hedon",
+    "score": 395.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hide",
+    "ipa": "haɪd",
+    "talk": "haɪd",
+    "tuneWord": "huden",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "headland",
+    "ipa": "ˈhɛdlænd",
+    "talk": "ˈhɛdlænd",
+    "tuneWord": "hudaq",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "eddy",
+    "ipa": "ˈɛdi",
+    "talk": "ˈɛdi",
+    "tuneWord": "hedas",
+    "score": 426.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "outpost",
+    "ipa": "ˈaʊtpoʊst",
+    "talk": "ˈaʊtpoʊst",
+    "tuneWord": "hitas",
+    "score": 391.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "router",
+    "ipa": "ˈɹaʊtəɹ",
+    "talk": "ˈɹaʊtəɹ",
+    "tuneWord": "hotaq",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "outcrop",
+    "ipa": "ˈaʊtkɹɑːp",
+    "talk": "ˈaʊtkɹɑːp",
+    "tuneWord": "hatap",
+    "score": 410.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hat",
+    "ipa": "hæt",
+    "talk": "hæt",
+    "tuneWord": "hitiq",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "heat",
+    "ipa": "hiːt",
+    "talk": "hiːt",
+    "tuneWord": "hital",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "intestine",
+    "ipa": "ɪnˈtɛstɪn",
+    "talk": "ɪnˈtɛstɪn",
+    "tuneWord": "hitis",
+    "score": 390.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "islet",
+    "ipa": "ˈaɪlɪt",
+    "talk": "ˈaɪlɪt",
+    "tuneWord": "hatim",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "otter",
+    "ipa": "ˈɑːtəɹ",
+    "talk": "ˈɑːtəɹ",
+    "tuneWord": "hatik",
+    "score": 390.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "atoll",
+    "ipa": "ˈætɔːl",
+    "talk": "ˈætɔːl",
+    "tuneWord": "hatom",
+    "score": 370.2,
+    "tier": 3,
+    "distance": 20,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hut",
+    "ipa": "hʌt",
+    "talk": "hʌt",
+    "tuneWord": "hotul",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hood",
+    "ipa": "hʊd",
+    "talk": "hʊd",
+    "tuneWord": "hudon",
+    "score": 394.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "oat",
+    "ipa": "oʊt",
+    "talk": "oʊt",
+    "tuneWord": "hotas",
+    "score": 355.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "autumn",
+    "ipa": "ˈɔːtəm",
+    "talk": "ˈɔːtəm",
+    "tuneWord": "homiq",
+    "score": 426.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "attic",
+    "ipa": "ˈætɪk",
+    "talk": "ˈætɪk",
+    "tuneWord": "hakit",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hand",
+    "ipa": "hænd",
+    "talk": "hænd",
+    "tuneWord": "hanal",
+    "score": 372.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "onion",
+    "ipa": "ˈʌnjən",
+    "talk": "ˈʌnjən",
+    "tuneWord": "hanas",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "antenna",
+    "ipa": "ænˈtɛnə",
+    "talk": "ænˈtɛnə",
+    "tuneWord": "hemaq",
+    "score": 361.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "home",
+    "ipa": "hoʊm",
+    "talk": "hoʊm",
+    "tuneWord": "homin",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "armor",
+    "ipa": "ˈɑːɹməɹ",
+    "talk": "ˈɑːɹməɹ",
+    "tuneWord": "hemul",
+    "score": 355.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "image",
+    "ipa": "ˈɪmɪdʒ",
+    "talk": "ˈɪmɪdʒ",
+    "tuneWord": "himen",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "inn",
+    "ipa": "ɪn",
+    "talk": "ɪn",
+    "tuneWord": "haniz",
+    "score": 337.4,
+    "tier": 1,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "helmet",
+    "ipa": "ˈhɛlmɪt",
+    "talk": "ˈhɛlmɪt",
+    "tuneWord": "hemiz",
+    "score": 430.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "inlet",
+    "ipa": "ˈɪnlɛt",
+    "talk": "ˈɪnlɛt",
+    "tuneWord": "hinag",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "enamel",
+    "ipa": "ɪˈnæməl",
+    "talk": "ɪˈnæməl",
+    "tuneWord": "hinen",
+    "score": 382.7,
+    "tier": 3,
+    "distance": 22.5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hammer",
+    "ipa": "ˈhæməɹ",
+    "talk": "ˈhæməɹ",
+    "tuneWord": "himit",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "embryo",
+    "ipa": "ˈɛmbɹioʊ",
+    "talk": "ˈɛmbɹioʊ",
+    "tuneWord": "hobun",
+    "score": 396.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ember",
+    "ipa": "ˈɛmbəɹ",
+    "talk": "ˈɛmbəɹ",
+    "tuneWord": "hebin",
+    "score": 366.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "axle",
+    "ipa": "ˈæksəl",
+    "talk": "ˈæksəl",
+    "tuneWord": "hakaq",
+    "score": 410.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ankle",
+    "ipa": "ˈæŋkəl",
+    "talk": "ˈæŋkəl",
+    "tuneWord": "hakas",
+    "score": 410.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "axe",
+    "ipa": "æks",
+    "talk": "æks",
+    "tuneWord": "haken",
+    "score": 368.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ink",
+    "ipa": "ɪŋk",
+    "talk": "ɪŋk",
+    "tuneWord": "hikon",
+    "score": 365.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "octopus",
+    "ipa": "ˈɑːktəpəs",
+    "talk": "ˈɑːktəpəs",
+    "tuneWord": "hakon",
+    "score": 425.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "eclipse",
+    "ipa": "ɪˈklɪps",
+    "talk": "ɪˈklɪps",
+    "tuneWord": "hikas",
+    "score": 415.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "aqueduct",
+    "ipa": "ˈækwɪˌdʌkt",
+    "talk": "ˈækwɪˌdʌkt",
+    "tuneWord": "hikiq",
+    "score": 379.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "october",
+    "ipa": "ɒkˈtoʊbəɹ",
+    "talk": "ɒkˈtoʊbəɹ",
+    "tuneWord": "hakor",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hawk",
+    "ipa": "hɔːk",
+    "talk": "hɔːk",
+    "tuneWord": "hikal",
+    "score": 375.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "oak",
+    "ipa": "oʊk",
+    "talk": "oʊk",
+    "tuneWord": "hikus",
+    "score": 340.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "aquarius",
+    "ipa": "əˈkwɛəɹiəs",
+    "talk": "əˈkwɛəɹiəs",
+    "tuneWord": "hakoz",
+    "score": 355.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "egg",
+    "ipa": "ɛɡ",
+    "talk": "ɛɡ",
+    "tuneWord": "hegiq",
+    "score": 366.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "echo",
+    "ipa": "ˈɛkoʊ",
+    "talk": "ˈɛkoʊ",
+    "tuneWord": "hegon",
+    "score": 406.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "elk",
+    "ipa": "ɛlk",
+    "talk": "ɛlk",
+    "tuneWord": "hikin",
+    "score": 354.2,
+    "tier": 3,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hurricane",
+    "ipa": "ˈhɜːɹɪˌkeɪn",
+    "talk": "ˈhɜːɹɪˌkeɪn",
+    "tuneWord": "hugaq",
+    "score": 397.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hook",
+    "ipa": "hʊk",
+    "talk": "hʊk",
+    "tuneWord": "hugan",
+    "score": 355.2,
+    "tier": 3,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "eagle",
+    "ipa": "ˈiːɡəl",
+    "talk": "ˈiːɡəl",
+    "tuneWord": "hugas",
+    "score": 434.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dam",
+    "ipa": "dæm",
+    "talk": "dæm",
+    "tuneWord": "damit",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "device",
+    "ipa": "dɪˈvaɪs",
+    "talk": "dɪˈvaɪs",
+    "tuneWord": "devaq",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "distaff",
+    "ipa": "ˈdɪstæf",
+    "talk": "ˈdɪstæf",
+    "tuneWord": "ditaf",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "text",
+    "ipa": "tɛkst",
+    "talk": "tɛkst",
+    "tuneWord": "tasiq",
+    "score": 381.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "earth",
+    "ipa": "ɜːɹθ",
+    "talk": "ɜːɹθ",
+    "tuneWord": "racek",
+    "score": 255.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tuesday",
+    "ipa": "ˈtuːzdeɪ",
+    "talk": "ˈtuːzdeɪ",
+    "tuneWord": "tuset",
+    "score": 426.2,
+    "tier": 3,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "whale",
+    "ipa": "weɪl",
+    "talk": "weɪl",
+    "tuneWord": "winis",
+    "score": 290.4,
+    "tier": 1,
+    "distance": 34,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wall",
+    "ipa": "wɔːl",
+    "talk": "wɔːl",
+    "tuneWord": "voyan",
+    "score": 301.3,
+    "tier": 2,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "willow",
+    "ipa": "ˈwɪloʊ",
+    "talk": "ˈwɪloʊ",
+    "tuneWord": "winos",
+    "score": 360.4,
+    "tier": 1,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wolf",
+    "ipa": "wʊlf",
+    "talk": "wʊlf",
+    "tuneWord": "vuwis",
+    "score": 268.1,
+    "tier": 4,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "village",
+    "ipa": "ˈvɪlɪdʒ",
+    "talk": "ˈvɪlɪdʒ",
+    "tuneWord": "viyan",
+    "score": 391.3,
+    "tier": 2,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "valley",
+    "ipa": "ˈvæli",
+    "talk": "ˈvæli",
+    "tuneWord": "vawin",
+    "score": 408.3,
+    "tier": 2,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "valve",
+    "ipa": "vælv",
+    "talk": "vælv",
+    "tuneWord": "vayaq",
+    "score": 329.1,
+    "tier": 4,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "veil",
+    "ipa": "veɪl",
+    "talk": "veɪl",
+    "tuneWord": "veyan",
+    "score": 326.3,
+    "tier": 2,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "field",
+    "ipa": "fiːld",
+    "talk": "fiːld",
+    "tuneWord": "fiyat",
+    "score": 371.3,
+    "tier": 2,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wasteland",
+    "ipa": "ˈweɪstlænd",
+    "talk": "ˈweɪstlænd",
+    "tuneWord": "winul",
+    "score": 414.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "file",
+    "ipa": "faɪl",
+    "talk": "faɪl",
+    "tuneWord": "fayan",
+    "score": 333.3,
+    "tier": 2,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fly",
+    "ipa": "flaɪ",
+    "talk": "flaɪ",
+    "tuneWord": "fawit",
+    "score": 330.3,
+    "tier": 2,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "floor",
+    "ipa": "flɔːɹ",
+    "talk": "flɔːɹ",
+    "tuneWord": "fayas",
+    "score": 276.1,
+    "tier": 4,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "felt",
+    "ipa": "fɛlt",
+    "talk": "fɛlt",
+    "tuneWord": "fewin",
+    "score": 324.3,
+    "tier": 2,
+    "distance": 24,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "waterway",
+    "ipa": "ˈwɔːtəɹweɪ",
+    "talk": "ˈwɔːtəɹweɪ",
+    "tuneWord": "voten",
+    "score": 410.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "flood",
+    "ipa": "flʌd",
+    "talk": "flʌd",
+    "tuneWord": "faron",
+    "score": 344.3,
+    "tier": 2,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "flame",
+    "ipa": "fleɪm",
+    "talk": "fleɪm",
+    "tuneWord": "fiyam",
+    "score": 319.3,
+    "tier": 2,
+    "distance": 23,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "flower",
+    "ipa": "ˈflaʊəɹ",
+    "talk": "ˈflaʊəɹ",
+    "tuneWord": "fuyat",
+    "score": 327.3,
+    "tier": 2,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "freezer",
+    "ipa": "ˈfriːzəɹ",
+    "talk": "ˈfriːzəɹ",
+    "tuneWord": "fisal",
+    "score": 401.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fjord",
+    "ipa": "fjɔːɹd",
+    "talk": "fjɔːɹd",
+    "tuneWord": "fanaq",
+    "score": 374.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "formula",
+    "ipa": "ˈfɔːɹmjələ",
+    "talk": "ˈfɔːɹmjələ",
+    "tuneWord": "famal",
+    "score": 449.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "father",
+    "ipa": "ˈfɑːðəɹ",
+    "talk": "ˈfɑːðəɹ",
+    "tuneWord": "fakit",
+    "score": 330.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wetland",
+    "ipa": "ˈwɛtlænd",
+    "talk": "ˈwɛtlænd",
+    "tuneWord": "venaq",
+    "score": 410.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "window",
+    "ipa": "ˈwɪndoʊ",
+    "talk": "ˈwɪndoʊ",
+    "tuneWord": "witun",
+    "score": 414.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wound",
+    "ipa": "wuːnd",
+    "talk": "wuːnd",
+    "tuneWord": "vunal",
+    "score": 375.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "wine",
+    "ipa": "waɪn",
+    "talk": "waɪn",
+    "tuneWord": "venet",
+    "score": 337.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wind",
+    "ipa": "wɪnd",
+    "talk": "wɪnd",
+    "tuneWord": "winez",
+    "score": 360.4,
+    "tier": 1,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "whirlwind",
+    "ipa": "ˈwɜːɹlwɪnd",
+    "talk": "ˈwɜːɹlwɪnd",
+    "tuneWord": "vuniq",
+    "score": 386.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "venison",
+    "ipa": "ˈvɛnɪsən",
+    "talk": "ˈvɛnɪsən",
+    "tuneWord": "venes",
+    "score": 465.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "woodland",
+    "ipa": "ˈwʊdlænd",
+    "talk": "ˈwʊdlænd",
+    "tuneWord": "vudal",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "vinyl",
+    "ipa": "ˈvaɪnəl",
+    "talk": "ˈvaɪnəl",
+    "tuneWord": "finaq",
+    "score": 420.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "flint",
+    "ipa": "flɪnt",
+    "talk": "flɪnt",
+    "tuneWord": "finas",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "vine",
+    "ipa": "vaɪn",
+    "talk": "vaɪn",
+    "tuneWord": "vunis",
+    "score": 378.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fence",
+    "ipa": "fɛns",
+    "talk": "fɛns",
+    "tuneWord": "finet",
+    "score": 372.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "vein",
+    "ipa": "veɪn",
+    "talk": "veɪn",
+    "tuneWord": "venul",
+    "score": 395.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "firmament",
+    "ipa": "ˈfɜːɹməmənt",
+    "talk": "ˈfɜːɹməmənt",
+    "tuneWord": "vomal",
+    "score": 412.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "venus",
+    "ipa": "ˈviːnəs",
+    "talk": "ˈviːnəs",
+    "tuneWord": "vunos",
+    "score": 419.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fen",
+    "ipa": "fɛn",
+    "talk": "fɛn",
+    "tuneWord": "finul",
+    "score": 355.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "volcano",
+    "ipa": "vɑːlˈkeɪnoʊ",
+    "talk": "vɑːlˈkeɪnoʊ",
+    "tuneWord": "vagon",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "finger",
+    "ipa": "ˈfɪŋɡəɹ",
+    "talk": "ˈfɪŋɡəɹ",
+    "tuneWord": "fegin",
+    "score": 382.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "frost",
+    "ipa": "fɹɔːst",
+    "talk": "fɹɔːst",
+    "tuneWord": "fosaq",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "feldspar",
+    "ipa": "ˈfɛldspɑːɹ",
+    "talk": "ˈfɛldspɑːɹ",
+    "tuneWord": "fepin",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fox",
+    "ipa": "fɑːks",
+    "talk": "fɑːks",
+    "tuneWord": "fakus",
+    "score": 395.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "vacuum",
+    "ipa": "ˈvækjuːm",
+    "talk": "ˈvækjuːm",
+    "tuneWord": "vikum",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cup",
+    "ipa": "kʌp",
+    "talk": "kʌp",
+    "tuneWord": "kapon",
+    "score": 422.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "copper",
+    "ipa": "ˈkɑːpəɹ",
+    "talk": "ˈkɑːpəɹ",
+    "tuneWord": "kapit",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "compass",
+    "ipa": "ˈkʌmpəs",
+    "talk": "ˈkʌmpəs",
+    "tuneWord": "kopaq",
+    "score": 455.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cap",
+    "ipa": "kæp",
+    "talk": "kæp",
+    "tuneWord": "kapen",
+    "score": 398.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "carpet",
+    "ipa": "ˈkɑːɹpɪt",
+    "talk": "ˈkɑːɹpɪt",
+    "tuneWord": "kipes",
+    "score": 424.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cape",
+    "ipa": "keɪp",
+    "talk": "keɪp",
+    "tuneWord": "kipul",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "corpse",
+    "ipa": "kɔːɹps",
+    "talk": "kɔːɹps",
+    "tuneWord": "kopus",
+    "score": 384.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "coop",
+    "ipa": "kuːp",
+    "talk": "kuːp",
+    "tuneWord": "kuban",
+    "score": 401.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cobble",
+    "ipa": "ˈkɑːbəl",
+    "talk": "ˈkɑːbəl",
+    "tuneWord": "keben",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "carbon",
+    "ipa": "ˈkɑːɹbən",
+    "talk": "ˈkɑːɹbən",
+    "tuneWord": "kubet",
+    "score": 434.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cable",
+    "ipa": "ˈkeɪbəl",
+    "talk": "ˈkeɪbəl",
+    "tuneWord": "giban",
+    "score": 432.2,
+    "tier": 3,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "capricorn",
+    "ipa": "ˈkæprɪˌkɔːɹn",
+    "talk": "ˈkæprɪˌkɔːɹn",
+    "tuneWord": "kipor",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "garden",
+    "ipa": "ˈɡɑːɹdən",
+    "talk": "ˈɡɑːɹdən",
+    "tuneWord": "godan",
+    "score": 428.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "water",
+    "ipa": "ˈwɔːtəɹ",
+    "talk": "ˈwɔːtəɹ",
+    "tuneWord": "votal",
+    "score": 355.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "wheat",
+    "ipa": "wiːt",
+    "talk": "wiːt",
+    "tuneWord": "viten",
+    "score": 366.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shoe",
+    "ipa": "ʃuː",
+    "talk": "ʃuː",
+    "tuneWord": "xoman",
+    "score": 413.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "jaw",
+    "ipa": "dʒɔː",
+    "talk": "dʒɔː",
+    "tuneWord": "junat",
+    "score": 388.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "juice",
+    "ipa": "dʒuːs",
+    "talk": "dʒuːs",
+    "tuneWord": "jumaq",
+    "score": 330.1,
+    "tier": 4,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "knee",
+    "ipa": "niː",
+    "talk": "niː",
+    "tuneWord": "nalet",
+    "score": 392.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mother",
+    "ipa": "ˈmʌðəɹ",
+    "talk": "ˈmʌðəɹ",
+    "tuneWord": "maCin",
+    "score": 420.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "moor",
+    "ipa": "mʊɹ",
+    "talk": "mʊɹ",
+    "tuneWord": "malin",
+    "score": 242.2,
+    "tier": 3,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mark",
+    "ipa": "mɑːɹk",
+    "talk": "mɑːɹk",
+    "tuneWord": "molaq",
+    "score": 237.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "marsh",
+    "ipa": "mɑːɹʃ",
+    "talk": "mɑːɹʃ",
+    "tuneWord": "malex",
+    "score": 242.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "quartz",
+    "ipa": "kwɔːɹts",
+    "talk": "kwɔːɹts",
+    "tuneWord": "kuwin",
+    "score": 359.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "quark",
+    "ipa": "kwɔːɹk",
+    "talk": "kwɔːɹk",
+    "tuneWord": "guwik",
+    "score": 311.2,
+    "tier": 3,
+    "distance": 16,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wax",
+    "ipa": "wæks",
+    "talk": "wæks",
+    "tuneWord": "wikal",
+    "score": 335.4,
+    "tier": 1,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tempest",
+    "ipa": "ˈtɛmpɪst",
+    "talk": "ˈtɛmpɪst",
+    "tuneWord": "topiq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "aries",
+    "ipa": "ˈɛəɹiːz",
+    "talk": "ˈɛəɹiːz",
+    "tuneWord": "hariz",
+    "score": 300.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "horse",
+    "ipa": "hɔːɹs",
+    "talk": "hɔːɹs",
+    "tuneWord": "hares",
+    "score": 320.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "heart",
+    "ipa": "hɑːɹt",
+    "talk": "hɑːɹt",
+    "tuneWord": "horaq",
+    "score": 315.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "hair",
+    "ipa": "hɛɹ",
+    "talk": "hɛɹ",
+    "tuneWord": "horat",
+    "score": 315.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rubber",
+    "ipa": "ˈɹʌbəɹ",
+    "talk": "ˈɹʌbəɹ",
+    "tuneWord": "habul",
+    "score": 362.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "april",
+    "ipa": "ˈeɪpɹəl",
+    "talk": "ˈeɪpɹəl",
+    "tuneWord": "hopal",
+    "score": 386.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "january",
+    "ipa": "ˈdʒænjuˌɛɹi",
+    "talk": "ˈdʒænjuˌɛɹi",
+    "tuneWord": "junor",
+    "score": 394.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "goat",
+    "ipa": "ɡoʊt",
+    "talk": "ɡoʊt",
+    "tuneWord": "getun",
+    "score": 376.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "gate",
+    "ipa": "ɡeɪt",
+    "talk": "ɡeɪt",
+    "tuneWord": "geten",
+    "score": 372.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "kangaroo",
+    "ipa": "ˌkæŋɡəˈɹuː",
+    "talk": "ˌkæŋɡəˈɹuː",
+    "tuneWord": "kagin",
+    "score": 444.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "toad",
+    "ipa": "toʊd",
+    "talk": "toʊd",
+    "tuneWord": "totus",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "herb",
+    "ipa": "ɜːɹb",
+    "talk": "ɜːɹb",
+    "tuneWord": "rebas",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rib",
+    "ipa": "ɹɪb",
+    "talk": "ɹɪb",
+    "tuneWord": "rubit",
+    "score": 298.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "robot",
+    "ipa": "ˈɹoʊbɑːt",
+    "talk": "ˈɹoʊbɑːt",
+    "tuneWord": "rubiq",
+    "score": 421.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "robe",
+    "ipa": "roʊb",
+    "talk": "roʊb",
+    "tuneWord": "ruben",
+    "score": 369.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "apple",
+    "ipa": "ˈæpəl",
+    "talk": "ˈæpəl",
+    "tuneWord": "hapat",
+    "score": 410.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "abdomen",
+    "ipa": "ˈæbdəmən",
+    "talk": "ˈæbdəmən",
+    "tuneWord": "heban",
+    "score": 415.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "obsidian",
+    "ipa": "əbˈsɪdiən",
+    "talk": "əbˈsɪdiən",
+    "tuneWord": "hapin",
+    "score": 426.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "harbor",
+    "ipa": "ˈhɑːɹbəɹ",
+    "talk": "ˈhɑːɹbəɹ",
+    "tuneWord": "hubaq",
+    "score": 381.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "elbow",
+    "ipa": "ˈɛlboʊ",
+    "talk": "ˈɛlboʊ",
+    "tuneWord": "hobot",
+    "score": 406.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hippo",
+    "ipa": "ˈhɪpoʊ",
+    "talk": "ˈhɪpoʊ",
+    "tuneWord": "hapon",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "hip",
+    "ipa": "hɪp",
+    "talk": "hɪp",
+    "tuneWord": "hipaq",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ape",
+    "ipa": "eɪp",
+    "talk": "eɪp",
+    "tuneWord": "hipas",
+    "score": 343.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nose",
+    "ipa": "noʊz",
+    "talk": "noʊz",
+    "tuneWord": "nozul",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shoulder",
+    "ipa": "ˈʃoʊldəɹ",
+    "talk": "ˈʃoʊldəɹ",
+    "tuneWord": "xudon",
+    "score": 381.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "milk",
+    "ipa": "mɪlk",
+    "talk": "mɪlk",
+    "tuneWord": "malaq",
+    "score": 381.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mill",
+    "ipa": "mɪl",
+    "talk": "mɪl",
+    "tuneWord": "malat",
+    "score": 390.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mallet",
+    "ipa": "ˈmælɪt",
+    "talk": "ˈmælɪt",
+    "tuneWord": "males",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "meal",
+    "ipa": "miːl",
+    "talk": "miːl",
+    "tuneWord": "molan",
+    "score": 395.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "may",
+    "ipa": "meɪ",
+    "talk": "meɪ",
+    "tuneWord": "malus",
+    "score": 255.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "melon",
+    "ipa": "ˈmɛlən",
+    "talk": "ˈmɛlən",
+    "tuneWord": "moles",
+    "score": 441.4,
+    "tier": 1,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nylon",
+    "ipa": "ˈnaɪlɑːn",
+    "talk": "ˈnaɪlɑːn",
+    "tuneWord": "nolas",
+    "score": 428.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "necklace",
+    "ipa": "ˈnɛkləs",
+    "talk": "ˈnɛkləs",
+    "tuneWord": "nalem",
+    "score": 450.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mercury",
+    "ipa": "ˈmɜːɹkjəɹi",
+    "talk": "ˈmɜːɹkjəɹi",
+    "tuneWord": "mukiq",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mangrove",
+    "ipa": "ˈmæŋɡɹoʊv",
+    "talk": "ˈmæŋɡɹoʊv",
+    "tuneWord": "malon",
+    "score": 367.2,
+    "tier": 3,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nail",
+    "ipa": "neɪl",
+    "talk": "neɪl",
+    "tuneWord": "noliq",
+    "score": 378.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "knoll",
+    "ipa": "noʊl",
+    "talk": "noʊl",
+    "tuneWord": "nolun",
+    "score": 385.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "nebula",
+    "ipa": "ˈnɛbjələ",
+    "talk": "ˈnɛbjələ",
+    "tuneWord": "nabal",
+    "score": 465.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nerve",
+    "ipa": "nɜːɹv",
+    "talk": "nɜːɹv",
+    "tuneWord": "naliq",
+    "score": 242.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tide",
+    "ipa": "taɪd",
+    "talk": "taɪd",
+    "tuneWord": "taten",
+    "score": 378.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "title",
+    "ipa": "ˈtaɪtəl",
+    "talk": "ˈtaɪtəl",
+    "tuneWord": "tites",
+    "score": 401.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "turtle",
+    "ipa": "ˈtɜːɹtəl",
+    "talk": "ˈtɜːɹtəl",
+    "tuneWord": "totes",
+    "score": 393.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "factory",
+    "ipa": "ˈfæktəɹi",
+    "talk": "ˈfæktəɹi",
+    "tuneWord": "fukin",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "loaf",
+    "ipa": "loʊf",
+    "talk": "loʊf",
+    "tuneWord": "lofit",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cake",
+    "ipa": "keɪk",
+    "talk": "keɪk",
+    "tuneWord": "kokiq",
+    "score": 338.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "concrete",
+    "ipa": "ˈkɑːnkɹiːt",
+    "talk": "ˈkɑːnkɹiːt",
+    "tuneWord": "kikiq",
+    "score": 436.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "coke",
+    "ipa": "koʊk",
+    "talk": "koʊk",
+    "tuneWord": "kokin",
+    "score": 360.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cocoa",
+    "ipa": "ˈkoʊkoʊ",
+    "talk": "ˈkoʊkoʊ",
+    "tuneWord": "kokal",
+    "score": 360.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "february",
+    "ipa": "ˈfɛbjuˌɛɹi",
+    "talk": "ˈfɛbjuˌɛɹi",
+    "tuneWord": "fobor",
+    "score": 399.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "june",
+    "ipa": "dʒuːn",
+    "talk": "dʒuːn",
+    "tuneWord": "junin",
+    "score": 365.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "joint",
+    "ipa": "dʒɔɪnt",
+    "talk": "dʒɔɪnt",
+    "tuneWord": "jenal",
+    "score": 355.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gemini",
+    "ipa": "ˈdʒɛmɪnaɪ",
+    "talk": "ˈdʒɛmɪnaɪ",
+    "tuneWord": "jemun",
+    "score": 431.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "genome",
+    "ipa": "ˈdʒiːnoʊm",
+    "talk": "ˈdʒiːnoʊm",
+    "tuneWord": "xinom",
+    "score": 439.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chin",
+    "ipa": "tʃɪn",
+    "talk": "tʃɪn",
+    "tuneWord": "xinal",
+    "score": 395.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shin",
+    "ipa": "ʃɪn",
+    "talk": "ʃɪn",
+    "tuneWord": "xinot",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "channel",
+    "ipa": "ˈtʃænəl",
+    "talk": "ˈtʃænəl",
+    "tuneWord": "xonal",
+    "score": 415.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "chant",
+    "ipa": "tʃænt",
+    "talk": "tʃænt",
+    "tuneWord": "xiniq",
+    "score": 366.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "cheese",
+    "ipa": "tʃiːz",
+    "talk": "tʃiːz",
+    "tuneWord": "xifat",
+    "score": 325.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chisel",
+    "ipa": "ˈtʃɪzəl",
+    "talk": "ˈtʃɪzəl",
+    "tuneWord": "xedat",
+    "score": 380.3,
+    "tier": 2,
+    "distance": 30,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chest",
+    "ipa": "tʃɛst",
+    "talk": "tʃɛst",
+    "tuneWord": "xifin",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 22,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chain",
+    "ipa": "tʃeɪn",
+    "talk": "tʃeɪn",
+    "tuneWord": "xoniq",
+    "score": 368.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chamber",
+    "ipa": "ˈtʃeɪmbəɹ",
+    "talk": "ˈtʃeɪmbəɹ",
+    "tuneWord": "xebin",
+    "score": 392.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shark",
+    "ipa": "ʃɑːɹk",
+    "talk": "ʃɑːɹk",
+    "tuneWord": "xarek",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cherry",
+    "ipa": "ˈtʃɛɹi",
+    "talk": "ˈtʃɛɹi",
+    "tuneWord": "xoral",
+    "score": 360.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chair",
+    "ipa": "tʃɛɹ",
+    "talk": "tʃɛɹ",
+    "tuneWord": "xares",
+    "score": 310.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shirt",
+    "ipa": "ʃɜːɹt",
+    "talk": "ʃɜːɹt",
+    "tuneWord": "xoren",
+    "score": 310.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "chert",
+    "ipa": "tʃɜːɹt",
+    "talk": "tʃɜːɹt",
+    "tuneWord": "xoriq",
+    "score": 300.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shore",
+    "ipa": "ʃɔːɹ",
+    "talk": "ʃɔːɹ",
+    "tuneWord": "xarun",
+    "score": 303.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shower",
+    "ipa": "ˈʃaʊəɹ",
+    "talk": "ˈʃaʊəɹ",
+    "tuneWord": "xarul",
+    "score": 375.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shrine",
+    "ipa": "ʃɹaɪn",
+    "talk": "ʃɹaɪn",
+    "tuneWord": "xaraq",
+    "score": 357.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "church",
+    "ipa": "tʃɜːɹtʃ",
+    "talk": "tʃɜːɹtʃ",
+    "tuneWord": "xorun",
+    "score": 281.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shorts",
+    "ipa": "ʃɔːɹts",
+    "talk": "ʃɔːɹts",
+    "tuneWord": "xorek",
+    "score": 310.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "donkey",
+    "ipa": "ˈdɑːŋki",
+    "talk": "ˈdɑːŋki",
+    "tuneWord": "dakin",
+    "score": 500.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "falcon",
+    "ipa": "ˈfɔːlkən",
+    "talk": "ˈfɔːlkən",
+    "tuneWord": "fukes",
+    "score": 453.1,
+    "tier": 4,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wood",
+    "ipa": "wʊd",
+    "talk": "wʊd",
+    "tuneWord": "vudon",
+    "score": 344.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "leg",
+    "ipa": "lɛɡ",
+    "talk": "lɛɡ",
+    "tuneWord": "lagan",
+    "score": 365.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "paper",
+    "ipa": "ˈpeɪpəɹ",
+    "talk": "ˈpeɪpəɹ",
+    "tuneWord": "pepan",
+    "score": 340.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pipe",
+    "ipa": "paɪp",
+    "talk": "paɪp",
+    "tuneWord": "pepet",
+    "score": 347.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "pepper",
+    "ipa": "ˈpɛpəɹ",
+    "talk": "ˈpɛpəɹ",
+    "tuneWord": "pipes",
+    "score": 332.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "pebble",
+    "ipa": "ˈpɛbəl",
+    "talk": "ˈpɛbəl",
+    "tuneWord": "pobat",
+    "score": 456.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ligament",
+    "ipa": "ˈlɪɡəmənt",
+    "talk": "ˈlɪɡəmənt",
+    "tuneWord": "lagak",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "language",
+    "ipa": "ˈlæŋɡwɪdʒ",
+    "talk": "ˈlæŋɡwɪdʒ",
+    "tuneWord": "lagin",
+    "score": 460.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lake",
+    "ipa": "leɪk",
+    "talk": "leɪk",
+    "tuneWord": "liket",
+    "score": 388.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "liquid",
+    "ipa": "ˈlɪkwɪd",
+    "talk": "ˈlɪkwɪd",
+    "tuneWord": "lewin",
+    "score": 420.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fog",
+    "ipa": "fɔːɡ",
+    "talk": "fɔːɡ",
+    "tuneWord": "fogaq",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "gem",
+    "ipa": "dʒɛm",
+    "talk": "dʒɛm",
+    "tuneWord": "jemul",
+    "score": 390.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tuff",
+    "ipa": "tʌf",
+    "talk": "tʌf",
+    "tuneWord": "tofal",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fat",
+    "ipa": "fæt",
+    "talk": "fæt",
+    "tuneWord": "fetaq",
+    "score": 377.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "photon",
+    "ipa": "ˈfoʊtɒn",
+    "talk": "ˈfoʊtɒn",
+    "tuneWord": "futan",
+    "score": 449.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "foot",
+    "ipa": "fʊt",
+    "talk": "fʊt",
+    "tuneWord": "futaq",
+    "score": 379.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fetus",
+    "ipa": "ˈfiːtəs",
+    "talk": "ˈfiːtəs",
+    "tuneWord": "fidan",
+    "score": 476.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "food",
+    "ipa": "fuːd",
+    "talk": "fuːd",
+    "tuneWord": "fidaq",
+    "score": 389.1,
+    "tier": 4,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "yogurt",
+    "ipa": "ˈjoʊɡəɹt",
+    "talk": "ˈjoʊɡəɹt",
+    "tuneWord": "lagaq",
+    "score": 445.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dialect",
+    "ipa": "ˈdaɪəlɛkt",
+    "talk": "ˈdaɪəlɛkt",
+    "tuneWord": "duket",
+    "score": 436.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "duck",
+    "ipa": "dʌk",
+    "talk": "dʌk",
+    "tuneWord": "dakon",
+    "score": 382.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mars",
+    "ipa": "mɑːɹz",
+    "talk": "mɑːɹz",
+    "tuneWord": "maliz",
+    "score": 242.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "dog",
+    "ipa": "dɔːɡ",
+    "talk": "dɔːɡ",
+    "tuneWord": "dogin",
+    "score": 400.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "tiger",
+    "ipa": "ˈtaɪɡəɹ",
+    "talk": "ˈtaɪɡəɹ",
+    "tuneWord": "tugis",
+    "score": 378.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "monkey",
+    "ipa": "ˈmʌŋki",
+    "talk": "ˈmʌŋki",
+    "tuneWord": "mekis",
+    "score": 445.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "muck",
+    "ipa": "mʌk",
+    "talk": "mʌk",
+    "tuneWord": "mekiq",
+    "score": 405.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "market",
+    "ipa": "ˈmɑːɹkɪt",
+    "talk": "ˈmɑːɹkɪt",
+    "tuneWord": "mekan",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mica",
+    "ipa": "ˈmaɪkə",
+    "talk": "ˈmaɪkə",
+    "tuneWord": "mekal",
+    "score": 435.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "yak",
+    "ipa": "jæk",
+    "talk": "jæk",
+    "tuneWord": "nokul",
+    "score": 380.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "neck",
+    "ipa": "nɛk",
+    "talk": "nɛk",
+    "tuneWord": "negul",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nickel",
+    "ipa": "ˈnɪkəl",
+    "talk": "ˈnɪkəl",
+    "tuneWord": "nikaq",
+    "score": 480.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "knuckle",
+    "ipa": "ˈnʌkəl",
+    "talk": "ˈnʌkəl",
+    "tuneWord": "nokaq",
+    "score": 455.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mango",
+    "ipa": "ˈmæŋɡoʊ",
+    "talk": "ˈmæŋɡoʊ",
+    "tuneWord": "mogon",
+    "score": 445.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "rye",
+    "ipa": "raɪ",
+    "talk": "raɪ",
+    "tuneWord": "ralun",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ear",
+    "ipa": "ɪɹ",
+    "talk": "ɪɹ",
+    "tuneWord": "ralet",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ore",
+    "ipa": "ɔːɹ",
+    "talk": "ɔːɹ",
+    "tuneWord": "resan",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "arrow",
+    "ipa": "ˈæɹoʊ",
+    "talk": "ˈæɹoʊ",
+    "tuneWord": "ronut",
+    "score": 375.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rhino",
+    "ipa": "ˈɹaɪnoʊ",
+    "talk": "ˈɹaɪnoʊ",
+    "tuneWord": "renoz",
+    "score": 393.1,
+    "tier": 4,
+    "distance": 14,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "room",
+    "ipa": "ɹuːm",
+    "talk": "ɹuːm",
+    "tuneWord": "riman",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rain",
+    "ipa": "ɹeɪn",
+    "talk": "ɹeɪn",
+    "tuneWord": "renal",
+    "score": 350.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "arm",
+    "ipa": "ɑːɹm",
+    "talk": "ɑːɹm",
+    "tuneWord": "rimaq",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rime",
+    "ipa": "ɹaɪm",
+    "talk": "ɹaɪm",
+    "tuneWord": "rimet",
+    "score": 387.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rosemary",
+    "ipa": "ˈroʊzˌmɛɹi",
+    "talk": "ˈroʊzˌmɛɹi",
+    "tuneWord": "rozim",
+    "score": 480.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rice",
+    "ipa": "raɪs",
+    "talk": "raɪs",
+    "tuneWord": "rusit",
+    "score": 378.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wrist",
+    "ipa": "ɹɪst",
+    "talk": "ɹɪst",
+    "tuneWord": "resal",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rasp",
+    "ipa": "ɹæsp",
+    "talk": "ɹæsp",
+    "tuneWord": "resin",
+    "score": 315.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "knife",
+    "ipa": "naɪf",
+    "talk": "naɪf",
+    "tuneWord": "nefes",
+    "score": 379.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mud",
+    "ipa": "mʌd",
+    "talk": "mʌd",
+    "tuneWord": "mides",
+    "score": 396.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "metal",
+    "ipa": "ˈmɛtəl",
+    "talk": "ˈmɛtəl",
+    "tuneWord": "meten",
+    "score": 465.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "meadow",
+    "ipa": "ˈmɛdoʊ",
+    "talk": "ˈmɛdoʊ",
+    "tuneWord": "modul",
+    "score": 424.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "medium",
+    "ipa": "ˈmiːdiəm",
+    "talk": "ˈmiːdiəm",
+    "tuneWord": "midan",
+    "score": 470.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "meteor",
+    "ipa": "ˈmiːtiəɹ",
+    "talk": "ˈmiːtiəɹ",
+    "tuneWord": "matas",
+    "score": 446.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "meter",
+    "ipa": "ˈmiːtəɹ",
+    "talk": "ˈmiːtəɹ",
+    "tuneWord": "metun",
+    "score": 391.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mitten",
+    "ipa": "ˈmɪtən",
+    "talk": "ˈmɪtən",
+    "tuneWord": "mutan",
+    "score": 450.2,
+    "tier": 3,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "meat",
+    "ipa": "miːt",
+    "talk": "miːt",
+    "tuneWord": "midin",
+    "score": 380.2,
+    "tier": 3,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mountain",
+    "ipa": "ˈmaʊntən",
+    "talk": "ˈmaʊntən",
+    "tuneWord": "munal",
+    "score": 449.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "matter",
+    "ipa": "ˈmætəɹ",
+    "talk": "ˈmætəɹ",
+    "tuneWord": "matul",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "material",
+    "ipa": "məˈtɪɹiəl",
+    "talk": "məˈtɪɹiəl",
+    "tuneWord": "modin",
+    "score": 441.2,
+    "tier": 3,
+    "distance": 13,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mortar",
+    "ipa": "ˈmɔːɹtəɹ",
+    "talk": "ˈmɔːɹtəɹ",
+    "tuneWord": "modaq",
+    "score": 365.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "motor",
+    "ipa": "ˈmoʊtəɹ",
+    "talk": "ˈmoʊtəɹ",
+    "tuneWord": "modus",
+    "score": 376.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mutton",
+    "ipa": "ˈmʌtən",
+    "talk": "ˈmʌtən",
+    "tuneWord": "modan",
+    "score": 431.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mattock",
+    "ipa": "ˈmætək",
+    "talk": "ˈmætək",
+    "tuneWord": "metek",
+    "score": 430.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "midnight",
+    "ipa": "ˈmɪdnaɪt",
+    "talk": "ˈmɪdnaɪt",
+    "tuneWord": "menaq",
+    "score": 460.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "monday",
+    "ipa": "ˈmʌndeɪ",
+    "talk": "ˈmʌndeɪ",
+    "tuneWord": "manit",
+    "score": 398.2,
+    "tier": 3,
+    "distance": 14,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "needle",
+    "ipa": "ˈniːdəl",
+    "talk": "ˈniːdəl",
+    "tuneWord": "nadaq",
+    "score": 476.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "noodle",
+    "ipa": "ˈnuːdəl",
+    "talk": "ˈnuːdəl",
+    "tuneWord": "nudaq",
+    "score": 500.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "net",
+    "ipa": "nɛt",
+    "talk": "nɛt",
+    "tuneWord": "netul",
+    "score": 395.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "neutron",
+    "ipa": "ˈnuːtɹɒn",
+    "talk": "ˈnuːtɹɒn",
+    "tuneWord": "nudan",
+    "score": 461.2,
+    "tier": 3,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "neutrino",
+    "ipa": "nuːˈtɹiːnoʊ",
+    "talk": "nuːˈtɹiːnoʊ",
+    "tuneWord": "nudor",
+    "score": 441.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "nut",
+    "ipa": "nʌt",
+    "talk": "nʌt",
+    "tuneWord": "naton",
+    "score": 407.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mint",
+    "ipa": "mɪnt",
+    "talk": "mɪnt",
+    "tuneWord": "menis",
+    "score": 382.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "moon",
+    "ipa": "muːn",
+    "talk": "muːn",
+    "tuneWord": "munis",
+    "score": 420.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "mind",
+    "ipa": "maɪnd",
+    "talk": "maɪnd",
+    "tuneWord": "muniq",
+    "score": 378.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mineral",
+    "ipa": "ˈmɪnəɹəl",
+    "talk": "ˈmɪnəɹəl",
+    "tuneWord": "munos",
+    "score": 429.4,
+    "tier": 1,
+    "distance": 17,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mound",
+    "ipa": "maʊnd",
+    "talk": "maʊnd",
+    "tuneWord": "mamiq",
+    "score": 346.4,
+    "tier": 1,
+    "distance": 18,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mount",
+    "ipa": "maʊnt",
+    "talk": "maʊnt",
+    "tuneWord": "menos",
+    "score": 382.4,
+    "tier": 1,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "manor",
+    "ipa": "ˈmænəɹ",
+    "talk": "ˈmænəɹ",
+    "tuneWord": "menul",
+    "score": 360.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "monument",
+    "ipa": "ˈmɑːnjəmənt",
+    "talk": "ˈmɑːnjəmənt",
+    "tuneWord": "manok",
+    "score": 455.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "noon",
+    "ipa": "nuːn",
+    "talk": "nuːn",
+    "tuneWord": "nanaq",
+    "score": 361.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "memory",
+    "ipa": "ˈmɛmɚi",
+    "talk": "ˈmɛmɚi",
+    "tuneWord": "mimaq",
+    "score": 404.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "name",
+    "ipa": "neɪm",
+    "talk": "neɪm",
+    "tuneWord": "nemiq",
+    "score": 402.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "foam",
+    "ipa": "foʊm",
+    "talk": "foʊm",
+    "tuneWord": "vomut",
+    "score": 364.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fiber",
+    "ipa": "ˈfaɪbəɹ",
+    "talk": "ˈfaɪbəɹ",
+    "tuneWord": "fiban",
+    "score": 388.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fabric",
+    "ipa": "ˈfæbɹɪk",
+    "talk": "ˈfæbɹɪk",
+    "tuneWord": "farik",
+    "score": 445.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "friday",
+    "ipa": "ˈfɹaɪdeɪ",
+    "talk": "ˈfɹaɪdeɪ",
+    "tuneWord": "fared",
+    "score": 445.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "frog",
+    "ipa": "fɹɔːɡ",
+    "talk": "fɹɔːɡ",
+    "tuneWord": "foran",
+    "score": 390.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fruit",
+    "ipa": "fɹuːt",
+    "talk": "fɹuːt",
+    "tuneWord": "faral",
+    "score": 386.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fern",
+    "ipa": "fɜːɹn",
+    "talk": "fɜːɹn",
+    "tuneWord": "fares",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fork",
+    "ipa": "fɔːɹk",
+    "talk": "fɔːɹk",
+    "tuneWord": "foral",
+    "score": 315.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fridge",
+    "ipa": "fɹɪdʒ",
+    "talk": "fɹɪdʒ",
+    "tuneWord": "foras",
+    "score": 360.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fire",
+    "ipa": "faɪəɹ",
+    "talk": "faɪəɹ",
+    "tuneWord": "farus",
+    "score": 370.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fur",
+    "ipa": "fɜːɹ",
+    "talk": "fɜːɹ",
+    "tuneWord": "fariq",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "forge",
+    "ipa": "fɔːɹdʒ",
+    "talk": "fɔːɹdʒ",
+    "tuneWord": "foriq",
+    "score": 310.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "fort",
+    "ipa": "fɔːɹt",
+    "talk": "fɔːɹt",
+    "tuneWord": "forut",
+    "score": 291.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "fortress",
+    "ipa": "ˈfɔːɹtɹəs",
+    "talk": "ˈfɔːɹtɹəs",
+    "tuneWord": "foris",
+    "score": 425.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "wire",
+    "ipa": "waɪəɹ",
+    "talk": "waɪəɹ",
+    "tuneWord": "varin",
+    "score": 327.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "word",
+    "ipa": "wɜːɹd",
+    "talk": "wɜːɹd",
+    "tuneWord": "varan",
+    "score": 255.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shadow",
+    "ipa": "ˈʃædoʊ",
+    "talk": "ˈʃædoʊ",
+    "tuneWord": "xedon",
+    "score": 425.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shed",
+    "ipa": "ʃɛd",
+    "talk": "ʃɛd",
+    "tuneWord": "xedin",
+    "score": 396.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "shout",
+    "ipa": "ʃaʊt",
+    "talk": "ʃaʊt",
+    "tuneWord": "xatul",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "sheet",
+    "ipa": "ʃiːt",
+    "talk": "ʃiːt",
+    "tuneWord": "xatan",
+    "score": 401.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "relay",
+    "ipa": "ˈɹiːleɪ",
+    "talk": "ˈɹiːleɪ",
+    "tuneWord": "rolot",
+    "score": 346.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "diadem",
+    "ipa": "ˈdaɪədɛm",
+    "talk": "ˈdaɪədɛm",
+    "tuneWord": "datiq",
+    "score": 384.4,
+    "tier": 1,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "delta",
+    "ipa": "ˈdɛltə",
+    "talk": "ˈdɛltə",
+    "tuneWord": "detan",
+    "score": 480.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "vegetable",
+    "ipa": "ˈvɛdʒtəbəl",
+    "talk": "ˈvɛdʒtəbəl",
+    "tuneWord": "vajan",
+    "score": 460.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "uranus",
+    "ipa": "ˈjʊɹənəs",
+    "talk": "ˈjʊɹənəs",
+    "tuneWord": "yonis",
+    "score": 364.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "leo",
+    "ipa": "ˈliːoʊ",
+    "talk": "ˈliːoʊ",
+    "tuneWord": "lenom",
+    "score": 283.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lion",
+    "ipa": "ˈlaɪən",
+    "talk": "ˈlaɪən",
+    "tuneWord": "lunok",
+    "score": 411.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "linen",
+    "ipa": "ˈlɪnən",
+    "talk": "ˈlɪnən",
+    "tuneWord": "lenaq",
+    "score": 450.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "land",
+    "ipa": "lænd",
+    "talk": "lænd",
+    "tuneWord": "lenas",
+    "score": 377.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lane",
+    "ipa": "leɪn",
+    "talk": "leɪn",
+    "tuneWord": "lenul",
+    "score": 380.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lens",
+    "ipa": "lɛnz",
+    "talk": "lɛnz",
+    "tuneWord": "lenoz",
+    "score": 395.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "legend",
+    "ipa": "ˈlɛdʒənd",
+    "talk": "ˈlɛdʒənd",
+    "tuneWord": "lunas",
+    "score": 450.1,
+    "tier": 4,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lantern",
+    "ipa": "ˈlæntəɹn",
+    "talk": "ˈlæntəɹn",
+    "tuneWord": "lotos",
+    "score": 409.1,
+    "tier": 4,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lavender",
+    "ipa": "ˈlævəndəɹ",
+    "talk": "ˈlævəndəɹ",
+    "tuneWord": "ladam",
+    "score": 440.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lightning",
+    "ipa": "ˈlaɪtnɪŋ",
+    "talk": "ˈlaɪtnɪŋ",
+    "tuneWord": "lenik",
+    "score": 436.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "law",
+    "ipa": "lɔː",
+    "talk": "lɔː",
+    "tuneWord": "lusan",
+    "score": 393.3,
+    "tier": 2,
+    "distance": 4,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "llama",
+    "ipa": "ˈlɑːmə",
+    "talk": "ˈlɑːmə",
+    "tuneWord": "loman",
+    "score": 435.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lemon",
+    "ipa": "ˈlɛmən",
+    "talk": "ˈlɛmən",
+    "tuneWord": "lemat",
+    "score": 480.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lime",
+    "ipa": "laɪm",
+    "talk": "laɪm",
+    "tuneWord": "lemon",
+    "score": 368.3,
+    "tier": 2,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lymph",
+    "ipa": "lɪmf",
+    "talk": "lɪmf",
+    "tuneWord": "lemin",
+    "score": 382.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lamb",
+    "ipa": "læm",
+    "talk": "læm",
+    "tuneWord": "lemiq",
+    "score": 365.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lamp",
+    "ipa": "læmp",
+    "talk": "læmp",
+    "tuneWord": "lemas",
+    "score": 377.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "loom",
+    "ipa": "luːm",
+    "talk": "luːm",
+    "tuneWord": "lomut",
+    "score": 395.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lentil",
+    "ipa": "ˈlɛntəl",
+    "talk": "ˈlɛntəl",
+    "tuneWord": "litek",
+    "score": 453.3,
+    "tier": 2,
+    "distance": 9,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lettuce",
+    "ipa": "ˈlɛtɪs",
+    "talk": "ˈlɛtɪs",
+    "tuneWord": "lotis",
+    "score": 436.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "light",
+    "ipa": "laɪt",
+    "talk": "laɪt",
+    "tuneWord": "lital",
+    "score": 373.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "limestone",
+    "ipa": "ˈlaɪmstoʊn",
+    "talk": "ˈlaɪmstoʊn",
+    "tuneWord": "lason",
+    "score": 460.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "latex",
+    "ipa": "ˈleɪtɛks",
+    "talk": "ˈleɪtɛks",
+    "tuneWord": "liten",
+    "score": 436.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "letter",
+    "ipa": "ˈlɛtəɹ",
+    "talk": "ˈlɛtəɹ",
+    "tuneWord": "lotiq",
+    "score": 372.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lobster",
+    "ipa": "ˈlɑːbstəɹ",
+    "talk": "ˈlɑːbstəɹ",
+    "tuneWord": "lasok",
+    "score": 414.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "lead",
+    "ipa": "lɛd",
+    "talk": "lɛd",
+    "tuneWord": "ludit",
+    "score": 366.3,
+    "tier": 2,
+    "distance": 10,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ladder",
+    "ipa": "ˈlædəɹ",
+    "talk": "ˈlædəɹ",
+    "tuneWord": "ladiq",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "ladle",
+    "ipa": "ˈleɪdəl",
+    "talk": "ˈleɪdəl",
+    "tuneWord": "luden",
+    "score": 435.3,
+    "tier": 2,
+    "distance": 15,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "march",
+    "ipa": "mɑːɹtʃ",
+    "talk": "mɑːɹtʃ",
+    "tuneWord": "molix",
+    "score": 222.4,
+    "tier": 1,
+    "distance": 26,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sheep",
+    "ipa": "ʃiːp",
+    "talk": "ʃiːp",
+    "tuneWord": "xapan",
+    "score": 401.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "ship",
+    "ipa": "ʃɪp",
+    "talk": "ʃɪp",
+    "tuneWord": "xapal",
+    "score": 381.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "shop",
+    "ipa": "ʃɑːp",
+    "talk": "ʃɑːp",
+    "tuneWord": "xapiq",
+    "score": 420.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "yard",
+    "ipa": "jɑːɹd",
+    "talk": "jɑːɹd",
+    "tuneWord": "yorit",
+    "score": 285.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "temple",
+    "ipa": "ˈtɛmpəl",
+    "talk": "ˈtɛmpəl",
+    "tuneWord": "topal",
+    "score": 456.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "tube",
+    "ipa": "tuːb",
+    "talk": "tuːb",
+    "tuneWord": "tubal",
+    "score": 425.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "table",
+    "ipa": "ˈteɪbəl",
+    "talk": "ˈteɪbəl",
+    "tuneWord": "teben",
+    "score": 465.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "vapor",
+    "ipa": "ˈveɪpəɹ",
+    "talk": "ˈveɪpəɹ",
+    "tuneWord": "vipen",
+    "score": 388.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "marble",
+    "ipa": "ˈmɑːɹbəl",
+    "talk": "ˈmɑːɹbəl",
+    "tuneWord": "mabot",
+    "score": 435.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "maple",
+    "ipa": "ˈmeɪpəl",
+    "talk": "ˈmeɪpəl",
+    "tuneWord": "mepen",
+    "score": 465.2,
+    "tier": 3,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "mop",
+    "ipa": "mɑːp",
+    "talk": "mɑːp",
+    "tuneWord": "mapus",
+    "score": 415.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "map",
+    "ipa": "mæp",
+    "talk": "mæp",
+    "tuneWord": "mapiq",
+    "score": 400.4,
+    "tier": 1,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "depth",
+    "ipa": "dɛpθ",
+    "talk": "dɛpθ",
+    "tuneWord": "depun",
+    "score": 395.2,
+    "tier": 3,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "workshop",
+    "ipa": "ˈwɜːɹkʃɑːp",
+    "talk": "ˈwɜːɹkʃɑːp",
+    "tuneWord": "vokaq",
+    "score": 398.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "jupiter",
+    "ipa": "ˈdʒuːpɪtəɹ",
+    "talk": "ˈdʒuːpɪtəɹ",
+    "tuneWord": "jitip",
+    "score": 374.3,
+    "tier": 2,
+    "distance": 12,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "virgo",
+    "ipa": "ˈvɜːɹɡoʊ",
+    "talk": "ˈvɜːɹɡoʊ",
+    "tuneWord": "vorag",
+    "score": 360.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "libra",
+    "ipa": "ˈliːbɹə",
+    "talk": "ˈliːbɹə",
+    "tuneWord": "lipor",
+    "score": 416.1,
+    "tier": 4,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "lip",
+    "ipa": "lɪp",
+    "talk": "lɪp",
+    "tuneWord": "lipaq",
+    "score": 405.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "library",
+    "ipa": "ˈlaɪbɹɛɹi",
+    "talk": "ˈlaɪbɹɛɹi",
+    "tuneWord": "lebit",
+    "score": 456.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "thursday",
+    "ipa": "ˈθɜːɹzdeɪ",
+    "talk": "ˈθɜːɹzdeɪ",
+    "tuneWord": "caden",
+    "score": 335.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "thunder",
+    "ipa": "ˈθʌndəɹ",
+    "talk": "ˈθʌndəɹ",
+    "tuneWord": "cadot",
+    "score": 422.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "november",
+    "ipa": "noʊˈvɛmbəɹ",
+    "talk": "noʊˈvɛmbəɹ",
+    "tuneWord": "nopev",
+    "score": 371.4,
+    "tier": 1,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "chicken",
+    "ipa": "ˈtʃɪkɪn",
+    "talk": "ˈtʃɪkɪn",
+    "tuneWord": "xikin",
+    "score": 410.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "cheek",
+    "ipa": "tʃiːk",
+    "talk": "tʃiːk",
+    "tuneWord": "xikal",
+    "score": 415.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "chalk",
+    "ipa": "tʃɔːk",
+    "talk": "tʃɔːk",
+    "tuneWord": "xakan",
+    "score": 380.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "charcoal",
+    "ipa": "ˈtʃɑːɹkoʊl",
+    "talk": "ˈtʃɑːɹkoʊl",
+    "tuneWord": "xikon",
+    "score": 426.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "sugar",
+    "ipa": "ˈʃʊɡəɹ",
+    "talk": "ˈʃʊɡəɹ",
+    "tuneWord": "xugiq",
+    "score": 390.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "jacket",
+    "ipa": "ˈdʒækɪt",
+    "talk": "ˈdʒækɪt",
+    "tuneWord": "jagin",
+    "score": 431.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "jungle",
+    "ipa": "ˈdʒʌŋɡəl",
+    "talk": "ˈdʒʌŋɡəl",
+    "tuneWord": "jagal",
+    "score": 455.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rat",
+    "ipa": "ræt",
+    "talk": "ræt",
+    "tuneWord": "ratin",
+    "score": 400.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "root",
+    "ipa": "ruːt",
+    "talk": "ruːt",
+    "tuneWord": "rudan",
+    "score": 401.3,
+    "tier": 2,
+    "distance": 8,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "road",
+    "ipa": "ɹoʊd",
+    "talk": "ɹoʊd",
+    "tuneWord": "rudes",
+    "score": 365.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "riddle",
+    "ipa": "ˈɹɪdəl",
+    "talk": "ˈɹɪdəl",
+    "tuneWord": "redon",
+    "score": 382.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "artery",
+    "ipa": "ˈɑːɹtəɹi",
+    "talk": "ˈɑːɹtəɹi",
+    "tuneWord": "ritaq",
+    "score": 400.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "retina",
+    "ipa": "ˈɹɛtɪnə",
+    "talk": "ˈɹɛtɪnə",
+    "tuneWord": "riten",
+    "score": 440.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "rug",
+    "ipa": "rʌɡ",
+    "talk": "rʌɡ",
+    "tuneWord": "rages",
+    "score": 420.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "rock",
+    "ipa": "ɹɑːk",
+    "talk": "ɹɑːk",
+    "tuneWord": "rikal",
+    "score": 320.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "archive",
+    "ipa": "ˈɑːɹkaɪv",
+    "talk": "ˈɑːɹkaɪv",
+    "tuneWord": "rokun",
+    "score": 355.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "rake",
+    "ipa": "ɹeɪk",
+    "talk": "ɹeɪk",
+    "tuneWord": "riken",
+    "score": 387.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "record",
+    "ipa": "ˈɹɛkɔːɹd",
+    "talk": "ˈɹɛkɔːɹd",
+    "tuneWord": "rokiq",
+    "score": 359.1,
+    "tier": 4,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "thumb",
+    "ipa": "θʌm",
+    "talk": "θʌm",
+    "tuneWord": "cemin",
+    "score": 405.3,
+    "tier": 2,
+    "distance": 5,
+    "matchType": "fuzzy"
+  },
+  {
+    "english": "thigh",
+    "ipa": "θaɪ",
+    "talk": "θaɪ",
+    "tuneWord": "casin",
+    "score": 402.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  },
+  {
+    "english": "yarn",
+    "ipa": "jɑːɹn",
+    "talk": "jɑːɹn",
+    "tuneWord": "laret",
+    "score": 320.3,
+    "tier": 2,
+    "distance": 0,
+    "matchType": "exact"
+  }
+]
