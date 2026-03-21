@@ -420,9 +420,9 @@ Words from any combo can join with words from any other combo. No two consonants
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        152 |
-| 2         | 5          | `CVCVC`   |      4,337 |
-| 3         | 7          | `CVCVCVC` |     72,989 |
-|           |            | **total** | **77,478** |
+| 2         | 5          | `CVCVC`   |      4,191 |
+| 3         | 7          | `CVCVCVC` |     71,423 |
+|           |            | **total** | **75,766** |
 
 ### End cycling
 
@@ -450,6 +450,7 @@ Words from any combo can join with words from any other combo. No two consonants
 |           |            | **total** | **39,219** |
 
 
+
 ### End cycling (weaving)
 
 Binary pair groups alternate by `(si + vi) % 2`.
@@ -475,6 +476,7 @@ Weaving selects 2 of 4 per cell using 4 patterns.
 | 3         | 7          | `CVCVCVC` |     45,323 |
 |           |            | **total** | **48,292** |
 
+
 ### End cycling (structured matching)
 
 Side A `m p d k`, Side B `n b t g`. 9 derangements. Each cell gets 2 ends. One pair doubled per start.
@@ -491,9 +493,9 @@ Side A `m p d k`, Side B `n b t g`. 9 derangements. Each cell gets 2 ends. One p
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        137 |
-| 2         | 5          | `CVCVC`   |      3,918 |
-| 3         | 7          | `CVCVCVC` |     59,480 |
-|           |            | **total** | **63,535** |
+| 2         | 5          | `CVCVC`   |      3,750 |
+| 3         | 7          | `CVCVCVC` |     57,826 |
+|           |            | **total** | **61,713** |
 
 ### End cycling (hardcoded + structured matching)
 
@@ -509,8 +511,8 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | End count | 11 | 8 | 8 | 11 |
 | Sets exclusive? | yes | yes | **no** | **no** |
 | CVC | 152 | 100 | 98 | 137 |
-| CVCVC | 4,337 | 2,309 | 2,871 | 3,918 |
-| CVCVCVC | 72,989 | 36,810 | 45,323 | 59,480 |
+| CVCVC | 4,191 | 2,309 | 2,871 | 3,750 |
+| CVCVCVC | 71,423 | 36,810 | 45,323 | 57,826 |
 | Texture | percussive to flow | flow to snap | percussive | airy/flowing |
 | End cycling | ring `s v j c z f C x` + q/l/r specials | ring `d g p t k m n b` | ring `p t k m n b d g` | ring `j c z f C x s v` + q/l/r specials |
 | Mid1 cycling | ring `f C x s v j c z` + l/r | ring `c z f C x s v j` + l/r | ring `C x s v j c z f` + l/r | ring `z f C x s v j c` + l/r |
@@ -521,21 +523,21 @@ Voiceless [x,s,c,f] ↔ Voiced [z,v,j,C]. 8 fricative starts have hardcoded assi
 | syllables | characters | pattern   |      count |
 | :-------- | :--------- | :-------- | ---------: |
 | 1         | 3          | `CVC`     |        487 |
-| 2         | 5          | `CVCVC`   |     13,435 |
-| 3         | 7          | `CVCVCVC` |    214,602 |
-|           |            | **total** | **228,524** |
+| 2         | 5          | `CVCVC`   |     13,121 |
+| 3         | 7          | `CVCVCVC` |    211,382 |
+|           |            | **total** | **224,990** |
 
 ## Word Join Patterns (all combos unified)
 
-487 CVC, 3,895 CVCVC, and 51,861 CVCVCVC words pooled across all 4 combos. Order-independent (each combination counted once). All words in a join must be distinct.
+487 CVC, 13,121 CVCVC, and 211,382 CVCVCVC words pooled across all 4 combos. Order-independent (each combination counted once). All words in a join must be distinct.
 
-| syllables | words | characters | source                    |         count |       5% |
-| :-------- | :---- | :--------- | :------------------------ | ------------: | -------: |
-| 2         | 2     | 6          | `CVC` + `CVC`             |        97,157 |    4,858 |
-| 3         | 2     | 8          | `CVC` + `CVCVC`           |     1,592,248 |   79,612 |
-| 4         | 2     | 10         | `CVC` + `CVCVCVC`         |    21,294,212 | 1,064,711 |
-| 3         | 3     | 9          | `CVC` + `CVC` + `CVC`     |    14,973,648 |  748,682 |
-|           |       |            |                           | **~38.0M** | **~1.9M** |
+| syllables | words | characters | source                    |          count |        5% |
+| :-------- | :---- | :--------- | :------------------------ | -------------: | --------: |
+| 2         | 2     | 6          | `CVC` + `CVC`             |         97,157 |     4,858 |
+| 3         | 2     | 8          | `CVC` + `CVCVC`           |      5,227,871 |   261,394 |
+| 4         | 2     | 10         | `CVC` + `CVCVCVC`         |     85,067,924 | 4,253,396 |
+| 3         | 3     | 9          | `CVC` + `CVC` + `CVC`     |     14,973,648 |   748,682 |
+|           |       |            |                           | **~105M** | **~5.3M** |
 
 ### Key Tradeoff
 
