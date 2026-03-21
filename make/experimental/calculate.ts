@@ -658,17 +658,23 @@ function generateCVCVC_cycling(cfg: ComboConfig): string[] {
             endCursor = e.next
             const ends = [...e.items]
 
-            // Special ends: q/l/r alternating
+            // Special ends: q/l/r 4-phase cycling
             if (cc.endSpecials.qlr) {
-              const ePat = specialEndToggle % 2
+              const ePat = specialEndToggle % 4
               if (ePat === 0) {
-                if (v2i === 0) ends.push('q')
-                if (v2i === 2) ends.push('l')
-                if (v2i === 3) ends.push('r')
+                if (v2i === 2) ends.push('l')  // a
+                if (v2i === 3) ends.push('r')  // o
+              } else if (ePat === 1) {
+                if (v2i === 2) ends.push('q')  // a
+                if (v2i === 3) ends.push('l')  // o
+                if (v2i === 4) ends.push('r')  // u
+              } else if (ePat === 2) {
+                if (v2i === 2) ends.push('r')  // a
+                if (v2i === 3) ends.push('l')  // o
               } else {
-                if (v2i === 2) ends.push('q')
-                if (v2i === 3) ends.push('r')
-                if (v2i === 4) ends.push('l')
+                if (v2i === 2) ends.push('q')  // a
+                if (v2i === 3) ends.push('r')  // o
+                if (v2i === 4) ends.push('l')  // u
               }
               specialEndToggle++
             }
@@ -786,11 +792,17 @@ function generateCVCVCVC(cfg: ComboConfig): string[] {
                   const ends = [...e.items]
 
                   if (cc.endSpecials.qlr) {
-                    const ePat = specialEndToggle++ % 2
+                    const ePat = specialEndToggle++ % 4
                     if (ePat === 0) {
-                      if (v3i === 0) ends.push('q')
                       if (v3i === 2) ends.push('l')
                       if (v3i === 3) ends.push('r')
+                    } else if (ePat === 1) {
+                      if (v3i === 2) ends.push('q')
+                      if (v3i === 3) ends.push('l')
+                      if (v3i === 4) ends.push('r')
+                    } else if (ePat === 2) {
+                      if (v3i === 2) ends.push('r')
+                      if (v3i === 3) ends.push('l')
                     } else {
                       if (v3i === 2) ends.push('q')
                       if (v3i === 3) ends.push('r')
