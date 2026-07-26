@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  A modeling speaking language
+  A measured speaking language Λ
 </p>
 
 <br/>
