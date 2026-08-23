@@ -213,32 +213,79 @@ export function vowelSimilarity(a: string, b: string): number {
   return Math.max(0, 100 - vowelDistance(a, b) * 8)
 }
 
+// ─── Word Shape ─────────────────────────────────────────
+
+const VOWEL_SET = new Set(['i', 'e', 'a', 'o', 'u'])
+
+export function isVowelSound(ch: string): boolean {
+  return VOWEL_SET.has(ch)
+}
+
+/** `bat` becomes `CVC`, `stalatx` becomes `CCVCVCC`. */
+export function toShape(word: string): string {
+  return [...word].map(ch => (isVowelSound(ch) ? 'V' : 'C')).join('')
+}
+
 /**
- * Full CVCVC word distance using position-aware phonetic similarity.
- * Lower = more similar.
+ * Whether a consonant is opening a syllable or closing one.
+ *
+ * Everything before the first vowel opens, everything after the last
+ * vowel closes, and a consonant in between goes by what follows it: a
+ * vowel next means it opens the syllable to come, another consonant
+ * means it closes the one just past.
+ *
+ *   `stalp`   s t open,  l p close
+ *   `batmis`  b open, t close, m open, s close
+ */
+export function positionAt(shape: string, at: number): 'onset' | 'coda' {
+  const first = shape.indexOf('V')
+  const last = shape.lastIndexOf('V')
+  if (at < first) return 'onset'
+  if (at > last) return 'coda'
+  return shape[at + 1] === 'V' ? 'onset' : 'coda'
+}
+
+/**
+ * How much a position carries.
+ *
+ * The consonant a word opens on is what a listener holds on to, and
+ * the one it ends on is next. Everything in the middle is an anchor
+ * rather than a landmark, and vowels bend the most.
+ */
+export function weightAt(shape: string, at: number): number {
+  if (shape[at] === 'V') return 1
+  const firstConsonant = shape.indexOf('C')
+  const lastConsonant = shape.lastIndexOf('C')
+  if (at === firstConsonant) return 5
+  if (at === lastConsonant) return 4
+  return 2
+}
+
+/**
+ * Phonetic distance between two words of the same shape, position
+ * aware. Lower means more similar.
+ *
+ * Works for any shape Tune uses, one vowel or two: `CVC`, `CVCC`,
+ * `CCVC`, `CCVCC`, `CVCVC`, `CVCCVC`, `CCVCVC`, `CVCVCC`. Words of
+ * different shapes are not comparable and come back at 100.
+ *
+ * On `CVCVC` this gives exactly what the old fixed version gave:
+ * C1 at five, the middle consonant at two, the last at four as a coda,
+ * and the vowels at one each.
  */
 export function wordPhoneticDistance(a: string, b: string): number {
-  if (a.length !== 5 || b.length !== 5) return 100
+  if (a.length !== b.length || a.length === 0) return 100
 
-  /**
-   * Position weights:
-   * C1: most important for recognition (x3), onset position
-   * C2: middle anchor (x2), onset position
-   * C3: last consonant, very audible (x2.5), CODA position
-   * Vowels: flexible (x1)
-   */
-  /**
-   * Position weights:
-   * C1: most important, sacred (x5)
-   * C2: middle anchor (x2)
-   * C3: last consonant, very audible, nearly as important as C1 (x4)
-   * Vowels: flexible (x1)
-   */
-  const c1Dist = consonantDistanceAt(a[0], b[0], 'onset') * 5
-  const v1Dist = vowelDistance(a[1], b[1])
-  const c2Dist = consonantDistanceAt(a[2], b[2], 'onset') * 2
-  const v2Dist = vowelDistance(a[3], b[3])
-  const c3Dist = consonantDistanceAt(a[4], b[4], 'coda') * 4
+  const shape = toShape(a)
+  if (shape !== toShape(b)) return 100
 
-  return c1Dist + v1Dist + c2Dist + v2Dist + c3Dist
+  let total = 0
+  for (let i = 0; i < a.length; i++) {
+    const weight = weightAt(shape, i)
+    total +=
+      shape[i] === 'V'
+        ? vowelDistance(a[i], b[i]) * weight
+        : consonantDistanceAt(a[i], b[i], positionAt(shape, i)) * weight
+  }
+  return total
 }

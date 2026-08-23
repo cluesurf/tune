@@ -346,15 +346,53 @@ for (const item of sounds) {
  */
 const KIND_CATEGORIES = ['animal', 'plant', 'body', 'color']
 
+const draftMeanings = new Set(draft.map(d => d.meaning))
 const kinds: Array<Number> = []
+const unsoundedKinds: Array<Number> = []
 for (const name of KIND_CATEGORIES) {
   for (const item of readCategory(resolve(PACKAGE_DIR, 'tune.csv'), name)) {
-    if (ATOM_LENGTHS.includes(item.term.length) && !taken.has(item.term)) {
-      taken.add(item.term)
-      kinds.push({ ...item, kind: name as never })
+    if (!ATOM_LENGTHS.includes(item.term.length) || taken.has(item.term)) {
+      continue
     }
+    /** The draft already speaks for this concept, so the category row
+     * is the same atom said twice. */
+    if (draftMeanings.has(item.meaning)) {
+      continue
+    }
+    /** A natural kind is still a word, so it still has to be sayable.
+     * Unlike the numbers and the sound names, these were not asked to
+     * be kept letter for letter. */
+    if (!testSounding(item.term).ok) {
+      unsoundedKinds.push({ ...item, kind: name as never })
+      continue
+    }
+    taken.add(item.term)
+    kinds.push({ ...item, kind: name as never })
   }
 }
+
+/**
+ * Some natural kinds carry no category in `tune.csv` at all: larva,
+ * claw, feather, scale. `base/atom-keep.csv` is the hand list for
+ * those, and for anything else that must stay atomic whatever the
+ * categories say. Add to it rather than editing this file.
+ */
+const keepList: Array<Number> = []
+for (const row of readFileSync(resolve(BASE_DIR, 'atom-keep.csv'), 'utf-8')
+  .split('\n')
+  .slice(1)) {
+  const cell = splitRow(row).map(c => c.trim())
+  if (!cell[0] || taken.has(cell[0])) {
+    continue
+  }
+  const meaning = tune.get(cell[0])
+  if (!meaning) {
+    continue
+  }
+  taken.add(cell[0])
+  keepList.push({ term: cell[0], meaning, kind: 'keep' as never })
+}
+kinds.push(...keepList)
 
 for (const length of ATOM_LENGTHS) {
   free[length] = free[length].filter(t => !taken.has(t))
@@ -371,6 +409,16 @@ for (const name of KIND_CATEGORIES) {
       `${String(short.length).padStart(3)} short enough to be atoms, ` +
       `${String(added.length).padStart(3)} added here`,
   )
+}
+line(`  ${'by hand'.padEnd(8)} ${String(keepList.length).padStart(3)} from base/atom-keep.csv: ${keepList.map(k => k.term).join(' ')}`)
+if (unsoundedKinds.length > 0) {
+  line('')
+  line(`  ${unsoundedKinds.length} broke a syllable rule and took a new word:`)
+  for (const item of unsoundedKinds) {
+    const swap = claim(item.term)
+    line(`    ${item.term.padEnd(5)} -> ${swap.padEnd(5)} ${item.meaning}`)
+    kinds.push({ term: swap, meaning: item.meaning, kind: item.kind })
+  }
 }
 line('')
 line('  Left out, because whether these are atoms is a call to make:')
@@ -783,6 +831,38 @@ line('')
 line('  simply free:')
 line(`    ${removedOnly.slice(0, 24).map(d => d.term).join(' ')}`)
 
+/**
+ * The draft is written back with every term short, so it holds only
+ * three and four letter words. Running this again finds them already
+ * in place and holds them, which makes the build settle rather than
+ * shuffle.
+ */
+const draftRows = ['category,term,meaning,source_meaning,status,language']
+for (const item of atoms) {
+  if (
+    ['number', 'sound', 'animal', 'plant', 'body', 'color', 'keep'].includes(
+      item.category,
+    )
+  ) {
+    continue
+  }
+  draftRows.push(
+    [
+      item.category,
+      item.atom,
+      item.meaning,
+      item.source,
+      item.state,
+      item.language,
+    ]
+      .map(c => ((c ?? '').includes(',') ? `"${c}"` : (c ?? '')))
+      .join(','),
+  )
+}
+const draftPath = resolve(BASE_DIR, 'atom-draft.csv')
+writeFileSync(draftPath, draftRows.join('\n') + '\n')
+
 rule('OUT')
 line(`\n  ${rows.length - 1} atoms -> ${outPath}`)
+line(`  ${draftRows.length - 1} concepts -> ${draftPath}, all three or four letters`)
 line(`  ${dropped.length} dropped -> ${droppedPath}`)

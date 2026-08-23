@@ -160,6 +160,139 @@ export function isMoonShape(word: string): boolean {
   return shape !== null && SHAPE_SET.has(shape)
 }
 
+// ─── Clusters ───────────────────────────────────────────
+
+/**
+ * The consonant pairs Moon lets meet.
+ *
+ * These began in `4.ts`, written down while the four letter words were
+ * being built. The lexicon has grown past that list since, so what is
+ * here is the two put together: every pair `4.ts` allowed, plus every
+ * pair `tune.csv` actually uses.
+ *
+ * `4.ts` also refused any cluster holding `x` or `j`, which would rule
+ * out `dj` and `tx`. Those two are the most common clusters in the
+ * language by a wide margin, and they are digraphs for single sounds
+ * rather than clusters at all, which is why they were being handled
+ * separately. They are allowed here.
+ *
+ * `tk` is left out. It occurs four times and all four are the same
+ * word, `tkslit`, which opens on four consonants and is not a Moon
+ * shape to begin with.
+ */
+export const ONSET_CLUSTERS = new Set(
+  (
+    'bl br cr dj dr fl fr gl gr kl kr ks pl pr sf sk sl sm sn sp sr st ' +
+    'sv tr tx vl vr xk xl xn xr'
+  ).split(' '),
+)
+
+export const CODA_CLUSTERS = new Set(
+  (
+    'bz dc dj dz fs ft gz kx ks lb lc ld lf lg lk lm ln lp ls lt lv lx ' +
+    'lz md mp mz nc nd nk ns nt nz pc pf ps px qk rC rb rc rd rf rg rk ' +
+    'rl rm rn rp rq rs rt rv rx rz sk sp st ts tx tz xt'
+  ).split(' '),
+)
+
+/** Two letters standing for one sound, so they count as neither cluster. */
+export const AFFRICATES = ['dj', 'tx', 'ts', 'dz']
+
+export function testOnsetCluster(cluster: string): boolean {
+  return ONSET_CLUSTERS.has(cluster)
+}
+
+export function testCodaCluster(cluster: string): boolean {
+  return CODA_CLUSTERS.has(cluster)
+}
+
+// ─── Confusable Sounds ──────────────────────────────────
+
+/**
+ * Sounds close enough that swapping one for the other does not make a
+ * new word. Also from `4.ts`, and they line up with the numbers in
+ * `code/similarity.ts`: everything grouped here scores high in
+ * `ONSET_SIMILARITY` and `CODA_SIMILARITY`.
+ */
+export const SIMILAR_GROUPS: Array<Array<string>> = [
+  ['m', 'n', 'q'],
+  ['b', 'p'],
+  ['d', 't'],
+  ['b', 'd'],
+  ['p', 't'],
+  ['g', 'k'],
+  ['s', 'z'],
+  ['x', 'j'],
+  ['c', 'C'],
+  ['f', 'v'],
+  ['s', 'c'],
+  ['z', 'C'],
+  ['j', 'C'],
+  ['x', 'c'],
+  ['f', 'c'],
+  ['C', 'v'],
+  ['l', 'r'],
+]
+
+/**
+ * Vowels that sit next to each other on the ladder `i e a o u`. The
+ * same four steps `VOWEL_PAIRS` in `code/similarity.ts` scores at 4
+ * and 5, its two shortest distances.
+ */
+export const ADJACENT_VOWELS = new Set(
+  'ie ei ea ae ao oa ou uo'.split(' '),
+)
+
+const similarTo = new Map<string, Set<string>>()
+for (const sound of CONSONANTS) {
+  similarTo.set(sound, new Set([sound]))
+}
+for (const group of SIMILAR_GROUPS) {
+  for (const a of group) {
+    for (const b of group) {
+      similarTo.get(a)?.add(b)
+    }
+  }
+}
+
+export function areSimilar(a: string, b: string): boolean {
+  return similarTo.get(a)?.has(b) ?? false
+}
+
+export function vowelsClose(a: string, b: string): boolean {
+  return a === b || ADJACENT_VOWELS.has(a + b)
+}
+
+/**
+ * Two words too close to be two words.
+ *
+ * `star` and `stal` differ by one liquid and say nothing different, so
+ * one of them has to go. `star` and `stap` differ by more than a pair
+ * and are fine.
+ *
+ * Every consonant has to be similar and the vowel has to be close
+ * before this fires, so it only catches words that are near copies all
+ * the way through.
+ */
+export function tooClose(a: string, b: string): boolean {
+  if (a.length !== b.length) {
+    return false
+  }
+  const shapeA = toShape(a)
+  const shapeB = toShape(b)
+  if (!shapeA || !shapeB || shapeA !== shapeB) {
+    return false
+  }
+  for (let i = 0; i < a.length; i++) {
+    const same =
+      shapeA[i] === 'V' ? vowelsClose(a[i], b[i]) : areSimilar(a[i], b[i])
+    if (!same) {
+      return false
+    }
+  }
+  return a !== b
+}
+
 // ─── Syllable Rules ─────────────────────────────────────
 
 /**

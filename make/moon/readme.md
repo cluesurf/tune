@@ -456,6 +456,159 @@ first, which put twenty five unrelated concepts on `b-`.
 is not lost, it stops being atomic and gets built from other roots. The
 run lists every one.
 
+## Atom Counts
+
+The atoms are the shapes a word can be built from. Three of them are
+one syllable, one is two, one is three.
+
+| shape     |     count | where it comes from |
+| :-------- | --------: | :------------------ |
+| `CVC`     |     1,911 | every word the rules allow |
+| `CVCC`    |       876 | the rules, then thinned for closeness |
+| `CCVC`    |       331 | the rules, then thinned for closeness |
+| `CVCVC`   |    43,092 | `base/unified/5.csv`, from `code/calculate.ts` |
+| `CVCVCVC` | 1,935,223 | `base/unified/7.csv`, from `code/calculate.ts` |
+| **all**   | **1,981,433** | |
+
+By length: **1,911** at three letters, **1,207** at four, **43,092** at
+five, **1,935,223** at seven.
+
+The one syllable counts are worked out from the rules in
+`code/sound.ts` and then thinned so no two four letter words are alike
+all the way through. The longer two come out of `code/calculate.ts`,
+which walks a cycle through the endings rather than taking everything
+the rules would allow, so those are a designed set rather than a
+ceiling.
+
+## Join Counts
+
+Joining two atoms gives twenty five pairings.
+
+| join | shape | count |
+| :--- | :---- | ----: |
+| `CVC` + `CVC` | `CVCCVC` | 3,651,921 |
+| `CVC` + `CVCC` | `CVCCVCC` | 1,674,036 |
+| `CVC` + `CCVC` | `CVCCCVC` | 632,541 |
+| `CVC` + `CVCVC` | `CVCCVCVC` | 82,348,812 |
+| `CVC` + `CVCVCVC` | `CVCCVCVCVC` | 3,698,211,153 |
+| `CVCC` + `CVC` | `CVCCCVC` | 1,674,036 |
+| `CVCC` + `CVCC` | `CVCCCVCC` | 767,376 |
+| `CVCC` + `CCVC` | `CVCCCCVC` | 289,956 |
+| `CVCC` + `CVCVC` | `CVCCCVCVC` | 37,748,592 |
+| `CVCC` + `CVCVCVC` | `CVCCCVCVCVC` | 1,695,255,348 |
+| `CCVC` + `CVC` | `CCVCCVC` | 632,541 |
+| `CCVC` + `CVCC` | `CCVCCVCC` | 289,956 |
+| `CCVC` + `CCVC` | `CCVCCCVC` | 109,561 |
+| `CCVC` + `CVCVC` | `CCVCCVCVC` | 14,263,452 |
+| `CCVC` + `CVCVCVC` | `CCVCCVCVCVC` | 640,558,813 |
+| `CVCVC` + `CVC` | `CVCVCCVC` | 82,348,812 |
+| `CVCVC` + `CVCC` | `CVCVCCVCC` | 37,748,592 |
+| `CVCVC` + `CCVC` | `CVCVCCCVC` | 14,263,452 |
+| `CVCVC` + `CVCVC` | `CVCVCCVCVC` | 1,856,920,464 |
+| `CVCVC` + `CVCVCVC` | `CVCVCCVCVCVC` | 83,392,629,516 |
+| `CVCVCVC` + `CVC` | `CVCVCVCCVC` | 3,698,211,153 |
+| `CVCVCVC` + `CVCC` | `CVCVCVCCVCC` | 1,695,255,348 |
+| `CVCVCVC` + `CCVC` | `CVCVCVCCCVC` | 640,558,813 |
+| `CVCVCVC` + `CVCVC` | `CVCVCVCCVCVC` | 83,392,629,516 |
+| `CVCVCVC` + `CVCVCVC` | `CVCVCVCCVCVCVC` | 3,745,088,059,729 |
+| **all** | | **3,926,076,733,489** |
+
+Twenty five pairings land on twenty four shapes, so one shape is
+reached two ways and everything else is reached once.
+
+| | |
+| :--- | ---: |
+| atoms alone | 1,981,433 |
+| two atom joins | 3,926,076,710,743 |
+| **in all** | **3,926,078,692,176** |
+
+The join figure has the 22,746 strings that two different joins both
+reach taken out of it, so it counts words rather than pairings.
+
+## Where A Word Can Be Cut Two Ways
+
+`CVCCCVC` is the only joined shape a reader can cut in more than one
+place. It comes from `CVC` + `CCVC` and from `CVCC` + `CVC`.
+
+```text
+bat  + stal   ->  batstal
+bats + tal    ->  batstal
+```
+
+A `CVCCCVC` word is `c1 v1 c2 c3 c4 v2 c5`. Cutting after `c2` needs
+`c3c4` to be a legal onset. Cutting after `c3` needs `c2c3` to be a
+legal coda. Both work whenever a coda cluster and an onset cluster
+share their middle consonant, which happens 149 times, and 63 of those
+are `s` alone.
+
+**22,746 of the 2,283,831 `CVCCCVC` strings** cut two ways, about 1%.
+**454** of those are ambiguous between two readings whose every part
+already carries a meaning. The full list is `base/ambiguous.csv`.
+
+### It is not that three and four letter atoms cannot be joined
+
+Four of the six ways to join one to the other are fine, and so is every
+join involving `CVCVC` or `CVCVCVC`. Exactly two pairings collide, and
+only with each other.
+
+```text
+CVC  + CCVC  -> CVCCCVC     these two
+CVCC + CVC   -> CVCCCVC     reach the same shape
+
+CVC  + CVCC  -> CVCCVCC     fine
+CVCC + CCVC  -> CVCCCCVC    fine
+CCVC + CVC   -> CCVCCVC     fine
+CCVC + CVCC  -> CCVCCVCC    fine
+```
+
+So there are **exactly two bad seams**:
+
+```text
+CVC  followed by CCVC
+CVCC followed by CVC
+```
+
+A chain of any length is safe when it never puts either of those side
+by side. Three ways to deal with it:
+
+| | cost |
+| :--- | ---: |
+| drop `CVC` + `CCVC` | 632,541 pairings |
+| drop `CVCC` + `CVC` | 1,674,036 pairings |
+| keep both, fix the cut by rule | nothing |
+
+The third is what a spoken language usually does. Say the coda always
+takes as much as it can and `batstal` is always `bats` + `tal`, never
+`bat` + `stal`. Nothing is lost, and the other word simply cannot be
+written that way.
+
+### Three atoms
+
+125 ways to join three atoms land on 115 shapes. **106 of the 125 are
+safe**; 19 are not, and every one of those 19 is just a bad seam
+appearing inside a longer word.
+
+| opens with | safe |
+| :--- | ---: |
+| `CVC` | 18 of 25 |
+| `CVCC` | 19 of 25 |
+| `CCVC` | 23 of 25 |
+| `CVCVC` | 23 of 25 |
+| `CVCVCVC` | 23 of 25 |
+
+`CCVC`, `CVCVC` and `CVCVCVC` are the safest things to open with,
+because none of them can start a bad seam. Only `CVC` and `CVCC` can.
+
+Adding `CVCVC` and `CVCVCVC` to the atoms brought no new ambiguity with
+it. Neither carries a consonant cluster at its edges in a way that
+lets a cut be in doubt, and a cut can only be in doubt where consonants
+pile up. `code/join.ts` works the tables out from the atom list rather
+than having them written down, so adding a sixth shape re-answers the
+question.
+
+No shape can be read as both two atoms and three, so the number of
+roots in a word is always recoverable even when the cut points are not.
+
 ## Files
 
 | file | what it is |
