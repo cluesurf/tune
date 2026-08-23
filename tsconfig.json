@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["./*"]
+    }
+  },
+  "include": ["code/**/*.ts", "make/**/*.ts", "test/**/*.ts", "*.ts"],
+  "exclude": ["node_modules", "tmp"]
+}
