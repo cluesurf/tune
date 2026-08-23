@@ -28,6 +28,7 @@ import { fileURLToPath } from 'url'
 import {
   CONSONANTS,
   SHAPES,
+  countSyllables,
   VOWELS,
   compareWords,
   testCodaCluster,
@@ -39,6 +40,7 @@ import {
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')
+const BASE_DIR = resolve(__dirname, '../base')
 
 function line(text: string) {
   console.log(text)
@@ -194,7 +196,9 @@ function spread(words: Array<string>): Array<string> {
 
 // ─── Run ────────────────────────────────────────────────
 
-const SHORT = SHAPES.filter(s => s.length <= 4)
+/** Every shape of one syllable, which is every shape but the two that
+ * carry a second vowel. */
+const SHORT = SHAPES.filter(s => countSyllables(s) === 1)
 
 rule('SHAPES')
 line(`\n  Moon has ${SHAPES.length} shapes. ${SHORT.length} are three or four letters.`)
@@ -280,39 +284,72 @@ line(`  ${spreadAll.toLocaleString()} one syllable words in all.`)
 // ─── Out ────────────────────────────────────────────────
 
 /**
- * Every one syllable word Moon allows, three letters first and then
- * four, in order within each. A word already carrying a meaning brings
- * it along, so the free ones are the blank rows.
+ * Every one syllable word Moon allows.
+ *
+ * Both datasets are written, because they answer different questions.
+ * `clustered` is everything the rules allow, which is the ceiling.
+ * `distinct` is what is left once no two words are alike all the way
+ * through, which is what a lexicon can actually use. The `distinct`
+ * column says which of the two a word is in, so filtering the file one
+ * way gives the smaller set and not filtering gives the larger.
+ *
+ * One file per shape, and one holding all of them.
  */
-const everyWord: Array<string> = []
-for (const length of [3, 4]) {
-  const group = counts
-    .filter(c => c.shape.length === length)
-    .flatMap(c => spreads.get(c.shape)!)
-  /** Tune's own alphabet, `i e a o u m n q b d g p t k h s z f v x j c
-   * C w l r y`, so the file reads in the order the sounds are taught
-   * rather than the order ASCII happens to put them in. */
-  group.sort(compareWords)
-  everyWord.push(...group)
-}
+mkdirSync(resolve(BASE_DIR, 'word'), { recursive: true })
 
-const wordRows = ['word,shape,meaning']
-for (const word of everyWord) {
-  const gloss = meaning.get(word) ?? ''
-  wordRows.push(
-    `${word},${toShape(word)},${gloss.includes(',') ? `"${gloss}"` : gloss}`,
+const everyRow: Array<{ word: string; shape: string; far: boolean }> = []
+for (const item of counts) {
+  const far = new Set(spreads.get(item.shape))
+  const rows = ['word,shape,distinct,meaning']
+  for (const word of item.words) {
+    const gloss = meaning.get(word) ?? ''
+    rows.push(
+      `${word},${item.shape},${far.has(word) ? 'yes' : 'no'},${gloss.includes(',') ? `"${gloss}"` : gloss}`,
+    )
+    everyRow.push({ word, shape: item.shape, far: far.has(word) })
+  }
+  writeFileSync(
+    resolve(BASE_DIR, 'word', `${item.shape}.csv`),
+    rows.join('\n') + '\n',
   )
 }
 
-const BASE_DIR = resolve(__dirname, '../base')
-mkdirSync(BASE_DIR, { recursive: true })
+/** Three letters first, then four, in Tune's own alphabet within each. */
+everyRow.sort(
+  (a, b) => a.word.length - b.word.length || compareWords(a.word, b.word),
+)
+
+const wordRows = ['word,shape,distinct,meaning']
+for (const item of everyRow) {
+  const gloss = meaning.get(item.word) ?? ''
+  wordRows.push(
+    `${item.word},${item.shape},${item.far ? 'yes' : 'no'},${gloss.includes(',') ? `"${gloss}"` : gloss}`,
+  )
+}
+
 const wordPath = resolve(BASE_DIR, 'word.csv')
 writeFileSync(wordPath, wordRows.join('\n') + '\n')
 
 rule('OUT')
-line(`\n  ${everyWord.length.toLocaleString()} words -> ${wordPath}`)
-line(`  ${everyWord.filter(w => w.length === 3).length.toLocaleString()} of three letters, ${everyWord.filter(w => w.length === 4).length.toLocaleString()} of four`)
-line(`  ${everyWord.filter(w => meaning.get(w)).length.toLocaleString()} already carry a meaning`)
+line('')
+line('| shape  | by the rules | of those, distinct |')
+line('| :----- | -----------: | -----------------: |')
+for (const item of counts) {
+  line(
+    `| \`${item.shape}\`${' '.repeat(5 - item.shape.length)} | ${item.clustered.toLocaleString().padStart(12)} | ${spreads.get(item.shape)!.length.toLocaleString().padStart(18)} |`,
+  )
+}
+line(
+  `| **all** | **${everyRow.length.toLocaleString()}** | **${everyRow.filter(r => r.far).length.toLocaleString()}** |`,
+)
+line('')
+line(`  ${everyRow.length.toLocaleString()} words -> ${wordPath}`)
+for (const item of counts) {
+  line(`  ${item.words.length.toLocaleString().padStart(6)} -> base/word/${item.shape}.csv`)
+}
+line('')
+line('  `distinct` says whether the word survives the closeness rule.')
+line('  Keep every row for the full space, keep `yes` for a lexicon.')
 
 rule('AGAINST THE LEXICON')
 line('')

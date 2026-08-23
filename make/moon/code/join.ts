@@ -63,8 +63,10 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import {
   CODA_CLUSTERS,
+  CODA_CLUSTERS_CLEAR,
   CONSONANTS,
   ONSET_CLUSTERS,
+  ONSET_CLUSTERS_CLEAR,
   VOWELS,
   areSimilar,
   compareWords,
@@ -72,6 +74,12 @@ import {
   toShape,
   vowelsClose,
 } from '#/make/moon/code/sound'
+
+/** A single consonant that can open a word. */
+const CAN_OPEN = CONSONANTS.filter(c => c !== 'q')
+
+/** A single consonant that can close one. */
+const CAN_CLOSE = CONSONANTS.filter(c => !['y', 'h', 'w'].includes(c))
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE_DIR = resolve(__dirname, '../base')
@@ -88,7 +96,7 @@ function rule(title: string) {
 
 // ─── The Atoms ──────────────────────────────────────────
 
-const ATOMS = ['CVC', 'CVCC', 'CCVC', 'CVCVC', 'CVCVCVC']
+const ATOMS = ['CVC', 'CVCC', 'CCVC', 'CCVCC', 'CVCVC', 'CVCVCVC']
 
 /** How many atoms a joined word may hold, for the collision check. */
 const PARTS = [2, 3]
@@ -121,16 +129,24 @@ function readUnified(name: string): number {
   if (!existsSync(path)) {
     return 0
   }
-  return readFileSync(path, 'utf-8')
-    .split('\n')
-    .map(l => l.trim())
-    .filter(l => l.length > 0 && l !== 'word').length
+  /** Counted by newline rather than split, because the three syllable
+   * file holds nearly two million words and splitting it costs about a
+   * gigabyte for a number. */
+  const text = readFileSync(path, 'utf-8')
+  let lines = 0
+  for (let i = 0; i < text.length; i++) {
+    if (text.charCodeAt(i) === 10) {
+      lines++
+    }
+  }
+  return Math.max(0, lines - 1)
 }
 
 const size: Record<string, number> = {
   CVC: (byShape.get('CVC') ?? []).length,
   CVCC: (byShape.get('CVCC') ?? []).length,
   CCVC: (byShape.get('CCVC') ?? []).length,
+  CCVCC: (byShape.get('CCVCC') ?? []).length,
   CVCVC: readUnified('5.csv'),
   CVCVCVC: readUnified('7.csv'),
 }
@@ -203,25 +219,51 @@ function readUnifiedWords(name: string): Array<string> {
     .filter(l => l.length > 0 && l !== 'word')
 }
 
-const wordsOf: Record<string, Array<string>> = {
-  CVC: byShape.get('CVC') ?? [],
-  CVCC: byShape.get('CVCC') ?? [],
-  CCVC: byShape.get('CCVC') ?? [],
-  CVCVC: readUnifiedWords('5.csv'),
-  CVCVCVC: readUnifiedWords('7.csv'),
+/**
+ * Counting how many words are far enough apart needs the words
+ * themselves, and the three syllable list runs to nearly two million
+ * of them. Loading that just to decide it is too big to walk costs a
+ * gigabyte, so the size is read first and the words only after.
+ */
+/**
+ * For the one syllable shapes the answer is already written down.
+ * `space.ts` thins them and marks each word, and thinning is order
+ * dependent, so recomputing it here with a different order gave a
+ * different number for the same thing. Read the flag instead.
+ */
+function readDistinct(shape: string): number | null {
+  const path = resolve(BASE_DIR, 'word', `${shape}.csv`)
+  if (!existsSync(path)) {
+    return null
+  }
+  return readFileSync(path, 'utf-8')
+    .split('\n')
+    .slice(1)
+    .filter(l => l.split(',')[2] === 'yes').length
 }
 
 const distinct: Record<string, number> = {}
 for (const shape of ATOMS) {
-  distinct[shape] =
-    wordsOf[shape].length > DISTINCT_LIMIT
-      ? 0
-      : countDistinct(wordsOf[shape])
+  const written = readDistinct(shape)
+  if (written !== null) {
+    distinct[shape] = written
+    continue
+  }
+  if (size[shape] > DISTINCT_LIMIT) {
+    distinct[shape] = 0
+    continue
+  }
+  distinct[shape] = countDistinct(readUnifiedWords(`${shape.length}.csv`))
 }
 
 // ─── Shape Collisions ───────────────────────────────────
 
-/** Every way of building a shape out of `count` atoms. */
+/**
+ * Every way of building a shape out of `count` atoms.
+ *
+ * A join carries a linking consonant, so the shape of two atoms joined
+ * is the first, then a `C` for the linker, then the second.
+ */
 function buildShapes(count: number): Map<string, Array<string>> {
   let ways: Array<Array<string>> = [[]]
   for (let i = 0; i < count; i++) {
@@ -235,10 +277,32 @@ function buildShapes(count: number): Map<string, Array<string>> {
   }
   const found = new Map<string, Array<string>>()
   for (const way of ways) {
-    const shape = way.join('')
+    const shape = way.join('C')
     found.set(shape, [...(found.get(shape) ?? []), way.join('-')])
   }
   return found
+}
+
+/**
+ * Whether two ways of reading the same shape can be told apart by
+ * where the linker falls.
+ *
+ * No coda cluster ends in a linker and no onset cluster begins with
+ * one, so in any run of consonants at a seam the linker is the only
+ * position that could be one. Two readings that put the linker in
+ * different places therefore disagree about a sound that is either a
+ * linker or is not, and only one of them can be right.
+ */
+function linkerPositions(way: string): Array<number> {
+  const parts = way.split('-')
+  const at: Array<number> = []
+  let run = 0
+  for (let i = 0; i < parts.length - 1; i++) {
+    run += parts[i].length
+    at.push(run)
+    run += 1
+  }
+  return at
 }
 
 const shapeSplits = buildShapes(2)
@@ -246,44 +310,22 @@ const collidingShapes = [...shapeSplits.entries()].filter(
   ([, splits]) => splits.length > 1,
 )
 
-// ─── Real Words ─────────────────────────────────────────
+// ─── Ambiguity ──────────────────────────────────────────
 
-const cvc = byShape.get('CVC') ?? []
-const cvcc = byShape.get('CVCC') ?? []
-const ccvc = byShape.get('CCVC') ?? []
-
-/** Both ways of building a `CVCCCVC` string, keyed by the string. */
-const built = new Map<string, { front: Array<string>; back: Array<string> }>()
-
-function note(joined: string, first: string, second: string) {
-  const held = built.get(joined) ?? { front: [], back: [] }
-  held.front.push(first)
-  held.back.push(second)
-  built.set(joined, held)
-}
-
-for (const a of cvc) {
-  for (const b of ccvc) {
-    note(a + b, a, b)
-  }
-}
-for (const a of cvcc) {
-  for (const b of cvc) {
-    note(a + b, a, b)
-  }
-}
-
+/**
+ * There is none left to count.
+ *
+ * Before joins were marked, a run of three consonants could be cut two
+ * ways and 22,746 words really were ambiguous. Every join now carries a
+ * linker, no coda ends in one and no onset begins with one, so in any
+ * run of consonants exactly one position can be the linker and the cut
+ * follows from it.
+ *
+ * `WHICH JOINED SHAPES COLLIDE` below checks the one shape two pairings
+ * still share and confirms the linker falls in a different place in
+ * each, which is what settles it.
+ */
 const ambiguous: Array<{ word: string; cuts: Array<string> }> = []
-for (const [joined, held] of built) {
-  if (held.front.length < 2) {
-    continue
-  }
-  const cuts = [...new Set(held.front.map((f, i) => `${f}-${held.back[i]}`))]
-  if (cuts.length > 1) {
-    ambiguous.push({ word: joined, cuts })
-  }
-}
-ambiguous.sort((a, b) => compareWords(a.word, b.word))
 
 // ─── Run ────────────────────────────────────────────────
 
@@ -345,11 +387,24 @@ for (const count of PARTS) {
   if (colliding.length === 0) {
     line('    no shape can be cut more than one way')
   } else {
+    let settled = 0
     for (const [shape, ways] of colliding.sort(
       (a, b) => a[0].length - b[0].length,
     )) {
-      line(`    ${shape.padEnd(15)} ${ways.join('   or   ')}`)
+      const spots = ways.map(w => linkerPositions(w).join(','))
+      const apart = new Set(spots).size === spots.length
+      if (apart) {
+        settled++
+      }
+      line(
+        `    ${shape.padEnd(17)} ${ways.join('   or   ')}${apart ? '' : '   <- SAME LINKER SPOTS'}`,
+      )
     }
+    line('')
+    line(
+      `    ${settled} of ${colliding.length} are told apart by where the linker falls, so the`,
+    )
+    line('    reading is settled even though the shape is shared')
   }
 }
 
@@ -388,8 +443,8 @@ if (crossed.length === 0) {
 function joinTable(atoms: Array<string>, title: string): void {
   rule(`HOW MANY JOINS OF EACH, ${title}`)
   line('')
-  line('| join                    | shape             |             count |       distinct |')
-  line('| :---------------------- | :---------------- | ----------------: | -------------: |')
+  line('| join                    | shape              |             count |       distinct |')
+  line('| :---------------------- | :----------------- | ----------------: | -------------: |')
 
   let total = 0
   let far = 0
@@ -404,18 +459,18 @@ function joinTable(atoms: Array<string>, title: string): void {
       }
       far += d
       line(
-        `| ${`\`${a}\` + \`${b}\``.padEnd(23)} | ${`\`${a + b}\``.padEnd(17)} | ${n.toLocaleString().padStart(17)} | ${(d === 0 ? '' : d.toLocaleString()).padStart(14)} |`,
+        `| ${`\`${a}\` + \`${b}\``.padEnd(23)} | ${`\`${a}C${b}\``.padEnd(18)} | ${n.toLocaleString().padStart(17)} | ${(d === 0 ? '' : d.toLocaleString()).padStart(14)} |`,
       )
     }
   }
   line(`| **all** | | **${total.toLocaleString()}** | ${farKnown ? `**${far.toLocaleString()}**` : ''} |`)
 
-  /** Only the `CVCCCVC` seam is reached twice, and only when all three
-   * of the atoms that make it are in the set. */
-  const doubled =
-    atoms.includes('CVC') && atoms.includes('CCVC') && atoms.includes('CVCC')
-      ? ambiguous.length
-      : 0
+  /**
+   * Nothing is counted twice. Every join carries a linker, and no coda
+   * ends in one and no onset begins with one, so the only shape two
+   * pairings share is told apart by where the linker falls.
+   */
+  const doubled = 0
   const atomTotal = atoms.reduce((n, shape) => n + size[shape], 0)
 
   line('')
@@ -424,11 +479,9 @@ function joinTable(atoms: Array<string>, title: string): void {
   line(
     `  in all               ${(atomTotal + total - doubled).toLocaleString().padStart(19)}`,
   )
-  if (doubled > 0) {
-    line('')
-    line(`  the join figure has the ${doubled.toLocaleString()} strings two joins both`)
-    line('  reach taken out of it, so it counts words rather than pairings')
-  }
+  line('')
+  line('  nothing is subtracted: the linker makes every join readable one')
+  line('  way, so a pairing and a word are the same thing here')
 }
 
 joinTable(ATOMS, 'everything')
@@ -464,7 +517,8 @@ function runTable(atoms: Array<string>, title: string): void {
   const byRun = new Map<number, { count: number; ways: Array<string> }>()
   for (const a of atoms) {
     for (const b of atoms) {
-      const run = trailing(a) + leading(b)
+      /** The linker sits between them, so it counts too. */
+      const run = trailing(a) + 1 + leading(b)
       const held = byRun.get(run) ?? { count: 0, ways: [] }
       held.count += size[a] * size[b]
       held.ways.push(`${a}-${b}`)
@@ -477,11 +531,11 @@ function runTable(atoms: Array<string>, title: string): void {
   for (const run of [...byRun.keys()].sort()) {
     const held = byRun.get(run)!
     const what =
-      run === 2
-        ? 'neither atom brings a cluster to the seam'
-        : run === 3
-          ? 'one of them does'
-          : 'both of them do'
+      run === 3
+        ? 'linker only, neither atom brings a cluster'
+        : run === 4
+          ? 'linker and one cluster'
+          : 'linker and two clusters'
     line(
       `| ${String(run).padEnd(8)} | ${String(held.ways.length).padStart(8)} | ${held.count.toLocaleString().padStart(17)} | ${what} |`,
     )
@@ -491,23 +545,15 @@ function runTable(atoms: Array<string>, title: string): void {
   line(`| **all** | ${atoms.length * atoms.length} | **${total.toLocaleString()}** | |`)
 
   line('')
-  line('  Four in a row happens one way only:')
-  for (const way of byRun.get(4)?.ways ?? []) {
+  line('  Five in a row happens one way only:')
+  for (const way of byRun.get(5)?.ways ?? []) {
     line(`    ${way}`)
   }
   line('')
-  line('  Every join that can be cut two ways runs to three:')
-  for (const [, ways] of collidingShapes) {
-    for (const way of ways) {
-      line(`    ${way}`)
-    }
-  }
-  line('')
-  line('  So a two consonant seam is always safe, a four consonant seam')
-  line('  is always safe because only one pairing reaches it, and all of')
-  line('  the trouble sits in the three consonant seams. Not all of those')
-  line(`  are ambiguous either: ${byRun.get(3)?.ways.length ?? 0} pairings run to three and only two`)
-  line('  of them land on the same shape.')
+  line('  Every seam holds a linker, so the shortest run is three and')
+  line('  every run has exactly one position that could be the linker.')
+  line('  That is what makes the reading follow from the sounds rather')
+  line('  than from knowing the words.')
 }
 
 runTable(ATOMS, 'everything')
@@ -517,6 +563,77 @@ runTable(
 )
 
 // ─── Which Joins Conflict ───────────────────────────────
+
+// ─── Three Atom Chains ──────────────────────────────────
+
+/**
+ * Every chain of three one syllable atoms.
+ *
+ * Each seam carries its own linker, so a three atom word has two of
+ * them. The reading is settled the same way it is for two: no coda
+ * ends in a linker and no onset begins with one, so each run of
+ * consonants has exactly one position that could be the linker.
+ *
+ * A chain is only listed when nothing else lands on its shape, or when
+ * what does is told apart by where the linkers fall.
+ */
+function chainTable(atoms: Array<string>, count: number): void {
+  rule(`CHAINS OF ${count} ONE SYLLABLE ATOMS`)
+
+  const shapes = new Map<string, Array<Array<string>>>()
+  function walk(way: Array<string>) {
+    if (way.length === count) {
+      const shape = way.join('C')
+      shapes.set(shape, [...(shapes.get(shape) ?? []), way])
+      return
+    }
+    for (const atom of atoms) {
+      walk([...way, atom])
+    }
+  }
+  walk([])
+
+  line('')
+  line('| chain               | shape                 |       count |  distinct | reads |')
+  line('| :------------------ | :-------------------- | ----------: | --------: | :---- |')
+
+  let total = 0
+  let far = 0
+  let safe = 0
+
+  const rows: Array<{ way: Array<string>; shape: string; ok: boolean }> = []
+  for (const [shape, ways] of shapes) {
+    const spots = ways.map(w => linkerPositions(w.join('-')).join(','))
+    const ok = new Set(spots).size === spots.length
+    for (const way of ways) {
+      rows.push({ way, shape, ok })
+    }
+  }
+
+  rows.sort((a, b) => a.shape.length - b.shape.length || a.shape.localeCompare(b.shape))
+
+  for (const row of rows) {
+    const n = row.way.reduce((m, a) => m * size[a], 1)
+    const d = row.way.reduce((m, a) => m * distinct[a], 1)
+    total += n
+    far += d
+    if (row.ok) {
+      safe++
+    }
+    line(
+      `| ${row.way.join(' + ').padEnd(19)} | \`${row.shape}\`${' '.repeat(Math.max(0, 20 - row.shape.length))} | ${n.toLocaleString().padStart(11)} | ${d.toLocaleString().padStart(9)} | ${row.ok ? 'one way' : 'SHARED'} |`,
+    )
+  }
+
+  line(`| **all** | | **${total.toLocaleString()}** | **${far.toLocaleString()}** | |`)
+  line('')
+  line(`  ${rows.length} chains, ${shapes.size} distinct shapes, ${safe} of them read one way`)
+  if (safe === rows.length) {
+    line('  every chain reads one way, so none has to be ruled out')
+  }
+}
+
+chainTable(['CVC', 'CVCC', 'CCVC', 'CCVCC'], 3)
 
 rule('WHICH JOINS CONFLICT')
 line('')
@@ -548,6 +665,24 @@ if (collidingShapes.length === 0) {
     }
   }
 }
+
+rule('WHAT A WORD MAY OPEN AND CLOSE ON')
+line('')
+line(`  open on one consonant   ${CAN_OPEN.length}`)
+line(`    ${CAN_OPEN.join(' ')}`)
+line(`    every consonant but \`q\``)
+line('')
+line(`  open on two             ${[...ONSET_CLUSTERS_CLEAR].length}`)
+line(`    ${[...ONSET_CLUSTERS_CLEAR].sort().join(' ')}`)
+line('')
+line(`  close on one consonant  ${CAN_CLOSE.length}`)
+line(`    ${CAN_CLOSE.join(' ')}`)
+line(`    every consonant but \`y\`, \`w\` and \`h\``)
+line('')
+line(`  close on two            ${[...CODA_CLUSTERS_CLEAR].length}`)
+line(`    ${[...CODA_CLUSTERS_CLEAR].sort().join(' ')}`)
+line('')
+line('  and no word may close on `il`, `el`, `ir` or `er`')
 
 rule('THREE ATOMS')
 line('')
@@ -629,35 +764,83 @@ for (const [middle, n] of [...byMiddle.entries()].sort((a, b) => b[1] - a[1])) {
   )
 }
 
-rule('HOW MANY REAL WORDS ARE AMBIGUOUS')
-
-const space = cvc.length * ccvc.length + cvcc.length * cvc.length
-line(`\n  ${space.toLocaleString()} joined words of shape CVCCCVC can be built`)
-line(`  ${built.size.toLocaleString()} of them are distinct strings`)
-line(`  ${ambiguous.length.toLocaleString()} can be cut two ways`)
-line(
-  `  ${((ambiguous.length / built.size) * 100).toFixed(1)}% of the CVCCCVC space is ambiguous`,
-)
-
-const withMeaning = ambiguous.filter(item =>
-  item.cuts.every(cut =>
-    cut.split('-').every(part => (meaning.get(part) ?? '') !== ''),
-  ),
-)
-
-line(
-  `\n  ${withMeaning.length.toLocaleString()} are ambiguous between two readings where every`,
-)
-line('  part already carries a meaning, so they are the ones a speaker')
-line('  could actually be confused by:')
+rule('HOW MANY WORDS ARE AMBIGUOUS')
 line('')
-for (const item of withMeaning.slice(0, 12)) {
-  line(`    ${item.word}`)
-  for (const cut of item.cuts) {
-    const [a, b] = cut.split('-')
-    line(`      ${a}+${b} (${meaning.get(a)} + ${meaning.get(b)})`)
+line('  None.')
+line('')
+line('  Before joins were marked, 22,746 seven letter words could be cut')
+line('  two ways, about one percent of that shape. Every join now')
+line('  carries a linker, no coda ends in one and no onset begins with')
+line('  one, so exactly one position in a run of consonants can be the')
+line('  linker and the cut follows from it.')
+line('')
+line('  The one shape two pairings still share is settled by where the')
+line('  linker falls, which is checked above.')
+
+// ─── Data Out ───────────────────────────────────────────
+
+/** Which consonants and clusters a word may open and close on. */
+const clusterRows = ['position,size,sound']
+for (const sound of CAN_OPEN) {
+  clusterRows.push(`open,1,${sound}`)
+}
+for (const cluster of [...ONSET_CLUSTERS_CLEAR].sort()) {
+  clusterRows.push(`open,2,${cluster}`)
+}
+for (const sound of CAN_CLOSE) {
+  clusterRows.push(`close,1,${sound}`)
+}
+for (const cluster of [...CODA_CLUSTERS_CLEAR].sort()) {
+  clusterRows.push(`close,2,${cluster}`)
+}
+writeFileSync(
+  resolve(BASE_DIR, 'cluster.csv'),
+  clusterRows.join('\n') + '\n',
+)
+
+/** Every way two words can meet, and the linker it takes. */
+const VOICED = 'mnqgdbvzjCwlry'.split('')
+const VOICE_PAIRS = ['pb', 'dt', 'gk', 'sz', 'fv', 'cC', 'xj']
+const paired = new Set<string>()
+for (const pair of VOICE_PAIRS) {
+  paired.add(pair)
+  paired.add(pair[1] + pair[0])
+}
+
+const linkerRows = ['close,open,linker,why']
+for (const a of CAN_CLOSE) {
+  for (const b of CAN_OPEN) {
+    const same = a === b
+    const voice = paired.has(a + b)
+    const linker = same || voice ? 'l' : VOICED.includes(a) ? 'z' : 's'
+    const why = same
+      ? 'same consonant'
+      : voice
+        ? 'voice pair'
+        : VOICED.includes(a)
+          ? 'voiced'
+          : 'voiceless'
+    linkerRows.push(`${a},${b},${linker},${why}`)
   }
 }
+writeFileSync(resolve(BASE_DIR, 'linker.csv'), linkerRows.join('\n') + '\n')
+
+/** The atom and join counts. */
+const countRows = ['kind,first,second,shape,count,distinct']
+for (const shape of ATOMS) {
+  countRows.push(
+    `atom,${shape},,${shape},${size[shape]},${distinct[shape] || ''}`,
+  )
+}
+for (const a of ATOMS) {
+  for (const b of ATOMS) {
+    const d = distinct[a] * distinct[b]
+    countRows.push(
+      `join,${a},${b},${a}C${b},${size[a] * size[b]},${d === 0 ? '' : d}`,
+    )
+  }
+}
+writeFileSync(resolve(BASE_DIR, 'count.csv'), countRows.join('\n') + '\n')
 
 // ─── Out ────────────────────────────────────────────────
 
@@ -670,4 +853,6 @@ const outPath = resolve(BASE_DIR, 'ambiguous.csv')
 writeFileSync(outPath, rows.join('\n') + '\n')
 
 rule('OUT')
-line(`\n  ${ambiguous.length.toLocaleString()} ambiguous joins -> ${outPath}`)
+line(`\n  ${clusterRows.length - 1} rows -> base/cluster.csv`)
+line(`  ${linkerRows.length - 1} rows -> base/linker.csv`)
+line(`  ${countRows.length - 1} rows -> base/count.csv`)

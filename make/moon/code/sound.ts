@@ -100,10 +100,21 @@ export const SHAPES = [
   'CCVC',
   'CCVCC',
   'CVCVC',
-  'CVCCVC',
-  'CCVCVC',
-  'CVCVCC',
+  'CVCVCVC',
 ]
+
+/**
+ * The six letter shapes are gone.
+ *
+ * `CVCCVC` is exactly `CVC` followed by `CVC`, and a join only carries
+ * a linker when the two consonants meeting would run together, so a
+ * word of that shape cannot be told from two words of three letters
+ * each. `CCVCVC` and `CVCVCC` went with it.
+ *
+ * With those three out, no atom shape equals a join of two atoms, at
+ * any length.
+ */
+export const DROPPED_SHAPES = ['CVCCVC', 'CCVCVC', 'CVCVCC']
 
 export const SHAPE_SET = new Set(SHAPES)
 
@@ -181,29 +192,98 @@ export function isMoonShape(word: string): boolean {
  * shape to begin with.
  */
 export const ONSET_CLUSTERS = new Set(
-  (
-    'bl br cr dj dr fl fr gl gr kl kr ks pl pr sf sk sl sm sn sp sr st ' +
-    'sv tr tx vl vr xk xl xn xr'
-  ).split(' '),
+  'bl br cr dj dr fl fr gl gr kl kr pl pr tr tx vr'.split(' '),
 )
 
 export const CODA_CLUSTERS = new Set(
   (
-    'bz dc dj dz fs ft gz kx ks lb lc ld lf lg lk lm ln lp ls lt lv lx ' +
-    'lz md mp mz nc nd nk ns nt nz pc pf ps px qk rC rb rc rd rf rg rk ' +
-    'rl rm rn rp rq rs rt rv rx rz sk sp st ts tx tz xt'
+    'dj ft kx lb ld lf lk lp lt lv lx mp nd nk nt qk rb rd rf rg rk rm ' +
+    'rn rp rt rv rx sk sp st tx xt'
   ).split(' '),
 )
 
 /** Two letters standing for one sound, so they count as neither cluster. */
 export const AFFRICATES = ['dj', 'tx', 'ts', 'dz']
 
+/**
+ * The consonants that mark a join between two words.
+ *
+ * A join takes a sibilant matching the voice of the consonant before
+ * it, `z` after a voiced one and `s` after a voiceless one. When the
+ * two consonants meeting are the same, or differ only by voice, a
+ * sibilant does not pull them apart and `l` stands in.
+ *
+ *   man + man  ->  manzman        dag + man  ->  dagzman
+ *   mat + man  ->  matsman        s + s      ->  sls
+ *
+ * For that to be readable, a linker in the middle of three consonants
+ * has to be a linker and nothing else. So no word may end on a
+ * consonant plus a linker, and none may begin on a linker plus a
+ * consonant.
+ *
+ *   end     Cl  Cs  Cz
+ *   start   lC  sC  zC
+ *
+ * The lists below are filtered by that rather than written out, so
+ * changing a linker re-answers which clusters survive.
+ */
+export const LINKERS = ['l', 's', 'z']
+
+export const VOICED = 'mnqgdbvzjCwlry'.split('')
+export const VOICELESS = 'ptkhsfxc'.split('')
+
+/** The seven pairs that differ by voice and nothing else. */
+export const VOICE_PAIRS = ['pb', 'dt', 'gk', 'sz', 'fv', 'cC', 'xj']
+
+const voicePaired = new Set<string>()
+for (const pair of VOICE_PAIRS) {
+  voicePaired.add(pair)
+  voicePaired.add(pair[1] + pair[0])
+}
+
+/**
+ * A join only needs help when the two consonants are the same, or when
+ * they differ by voice and nothing else. Anything else is already far
+ * enough apart and the words run straight together.
+ */
+export function needsLinker(a: string, b: string): boolean {
+  return a === b || voicePaired.has(a + b)
+}
+
+/**
+ * The linker is a sibilant matching the voice of the consonant before
+ * it. When that sibilant is already one of the two it would vanish
+ * into them, and `l` stands in.
+ */
+export function linkerFor(a: string, b: string): string {
+  const sibilant = VOICED.includes(a) ? 'z' : 's'
+  return a === sibilant || b === sibilant ? 'l' : sibilant
+}
+
+/** Two words joined, with a linker only where one is needed. */
+export function joinWords(first: string, second: string): string {
+  const a = first[first.length - 1]
+  const b = second[0]
+  return needsLinker(a, b) ? first + linkerFor(a, b) + second : first + second
+}
+
+function withoutLinkers(
+  clusters: Set<string>,
+  at: 0 | 1,
+): Set<string> {
+  return new Set([...clusters].filter(c => !LINKERS.includes(c[at])))
+}
+
+/** What is left once the linkers are protected. */
+export const ONSET_CLUSTERS_CLEAR = withoutLinkers(ONSET_CLUSTERS, 0)
+export const CODA_CLUSTERS_CLEAR = withoutLinkers(CODA_CLUSTERS, 1)
+
 export function testOnsetCluster(cluster: string): boolean {
-  return ONSET_CLUSTERS.has(cluster)
+  return ONSET_CLUSTERS_CLEAR.has(cluster)
 }
 
 export function testCodaCluster(cluster: string): boolean {
-  return CODA_CLUSTERS.has(cluster)
+  return CODA_CLUSTERS_CLEAR.has(cluster)
 }
 
 // ─── Confusable Sounds ──────────────────────────────────
