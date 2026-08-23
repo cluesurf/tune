@@ -525,6 +525,43 @@ reached two ways and everything else is reached once.
 The join figure has the 22,746 strings that two different joins both
 reach taken out of it, so it counts words rather than pairings.
 
+### Without the three syllable atom
+
+`CVCVCVC` is on its own larger than the rest of the language put
+together, so the arithmetic above says more about that one shape than
+about anything else. Here are the same counts over the one and two
+syllable atoms only.
+
+| join | shape | count |
+| :--- | :---- | ----: |
+| `CVC` + `CVC` | `CVCCVC` | 3,651,921 |
+| `CVC` + `CVCC` | `CVCCVCC` | 1,674,036 |
+| `CVC` + `CCVC` | `CVCCCVC` | 632,541 |
+| `CVC` + `CVCVC` | `CVCCVCVC` | 82,348,812 |
+| `CVCC` + `CVC` | `CVCCCVC` | 1,674,036 |
+| `CVCC` + `CVCC` | `CVCCCVCC` | 767,376 |
+| `CVCC` + `CCVC` | `CVCCCCVC` | 289,956 |
+| `CVCC` + `CVCVC` | `CVCCCVCVC` | 37,748,592 |
+| `CCVC` + `CVC` | `CCVCCVC` | 632,541 |
+| `CCVC` + `CVCC` | `CCVCCVCC` | 289,956 |
+| `CCVC` + `CCVC` | `CCVCCCVC` | 109,561 |
+| `CCVC` + `CVCVC` | `CCVCCVCVC` | 14,263,452 |
+| `CVCVC` + `CVC` | `CVCVCCVC` | 82,348,812 |
+| `CVCVC` + `CVCC` | `CVCVCCVCC` | 37,748,592 |
+| `CVCVC` + `CCVC` | `CVCVCCCVC` | 14,263,452 |
+| `CVCVC` + `CVCVC` | `CVCVCCVCVC` | 1,856,920,464 |
+| **all** | | **2,135,364,100** |
+
+| | |
+| :--- | ---: |
+| atoms alone | 46,210 |
+| two atom joins | 2,135,341,354 |
+| **in all** | **2,135,387,564** |
+
+Sixteen pairings, fifteen shapes, and the same single collision. Two
+billion words out of forty six thousand atoms, none of them longer than
+ten letters.
+
 ## Where A Word Can Be Cut Two Ways
 
 `CVCCCVC` is the only joined shape a reader can cut in more than one
