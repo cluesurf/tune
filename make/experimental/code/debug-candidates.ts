@@ -1,4 +1,4 @@
-import { ipaToTuneCandidates, talkToCandidateLevels } from '../../code/talk-to-tune'
+import { ipaToTuneCandidates, talkToCandidateLevels } from '#/code/talk-to-tune'
 import { makeIpaToTalk } from '@cluesurf/talk/ipa'
 
 const ipa = 'ˈɛləfənt'

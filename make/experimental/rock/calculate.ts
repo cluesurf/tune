@@ -225,6 +225,8 @@ line('| root syllables | bare |  ha |  hi |  hu |    all |')
 line('| :------------- | ---: | --: | --: | --: | -----: |')
 
 let wordTotal = 0
+const byLength = new Map<number, Array<string>>()
+
 for (const report of reports) {
   const forms = generateForms(report.words)
   wordTotal += forms.all.length
@@ -237,11 +239,26 @@ for (const report of reports) {
   const rootPath = resolve(dataDir, 'root', `${report.syllables * 2}.csv`)
   writeFileSync(rootPath, 'word\n' + report.words.join('\n') + '\n')
 
-  const wordPath = resolve(dataDir, 'word', `${report.syllables * 2}.csv`)
-  writeFileSync(wordPath, 'word\n' + forms.all.join('\n') + '\n')
+  /** Word files go by how long the word actually is, so a bare three
+   * syllable root and a two syllable root wearing a role syllable land
+   * in the same file. That is the file you want when you are looking
+   * for words of a given number of beats. */
+  for (const word of forms.all) {
+    const bucket = byLength.get(word.length) ?? []
+    bucket.push(word)
+    byLength.set(word.length, bucket)
+  }
 }
 line(`| | | | | | **${wordTotal.toLocaleString()}** |`)
-line(`\nwrote data/root/*.csv and data/word/*.csv`)
+
+for (const [length, words] of byLength) {
+  words.sort(compareWords)
+  writeFileSync(
+    resolve(dataDir, 'word', `${length}.csv`),
+    'word\n' + words.join('\n') + '\n',
+  )
+}
+line(`\nwrote data/root/*.csv by root length and data/word/*.csv by word length`)
 
 rule('SHAPE OF THE LEXICON')
 const twoSyllable = reports[1].words

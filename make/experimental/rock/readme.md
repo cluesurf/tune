@@ -297,6 +297,14 @@ roles plus erosion. Nothing in Code's grammar is unaccounted for.
 | `sounds.md` | what each of the nine sounds means |
 | `words.md` | the concepts Rock has words for |
 
+Generated data:
+
+| file | what is in it |
+| :--- | :------------ |
+| `data/root/{2,4,6}.csv` | roots, by how many letters the root has |
+| `data/word/{2,4,6,8}.csv` | surface words, by how many letters the word has, so the file number is twice the beat count |
+| `data/ancestor.csv` | every Tune Code word carried back, with how sure the reconstruction is |
+
 ```bash
 pnpm --dir deck/tune exec tsx make/experimental/rock/calculate.ts
 pnpm --dir deck/tune exec tsx make/experimental/rock/fold.ts

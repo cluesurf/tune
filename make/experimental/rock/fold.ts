@@ -43,7 +43,6 @@ import {
   BREATH,
   DESCENDANTS,
   ROOT_RULES,
-  VOWELS,
   compareWords,
   isConsonant,
   isVowel,

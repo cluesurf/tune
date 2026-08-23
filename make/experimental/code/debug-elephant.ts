@@ -4,10 +4,10 @@
 
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { ipaToTuneCandidates } from '../../code/talk-to-tune'
-import { loadComboTrie, hasWord } from '../../code/trie'
-import { walkTrieForMatches } from '../../code/trie-match'
-import { wordPhoneticDistance } from '../../code/similarity'
+import { ipaToTuneCandidates } from '#/code/talk-to-tune'
+import { loadComboTrie, hasWord } from '#/code/trie'
+import { walkTrieForMatches } from '#/code/trie-match'
+import { wordPhoneticDistance } from '#/code/similarity'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const dataDir = resolve(__dirname, 'data')

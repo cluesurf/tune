@@ -21,13 +21,13 @@ import { fileURLToPath } from 'url'
 import {
   talkToTuneCandidates,
   ipaToTuneCandidates,
-} from '../../code/talk-to-tune'
-import { loadComboTrie } from '../../code/trie'
-import { walkTrieForMatches } from '../../code/trie-match'
+} from '#/code/talk-to-tune'
+import { loadComboTrie } from '#/code/trie'
+import { walkTrieForMatches } from '#/code/trie-match'
 import {
   assignConstraintFirst,
   type EntryWithMatches,
-} from '../../code/assign'
+} from '#/code/assign'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 

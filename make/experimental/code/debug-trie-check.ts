@@ -4,7 +4,7 @@
 
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { loadComboTrie, hasWord } from '../../code/trie'
+import { loadComboTrie, hasWord } from '#/code/trie'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const dataDir = resolve(__dirname, 'data')
