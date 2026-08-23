@@ -63,9 +63,14 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import {
   CODA_CLUSTERS,
+  CONSONANTS,
   ONSET_CLUSTERS,
+  VOWELS,
+  areSimilar,
   compareWords,
+  isVowel,
   toShape,
+  vowelsClose,
 } from '#/make/moon/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -128,6 +133,90 @@ const size: Record<string, number> = {
   CCVC: (byShape.get('CCVC') ?? []).length,
   CVCVC: readUnified('5.csv'),
   CVCVCVC: readUnified('7.csv'),
+}
+
+// ─── Distinctness ───────────────────────────────────────
+
+/**
+ * How many of a set of words are far enough apart to be different
+ * words, under the same closeness rule the four letter shapes were
+ * thinned by.
+ *
+ * This matters for the join counts. A joined word `A + B` is too close
+ * to `A' + B'` exactly when `A` is too close to `A'` and `B` is too
+ * close to `B'`, because the two halves never overlap. So the number of
+ * distinct joins is the product of the distinct atom counts, and there
+ * is no need to walk billions of pairs to find it.
+ */
+function* nearWords(word: string): Generator<string> {
+  const options = [...word].map(sound =>
+    isVowel(sound)
+      ? VOWELS.filter(v => vowelsClose(sound, v))
+      : CONSONANTS.filter(c => areSimilar(sound, c)),
+  )
+  const at = new Array(word.length).fill(0)
+  for (;;) {
+    yield options.map((list, i) => list[at[i]]).join('')
+    let i = word.length - 1
+    while (i >= 0) {
+      at[i]++
+      if (at[i] < options[i].length) {
+        break
+      }
+      at[i] = 0
+      i--
+    }
+    if (i < 0) {
+      return
+    }
+  }
+}
+
+function countDistinct(list: Array<string>): number {
+  const kept = new Set<string>()
+  for (const word of [...list].sort(compareWords)) {
+    let clash = false
+    for (const near of nearWords(word)) {
+      if (kept.has(near)) {
+        clash = true
+        break
+      }
+    }
+    if (!clash) {
+      kept.add(word)
+    }
+  }
+  return kept.size
+}
+
+/** Past this many words the walk costs more than the answer is worth. */
+const DISTINCT_LIMIT = 100_000
+
+function readUnifiedWords(name: string): Array<string> {
+  const path = resolve(BASE_DIR, 'unified', name)
+  if (!existsSync(path)) {
+    return []
+  }
+  return readFileSync(path, 'utf-8')
+    .split('\n')
+    .map(l => l.trim())
+    .filter(l => l.length > 0 && l !== 'word')
+}
+
+const wordsOf: Record<string, Array<string>> = {
+  CVC: byShape.get('CVC') ?? [],
+  CVCC: byShape.get('CVCC') ?? [],
+  CCVC: byShape.get('CCVC') ?? [],
+  CVCVC: readUnifiedWords('5.csv'),
+  CVCVCVC: readUnifiedWords('7.csv'),
+}
+
+const distinct: Record<string, number> = {}
+for (const shape of ATOMS) {
+  distinct[shape] =
+    wordsOf[shape].length > DISTINCT_LIMIT
+      ? 0
+      : countDistinct(wordsOf[shape])
 }
 
 // ─── Shape Collisions ───────────────────────────────────
@@ -200,8 +289,8 @@ ambiguous.sort((a, b) => compareWords(a.word, b.word))
 
 rule('ATOMS')
 line('')
-line('| shape     |     count | where it comes from                   |')
-line('| :-------- | --------: | :------------------------------------ |')
+line('| shape     |     count |  distinct | where it comes from                   |')
+line('| :-------- | --------: | --------: | :------------------------------------ |')
 for (const shape of ATOMS) {
   const from =
     shape.length === 3
@@ -209,10 +298,16 @@ for (const shape of ATOMS) {
       : shape.length === 4
         ? 'the rules, then thinned for closeness'
         : `base/unified/${shape.length}.csv, from calculate.ts`
+  const far = distinct[shape] === 0 ? 'not counted' : distinct[shape].toLocaleString()
   line(
-    `| \`${shape}\`${' '.repeat(9 - shape.length)} | ${size[shape].toLocaleString().padStart(9)} | ${from.padEnd(37)} |`,
+    `| \`${shape}\`${' '.repeat(9 - shape.length)} | ${size[shape].toLocaleString().padStart(9)} | ${far.padStart(9)} | ${from.padEnd(37)} |`,
   )
 }
+line('')
+line('  `distinct` is how many are far enough apart to be different')
+line('  words under the same closeness rule the four letter shapes were')
+line('  thinned by. The four letter shapes were already thinned, so')
+line('  their two columns agree. Nothing else was.')
 line('')
 for (const length of [3, 4, 5, 7]) {
   const n = ATOMS.filter(s => s.length === length).reduce(
@@ -293,20 +388,27 @@ if (crossed.length === 0) {
 function joinTable(atoms: Array<string>, title: string): void {
   rule(`HOW MANY JOINS OF EACH, ${title}`)
   line('')
-  line('| join                    | shape             |             count |')
-  line('| :---------------------- | :---------------- | ----------------: |')
+  line('| join                    | shape             |             count |       distinct |')
+  line('| :---------------------- | :---------------- | ----------------: | -------------: |')
 
   let total = 0
+  let far = 0
+  let farKnown = true
   for (const a of atoms) {
     for (const b of atoms) {
       const n = size[a] * size[b]
       total += n
+      const d = distinct[a] * distinct[b]
+      if (distinct[a] === 0 || distinct[b] === 0) {
+        farKnown = false
+      }
+      far += d
       line(
-        `| ${`\`${a}\` + \`${b}\``.padEnd(23)} | ${`\`${a + b}\``.padEnd(17)} | ${n.toLocaleString().padStart(17)} |`,
+        `| ${`\`${a}\` + \`${b}\``.padEnd(23)} | ${`\`${a + b}\``.padEnd(17)} | ${n.toLocaleString().padStart(17)} | ${(d === 0 ? '' : d.toLocaleString()).padStart(14)} |`,
       )
     }
   }
-  line(`| **all** | | **${total.toLocaleString()}** |`)
+  line(`| **all** | | **${total.toLocaleString()}** | ${farKnown ? `**${far.toLocaleString()}**` : ''} |`)
 
   /** Only the `CVCCCVC` seam is reached twice, and only when all three
    * of the atoms that make it are in the set. */

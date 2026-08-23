@@ -562,6 +562,102 @@ Sixteen pairings, fifteen shapes, and the same single collision. Two
 billion words out of forty six thousand atoms, none of them longer than
 ten letters.
 
+### What the counts do not account for
+
+The join counts above are plain products: 1,911 three letter words
+times 1,911 of them is 3,651,921. Nothing in that arithmetic asks
+whether the resulting words are far enough apart to be different words.
+
+They are often not. `batmis` and `batmiz` differ by one voicing pair
+and both fall out of that product.
+
+Counting only the words that survive the closeness rule:
+
+| shape | count | distinct |
+| :---- | ----: | -------: |
+| `CVC` | 1,911 | **312** |
+| `CVCC` | 876 | 876 |
+| `CCVC` | 331 | 331 |
+| `CVCVC` | 43,092 | **5,464** |
+| `CVCVCVC` | 1,935,223 | not counted, too many to walk |
+
+The four letter shapes agree because they were thinned already. Nothing
+else was: the closeness rule was written for four letter words, so the
+three letter set and the generated two syllable set both still hold
+near duplicates.
+
+That carries straight through to the joins, and it does so by simple
+multiplication. A joined word `A + B` is too close to `A' + B'` exactly
+when `A` is too close to `A'` and `B` is too close to `B'`, because the
+two halves never overlap. So the number of distinct joins is the
+product of the distinct atom counts, with no billion pair walk needed.
+
+For the one and two syllable atoms:
+
+| | count | distinct |
+| :--- | ----: | -------: |
+| two atom joins | 2,135,364,100 | **48,762,289** |
+
+**The closeness rule takes about 98% of the join space.** Two billion
+becomes forty nine million.
+
+### The same is true of the atom list
+
+`tune.3.csv` has 949 atoms. Under the closeness rule they are not all
+different words:
+
+| | atoms | mutually distinct | too close to another |
+| :--- | ----: | ----: | ----: |
+| three letters | 678 | 210 | 468 |
+| four letters | 271 | 179 | 92 |
+
+`miq` and `mit` and `men` and `meq` are all within one pair swap of
+something else already on the list. That is a real thing to decide
+about rather than a bug: the closeness rule was only ever applied to
+the four letter shapes, and applying it to the three letter ones would
+take the atom inventory down to under four hundred.
+
+## Consonants In A Row
+
+An atom on its own never holds more than two consonants together, and a
+seam always holds at least two, so the longest run in a joined word is
+always the seam itself: what the first atom ends on plus what the second
+one opens on. Only `CVCC` ends on two, and only `CCVC` opens on two.
+
+All five atoms:
+
+| in a row | pairings | words | what makes it |
+| :------- | -------: | ----: | :------------ |
+| 2 | 16 | 3,923,685,433,814 | neither atom brings a cluster to the seam |
+| 3 | 8 | 2,391,009,719 | one of them does |
+| 4 | 1 | 289,956 | both of them do |
+| **all** | 25 | **3,926,076,733,489** | |
+
+One and two syllable atoms only:
+
+| in a row | pairings | words | what makes it |
+| :------- | -------: | ----: | :------------ |
+| 2 | 9 | 2,079,878,586 | neither atom brings a cluster to the seam |
+| 3 | 6 | 55,195,558 | one of them does |
+| 4 | 1 | 289,956 | both of them do |
+| **all** | 16 | **2,135,364,100** | |
+
+Four in a row happens exactly one way, `CVCC` + `CCVC`, and that shape
+is reached no other way, so it is safe.
+
+**All of the ambiguity sits in the three consonant seams.** The two
+joins that collide, `CVC` + `CCVC` and `CVCC` + `CVC`, both run to
+three. Not every three consonant seam is a problem though: eight
+pairings reach three and only two of them land on the same shape.
+
+So the whole picture is:
+
+| run | safe |
+| :-- | :--- |
+| 2 | always, and it is 99.9% of the language |
+| 3 | mostly, but this is where the two bad seams live |
+| 4 | always, only one pairing reaches it |
+
 ## Where A Word Can Be Cut Two Ways
 
 `CVCCCVC` is the only joined shape a reader can cut in more than one
