@@ -160,6 +160,67 @@ export function isMoonShape(word: string): boolean {
   return shape !== null && SHAPE_SET.has(shape)
 }
 
+// ─── Syllable Rules ─────────────────────────────────────
+
+/**
+ * Rhymes Moon will not say. A close front vowel followed by a liquid
+ * blurs into the liquid, so `bil` and `ber` are not words Moon can
+ * hold apart from `bi` and `be`.
+ */
+export const BAD_RHYME = ['il', 'el', 'ir', 'er']
+
+/** Sounds too weak to close a syllable. They need a vowel after them. */
+export const BAD_CLOSE = ['y', 'h', 'w']
+
+/** Sounds that cannot open a syllable. */
+export const BAD_OPEN = ['q']
+
+export type SyllableRule = {
+  name: string
+  note: string
+  test: (syllable: string) => boolean
+}
+
+export const SYLLABLE_RULES: Array<SyllableRule> = [
+  {
+    name: 'no-weak-close',
+    note: 'a syllable never ends in y, h or w',
+    test: syllable => !BAD_CLOSE.includes(syllable[syllable.length - 1]),
+  },
+  {
+    name: 'no-back-open',
+    note: 'a syllable never starts with q',
+    test: syllable => !BAD_OPEN.includes(syllable[0]),
+  },
+  {
+    name: 'no-blurred-rhyme',
+    note: 'a syllable never ends in il, el, ir or er',
+    test: syllable => !BAD_RHYME.includes(syllable.slice(-2)),
+  },
+]
+
+export function testSyllable(syllable: string): {
+  ok: boolean
+  broke: Array<string>
+} {
+  const broke = SYLLABLE_RULES.filter(r => !r.test(syllable)).map(r => r.name)
+  return { ok: broke.length === 0, broke }
+}
+
+/** Runs the syllable rules over every syllable of a word. */
+export function testSounding(word: string): {
+  ok: boolean
+  broke: Array<string>
+} {
+  const broke = new Set<string>()
+  for (const syllable of toSyllables(word)) {
+    for (const name of testSyllable(syllable).broke) {
+      broke.add(name)
+    }
+  }
+  return { ok: broke.size === 0, broke: [...broke] }
+}
+
 /** Where a word breaks into syllables, with the stress on the first. */
 export function toSyllables(word: string): Array<string> {
   const shape = toShape(word)

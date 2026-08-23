@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const textDir = path.resolve(__dirname, '..', 'text')
+const textDir = path.resolve(__dirname, '..', '..', '..', 'text')
 
 const termsRaw = fs
   .readFileSync(path.join(textDir, '3-terms.csv'), 'utf-8')

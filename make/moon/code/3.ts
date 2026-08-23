@@ -75,7 +75,7 @@ function tooClose(a: string, b: string): boolean {
   return false
 }
 
-const textDir = path.resolve(__dirname, '..', 'text')
+const textDir = path.resolve(__dirname, '..', '..', '..', 'text')
 const initialRaw = fs
   .readFileSync(path.join(textDir, '3.initial.csv'), 'utf-8')
   .split('\n')

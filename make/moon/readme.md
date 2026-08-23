@@ -404,17 +404,77 @@ operator, from a feature word used as a comment. The bare root
 modifier is the feature form worn down one step further, because a
 modifier is never stressed.
 
+## Atoms
+
+Six thousand terms is not six thousand roots. `waterfall` does not need
+a root when `water` and `fall` already have one. What the language
+needs is a few hundred semantic primitives, every one of them short,
+and everything else built out of two or three of those.
+
+`base/atom-draft.csv` is the hand picked inventory: **839 concepts
+across eighteen domains**, most already matched to a term.
+`code/atom.ts` finishes the job and writes `tune.3.csv` at the root of
+the package.
+
+The rule is that an atom is short. A root worth having is worth three
+letters, and four at the outside, because every compound built from it
+pays its length twice over.
+
+| state | meaning | count |
+| :--- | :--- | ---: |
+| `held` | the draft already gave it a 3 or 4 letter term | 486 |
+| `shortened` | it had a longer term, swapped for the closest short one | 267 |
+| `filled` | it had no term, one was assigned | 86 |
+
+**651 atoms of three letters and 188 of four.** Every one comes from
+`tune.tsv`, so the atom list is a choice about which of Moon's existing
+short words carry the weight rather than a new vocabulary.
+
+A shortened concept takes the free short term that sounds most like the
+long one it gave up, so `purpoz` becomes `buz` and `morniq` becomes
+`moq`.
+
+A filled concept has nothing to sound like, so it takes a term close to
+the concept it sits beside in the list. The draft is ordered by meaning
+rather than alphabetically, so the neighbour is almost always the right
+anchor, and pairs come out sounding like pairs.
+
+```text
+sil  more      ->   sal  less
+dim  you       ->   dam  he
+vax  it        ->   vex  she
+farm far       ->   vim  near
+xut  shout     ->   xud  sing
+dolt doubt     ->   det  believe
+sadj beside    ->   saj  above,  six below
+```
+
+Without that anchoring every gap took whatever was alphabetically
+first, which put twenty five unrelated concepts on `b-`.
+
+347 of the short terms carried a different meaning before. That meaning
+is not lost, it stops being atomic and gets built from other roots. The
+run lists every one.
+
 ## Files
 
 | file | what it is |
 | :--- | :--------- |
 | `code/sound.ts` | the inventory, the eight shapes, the sort order |
 | `code/check.ts` | measures `tune.csv` against those shapes, writes `base/` |
+| `code/atom.ts` | builds the atomic root list, writes `tune.3.csv` |
+| `code/align.ts` | lays `tune.csv` out in aligned columns as `tune.tsv` |
+| `code/slot.ts` | splits the lexicon by CV shape into `note/moon/base/*.csv` |
+| `code/cluster.ts` | maps every consonant cluster that can meet at a word junction |
+| `code/{3,4,5,7}.ts` | generate the candidate word space for each length |
+| `code/5.CCVCC.ts` | the same for the `CCVCC` shape |
+| `code/prune*.ts` | the curation passes over `text/` |
 | `sounds.md` | what each of the twenty seven sounds means |
 | `words.md` | the full concept space |
 
 ```bash
 pnpm --dir deck/tune exec tsx make/moon/code/check.ts
+pnpm --dir deck/tune exec tsx make/moon/code/atom.ts
 ```
 
 See `../readme.md` for the three forms together and the order to run

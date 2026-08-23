@@ -27,7 +27,7 @@ function countVowels(word: string): number {
   return word.split('').filter(ch => VOWELS.has(ch)).length
 }
 
-const csvPath = path.resolve(__dirname, '..', 'tune.csv')
+const csvPath = path.resolve(__dirname, '..', '..', '..', 'tune.csv')
 const raw = fs.readFileSync(csvPath, 'utf-8')
 const records: Array<{ term: string; meaning: string }> = parse(raw, {
   columns: true,
@@ -113,11 +113,11 @@ function sortWords(words: Record<string, string>): Record<string, string> {
   return sorted
 }
 
-const outPath = path.resolve(__dirname, '..', 'view', 'word.js')
+const outPath = path.resolve(__dirname, '..', '..', '..', 'view', 'word.js')
 const json = JSON.stringify(ordered, null, 2)
 fs.writeFileSync(outPath, `const LIST = ${json}\n`)
 
-const noteDir = path.resolve(__dirname, '..', 'note')
+const noteDir = path.resolve(__dirname, '..', '..', '..', 'note', 'moon', 'base')
 fs.mkdirSync(noteDir, { recursive: true })
 for (const [seq, words] of Object.entries(ordered)) {
   const rows = ['term,meaning']

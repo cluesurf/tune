@@ -113,7 +113,7 @@ function validWord(word: string): boolean {
   return true
 }
 
-const textDir = path.resolve(__dirname, '..', 'text')
+const textDir = path.resolve(__dirname, '..', '..', '..', 'text')
 const initialRaw = fs
   .readFileSync(path.join(textDir, '4.initial.csv'), 'utf-8')
   .split('\n')

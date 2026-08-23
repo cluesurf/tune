@@ -55,14 +55,14 @@ import {
   sonority as getSonority,
   type Place,
   type Manner,
-} from '../code/phonology'
+} from '#/code/phonology'
 
 import { writeFileSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const TEXT_DIR = resolve(__dirname, '../text')
+const TEXT_DIR = resolve(__dirname, '../../../text')
 
 const consonants = CONSONANT_ORDER
 const vowels = 'ieaou'.split('')

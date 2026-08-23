@@ -63,7 +63,6 @@ math       	yul
            	men       	main
            	mek       	make
            	mam       	mother
-           	maf       	male/man
 color      	maj       	magenta
            	moq       	about/encompass
 number     	mop       	twelve
@@ -191,7 +190,6 @@ body       	tad       	tail
            	tac       	set (get)
            	tar       	tire (sleep)
 science    	tom       	atom
-           	tod       	term
            	tos       	task
            	tup       	impure
 code       	tuv       	input (computing)
@@ -289,7 +287,6 @@ code       	sor       	file (computer)
            	suv       	observe
            	sur       	assert
            	sur       	out
-           	fim       	female/woman
            	fid       	next
            	fil       	feel
 number     	fet       	eight
@@ -342,14 +339,11 @@ color      	zet       	olive (color)
            	zox       	sense
            	zuk       	where
            	zus       	experience
-           	zur       	fall
            	jin       	paradise
            	jit       	digit
            	jat       	throw
            	jaq       	count
            	jas       	just (close-focus)
-           	jul       	flow
-color      	xid       	gray
            	xip       	imagine
 code       	xik       	computation
            	xed       	should
@@ -382,11 +376,9 @@ code       	sox       	string (computing)
 code       	lup       	loop
            	luk       	look
            	luj       	logic
-           	rin       	run
            	rid       	read
            	xis       	express
            	riv       	to/arrive
-           	riz       	rise
            	ral       	relation
 code       	roc       	algorithm
            	ref       	success

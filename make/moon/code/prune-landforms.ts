@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const textDir = path.resolve(__dirname, '..', 'text')
+const textDir = path.resolve(__dirname, '..', '..', '..', 'text')
 
 const landforms = fs
   .readFileSync(path.join(textDir, 'head-landforms.csv'), 'utf-8')

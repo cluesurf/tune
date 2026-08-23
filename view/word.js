@@ -2311,7 +2311,7 @@ const LIST = {
     "kubox": "conquer",
     "kupun": "coal",
     "kutun": "cottonwood (tree)",
-    "kukan": "cock (action, gun)",
+    "kukan": "cock (action",
     "kukat": "infamy",
     "kusol": "console (help)",
     "kuzam": "lavender (vegetable)",

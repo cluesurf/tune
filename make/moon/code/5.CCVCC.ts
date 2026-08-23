@@ -150,7 +150,7 @@ function validWord(word: string): boolean {
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const textDir = path.resolve(__dirname, '..', 'text')
+const textDir = path.resolve(__dirname, '..', '..', '..', 'text')
 
 const initialPath = path.join(textDir, '5.ccvcc.initial.csv')
 const initialRaw = fs.existsSync(initialPath)
