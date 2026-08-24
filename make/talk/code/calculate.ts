@@ -20,7 +20,7 @@
  * Writes `../base/unified/{3,5,7}.csv` and `../base/combo-{1,2,3,4}/`.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/calculate.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/calculate.ts
  */
 
 import { writeFileSync, mkdirSync } from 'fs'

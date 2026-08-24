@@ -13,7 +13,7 @@
  * nothing is lost and the gap stays visible.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/check.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/check.ts
  */
 
 import { readFileSync, writeFileSync, mkdirSync } from 'fs'
@@ -28,7 +28,7 @@ import {
   countSyllables,
   isMoonShape,
   toShape,
-} from '#/make/moon/code/sound'
+} from '#/make/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

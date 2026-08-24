@@ -1,13 +1,14 @@
 ```text
-tune rock has seventeen sounds
+tune tree has nine sounds
 
-three vowels, unchanged from tree
-fourteen consonants, where tree had five
+they are the nine a body makes with nothing but itself
 
-nothing new was invented
+three vowels
+two hums
+three hits
+one breath
 
-the three hits of tree were pulled apart
-four ways each
+that is the whole language
 ```
 
 ## The Vowels
@@ -17,190 +18,240 @@ i
 a
 u
 
-exactly what tree had
+three heights
 
-i = high, out, bright
-a = level, surface, warm
-u = low, inner, dark
+i = high, out, bright, hot, sun
+a = level, surface, warm, earth
+u = low, inner, dark, cold, moon
+
+this is the only axis tree has
+
+i -> a -> u
+
+above -> present -> within
+
+a vowel is not a thing
+it is a level
 ```
 
-Rock did not touch the vowels. Between Tree and Rock everything that
-happened, happened to the consonants. It was Moon, later, that split
-`i` down to `e` and `u` down to `o`.
+Three vowels sit as far apart as three vowels can. That is why the
+system is stable and why a child can learn it. Rock kept all three
+unchanged. It was Moon, much later, that split `i` down to `e` and `u`
+down to `o`, and gained precision at the cost of that distance.
 
-That is worth holding on to. Rock is a language with three vowels and
-fourteen consonants, which is a lopsided shape. It buys clarity in the
-consonants at the cost of having only three levels to sit them on, and
-that is exactly why Moon went and found two more.
-
-## The Two That Held
+## The Hum
 
 ```text
 m
 n
 
-the hum
+the two sounds you can hold with your mouth closed
 
 m = good
 n = bad
+
+m = toward, warm, nourishing, mother, home
+n = away, cold, refusing, alone, edge
+
+this is polarity itself
+
+it is the first thing an animal needs to say
+and it is the only pair in tree that is easy to confuse
+
+tree does not avoid that
+tree uses it
+
+mata and nata are meant to sit that close
+because good and bad sit that close
 ```
 
-The two nasals came through unchanged, and they are the only two
-consonants in Rock without a voicing partner. Everything else comes in
-a pair.
+Both hums came through Rock unchanged. It was Moon that grew them: `m`
+opened into `w`, and `n` went back into `q`. The two of them are the
+only Tree consonants that did not split on the way into Rock.
 
-That makes them the odd ones out in a system that is otherwise built
-entirely out of pairs, and it is why they end up in 39 atoms each while
-every other consonant gets 36.
-
-## The Twelve That Grew
+## The Beat
 
 ```text
-tree      rock
+p
+t
+k
 
-p    ->   p  b  f  v
-t    ->   t  d  s  z
-k    ->   k  g  x  j
+the three places you can stop the air and let it go
+
+p = lips, the front, the near
+t = tongue, the middle, the step
+k = throat, the back, the far
+
+these are the drum
+
+p is the low hit
+t is the tick
+k is the crack
+
+k is a rock chipped on a rock
+the first tool
+the shape bouncing off a flat surface
+
+you can beat these three with your mouth alone
+and tree is chanted, so that is what it is built on
+
+p = touch
+t = step
+k = strike
 ```
 
-Two things happened to each of the three hits.
-
-**Voicing.** The hum leaked into the stop.
+Voicing did not exist yet. Frication did not exist either. Both arrived
+between Tree and Rock, and they arrived on these three sounds and
+nowhere else. Each beat fanned out four ways:
 
 ```text
-p -> b
-t -> d
-k -> g
+p  ->  p  b  f  v
+t  ->  t  d  s  z
+k  ->  k  g  x  j
 ```
 
-**Frication.** The stop stopped closing all the way.
+Three sounds became twelve. Every obstruent in Rock, and so every
+obstruent in Moon, is one of these three hits softened.
+
+## The Breath
 
 ```text
-p -> f
-t -> s
-k -> x
+h
+
+air with nothing in the way
+
+h = breath
+h = the life in the body
+h = the end of a word
+
+h is grammar, not vocabulary
+
+it never appears in a root
+
+it carries the role and nothing else
+
+ha = this is a thing
+hi = this is happening
+hu = this is what it is like
+
+so in a chanted stream with no pauses
+every h is the end of a word
+
+that is what lets tree be sung
+and still be understood
 ```
 
-And then both at once.
+Because the breath was grammar, it died when the grammar changed. Rock
+kept the three roles as bare vowels, `-a` and `-i` and `-u`, and the
+`h` went with the syllable that carried it. Rock has no `h` at all.
+
+Moon has an `h`, but it is not this one. Moon's `h` is a weakened `k`,
+which arrived long after Tree's breath was gone. The two are separate
+events that landed on the same letter.
+
+## The Whole Body
 
 ```text
-p -> v
-t -> z
-k -> j
+vowels    i a u        the head, what level a thing is at
+hum       m n          the chest, whether it is good or bad
+beat      p t k        the hands, front and middle and far
+breath    h            the lungs, the edge of the word
+
+a word is
+
+  a level
+  a polarity
+  a strike
+  and the breath around it
 ```
 
-Three sounds became twelve. Every obstruent in Rock is one of Tree's
-three drum hits, softened one way or both.
-
-## The Grid
+## Roots
 
 ```text
-             lips     tongue    throat
+C V C V
 
-stop         p b      t d       k g
-rub          f v      s z       x j
-nasal        m        n
-```
+first hit
+first level
+second hit
+second level
 
-Read across and you get place. Read down and you get manner. Read the
-pairs and you get voice. Rock is that grid and nothing else, which is
-what makes it the generated Tune: there is no sound in it that has to
-be learned separately.
+mata
 
-Compare Moon, which fills in `q`, `h`, `c`, `C`, `w`, `l`, `r` and `y`
-around the edges of the same grid, and stops being something you can
-derive.
-
-## The Breath That Is Not There
-
-```text
-tree had h
-rock has none
-moon has one again
-
-they are not the same sound
-```
-
-Tree's `h` carried the three roles. When the role syllable `hV` wore
-down to a bare vowel, the `h` went with it, and Rock has no `h`
-anywhere.
-
-Moon's `h` is a weakened `k`, which arrived long after Tree's breath
-was gone.
-
-So the letter appears, disappears and appears again, and the two
-appearances have nothing to do with each other.
-
-## Atoms
-
-```text
-C V C
-
-opening
-level
-closing
-
-bat
-
-b = a voiced lip stop
+m = good
 a = level
-t = a tongue stop
+t = step
+a = level
 
-mis
+mata = a good level step
+ground
+floor
+the thing you stand on
+
+nata
+
+n = bad
+a = level
+t = step
+
+nata = a bad step
+stumble
+fall
+harm
+
+kata
+
+k = strike
+a = level
+t = step
+
+kata = a struck step
+tool
+work
+making
+
+mika
 
 m = good
 i = high
-s = a tongue rub
+k = strike
+
+mika = a good high strike
+light
+spark
+sun on water
+
+munu
+
+m = good
+u = low
+n = bad
+
+munu = good going to bad, down low
+loss
+grief
+the deep ache
 ```
 
-Two rules and nothing else:
+The meanings above are not fixed. They are what the sounds want. Tree
+is small enough that a root can only mean so many things, and the
+lexicon is not chosen by hand: it is worked out by carrying Moon back
+through Rock. See `code/fold.ts`.
+
+## Why Nine
 
 ```text
-a root never opens and closes on the same consonant
-a root never opens and closes on a voicing pair
-```
+nine is what a body has
 
-Both are about the same worry. A single vowel is a short distance, and
-`bab` and `bap` are not far enough apart to be different words.
+two hums, because there are two directions a feeling goes
+three hits, because there are three places to stop the air
+one breath, because there is one set of lungs
+three levels, because there is up and level and down
 
-## Joins
-
-```text
-CVC + CVC -> CVCCVC
-
-bat + mis -> batmis
-```
-
-Two consonants end up touching, and four rules decide whether they can.
-
-```text
-not the same
-not a voicing pair
-not two rubs
-voicing agrees
-```
-
-98 of the 196 possible clusters survive that.
-
-The last rule is the one to watch. It is the strictest thing in Rock
-and it is the reason a quarter of Moon has to be reconstructed rather
-than simply read backwards. See `readme.md` for what the measurement
-says.
-
-## Why Seventeen
-
-```text
-three vowels, because tree had three and rock did not move them
-
-two nasals, because there are two directions a feeling goes
-
-twelve obstruents, because three places
-                   times stop or rub
-                   times voiced or not
-
-3 x 2 x 2 = 12
+nothing here was chosen
+it is what is left when you take away everything that needs practice
 
 nine became seventeen
-by pulling three sounds apart
-along two axes that did not exist before
+seventeen became twenty seven
+
+the same body, told apart finer each time
 ```

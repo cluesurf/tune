@@ -27,7 +27,7 @@
  * Writes `tune.3.csv` at the root of the package.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/atom.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/atom.ts
  */
 
 import { readFileSync, writeFileSync } from 'fs'
@@ -37,7 +37,7 @@ import {
   consonantSimilarityAt,
   vowelSimilarity,
 } from '#/code/similarity'
-import { isVowel, testSounding } from '#/make/moon/code/sound'
+import { isVowel, testSounding } from '#/make/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

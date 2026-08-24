@@ -1,15 +1,20 @@
 /**
  * Word generation for Tune Rock.
  *
- * Rock has 17 sounds and one atomic shape, CVC. Longer words are made
- * by joining atoms, which leaves two consonants touching:
+ * Rock has 9 sounds and one syllable shape, CV. A root is one, two or
+ * three CV syllables built from the five lexical consonants. A surface
+ * word is a root with an optional role syllable on the end.
  *
- *   CVC + CVC  ->  CVCCVC
+ *   root      ma      mata      matanu
+ *   entity    maha    mataha    matanuha
+ *   action    mahi    matahi    matanuhi
+ *   feature   mahu    matahu    matanuhu
  *
- * Rock is the algorithmic Tune. Two rules decide the atoms and four
- * decide the joins, and everything that survives them is in. There is
- * no cycling, no selection and no hand tuning, so no word is missing
- * for a reason nobody can state.
+ * There is no compounding. Rock says one thing per word.
+ *
+ * Rock is small enough that the whole legal space is kept. Talk has to
+ * be hand tuned, but Rock does not: the rules in `sound.ts` are exact,
+ * so the lexicon is everything that survives them.
  *
  * Usage:
  *   pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts
@@ -19,37 +24,110 @@ import { writeFileSync, mkdirSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import {
-  ALVEOLAR_RUB,
+  ALL_SYLLABLES,
+  BEAT,
+  BREATH,
   CONSONANTS,
-  JOIN_RULES,
-  LABIAL_RUB,
-  NASALS,
-  PALATAL_RUB,
+  HUM,
   ROLES,
+  ROOT_CONSONANTS,
   ROOT_RULES,
+  ROOT_SYLLABLES,
   SOUNDS,
-  VOICED_STOPS,
-  VOICELESS_STOPS,
-  VOICING_PAIRS,
   VOWELS,
-  canJoin,
   checkCorrespondence,
   compareWords,
-  testJoin,
+  isIntensive,
+  toSyllables,
 } from '#/make/rock/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE_DIR = resolve(__dirname, '../base')
 
-function line(text: string) {
-  console.log(text)
+const MAX_SYLLABLES = 3
+
+// ─── Generation ─────────────────────────────────────────
+
+type RootReport = {
+  syllables: number
+  raw: number
+  clear: number
+  intensive: number
+  cost: Record<string, number>
+  words: Array<string>
 }
 
-function rule(title: string) {
-  line(`\n${'='.repeat(60)}`)
-  line(title)
-  line('='.repeat(60))
+/** Every CV string of the given syllable count, before any rule runs. */
+function generateRaw(syllables: number): Array<string> {
+  let words = [...ROOT_SYLLABLES]
+  for (let i = 1; i < syllables; i++) {
+    const next: Array<string> = []
+    for (const word of words) {
+      for (const syllable of ROOT_SYLLABLES) {
+        next.push(word + syllable)
+      }
+    }
+    words = next
+  }
+  return words
 }
+
+/** Run the rules, keeping a count of what each one rejected. */
+function generateRoots(syllables: number): RootReport {
+  const raw = generateRaw(syllables)
+  const cost: Record<string, number> = {}
+  for (const rule of ROOT_RULES) {
+    cost[rule.name] = 0
+  }
+
+  const clear: Array<string> = []
+  let intensive = 0
+
+  for (const word of raw) {
+    const parts = toSyllables(word)
+    /** Each rejection is charged to the first rule that catches it, so
+     * the costs add up to exactly raw minus clear. */
+    const broke = ROOT_RULES.find(rule => !rule.test(parts))
+    if (broke) {
+      cost[broke.name]++
+    } else {
+      clear.push(word)
+    }
+    if (isIntensive(word)) {
+      intensive++
+    }
+  }
+
+  clear.sort(compareWords)
+
+  return {
+    syllables,
+    raw: raw.length,
+    clear: clear.length,
+    intensive,
+    cost,
+    words: clear,
+  }
+}
+
+/** A root plus each of its four surface forms. */
+function generateForms(roots: Array<string>): {
+  bare: Array<string>
+  byRole: Record<string, Array<string>>
+  all: Array<string>
+} {
+  const byRole: Record<string, Array<string>> = {}
+  const all: Array<string> = [...roots]
+  for (const role of ROLES) {
+    const forms = roots.map(root => root + role.syllable)
+    byRole[role.name] = forms
+    all.push(...forms)
+  }
+  all.sort(compareWords)
+  return { bare: [...roots], byRole, all }
+}
+
+// ─── Reporting ──────────────────────────────────────────
 
 function countBy(
   words: Array<string>,
@@ -70,122 +148,38 @@ function showCounts(counts: Record<string, number>): string {
     .join(' ')
 }
 
-// ─── Atoms ──────────────────────────────────────────────
-
-const cost: Record<string, number> = {}
-for (const item of ROOT_RULES) {
-  cost[item.name] = 0
+function line(text: string) {
+  console.log(text)
 }
 
-const atoms: Array<string> = []
-let rawCount = 0
-
-for (const open of CONSONANTS) {
-  for (const vowel of VOWELS) {
-    for (const close of CONSONANTS) {
-      rawCount++
-      /** Each rejection is charged to the first rule that catches it,
-       * so the costs add up to exactly raw minus clear. */
-      const broke = ROOT_RULES.find(r => !r.test(open, vowel, close))
-      if (broke) {
-        cost[broke.name]++
-      } else {
-        atoms.push(open + vowel + close)
-      }
-    }
-  }
-}
-
-atoms.sort(compareWords)
-
-// ─── Joins ──────────────────────────────────────────────
-
-/**
- * Which consonant can follow which across a join. Worked out once from
- * the rules, then used as a table, because the join is checked several
- * hundred thousand times.
- */
-const joinTable = new Map<string, boolean>()
-for (const last of CONSONANTS) {
-  for (const first of CONSONANTS) {
-    joinTable.set(last + first, testJoin(last, first))
-  }
-}
-
-const joinCost: Record<string, number> = {}
-for (const item of JOIN_RULES) {
-  joinCost[item.name] = 0
-}
-for (const last of CONSONANTS) {
-  for (const first of CONSONANTS) {
-    const broke = JOIN_RULES.find(r => !r.test(last, first))
-    if (broke) {
-      joinCost[broke.name]++
-    }
-  }
-}
-
-const legalClusters = [...joinTable.entries()].filter(([, ok]) => ok).length
-
-/** Atoms grouped by their closing consonant, and by their opening one,
- * so a join does not have to scan the whole list. */
-const byClose = new Map<string, Array<string>>()
-const byOpen = new Map<string, Array<string>>()
-for (const atom of atoms) {
-  const close = atom[2]
-  const open = atom[0]
-  byClose.set(close, [...(byClose.get(close) ?? []), atom])
-  byOpen.set(open, [...(byOpen.get(open) ?? []), atom])
-}
-
-let joinCount = 0
-for (const [last, firsts] of byClose) {
-  for (const first of CONSONANTS) {
-    if (!joinTable.get(last + first)) {
-      continue
-    }
-    joinCount += firsts.length * (byOpen.get(first) ?? []).length
-  }
-}
-
-/** An atom joined to itself is still two words, so nothing is taken
- * out for that. What is taken out is a word joined to itself. */
-let selfJoins = 0
-for (const atom of atoms) {
-  if (canJoin(atom, atom)) {
-    selfJoins++
-  }
+function rule(title: string) {
+  line(`\n${'='.repeat(60)}`)
+  line(title)
+  line('='.repeat(60))
 }
 
 // ─── Run ────────────────────────────────────────────────
 
 rule('SOUNDS')
-line(`vowels:           ${VOWELS.join(' ')}`)
-line(`nasals:           ${NASALS.join(' ')}`)
-line(`voiced stops:     ${VOICED_STOPS.join(' ')}`)
-line(`voiceless stops:  ${VOICELESS_STOPS.join(' ')}`)
-line(`alveolar rub:     ${ALVEOLAR_RUB.join(' ')}`)
-line(`labial rub:       ${LABIAL_RUB.join(' ')}`)
-line(`palatal rub:      ${PALATAL_RUB.join(' ')}`)
-line(`total:            ${SOUNDS.length} sounds, ${CONSONANTS.length} consonants`)
-line(`voicing pairs:    ${VOICING_PAIRS.map(p => p.join('/')).join(' ')}`)
-line(`roles:            ${ROLES.map(r => `-${r.vowel} ${r.name}`).join(', ')}`)
+line(`vowels:     ${VOWELS.join(' ')}`)
+line(`hum:        ${HUM.join(' ')}`)
+line(`beat:       ${BEAT.join(' ')}`)
+line(`breath:     ${BREATH}`)
+line(`total:      ${SOUNDS.length} sounds, ${CONSONANTS.length} consonants`)
+line(`lexical:    ${ROOT_CONSONANTS.length} consonants, ${ROOT_SYLLABLES.length} syllables`)
+line(`grammar:    ${ROLES.map(r => r.syllable).join(' ')}`)
+line(`all:        ${ALL_SYLLABLES.length} syllables`)
 
 rule('RULES')
-line('\natoms:')
 for (const item of ROOT_RULES) {
-  line(`  ${item.name.padEnd(18)} ${item.note}`)
-}
-line('\njoins:')
-for (const item of JOIN_RULES) {
-  line(`  ${item.name.padEnd(18)} ${item.note}`)
+  line(`  ${item.name.padEnd(24)} ${item.note}`)
 }
 
-rule('CORRESPONDENCE WITH TUNE MOON')
+rule('CORRESPONDENCE WITH TUNE TALK')
 const check = checkCorrespondence()
 if (check.ok) {
-  line('every Moon sound has exactly one Rock ancestor')
-  line('5 vowels and 22 consonants accounted for')
+  line('every Talk sound has exactly one Rock ancestor')
+  line('5 vowels and 22 consonants accounted for, the breath held')
 } else {
   for (const error of check.errors) {
     line(`  BROKEN: ${error}`)
@@ -193,79 +187,119 @@ if (check.ok) {
   process.exitCode = 1
 }
 
-rule('ATOMS')
-line('')
-line('| pattern |  raw | clear |')
-line('| :------ | ---: | ----: |')
-line(`| \`CVC\`   | ${String(rawCount).padStart(4)} | ${String(atoms.length).padStart(5)} |`)
-line('\nEach rejection is charged to the first rule that catches it.\n')
-for (const item of ROOT_RULES) {
-  line(`  ${item.name.padEnd(18)} ${String(cost[item.name]).padStart(4)}`)
+const reports: Array<RootReport> = []
+for (let n = 1; n <= MAX_SYLLABLES; n++) {
+  reports.push(generateRoots(n))
 }
 
-line(`\nopening sound:  ${showCounts(countBy(atoms, w => w[0]))}`)
-line(`vowel:          ${showCounts(countBy(atoms, w => w[1]))}`)
-line(`closing sound:  ${showCounts(countBy(atoms, w => w[2]))}`)
-
-rule('JOINS')
+rule('ROOTS')
 line('')
-line(`  ${CONSONANTS.length * CONSONANTS.length} consonant pairs could meet at a join`)
-line(`  ${legalClusters} of them can be said`)
-line('\nEach rejection is charged to the first rule that catches it.\n')
-for (const item of JOIN_RULES) {
-  line(`  ${item.name.padEnd(18)} ${String(joinCost[item.name]).padStart(4)}`)
+line('| syllables | letters | pattern    |   raw |  clear | intensive |')
+line('| :-------- | :------ | :--------- | ----: | -----: | --------: |')
+for (const report of reports) {
+  const pattern = `\`${'CV'.repeat(report.syllables)}\``
+  line(
+    `| ${String(report.syllables).padEnd(9)} | ${String(report.syllables * 2).padEnd(7)} | ${pattern.padEnd(10)} | ` +
+      `${report.raw.toLocaleString().padStart(5)} | ${report.clear.toLocaleString().padStart(6)} | ${String(report.intensive).padStart(9)} |`,
+  )
 }
-line('')
-line(`  ${atoms.length.toLocaleString()} atoms`)
-line(`  ${joinCount.toLocaleString()} ordered joins, so ${joinCount.toLocaleString()} CVCCVC words`)
-line(`  ${selfJoins.toLocaleString()} atoms can join to themselves`)
+const rootTotal = reports.reduce((sum, r) => sum + r.clear, 0)
+line(`| | | **total** | | **${rootTotal.toLocaleString()}** | |`)
+
+rule('WHAT EACH RULE COSTS')
+line('\nEach rejection is charged to the first rule that catches it.\n')
+for (const report of reports) {
+  line(`  ${report.syllables} syllable, ${report.raw - report.clear} dropped of ${report.raw}`)
+  for (const item of ROOT_RULES) {
+    line(`    ${item.name.padEnd(26)} ${String(report.cost[item.name]).padStart(5)}`)
+  }
+}
+
+mkdirSync(resolve(BASE_DIR, 'root'), { recursive: true })
+mkdirSync(resolve(BASE_DIR, 'word'), { recursive: true })
 
 rule('WORDS')
 line('')
-line('| syllables | pattern    |     count |')
-line('| :-------- | :--------- | --------: |')
-line(`| 1         | \`CVC\`      | ${atoms.length.toLocaleString().padStart(9)} |`)
-line(`| 2         | \`CVCCVC\`   | ${joinCount.toLocaleString().padStart(9)} |`)
-line(`|           | **total**  | **${(atoms.length + joinCount).toLocaleString()}** |`)
+line('| root syllables | bare |  ha |  hi |  hu |    all |')
+line('| :------------- | ---: | --: | --: | --: | -----: |')
+
+let wordTotal = 0
+const byLength = new Map<number, Array<string>>()
+
+for (const report of reports) {
+  const forms = generateForms(report.words)
+  wordTotal += forms.all.length
+  line(
+    `| ${String(report.syllables).padEnd(14)} | ${String(forms.bare.length).padStart(4)} | ` +
+      ROLES.map(r => String(forms.byRole[r.name].length).padStart(3)).join(' | ') +
+      ` | ${forms.all.length.toLocaleString().padStart(6)} |`,
+  )
+
+  writeFileSync(
+    resolve(BASE_DIR, 'root', `${report.syllables * 2}.csv`),
+    'word\n' + report.words.join('\n') + '\n',
+  )
+
+  /** Word files go by how long the word actually is, so a bare three
+   * syllable root and a two syllable root wearing a role syllable land
+   * in the same file. That is the file you want when looking for words
+   * of a given number of beats. */
+  for (const word of forms.all) {
+    const bucket = byLength.get(word.length) ?? []
+    bucket.push(word)
+    byLength.set(word.length, bucket)
+  }
+}
+line(`| | | | | | **${wordTotal.toLocaleString()}** |`)
+
+for (const [length, words] of byLength) {
+  words.sort(compareWords)
+  writeFileSync(
+    resolve(BASE_DIR, 'word', `${length}.csv`),
+    'word\n' + words.join('\n') + '\n',
+  )
+}
+line(`\nwrote base/root/*.csv by root length and base/word/*.csv by word length`)
+
+rule('SHAPE OF THE LEXICON')
+const twoSyllable = reports[1].words
+line(`\nfirst sound across two syllable roots:`)
+line(`  ${showCounts(countBy(twoSyllable, w => w[0]))}`)
+line(`first vowel across two syllable roots:`)
+line(`  ${showCounts(countBy(twoSyllable, w => w[1]))}`)
+line(`second sound across two syllable roots:`)
+line(`  ${showCounts(countBy(twoSyllable, w => w[2]))}`)
+
+rule('BEATS')
 line('')
-line('Each of those takes a role vowel on the end, so a root of `bat`')
-line('gives `bata`, `bati` and `batu`.')
-
-mkdirSync(resolve(BASE_DIR, 'root'), { recursive: true })
-writeFileSync(
-  resolve(BASE_DIR, 'root', '3.csv'),
-  'word\n' + atoms.join('\n') + '\n',
-)
-line(`\nwrote base/root/3.csv`)
-
-/** The join list runs to hundreds of thousands of lines, so it is
- * written out only when it is asked for. */
-if (process.argv.includes('--joins')) {
-  const joined: Array<string> = []
-  for (const a of atoms) {
-    for (const b of atoms) {
-      if (canJoin(a, b)) {
-        joined.push(a + b)
-      }
+line('Tree is chanted, so what matters is how many beats a word runs to.')
+line('A bare root of n syllables is n beats. The role syllable adds one.')
+line('')
+line('| beats | shapes            |  count |')
+line('| :---- | :---------------- | -----: |')
+for (const length of [...byLength.keys()].sort((a, b) => a - b)) {
+  const beats = length / 2
+  const shapes: Array<string> = []
+  for (const report of reports) {
+    if (report.syllables === beats) {
+      shapes.push('CV'.repeat(beats))
+    }
+    if (report.syllables === beats - 1) {
+      shapes.push(`${'CV'.repeat(beats - 1)}+hV`)
     }
   }
-  joined.sort(compareWords)
-  mkdirSync(resolve(BASE_DIR, 'join'), { recursive: true })
-  writeFileSync(
-    resolve(BASE_DIR, 'join', '6.csv'),
-    'word\n' + joined.join('\n') + '\n',
+  line(
+    `| ${String(beats).padEnd(5)} | ${shapes.join(', ').padEnd(17)} | ${byLength.get(length)!.length.toLocaleString().padStart(6)} |`,
   )
-  line(`wrote base/join/6.csv, ${joined.length.toLocaleString()} words`)
-} else {
-  line(`pass --joins to write base/join/6.csv as well`)
 }
 
 rule('SAMPLE')
-line(`\natoms (first 30 of ${atoms.length}):`)
-line(`  ${atoms.slice(0, 30).join(' ')}`)
-line(`\nfull sets:`)
-for (const atom of atoms.slice(0, 6)) {
-  line(`  ${atom.padEnd(6)} ${ROLES.map(r => atom + r.vowel).join('  ')}`)
+for (const report of reports) {
+  line(`\n${report.syllables} syllable roots (first 24 of ${report.clear.toLocaleString()}):`)
+  line(`  ${report.words.slice(0, 24).join(' ')}`)
 }
-line(`\njoins from \`${atoms[0]}\`:`)
-line(`  ${atoms.filter(b => canJoin(atoms[0], b)).slice(0, 12).map(b => atoms[0] + b).join(' ')}`)
+
+line(`\nfull sets:`)
+for (const root of reports[1].words.slice(0, 6)) {
+  line(`  ${root.padEnd(8)} ${ROLES.map(r => `${root}${r.syllable}`).join('  ')}`)
+}

@@ -33,7 +33,7 @@
  * Writes `../base/base-term.csv`.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/base-term.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/base-term.ts
  */
 
 import { readFileSync, writeFileSync, mkdirSync } from 'fs'

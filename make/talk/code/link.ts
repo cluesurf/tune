@@ -33,7 +33,7 @@
  * what banning each one costs.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/link.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/link.ts
  */
 
 import { readFileSync } from 'fs'
@@ -49,7 +49,7 @@ import {
   linkerFor,
   needsLinker,
   toShape,
-} from '#/make/moon/code/sound'
+} from '#/make/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

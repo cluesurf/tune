@@ -1,245 +1,274 @@
 <h3 align='center'>tune rock</h3>
 <p align='center'>
-  The Generated Tune
+  The Chanted Tune
 </p>
 
 <br/>
 
 ## Introduction
 
-**Tune Rock** is the middle Tune. It has seventeen sounds and one
-atomic shape, `CVC`. It came out of **Tune Tree** and gave way to
-**Tune Moon**.
+**Tune Tree** is the first Tune. It has nine sounds and one syllable
+shape. It gave way to **Tune Rock**, which grew to seventeen sounds and
+a closed syllable, and Rock in turn gave way to **Tune Moon**.
 
-Rock is the algorithmic Tune. Tree is chanted and Moon is hand tuned,
-but Rock is generated: two rules decide the atoms and four decide the
-joins, and everything that survives them is in the lexicon. Nothing is
-chosen by hand and no word is missing for a reason nobody can state.
+Tree is a chanting language. It is built for song, for humming, for
+keeping a beat, and for plain statements. It is not built for careful
+talk. Anything that needs precision needs Rock or Moon.
 
-That is the whole point of Rock. A rigid pattern is one you can hold in
-your head, and one where the absence of a word means something.
+Every sound in Tree is one a body makes without a tool. Two hums, three
+drum hits, one breath, three vowels.
 
 ## Sounds
 
-Seventeen sounds.
+Nine sounds.
 
-| group | marks | note |
-| :--- | :--- | :--- |
-| vowels | `i` `a` `u` | unchanged from Tree |
-| nasals | `m` `n` | the hum, good and bad |
-| voiced stops | `b` `d` `g` | |
-| voiceless stops | `p` `t` `k` | |
-| alveolar rub | `s` `z` | |
-| labial rub | `f` `v` | |
-| palatal rub | `x` `j` | `x` as in `ship`, `j` as in `beige` |
+| mark | sound  | note                            |
+| :--: | :----- | :------------------------------ |
+| `i`  | `keep` | high, out, bright               |
+| `a`  | `far`  | level, surface, warm            |
+| `u`  | `moon` | low, inner, dark                |
+| `m`  | `mark` | the good hum                    |
+| `n`  | `note` | the bad hum                     |
+| `p`  | `play` | the lip hit                     |
+| `t`  | `time` | the tongue hit                  |
+| `k`  | `king` | the throat hit, a rock chipping |
+| `h`  | `heal` | the breath                      |
 
-Fourteen consonants, and they are almost entirely symmetric. Six pairs
-differ only by voice:
+Vowels are the Spanish `i a u`.
+
+**The hum.** `m` and `n` are the two sounds you can hold with your
+mouth shut. They carry polarity. `m` is good, warm, toward. `n` is bad,
+cold, away.
+
+**The beat.** `p`, `t` and `k` are the three places you can stop the
+air and let it go. Lips, tongue, throat. They are the drum kit.
+
+**The breath.** `h` is grammar rather than vocabulary. It carries the
+three roles and appears nowhere else.
+
+## Syllables
+
+Every syllable is `CV`. No clusters, no codas, no two vowels together.
 
 ```text
-p/b   t/d   k/g   s/z   f/v   x/j
+mi ma mu
+ni na nu
+pi pa pu
+ti ta tu
+ki ka ku
+
+hi ha hu
 ```
 
-The two nasals are the only consonants without a voicing partner, and
-they are the two Tree consonants that did not split.
+Fifteen lexical syllables and three grammatical ones. Eighteen in all,
+and that is the whole sound of the language.
 
 ## Words
 
-The atom is `CVC`.
+A word is a root of one, two or three syllables, and an optional role
+syllable on the end.
 
 ```text
-bat   mis   kun   daz
+ma        maha    mahi    mahu
+mata      mataha  matahi  matahu
+matanu    matanuha  matanuhi  matanuhu
 ```
 
-Longer words are made by joining atoms, which leaves two consonants
-touching.
+There is no compounding. Tree says one thing per word. Where Rock joins
+atoms to build a longer term, Tree takes a new word.
+
+## The Three Roles
+
+Tree marks a role with a whole syllable, because a bare vowel is not a
+syllable Tree can say. The breath carries it.
+
+| suffix | role | |
+| :--- | :--- | :--- |
+| `-ha` | entity | the thing form |
+| `-hi` | action | the process form |
+| `-hu` | feature | the property form, and how one word modifies another |
 
 ```text
-CVC + CVC  ->  CVCCVC
+tamaha = house
+tamahi = build
+tamahu = built
 
-bat + mis  ->  batmis
+tamahu kunaha = the built dog
+nataha kunahi tamaha = the person sees the house
 ```
 
-Each of those takes a role vowel on the end.
+### Leaving it off
 
-| suffix | role |
-| :--- | :--- |
-| `-a` | entity |
-| `-i` | action |
-| `-u` | feature |
+The suffix is optional. In chant it usually comes off, and the role is
+left to context and to the beat.
 
 ```text
-bat    bata    bati    batu
+nata kuna tama
 ```
 
-Rock inherited Tree's three roles. What it lost was the breath that
-carried them. Tree said `matahi` where Rock says `bati`.
+That is a line you can drum. Say the same thing carefully and the roles
+come back.
+
+## What Tree Cannot Do
+
+Tree has three roles. Moon has five. The two that are missing had not
+been invented yet.
+
+- **No relation form.** Moon has `-e` for links. Tree uses an action
+  word in series: `nata tamahi kuna` puts the person at the house by
+  saying the being-at.
+- **No operator form.** Moon has `-o` for negation, conjunction,
+  question and the rest. Tree has none. Negation is an ordinary word. A
+  question is a tone of voice.
+
+This is the ceiling. Tree can say what is, what happens and what
+something is like. It cannot cleanly say *not*, *or*, *if*, or *of*.
 
 ## Rules
 
-**Two rules for atoms.**
+Four rules decide whether a root is a Tree word. Each one is in
+`code/sound.ts` and `code/calculate.ts` reports what each one costs.
 
 | rule | what it says |
 | :--- | :----------- |
-| `no-echo` | a root never opens and closes on the same consonant |
-| `no-voicing-pair` | a root never opens and closes on a pair that differs only by voice |
+| `breath-is-grammar` | `h` never appears in a root, only on the role syllable |
+| `no-triple-consonant` | no consonant carries three syllables in a row |
+| `no-repeated-close-vowel` | no `i` beside `i` and no `u` beside `u`, `a` beside `a` is fine |
+| `no-opening-echo` | the first two syllables never repeat |
 
-Both are about telling words apart across a single vowel, which is the
-shortest distance in the language.
+Three of those are worth saying more about.
 
-**Four rules for joins.**
+**Breath is grammar.** `h` carries the role and nothing else, so every
+`h` in a chanted stream is the end of a word. That is what makes Tree
+parseable when it is sung with no pauses.
 
-| rule | what it says |
-| :--- | :----------- |
-| `no-same` | the two consonants are not the same |
-| `no-voicing-pair` | the two consonants do not differ only by voice |
-| `no-two-rubs` | two rubs together cannot be told apart |
-| `voicing-agrees` | a voiced sound and a voiceless one do not sit together |
+**The echo is reserved.** A root whose first two syllables repeat,
+`mama` or `kuku`, is the intensive. Fifteen shapes at two syllables and
+two hundred and twenty five at three are held back for it.
 
-Of the 196 consonant pairs that could meet at a join, 98 can be said.
+**`m` and `n` are the exception to clarity.** They are the one pair in
+Tree that is easy to confuse, and Tree leans on that pair rather than
+avoiding it. `mata` and `nata` are meant to be a minimal pair, because
+good and bad are meant to sit that close together. Every other
+consonant is far from every other one, which is what a three vowel,
+five consonant system buys you.
 
-## Counts
+## Word Counts
 
-| pattern | raw | clear |
-| :--- | ---: | ---: |
-| `CVC` | 588 | 510 |
+Roots, before and after the rules.
 
-`no-echo` takes 42 and `no-voicing-pair` takes 36.
+| syllables | letters | pattern    |   raw |  clear | held back |
+| :-------- | :------ | :--------- | ----: | -----: | --------: |
+| 1         | 2       | `CV`       |    15 |     15 |         0 |
+| 2         | 4       | `CVCV`     |   225 |    170 |        15 |
+| 3         | 6       | `CVCVCV`   | 3,375 |  1,980 |       225 |
+|           |         | **total**  |       | **2,165** |     |
 
-| syllables | pattern | count |
-| :-------- | :------ | ----: |
-| 1 | `CVC` | 510 |
-| 2 | `CVCCVC` | 132,642 |
-| | **total** | **133,152** |
+Surface words, counting the bare root and the three role forms.
 
-The spread is flat, which is what a rigid pattern buys. Every consonant
-opens 36 of the atoms and closes 36, except `m` and `n` which open and
-close 39 each, because they are the two with no voicing partner to lose
-words to. Each vowel takes exactly 170.
+| root syllables | bare |  ha |  hi |  hu |    all |
+| :------------- | ---: | --: | --: | --: | -----: |
+| 1              |   15 |  15 |  15 |  15 |     60 |
+| 2              |  170 | 170 | 170 | 170 |    680 |
+| 3              | 1980 | 1980 | 1980 | 1980 |  7,920 |
+|                |      |     |     |     | **8,660** |
 
-## What The Rules Are Worth
+Tree is small enough to keep whole. Rock has to be generated and Moon
+has to be hand tuned, but every Tree word that survives the four rules
+is in the lexicon.
 
-The rules were written down before the Moon lexicon was checked against
-them, so `fold.ts --rules` folds the whole lexicon again with each rule
-switched off and counts the difference.
+The one syllable roots are the closed class. Fifteen words for the
+things a language points with: this, that, me, you, one, two, yes, no.
 
-| rule off | held | invented |
-| :--- | ---: | ---: |
-| none, every rule on | 1,364 | 7,971 |
-| atom `no-echo` | 1,539 | 7,371 |
-| atom `no-voicing-pair` | 1,513 | 7,466 |
-| join `no-same` | 1,403 | 7,854 |
-| join `no-voicing-pair` | 1,364 | 7,971 |
-| join `no-two-rubs` | 1,372 | 7,947 |
-| join `voicing-agrees` | 1,618 | 7,209 |
+## Beats
 
-Two findings sit in that table.
+Tree is chanted, so what matters is how long a word runs.
 
-**Join `no-voicing-pair` does nothing.** Switching it off changes not
-one word. Every pair it blocks is one voiced obstruent against one
-voiceless one, so `voicing-agrees` already blocks all twelve. The rule
-is a statement of intent rather than a constraint, and the join cost
-table in `calculate.ts` only appears to charge it because each pair is
-charged to the first rule that catches it.
+| beats | shapes                | count |
+| :---- | :-------------------- | ----: |
+| 1     | `CV`                  |    15 |
+| 2     | `CV`+`hV`, `CVCV`     |   215 |
+| 3     | `CVCV`+`hV`, `CVCVCV` | 2,490 |
+| 4     | `CVCVCV`+`hV`         | 5,940 |
 
-**Join `voicing-agrees` is the expensive one.** It forces the most
-invention, because Moon is full of clusters like `kl` and `ld` that it
-will not allow back. It is the rule to argue about if the folds ever
-need to be tighter.
+Dropping the role syllable takes a beat off. That is the main rhythmic
+move in the language: the same thought at three beats or at four,
+depending on the line.
 
-Neither of those has been changed. They are measurements, and the
-language is yours to settle.
-
-## How Rock Became Moon
+## How Tree Became Rock
 
 Two changes.
 
-**The edges split.** The stops stayed put. What moved were the sounds
-at the edges of the inventory.
+**The beats fanned out.** Voicing and frication arrived, and they
+arrived on `p`, `t` and `k` and nowhere else.
 
-| Rock | Moon | what happened |
+| Tree | Rock | what happened |
 | :--- | :--- | :------------ |
-| `i` | `i` `e` | lowered off the stress |
-| `a` | `a` | held |
-| `u` | `u` `o` | lowered off the stress |
-| `m` | `m` `w` | opened to a glide |
-| `n` | `n` `q` | pulled back beside a throat sound |
-| `b` `g` `p` `t` `f` `v` `j` | themselves | held |
-| `d` | `d` `l` `r` | loosened into both liquids |
-| `k` | `k` `h` | weakened to breath |
-| `s` | `s` `c` | moved onto the teeth |
-| `z` | `z` `C` | moved onto the teeth |
-| `x` | `x` `y` | opened to a glide |
+| `i` `a` `u` | `i` `a` `u` | held, all three |
+| `m` | `m` | held |
+| `n` | `n` | held |
+| `p` | `p` `b` `f` `v` | voicing, frication, both |
+| `t` | `t` `d` `s` `z` | voicing, frication, both |
+| `k` | `k` `g` `x` `j` | voicing, frication, both |
+| `h` | | lost |
 
-Three vowels became five. Fourteen consonants became twenty two.
+Five lexical consonants became fourteen. The vowels did not move at
+all: it was Moon, much later, that split them.
 
-**The unstressed vowels fell.** Stress settled on the first syllable
-and the vowels away from it dropped out, leaving the consonants beside
-each other. That is where every Moon cluster comes from, and it is why
-Moon is short.
+**The breath was lost.** It was grammar, so it died with the grammar.
+The role syllable `hV` wore down to a bare vowel, and with it the only
+`h` in the language went.
 
 ```text
-Rock  bat.mis   ->   Moon  batmis
-Rock  bat.mis   ->   Moon  batms
+mata + hi    ->    bat + i    ->    bati
+CVCV + hV          CVC + V
 ```
 
-Moon's `h` deserves a note. Tree had an `h` and it was grammar, so it
-died with the role syllable. Rock has none at all. Moon's `h` is a
-weakened `k` that arrived long afterwards. Three breaths in the family,
-three separate events, one letter.
+Rock has no `h`. Moon has one, but it is a weakened `k`, not this one.
 
 ## Files
 
 | file | what it is |
 | :--- | :--------- |
-| `code/sound.ts` | the inventory, the atom rules, the join rules, the sort order, and the correspondence to Moon |
-| `code/calculate.ts` | generates the atoms and counts the joins, writes `base/` |
-| `code/fold.ts` | carries Moon back to Rock and writes `base/ancestor.csv` |
-| `sounds.md` | what each of the seventeen sounds means |
+| `code/sound.ts` | the inventory, the rules, the sort order, and the correspondence to Rock |
+| `code/calculate.ts` | generates every root and word, reports what each rule costs, writes `base/` |
+| `code/fold.ts` | carries Rock back to Tree and writes `base/ancestor.csv` |
+| `sounds.md` | what each of the nine sounds means |
+| `words.md` | the concepts Tree has words for |
 
 Generated data:
 
 | file | what is in it |
 | :--- | :------------ |
-| `base/root/3.csv` | the 510 atoms |
-| `base/join/6.csv` | the 132,642 joins, written only with `--joins` |
-| `base/ancestor.csv` | the Moon lexicon carried back, one row per word |
+| `base/root/{2,4,6}.csv` | roots, by how many letters the root has |
+| `base/word/{2,4,6,8}.csv` | surface words, by word length, so the number is twice the beats |
+| `base/ancestor.csv` | the Moon lexicon carried all the way back |
 
 ```bash
 pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts
-pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts --joins
 pnpm --dir deck/tune exec tsx make/rock/code/fold.ts
-pnpm --dir deck/tune exec tsx make/rock/code/fold.ts --show baklax
-pnpm --dir deck/tune exec tsx make/rock/code/fold.ts --rules
 ```
 
-`fold.ts` reads `../moon/base/lexicon.csv`, so run the Moon check
+`fold.ts` reads `../rock/base/ancestor.csv`, so run the Rock fold
 first. See `../readme.md` for the whole order.
 
-## Carrying Moon Back
+## The Ancestral Lexicon
 
-Moon is Rock spoken quickly, so folding Moon back means putting the
-dropped vowels in again until the word is a run of Rock atoms.
+Tree's lexicon is not invented separately. It is the Moon lexicon
+carried back through Rock, which is the only way the three can stay
+consistent.
 
-Of Moon's 5,301 shaped terms, 5,276 fold. They use 465 of Rock's 510
-atoms, about 91%, which says the atom set is close to the right size
-for the lexicon that grew out of it.
+All 5,276 Rock words fold to Tree with nothing strained. They land on
+69 of Tree's 170 two syllable roots, about 41%.
 
-| how it came back | count |
-| :--- | ---: |
-| 1 atom | 618 |
-| 2 atoms | 3,120 |
-| 3 atoms | 1,538 |
+That ratio is the point. Nine sounds could not hold six thousand
+meanings apart. `kana` in Tree stands behind garden, spirit, count,
+zero, aggregate, object and vehicle in Moon, and the splitting of the
+sounds is exactly what pulled them back apart.
 
-| how sure | count |
-| :--- | ---: |
-| `held`, nothing invented | 1,364 |
-| `restored`, one or two sounds put back | 2,290 |
-| `strained`, three or four | 1,622 |
-
-The twenty five that do not fold are listed in the run output. Every
-reconstruction carries its own count, so a guess is never read as a
-fact.
+A Rock word of two atoms comes back as two Tree words, because Tree
+does not compound. Of the 5,276, six hundred and eighteen are a single
+Tree word and the rest are phrases.
 
 ## License
 

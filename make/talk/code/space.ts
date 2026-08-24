@@ -19,7 +19,7 @@
  * have never been written down.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/space.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/space.ts
  */
 
 import { readFileSync, writeFileSync, mkdirSync } from 'fs'
@@ -36,7 +36,7 @@ import {
   testSounding,
   tooClose,
   toShape,
-} from '#/make/moon/code/sound'
+} from '#/make/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

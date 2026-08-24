@@ -194,15 +194,15 @@ The three lexicons are not built separately. That would let them drift.
 Moon's is the real one, and the other two are worked out from it.
 
 ```text
-tune.csv  ->  moon/base/lexicon.csv  ->  rock/base/ancestor.csv  ->  tree/base/ancestor.csv
+tune.csv  ->  talk/base/lexicon.csv  ->  rock/base/ancestor.csv  ->  rock/base/ancestor.csv
    6,182            5,301                     5,276                       5,276
 ```
 
 | step | what survives |
 | :--- | :--- |
-| `moon/code/check.ts` | 5,301 of 6,182 terms fit Moon's shapes, the other 881 go to `off-shape.csv` rather than being thrown away |
+| `talk/code/check.ts` | 5,301 of 6,182 terms fit Moon's shapes, the other 881 go to `off-shape.csv` rather than being thrown away |
 | `rock/code/fold.ts` | 5,276 of 5,301 fold back to a chain of Rock atoms, using 465 of Rock's 510 atoms |
-| `tree/code/fold.ts` | all 5,276 fold back to Tree, using 69 of Tree's 170 two syllable roots |
+| `rock/code/fold.ts` | all 5,276 fold back to Tree, using 69 of Tree's 170 two syllable roots |
 
 The narrowing is the point. Nine sounds cannot hold six thousand
 meanings apart. `kana` in Tree stands behind garden, spirit, count,
@@ -225,12 +225,12 @@ resolves. Run them in this order, because each fold reads the one
 before it.
 
 ```bash
-pnpm --dir deck/tune exec tsx make/tree/code/calculate.ts
 pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts
-pnpm --dir deck/tune exec tsx make/moon/code/check.ts
+pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts
+pnpm --dir deck/tune exec tsx make/talk/code/check.ts
 
 pnpm --dir deck/tune exec tsx make/rock/code/fold.ts
-pnpm --dir deck/tune exec tsx make/tree/code/fold.ts
+pnpm --dir deck/tune exec tsx make/rock/code/fold.ts
 ```
 
 Two extra modes are worth knowing.

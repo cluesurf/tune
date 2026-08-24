@@ -55,7 +55,7 @@
  * an atom to `ATOMS` re-answers the question.
  *
  * Usage:
- *   pnpm --dir deck/tune exec tsx make/moon/code/join.ts
+ *   pnpm --dir deck/tune exec tsx make/talk/code/join.ts
  */
 
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
@@ -73,7 +73,7 @@ import {
   isVowel,
   toShape,
   vowelsClose,
-} from '#/make/moon/code/sound'
+} from '#/make/talk/code/sound'
 
 /** A single consonant that can open a word. */
 const CAN_OPEN = CONSONANTS.filter(c => c !== 'q')

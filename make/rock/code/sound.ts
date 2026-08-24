@@ -1,103 +1,93 @@
 /**
  * Tune Rock — sound system.
  *
- * Rock is the middle Tune. It has 17 sounds.
+ * Rock is the older Tune. It has 9 sounds.
  *
- *   vowels          i a u
- *   nasals          m n
- *   voiced stops    b d g
- *   voiceless stops p t k
- *   alveolar rub    s z
- *   labial rub      f v
- *   palatal rub     x j
+ *   vowels      i a u
+ *   hum         m n
+ *   beat        p t k
+ *   breath      h
  *
- * The atomic word is CVC. Longer words are made by joining atoms:
+ * Every syllable is CV. A root is one, two or three CV syllables. A
+ * word is a root with an optional role syllable, `ha` or `hi` or `hu`.
  *
- *   CVC + CVC  ->  CVCCVC
+ * The breath is grammar, not vocabulary. It never appears in a root,
+ * only on the role syllable, so in a chanted stream every `h` marks
+ * the end of a word.
  *
- * Rock is the algorithmic Tune. Where Tree is chanted and Moon is hand
- * tuned, Rock is generated: the rules are exact and everything that
- * survives them is in the lexicon. Nothing is chosen by hand and no
- * word is left out for being awkward.
- *
- * Rock came out of Tune Tree and gave way to Tune Moon.
+ * Rock is a chant system. It gave way to Tune Talk.
  *
  * This module is the single source of truth for the inventory, the
- * rules, the sort order, and the correspondence to Moon.
+ * rules, the sort order, the correspondence to Talk, and the reading
+ * of IPA down to nine sounds.
  */
 
 // ─── Inventory ──────────────────────────────────────────
 
-/** The three vowels, unchanged from Tree. */
+/** The three vowels. High, level, low. */
 export const VOWELS = ['i', 'a', 'u']
 
-export const NASALS = ['m', 'n']
-export const VOICED_STOPS = ['b', 'd', 'g']
-export const VOICELESS_STOPS = ['p', 't', 'k']
-export const ALVEOLAR_RUB = ['s', 'z']
-export const LABIAL_RUB = ['f', 'v']
-export const PALATAL_RUB = ['x', 'j']
+/** The hum. Polarity: m is good, n is bad. */
+export const HUM = ['m', 'n']
 
-export const CONSONANTS = [
-  ...NASALS,
-  ...VOICED_STOPS,
-  ...VOICELESS_STOPS,
-  ...ALVEOLAR_RUB,
-  ...LABIAL_RUB,
-  ...PALATAL_RUB,
-]
+/** The beat. Lips, tongue, throat. The three drum hits. */
+export const BEAT = ['p', 't', 'k']
 
+/** The breath. Carries the role, marks the end of a word. */
+export const BREATH = 'h'
+
+/** All six consonants. */
+export const CONSONANTS = [...HUM, ...BEAT, BREATH]
+
+/** All nine sounds. */
 export const SOUNDS = [...VOWELS, ...CONSONANTS]
 
-/** Every rub, voiced or not. */
-export const RUBS = [...ALVEOLAR_RUB, ...LABIAL_RUB, ...PALATAL_RUB]
-
-/** Everything that is not a nasal. */
-export const VOICED = new Set(['b', 'd', 'g', 'z', 'v', 'j'])
-export const VOICELESS = new Set(['p', 't', 'k', 's', 'f', 'x'])
-
-/**
- * The six pairs that differ only by voice. Across a single vowel these
- * are the easiest thing in Rock to mishear, so a root never opens and
- * closes on one.
- */
-export const VOICING_PAIRS: Array<[string, string]> = [
-  ['p', 'b'],
-  ['t', 'd'],
-  ['k', 'g'],
-  ['s', 'z'],
-  ['f', 'v'],
-  ['x', 'j'],
-]
-
-const voicingPartner: Record<string, string> = {}
-for (const [a, b] of VOICING_PAIRS) {
-  voicingPartner[a] = b
-  voicingPartner[b] = a
-}
-
-export function isVoicingPair(a: string, b: string): boolean {
-  return voicingPartner[a] === b
-}
+/** The five consonants a root may use. The breath is grammar. */
+export const ROOT_CONSONANTS = [...HUM, ...BEAT]
 
 // ─── Roles ──────────────────────────────────────────────
 
 /**
- * Rock inherited Tree's three roles. The breath that carried them was
- * lost, so the role is a bare vowel on the end of the root.
+ * The three roles. Rock marks a role with a whole CV syllable, because
+ * a bare vowel is not something Rock can say. The breath carries it.
  *
- *   Tree  mata + hi   ->   Rock  mat + i
+ * The suffix is optional. In chant it usually comes off and the role
+ * is left to context.
  */
-export const ROLES: Array<{ name: string; vowel: string }> = [
-  { name: 'entity', vowel: 'a' },
-  { name: 'action', vowel: 'i' },
-  { name: 'feature', vowel: 'u' },
+export const ROLES: Array<{ name: string; syllable: string; vowel: string }> = [
+  { name: 'entity', syllable: 'ha', vowel: 'a' },
+  { name: 'action', syllable: 'hi', vowel: 'i' },
+  { name: 'feature', syllable: 'hu', vowel: 'u' },
 ]
+
+export const ROLE_SYLLABLES = ROLES.map(r => r.syllable)
+
+// ─── Syllables ──────────────────────────────────────────
+
+function buildSyllables(consonants: Array<string>): Array<string> {
+  const list: Array<string> = []
+  for (const c of consonants) {
+    for (const v of VOWELS) {
+      list.push(c + v)
+    }
+  }
+  return list
+}
+
+/** 18 syllables in all. */
+export const ALL_SYLLABLES = buildSyllables(CONSONANTS)
+
+/** 15 syllables a root can be built from. */
+export const ROOT_SYLLABLES = buildSyllables(ROOT_CONSONANTS)
 
 // ─── Sort Order ─────────────────────────────────────────
 
-/** The order the inventory is written in. */
-export const CHAR_ORDER = 'i a u m n b d g p t k s z f v x j'.split(' ')
+/**
+ * Rock sorts `i a u m n b d g p t k s z f v x j`. Rock uses that order
+ * restricted to its own sounds, with the breath last, so the three
+ * lexicons sort against each other without translation.
+ */
+export const CHAR_ORDER = 'i a u m n p t k h'.split(' ')
 
 export const CHAR_RANK = new Map(CHAR_ORDER.map((c, i) => [c, i]))
 
@@ -123,19 +113,42 @@ export function isConsonant(ch: string): boolean {
   return CONSONANTS.includes(ch)
 }
 
-/** `bat` becomes `CVC`, `batmiz` becomes `CVCCVC`. */
-export function toShape(word: string): string | null {
-  let shape = ''
-  for (const sound of word) {
-    if (isVowel(sound)) {
-      shape += 'V'
-    } else if (isConsonant(sound)) {
-      shape += 'C'
-    } else {
-      return null
+/** Split a CV string into its syllables. */
+export function toSyllables(word: string): Array<string> {
+  const parts: Array<string> = []
+  for (let i = 0; i < word.length; i += 2) {
+    parts.push(word.slice(i, i + 2))
+  }
+  return parts
+}
+
+/** True when the string alternates consonant and vowel all the way. */
+export function isWellFormedCV(word: string): boolean {
+  if (word.length === 0 || word.length % 2 !== 0) {
+    return false
+  }
+  for (let i = 0; i < word.length; i += 2) {
+    if (!isConsonant(word[i]) || !isVowel(word[i + 1])) {
+      return false
     }
   }
-  return shape
+  return true
+}
+
+/** Strip a trailing role syllable, if there is one. */
+export function toRoot(word: string): string {
+  const tail = word.slice(-2)
+  if (word.length > 2 && ROLE_SYLLABLES.includes(tail)) {
+    return word.slice(0, -2)
+  }
+  return word
+}
+
+/** The role a surface word carries, or null when it is bare. */
+export function toRole(word: string): string | null {
+  const tail = word.slice(-2)
+  const role = ROLES.find(r => r.syllable === tail)
+  return word.length > 2 && role ? role.name : null
 }
 
 // ─── Root Rules ─────────────────────────────────────────
@@ -143,81 +156,68 @@ export function toShape(word: string): string | null {
 export type RootRule = {
   name: string
   note: string
-  test: (open: string, vowel: string, close: string) => boolean
+  test: (syllables: Array<string>) => boolean
 }
 
 export const ROOT_RULES: Array<RootRule> = [
   {
-    name: 'no-echo',
-    note: 'a root never opens and closes on the same consonant',
-    test: (open, _vowel, close) => open !== close,
+    name: 'breath-is-grammar',
+    note: 'h never appears in a root, only on the role syllable',
+    test: syllables => syllables.every(s => s[0] !== BREATH),
   },
   {
-    name: 'no-voicing-pair',
-    note: 'a root never opens and closes on a pair that differs only by voice',
-    test: (open, _vowel, close) => !isVoicingPair(open, close),
+    name: 'no-triple-consonant',
+    note: 'no consonant carries three syllables in a row',
+    test: syllables => {
+      for (let i = 0; i + 2 < syllables.length; i++) {
+        if (
+          syllables[i][0] === syllables[i + 1][0] &&
+          syllables[i + 1][0] === syllables[i + 2][0]
+        ) {
+          return false
+        }
+      }
+      return true
+    },
+  },
+  {
+    name: 'no-repeated-close-vowel',
+    note: 'no i beside i and no u beside u, a beside a is fine',
+    test: syllables => {
+      for (let i = 0; i + 1 < syllables.length; i++) {
+        const v = syllables[i][1]
+        if ((v === 'i' || v === 'u') && v === syllables[i + 1][1]) {
+          return false
+        }
+      }
+      return true
+    },
+  },
+  {
+    name: 'no-opening-echo',
+    note: 'the first two syllables never repeat, that shape is the intensive',
+    test: syllables => syllables.length < 2 || syllables[0] !== syllables[1],
   },
 ]
 
 export function testRoot(root: string): { ok: boolean; broke: Array<string> } {
-  const [open, vowel, close] = root.split('')
-  const broke = ROOT_RULES.filter(r => !r.test(open, vowel, close)).map(
-    r => r.name,
-  )
+  const syllables = toSyllables(root)
+  const broke = ROOT_RULES.filter(rule => !rule.test(syllables)).map(r => r.name)
   return { ok: broke.length === 0, broke }
 }
 
-// ─── Join Rules ─────────────────────────────────────────
-
-/**
- * Two atoms joined leave two consonants touching. These decide which
- * of those clusters Rock can say.
- */
-export type JoinRule = {
-  name: string
-  note: string
-  test: (last: string, first: string) => boolean
+/** The reduplicated shape Rock reserves for the intensive. */
+export function isIntensive(root: string): boolean {
+  const syllables = toSyllables(root)
+  return syllables.length >= 2 && syllables[0] === syllables[1]
 }
 
-export const JOIN_RULES: Array<JoinRule> = [
-  {
-    name: 'no-same',
-    note: 'the two consonants are not the same',
-    test: (last, first) => last !== first,
-  },
-  {
-    name: 'no-voicing-pair',
-    note: 'the two consonants do not differ only by voice',
-    test: (last, first) => !isVoicingPair(last, first),
-  },
-  {
-    name: 'no-two-rubs',
-    note: 'two rubs together cannot be told apart',
-    test: (last, first) => !(RUBS.includes(last) && RUBS.includes(first)),
-  },
-  {
-    name: 'voicing-agrees',
-    note: 'a voiced sound and a voiceless one do not sit together',
-    test: (last, first) =>
-      !(VOICED.has(last) && VOICELESS.has(first)) &&
-      !(VOICELESS.has(last) && VOICED.has(first)),
-  },
-]
+// ─── Correspondence With Tune Talk ──────────────────────
 
-export function testJoin(last: string, first: string): boolean {
-  return JOIN_RULES.every(rule => rule.test(last, first))
-}
+/** Talk's five vowels and twenty two consonants. */
+export const TALK_VOWELS = ['i', 'e', 'a', 'o', 'u']
 
-export function canJoin(a: string, b: string): boolean {
-  return testJoin(a[a.length - 1], b[0])
-}
-
-// ─── Correspondence With Tune Moon ──────────────────────
-
-/** Moon's five vowels and twenty two consonants. */
-export const MOON_VOWELS = ['i', 'e', 'a', 'o', 'u']
-
-export const MOON_CONSONANTS = [
+export const TALK_CONSONANTS = [
   'm', 'n', 'q',
   'b', 'd', 'g',
   'p', 't', 'k',
@@ -230,83 +230,85 @@ export const MOON_CONSONANTS = [
 ]
 
 /**
- * What each Rock sound became in Tune Moon.
+ * What each Rock sound became in Tune Talk.
  *
- * The stops stayed put. What moved were the sounds at the edges: the
- * nasals threw off a glide and a back nasal, `d` loosened into both
- * liquids, `k` weakened all the way to breath, and the rubs each threw
- * off one more place of articulation.
+ * Rock has nine sounds and Talk has twenty seven, so every Rock sound
+ * fans out. The vowels split once each, the hums throw off a glide and
+ * a back nasal, and the three beats carry almost the whole load: `t`
+ * alone stands behind eight Talk sounds.
  *
- * Moon's `h` is a weakened `k`. Rock has no `h` at all, and Tree's `h`
- * was grammar that died with the role syllable, so the three breaths
- * in the family are not the same sound twice over.
+ * The breath is the one that did not move. In Rock it is grammar
+ * rather than vocabulary, carrying the role syllable and appearing in
+ * no root. In Talk it is an ordinary consonant like any other, but it
+ * is the same sound.
  */
 export const DESCENDANTS: Record<
   string,
-  Array<{ moon: string; change: string }>
+  Array<{ talk: string; change: string }>
 > = {
   i: [
-    { moon: 'i', change: 'held' },
-    { moon: 'e', change: 'lowered off the stress' },
+    { talk: 'i', change: 'held' },
+    { talk: 'e', change: 'lowered off the stress' },
   ],
-  a: [{ moon: 'a', change: 'held' }],
+  a: [{ talk: 'a', change: 'held' }],
   u: [
-    { moon: 'u', change: 'held' },
-    { moon: 'o', change: 'lowered off the stress' },
+    { talk: 'u', change: 'held' },
+    { talk: 'o', change: 'lowered off the stress' },
   ],
   m: [
-    { moon: 'm', change: 'held' },
-    { moon: 'w', change: 'opened to a glide' },
+    { talk: 'm', change: 'held' },
+    { talk: 'w', change: 'opened to a glide' },
   ],
   n: [
-    { moon: 'n', change: 'held' },
-    { moon: 'q', change: 'pulled back beside a throat sound' },
+    { talk: 'n', change: 'held' },
+    { talk: 'q', change: 'pulled back beside a throat sound' },
   ],
-  b: [{ moon: 'b', change: 'held' }],
-  d: [
-    { moon: 'd', change: 'held' },
-    { moon: 'l', change: 'loosened to a line' },
-    { moon: 'r', change: 'loosened to a roll' },
+  p: [
+    { talk: 'p', change: 'held' },
+    { talk: 'b', change: 'voiced' },
+    { talk: 'f', change: 'rubbed open' },
+    { talk: 'v', change: 'rubbed open and voiced' },
   ],
-  g: [{ moon: 'g', change: 'held' }],
-  p: [{ moon: 'p', change: 'held' }],
-  t: [{ moon: 't', change: 'held' }],
+  t: [
+    { talk: 't', change: 'held' },
+    { talk: 'd', change: 'voiced' },
+    { talk: 's', change: 'rubbed open' },
+    { talk: 'z', change: 'rubbed open and voiced' },
+    { talk: 'c', change: 'rubbed open on the teeth' },
+    { talk: 'C', change: 'rubbed open on the teeth and voiced' },
+    { talk: 'l', change: 'voiced, then loosened to a line' },
+    { talk: 'r', change: 'voiced, then loosened to a roll' },
+  ],
   k: [
-    { moon: 'k', change: 'held' },
-    { moon: 'h', change: 'weakened to breath' },
+    { talk: 'k', change: 'held' },
+    { talk: 'g', change: 'voiced' },
+    { talk: 'x', change: 'rubbed open at the palate' },
+    { talk: 'j', change: 'rubbed open at the palate and voiced' },
+    { talk: 'y', change: 'rubbed open, then opened to a glide' },
   ],
-  s: [
-    { moon: 's', change: 'held' },
-    { moon: 'c', change: 'moved onto the teeth' },
-  ],
-  z: [
-    { moon: 'z', change: 'held' },
-    { moon: 'C', change: 'moved onto the teeth' },
-  ],
-  f: [{ moon: 'f', change: 'held' }],
-  v: [{ moon: 'v', change: 'held' }],
-  x: [
-    { moon: 'x', change: 'held' },
-    { moon: 'y', change: 'opened to a glide' },
-  ],
-  j: [{ moon: 'j', change: 'held' }],
+  h: [{ talk: 'h', change: 'held' }],
 }
 
-/** Moon sound to its single Rock ancestor. */
+/** Talk sound to its single Rock ancestor. */
 export const ANCESTOR: Record<string, string> = (() => {
   const map: Record<string, string> = {}
   for (const rock of Object.keys(DESCENDANTS)) {
-    for (const { moon } of DESCENDANTS[rock]) {
-      map[moon] = rock
+    for (const { talk } of DESCENDANTS[rock]) {
+      map[talk] = rock
     }
   }
   return map
 })()
 
+/** Sounds that left no descendant at all. */
+export const LOST = Object.keys(DESCENDANTS).filter(
+  s => DESCENDANTS[s].length === 0,
+)
+
 /**
- * Proves the correspondence is a clean partition: every Moon sound is
- * claimed exactly once, every Rock sound descends to itself, and the
- * counts come out at 5 vowels and 22 consonants.
+ * Proves the correspondence is a clean partition: every Rock sound is
+ * claimed exactly once, every Tree sound that survived descends to
+ * itself, and the counts come out at 3 vowels and 14 consonants.
  */
 export function checkCorrespondence(): {
   ok: boolean
@@ -319,35 +321,38 @@ export function checkCorrespondence(): {
     if (!SOUNDS.includes(rock)) {
       errors.push(`${rock} is not a Rock sound`)
     }
-    for (const { moon } of DESCENDANTS[rock]) {
-      const claims = seen.get(moon) ?? []
+    for (const { talk } of DESCENDANTS[rock]) {
+      const claims = seen.get(talk) ?? []
       claims.push(rock)
-      seen.set(moon, claims)
+      seen.set(talk, claims)
     }
   }
 
-  for (const rock of SOUNDS) {
-    if (!DESCENDANTS[rock]) {
-      errors.push(`${rock} has no descendants`)
+  for (const tree of SOUNDS) {
+    if (!DESCENDANTS[tree]) {
+      errors.push(`${tree} has no entry`)
       continue
     }
-    if (!DESCENDANTS[rock].some(d => d.moon === rock)) {
-      errors.push(`${rock} does not descend to itself`)
+    if (LOST.includes(tree)) {
+      continue
+    }
+    if (!DESCENDANTS[tree].some(d => d.talk === tree)) {
+      errors.push(`${tree} does not descend to itself`)
     }
   }
 
-  for (const moon of [...MOON_VOWELS, ...MOON_CONSONANTS]) {
-    const claims = seen.get(moon)
+  for (const talk of [...TALK_VOWELS, ...TALK_CONSONANTS]) {
+    const claims = seen.get(talk)
     if (!claims) {
-      errors.push(`${moon} has no Rock ancestor`)
+      errors.push(`${talk} has no Tree ancestor`)
     } else if (claims.length > 1) {
-      errors.push(`${moon} is claimed by ${claims.join(' and ')}`)
+      errors.push(`${talk} is claimed by ${claims.join(' and ')}`)
     }
   }
 
-  for (const moon of seen.keys()) {
-    if (![...MOON_VOWELS, ...MOON_CONSONANTS].includes(moon)) {
-      errors.push(`${moon} is not a Moon sound`)
+  for (const talk of seen.keys()) {
+    if (![...TALK_VOWELS, ...TALK_CONSONANTS].includes(talk)) {
+      errors.push(`${talk} is not a Talk sound`)
     }
   }
 
@@ -356,12 +361,12 @@ export function checkCorrespondence(): {
     (n, c) => n + DESCENDANTS[c].length,
     0,
   )
-  if (vowelCount !== MOON_VOWELS.length) {
-    errors.push(`${vowelCount} vowel descendants, expected ${MOON_VOWELS.length}`)
+  if (vowelCount !== TALK_VOWELS.length) {
+    errors.push(`${vowelCount} vowel descendants, expected ${TALK_VOWELS.length}`)
   }
-  if (consonantCount !== MOON_CONSONANTS.length) {
+  if (consonantCount !== TALK_CONSONANTS.length) {
     errors.push(
-      `${consonantCount} consonant descendants, expected ${MOON_CONSONANTS.length}`,
+      `${consonantCount} consonant descendants, expected ${TALK_CONSONANTS.length}`,
     )
   }
 
