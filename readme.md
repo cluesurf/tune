@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/cluesurf/tune/blob/make/view/moon.svg?raw=true' height='222'/>
+  <img src='https://github.com/cluesurf/tune/blob/make/view/tune.svg?raw=true' height='222'/>
 </p>
 
 <h3 align='center'>tune</h3>
@@ -91,139 +91,175 @@ Ultimately, Tune is meant to serve as a flexible conceptual framework rather tha
 
 (vowels are like spanish `i e a o u` sounds).
 
+Five vowels and twenty two consonants, twenty seven sounds in all.
+
 ## Words
 
-- "Base" words can be 1, 2, or 3 syllables
-- "Compound base words" can be 2 to 9 syllables in theory
-  - ...but more likely 2-4 syllables, maybe 5
-  - Composed of 2 or 3 joined base words
-- "Compound _extension_ words" can be composed of any number of words, joined with `-wa-`
-  - But mentally more than a few words as a single unit seems like it would be hard to mentally parse
-- All words must start and end with a consonant
+Every Tune word alternates consonant and vowel the whole way through.
+There are no consonant clusters anywhere, and nearly everything else
+about the language follows from that one decision.
+
+```text
+CVC
+CVCVC
+CVCVCVC
+```
+
+- A **base word** is one, two or three syllables
+- A **compound word** is two base words joined
+- Every word starts and ends with a consonant
 
 ## Word Rules
 
-- `w` is reserved for joining words beyond the "compact" 2-3 word
-  joining method, used as `-wa-`, so `w` is not used anywhere else in
-  words.
-- `y` and `h` can only appear at the beginning of words.
-- `q` can only appear at the end of words, so not at the
-  beginning or middle, except it can be in the middle as `qk`.
-- Consonants on base words can come in clusters of max length 2 (e.g. `gotxin`).
-- Compound base word consonant clusters can become max 3 in length (e.g. `lamproq`).
-- For multi-syllable words, emphasis is on last vowel.
-- Adjacent obstruents (`b d g p t k s z f v c C x j`) in consonant clusters must share voicing, determined by the leftmost one (e.g. `ks` ok, `kz` becomes `ks`). Nasals and liquids are neutral. This becomes particularly important at the join part in compound words, where consonant clusters are 2-3 in length.
+Three rules, and no more.
 
-### Word Pattern Rules
+- `q` never opens a syllable
+- `y`, `w` and `h` never close one
+- No word ends on `il`, `el`, `ir` or `er`
 
-These are the allowed _base_ word patterns for the foreseeable future:
+With no clusters there is nothing else to constrain. Emphasis falls on
+the first syllable.
 
-| syllables | characters | patterns          |   estimated |    theoretical |
-| :-------- | :--------- | :---------------- | ----------: | -------------: |
-| 1         | 3          | `CVC`             |        ~700 |          1,805 |
-| 1         | 4          | `CCVC` and `CVCC` |        ~700 |          6,460 |
-| 2         | 5          | `CVCVC`           |      ~2,000 |        171,475 |
-| 3         | 7          | `CVCVCVC`         |     ~47,000 |     16,290,125 |
-|           |            | **total**         | **~50,000** | **16,469,865** |
+## Word Counts
 
-The reason for the estimated/theoretical difference: theoretical is the
-mathematical number of possible combinations given the 22 consonants and
-5 vowels in those patterns, but the estimated is a much smaller set
-mostly because of the rules put in place to filter out words that sound
-similar or have hard/undesirable pronunciations.
+| syllables | characters | pattern     | by the rules | after closeness |
+| :-------- | :--------- | :---------- | -----------: | --------------: |
+| 1         | 3          | `CVC`       |        1,911 |             312 |
+| 2         | 5          | `CVCVC`     |      200,655 |          11,232 |
+| 3         | 7          | `CVCVCVC`   |   21,068,775 |    not computed |
+|           |            | **total**   | **21,271,341** |               |
 
-Note: 1 syllable, 5-characters not supported, and 2-syllable, 6+
-characters not supported (primarily because they would look like
-"joined" words, and there needs to be a way to distinguish joined words
-and their base word parts, vs. base words by themselves, even though you
-can't 100% tell exactly the join word parts, because of merging dynamics
-at join points, hard to reverse-engineer fully, but that's okay, not a
-major goal or need, just kind of neat to realize what a joined word is
-composed of sometimes, like when you know a word's etymology).
+**By the rules** is the arithmetic. `CVC` is 21 openings, since `q`
+cannot open, times 5 vowels times 19 closings, less the 4 banned
+rhymes: 21 × 91 = 1,911. Each further syllable multiplies by another
+21 × 5.
 
-**Bottom line**: Since there's **~50k** possible base words, that should
-cover most stuff. Everything else can be compound words.
+**After closeness** is what survives once no two words are alike all
+the way through, where every consonant is similar to its counterpart
+and every vowel next to its counterpart on the `i e a o u` ladder. That
+is what the selection rules below are for.
 
-### Word Joining Rules
+## Word Joining
 
-Compose **2-3** base words into compound words. Joined words are considered "compound base words", because they have the _feeling_ of being a single unit.
+Two base words joined make a compound. Seven pairings:
 
-At each join point, the
-coda of word 1 meets the onset of word 2, forming a consonant cluster.
+| join | shape | count |
+| :--- | :---- | ----: |
+| `CVC` + `CVC` | `CVCCVC` | 3,651,921 |
+| `CVC` + `CVCVC` | `CVCCVCVC` | 383,451,705 |
+| `CVCVC` + `CVC` | `CVCVCCVC` | 383,451,705 |
+| `CVC` + `CVCVCVC` | `CVCCVCVCVC` | 40,262,429,025 |
+| `CVCVCVC` + `CVC` | `CVCVCVCCVC` | 40,262,429,025 |
+| `CVCVC` + `CVCVCVC` | `CVCVCCVCVCVC` | 4,227,555,047,625 |
+| `CVCVCVC` + `CVCVC` | `CVCVCVCCVCVC` | 4,227,555,047,625 |
+| | **total** | **8,536,405,508,631** |
 
-- Junction must have at least 2 consonants (CC minimum)
-- Resolution priority: keep intact > overlap > onset/coda match >
-  mapped > assimilated > partial drop > geminate
-- **Overlap**: if coda ends with same consonant onset starts with, merge
-  them (e.g. `nt` + `tr` → `ntr`)
-- **Partial drop**: for 3-4C clusters, drop one consonant to make it
-  pronounceable
-- **Geminate separator**: when same or confusable consonants meet,
-  insert a separator and keep both (voice-assimilating the second to
-  match the first). `q` always becomes `n`.
-  - Fricatives (`f v s z c C j x`): any pair inserts `l`, second
-    voice-assimilated (e.g. `sz` → `sls`, `sv` → `slf`, `vf` → `vlv`,
-    `fC` → `flc`)
-  - Nasals (`n m`): insert `z`, keep both (e.g. `nm` → `nzm`, `qn` →
-    `nzn`)
-  - Voiced stops (`b d g`): insert `z`, keep both (e.g. `bd` → `bzd`,
-    `db` → `dzb`)
-  - Voiceless stops (`p t k`): insert `s`, keep both (e.g. `pk` →
-    `psk`, `kt` → `kst`)
-  - Mixed voiced/voiceless stops: separator based on first, second
-    voice-assimilated (e.g. `bt` → `bzd`, `tb` → `tsp`, `gk` → `gzg`)
-- `wa` sequence is reserved for tier-3 word joining, not used in compact
-  joins
-- Candidates scored by phoneme preservation, cluster ease, and word
-  length
+### The joiner
 
-Because of this joining logic, it's actually deterministic, so there's a
-map from source joining cluster to target
-[here](https://github.com/cluesurf/tune/blob/make/text/consonant-clusters-mapping.json).
+Where two words meet, sometimes a consonant goes between them and
+sometimes nothing does. Most joins take nothing.
 
-Here are some examples of how joins may look in the end:
+| joiner | pairs |
+| :----- | ----: |
+| none | 258 |
+| `m` | 33 |
+| `n` | 32 |
+| `l` | 18 |
+| `s` | 11 |
+| `z` | 11 |
 
-| syllables | words | characters | sources               | patterns                                     | estimated | theoretical |
-| :-------- | :---- | :--------- | :-------------------- | :------------------------------------------- | --------: | ----------: |
-| 2         | 2     | 6          | `CVC` + `CVC`         | <code>CV<strong>CC</strong>VC</code>         |       49K |        3.3M |
-| 2         | 2     | 7          | `CVC` + `CCVC`        | <code>CV<strong>CCC</strong>VC</code>        |     24.5K |        3.1M |
-| 2         | 2     | 7          | `CVC` + `CVCC`        | <code>CV<strong>CC</strong>VCC</code>        |     24.5K |        8.6M |
-| 2         | 2     | 7          | `CCVC` + `CVC`        | <code>CCV<strong>CC</strong>VC</code>        |     24.5K |        3.1M |
-| 2         | 2     | 7          | `CVCC` + `CVC`        | <code>CV<strong>CCC</strong>VC</code>        |     24.5K |        8.6M |
-| 2         | 2     | 8          | `CCVC` + `CCVC`       | <code>CCV<strong>CCC</strong>VC</code>       |     12.2K |        2.9M |
-| 2         | 2     | 8          | `CCVC` + `CVCC`       | <code>CCV<strong>CC</strong>VCC</code>       |     12.2K |        8.1M |
-| 2         | 2     | 8          | `CVCC` + `CCVC`       | <code>CV<strong>CCCC</strong>VC</code>       |     12.2K |        8.1M |
-| 2         | 2     | 8          | `CVCC` + `CVCC`       | <code>CV<strong>CCC</strong>VCC</code>       |     12.2K |       22.6M |
-| 3         | 2     | 8          | `CVC` + `CVCVC`       | <code>CV<strong>CC</strong>VCVC</code>       |      140K |        310M |
-| 3         | 2     | 8          | `CVCVC` + `CVC`       | <code>CVCV<strong>CC</strong>VC</code>       |      140K |        310M |
-| 3         | 2     | 9          | `CCVC` + `CVCVC`      | <code>CCV<strong>CC</strong>VCVC</code>      |       70K |        293M |
-| 3         | 2     | 9          | `CVCC` + `CVCVC`      | <code>CV<strong>CCC</strong>VCVC</code>      |       70K |        815M |
-| 3         | 2     | 9          | `CVCVC` + `CCVC`      | <code>CVCV<strong>CCC</strong>VC</code>      |       70K |        293M |
-| 3         | 2     | 9          | `CVCVC` + `CVCC`      | <code>CVCV<strong>CC</strong>VCC</code>      |       70K |        815M |
-| 4         | 2     | 10         | `CVC` + `CVCVCVC`     | <code>CV<strong>CC</strong>VCVCVC</code>     |      3.5M |       29.4B |
-| 4         | 2     | 10         | `CVCVC` + `CVCVC`     | <code>CVCV<strong>CC</strong>VCVC</code>     |      400K |       29.4B |
-| 4         | 2     | 10         | `CVCVCVC` + `CVC`     | <code>CVCVCV<strong>CC</strong>VC</code>     |      3.5M |       29.4B |
-| 4         | 2     | 11         | `CCVC` + `CVCVCVC`    | <code>CCV<strong>CC</strong>VCVCVC</code>    |     1.75M |       27.9B |
-| 4         | 2     | 11         | `CVCC` + `CVCVCVC`    | <code>CV<strong>CCC</strong>VCVCVC</code>    |     1.75M |       77.4B |
-| 4         | 2     | 11         | `CVCVCVC` + `CCVC`    | <code>CVCVCV<strong>CCC</strong>VC</code>    |     1.75M |       27.9B |
-| 4         | 2     | 11         | `CVCVCVC` + `CVCC`    | <code>CVCVCV<strong>CC</strong>VCC</code>    |     1.75M |       77.4B |
-| 5         | 2     | 12         | `CVCVC` + `CVCVCVC`   | <code>CVCV<strong>CC</strong>VCVCVC</code>   |       10M |        2.8T |
-| 5         | 2     | 12         | `CVCVCVC` + `CVCVC`   | <code>CVCVCV<strong>CC</strong>VCVC</code>   |       10M |        2.8T |
-| 6         | 2     | 14         | `CVCVCVC` + `CVCVCVC` | <code>CVCVCV<strong>CC</strong>VCVCVC</code> |      250M |        265T |
-|           |       |            |                       | **total**                                    | **~290M** |   **~270T** |
+A joiner appears only where the two sounds meeting would be hard to
+tell apart.
 
-Note: This is just showing all the possible 2-word combinations, but
-there's *tons* of 3 word combinations in theory too! So numbers get large.
-Also, since we have that joining map simplification logic, the numbers
-might not be totally perfect, but they are reasonable ballparks.
+- **Before breath.** Everything takes `l` before `h`, except `l`
+  itself, which takes `m`.
+- **A stop or nasal against its own family** takes `z` or `s`. The
+  stop families split on the voice of the left sound, `bzb` `psp`
+  `dzd` `tst` `gzg` `ksk`. The nasals are all voiced so they split on
+  the right sound instead, `msm` `mzn` `nsm` `nzn`, with `q` running
+  the opposite way, `qsn` `qzm`.
+- **A rub against a rub** takes `m` or `n`, by a table of sixty four
+  named pairs, `sms` `snz` `fnf` `fmv` and so on.
+- **A liquid against a liquid**, `lsl` `lzr` `rzl` `rsr`.
+- Everything else runs straight together.
 
-Also! You can join words arbitrarily in casual or scientific contexts to create unlimited compounds to your heart's content, by using the `-wa-` joiner too.
+The full tables are in [make/talk](make/talk).
 
-The `-wa-` joined words are considered just "compound extension words", which have _sort-of_ the feeling of being a single word, but you can tell quickly they are separate words joined together, but still, because it's one word technically, your mind feels it as a formal concept rather than a descriptive phrase. _(The purpose of `-wa-` is to distinguish "unified/standard concepts" from "arbitrary phrases". For example, in English we have "black bird" as a generic description, but we have "blackbird" as a specific type of bird species. Kinda vague/not that ideal when you start splitting hairs. Tune's system is intentionally a lot more structured than English in this sense, to make things a ton less ambiguous/a lot clearer)._
+### No join is ambiguous
 
-### Word Selection Rules
+This is what having no clusters buys, and it needs no rule to state it.
 
-#### 5-letter words (CVCVC)
+Since every word alternates the whole way, two consonants never touch
+inside a word. The only place they can touch is a seam, and a seam is
+either two consonants or three.
+
+```text
+CVC + CVC        ->  CVCCVC      the CC is the seam
+CVC + J + CVC    ->  CVCCCVC     the middle C is the joiner
+```
+
+Either way it is the only such run in the word. The number of runs is
+the number of roots less one, and their positions are the cuts. Three
+base words give two runs, four give three. Nothing has to be memorised
+and no rule has to be applied to read a compound apart.
+
+## Word Forms
+
+For a root `R`:
+
+```text
+R    modifier (bare root)
+Ra   entity, what exists
+Ri   action, what happens
+Ru   feature, what something is like
+Re   relation, how things connect
+Ro   operator, how meaning is controlled
+```
+
+```text
+doma = house    domi = build    domu = built
+nara luki loka        person sees dog
+nara mare doma        person in house
+nego nara luki loka   not (person sees dog)
+```
+
+The bare root modifies what follows: `brk doma` is a bright house.
+
+Tune separates content from control. Things, actions, properties and
+relations carry the meaning. Operators say what to do with it. That is
+what lets a short sentence carry a complicated thought without extra
+grammar.
+
+## Tune Rock
+
+Tune has an older form, **[Tune Rock](make/rock)**, with nine sounds
+and one syllable shape.
+
+```text
+i a u        m n        p t k        h
+```
+
+Every sound is one a body makes with nothing but itself. `m` and `n`
+are the two hums, good and bad. `p`, `t` and `k` are the three drum
+hits, lips and tongue and throat. `h` is the breath, and there it is
+grammar rather than vocabulary: it carries the role syllable and
+appears in no root.
+
+Rock is built for chant, song and humming, and for plain statements. It
+does not join words at all. **2,165 roots, 8,660 words.**
+
+Every Tune sound has exactly one Rock ancestor. The three beats carry
+almost the whole load, `t` alone standing behind `t d s z c C l r`.
+
+## Word Selection Rules
+
+The three word rules say what is legal. These say what is worth using.
+Legal is not the same as usable: `mir` and `nir` are both legal and one
+of them has to go, or a listener cannot tell them apart. What follows
+is how the lexicon is narrowed from what the shapes allow down to words
+that stay distinct in the ear.
+
+### 5-letter words (CVCVC)
 
 - No `w` anywhere
 - No `q`, `w`, `y` at start
@@ -246,7 +282,7 @@ The `-wa-` joined words are considered just "compound extension words", which ha
   - Fricatives: `h s f v z x j c C`
   - Liquids: `l r`
 
-#### 7-letter words (CVCVCVC)
+### 7-letter words (CVCVCVC)
 
 - All 5-letter rules above, plus:
 - No `h`, `y`, `q` in interior consonants (positions 2, 4)
@@ -254,47 +290,6 @@ The `-wa-` joined words are considered just "compound extension words", which ha
   for `r l f v z x j C c s`
 - Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
 - Every word guaranteed at least one `a`
-
-## Code Library
-
-### Word Composition
-
-Compose 2-3 root syllables into coined words. Each root can be a single
-syllable (CVC, CVCC, CCVC) or multi-syllable (CVCVC, etc.). Junctions
-between roots always have at least 2 consonants.
-
-```ts
-import { composeWordCandidates } from './code/compose'
-
-const candidates = composeWordCandidates(['hit', 'mot'])
-// Returns ranked candidates like:
-// [{ word: 'hitmot', pattern: '...', junctions: ['tm'], score: 0.85 }, ...]
-
-// 3 roots
-composeWordCandidates(['hit', 'mot', 'raz'])
-
-// Multi-syllable roots
-composeWordCandidates(['malik', 'tos'])
-```
-
-Each candidate has:
-
-- **word** - the composed word
-- **pattern** - structural pattern label
-- **junctions** - consonant clusters at each join point
-- **score** - quality score (higher is better)
-
-**Junction rules.** When two roots meet, the coda of the first and onset
-of the second form a consonant cluster. This cluster gets simplified to
-something pronounceable as described in the joining rules section above.
-
-**Regenerate cluster mappings:**
-
-```sh
-npx tsx ./make/sounds.ts
-```
-
-Output goes to `./text/`.
 
 ## Summary
 
