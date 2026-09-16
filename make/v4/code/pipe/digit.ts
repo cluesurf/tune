@@ -117,24 +117,35 @@ for (let digit = 0; digit < 16; digit++) {
    * already spent, so the digits stay as near the front of the order
    * as the rules allow.
    */
-  let word = ''
-  if (consonant === 'q') {
-    for (const open of CONSONANTS) {
-      const tryWord = `${open}${vowel}q`
-      if (testWord(tryWord).ok && !made.includes(tryWord)) {
-        word = tryWord
-        break
-      }
-    }
-  } else {
-    for (const close of CONSONANTS) {
-      const tryWord = `${consonant}${vowel}${close}`
-      if (testWord(tryWord).ok && !made.includes(tryWord)) {
-        word = tryWord
-        break
-      }
-    }
+  /**
+   * The free consonant is chosen to collide with nothing, not taken
+   * first in tone order.
+   *
+   * Taking it first gave `mam nim meq gam dom bum pom tam kem him`:
+   * sixteen digits all closing on `m`, and eight of them landing on
+   * words that already exist, including `mam` mother and `dom` state.
+   *
+   * The rhyme itself is arguably right for a digit set, since they
+   * SHOULD sound like one family. What is wrong is spending the
+   * language's most used sixteen words on forms already taken, when
+   * the same rule with a different filler takes none of them.
+   */
+  const tries: Array<string> = []
+  for (const other of CONSONANTS) {
+    const tryWord =
+      consonant === 'q'
+        ? `${other}${vowel}q`
+        : `${consonant}${vowel}${other}`
+    if (!testWord(tryWord).ok) continue
+    if (made.includes(tryWord)) continue
+    tries.push(tryWord)
   }
+  tries.sort((a, b) => {
+    const free = Number(Boolean(holds.get(a))) - Number(Boolean(holds.get(b)))
+    if (free !== 0) return free
+    return 0
+  })
+  const word = tries[0] ?? ''
 
   if (!word) {
     process.stdout.write(

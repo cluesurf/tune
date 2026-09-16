@@ -138,6 +138,9 @@ const TRIPLE: Array<[string, [string, string, string]]> = [
   // Life is the middle, not the sum of the ends. A speaker should not
   // have to build it out of birth and death.
   ['living', ['birth', 'life', 'death']],
+  // A grade, and an old one: the three metals a culture reaches in
+  // order and ranks in order. `i a u` walks it from least to most.
+  ['metal', ['copper', 'silver', 'gold']],
 ]
 
 function vowelPath(size: number): Array<string> {

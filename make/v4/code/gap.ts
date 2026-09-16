@@ -55,7 +55,7 @@ const doubtful = readTerms('doubtful.english.csv')
  * Organised by domain so a whole area cannot be forgotten at once, which
  * is how the sound words and the interjections were both missed.
  */
-const DOMAIN: Record<string, string> = {
+export const DOMAIN: Record<string, string> = {
   being: `be exist live die birth death grow decay change become
     remain stay happen occur cause effect start end continue stop`,
 
@@ -168,6 +168,19 @@ const DOMAIN: Record<string, string> = {
     set group order pattern prove logic true false if then`,
 }
 
+/**
+ * The report runs only when this file is the one being run.
+ *
+ * `DOMAIN` is the inventory of what a language of 4,096 roots has to
+ * reach, and `theme.ts` needs it to lay the lexicon out by domain. An
+ * ESM import runs the whole module, so importing the list printed the
+ * gap report in the middle of somebody else's output.
+ *
+ * The list is the shared thing and the check is this file's own job,
+ * so the check is the part that gets guarded.
+ */
+const RUNNING = process.argv[1]?.endsWith('gap.ts') ?? false
+
 const KNOWN = new Set([...candidate, ...derivable])
 
 const missing: Array<[string, Array<string>]> = []
@@ -182,6 +195,9 @@ for (const [domain, text] of Object.entries(DOMAIN)) {
   }
 }
 
+if (!RUNNING) {
+  // Imported for the domain list alone. Say nothing.
+} else if (true) {
 console.log(`tested ${tested} common concepts across ${Object.keys(DOMAIN).length} domains`)
 console.log('')
 
@@ -203,4 +219,5 @@ if (missing.length === 0) {
       `  ${parked.length} of them are parked as doubtful: ${parked.join(' ')}`,
     )
   }
+}
 }
