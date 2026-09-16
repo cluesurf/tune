@@ -61,7 +61,30 @@ const args = yargs(hideBin(process.argv))
   .strict()
   .parseSync()
 
-/** The consonants in tone order, which is where the digits come from. */
+/**
+ * The hex alphabet, stated by hand and then derived:
+ *
+ *   if `m n q g d b p t k h s z v f x j C c y r l w` is the full
+ *   order I set, then hex code is `m n d b t k h s z v f x c r l w`
+ *
+ * **It is the tone order with six sounds removed, not the first
+ * sixteen of it.** Dropped: `q`, `g`, `p`, `j`, `C`, `y`. Twenty-two
+ * minus six is sixteen exactly.
+ *
+ * Reading the first sixteen instead gave `m n q g d b p t k h s z v f
+ * x j`, which put `q` at digit 2 and then needed a special case,
+ * because `BAD_OPEN` refuses `q` at the start of a word. The real
+ * alphabet has no such case to make: every one of its sixteen can
+ * both open and close, and that is presumably why those six in
+ * particular were the ones left out.
+ *
+ * `mesh/deck/belt/code/tool/tone.ts` uses a consonant-only alphabet
+ * for tone codes for a related reason: a code made only of consonants
+ * cannot accidentally spell a word.
+ */
+const HEX = 'mndbtkhszvfxcrlw'.split('')
+
+/** Kept for the tone order, which the walk still reads. */
 const CONSONANTS = SORT_ORDER.filter(s => ALL.includes(s))
 
 /**
@@ -88,6 +111,44 @@ const CYCLES: Record<string, Array<string>> = {
 
 const VOWELS = CYCLES[args.cycle]
 
+/**
+ * Digits fixed by hand, which beat the positional rule.
+ *
+ * `hol` for zero, and it is a better word than the rule can produce:
+ * a hole is what zero is, and the sound says so. The positional rule
+ * would give `mas`, which says nothing at all.
+ *
+ * Rule one from `note/tune/pipeline/rules-of-mapping.md`. A hand
+ * decision is the ground truth and a generated one fills the gaps
+ * around it.
+ */
+const BY_HAND: Record<number, string> = {
+  0: 'hol',
+}
+
+/**
+ * `hol` holds `whole` on the board, and that is not a conflict.
+ *
+ * It looked like one. `whole` was placed by hand long ago and rule
+ * one says a hand-made form stays, so zero taking `hol` would be
+ * overwriting a decision.
+ *
+ * But `whole` was RE-decided, also by hand and more recently:
+ *
+ *   same/different and whole/part should be `e o` and 3 letters
+ *
+ * which moves it into the mirror inventory. `v4:mirror-evolve` now
+ * puts it on `Cej` against `joC` for part, on the flat axis as asked.
+ * So `hol` is freed by the newer instruction rather than taken from
+ * the older one, and the two hand decisions agree once both are
+ * carried out.
+ *
+ * The check below is here so that stays true. If `whole` ever loses
+ * its mirror form and falls back to `hol`, this says so instead of
+ * letting zero quietly overwrite it.
+ */
+const WATCH = 'whole'
+
 const board = readBoard()
 const holds = new Map<string, string>()
 board.forms.forEach((form, i) => {
@@ -103,7 +164,22 @@ let clear = 0
 const made: Array<string> = []
 
 for (let digit = 0; digit < 16; digit++) {
-  const consonant = CONSONANTS[digit]
+  const fixed = BY_HAND[digit]
+  if (fixed) {
+    made.push(fixed)
+    const held = holds.get(fixed)
+    if (!held) clear++
+    const note =
+      held === WATCH
+        ? `${held}, which moves to its mirror form`
+        : held || ''
+    process.stdout.write(
+      `  ${String(digit).padStart(5)}  ${fixed.padEnd(6)} ` +
+        `${'by hand'.padEnd(18)} ${note}\n`,
+    )
+    continue
+  }
+  const consonant = HEX[digit]
   const guessed = digit >= VOWELS.length
   const vowel =
     VOWELS[digit] ?? VOWELS[10 + ((digit - 10) % (VOWELS.length - 10))]

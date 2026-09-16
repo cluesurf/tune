@@ -65,7 +65,12 @@ import { hideBin } from 'yargs/helpers'
 
 import { readBoard, TERM } from './board'
 import { DOMAIN } from '../gap'
-import { CONSONANTS, testWord } from '../sound'
+import {
+  CODA_CLUSTERS,
+  CONSONANTS,
+  ONSET_CLUSTERS,
+  testWord,
+} from '../sound'
 import { SORT_ORDER } from '../../../../code/phonology'
 
 const args = yargs(hideBin(process.argv))
@@ -138,12 +143,25 @@ for (const word of readCandidates()) {
   themes.set(bucket, list)
 }
 
-// The most productive concept in a theme takes the earliest sound.
+// Alphabetical, deliberately. See the note on the walk below: no
+// ordering here is allowed to imply that one concept outranks
+// another, and alphabetical is the one that claims least.
 for (const list of themes.values()) {
-  list.sort((a, b) => b.weight - a.weight || a.term.localeCompare(b.term))
+  list.sort((a, b) => a.term.localeCompare(b.term))
 }
 
 // ─── The walk ───────────────────────────────────────────
+
+/**
+ * A word never repeats a consonant.
+ *
+ * Rule five. `non` is legal and bad, `nan` is available and better,
+ * and the same holds for `kek`, `vov` and `sets`.
+ */
+function repeats(word: string): boolean {
+  const letters = [...word].filter(s => !'ieaou'.includes(s))
+  return new Set(letters).size !== letters.length
+}
 
 /** The consonants in tone order, which is the order the walk takes. */
 const ORDER = SORT_ORDER.filter(s => CONSONANTS.includes(s))
@@ -173,17 +191,34 @@ type Row = {
 const rows: Array<Row> = []
 const spent = new Set<string>(already.values())
 
-let offset = 0
+/**
+ * The walk makes NO claim about which concepts matter most.
+ *
+ * It did for one run, and that was wrong. Members were sorted by
+ * `head` and `uses` so the "most important" word in each theme took
+ * `m`, on the reading that a valuable sound should go to a valuable
+ * word.
+ *
+ *   not true, only important in the sense of, it has to do with
+ *   consciousness perhaps, or other things, leave that to me, just
+ *   pick randomly or by other means, you will do importance wrong
+ *
+ * And the measure was never capable of it. `uses` and `head` count
+ * how many ENGLISH COMPOUND BREAKDOWNS a word appears in, which is a
+ * fact about English morphology. `gratitude`, `destiny` and
+ * `intuition` all score zero. `english.ts` already learned this once
+ * and records it: **`uses` sorts, and never excludes**. Sorting the
+ * walk by it was the same error wearing different clothes.
+ *
+ * So the order is alphabetical. It is arbitrary, stable, replayable,
+ * and makes no claim it cannot support. Which concepts deserve the
+ * valuable sounds is a judgement about consciousness and weight that
+ * belongs to a person, and the right way to hold that open is to put
+ * nothing in its place.
+ */
 for (const [name, list] of themes) {
   const path = vowelPath(Math.min(list.length, 16))
-  /**
-   * Each theme starts the walk at a different point, so two themes
-   * do not open on the same sound in the same order. The offset
-   * between onset and coda is what keeps `non` and `mam` from
-   * happening: a form never repeats its consonant.
-   */
-  const start = offset % OPENS.length
-  offset += 7
+  const start = 0
 
   for (let i = 0; i < list.length; i++) {
     const member = list[i]
@@ -196,22 +231,46 @@ for (const [name, list] of themes) {
      * against every form this run has already given out.
      */
     let word = ''
+    /**
+     * Three sounds first, then four.
+     *
+     * `CVC` holds 1,024 forms and there are three thousand concepts
+     * without one, so a walk confined to three sounds runs dry a
+     * third of the way through and leaves 1,873 words with nothing.
+     * `CVCC` and `CCVC` add 1,792 and 1,280 more.
+     *
+     * The walk does not change shape. The onset still steps through
+     * the order and the coda still steps at an offset: the extra
+     * sound is a cluster hung off one end, so a theme laid out across
+     * two shapes still reads as one walk.
+     */
+    const tails = [
+      ...CLOSES.map(c => ({ tail: c, lead: '' })),
+      ...CODA_CLUSTERS.map(c => ({ tail: c, lead: '' })),
+      ...ONSET_CLUSTERS.map(c => ({ tail: '', lead: c })),
+    ]
+
     for (let step = 0; step < OPENS.length && !word; step++) {
       const onset = OPENS[(start + i + step) % OPENS.length]
-      for (let jump = 1; jump < CLOSES.length; jump++) {
-        const coda = CLOSES[(start + i + jump) % CLOSES.length]
-        // Rule five. A word never repeats its consonant: `non` is
-        // legal and bad, `nan` is available and better.
-        if (coda === onset) continue
+      for (let jump = 1; jump < tails.length && !word; jump++) {
+        const { tail, lead } = tails[(start + i + jump) % tails.length]
+        if (lead && lead[0] !== onset) continue
         for (const v of [vowel, ...path, ...'ieaou'.split('')]) {
-          const made = `${onset}${v}${coda}`
+          const made = lead
+            ? `${lead}${v}${CLOSES[(start + i) % CLOSES.length]}`
+            : `${onset}${v}${tail}`
+          if (made.length < 3) continue
+          // Rule five, tested on the FINISHED word rather than on its
+          // pieces. Checking only the first letter of the closing
+          // cluster let through `sets`, `borb` and `pesp`: ninety
+          // forms whose repeat was in the last position.
+          if (repeats(made)) continue
           if (spent.has(made)) continue
           if (holds.get(made)) continue
           if (!testWord(made).ok) continue
           word = made
           break
         }
-        if (word) break
       }
     }
 
