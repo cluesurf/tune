@@ -301,6 +301,76 @@ process.stdout.write(
     '  morphemes that never reach ordinary speech.\n',
 )
 
+// ─── The heads, which are what a domain ends in ─────────
+
+/**
+ * The final character of a genus base, weighted by species under it.
+ *
+ * **This is the head system.** Chinese does not merely put the head
+ * last, it uses a small closed set of heads per domain, and every
+ * member of the domain ends in one:
+ *
+ * ```text
+ * 藓  moss      every moss ends in it
+ * 草  grass     every herb
+ * 兰  orchid    every orchid
+ * 木  tree      every woody thing
+ * ```
+ *
+ * Counting distinct genera would say each head is worth one. Counting
+ * SPECIES says what the head actually governs, which is the
+ * compression question: a head under four hundred species earns its
+ * slot four hundred times over.
+ */
+const headOf = new Map<string, number>()
+const headGenera = new Map<string, Set<string>>()
+
+for (const row of rows) {
+  if (!row.genusC || !row.speciesC) continue
+  const base = genusBase.get(row.genusC) ?? row.genusC
+  const last = [...base].pop()
+  if (!last || !/[一-鿿]/.test(last)) continue
+  headOf.set(last, (headOf.get(last) ?? 0) + 1)
+  headGenera.set(last, (headGenera.get(last) ?? new Set()).add(base))
+}
+
+const heads = [...headOf.entries()].sort((a, b) => b[1] - a[1])
+const headTotal = heads.reduce((sum, [, n]) => sum + n, 0)
+
+process.stdout.write('\n\nTHE HEADS, AND WHAT EACH GOVERNS\n\n')
+process.stdout.write(
+  '  The last character of a genus base, weighted by the species\n' +
+    '  under it. Every member of a domain ends in one of these.\n\n',
+)
+process.stdout.write(
+  `  ${'head'.padEnd(5)}${'species'.padStart(9)}${'genera'.padStart(8)}` +
+    `  ${'share'.padStart(6)}  english\n`,
+)
+
+let sofar = 0
+for (const [ch, n] of heads.slice(0, args.show || 40)) {
+  sofar += n
+  const say = gloss.get(ch)
+  process.stdout.write(
+    `  ${ch.padEnd(4)}${String(n).padStart(9)}` +
+      `${String(headGenera.get(ch)?.size ?? 0).padStart(8)}  ` +
+      `${((n / headTotal) * 100).toFixed(1).padStart(5)}%  ` +
+      `${say?.english ?? '(no gloss)'}\n`,
+  )
+}
+
+for (const n of [20, 50, 100, 200, 400]) {
+  const got = heads.slice(0, n).reduce((sum, [, k]) => sum + k, 0)
+  process.stdout.write(
+    `\n  ${String(n).padStart(4)} heads cover ` +
+      `${((got / headTotal) * 100).toFixed(1)}% of all species`,
+  )
+}
+process.stdout.write(
+  `\n\n  ${heads.length} distinct heads in all, against ` +
+    `${headTotal.toLocaleString()} species.\n`,
+)
+
 // ─── The place morphemes ────────────────────────────────
 
 /**
@@ -372,16 +442,71 @@ process.stdout.write(
   `\nAGAINST TUNE'S OWN LIST\n\n` +
     `  Of the 500 commonest morphemes, ${top.length} have a gloss and\n` +
     `  ${top.length - missing.length} are already Tune candidates ` +
-    `(${(((top.length - missing.length) / top.length) * 100).toFixed(0)}%).\n\n` +
-    '  The misses, which are what this volume asks for:\n\n  ',
+    `(${(((top.length - missing.length) / top.length) * 100).toFixed(0)}%).\n\n`,
 )
-process.stdout.write(
-  `${missing
-    .slice(0, 40)
-    .map(([ch]) => headWord(gloss.get(ch)?.english ?? ''))
-    .filter(Boolean)
-    .join(' ')}\n`,
-)
+
+// ─── What to do with the misses ─────────────────────────
+
+/**
+ * Every missing morpheme falls into one of five buckets, and each has
+ * a different answer. Sorting them is the whole job: a list of 164
+ * missing words is not actionable and five buckets are.
+ *
+ * ```text
+ * PLACE      a province, a direction, a landform used as provenance
+ * KIND       a natural kind: orchid, bracken, millet
+ * PART       anatomy the language lacks: calyx, bract, tendril
+ * QUALITY    a property: mottled, lofty
+ * COMPOUND   plainly two roots Tune already has
+ * ```
+ */
+const PLACE_WORD =
+  /\b(province|county|city|river|lake|mountain|asia|china|tibet|sea|bay|state|region|dian|kingdom|dynasty)\b/i
+const KIND_WORD =
+  /\b(orchid|chrysanthemum|bracken|millet|rush|rattan|fern|moss|bamboo|lotus|hemp|reed|bean|vine|grass|tree|flower)\b/i
+const PART_WORD =
+  /\b(calyx|bract|stem|stalk|leaf|root|seed|fruit|petal|vein|ear|scale|wing|tendril|husk|pod|bud|thorn|bark|sap)\b/i
+
+type Bucket = 'place' | 'kind' | 'part' | 'quality' | 'unknown'
+
+function bucket(english: string): Bucket {
+  if (PLACE_WORD.test(english)) return 'place'
+  if (KIND_WORD.test(english)) return 'kind'
+  if (PART_WORD.test(english)) return 'part'
+  // A gloss that is one plain adjective is a quality.
+  if (/^[a-z]+(,\s*[a-z]+)*$/.test(english.trim())) return 'quality'
+  return 'unknown'
+}
+
+const sorted = new Map<Bucket, Array<[string, string]>>()
+for (const [ch] of missing) {
+  const english = gloss.get(ch)?.english ?? ''
+  const at = bucket(english)
+  sorted.set(at, [...(sorted.get(at) ?? []), [ch, english]])
+}
+
+const ANSWER: Record<Bucket, string> = {
+  place: 'the proper-name mechanism, NOT a root. Still not designed',
+  kind: 'a natural kind. A few earn roots, the rest get compounds',
+  part: 'plant anatomy. These are naming machinery and earn roots',
+  quality: 'a property. Cheap, reusable, and most should be roots',
+  unknown: 'read by hand. The gloss did not sort cleanly',
+}
+
+process.stdout.write('  WHAT TO DO WITH THE MISSES\n\n')
+for (const at of ['part', 'quality', 'kind', 'place', 'unknown'] as const) {
+  const mine = sorted.get(at) ?? []
+  if (!mine.length) continue
+  process.stdout.write(
+    `  ${at.toUpperCase()}  ${mine.length}\n  ${ANSWER[at]}\n\n    `,
+  )
+  process.stdout.write(
+    `${mine
+      .slice(0, 24)
+      .map(([ch, english]) => `${ch} ${headWord(english)}`)
+      .join(', ')}\n\n`,
+  )
+}
 
 // ─── Write ──────────────────────────────────────────────
 

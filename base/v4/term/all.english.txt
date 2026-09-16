@@ -383,6 +383,7 @@ away
 awe
 awful
 awkward
+awn
 axe
 axiom
 axis
@@ -618,6 +619,8 @@ bowl
 box
 boy
 brace
+bracken
+bract
 brag
 braid
 brain
@@ -728,6 +731,7 @@ call
 callous
 calm
 calorie
+calyx
 camel
 camera
 camouflage
@@ -2216,6 +2220,7 @@ frighten
 fringe
 frog
 from
+frond
 front
 frost
 frown
@@ -2805,6 +2810,7 @@ interior
 intermittent
 internal
 internet
+internode
 interpolate
 interpret
 interpretation
@@ -2911,6 +2917,7 @@ jute
 juvenile
 kangaroo
 katal
+keel
 keen
 keep
 keeper
@@ -3094,6 +3101,7 @@ load
 loaf
 loan
 lobe
+lobed
 lobster
 local
 locate
@@ -3397,6 +3405,7 @@ motivation
 motive
 motor
 mottle
+mottled
 mound
 mount
 mountain
@@ -4479,6 +4488,7 @@ rift
 right
 rigid
 rim
+rind
 ring
 rinse
 riot
@@ -4701,6 +4711,7 @@ sensitivity
 sensor
 sentence
 sentient
+sepal
 separate
 separation
 sequence
@@ -5068,6 +5079,7 @@ stairs
 stake
 stale
 stalk
+stamen
 stamina
 stamp
 stance
@@ -5481,6 +5493,7 @@ tonne
 too
 tool
 tooth
+toothed
 top
 topic
 tornado
@@ -5972,6 +5985,7 @@ wrap
 wreck
 wren
 wrinkle
+wrinkled
 wrist
 write
 writing

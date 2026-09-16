@@ -45,6 +45,7 @@
     "v4:name:propose": "tsx make/v4/code/name/propose.ts",
     "v4:domains": "tsx make/v4/code/name/domains.ts",
     "v4:hanzi": "tsx make/v4/code/name/hanzi.ts",
+    "v4:head-map": "tsx make/v4/code/name/headmap.ts",
     "v4:field:describe": "tsx make/v4/code/field/describe.ts",
     "v4:field:ground": "tsx make/v4/code/field/ground.ts",
     "v4:compound": "tsx make/v4/code/compound.ts",

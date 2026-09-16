@@ -3253,6 +3253,7 @@ assimilate                                    verb             0     0
 attest                                        verb             0     0
 avocado                                       noun             0     0
 awe                                           noun             0     0
+awn                                           noun             0     0
 axiom                                         noun             0     0
 bang                                          verb             0     0
 barb                                          noun             0     0
@@ -3272,6 +3273,8 @@ bog                                           verb             0     0
 bondage                                       noun             0     0
 boom                                          verb             0     0
 bound                                         adjective        0     0
+bracken                                       verb             0     0
+bract                                         verb             0     0
 bravo                                         interjection     0     0
 brilliant                                     adjective        0     0
 brim                                          noun             0     0
@@ -3291,6 +3294,7 @@ cactus                                        noun             0     0
 calcium                                       noun             0     0
 calibrate                                     verb             0     0
 calorie                                       noun             0     0
+calyx                                         noun             0     0
 camouflage                                    noun             0     0
 candela                                       noun             0     0
 candidate                                     noun             0     0
@@ -3487,6 +3491,7 @@ forage                                        noun             0     0
 fountain                                      noun             0     0
 frail                                         adjective        0     0
 frenzy                                        noun             0     0
+frond                                         noun             0     0
 frustrate                                     verb             0     0
 gallon                                        noun             0     0
 gallop                                        noun             0     0
@@ -3559,6 +3564,7 @@ insight                                       noun             0     0
 instantiate                                   verb             0     0
 integrate                                     verb             0     0
 intellect                                     noun             0     0
+internode                                     noun             0     0
 intervene                                     noun             0     0
 intimidate                                    verb             0     0
 intuition                                     noun             0     0
@@ -3577,6 +3583,7 @@ junction                                      noun             0     0
 junk                                          noun             0     0
 kangaroo                                      noun             0     0
 katal                                         adjective        0     0
+keel                                          verb             0     0
 kelvin                                        noun             0     0
 lag                                           verb             0     0
 lame                                          adjective        0     0
@@ -3597,6 +3604,7 @@ lichen                                        noun             0     0
 lily                                          noun             0     0
 lime           white stone powder             noun             0     0
 lime           green lemon                    noun             0     0
+lobed                                         verb             0     0
 lobster                                       noun             0     0
 loom                                          noun             0     0
 loot                                          verb             0     0
@@ -3637,6 +3645,7 @@ monument                                      noun             0     0
 moss                                          noun             0     0
 moth                                          noun             0     0
 mottle                                        noun             0     0
+mottled                                       verb             0     0
 muffle                                        noun             0     0
 mumble                                        verb             0     0
 murky                                         adjective        0     0
@@ -3766,6 +3775,7 @@ rhetoric                                      noun             0     0
 riddle                                        noun             0     0
 ridicule                                      noun             0     0
 rift                                          noun             0     0
+rind                                          noun             0     0
 riot                                          verb             0     0
 rip                                           verb             0     0
 ripple                                        noun             0     0
@@ -3800,6 +3810,7 @@ secretion                                     noun             0     0
 segment                                       noun             0     0
 segregate                                     verb             0     0
 sentient                                      adjective        0     0
+sepal                                         noun             0     0
 serene                                        adjective        0     0
 serrate                                       verb             0     0
 sesame                                        noun             0     0
@@ -3835,6 +3846,7 @@ sprout                                        verb             0     0
 spur                                          verb             0     0
 squish                                        verb             0     0
 stale                                         adjective        0     0
+stamen                                        noun             0     0
 stamina                                       noun             0     0
 starch                                        noun             0     0
 steradian                                     noun             0     0
@@ -3877,6 +3889,7 @@ tide                                          verb             0     0
 toil                                          noun             0     0
 tolerate                                      verb             0     0
 tomato                                        noun             0     0
+toothed                                       noun             0     0
 tornado                                       noun             0     0
 torso                                         noun             0     0
 tradeoff                                      noun             0     0
@@ -3924,6 +3937,7 @@ wicket                                        noun             0     0
 wink                                          noun             0     0
 wit                                           noun             0     0
 wow                                           interjection     0     0
+wrinkled                                      adjective        0     0
 yam                                           noun             0     0
 yay                                           interjection     0     0
 yearn                                         verb             0     0
