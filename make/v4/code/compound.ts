@@ -37,10 +37,11 @@ const OUT = resolve(TERM, 'compound')
 // ─── The inventories ────────────────────────────────────
 
 /**
- * The rocks, rebuilt as four families rather than twenty-five names.
+ * The rocks, rebuilt twice: first as families, then on evidence.
  *
- * Read `note/tune/pipeline/compounding.md` for the rules. The change
- * from the first draft is one sentence:
+ * Read `note/tune/pipeline/compounding.md` for the rules and
+ * `borrowing.md` for where the evidence came from. The change that
+ * mattered is one sentence:
  *
  *   A compound is a NAME, not a definition.
  *
@@ -49,46 +50,12 @@ const OUT = resolve(TERM, 'compound')
  * more on first meeting than the English word does, which is named
  * after a Roman nobody remembers.
  *
- * ## The igneous grid, which is the part worth copying
+ * ## What the first rebuild got right and kept
  *
- * Six rocks, two roots each, one table:
- *
- * ```text
- *            grain           fire
- *   light    granite         rhyolite
- *   gray     diorite         andesite
- *   dark     gabbro          basalt
- * ```
- *
- * `grain` says the crystals are visible, which means it cooled slowly
- * underground. `fire` says it came out, so the crystals are too small
- * to see. The colour is the composition: light rock is quartz and
- * feldspar, dark rock is iron and magnesium. Both axes are true, both
- * are visible in the hand, and **a speaker who learns two of these six
- * can guess the other four.**
- *
- * That is worth more than accuracy. An earlier draft proposed
- * `felsic coarse` for granite, which is correct petrology and a worse
- * name: `felsic` is opaque to everyone who has not taken the course,
- * and it buys nothing `light` does not.
- *
- * ## The metamorphic ladder
- *
- * `press` is the operator, and the four foliated rocks are the real
- * sequence a mudstone walks as it goes deeper:
- *
- * ```text
- *   clay press    slate       splits flat
- *   silk press    phyllite    a sheen appears
- *   mica press    schist      the mica is visible
- *   band press    gneiss      the minerals separate into stripes
- * ```
- *
- * `sand press` and `lime press` are the two unfoliated ones, and they
- * say exactly what happened: quartzite is a pressed sandstone, marble
- * is a pressed limestone.
- *
- * ## The clastic pair
+ * `press` is the metamorphic operator and the four foliated rocks are
+ * the real sequence a mudstone walks as it is buried deeper. Two of
+ * the four have since taken an attested image instead, and the other
+ * two keep it.
  *
  * Conglomerate and breccia differ in one thing and nothing else, so
  * the names differ in one thing and nothing else:
@@ -97,9 +64,61 @@ const OUT = resolve(TERM, 'compound')
  *   round bit     conglomerate
  *   sharp bit     breccia
  * ```
+ *
+ * ## Rebuilt a second time, on evidence instead of on a grid
+ *
+ * The version before this one was a tidy 3x2 table: `light grain`,
+ * `gray grain`, `dark grain`, `light fire`, `gray fire`, `dark fire`.
+ * Systematic, true, and unmemorable.
+ *
+ *   try to be more creative at the uniqueness, like look at chinese!
+ *   should be much more uniquely named than "light x", "dark x",
+ *   that's too general. think how to make it memorable.
+ *
+ * `deck/code/base/link/` holds 79,755 Chinese compounds with a literal
+ * gloss, plus Japanese, Korean, German, Finnish, Hungarian and
+ * Turkish. **Those are answers to this exact problem worked out by
+ * millions of speakers**, and `v4:echo` reads them. What they show:
+ *
+ * ```text
+ * 花崗岩  flower + ridge + rock   granite    speckled like blossom
+ * 花石    flower + stone          marble     the veining
+ * 石英    stone + petal           quartz     the crystal habit
+ * 浮石    float + stone           pumice     it floats
+ * 石板    stone + plank           slate      a writing board
+ * 頁岩    page + rock             shale      it splits into pages
+ * 片岩    slice + rock            schist
+ * 火打石  fire + strike + stone   flint
+ * 石渣    stone + refuse          gravel
+ * 石炭    stone + charcoal        coal
+ * laavalasi  lava + glass         obsidian   Finnish
+ * ```
+ *
+ * Not one is two adjectives. **Every one borrows a noun from another
+ * corner of the world and brings back a picture**: a rock named after
+ * a flower, another after a page, another after floating.
+ *
+ * `obsidian = lava glass` was already here and Finnish agrees with it
+ * independently, which is the strongest possible evidence a name is
+ * right.
+ *
+ * **`pumice = lava foam` is kept over the attested `float stone`**,
+ * against the rule, because it is better. Floating is what pumice
+ * DOES and foam is what pumice IS, and the foam is why it floats. It
+ * also keeps pumice in the `lava` family beside obsidian and scoria,
+ * where a speaker meeting one has the shape of the other two. An
+ * attested name is strong evidence and not an instruction.
+ *
+ * ## What survived the grid
+ *
+ * The four igneous rocks nobody has a vivid name for keep the grid,
+ * because a systematic name beats a forced image. `grain` says the
+ * crystals are visible so it cooled slowly underground, `fire` says it
+ * came out. **The rule is images first, grid as the fallback**, and
+ * the fallback is now four names instead of six.
  */
 const ROCK = `
-granite = light grain
+granite = flower grain
 diorite = gray grain
 gabbro = dark grain
 rhyolite = light fire
@@ -110,133 +129,250 @@ pegmatite = big crystal
 obsidian = lava glass
 pumice = lava foam
 scoria = lava hole
-tuff = ash rock
-slate = clay press
+tuff = ash stone
+slate = board stone
 phyllite = silk press
-schist = mica press
+schist = slice stone
 gneiss = band press
 quartzite = sand press
-marble = lime press
+marble = flower stone
 serpentinite = green scale rock
-soapstone = soft smooth rock
+soapstone = soap stone
 sandstone = sand stone
 limestone = lime stone
 mudstone = mud stone
 siltstone = silt stone
-shale = clay layer
+shale = page stone
 conglomerate = round bit
 breccia = sharp bit
 arkose = granite sand
 greywacke = mud sand
-chert = dull flint
-flint = spark stone
+chert = dull spark stone
+flint = fire strike stone
 travertine = spring lime
-chalk = soft white stone
-coal = plant burn
+chalk = powder stone
+coal = char stone
 peat = bog plant
 laterite = iron soil
 `
 
+/**
+ * ## The trees, rebuilt on what other languages found
+ *
+ * `v4:echo` over 79,755 Chinese compounds and six more languages. The
+ * best of what came back:
+ *
+ * ```text
+ * 蛙手    frog + hand       maple     the palmate leaf, and it is
+ * 羊歯    sheep + teeth     fern      the frond, and it is
+ * 颤杨    shiver + willow   aspen
+ * 箭竹    arrow + flute     bamboo
+ * 糸杉    silk + pine       cypress
+ * 柳树    pleasure + tree   willow
+ * napraforgó  sun + turn    sunflower
+ * ```
+ *
+ * **`frog hand` for maple is the single best name in the corpus.**
+ * Nobody who has seen a maple leaf and been told that will forget it,
+ * and `sweet sap tree`, which is what stood here, is true of maple,
+ * birch and palm alike.
+ *
+ * ## The fruits became roots
+ *
+ * Seven rows named themselves: `apple = apple tree`, `pear = pear
+ * tree`, `orange = orange fruit tree`, `coconut = coconut palm`. A
+ * name that reaches itself says nothing, and the fix is not a better
+ * breakdown, it is the recognition that **a major fruit is a root**.
+ *
+ * One slot then names the fruit, the flavour, the colour, the tree and
+ * the juice. That is the best trade in the field and it removes every
+ * cycle at once.
+ *
+ * ## Collisions the rebuild had to settle
+ *
+ * `teak`, `hickory` and `ironwood` were all `hard wood tree`. `cedar`
+ * and `sandalwood` were both `smell wood tree`. `yew` and `rowan` were
+ * both `red berry tree`. Three names for one thing is three names for
+ * nothing, so each took the property that is actually its own.
+ */
 const TREE = `
-oak = hard tree
-maple = sweet sap tree
-pine = needle cone tree
-spruce = sharp needle tree
-fir = flat needle tree
-cedar = smell wood tree
-redwood = red tall tree
-sequoia = giant tree
-cypress = narrow evergreen tree
-juniper = berry needle tree
-birch = white bark tree
+oak = nut cup tree
+maple = frog hand
+pine = bundle conifer
+spruce = sharp conifer
+fir = flat conifer
+cedar = smell conifer
+redwood = tall red conifer
+sequoia = giant conifer
+cypress = silk conifer
+juniper = berry conifer
+hemlock = droop conifer
+larch = fall conifer
+yew = red seed conifer
+birch = paper bark tree
 beech = smooth bark tree
-ash = wing seed tree
-elm = vase tree
-willow = bend water tree
+elm = wing seed tree
+willow = weep water tree
 poplar = tall fast tree
 aspen = shake leaf tree
 cottonwood = cotton seed tree
 sycamore = patch bark tree
 chestnut = spine nut tree
-walnut = hard nut tree
-hickory = hard wood tree
+walnut = fold nut tree
+hickory = hard nut tree
 pecan = sweet nut tree
 alder = water cone tree
 linden = heart leaf tree
 locust = thorn pod tree
-hemlock = droop needle tree
-larch = fall needle tree
-yew = red berry tree
 holly = sharp leaf tree
 eucalyptus = smell oil tree
 acacia = thorn tree
 baobab = fat trunk tree
 palm = crown leaf tree
-coconut = coconut palm
-olive = oil fruit tree
-fig = soft fruit tree
-apple = apple tree
-pear = pear tree
-cherry = red fruit tree
-plum = purple fruit tree
-peach = soft skin fruit
-apricot = orange fruit tree
-almond = nut fruit tree
-lemon = sour yellow fruit
-orange = orange fruit tree
-lime = sour green fruit
+almond = milk nut tree
 grapefruit = bitter round fruit
-mango = sweet yellow fruit
 avocado = fat green fruit
-banana = long yellow fruit
-papaya = orange seed fruit
 breadfruit = bread fruit tree
 mulberry = many berry tree
-persimmon = orange sweet fruit
 pomegranate = red seed fruit
-date palm = sweet palm fruit
 rubber tree = rubber sap tree
-teak = hard wood tree
+teak = oil hard wood
 mahogany = red wood tree
 ebony = black wood tree
-sandalwood = smell wood tree
+sandalwood = burn smell wood
 banyan = root branch tree
 magnolia = big flower tree
-dogwood = flower tree
+dogwood = white flower tree
 hawthorn = thorn berry tree
-redbud = red flower tree
-rowan = red berry tree
+redbud = trunk flower tree
+rowan = red cluster tree
 buckeye = eye seed tree
 horse chestnut = big chestnut tree
 tamarind = sour pod tree
 mesquite = dry thorn tree
 joshua tree = branch yucca tree
-ironwood = hard wood tree
+ironwood = iron hard wood
 kapok = soft fiber tree
 gum tree = gum sap tree
 `
 
+/**
+ * The fruits that are roots rather than compounds.
+ *
+ * Not written to any renaming file, because the whole point is that
+ * they are NOT renamed. Kept here so the decision is visible where the
+ * rows used to be, and so nobody adds `apple = apple tree` back.
+ *
+ * Every one of these named itself in the old table, or named itself
+ * one step out through `orange = orange fruit tree`. A name that
+ * reaches itself says nothing.
+ *
+ * **One root then names the fruit, the flavour, the colour, the tree
+ * and the juice.** An `apple tree` is a phrase the grammar builds, not
+ * a word the lexicon stores.
+ */
+export const FRUIT_ROOTS =
+  `apple pear cherry plum peach apricot lemon orange lime fig olive
+   mango banana papaya persimmon coconut date grape berry melon`.split(
+    /\s+/,
+  )
+
+/**
+ * The growth forms that became roots, for the same reason.
+ *
+ * `grass`, `vine`, `shrub` and `cactus` were each three roots spelled
+ * out, and each sat under a dozen names. `v4:compress` scored two of
+ * them among the best promotions in the whole lexicon.
+ *
+ * **A growth form is what a person sees before anything else**, which
+ * is the same argument as a semantic head in `heads.md`: it earns its
+ * root by what it governs.
+ *
+ * `succulent` is here on a direct instruction rather than on the
+ * measurement, and it fits the same rule.
+ */
+export const FORM_ROOTS =
+  `grass vine shrub cactus succulent conifer palm herb`.split(/\s+/)
+
+/**
+ * `conifer` is the case the whole compression argument was built on,
+ * and it finally has evidence behind it rather than botany.
+ *
+ * Without it every conifer starts `needle tree` and has ONE root left
+ * for the whole of what distinguishes it:
+ *
+ * ```text
+ *   needle cone tree     pine
+ *   sharp needle tree    spruce
+ *   flat needle tree     fir
+ *   berry needle tree    juniper
+ * ```
+ *
+ * With it, each has two, and the family becomes a table a speaker can
+ * learn two rows of and guess the rest:
+ *
+ * ```text
+ *   bundle conifer   pine      needles come in bundles
+ *   sharp conifer    spruce    single, sharp, four-sided
+ *   flat conifer     fir       single, flat, soft
+ *   droop conifer    hemlock
+ *   fall conifer     larch     the one that drops them
+ *   silk conifer     cypress   糸杉
+ *   berry conifer    juniper
+ * ```
+ *
+ * `bundle conifer` for pine replaced `needle cone tree`, which was
+ * true of every other member of the family and therefore named none of
+ * them. **Needle attachment is the real diagnostic** and it costs
+ * nothing to use once the anchor exists.
+ */
+
+/**
+ * ## Four growth forms became roots
+ *
+ * `grass`, `vine`, `shrub` and `cactus` were spelled out here as
+ * `narrow leaf plant`, `climb plant`, `low branch plant` and `thorn
+ * water plant`. Every one is three roots before any modifier, which
+ * put a dozen names over the ceiling: `reed` was `tall water narrow
+ * leaf plant` and `azalea` was `bright low branch plant flower`.
+ *
+ * `v4:compress` scored `leaf narrow plant` at 264 bits and `branch low
+ * plant` at 240, the second and third best promotions in the whole
+ * lexicon. **A growth form is exactly the kind of category that earns
+ * a slot**: it is what a person sees first, and everything under it
+ * gets shorter.
+ *
+ * ## And the names got their pictures
+ *
+ * ```text
+ * 羊歯         sheep + teeth    fern
+ * Löwenzahn    lion + tooth     dandelion
+ * 刺球         prick + ball     cactus
+ * 箭竹         arrow + flute    bamboo
+ * Schwertlilie sword + lily     iris
+ * kynsilaukka  claw + onion     garlic
+ * 玉葱         ball + scallion  onion
+ * ```
+ *
+ * `fern = feather leaf plant` was three roots and true of a dozen
+ * plants. `sheep teeth` is two and true of one.
+ */
 const PLANT = `
-grass = narrow leaf plant
 moss = soft ground plant
-fern = feather leaf plant
-vine = climb plant
+fern = sheep tooth
 ivy = cling vine
-bamboo = hollow grass
+bamboo = arrow flute
 reed = tall water grass
-cattail = tail water plant
-clover = three leaf plant
-dandelion = yellow wind seed
+cattail = tail water grass
+clover = three leaf grass
+dandelion = lion tooth
 thistle = sharp flower plant
 nettle = sting leaf plant
 weed = not want plant
-shrub = low branch plant
 bush = dense low plant
-cactus = thorn water plant
-succulent = fat water plant
 aloe = gel leaf plant
 agave = sharp thick leaf
-yucca = sharp leaf plant
+yucca = sword leaf plant
 heather = small purple shrub
 mistletoe = tree parasite plant
 mint = cool smell leaf
@@ -308,9 +444,9 @@ vanilla = sweet smell pod
 const FLOWER = `
 rose = thorn smell flower
 tulip = cup flower
-daisy = white yellow flower
+daisy = chick flower
 sunflower = sun face flower
-lily = trumpet flower
+lily = hundred join flower
 lotus = water flower
 water lily = float water flower
 orchid = complex flower
@@ -318,8 +454,8 @@ violet = purple small flower
 poppy = red sleep flower
 iris = rainbow flower
 daffodil = yellow trumpet flower
-lavender = purple smell flower
-jasmine = sweet smell flower
+lavender = calm smell flower
+jasmine = night smell flower
 hibiscus = large trumpet flower
 chrysanthemum = many petal flower
 marigold = gold flower
@@ -353,12 +489,12 @@ freesia = sweet smell flower
 hyacinth = dense bell flower
 crocus = early cup flower
 gladiolus = sword leaf flower
-amaryllis = large trumpet flower
+amaryllis = bare stalk flower
 honeysuckle = sweet vine flower
 wisteria = hang purple flower
 morning glory = morning vine flower
-sweet pea = sweet vine flower
-lilac = purple smell flower
+sweet pea = wing vine flower
+lilac = spring cluster flower
 goldenrod = gold stalk flower
 milkweed = milk sap flower
 queen anne's lace = white flat flower

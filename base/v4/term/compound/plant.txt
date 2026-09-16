@@ -1,25 +1,20 @@
 term          parts
 ------------  ----------------------------
-grass         narrow leaf plant
 moss          soft ground plant
-fern          feather leaf plant
-vine          climb plant
+fern          sheep tooth
 ivy           cling vine
-bamboo        hollow grass
+bamboo        arrow flute
 reed          tall water grass
-cattail       tail water plant
-clover        three leaf plant
-dandelion     yellow wind seed
+cattail       tail water grass
+clover        three leaf grass
+dandelion     lion tooth
 thistle       sharp flower plant
 nettle        sting leaf plant
 weed          not want plant
-shrub         low branch plant
 bush          dense low plant
-cactus        thorn water plant
-succulent     fat water plant
 aloe          gel leaf plant
 agave         sharp thick leaf
-yucca         sharp leaf plant
+yucca         sword leaf plant
 heather       small purple shrub
 mistletoe     tree parasite plant
 mint          cool smell leaf

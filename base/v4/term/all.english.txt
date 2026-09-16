@@ -46,6 +46,7 @@ achieve
 achievement
 acid
 acknowledge
+acorn
 acquaintance
 acquire
 acre
@@ -3920,6 +3921,7 @@ plait
 plan
 plane
 planet
+plank
 plant
 plantain
 plasma

@@ -2,9 +2,9 @@ term               parts
 -----------------  ----------------------------
 rose               thorn smell flower
 tulip              cup flower
-daisy              white yellow flower
+daisy              chick flower
 sunflower          sun face flower
-lily               trumpet flower
+lily               hundred join flower
 lotus              water flower
 water lily         float water flower
 orchid             complex flower
@@ -12,8 +12,8 @@ violet             purple small flower
 poppy              red sleep flower
 iris               rainbow flower
 daffodil           yellow trumpet flower
-lavender           purple smell flower
-jasmine            sweet smell flower
+lavender           calm smell flower
+jasmine            night smell flower
 hibiscus           large trumpet flower
 chrysanthemum      many petal flower
 marigold           gold flower
@@ -47,12 +47,12 @@ freesia            sweet smell flower
 hyacinth           dense bell flower
 crocus             early cup flower
 gladiolus          sword leaf flower
-amaryllis          large trumpet flower
+amaryllis          bare stalk flower
 honeysuckle        sweet vine flower
 wisteria           hang purple flower
 morning glory      morning vine flower
-sweet pea          sweet vine flower
-lilac              purple smell flower
+sweet pea          wing vine flower
+lilac              spring cluster flower
 goldenrod          gold stalk flower
 milkweed           milk sap flower
 queen anne's lace  white flat flower

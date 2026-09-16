@@ -456,6 +456,8 @@ meeting droop knowledge
 succulent smuggle scorpion scallop scalar sarcasm queue murky mud
 might acre inch foot yard
 
+lime plank stone acorn shrub petal conifer
+
 alcohol acetone video algorithm battery camera engine motor radio
 robot rocket artery atom cell gene molecule nucleus organ organism
 testis tissue vein virus history ammonia
@@ -543,7 +545,18 @@ const SHORT = new Set(
  * excluding, applied one level up.
  */
 const KEEP = new Set(
-  `uncertain information location length width possible half likely
+  // `half` was here and is not any more:
+  //
+  //   "first second third half double triple" we are not allowed to
+  //   have these as base words, they should be compounds!
+  //
+  // `derive.ts` already builds all eight correctly, `half` as `two +
+  // part` and `first` as `one + order`. Only `half` had been argued
+  // back onto the candidate list through this set, and the argument
+  // does not survive the rule: an ordinal and a fraction are what a
+  // counting system BUILDS, and a language that roots them is paying
+  // twice for arithmetic it already has.
+  `uncertain information location length width possible likely
    density species population health ancestor stranger attention
    sensation reference obligation transform replace
    reproduce cooperate identity lonely plane variable train mine
@@ -736,6 +749,11 @@ const SPLIT: Record<string, Array<string>> = {
   // powder that burns out of it, and resolving that through a citrus
   // is how a breakdown ends up meaning nothing.
   lime: ['white stone powder', 'green lemon'],
+  // The same fault, found by the flattener rather than by reading.
+  // `tuff` is ash rock and `potassium` is atom ash, both meaning the
+  // powder left by fire. The compound table also holds `ash` as a
+  // TREE, so both names were resolving to `wing seed tree`.
+  ash: ['what fire leaves', 'wing seed tree'],
   plain: ['ordinary', 'flat land'],
   train: ['teach', 'rail vehicle'],
   plane: ['flat surface', 'aircraft'],

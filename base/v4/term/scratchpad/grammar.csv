@@ -1,0 +1,238 @@
+word,gloss,kind,sounds,legal
+suq,i,pronoun,3,legal
+rim,you,pronoun,3,legal
+val,he or she,pronoun,3,legal
+bib,we,pronoun,3,legal
+pem,they,pronoun,3,legal
+lib,self,pronoun,3,legal
+bol,other,pronoun,3,legal
+baq,"self, as a marker",marker,3,legal
+bak,possessive,marker,3,legal
+byas,possessive plural,marker,4,no
+kol,"all, totality",design,3,legal
+dan,"the, focus",design,3,legal
+nif,"a, selection",design,3,legal
+lig,"this, near thing",design,3,legal
+gul,"that, far thing",design,3,no
+hej,"every, each",design,3,legal
+fid,next,design,3,legal
+daf,previous,design,3,legal
+lam,"low, floor",design,3,legal
+mol,"high, roof",design,3,legal
+ven,"even, emphasis",design,3,legal
+sin,"soon, short time",design,3,legal
+marC,quite or absolute,design,4,no
+yod,past tense,suffix,3,legal
+kif,future tense,suffix,3,legal
+pot,complete state,suffix,3,legal
+reC,progress,suffix,3,legal
+gut,gerund,suffix,3,legal
+hap,event,suffix,3,legal
+gem,game,suffix,3,legal
+kix,process,suffix,3,legal
+wux,system,suffix,3,legal
+fos,force,suffix,3,legal
+ses,essence,suffix,3,legal
+van,nature,suffix,3,legal
+dom,state of being,suffix,3,legal
+dax,quality,suffix,3,legal
+nal,period,suffix,3,legal
+zek,agent,suffix,3,legal
+koz,recipient,suffix,3,legal
+lak,like,suffix,3,legal
+hip,emanating,suffix,3,legal
+yog,practice,suffix,3,legal
+fin,belief,suffix,3,legal
+zir,pertaining to,suffix,3,no
+ved,study,suffix,3,legal
+tul,tool,suffix,3,no
+gin,nature of doing,suffix,3,legal
+mon,featuring,suffix,3,legal
+lij,oriented,suffix,3,legal
+fom,formal,suffix,3,legal
+mox,model,suffix,3,legal
+kos,disease,suffix,3,legal
+ciq,thing,suffix,3,legal
+kin,ability,suffix,3,legal
+sox,society,suffix,3,legal
+kun,ableness,suffix,3,legal
+xit,shaped,suffix,3,legal
+gar,language,suffix,3,legal
+kan,capable,suffix,3,legal
+nix,having aspects,suffix,3,legal
+fol,full of,suffix,3,legal
+lef,less of,suffix,3,legal
+taz,very much,suffix,3,legal
+rav,reminiscent,suffix,3,legal
+mor,more,suffix,3,legal
+mis,"most, different",suffix,3,legal
+tub,over,suffix,3,legal
+yip,resembling,suffix,3,legal
+tof,relates to,suffix,3,legal
+fir,hating,suffix,3,no
+leg,containing,suffix,3,legal
+huf,opposite,suffix,3,legal
+pak,undo,suffix,3,legal
+sup,exceed,suffix,3,legal
+mex,mesh,suffix,3,legal
+sem,same,suffix,3,legal
+vav,repeat,suffix,3,legal
+zig,equal,suffix,3,legal
+dit,distance,suffix,3,legal
+gen,again,suffix,3,legal
+rup,partial,suffix,3,legal
+sud,somewhat,suffix,3,legal
+mad,meta,suffix,3,legal
+len,general,suffix,3,legal
+fut,there,suffix,3,legal
+dav,here,suffix,3,legal
+vak,ever,suffix,3,legal
+fit,"right, correct",suffix,3,legal
+yov,consequence,suffix,3,legal
+did,indeed,suffix,3,legal
+laz,make into,suffix,3,legal
+djen,generating,suffix,4,legal
+ples,place,suffix,4,legal
+land,land,suffix,4,legal
+smal,small,suffix,4,legal
+brat,large,suffix,4,legal
+prab,probable,suffix,4,legal
+drit,"right, now",suffix,4,legal
+kaq,"type, the general form",marker,3,legal
+saq,"instance, the specific form",marker,3,legal
+yas,plural,marker,3,legal
+nic,"a, indefinite",marker,3,legal
+vuti,"is, the copula",marker,4,no
+xal,of,cradle,3,legal
+yuc,with,cradle,3,legal
+boc,together,cradle,3,legal
+nev,on,cradle,3,legal
+vun,off,cradle,3,legal
+ras,in,cradle,3,legal
+sur,out,cradle,3,no
+sok,around,cradle,3,legal
+maq,among,cradle,3,legal
+dud,during,cradle,3,legal
+sag,beyond,cradle,3,legal
+bis,across,cradle,3,legal
+pes,despite,cradle,3,legal
+zix,as,cradle,3,legal
+les,behind,cradle,3,legal
+mak,forward,cradle,3,legal
+hum,against,cradle,3,legal
+mob,about,cradle,3,legal
+mat,about,cradle,3,legal
+saj,beside,cradle,3,legal
+pal,to a place,cradle,3,legal
+rox,"to, assigning",cradle,3,legal
+lop,from,cradle,3,legal
+for,for,cradle,3,legal
+pas,below,cradle,3,legal
+nul,toward,cradle,3,no
+lan,away,cradle,3,legal
+xul,except,cradle,3,no
+lax,plus,cradle,3,legal
+fab,including,cradle,3,legal
+buf,excluding,cradle,3,legal
+bit,under,cradle,3,legal
+cum,through,cradle,3,legal
+ban,by,cradle,3,legal
+rif,near,cradle,3,legal
+far,far,cradle,3,legal
+los,apart,cradle,3,legal
+tux,until,cradle,3,legal
+Can,than,cradle,3,legal
+cin,then,cradle,3,legal
+ced,rather,cradle,3,legal
+nep,instead,cradle,3,legal
+voz,versus,cradle,3,legal
+hat,at,cradle,3,legal
+kon,and,cradle,3,legal
+cor,or,cradle,3,legal
+kit,if,cradle,3,legal
+din,then,cradle,3,legal
+bok,otherwise,cradle,3,legal
+wif,if and only if,cradle,3,legal
+son,so,cradle,3,legal
+nub,else,cradle,3,legal
+zag,because,cradle,3,legal
+cis,unless,cradle,3,legal
+Coz,except,cradle,3,legal
+wal,while,cradle,3,no
+yat,yet,cradle,3,legal
+hid,but,cradle,3,legal
+nun,not,cradle,3,legal
+xev,as soon as,cradle,3,legal
+hic,either,cradle,3,legal
+Cot,though,cradle,3,legal
+tep,still,cradle,3,legal
+sus,since,cradle,3,legal
+nos,almost,cradle,3,legal
+teq,"like, as if",cradle,3,legal
+nak,"like, filler",cradle,3,legal
+maz,as,cradle,3,legal
+soz,also,cradle,3,legal
+wuC,whether,cradle,3,legal
+tev,however,cradle,3,legal
+jas,just,cradle,3,legal
+sax,such,cradle,3,legal
+tan,so,cradle,3,legal
+meb,maybe,manner,3,legal
+nom,normally,manner,3,legal
+nuf,enough,manner,3,legal
+dij,relatively,manner,3,legal
+ten,potentially,manner,3,legal
+tuf,wrongly,manner,3,legal
+kaf,much,manner,3,legal
+hes,hence,manner,3,legal
+haf,often,manner,3,legal
+sun,soon,manner,3,legal
+vaq,however,manner,3,legal
+vuk,ever,manner,3,legal
+jed,absolutely,manner,3,legal
+jan,occasionally,manner,3,legal
+jun,generally,manner,3,legal
+xom,now,manner,3,legal
+Cas,thus,manner,3,legal
+wom,well,manner,3,legal
+yex,possibly,manner,3,legal
+yut,yet,manner,3,legal
+yuv,usually,manner,3,legal
+let,lately,manner,3,legal
+lur,virtually,manner,3,no
+ric,straight,manner,3,legal
+rer,rarely,manner,3,no
+besk,basically,manner,4,legal
+barl,barely,manner,4,no
+sadj,besides,manner,4,legal
+sorg,recently,manner,4,legal
+last,last,manner,4,legal
+prent,apparently,manner,5,no
+tward,towards,manner,5,no
+skers,scarcely,manner,5,no
+slayt,slightly,manner,5,no
+murib,suspiciously,manner,5,no
+lored,already,manner,5,no
+gavist,eagerly,manner,6,no
+prizum,presumably,manner,6,no
+haspex,especially,manner,6,no
+saldom,seldom,manner,6,no
+surtan,certainly,manner,6,no
+legant,elegantly,manner,6,no
+retxiq,enthusiastically,manner,6,no
+sikwent,subsequently,manner,7,no
+hekstrim,extremely,manner,8,no
+frikwant,frequently,manner,8,no
+nik vim,anyway,phrase,,phrase
+nan vuk,never,phrase,,phrase
+haj zuk,everywhere,phrase,,phrase
+sul tub,moreover,phrase,,phrase
+Coz tak,exceptionally,phrase,,phrase
+lig yom,today,phrase,,phrase
+txun vax,fortunately,phrase,,phrase
+horp fol,hopefully,phrase,,phrase
+panit fol,delightfully,phrase,,phrase
+reC hamez,amazingly,phrase,,phrase
+koredj lum,courageously,phrase,,phrase
+reC hakord,accordingly,phrase,,phrase
+bat txun vax,unfortunately,phrase,,phrase

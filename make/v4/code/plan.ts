@@ -125,6 +125,12 @@ export type Plan = {
   ban: Array<string>
   /** Forms refused outright, whatever the rules allow. */
   taboo: Array<string>
+  /**
+   * Sounds that together may stand at most once in a word. `c` and `C`
+   * for the house, the two halves of one affricate, so `cac`, `CoC` and
+   * `Cec` are all out. See `no_hush_clash` in `sound.ts`.
+   */
+  clash: Array<string>
   shapes: Array<Shape>
   near: Near
   echo: Echo
@@ -157,13 +163,30 @@ function sidesOf(plan: Plan, shape: Shape): [Array<string>, Array<string>] {
   return [plan.onset, plan.close]
 }
 
+/**
+ * A word is refused if it CONTAINS a taboo form, not only if it is one,
+ * the same reading `isTaboo` in `sound.ts` takes. `guks`, `fagz` and
+ * `xiks` had reached the 4:7:5 set on the whole word test.
+ */
+function holdsTaboo(plan: Plan, word: string): boolean {
+  return plan.taboo.some(form => word.includes(form))
+}
+
+/** More than one of the clashing sounds in the word. */
+function clashes(plan: Plan, word: string): boolean {
+  if (plan.clash.length === 0) {
+    return false
+  }
+  return [...word].filter(s => plan.clash.includes(s)).length > 1
+}
+
 function allowed(
   plan: Plan,
   map: Map<string, Set<string>>,
   shape: Shape,
   word: string,
 ): boolean {
-  if (plan.taboo.includes(word)) {
+  if (holdsTaboo(plan, word) || clashes(plan, word)) {
     return false
   }
 
@@ -265,61 +288,93 @@ export function separable(plan: Plan): boolean {
   )
 }
 
+/**
+ * The tails, vowel then closing, that a whole word rule refuses once
+ * this opening stands in front of them: the word holds a taboo form, or
+ * two of the clashing sounds. `predict` subtracts them and `tally` skips
+ * them, so both refuse exactly what `build` refuses.
+ */
+function refusedTailsOf(
+  plan: Plan,
+  onset: string,
+  codas: Array<string>,
+): Set<string> {
+  const tails = new Set<string>()
+  if (plan.taboo.length === 0 && plan.clash.length === 0) {
+    return tails
+  }
+  for (const vowel of plan.vowel) {
+    for (const coda of codas) {
+      const tail = vowel + coda
+      const word = onset + tail
+      if (holdsTaboo(plan, word) || clashes(plan, word)) {
+        tails.add(tail)
+      }
+    }
+  }
+  return tails
+}
+
 export function predict(plan: Plan, shape: Shape): number {
   const [onsets, codas] = sidesOf(plan, shape)
 
   const liveOnsets = onsets.filter(
     onset => ![...onset].some(s => plan.ban.includes(s)),
-  ).length
+  )
 
-  let perOnset = 0
+  /** Whether a tail passes the ban and the rhymes inside itself. */
+  const tailOk = new Map<string, boolean>()
   for (const vowel of plan.vowel) {
     for (const coda of codas) {
       const tail = vowel + coda
-      if ([...tail].some(s => plan.ban.includes(s))) {
-        continue
-      }
-      let blocked = false
-      for (let i = 0; i < tail.length - 1; i++) {
+      let ok = ![...tail].some(s => plan.ban.includes(s))
+      for (let i = 0; ok && i < tail.length - 1; i++) {
         if (plan.rhyme.includes(tail.slice(i, i + 2))) {
-          blocked = true
-          break
+          ok = false
         }
       }
-      if (!blocked) {
-        perOnset++
+      tailOk.set(tail, ok)
+    }
+  }
+
+  /**
+   * A rhyme pair can also span the opening and the vowel, `wa` being
+   * the one that does, so the tails are counted per opening with its
+   * last sound against each vowel, rather than once for all openings.
+   */
+  let total = 0
+  for (const onset of liveOnsets) {
+    const last = onset[onset.length - 1]
+    for (const vowel of plan.vowel) {
+      if (plan.rhyme.includes(last + vowel)) {
+        continue
+      }
+      for (const coda of codas) {
+        if (tailOk.get(vowel + coda)) {
+          total++
+        }
       }
     }
   }
 
   /**
    * The taboo list is a flat subtraction, so the closed form survives
-   * it: count the product, then take off the forms this shape would
-   * otherwise have built.
+   * it: count the product, then take off the words this shape would
+   * otherwise have built that hold a listed form. A word holds a form
+   * across the opening and the tail, so the tails are walked per
+   * opening rather than the forms split apart.
    */
   let refused = 0
-  for (const word of plan.taboo) {
-    for (const onset of onsets) {
-      if (!word.startsWith(onset)) {
-        continue
+  for (const onset of liveOnsets) {
+    const last = onset[onset.length - 1]
+    for (const tail of refusedTailsOf(plan, onset, codas)) {
+      if (tailOk.get(tail) && !plan.rhyme.includes(last + tail[0])) {
+        refused++
       }
-      const tail = word.slice(onset.length)
-      const vowel = tail[0]
-      const coda = tail.slice(1)
-      if (!plan.vowel.includes(vowel) || !codas.includes(coda)) {
-        continue
-      }
-      if (plan.rhyme.includes(vowel + coda[0])) {
-        continue
-      }
-      if ([...word].some(s => plan.ban.includes(s))) {
-        continue
-      }
-      refused++
     }
   }
 
-  return liveOnsets * perOnset - refused
+  return total - refused
 }
 
 // ─── Closeness ──────────────────────────────────────────
@@ -394,8 +449,10 @@ export function tooNear(
  * turn spreads them the same way and is a fixed answer: the same input
  * gives the same list, every time, on any machine.
  */
-export function deal(pieces: Array<Piece>): Array<Piece> {
-  const buckets = new Map<string, Array<Piece>>()
+export function deal<P extends { word: string; onset: string }>(
+  pieces: Array<P>,
+): Array<P> {
+  const buckets = new Map<string, Array<P>>()
   const order: Array<string> = []
 
   for (const piece of pieces) {
@@ -408,7 +465,7 @@ export function deal(pieces: Array<Piece>): Array<Piece> {
     bucket.push(piece)
   }
 
-  const out: Array<Piece> = []
+  const out: Array<P> = []
   for (let round = 0; out.length < pieces.length; round++) {
     let moved = false
     for (const key of order) {
@@ -572,17 +629,14 @@ export function tally(plan: Plan, shape: Shape): number {
   const codas = rawCodas.filter(keepCoda)
 
   /**
-   * Taboo forms, filed by the opening they start with, so the inner
-   * loop asks a set rather than building a string for every candidate.
+   * The tails that hold a taboo form behind each opening, worked out
+   * once so the inner loop asks a set rather than building a string for
+   * every candidate.
    */
   const tabooTails = new Map<string, Set<string>>()
-  for (const word of plan.taboo) {
-    for (const onset of onsets) {
-      if (!word.startsWith(onset)) {
-        continue
-      }
-      const tails = tabooTails.get(onset) ?? new Set<string>()
-      tails.add(word.slice(onset.length))
+  for (const onset of onsets) {
+    const tails = refusedTailsOf(plan, onset, codas)
+    if (tails.size > 0) {
       tabooTails.set(onset, tails)
     }
   }
@@ -656,6 +710,12 @@ export function tally(plan: Plan, shape: Shape): number {
 
     const banned = tabooTails.get(onset)
 
+    /** A rhyme pair can span the opening's last sound and the vowel,
+     * `wa` being the one that does, so each opening masks its vowels. */
+    const last = onset[onset.length - 1]
+    const headOk = vowels.map(v => !plan.rhyme.includes(last + v))
+    const headClear = headOk.every(Boolean)
+
     for (let ci = 0; ci < codas.length; ci++) {
       if (plan.echo !== 'none') {
         const tail = codaTail[ci]
@@ -668,7 +728,9 @@ export function tally(plan: Plan, shape: Shape): number {
         }
       }
 
-      const ok = codaOk[ci]
+      const ok = headClear
+        ? codaOk[ci]
+        : codaOk[ci].map((v, vi) => v && headOk[vi])
       const coda = codas[ci]
 
       if (!keepSet && live.length === 0 && !banned) {

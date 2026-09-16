@@ -7,9 +7,16 @@ CCVC  1280
       4096 = 2^12, so a base word is twelve bits
 ```
 
+**No root begins with `wa`.** A compound joins its roots with
+`wa` and nothing else, so `man + drum + gon` is `manwadrumwagon`.
+For that to be readable no root may start with the joiner, or
+`manwadrum` could be `man + drum` or `man` plus a root `wadrum`.
+It costs 71 of the 6,233 legal forms, which is 1.1%: nineteen
+`CVC`, forty-six `CVCC` and six `CCVC`.
+
 **Built so that no hand written meaning is lost.** Every legal v4
-word that `tune.csv` gives a meaning to is in this system, all
-1,269 of them. The rest of each shape is filled by
+word that the board gives a meaning to is in this system, all
+1,223 of them. The rest of each shape is filled by
 the frequency picker, which leans toward the sounds a language
 actually uses and corrects for whatever the kept words are heavy in.
 
@@ -19,10 +26,10 @@ number; taking exactly the number wanted lands on it directly.
 
 | shape | words | of those, already meant something |
 | :--- | ---: | ---: |
-| `CVC` | 1024 | 686 |
-| `CVCC` | 1792 | 274 |
-| `CCVC` | 1280 | 309 |
+| `CVC` | 1024 | 659 |
+| `CVCC` | 1792 | 263 |
+| `CCVC` | 1280 | 301 |
 
-Sound drift from the wanted frequency shape is 0.825 points.
+Sound drift from the wanted frequency shape is 0.849 points.
 
 Rebuild with `pnpm --dir deck/tune v4:keep`.

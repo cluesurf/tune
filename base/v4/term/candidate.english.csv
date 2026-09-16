@@ -158,7 +158,8 @@ artifact,,noun,0,0
 artificial,,adjective,1,0
 as,,preposition,5,1
 ascend,,verb,0,0
-ash,,noun,3,2
+ash,what fire leaves,noun,3,2
+ash,wing seed tree,noun,3,2
 ashame,,noun,1,1
 ask,,verb,21,10
 asleep,,adjective,0,0
@@ -1250,6 +1251,7 @@ go,,verb,57,22
 goal,,noun,12,9
 goat,,noun,0,0
 god,,noun,21,8
+gold,,adjective,9,3
 good,,adjective,70,29
 gossip,,verb,1,0
 gourd,,noun,1,0
@@ -1308,7 +1310,6 @@ habit,,noun,2,2
 habitat,,noun,0,0
 hail,,noun,0,0
 hair,,noun,45,31
-half,,adjective,32,1
 hall,,noun,3,3
 hammer,,verb,2,2
 hand,,verb,45,12
@@ -2727,6 +2728,7 @@ stitch,,verb,8,6
 stock,goods held,noun,2,1
 stock,share of a company,noun,2,1
 stomach,,noun,12,3
+stone,,noun,36,24
 stool,,noun,1,1
 stop,,verb,83,24
 storage,,noun,0,0
@@ -3207,6 +3209,7 @@ abyss,,noun,0,0
 acacia,,noun,0,0
 accommodate,,verb,0,0
 acetone,,noun,0,0
+acorn,,noun,0,0
 acre,measure,noun,0,0
 acute,,adjective,0,0
 adhere,,noun,0,0
@@ -3338,6 +3341,7 @@ conform,,verb,0,0
 confound,,noun,0,0
 confront,,verb,0,0
 congestion,,noun,0,0
+conifer,,noun,0,0
 conjure,,verb,0,0
 connector,,noun,0,0
 conserve,,verb,0,0
@@ -3590,6 +3594,8 @@ lexicon,,noun,0,0
 liberty,,noun,0,0
 lichen,,noun,0,0
 lily,,noun,0,0
+lime,white stone powder,noun,0,0
+lime,green lemon,noun,0,0
 lobster,,noun,0,0
 loom,,noun,0,0
 loot,,verb,0,0
@@ -3682,6 +3688,7 @@ permeate,,verb,0,0
 persevere,,verb,0,0
 perspective,,noun,0,0
 pertain,,noun,0,0
+petal,,noun,0,0
 phenomenon,,noun,0,0
 phew,,interjection,0,0
 pillar,,adjective,0,0
@@ -3689,6 +3696,7 @@ pillow,,noun,0,0
 pine,,verb,0,0
 pitch,throw,noun,0,0
 pith,,noun,0,0
+plank,,noun,0,0
 plasma,,noun,0,0
 plum,,noun,0,0
 poise,,noun,0,0
@@ -3799,6 +3807,7 @@ shatter,,verb,0,0
 shh,,interjection,0,0
 shin,,noun,0,0
 shrimp,,noun,0,0
+shrub,,noun,0,0
 siege,,noun,0,0
 silicon,,noun,0,0
 simulate,,verb,0,0

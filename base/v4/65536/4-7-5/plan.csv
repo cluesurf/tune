@@ -1,0 +1,4 @@
+shape,count,how
+CVCVC,16384,"every legal word with a meaning, then filled by sound frequency"
+CVCVCC,28672,"every legal word with a meaning, then filled by sound frequency"
+CCVCVC,20480,"every legal word with a meaning, then filled by sound frequency"

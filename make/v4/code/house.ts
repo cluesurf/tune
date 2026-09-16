@@ -15,8 +15,10 @@ import {
   BAD_ANYWHERE,
   BAD_CLOSE,
   BAD_OPEN,
+  BAD_HEAD,
   BAD_RHYME,
   TABOO,
+  HUSH_CLASH,
   CODA_CLUSTERS,
   CONSONANTS,
   ONSET_CLUSTERS,
@@ -42,9 +44,14 @@ export const HOUSE: Plan = {
   ),
   onset: ONSET_CLUSTERS.filter(c => !holdsHush(c)),
   coda: CODA_CLUSTERS.filter(c => !holdsHush(c)),
-  rhyme: BAD_RHYME,
+  // `BAD_HEAD` is `wa`, which the compound joiner owns. It rides this
+  // list because `wa` can only ever occur word-initially on this
+  // inventory, so banning the pair anywhere and banning it at the head
+  // are the same test. See `BAD_HEAD` in `sound.ts`.
+  rhyme: [...BAD_RHYME, ...BAD_HEAD],
   ban: BAD_ANYWHERE,
   taboo: TABOO,
+  clash: HUSH_CLASH,
   shapes: [...SHAPES],
   near: { groups: SIMILAR_GROUPS, reach: 1, slack: 0 },
   echo: 'none',

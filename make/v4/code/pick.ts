@@ -68,8 +68,8 @@ export type Profile = {
   count: number
 }
 
-export type Picked = {
-  taken: Array<Piece>
+export type Picked<P = Piece> = {
+  taken: Array<P>
   profile: Array<Profile>
   drift: number
   used: Map<string, number>
@@ -92,11 +92,11 @@ export type Picked = {
  * deficit score, and where two words score the same the tone order
  * settles it, so the same input gives the same list every time.
  */
-export function pickWeighted(
-  from: Array<Piece>,
+export function pickWeighted<P extends { word: string; onset: string } = Piece>(
+  from: Array<P>,
   want: number,
   must: Set<string> = new Set(),
-): Picked {
+): Picked<P> {
   if (want > from.length) {
     throw new Error(`asked for ${want} of only ${from.length}`)
   }
@@ -118,7 +118,7 @@ export function pickWeighted(
   const share = new Map(sounds.map(s => [s, WEIGHT[s] / totalWeight]))
 
   const order = deal(from)
-  const taken: Array<Piece> = []
+  const taken: Array<P> = []
   const held = new Set<string>()
   const used = new Map(sounds.map(s => [s, 0]))
 

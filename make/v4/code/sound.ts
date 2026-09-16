@@ -199,6 +199,34 @@ export const BAD_ANYWHERE: Array<string> = []
 export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
 
 /**
+ * Pairs a word may not begin with, because a compound joiner owns them.
+ *
+ * `wa` joins the roots of a compound and nothing else does:
+ *
+ * ```text
+ *   man + drum + gon    manwadrumwagon
+ * ```
+ *
+ * For that to be readable, no root may start with `wa`. Otherwise
+ * `manwadrum` is `man + drum` or `man` followed by a root `wadrum`,
+ * and a listener has no way to tell. **A joiner that can be mistaken
+ * for the start of a word is not a joiner.**
+ *
+ * ## Why it rides the rhyme list
+ *
+ * `w` closes nothing and stands in no cluster, so in `CVC` it can only
+ * sit at position 0 or 2, in `CVCC` only at 0, and in `CCVC` nowhere
+ * but inside an onset cluster that does not exist. At position 2 the
+ * pair reads `aw`, not `wa`.
+ *
+ * **So `wa` can only ever occur word-initially**, and a test that bans
+ * the pair anywhere and a test that bans it at the head are the same
+ * test on this inventory. It rides `rhyme` rather than adding a field
+ * to every plan for a distinction that cannot arise.
+ */
+export const BAD_HEAD = ['wa']
+
+/**
  * Forms v4 will not use, whatever the rules allow.
  *
  * A generated language has no idea what it is saying in anybody else's,
@@ -264,11 +292,24 @@ export const TABOO_CRUDE = 'fak put'.split(' ')
 /** Every form v4 refuses outright. */
 export const TABOO = [...TABOO_SLUR, ...TABOO_CRUDE]
 
-const TABOO_SET = new Set(TABOO)
-
+/**
+ * A word is refused if it CONTAINS a listed form, not only if it is
+ * one. `nigat` carries `nig` as plainly as `nig` does, and the list's
+ * own plurals, `nigz niks negz neks`, were written down because the
+ * author wanted the containing forms out too. Matching the whole word
+ * had let `guks`, `fagz` and `xiks` into the 4:7:5 set. Stated
+ * 2026-09-16: "neg/nek/nig/nik are not allowed in the words".
+ */
 export function isTaboo(word: string): boolean {
-  return TABOO_SET.has(word)
+  return TABOO.some(form => word.includes(form))
 }
+
+/**
+ * Sounds that together may stand at most once in a word, the two halves
+ * of one affricate. `no_hush_clash` below says why, and the plan engine
+ * carries the same list as `clash` so the two cannot drift.
+ */
+export const HUSH_CLASH = ['c', 'C']
 
 export type WordRule = {
   name: string
@@ -306,6 +347,73 @@ export const WORD_RULES: Array<WordRule> = [
     },
   },
   {
+    name: 'no_wa_start',
+    note: 'a word never starts with wa, which is reserved as the joiner',
+    /**
+     * The one rule that exists to make compounds readable.
+     *
+     * A compound is joined with `wa` and nothing else:
+     *
+     * ```text
+     *   man + drum + gon    manwadrumwagon
+     * ```
+     *
+     * That replaces the old `join.csv`, which chose between `s`, `z`
+     * and `l` by looking at the closing sound of the left root and the
+     * opening sound of the right one. Four hundred rows, three
+     * outcomes, and a speaker had to know the table to say a word.
+     * `wa` needs no table and works after every legal ending:
+     *
+     * ```text
+     *   -mwa -nwa -qwa -gwa -dwa -bwa -pwa -twa -kwa -swa
+     *   -fwa -vwa -zwa -jwa -xwa -cwa -Cwa -lwa -rwa
+     * ```
+     *
+     * **The price is that no root may begin with `wa`.** Otherwise
+     * `manwadrum` could be `man + drum` or `man` followed by a root
+     * `wadrum`, and a listener would have no way to tell. A joiner
+     * that can be mistaken for the start of a word is not a joiner.
+     *
+     * It costs 35 forms of 4,096, which is 0.85%: ten `CVC` and
+     * twenty-five `CVCC`, and no `CCVC` at all, since `w` heads no
+     * legal cluster. That is a very cheap price for a rule a speaker
+     * can hold in one sentence.
+     *
+     * The test refuses `wa` ANYWHERE in the word, not only at the
+     * start, because a listener splits a compound on every `wa` and a
+     * root holding one in its middle would split too. On a one
+     * syllable word the two tests are the same, since `wa` inside
+     * needs a `w` before a second vowel and no short shape has one. On
+     * the two syllable shapes they differ: `bawat` begins on `b` and is
+     * still refused.
+     */
+    test: word => !word.includes('wa'),
+  },
+  {
+    name: 'no_twin_vowel',
+    note: 'a word never carries i, e or u in both of its vowel slots',
+    /**
+     * Stated by hand on 2026-09-16 for the two syllable shapes:
+     *
+     *   disallow two i or e or u in the 2 vowel slots, like fluwuz
+     *
+     * The three close vowels sung twice in a row make a word that is
+     * all one colour, `fluwuz`, `mimim`, `tetek`. `a` and `o` are open
+     * enough to carry a word twice over, so `batam` and `dotok` stand.
+     *
+     * A one syllable word has one vowel, so this never fires on `CVC`,
+     * `CVCC` or `CCVC`.
+     */
+    test: word => {
+      const vowels = [...word].filter(s => VOWELS.includes(s))
+      return !(
+        vowels.length > 1 &&
+        vowels.every(v => v === vowels[0]) &&
+        ['i', 'e', 'u'].includes(vowels[0])
+      )
+    },
+  },
+  {
     name: 'no_hush_clash',
     note: 'c and C together never stand more than once in a word',
     /**
@@ -326,7 +434,7 @@ export const WORD_RULES: Array<WordRule> = [
      * now. That is the right trade, because a mirror nobody can hear
      * is not a mirror.
      */
-    test: word => [...word].filter(s => s === 'c' || s === 'C').length <= 1,
+    test: word => [...word].filter(s => HUSH_CLASH.includes(s)).length <= 1,
   },
   {
     name: 'known_onset',

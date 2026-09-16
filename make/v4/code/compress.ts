@@ -73,7 +73,7 @@ const OUT = resolve(TERM, 'compound')
 
 const args = yargs(hideBin(process.argv))
   .option('field', { type: 'string' })
-  .option('ceiling', { type: 'number', default: 3 })
+  .option('ceiling', { type: 'number', default: 6 })
   // Left undefined on purpose: the default is the MDL entry cost,
   // which is computed rather than chosen. Passing this overrides it
   // with a flat price, for a sensitivity read.
@@ -82,8 +82,48 @@ const args = yargs(hideBin(process.argv))
   .strict()
   .parseSync()
 
-/** A name over the ceiling is absent, not merely long. */
-const RESCUE = 6
+/**
+ * What a name of each length costs beyond its roots.
+ *
+ * The first version had one hard wall at three, which was wrong at
+ * both ends:
+ *
+ *   2 as the ideal, 3 as okay, but also 4, 5, and 6 as acceptable
+ *   when we get to defining very specific things
+ *
+ *   how about 7 words is the max, since humans can remember 7, but
+ *   i'd say 6 as the max actually
+ *
+ * `Australian flathead perch` is three specific things stacked, and no
+ * inventory of roots makes that two words. A wall at three does not
+ * make such a name shorter, it makes it impossible, and the concept
+ * then has no name at all.
+ *
+ * So the wall moved to six and the space below it is a SLOPE. Two is
+ * free, three costs a little, four and five cost more, and seven is
+ * refused outright. **Six is the wall because seven is where a listener
+ * stops holding a name and starts holding a sentence**, which is
+ * Miller's number and the one place in this file a psychological fact
+ * beats an arithmetic one.
+ *
+ * The slope matters more than the wall. A hard wall says nothing about
+ * whether a four-root name should have been three, and almost every
+ * name in the lexicon sits in that range.
+ */
+const PENALTY: Record<number, number> = {
+  1: 0,
+  2: 0,
+  3: 1,
+  4: 3,
+  5: 6,
+  6: 10,
+}
+
+/** Past this a name is refused, not merely charged. */
+const WALL = 6
+
+/** What a name past the wall costs, in root-widths. It is absent. */
+const RESCUE = 12
 
 /**
  * What a slot costs, from information theory rather than from taste.
@@ -189,11 +229,43 @@ type Flat = {
 }
 
 /**
+ * Words English spells one way and means two ways.
+ *
+ * Read out of `SPLIT` in `english.ts`, and the flattener STOPS at
+ * one. `ash` is what fire leaves and it is also a tree, so `tuff = ash
+ * rock` and `potassium = atom ash` were both resolving through `ash =
+ * wing seed tree` and coming out as four roots about a tree.
+ *
+ * **A part must be unambiguous, and where it is not, the compound
+ * table cannot say which sense was meant.** So the walk treats a split
+ * word as a root rather than guessing, and the guess it used to make
+ * was wrong every time the other sense was intended.
+ *
+ * Found by the flattener rather than by reading, which is the point of
+ * having one.
+ */
+function splitWords(): Set<string> {
+  const source = readFileSync(resolve(here, 'english.ts'), 'utf-8')
+  const at = source.indexOf('const SPLIT: Record<string, Array<string>> = {')
+  if (at < 0) return new Set()
+  const close = source.indexOf('\n}', at)
+  const out = new Set<string>()
+  for (const line of source.slice(at, close).split('\n')) {
+    const hit = /^\s{2}([a-z]+):\s*\[/.exec(line)
+    if (hit) out.add(hit[1])
+  }
+  return out
+}
+
+const split = splitWords()
+
+/**
  * Expand a name until every part is a root.
  *
- * A part is a root when neither table breaks it down. The walk carries
- * the path so a cycle reports rather than hanging: `apple = apple
- * tree` is a real row today and it names itself.
+ * A part is a root when neither table breaks it down, or when it is a
+ * split word and the tables cannot say which sense was meant. The walk
+ * carries the path so a cycle reports rather than hanging: `apple =
+ * apple tree` is a real row today and it names itself.
  */
 function flatten(term: string, seen: Set<string>): Flat {
   const bag: Array<string> = []
@@ -206,7 +278,11 @@ function flatten(term: string, seen: Set<string>): Flat {
       bag.push(word)
       return
     }
-    const under = partsOf.get(word) ?? derived.get(word)
+    // A split word stops the walk. Guessing a sense was wrong every
+    // time the other one was meant.
+    const under = split.has(word)
+      ? undefined
+      : partsOf.get(word) ?? derived.get(word)
     if (!under) {
       bag.push(word)
       return
@@ -217,7 +293,9 @@ function flatten(term: string, seen: Set<string>): Flat {
   }
 
   for (const part of partsOf.get(term) ?? []) {
-    if (partsOf.has(part) || derived.has(part)) nested.push(part)
+    if (!split.has(part) && (partsOf.has(part) || derived.has(part))) {
+      nested.push(part)
+    }
     walk(part, new Set([term]))
   }
 
@@ -308,6 +386,8 @@ function total(promoted: Array<Array<string>>): number {
   for (const one of flat) {
     const cost = spend(one.bag, promoted)
     bits += cost * BITS_PER_ROOT
+    // The slope below the wall, then the wall itself.
+    bits += (PENALTY[cost] ?? PENALTY[WALL]) * BITS_PER_ROOT
     if (cost > args.ceiling) bits += RESCUE * BITS_PER_ROOT
   }
   for (const set of promoted) {
@@ -428,6 +508,34 @@ process.stdout.write(
   `\n  ${flat.length - started} names did not fit. ` +
     `${flat.length - (ladder[ladder.length - 1]?.fits ?? started)} still do not.\n`,
 )
+
+// ─── How long the names ended up ────────────────────────
+
+/**
+ * The distribution is what the slope is actually optimising, and a
+ * single count of "over the ceiling" hides it completely. Two is the
+ * target, so the shape to want is a pile on the left.
+ */
+const spread = new Map<number, number>()
+for (const one of flat) {
+  const cost = spend(one.bag, promoted)
+  spread.set(cost, (spread.get(cost) ?? 0) + 1)
+}
+
+process.stdout.write('\nHOW LONG THE NAMES ARE\n\n')
+process.stdout.write(
+  `  2 is the target, 3 is fine, ${WALL} is the wall. Seven is where a\n` +
+    '  listener stops holding a name and starts holding a sentence.\n\n',
+)
+for (const [n, count] of [...spread.entries()].sort((a, b) => a[0] - b[0])) {
+  const mark =
+    n <= 2 ? 'target' : n === 3 ? 'fine' : n <= WALL ? 'allowed' : 'REFUSED'
+  process.stdout.write(
+    `  ${n} root${n === 1 ? ' ' : 's'}  ${String(count).padStart(4)}  ` +
+      `${String(Math.round((count / flat.length) * 100)).padStart(3)}%  ` +
+      `${mark}\n`,
+  )
+}
 process.stdout.write(
   '\n  A promoted set is a category to NAME, not a name in itself.\n' +
     '  `cone tree` is what the data says; calling it `conifer` is a\n' +

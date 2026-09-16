@@ -26,7 +26,13 @@
  */
 
 import { parse } from 'csv-parse/sync'
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  writeFileSync,
+} from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -40,6 +46,19 @@ const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../../../base/v4')
 const OUT_DIR = resolve(BASE, '4096/02-4-7-5')
 
+/**
+ * The settled cut is also written to the top of `base/v4/`.
+ *
+ *   please make sure 02-4-7-5 content lands into base/v4/{cvc...}
+ *   too, since that is the final verdict
+ *
+ * `4096/` holds eight ways of cutting to 4,096 and `02-4-7-5` is the
+ * one chosen. A reader arriving at `base/v4/` should not have to know
+ * which of the eight won, so the answer sits at the top beside `full/`
+ * and `lean/` and the eight stay where they are as the working.
+ */
+const SETTLED_DIR = resolve(BASE, 'settled')
+
 const WANT: Record<Shape, number> = { CVC: 1024, CVCC: 1792, CCVC: 1280 }
 const TARGET = 4096
 
@@ -47,10 +66,39 @@ const TARGET = 4096
 
 type Told = { term: string; meaning: string }
 
-const told: Array<Told> = parse(
-  readFileSync(resolve(here, '../../../tune.csv'), 'utf-8'),
-  { columns: true, skip_empty_lines: true, relax_column_count: true },
-)
+/**
+ * Where the hand written meanings live now.
+ *
+ * This read `deck/tune/tune.csv` and that file is gone, so the whole
+ * generator had been dead for some time and nothing said so. The live
+ * source is `base/v4/term/base.csv`, the board, which carries the same
+ * two columns under the names `word` and `meaning`.
+ *
+ * Both are read, older first, so a `tune.csv` restored later still
+ * contributes and the board wins where they disagree.
+ */
+function toldFrom(path: string, term: string, says: string): Array<Told> {
+  if (!existsSync(path)) return []
+  const rows: Array<Record<string, string>> = parse(
+    readFileSync(path, 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  return rows.map(row => ({
+    term: (row[term] ?? '').trim(),
+    meaning: (row[says] ?? '').trim(),
+  }))
+}
+
+const told: Array<Told> = [
+  ...toldFrom(resolve(here, '../../../tune.csv'), 'term', 'meaning'),
+  ...toldFrom(resolve(BASE, 'term/base.csv'), 'word', 'meaning'),
+]
+
+if (!told.length) {
+  throw new Error(
+    'No hand written meanings found. Expected base/v4/term/base.csv',
+  )
+}
 
 const meaning = new Map<string, string>()
 for (const row of told) {
@@ -75,14 +123,40 @@ for (const row of told) {
 type Claimed = { word: string; meaning: string; system?: string }
 
 /**
- * Every csv in the scratchpad folder, so a new set is a new file and
- * nothing here has to be edited to pick it up.
+ * The scratchpad files that are CLAIMS, named one by one.
+ *
+ * This read every csv in the folder, so that a new set would be picked
+ * up without editing here. That was right when the folder held four
+ * small hand made system files and it broke the moment it did not:
+ * `theme.csv` is the generated layout, 3,856 rows, and reading it as
+ * claims made 1,748 `CVC` words required against 1,024 slots. The
+ * generator refused to run and said so, which is the one thing that
+ * went right.
+ *
+ * **A claim is a rule choosing a word, not a layout proposing one.**
+ * The six directions are claims because the mirror rule decides them
+ * and the picker gets no say. A themed layout is the picker's own
+ * output and requiring it would be circular.
+ *
+ * So the list is named, and a new SYSTEM is one line here. That is a
+ * small cost and it is the cost of the distinction being explicit.
  */
+const CLAIMS = [
+  'by-hand.csv',
+  'mirror.csv',
+  'number.csv',
+  'system.csv',
+  'action.csv',
+  'awake.csv',
+  'short-cvc.csv',
+  'esoteric.csv',
+]
+
 const scratch: Array<Claimed> = []
 const scratchDir = resolve(BASE, 'term/scratchpad')
 
 for (const name of readdirSync(scratchDir)) {
-  if (!name.endsWith('.csv')) {
+  if (!CLAIMS.includes(name)) {
     continue
   }
   const rows: Array<Claimed> = parse(
@@ -227,13 +301,22 @@ function write(path: string, text: string) {
   writeFileSync(path, text)
 }
 
+const everyWord: Array<string> = []
+
 for (const shape of SHAPES) {
   const words = taken[shape].map(p => p.word).sort(compareWords)
-  write(
-    resolve(OUT_DIR, `${shape.toLowerCase()}.csv`),
-    ['word', ...words].join('\n') + '\n',
-  )
+  everyWord.push(...words)
+  const text = ['word', ...words].join('\n') + '\n'
+  write(resolve(OUT_DIR, `${shape.toLowerCase()}.csv`), text)
+  // The same bytes at the top of `base/v4/`, because that is the
+  // answer and `4096/` is the working.
+  write(resolve(SETTLED_DIR, `${shape.toLowerCase()}.csv`), text)
 }
+
+write(
+  resolve(SETTLED_DIR, 'base.csv'),
+  ['word', ...everyWord.sort(compareWords)].join('\n') + '\n',
+)
 
 write(
   resolve(OUT_DIR, 'plan.csv'),
@@ -274,8 +357,15 @@ write(
     '      4096 = 2^12, so a base word is twelve bits',
     '```',
     '',
+    '**No root begins with `wa`.** A compound joins its roots with',
+    '`wa` and nothing else, so `man + drum + gon` is `manwadrumwagon`.',
+    'For that to be readable no root may start with the joiner, or',
+    '`manwadrum` could be `man + drum` or `man` plus a root `wadrum`.',
+    'It costs 71 of the 6,233 legal forms, which is 1.1%: nineteen',
+    '`CVC`, forty-six `CVCC` and six `CCVC`.',
+    '',
     '**Built so that no hand written meaning is lost.** Every legal v4',
-    `word that \`tune.csv\` gives a meaning to is in this system, all`,
+    `word that the board gives a meaning to is in this system, all`,
     `${kept.toLocaleString()} of them. The rest of each shape is filled by`,
     'the frequency picker, which leans toward the sounds a language',
     'actually uses and corrects for whatever the kept words are heavy in.',
@@ -297,5 +387,30 @@ write(
   ].join('\n') + '\n',
 )
 
+write(
+  resolve(SETTLED_DIR, 'readme.md'),
+  [
+    '# The settled word list',
+    '',
+    'The 4,096 forms Tune v4 uses, and the answer `4096/` was working',
+    'toward. Same bytes as `4096/02-4-7-5/`, written here so a reader',
+    'arriving at `base/v4/` does not have to know which of the eight',
+    'cuts won.',
+    '',
+    '```text',
+    'cvc.csv    1024',
+    'cvcc.csv   1792',
+    'ccvc.csv   1280',
+    'base.csv   4096, all three in tone order',
+    '```',
+    '',
+    '**No root begins with `wa`**, which is the compound joiner. See',
+    '`4096/02-4-7-5/readme.md` for what that costs and why.',
+    '',
+    'Rebuild with `pnpm --dir deck/tune v4:keep`.',
+  ].join('\n') + '\n',
+)
+
 console.log('')
 console.log(`wrote ${OUT_DIR}`)
+console.log(`wrote ${SETTLED_DIR}`)

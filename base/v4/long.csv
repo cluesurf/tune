@@ -1,0 +1,8 @@
+shape,count,refused_for_taboo,admitted,note
+CVCVC,153895,2158,yes,
+CCVCVC,158773,2066,yes,
+CVCVCC,218300,2834,yes,
+CVCCVC,2827717,41512,no,refused, middle pair any closer then any opener
+CVCCVC,325858,4740,no,refused, middle pair held to the listed clusters
+CCVCC,2507,13,no,refused, one syllable with a cluster at both ends
+all,530968,7058,yes,the three admitted shapes

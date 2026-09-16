@@ -378,98 +378,139 @@ list is the same every time it is built.
 ## Joining
 
 Two words said as one leave their consonants touching, the last of the
-first word against the first of the second.
+first word against the first of the second. **Every join is marked, so
+a word boundary is always heard.**
 
-**Every join is marked with a consonant between the two words, so a
-word boundary is always heard.** The mark is a sibilant matching the
-voice of the consonant before it.
-
-```text
-man + man  ->  manzman        n is voiced
-dag + man  ->  dagzman        g is voiced
-mat + man  ->  matsman        t is voiceless
-```
-
-|           |                               |
-| :-------- | :---------------------------- |
-| voiced    | `m n q g d b v z j C w l r y` |
-| voiceless | `p t k h s f x c`             |
-
-That will not do when the two consonants meeting are the same, or when
-they differ only by voice. Those are the two cases a listener runs
-together, and a sibilant between them does not pull them apart. `l`
-does.
+The mark is `wa`, and it is the same after every ending.
 
 ```text
-s + s  ->  sls        d + d  ->  dld        p + b  ->  plb
-s + z  ->  slz        d + t  ->  dlt
+man + drum + gon   ->   manwadrumwagon
+mat + man          ->   matwaman
+s   + s            ->   sawasa
 ```
-
-The seven pairs that differ only by voice: `pb` `dt` `gk` `sz` `fv`
-`cC` `xj`.
-
-### The rule, written out
 
 ```text
-the same consonant twice, or a voice pair    l
-anything else, after a voiced consonant      z
-anything else, after a voiceless consonant   s
+-mwa  -nwa  -qwa  -gwa  -dwa  -bwa  -pwa  -twa  -kwa  -swa
+-fwa  -vwa  -zwa  -jwa  -xwa  -cwa  -Cwa  -lwa  -rwa
 ```
 
-Three joiners, and nothing ever runs straight together.
+Nineteen sounds can close a word and `wa` follows all nineteen. There
+is no table to learn and no case to get wrong.
 
-### How many take what
+### The one thing it costs
 
-Nineteen sounds can close a word and twenty one can open one, so there
-are 399 ways two words can meet.
+**No root may begin with `wa`.**
 
-| join | pairs | why |
+Without that rule `manwadrum` reads two ways: `man + drum`, or `man`
+followed by a root `wadrum`. A joiner that can be mistaken for the
+start of a word is not a joiner.
+
+It costs **71 of the 6,233 legal forms, 1.1%**:
+
+| shape | lost | why |
 | :--- | ---: | :--- |
-| `z` | 234 | after a voiced sound |
-| `s` | 133 | after a voiceless sound |
-| `l` | 32 | 18 the same sound twice, 14 a voice pair |
+| `CVC` | 19 | `wa` plus each of the 19 closing sounds |
+| `CVCC` | 46 | `wa` plus each legal closing cluster |
+| `CCVC` | 6 | a cluster whose second sound is `w` |
 
-Every one of the 399 is a row in `base/v4/join.csv`, as
-`close,open,join,rule`. `join.ts` writes it from the rule above and
-refuses to write if the counts drift from this table.
+The rule lives in `sound.ts` as `BAD_HEAD`, and it rides the `rhyme`
+list because **`wa` can only ever occur word-initially** on this
+inventory: `w` closes nothing and stands in no coda cluster, so after
+the vowel the pair would read `aw` and never `wa`. Banning the pair
+anywhere and banning it at the head are the same test here.
+
+They stop being the same test at two syllables, where `w` can open the
+second syllable before an `a`: `bawat` begins on `b` and still holds
+the joiner. So `no_wa_start` in `sound.ts` tests the whole word, and a
+listener can split a compound on every `wa` and never land inside a
+root.
+
+### What this replaced
+
+Until 2026-09-16 the joiner was a consonant chosen from a table: `z`
+after a voiced sound, `s` after a voiceless one, and `l` when the two
+consonants meeting were the same or differed only by voice.
+
+```text
+man + man  ->  manzman
+mat + man  ->  matsman
+s   + s    ->  sls
+```
+
+Three joiners, 399 rows in `base/v4/join.csv`, and a speaker had to
+know the table to say a word. **It also did not work.** The seam could
+be read three ways, as a coda cluster then an onset, a coda then an
+onset cluster, or a coda then a joiner then an onset, and shutting the
+first two off would have cost ten closings and six openings. That trade
+was never made, so `bats + tal` and `bat + stal` both came out
+`batsstal` with nothing in the string to say which.
+
+`wa` has no such problem, because a vowel cannot be mistaken for part
+of a consonant run. One rule, one cost, and the cost is 1.1% of the
+forms.
+
+`base/v4/join.csv` and `make/v4/code/join.ts` are the old system and
+are kept as the record of it. v3's second attempt, with five joiners
+and most joins taking nothing, is in `make/v3.3/readme.md`.
+
+## Two Syllables
+
+Three shapes, five and six letters, built on the same rules as the
+short words. The middle consonant opens the second syllable, so it is
+never `q`, and the clusters sit where v4 already puts them, at an end.
+
+```text
+CVCVC    batis      no cluster
+CVCVCC   batisk     cluster at the end
+CCVCVC   bratis     cluster at the start
+```
+
+`CVCCVC` (`batmis`) is refused, because it would conflict with `CVC` +
+`CC`.
+
+Two rules exist for these shapes and never fire on a short word. **The
+two vowel slots may not both be `i`, both `e` or both `u`**, so `fluwuz`
+and `mimim` are out while `batam` and `dotok` stand. And **`wa` may
+stand nowhere in a word**, not only at the head, so `bawat` is out.
+Every other rule is the short words' rule run on a longer word: `q`
+opens neither the word nor the second syllable, `c` and `C` together
+stand at most once, a liquid follows only `a` or `o` at either vowel,
+and a word holding a listed taboo form anywhere, `nigat`, `banik`, is
+not a word.
+
+| shape | the rules allow | of which taboo took | in the 16⁴ set |
+| :--- | ---: | ---: | ---: |
+| `CVCVC` | 153,895 | 2,158 | 16,384 |
+| `CVCVCC` | 218,300 | 2,834 | 28,672 |
+| `CCVCVC` | 158,773 | 2,066 | 20,480 |
+| **all** | **530,968** | | **65,536** |
+
+For the record, the shapes that are not admitted: `CVCCVC` would be
+2,827,717 with the middle pair as any closer against any opener, or
+325,858 with it held to the listed clusters, and `CCVCC`, one syllable
+with a cluster at both ends, would be 2,507.
+
+**The set is 65,536 = 16⁴, cut 4 : 7 : 5 like the base words and in the
+same roles**, no cluster 4, cluster at the end 7, cluster at the start
+5. A sixteenth of it is 4,096, the whole base set, so the two nest. It
+lives in `base/v4/65536/4-7-5/` and is built the way `4096/02-4-7-5`
+is: every legal word that already carries a meaning goes in, and the
+rest is filled by the frequency picker in `pick.ts`. Both pickers read
+their meanings through `told.ts`, the board plus the named claim files,
+so the two sets cannot disagree about what already means something.
+
+`syllable.ts` builds the candidates by running `sound.ts`'s own
+`WORD_RULES` over every one, so the rules cannot drift from the short
+case. `long.ts` counts them and checks the count against a closed form,
+which knows every rule but the taboo list and reports that one's take
+on its own. `fill.ts` picks the set. The arithmetic, the earlier Tunes'
+two syllable rules, and the ratios considered are written up in
+`note/library/tune/v4-two-syllable-counts.md` in the cluesurf repo.
 
 ```bash
-pnpm --dir deck/tune exec tsx make/v4/code/join.ts
+pnpm --dir deck/tune v4:long
+pnpm --dir deck/tune v4:fill
 ```
-
-### What a word cannot do, for the join to read one way
-
-The joiner only works if it cannot be read as anything else. A run of
-three consonants at a seam has three possible readings, coda cluster
-then onset, coda then onset cluster, or coda then joiner then onset,
-and the first two have to be shut off. So **no word may end on a
-consonant plus a joiner, and none may begin on a joiner plus a
-consonant.**
-
-```text
-# end          # start
-Cz             sC
-Cs             zC
-Cl             lC
-```
-
-`l` is the easy one to miss. It is a joiner too, so `Cl` at the end and
-`lC` at the start have to go for the same reason `Cs` and `sC` do, or
-`rlr` reads two ways.
-
-v3 had no clusters inside a word, so this cost it nothing. **v4 has
-clusters, and its lists break the rule as they stand.** Of the
-closings, `ls rs ps ks ts` end in `s` and `lz rz bz gz dz` end in `z`,
-and of the openings `sk sp st sl sm sn` begin with `s`. Ten closings
-and six openings would have to go for every join to read one way, and
-that trade has not been made. Until it is, `bats` + `tal` and `bat` +
-`stal` both come out `batsstal`, and nothing in the string says which.
-
-This system was worked out in v3 on 2026-08-23, and the table is the
-same one v3 wrote as `linker.csv`, row for row. v3 went on to a second
-system that afternoon, with five joiners `m` `n` `l` `s` `z` and most
-joins taking nothing. That one is in `make/v3.3/readme.md` and is not
-this.
 
 ## Where This Came From
 
@@ -513,14 +554,21 @@ make/v4/
     calculate.ts builds base/v4/
     check.ts     reads base/v4/ back and proves it
     join.ts      the joining rules, writes base/v4/join.csv
+    told.ts      every word that already means something, read for both pickers
+    syllable.ts  the two syllable shapes, and every word the rules allow in them
+    long.ts      counts the two syllable words, writes base/v4/long.csv
+    fill.ts      picks the 65,536 two syllable words, writes base/v4/65536/4-7-5/
 
 base/v4/
   count.csv      the table above
   onset.csv      every listed opening, and whether it reached a word
   coda.csv       every listed closing, and whether it reached a word
   join.csv       all 399 ways two words can meet, and what goes between
+  long.csv       the CVCVC, CCVCVC and CVCVCC counts, and the refused CVCCVC
   full/          cvc.csv, cvcc.csv, ccvc.csv, base.csv
   lean/          cvc.csv, cvcc.csv, ccvc.csv, base.csv
+  4096/          the base word sets, one folder per way of reaching 4,096
+  65536/4-7-5/   cvcvc.csv, cvcvcc.csv, ccvcvc.csv, plan.csv, weight.csv
 ```
 
 `base.csv` carries `word,shape,onset,vowel,coda` so a word can be taken

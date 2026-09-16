@@ -1,6 +1,6 @@
 term          parts
 ------------  ----------------------------
-granite       light grain
+granite       flower grain
 diorite       gray grain
 gabbro        dark grain
 rhyolite      light fire
@@ -11,28 +11,28 @@ pegmatite     big crystal
 obsidian      lava glass
 pumice        lava foam
 scoria        lava hole
-tuff          ash rock
-slate         clay press
+tuff          ash stone
+slate         board stone
 phyllite      silk press
-schist        mica press
+schist        slice stone
 gneiss        band press
 quartzite     sand press
-marble        lime press
+marble        flower stone
 serpentinite  green scale rock
-soapstone     soft smooth rock
+soapstone     soap stone
 sandstone     sand stone
 limestone     lime stone
 mudstone      mud stone
 siltstone     silt stone
-shale         clay layer
+shale         page stone
 conglomerate  round bit
 breccia       sharp bit
 arkose        granite sand
 greywacke     mud sand
-chert         dull flint
-flint         spark stone
+chert         dull spark stone
+flint         fire strike stone
 travertine    spring lime
-chalk         soft white stone
-coal          plant burn
+chalk         powder stone
+coal          char stone
 peat          bog plant
 laterite      iron soil

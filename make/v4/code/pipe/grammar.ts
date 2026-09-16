@@ -32,6 +32,12 @@
  *   pnpm --dir deck/tune v4:grammar
  */
 
+import { writeFileSync } from 'fs'
+import { resolve } from 'path'
+
+import { CONSONANTS, testWord, VOWELS } from '../sound'
+import { readBoard, TERM } from './board'
+
 export type Part = {
   word: string
   gloss: string
@@ -73,7 +79,7 @@ const DESIGN: Array<Part> = [
   { word: 'mol', gloss: 'high, roof', kind: 'design' },
   { word: 'ven', gloss: 'even, emphasis', kind: 'design' },
   { word: 'sin', gloss: 'soon, short time', kind: 'design' },
-  { word: 'marC', gloss: 'quite, absolute', kind: 'design' },
+  { word: 'marC', gloss: 'quite or absolute', kind: 'design' },
 ]
 
 /**
@@ -159,11 +165,48 @@ const SUFFIX: Array<Part> = [
   { word: 'drit', gloss: 'right, now', kind: 'suffix' },
 ]
 
-/** The grammatical markers from the object page. */
+/**
+ * The markers from the object page, read properly the second time.
+ *
+ * The first capture listed `kaq`, `saq` and `zeka` as "grammatical
+ * marker", which was a failure to look:
+ *
+ *   this one in grammar.csv should be zek not zeka, and they are not
+ *   just grammatical markers, look harder
+ *
+ * Two things were wrong.
+ *
+ * **`zeka` is not a word.** It is `zek`, the agent suffix, carrying
+ * the `-a` inflection: `rasam zeka` is a painter and `bram zeka` is a
+ * creator. Every example on the page ends in `-a` the same way, which
+ * means there is a vowel suffix doing real work that the capture
+ * missed entirely. `ram daxa` is darkness, `meg kuna` is
+ * maintainableness, `yas ciqa` is things.
+ *
+ * **`kaq` and `saq` are the type and instance distinction**, which is
+ * one of the most fundamental things in the grammar and not a
+ * miscellaneous particle at all. A noun is `kaq` in general and `saq`
+ * in its instance.
+ */
 const MARKER: Array<Part> = [
-  { word: 'kaq', gloss: 'grammatical marker', kind: 'marker' },
-  { word: 'saq', gloss: 'grammatical marker', kind: 'marker' },
-  { word: 'zeka', gloss: 'grammatical marker', kind: 'marker' },
+  { word: 'kaq', gloss: 'type, the general form', kind: 'marker' },
+  { word: 'saq', gloss: 'instance, the specific form', kind: 'marker' },
+  { word: 'yas', gloss: 'plural', kind: 'marker' },
+  { word: 'nic', gloss: 'a, indefinite', kind: 'marker' },
+  { word: 'vuti', gloss: 'is, the copula', kind: 'marker' },
+]
+
+/**
+ * The inflections, which are vowels rather than words.
+ *
+ * Missed by the first capture, and they are the reason `zeka` looked
+ * like a word. Recorded here because a vowel suffix is not subject to
+ * the three-sound rule at all, and mistaking one for a word makes the
+ * report wrong in both directions.
+ */
+export const INFLECTION: Array<[string, string]> = [
+  ['-a', 'the ordinary noun ending, on every example'],
+  ['-wa', 'the formal ending, used when naming an element'],
 ]
 
 /**
@@ -304,24 +347,168 @@ export const TENSE: Array<[string, string]> = [
 export const BY_WORD = new Map(PARTS.map(one => [one.word, one]))
 
 /**
- * Which kinds must be three sounds, and which may earn their length.
+ * Which kinds must be three sounds.
  *
- * A pronoun, a cradle, a suffix and a marker appear on a large share
- * of ALL sentences, so each is charged on nearly every utterance and
- * none may exceed three.
+ * A pronoun, a cradle, a suffix, a marker and a manner all appear on
+ * a large share of all sentences, so each is charged on nearly every
+ * utterance and none may exceed three.
  *
- * A manner is different. `often` is constant and `enthusiastically`
- * is rare, and the set already spends sounds accordingly. Holding
- * every adverb to three would spend the scarce forms on words nobody
- * says, which is the rule applied backwards.
+ *   the ones from those links that are 5 or 6+ letters obviously need
+ *   to be redone. but they are important too.
+ *
+ * An earlier draft of this file argued that a manner could earn its
+ * length, since `often` is constant and `enthusiastically` is rare.
+ * That was overruled, and correctly: an adverb is still a word a
+ * speaker reaches for, and "rarer than `often`" is not the same as
+ * rare.
  */
-const BOUND = new Set(['pronoun', 'design', 'suffix', 'marker', 'cradle'])
+const BOUND = new Set([
+  'pronoun',
+  'design',
+  'suffix',
+  'marker',
+  'cradle',
+  'manner',
+])
 
 /** The ones that break the three-sound rule and need re-forming. */
 export function tooLong(): Array<Part> {
   return PARTS.filter(
     one => BOUND.has(one.kind) && [...one.word].length > 3,
   )
+}
+
+// ─── Proposing replacements ─────────────────────────────
+
+/**
+ * A new three-sound form for a word that cannot keep the one it has.
+ *
+ * The first rung of the ladder in `choosing-a-form.md` is the echo:
+ *
+ *   first I try and see if any way to sound like all or main part of
+ *   word directly
+ *
+ * So a replacement for `hekstrim` should keep as much of `hekstrim`
+ * as three sounds can hold, which is `hek`. That is not a compromise,
+ * it is the best possible answer: the word already sounded right to
+ * whoever made it, and the only problem was that it was too long to
+ * exist.
+ *
+ * Scored by what survives, weighted by position, because the first
+ * consonant and the vowel carry a word's identity more than the coda
+ * does.
+ */
+function echoes(want: string, form: string): number {
+  const from = [...want]
+  const to = [...form]
+  let score = 0
+
+  // The onset is whatever comes before the first vowel, which may be
+  // a cluster. `smal` is carried by BOTH `s` and `m`, so `mal` keeps
+  // as much of it as `sam` does and more than `saC`. Scoring only the
+  // very first letter made the worst offer win a tie.
+  const vowelAt = from.findIndex(one => VOWELS.includes(one))
+  const onset = vowelAt > 0 ? from.slice(0, vowelAt) : [from[0]]
+  if (onset.includes(to[0])) score += 4
+  // Keeping the actual first letter is still worth a little more.
+  if (from[0] === to[0]) score += 1
+
+  const wantVowel = from.find(one => VOWELS.includes(one))
+  const formVowel = to.find(one => VOWELS.includes(one))
+  if (wantVowel && wantVowel === formVowel) score += 3
+  if (from[from.length - 1] === to[to.length - 1]) score += 2
+  // Any other sound of the original that survives anywhere.
+  for (const one of new Set(to)) {
+    if (from.includes(one)) score += 1
+  }
+  // A sound in the same ORDER is worth more than one merely present.
+  let at = 0
+  for (const one of to) {
+    const found = from.indexOf(one, at)
+    if (found >= 0) {
+      score += 1
+      at = found + 1
+    }
+  }
+  return score
+}
+
+/** Every legal three-sound form, built once. */
+function shortForms(): Array<string> {
+  const out: Array<string> = []
+  for (const onset of CONSONANTS) {
+    for (const vowel of VOWELS) {
+      for (const coda of CONSONANTS) {
+        const word = `${onset}${vowel}${coda}`
+        if (testWord(word).ok) out.push(word)
+      }
+    }
+  }
+  return out
+}
+
+export type Offer = { part: Part; picks: Array<string> }
+
+/** A gloss holds commas, so a cell that might is quoted. */
+function cell(text: string | number): string {
+  const one = String(text)
+  return one.includes(',') ? `"${one.replace(/"/g, '""')}"` : one
+}
+
+/**
+ * Three offers per broken word, assigned globally rather than in
+ * order.
+ *
+ * The first version handed out forms longest word first, and it gave
+ * `las` to `slayt` before `last` could ask for it. **`last` to `las`
+ * is a perfect echo and `slayt` to `las` is a poor one**, so the order
+ * of the loop decided the answer, which is exactly what an assignment
+ * problem must not let happen.
+ *
+ * So every pair is scored, and the best pair anywhere is taken first,
+ * then the next best among what remains. That is the standard greedy
+ * for maximum weight bipartite matching, and with a thousand free
+ * forms against thirty words the conflicts are few enough that it
+ * reaches the optimum in practice.
+ *
+ * A form is refused if anything holds it: the board, or another
+ * component word. Two components sharing a form is the one collision
+ * that is never acceptable, because they appear in the same sentence.
+ */
+export function propose(taken: Set<string>): Array<Offer> {
+  const free = shortForms().filter(one => !taken.has(one))
+  const broken = tooLong()
+
+  type Pair = { at: number; form: string; score: number }
+  const pairs: Array<Pair> = []
+  broken.forEach((part, at) => {
+    for (const form of free) {
+      const score = echoes(part.word, form)
+      // Anything this weak is noise and only slows the sort.
+      if (score >= 4) pairs.push({ at, form, score })
+    }
+  })
+  pairs.sort((a, b) => b.score - a.score || a.form.localeCompare(b.form))
+
+  const picks = new Map<number, Array<string>>()
+  const spent = new Set<string>()
+  for (const pair of pairs) {
+    const mine = picks.get(pair.at) ?? []
+    if (mine.length >= 3) continue
+    // Only the FIRST pick is reserved. The second and third are
+    // alternates a person may take, and two words may offer the same
+    // alternate without either being wrong yet.
+    if (mine.length === 0) {
+      if (spent.has(pair.form)) continue
+      spent.add(pair.form)
+    } else if (spent.has(pair.form)) {
+      continue
+    }
+    mine.push(pair.form)
+    picks.set(pair.at, mine)
+  }
+
+  return broken.map((part, at) => ({ part, picks: picks.get(at) ?? [] }))
 }
 
 const RUNNING = process.argv[1]?.endsWith('grammar.ts')
@@ -335,18 +522,53 @@ if (RUNNING) {
       `${long.length} are not\n\n`,
   )
 
-  if (long.length) {
-    process.stdout.write('THESE MUST BE RE-FORMED TO THREE SOUNDS\n\n')
+  /**
+   * A word of five sounds or more is not merely long. It is not a
+   * word.
+   *
+   * Tune has three shapes, `CVC`, `CVCC` and `CCVC`, so **four sounds
+   * is the ceiling of the whole language** and nothing above it can be
+   * written down at all. That makes `hekstrim` and `prent` a different
+   * kind of problem from `smal`: one is over budget, the other does
+   * not exist.
+   *
+   * So the two are reported apart, and the illegal ones first, with
+   * the reason the phonology gives.
+   */
+  const illegal = long.filter(one => !testWord(one.word).ok)
+  const overBudget = long.filter(one => testWord(one.word).ok)
+
+  if (illegal.length) {
+    process.stdout.write('THESE ARE NOT LEGAL TUNE WORDS AT ALL\n\n')
+    process.stdout.write(
+      '  Tune has three shapes, CVC, CVCC and CCVC, so four sounds\n' +
+        '  is the ceiling of the language. Nothing here can be\n' +
+        '  written, and each needs a new form rather than a shorter\n' +
+        '  one.\n\n',
+    )
+    for (const one of illegal) {
+      const why = testWord(one.word).broke.join(', ') || 'not a legal shape'
+      process.stdout.write(
+        `  ${one.word.padEnd(10)}${String([...one.word].length).padStart(2)}  ` +
+          `${one.gloss.padEnd(18)} ${why}\n`,
+      )
+    }
+    process.stdout.write('\n')
+  }
+
+  if (overBudget.length) {
+    process.stdout.write('THESE ARE LEGAL AND MUST STILL COME DOWN TO THREE\n\n')
     process.stdout.write(
       '  A component word is uttered on a large share of all\n' +
         '  sentences. A fourth sound on one is paid forever, and no\n' +
         '  meaning it carries is worth that.\n\n',
     )
-    for (const one of long) {
+    for (const one of overBudget) {
       process.stdout.write(
-        `  ${one.word.padEnd(8)} ${one.kind.padEnd(9)} ${one.gloss}\n`,
+        `  ${one.word.padEnd(10)} ${one.kind.padEnd(9)} ${one.gloss}\n`,
       )
     }
+    process.stdout.write('\n')
   }
 
   const missing = TENSE.filter(([, word]) => !word)
@@ -378,6 +600,80 @@ if (RUNNING) {
     for (const [word, who] of clash) {
       process.stdout.write(`  ${word.padEnd(8)} ${who.join(' / ')}\n`)
     }
+  }
+
+  // ─── What to use instead ──────────────────────────────
+
+  if (long.length) {
+    const board = readBoard()
+    const taken = new Set<string>()
+    board.forms.forEach((form, at) => {
+      if (board.meaning[at]) taken.add(form)
+    })
+    for (const one of PARTS) taken.add(one.word)
+
+    process.stdout.write('WHAT TO USE INSTEAD\n\n')
+    process.stdout.write(
+      '  The first rung of the ladder is the echo: keep as much of\n' +
+        '  the word as three sounds can hold. `hekstrim` already\n' +
+        '  sounded right to whoever made it, and the only problem was\n' +
+        '  that it was too long to exist.\n\n' +
+        '  Nothing here is applied. Every form is free on the board\n' +
+        '  and free of the other component words.\n\n',
+    )
+    process.stdout.write(
+      `  ${'was'.padEnd(10)}${'meaning'.padEnd(20)}best   or\n`,
+    )
+    const offers = propose(taken)
+    for (const offer of offers) {
+      process.stdout.write(
+        `  ${offer.part.word.padEnd(10)}${offer.part.gloss.padEnd(20)}` +
+          `${(offer.picks[0] ?? '?').padEnd(7)}${offer.picks.slice(1).join(' ')}\n`,
+      )
+    }
+
+    const csv = ['was,meaning,kind,sounds,legal,best,second,third']
+    for (const offer of offers) {
+      const ok = testWord(offer.part.word).ok
+      csv.push(
+        [
+          offer.part.word,
+          offer.part.gloss,
+          offer.part.kind,
+          [...offer.part.word].length,
+          ok ? 'legal' : testWord(offer.part.word).broke.join(' '),
+          offer.picks[0] ?? '',
+          offer.picks[1] ?? '',
+          offer.picks[2] ?? '',
+        ]
+          .map(cell)
+          .join(','),
+      )
+    }
+    const out = resolve(TERM, 'scratchpad', 'component.csv')
+    writeFileSync(out, `${csv.join('\n')}\n`)
+
+    const all = ['word,gloss,kind,sounds,legal']
+    for (const one of PARTS) {
+      all.push(
+        [
+          one.word,
+          one.gloss,
+          one.kind,
+          [...one.word].length,
+          testWord(one.word).ok ? 'legal' : 'no',
+        ]
+          .map(cell)
+          .join(','),
+      )
+    }
+    for (const [gloss, words] of PHRASED) {
+      all.push([words, gloss, 'phrase', '', 'phrase'].map(cell).join(','))
+    }
+    const every = resolve(TERM, 'scratchpad', 'grammar.csv')
+    writeFileSync(every, `${all.join('\n')}\n`)
+
+    process.stdout.write(`\n  wrote ${out}\n  wrote ${every}\n\n`)
   }
 
   // ─── Does length track frequency ──────────────────────

@@ -394,7 +394,6 @@ peripheral               periphery + like                            affix
 perish                   per + like                                  affix
 persistent               persist + agent                             affix
 personality              personal + nature                           affix
-petal                    pet + like                                  affix
 photography              photograph + like                           affix
 picky                    pick + like                                 affix
 plaster                  plastic + agent                             affix
@@ -1094,7 +1093,6 @@ confluence               river + join                                sense
 confusion                confuse + act                               sense
 conglomerate             pebble + rock                               sense
 congruence               same + shape                                sense
-conifer                  cone + tree                                 sense
 conjecture               guess + claim                               sense
 conjunction              join + term                                 sense
 conscientious            careful + duty + follow                     sense
@@ -1330,7 +1328,6 @@ glossary                 term + list                                 sense
 glossy                   shine + like                                sense
 glove                    hand + covering                             sense
 gneiss                   band + rock                                 sense
-gold                     yellow + metal                              sense
 golem                    make + body + animate                       sense
 golf                     club + ball + hole + sport                  sense
 gorge                    deep + valley                               sense
@@ -1901,7 +1898,6 @@ shameless                shame + without                             sense
 shapeshift               shape + change                              sense
 shock wave               shock + wave                                sense
 shrew                    sharp + nose + rat                          sense
-shrub                    low + tree                                  sense
 sieve                    filter + size                               sense
 sight                    see + act                                   sense
 silo                     grain + tower                               sense
@@ -1960,7 +1956,6 @@ stinger                  sting + part                                sense
 stochastic               random                                      sense
 stoic                    feeling + restrain                          sense
 stomata                  leaf + pore                                 sense
-stone                    rock + piece                                sense
 stork                    long + leg + crane                          sense
 stranger                 unknown + person                            sense
 stratus                  layer + cloud                               sense

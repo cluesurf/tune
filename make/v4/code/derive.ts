@@ -267,7 +267,7 @@ const NOT_DERIVED = new Set(
    pudding during nothing something everything anything
    wicked sacred hundred hatred naked crooked rugged ragged jagged
    blessed cursed learned aged beloved
-   gray grey`.split(/\s+/),
+   gray grey petal`.split(/\s+/),
 )
 
 /**
@@ -682,7 +682,21 @@ const SENSE: Array<[string, string]> = [
   // build everything else. A fruit that is a shape or a colour away
   // from a fruit already present is built.
   ['sedge', 'marsh + grass'],
-  ['conifer', 'cone + tree'],
+  // `conifer` is a root, and it is the case the whole compression
+  // argument was built on. It is plainly `cone + tree` and that is
+  // exactly why it earns a slot rather than losing one:
+  //
+  //   without it, every conifer name starts `cone tree` and has ONE
+  //   root left for the whole of what distinguishes it
+  //
+  //   with it, each has two, and the family becomes a table
+  //
+  // `v4:compress` scored `cone tree` as the single best promotion in
+  // the lexicon at 252 bits while this line was still here, which is
+  // the solver asking for the line to be deleted.
+  //
+  // **A decomposable category can earn a root by compressing what sits
+  // under it.** See `note/tune/pipeline/compression.md`.
   ['twig', 'small + branch'],
   ['tuber', 'thick + root'],
   ['chickpea', 'round + pea'],
@@ -1712,7 +1726,16 @@ const SENSE: Array<[string, string]> = [
 
   // `rock` is the material and a `stone` is a piece of it. One root
   // covers both, so every breakdown above says rock.
-  ['stone', 'rock + piece'],
+  // `stone` was `rock + piece` and is now a root, on the solver's own
+  // recommendation. `v4:compress` scored `piece rock` as the best
+  // promotion in the rock field at 21 bits, which is the compression
+  // argument in `compression.md` reaching a conclusion nobody fed it.
+  //
+  // It is also a real distinction rather than a convenience: `rock` is
+  // the material and `stone` is a discrete piece of it, which most
+  // languages separate. Deriving one from the other pushed
+  // `siltstone`, `chert` and `chalk` over the three-root ceiling for
+  // no gain.
   ['pebble', 'small + rock + piece'],
   ['boulder', 'big + rock + piece'],
   ['gravel', 'small + rock + many'],
@@ -1954,7 +1977,14 @@ const SENSE: Array<[string, string]> = [
   ['song', 'sing + thing'],
   ['food', 'feed + thing'],
   ['seat', 'sit + thing'],
-  ['gold', 'yellow + metal'],
+  // `gold` is a root. It was `yellow + metal`, which made it a
+  // compound, so `goldenrod` flattened to `king atom stalk flower`
+  // once the element table was added: gold the metal was being eaten
+  // by gold the element, which was eaten in turn by its own gloss.
+  //
+  // People have held gold for six thousand years and every language
+  // has one word for it. `yellow metal` also names brass, bronze and
+  // pyrite, which test three of `compounding.md` refuses.
 
 
   // Beasts, off the basis: deer wolf bear cat dog horse cow pig sheep
@@ -2040,7 +2070,16 @@ const SENSE: Array<[string, string]> = [
   ['maple', 'sweet + sap + tree'],
   ['bamboo', 'hollow + grass'],
   ['ivy', 'wall + vine'],
-  ['shrub', 'low + tree'],
+  // `shrub` and `petal` are roots now, on the solver's recommendation.
+  // `v4:compress` scored `branch low plant` and `flower like pet` at
+  // 240 bits each, the third and fourth best promotions in the whole
+  // lexicon, and both were pushing a dozen flower names over the
+  // three-root ceiling: `azalea` was `bright low branch plant flower`,
+  // five roots for one shrub.
+  //
+  // `petal` is also not `pet + like` in any real sense. That is a
+  // false affix hit on a word that has no `pet` in it, the same fault
+  // as `gray` from `graze`.
   ['thistle', 'thorn + weed'],
   ['nettle', 'sting + weed'],
   ['clover', 'three + leaf + grass'],
