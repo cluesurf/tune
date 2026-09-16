@@ -94,6 +94,7 @@ const SUFFIX: Array<[string, string]> = [
   ['ish', 'like'],
   ['ist', 'agent'],
   ['ician', 'agent'],
+  ['ess', 'female'],
   ['cian', 'agent'],
   ['ism', 'practice'],
   ['ity', 'nature'],
@@ -108,6 +109,7 @@ const SUFFIX: Array<[string, string]> = [
   ['ous', 'like'],
   ['ive', 'like'],
   ['ary', 'like'],
+  ['ar', 'like'],
   // Before `ic`, so `whimsical` cuts to `whims` and reaches `whimsy`
   // rather than stopping at `whimsic` and finding nothing.
   ['ical', 'like'],
@@ -163,8 +165,17 @@ function stemsOf(cut: string): Array<string> {
     `${cut}ce`,
   ]
   // `scient` -> `science`, `elegant` -> `elegance`.
+  // `attent` -> `attend`, `extent` -> `extend`.
   if (cut.endsWith('t')) {
-    out.push(`${cut.slice(0, -1)}ce`)
+    out.push(`${cut.slice(0, -1)}ce`, `${cut.slice(0, -1)}d`)
+  }
+  // `applic` -> `apply`, `multiplic` -> `multiply`.
+  if (cut.endsWith('ic')) {
+    out.push(`${cut.slice(0, -2)}y`)
+  }
+  // `explan` -> `explain`, `retan` -> `retain`.
+  if (cut.endsWith('an')) {
+    out.push(`${cut.slice(0, -1)}in`)
   }
   if (cut.endsWith('i')) {
     const y = cut.slice(0, -1)
@@ -200,7 +211,7 @@ const NOT_DERIVED = new Set(
   `flower holy coral water power paper corner mother father brother
    sister daughter finger winter summer river silver number member
    letter matter center order under after other over ever never very
-   every only early body city story study family money enemy army baby
+   every only early body city story study family money enemy baby
    lady party duty beauty safety dirty empty happy heavy
    silly lucky tiny copy carry marry worry hurry bury deny apply reply
    supply enter offer suffer differ cover discover remember consider
@@ -213,6 +224,7 @@ const NOT_DERIVED = new Set(
    parent present moment talent silent recent decent absent urgent
    patient ancient content client accident incident student instrument
    dollar pillar scholar similar solar sugar vinegar cedar altar
+   nuclear regular popular particular familiar peculiar circular
    children kitchen garden golden wooden often listen open even seven
    heaven queen green screen between citizen woman women oxen linen
    token kitten oven raven siren omen burden warren maiden sudden
@@ -559,6 +571,35 @@ const SENSE: Array<[string, string]> = [
 
   ['toxin', 'toxic + thing'],
   ['denim', 'blue + cloth'],
+  ['counterclockwise', 'against + clock + oriented'],
+  ['clockwise', 'clock + oriented'],
+  ['dishonorable', 'not + honor + able'],
+  ['clarity', 'clear + state'],
+  ['circular', 'circle + like'],
+  ['clarify', 'clear + make'],
+  ['fundamental', 'base + like'],
+  ['species', 'life + kind'],
+  ['intestine', 'gut + tube'],
+  ['hearth', 'fire + floor'],
+  ['fortress', 'fort + place'],
+  ['ford', 'river + cross + place'],
+  ['introductory', 'introduce + like'],
+  ['convolution', 'convolute + act'],
+  // English keeps a Norman word for the meat and a Saxon one for the
+  // animal. Tune has no reason to copy that accident.
+  ['beef', 'cow + meat'],
+  ['pork', 'pig + meat'],
+  ['mutton', 'sheep + meat'],
+  ['veal', 'young + cow + meat'],
+  ['venison', 'deer + meat'],
+  ['poultry', 'bird + meat'],
+  ['bacon', 'pig + meat'],
+  ['chemistry', 'molecule + study'],
+  ['army', 'military + group'],
+  ['sophisticated', 'refine + done'],
+  ['magazine', 'news + book'],
+  ['literature', 'write + art'],
+  ['chemical', 'molecule + like'],
   ['pancreas', 'gut + gland'],
   ['oxygen', 'breath + gas'],
   ['orientation', 'orient + act'],
@@ -850,9 +891,7 @@ const SENSE: Array<[string, string]> = [
   ['orchid', 'rare + flower'],
   ['lotus', 'water + lily'],
   ['poppy', 'sleep + flower'],
-  ['mushroom', 'cap + fungus'],
   ['algae', 'water + moss'],
-  ['lichen', 'stone + moss'],
 
   // Stone and metal, off the basis: rock stone sand clay iron gold
   // silver copper salt glass crystal gem.
@@ -929,7 +968,6 @@ const SENSE: Array<[string, string]> = [
   ['wanderer', 'wander + agent'],
 
   // Things English keeps in one lump and Chinese does not.
-  ['computer', 'count + machine'],
   ['telephone', 'far + talk + machine'],
   ['train', 'fire + cart'],
   ['pyramid', 'point + tomb'],
@@ -1158,6 +1196,70 @@ console.log(
   '  a word can be irreducible and still build nothing, and most are.',
 )
 console.log('')
+
+/**
+ * Words that look built and whose ROOT is not in the pool.
+ *
+ *   duplication is derived, duplicate is base
+ *
+ * `duplication` was a candidate and `duplicate` was in none of the six
+ * source lists, so the affix rule had nothing to resolve against and the
+ * derived form sat there looking irreducible. The same thing happened to
+ * `apology` and `apologize`.
+ *
+ * **A missing root is invisible by construction**: nothing points at a
+ * word that is not there. But a derived form left stranded DOES point at
+ * it, so the stranded forms are the way in.
+ *
+ * Reported rather than added, because the guess at the root can be
+ * wrong. It is a list to read, and the good ones go into `MINE`.
+ */
+const orphan = new Map<string, Array<string>>()
+for (const word of words) {
+  if (found.has(word) || NOT_DERIVED.has(word) || DRIFTED.has(word)) {
+    continue
+  }
+  for (const [suffix, kind] of SUFFIX) {
+    if (!word.endsWith(suffix)) continue
+    const cut = word.slice(0, -suffix.length)
+    if (cut.length < 4) continue
+    void kind
+    // Only the endings that reliably mean a word was built. `-y`, `-al`
+    // and `-er` end too many plain roots to guess from.
+    if (!/^(ation|ition|ment|tion|sion|ness|ity|acy|ify|ize|ise)$/.test(suffix)) {
+      continue
+    }
+    const guess = stemsOf(cut).find(s => s.length > 3)
+    if (guess) {
+      const who = orphan.get(guess) ?? []
+      who.push(word)
+      orphan.set(guess, who)
+    }
+    break
+  }
+}
+
+if (orphan.size > 0) {
+  console.log(
+    `ROOTS THAT MAY BE MISSING: ${orphan.size} derived words have no root in the pool.`,
+  )
+  console.log('')
+  /**
+   * The STRANDED WORDS, not the guessed root.
+   *
+   * The first version printed its own guess at the spelling, and the
+   * guesses were mostly junk: `ident` for identity, `commo` for
+   * commotion, `atten` for attention. None of those are words. The
+   * useful half is knowing which derived forms have nothing to resolve
+   * against, because a person reads `application` and knows the root is
+   * `apply` without any help.
+   */
+  const stranded = [...orphan.values()].flat().sort()
+  for (let i = 0; i < stranded.length; i += 6) {
+    console.log(`  ${stranded.slice(i, i + 6).join('  ')}`)
+  }
+  console.log('')
+}
 
 if (owed.size === 0) {
   console.log('Every part of every breakdown is already a candidate.')

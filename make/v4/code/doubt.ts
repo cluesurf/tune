@@ -114,7 +114,7 @@ const INITIALISM = new Set(
 )
 
 const MODERN = new Set(
-  `computer internet website email software hardware database server
+  `internet website email software hardware database server
    browser smartphone telephone television radio camera video film
    photograph automobile airplane helicopter rocket satellite battery
    engine motor turbine transistor microchip robot algorithm`.split(

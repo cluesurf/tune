@@ -127,7 +127,6 @@ appear,,verb,9,8
 appendix,,noun,2,0
 applause,,noun,1,1
 apple,,noun,0,0
-application,,noun,2,2
 appoint,,verb,0,0
 appreciate,,verb,1,0
 approach,,verb,3,1
@@ -141,7 +140,6 @@ arena,,noun,1,0
 argue,,verb,7,4
 arithmetic,,noun,0,0
 arm,,verb,19,9
-army,,noun,2,1
 aromatic,,adjective,1,0
 around,,preposition,46,34
 arouse,,verb,0,0
@@ -164,7 +162,6 @@ aspect,,noun,1,1
 assail,,verb,1,1
 assault,,noun,1,1
 assemble,,verb,0,0
-assess,,verb,3,1
 assign,,verb,4,2
 associate,,verb,1,0
 assume,,verb,3,0
@@ -177,8 +174,6 @@ attach,,verb,4,0
 attack,,verb,21,14
 attempt,,verb,1,1
 attend,,verb,1,0
-attention,,noun,4,4
-attentive,,adjective,1,1
 attitude,,noun,4,4
 attract,,verb,7,1
 attribute,,verb,0,0
@@ -251,7 +246,6 @@ become,,verb,5,0
 bed,,noun,36,15
 bee,,noun,15,1
 beech,,noun,4,1
-beef,,verb,2,0
 beer,,noun,1,0
 beet,,noun,1,0
 before,,conjunction,74,5
@@ -348,7 +342,9 @@ branch,,verb,4,3
 brand,,verb,2,1
 brave,,adjective,12,2
 bread,,noun,14,6
-break,,verb,79,34
+break,shatter,verb,79,34
+break,rest,verb,79,34
+break,gap,verb,79,34
 breast,,noun,10,0
 breath,,noun,29,14
 breathe,,verb,11,6
@@ -478,8 +474,6 @@ check,,verb,30,17
 cheek,,noun,1,0
 cheer,,verb,3,1
 cheese,,noun,0,0
-chemical,,adjective,11,4
-chemistry,,noun,2,2
 chest,,noun,8,2
 chew,,verb,4,2
 chick,,noun,1,0
@@ -502,16 +496,12 @@ cigarette,,noun,0,0
 cinema,,noun,0,0
 circle,,verb,28,10
 circuit,,noun,0,0
-circular,,adjective,0,0
 citizen,,noun,1,0
 city,,noun,12,6
-civilize,,verb,1,1
 claim,,verb,22,19
 clamp,,noun,1,0
 clan,,noun,1,0
 clap,,verb,2,0
-clarify,,verb,1,0
-clarity,,noun,1,1
 clash,,noun,6,4
 clasp,,noun,1,1
 class,,noun,18,14
@@ -586,6 +576,7 @@ component,,noun,0,0
 compound,,verb,7,7
 compress,,noun,1,0
 compute,,verb,0,0
+computer,,noun,4,3
 concentrate,,verb,0,0
 concept,,noun,1,1
 concern,,verb,2,2
@@ -650,7 +641,6 @@ cost,,verb,13,11
 cot,,noun,1,1
 council,,noun,1,0
 count,,verb,43,25
-counterclockwise,,adjective,0,0
 country,,noun,7,4
 couple,,verb,2,2
 courage,,noun,5,3
@@ -681,7 +671,6 @@ cricket,,noun,0,0
 crime,,noun,11,10
 crimson,,noun,1,0
 crisp,,adjective,2,1
-criticize,,verb,1,1
 critique,,noun,1,1
 crocodile,,noun,1,1
 crooked,,verb,1,0
@@ -842,7 +831,6 @@ disease,,noun,23,17
 disguise,,verb,1,0
 disgust,,verb,0,0
 dish,,verb,14,13
-dishonorable,,adjective,1,0
 disk,,noun,2,2
 disobedient,,adjective,1,0
 disperse,,verb,0,0
@@ -906,7 +894,6 @@ due,,adjective,2,1
 dull,,adjective,9,0
 dummy,,adjective,3,0
 dumpling,,verb,1,0
-duplication,,noun,1,1
 durable,,adjective,0,0
 duration,,noun,1,1
 during,,preposition,0,0
@@ -1038,7 +1025,6 @@ experience,,verb,3,1
 experiment,,verb,0,0
 expert,,adjective,26,26
 explain,,verb,9,5
-explanation,,noun,0,0
 explode,,verb,2,0
 explore,,verb,1,0
 explosive,,adjective,2,0
@@ -1202,7 +1188,6 @@ freight,,noun,1,0
 frequency,,noun,1,1
 frequent,,adjective,1,1
 fresh,,adjective,11,2
-friction,,noun,0,0
 friend,,noun,31,23
 fright,,noun,1,1
 fringe,,adjective,2,0
@@ -1278,7 +1263,6 @@ go,,verb,57,22
 goal,,noun,12,9
 goat,,noun,0,0
 god,,noun,21,8
-goddess,,noun,0,0
 good,,adjective,70,29
 gossip,,verb,1,0
 gourd,,noun,1,0
@@ -1289,7 +1273,6 @@ grade,,verb,2,2
 gradual,,adjective,1,1
 grain,,noun,12,7
 gram,,noun,2,2
-grammar,,noun,0,0
 grand,,adjective,2,0
 grant,,noun,4,2
 grape,,noun,2,1
@@ -1534,11 +1517,9 @@ internal,,adjective,4,0
 interpret,,verb,0,0
 interrupt,,verb,3,0
 interval,,noun,0,0
-intestine,,noun,1,0
 into,,preposition,11,6
 intoxicate,,verb,1,0
 introduce,,verb,0,0
-introductory,,noun,1,0
 invent,,verb,0,0
 invert,,verb,0,0
 investigate,,verb,1,0
@@ -1672,7 +1653,6 @@ limb,,noun,6,6
 limit,,verb,20,15
 limp,,adjective,1,0
 line,,verb,104,86
-linear,,noun,0,0
 linen,,noun,0,0
 linger,,verb,1,0
 link,,verb,32,18
@@ -1682,7 +1662,6 @@ liquid,,adjective,69,39
 liquor,,noun,1,0
 list,,verb,27,18
 listen,,verb,11,8
-literature,,noun,0,0
 little,,adjective,53,0
 live,,adjective,58,17
 lizard,,noun,3,2
@@ -1721,7 +1700,6 @@ luxury,,noun,2,0
 machine,,noun,26,17
 macroscopic,,adjective,0,0
 mad,,adjective,13,6
-magazine,,noun,0,0
 magic,,noun,12,5
 magnet,,noun,4,3
 magnitude,,noun,0,0
@@ -1755,7 +1733,6 @@ mate,,noun,5,4
 material,,noun,22,22
 matrix,,noun,0,0
 matter,,verb,18,17
-mattress,,noun,1,0
 mature,,adjective,2,1
 maximum,,adjective,0,0
 may,,verb,1,0
@@ -1778,7 +1755,6 @@ member,,noun,15,15
 memory,,noun,14,2
 mend,,verb,0,0
 mental,,adjective,0,0
-mention,,verb,3,2
 mercy,,noun,3,3
 merge,,verb,0,0
 merry,,adjective,0,0
@@ -1799,7 +1775,8 @@ milk,,verb,7,3
 million,,value,5,1
 mimic,,verb,1,0
 mince,,verb,1,0
-mind,,verb,46,25
+mind,thinking part,verb,46,25
+mind,object to,verb,46,25
 mineral,,noun,3,3
 minimum,,adjective,1,0
 minister,,noun,1,1
@@ -1863,7 +1840,6 @@ muscle,,noun,26,11
 museum,,noun,0,0
 mush,,noun,1,1
 music,,noun,25,5
-mutation,,noun,0,0
 mutual,,adjective,3,0
 my,,noun,0,0
 mystery,,noun,4,1
@@ -2145,7 +2121,6 @@ poor,,adjective,19,3
 pop,,verb,2,1
 popular,,adjective,2,1
 porch,,noun,1,1
-pork,,noun,2,0
 port,dock,noun,2,2
 port,move,noun,2,2
 pose,,verb,1,1
@@ -2266,7 +2241,6 @@ raid,,noun,1,0
 rail,,noun,6,3
 rain,,verb,12,7
 raise,,verb,27,4
-random,,adjective,4,0
 range,,verb,7,6
 rank,,verb,12,10
 rapid,,adjective,2,0
@@ -2665,7 +2639,6 @@ speak,,verb,50,19
 spear,,noun,3,2
 spec,,noun,0,0
 special,,adjective,14,2
-species,,noun,0,0
 specific,,adjective,2,1
 speck,,noun,1,1
 spectrum,,noun,1,0
@@ -2818,7 +2791,6 @@ supervise,,verb,3,2
 supply,,verb,21,15
 support,,verb,61,27
 suppose,,verb,0,0
-suppress,,verb,1,0
 sure,,adjective,14,8
 surface,,verb,32,28
 surgery,,noun,6,6
@@ -3237,6 +3209,7 @@ apathy,,noun,0,0
 ape,,noun,0,0
 apology,,noun,0,0
 appetite,,noun,0,0
+apply,,verb,0,0
 awe,,noun,0,0
 bang,,verb,0,0
 beep,,noun,0,0
@@ -3250,11 +3223,14 @@ brim,,noun,0,0
 broth,,noun,0,0
 brow,,noun,0,0
 buoyant,,noun,0,0
+cactus,,noun,0,0
 cartilage,,noun,0,0
 chime,,noun,0,0
 chisel,,noun,0,0
 chord,,noun,0,0
 chorus,,noun,0,0
+circumvent,,verb,0,0
+civil,,adjective,0,0
 clam,,noun,0,0
 clang,,noun,0,0
 coincide,,verb,0,0
@@ -3262,17 +3238,20 @@ conceive,,verb,0,0
 constellation,,noun,0,0
 contempt,,noun,0,0
 conviction,,noun,0,0
+convolute,,verb,0,0
 coral,,noun,0,0
 corrupt,,adjective,0,0
 covenant,,noun,0,0
 crane,bird,noun,0,0
 crater,,noun,0,0
 creak,,noun,0,0
+critic,,noun,0,0
 crunch,,noun,0,0
 cylinder,,noun,0,0
 delude,,noun,0,0
 demon,,noun,0,0
 destiny,,noun,0,0
+devolve,,verb,0,0
 diameter,,noun,0,0
 dictate,,verb,0,0
 dignity,,noun,0,0
@@ -3280,26 +3259,29 @@ discern,,verb,0,0
 discipline,,verb,0,0
 dove,,verb,0,0
 dragon,,noun,0,0
+duplicate,,verb,0,0
 dwarf,,noun,0,0
 eagle,,noun,0,0
 ecstasy,,noun,0,0
 eel,,noun,0,0
 elate,,verb,0,0
+ellipse,,noun,0,0
 eloquent,,adjective,0,0
 empathy,,noun,0,0
 emphasis,,noun,0,0
 epic,,adjective,0,0
 equator,,noun,0,0
 etch,,verb,0,0
+eternal,,adjective,0,0
 eternity,,noun,0,0
 exhaust,,verb,0,0
+exponent,,noun,0,0
 extravagant,,adjective,0,0
 fatigue,,noun,0,0
 feud,,noun,0,0
 fin,,noun,0,0
 flute,,noun,0,0
 folly,,noun,0,0
-fortress,,noun,0,0
 fountain,,noun,0,0
 frail,,adjective,0,0
 frenzy,,noun,0,0
@@ -3313,7 +3295,6 @@ gratitude,,noun,0,0
 grove,,noun,0,0
 gurgle,,noun,0,0
 hare,,noun,0,0
-hearth,,noun,0,0
 helix,,noun,0,0
 hey,,,0,0
 hiss,,noun,0,0
@@ -3323,6 +3304,7 @@ howl,,verb,0,0
 huh,,,0,0
 humility,,noun,0,0
 hump,,noun,0,0
+hyperbola,,noun,0,0
 hypocrite,,noun,0,0
 indulge,,verb,0,0
 inscribe,,verb,0,0
@@ -3330,13 +3312,17 @@ insight,,noun,0,0
 intellect,,noun,0,0
 intuition,,noun,0,0
 invade,,verb,0,0
+invest,,verb,0,0
+involution,,noun,0,0
 lattice,,noun,0,0
 liberty,,noun,0,0
+lichen,,noun,0,0
 lily,,noun,0,0
 loom,,noun,0,0
 lore,,noun,0,0
 lust,,verb,0,0
 mane,,noun,0,0
+manifest,,verb,0,0
 margin,,noun,0,0
 marrow,,noun,0,0
 marvel,,noun,0,0
@@ -3363,6 +3349,7 @@ orb,,noun,0,0
 ouch,,,0,0
 ow,,,0,0
 parable,,adjective,0,0
+parabola,,noun,0,0
 paradox,,noun,0,0
 patter,,noun,0,0
 peck,,noun,0,0
@@ -3371,7 +3358,6 @@ phew,,,0,0
 pillar,,adjective,0,0
 pine,,verb,0,0
 poise,,noun,0,0
-polar,,adjective,0,0
 polygon,,noun,0,0
 populate,,verb,0,0
 pore,,verb,0,0
@@ -3391,8 +3377,10 @@ rehearse,,verb,0,0
 remorse,,noun,0,0
 restraint,,noun,0,0
 revere,,verb,0,0
+revolve,,verb,0,0
 rhetoric,,noun,0,0
 riddle,,noun,0,0
+ripple,,noun,0,0
 roar,,verb,0,0
 rose,,noun,0,0
 rumble,,noun,0,0
@@ -3413,12 +3401,15 @@ sorcery,,noun,0,0
 sparrow,,noun,0,0
 stamina,,noun,0,0
 starch,,noun,0,0
+stuck,,verb,0,0
 sublime,,adjective,0,0
 submit,,verb,0,0
 subtle,,adjective,0,0
 sulfur,,noun,0,0
 summit,,noun,0,0
+surge,,verb,0,0
 swarm,,noun,0,0
+swirl,,noun,0,0
 syrup,,noun,0,0
 tact,,noun,0,0
 temperate,,adjective,0,0
@@ -3433,6 +3424,7 @@ tribute,,verb,0,0
 turbulent,,adjective,0,0
 tusk,,noun,0,0
 ugh,,,0,0
+uh,,,0,0
 vain,,adjective,0,0
 vase,,noun,0,0
 vigor,,noun,0,0

@@ -104,7 +104,9 @@ const DOMAIN: Record<string, string> = {
   nature: `sun moon star sky cloud rain snow wind storm fire water
     ice earth stone rock sand soil dust mountain hill valley river
     lake sea ocean shore island forest tree grass leaf root seed
-    flower fruit`,
+    flower fruit mushroom fungus lichen moss fern vine reed cactus
+    palm oak pine rose lily thorn bark sap pollen nut berry grain
+    wheat rice bean weed bush shrub branch trunk stem petal`,
 
   animal: `animal beast bird fish snake worm bug bee ant fly spider
     dog cat cow pig horse sheep goat deer wolf bear fox mouse rat
@@ -140,6 +142,15 @@ const DOMAIN: Record<string, string> = {
   make: `computer machine engine wheel tool craft art skill design
     plan model pattern code number letter mark sign symbol map
     picture image copy`,
+
+  shape: `circle square triangle sphere cube cone cylinder prism
+    spiral helix arc curve ellipse hyperbola parabola angle axis
+    radius diameter polygon line point plane grid lattice knot ring
+    disc rod sheet slab wedge orb`,
+
+  math: `add subtract multiply divide equal sum count number zero
+    fraction ratio power root exponent constant variable function
+    set group order pattern prove logic true false if then`,
 }
 
 const KNOWN = new Set([...candidate, ...derivable])

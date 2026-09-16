@@ -22,6 +22,7 @@ angry,anger + like,affix
 animal,animate + like,affix
 annoyance,annoy + act,affix
 appearance,appear + act,affix
+application,apply + act,affix
 appointment,appoint + act,affix
 appreciation,appreciate + act,affix
 approximately,approximate + manner,affix
@@ -35,6 +36,7 @@ artist,art + agent,affix
 ascending,ascend + act,affix
 ashamed,ashame + done,affix
 assembly,assemble + like,affix
+assess,as + female,affix
 assist,as + agent,affix
 associated,associate + done,affix
 association,associate + act,affix
@@ -43,6 +45,8 @@ asymmetry,asymmetric + like,affix
 athletic,athlete + like,affix
 attached,attach + done,affix
 attendance,attend + act,affix
+attention,attend + act,affix
+attentive,attend + like,affix
 attraction,attract + act,affix
 attractive,attract + like,affix
 authority,author + nature,affix
@@ -82,7 +86,8 @@ centralized,centralize + done,affix
 charity,char + nature,affix
 cheerful,cheer + full,affix
 chicken,chick + make,affix
-civilization,civilize + act,affix
+civilization,civil + act,affix
+civilize,civil + make,affix
 classic,class + like,affix
 classify,class + make,affix
 closed,close + done,affix
@@ -119,6 +124,7 @@ correlated,correlate + done,affix
 cowardly,coward + manner,affix
 creation,create + act,affix
 creative,create + like,affix
+criticize,critic + make,affix
 curved,curve + done,affix
 customer,custom + agent,affix
 dangerous,danger + like,affix
@@ -152,6 +158,7 @@ distribution,distribute + act,affix
 diversity,diverse + nature,affix
 documentary,document + like,affix
 doubtful,doubt + full,affix
+duplication,duplicate + act,affix
 easy,ease + like,affix
 education,educate + act,affix
 effective,effect + like,affix
@@ -164,7 +171,7 @@ employer,employ + agent,affix
 enabled,enable + done,affix
 endurance,endure + act,affix
 engineer,engine + agent,affix
-entity,entice + like,affix
+entity,end + nature,affix
 entrance,entry + act,affix
 entry,enter + like,affix
 equality,equal + nature,affix
@@ -175,6 +182,7 @@ excited,excite + done,affix
 exhaustion,exhaust + act,affix
 existence,exist + act,affix
 expectation,expect + act,affix
+explanation,explain + act,affix
 expression,express + act,affix
 factory,factor + like,affix
 fairness,fair + nature,affix
@@ -205,6 +213,7 @@ former,form + agent,affix
 fortify,fort + make,affix
 foundation,found + act,affix
 freedom,free + state,affix
+friction,fry + act,affix
 friendly,friend + manner,affix
 frighten,fright + make,affix
 fruitful,fruit + full,affix
@@ -215,9 +224,11 @@ generation,generate + act,affix
 generator,generate + agent,affix
 generous,generate + like,affix
 giver,give + agent,affix
+goddess,god + female,affix
 government,govern + act,affix
 graceful,grace + full,affix
 grainy,grain + like,affix
+grammar,gram + like,affix
 gravity,grave + nature,affix
 gray,grate + like,affix
 greater,great + agent,affix
@@ -286,6 +297,7 @@ lessen,less + make,affix
 lesser,less + agent,affix
 lighten,light + make,affix
 likely,like + manner,affix
+linear,line + like,affix
 liter,lice + agent,affix
 liver,live + agent,affix
 living,live + act,affix
@@ -302,9 +314,11 @@ maker,make + agent,affix
 manager,manage + agent,affix
 manner,man + agent,affix
 many,man + like,affix
+mattress,matter + female,affix
 meaning,mean + act,affix
 mechanism,mechanic + practice,affix
 memorize,memory + make,affix
+mention,mend + act,affix
 metric,meter + like,affix
 microscopic,microscope + like,affix
 migration,migrate + act,affix
@@ -315,6 +329,7 @@ mostly,most + manner,affix
 motivation,motive + act,affix
 multiply,multiple + like,affix
 musician,music + agent,affix
+mutation,mud + act,affix
 necessity,necessary + nature,affix
 nested,nest + done,affix
 noisy,noise + like,affix
@@ -360,6 +375,7 @@ peripheral,periphery + like,affix
 perish,per + like,affix
 persistent,persist + agent,affix
 personality,personal + nature,affix
+petal,pet + like,affix
 petty,pet + like,affix
 photography,photograph + like,affix
 picky,pick + like,affix
@@ -369,6 +385,7 @@ play,plate + like,affix
 player,play + agent,affix
 pleasant,please + agent,affix
 pointed,point + done,affix
+polar,pole + like,affix
 polish,pole + like,affix
 politic,polite + like,affix
 pollen,poll + make,affix
@@ -403,6 +420,7 @@ punishment,punish + act,affix
 purify,pure + make,affix
 purity,pure + nature,affix
 question,quest + act,affix
+random,rain + state,affix
 rarely,rare + manner,affix
 ready,read + like,affix
 reality,real + nature,affix
@@ -483,6 +501,7 @@ stocking,stock + act,affix
 strengthen,strength + make,affix
 suffering,suffer + act,affix
 suggestion,suggest + act,affix
+suppress,supper + female,affix
 surprised,surprise + done,affix
 surrounding,surround + act,affix
 symbolic,symbol + like,affix
@@ -580,7 +599,6 @@ capability,cap + ability,compound
 capable,cap + able,compound
 charcoal,char + coal,compound
 childhood,child + hood,compound
-clockwise,clock + wise,compound
 comfortable,comfort + able,compound
 cotton,cot + ton,compound
 damage,dam + age,compound
@@ -618,6 +636,7 @@ lineage,line + age,compound
 livestock,live + stock,compound
 manage,man + age,compound
 message,mess + age,compound
+mushroom,mush + room,compound
 network,net + work,compound
 newspaper,news + paper,compound
 notable,not + able,compound
@@ -846,14 +865,17 @@ apologise,apology + make,sense
 apologize,apology + make,sense
 apprentice,learn + agent,sense
 aqueduct,water + road,sense
+army,military + group,sense
 article,point + term,sense
 audible,hear + able,sense
 augury,sign + read,sense
 backward,back + oriented,sense
+bacon,pig + meat,sense
 bamboo,hollow + grass,sense
 barter,thing + trade,sense
 basalt,dark + rock,sense
 beaver,wood + cut + river + rat,sense
+beef,cow + meat,sense
 beetle,shell + bug,sense
 beggar,beg + agent,sense
 belief,believe + act,sense
@@ -887,23 +909,30 @@ caw,crow + call,sense
 cedar,red + pine,sense
 centipede,many + foot + worm,sense
 cheetah,fast + wild + cat,sense
+chemical,molecule + like,sense
+chemistry,molecule + study,sense
 chirp,bird + beep,sense
 choice,choose + act,sense
+circular,circle + like,sense
 circumference,around + line,sense
 cistern,water + hold + pit,sense
 citadel,high + fortress,sense
+clarify,clear + make,sense
+clarity,clear + state,sense
+clockwise,clock + oriented,sense
 clover,three + leaf + grass,sense
 cluck,hen + call,sense
 coal,burn + stone,sense
 coffin,death + box,sense
 collision,collide + act,sense
 comet,tail + star,sense
-computer,count + machine,sense
 conception,conceive + act,sense
 conclusion,conclude + act,sense
 confusion,confuse + act,sense
 conjunction,join + term,sense
 consonant,close + sound,sense
+convolution,convolute + act,sense
+counterclockwise,against + clock + oriented,sense
 credible,believe + able,sense
 croak,frog + call,sense
 daisy,sun + flower,sense
@@ -922,6 +951,7 @@ diamond,hard + gem,sense
 dictator,dictate + agent,sense
 dictionary,term + book,sense
 dinner,night + meal,sense
+dishonorable,not + honor + able,sense
 divination,hidden + know + act,sense
 division,divide + act,sense
 dolphin,small + whale,sense
@@ -958,10 +988,13 @@ flea,jump + bug,sense
 flight,fly + act,sense
 flint,spark + stone,sense
 food,feed + thing,sense
+ford,river + cross + place,sense
 foresight,before + sight,sense
+fortress,fort + place,sense
 forty,four + ten,sense
 forward,front + oriented,sense
 fourth,four + order,sense
+fundamental,base + like,sense
 galaxy,star + swarm,sense
 gazelle,small + deer,sense
 geyser,hot + water + spout,sense
@@ -978,6 +1011,7 @@ growth,grow + act,sense
 half,two + part,sense
 hawk,small + eagle,sense
 health,whole + nature,sense
+hearth,fire + floor,sense
 hedgehog,thorn + rat,sense
 height,high + measure,sense
 hemisphere,half + sphere,sense
@@ -995,7 +1029,9 @@ hyena,laugh + wild + dog,sense
 hymn,god + song,sense
 inclusion,include + act,sense
 inscription,inscribe + act,sense
+intestine,gut + tube,sense
 introduction,introduce + act,sense
+introductory,introduce + like,sense
 invasion,invade + act,sense
 inward,in + oriented,sense
 ivy,wall + vine,sense
@@ -1010,8 +1046,8 @@ lark,sing + sparrow,sense
 legible,read + able,sense
 length,long + measure,sense
 leopard,spot + wild + cat,sense
-lichen,stone + moss,sense
 limestone,white + stone,sense
+literature,write + art,sense
 livelihood,live + way,sense
 llama,mountain + hump + horse,sense
 locust,swarm + bug,sense
@@ -1021,6 +1057,7 @@ louse,hair + bug,sense
 lunch,day + meal,sense
 lynx,small + wild + cat,sense
 lyre,string + music + tool,sense
+magazine,news + book,sense
 magpie,black + white + crow,sense
 malice,bad + intent,sense
 maple,sweet + sap + tree,sense
@@ -1035,7 +1072,7 @@ mole,dirt + rat,sense
 moo,cow + call,sense
 moose,big + deer,sense
 mule,mix + horse,sense
-mushroom,cap + fungus,sense
+mutton,sheep + meat,sense
 naked,bare + body,sense
 nebula,star + cloud,sense
 neigh,horse + call,sense
@@ -1089,9 +1126,11 @@ poet,art + word + agent,sense
 polarity,polar + nature,sense
 poppy,sleep + flower,sense
 population,populate + act,sense
+pork,pig + meat,sense
 possibility,possible + nature,sense
 possible,can + able,sense
 potter,pot + make + agent,sense
+poultry,bird + meat,sense
 poverty,poor + state,sense
 pox,skin + disease,sense
 prairie,grass + plain,sense
@@ -1152,7 +1191,9 @@ slug,shell + less + snail,sense
 smith,metal + work + agent,sense
 solstice,sun + stand + day,sense
 song,sing + thing,sense
+sophisticated,refine + done,sense
 southward,south + oriented,sense
+species,life + kind,sense
 speech,speak + act,sense
 spruce,needle + pine,sense
 squawk,bird + screech,sense
@@ -1215,7 +1256,9 @@ variable,vary + able,sense
 variant,vary + kind,sense
 variety,vary + nature,sense
 various,vary + like,sense
+veal,young + cow + meat,sense
 vegetable,plant + food,sense
+venison,deer + meat,sense
 venus,love + planet,sense
 verb,action + term,sense
 villain,bad + person,sense

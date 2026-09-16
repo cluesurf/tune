@@ -184,6 +184,10 @@ orb blob slab slot brim tide
 discipline destiny ego empathy eternity gratitude humility intuition
 apology conceive dictate inscribe invade omit prescribe submit buoyant
 polar populate protrude etch vortex turbulent orient bother
+stuck ripple swirl surge uh computer stomach cactus lichen petal
+manifest hyperbola parabola ellipse exponent chicken
+involution convolute circumvent invest revolve devolve fort duplicate
+apply civil critic eternal
 
 yay wow oh ah hey ow ugh huh hmm shh oops yuck yum aha whoa phew alas
 bravo ouch hooray
@@ -263,7 +267,7 @@ paradise flood genesis
 
 pyramid temple tomb altar shrine sanctuary pillar column arch vault
 dome obelisk monument tower gate bridge wall fortress
-palace hut tent hearth threshold well canal
+palace hut tent threshold well canal
 road path
 
 sphere cone cylinder prism spiral helix lattice grid
@@ -478,6 +482,8 @@ const SPLIT: Record<string, Array<string>> = {
   project: ['work', 'cast forth'],
   port: ['dock', 'move'],
   park: ['green land', 'stop a car'],
+  break: ['shatter', 'rest', 'gap'],
+  mind: ['thinking part', 'object to'],
 }
 
 // ─── Part of speech ─────────────────────────────────────

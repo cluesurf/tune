@@ -187,6 +187,7 @@ appetite
 applause
 apple
 application
+apply
 appoint
 appointment
 appreciate
@@ -298,6 +299,7 @@ axis
 baby
 back
 backward
+bacon
 bacteria
 bad
 badge
@@ -568,6 +570,7 @@ by
 cab
 cabbage
 cable
+cactus
 cage
 cake
 calculate
@@ -707,10 +710,12 @@ circle
 circuit
 circular
 circumference
+circumvent
 cistern
 citadel
 citizen
 city
+civil
 civilization
 civilize
 claim
@@ -890,6 +895,8 @@ conversation
 convert
 conviction
 convince
+convolute
+convolution
 cook
 cooked
 cool
@@ -957,6 +964,7 @@ cricket
 crime
 crimson
 crisp
+critic
 criticize
 critique
 croak
@@ -1125,6 +1133,7 @@ develop
 development
 device
 devil
+devolve
 devote
 devotion
 devout
@@ -1288,6 +1297,7 @@ dull
 dummy
 dumpling
 dune
+duplicate
 duplication
 durable
 duration
@@ -1355,6 +1365,7 @@ elevation
 eleven
 eleventh
 elk
+ellipse
 eloquent
 else
 embarrass
@@ -1424,6 +1435,7 @@ essence
 establish
 estimate
 etch
+eternal
 eternity
 ethics
 evacuate
@@ -1480,6 +1492,7 @@ explode
 explore
 explosion
 explosive
+exponent
 expose
 exposure
 express
@@ -1659,6 +1672,7 @@ forbidden
 force
 forced
 forceful
+ford
 forecast
 forehead
 foreign
@@ -1731,6 +1745,7 @@ fumble
 fun
 function
 fund
+fundamental
 funeral
 fungus
 funnel
@@ -2051,6 +2066,7 @@ hut
 hydrogen
 hyena
 hymn
+hyperbola
 hypocrite
 hypothesis
 i
@@ -2196,10 +2212,12 @@ invade
 invasion
 invent
 invert
+invest
 investigate
 investigation
 invisible
 invite
+involution
 involve
 inward
 iron
@@ -2467,6 +2485,7 @@ manager
 mandatory
 mane
 mania
+manifest
 manner
 manufacture
 many
@@ -2646,6 +2665,7 @@ music
 musician
 must
 mutation
+mutton
 mutual
 my
 myself
@@ -2906,6 +2926,7 @@ pant
 panther
 paper
 parable
+parabola
 parade
 paradise
 paradox
@@ -2998,6 +3019,7 @@ persuade
 persuasion
 pest
 pet
+petal
 petroleum
 petty
 phase
@@ -3114,6 +3136,7 @@ potential
 potter
 pottery
 pouch
+poultry
 pound
 pour
 poverty
@@ -3443,6 +3466,7 @@ reverse
 review
 revise
 revision
+revolve
 reward
 rhetoric
 rhino
@@ -3461,6 +3485,7 @@ rim
 ring
 rinse
 ripe
+ripple
 rise
 risk
 rite
@@ -3832,6 +3857,7 @@ song
 soon
 soot
 soothe
+sophisticated
 sorcery
 sore
 sorrow
@@ -4003,6 +4029,7 @@ structure
 struggle
 strut
 stubborn
+stuck
 student
 study
 stuff
@@ -4057,6 +4084,7 @@ suppose
 suppress
 sure
 surface
+surge
 surgery
 surpass
 surplus
@@ -4083,6 +4111,7 @@ sweet
 swell
 swim
 swing
+swirl
 switch
 sword
 syllable
@@ -4365,6 +4394,7 @@ type
 typical
 ugh
 ugly
+uh
 umbrella
 unable
 unavailable
@@ -4452,11 +4482,13 @@ various
 vary
 vase
 vault
+veal
 vector
 vegetable
 vehicle
 vein
 velocity
+venison
 vent
 venus
 verb

@@ -1,9 +1,7 @@
 term          why
 ------------  ----------------------------------------
-chemistry     a discipline, which is a field plus study
 ecology       a discipline, which is a field plus study
 geometry      a discipline, which is a field plus study
-grammar       a discipline, which is a field plus study
 history       a discipline, which is a field plus study
 medicine      a discipline, which is a field plus study
 surgery       a discipline, which is a field plus study
