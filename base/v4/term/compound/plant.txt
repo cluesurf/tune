@@ -1,0 +1,88 @@
+term          parts
+------------  ----------------------------
+grass         narrow leaf plant
+moss          soft ground plant
+fern          feather leaf plant
+vine          climb plant
+ivy           cling vine
+bamboo        hollow grass
+reed          tall water grass
+cattail       tail water plant
+clover        three leaf plant
+dandelion     yellow wind seed
+thistle       sharp flower plant
+nettle        sting leaf plant
+weed          not want plant
+shrub         low branch plant
+bush          dense low plant
+cactus        thorn water plant
+succulent     fat water plant
+aloe          gel leaf plant
+agave         sharp thick leaf
+yucca         sharp leaf plant
+heather       small purple shrub
+mistletoe     tree parasite plant
+mint          cool smell leaf
+basil         sweet smell herb
+rosemary      needle smell herb
+thyme         small smell herb
+sage          soft gray herb
+oregano       strong smell herb
+parsley       green curl herb
+cilantro      sharp smell herb
+dill          feather herb
+chive         thin onion herb
+ginger        hot root
+turmeric      yellow root
+garlic        strong smell bulb
+onion         sharp smell bulb
+leek          long onion plant
+celery        crisp stalk plant
+lettuce       soft leaf plant
+spinach       dark leaf plant
+cabbage       round leaf plant
+kale          curl leaf plant
+broccoli      green flower plant
+cauliflower   white flower plant
+carrot        orange root
+radish        sharp root
+turnip        round root
+beet          red root
+potato        under ground stem
+sweet potato  sweet root
+yam           large root
+cassava       starch root
+corn          tall grain plant
+wheat         bread grain
+rice          water grain
+barley        grain plant
+oat           grain plant
+rye           grain plant
+millet        small grain
+sorghum       tall dry grain
+bean          pod seed
+pea           round pod seed
+lentil        flat seed
+chickpea      round seed
+soybean       oil bean
+peanut        under ground nut
+pumpkin       large orange gourd
+squash        soft gourd
+gourd         hard shell fruit
+cucumber      cool water fruit
+melon         sweet water fruit
+watermelon    red water fruit
+tomato        red soft fruit
+pepper        hot fruit
+eggplant      purple fruit
+strawberry    red seed berry
+grape         vine berry
+cotton        soft fiber plant
+flax          fiber seed plant
+hemp          strong fiber plant
+tobacco       smoke leaf plant
+tea           drink leaf plant
+coffee        bitter seed drink
+cocoa         chocolate seed
+sugarcane     sweet tall grass
+vanilla       sweet smell pod

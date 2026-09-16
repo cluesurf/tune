@@ -1,0 +1,62 @@
+term               parts
+-----------------  ----------------------------
+rose               thorn smell flower
+tulip              cup flower
+daisy              white yellow flower
+sunflower          sun face flower
+lily               trumpet flower
+lotus              water flower
+water lily         float water flower
+orchid             complex flower
+violet             purple small flower
+poppy              red sleep flower
+iris               rainbow flower
+daffodil           yellow trumpet flower
+lavender           purple smell flower
+jasmine            sweet smell flower
+hibiscus           large trumpet flower
+chrysanthemum      many petal flower
+marigold           gold flower
+carnation          fold petal flower
+geranium           round leaf flower
+peony              big round flower
+dahlia             round many flower
+magnolia flower    big white flower
+gardenia           white smell flower
+camellia           smooth petal flower
+azalea             bright shrub flower
+rhododendron       large shrub flower
+hydrangea          ball flower
+begonia            uneven leaf flower
+petunia            trumpet flower
+pansy              face flower
+primrose           early flower
+buttercup          yellow cup flower
+bluebell           blue bell flower
+forget-me-not      small blue flower
+snapdragon         mouth flower
+foxglove           finger bell flower
+hollyhock          tall flower stalk
+delphinium         tall blue flower
+lupine             tall spike flower
+aster              star flower
+zinnia             bright round flower
+cosmos             flat round flower
+anemone            wind flower
+freesia            sweet smell flower
+hyacinth           dense bell flower
+crocus             early cup flower
+gladiolus          sword leaf flower
+amaryllis          large trumpet flower
+honeysuckle        sweet vine flower
+wisteria           hang purple flower
+morning glory      morning vine flower
+sweet pea          sweet vine flower
+lilac              purple smell flower
+goldenrod          gold stalk flower
+milkweed           milk sap flower
+queen anne's lace  white flat flower
+edelweiss          white mountain flower
+yarrow             flat white flower
+jewelweed          bright wet flower
+columbine          hang bell flower

@@ -1,0 +1,61 @@
+term              parts
+----------------  ----------------------------
+aspirin           pain fever drug
+ibuprofen         pain swell drug
+acetaminophen     pain fever drug
+paracetamol       pain fever drug
+naproxen          long pain drug
+morphine          strong pain drug
+codeine           pain cough drug
+fentanyl          extreme pain drug
+oxycodone         strong pain drug
+heroin            strong pleasure drug
+penicillin        bacteria kill drug
+amoxicillin       bacteria kill drug
+tetracycline      bacteria block drug
+ciprofloxacin     bacteria kill drug
+azithromycin      bacteria block drug
+insulin           blood sugar control
+epinephrine       alert heart hormone
+adrenaline        alert heart hormone
+dopamine          reward drive signal
+serotonin         mood signal
+melatonin         sleep hormone
+cortisol          stress hormone
+testosterone      male sex hormone
+estrogen          female sex hormone
+progesterone      pregnancy hormone
+oxytocin          bond birth hormone
+caffeine          wake drug
+nicotine          alert addict drug
+ethanol           drunk alcohol
+menthol           cool smell compound
+lidocaine         numb pain drug
+novocaine         numb pain drug
+ketamine          detach anesthetic drug
+propofol          sleep anesthetic drug
+diazepam          calm sleep drug
+alprazolam        calm anxiety drug
+fluoxetine        mood lift drug
+sertraline        mood lift drug
+amphetamine       energy alert drug
+methamphetamine   strong energy drug
+methylphenidate   attention drug
+diphenhydramine   allergy sleep drug
+loratadine        allergy block drug
+pseudoephedrine   nose open drug
+dextromethorphan  cough block drug
+omeprazole        stomach acid block
+metformin         blood sugar lower
+warfarin          blood clot block
+heparin           blood clot block
+atorvastatin      blood fat lower
+prednisone        swell immune drug
+hydrocortisone    skin swell hormone
+albuterol         lung open drug
+naloxone          pain drug block
+nitroglycerin     heart vessel open
+sildenafil        sex blood drug
+lithium           mood balance element
+chloroform        sleep vapor
+ether             sleep vapor

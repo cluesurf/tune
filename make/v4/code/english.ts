@@ -308,7 +308,7 @@ weep peck
 
 flux piece
 
-rye millet lentil yam cassava carrot lettuce spinach celery
+rye millet yam cassava carrot lettuce spinach celery
 asparagus melon tomato eggplant pear plum cherry mango avocado
 almond walnut chestnut poplar elm cypress acacia eucalyptus olive fig
 cacao sesame hemp
@@ -452,6 +452,19 @@ holder marker strand sheet rod projection depression mass bundle pile
 junction waterbody watercourse highland lowland landform secretion
 ingredient fabric residue specialist closure
 meeting droop knowledge
+
+succulent smuggle scorpion scallop scalar sarcasm queue murky mud
+might acre inch foot yard
+
+alcohol acetone video algorithm battery camera engine motor radio
+robot rocket artery atom cell gene molecule nucleus organ organism
+testis tissue vein virus history ammonia
+
+meter gram second ampere kelvin mole candela
+hertz newton pascal joule watt coulomb volt farad ohm
+weber tesla henry lumen lux becquerel gray katal
+radian steradian celsius byte calorie
+gallon gallop fahrenheit liter radar ram trumpet
 `
   .split(/\s+/)
   .filter(Boolean)
@@ -540,9 +553,40 @@ const KEEP = new Set(
    garment particle candor bound`.split(/\s+/),
 )
 
+/**
+ * Words struck from the pool by hand, whatever source carried them.
+ *
+ * The principle behind this list, stated 2026-09-16 and the thing the
+ * first round got wrong:
+ *
+ *   4096 primitives should represent semantic coordinates, not an
+ *   English thesaurus.
+ *
+ * A source list is a record of what English HAPPENS to have a word
+ * for. Merging nine of them gives coverage, and coverage is not the
+ * goal: a coordinate system wants one root per position in meaning,
+ * and it wants no root at all for a position some other root already
+ * occupies. `thud` is `dull` plus `sound`. `tame` is the far end of
+ * `wild`. `hub` is the middle of a wheel. `tonne` is a thousand
+ * `gram`. None of them is a coordinate, and each was costing a slot
+ * out of 1,024 short forms.
+ *
+ * This is the one place a word leaves the pool for that reason, so
+ * the decision is written down once rather than being an absence
+ * somebody has to notice. `derivable.english.csv` holds the words
+ * that leave because English BUILDS them, which is a different
+ * question and a different file.
+ */
+const CUT = new Set(
+  `tonne siemens sievert hub thud tame litre lentil caulk`.split(/\s+/),
+)
+
 const built = readDerivable()
 for (const word of KEEP) {
   built.delete(word)
+}
+for (const word of CUT) {
+  built.add(word)
 }
 const seen = new Set<string>()
 const body: Array<string> = []
@@ -653,6 +697,11 @@ const CONTEXT: Record<string, string> = {
   well: 'water',
   // The container sense is a box. What earns a root is the other one.
   case: 'situation or example',
+  // The old units keep their root but say which sense is meant, so
+  // `foot` the length is not confused with `foot` the body part.
+  acre: 'measure',
+  inch: 'measure',
+  yard: 'measure',
   will: 'choose',
 
   wound: 'hurt',
@@ -681,6 +730,12 @@ const SPLIT: Record<string, Array<string>> = {
   present: ['gift', 'show'],
   base: ['foundation', 'acid opposite'],
   sage: ['wise one', 'herb'],
+  // `derive.ts` builds `lime` as `green + lemon`, which is the fruit
+  // and is right about the fruit. The rock renamings reach for the
+  // OTHER one: `limestone` is lime rock in the sense of the white
+  // powder that burns out of it, and resolving that through a citrus
+  // is how a breakdown ends up meaning nothing.
+  lime: ['white stone powder', 'green lemon'],
   plain: ['ordinary', 'flat land'],
   train: ['teach', 'rail vehicle'],
   plane: ['flat surface', 'aircraft'],
@@ -706,6 +761,7 @@ const SPLIT: Record<string, Array<string>> = {
   pant: ['leg garment', 'breathe hard'],
   scroll: ['rolled writing', 'move text past a view'],
   bill: ['bird beak', 'money owed'],
+  bank: ['river edge', 'money house'],
   // The chemistry sense is a thing dissolved in a liquid and is not
   // `solve` plus anything. The other sense is the answer to a problem
   // and is exactly `solve + act`, so the two are split apart here.

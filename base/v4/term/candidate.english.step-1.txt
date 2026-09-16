@@ -1273,7 +1273,6 @@ grass                                         noun            14     5
 grate                                         verb             1     1
 grave          tomb                           adjective       11     3
 gravity                                       noun             0     0
-gray                                          adjective        1     0
 grease                                        noun             1     0
 great                                         adjective      103    13
 greed                                         noun             1     0

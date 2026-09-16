@@ -24,6 +24,8 @@ testis,clinical or taxonomic jargon
 tissue,clinical or taxonomic jargon
 vein,clinical or taxonomic jargon
 virus,clinical or taxonomic jargon
+radar,initialism
+ram,initialism
 algorithm,modern technology, may not last
 battery,modern technology, may not last
 camera,modern technology, may not last
@@ -40,8 +42,6 @@ sandwich,named after a person or place
 vulcanise,named after a person or place
 acid,named molecule or drug
 alcohol,named molecule or drug
-acetone,not a candidate, parked for the record
-acre,not a candidate, parked for the record
 adrenaline,not a candidate, parked for the record
 advil,not a candidate, parked for the record
 aids,not a candidate, parked for the record
@@ -53,8 +53,6 @@ alkyne,not a candidate, parked for the record
 aluminum,not a candidate, parked for the record
 amide,not a candidate, parked for the record
 amine,not a candidate, parked for the record
-ammonia,not a candidate, parked for the record
-ampere,not a candidate, parked for the record
 antibody,not a candidate, parked for the record
 antigen,not a candidate, parked for the record
 antimony,not a candidate, parked for the record
@@ -70,14 +68,11 @@ beryllium,not a candidate, parked for the record
 bismuth,not a candidate, parked for the record
 boron,not a candidate, parked for the record
 bromine,not a candidate, parked for the record
-byte,not a candidate, parked for the record
 cadmium,not a candidate, parked for the record
 caffeine,not a candidate, parked for the record
-calorie,not a candidate, parked for the record
 carbohydrate,not a candidate, parked for the record
 carbonate,not a candidate, parked for the record
 cellulose,not a candidate, parked for the record
-celsius,not a candidate, parked for the record
 centimeter,not a candidate, parked for the record
 chloride,not a candidate, parked for the record
 chlorine,not a candidate, parked for the record
@@ -96,27 +91,21 @@ escalator,not a candidate, parked for the record
 ester,not a candidate, parked for the record
 ethanol,not a candidate, parked for the record
 ether,not a candidate, parked for the record
-fahrenheit,not a candidate, parked for the record
 fluorine,not a candidate, parked for the record
 formaldehyde,not a candidate, parked for the record
 fructose,not a candidate, parked for the record
 gallium,not a candidate, parked for the record
-gallon,not a candidate, parked for the record
 gigabyte,not a candidate, parked for the record
 glucose,not a candidate, parked for the record
 gps,not a candidate, parked for the record
 helium,not a candidate, parked for the record
 hemoglobin,not a candidate, parked for the record
 heroin,not a candidate, parked for the record
-hertz,not a candidate, parked for the record
 histamine,not a candidate, parked for the record
 hiv,not a candidate, parked for the record
 html,not a candidate, parked for the record
-inch,not a candidate, parked for the record
 insulin,not a candidate, parked for the record
 iodine,not a candidate, parked for the record
-joule,not a candidate, parked for the record
-kelvin,not a candidate, parked for the record
 keratin,not a candidate, parked for the record
 ketone,not a candidate, parked for the record
 kilogram,not a candidate, parked for the record
@@ -141,14 +130,11 @@ millimeter,not a candidate, parked for the record
 morphine,not a candidate, parked for the record
 nasa,not a candidate, parked for the record
 neon,not a candidate, parked for the record
-newton,not a candidate, parked for the record
 nickel,not a candidate, parked for the record
 nicotine,not a candidate, parked for the record
 nitrate,not a candidate, parked for the record
-ohm,not a candidate, parked for the record
 ounce,not a candidate, parked for the record
 oxygen,not a candidate, parked for the record
-pascal,not a candidate, parked for the record
 pdf,not a candidate, parked for the record
 peptide,not a candidate, parked for the record
 ph,not a candidate, parked for the record
@@ -160,9 +146,7 @@ plutonium,not a candidate, parked for the record
 potassium,not a candidate, parked for the record
 quart,not a candidate, parked for the record
 quinine,not a candidate, parked for the record
-radar,not a candidate, parked for the record
 radium,not a candidate, parked for the record
-ram,not a candidate, parked for the record
 rna,not a candidate, parked for the record
 scuba,not a candidate, parked for the record
 selenium,not a candidate, parked for the record
@@ -181,18 +165,32 @@ uranium,not a candidate, parked for the record
 url,not a candidate, parked for the record
 usb,not a candidate, parked for the record
 velcro,not a candidate, parked for the record
-volt,not a candidate, parked for the record
 xenon,not a candidate, parked for the record
 xerox,not a candidate, parked for the record
 zinc,not a candidate, parked for the record
 zipper,not a candidate, parked for the record
+acre,unit of measure
+ampere,unit of measure
+byte,unit of measure
+calorie,unit of measure
+celsius,unit of measure
 degree,unit of measure
+fahrenheit,unit of measure
 foot,unit of measure
+gallon,unit of measure
 gram,unit of measure
+hertz,unit of measure
+inch,unit of measure
+joule,unit of measure
+kelvin,unit of measure
 meter,unit of measure
 mile,unit of measure
+newton,unit of measure
+ohm,unit of measure
+pascal,unit of measure
 percent,unit of measure
 pound,unit of measure
 ton,unit of measure
+volt,unit of measure
 watt,unit of measure
 yard,unit of measure

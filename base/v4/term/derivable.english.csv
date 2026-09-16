@@ -242,7 +242,6 @@ gradient,grade + agent,affix
 grainy,grain + like,affix
 graphic,graph + like,affix
 gratify,grate + make,affix
-gray,graze + like,affix
 greedy,greed + like,affix
 guilty,guilt + like,affix
 hairy,hair + like,affix
@@ -582,6 +581,7 @@ warning,warn + act,affix
 warrant,war + agent,affix
 weaken,weak + make,affix
 weary,wear + like,affix
+weber,web + agent,affix
 wedding,wed + act,affix
 whiny,whine + like,affix
 whiten,white + make,affix
@@ -626,6 +626,7 @@ framework,frame + work,compound
 friendship,friend + ship,compound
 generate,gene + rate,compound
 grandparent,grand + parent,compound
+grapefruit,grape + fruit,compound
 grassland,grass + land,compound
 hardware,hard + ware,compound
 highland,high + land,compound
@@ -883,6 +884,7 @@ archipelago,island + group,sense
 arid,very + dry,sense
 arise,come + up,sense
 armadillo,shell + animal,sense
+armor,protect + covering,sense
 army,military + group,sense
 array,order + list,sense
 arrest,law + seize,sense
@@ -918,9 +920,11 @@ barbecue,fire + cook,sense
 barn,farm + building,sense
 barnacle,stick + shell,sense
 barracks,soldier + house,sense
+barrel,round + wood + container,sense
 barter,thing + trade,sense
 basalt,dark + rock,sense
 baseball,bat + ball + sport,sense
+basket,weave + open + container,sense
 basketball,basket + ball + sport,sense
 bath,bathe + place,sense
 beaver,wood + cut + river + rat,sense
@@ -946,6 +950,7 @@ birthday,birth + day,sense
 bishop,church + chief,sense
 bison,wild + cow,sense
 blackberry,black + berry,sense
+blanket,bed + covering,sense
 bleat,sheep + call,sense
 blend in,same + seem + become,sense
 blizzard,snow + storm,sense
@@ -956,8 +961,13 @@ blueberry,blue + berry,sense
 boar,wild + pig,sense
 boastful,boast + like,sense
 boor,rude + coarse + agent,sense
+boot,tall + shoe,sense
+border,bound + between,sense
+bottle,narrow + neck + container,sense
 bottleneck,flow + limit + component,sense
 boulder,big + rock + piece,sense
+boundary,bound + line,sense
+bounded,bound + have,sense
 bounty,gift + pay,sense
 brass,yellow + copper,sense
 bray,small + horse + call,sense
@@ -969,6 +979,7 @@ bristle,stiff + hair,sense
 broker,deal + middle + agent,sense
 bronze,copper + tin,sense
 brook,small + stream,sense
+bucket,open + carry + container,sense
 budget,money + plan,sense
 buffalo,wild + cow,sense
 bunker,under + shelter,sense
@@ -999,6 +1010,7 @@ casket,death + box,sense
 catalyst,react + speed + thing,sense
 catfish,whisker + fish,sense
 cation,positive + ion,sense
+caulk,seal + paste,sense
 caustic,harsh + cut + criticize,sense
 cavern,big + cave,sense
 caw,crow + call,sense
@@ -1315,6 +1327,7 @@ gizzard,grind + stomach,sense
 glacier,ice + river,sense
 glossary,term + list,sense
 glossy,shine + like,sense
+glove,hand + covering,sense
 gneiss,band + rock,sense
 gold,yellow + metal,sense
 golem,make + body + animate,sense
@@ -1327,7 +1340,6 @@ grandmother,parent + mother,sense
 granite,hard + rock,sense
 granular,grain + like,sense
 granularity,unit + scale,sense
-grapefruit,big + orange,sense
 grasshopper,grass + hop + bug,sense
 gravel,small + rock + many,sense
 growl,beast + low + call,sense
@@ -1378,6 +1390,7 @@ horrible,fear + able,sense
 hundredth,hundred + order,sense
 hurricane,sea + cyclone,sense
 husband,wed + male,sense
+husk,seed + covering,sense
 hyena,laugh + wild + dog,sense
 hymn,god + song,sense
 hypha,fungus + thread,sense
@@ -1448,6 +1461,7 @@ ivy,wall + vine,sense
 jackal,small + wild + dog,sense
 jade,green + rock,sense
 jaded,interest + wear + away,sense
+jar,wide + mouth + container,sense
 jeer,mock + shout,sense
 jellyfish,jelly + fish,sense
 jimmy,pry + open,sense
@@ -1457,6 +1471,7 @@ jurisdiction,law + reach,sense
 jute,rough + thread,sense
 juvenile,young + one,sense
 kelp,sea + weed,sense
+kettle,boil + pot,sense
 kiln,fire + oven,sense
 kilo,thousand,sense
 kindle,small + fire + wood,sense
@@ -1478,11 +1493,12 @@ lemma,step + claim,sense
 lemongrass,lemon + grass,sense
 lemur,night + monkey,sense
 length,long + measure,sense
+lentil,flat + bean,sense
 leopard,spot + wild + cat,sense
 liability,owe + thing,sense
 liberate,liberty + make,sense
 licorice,sweet + root,sense
-lime,green + lemon,sense
+lid,container + closure,sense
 limestone,white + rock,sense
 lipid,fat,sense
 literature,write + art,sense
@@ -1658,6 +1674,7 @@ peacock,fan + tail + bird,sense
 peanut,ground + nut,sense
 pearl,shell + gem,sense
 pebble,small + rock + piece,sense
+peel,fruit + covering,sense
 pelican,bag + throat + bird,sense
 pencil,erase + able + pen,sense
 penguin,ice + swim + bird,sense
@@ -1714,6 +1731,7 @@ possible,can + able,sense
 postulate,assume + claim,sense
 potable,drink + able,sense
 potter,pot + make + agent,sense
+pouch,small + bag,sense
 poultry,bird + meat,sense
 poverty,poor + state,sense
 pox,skin + disease,sense
@@ -1767,7 +1785,6 @@ quartz,clear + crystal,sense
 quartzite,quartz + rock,sense
 queen,king + female,sense
 query,ask,sense
-queue,wait + line,sense
 raccoon,mask + face + animal,sense
 radial,ray + symmetry,sense
 radiate,ray + emit,sense
@@ -1819,12 +1836,14 @@ rioter,riot + agent,sense
 robin,red + chest + sparrow,sense
 roe,fish + egg,sense
 rollback,past + state + return,sense
+roof,building + covering,sense
 rostrum,point + snout,sense
 ruby,red + gem,sense
 ruffian,rough + violent + agent,sense
 rugby,carry + ball + sport,sense
 runaway,feedback + reinforce + control + without,sense
 saboteur,secret + damage + agent,sense
+sack,cloth + bag,sense
 sadistic,other + suffer + pleasure,sense
 saga,long + story,sense
 sailor,sail + agent,sense
@@ -1836,19 +1855,16 @@ sandstone,sand + rock,sense
 sanitize,clean + make,sense
 sapient,wise + like,sense
 sapphire,blue + gem,sense
-sarcasm,sarcastic + act,sense
 sardine,small + herring,sense
 sardonic,bitter + cynical + mock,sense
 satirical,humor + criticize + expose,sense
 saturn,ring + planet,sense
 scalar,single + number,sense
 scallion,green + onion,sense
-scallop,fan + clam,sense
 scavenger,scavenge + agent,sense
 scenario,possible + story,sense
 schist,flake + rock,sense
 scoff,mock + dismiss,sense
-scorpion,sting + tail + spider,sense
 scoundrel,dishonest + agent,sense
 scribe,write + agent,sense
 scripture,holy + writing,sense
@@ -1905,6 +1921,7 @@ smuggler,secret + carry + agent,sense
 sneer,contempt + face + show,sense
 snuff,nose + powder,sense
 soccer,foot + ball + sport,sense
+sock,soft + foot + covering,sense
 soldier,war + agent,sense
 solstice,sun + stand + day,sense
 soluble,dissolve + able,sense
@@ -1959,7 +1976,6 @@ substation,small + station,sense
 subsume,under + include,sense
 successive,follow + order,sense
 successor,next + one,sense
-succulent,water + plant,sense
 suffice,enough + be,sense
 sufficient,enough,sense
 sugarcane,sugar + grass,sense
@@ -1981,6 +1997,7 @@ tactful,social + skill + offense + avoid,sense
 talkative,talk + like,sense
 tambourine,shake + drum,sense
 tangible,touch + able,sense
+tank,big + liquid + container,sense
 taunt,mock + provoke,sense
 technology,craft + study,sense
 telepathy,far + mind + talk,sense
@@ -2058,6 +2075,7 @@ twice,two + fold,sense
 twig,small + branch,sense
 typhoon,sea + cyclone,sense
 tyranny,cruel + rule,sense
+unbounded,bound + without,sense
 uncertainty,uncertain + nature,sense
 uncle,parent + sibling,sense
 undead,dead + animate,sense

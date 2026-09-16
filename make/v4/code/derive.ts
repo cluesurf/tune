@@ -235,6 +235,10 @@ function stemsOf(cut: string): Array<string> {
  * as derivable, and then four flowers needed it as a part and could not
  * find it. **A breakdown that consumes its own ingredients is wrong**,
  * and that check catches it without anyone reading 400 rows.
+ *
+ * `gray` was read as `graze + like`, which is a false affix hit on a
+ * base colour, and it blocked the igneous rock family from using the
+ * one word that names the middle of it.
  */
 const NOT_DERIVED = new Set(
   `flower holy coral water power paper corner mother father brother
@@ -262,7 +266,8 @@ const NOT_DERIVED = new Set(
    evening morning willing ceiling herring sterling darling sibling
    pudding during nothing something everything anything
    wicked sacred hundred hatred naked crooked rugged ragged jagged
-   blessed cursed learned aged beloved`.split(/\s+/),
+   blessed cursed learned aged beloved
+   gray grey`.split(/\s+/),
 )
 
 /**
@@ -676,7 +681,6 @@ const SENSE: Array<[string, string]> = [
   // that the rest of the category is sayable in terms of them, and
   // build everything else. A fruit that is a shape or a colour away
   // from a fruit already present is built.
-  ['succulent', 'water + plant'],
   ['sedge', 'marsh + grass'],
   ['conifer', 'cone + tree'],
   ['twig', 'small + branch'],
@@ -694,8 +698,14 @@ const SENSE: Array<[string, string]> = [
   ['papaya', 'tree + melon'],
   ['pineapple', 'cone + fruit'],
   ['coconut', 'palm + nut'],
-  ['lime', 'green + lemon'],
-  ['grapefruit', 'big + orange'],
+  // `lime` is SPLIT in `english.ts`: the white stone powder and the
+  // green lemon. Deriving it here took the fruit and left the rock
+  // renamings resolving `limestone` through a citrus. The fruit sense
+  // is named in the plant file, and the mineral keeps the root.
+  // `grapefruit` needs no hand row. English already builds it as
+  // `grape + fruit`, and `byCompound` finds that on its own. A SENSE
+  // row loads first and WINS, so writing one here replaced a free and
+  // correct split with a worse invented one.
   ['strawberry', 'grass + berry'],
   ['raspberry', 'red + berry'],
   ['blackberry', 'black + berry'],
@@ -950,7 +960,6 @@ const SENSE: Array<[string, string]> = [
   ['krill', 'tiny + shrimp'],
   ['barnacle', 'stick + shell'],
   ['mussel', 'long + clam'],
-  ['scallop', 'fan + clam'],
   ['anemone', 'sea + flower + animal'],
   ['albatross', 'big + sea + bird'],
 
@@ -1010,7 +1019,6 @@ const SENSE: Array<[string, string]> = [
   ['variance', 'spread + measure'],
   ['execute', 'run'],
   ['array', 'order + list'],
-  ['queue', 'wait + line'],
   ['query', 'ask'],
   ['optimize', 'best + make'],
   ['folder', 'file + hold'],
@@ -1380,7 +1388,6 @@ const SENSE: Array<[string, string]> = [
   ['captive', 'capture + done'],
   ['cent', 'hundred + part + coin'],
   ['transmission', 'transmit + act'],
-  ['sarcasm', 'sarcastic + act'],
 
   // ── Systems ──
   // The same forty words describe an organism, a brain, a climate, an
@@ -2021,7 +2028,6 @@ const SENSE: Array<[string, string]> = [
   ['flea', 'jump + bug'],
   ['louse', 'hair + bug'],
   ['termite', 'wood + ant'],
-  ['scorpion', 'sting + tail + spider'],
   ['centipede', 'many + foot + worm'],
 
   // Plants, off the basis: tree grass leaf root seed flower fruit nut
@@ -2245,6 +2251,8 @@ const SENSE: Array<[string, string]> = [
   // `write` is the root. A scribe is a person who does it for others,
   // which is the agent rule rather than a second concept.
   ['scribe', 'write + agent'],
+  ['caulk', 'seal + paste'],
+  ['lentil', 'flat + bean'],
   // A tier is a level in a stack, and both halves are already roots.
   ['tier', 'level + layer'],
 
@@ -2345,7 +2353,46 @@ const SENSE: Array<[string, string]> = [
   ['divination', 'hidden + know + act'],
 ]
 
+// ─── The detector, for other files to ask ───────────────
+
+/**
+ * Can this word be built, and out of what.
+ *
+ * Exported so a PROPOSED word can be tested before it is added.
+ * `derivable.english.csv` only records words that were already in the
+ * pool, so a word nobody has proposed yet is absent from it for the
+ * uninteresting reason, and reading absence as "irreducible" is how a
+ * transparent compound gets a root.
+ *
+ * **It sees spelling and the hand-written sense table, and nothing
+ * else.** `bedrock` and `grassland` it catches. `photosynthesize` it
+ * does not, because the parts are `light` and `build` and no letters
+ * say so. A word this returns `null` for is UNTESTED, not proven
+ * irreducible, and the caller has to say which it means.
+ */
+const BY_SENSE = new Map(SENSE)
+const BY_CLIPPING = new Map(CLIPPING)
+
+export function breakDown(
+  word: string,
+): { parts: string; how: string } | null {
+  const term = word.toLowerCase().trim()
+  const sense = BY_SENSE.get(term)
+  if (sense) return { parts: sense, how: 'sense' }
+  if (GRAMMAR.has(term)) return { parts: 'grammar', how: 'grammar' }
+  const long = BY_CLIPPING.get(term)
+  if (long) return { parts: long, how: 'clipping' }
+  return byPlural(term) ?? byPrefix(term) ?? byCompound(term) ?? byAffix(term)
+}
+
 // ─── Build ──────────────────────────────────────────────
+
+/**
+ * Everything below writes files, so it runs only when this file is the
+ * program. `add.ts` imports `breakDown` and must not rewrite the
+ * lexicon as a side effect of asking a question.
+ */
+const RUNNING = process.argv[1]?.endsWith('derive.ts')
 
 type Row = { term: string; parts: string; how: string }
 
@@ -2390,10 +2437,12 @@ const csv = ['term,parts,how']
 for (const row of out) {
   csv.push(`${row.term},${row.parts},${row.how}`)
 }
-writeFileSync(
-  resolve(TERM, 'derivable.english.csv'),
-  `${csv.join('\n')}\n`,
-)
+if (RUNNING) {
+  writeFileSync(
+    resolve(TERM, 'derivable.english.csv'),
+    `${csv.join('\n')}\n`,
+  )
+}
 
 const wideTerm = Math.max(4, ...out.map(r => r.term.length))
 const wideParts = Math.max(5, ...out.map(r => r.parts.length))
@@ -2406,35 +2455,86 @@ for (const row of out) {
     `${row.term.padEnd(wideTerm)}  ${row.parts.padEnd(wideParts)}  ${row.how}`,
   )
 }
-writeFileSync(
-  resolve(TERM, 'derivable.english.txt'),
-  `${txt.join('\n')}\n`,
-)
+if (RUNNING) {
+  writeFileSync(
+    resolve(TERM, 'derivable.english.txt'),
+    `${txt.join('\n')}\n`,
+  )
+}
 
 // ─── Report ─────────────────────────────────────────────
+
+const log = RUNNING ? console.log : () => {}
+
+/**
+ * Hand rows that shadow a correct mechanical split.
+ *
+ * `SENSE` loads first and WINS, which is what makes it useful and what
+ * makes it dangerous. `grapefruit` had a hand row saying `big +
+ * orange` while `byCompound` was sitting right there with `grape +
+ * fruit`, so a free and correct answer was replaced by a worse
+ * invented one and nothing noticed.
+ *
+ * A shadow is not automatically wrong: `elk` is `big deer` and no
+ * detector will ever find that. It is wrong when the mechanical split
+ * is the better name, so this reports both and leaves the reading to a
+ * person.
+ */
+const shadowed: Array<[string, string, string]> = []
+for (const [term, parts] of SENSE) {
+  if (!parts) continue
+  const hit = byPlural(term) ?? byPrefix(term) ?? byCompound(term)
+  if (hit) shadowed.push([term, parts, hit.parts])
+}
+
+const same = shadowed.filter(([, mine, found]) => mine === found)
+const differ = shadowed.filter(([, mine, found]) => mine !== found)
+
+if (same.length) {
+  log('')
+  log(`${same.length} hand rows say exactly what the detectors find.`)
+  log('Those rows carry nothing and can be deleted.')
+  log('')
+  for (const [term, mine] of same.slice(0, 20)) {
+    log(`  ${term.padEnd(16)} ${mine}`)
+  }
+  if (same.length > 20) log(`  ... and ${same.length - 20} more`)
+}
+
+if (differ.length) {
+  log('')
+  log(`${differ.length} hand rows disagree with a split the detectors find.`)
+  log('The hand row wins. Read each one and keep the better NAME, which')
+  log('is often the hand row: `pineapple` as cone fruit beats pine apple.')
+  log('')
+  for (const [term, mine, found] of differ.slice(0, 30)) {
+    log(`  ${term.padEnd(16)} hand: ${mine.padEnd(24)} found: ${found}`)
+  }
+  if (differ.length > 30) log(`  ... and ${differ.length - 30} more`)
+}
 
 const byHow = new Map<string, number>()
 for (const row of out) {
   byHow.set(row.how, (byHow.get(row.how) ?? 0) + 1)
 }
 
-console.log('| how | count |')
-console.log('| :--- | ---: |')
+log('| how | count |')
+log('| :--- | ---: |')
 for (const [how, count] of [...byHow.entries()].sort(
   (a, b) => b[1] - a[1],
 )) {
-  console.log(`| ${how} | ${count} |`)
+  log(`| ${how} | ${count} |`)
 }
-console.log('')
-console.log(
+log('')
+log(
   `${out.length} of ${words.length} candidates come apart. ${words.length - out.length} look irreducible.`,
 )
 
 const onList = out.filter(r => known.has(r.term)).length
-console.log(
+log(
   `${onList} of them are still ON the candidate list and should come off.`,
 )
-console.log('')
+log('')
 
 /**
  * Every part used to build something has to be a candidate itself.
@@ -2505,22 +2605,22 @@ for (const row of out) {
   }
 }
 
-console.log('PARTS THAT BUILD THE MOST')
-console.log('')
+log('PARTS THAT BUILD THE MOST')
+log('')
 for (const [part, count] of [...heads.entries()]
   .sort((a, b) => b[1] - a[1])
   .slice(0, 20)) {
-  console.log(`  ${String(count).padStart(4)}  ${part}`)
+  log(`  ${String(count).padStart(4)}  ${part}`)
 }
-console.log('')
+log('')
 const thin = [...heads.entries()].filter(([, n]) => n === 1).length
-console.log(
+log(
   `  ${thin} parts build exactly one thing. Worth a look, NOT a cut:`,
 )
-console.log(
+log(
   '  a word can be irreducible and still build nothing, and most are.',
 )
-console.log('')
+log('')
 
 /**
  * Words that look built and whose ROOT is not in the pool.
@@ -2565,10 +2665,10 @@ for (const word of words) {
 }
 
 if (orphan.size > 0) {
-  console.log(
+  log(
     `ROOTS THAT MAY BE MISSING: ${orphan.size} derived words have no root in the pool.`,
   )
-  console.log('')
+  log('')
   /**
    * The STRANDED WORDS, not the guessed root.
    *
@@ -2581,24 +2681,24 @@ if (orphan.size > 0) {
    */
   const stranded = [...orphan.values()].flat().sort()
   for (let i = 0; i < stranded.length; i += 6) {
-    console.log(`  ${stranded.slice(i, i + 6).join('  ')}`)
+    log(`  ${stranded.slice(i, i + 6).join('  ')}`)
   }
-  console.log('')
+  log('')
 }
 
 if (owed.size === 0) {
-  console.log('Every part of every breakdown is already a candidate.')
+  log('Every part of every breakdown is already a candidate.')
 } else {
-  console.log(
+  log(
     `MISSING BASE CONCEPTS: ${owed.size} parts are used to build things and have no root.`,
   )
-  console.log('')
+  log('')
   for (const [part, who] of [...owed.entries()].sort(
     (a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]),
   )) {
-    console.log(`  ${part.padEnd(14)} needed by ${who.slice(0, 6).join(', ')}`)
+    log(`  ${part.padEnd(14)} needed by ${who.slice(0, 6).join(', ')}`)
   }
 }
-console.log('')
-console.log(`wrote ${resolve(TERM, 'derivable.english.csv')}`)
-console.log(`wrote ${resolve(TERM, 'derivable.english.txt')}`)
+log('')
+log(`wrote ${resolve(TERM, 'derivable.english.csv')}`)
+log(`wrote ${resolve(TERM, 'derivable.english.txt')}`)

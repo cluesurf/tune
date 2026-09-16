@@ -40,6 +40,7 @@ accumulate
 accuracy
 accurate
 accuse
+acetone
 ache
 achieve
 achievement
@@ -47,6 +48,7 @@ acid
 acknowledge
 acquaintance
 acquire
+acre
 across
 act
 action
@@ -163,11 +165,13 @@ amber
 ambiguous
 ambush
 amethyst
+ammonia
 amniote
 among
 amorphous
 amount
 amp
+ampere
 amphibian
 amplify
 amplitude
@@ -461,6 +465,7 @@ beauty
 beaver
 because
 become
+becquerel
 bed
 bee
 beech
@@ -604,6 +609,7 @@ boulder
 bounce
 bound
 boundary
+bounded
 bounty
 bow
 bowel
@@ -702,6 +708,7 @@ button
 buy
 buzz
 by
+byte
 cab
 cabbage
 cable
@@ -719,6 +726,7 @@ calibrate
 call
 callous
 calm
+calorie
 camel
 camera
 camouflage
@@ -726,6 +734,7 @@ camp
 can
 canal
 cancel
+candela
 candidate
 candle
 candor
@@ -800,6 +809,7 @@ celebrate
 celebration
 celery
 cell
+celsius
 cement
 cemetery
 census
@@ -1194,6 +1204,7 @@ cot
 cotton
 cough
 could
+coulomb
 council
 count
 counter
@@ -1957,6 +1968,7 @@ factor
 factory
 fad
 fade
+fahrenheit
 fail
 failure
 faint
@@ -1980,6 +1992,7 @@ fancy
 fang
 fantasy
 far
+farad
 fare
 farm
 farmer
@@ -2236,6 +2249,8 @@ fuzz
 gain
 galaxy
 gale
+gallon
+gallop
 game
 gamete
 gang
@@ -2489,6 +2504,7 @@ hematite
 hemisphere
 hemp
 hen
+henry
 her
 herb
 herbaceous
@@ -2503,6 +2519,7 @@ heron
 herring
 hers
 herself
+hertz
 hesitant
 hesitate
 hexagon
@@ -2674,6 +2691,7 @@ in
 inaccurate
 inactive
 inappropriate
+inch
 incisor
 incline
 include
@@ -2870,6 +2888,7 @@ join
 joint
 joke
 jolt
+joule
 journal
 journey
 joy
@@ -2890,11 +2909,13 @@ justify
 jute
 juvenile
 kangaroo
+katal
 keen
 keep
 keeper
 keeping
 kelp
+kelvin
 kept
 kettle
 key
@@ -3059,6 +3080,7 @@ listen
 liter
 literal
 literature
+litre
 little
 live
 livelihood
@@ -3119,6 +3141,7 @@ lubrication
 luck
 lucky
 luggage
+lumen
 luminous
 lump
 lunch
@@ -3126,6 +3149,7 @@ lung
 lure
 lust
 lustful
+lux
 luxury
 lynx
 lyre
@@ -3393,6 +3417,7 @@ multiply
 multistable
 mumble
 murder
+murky
 murmur
 muscle
 museum
@@ -3469,6 +3494,7 @@ new
 news
 newspaper
 newt
+newton
 next
 nice
 niche
@@ -3580,6 +3606,7 @@ offset
 offspring
 often
 oh
+ohm
 oil
 oink
 ointment
@@ -3746,6 +3773,7 @@ partition
 partly
 partner
 party
+pascal
 pass
 passage
 passenger
@@ -4194,7 +4222,9 @@ raccoon
 race
 rack
 racket
+radar
 radial
+radian
 radiant
 radiate
 radiation
@@ -4212,6 +4242,7 @@ rainbow
 rainfall
 rainforest
 raise
+ram
 rampart
 random
 range
@@ -4771,7 +4802,9 @@ sibling
 sick
 side
 siege
+siemens
 sieve
+sievert
 sight
 sign
 signal
@@ -4868,6 +4901,7 @@ smoke
 smolder
 smooth
 smug
+smuggle
 smuggler
 snack
 snail
@@ -5061,6 +5095,7 @@ steer
 stem
 step
 steppe
+steradian
 sterile
 stevia
 stew
@@ -5330,6 +5365,7 @@ terrestrial
 terrible
 territory
 terror
+tesla
 tessellation
 test
 testimony
@@ -5439,6 +5475,7 @@ tomorrow
 ton
 tone
 tongue
+tonne
 too
 tool
 tooth
@@ -5533,6 +5570,7 @@ trouser
 trout
 truce
 true
+trumpet
 trunk
 trust
 truth
@@ -5583,6 +5621,7 @@ umbrella
 unable
 unavailable
 unbind
+unbounded
 uncertain
 uncertainty
 uncle
@@ -5746,6 +5785,7 @@ void
 volatile
 volcano
 volleyball
+volt
 voltage
 volume
 voluntary
@@ -5809,6 +5849,7 @@ weathering
 weave
 weaver
 web
+weber
 wed
 wedding
 wedge

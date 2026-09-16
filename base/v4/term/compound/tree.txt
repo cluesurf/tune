@@ -1,0 +1,78 @@
+term            parts
+--------------  ----------------------------
+oak             hard tree
+maple           sweet sap tree
+pine            needle cone tree
+spruce          sharp needle tree
+fir             flat needle tree
+cedar           smell wood tree
+redwood         red tall tree
+sequoia         giant tree
+cypress         narrow evergreen tree
+juniper         berry needle tree
+birch           white bark tree
+beech           smooth bark tree
+ash             wing seed tree
+elm             vase tree
+willow          bend water tree
+poplar          tall fast tree
+aspen           shake leaf tree
+cottonwood      cotton seed tree
+sycamore        patch bark tree
+chestnut        spine nut tree
+walnut          hard nut tree
+hickory         hard wood tree
+pecan           sweet nut tree
+alder           water cone tree
+linden          heart leaf tree
+locust          thorn pod tree
+hemlock         droop needle tree
+larch           fall needle tree
+yew             red berry tree
+holly           sharp leaf tree
+eucalyptus      smell oil tree
+acacia          thorn tree
+baobab          fat trunk tree
+palm            crown leaf tree
+coconut         coconut palm
+olive           oil fruit tree
+fig             soft fruit tree
+apple           apple tree
+pear            pear tree
+cherry          red fruit tree
+plum            purple fruit tree
+peach           soft skin fruit
+apricot         orange fruit tree
+almond          nut fruit tree
+lemon           sour yellow fruit
+orange          orange fruit tree
+lime            sour green fruit
+grapefruit      bitter round fruit
+mango           sweet yellow fruit
+avocado         fat green fruit
+banana          long yellow fruit
+papaya          orange seed fruit
+breadfruit      bread fruit tree
+mulberry        many berry tree
+persimmon       orange sweet fruit
+pomegranate     red seed fruit
+date palm       sweet palm fruit
+rubber tree     rubber sap tree
+teak            hard wood tree
+mahogany        red wood tree
+ebony           black wood tree
+sandalwood      smell wood tree
+banyan          root branch tree
+magnolia        big flower tree
+dogwood         flower tree
+hawthorn        thorn berry tree
+redbud          red flower tree
+rowan           red berry tree
+buckeye         eye seed tree
+horse chestnut  big chestnut tree
+tamarind        sour pod tree
+mesquite        dry thorn tree
+joshua tree     branch yucca tree
+ironwood        hard wood tree
+kapok           soft fiber tree
+gum tree        gum sap tree

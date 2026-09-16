@@ -119,6 +119,263 @@ export const MUST_BE_SHORT = new Set([
 export const SHORT_DOMAINS = new Set(['truth', 'count', 'time'])
 
 /**
+ * Words that are short because they are SAID the most, whatever they
+ * mean.
+ *
+ *   "I" and some other ones needs to be 3 letters, b/c they are used
+ *   ALL THE TIME
+ *
+ * Every rule above this one is about what a word MEANS. This one is
+ * about how often it is uttered, and it is the older and better
+ * argument: it is Huffman's, and Zipf's before him. **Give the
+ * shortest codes to the most frequent symbols**, or the language pays
+ * the difference on every sentence forever.
+ *
+ * The pronouns are the clearest case in any language. English `I` is
+ * one letter and one sound, Chinese 我 is one syllable, and no
+ * language anywhere spends four phonemes on a first person singular,
+ * because a sound said ten thousand times a day is the most expensive
+ * sound there is.
+ *
+ * The same holds for the words that hold a sentence together: the
+ * copula, negation, the question word, the conjunctions, `this` and
+ * `that`, `here` and `now`. None of them is a semantic primitive in
+ * the way `cause` is. All of them are said constantly.
+ *
+ * **This competes directly with `MUST_BE_SHORT` for the same 1,024
+ * forms**, and it should win where the two disagree, because a rule
+ * about frequency is measured and a rule about importance is felt.
+ */
+export const MUST_BE_SHORT_BY_USE = new Set([
+  // Person. The whole paradigm, because a language that made `you`
+  // short and `they` long would be making an accident permanent.
+  'i',
+  'me',
+  'you',
+  'he',
+  'she',
+  'it',
+  'we',
+  'they',
+  'self',
+  'who',
+  // The frame of a sentence.
+  'be',
+  'not',
+  'and',
+  'or',
+  'if',
+  'of',
+  'to',
+  'do',
+  'have',
+  'this',
+  'that',
+  'here',
+  'there',
+  'now',
+  'then',
+  'what',
+  'where',
+  'when',
+  'why',
+  'how',
+  'yes',
+  'no',
+  // The verbs every sentence reaches for.
+  'go',
+  'come',
+  'say',
+  'see',
+  'know',
+  'want',
+  'make',
+  'give',
+  'take',
+  'get',
+  'put',
+  'let',
+  'can',
+  'will',
+  'may',
+  'must',
+  'like',
+  'use',
+  'think',
+  'feel',
+  // The nouns and qualities under everything.
+  'thing',
+  'one',
+  'two',
+  'part',
+  'kind',
+  'way',
+  'time',
+  'place',
+  'man',
+  'woman',
+  'child',
+  'day',
+  'year',
+  'water',
+  'fire',
+  'big',
+  'small',
+  'new',
+  'old',
+  'many',
+  'few',
+  'more',
+  'less',
+  'same',
+  'other',
+  // Past, present and future, and every modifier beside them. A tense
+  // marker rides on every sentence that has a tense, which makes it
+  // among the most uttered words in any language. `yod` is past on
+  // tune.surf and `kif` is future, both three, and the present is
+  // unmarked, which is the commonest arrangement in the world.
+  'past',
+  'present',
+  'future',
+  'before',
+  'after',
+  'during',
+  'always',
+  'never',
+  'often',
+  'soon',
+])
+
+/**
+ * The words a program says all day.
+ *
+ *   all the computer science words, especially the ones used in
+ *   coding, should be 3 letters too
+ *
+ * This extends the programming entries above from a dozen to the real
+ * inventory, and the argument is the frequency one again, sharpened.
+ * **Code is the most repetitive text people write.** A working
+ * program says `get`, `set`, `add`, `list`, `map`, `key`, `value`,
+ * `type`, `call`, `return` thousands of times in a file, where
+ * ordinary speech says `cause` perhaps once a day.
+ *
+ * So the coding vocabulary has the strongest claim on the short forms
+ * of anything in the language, stronger than the semantic primitives,
+ * and it is a claim that can be counted rather than felt.
+ *
+ * Kept separate from `MUST_BE_SHORT_BY_USE` so the two can be counted
+ * against the 1,024 independently and the trade stays visible.
+ */
+export const MUST_BE_SHORT_FOR_CODE = new Set([
+  // Reading and writing a value.
+  'get',
+  'set',
+  'read',
+  'write',
+  'load',
+  'save',
+  'copy',
+  'move',
+  'find',
+  'sort',
+  'filter',
+  'count',
+  'size',
+  'length',
+  'index',
+  'key',
+  'value',
+  'name',
+  'field',
+  'item',
+  'entry',
+  // The shapes data comes in.
+  'list',
+  'map',
+  'set',
+  'tree',
+  'graph',
+  'node',
+  'edge',
+  'queue',
+  'stack',
+  'table',
+  'row',
+  'column',
+  'array',
+  'record',
+  'pair',
+  'range',
+  'string',
+  'number',
+  'text',
+  'byte',
+  'bit',
+  'flag',
+  'null',
+  'true',
+  'false',
+  // Control.
+  'call',
+  'return',
+  'loop',
+  'break',
+  'skip',
+  'stop',
+  'start',
+  'wait',
+  'test',
+  'match',
+  'case',
+  'throw',
+  'catch',
+  'retry',
+  'yield',
+  'await',
+  // Structure.
+  'type',
+  'class',
+  'object',
+  'method',
+  'field',
+  'module',
+  'package',
+  'build',
+  'link',
+  'bind',
+  'scope',
+  'state',
+  'input',
+  'output',
+  'error',
+  'log',
+  'test',
+  'mock',
+  'patch',
+  'merge',
+  'branch',
+  'commit',
+  'diff',
+  // Arithmetic and logic a program leans on constantly.
+  'add',
+  'subtract',
+  'multiply',
+  'divide',
+  'equal',
+  'greater',
+  'lesser',
+  'and',
+  'or',
+  'not',
+  'null',
+  'empty',
+  'first',
+  'last',
+  'next',
+  'previous',
+])
+
+/**
  * Words that must be FOUR sounds, against their domain's rule.
  *
  * `certain` and `uncertain` sit in the `truth` domain and so would be

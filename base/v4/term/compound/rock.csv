@@ -1,0 +1,37 @@
+term,parts,kind
+granite,light grain,rock
+diorite,gray grain,rock
+gabbro,dark grain,rock
+rhyolite,light fire,rock
+andesite,gray fire,rock
+basalt,dark fire,rock
+peridotite,green grain,rock
+pegmatite,big crystal,rock
+obsidian,lava glass,rock
+pumice,lava foam,rock
+scoria,lava hole,rock
+tuff,ash rock,rock
+slate,clay press,rock
+phyllite,silk press,rock
+schist,mica press,rock
+gneiss,band press,rock
+quartzite,sand press,rock
+marble,lime press,rock
+serpentinite,green scale rock,rock
+soapstone,soft smooth rock,rock
+sandstone,sand stone,rock
+limestone,lime stone,rock
+mudstone,mud stone,rock
+siltstone,silt stone,rock
+shale,clay layer,rock
+conglomerate,round bit,rock
+breccia,sharp bit,rock
+arkose,granite sand,rock
+greywacke,mud sand,rock
+chert,dull flint,rock
+flint,spark stone,rock
+travertine,spring lime,rock
+chalk,soft white stone,rock
+coal,plant burn,rock
+peat,bog plant,rock
+laterite,iron soil,rock

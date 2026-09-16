@@ -164,15 +164,39 @@ export const BAD_ANYWHERE: Array<string> = []
  * A vowel followed by a liquid blurs into the liquid, so `bil` cannot
  * be held apart from `bi`.
  *
- * v3 named the two front vowels, and only they blur. `u` was added here
- * on an argument about tongue gesture and taken back out on 2026-09-15:
- * `bul` and `bur` are held apart from `bu` fine, and the ban cost 252
- * words including `tul`, `gul` and `jul`, which were wanted.
+ * ## `u` has been in and out of this list three times
  *
- * So the rule is about the FRONT vowels. `a`, `o` and `u` may all close
- * on a liquid.
+ * v3 named the two front vowels. `u` was added on an argument about
+ * tongue gesture, taken back out on 2026-09-15 because `bul` and
+ * `bur` are held apart from `bu` fine and the ban cost 252 words
+ * including `tul`, `gul` and `jul`, then put back on 2026-09-16:
+ *
+ *   can we remove `ur` and `ul` as sounds, they are too hard to make
+ *
+ * which is a different argument from the one that took it out. The
+ * 2026-09-15 reversal was about whether the two are DISTINGUISHABLE
+ * and concluded they are. This is about whether they are EASY, and a
+ * sound can be perfectly distinct and still awkward in the mouth.
+ * Both readings can be right at once, and the second one decides it.
+ *
+ * ## What it costs, measured
+ *
+ * 208 of the 4,096 forms hold `ul` or `ur`. **33 of them carry a
+ * meaning today** and have to move, among them
+ *
+ * ```text
+ * zur fall      kur down      jul universe   rul rule
+ * tul tool      pul pull      skul school    nurv nerve
+ * ```
+ *
+ * `zur` is the worse loss: `riz`/`zur` for rise and fall is a mirror
+ * pair, placed by hand, and it cannot be kept. The pair has to be
+ * rewritten on a vowel that survives.
+ *
+ * So the rule is now about the front vowels AND `u`. Only `a` and `o`
+ * may close on a liquid.
  */
-export const BAD_RHYME = ['il', 'el', 'ir', 'er']
+export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
 
 /**
  * Forms v4 will not use, whatever the rules allow.
