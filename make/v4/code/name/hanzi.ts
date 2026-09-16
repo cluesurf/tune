@@ -1,0 +1,423 @@
+/**
+ * The Chinese plant names, taken apart.
+ *
+ * `base/import/taxon/plants/chinese/` holds the Catalogue of Life
+ * China 2025 plant volume: 119,586 rows, each carrying the Latin name
+ * AND the Chinese one, with pinyin.
+ *
+ * ```text
+ * genus     Takakia          genus_c    藻苔属      zǎo tái shǔ
+ * species   ceratophylla     species_c  角叶藻苔    jiǎo yè zǎo tái
+ * ```
+ *
+ * `note/tune/pipeline/chinese-naming-systems.md` describes the grammar
+ * this follows, from the official specification:
+ *
+ * ```text
+ * genus    = [base] + 属
+ * species  = [modifier] + [genus base]
+ * ```
+ *
+ * **This file checks that claim against 119,586 rows and then reads
+ * the vocabulary out of it.** Which characters serve as heads, which
+ * as modifiers, and how many of each a working naming system needs.
+ *
+ * ## Why characters and not words
+ *
+ * Chinese writes one morpheme per character, so a character IS a root
+ * in the sense this project means. 角叶藻苔 is four morphemes: horn,
+ * leaf, algae, moss. No tokenizer is needed and none would be
+ * trustworthy on technical vocabulary.
+ *
+ * The pinyin column confirms it: `jiǎo yè zǎo tái` is four syllables
+ * for four characters, so the corpus states its own segmentation.
+ *
+ * Usage:
+ *   pnpm --dir deck/tune v4:hanzi
+ *   pnpm --dir deck/tune v4:hanzi --show 60
+ */
+
+import { parse } from 'csv-parse/sync'
+import { existsSync, readFileSync, writeFileSync } from 'fs'
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
+
+import { TERM } from '../pipe/board'
+
+const here = dirname(fileURLToPath(import.meta.url))
+
+const args = yargs(hideBin(process.argv))
+  .option('show', { type: 'number', default: 40 })
+  .option('dir', { type: 'string' })
+  .strict()
+  .parseSync()
+
+/**
+ * The plant volume, resolved from this file rather than from a dataset
+ * root, because it lives in the repo beside the taxon breakdown.
+ */
+const PLANTS =
+  args.dir ??
+  resolve(here, '../../../../../../base/import/taxon/plants/chinese')
+
+const FILE =
+  'cn-sp2000-2025_植物完整版V1.01.scientific_names.csv'
+
+type Row = {
+  family: string
+  genus: string
+  genusC: string
+  speciesC: string
+  genusPy: string
+  speciesPy: string
+}
+
+function read(): Array<Row> {
+  const path = resolve(PLANTS, FILE)
+  if (!existsSync(path)) return []
+  const rows: Array<Record<string, string>> = parse(
+    readFileSync(path, 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  return rows.map(row => ({
+    family: (row.Family ?? '').trim(),
+    genus: (row.genus ?? '').trim(),
+    genusC: (row.genus_c ?? '').trim(),
+    speciesC: (row.species_c ?? '').trim(),
+    genusPy: (row.genus_c_py ?? '').trim(),
+    speciesPy: (row.species_c_py ?? '').trim(),
+  }))
+}
+
+/**
+ * What each character means, from the repo's own Chinese base list.
+ *
+ * `deck/code/base/link/chinese.base.csv` carries 14,125 single
+ * characters with an English gloss, a pinyin and an HSK level. Joining
+ * on it turns a frequency table of characters into **a list of base
+ * words in English**, which is the thing actually wanted.
+ *
+ * The HSK level is kept because it is a second, independent signal:
+ * HSK 1 is the first few hundred words a learner meets, so a morpheme
+ * that is both frequent in plant names AND HSK 1 is about as strong a
+ * root candidate as evidence gets.
+ */
+type Gloss = { english: string; pinyin: string; hsk: string }
+
+function glosses(): Map<string, Gloss> {
+  const path = resolve(
+    here,
+    '../../../../../code/base/link/chinese.base.csv',
+  )
+  if (!existsSync(path)) return new Map()
+  const rows: Array<Record<string, string>> = parse(
+    readFileSync(path, 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  const out = new Map<string, Gloss>()
+  for (const row of rows) {
+    const ch = (row.chinese ?? '').trim()
+    if ([...ch].length !== 1) continue
+    if (out.has(ch)) continue
+    out.set(ch, {
+      english: (row.english ?? '').trim(),
+      pinyin: (row.pinyin ?? '').trim(),
+      hsk: (row.hsk ?? '').trim(),
+    })
+  }
+  return out
+}
+
+const gloss = glosses()
+const rows = read()
+
+if (!rows.length) {
+  process.stdout.write(
+    `No plant volume found at\n  ${PLANTS}\n` +
+      'Pass --dir to point somewhere else.\n',
+  )
+  process.exit(1)
+}
+
+// ─── Does the stated grammar hold ───────────────────────
+
+/**
+ * The rank markers, which are the layer Tune does not have.
+ *
+ * `属` genus, `科` family, `目` order, `纲` class, `门` phylum. One
+ * character each, appended to the semantic name, and they turn a name
+ * into a name-at-a-rank.
+ */
+const RANK: Record<string, string> = {
+  属: 'genus',
+  科: 'family',
+  目: 'order',
+  纲: 'class',
+  门: 'phylum',
+  界: 'kingdom',
+  族: 'tribe',
+  种: 'species',
+}
+
+let marked = 0
+let unmarked = 0
+const genusBase = new Map<string, string>()
+
+for (const row of rows) {
+  if (!row.genusC) continue
+  const last = row.genusC.slice(-1)
+  if (RANK[last]) {
+    marked++
+    genusBase.set(row.genusC, row.genusC.slice(0, -1))
+  } else {
+    unmarked++
+    genusBase.set(row.genusC, row.genusC)
+  }
+}
+
+/** Does a species name end in its own genus base, as specified? */
+let follows = 0
+let breaks = 0
+const modifiers: Array<{ mark: string; base: string; py: string }> = []
+
+for (const row of rows) {
+  if (!row.speciesC || !row.genusC) continue
+  const base = genusBase.get(row.genusC) ?? row.genusC
+  if (!base) continue
+  if (row.speciesC.endsWith(base)) {
+    follows++
+    const mark = row.speciesC.slice(0, -base.length)
+    if (mark) modifiers.push({ mark, base, py: row.speciesPy })
+  } else {
+    breaks++
+  }
+}
+
+// ─── The vocabulary ─────────────────────────────────────
+
+/** One morpheme per character, which the pinyin column confirms. */
+function chars(text: string): Array<string> {
+  return [...text].filter(one => /[一-鿿]/.test(one))
+}
+
+const asHead = new Map<string, number>()
+const asMark = new Map<string, number>()
+
+for (const base of new Set(genusBase.values())) {
+  for (const one of chars(base)) {
+    asHead.set(one, (asHead.get(one) ?? 0) + 1)
+  }
+}
+for (const one of modifiers) {
+  for (const ch of chars(one.mark)) {
+    asMark.set(ch, (asMark.get(ch) ?? 0) + 1)
+  }
+}
+
+const every = new Map<string, number>()
+for (const [ch, n] of asHead) every.set(ch, (every.get(ch) ?? 0) + n)
+for (const [ch, n] of asMark) every.set(ch, (every.get(ch) ?? 0) + n)
+
+const ranked = [...every.entries()].sort((a, b) => b[1] - a[1])
+
+// ─── Coverage ───────────────────────────────────────────
+
+/**
+ * How many characters it takes to write every modifier completely.
+ *
+ * A modifier counts as covered only when every character of it is in
+ * budget, the same honest test the other measurements use.
+ */
+function covers(n: number): number {
+  const have = new Set(ranked.slice(0, n).map(([ch]) => ch))
+  let hit = 0
+  for (const one of modifiers) {
+    if (chars(one.mark).every(ch => have.has(ch))) hit++
+  }
+  return hit
+}
+
+// ─── Report ─────────────────────────────────────────────
+
+process.stdout.write(
+  `${rows.length.toLocaleString()} rows in the China plant volume\n\n`,
+)
+
+process.stdout.write('DOES THE STATED GRAMMAR HOLD\n\n')
+process.stdout.write(
+  `  genus = [base] + rank marker\n` +
+    `    ${marked.toLocaleString()} carry a marker, ` +
+    `${unmarked.toLocaleString()} do not ` +
+    `(${((marked / (marked + unmarked)) * 100).toFixed(1)}%)\n\n` +
+    `  species = [modifier] + [genus base]\n` +
+    `    ${follows.toLocaleString()} follow it, ` +
+    `${breaks.toLocaleString()} do not ` +
+    `(${((follows / (follows + breaks)) * 100).toFixed(1)}%)\n\n`,
+)
+
+process.stdout.write(
+  `  ${genusBase.size.toLocaleString()} distinct genus names\n` +
+    `  ${modifiers.length.toLocaleString()} species names with a modifier\n` +
+    `  ${every.size.toLocaleString()} distinct characters across both\n\n`,
+)
+
+process.stdout.write('WHAT A BUDGET OF N CHARACTERS BUYS\n\n')
+process.stdout.write(
+  '  A modifier counts only when every character of it is in\n' +
+    '  budget, the same test the other measurements use.\n\n',
+)
+for (const n of [100, 250, 500, 1000, 1500, 2000, 3000]) {
+  if (n > ranked.length) break
+  const hit = covers(n)
+  process.stdout.write(
+    `  ${String(n).padStart(6)} characters  ` +
+      `${String(hit).padStart(7)}  ` +
+      `${((hit / modifiers.length) * 100).toFixed(1).padStart(5)}%\n`,
+  )
+}
+
+process.stdout.write('\nTHE BASE WORDS, BY HOW MUCH NAMING THEY CARRY\n\n')
+process.stdout.write(
+  `  ${'char'.padEnd(4)}${'uses'.padStart(7)}${'head'.padStart(7)}` +
+    `${'mark'.padStart(7)}  ${'hsk'.padEnd(4)}${'pinyin'.padEnd(9)}english\n`,
+)
+for (const [ch, n] of ranked.slice(0, args.show)) {
+  const say = gloss.get(ch)
+  process.stdout.write(
+    `  ${ch.padEnd(3)}${String(n).padStart(7)}` +
+      `${String(asHead.get(ch) ?? 0).padStart(7)}` +
+      `${String(asMark.get(ch) ?? 0).padStart(7)}  ` +
+      `${(say?.hsk || '-').padEnd(4)}${(say?.pinyin || '').padEnd(9)}` +
+      `${say?.english ?? '(not in the base list)'}\n`,
+  )
+}
+
+const known = ranked.filter(([ch]) => gloss.has(ch)).length
+process.stdout.write(
+  `\n  ${known} of ${ranked.length} characters have an English gloss in\n` +
+    '  `deck/code/base/link/chinese.base.csv`. The rest are technical\n' +
+    '  morphemes that never reach ordinary speech.\n',
+)
+
+// ─── The place morphemes ────────────────────────────────
+
+/**
+ * Characters that name a PLACE rather than a property.
+ *
+ * Hand listed, because no column marks them and the pattern is
+ * unmistakable once seen: twelve of the top forty-five modifiers are
+ * Chinese provinces, directions or landforms used as provenance.
+ *
+ * ```text
+ * 南 south   西 west    东 north-east   北 north
+ * 川 Sichuan 台 Taiwan  云 Yunnan       滇 Yunnan, the old name
+ * 藏 Tibet   华 China   江 the Yangtze  湾 Taiwan, in 台湾
+ * ```
+ *
+ * **This is the same finding the GBIF species names gave**, where 78%
+ * of English names carried a capitalised word. A naming system spends
+ * an enormous share of its modifier budget on where the thing was
+ * found, and a language that can say a place gets all of it free.
+ */
+const PLACE = new Set([
+  ...'南西东北川台云滇藏华江湾闽粤蜀秦晋赣湘鄂皖苏浙鲁豫冀辽吉黑桂琼甘宁青新蒙港澳',
+  ...'山海河湖岭峰江洲岛',
+])
+
+const placeUses = ranked
+  .filter(([ch]) => PLACE.has(ch))
+  .reduce((sum, [, n]) => sum + n, 0)
+const allUses = ranked.reduce((sum, [, n]) => sum + n, 0)
+
+process.stdout.write(
+  `\nHOW MUCH OF THE BUDGET GOES ON PLACES\n\n` +
+    `  ${placeUses.toLocaleString()} of ${allUses.toLocaleString()} morpheme uses ` +
+    `are a place name\n` +
+    `  ${((placeUses / allUses) * 100).toFixed(1)}% of all naming in this volume\n\n` +
+    '  Provinces, directions and landforms used as provenance. The\n' +
+    '  same finding the GBIF species names gave, where 78% of English\n' +
+    '  names carried a capitalised word.\n\n' +
+    '  **A language that can say a place gets all of this free.**\n',
+)
+
+// ─── What Tune already has ──────────────────────────────
+
+function candidates(): Set<string> {
+  const path = resolve(TERM, 'candidate.english.csv')
+  if (!existsSync(path)) return new Set()
+  const csvRows: Array<Record<string, string>> = parse(
+    readFileSync(path, 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  return new Set(
+    csvRows.map(r => (r.term ?? '').trim().toLowerCase()).filter(Boolean),
+  )
+}
+
+const have = candidates()
+
+/** The first word of a gloss, which is the word it is really naming. */
+function headWord(english: string): string {
+  return (english.split(/[,;(]/)[0] ?? '').trim().toLowerCase()
+}
+
+const top = ranked.slice(0, 500).filter(([ch]) => gloss.has(ch))
+const missing = top.filter(
+  ([ch]) => !have.has(headWord(gloss.get(ch)?.english ?? '')),
+)
+
+process.stdout.write(
+  `\nAGAINST TUNE'S OWN LIST\n\n` +
+    `  Of the 500 commonest morphemes, ${top.length} have a gloss and\n` +
+    `  ${top.length - missing.length} are already Tune candidates ` +
+    `(${(((top.length - missing.length) / top.length) * 100).toFixed(0)}%).\n\n` +
+    '  The misses, which are what this volume asks for:\n\n  ',
+)
+process.stdout.write(
+  `${missing
+    .slice(0, 40)
+    .map(([ch]) => headWord(gloss.get(ch)?.english ?? ''))
+    .filter(Boolean)
+    .join(' ')}\n`,
+)
+
+// ─── Write ──────────────────────────────────────────────
+
+const csv = ['char,english,pinyin,hsk,total,as_head,as_mark,role']
+for (const [ch, n] of ranked) {
+  const head = asHead.get(ch) ?? 0
+  const mark = asMark.get(ch) ?? 0
+  const role = head === 0 ? 'mark only' : mark === 0 ? 'head only' : 'both'
+  const say = gloss.get(ch)
+  csv.push(
+    [
+      ch,
+      `"${say?.english ?? ''}"`,
+      say?.pinyin ?? '',
+      say?.hsk ?? '',
+      n,
+      head,
+      mark,
+      role,
+    ].join(','),
+  )
+}
+const out = resolve(TERM, 'scratchpad', 'chinese-plant-morphemes.csv')
+writeFileSync(out, `${csv.join('\n')}\n`)
+
+const markOnly = ranked.filter(([ch]) => !asHead.has(ch)).length
+const headOnly = ranked.filter(([ch]) => !asMark.has(ch)).length
+const both = ranked.length - markOnly - headOnly
+
+process.stdout.write(
+  `\n${markOnly} characters appear ONLY as a modifier\n` +
+    `${headOnly} appear ONLY as a head\n` +
+    `${both} do both\n\n` +
+    'A character doing both jobs is a root in the ordinary sense. One\n' +
+    'that only ever modifies is closer to an adjective, and one that\n' +
+    'only ever heads is closer to a classifier.\n',
+)
+
+process.stdout.write(`\nwrote ${out}\n`)
