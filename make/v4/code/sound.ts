@@ -282,6 +282,29 @@ export const WORD_RULES: Array<WordRule> = [
     },
   },
   {
+    name: 'no_hush_clash',
+    note: 'c and C together never stand more than once in a word',
+    /**
+     * Stated by hand, and tightened once:
+     *
+     *   never use both c and C in the same word
+     *   never use C or c more than once in a word, and never together
+     *
+     * So the test is not "not both" but "at most one of either". `cec`
+     * and `CoC` are out for the same reason `Cec` is: they are the
+     * voiced and voiceless halves of one affricate, `SIMILAR_GROUPS`
+     * already lists the pair as too near to tell apart, and a word
+     * holding two of them asks a listener to hear at two places in one
+     * syllable a distinction they can barely hear at one.
+     *
+     * It costs the `C c` voice mirror entirely: `Cec`/`coC` was a legal
+     * pair before this rule and no arrangement of the two is legal
+     * now. That is the right trade, because a mirror nobody can hear
+     * is not a mirror.
+     */
+    test: word => [...word].filter(s => s === 'c' || s === 'C').length <= 1,
+  },
+  {
     name: 'known_onset',
     note: 'a word opening on two sounds opens on a listed cluster',
     test: word => {

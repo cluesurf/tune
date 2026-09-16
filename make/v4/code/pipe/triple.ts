@@ -62,7 +62,41 @@ const args = yargs(hideBin(process.argv))
   .parseSync()
 
 /**
- * The graded threes, where a middle term sits between two poles.
+ * ## A third pattern, already in `base.csv`
+ *
+ * The affect triple is solved and was solved before any of this was
+ * written:
+ *
+ * ```text
+ * zim   pleasure        z i m
+ * muz   pain            m u z
+ * siz   peace           s i z
+ * ```
+ *
+ * `zim`/`muz` is a mirror on the upright axis: consonants reversed,
+ * vowel crossing `i` to `u`. But `siz` is **not on that frame at
+ * all**. The neutral term gets its own word rather than the `a` in
+ * the middle of the path.
+ *
+ * So there are two ways to write a three, and they say different
+ * things:
+ *
+ * ```text
+ * one frame, i a u        the three are a GRADE, one scale, three points
+ * mirror plus a third     two are POLES and the third is neither
+ * ```
+ *
+ * `white grey black` is the first: grey is genuinely between. But
+ * peace is not halfway between pleasure and pain, it is the absence
+ * of both, and putting it on the middle of their scale would say
+ * something false. The hand-made set is right and the template that
+ * only knew one shape was wrong.
+ *
+ * `kaz`/`zak` for cause and effect, and `vix`/`xiv` for preserve and
+ * destroy, are the same mirror rule in `base.csv` on the `a a` and
+ * `i i` vowels, which is the third option `system.ts` records.
+ *
+ * ## The graded threes, where a middle term sits between two poles.
  *
  * Only genuine grades. A list of three related things is not a
  * triple in this sense: `red green blue` has no middle and writing it
@@ -90,6 +124,20 @@ const TRIPLE: Array<[string, [string, string, string]]> = [
   ['near', ['here', 'nearby', 'far']],
   ['full', ['full', 'part', 'empty']],
   ['order', ['first', 'middle', 'last']],
+  // Moved out of the mirror inventory. `begin/end` and `before/after`
+  // look like oppositions and are not: each has a middle that is a
+  // term in its own right, so writing them as two throws the middle
+  // away and makes a speaker build it from the poles.
+  ['span', ['begin', 'middle', 'end']],
+  ['when', ['before', 'during', 'after']],
+  // The Trimurti, as a conceptual triad rather than a theology:
+  // creation, preservation, dissolution. `base.csv` already holds
+  // two of the three by hand, `vix` preserve and `xiv` destroy, which
+  // is the mirror-plus-third shape again rather than one frame.
+  ['make', ['create', 'sustain', 'destroy']],
+  // Life is the middle, not the sum of the ends. A speaker should not
+  // have to build it out of birth and death.
+  ['living', ['birth', 'life', 'death']],
 ]
 
 function vowelPath(size: number): Array<string> {
@@ -144,7 +192,32 @@ for (const [name, members] of TRIPLE) {
     }
   }
 
-  tries.sort((a, b) => b.free - a.free)
+  /**
+   * Sets must not sound like their neighbours.
+   *
+   * Ranking on free forms alone put `nip nap nup` next to
+   * `nit nat nut` next to `niC naC nuC`: three unrelated sets sharing
+   * an onset and differing in one sound. **A set is supposed to be
+   * audible as itself**, and three sets that rhyme with each other
+   * defeat the point of giving each one a frame.
+   *
+   * So a frame is penalised for reusing an onset or a coda that a
+   * set already placed is using. Free forms still win where the
+   * difference is large, which is right: a collision is a real cost
+   * and a near-rhyme is a smaller one.
+   */
+  const usedOnset = new Map<string, number>()
+  const usedCoda = new Map<string, number>()
+  for (const frame of spent) {
+    usedOnset.set(frame[0], (usedOnset.get(frame[0]) ?? 0) + 1)
+    usedCoda.set(frame[1], (usedCoda.get(frame[1]) ?? 0) + 1)
+  }
+  const worth = (t: Try) =>
+    t.free * 3 -
+    (usedOnset.get(t.onset) ?? 0) * 2 -
+    (usedCoda.get(t.coda) ?? 0)
+
+  tries.sort((a, b) => worth(b) - worth(a))
   const best = tries[0]
   if (!best) {
     process.stdout.write(`  ${name}   no frame carries the path\n`)

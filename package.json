@@ -32,6 +32,7 @@
     "v4:pair": "tsx make/v4/code/pair.ts",
     "v4:head": "tsx make/v4/code/head.ts",
     "v4:triple": "tsx make/v4/code/pipe/triple.ts",
+    "v4:digit": "tsx make/v4/code/pipe/digit.ts",
     "v4:sweep": "tsx make/v4/code/pipe/sweep.ts",
     "v4:mirror-evolve": "tsx make/v4/code/pipe/mirror-evolve.ts",
     "v4:words": "pnpm v4:english && pnpm v4:derive && pnpm v4:english && pnpm v4:doubt && pnpm v4:gap"

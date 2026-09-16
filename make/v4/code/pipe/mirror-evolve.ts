@@ -51,10 +51,16 @@ import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
 import { readBoard, TERM } from './board'
-import { DOMAIN } from './domain'
+import {
+  DOMAIN,
+  MUST_BE_LONG,
+  MUST_BE_SHORT,
+  MUST_USE_AXIS,
+  SHORT_DOMAINS,
+} from './domain'
 import { readSystems, VOICE_PAIRS } from './system'
 import { MIRROR_PAIRS } from './tone'
-import { testWord } from '../sound'
+import { CONSONANTS, testWord } from '../sound'
 
 const args = yargs(hideBin(process.argv))
   .option('rounds', { type: 'number', default: 300 })
@@ -66,10 +72,71 @@ const args = yargs(hideBin(process.argv))
 
 // ─── The space ──────────────────────────────────────────
 
-const PAIRS = [...VOICE_PAIRS, ...MIRROR_PAIRS] as Array<[string, string]>
+/**
+ * Every consonant pair a mirror may use, in three tiers.
+ *
+ * ## The third tier, and why the first two were not enough
+ *
+ * The voice pairs are heard, the script pairs are seen, and between
+ * them they offer fifteen frames against seventy-odd oppositions. That
+ * ceiling has been the binding constraint on every run.
+ *
+ * Then a pair arrived by hand that is in neither table:
+ *
+ * ```text
+ * sep   inhale        s → p    airy, then stopped
+ * pos   exhale        p → s    stopped, then airy
+ * ```
+ *
+ * `s` and `p` are not a voicing pair and not script mirrors. What
+ * they are is **iconic**: the mouth opens and closes in the order the
+ * word means, which is the rule stated by hand for exactly this case,
+ *
+ *   for breath, breath starts from stopped position, to airy
+ *   position, so going like english, b to c, is good
+ *
+ * and no table of mirrors could have proposed it, because the
+ * relation is between the sounds and the WORLD rather than between
+ * the sounds and each other.
+ *
+ * So the third tier is every remaining consonant pair, 462 of them,
+ * ranked below the other two by `COST_FAMILY` so a voice mirror still
+ * wins where one fits. The budget stops being the constraint and
+ * collisions and iconicity become the constraint instead, which is
+ * the right place for it to be.
+ */
+const FREE_PAIRS: Array<[string, string]> = []
+{
+  const known = new Set(
+    [...VOICE_PAIRS, ...MIRROR_PAIRS].flatMap(([a, b]) => [
+      `${a}${b}`,
+      `${b}${a}`,
+    ]),
+  )
+  for (const a of CONSONANTS) {
+    for (const b of CONSONANTS) {
+      if (a === b) continue
+      if (known.has(`${a}${b}`)) continue
+      FREE_PAIRS.push([a, b])
+    }
+  }
+}
+
+const PAIRS = [
+  ...VOICE_PAIRS,
+  ...MIRROR_PAIRS,
+  ...FREE_PAIRS,
+] as Array<[string, string]>
 const AXES: Array<[string, string]> = [
   ['e', 'o'],
   ['i', 'u'],
+  // Both on the centre, so the consonant reversal carries the whole
+  // opposition. `system.ts` had this and the search did not, which
+  // made `cause`/`effect` and `parent`/`child` UNSATISFIABLE: their
+  // axis is fixed to `a a` by hand and `a a` was not in the table, so
+  // no plan could ever meet the constraint and both came out as "no
+  // legal form" for a reason that had nothing to do with phonotactics.
+  ['a', 'a'],
   ['o', 'e'],
   ['u', 'i'],
   ['a', 'o'],
@@ -227,6 +294,27 @@ for (const members of readSystems().values()) {
 }
 
 /**
+ * Pairs fixed by hand in conversation, not yet in any file.
+ *
+ * ```text
+ * sep   inhale        s → p    airy closing to stopped
+ * pos   exhale        p → s    stopped opening to airy
+ * ```
+ *
+ * The mouth does what the word means, which is the iconic rule this
+ * project asked for by name and which no mirror table can propose.
+ * Anchored here so the search keeps it, and so it is written down
+ * somewhere rather than living in a conversation.
+ */
+const BY_HAND: Record<string, string> = {
+  inhale: 'sep',
+  exhale: 'pos',
+}
+for (const [meaning, word] of Object.entries(BY_HAND)) {
+  already.set(meaning, word)
+}
+
+/**
  * Which oppositions ALREADY sit on a mirror, and so must be kept.
  *
  * The distinction the first two runs missed. Of the 82 meanings in
@@ -345,12 +433,65 @@ function score(plan: Plan): {
       }
     }
 
+    /**
+     * How long this opposition is allowed to be.
+     *
+     * Three sources, and the more specific one always wins:
+     *
+     *   a word in MUST_BE_LONG    four sounds, against its domain
+     *   a word in MUST_BE_SHORT   three
+     *   a domain in SHORT_DOMAINS three, for every member
+     *
+     * Not preferences and not weights to trade against collisions. A
+     * plan that spends four sounds on `all` is wrong, not worse, so
+     * it is counted as broken and costs what an illegal form costs.
+     */
+    const short = one.length === 3 && two.length === 3
+    const named = DOMAIN[WANT[i].domain][0]
+    const wantsLong =
+      MUST_BE_LONG.has(WANT[i].one) || MUST_BE_LONG.has(WANT[i].two)
+    const wantsShort =
+      !wantsLong &&
+      (MUST_BE_SHORT.has(WANT[i].one) ||
+        MUST_BE_SHORT.has(WANT[i].two) ||
+        SHORT_DOMAINS.has(named))
+    if ((wantsShort && !short) || (wantsLong && short)) {
+      total += COST_BROKEN
+      broken++
+      continue
+    }
+
+    // A fixed vowel axis is a hard constraint too. `cause`/`effect`
+    // on anything but `a a` says they are poles, which is a claim
+    // about the world and a false one.
+    const axis = MUST_USE_AXIS[WANT[i].one]
+    if (axis) {
+      const [vOne, vTwo] = AXES[gene.axis]
+      if (vOne !== axis[0] || vTwo !== axis[1]) {
+        total += COST_BROKEN
+        broken++
+        continue
+      }
+    }
+
     total += COST_SHAPE[gene.shape]
-    if (gene.pair >= VOICE_PAIRS.length) total += COST_FAMILY
+    // Voice mirrors are free, script mirrors cost a little, and the
+    // 462 plain reversals cost more again. A frame with no relation
+    // between its halves still works, it just says less.
+    if (gene.pair >= VOICE_PAIRS.length + MIRROR_PAIRS.length) {
+      total += COST_FAMILY * 2
+    } else if (gene.pair >= VOICE_PAIRS.length) {
+      total += COST_FAMILY
+    }
 
     // The axis, the shape and the family are what a domain shares.
     // The consonant pair is what distinguishes its members.
-    const family = gene.pair < VOICE_PAIRS.length ? 'voice' : 'script'
+    const family =
+      gene.pair < VOICE_PAIRS.length
+        ? 'voice'
+        : gene.pair < VOICE_PAIRS.length + MIRROR_PAIRS.length
+          ? 'script'
+          : 'free'
     const key = `${gene.axis}:${gene.shape}:${MARKS[gene.mark]}:${family}`
     const set = byDomain.get(WANT[i].domain) ?? new Set()
     set.add(key)

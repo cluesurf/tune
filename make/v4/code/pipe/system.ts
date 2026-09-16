@@ -258,6 +258,17 @@ export const VOICE_PAIRS: Array<[string, string]> = [
 const MIRROR_VOWELS: Array<[string, string]> = [
   ['e', 'o'],
   ['i', 'u'],
+  // Both members on the centre, so the OPPOSITION IS CARRIED ENTIRELY
+  // BY THE CONSONANT REVERSAL and the vowel says nothing. Stated by
+  // hand as a real option alongside the two axes:
+  //
+  //   size 2 can also be `i u` or `a a`, depending
+  //
+  // It is the quietest of the three and the right one where the two
+  // members are not felt as poles so much as as two faces of one
+  // thing. `kaz`/`zak` and `taf`/`fut` in `base.csv` are already
+  // built this way.
+  ['a', 'a'],
   ['o', 'e'],
   ['u', 'i'],
   ['a', 'o'],
