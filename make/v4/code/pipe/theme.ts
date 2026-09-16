@@ -1,65 +1,72 @@
 /**
- * Mapping the whole lexicon by THEME, not one word at a time.
+ * Laying out the concepts that have no form yet.
  *
- * The structured templates handle about a hundred and ten words:
- * seventy-odd oppositions as mirrors, twenty-five graded threes, and
- * sixteen digits. That leaves most of four thousand.
+ * Read `note/tune/pipeline/rules-of-mapping.md` first. The five rules
+ * there were all written after this file broke them, and the previous
+ * version of it is what they are about.
  *
- * Those cannot be mapped by a rule, because most concepts stand in no
- * relation to any other concept that a sound could carry. What they
- * CAN be given is a neighbourhood:
+ * ## What changed, and why
  *
- *   pick themes of terms, and make sure they are all different
- *   sounding perhaps within the theme
+ * **It kept nothing.** The board holds 860 of the 3,904 candidates,
+ * placed by hand over a long time, and the old version read the board
+ * only to avoid collisions. Every one of those 860 got a fresh form.
+ * They are now loaded first and treated as finished.
  *
- * So each of the twenty-five domains in `gap.ts` takes a block of
- * onsets, and every word in that domain opens on one of them. A
- * speaker hearing an unfamiliar word knows what KIND of thing it is
- * before they know which one, and two words from the same domain
- * never collide because the whole domain is laid out at once.
+ * **It put every member of a theme on one onset.** Every body part
+ * came out on `h`: `hit` eye, `hid` chest, `hip` ear, `him` arm,
+ * twenty-two words differing in one sound each, in a language whose
+ * script makes mirror pairs confusable on purpose.
  *
- * ## Why this is not the thing that failed
+ * The idea had been that a shared onset lets a listener hear the
+ * category before the word. That is worth nothing and costs
+ * everything. **Words in one theme fill the same slots and compete
+ * with each other constantly**, so they are exactly the ones that
+ * most need telling apart. Nobody needs to hear that a word is a body
+ * part. They need to hear which body part.
  *
- * `v4:pipe cluster` proved that word SHAPE does not predict meaning
- * in this lexicon: +0.02, which is nothing. That result stands and
- * this does not contradict it.
+ * So relatedness now pushes words APART. A theme shares no onset and
+ * no coda across its members.
  *
- * The difference is direction. That search tried to DISCOVER a
- * relation between sound and sense in words already placed, and there
- * was none to find. This IMPOSES one on words not yet placed, which
- * needs no evidence because it is a decision rather than a claim.
+ * ## Far apart, and still patterned
  *
- * ## What the objective is
+ * Distance is not randomness. The members of a set walk the sound
+ * order together:
  *
- * Countable, like the mirror search and unlike the one that was
- * blind:
+ * ```text
+ * onset   steps through the order, one member to the next
+ * coda    steps through the same order at an offset
+ * vowel   follows the path in system/vowel.csv for that size
+ * ```
  *
- *   how many words land on a form nobody holds
- *   how many domains keep their onsets to themselves
- *   how near two words of one domain are to each other
+ * Every member differs from its neighbours in the most salient
+ * position, and a learner who knows the walk can rebuild the set. The
+ * pattern lives in the MOVEMENT through the inventory rather than in
+ * a letter held fixed, which is the whole difference.
+ *
+ * ## The good sounds go to the good words
+ *
+ * `m` is valuable and the old version spent it on the leftovers
+ * bucket. Members of a theme are now sorted by what they build, from
+ * the `uses` and `head` columns the candidate file already carries,
+ * so the most productive concept in each theme takes the earliest
+ * sound in the walk.
  *
  * Usage:
  *   pnpm --dir deck/tune v4:theme
  *   pnpm --dir deck/tune v4:theme --domain body
+ *   pnpm --dir deck/tune v4:theme --write
  */
 
-import { writeFileSync } from 'fs'
+import { parse } from 'csv-parse/sync'
+import { existsSync, readFileSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
-import { parse } from 'csv-parse/sync'
-import { readFileSync } from 'fs'
-
 import { readBoard, TERM } from './board'
 import { DOMAIN } from '../gap'
-import {
-  CODA_CLUSTERS,
-  CONSONANTS,
-  ONSET_CLUSTERS,
-  testWord,
-  VOWELS,
-} from '../sound'
+import { CONSONANTS, testWord } from '../sound'
+import { SORT_ORDER } from '../../../../code/phonology'
 
 const args = yargs(hideBin(process.argv))
   .option('domain', { type: 'string' })
@@ -67,42 +74,41 @@ const args = yargs(hideBin(process.argv))
   .strict()
   .parseSync()
 
+// ─── What is already decided ────────────────────────────
+
 const board = readBoard()
+/** Meaning sitting on each form. */
 const holds = new Map<string, string>()
+/** Form each meaning already sits on. THE GROUND TRUTH. */
+const already = new Map<string, string>()
 board.forms.forEach((form, i) => {
-  holds.set(form, board.meaning[i] ?? '')
+  const meaning = board.meaning[i]
+  holds.set(form, meaning ?? '')
+  if (meaning && !already.has(meaning)) already.set(meaning, form)
 })
 
-/**
- * Every candidate, not the curated 826.
- *
- * The first version of this laid out `gap.ts`'s domain lists, which
- * are a check on coverage rather than the lexicon: 826 concepts
- * against 3,904 candidates, so three quarters of the list was not
- * being mapped at all.
- *
- * So the domains are used as a CLASSIFIER and the candidate file is
- * the input. A candidate named in a domain joins it; the rest fall to
- * `other`, split by part of speech so at least the verbs do not sound
- * like the nouns.
- *
- * `other` is large and that is honest. It is the part of the lexicon
- * nobody has grouped yet, and a layout that pretended otherwise would
- * be hiding the work still to do.
- */
-function readCandidates(): Array<{ term: string; role: string }> {
+// ─── The concepts, and how much each builds ─────────────
+
+type Word = { term: string; role: string; weight: number }
+
+function readCandidates(): Array<Word> {
   const path = resolve(TERM, 'candidate.english.csv')
   const rows: Array<Record<string, string>> = parse(
     readFileSync(path, 'utf-8'),
     { columns: true, skip_empty_lines: true, relax_column_count: true },
   )
   const seen = new Set<string>()
-  const out: Array<{ term: string; role: string }> = []
+  const out: Array<Word> = []
   for (const row of rows) {
     const term = (row.term ?? '').trim()
     if (!term || seen.has(term)) continue
     seen.add(term)
-    out.push({ term, role: (row.role ?? '').trim() })
+    // `head` counts the breakdowns a word HEADS and `uses` the ones it
+    // merely appears in, so heading is worth more. This is the same
+    // measure `english.ts` sorts the candidate list by.
+    const uses = Number(row.uses) || 0
+    const head = Number(row.head) || 0
+    out.push({ term, role: (row.role ?? '').trim(), weight: head * 3 + uses })
   }
   return out
 }
@@ -115,233 +121,167 @@ for (const [name, text] of Object.entries(DOMAIN)) {
 }
 
 const ROLES = ['noun', 'verb', 'adjective', 'adverb']
-const words = new Map<string, Array<string>>()
-for (const { term, role } of readCandidates()) {
-  const named = inDomain.get(term)
-  const bucket = named
-    ? named
-    : `other ${ROLES.includes(role) ? role : 'word'}`
-  const list = words.get(bucket) ?? []
-  list.push(term)
-  words.set(bucket, list)
-}
-const names = [...words.keys()]
+const themes = new Map<string, Array<Word>>()
+const kept: Array<{ term: string; word: string }> = []
 
-/**
- * How many onsets each domain gets.
- *
- * Proportional to its size, because a domain of forty words needs
- * more room than one of twelve, and a domain squeezed into one onset
- * would have every member differing only in the vowel.
- *
- * Twenty-two consonants across twenty-five domains means they must
- * share, so the onsets are allotted in a round robin and a domain's
- * block is CONTIGUOUS in tone order. Neighbouring domains then sound
- * neighbouring, which is the right failure mode: `mind` next to
- * `feel` is a better accident than `mind` next to `rock`.
- */
-const OPEN = CONSONANTS.filter(c => testWord(`${c}an`).ok)
-const allot = new Map<string, Array<string>>()
-{
-  let at = 0
-  const total = names.reduce((n, d) => n + (words.get(d)?.length ?? 0), 0)
-  for (const name of names) {
-    const size = words.get(name)?.length ?? 0
-    const want = Math.max(1, Math.round((size / total) * OPEN.length))
-    const mine: Array<string> = []
-    for (let i = 0; i < want; i++) {
-      mine.push(OPEN[(at + i) % OPEN.length])
-    }
-    at = (at + want) % OPEN.length
-    allot.set(name, mine)
+for (const word of readCandidates()) {
+  // Rule one. Already placed by hand is already done.
+  const has = already.get(word.term)
+  if (has) {
+    kept.push({ term: word.term, word: has })
+    continue
   }
+  const named = inDomain.get(word.term)
+  const bucket = named ?? `other ${ROLES.includes(word.role) ? word.role : 'word'}`
+  const list = themes.get(bucket) ?? []
+  list.push(word)
+  themes.set(bucket, list)
 }
 
-// ─── Laying a domain out ────────────────────────────────
+// The most productive concept in a theme takes the earliest sound.
+for (const list of themes.values()) {
+  list.sort((a, b) => b.weight - a.weight || a.term.localeCompare(b.term))
+}
 
-type Row = { domain: string; meaning: string; word: string; note: string }
+// ─── The walk ───────────────────────────────────────────
+
+/** The consonants in tone order, which is the order the walk takes. */
+const ORDER = SORT_ORDER.filter(s => CONSONANTS.includes(s))
+const OPENS = ORDER.filter(c => testWord(`${c}an`).ok)
+const CLOSES = ORDER.filter(c => testWord(`na${c}`).ok)
+
+function vowelPath(size: number): Array<string> {
+  const file = resolve(TERM, '..', 'system', 'vowel.csv')
+  if (!existsSync(file)) return 'ieaou'.split('')
+  const rows: Array<Record<string, string>> = parse(
+    readFileSync(file, 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  for (const row of rows) {
+    if (Number(row.size) === size) return (row.vowels ?? '').split(/\s+/)
+  }
+  return 'ieaou'.split('')
+}
+
+type Row = {
+  domain: string
+  meaning: string
+  word: string
+  note: string
+}
 
 const rows: Array<Row> = []
-/** Every form this run has claimed, so no two words collide. */
-const spent = new Set<string>()
+const spent = new Set<string>(already.values())
 
-for (const name of names) {
-  const mine = allot.get(name) as Array<string>
-  const list = words.get(name) as Array<string>
+let offset = 0
+for (const [name, list] of themes) {
+  const path = vowelPath(Math.min(list.length, 16))
+  /**
+   * Each theme starts the walk at a different point, so two themes
+   * do not open on the same sound in the same order. The offset
+   * between onset and coda is what keeps `non` and `mam` from
+   * happening: a form never repeats its consonant.
+   */
+  const start = offset % OPENS.length
+  offset += 7
 
-  for (const meaning of list) {
-    /**
-     * Every form this domain may use, best first.
-     *
-     * "Best" is: free rather than taken, then far from the words this
-     * domain has already placed. The distance term is what stops a
-     * domain becoming a rhyme: without it the first onset fills up
-     * with `man mab mad maf` before the second is touched.
-     */
-    const near = rows
-      .filter(r => r.domain === name)
-      .map(r => r.word)
+  for (let i = 0; i < list.length; i++) {
+    const member = list[i]
+    const vowel = path[i % path.length] ?? 'a'
 
     /**
-     * All three shapes, cheapest first.
-     *
-     * `CVC` holds 1,024 forms and the candidate list is nearly four
-     * thousand, so a layout confined to three sounds cannot finish.
-     * It has to reach `CVCC` and `CCVC`, which is what they are for:
-     * 1,792 and 1,280 more forms, sitting idle.
-     *
-     * The domain keeps its onset in every shape, so `body` is still
-     * audible whether the word is `bin` or `birt` or `bral`. The
-     * extra sound goes where it does not disturb that.
+     * Walk outward from the member's own place in the order, so the
+     * first choice is the patterned one and the fallbacks stay near
+     * it. Every candidate form is checked against the whole board and
+     * against every form this run has already given out.
      */
-    type Try = { word: string; free: boolean; apart: number; cost: number }
-    const tries: Array<Try> = []
-
-    const add = (word: string, cost: number) => {
-      if (spent.has(word)) return
-      if (!testWord(word).ok) return
-      let apart = word.length
-      for (const other of near) {
-        let same = 0
-        for (let i = 0; i < Math.min(word.length, other.length); i++) {
-          if (word[i] === other[i]) same++
+    let word = ''
+    for (let step = 0; step < OPENS.length && !word; step++) {
+      const onset = OPENS[(start + i + step) % OPENS.length]
+      for (let jump = 1; jump < CLOSES.length; jump++) {
+        const coda = CLOSES[(start + i + jump) % CLOSES.length]
+        // Rule five. A word never repeats its consonant: `non` is
+        // legal and bad, `nan` is available and better.
+        if (coda === onset) continue
+        for (const v of [vowel, ...path, ...'ieaou'.split('')]) {
+          const made = `${onset}${v}${coda}`
+          if (spent.has(made)) continue
+          if (holds.get(made)) continue
+          if (!testWord(made).ok) continue
+          word = made
+          break
         }
-        apart = Math.min(apart, word.length - same)
-      }
-      tries.push({ word, free: !holds.get(word), apart, cost })
-    }
-
-    for (const onset of mine) {
-      for (const vowel of VOWELS) {
-        for (const coda of CONSONANTS) {
-          add(`${onset}${vowel}${coda}`, 0)
-        }
-        // CVCC: the domain's onset, a cluster closing.
-        for (const coda of CODA_CLUSTERS) {
-          add(`${onset}${vowel}${coda}`, 2)
-        }
-        // CCVC: the domain's onset leading a cluster, so the domain
-        // still opens the word.
-        for (const cluster of ONSET_CLUSTERS) {
-          if (cluster[0] !== onset) continue
-          for (const coda of CONSONANTS) {
-            add(`${cluster}${vowel}${coda}`, 3)
-          }
-        }
+        if (word) break
       }
     }
 
-    tries.sort((a, b) => {
-      if (a.free !== b.free) return a.free ? -1 : 1
-      if (a.cost !== b.cost) return a.cost - b.cost
-      return b.apart - a.apart
-    })
-
-    /**
-     * When a domain's own onsets are exhausted, it borrows.
-     *
-     * A domain of eleven hundred words cannot fit behind six onsets
-     * however many shapes it is given, and refusing to place the
-     * overflow left seventy-seven words with no form at all. **A word
-     * in the wrong neighbourhood is better than a word with no
-     * form**, so the borrow happens and the row says so.
-     *
-     * The marked rows are the signal that a domain wants splitting,
-     * which for `other verb` is true and already known.
-     */
-    if (tries.length === 0) {
-      for (const onset of OPEN) {
-        if (mine.includes(onset)) continue
-        for (const vowel of VOWELS) {
-          for (const coda of CONSONANTS) {
-            add(`${onset}${vowel}${coda}`, 9)
-          }
-          for (const coda of CODA_CLUSTERS) {
-            add(`${onset}${vowel}${coda}`, 9)
-          }
-        }
-        if (tries.length) break
-      }
-      tries.sort((a, b) => (a.free === b.free ? 0 : a.free ? -1 : 1))
-    }
-
-    const best = tries[0]
-    if (!best) {
-      rows.push({ domain: name, meaning, word: '', note: 'no form left' })
+    if (!word) {
+      rows.push({ domain: name, meaning: member.term, word: '', note: 'no form left' })
       continue
     }
-    if (best.cost === 9) {
-      spent.add(best.word)
-      const held = holds.get(best.word)
-      rows.push({
-        domain: name,
-        meaning,
-        word: best.word,
-        note: held ? `holds ${held}` : 'borrowed onset',
-      })
-      continue
-    }
-    spent.add(best.word)
-    const held = holds.get(best.word)
-    rows.push({
-      domain: name,
-      meaning,
-      word: best.word,
-      note: held ? `holds ${held}` : '',
-    })
+    spent.add(word)
+    rows.push({ domain: name, meaning: member.term, word, note: '' })
   }
 }
 
 // ─── Report ─────────────────────────────────────────────
 
 const placed = rows.filter(r => r.word)
-const clear = placed.filter(r => !r.note)
 
 if (args.domain) {
   const mine = rows.filter(r => r.domain === args.domain)
-  if (mine.length === 0) {
+  const held = kept.filter(k => inDomain.get(k.term) === args.domain)
+  if (mine.length === 0 && held.length === 0) {
     process.stdout.write(`no domain called ${args.domain}\n`)
-    process.stdout.write(`try: ${names.join(' ')}\n`)
+    process.stdout.write(`try: ${[...themes.keys()].join(', ')}\n`)
   } else {
-    process.stdout.write(
-      `${args.domain}, opening on ` +
-        `${(allot.get(args.domain) ?? []).join(' ')}\n\n`,
-    )
+    process.stdout.write(`${args.domain}\n\n`)
+    if (held.length) {
+      process.stdout.write(`  placed by hand already, unchanged\n`)
+      for (const one of held) {
+        process.stdout.write(
+          `    ${one.word.padEnd(6)} ${one.term}\n`,
+        )
+      }
+      process.stdout.write('\n')
+    }
+    process.stdout.write(`  laid out here\n`)
     for (const row of mine) {
       process.stdout.write(
-        `  ${(row.word || '----').padEnd(5)} ${row.meaning.padEnd(14)}` +
-          `${row.note}\n`,
+        `    ${(row.word || '----').padEnd(6)} ${row.meaning.padEnd(14)}${row.note}\n`,
       )
     }
   }
 } else {
   process.stdout.write(
-    `${names.length} domains, ${rows.length} concepts, ` +
-      `${OPEN.length} onsets to share out\n`,
+    `${kept.length} concepts already have a hand-made form and keep it\n`,
   )
   process.stdout.write(
-    `${placed.length} placed, ${clear.length} on forms that are free\n\n`,
+    `${rows.length} have none: ${placed.length} laid out, ` +
+      `${rows.length - placed.length} with no form left\n\n`,
   )
-  process.stdout.write('  domain      words  onsets\n')
-  for (const name of names) {
-    const mine = rows.filter(r => r.domain === name)
-    const free = mine.filter(r => r.word && !r.note).length
+  process.stdout.write('  theme              words  first few\n')
+  for (const [name] of themes) {
+    const mine = rows.filter(r => r.domain === name && r.word)
     process.stdout.write(
-      `  ${name.padEnd(12)}${String(mine.length).padStart(4)}` +
-        `${String(free).padStart(6)} free   ` +
-        `${(allot.get(name) ?? []).join(' ')}\n`,
+      `  ${name.padEnd(18)}${String(mine.length).padStart(5)}  ` +
+        `${mine.slice(0, 6).map(r => r.word).join(' ')}\n`,
     )
   }
   process.stdout.write(
-    '\n  Read one with --domain <name>. Nothing here is committed:\n' +
-      '  it is a layout, and the words in it still have to be read.\n',
+    '\n  Nothing here is committed. Read one with --domain <name>.\n',
   )
 }
 
 if (args.write) {
-  const csv = ['domain,meaning,word,note']
+  const csv = ['domain,meaning,word,source']
+  for (const one of kept) {
+    csv.push(
+      [inDomain.get(one.term) ?? 'other', one.term, one.word, 'by hand'].join(','),
+    )
+  }
   for (const row of rows) {
-    csv.push([row.domain, row.meaning, row.word, row.note].join(','))
+    csv.push([row.domain, row.meaning, row.word, 'laid out'].join(','))
   }
   const file = resolve(TERM, 'scratchpad', 'theme.csv')
   writeFileSync(file, `${csv.join('\n')}\n`)
