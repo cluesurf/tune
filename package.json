@@ -29,6 +29,8 @@
     "v4:derive": "tsx make/v4/code/derive.ts",
     "v4:doubt": "tsx make/v4/code/doubt.ts",
     "v4:gap": "tsx make/v4/code/gap.ts",
+    "v4:pair": "tsx make/v4/code/pair.ts",
+    "v4:sweep": "tsx make/v4/code/pipe/sweep.ts",
     "v4:words": "pnpm v4:english && pnpm v4:derive && pnpm v4:english && pnpm v4:doubt && pnpm v4:gap"
   },
   "devDependencies": {

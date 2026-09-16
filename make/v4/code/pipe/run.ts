@@ -43,6 +43,7 @@ import { DEFAULT_PLAN, anneal, greedy, stream } from './search'
 import { report as mirrorReport } from './mirror'
 import { fitReport, report as claimReport } from './claim'
 import { report as clusterReport } from './cluster'
+import { pairsIn, planFor, readSystems, vowelPath } from './system'
 import { OPENNESS, traceOf } from './enact'
 import {
   addClaim,
@@ -63,6 +64,7 @@ const args = yargs(hideBin(process.argv))
   .command('ceiling', 'what echo is reachable, and what blocks it')
   .command('claim', 'test each sound.md reading against the lexicon')
   .command('fit', 'fit the readings on half, measure on the other half')
+  .command('system', 'map a whole set at once, from a pattern')
   .command('forms', 'every free form matching a stated shape. A filter')
   .command('cluster', 'does word shape predict meaning in base.csv')
   .command('short', 'a shortlist of forms per concept, for a person to pick')
@@ -97,6 +99,10 @@ const args = yargs(hideBin(process.argv))
   })
   .option('steps', { type: 'number', describe: 'annealing steps' })
   .option('heat', { type: 'number', describe: 'starting temperature' })
+  .option('name', {
+    type: 'string',
+    describe: 'system: which set to map',
+  })
   .option('vowel', {
     type: 'string',
     describe: 'forms: keep only these vowels, e.g. iu',
@@ -759,6 +765,128 @@ function doShort(): void {
   out('  Fill the `choice` column, then v4:pipe take --from short-cvc')
 }
 
+// ─── system ─────────────────────────────────────────────
+
+/**
+ * Maps a whole set at once, from a pattern.
+ *
+ * **This is the half of the problem that works.** The per-word score
+ * cannot rank assignments and `v4:pipe cluster` says why. A set is not
+ * ranked though, it is CONSTRUCTED, and every constraint it needs is
+ * already written down: the vowel path in `system/vowel.csv`, the
+ * opposition rule, the eight script mirror pairs, the tone order.
+ *
+ * So this does no searching. It builds candidate mappings from three
+ * templates and shows what each rule buys.
+ */
+function doSystem(): void {
+  const { board } = bench()
+  const systems = readSystems()
+  const want = args.name ?? ''
+
+  if (!want) {
+    out('  sets in scratchpad/system.csv')
+    out('')
+    for (const [name, members] of systems) {
+      const path = vowelPath(members.length)
+      out(
+        `  ${name.padEnd(12)} ${String(members.length).padStart(2)} members   ` +
+          `${path.length ? path.join(' ') : 'no path for this size'}`,
+      )
+    }
+    out('')
+    out('  v4:pipe system --name <one of those>')
+    return
+  }
+
+  const members = systems.get(want)
+  if (!members) {
+    out(`  no set called ${want}`)
+    return
+  }
+
+  const path = vowelPath(members.length)
+  out(`  ${want}, ${members.length} members`)
+  out(`  vowel path  ${path.join(' ') || '(none for this size)'}`)
+  out('')
+  out('  now')
+  for (const m of members) {
+    out(`    ${(m.word || '----').padEnd(6)} ${m.meaning}`)
+  }
+
+  const pairs = pairsIn(members)
+  if (pairs.length) {
+    out('')
+    out(
+      `  ${pairs.length} opposite pairs: ` +
+        pairs.map(([a, b]) => `${a.meaning}/${b.meaning}`).join(', '),
+    )
+  }
+
+  const plans = planFor(board, members)
+  out('')
+  if (plans.length === 0) {
+    out('  No template fits. Every arrangement collides with a taken')
+    out('  form or breaks a phonotactic rule.')
+    return
+  }
+
+  /**
+   * How many of the set's CURRENT words a plan keeps.
+   *
+   * This is the only ranking a set needs, and it is not a score in the
+   * sense that failed elsewhere. It asks a factual question: **does
+   * this rule already explain the words somebody chose by hand?**
+   *
+   * The direction set is the test. It was made by hand with no
+   * template, and the voice-pair rule reproduces `ted dot keg gok`
+   * exactly, differing only on which half of `b p` opens `left`. A
+   * template that recovers four of six hand-made words has found the
+   * structure that was there rather than imposed one.
+   *
+   * It also does the useful thing for a half-finished set: the plan
+   * that keeps the most of what exists is the plan that completes the
+   * set rather than overwriting it.
+   */
+  function kept(plan: (typeof plans)[number]): number {
+    const byMeaning = new Map(plan.assign.map(a => [a.meaning, a.word]))
+    let same = 0
+    for (const m of members) {
+      if (m.word && byMeaning.get(m.meaning) === m.word) same++
+    }
+    return same
+  }
+
+  const ranked = [...plans].sort((a, b) => {
+    const diff = kept(b) - kept(a)
+    if (diff !== 0) return diff
+    // A mirror says the opposition twice over, in the consonants and
+    // in the vowel, so it beats a family that only shares an onset.
+    const rank = (p: (typeof plans)[number]) =>
+      p.template === 'mirror' ? 0 : p.template === 'walk' ? 1 : 2
+    return rank(a) - rank(b)
+  })
+
+  const held = members.filter(m => m.word).length
+  out(`  ${plans.length} mappings, one rule each`)
+  out('')
+  for (const plan of ranked.slice(0, args.many)) {
+    const same = kept(plan)
+    const mark = held ? `  [keeps ${same} of ${held}]` : ''
+    out(`  ${plan.template.toUpperCase()}  ${plan.rule}${mark}`)
+    const byMeaning = new Map(plan.assign.map(a => [a.meaning, a.word]))
+    out(
+      `    ${members
+        .map(m => `${byMeaning.get(m.meaning) ?? '???'}`)
+        .join(' ')}`,
+    )
+    out(
+      `    ${members.map(m => m.meaning.slice(0, 7)).join(' ')}`,
+    )
+    out('')
+  }
+}
+
 // ─── The guard ──────────────────────────────────────────
 
 /**
@@ -1154,6 +1282,9 @@ switch (WHAT) {
     break
   case 'forms':
     doForms()
+    break
+  case 'system':
+    doSystem()
     break
   case 'cluster':
     out(clusterReport())

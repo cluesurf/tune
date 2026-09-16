@@ -131,8 +131,8 @@ const FIELD = new Set(
 )
 
 const JARGON = new Set(
-  `testis testicle mammal reptile amphibian arthropod mollusk vertebrate invertebrate
-   bacterium virus fungus organism cell nucleus chromosome gene
+  `testis testicle vertebrate invertebrate
+   virus organism cell nucleus chromosome gene
    molecule atom electron proton neutron isotope tissue organ artery
    vein capillary neuron synapse cortex cerebellum diagnosis prognosis
    syndrome pathology therapy vaccine antibiotic anesthesia`.split(

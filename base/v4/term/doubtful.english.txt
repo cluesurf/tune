@@ -5,23 +5,23 @@ geometry      a discipline, which is a field plus study
 history       a discipline, which is a field plus study
 medicine      a discipline, which is a field plus study
 surgery       a discipline, which is a field plus study
+calcium       chemical element
 carbon        chemical element
 hydrogen      chemical element
 lead          chemical element
 nitrogen      chemical element
+silicon       chemical element
 silver        chemical element
 sulfur        chemical element
 tin           chemical element
 artery        clinical or taxonomic jargon
 atom          clinical or taxonomic jargon
 cell          clinical or taxonomic jargon
-fungus        clinical or taxonomic jargon
 gene          clinical or taxonomic jargon
-mammal        clinical or taxonomic jargon
 molecule      clinical or taxonomic jargon
 nucleus       clinical or taxonomic jargon
 organ         clinical or taxonomic jargon
-reptile       clinical or taxonomic jargon
+organism      clinical or taxonomic jargon
 testis        clinical or taxonomic jargon
 tissue        clinical or taxonomic jargon
 vein          clinical or taxonomic jargon
@@ -30,7 +30,6 @@ algorithm     modern technology, may not last
 battery       modern technology, may not last
 camera        modern technology, may not last
 engine        modern technology, may not last
-film          modern technology, may not last
 motor         modern technology, may not last
 radio         modern technology, may not last
 robot         modern technology, may not last
@@ -76,12 +75,12 @@ bromine       not a candidate, parked for the record
 byte          not a candidate, parked for the record
 cadmium       not a candidate, parked for the record
 caffeine      not a candidate, parked for the record
-calcium       not a candidate, parked for the record
 calorie       not a candidate, parked for the record
 carbohydrate  not a candidate, parked for the record
 carbonate     not a candidate, parked for the record
 cellulose     not a candidate, parked for the record
 celsius       not a candidate, parked for the record
+centimeter    not a candidate, parked for the record
 chloride      not a candidate, parked for the record
 chlorine      not a candidate, parked for the record
 chlorophyll   not a candidate, parked for the record
@@ -95,7 +94,6 @@ css           not a candidate, parked for the record
 decibel       not a candidate, parked for the record
 dna           not a candidate, parked for the record
 dopamine      not a candidate, parked for the record
-enzyme        not a candidate, parked for the record
 escalator     not a candidate, parked for the record
 ester         not a candidate, parked for the record
 ethanol       not a candidate, parked for the record
@@ -115,7 +113,6 @@ heroin        not a candidate, parked for the record
 hertz         not a candidate, parked for the record
 histamine     not a candidate, parked for the record
 hiv           not a candidate, parked for the record
-hormone       not a candidate, parked for the record
 html          not a candidate, parked for the record
 inch          not a candidate, parked for the record
 insulin       not a candidate, parked for the record
@@ -156,7 +153,6 @@ oxygen        not a candidate, parked for the record
 pascal        not a candidate, parked for the record
 pdf           not a candidate, parked for the record
 peptide       not a candidate, parked for the record
-percent       not a candidate, parked for the record
 ph            not a candidate, parked for the record
 phenol        not a candidate, parked for the record
 phosphorus    not a candidate, parked for the record
@@ -164,7 +160,6 @@ pint          not a candidate, parked for the record
 platinum      not a candidate, parked for the record
 plutonium     not a candidate, parked for the record
 potassium     not a candidate, parked for the record
-protein       not a candidate, parked for the record
 quart         not a candidate, parked for the record
 quinine       not a candidate, parked for the record
 radar         not a candidate, parked for the record
@@ -174,7 +169,6 @@ rna           not a candidate, parked for the record
 scuba         not a candidate, parked for the record
 selenium      not a candidate, parked for the record
 serotonin     not a candidate, parked for the record
-silicon       not a candidate, parked for the record
 sodium        not a candidate, parked for the record
 sonar         not a candidate, parked for the record
 steroid       not a candidate, parked for the record
@@ -194,12 +188,12 @@ xenon         not a candidate, parked for the record
 xerox         not a candidate, parked for the record
 zinc          not a candidate, parked for the record
 zipper        not a candidate, parked for the record
-centimeter    unit of measure
 degree        unit of measure
 foot          unit of measure
 gram          unit of measure
 meter         unit of measure
 mile          unit of measure
+percent       unit of measure
 pound         unit of measure
 ton           unit of measure
 watt          unit of measure

@@ -187,7 +187,15 @@ polar populate protrude etch vortex turbulent orient bother
 stuck ripple swirl surge uh computer stomach cactus lichen petal
 manifest hyperbola parabola ellipse exponent chicken
 involution convolute circumvent invest revolve devolve fort duplicate
-apply civil critic eternal
+apply civil critic eternal illusion grit information
+amphibian arthropod mollusk annelid cnidarian crop legume bacteria microbe
+algae slug squish curate emerge metabolism relationship
+vanish quench uncover refute sibling
+entity boundary location likely multiply remainder gravity density
+friction tension layer transform reverse replace reproduce hormone
+stimulus sensation ally cooperate possible
+socket plug hinge latch clasp hook notch groove peg bolt screw rivet
+clamp gear spring valve wire cable belt bearing shaft crank ratchet
 
 yay wow oh ah hey ow ugh huh hmm shh oops yuck yum aha whoa phew alas
 bravo ouch hooray
@@ -279,7 +287,7 @@ nebula galaxy meteor horizon equator pole
 wheel lever pulley forge loom plow hammer chisel blade
 spear bow arrow shield armor vessel vase basket rope thread needle
 
-whale ape hare
+whale ape rabbit
 eagle sparrow crane dove goose
 eel clam octopus shrimp
 moth wasp
@@ -297,6 +305,144 @@ broth garlic vinegar yeast nectar syrup resin soot
 fin mane membrane cartilage tusk hump
 weasel weed coral swarm wedge dwarf starch fountain
 weep peck
+
+flux piece
+
+rye millet lentil yam cassava carrot lettuce spinach celery
+asparagus melon tomato eggplant pear plum cherry mango avocado
+almond walnut chestnut poplar elm cypress acacia eucalyptus olive fig
+cacao sesame hemp
+
+basil rosemary sage thyme parsley oregano dill cilantro lavender
+chamomile aloe ginger turmeric mustard cumin fennel anise cinnamon
+vanilla cannabis ginseng laurel
+
+lava cyclone halo abyss rift bathe
+
+pitch quantum protein enzyme excrete clone sprout colony
+axiom assert citrus flop silicon calcium
+
+frustrate ultimate enlighten doctrine bloat extinct
+
+primate rodent amniote spine tick hive antenna kangaroo
+herring tuna cod carp gill bass lobster turtle urchin echinoderm
+tentacle crustacean
+
+legitimate logical ignite tornado coin erode erupt
+prime inverse complement imply savanna
+literal inflect grammar question translate dissolve integrate shower
+plasma policy modulate lag sag
+
+compose invariant converge recurse partition syntax semantics compact
+genuine segment magnificent conserve reserve rip
+vast moderate brilliant warrant plaster transparent sublime crumble
+
+conceal neglect exploit coerce boast intimidate humiliate refrain
+hinder resemble pander gratify cope praise flatter bully rely pretend
+generous
+
+resolution revoke credential continuity perspective schema cache
+robust defect criterion phenomenon realm proxy render summon banish
+merit arbitrary mandate tolerate retain exempt deliberate offense
+trespass bargain alias verify archive recover furniture
+
+anchor portal enchant invoke conjure adhere sentient radiant swift
+align animate
+
+facility hub gateway default dumb pipe arena confront station scarf
+inject
+
+defer retry reset abort notify relay fetch monitor hash batch quota
+atomic conform degrade trace dispatch normalize invalidate refresh
+expire stale trigger allocate queue subscribe intestine
+
+sac duct lobe filament bundle lining appendage torso abdomen pelvis
+groin thigh shin heel sole palm thumb nostril gum eyelash forehead
+antler quill snout muzzle feeler diaphragm capillary neuron
+mucus saliva bile
+
+slit plate framework molt gonad gamete brood grasp swallow secrete
+circulate snout sting
+
+rowdy mischief harass vandalize loot raid riot gang disorder disrupt
+provoke wicked crude tangent
+
+contradict instantiate precede comprise constitute inhibit mediate
+signify originate participate embed facilitate elicit denote designate
+depict supersede offset accommodate penetrate recede pertain
+presuppose encompass incorporate equate complement reinforce suppress
+relevant criterion explicit implicit exhaust
+
+colony radiant portal refuse fluctuate orchard
+
+niche habitat thrive inhabit colonize disperse forage graze scavenge
+endemic dormant trait lineage
+
+constituent isotope equilibrium gradient diffuse saturate permeate
+adhere cohere inert entropy lattice precipitate interface medium
+extract distill yield conserve deplete replenish contaminate
+degrade corrode viscous polarity collide
+
+lame assimilate candidate sarcastic dynamic cascade repulse backup
+transmit convey utter attest glyph emphasize idiom realize discourse
+lexicon vague contrast mark
+
+feedback threshold trigger regulate couple damp emerge robust
+resilient buffer gate switch channel route hierarchy module
+trajectory configuration disturb dissipate persist synchronize
+coordinate calibrate noise signal filter aggregate optimize tradeoff
+
+confound anomaly extent deviation tolerance baseline intervene
+simulate resolution mechanism discover mmm latitude longitude
+
+personality disposition irony mock cynical malice spite boast charm
+presume dignity integrity callous prudent naive skeptical impulsive
+diligent apathetic reluctant agitated lenient strict indulge restrain
+
+bud bulk pith reign rein
+
+differ insensitive ridicule suspicion unusual
+
+actual potential contingent inevitable tend risk hazard vulnerable
+opportunity alternative outcome suppose occur ensure feasible
+compatible arbitrary coincidence luck
+
+acute obtuse obstruct cuticle sport racket puck wicket
+pry recruit float propagate
+
+mobilize polarize reciprocate contribute specialize faction deviate
+segregate
+
+deform strain shear buckle rupture erode settle seep insulate
+refract scatter resonate damp jam compact drain lubricate badger
+
+surplus expend ration idle discard deprive latent latency
+import export
+
+relate constrain preclude override counter fasten polish policy
+dispatch
+
+wink convulse compulsion satiate scruff
+
+stratum magma uplift subside aquifer
+
+inflammation impair relieve relapse lesion
+
+fabricate weld extrude anneal depot congestion
+
+hamper camouflage jagged junk funny creep armor marble
+
+mottle iridescent wart prickle barb spur crest slender stout taper
+tendril hover cling bask roost substrate erect serrate conspicuous
+cryptic scroll dazzle trample virgin pillow gregarious
+
+cavity chamber sac tube duct vessel pore membrane lobe filament
+fiber molt region digit rib talon
+
+crumb shatter matte
+
+navigate tame domesticate snare butcher carcass smolder landmark
+pasture abrade orient barren mumble slur
 `
   .split(/\s+/)
   .filter(Boolean)
@@ -348,7 +494,13 @@ const SHORT = new Set(
  * So the derivable file records how a word COULD come apart, and this
  * list is where that gets overruled. Both facts stay written down.
  */
-const KEEP = new Set(`uncertain`.split(/\s+/))
+const KEEP = new Set(
+  `uncertain information location length width possible half likely
+   density species population health ancestor stranger attention
+   sensation reference obligation transform replace
+   reproduce cooperate identity lonely plane variable train mine
+   solution elder`.split(/\s+/),
+)
 
 const built = readDerivable()
 for (const word of KEEP) {
@@ -449,7 +601,7 @@ const CONTEXT: Record<string, string> = {
   saw: 'cut tool',
   seal: 'animal',
   second: 'time',
-  sound: 'noise',
+
   spring: 'season',
   stable: 'steady',
   state: 'condition',
@@ -461,8 +613,10 @@ const CONTEXT: Record<string, string> = {
   watch: 'look',
   wave: 'water',
   well: 'water',
+  // The container sense is a box. What earns a root is the other one.
+  case: 'situation or example',
   will: 'choose',
-  wind: 'air',
+
   wound: 'hurt',
 }
 
@@ -483,13 +637,141 @@ const SPLIT: Record<string, Array<string>> = {
   port: ['dock', 'move'],
   park: ['green land', 'stop a car'],
   break: ['shatter', 'rest', 'gap'],
+  sound: ['noise', 'whole and valid'],
+  wind: ['air', 'coil'],
   mind: ['thinking part', 'object to'],
+  present: ['gift', 'show'],
+  base: ['foundation', 'acid opposite'],
+  sage: ['wise one', 'herb'],
+  plain: ['ordinary', 'flat land'],
+  train: ['teach', 'rail vehicle'],
+  plane: ['flat surface', 'aircraft'],
+  shower: ['brief rain', 'wash under falling water'],
+  drive: ['steer a vehicle', 'urge from within', 'force inward'],
+  fly: ['move through air', 'buzzing insect'],
+  graph: ['draw a chart', 'chart', 'node and link network'],
+  submit: ['yield to control', 'hand in for review'],
+  stock: ['goods held', 'share of a company'],
+  cool: ['slightly cold', 'admirable in style'],
+  // `breath` is the thing and `breathe` is the act. Both are roots,
+  // because neither reads as a derivation of the other in Tune.
+  breath: ['air taken in'],
+  scarf: ['neck cloth', 'eat fast'],
+  mean: ['intend', 'average', 'cruel and petty'],
+  hump: ['rounded lump', 'thrust against'],
+  // Two different words that sound alike. `reign` is to rule, `rein`
+  // is the strap on a horse and so, by extension, to hold back.
+  reign: ['rule as monarch'],
+  rein: ['hold back'],
+  seal: ['sea mammal', 'close tight', 'stamped mark'],
+  set: ['collection of distinct things', 'put in place', 'become firm'],
+  pant: ['leg garment', 'breathe hard'],
+  scroll: ['rolled writing', 'move text past a view'],
+  bill: ['bird beak', 'money owed'],
+  // The chemistry sense is a thing dissolved in a liquid and is not
+  // `solve` plus anything. The other sense is the answer to a problem
+  // and is exactly `solve + act`, so the two are split apart here.
+  solution: ['dissolved mixture', 'answer to a problem'],
 }
 
 // ─── Part of speech ─────────────────────────────────────
 
+/**
+ * Words `compromise` tags wrongly, and what they really are.
+ *
+ *   annelid  adjective  0  0, is that an adjective?
+ *
+ * No. It is a segmented worm. `compromise` has no dictionary behind it:
+ * it guesses a tag from the SHAPE of a string, which is why a technical
+ * noun ending in `-id` or `-ate` comes back an adjective and why
+ * `zzzgrob` comes back `Noun|Singular`. **The guess is a starting point
+ * to correct**, and this is where the corrections live.
+ */
+const ROLE: Record<string, string> = {
+  annelid: 'noun',
+  arthropod: 'noun',
+  cnidarian: 'noun',
+  mollusk: 'noun',
+  echinoderm: 'noun',
+  crustacean: 'noun',
+  amniote: 'noun',
+  primate: 'noun',
+  rodent: 'noun',
+  marsupial: 'noun',
+  amphibian: 'noun',
+  legume: 'noun',
+  microbe: 'noun',
+  enzyme: 'noun',
+  protein: 'noun',
+  quantum: 'noun',
+  axiom: 'noun',
+  citrus: 'noun',
+  tentacle: 'noun',
+  urchin: 'noun',
+  antenna: 'noun',
+  cyclone: 'noun',
+  lava: 'noun',
+  abyss: 'noun',
+  halo: 'noun',
+  spine: 'noun',
+  gill: 'noun',
+  hive: 'noun',
+  colony: 'noun',
+  doctrine: 'noun',
+  identity: 'noun',
+  ultimate: 'adjective',
+  legitimate: 'adjective',
+  logical: 'adjective',
+  excrete: 'verb',
+  frustrate: 'verb',
+  enlighten: 'verb',
+  assert: 'verb',
+  ignite: 'verb',
+  bathe: 'verb',
+  sprout: 'verb',
+  bloat: 'verb',
+  flop: 'verb',
+  clone: 'verb',
+  card: 'noun',
+  plasma: 'noun',
+  policy: 'noun',
+  savanna: 'noun',
+  coin: 'noun',
+  prime: 'adjective',
+  inverse: 'noun',
+  complement: 'noun',
+  literal: 'adjective',
+  imply: 'verb',
+  inflect: 'verb',
+  erode: 'verb',
+  erupt: 'verb',
+  integrate: 'verb',
+  modulate: 'verb',
+  // Every one of these is a noise a person makes, not a thing.
+  shh: 'interjection',
+  mmm: 'interjection',
+  hmm: 'interjection',
+  ugh: 'interjection',
+  aha: 'interjection',
+  yay: 'interjection',
+  wow: 'interjection',
+  ow: 'interjection',
+  huh: 'interjection',
+  oops: 'interjection',
+  phew: 'interjection',
+  whoa: 'interjection',
+  alas: 'interjection',
+  ouch: 'interjection',
+  yuck: 'interjection',
+  bravo: 'interjection',
+  hooray: 'interjection',
+  gregarious: 'adjective',
+}
+
 /** The one tag worth keeping, out of everything compromise returns. */
 function roleOf(word: string): string {
+  const said = ROLE[word]
+  if (said) return said
   const terms = (nlp(word).json()[0]?.terms ?? []) as Array<{
     tags: Array<string>
   }>

@@ -139,6 +139,35 @@ const SUFFIX: Array<[string, string]> = [
 ]
 
 /**
+ * The plural, handled apart from the suffix table because it needs its
+ * own guards.
+ *
+ * `stairs` is `stair` plus many, and Tune marks number with a word
+ * rather than by changing the root, so no plural is ever a base word.
+ * But `-s` ends hundreds of ordinary roots, so a bare suffix rule would
+ * shred the lexicon: `gas`, `glass`, `this`, `basis`, `campus`, `virus`.
+ *
+ * The endings below are left alone, and everything else with a known
+ * singular is a plural.
+ */
+const NOT_PLURAL = /(?:ss|us|is|as|os|ys)$/
+
+function byPlural(word: string): { parts: string; how: string } | null {
+  if (!word.endsWith('s') || word.length < 4) return null
+  if (NOT_PLURAL.test(word)) return null
+  for (const one of [
+    word.slice(0, -1),
+    word.endsWith('es') ? word.slice(0, -2) : '',
+    word.endsWith('ies') ? `${word.slice(0, -3)}y` : '',
+  ]) {
+    if (one && one.length > 2 && known.has(one)) {
+      return { parts: `${one} + many`, how: 'affix' }
+    }
+  }
+  return null
+}
+
+/**
  * Undo the spelling changes English makes before a suffix.
  *
  * The `-ate` reconstruction is the one that earns its place. Without it
@@ -223,7 +252,7 @@ const NOT_DERIVED = new Set(
    anger danger finger hunger linger tiger timber trigger cellar collar
    parent present moment talent silent recent decent absent urgent
    patient ancient content client accident incident student instrument
-   dollar pillar scholar similar solar sugar vinegar cedar altar
+   dollar pillar scholar similar sugar vinegar cedar altar
    nuclear regular popular particular familiar peculiar circular
    children kitchen garden golden wooden often listen open even seven
    heaven queen green screen between citizen woman women oxen linen
@@ -247,7 +276,10 @@ const NOT_DERIVED = new Set(
 const GRAMMAR = new Set(
   `whose whom him her hers his its theirs ours yours mine me us them
    himself herself itself myself yourself ourselves themselves
-   better best worse worst further furthest elder eldest
+   better best worse worst further furthest farther farthest
+   elder eldest
+   greater greatest smaller smallest larger largest older oldest
+   younger youngest higher highest lower lowest longer longest
    am are is was were been being does did done has had having
    shall should would could might must ought`.split(/\s+/),
 )
@@ -269,7 +301,10 @@ const GRAMMAR = new Set(
  * then wandered off.
  */
 const DRIFTED = new Set(
-  `spiral formal natural material critical physical moral legal final normal
+  `spiral animal many happen authority relation position direction
+   friction tension layer ally gravity organism multiply symmetry
+   boundary battery grocery mystery century industry country victory
+   formal natural material critical physical moral legal final normal
    vital general special official personal social national capital
    central local medical mental musical original political practical
    radical royal rural spiritual technical typical universal usual
@@ -277,7 +312,15 @@ const DRIFTED = new Set(
    several severe secure sincere serious curious obvious anxious
    nervous famous various precious jealous
    company complex compound conduct content contract
-   fortune fabric factor family fashion feature figure future`.split(
+   fortune fabric factor family fashion feature figure future
+   compassion pity forgive rodent salary customer
+   random means plane destination version generate question
+   display precision witness partial pigment shiny
+   praise flatter bully rely generous verify archive fairy
+   complement reinforce suppress colony radiant portal
+   mention convention vocabulary expression syllable
+   resolution mechanism discover fasten polish policy armor
+   orient barren`.split(
     /\s+/,
   ),
 )
@@ -352,9 +395,14 @@ const NOT_PREFIXED = new Set(
    interest internal interior international
    subject submit substance subtle success suggest summer supply
    support suppose surface surprise survive
-   overall overcome
+   overall overcome override
    nonsense unravel understand understood undergo undertake undo
-   underneath undermine underline uncover unless unusual`.split(/\s+/),
+   underneath undermine underline unless unusual
+   disappoint dismiss distinct district disaster discipline dispatch
+   discover repair remove request translate dissolve preserve refuse
+   sublime transparent pretend recover subscribe`.split(
+    /\s+/,
+  ),
 )
 
 function byPrefix(word: string): { parts: string; how: string } | null {
@@ -372,9 +420,39 @@ function byPrefix(word: string): { parts: string; how: string } | null {
 
 // ─── Compounds ──────────────────────────────────────────
 
+/**
+ * Words that split into two real words and are not compounds.
+ *
+ * `person` is not `per` plus `son`. `justice` is not `just` plus `ice`.
+ * `forget` is not `for` plus `get`. The splitter found all three and was
+ * confidently wrong about every one.
+ */
+const NOT_COMPOUND = new Set(
+  `understand understood however therefore moreover nevertheless
+   although because become became before beside between beyond
+   another either neither together forward toward island
+   carpet target market carbon garden pardon person message
+   justice practice notice office service surface distance instance
+   sentence silence science absence balance advance finance
+   manner matter mister master monster minister register
+   nothing something anything everything welcome income outcome
+   passage message village cottage courage savage damage manage
+   package language average beverage
+   discover discourse recover network handsome`.split(/\s+/),
+)
+
 function byCompound(word: string): { parts: string; how: string } | null {
-  if (word.length < 6) return null
-  for (let at = 3; at <= word.length - 3; at++) {
+  if (word.length < 8) return null
+  if (NOT_COMPOUND.has(word)) return null
+  /**
+   * Both halves must be four letters or more.
+   *
+   * At three the splitter turns coincidences into compounds: `per son`,
+   * `for get`, `just ice`, `mess age`. Every real compound worth having
+   * here clears four on both sides, because `limestone` is lime plus
+   * stone and `starfish` is star plus fish.
+   */
+  for (let at = 4; at <= word.length - 4; at++) {
     const left = word.slice(0, at)
     const right = word.slice(at)
     if (known.has(left) && known.has(right)) {
@@ -571,6 +649,1087 @@ const SENSE: Array<[string, string]> = [
 
   ['toxin', 'toxic + thing'],
   ['denim', 'blue + cloth'],
+  ['advice', 'advise + act'],
+  // In Tune `king` is the gender-neutral top leader, so the rest of the
+  // royal vocabulary comes off it and no slot is spent on a second one.
+  ['queen', 'king + female'],
+  ['throne', 'king + seat'],
+  ['prince', 'king + child'],
+  ['princess', 'king + child + female'],
+  ['crown', 'king + ring'],
+  ['kingdom', 'king + land'],
+  ['yarn', 'thick + thread'],
+  ['freckle', 'face + dot'],
+  // Only brother, sister, mother and father carry gender. Every other
+  // kin term is a relation, and a relation has no sex.
+  ['uncle', 'parent + sibling'],
+  ['aunt', 'parent + sibling'],
+  ['nephew', 'sibling + child'],
+  ['niece', 'sibling + child'],
+  ['grandmother', 'parent + mother'],
+  ['grandfather', 'parent + father'],
+  ['grandchild', 'child + child'],
+  ['hare', 'rabbit'],
+
+  // ── Plants ──
+  // The rule is the one already used for animals: keep enough kinds
+  // that the rest of the category is sayable in terms of them, and
+  // build everything else. A fruit that is a shape or a colour away
+  // from a fruit already present is built.
+  ['succulent', 'water + plant'],
+  ['sedge', 'marsh + grass'],
+  ['conifer', 'cone + tree'],
+  ['twig', 'small + branch'],
+  ['tuber', 'thick + root'],
+  ['chickpea', 'round + pea'],
+  ['soybean', 'oil + bean'],
+  ['peanut', 'ground + nut'],
+  ['turnip', 'round + root'],
+  ['radish', 'sharp + root'],
+  ['pumpkin', 'big + squash'],
+  ['chili', 'hot + pepper'],
+  ['apricot', 'small + peach'],
+  ['plantain', 'cook + banana'],
+  // Chinese writes papaya as tree melon, which is exactly what it is.
+  ['papaya', 'tree + melon'],
+  ['pineapple', 'cone + fruit'],
+  ['coconut', 'palm + nut'],
+  ['lime', 'green + lemon'],
+  ['grapefruit', 'big + orange'],
+  ['strawberry', 'grass + berry'],
+  ['raspberry', 'red + berry'],
+  ['blackberry', 'black + berry'],
+  ['blueberry', 'blue + berry'],
+  ['cranberry', 'sour + berry'],
+  ['hazelnut', 'bush + nut'],
+  ['pistachio', 'green + nut'],
+  ['cashew', 'bend + nut'],
+  ['redwood', 'red + tree'],
+  ['baobab', 'fat + tree'],
+  ['sugarcane', 'sugar + grass'],
+  ['sunflower', 'sun + flower'],
+  ['canola', 'oil + seed'],
+  ['rapeseed', 'oil + seed'],
+  ['jute', 'rough + thread'],
+  ['mangrove', 'sea + tree'],
+  ['kelp', 'sea + weed'],
+  ['seagrass', 'sea + grass'],
+
+  // ── Herbs ──
+  // `coriander` is the seed of `cilantro`, which is the whole
+  // difference between the two words and the only thing worth keeping.
+  ['coriander', 'cilantro + seed'],
+  ['lemongrass', 'lemon + grass'],
+  ['chive', 'small + onion'],
+  ['scallion', 'green + onion'],
+  ['echinacea', 'cone + flower'],
+  ['yarrow', 'feather + herb'],
+  ['wormwood', 'bitter + herb'],
+  ['fenugreek', 'bitter + seed'],
+  ['licorice', 'sweet + root'],
+  ['stevia', 'sweet + leaf'],
+  ['seasoning', 'taste + thing'],
+  ['pungent', 'sharp + taste'],
+
+  // ── Rock and mineral ──
+  // The three rock classes are named for how the rock was made, so
+  // each is that process plus rock.
+  ['igneous', 'fire + rock'],
+  ['sedimentary', 'sediment + rock'],
+  ['metamorphic', 'change + rock'],
+  ['pumice', 'foam + rock'],
+  ['shale', 'mud + rock'],
+  ['conglomerate', 'pebble + rock'],
+  ['schist', 'flake + rock'],
+  ['gneiss', 'band + rock'],
+  ['quartzite', 'quartz + rock'],
+  ['mica', 'sheet + crystal'],
+  ['calcite', 'chalk + crystal'],
+  ['halite', 'salt + crystal'],
+  ['gypsum', 'soft + crystal'],
+  ['hematite', 'iron + ore'],
+  ['magnetite', 'magnet + ore'],
+  // Fool's gold, in every language that names it.
+  ['pyrite', 'false + gold'],
+  ['turquoise', 'blue + gem'],
+  ['amethyst', 'purple + gem'],
+  ['aluminum', 'light + metal'],
+  ['silt', 'fine + sand'],
+  ['cobble', 'round + rock + piece'],
+
+  // ── Weather ──
+  ['sleet', 'rain + snow'],
+  ['drizzle', 'light + rain'],
+  ['downpour', 'heavy + rain'],
+  ['precipitation', 'fall + water'],
+  ['gust', 'sudden + wind'],
+  ['gale', 'strong + wind'],
+  ['overcast', 'all + cloud'],
+  // The Latin names of the cloud genera are already descriptions:
+  // heap, layer, hair.
+  ['cumulus', 'heap + cloud'],
+  ['stratus', 'layer + cloud'],
+  ['cirrus', 'hair + cloud'],
+  // `cyclone` is the root, because the rotating storm is the thing
+  // and the rest are where it happens or how wide it is.
+  // `tornado` stays a root: it covers the land one and the water one
+  // alike, which no breakdown off `cyclone` does as cleanly.
+  ['hurricane', 'sea + cyclone'],
+  ['typhoon', 'sea + cyclone'],
+  ['blizzard', 'snow + storm'],
+  ['arid', 'very + dry'],
+  ['sunshine', 'sun + light'],
+  ['aurora', 'pole + light'],
+  ['mirage', 'false + vision'],
+  ['monsoon', 'rain + season'],
+
+  // ── Land and water ──
+  ['terrain', 'land + shape'],
+  ['landscape', 'land + view'],
+  ['mesa', 'flat + hill'],
+  ['rainforest', 'rain + forest'],
+  ['wetland', 'wet + land'],
+  ['fen', 'wet + meadow'],
+  ['rapids', 'fast + water'],
+  ['reservoir', 'hold + lake'],
+  ['gulf', 'big + bay'],
+  ['cove', 'small + bay'],
+  ['cape', 'land + point'],
+  ['estuary', 'river + mouth'],
+  ['tributary', 'branch + river'],
+  ['confluence', 'river + join'],
+  ['cavern', 'big + cave'],
+  ['iceberg', 'ice + mountain'],
+  ['caldera', 'big + crater'],
+  ['seafloor', 'sea + floor'],
+
+  // `bathe` is the act and everything else is built off it.
+  ['bath', 'bathe + place'],
+  ['baptism', 'holy + bathe'],
+  ['bandit', 'rob + agent'],
+  ['barbecue', 'fire + cook'],
+
+  // ── Physics ──
+  // The rule the whole scientific vocabulary follows: **keep the
+  // operation, build the noun.** `rotate` is a root and `rotation` is
+  // an affix away; `attract` is a root and `attraction` is an affix
+  // away. The particles are the same idea one level down, each one a
+  // charge sitting on the general word for a particle.
+  ['torque', 'turn + force'],
+  ['refract', 'bend + light'],
+  ['radiate', 'ray + emit'],
+  ['photon', 'light + particle'],
+  ['electron', 'negative + particle'],
+  ['proton', 'positive + particle'],
+  ['neutron', 'neutral + particle'],
+  ['ion', 'charge + atom'],
+  ['fission', 'nucleus + split'],
+  ['fusion', 'nucleus + join'],
+
+  // ── Chemistry ──
+  ['ionic', 'charge + bond'],
+  ['covalent', 'share + bond'],
+  ['metallic', 'metal + bond'],
+  ['solute', 'dissolve + thing'],
+  ['oxidize', 'oxygen + join'],
+  ['combust', 'burn'],
+  ['carbohydrate', 'sugar + chain'],
+  ['lipid', 'fat'],
+
+  // ── Biology ──
+  ['cytoplasm', 'cell + fluid'],
+  ['organelle', 'cell + organ'],
+  ['chromosome', 'gene + thread'],
+  ['genome', 'gene + all'],
+  ['replicate', 'copy'],
+  ['fetus', 'embryo + grow'],
+  ['symbiosis', 'live + together'],
+  ['pathogen', 'disease + cause'],
+  ['antibiotic', 'microbe + kill + medicine'],
+  ['pollinate', 'pollen + carry'],
+  ['germinate', 'seed + sprout'],
+  ['pupa', 'change + shell'],
+  // The user's own breakdown: plant eater, meat eater, all eater.
+  ['herbivore', 'plant + eat + agent'],
+  ['carnivore', 'meat + eat + agent'],
+  ['omnivore', 'all + eat + agent'],
+
+  // ── The Latin negatives ──
+  // `in`, `im`, `il` and `ir` cannot go in the PREFIX table. Half the
+  // words that start with them negate nothing: `insect` is not un-sect,
+  // `improve` is not un-prove, `income` is not un-come, `intend`,
+  // `invent`, `inspire`, `insure`, `increase` and a dozen more are the
+  // same coincidence. `tmp/negate.ts` prints the whole set where the
+  // remainder is itself a candidate, which is about fifty words, and
+  // these are the ones that are really the negative.
+  ['illegal', 'not + legal'],
+  ['illegitimate', 'not + legitimate'],
+  ['illogical', 'not + logical'],
+  ['immature', 'not + mature'],
+  ['impolite', 'not + polite'],
+  ['impossible', 'not + possible'],
+  ['improper', 'not + proper'],
+  ['inaccurate', 'not + accurate'],
+  ['inactive', 'not + active'],
+  ['inappropriate', 'not + appropriate'],
+  ['incomplete', 'not + complete'],
+  ['inconsistent', 'not + consistent'],
+  ['incorrect', 'not + correct'],
+  ['indirect', 'not + direct'],
+  ['inefficient', 'not + efficient'],
+  ['irregular', 'not + regular'],
+  ['irrelevant', 'not + relevant'],
+
+  // ── Corrections ──
+  ['explosive', 'explode + like'],
+  ['eyebrow', 'eye + brow'],
+  ['eyelid', 'eye + lid'],
+  ['failure', 'fail + act'],
+  // `identity` is the thing and `identify` is finding it.
+  ['identify', 'identity + find'],
+
+  // ── Mammals ──
+  ['marsupial', 'pouch + mammal'],
+  ['vertebrate', 'spine + animal'],
+  ['invertebrate', 'not + spine + animal'],
+  ['lemur', 'night + monkey'],
+  ['mongoose', 'snake + kill + weasel'],
+  ['raccoon', 'mask + face + animal'],
+  ['boar', 'wild + pig'],
+  ['porcupine', 'big + thorn + rat'],
+  ['shrew', 'sharp + nose + rat'],
+  // River horse, which is the Greek and also the Chinese.
+  ['hippopotamus', 'river + horse'],
+  ['rhinoceros', 'nose + horn + animal'],
+  ['koala', 'tree + bear'],
+  ['wombat', 'dig + pouch + animal'],
+  ['opossum', 'night + pouch + animal'],
+  ['platypus', 'duck + mouth + animal'],
+  ['manatee', 'sea + cow'],
+  ['armadillo', 'shell + animal'],
+  ['anteater', 'ant + eat + animal'],
+
+  // ── Bugs ──
+  ['mite', 'tiny + tick'],
+  ['cicada', 'sing + bug'],
+  ['cockroach', 'flat + bug'],
+  ['mantis', 'pray + bug'],
+  ['aphid', 'sap + suck + bug'],
+  ['weevil', 'grain + beetle'],
+  ['millipede', 'thousand + foot + worm'],
+  ['cocoon', 'silk + shell'],
+  ['exoskeleton', 'outer + shell'],
+
+  // ── Fish ──
+  ['sardine', 'small + herring'],
+  ['anchovy', 'salt + herring'],
+  ['mackerel', 'stripe + fish'],
+  ['catfish', 'whisker + fish'],
+  ['pike', 'long + tooth + fish'],
+  ['perch', 'small + bass'],
+  ['tilapia', 'lake + fish'],
+  ['flounder', 'flat + fish'],
+  ['halibut', 'big + flat + fish'],
+  ['skate', 'small + ray'],
+  ['lamprey', 'round + mouth + eel'],
+  ['haddock', 'small + cod'],
+  ['pollock', 'north + cod'],
+  ['seahorse', 'sea + horse'],
+  ['pufferfish', 'swell + fish'],
+  ['swordfish', 'sword + fish'],
+  ['marlin', 'spear + fish'],
+  ['sturgeon', 'ancient + fish'],
+  ['roe', 'fish + egg'],
+
+  // ── Sea ──
+  ['cephalopod', 'head + foot + mollusk'],
+  ['cuttlefish', 'bone + octopus'],
+  ['nautilus', 'shell + octopus'],
+  ['prawn', 'big + shrimp'],
+  ['crayfish', 'river + lobster'],
+  ['krill', 'tiny + shrimp'],
+  ['barnacle', 'stick + shell'],
+  ['mussel', 'long + clam'],
+  ['scallop', 'fan + clam'],
+  ['anemone', 'sea + flower + animal'],
+  ['albatross', 'big + sea + bird'],
+
+  // ── Emotion and spirit ──
+  ['panic', 'sudden + fear'],
+  ['saint', 'holy + person'],
+  ['resurrection', 'die + rise + again'],
+
+  // ── Money ──
+  // The deepest layer under money is possession, transfer, exchange,
+  // value and obligation, and every one of those five is already a
+  // root. The financial vocabulary is what you build on top.
+  ['cash', 'hand + money'],
+  ['customer', 'buy + agent'],
+  ['salary', 'work + pay'],
+  ['asset', 'own + thing'],
+  ['liability', 'owe + thing'],
+  ['expense', 'spend + act'],
+  ['revenue', 'income'],
+  ['equity', 'own + share'],
+  ['debit', 'owe + record'],
+  ['budget', 'money + plan'],
+  ['deposit', 'put + in'],
+  ['subsidy', 'help + money'],
+  ['dividend', 'profit + share'],
+  ['inflation', 'price + rise'],
+  ['distribute', 'spread + give'],
+  ['vase', 'flower + pot'],
+
+  // ── Nature ──
+  // `comet` is already a tail star and `meteor` a fall star, so the
+  // rest of the sky follows the same shape.
+  ['asteroid', 'rock + star'],
+  ['wilderness', 'wild + land'],
+  ['biome', 'life + region'],
+  ['landslide', 'land + slide'],
+  ['avalanche', 'snow + slide'],
+  ['tsunami', 'big + sea + wave'],
+  ['ebb', 'tide + fall'],
+  ['wane', 'shrink'],
+  ['wildfire', 'wild + fire'],
+  ['arachnid', 'spider + group'],
+  ['contradiction', 'against + say'],
+  ['intact', 'whole'],
+
+  // ── Maths and computing ──
+  // These two domains earn their roots by being general. `search`,
+  // `sort`, `filter`, `group`, `merge`, `key`, `index`, `node`, `link`
+  // and `tree` all predate computers and all describe structure in
+  // biology, language and society too. What is genuinely technical is
+  // built from them.
+  ['theorem', 'prove + claim'],
+  ['derivative', 'change + rate'],
+  ['integral', 'area + sum'],
+  ['logarithm', 'power + inverse'],
+  ['scalar', 'single + number'],
+  ['variance', 'spread + measure'],
+  ['execute', 'run'],
+  ['array', 'order + list'],
+  ['queue', 'wait + line'],
+  ['query', 'ask'],
+  ['optimize', 'best + make'],
+  ['folder', 'file + hold'],
+  ['directory', 'file + list'],
+  ['encrypt', 'secret + make'],
+  ['decrypt', 'secret + open'],
+  ['authenticate', 'true + prove'],
+  ['debug', 'error + fix'],
+
+  // ── Language about language ──
+  // A language meant to define itself needs the metalanguage to be
+  // sayable, which means `meaning`, `sense`, `reference`, `context`
+  // and `literal` are roots and the technical terms are built.
+  ['prayer', 'pray + word'],
+  ['morpheme', 'meaning + part'],
+  ['figurative', 'not + literal'],
+  ['negate', 'not + make'],
+  ['synonym', 'same + meaning'],
+  ['antonym', 'opposite + meaning'],
+  ['paragraph', 'text + part'],
+  ['punctuation', 'write + mark'],
+  ['cognate', 'same + origin'],
+  ['etymology', 'word + origin'],
+  ['abbreviation', 'short + form'],
+  ['paraphrase', 'again + say'],
+
+  // ── Signal and wave ──
+  // One chain covers speech, hearing, music, radio, light, neurons,
+  // hormones, computers and animal calls alike:
+  //   source, emit, wave, medium, propagate, detect, receive, decode.
+  // Every link in it is a root, and the technical vocabulary is built.
+  ['amplify', 'strong + make'],
+  ['diffract', 'bend + spread'],
+  ['attenuate', 'weak + make'],
+  ['distort', 'twist + shape'],
+  ['dampen', 'quiet + make'],
+  ['synchronize', 'same + time + make'],
+  ['pheromone', 'signal + smell'],
+
+  // ── More land ──
+  ['floodplain', 'flood + plain'],
+  ['escarpment', 'long + cliff'],
+  ['foothill', 'foot + hill'],
+  ['butte', 'narrow + flat + hill'],
+  ['gully', 'small + ravine'],
+  ['brook', 'small + stream'],
+  ['watershed', 'water + gather + land'],
+  ['archipelago', 'island + group'],
+  ['atoll', 'ring + reef'],
+  ['seamount', 'sea + mountain'],
+  ['vineyard', 'grape + field'],
+  ['quarry', 'rock + mine'],
+
+  // ── Abstract structure ──
+  // The layer under every science. `compose`, `invariant`, `preserve`,
+  // `bound`, `converge` and `partition` are roots because the same
+  // words describe mathematics, physics, biology, language, society
+  // and cognition, so each one earns its slot many times over. What is
+  // built is the named structure, never the operation under it.
+  ['diverge', 'not + converge'],
+  ['successor', 'next + one'],
+  ['predecessor', 'before + one'],
+  ['terminate', 'end + make'],
+  ['singleton', 'one + set'],
+  ['reflexive', 'self + relation'],
+  ['transitive', 'chain + relation'],
+  ['urinate', 'urine + make'],
+  ['binary', 'two + system'],
+  ['bicycle', 'bike'],
+  ['disingenuous', 'not + genuine'],
+
+  // ── Geometry ──
+  // No root is spent on a polygon. A named polygon is its side count
+  // plus `side` plus `shape`, which is how `heptagon` and `decagon`
+  // get said without ever being listed.
+  ['vertex', 'corner + point'],
+  ['convex', 'out + curve'],
+  ['concave', 'in + curve'],
+  ['congruence', 'same + shape'],
+  ['quadrilateral', 'four + side + shape'],
+  ['pentagon', 'five + side + shape'],
+  ['hexagon', 'six + side + shape'],
+  ['octagon', 'eight + side + shape'],
+  ['polyhedron', 'many + face + solid'],
+  ['torus', 'ring + solid'],
+  ['successive', 'follow + order'],
+  ['consecutive', 'follow + order'],
+  // `solve` is the root. The affix rule reached `solute` instead,
+  // which is itself a built word.
+  ['solution', 'solve + act'],
+  ['confidence', 'confident + nature'],
+  ['grammar', 'language + code'],
+  // `coarse`, `crude` and `rude` are all already roots, and `crass` is
+  // the overlap of them rather than a sense any of the three misses.
+  ['crass', 'coarse + rude'],
+  ['organization', 'organize + act'],
+  ['companion', 'company + person'],
+  ['subordinate', 'below + rank'],
+  ['acquaintance', 'meet + person'],
+
+  // ── The compressed relational verbs ──
+  // The hardest class to find. A frequency list and a domain sweep
+  // both hand over `dog`, `red` and `three` reliably and neither one
+  // surfaces `suffice`, `entail` or `withstand`, because those name a
+  // RELATION between a person and a situation rather than a thing.
+  // Each root here replaces a whole English phrase.
+  ['withstand', 'against + stand'],
+  ['suffice', 'enough + be'],
+  ['entail', 'must + include'],
+  ['arise', 'come + up'],
+  ['concede', 'give + point'],
+  ['avenge', 'revenge'],
+  ['reconcile', 'friend + again + make'],
+  ['compromise', 'middle + agree'],
+  ['furnish', 'furniture + give'],
+
+  // ── The distinctions a far future still needs ──
+  // Don't predict future OBJECTS, predict future DISTINCTIONS. A root
+  // for `spaceship` or `hologram` is a guess about what will exist. A
+  // root for `substrate`, `instance`, `agent`, `delegate`, `revoke`
+  // and `continuity` is a guess about what will still need telling
+  // apart, and that guess is far safer. So the roots here are the
+  // distinctions, and every named future thing is built from them.
+  ['validate', 'valid + make'],
+  ['resilient', 'recover + able'],
+  ['redundant', 'extra + copy'],
+  ['embody', 'body + give'],
+  ['namespace', 'name + space'],
+  ['endpoint', 'end + point'],
+  ['backup', 'spare + copy'],
+  ['maximize', 'most + make'],
+  ['minimize', 'least + make'],
+  ['emulate', 'imitate'],
+  ['immerse', 'deep + put'],
+  ['infrastructure', 'base + structure'],
+  ['counterfactual', 'not + fact'],
+  ['hypothetical', 'hypothesis + like'],
+  ['scenario', 'possible + story'],
+  ['contingent', 'depend + like'],
+  ['modular', 'part + like'],
+  // Tooth kinds are shapes, and every shape is already a root.
+  ['molar', 'grind + tooth'],
+  ['incisor', 'cut + tooth'],
+  ['canine', 'point + tooth'],
+  ['premolar', 'small + grind + tooth'],
+
+  // ── The state axes ──
+  // English overloads `on` and `off` across a dozen unrelated
+  // dimensions: a light is EMITTING, a computer is OPERATING, a switch
+  // is ENABLED, a cup on a table is SUPPORTED and TOUCHING, a sticker
+  // is ADHERING, clothes are WORN, a person on a team is INCLUDED.
+  // Each of those is its own root, and each root then gives the state,
+  // the becoming, the causing and the opposite by grammar.
+  ['activate', 'active + make'],
+  ['deactivate', 'not + active + make'],
+  ['disengage', 'not + engage'],
+  ['misalign', 'wrong + align'],
+
+  // ── Imagined worlds ──
+  // No root is spent on a dragon, a centaur or a phoenix. What the
+  // roots have to carry is enough ontology, anatomy and
+  // transformation that somebody can describe a creature nobody has
+  // imagined yet: a centaur is human plus horse plus body plus join,
+  // a phoenix is bird plus fire plus die plus grow again.
+  ['immortal', 'not + die'],
+  ['invulnerable', 'not + hurt + able'],
+  ['incorporeal', 'not + body'],
+  ['intangible', 'not + touch + able'],
+  ['amorphous', 'no + shape'],
+  ['spectral', 'ghost + like'],
+  ['ethereal', 'air + like'],
+  ['luminous', 'light + full'],
+  ['telepathy', 'far + mind + talk'],
+  ['precognition', 'before + know'],
+  ['shapeshift', 'shape + change'],
+  ['undead', 'dead + animate'],
+  ['golem', 'make + body + animate'],
+  ['sapient', 'wise + like'],
+  ['centaur', 'human + horse + body + join'],
+  ['werewolf', 'human + wolf + change'],
+  ['zombie', 'dead + body + animate'],
+  ['mermaid', 'human + fish + body + join'],
+  ['unicorn', 'one + horn + horse'],
+  ['sphinx', 'lion + body + human + head'],
+
+  // ── Places ──
+  // Almost every named place is a FUNCTION plus `place`, which is the
+  // most productive rule in this file. `hospital` is heal place,
+  // `market` is trade place, `prison` is hold place. A root is spent
+  // only where the shape matters as much as the purpose.
+  ['classroom', 'teach + room'],
+  ['studio', 'art + room'],
+  ['observatory', 'watch + sky + place'],
+  ['courthouse', 'judge + building'],
+  ['embassy', 'nation + speak + place'],
+  ['consulate', 'nation + speak + place'],
+  ['mosque', 'worship + building'],
+  ['monastery', 'monk + house'],
+  ['cemetery', 'bury + place'],
+  ['clinic', 'small + hospital'],
+  ['pharmacy', 'medicine + shop'],
+  ['nursery', 'child + care + place'],
+  ['asylum', 'safe + place'],
+  ['highway', 'big + road'],
+  ['terminal', 'end + station'],
+  ['airport', 'sky + port'],
+  ['playground', 'play + ground'],
+  ['plaza', 'open + square'],
+  ['stadium', 'big + arena'],
+  ['gym', 'body + train + place'],
+  ['resort', 'rest + place'],
+  ['bunker', 'under + shelter'],
+  ['barracks', 'soldier + house'],
+  ['checkpoint', 'check + place'],
+  ['outpost', 'far + base'],
+  ['silo', 'grain + tower'],
+  ['barn', 'farm + building'],
+  ['hangar', 'plane + shed'],
+  ['user', 'use + agent'],
+  // `drink` and `absorb` are both roots and `imbibe` is the overlap,
+  // so it buys nothing a phrase does not already say.
+  ['imbibe', 'drink + absorb'],
+  ['substation', 'small + station'],
+  ['sewer', 'waste + pipe'],
+  ['pipeline', 'pipe + line'],
+  ['landfill', 'waste + ground'],
+  ['megastructure', 'huge + structure'],
+  ['installation', 'set + place'],
+
+  // ── Phrasal verbs ──
+  // English hides real concepts inside two words. Tune builds them
+  // the same way, so they belong on the derived list rather than
+  // quietly falling through the cracks between the two words.
+  ['zone out', 'mind + leave'],
+  ['blend in', 'same + seem + become'],
+
+  // ── Processes in systems ──
+  // `resolve`, `dispatch`, `invalidate`, `defer`, `retry`, `allocate`
+  // and `propagate` are not computer words. They name what happens in
+  // an organisation, a body, a machine, a supply chain and a proof
+  // just as exactly, which is why they are roots here and why the
+  // protocol-specific vocabulary around them is built.
+  ['fallback', 'spare + choice'],
+  ['initialize', 'first + set'],
+  ['consensus', 'all + agree'],
+  ['redirect', 'again + direct'],
+  ['serialize', 'line + form + make'],
+  ['sanitize', 'clean + make'],
+  ['acknowledge', 'know + say'],
+  ['enqueue', 'queue + put'],
+  ['dequeue', 'queue + take'],
+  ['timeout', 'time + end'],
+  ['concurrent', 'same + time + run'],
+  ['sequential', 'order + like'],
+  ['synchronous', 'same + time'],
+  ['asynchronous', 'not + same + time'],
+  ['transaction', 'trade + act'],
+  ['rollback', 'past + state + return'],
+  ['receptor', 'receive + structure'],
+  ['neuron', 'nerve + cell'],
+
+  // ── Anatomy across the whole animal kingdom ──
+  // A vertebrate-shaped vocabulary cannot describe a lobster, a squid
+  // or a jellyfish, let alone something invented. So the roots are the
+  // TOPOLOGY: opening, chamber, tube, membrane, plate, segment,
+  // branch, joint, appendage, covering. Every named part below is
+  // built from those, and so is an animal nobody has seen.
+  ['flipper', 'swim + limb'],
+  ['pincer', 'grasp + claw'],
+  ['chela', 'grasp + claw'],
+  ['proboscis', 'long + feed + tube'],
+  ['rostrum', 'point + snout'],
+  ['radula', 'scrape + tongue'],
+  ['mandible', 'bite + jaw'],
+  ['carapace', 'back + shell'],
+  ['spiracle', 'breathe + opening'],
+  ['trachea', 'air + tube'],
+  ['cloaca', 'shared + body + opening'],
+  ['siphon', 'draw + tube'],
+  ['gizzard', 'grind + stomach'],
+  ['crop', 'store + stomach'],
+  ['mantle', 'body + cover + layer'],
+  ['polyp', 'stalk + body + animal'],
+  ['stinger', 'sting + part'],
+  ['eyespot', 'simple + eye'],
+  ['vertebra', 'spine + bone'],
+  ['notochord', 'first + spine'],
+  ['thorax', 'chest + segment'],
+  ['juvenile', 'young + one'],
+  ['aperture', 'opening'],
+  ['bilateral', 'two + side + symmetry'],
+  ['radial', 'ray + symmetry'],
+  ['segmented', 'segment + many'],
+  ['colonial', 'colony + like'],
+  ['metamorphose', 'body + form + change'],
+  ['regenerate', 'again + grow'],
+
+  // ── People named for what they do ──
+  // English has a heap here: hooligan, hoodlum, ruffian, thug, lout,
+  // scoundrel, knave. What is irreducible underneath is the BEHAVIOUR,
+  // so `rowdy`, `mischief`, `harass`, `vandalize` and `loot` are roots
+  // and every label is that behaviour plus `agent`.
+  ['hooligan', 'rowdy + agent'],
+  ['hoodlum', 'violent + crime + agent'],
+  ['thug', 'violent + intimidate + agent'],
+  ['ruffian', 'rough + violent + agent'],
+  ['delinquent', 'young + crime + agent'],
+  ['vandal', 'vandalize + agent'],
+  ['rioter', 'riot + agent'],
+  ['troublemaker', 'trouble + make + agent'],
+  ['gangster', 'gang + member'],
+  ['outlaw', 'law + outside + agent'],
+  ['swindler', 'cheat + agent'],
+  ['impostor', 'false + identity + agent'],
+  ['charlatan', 'false + skill + agent'],
+  ['burglar', 'house + steal + agent'],
+  ['looter', 'loot + agent'],
+  ['poacher', 'illegal + hunt + agent'],
+  ['smuggler', 'secret + carry + agent'],
+  ['assassin', 'hire + kill + agent'],
+  ['saboteur', 'secret + damage + agent'],
+  ['intruder', 'trespass + agent'],
+  ['scoundrel', 'dishonest + agent'],
+  ['villain', 'wicked + agent'],
+  ['lout', 'crude + rude + agent'],
+  ['boor', 'rude + coarse + agent'],
+  ['miscreant', 'wrong + do + agent'],
+  ['vagabond', 'wander + home + without + agent'],
+
+  // ── Relational verbs ──
+  // The highest-value class in the whole file, and the one a frequency
+  // list is worst at surfacing. These verbs say how A STANDS to B
+  // rather than what anything does, so each one works across
+  // mathematics, biology, software, law, language and ordinary
+  // reasoning at once. The roots are the relations; what is built is
+  // the near-synonyms English piled on top.
+  ['subsume', 'under + include'],
+  ['adjoin', 'next + join'],
+  ['affiliate', 'group + join'],
+  ['broker', 'deal + middle + agent'],
+  ['portray', 'depict'],
+  ['neutralize', 'neutral + make'],
+  ['harmonize', 'harmony + make'],
+  ['coexist', 'together + exist'],
+  ['exemplify', 'example + give'],
+  ['displace', 'move + away'],
+  // `imply`, `entail`, `infer` and `conclude` look like synonyms and
+  // sit on four different sides of the same relation: entail is what
+  // the propositions do, imply is what the speaker does, infer is the
+  // reasoner moving from one to the other, conclude is where the
+  // reasoner lands. All four stay roots.
+  ['corollary', 'follow + claim'],
+  ['lemma', 'step + claim'],
+  ['conjecture', 'guess + claim'],
+  ['postulate', 'assume + claim'],
+  ['counterexample', 'against + example'],
+  ['counterargument', 'against + argument'],
+  ['rebut', 'against + answer'],
+  ['corroborate', 'more + support'],
+  ['falsify', 'false + prove'],
+  ['abduce', 'best + explain + infer'],
+  ['extrapolate', 'beyond + estimate'],
+  ['interpolate', 'between + estimate'],
+  ['exhaustive', 'all + cover'],
+  ['unsatisfiable', 'not + satisfy + able'],
+  ['orchard', 'fruit + tree + garden'],
+  ['captive', 'capture + done'],
+  ['cent', 'hundred + part + coin'],
+  ['transmission', 'transmit + act'],
+  ['sarcasm', 'sarcastic + act'],
+
+  // ── Systems ──
+  // The same forty words describe an organism, a brain, a climate, an
+  // economy, a machine, an organisation, a program, an ecosystem and a
+  // chemical reaction. That a concept is rediscovered independently by
+  // five unrelated fields is the strongest argument a root can have,
+  // and it is why `feedback`, `threshold`, `trigger`, `cascade`,
+  // `saturate` and `couple` are roots while the named phenomena that
+  // use them are built.
+  ['homeostasis', 'self + regulate + stable'],
+  ['setpoint', 'target + value'],
+  ['hysteresis', 'state + depend + history'],
+  ['bifurcate', 'behavior + branch + threshold'],
+  ['attractor', 'attract + state'],
+  ['bottleneck', 'flow + limit + component'],
+  ['throughput', 'output + rate'],
+  ['overshoot', 'exceed + target'],
+  ['undershoot', 'fall + short + target'],
+  ['tipping point', 'cascade + threshold'],
+  ['runaway', 'feedback + reinforce + control + without'],
+  ['evident', 'evidence + like'],
+  ['everyone', 'every + one'],
+  ['everything', 'every + thing'],
+  ['synergy', 'combine + effect + greater'],
+  ['fault tolerance', 'tolerate + fault'],
+  ['granularity', 'unit + scale'],
+  ['centrality', 'network + center + degree'],
+  ['decouple', 'not + couple'],
+  ['entrain', 'cause + synchronize'],
+  ['irreversible', 'not + reverse + able'],
+  ['multistable', 'many + stable + state'],
+  ['nonlinear', 'not + proportion'],
+  ['self-organize', 'self + organize'],
+  ['state space', 'state + set'],
+  ['path dependence', 'history + depend'],
+
+  // ── Measurement ──
+  // The stack a scientific language has to be able to walk, and every
+  // rung of it is a separate root because they answer different
+  // questions: detect (is it there), identify (what is it), locate
+  // (where), classify (what kind), count (how many), measure (how
+  // much), sample (which part), compare (against what), estimate
+  // (most plausible value), calibrate (against which standard),
+  // monitor (how it changes), infer (what follows).
+  ['specimen', 'one + sample'],
+  ['sensor', 'detect + device'],
+  ['detector', 'detect + device'],
+  ['indicator', 'indicate + thing'],
+  ['discrepancy', 'expect + observe + difference'],
+  ['margin', 'allow + range'],
+  ['proxy measure', 'substitute + measure'],
+  ['effect size', 'effect + magnitude'],
+  ['residual', 'observe + predict + difference'],
+  ['outlier', 'observe + far + other'],
+  ['census', 'count + all + population'],
+  ['survey', 'many + sample + observe'],
+  ['confidence interval', 'estimate + uncertainty + range'],
+  ['standard deviation', 'typical + deviation'],
+  ['latitude', 'north + south + position'],
+  ['longitude', 'east + west + position'],
+  ['beneficial', 'benefit + like'],
+  ['bible', 'holy + book'],
+  ['birthday', 'birth + day'],
+  ['church', 'worship + building'],
+  ['related', 'relation + have'],
+
+  // ── Personality ──
+  // English piled up hundreds of near-synonyms here and almost none
+  // of them are irreducible. What IS irreducible is the psychological
+  // and social dimension underneath: pride, contempt, humour, irony,
+  // mockery, trust, malice, restraint. Root those and the whole
+  // textured vocabulary falls out, which is thousands of distinctions
+  // for a few dozen slots.
+  ['sardonic', 'bitter + cynical + mock'],
+  ['ingenious', 'clever + invent'],
+  ['pretentious', 'claim + self + greater + than + real'],
+  ['condescending', 'express + superior + toward + other'],
+  ['smug', 'self + satisfy + superior'],
+  ['facetious', 'humor + not + serious'],
+  ['caustic', 'harsh + cut + criticize'],
+  ['jaded', 'interest + wear + away'],
+  ['vindictive', 'persist + revenge + want'],
+  ['gullible', 'easy + deceive'],
+  ['tactful', 'social + skill + offense + avoid'],
+  ['callous', 'suffer + insensitive'],
+  ['resourceful', 'skill + means + find'],
+  ['conceited', 'self + opinion + high'],
+  ['pompous', 'self + important + show'],
+  ['haughty', 'proud + distant'],
+  ['boastful', 'boast + like'],
+  ['audacious', 'very + bold'],
+  ['brazen', 'bold + shameless'],
+  ['presumptuous', 'presume + too + much'],
+  ['shameless', 'shame + without'],
+  ['altruistic', 'other + benefit + self + cost'],
+  ['benevolent', 'other + good + want'],
+  ['charismatic', 'charm + social + power'],
+  ['eccentric', 'convention + unusual + differ'],
+  ['self-reliant', 'self + rely'],
+  ['conscientious', 'careful + duty + follow'],
+  ['treacherous', 'betray + likely'],
+  ['paranoid', 'suspicion + extreme'],
+  ['credulous', 'believe + too + ready'],
+  ['sneer', 'contempt + face + show'],
+  ['scoff', 'mock + dismiss'],
+  ['deride', 'ridicule'],
+  ['taunt', 'mock + provoke'],
+  ['jeer', 'mock + shout'],
+  ['belittle', 'less + important + make'],
+  ['demean', 'dignity + lower'],
+  ['disparage', 'worth + lower + speak'],
+  ['satirical', 'humor + criticize + expose'],
+  ['deadpan', 'humor + face + flat'],
+  ['parody', 'imitate + mock'],
+  ['judgmental', 'judge + too + much'],
+  ['stoic', 'feeling + restrain'],
+  ['volatile', 'change + sudden + strong'],
+  ['touchy', 'offense + easy + take'],
+  ['sophisticated', 'complex + refine'],
+  ['petty', 'small + matter + concern + too + much'],
+  ['sadistic', 'other + suffer + pleasure'],
+  ['malevolent', 'malice + like'],
+
+  // ── Modality ──
+  // The partition English blurs and this file keeps apart. `possible`
+  // is what CAN be, `actual` what IS, `necessary` what MUST be,
+  // `contingent` what can be or not be, `potential` what has the
+  // capacity to become, `tend` what is disposed toward becoming, and
+  // `probable` how likely any of it is. English says "can" for
+  // ability, possibility AND permission, and those are three roots
+  // here, not one.
+  ['inevitability', 'prevent + not + able'],
+  ['stochastic', 'random'],
+  ['propensity', 'tend + nature'],
+  ['prone', 'tend'],
+  ['prerequisite', 'before + necessary + condition'],
+  ['mandatory', 'require'],
+  ['unknowable', 'know + impossible'],
+  ['indeterminate', 'determine + not + done'],
+  ['eligible', 'requirement + satisfy'],
+  ['worst case', 'worst + possible + outcome'],
+  ['best case', 'best + possible + outcome'],
+  ['contingency plan', 'plan + alternative + condition'],
+  ['expected value', 'probability + weigh + average'],
+  ['conditional probability', 'probability + condition'],
+  ['temple', 'worship + building'],
+  ['nutrition', 'nutrient + act'],
+  ['nuclear', 'nucleus + like'],
+  ['nearby', 'near + place'],
+  // Debris from a source list: a negated phrase, never a concept.
+  ['not touching', 'not + touch'],
+  ['trickery', 'trick + practice'],
+  // A garment is its shape and where it sits, and both are roots.
+  ['trouser', 'leg + cloth'],
+  ['jimmy', 'pry + open'],
+  // Named sports are a goal, a field and a set of rules. None of them
+  // needs a root of its own.
+  ['tennis', 'racket + ball + sport'],
+  ['soccer', 'foot + ball + sport'],
+  ['basketball', 'basket + ball + sport'],
+  ['baseball', 'bat + ball + sport'],
+  ['golf', 'club + ball + hole + sport'],
+  ['hockey', 'stick + puck + sport'],
+  ['cricket', 'bat + ball + wicket + sport'],
+  ['rugby', 'carry + ball + sport'],
+  ['volleyball', 'net + ball + sport'],
+  ['badminton', 'racket + feather + ball + sport'],
+  ['mutually exclusive', 'both + impossible'],
+
+  // ── What matter does ──
+  // Roots for the PROCESSES, never for the named phenomena. Matter
+  // can move, flow, deform, compress, stretch, shear, twist, break,
+  // collide, rub, erode, mix, separate, diffuse, settle, permeate,
+  // absorb, adhere, conduct, insulate, emit, radiate, reflect,
+  // refract, scatter, oscillate, propagate, dissipate, expand,
+  // contract and change phase. Everything below is built from those.
+  ['ductile', 'much + deform + without + fracture'],
+  ['plastic deformation', 'deform + remain'],
+  ['torsion', 'twist + stress'],
+  ['laminar', 'flow + layer + smooth'],
+  ['turbulent', 'flow + irregular'],
+  ['vortex', 'flow + rotate'],
+  ['eddy', 'small + vortex'],
+  ['convection', 'heat + flow + carry'],
+  ['advection', 'flow + carry'],
+  ['sedimentation', 'particle + settle + accumulate'],
+  ['buoyancy', 'float + force'],
+  ['capillary', 'narrow + tube + liquid + rise'],
+  ['surface tension', 'surface + tension'],
+  ['sublimation', 'solid + gas + become'],
+  ['rarefy', 'density + lower'],
+  ['conductivity', 'conduct + ability'],
+  ['diffraction', 'wave + edge + spread'],
+  ['flux', 'flow + rate + boundary'],
+  ['permeability', 'permeate + ability'],
+  ['sieve', 'filter + size'],
+  ['implosion', 'collapse + inward'],
+  ['avalanche', 'snow + slide'],
+  ['fatigue', 'repeat + stress + weaken'],
+  ['weathering', 'break + down + place + expose'],
+  ['lubrication', 'friction + lower'],
+  ['clog', 'accumulate + channel + block'],
+  ['film', 'thin + layer'],
+  ['shock wave', 'shock + wave'],
+
+  // ── What every domain kept rediscovering ──
+  // Ecology, chemistry, computing, anatomy and social systems each
+  // arrived at the SAME handful of abstractions independently:
+  // interact, component, boundary, medium, transfer, gradient,
+  // equilibrium, regulate, inhibit, saturate, persist, transform,
+  // interface, source, sink. A concept five unrelated fields all need
+  // is the strongest evidence a root can have, so those are roots and
+  // the field-specific vocabulary is built off them.
+  ['cation', 'positive + ion'],
+  ['anion', 'negative + ion'],
+  ['isotope', 'element + neutron + vary'],
+  ['reactant', 'react + thing'],
+  ['reagent', 'react + cause + thing'],
+  ['exothermic', 'heat + release'],
+  ['endothermic', 'heat + absorb'],
+  ['reversible', 'reverse + able'],
+  ['catalyst', 'react + speed + thing'],
+  ['soluble', 'dissolve + able'],
+  ['dilute', 'concentrate + lower'],
+  ['osmosis', 'solvent + diffuse + membrane'],
+  ['adsorb', 'surface + adhere'],
+  ['combustion', 'burn + act'],
+  ['polymer', 'repeat + unit + chain'],
+  ['monomer', 'one + unit'],
+  ['macromolecule', 'big + molecule'],
+  ['cohere', 'same + stick'],
+  ['viscous', 'flow + resist'],
+  ['mutualism', 'both + benefit + relation'],
+  ['commensalism', 'one + benefit + relation'],
+  ['parasitism', 'one + benefit + one + harm + relation'],
+  ['detritivore', 'dead + matter + eat + agent'],
+  ['scavenger', 'scavenge + agent'],
+  ['extirpate', 'local + extinct'],
+  ['naturalized', 'introduce + self + sustain'],
+  ['biodiversity', 'life + diversity'],
+  ['ecotone', 'ecosystem + between + zone'],
+  ['immigrate', 'migrate + in'],
+  ['emigrate', 'migrate + out'],
+  ['speciation', 'population + isolate + diverge'],
+  ['phenotype', 'show + trait'],
+  ['genotype', 'gene + trait'],
+  ['clade', 'ancestor + all + descendant'],
+  ['venom', 'inject + poison'],
+  ['carrying capacity', 'environment + support + population + limit'],
+  ['evict', 'force + out'],
+  ['encapsulate', 'shell + put'],
+  ['reassemble', 'again + assemble'],
+  ['lookup', 'look + up'],
+  ['reclaim', 'again + claim'],
+  ['overload', 'too + much + load'],
+  ['avatar', 'proxy + body'],
+
+  // ── Power and law ──
+  ['revolt', 'rebel'],
+  ['authorize', 'authority + give'],
+  ['obligate', 'obligation + make'],
+  ['jurisdiction', 'law + reach'],
+  ['sovereignty', 'highest + rule'],
+  ['liberate', 'liberty + make'],
+  ['unjust', 'not + just'],
+  ['tyranny', 'cruel + rule'],
+  ['convention', 'custom + agree'],
+  ['testimony', 'witness + word'],
+  ['verdict', 'judge + word'],
+  ['arrest', 'law + seize'],
+  ['detain', 'hold + keep'],
+  ['confiscate', 'law + take'],
+  ['entitlement', 'right + give'],
+  ['accountable', 'answer + able'],
+  ['negligent', 'neglect + like'],
+  ['involuntary', 'not + voluntary'],
+  ['restitution', 'give + back'],
+  ['compensate', 'pay + back'],
+  ['impartial', 'not + side'],
+
+  // ── Anatomy ──
+  // The structural motifs are the roots, because `tube`, `chamber`,
+  // `membrane`, `layer`, `vessel`, `pore`, `branch` and `joint`
+  // describe anatomy that English never anticipated, alien or
+  // otherwise. The named tissues are built out of them.
+  ['xylem', 'water + tube'],
+  ['phloem', 'sugar + tube'],
+  ['stomata', 'leaf + pore'],
+  ['chloroplast', 'green + organelle'],
+  ['mycelium', 'fungus + thread'],
+  ['hypha', 'fungus + thread'],
+
+  // ── Appraisal ──
+  // English piled up a near-synonym heap here: magnificent, splendid,
+  // superb, marvelous, wonderful. What is irreducible underneath is a
+  // small set of qualities and a DEGREE, so the heap is built out of
+  // `very`, `grand`, `great` and `beauty` rather than rooted.
+  ['immense', 'very + vast'],
+  ['majestic', 'grand + noble'],
+  ['spectacular', 'grand + sight'],
+  ['incredible', 'hard + believe'],
+  ['impound', 'seize + hold'],
+
+  // ── Materials ──
+  // Three independent dimensions, so a material with no root is still
+  // sayable: what it is made of, what form the matter takes (powder,
+  // foam, fibre, sheet, film), and what it is like (brittle, elastic,
+  // opaque). `fiberglass` is glass plus fibre and costs nothing.
+  ['cardboard', 'thick + paper'],
+  ['fertilizer', 'plant + food'],
+  ['translucent', 'part + transparent'],
+  ['soluble', 'dissolve + able'],
+  ['waterproof', 'water + block'],
+  ['inhabit', 'live + in'],
+  ['eliminate', 'remove'],
+  ['morphism', 'structure + map'],
+  ['isomorphism', 'same + structure'],
+  ['closure', 'close + state'],
+  ['commute', 'swap + same'],
+  ['neighborhood', 'near + place'],
+  ['premise', 'first + claim'],
+  ['orchestra', 'music + group'],
+
+  // `rock` is the material and a `stone` is a piece of it. One root
+  // covers both, so every breakdown above says rock.
+  ['stone', 'rock + piece'],
+  ['pebble', 'small + rock + piece'],
+  ['boulder', 'big + rock + piece'],
+  ['gravel', 'small + rock + many'],
+  //  is the gender-neutral top leader in Tune, so the rest of the
+  // royal vocabulary comes off it.
+  ['queen', 'king + female'],
+  ['throne', 'king + seat'],
+  ['prince', 'king + child'],
+  ['princess', 'king + child + female'],
+  ['crown', 'king + ring'],
+  ['kingdom', 'king + land'],
+  ['husband', 'wed + male'],
+  ['wife', 'wed + female'],
+  ['sometimes', 'some + time'],
+  ['sometime', 'some + time'],
+  ['snuff', 'nose + powder'],
+  ['soldier', 'war + agent'],
+  ['chat', 'light + talk'],
+  ['chimney', 'smoke + pipe'],
+  ['chuckle', 'small + laugh'],
+  ['cinema', 'move + picture + house'],
+  ['afraid', 'fear + full'],
+  ['absence', 'absent + state'],
   ['counterclockwise', 'against + clock + oriented'],
   ['clockwise', 'clock + oriented'],
   ['dishonorable', 'not + honor + able'],
@@ -579,7 +1738,6 @@ const SENSE: Array<[string, string]> = [
   ['clarify', 'clear + make'],
   ['fundamental', 'base + like'],
   ['species', 'life + kind'],
-  ['intestine', 'gut + tube'],
   ['hearth', 'fire + floor'],
   ['fortress', 'fort + place'],
   ['ford', 'river + cross + place'],
@@ -669,7 +1827,6 @@ const SENSE: Array<[string, string]> = [
   ['variant', 'vary + kind'],
   ['variable', 'vary + able'],
   ['various', 'vary + like'],
-  ['vegetable', 'plant + food'],
 
   ['visible', 'see + able'],
   ['audible', 'hear + able'],
@@ -766,7 +1923,6 @@ const SENSE: Array<[string, string]> = [
   ['consonant', 'close + sound'],
 
   ['weight', 'weigh + measure'],
-  ['height', 'high + measure'],
   ['width', 'wide + measure'],
   ['depth', 'deep + measure'],
   ['length', 'long + measure'],
@@ -790,7 +1946,6 @@ const SENSE: Array<[string, string]> = [
   ['loss', 'lose + act'],
   ['sale', 'sell + act'],
   ['song', 'sing + thing'],
-  ['blood', 'bleed + thing'],
   ['food', 'feed + thing'],
   ['seat', 'sit + thing'],
   ['gold', 'yellow + metal'],
@@ -823,7 +1978,6 @@ const SENSE: Array<[string, string]> = [
   ['beaver', 'wood + cut + river + rat'],
   ['dolphin', 'small + whale'],
   ['walrus', 'tusk + seal'],
-  ['rabbit', 'small + hare'],
   ['squirrel', 'tree + rat'],
   ['hedgehog', 'thorn + rat'],
   ['mole', 'dirt + rat'],
@@ -861,7 +2015,6 @@ const SENSE: Array<[string, string]> = [
   ['salmon', 'river + climb + fish'],
   ['trout', 'stream + fish'],
   ['eel', ''],
-  ['slug', 'shell + less + snail'],
   ['hornet', 'big + wasp'],
   ['butterfly', 'day + moth'],
   ['beetle', 'shell + bug'],
@@ -891,16 +2044,15 @@ const SENSE: Array<[string, string]> = [
   ['orchid', 'rare + flower'],
   ['lotus', 'water + lily'],
   ['poppy', 'sleep + flower'],
-  ['algae', 'water + moss'],
 
   // Stone and metal, off the basis: rock stone sand clay iron gold
   // silver copper salt glass crystal gem.
   ['granite', 'hard + rock'],
-  ['marble', 'smooth + stone'],
+  ['marble', 'smooth + rock'],
   ['slate', 'sheet + stone'],
-  ['flint', 'spark + stone'],
-  ['limestone', 'white + stone'],
-  ['sandstone', 'sand + stone'],
+  ['flint', 'spark + rock'],
+  ['limestone', 'white + rock'],
+  ['sandstone', 'sand + rock'],
   ['basalt', 'dark + rock'],
   ['obsidian', 'glass + rock'],
   ['quartz', 'clear + crystal'],
@@ -909,13 +2061,13 @@ const SENSE: Array<[string, string]> = [
   ['sapphire', 'blue + gem'],
   ['diamond', 'hard + gem'],
   ['opal', 'shine + gem'],
-  ['amber', 'tree + resin + stone'],
+  ['amber', 'tree + resin + rock'],
   ['pearl', 'shell + gem'],
-  ['jade', 'green + stone'],
+  ['jade', 'green + rock'],
   ['bronze', 'copper + tin'],
   ['steel', 'hard + iron'],
   ['brass', 'yellow + copper'],
-  ['coal', 'burn + stone'],
+  ['coal', 'burn + rock'],
 
   // The sky, which is where the rule was first stated.
   ['mars', 'war + planet'],
@@ -993,7 +2145,110 @@ const SENSE: Array<[string, string]> = [
   ['tessellation', 'tile + pattern'],
   ['circumference', 'around + line'],
   ['hemisphere', 'half + sphere'],
-  ['surplus', 'extra + amount'],
+  ['intake', 'take + in'],
+  ['sufficient', 'enough'],
+  ['scripture', 'holy + writing'],
+  // `snake` is the animal and `dragon` is the mythic beast. `serpent`
+  // is the same animal in a higher register, which is a style of
+  // speaking rather than a second concept.
+  ['serpent', 'snake'],
+  ['macroscopic', 'big + scale + visible'],
+  ['microscopic', 'small + scale + visible'],
+  ['maintenance', 'maintain + act'],
+  // Two English names for one plant. `corn` is the one that stays.
+  ['maize', 'corn'],
+  ['guardian', 'guard + agent'],
+  ['handkerchief', 'hand + cloth'],
+  ['someone', 'some + one'],
+  ['something', 'some + thing'],
+  ['especial', 'special'],
+
+  // ── Describing a living thing ──
+  // The best empirical test the 4096 has. A lexicon that can say
+  // red-bellied, three-spined, hook-billed, narrow-leaved,
+  // thorn-bearing, tree-dwelling, night-active and island-native has
+  // most of the machinery humans use to tell living things apart, and
+  // every scientific name decomposes into the same few templates:
+  // colour plus body part, number plus structure, shape plus
+  // structure, X-resembling, place-from, habitat-dwelling.
+  ['nocturnal', 'night + active'],
+  ['diurnal', 'day + active'],
+  ['sessile', 'attach + fixed'],
+  ['vulgar', 'common + coarse'],
+  ['terrestrial', 'land + live'],
+  ['aquatic', 'water + live'],
+  ['marine', 'sea + live'],
+  ['arboreal', 'tree + live'],
+  ['alpine', 'mountain + live'],
+  ['fossorial', 'burrow + live'],
+  ['crepuscular', 'dusk + active'],
+  ['venomous', 'venom + bear'],
+  ['poisonous', 'poison + bear'],
+  ['deciduous', 'leaf + shed + year'],
+  ['palace', 'king + house'],
+  ['centimeter', 'hundred + part + meter'],
+  ['mental', 'mind + oriented'],
+  ['rainbow', 'rain + light + arc'],
+  ['microscope', 'small + see + tool'],
+  ['telescope', 'far + see + tool'],
+  ['mince', 'tiny + slice'],
+  ['monk', 'worship + devote + agent'],
+  ['tortoise', 'land + turtle'],
+  ['molar', 'grind + tooth'],
+  ['fang', 'long + sharp + tooth'],
+  ['trammel', 'move + restrain'],
+  // `release` is already the root, and it is the wider of the two:
+  // you release a bird, a grip, a claim or a file. `relinquish` is
+  // release applied to something held BY RIGHT, so it is release plus
+  // claim rather than a concept of its own.
+  ['relinquish', 'claim + release'],
+  ['malleable', 'shape + able'],
+  ['abrasive', 'abrade + like'],
+  ['granular', 'grain + like'],
+  ['glossy', 'shine + like'],
+  ['tubercle', 'small + bump'],
+  ['crystalline', 'crystal + like'],
+  ['sinew', 'tendon'],
+  ['generation', 'generate + act'],
+  ['firewood', 'fire + wood'],
+  ['kindle', 'small + fire + wood'],
+  // `fore` is never a free word in English, only the front half of
+  // one: forehead, foretell, forearm, forecast. `front` and `before`
+  // already carry both of its senses, so it is not a root, it is a
+  // spelling of two that are.
+  ['fore', 'front'],
+  ['foretell', 'before + tell'],
+  ['forehead', 'front + head'],
+  ['forearm', 'front + arm'],
+  ['forecast', 'before + predict'],
+  ['freight', 'cargo'],
+  // `frequency` is the root: it is a measured rate, and it turned up
+  // in the physics, signal, measurement and pattern passes alike.
+  // `frequent` is just `often`, which the lexicon already has.
+  ['frequent', 'often'],
+  ['potable', 'drink + able'],
+  ['kilo', 'thousand'],
+  // `move` covers it. Kinetic is the adjective English made from the
+  // Greek for move, and it says nothing move does not.
+  ['kinetic', 'move + like'],
+  ['sixteenth', 'sixteen + order'],
+  ['forth', 'forward'],
+  // `jaw` is the root and the named jaws are positions on it. Thorax
+  // is worse than useless as a root: it is the chest in a vertebrate
+  // and the leg-bearing middle in an insect, so it names two
+  // different things depending on who is being described.
+  ['mandible', 'lower + jaw'],
+  ['maxilla', 'upper + jaw'],
+  ['thorax', 'middle + body + region'],
+  ['abdomen', 'lower + body + region'],
+  ['palp', 'feel + appendage'],
+  ['seta', 'bristle'],
+  ['talkative', 'talk + like'],
+  ['semantics', 'meaning + study'],
+  ['evergreen', 'leaf + keep + always'],
+  ['annual', 'one + year + live'],
+  ['perennial', 'many + year + live'],
+  ['herbaceous', 'herb + like'],
   ['urn', 'ash + pot'],
   ['kiln', 'fire + oven'],
   ['bristle', 'stiff + hair'],
@@ -1050,7 +2305,8 @@ for (const [short, long] of CLIPPING) {
 
 for (const word of words) {
   if (found.has(word)) continue
-  const hit = byPrefix(word) ?? byCompound(word) ?? byAffix(word)
+  const hit =
+    byPlural(word) ?? byPrefix(word) ?? byCompound(word) ?? byAffix(word)
   if (hit) {
     found.set(word, { term: word, parts: hit.parts, how: hit.how })
   }

@@ -141,7 +141,22 @@ const DOMAIN: Record<string, string> = {
 
   make: `computer machine engine wheel tool craft art skill design
     plan model pattern code number letter mark sign symbol map
-    picture image copy`,
+    picture image copy socket plug hinge latch hook notch groove
+    peg bolt screw clamp gear spring valve wire cable belt shaft`,
+
+  prime: `i you someone people body thing kind part this same other
+    one two some all much many good bad big small know think want
+    feel see hear say word true do happen move touch be there have
+    live die when now before after long short time where here above
+    below near far side inside not maybe can because if very more
+    like moment`,
+
+  world: `breath force spirit way duty fate play illusion void
+    long belong warmth grit shame face honor rank
+    elder younger kin ancestor host guest gift debt
+    pause silence still flow balance harmony
+    sorrow yearn nostalgia pity mercy awe revere
+    craft care patience effort rest`,
 
   shape: `circle square triangle sphere cube cone cylinder prism
     spiral helix arc curve ellipse hyperbola parabola angle axis
