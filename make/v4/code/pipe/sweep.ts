@@ -47,6 +47,7 @@ import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
 import { readBoard, TERM } from './board'
+import { DOMAIN } from './domain'
 import { VOICE_PAIRS } from './system'
 import { MIRROR_PAIRS } from './tone'
 import { testWord } from '../sound'
@@ -64,43 +65,6 @@ const args = yargs(hideBin(process.argv))
   })
   .strict()
   .parseSync()
-
-/**
- * The oppositions, grouped by the domain they belong to.
- *
- * The grouping matters: a domain gets ONE consonant pair, so every
- * opposition inside it shares a shape and the domain is audible. That
- * is the direction set's rule scaled up, and it is why this is a list
- * of groups rather than a flat list of pairs.
- */
-const DOMAIN: Array<[string, Array<[string, string]>]> = [
-  ['space', [['left', 'right'], ['up', 'down'], ['front', 'back']]],
-  ['bound', [['inside', 'outside'], ['open', 'shut'], ['near', 'far']]],
-  ['size', [['big', 'small'], ['long', 'short'], ['wide', 'narrow']]],
-  ['weight', [['heavy', 'light'], ['thick', 'thin'], ['deep', 'shallow']]],
-  ['heat', [['hot', 'cold'], ['wet', 'dry'], ['bright', 'dim']]],
-  ['touch', [['hard', 'soft'], ['rough', 'smooth'], ['sharp', 'dull']]],
-  ['worth', [['good', 'bad'], ['clean', 'dirty'], ['rich', 'poor']]],
-  ['truth', [['true', 'false'], ['right', 'wrong'], ['certain', 'uncertain']]],
-  ['count', [['all', 'none'], ['many', 'few'], ['more', 'less']]],
-  ['time', [['begin', 'end'], ['before', 'after'], ['early', 'late']]],
-  ['life', [['birth', 'death'], ['live', 'die'], ['grow', 'shrink']]],
-  ['move', [['come', 'go'], ['rise', 'fall'], ['push', 'pull']]],
-  ['hold', [['give', 'take'], ['gain', 'lose'], ['keep', 'drop']]],
-  ['join', [['join', 'split'], ['attach', 'detach'], ['include', 'exclude']]],
-  ['mind', [['know', 'doubt'], ['remember', 'forget'], ['wake', 'sleep']]],
-  ['feel', [['love', 'hate'], ['joy', 'sorrow'], ['hope', 'fear']]],
-  ['talk', [['ask', 'answer'], ['speak', 'listen'], ['teach', 'learn']]],
-  ['deed', [['build', 'destroy'], ['help', 'harm'], ['heal', 'wound']]],
-  ['rule', [['allow', 'forbid'], ['praise', 'blame'], ['free', 'bind']]],
-  ['trade', [['buy', 'sell'], ['lend', 'borrow'], ['send', 'receive']]],
-  ['flow', [['absorb', 'emit'], ['inhale', 'exhale'], ['fill', 'empty']]],
-  ['state', [['same', 'different'], ['whole', 'part'], ['one', 'many']]],
-  ['make', [['create', 'destroy'], ['order', 'chaos'], ['peace', 'war']]],
-  ['kin', [['parent', 'child'], ['ancestor', 'descendant'], ['host', 'guest']]],
-  ['side', [['friend', 'enemy'], ['self', 'else'], ['ally', 'rival']]],
-  ['cause', [['cause', 'effect'], ['enable', 'prevent'], ['add', 'subtract']]],
-]
 
 /**
  * The two vowel axes, and the hard limit they impose.

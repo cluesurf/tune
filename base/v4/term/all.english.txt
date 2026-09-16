@@ -290,6 +290,7 @@ article
 artifact
 artificial
 artist
+artwork
 as
 ascend
 ascending
@@ -1102,6 +1103,7 @@ conjure
 connect
 connected
 connection
+connector
 conquer
 conscience
 conscientious
@@ -1210,6 +1212,7 @@ covalent
 cove
 covenant
 cover
+covering
 cow
 coward
 cowardly
@@ -1424,6 +1427,7 @@ depict
 deplete
 deposit
 depot
+depression
 deprive
 depth
 dequeue
@@ -1640,6 +1644,7 @@ drip
 drive
 drizzle
 drool
+droop
 droopy
 drop
 drought
@@ -1983,6 +1988,7 @@ farthest
 fashion
 fast
 fasten
+fastener
 faster
 fat
 fate
@@ -2341,6 +2347,7 @@ granularity
 grape
 grapefruit
 graph
+graphic
 grapple
 grasp
 grass
@@ -2389,6 +2396,7 @@ guest
 guide
 guilt
 guilty
+guitar
 gulf
 gull
 gullible
@@ -2467,6 +2475,7 @@ heat
 heaven
 heavy
 hedgehog
+heed
 heel
 height
 heir
@@ -2504,6 +2513,7 @@ hierarchy
 high
 higher
 highest
+highland
 highway
 hill
 him
@@ -2834,6 +2844,7 @@ iterate
 its
 itself
 ivy
+jab
 jackal
 jacket
 jade
@@ -2868,6 +2879,7 @@ jug
 juice
 jumbo
 jump
+junction
 jungle
 junk
 jupiter
@@ -2934,6 +2946,7 @@ lamp
 lamprey
 land
 landfill
+landform
 landmark
 landscape
 landslide
@@ -3098,6 +3111,7 @@ love
 low
 lower
 lowest
+lowland
 loyal
 loyalty
 lubricate
@@ -3169,6 +3183,7 @@ march
 margin
 marine
 mark
+marker
 market
 marlin
 marriage
@@ -3215,6 +3230,7 @@ medicine
 meditate
 medium
 meet
+meeting
 megastructure
 melancholy
 melody
@@ -3251,8 +3267,10 @@ meteor
 meter
 method
 metric
+mic
 mica
 microbe
+microphone
 microscope
 microscopic
 middle
@@ -3367,6 +3385,7 @@ much
 mucus
 mud
 muddle
+muffle
 mug
 mule
 multiple
@@ -3704,6 +3723,7 @@ paradox
 paragraph
 parallel
 parameter
+paramount
 paranoid
 paraphrase
 parasite
@@ -4121,6 +4141,7 @@ pumice
 pump
 pumpkin
 punch
+punctual
 punctuation
 puncture
 pungent
@@ -4369,6 +4390,7 @@ resistant
 resolution
 resolve
 resonance
+resonant
 resonate
 resort
 resource
@@ -4610,6 +4632,7 @@ secondary
 secret
 secretary
 secrete
+secretion
 sect
 section
 secure
@@ -4822,6 +4845,7 @@ slimy
 slip
 slippery
 slit
+slobber
 slogan
 slope
 slot
@@ -4928,6 +4952,7 @@ speak
 spear
 spec
 special
+specialist
 specialize
 speciation
 species
@@ -5097,6 +5122,7 @@ strong
 structure
 struggle
 strut
+stubble
 stubborn
 stuck
 student
@@ -5376,6 +5402,7 @@ tickle
 tide
 tidy
 tie
+tier
 tiger
 tight
 tilapia
@@ -5668,6 +5695,7 @@ venison
 venom
 venomous
 vent
+venture
 venus
 verb
 verdict
@@ -5758,6 +5786,8 @@ wasp
 waste
 watch
 water
+waterbody
+watercourse
 waterfall
 waterproof
 watershed

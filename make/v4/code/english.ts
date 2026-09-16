@@ -443,6 +443,15 @@ crumb shatter matte
 
 navigate tame domesticate snare butcher carcass smolder landmark
 pasture abrade orient barren mumble slur
+
+stubble jab slobber resin resonant graphic hinder heed muffle
+venture paramount gold bronze copper
+
+container covering support barrier opening passage connector fastener
+holder marker strand sheet rod projection depression mass bundle pile
+junction waterbody watercourse highland lowland landform secretion
+ingredient fabric residue specialist closure
+meeting droop knowledge
 `
   .split(/\s+/)
   .filter(Boolean)
@@ -493,13 +502,42 @@ const SHORT = new Set(
  *
  * So the derivable file records how a word COULD come apart, and this
  * list is where that gets overruled. Both facts stay written down.
+ *
+ * ## The semantic heads, added after `v4:head` was built
+ *
+ * Ten of the twelve most productive heads in the lexicon were sitting
+ * in `derivable.english.csv`, which is backwards:
+ *
+ * ```text
+ * covering     18 leaves     was cover + act
+ * container    15 leaves     was contain + agent
+ * fastener     13 leaves     was fasten + agent
+ * projection   13 leaves     was project + act
+ * opening      10 leaves     was open + act
+ * ```
+ *
+ * Every one of those derivations is CORRECT about the morphology and
+ * wrong about the economy. `covering` reaches eighteen candidates
+ * still holding their own roots: clothing, roof, shell, lid, armour,
+ * blanket, hat, glove, shoe, bark, rind, husk and the rest. Spending
+ * one slot to get eighteen back is the best trade available in the
+ * list, and refusing it because English happened to build the word
+ * with a suffix is letting English morphology make a decision that
+ * belongs to Tune.
+ *
+ * **A head earns its root by what it governs, not by how it was
+ * spelled.** That is the same rule as `uses` sorting rather than
+ * excluding, applied one level up.
  */
 const KEEP = new Set(
   `uncertain information location length width possible half likely
    density species population health ancestor stranger attention
    sensation reference obligation transform replace
    reproduce cooperate identity lonely plane variable train mine
-   solution elder`.split(/\s+/),
+   solution elder activity
+   covering container fastener projection opening secretion landform
+   cavity food marker holder connector closure waterbody watercourse
+   garment particle candor bound`.split(/\s+/),
 )
 
 const built = readDerivable()

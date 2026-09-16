@@ -438,7 +438,7 @@ const NOT_COMPOUND = new Set(
    nothing something anything everything welcome income outcome
    passage message village cottage courage savage damage manage
    package language average beverage
-   discover discourse recover network handsome`.split(/\s+/),
+   discover discourse recover network handsome knowledge`.split(/\s+/),
 )
 
 function byCompound(word: string): { parts: string; how: string } | null {
@@ -1698,7 +1698,6 @@ const SENSE: Array<[string, string]> = [
   ['eliminate', 'remove'],
   ['morphism', 'structure + map'],
   ['isomorphism', 'same + structure'],
-  ['closure', 'close + state'],
   ['commute', 'swap + same'],
   ['neighborhood', 'near + place'],
   ['premise', 'first + claim'],
@@ -2226,6 +2225,76 @@ const SENSE: Array<[string, string]> = [
   // in the physics, signal, measurement and pattern passes alike.
   // `frequent` is just `often`, which the lexicon already has.
   ['frequent', 'often'],
+  ['espresso', 'strong + coffee'],
+  ['droopy', 'droop + like'],
+  ['ecology', 'life + place + study'],
+  ['economy', 'wealth + system'],
+  ['ecosystem', 'life + place + system'],
+  ['efficiency', 'efficient + nature'],
+  ['punctual', 'on + time'],
+  ['percentage', 'percent + amount'],
+  // `pen` is the writing tool and a pencil is one that rubs out. See
+  // note/tune/pipeline/heads.md: a head plus a modifier beats a root.
+  ['pencil', 'erase + able + pen'],
+  ['hind', 'back'],
+  ['artwork', 'art + work'],
+  ['toad', 'wart + frog'],
+  ['guitar', 'string + instrument'],
+  ['microphone', 'sound + catch + device'],
+  ['mic', 'sound + catch + device'],
+  // `write` is the root. A scribe is a person who does it for others,
+  // which is the agent rule rather than a second concept.
+  ['scribe', 'write + agent'],
+  // A tier is a level in a stack, and both halves are already roots.
+  ['tier', 'level + layer'],
+
+  // ── Realising the head saving ──
+  // `v4:head` ranks the semantic heads by how many candidates each
+  // one would cover. `covering` reaches eighteen and `container`
+  // fifteen, and naming the head is only half the job: the leaves
+  // have to actually move, or the slot is available rather than
+  // freed.
+  //
+  // Not all of them move. `skin`, `shell`, `bark`, `hat`, `coat`,
+  // `shoe`, `cup`, `bowl`, `box`, `bag` and `pot` stay rooted,
+  // because a word can be derivable and still be too ordinary to
+  // spell out three morphemes for. That is the `uncertain` rule from
+  // `english.ts` and it applies here unchanged.
+  ['armor', 'protect + covering'],
+  ['blanket', 'bed + covering'],
+  ['boot', 'tall + shoe'],
+  ['glove', 'hand + covering'],
+  ['husk', 'seed + covering'],
+  ['lid', 'container + closure'],
+  ['peel', 'fruit + covering'],
+  ['roof', 'building + covering'],
+  ['sock', 'soft + foot + covering'],
+  ['barrel', 'round + wood + container'],
+  ['basket', 'weave + open + container'],
+  ['bottle', 'narrow + neck + container'],
+  ['bucket', 'open + carry + container'],
+  ['jar', 'wide + mouth + container'],
+  ['kettle', 'boil + pot'],
+  ['pouch', 'small + bag'],
+  ['sack', 'cloth + bag'],
+  ['tank', 'big + liquid + container'],
+
+  // `bound` is the root and everything else is a shape of it. The
+  // verb, the limit and the edge are one idea seen three ways:
+  //
+  //   bound      the limit itself
+  //   boundary   the line that limit draws
+  //   border     the boundary between two regions
+  //   bounded    having a bound
+  //   unbounded  having none
+  //
+  // `limit` stays separately rooted because it is the softer word:
+  // a bound cannot be passed, a limit is where something stops.
+  ['boundary', 'bound + line'],
+  ['border', 'bound + between'],
+  ['bounded', 'bound + have'],
+  ['unbounded', 'bound + without'],
+  ['cooperation', 'cooperate + act'],
   ['potable', 'drink + able'],
   ['kilo', 'thousand'],
   // `move` covers it. Kinetic is the adjective English made from the

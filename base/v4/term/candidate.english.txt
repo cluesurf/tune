@@ -31,6 +31,7 @@ acid                                          noun             8     7
 acquire                                       verb             2     1
 across                                        preposition     15     5
 act                                           verb           151   145
+activity                                      noun             8     8
 actual                                        adjective        0     0
 adapt                                         verb             0     0
 add                                           verb            27     5
@@ -602,6 +603,7 @@ construct                                     verb             1     1
 consume                                       verb             1     1
 contact                                       verb             1     0
 contain                                       verb            34    32
+container                                     noun             0     0
 contaminate                                   verb             1     0
 content        mood                           adjective        3     2
 contest                                       noun             3     2
@@ -883,7 +885,6 @@ drive          steer a vehicle                verb            25    10
 drive          urge from within               verb            25    10
 drive          force inward                   verb            25    10
 drool                                         noun             1     0
-droopy                                        noun             1     0
 drop                                          verb            24    17
 drought                                       noun             0     0
 drown                                         verb             0     0
@@ -918,14 +919,10 @@ eat                                           verb            46    34
 eave                                          noun             1     0
 echo                                          verb             9     1
 eco                                           noun             2     0
-ecology                                       noun             0     0
-economy                                       noun             0     0
-ecosystem                                     noun             0     0
 edge                                          verb            35    24
 edit                                          verb             0     0
 educate                                       verb             3     2
 effect                                        verb            13    13
-efficiency                                    noun             0     0
 efficient                                     adjective        0     0
 effort                                        noun            12    11
 egg                                           noun            26     3
@@ -984,7 +981,6 @@ error                                         noun             4     4
 erupt                                         verb             1     0
 escape                                        verb             7     1
 escort                                        noun             1     0
-espresso                                      noun             1     0
 essay                                         noun             1     1
 essence                                       noun             1     1
 establish                                     verb             1     1
@@ -1152,6 +1148,7 @@ folk                                          noun             2     1
 follow                                        verb            30     8
 fond                                          adjective        0     0
 font                                          noun             1     0
+food                                          noun            97    64
 fool                                          noun             6     4
 foot                                          noun            30    12
 for                                           preposition     41    17
@@ -1372,7 +1369,6 @@ hide                                          verb            37     3
 hierarchy                                     noun             0     0
 high                                          adjective       73    14
 hill                                          noun             8     4
-hind                                          noun             2     1
 hint                                          verb             5     2
 hip                                           noun             2     0
 hire                                          verb             1     1
@@ -1380,6 +1376,7 @@ history                                       noun             4     3
 hit                                           verb            59    25
 hog                                           noun             3     0
 hold                                          verb           151    70
+holder                                        noun             0     0
 hole                                          verb            28    25
 holiday                                       noun             0     0
 hollow                                        adjective        4     2
@@ -1576,6 +1573,7 @@ knob                                          noun             2     2
 knock                                         verb             4     2
 knot                                          noun             7     5
 know                                          verb            39    31
+knowledge                                     noun            28    23
 known                                         adjective        0     0
 knuckle                                       noun             1     1
 label                                         verb            12     8
@@ -1943,6 +1941,7 @@ only                                          adverb           0     0
 onto                                          preposition      1     1
 opaque                                        adjective        0     0
 open                                          adjective       72    36
+opening                                       verb             0     0
 operate                                       verb             0     0
 opinion                                       noun            10    10
 opponent                                      noun             0     0
@@ -2039,7 +2038,6 @@ peer                                          verb             0     0
 pellet                                        noun             1     1
 pen            write                          verb             5     2
 penalty                                       noun             3     1
-pencil                                        verb             0     0
 peninsula                                     noun             0     0
 penis                                         noun             1     1
 people                                        noun            44    29
@@ -2047,7 +2045,6 @@ pepper                                        noun             0     0
 per                                           preposition      0     0
 perceive                                      verb             0     0
 percent                                       noun             0     0
-percentage                                    noun             0     0
 perfect                                       adjective        8     0
 perform                                       verb             6     4
 perhaps                                       adverb           0     0
@@ -2191,6 +2188,7 @@ progress                                      verb             5     4
 prohibit                                      verb             1     0
 project        work                           verb             1     1
 project        cast forth                     verb             1     1
+projection                                    noun             2     2
 prominent                                     adjective        1     0
 promise                                       verb            17    10
 promote                                       verb             2     1
@@ -2452,7 +2450,6 @@ scrape                                        verb             2     0
 scratch                                       verb             4     2
 screen                                        verb             6     4
 screw                                         verb             2     2
-scribe                                        verb             2     2
 script                                        noun             2     2
 sculpture                                     noun             0     0
 sea                                           noun            41     7
@@ -2944,7 +2941,6 @@ tire                                          verb            11     4
 tissue                                        noun            12     6
 title                                         noun             8     8
 to                                            conjunction     85    16
-toad                                          noun             1     0
 toast                                         noun             2     1
 tobacco                                       noun             2     0
 today                                                          0     0
@@ -3313,6 +3309,7 @@ carrot                                        noun             0     0
 cartilage                                     noun             0     0
 cascade                                       noun             0     0
 cassava                                       noun             0     0
+cavity                                        noun             0     0
 celery                                        noun             0     0
 chamomile                                     noun             0     0
 cherry                                        noun             0     0
@@ -3331,6 +3328,7 @@ clam                                          noun             0     0
 clang                                         noun             0     0
 cling                                         verb             0     0
 clone                                         verb             0     0
+closure                                       noun             0     0
 cnidarian                                     noun             0     0
 cod                                           noun             0     0
 coerce                                        verb             0     0
@@ -3351,6 +3349,7 @@ confound                                      noun             0     0
 confront                                      verb             0     0
 congestion                                    noun             0     0
 conjure                                       verb             0     0
+connector                                     noun             0     0
 conserve                                      verb             0     0
 conspicuous                                   adjective        0     0
 constellation                                 noun             0     0
@@ -3368,6 +3367,7 @@ cope                                          verb             0     0
 coral                                         noun             0     0
 corrupt                                       adjective        0     0
 covenant                                      noun             0     0
+covering                                      verb             0     0
 crane          bird                           noun             0     0
 crank                                         noun             0     0
 crater                                        noun             0     0
@@ -3400,6 +3400,7 @@ denote                                        verb             0     0
 depict                                        verb             0     0
 deplete                                       verb             0     0
 depot                                         noun             0     0
+depression                                    noun             0     0
 deprive                                       noun             0     0
 designate                                     verb             0     0
 destiny                                       noun             0     0
@@ -3421,6 +3422,7 @@ domesticate                                   verb             0     0
 dormant                                       adjective        0     0
 dove                                          verb             0     0
 dragon                                        noun             0     0
+droop                                         noun             0     0
 duct                                          noun             0     0
 dumb                                          adjective        0     0
 duplicate                                     verb             0     0
@@ -3472,6 +3474,7 @@ extrude                                       noun             0     0
 eyelash                                       noun             0     0
 fabricate                                     verb             0     0
 facilitate                                    verb             0     0
+fastener                                      noun             0     0
 fennel                                        noun             0     0
 fetch                                         verb             0     0
 feud                                          noun             0     0
@@ -3512,6 +3515,7 @@ halo                                          noun             0     0
 hamper                                        verb             0     0
 harass                                        verb             0     0
 hash                                          verb             0     0
+heed                                          noun             0     0
 helix                                         noun             0     0
 hemp                                          noun             0     0
 herring                                       verb             0     0
@@ -3564,11 +3568,14 @@ invest                                        verb             0     0
 invoke                                        verb             0     0
 involution                                    noun             0     0
 iridescent                                    noun             0     0
+jab                                           noun             0     0
 jagged                                        adjective        0     0
+junction                                      noun             0     0
 junk                                          noun             0     0
 kangaroo                                      noun             0     0
 lag                                           verb             0     0
 lame                                          adjective        0     0
+landform                                      noun             0     0
 latency                                       noun             0     0
 lattice                                       noun             0     0
 laurel                                        noun             0     0
@@ -3588,6 +3595,7 @@ lobster                                       noun             0     0
 loom                                          noun             0     0
 loot                                          verb             0     0
 lore                                          noun             0     0
+lowland                                       noun             0     0
 lubricate                                     verb             0     0
 lust                                          verb             0     0
 magma                                         noun             0     0
@@ -3596,6 +3604,7 @@ mandate                                       verb             0     0
 mane                                          noun             0     0
 mango                                         noun             0     0
 manifest                                      verb             0     0
+marker                                        noun             0     0
 marrow                                        noun             0     0
 marvel                                        noun             0     0
 matte                                         noun             0     0
@@ -3620,6 +3629,7 @@ monument                                      noun             0     0
 moss                                          noun             0     0
 moth                                          noun             0     0
 mottle                                        noun             0     0
+muffle                                        noun             0     0
 mumble                                        verb             0     0
 mustard                                       noun             0     0
 muzzle                                        noun             0     0
@@ -3652,6 +3662,7 @@ pander                                        noun             0     0
 parable                                       adjective        0     0
 parabola                                      noun             0     0
 paradox                                       noun             0     0
+paramount                                     noun             0     0
 parsley                                       noun             0     0
 participate                                   verb             0     0
 pasture                                       noun             0     0
@@ -3764,6 +3775,7 @@ screech                                       verb             0     0
 scroll         rolled writing                 verb             0     0
 scroll         move text past a view          verb             0     0
 scruff                                        noun             0     0
+secretion                                     noun             0     0
 segment                                       noun             0     0
 segregate                                     verb             0     0
 sentient                                      adjective        0     0
@@ -3784,6 +3796,7 @@ slab                                          noun             0     0
 slander                                       noun             0     0
 slender                                       adjective        0     0
 slit                                          verb             0     0
+slobber                                       noun             0     0
 slot                                          noun             0     0
 sloth                                         noun             0     0
 slug                                          noun             0     0
@@ -3804,6 +3817,7 @@ starch                                        noun             0     0
 stimulus                                      noun             0     0
 stout                                         adjective        0     0
 stratum                                       noun             0     0
+stubble                                       noun             0     0
 stuck                                         verb             0     0
 sublime                                       adjective        0     0
 submit         yield to control               verb             0     0
@@ -3862,6 +3876,7 @@ utter                                         adjective        0     0
 vain                                          adjective        0     0
 vanilla                                       adjective        0     0
 vast                                          adjective        0     0
+venture                                       verb             0     0
 vigor                                         noun             0     0
 vinegar                                       noun             0     0
 virgin                                        noun             0     0
@@ -3869,6 +3884,8 @@ vulnerable                                    adjective        0     0
 walnut                                        noun             0     0
 wart                                          noun             0     0
 wasp                                          noun             0     0
+waterbody                                     noun             0     0
+watercourse                                   noun             0     0
 weasel                                        noun             0     0
 wedge                                         noun             0     0
 weed                                          verb             0     0

@@ -116,6 +116,7 @@ conductive,conduct + like,affix
 conductor,conduct + agent,affix
 connected,connect + done,affix
 connection,connect + act,affix
+connector,connect + agent,affix
 conscience,conscious + act,affix
 consciousness,conscious + nature,affix
 conservation,conserve + act,affix
@@ -202,6 +203,7 @@ factory,factor + like,affix
 fairness,fair + nature,affix
 faithful,faith + full,affix
 farmer,farm + agent,affix
+fastener,fasten + agent,affix
 faster,fast + agent,affix
 featuring,feature + act,affix
 feeler,feel + agent,affix
@@ -238,6 +240,7 @@ government,govern + act,affix
 graceful,grace + full,affix
 gradient,grade + agent,affix
 grainy,grain + like,affix
+graphic,graph + like,affix
 gratify,grate + make,affix
 gray,graze + like,affix
 greedy,greed + like,affix
@@ -325,9 +328,11 @@ magnetism,magnet + practice,affix
 maker,make + agent,affix
 manager,manage + agent,affix
 manner,man + agent,affix
+marker,mark + agent,affix
 mattress,matter + female,affix
 meaning,mean + act,affix
 means,mean + many,affix
+meeting,meet + act,affix
 memorize,memory + make,affix
 metric,meter + like,affix
 migration,migrate + act,affix
@@ -456,6 +461,7 @@ resembling,resemble + act,affix
 resistance,resist + act,affix
 resistant,resist + agent,affix
 resonance,resonate + act,affix
+resonant,resonate + agent,affix
 responsibility,response + ability,affix
 responsible,response + able,affix
 romantic,romance + like,affix
@@ -474,6 +480,7 @@ scruffy,scruff + like,affix
 sealed,seal + done,affix
 secondary,second + like,affix
 secretary,secret + like,affix
+secretion,secrete + act,affix
 section,sect + act,affix
 security,secure + nature,affix
 selection,select + act,affix
@@ -506,6 +513,7 @@ sneaky,sneak + like,affix
 soften,soft + make,affix
 solar,sole + like,affix
 solvent,solve + agent,affix
+specialist,special + agent,affix
 specialize,special + make,affix
 spicy,spice + like,affix
 squishy,squish + like,affix
@@ -609,6 +617,7 @@ broadcast,broad + cast,compound
 charcoal,char + coal,compound
 childhood,child + hood,compound
 comfortable,comfort + able,compound
+covering,cove + ring,compound
 database,data + base,compound
 deadline,dead + line,compound
 earthquake,earth + quake,compound
@@ -619,8 +628,9 @@ generate,gene + rate,compound
 grandparent,grand + parent,compound
 grassland,grass + land,compound
 hardware,hard + ware,compound
+highland,high + land,compound
 household,house + hold,compound
-knowledge,know + ledge,compound
+landform,land + form,compound
 landmark,land + mark,compound
 livestock,live + stock,compound
 moderate,mode + rate,compound
@@ -638,6 +648,8 @@ relationship,relation + ship,compound
 software,soft + ware,compound
 talkable,talk + able,compound
 understandable,understand + able,compound
+waterbody,water + body,compound
+watercourse,water + course,compound
 waterfall,water + fall,compound
 wavelength,wave + length,compound
 withdraw,with + draw,compound
@@ -713,7 +725,6 @@ youngest,grammar,grammar
 yours,grammar,grammar
 yourself,grammar,grammar
 cooperate,with + operate,prefix
-cooperation,with + operation,prefix
 cough,with + ugh,prefix
 disable,not + able,prefix
 disagree,not + agree,prefix
@@ -876,6 +887,7 @@ army,military + group,sense
 array,order + list,sense
 arrest,law + seize,sense
 article,point + term,sense
+artwork,art + work,sense
 assassin,hire + kill + agent,sense
 asset,own + thing,sense
 asteroid,rock + star,sense
@@ -1032,7 +1044,6 @@ clinic,small + hospital,sense
 cloaca,shared + body + opening,sense
 clockwise,clock + oriented,sense
 clog,accumulate + channel + block,sense
-closure,close + state,sense
 clover,three + leaf + grass,sense
 cluck,hen + call,sense
 coal,burn + rock,sense
@@ -1085,6 +1096,7 @@ convection,heat + flow + carry,sense
 convention,custom + agree,sense
 convex,out + curve,sense
 convolution,convolute + act,sense
+cooperation,cooperate + act,sense
 coriander,cilantro + seed,sense
 corollary,follow + claim,sense
 corroborate,more + support,sense
@@ -1168,6 +1180,7 @@ downward,down + oriented,sense
 dozen,twelve + group,sense
 dragonfly,dragon + fly,sense
 drizzle,light + rain,sense
+droopy,droop + like,sense
 ductile,much + deform + without + fracture,sense
 dune,sand + hill,sense
 eastward,east + oriented,sense
@@ -1175,10 +1188,14 @@ ebb,tide + fall,sense
 eccentric,convention + unusual + differ,sense
 echinacea,cone + flower,sense
 eclipse,shadow + sun,sense
+ecology,life + place + study,sense
+economy,wealth + system,sense
+ecosystem,life + place + system,sense
 ecotone,ecosystem + between + zone,sense
 eddy,small + vortex,sense
 edible,eat + able,sense
 effect size,effect + magnitude,sense
+efficiency,efficient + nature,sense
 eighteen,ten + eight,sense
 eighth,eight + order,sense
 eighty,eight + ten,sense
@@ -1205,6 +1222,7 @@ equinox,equal + night + day,sense
 equity,own + share,sense
 escarpment,long + cliff,sense
 especial,special,sense
+espresso,strong + coffee,sense
 estuary,river + mouth,sense
 ethereal,air + like,sense
 etymology,word + origin,sense
@@ -1315,6 +1333,7 @@ gravel,small + rock + many,sense
 growl,beast + low + call,sense
 growth,grow + act,sense
 guardian,guard + agent,sense
+guitar,string + instrument,sense
 gulf,big + bay,sense
 gullible,easy + deceive,sense
 gully,small + ravine,sense
@@ -1344,6 +1363,7 @@ hero,brave + person,sense
 heron,river + crane,sense
 hexagon,six + side + shape,sense
 highway,big + road,sense
+hind,back,sense
 hindsight,after + sight,sense
 hippo,river + beast,sense
 hippopotamus,river + horse,sense
@@ -1521,7 +1541,9 @@ metallic,metal + bond,sense
 metamorphic,change + rock,sense
 metamorphose,body + form + change,sense
 meteor,fall + star,sense
+mic,sound + catch + device,sense
 mica,sheet + crystal,sense
+microphone,sound + catch + device,sense
 microscope,small + see + tool,sense
 microscopic,small + scale + visible,sense
 millipede,thousand + foot + worm,sense
@@ -1637,8 +1659,10 @@ peanut,ground + nut,sense
 pearl,shell + gem,sense
 pebble,small + rock + piece,sense
 pelican,bag + throat + bird,sense
+pencil,erase + able + pen,sense
 penguin,ice + swim + bird,sense
 pentagon,five + side + shape,sense
+percentage,percent + amount,sense
 perception,perceive + act,sense
 perch,small + bass,sense
 perennial,many + year + live,sense
@@ -1727,6 +1751,7 @@ proxy measure,substitute + measure,sense
 pufferfish,swell + fish,sense
 pumice,foam + rock,sense
 pumpkin,big + squash,sense
+punctual,on + time,sense
 punctuation,write + mark,sense
 pungent,sharp + taste,sense
 pupa,change + shell,sense
@@ -1825,6 +1850,7 @@ schist,flake + rock,sense
 scoff,mock + dismiss,sense
 scorpion,sting + tail + spider,sense
 scoundrel,dishonest + agent,sense
+scribe,write + agent,sense
 scripture,holy + writing,sense
 seafloor,sea + floor,sense
 seagrass,sea + grass,sense
@@ -1986,11 +2012,13 @@ thousandth,thousand + order,sense
 throne,king + seat,sense
 throughput,output + rate,sense
 thug,violent + intimidate + agent,sense
+tier,level + layer,sense
 tiger,stripe + wild + cat,sense
 tilapia,lake + fish,sense
 timeout,time + end,sense
 tipping point,cascade + threshold,sense
 titan,giant + god,sense
+toad,wart + frog,sense
 torque,turn + force,sense
 torsion,twist + stress,sense
 tortoise,land + turtle,sense
