@@ -1,0 +1,1116 @@
+english               tune                          english parts                     tune parts
+--------------------------------------------------------------------------------------------------------------
+abscess               stepaigalc                    pus + pocket                      step + galc
+abuse                 futaiyuz                      bad + use                         fut + yuz
+acacia                rargaidip                     thorn + tree                      rarg + dip
+acetamide             -                             acetate + amide                   ? + ?
+acetaminophen         muzaipudzaisom                pain + fever + drug               muz + pudz + som
+acidemia              falfaibloC                    acid + blood                      falf + bloC
+acidosis              falfaidom                     acid + state                      falf + dom
+acinus                smaqaisnaz                    gland + sac                       smaq + snaz
+actinium              cadjaitom                     spark + atom                      cadj + tom
+adenocarcinoma        smaqaibudj                    gland + cancer                    smaq + budj
+adenoma               -                             gland + growth                    smaq + ?
+adenosine             smaqaigandaibes               gland + sugar + base              smaq + gand + bes
+adenovirus            smaqaitagz                    gland + virus                     smaq + tagz
+adipocyte             wesaimudz                     fat + cell                        wes + mudz
+adjuvant              neqaisom                      help + drug                       neq + som
+adrenaline            palvaizifaisnen               alert + heart + hormone           palv + zif + snen
+agave                 bontaisespailif               sharp + thick + leaf              bont + sesp + lif
+agenesis              -                             no + growth                       nop + ?
+agriculture           goraiyabz                     field + craft                     gor + yabz
+aircraft              lesaiyabz                     air + craft                       les + yabz
+airway                lesaiyat                      air + way                         les + yat
+alanine               -                             amino + acid                      ? + falf
+albinism              -                             no + colour + state               nop + ? + dom
+album                 gaCaivam                      gather + book                     gaC + vam
+albumin               wipailudz                     white + protein                   wip + ludz
+albuterol             xolsaizarkaisom               lung + open + drug                xols + zark + som
+aldehyde              -                             carbon + oxygen + group           rint + ? + hip
+alder                 waCaikorbaidip                water + cone + tree               waC + korb + dip
+alkali                falfaihand                    acid + opposite                   falf + hand
+allergen              klebaikaz                     allergy + cause                   kleb + kaz
+alligator             horbaiskodaizart              broad + snout + lizard            horb + skod + zart
+almond                nudjaihiksaidip               milk + nut + tree                 nudj + hiks + dip
+aloe                  klofailifaidorf               gel + leaf + plant                klof + lif + dorf
+alopecia              -                             hair + loss                       fif + ?
+alprazolam            -                             calm + anxiety + drug             kam + ? + som
+alum                  yedzaitigz                    sour + salt                       yedz + tigz
+aluminum              palbaitom                     shine + atom                      palb + tom
+amaryllis             xoldaiklepaiflor              bare + stalk + flower             xold + klep + flor
+americium             smokaitom                     smoke + atom                      smok + tom
+amidase               -                             amide + enzyme                    ? + spug
+amide                 smavaifalfaihip               ammonia + acid + group            smav + falf + hip
+amine                 snucaihip                     nitrogen + group                  snuc + hip
+amoxicillin           brakaiklubaisom               bacteria + kill + drug            brak + klub + som
+amphetamine           bupaipalvaisom                energy + alert + drug             bup + palv + som
+amyloidosis           snebailudzaidom               starch + protein + state          sneb + ludz + dom
+anatomy               vatainedz                     body + study                      vat + nedz
+andesite              petxaifor                     gray + fire                       petx + for
+anemone               wandaiflor                    wind + flower                     wand + flor
+anesthesia            nopainag                      no + feel                         nop + nag
+aneurysm              vesaistox                     vessel + bulge                    ves + stox
+angioma               -                             vessel + growth                   ves + ?
+angiosarcoma          vesaiflaxaibudj               vessel + flesh + cancer           ves + flax + budj
+anhydride             nopaiwaCaiCeqk                no + water + compound             nop + waC + Ceqk
+anhydrous             nopaiwaC                      no + water                        nop + waC
+anthropology          pedainedz                     people + study                    ped + nedz
+antibody              zofaivat                      against + body                    zof + vat
+antimony              pentaitom                     paint + atom                      pent + tom
+antique               -                             old + made + thing                marg + ? + niv
+aorta                 macaiyubz                     great + artery                    mac + yubz
+apex                  sukaileC                      top + point                       suk + leC
+aplasia               -                             no + growth                       nop + ?
+apoptosis             zuraiyadaimudzaidac           fall + away + cell + death        zur + yad + mudz + dac
+aquaculture           waCaidesp                     water + farm                      waC + desp
+aquifer               waCairakaigrof                water + rock + layer              waC + rak + grof
+archaeology           margainedz                    old + study                       marg + nedz
+arginine              -                             amino + acid                      ? + falf
+argon                 slomaitom                     slow + atom                       slom + tom
+arkose                -                             granite + sand                    ? + sand
+arsenic               borzaitom                     poison + atom                     borz + tom
+arteriole             smalaiyubz                    small + artery                    smal + yubz
+arteritis             yubzaiparb                    artery + swell                    yubz + parb
+arthritis             dolfaifrep                    joint + inflammation              dolf + frep
+arthropathy           dolfaibidj                    joint + disease                   dolf + bidj
+artillery             nantaizaz                     heavy + gun                       nant + zaz
+asbestos              rentairak                     thread + rock                     rent + rak
+ascites               blinaiwaC                     belly + water                     blin + waC
+aside                 hataisard                     at + side                         hat + sard
+asparagine            -                             amino + acid                      ? + falf
+aspen                 gempailifaidip                shake + leaf + tree               gemp + lif + dip
+aspirin               muzaipudzaisom                pain + fever + drug               muz + pudz + som
+assay                 tasaihund                     test + sample                     tas + hund
+astatine              klokaitom                     quick + atom                      klok + tom
+aster                 staraiflor                    star + flower                     star + flor
+asthma                tratainogz                    tight + breath                    trat + nogz
+astrocyte             staraimudz                    star + cell                       star + mudz
+ataxia                nopainord                     no + order                        nop + nord
+atlas                 deqaivam                      map + book                        deq + vam
+atorvastatin          -                             blood + fat + lower               bloC + wes + ?
+atresia               nopaijaqk                     no + passage                      nop + jaqk
+atrium                drozaitif                     enter + room                      droz + tif
+automobile            depaimuv                      self + move                       dep + muv
+avocado               wesaipesaimag                 fat + green + fruit               wes + pes + mag
+azalea                -                             bright + shrub + flower           din + ? + flor
+azithromycin          brakaigiksaisom               bacteria + block + drug           brak + giks + som
+bacillus              fitsaisnop                    rod + germ                        fits + snop
+background            gokaimits                     back + ground                     gok + mits
+balsam                -                             smell + resin                     lug + ?
+bamboo                jiftaitxic                    arrow + flute                     jift + txic
+banyan                febzailumaidip                root + branch + tree              febz + lum + dip
+baobab                wesaitimpaidip                fat + trunk + tree                wes + timp + dip
+barium                nantaitom                     heavy + atom                      nant + tom
+barley                letxaidorf                    grain + plant                     letx + dorf
+baroque               -                             ornate + style                    ? + deks
+basalt                ramaifor                      dark + fire                       ram + for
+basil                 skitailugairorb               sweet + smell + herb              skit + lug + rorb
+bathroom              -                             bath + room                       ? + tif
+bean                  pardaisid                     pod + seed                        pard + sid
+beech                 kindaiyogzaidip               smooth + bark + tree              kind + yogz + dip
+beet                  gicaifebz                     red + root                        gic + febz
+begonia               -                             uneven + leaf + flower            ? + lif + flor
+bench                 -                             long + seat                       nuc + ?
+benign                nopaidrak                     no + harm                         nop + drak
+benzene               vipairintairop                six + carbon + ring               vip + rint + rop
+berkelium             dinaitom                      bright + atom                     din + tom
+beryllium             prexaitom                     precious + atom                   prex + tom
+betaine               -                             beet + amine                      ? + ?
+bicarbonate           -                             two + carbonate                   dob + ?
+bicolor               -                             two + colour                      dob + ?
+bin                   zarkaibraz                    open + box                        zark + braz
+biogenesis            cadaidolb                     life + birth                      cad + dolb
+biomarker             cadaiwen                      life + mark                       cad + wen
+biopsy                kibaihund                     live + sample                     kib + hund
+biosynthesis          -                             life + synthesis                  cad + ?
+biotin                -                             life + vitamin                    cad + ?
+bipolar               dobaiviksaiyov                two + pole + of                   dob + viks + yov
+birch                 yofaiyogzaidip                paper + bark + tree               yof + yogz + dip
+bismuth               petsaitom                     shadow + atom                     pets + tom
+blight                dorfaijamp                    plant + rot                       dorf + jamp
+blister               mumpaiskin                    raise + skin                      mump + skin
+bluebell              bulaigentaiflor               blue + bell + flower              bul + gent + flor
+blush                 gicaifes                      red + face                        gic + fes
+bohrium               govaitom                      deep + atom                       gov + tom
+bonnet                hadaitalb                     head + cap                        had + talb
+boron                 brodaitom                     bone + atom                       brod + tom
+bracket               hoqaimarb                     hold + arm                        hoq + marb
+breadfruit            dalfaimagaidip                bread + fruit + tree              dalf + mag + dip
+breccia               bontaivic                     sharp + bit                       bont + vic
+broccoli              pesaifloraidorf               green + flower + plant            pes + flor + dorf
+bromine               vrunaitom                     ocean + atom                      vrun + tom
+bronchiole            -                             small + airway                    smal + ?
+bronchus              xolsaitub                     lung + tube                       xols + tub
+broom                 fuskaisisp                    sweep + brush                     fusk + sisp
+buck                  mafaixars                     male + deer                       maf + xars
+buckeye               xicaisidaidip                 eye + seed + tree                 xic + sid + dip
+buoy                  flotaiwen                     float + mark                      flot + wen
+bush                  txifailemaidorf               dense + low + plant               txif + lem + dorf
+business              warkaitred                    work + trade                      wark + tred
+butanol               lafairintaikoqk               four + carbon + alcohol           laf + rint + koqk
+buttercup             buxainipsaiflor               yellow + cup + flower             bux + nips + flor
+buttress              -                             prop + wall                       ? + medz
+bypass                baCaiyef                      by + pass                         baC + yef
+cabbage               mapsailifaidorf               round + leaf + plant              maps + lif + dorf
+cabinet               dorainor                      door + case                       dor + nor
+cadmium               mabaitom                      source + atom                     mab + tom
+caesium               xumaitom                      sky + atom                        xum + tom
+caffeine              gataisom                      wake + drug                       gat + som
+calcaneus             jumpaibrod                    heel + bone                       jump + brod
+calf                  zenaivaqk                     young + cow                       zen + vaqk
+californium           xoldaitom                     bare + atom                       xold + tom
+callus                kadaiskin                     hard + skin                       kad + skin
+camellia              kindaiskaqaiflor              smooth + petal + flower           kind + skaq + flor
+campaign              planairin                     plan + run                        plan + rin
+candidiasis           -                             yeast + sickness                  skog + ?
+cane                  klepaireb                     stalk + stick                     klep + reb
+cannon                brataizaz                     big + gun                         brat + zaz
+canopy                djipaikov                     over + cover                      djip + kov
+canthus               xicaimuft                     eye + corner                      xic + muft
+canton                lanaipart                     land + part                       lan + part
+capsule               smalaitxal                    small + shell                     smal + txal
+carbamate             rintaisnucaitigz              carbon + nitrogen + salt          rint + snuc + tigz
+carboxamide           -                             carboxyl + amide                  ? + ?
+carcinoma             kovaitxumaibudj               cover + tissue + cancer           kov + txum + budj
+cardiomyopathy        zifaisuftaibidj               heart + muscle + disease          zif + suft + bidj
+cardiovascular        zifaivesaiyov                 heart + vessel + of               zif + ves + yov
+carnation             foldaiskaqaiflor              fold + petal + flower             fold + skaq + flor
+carotene              -                             orange + pigment                  dej + ?
+carpet                rimaicorv                     floor + cloth                     rim + corv
+carrot                dejaifebz                     orange + root                     dej + febz
+cartridge             -                             shot + case                       ? + nor
+casein                nudjailudz                    milk + protein                    nudj + ludz
+cassava               snebaifebz                    starch + root                     sneb + febz
+castor                -                             beaver + oil                      ? + gips
+cataract              kladailalv                    cloud + lens                      klad + lalv
+catheter              vataitub                      body + tube                       vat + tub
+cattail               tadaiwaCaigras                tail + water + grass              tad + waC + gras
+cauliflower           wipaifloraidorf               white + flower + plant            wip + flor + dorf
+cedar                 -                             smell + conifer                   lug + ?
+celery                djezaiklepaidorf              crisp + stalk + plant             djez + klep + dorf
+cellulose             mudzaigand                    cell + sugar                      mudz + gand
+cerebellum            smalaibren                    small + brain                     smal + bren
+cerebrospinal         brenaispanaiyov               brain + spine + of                bren + span + yov
+cerium                blomaitom                     rust + atom                       blom + tom
+cervix                mondaiyovaigloq               neck + of + womb                  mond + yov + gloq
+chalk                 kubzaiston                    powder + stone                    kubz + ston
+chemotaxis            kremaimuv                     chemical + move                   krem + muv
+chert                 vaspaicadjaiston              dull + spark + stone              vasp + cadj + ston
+chess                 fubaimarzaigem                king + board + game               fub + marz + gem
+chestnut              spanaihiksaidip               spine + nut + tree                span + hiks + dip
+chickpea              mapsaisid                     round + seed                      maps + sid
+chive                 porvaiwontairorb              thin + onion + herb               porv + wont + rorb
+chlorine              pesaitom                      green + atom                      pes + tom
+chloroform            slipaifron                    sleep + vapor                     slip + fron
+cholecystitis         txozaiwutsaiparb              gall + bladder + swell            txoz + wuts + parb
+cholesterol           -                             bile + sterol                     vriz + ?
+choline               -                             bile + amine                      vriz + ?
+chromatin             -                             colour + thread                   ? + rent
+chromatography        -                             colour + write + craft            ? + rat + yabz
+chrome                palbaimalt                    shine + metal                     palb + malt
+chromium              kloraitom                     color + atom                      klor + tom
+chrysanthemum         mavaiskaqaiflor               many + petal + flower             mav + skaq + flor
+cigar                 maldaiCadj                    roll + tobacco                    mald + Cadj
+cilantro              bontailugairorb               sharp + smell + herb              bont + lug + rorb
+cilium                mudzaifif                     cell + hair                       mudz + fif
+cinnamon              namaiyogz                     name + bark                       nam + yogz
+ciprofloxacin         brakaiklubaisom               bacteria + kill + drug            brak + klub + som
+cirrhosis             -                             liver + scar                      ? + xoks
+clavicle              fedjaibrod                    collar + bone                     fedj + brod
+cleft                 ditaiwets                     split + gap                       dit + wets
+clergy                -                             priest + body                     ? + vat
+cloak                 txotainusp                    loose + coat                      txot + nusp
+clover                suCailifaigras                three + leaf + grass              suC + lif + gras
+coach                 -                             road + carriage                   yeb + ?
+coal                  smutaiston                    char + stone                      smut + ston
+cobalt                ropaitom                      ring + atom                       rop + tom
+cocaine               lifaisom                      leaf + drug                       lif + som
+cochlea               ditsaikriv                    ear + spiral                      dits + kriv
+cocktail              -                             mixed + drink                     ? + dug
+cocoa                 dadjaisid                     chocolate + seed                  dadj + sid
+codeine               muzaikafaisom                 pain + cough + drug               muz + kaf + som
+coffee                vumpaisidaidug                bitter + seed + drink             vump + sid + dug
+coke                  -                             burn + coal                       molc + ?
+colitis               gutaiparb                     gut + swell                       gut + parb
+collagen              -                             fibre + protein                   ? + ludz
+colloid               polaiheqaituf                 fine + hang + matter              pol + heq + tuf
+columbine             heqaigentaiflor               hang + bell + flower              heq + gent + flor
+coma                  govaislip                     deep + sleep                      gov + slip
+commerce              veftaitred                    goods + trade                     veft + tred
+commissure            gozaimups                     join + band                       goz + mups
+commonwealth          -                             common + wealth                   nobz + ?
+commune               xalaigolt                     share + village                   xal + golt
+conglomerate          mapsaivic                     round + bit                       maps + vic
+conjunctiva           -                             join + eye + film                 goz + xic + ?
+conjunctivitis        xicaiskinaiparb               eye + skin + swell                xic + skin + parb
+constipation          tudjaigut                     bound + gut                       tudj + gut
+contracture           -                             muscle + shorten                  suft + ?
+contusion             govaidjif                     deep + bruise                     gov + djif
+cookie                smalaiskitaikrek              small + sweet + cake              smal + skit + krek
+copernicium           navaitom                      center + atom                     nav + tom
+copolymer             -                             two + kind + polymer              dob + nab + ?
+corn                  talsailetxaidorf              tall + grain + plant              tals + letx + dorf
+cornea                peksaixicainusp               horn + eye + coat                 peks + xic + nusp
+corona                litairop                      light + ring                      lit + rop
+coronavirus           kartaitagz                    crown + virus                     kart + tagz
+corporation           tredaivat                     trade + body                      tred + vat
+corpuscle             smalaivat                     small + body                      smal + vat
+cortex                -                             outer + layer                     ? + grof
+cortisol              hispaisnen                    stress + hormone                  hisp + snen
+cosmos                flataimapsaiflor              flat + round + flower             flat + maps + flor
+costume               plarailiz                     play + dress                      plar + liz
+cotton                saftaidjotaidorf              soft + fiber + plant              saft + djot + dorf
+cottonwood            siksaisidaidip                cotton + seed + tree              siks + sid + dip
+crisis                kakaileC                      turn + point                      kak + leC
+crocus                yabainipsaiflor               early + cup + flower              yab + nips + flor
+cucumber              zoraiwaCaimag                 cool + water + fruit              zor + waC + mag
+cuff                  feftaimups                    wrist + band                      feft + mups
+curium                tondaitom                     cheer + atom                      tond + tom
+cusp                  leCaipadj                     point + edge                      leC + padj
+cyanide               bulaiCeqk                     blue + compound                   bul + Ceqk
+cyanobacteria         bulaipesaisnop                blue + green + germ               bul + pes + snop
+cypress               -                             silk + conifer                    ford + ?
+cysteine              -                             sulfur + amino + acid             spiz + ? + falf
+cystitis              wutsaiparb                    bladder + swell                   wuts + parb
+cytidine              -                             cytosine + sugar                  ? + gand
+cytology              mudzainedz                    cell + study                      mudz + nedz
+cytotoxicity          -                             cell + poison + ness              mudz + borz + ?
+daffodil              buxaiwolbaiflor               yellow + trumpet + flower         bux + wolb + flor
+dahlia                mapsaimavaiflor               round + many + flower             maps + mav + flor
+dairy                 nudjaipuz                     milk + house                      nudj + puz
+daisy                 bipsaiflor                    chick + flower                    bips + flor
+dandelion             groqaicutx                    lion + tooth                      groq + cutx
+darmstadtium          dolbaitom                     birth + atom                      dolb + tom
+decarboxylase         rintaihitsaispug              carbon + strip + enzyme           rint + hits + spug
+dehydratase           waCaihitsaispug               water + strip + enzyme            waC + hits + spug
+dehydrogenase         brimaihitsaispug              hydrogen + strip + enzyme         brim + hits + spug
+delphinium            talsaibulaiflor               tall + blue + flower              tals + bul + flor
+dementia              -                             mind + loss                       man + ?
+den                   bistaihom                     beast + home                      bist + hom
+dentistry             cutxaiyabz                    tooth + craft                     cutx + yabz
+dentition             cutxaigig                     tooth + set                       cutx + gig
+deoxyadenosine        -                             no + oxygen + adenosine           nop + ? + ?
+dermatitis            skinaifrep                    skin + inflammation               skin + frep
+dermis                skinaigrof                    skin + layer                      skin + grof
+dextromethorphan      kafaigiksaisom                cough + block + drug              kaf + giks + som
+diabetes              -                             sugar + waste + sickness          gand + musp + ?
+diarrhea              txotaiglad                    loose + stool                     txot + glad
+diazepam              kamaislipaisom                calm + sleep + drug               kam + slip + som
+dichloride            dobaivraqaitigz               two + chlorine + salt             dob + vraq + tigz
+diencephalon          tinaibren                     between + brain                   tin + bren
+diesel                nantaiful                     heavy + fuel                      nant + ful
+dill                  cindairorb                    feather + herb                    cind + rorb
+dinucleotide          -                             two + nucleotide                  dob + ?
+diol                  dobaikoqk                     two + alcohol                     dob + koqk
+diorite               petxailetx                    gray + grain                      petx + letx
+dioxide               -                             two + oxide                       dob + ?
+diphenhydramine       klebaislipaisom               allergy + sleep + drug            kleb + slip + som
+diphosphate           -                             two + phosphate                   dob + ?
+dismutase             ditaisolpaispug               split + swap + enzyme             dit + solp + spug
+disulfide             dobaispizainuq                two + sulfur + bond               dob + spiz + nuq
+diverticulum          -                             gut + pouch                       gut + ?
+dogwood               wipaifloraidip                white + flower + tree             wip + flor + dip
+dopamine              kipsaidivaitet                reward + drive + signal           kips + div + tet
+dope                  vaspaisom                     dull + drug                       vasp + som
+drone                 mafaifest                     male + bee                        maf + fest
+dubnium               malkaitom                     race + atom                       malk + tom
+duodenum              mopaigut                      twelve + gut                      mop + gut
+dwarfism              djobaidom                     dwarf + state                     djob + dom
+dysfunction           futaiwark                     bad + work                        fut + wark
+dysgenesis            -                             bad + growth                      fut + ?
+dysplasia             -                             bad + growth                      fut + ?
+dystrophy             futainubz                     bad + feed                        fut + nubz
+ebony                 vogaivriCaidip                black + wood + tree               vog + vriC + dip
+ectoderm              -                             outer + skin                      ? + skin
+edelweiss             wipaimotaiflor                white + mountain + flower         wip + mot + flor
+edema                 waCaiparb                     water + swell                     waC + parb
+eggplant              sifaimag                      purple + fruit                    sif + mag
+einsteinium           rezaitom                      smart + atom                      rez + tom
+electrostatic         kespained                     electric + static                 kesp + ned
+elm                   wiqaisidaidip                 wing + seed + tree                wiq + sid + dip
+embankment            lasaimedz                     bank + wall                       las + medz
+embolism              truzaigiks                    clot + block                      truz + giks
+emphysema             xolsailesaiparb               lung + air + swell                xols + les + parb
+emulsion              polaimiks                     fine + mix                        pol + miks
+enamel                cutxaisket                    tooth + glaze                     cutx + sket
+encephalopathy        brenaibidj                    brain + disease                   bren + bidj
+encounter             -                             in + counter                      ras + ?
+endocarditis          -                             inner + heart + swell             ? + zif + parb
+endocardium           -                             inner + heart + lining            ? + zif + ?
+endoderm              -                             inner + skin                      ? + skin
+endometrium           -                             inside + womb + lining            geb + gloq + ?
+endorphin             -                             inner + pain + drug               ? + muz + som
+endothelium           -                             inside + lining                   geb + ?
+enterprise            tinaitek                      between + take                    tin + tek
+eosinophilia          wipaimudzaidjoz               white + cell + excess             wip + mudz + djoz
+epidemiology          -                             spread + sickness + study         dend + ? + nedz
+epidermis             pandaiskin                    upon + skin                       pand + skin
+epididymis            -                             upon + testis                     pand + ?
+epiglottis            djipaigalkaibriv              over + throat + flap              djip + galk + briv
+epilepsy              -                             seize + sickness                  lidj + ?
+epinephrine           palvaizifaisnen               alert + heart + hormone           palv + zif + snen
+epiphysis             brodaiguv                     bone + end                        brod + guv
+epithelium            kovaitxum                     cover + tissue                    kov + txum
+epoxide               -                             oxygen + ring                     ? + rop
+erbium                malzaitom                     glass + atom                      malz + tom
+erythema              gicaiskin                     red + skin                        gic + skin
+erythroblast          gicaibloCaigond               red + blood + bud                 gic + bloC + gond
+erythrocyte           gicaibloCaimudz               red + blood + cell                gic + bloC + mudz
+esophagus             -                             gullet + tube                     ? + tub
+estate                hoqailan                      hold + land                       hoq + lan
+ester                 falfaikoqkaigoz               acid + alcohol + join             falf + koqk + goz
+estradiol             -                             estrus + two + alcohol            ? + dob + koqk
+estrogen              fimaifedaisnen                female + sex + hormone            fim + fed + snen
+ethanol               dobairintaikoqk               two + carbon + alcohol            dob + rint + koqk
+ether                 slipaifron                    sleep + vapor                     slip + fron
+ethyl                 dobairintaihip                two + carbon + group              dob + rint + hip
+etiology              kazainedz                     cause + study                     kaz + nedz
+eucalyptus            lugaigipsaidip                smell + oil + tree                lug + gips + dip
+europium              boftaitom                     screen + atom                     boft + tom
+excision              zepaibuk                      cut + out                         zep + buk
+exocrine              -                             out + secrete                     buk + ?
+eyeball               xicaibral                     eye + ball                        xic + bral
+fascia                vodjaitxum                    sheet + tissue                    vodj + txum
+femur                 gromaibrod                    thigh + bone                      grom + brod
+fennel                namairorb                     name + herb                       nam + rorb
+fentanyl              vuftaimuzaisom                extreme + pain + drug             vuft + muz + som
+fermium               raraitom                      rare + atom                       rar + tom
+fern                  zigzaicutx                    sheep + tooth                     zigz + cutx
+fibrillation          -                             quiver + beat                     ? + bit
+fibroblast            -                             fibre + cell                      ? + mudz
+fibroma               -                             fibre + growth                    ? + ?
+fibrosis              -                             fibre + growth                    ? + ?
+fibula                sardailegzaibrod              side + leg + bone                 sard + legz + brod
+fir                   -                             flat + conifer                    flat + ?
+fistula               raqaijaqk                     wrong + passage                   raq + jaqk
+flank                 vataisard                     body + side                       vat + sard
+flask                 -                             narrow + neck + bottle            Ceft + mond + ?
+flax                  djotaisidaidorf               fiber + seed + plant              djot + sid + dorf
+fleece                laqkainusp                    wool + coat                       laqk + nusp
+flerovium             kladaitom                     cloud + atom                      klad + tom
+flint                 forainalcaiston               fire + strike + stone             for + nalc + ston
+fluorine              cutxaitom                     tooth + atom                      cutx + tom
+fluorouracil          -                             fluorine + uracil                 ? + ?
+fluoxetine            mudaigorvaisom                mood + lift + drug                mud + gorv + som
+follicle              smalaisnaz                    small + sac                       smal + snaz
+fontanelle            horfaisaftaimals              skull + soft + spot               horf + saft + mals
+football              gralaibral                    foot + ball                       gral + bral
+foramen               brodaihatx                    bone + hole                       brod + hatx
+forebrain             -                             fore + brain                      ? + bren
+forget-me-not         smalaibulaiflor               small + blue + flower             smal + bul + flor
+fossa                 brodaivabz                    bone + hollow                     brod + vabz
+foster                mumpaikriq                    raise + care                      mump + kriq
+foxglove              gartaigentaiflor              finger + bell + flower            gart + gent + flor
+francium              txotaitom                     loose + atom                      txot + tom
+freesia               skitailugaiflor               sweet + smell + flower            skit + lug + flor
+freshwater            fraxaiwaC                     fresh + water                     frax + waC
+gabbro                ramailetx                     dark + grain                      ram + letx
+gadolinium            sikaitom                      seek + atom                       sik + tom
+galactose             nudjaigand                    milk + sugar                      nudj + gand
+gallbladder           txozaiwuts                    gall + bladder                    txoz + wuts
+gallium               baxaitom                      bird + atom                       bax + tom
+ganglion              nurvaigrox                    nerve + knot                      nurv + grox
+gangrene              tisaiflax                     dead + flesh                      tis + flax
+garbage               jetaimusp                     throw + waste                     jet + musp
+gardenia              wipailugaiflor                white + smell + flower            wip + lug + flor
+garland               florairop                     flower + ring                     flor + rop
+garlic                livailugaiwusk                strong + smell + bulb             liv + lug + wusk
+gastritis             stokaiparb                    stomach + swell                   stok + parb
+gelatin               brodaiCift                    bone + jelly                      brod + Cift
+genre                 meqkainab                     art + kind                        meqk + nab
+geography             -                             earth + writing                   riq + ?
+geranium              mapsailifaiflor               round + leaf + flower             maps + lif + flor
+germanium             klivaitom                     cave + atom                       kliv + tom
+ginger                gepaifebz                     hot + root                        gep + febz
+girdle                respaimups                    waist + band                      resp + mups
+gladiolus             bibzailifaiflor               sword + leaf + flower             bibz + lif + flor
+glaucoma              -                             eye + press + sickness            xic + malf + ?
+glioblastoma          yistaimudzaibudj              glue + cell + cancer              yist + mudz + budj
+glioma                yistaimudzaibudj              glue + cell + cancer              yist + mudz + budj
+globulin              bralailudz                    ball + protein                    bral + ludz
+glomerulus            fundaivesaibral               kidney + vessel + ball            fund + ves + bral
+glucan                gandailip                     sugar + chain                     gand + lip
+glucosamine           -                             glucose + amine                   ? + ?
+glucose               grepaigand                    grape + sugar                     grep + gand
+glutamine             -                             amino + acid                      ? + falf
+glutathione           -                             three + amino + acid              suC + ? + falf
+glycerol              skitaikoqk                    sweet + alcohol                   skit + koqk
+glycine               skitaifalf                    sweet + acid                      skit + falf
+glycoprotein          gandailudz                    sugar + protein                   gand + ludz
+gneiss                mupsaimalf                    band + press                      mups + malf
+gold                  fubaitom                      king + atom                       fub + tom
+goldenrod             godaiklepaiflor               gold + stalk + flower             god + klep + flor
+gonadotropin          -                             gonad + turn + toward             ? + kak + nol
+gouge                 skupaiskam                    scoop + chisel                    skup + skam
+gourd                 kadaitxalaimag                hard + shell + fruit              kad + txal + mag
+granite               florailetx                    flower + grain                    flor + letx
+granuloma             -                             grain + growth                    letx + ?
+grape                 txekaiglaf                    vine + berry                      txek + glaf
+grapefruit            vumpaimapsaimag               bitter + round + fruit            vump + maps + mag
+greenhouse            pesaipuz                      green + house                     pes + puz
+greywacke             cataisand                     mud + sand                        cat + sand
+guanosine             -                             guanine + sugar                   ? + gand
+guidelines            gibaizob                      guide + line                      gib + zob
+gum tree              zibzaiglomaidip               gum + sap + tree                  zibz + glom + dip
+gutter                waCaibark                     water + channel                   waC + bark
+gyrus                 brenaifold                    brain + fold                      bren + fold
+hack                  gabzaizep                     rough + cut                       gabz + zep
+hafnium               tulaitom                      tool + atom                       tul + tom
+hallux                brataivint                    big + toe                         brat + vint
+hamartoma             -                             wrong + tissue + growth           raq + txum + ?
+harlequin             patxaijom                     patch + pattern                   patx + jom
+harness               regzaikutx                    strap + gear                      regz + kutx
+hassium               fraxaitom                     fresh + atom                      frax + tom
+hawthorn              rargaiglafaidip               thorn + berry + tree              rarg + glaf + dip
+headache              hadaiblat                     head + ache                       had + blat
+headgear              hadaikutx                     head + gear                       had + kutx
+heather               -                             small + purple + shrub            smal + sif + ?
+hedge                 dorfaimedz                    plant + wall                      dorf + medz
+helium                sanaitom                      sun + atom                        san + tom
+helmet                hadaimoft                     head + guard                      had + moft
+hemangioma            -                             blood + vessel + growth           bloC + ves + ?
+hemlock               -                             droop + conifer                   ? + ?
+hemoglobin            bloCailudz                    blood + protein                   bloC + ludz
+hemorrhage            bloCaibust                    blood + burst                     bloC + bust
+hemp                  livaidjotaidorf               strong + fiber + plant            liv + djot + dorf
+heparin               bloCaitruzaigiks              blood + clot + block              bloC + truz + giks
+hepatitis             -                             liver + inflammation              ? + frep
+hernia                lepaipup                      push + through                    lep + pup
+heroin                livaizimaisom                 strong + pleasure + drug          liv + zim + som
+hibiscus              giqkaiwolbaiflor              large + trumpet + flower          giqk + wolb + flor
+hickory               kadaihiksaidip                hard + nut + tree                 kad + hiks + dip
+histidine             -                             amino + acid                      ? + falf
+holly                 bontailifaidip                sharp + leaf + tree               bont + lif + dip
+hollyhock             talsaifloraiklep              tall + flower + stalk             tals + flor + klep
+holmium               pimaitom                      permeate + atom                   pim + tom
+honeycomb             kavaicolf                     honey + comb                      kav + colf
+honeysuckle           skitaitxekaiflor              sweet + vine + flower             skit + txek + flor
+hoop                  fatxairop                     stiff + ring                      fatx + rop
+horse chestnut        -                             big + chestnut + tree             brat + ? + dip
+horseshoe             horsaidebz                    horse + shoe                      hors + debz
+humerus               -                             upper + arm + bone                ? + marb + brod
+husbandry             despaiyabz                    farm + craft                      desp + yabz
+hyacinth              txifaigentaiflor              dense + bell + flower             txif + gent + flor
+hydrangea             bralaiflor                    ball + flower                     bral + flor
+hydrocarbon           brimairint                    hydrogen + carbon                 brim + rint
+hydrocephalus         waCaihad                      water + head                      waC + had
+hydrochloride         brimaivraqaitigz              hydrogen + chlorine + salt        brim + vraq + tigz
+hydrocortisone        skinaiparbaisnen              skin + swell + hormone            skin + parb + snen
+hydrolase             waCaiditaispug                water + split + enzyme            waC + dit + spug
+hydroxyproline        -                             hydroxyl + proline                ? + ?
+hygiene               klinaiyabz                    clean + craft                     klin + yabz
+hyperplasia           -                             over + growth                     djip + ?
+hypertension          molaibloCaimalf               high + blood + press              mol + bloC + malf
+hypoplasia            -                             under + growth                    bet + ?
+hypotension           lemaibloCaimalf               low + blood + press               lem + bloC + malf
+hypothalamus          -                             under + thalamus                  bet + ?
+hypothyroidism        -                             low + thyroid + state             lem + ? + dom
+hypoxia               -                             under + oxygen                    bet + ?
+ibuprofen             muzaiparbaisom                pain + swell + drug               muz + parb + som
+idiopathic            nopaixefaikaz                 no + known + cause                nop + xef + kaz
+ileum                 vitsaigut                     twist + gut                       vits + gut
+imidazole             snucairop                     nitrogen + ring                   snuc + rop
+immunoglobulin        weqkailudz                    immune + protein                  weqk + ludz
+implant               rasaigig                      in + set                          ras + gig
+indigo                govaibul                      deep + blue                       gov + bul
+indium                gostaitom                     ghost + atom                      gost + tom
+indole                -                             nitrogen + double + ring          snuc + ? + rop
+infant                zenainar                      young + person                    zen + nar
+infarction            tisaitxumaigiks               dead + tissue + block             tis + txum + giks
+inflorescence         floraisnan                    flower + cluster                  flor + snan
+infrared              dodjaigic                     below + red                       dodj + gic
+inositol              ropaikoqk                     ring + alcohol                    rop + koqk
+institute             totaivat                      found + body                      tot + vat
+insulin               gandaisnen                    sugar + hormone                   gand + snen
+interaction           tinaikiq                      between + action                  tin + kiq
+intercourse           fedaiyez                      sex + act                         fed + yez
+international         tinaipomp                     between + nation                  tin + pomp
+intervertebral        -                             between + vertebra + of           tin + ? + yov
+intravenous           modjaiglizaiyov               within + vein + of                modj + gliz + yov
+iodine                stenaitom                     stain + atom                      sten + tom
+iridium               gruqaitom                     arch + atom                       gruq + tom
+iris                  -                             rainbow + flower                  ? + flor
+ironwood              kitxaikadaivriC               iron + hard + wood                kitx + kad + vriC
+isle                  smalaigend                    small + island                    smal + gend
+isomerase             -                             isomer + enzyme                   ? + spug
+ivory                 cutxaibrod                    tooth + bone                      cutx + brod
+ivy                   blanaitxek                    cling + vine                      blan + txek
+jasmine               yitailugaiflor                night + smell + flower            yit + lug + flor
+jazz                  slidaifeb                     swing + music                     slid + feb
+jejunum               nuvaigut                      empty + gut                       nuv + gut
+jewelweed             dinaigegzaiflor               bright + wet + flower             din + gegz + flor
+joshua tree           -                             branch + yucca + tree             lum + ? + dip
+juniper               -                             berry + conifer                   glaf + ?
+jurisprudence         xufainedz                     law + study                       xuf + nedz
+kale                  korkailifaidorf               curl + leaf + plant               kork + lif + dorf
+kapok                 saftaidjotaidip               soft + fiber + tree               saft + djot + dip
+keratinocyte          peksaimudz                    horn + cell                       peks + mudz
+keratitis             -                             cornea + swell                    ? + parb
+keratosis             peksaiskinaidom               horn + skin + state               peks + skin + dom
+ketamine              bogaisnetaisom                detach + anesthetic + drug        bog + snet + som
+ketone                -                             carbon + oxygen + group           rint + ? + hip
+kinase                -                             phosphate + enzyme                ? + spug
+kitchen               nalfaitif                     cook + room                       nalf + tif
+kite                  lefaifras                     fly + sail                        lef + fras
+krypton               pedjaitom                     hidden + atom                     pedj + tom
+labyrinth             blitaiyovaidits               maze + of + ear                   blit + yov + dits
+lace                  hatxaicorv                    hole + cloth                      hatx + corv
+lactone               -                             ring + ester                      rop + ?
+lamina                porvaiplet                    thin + plate                      porv + plet
+lane                  Ceftaiyeb                     narrow + road                     Ceft + yeb
+lantern               maftaizunt                    carry + lamp                      maft + zunt
+lanthanum             lesaitom                      air + atom                        les + tom
+larch                 -                             fall + conifer                    zur + ?
+laser                 porvailitaiblim               thin + light + beam               porv + lit + blim
+laterite              kitxairit                     iron + soil                       kitx + rit
+latex                 nudjaiglom                    milk + sap                        nudj + glom
+lavender              kamailugaiflor                calm + smell + flower             kam + lug + flor
+lawn                  zepaigras                     cut + grass                       zep + gras
+lawrencium            zarkaitom                     open + atom                       zark + tom
+league                gozaihip                      join + group                      goz + hip
+lectin                gandaibinailudz               sugar + bind + protein            gand + bin + ludz
+lee                   vondaisard                    shelter + side                    vond + sard
+leek                  nucaiwontaidorf               long + onion + plant              nuc + wont + dorf
+leiomyoma             -                             smooth + muscle + growth          kind + suft + ?
+leiomyosarcoma        kindaisuftaibudj              smooth + muscle + cancer          kind + suft + budj
+lentil                flataisid                     flat + seed                       flat + sid
+lettuce               saftailifaidorf               soft + leaf + plant               saft + lif + dorf
+leucine               -                             amino + acid                      ? + falf
+leukocyte             wipaimudz                     white + cell                      wip + mudz
+lidocaine             ruspaimuzaisom                numb + pain + drug                rusp + muz + som
+ligament              binaitxum                     bind + tissue                     bin + txum
+ligand                binainiv                      bind + thing                      bin + niv
+ligase                gozaispug                     join + enzyme                     goz + spug
+lilac                 dempaisnanaiflor              spring + cluster + flower         demp + snan + flor
+lily                  wefaigozaiflor                hundred + join + flower           wef + goz + flor
+limestone             djimaiston                    lime + stone                      djim + ston
+linden                zifailifaidip                 heart + leaf + tree               zif + lif + dip
+ling                  porvaifrix                    thin + fish                       porv + frix
+linguistics           ximainedz                     speech + study                    xim + nedz
+lipase                wesaispug                     fat + enzyme                      wes + spug
+lipoma                -                             fat + growth                      wes + ?
+lipoprotein           wesailudz                     fat + protein                     wes + ludz
+liposarcoma           wesaiflaxaibudj               fat + flesh + cancer              wes + flax + budj
+lithium               rakaitom                      rock + atom                       rak + tom
+litter                blupaimusp                    scatter + waste                   blup + musp
+livermorium           harfaitom                     host + atom                       harf + tom
+locomotive            lumpaidiks                    rail + engine                     lump + diks
+locust                rargaipardaidip               thorn + pod + tree                rarg + pard + dip
+loratadine            klebaigiksaisom               allergy + block + drug            kleb + giks + som
+lotus                 waCaiflor                     water + flower                    waC + flor
+lumber                zepaivriC                     cut + wood                        zep + vriC
+lupine                talsaispakaiflor              tall + spike + flower             tals + spak + flor
+lutetium              xestaitom                     swamp + atom                      xest + tom
+lyase                 ditaispug                     split + enzyme                    dit + spug
+lymph                 vobaivataiwaC                 clear + body + water              vob + vat + waC
+lymphadenitis         -                             lymph + gland + swell             ? + smaq + parb
+lymphocyte            -                             lymph + cell                      ? + mudz
+lymphoma              -                             lymph + cancer                    ? + budj
+lysine                -                             amino + acid                      ? + falf
+macrophage            brataigabaimudz               big + eat + cell                  brat + gab + mudz
+magnesium             xantaitom                     ancient + atom                    xant + tom
+magnolia              brataifloraidip               big + flower + tree               brat + flor + dip
+magnolia flower       brataiwipaiflor               big + white + flower              brat + wip + flor
+mahogany              gicaivriCaidip                red + wood + tree                 gic + vriC + dip
+maiden                -                             young + unwed + woman             zen + ? + nom
+malformation          futaideps                     bad + shape                       fut + deps
+mallet                vriCaivent                    wood + hammer                     vriC + vent
+manganese             zistaitom                     resist + atom                     zist + tom
+mannose               -                             manna + sugar                     ? + gand
+manure                -                             field + dung                      gor + ?
+maple                 ranaizeqk                     frog + hand                       ran + zeqk
+marathon              nucaimalk                     long + race                       nuc + malk
+marble                floraiston                    flower + stone                    flor + ston
+mare                  fimaihors                     female + horse                    fim + hors
+marigold              godaiflor                     gold + flower                     god + flor
+maroon                ramaigic                      dark + red                        ram + gic
+meatus                vataijaqk                     body + passage                    vat + jaqk
+medal                 -                             honour + disc                     ? + brud
+mediastinum           gitxaimadaipas                chest + middle + space            gitx + mad + pas
+medulla               -                             inner + part                      ? + part
+meitnerium            basaitom                      merge + atom                      bas + tom
+melanocyte            vogaimudz                     black + cell                      vog + mudz
+melanoma              vogaibudj                     black + cancer                    vog + budj
+melatonin             slipaisnen                    sleep + hormone                   slip + snen
+melon                 skitaiwaCaimag                sweet + water + fruit             skit + waC + mag
+mendelevium           lidaitom                      lead + atom                       lid + tom
+meninges              brenaiskin                    brain + skin                      bren + skin
+meningioma            -                             brain + skin + growth             bren + skin + ?
+meningitis            brenaiskinaiparb              brain + skin + swell              bren + skin + parb
+menthol               zorailugaiCeqk                cool + smell + compound           zor + lug + Ceqk
+mercury               kridaitom                     liquid + atom                     krid + tom
+mesenchyme            madaitxum                     middle + tissue                   mad + txum
+mesentery             gutaifoldaivodj               gut + fold + sheet                gut + fold + vodj
+mesoderm              madaiskin                     middle + skin                     mad + skin
+mesothelioma          -                             lining + tissue + cancer          ? + txum + budj
+mesquite              dralairargaidip               dry + thorn + tree                dral + rarg + dip
+metacarpal            numpaifeftaibrod              beyond + wrist + bone             nump + feft + brod
+metatarsal            numpaixuftaibrod              beyond + ankle + bone             nump + xuft + brod
+metformin             -                             blood + sugar + lower             bloC + gand + ?
+methacrylate          -                             methyl + acrylate                 ? + ?
+methamphetamine       livaibupaisom                 strong + energy + drug            liv + bup + som
+methane               zanairintaimesk               one + carbon + gas                zan + rint + mesk
+methanol              zanairintaikoqk               one + carbon + alcohol            zan + rint + koqk
+methionine            -                             sulfur + amino + acid             spiz + ? + falf
+methyl                zanairintaihip                one + carbon + group              zan + rint + hip
+methylphenidate       rixaisom                      attention + drug                  rix + som
+microbiology          smalaicadainedz               small + life + study              smal + cad + nedz
+microscopy            smalaiyuvaiyabz               small + view + craft              smal + yuv + yabz
+midbrain              madaibren                     middle + brain                    mad + bren
+milkweed              nudjaiglomaiflor              milk + sap + flower               nudj + glom + flor
+mill                  grotaipuz                     grind + house                     grot + puz
+millet                smalailetx                    small + grain                     smal + letx
+mint                  zorailugailif                 cool + smell + leaf               zor + lug + lif
+mistletoe             dipaiblopaidorf               tree + parasite + plant           dip + blop + dorf
+molybdenum            ramaitom                      dark + atom                       ram + tom
+monocyte              miskaiwipaimudz               single + white + cell             misk + wip + mudz
+monohydrate           zanaiwaCaitigz                one + water + salt                zan + waC + tigz
+monooxygenase         -                             one + oxygen + enzyme             zan + ? + spug
+monophosphate         -                             one + phosphate                   zan + ?
+monoxide              -                             one + oxide                       zan + ?
+moor                  zarkaimolailan                open + high + land                zark + mol + lan
+mop                   saxaitul                      wash + tool                       sax + tul
+morning glory         tanaitxekaiflor               morning + vine + flower           tan + txek + flor
+morphine              livaimuzaisom                 strong + pain + drug              liv + muz + som
+morphogenesis         -                             shape + making                    deps + ?
+mortar                stonaipest                    stone + paste                     ston + pest
+mosaic                fufaifoz                      piece + picture                   fuf + foz
+moscovium             zifaitom                      heart + atom                      zif + tom
+moss                  saftaimitsaidorf              soft + ground + plant             saft + mits + dorf
+motif                 vavaifud                      repeat + figure                   vav + fud
+mudstone              cataiston                     mud + stone                       cat + ston
+mulberry              mavaiglafaidip                many + berry + tree               mav + glaf + dip
+musk                  xarsaiyind                    deer + scent                      xars + yind
+mustard               namaisid                      name + seed                       nam + sid
+mycoplasma            ploqailakaisnop               fungus + like + germ              ploq + lak + snop
+myeloma               djuzaibudj                    marrow + cancer                   djuz + budj
+myocarditis           zifaisuftaiparb               heart + muscle + swell            zif + suft + parb
+myocardium            zifaisuft                     heart + muscle                    zif + suft
+myopathy              suftaibidj                    muscle + disease                  suft + bidj
+myositis              suftaiparb                    muscle + swell                    suft + parb
+myxoma                -                             slime + growth                    ? + ?
+naloxone              muzaisomaigiks                pain + drug + block               muz + som + giks
+naproxen              nucaimuzaisom                 long + pain + drug                nuc + muz + som
+nasopharynx           nozaigalk                     nose + throat                     noz + galk
+neodymium             nampaitom                     magnet + atom                     namp + tom
+neon                  tubaitom                      tube + atom                       tub + tom
+neonatal              gumpailofaiyov                new + born + of                   gump + lof + yov
+neoplasia             -                             new + growth                      gump + ?
+neoplasm              -                             new + growth                      gump + ?
+nephritis             fundaiparb                    kidney + swell                    fund + parb
+nephron               fundaigalp                    kidney + unit                     fund + galp
+nephropathy           fundaibidj                    kidney + disease                  fund + bidj
+neptunium             saxaitom                      wash + atom                       sax + tom
+nettle                Campailifaidorf               sting + leaf + plant              Camp + lif + dorf
+neuritis              nurvaiparb                    nerve + swell                     nurv + parb
+neuroblastoma         nurvaigondaibudj              nerve + bud + cancer              nurv + gond + budj
+neuromuscular         nurvaisuftaiyov               nerve + muscle + of               nurv + suft + yov
+neuropathy            nurvaibidj                    nerve + disease                   nurv + bidj
+neurotoxin            nurvaiborz                    nerve + poison                    nurv + borz
+nevus                 skinaiwen                     skin + mark                       skin + wen
+newborn               gumpailof                     new + born                        gump + lof
+nick                  smalaizep                     small + cut                       smal + zep
+nickel                wipaitom                      white + atom                      wip + tom
+nicotine              palvaiyolbaisom               alert + addict + drug             palv + yolb + som
+nihonium              nolfaitom                     danger + atom                     nolf + tom
+niobium               snomaitom                     snow + atom                       snom + tom
+nitroglycerin         zifaivesaizark                heart + vessel + open             zif + ves + zark
+nobelium              prazaitom                     prize + atom                      praz + tom
+northwest             yinaiweb                      north + west                      yin + web
+novocaine             ruspaimuzaisom                numb + pain + drug                rusp + muz + som
+nucleotide            klisaigalp                    nucleus + unit                    klis + galp
+oak                   hiksainipsaidip               nut + cup + tree                  hiks + nips + dip
+oat                   letxaidorf                    grain + plant                     letx + dorf
+obsidian              glodaimalz                    lava + glass                      glod + malz
+oganesson             gozaitom                      join + atom                       goz + tom
+omeprazole            stokaifalfaigiks              stomach + acid + block            stok + falf + giks
+onion                 bontailugaiwusk               sharp + smell + bulb              bont + lug + wusk
+onset                 vunaigig                      on + set                          vun + gig
+orchid                fluzaiflor                    complex + flower                  fluz + flor
+oregano               livailugairorb                strong + smell + herb             liv + lug + rorb
+orifice               vataihatx                     body + hole                       vat + hatx
+ornithine             -                             amino + acid                      ? + falf
+oropharynx            mucaigalk                     mouth + throat                    muc + galk
+osmium                wiqaitom                      wing + atom                       wiq + tom
+osteoblast            brodaigondaimudz              bone + bud + cell                 brod + gond + mudz
+osteomyelitis         brodaidjuzaiparb              bone + marrow + swell             brod + djuz + parb
+osteosarcoma          brodaibudj                    bone + cancer                     brod + budj
+outdoor               bukaidor                      out + door                        buk + dor
+outflow               bukaisunt                     out + flow                        buk + sunt
+overgrowth            -                             over + growth                     djip + ?
+overhead              djipaihad                     over + head                       djip + had
+oxidase               -                             oxygen + enzyme                   ? + spug
+oxidoreductase        -                             oxygen + move + enzyme            ? + muv + spug
+oxime                 -                             nitrogen + oxygen + group         snuc + ? + hip
+oxycodone             livaimuzaisom                 strong + pain + drug              liv + muz + som
+oxygen                nogzaitom                     breath + atom                     nogz + tom
+oxytocin              nuqaidolbaisnen               bond + birth + hormone            nuq + dolb + snen
+pacemaker             futsaimekaiyug                pace + make + agent               futs + mek + yug
+pall                  -                             coffin + cloth                    ? + corv
+palladium             daldaitom                     wise + atom                       dald + tom
+palm                  kartailifaidip                crown + leaf + tree               kart + lif + dip
+pancreatitis          -                             pancreas + swell                  ? + parb
+pansy                 fesaiflor                     face + flower                     fes + flor
+papilla               smalaibamp                    small + bump                      smal + bamp
+papilloma             -                             bump + growth                     bamp + ?
+paracetamol           muzaipudzaisom                pain + fever + drug               muz + pudz + som
+paralysis             nopaimuv                      no + move                         nop + muv
+parenchyma            warkaitxum                    work + tissue                     wark + txum
+paresis               slokaiflex                    weak + palsy                      slok + flex
+parsley               pesaikorkairorb               green + curl + herb               pes + kork + rorb
+patella               holbaibrod                    knee + bone                       holb + brod
+pathway               pacaiyat                      path + way                        pac + yat
+pea                   mapsaipardaisid               round + pod + seed                maps + pard + sid
+peanut                betaimitsaihiks               under + ground + nut              bet + mits + hiks
+peat                  stopaidorf                    bog + plant                       stop + dorf
+pecan                 skitaihiksaidip               sweet + nut + tree                skit + hiks + dip
+peduncle              floraiklep                    flower + stalk                    flor + klep
+pegmatite             brataikuqk                    big + crystal                     brat + kuqk
+pendant               heqaidjul                     hang + jewel                      heq + djul
+penicillin            brakaiklubaisom               bacteria + kill + drug            brak + klub + som
+penny                 -                             small + coin. A currency          smal + ?
+peony                 brataimapsaiflor              big + round + flower              brat + maps + flor
+pepper                gepaimag                      hot + fruit                       gep + mag
+peptidase             -                             peptide + enzyme                  ? + spug
+peptide               letailudzailip                short + protein + chain           let + ludz + lip
+pericarditis          zifaisnazaiparb               heart + sac + swell               zif + snaz + parb
+pericardium           pozaizif                      around + heart                    poz + zif
+peridotite            pesailetx                     green + grain                     pes + letx
+peritoneum            -                             belly + lining                    blin + ?
+peritonitis           -                             belly + lining + swell            blin + ? + parb
+peroxidase            -                             peroxide + enzyme                 ? + spug
+peroxide              -                             beyond + oxide                    nump + ?
+pesticide             dredaiklub                    pest + kill                       dred + klub
+petunia               wolbaiflor                    trumpet + flower                  wolb + flor
+phalanx               gartaibrod                    finger + bone                     gart + brod
+pharmacology          somainedz                     drug + study                      som + nedz
+pharynx               galkaijaqk                    throat + passage                  galk + jaqk
+phenol                ropaikoqk                     ring + alcohol                    rop + koqk
+phenylalanine         -                             phenyl + amino + acid             ? + ? + falf
+phosphatase           -                             phosphate + enzyme                ? + spug
+phosphorus            litaitom                      light + atom                      lit + tom
+phyllite              fordaimalf                    silk + press                      ford + malf
+pickup                prukaited                     pick + up                         pruk + ted
+pie                   nolbaidjid                    fill + crust                      nolb + djid
+pine                  -                             bundle + conifer                  grim + ?
+pinna                 -                             outer + ear                       ? + dits
+pituitary             brenaismaq                    brain + gland                     bren + smaq
+plague                -                             spread + sickness                 dend + ?
+plaque                flataipatx                    flat + patch                      flat + patx
+platinum              hugzaitom                     noble + atom                      hugz + tom
+pleura                -                             lung + lining                     xols + ?
+plexus                nurvaihift                    nerve + net                       nurv + hift
+plunge                dotaidift                     down + rush                       dot + dift
+plutonium             zadaitom                      far + atom                        zad + tom
+pneumonia             -                             lung + swell + sickness           xols + parb + ?
+poker                 yiksaifits                    stir + rod                        yiks + fits
+polo                  horsaibralaigem               horse + ball + game               hors + bral + gem
+polonium              gempaitom                     shake + atom                      gemp + tom
+polydactyly           mavaigartaidom                many + finger + state             mav + gart + dom
+polymerase            -                             polymer + enzyme                  ? + spug
+polysaccharide        mavaigand                     many + sugar                      mav + gand
+pomegranate           gicaisidaimag                 red + seed + fruit                gic + sid + mag
+pons                  nalbaiyovaibren               bridge + of + brain               nalb + yov + bren
+poplar                talsaifastaidip               tall + fast + tree                tals + fast + dip
+poppy                 gicaislipaiflor               red + sleep + flower              gic + slip + flor
+porcelain             polaivart                     fine + clay                       pol + vart
+porphyrin             sifairop                      purple + ring                     sif + rop
+portrait              fesaifoz                      face + picture                    fes + foz
+poster                medzaivodj                    wall + sheet                      medz + vodj
+potassium             praxaitom                     ash + atom                        prax + tom
+potato                betaimitsaiplef               under + ground + stem             bet + mits + plef
+praseodymium          wandaitom                     wind + atom                       wand + tom
+prednisone            parbaiweqkaisom               swell + immune + drug             parb + weqk + som
+primer                -                             first + coat                      ? + nusp
+primordium            -                             first + form                      ? + nunt
+primrose              yabaiflor                     early + flower                    yab + flor
+probe                 nagainesp                     feel + search                     nag + nesp
+progesterone          -                             pregnancy + hormone               ? + snen
+prolapse              mataizur                      forward + fall                    mat + zur
+proline               -                             amino + acid                      ? + falf
+promethium            foraitom                      fire + atom                       for + tom
+propofol              slipaisnetaisom               sleep + anesthetic + drug         slip + snet + som
+prosthesis            rotaipart                     false + part                      rot + part
+protactinium          brifaitom                     brief + atom                      brif + tom
+protease              ludzaispug                    protein + enzyme                  ludz + spug
+proteinase            ludzaispug                    protein + enzyme                  ludz + spug
+proteinuria           ludzaicidj                    protein + urine                   ludz + cidj
+protozoan             zanaimudzaizul                one + cell + animal               zan + mudz + zul
+pseudoephedrine       nozaizarkaisom                nose + open + drug                noz + zark + som
+puberty               fedaiwoftaihedj               sex + ripe + age                  fed + woft + hedj
+pudding               saftaiskitaifiz               soft + sweet + food               saft + skit + fiz
+pumice                glodaiglaq                    lava + foam                       glod + glaq
+pumpkin               giqkaidejaiflup               large + orange + gourd            giqk + dej + flup
+purine                -                             double + ring + base              ? + rop + bes
+purpura               -                             purple + rash                     sif + ?
+purse                 smalairod                     small + bag                       smal + rod
+pyridine              ropaisnucaibes                ring + nitrogen + base            rop + snuc + bes
+pyrimidine            miskairopaibes                single + ring + base              misk + rop + bes
+quail                 mitsaibax                     ground + bird                     mits + bax
+quartzite             sandaimalf                    sand + press                      sand + malf
+queen anne's lace     wipaiflataiflor               white + flat + flower             wip + flat + flor
+radiography           reqaifoz                      ray + picture                     req + foz
+radiotherapy          reqaitund                     ray + therapy                     req + tund
+radish                bontaifebz                    sharp + root                      bont + febz
+radium                blimaitom                     beam + atom                       blim + tom
+radon                 tresaitom                     trace + atom                      tres + tom
+railroad              lumpaiyeb                     rail + road                       lump + yeb
+railway               lumpaiyat                     rail + way                        lump + yat
+rake                  cutxaitul                     tooth + tool                      cutx + tul
+rally                 palaigaC                      again + gather                    pal + gaC
+ramp                  slopaiyat                     slope + way                       slop + yat
+rap                   bontainak                     sharp + knock                     bont + nak
+rash                  skinaimals                    skin + spot                       skin + mals
+realism               lamaiyat                      real + way                        lam + yat
+rebound               palaitudj                     again + bound                     pal + tudj
+recess                gigaigokaipas                 set + back + space                gig + gok + pas
+rectum                ricaigut                      straight + gut                    ric + gut
+redbud                timpaifloraidip               trunk + flower + tree             timp + flor + dip
+reductase             dusaispug                     reduce + enzyme                   dus + spug
+redwood               -                             tall + red + conifer              tals + gic + ?
+reed                  talsaiwaCaigras               tall + water + grass              tals + waC + gras
+reflux                gokaisunt                     back + flow                       gok + sunt
+reform                palainunt                     again + form                      pal + nunt
+retail                smalairok                     small + sell                      smal + rok
+reticulum             smalaihift                    small + net                       smal + hift
+retina                xicaiboft                     eye + screen                      xic + boft
+retinopathy           -                             retina + disease                  ? + bidj
+retrograde            gokaitip                      back + step                       gok + tip
+rhenium               narvaitom                     river + atom                      narv + tom
+rhinitis              nozaiparb                     nose + swell                      noz + parb
+rhodium               floraitom                     flower + atom                     flor + tom
+rhododendron          -                             large + shrub + flower            giqk + ? + flor
+rhyolite              litaifor                      light + fire                      lit + for
+ribbon                Ceftaihits                    narrow + strip                    Ceft + hits
+ribose                komairintaigand               five + carbon + sugar             kom + rint + gand
+rice                  waCailetx                     water + grain                     waC + letx
+rickets               -                             soft + bone + sickness            saft + brod + ?
+roentgenium           visaitom                      see + atom                        vis + tom
+rose                  rargailugaiflor               thorn + smell + flower            rarg + lug + flor
+rosemary              valdailugairorb               needle + smell + herb             vald + lug + rorb
+rotavirus             dudzaitagz                    wheel + virus                     dudz + tagz
+rowan                 gicaisnanaidip                red + cluster + tree              gic + snan + dip
+rubber tree           -                             rubber + sap + tree               ? + glom + dip
+rubidium              gicaitom                      red + atom                        gic + tom
+rum                   gandaijan                     sugar + spirit                    gand + jan
+ruthenium             ponaitom                      still + atom                      pon + tom
+rutherfordium         tokaitom                      structure + atom                  tok + tom
+rye                   letxaidorf                    grain + plant                     letx + dorf
+sacrum                besaispanaibrod               base + spine + bone               bes + span + brod
+sage                  saftaipetxairorb              soft + gray + herb                saft + petx + rorb
+samarium              fepaitom                      power + atom                      fep + tom
+sandalwood            molcailugaivriC               burn + smell + wood               molc + lug + vriC
+sandstone             sandaiston                    sand + stone                      sand + ston
+sarcoma               flaxaibudj                    flesh + cancer                    flax + budj
+satellite             bigaipozaivat                 go + around + body                big + poz + vat
+scandium              saftaitom                     soft + atom                       saft + tom
+scapula               bidzaizalf                    shoulder + blade                  bidz + zalf
+scarlet               govaigic                      deep + red                        gov + gic
+schist                xogzaiston                    slice + stone                     xogz + ston
+scissors              fepsaizalf                    twin + blade                      feps + zalf
+scleroderma           kadaiskin                     hard + skin                       kad + skin
+sclerosis             kadaidom                      hard + state                      kad + dom
+scoria                glodaihatx                    lava + hole                       glod + hatx
+scrotum               sidaisnaz                     seed + sac                        sid + snaz
+seaborgium            rosaitom                      force + atom                      ros + tom
+selenium              lunaitom                      moon + atom                       lun + tom
+semicircular          -                             half + circle + of                ? + salk + yov
+septum                kuvaimedz                     divide + wall                     kuv + medz
+sequoia               -                             giant + conifer                   dudj + ?
+serine                -                             amino + acid                      ? + falf
+serotonin             mudaitet                      mood + signal                     mud + tet
+serpentinite          pesaiskalairak                green + scale + rock              pes + skal + rak
+sertraline            mudaigorvaisom                mood + lift + drug                mud + gorv + som
+shale                 gadzaiston                    page + stone                      gadz + ston
+shank                 -                             lower + leg                       ? + legz
+shingle               -                             roof + board                      ? + marz
+shovel                narzaitul                     dig + tool                        narz + tul
+shunt                 -                             turn + aside                      kak + ?
+sickle                -                             reap + blade                      ? + zalf
+sickness              vufaidom                      sick + state                      vuf + dom
+sildenafil            fedaibloCaisom                sex + blood + drug                fed + bloC + som
+silica                sandaibrom                    sand + mineral                    sand + brom
+silkworm              fordaifald                    silk + worm                       ford + fald
+siltstone             -                             silt + stone                      ? + ston
+sinus                 brodaivabz                    bone + hollow                     brod + vabz
+sinusitis             -                             sinus + swell                     ? + parb
+sinusoid              wevaikurv                     wave + curve                      wev + kurv
+ski                   snomaislad                    snow + slide                      snom + slad
+skim                  tekaisuk                      take + top                        tek + suk
+slag                  jutxaimusp                    melt + waste                      jutx + musp
+slash                 nucaizep                      long + cut                        nuc + zep
+slate                 marzaiston                    board + stone                     marz + ston
+sling                 heqairegz                     hang + strap                      heq + regz
+slipper               saftaidebz                    soft + shoe                       saft + debz
+sludge                sespaicat                     thick + mud                       sesp + cat
+snapdragon            mucaiflor                     mouth + flower                    muc + flor
+soapstone             haqkaiston                    soap + stone                      haqk + ston
+sociology             xarkainedz                    society + study                   xark + nedz
+sodium                tigzaitom                     salt + atom                       tigz + tom
+soprano               molaivoz                      high + voice                      mol + voz
+sorghum               talsaidralailetx              tall + dry + grain                tals + dral + letx
+southeast             lutairog                      south + east                      lut + rog
+soybean               gipsaiColv                    oil + bean                        gips + Colv
+spectrometry          tromaiyaj                     spectrum + measure                trom + yaj
+spectroscopy          tromaiyuvaiyabz               spectrum + view + craft           trom + yuv + yabz
+spinach               ramailifaidorf                dark + leaf + plant               ram + lif + dorf
+spindle               kakaifits                     turn + rod                        kak + fits
+spruce                -                             sharp + conifer                   bont + ?
+squash                saftaiflup                    soft + gourd                      saft + flup
+stature               zesaixisp                     stand + height                    zes + xisp
+stenosis              Ceftaidom                     narrow + state                    Ceft + dom
+sternum               gitxaibrod                    chest + bone                      gitx + brod
+stomatitis            mucaiparb                     mouth + swell                     muc + parb
+strabismus            krasaixic                     cross + eye                       kras + xic
+strawberry            gicaisidaiglaf                red + seed + berry                gic + sid + glaf
+streptococcus         -                             chain + round + microbe           lip + maps + ?
+striatum              smogaibrenaipart              stripe + brain + part             smog + bren + part
+stricture             Ceftainad                     narrow + place                    Ceft + nad
+stroma                fretaitxum                    frame + tissue                    fret + txum
+strontium             bustaitom                     burst + atom                      bust + tom
+stub                  letaizax                      short + rest                      let + zax
+stunt                 jarbaismej                    bold + feat                       jarb + smej
+subclass              betaigev                      under + class                     bet + gev
+subcutaneous          betaiskinaiyov                under + skin + of                 bet + skin + yov
+subdivision           -                             under + division                  bet + ?
+subfamily             betaifam                      under + family                    bet + fam
+subgroup              betaihip                      under + group                     bet + hip
+submarine             betaimalc                     under + sea                       bet + malc
+subunit               betaigalp                     under + unit                      bet + galp
+sugarcane             skitaitalsaigras              sweet + tall + grass              skit + tals + gras
+suicide               depaiklub                     self + kill                       dep + klub
+sulcus                brenaiworg                    brain + groove                    bren + worg
+sulfonamide           -                             sulfur + amide                    spiz + ?
+sulfoxide             -                             sulfur + oxide                    spiz + ?
+sumac                 -                             sour + shrub                      yedz + ?
+summary               letainodz                     short + account                   let + nodz
+sunday                sanaiyam                      sun + day                         san + yam
+sunflower             sanaifesaiflor                sun + face + flower               san + fes + flor
+superfamily           djipaifam                     over + family                     djip + fam
+supplement            laxainolb                     add + fill                        lax + nolb
+suture                gozaifrev                     join + seam                       goz + frev
+sweet pea             wiqaitxekaiflor               wing + vine + flower              wiq + txek + flor
+sweet potato          skitaifebz                    sweet + root                      skit + febz
+sycamore              patxaiyogzaidip               patch + bark + tree               patx + yogz + dip
+syncope               golzaixisk                    sudden + faint                    golz + xisk
+syndactyly            -                             joined + finger + state           ? + gart + dom
+syndrome              saqkaigig                     sign + set                        saqk + gig
+synthase              gufaispug                     build + enzyme                    guf + spug
+synthesis             dradaitug                     put + together                    drad + tug
+syrup                 sespaigandaiwaC               thick + sugar + water             sesp + gand + waC
+tachycardia           fastaizif                     fast + heart                      fast + zif
+talus                 xuftaibrod                    ankle + bone                      xuft + brod
+tamarind              yedzaipardaidip               sour + pod + tree                 yedz + pard + dip
+tandem                zanaivib                      one + behind                      zan + vib
+tantalum              rufaitom                      charge + atom                     ruf + tom
+tea                   dugailifaidorf                drink + leaf + plant              dug + lif + dorf
+teak                  gipsaikadaivriC               oil + hard + wood                 gips + kad + vriC
+technetium            yabzaitom                     craft + atom                      yabz + tom
+technique             duzaiyat                      do + way                          duz + yat
+tellurium             riqaitom                      earth + atom                      riq + tom
+tennessine            macaitom                      great + atom                      mac + tom
+tenor                 madaivoz                      middle + voice                    mad + voz
+teratoma              -                             mixed + tissue + growth           ? + txum + ?
+terbium               flokaitom                     glow + atom                       flok + tom
+terrorism             froCainesk                    fear + rule                       froC + nesk
+testosterone          mafaisnen                     male + hormone                    maf + snen
+tetrachloride         lafaivraqaitigz               four + chlorine + salt            laf + vraq + tigz
+tetracycline          brakaigiksaisom               bacteria + block + drug           brak + giks + som
+thalamus              -                             brain + relay                     bren + ?
+thallium              rebaitom                      stick + atom                      reb + tom
+thistle               bontaifloraidorf              sharp + flower + plant            bont + flor + dorf
+thorium               wudzaitom                     roar + atom                       wudz + tom
+threonine             -                             amino + acid                      ? + falf
+thrombosis            truzaidom                     clot + state                      truz + dom
+thulium               numpaitom                     beyond + atom                     nump + tom
+thyme                 smalailugairorb               small + smell + herb              smal + lug + rorb
+thymidine             -                             thymine + sugar                   ? + gand
+thymocyte             -                             thymus + cell                     ? + mudz
+thymus                gitxaismaq                    chest + gland                     gitx + smaq
+thyroid               galkaismaq                    throat + gland                    galk + smaq
+thyroiditis           -                             thyroid + swell                   ? + parb
+tibia                 djopaibrod                    shin + bone                       djop + brod
+titanium              livaitom                      strong + atom                     liv + tom
+tobacco               smokailifaidorf               smoke + leaf + plant              smok + lif + dorf
+toenail               vintaitogz                    toe + nail                        vint + togz
+tomato                gicaisaftaimag                red + soft + fruit                gic + saft + mag
+tomography            -                             slice + writing                   xogz + ?
+tonsil                galkaismaq                    throat + gland                    galk + smaq
+torch                 maftaiflem                    carry + flame                     maft + flem
+torpedo               waCaimudj                     water + bomb                      waC + mudj
+transaminase          -                             amine + move + enzyme             ? + muv + spug
+transduction          roqailid                      across + lead                     roq + lid
+transferase           palfaispug                    transfer + enzyme                 palf + spug
+transfusion           bloCaihaft                    blood + pour                      bloC + haft
+translocation         roqainadaimuv                 across + place + move             roq + nad + muv
+transplant            roqaidorf                     across + plant                    roq + dorf
+travertine            dempaidjim                    spring + lime                     demp + djim
+tricolor              -                             three + colour                    suC + ?
+triphosphate          -                             three + phosphate                 suC + ?
+trough                nucaives                      long + vessel                     nuc + ves
+truck                 veftaixets                    goods + cart                      veft + xets
+tryptophan            -                             amino + acid                      ? + falf
+tuff                  praxaiston                    ash + stone                       prax + ston
+tulip                 nipsaiflor                    cup + flower                      nips + flor
+tungsten              wolfaitom                     wolf + atom                       wolf + tom
+turmeric              buxaifebz                     yellow + root                     bux + febz
+turnip                mapsaifebz                    round + root                      maps + febz
+turpentine            compaigips                    pine + oil                        comp + gips
+tyrosine              -                             amino + acid                      ? + falf
+ulna                  -                             lower + arm + bone                ? + marb + brod
+ultrasound            numpaisam                     beyond + sound                    nump + sam
+ultraviolet           numpaikoj                     beyond + violet                   nump + koj
+underground           betaimits                     under + ground                    bet + mits
+unilateral            zanaisardaiyov                one + side + of                   zan + sard + yov
+upgrade               tedaidatx                     up + grade                        ted + datx
+uptake                tedaitek                      up + take                         ted + tek
+uranium               geqaitom                      break + atom                      geq + tom
+urea                  waCaimusp                     water + waste                     waC + musp
+ureter                fundaitub                     kidney + tube                     fund + tub
+urethra               waCaitub                      water + tube                      waC + tub
+urogenital            -                             urine + genital                   cidj + ?
+urticaria             -                             nettle + rash                     ? + ?
+uveitis               xicainuspaiparb               eye + coat + swell                xic + nusp + parb
+uvula                 galkaidrap                    throat + drop                     galk + drap
+vaccine               titxaivataisom                teach + body + drug               titx + vat + som
+vacuole               mudzaijimp                    cell + bubble                     mudz + jimp
+valine                -                             amino + acid                      ? + falf
+vamp                  palaipatx                     again + patch                     pal + patx
+vanadium              bataitom                      beauty + atom                     bat + tom
+vanilla               skitailugaipard               sweet + smell + pod               skit + lug + pard
+varnish               kadaismopainusp               hard + gloss + coat               kad + smop + nusp
+vasculitis            vesaiparb                     vessel + swell                    ves + parb
+veneer                porvaifesaigrof               thin + face + layer               porv + fes + grof
+ventricle             zifaitif                      heart + room                      zif + tif
+vermilion             dinaigic                      bright + red                      din + gic
+vesicle               smalaisnaz                    small + sac                       smal + snaz
+vest                  marbaigefainusp               arm + less + coat                 marb + gef + nusp
+villus                gutaifif                      gut + hair                        gut + fif
+vinegar               yedzaimalv                    sour + wine                       yedz + malv
+violet                sifaismalaiflor               purple + small + flower           sif + smal + flor
+violin                pobzaidesaibraz               bow + string + box                pobz + des + braz
+volvulus              gutaivits                     gut + twist                       gut + vits
+vulva                 -                             outer + sex + part                ? + fed + part
+walnut                foldaihiksaidip               fold + nut + tree                 fold + hiks + dip
+wan                   xuskaislok                    pale + weak                       xusk + slok
+warfare               gekaicond                     war + fare                        gek + cond
+warfarin              bloCaitruzaigiks              blood + clot + block              bloC + truz + giks
+water lily            flotaiwaCaiflor               float + water + flower            flot + waC + flor
+watermelon            gicaiwaCaimag                 red + water + fruit               gic + waC + mag
+weed                  masaiwantaidorf               not + want + plant                mas + want + dorf
+wheat                 dalfailetx                    bread + grain                     dalf + letx
+willow                yotxaiwaCaidip                weep + water + tree               yotx + waC + dip
+wisteria              heqaisifaiflor                hang + purple + flower            heq + sif + flor
+wreath                florairop                     flower + ring                     flor + rop
+wrench                vitsaitul                     twist + tool                      vits + tul
+xenon                 kebzaitom                     alien + atom                      kebz + tom
+xylene                -                             double + methyl + benzene         ? + ? + ?
+yam                   giqkaifebz                    large + root                      giqk + febz
+yarrow                flataiwipaiflor               flat + white + flower             flat + wip + flor
+yew                   -                             red + seed + conifer              gic + sid + ?
+ytterbium             gujaitom                      memory + atom                     guj + tom
+yttrium               wuskaitom                     bulb + atom                       wusk + tom
+yucca                 bibzailifaidorf               sword + leaf + plant              bibz + lif + dorf
+zinc                  snimaitom                     brittle + atom                    snim + tom
+zinnia                dinaimapsaiflor               bright + round + flower           din + maps + flor
+zirconium             prikaitom                     opaque + atom                     prik + tom

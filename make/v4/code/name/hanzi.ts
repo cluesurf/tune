@@ -48,6 +48,7 @@ import lemmatize from 'wink-lemmatizer'
 
 import { breakDown } from '../derive'
 import { TERM } from '../pipe/board'
+import { DATASETS } from './read'
 
 const here = dirname(fileURLToPath(import.meta.url))
 
@@ -130,6 +131,55 @@ function glosses(): Map<string, Gloss> {
       pinyin: (row.pinyin ?? '').trim(),
       hsk: (row.hsk ?? '').trim(),
     })
+  }
+  return out
+}
+
+/**
+ * The other Chinese fields, from `chinese-names.tsv`.
+ *
+ * `note/platform/data/name/chinese.md` records 287,569 parsed rows
+ * across six kinds, and the plant volume measured above is only one of
+ * them. Reading the rest asks whether the morpheme inventory a flora
+ * needs is the same one a pharmacopoeia and a phenotype list need, or
+ * whether each field brings its own.
+ *
+ * ```text
+ * species      145,539     agricultural  42,270
+ * concept       61,111     word          38,147
+ * phenotype     18,804     medicinal        502
+ * ```
+ *
+ * Characters only. The pinyin and Latin columns are not needed for
+ * this question and the file is large.
+ */
+function otherFields(): Map<string, Map<string, number>> {
+  // `DATASETS` rather than a walk up from here: `land/` and `crew/`
+  // are siblings under `base/` and counting the steps between them by
+  // hand is what broke the taxon path earlier.
+  const path = resolve(
+    DATASETS,
+    'chinese-names/chinese-names.tsv',
+  )
+  const out = new Map<string, Map<string, number>>()
+  if (!existsSync(path)) return out
+  const lines = readFileSync(path, 'utf-8').split('\n')
+  const head = lines[0].split('\t')
+  const nameAt = head.indexOf('name')
+  const kindAt = head.indexOf('kind')
+  if (nameAt < 0 || kindAt < 0) return out
+  for (const line of lines.slice(1)) {
+    if (!line) continue
+    const cells = line.split('\t')
+    const kind = cells[kindAt]
+    const name = cells[nameAt] ?? ''
+    if (!kind) continue
+    const bag = out.get(kind) ?? new Map<string, number>()
+    for (const ch of name) {
+      if (!/[一-鿿]/.test(ch)) continue
+      bag.set(ch, (bag.get(ch) ?? 0) + 1)
+    }
+    out.set(kind, bag)
   }
   return out
 }
@@ -375,6 +425,70 @@ process.stdout.write(
     `${headTotal.toLocaleString()} species.\n`,
 )
 
+// ─── Do the other fields share this vocabulary ──────────
+
+/**
+ * The same question asked of five more Chinese fields.
+ *
+ * **If a pharmacopoeia and a flora share their morphemes, the root
+ * budget is shared too**, and the per-domain cost in
+ * `compression-budget.md` is an overestimate. If each field brings its
+ * own thousand characters, the budget is in trouble.
+ */
+const fields = otherFields()
+if (fields.size) {
+  const plantTop = new Set(ranked.slice(0, 1000).map(([ch]) => ch))
+
+  process.stdout.write('\n\nDO THE OTHER CHINESE FIELDS SHARE THIS VOCABULARY\n\n')
+  process.stdout.write(
+    '  `shared` is how much of a field\'s character USE is covered by\n' +
+      '  the 1,000 commonest plant morphemes. High means one budget\n' +
+      '  serves both.\n\n',
+  )
+  process.stdout.write(
+    `  ${'field'.padEnd(16)}${'chars'.padStart(8)}${'uses'.padStart(10)}` +
+      `${'shared'.padStart(9)}\n`,
+  )
+
+  for (const [kind, bag] of [...fields.entries()].sort(
+    (a, b) => b[1].size - a[1].size,
+  )) {
+    let uses = 0
+    let hit = 0
+    for (const [ch, n] of bag) {
+      uses += n
+      if (plantTop.has(ch)) hit += n
+    }
+    process.stdout.write(
+      `  ${kind.padEnd(16)}${String(bag.size).padStart(8)}` +
+        `${String(uses).padStart(10)}` +
+        `${((hit / uses) * 100).toFixed(0).padStart(8)}%\n`,
+    )
+  }
+
+  const union = new Map<string, number>()
+  for (const bag of fields.values()) {
+    for (const [ch, n] of bag) union.set(ch, (union.get(ch) ?? 0) + n)
+  }
+  const all = [...union.entries()].sort((a, b) => b[1] - a[1])
+  const allUses = all.reduce((sum, [, n]) => sum + n, 0)
+
+  process.stdout.write(
+    `\n  ${union.size.toLocaleString()} distinct characters across all six ` +
+      'fields together\n\n',
+  )
+  let run = 0
+  let seen = 0
+  for (const n of [250, 500, 1000, 2000, 3000, 5000]) {
+    if (n > all.length) break
+    for (; seen < n; seen++) run += all[seen][1]
+    process.stdout.write(
+      `  ${String(n).padStart(6)} characters  ` +
+        `${((run / allUses) * 100).toFixed(1).padStart(5)}% of all Chinese naming\n`,
+    )
+  }
+}
+
 // ─── The place morphemes ────────────────────────────────
 
 /**
@@ -418,19 +532,35 @@ process.stdout.write(
 
 // ─── What Tune already has ──────────────────────────────
 
-function candidates(): Set<string> {
-  const path = resolve(TERM, 'candidate.english.csv')
-  if (!existsSync(path)) return new Set()
+/**
+ * Everything Tune can SAY, which is not the same as everything it
+ * roots.
+ *
+ * The first version read only `candidate.english.csv` and reported
+ * `eyebrow` and `throne` as missing vocabulary. They are not missing.
+ * They are DERIVED, `eye + brow` and `king + seat`, and `derive.ts`
+ * correctly keeps them off the root list for exactly that reason.
+ *
+ * **The question here is whether a Chinese morpheme has an answer in
+ * Tune, and a compound is an answer.** So both files are read, and a
+ * word in either counts.
+ */
+function termsIn(file: string): Array<string> {
+  const path = resolve(TERM, file)
+  if (!existsSync(path)) return []
   const csvRows: Array<Record<string, string>> = parse(
     readFileSync(path, 'utf-8'),
     { columns: true, skip_empty_lines: true, relax_column_count: true },
   )
-  return new Set(
-    csvRows.map(r => (r.term ?? '').trim().toLowerCase()).filter(Boolean),
-  )
+  return csvRows
+    .map(r => (r.term ?? '').trim().toLowerCase())
+    .filter(Boolean)
 }
 
-const have = candidates()
+const have = new Set([
+  ...termsIn('candidate.english.csv'),
+  ...termsIn('derivable.english.csv'),
+])
 
 /** The first word of a gloss, which is the word it is really naming. */
 function headWord(english: string): string {

@@ -14,20 +14,20 @@ amoxicillin,bacteria kill drug,drug
 tetracycline,bacteria block drug,drug
 ciprofloxacin,bacteria kill drug,drug
 azithromycin,bacteria block drug,drug
-insulin,blood sugar control,drug
+insulin,sugar hormone,drug
 epinephrine,alert heart hormone,drug
 adrenaline,alert heart hormone,drug
 dopamine,reward drive signal,drug
 serotonin,mood signal,drug
 melatonin,sleep hormone,drug
 cortisol,stress hormone,drug
-testosterone,male sex hormone,drug
+testosterone,male hormone,drug
 estrogen,female sex hormone,drug
 progesterone,pregnancy hormone,drug
 oxytocin,bond birth hormone,drug
 caffeine,wake drug,drug
 nicotine,alert addict drug,drug
-ethanol,drunk alcohol,drug
+ethanol,two carbon alcohol,drug
 menthol,cool smell compound,drug
 lidocaine,numb pain drug,drug
 novocaine,numb pain drug,drug
@@ -55,6 +55,6 @@ albuterol,lung open drug,drug
 naloxone,pain drug block,drug
 nitroglycerin,heart vessel open,drug
 sildenafil,sex blood drug,drug
-lithium,mood balance element,drug
+lithium,rock atom,drug
 chloroform,sleep vapor,drug
 ether,sleep vapor,drug

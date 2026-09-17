@@ -205,10 +205,19 @@ export const ONTOLOGY: Array<{
     what: 'foods, ingredients and dishes',
   },
   {
-    slug: 'chebi-chemicals',
-    file: 'chebi.obo',
+    // `chebi-chemicals/chebi.obo` holds 22,547 names and
+    // `chebi-chemistry/chebi_lite.obo` holds 218,542. The measurement
+    // ran on the smaller one for most of this session and reported
+    // chemistry as a 22,547-term domain, which is a tenth of it.
+    //
+    // **`lite` names the ANNOTATION depth, not the term count.** The
+    // lite build drops the definitions and cross-references and keeps
+    // every term; the other file is a curated subset. A filename is
+    // not a size.
+    slug: 'chebi-chemistry',
+    file: 'chebi_lite.obo',
     domain: 'chemistry',
-    what: 'chemicals of biological interest',
+    what: 'chemicals of biological interest, the full ontology',
   },
   {
     slug: 'pato-quality',

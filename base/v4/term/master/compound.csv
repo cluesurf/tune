@@ -1,0 +1,1115 @@
+term,parts,where,kind
+abscess,"pus + pocket",judged,verdict
+abuse,"bad + use",judged,verdict
+acacia,"thorn + tree",tree,proposal
+acetamide,"acetate + amide",judged,verdict
+acetaminophen,"pain + fever + drug",drug,proposal
+acidemia,"acid + blood",judged,verdict
+acidosis,"acid + state",judged,verdict
+acinus,"gland + sac",judged,verdict
+actinium,"spark + atom",atom,proposal
+adenocarcinoma,"gland + cancer",judged,verdict
+adenoma,"gland + growth",judged,verdict
+adenosine,"gland + sugar + base",judged,verdict
+adenovirus,"gland + virus",judged,verdict
+adipocyte,"fat + cell",judged,verdict
+adjuvant,"help + drug",judged,verdict
+adrenaline,"alert + heart + hormone",drug,proposal
+agave,"sharp + thick + leaf",plant,proposal
+agenesis,"no + growth",judged,verdict
+agriculture,"field + craft",judged,verdict
+aircraft,"air + craft",judged,verdict
+airway,"air + way",judged,verdict
+alanine,"amino + acid",judged,verdict
+albinism,"no + colour + state",judged,verdict
+album,"gather + book",judged,verdict
+albumin,"white + protein",judged,verdict
+albuterol,"lung + open + drug",drug,proposal
+aldehyde,"carbon + oxygen + group",judged,verdict
+alder,"water + cone + tree",judged,verdict
+alkali,"acid + opposite",judged,verdict
+allergen,"allergy + cause",judged,verdict
+alligator,"broad + snout + lizard",judged,verdict
+almond,"milk + nut + tree",tree,proposal
+aloe,"gel + leaf + plant",plant,proposal
+alopecia,"hair + loss",judged,verdict
+alprazolam,"calm + anxiety + drug",drug,proposal
+alum,"sour + salt",judged,verdict
+aluminum,"shine + atom",atom,proposal
+amaryllis,"bare + stalk + flower",flower,proposal
+americium,"smoke + atom",atom,proposal
+amidase,"amide + enzyme",judged,verdict
+amide,"ammonia + acid + group",judged,verdict
+amine,"nitrogen + group",judged,verdict
+amoxicillin,"bacteria + kill + drug",drug,proposal
+amphetamine,"energy + alert + drug",drug,proposal
+amyloidosis,"starch + protein + state",judged,verdict
+anatomy,"body + study",judged,verdict
+andesite,"gray + fire",rock,proposal
+anemone,"wind + flower",flower,proposal
+anesthesia,"no + feel",judged,verdict
+aneurysm,"vessel + bulge",judged,verdict
+angioma,"vessel + growth",judged,verdict
+angiosarcoma,"vessel + flesh + cancer",judged,verdict
+anhydride,"no + water + compound",judged,verdict
+anhydrous,"no + water",judged,verdict
+anthropology,"people + study",judged,verdict
+antibody,"against + body",judged,verdict
+antimony,"paint + atom",atom,proposal
+antique,"old + made + thing",judged,verdict
+aorta,"great + artery",judged,verdict
+apex,"top + point",judged,verdict
+aplasia,"no + growth",judged,verdict
+apoptosis,"fall + away + cell + death",judged,verdict
+aquaculture,"water + farm",judged,verdict
+aquifer,"water + rock + layer",judged,verdict
+archaeology,"old + study",judged,verdict
+arginine,"amino + acid",judged,verdict
+argon,"slow + atom",atom,proposal
+arkose,"granite + sand",rock,proposal
+arsenic,"poison + atom",atom,proposal
+arteriole,"small + artery",judged,verdict
+arteritis,"artery + swell",judged,verdict
+arthritis,"joint + inflammation",judged,verdict
+arthropathy,"joint + disease",judged,verdict
+artillery,"heavy + gun",judged,verdict
+asbestos,"thread + rock",judged,verdict
+ascites,"belly + water",judged,verdict
+aside,"at + side",judged,verdict
+asparagine,"amino + acid",judged,verdict
+aspen,"shake + leaf + tree",tree,proposal
+aspirin,"pain + fever + drug",drug,proposal
+assay,"test + sample",judged,verdict
+astatine,"quick + atom",atom,proposal
+aster,"star + flower",flower,proposal
+asthma,"tight + breath",judged,verdict
+astrocyte,"star + cell",judged,verdict
+ataxia,"no + order",judged,verdict
+atlas,"map + book",judged,verdict
+atorvastatin,"blood + fat + lower",drug,proposal
+atresia,"no + passage",judged,verdict
+atrium,"enter + room",judged,verdict
+automobile,"self + move",judged,verdict
+avocado,"fat + green + fruit",judged,verdict
+azalea,"bright + shrub + flower",flower,proposal
+azithromycin,"bacteria + block + drug",drug,proposal
+bacillus,"rod + germ",judged,verdict
+background,"back + ground",judged,verdict
+balsam,"smell + resin",judged,verdict
+bamboo,"arrow + flute",plant,proposal
+banyan,"root + branch + tree",tree,proposal
+baobab,"fat + trunk + tree",tree,proposal
+barium,"heavy + atom",atom,proposal
+barley,"grain + plant",plant,proposal
+baroque,"ornate + style",judged,verdict
+basalt,"dark + fire",rock,proposal
+basil,"sweet + smell + herb",plant,proposal
+bathroom,"bath + room",judged,verdict
+bean,"pod + seed",plant,proposal
+beech,"smooth + bark + tree",tree,proposal
+beet,"red + root",plant,proposal
+begonia,"uneven + leaf + flower",flower,proposal
+bench,"long + seat",judged,verdict
+benign,"no + harm",judged,verdict
+benzene,"six + carbon + ring",judged,verdict
+berkelium,"bright + atom",atom,proposal
+beryllium,"precious + atom",atom,proposal
+betaine,"beet + amine",judged,verdict
+bicarbonate,"two + carbonate",judged,verdict
+bicolor,"two + colour",judged,verdict
+bin,"open + box",judged,verdict
+biogenesis,"life + birth",judged,verdict
+biomarker,"life + mark",judged,verdict
+biopsy,"live + sample",judged,verdict
+biosynthesis,"life + synthesis",judged,verdict
+biotin,"life + vitamin",judged,verdict
+bipolar,"two + pole + of",judged,verdict
+birch,"paper + bark + tree",tree,proposal
+bismuth,"shadow + atom",atom,proposal
+blight,"plant + rot",judged,verdict
+blister,"raise + skin",judged,verdict
+bluebell,"blue + bell + flower",flower,proposal
+blush,"red + face",judged,verdict
+bohrium,"deep + atom",atom,proposal
+bonnet,"head + cap",judged,verdict
+boron,"bone + atom",atom,proposal
+bracket,"hold + arm",judged,verdict
+breadfruit,"bread + fruit + tree",tree,proposal
+breccia,"sharp + bit",rock,proposal
+broccoli,"green + flower + plant",plant,proposal
+bromine,"ocean + atom",atom,proposal
+bronchiole,"small + airway",judged,verdict
+bronchus,"lung + tube",judged,verdict
+broom,"sweep + brush",judged,verdict
+buck,"male + deer",judged,verdict
+buckeye,"eye + seed + tree",tree,proposal
+buoy,"float + mark",judged,verdict
+bush,"dense + low + plant",plant,proposal
+business,"work + trade",judged,verdict
+butanol,"four + carbon + alcohol",judged,verdict
+buttercup,"yellow + cup + flower",flower,proposal
+buttress,"prop + wall",judged,verdict
+bypass,"by + pass",judged,verdict
+cabbage,"round + leaf + plant",plant,proposal
+cabinet,"door + case",judged,verdict
+cadmium,"source + atom",atom,proposal
+caesium,"sky + atom",atom,proposal
+caffeine,"wake + drug",drug,proposal
+calcaneus,"heel + bone",judged,verdict
+calf,"young + cow",judged,verdict
+californium,"bare + atom",atom,proposal
+callus,"hard + skin",judged,verdict
+camellia,"smooth + petal + flower",flower,proposal
+campaign,"plan + run",judged,verdict
+candidiasis,"yeast + sickness",judged,verdict
+cane,"stalk + stick",judged,verdict
+cannon,"big + gun",judged,verdict
+canopy,"over + cover",judged,verdict
+canthus,"eye + corner",judged,verdict
+canton,"land + part",judged,verdict
+capsule,"small + shell",judged,verdict
+carbamate,"carbon + nitrogen + salt",judged,verdict
+carboxamide,"carboxyl + amide",judged,verdict
+carcinoma,"cover + tissue + cancer",judged,verdict
+cardiomyopathy,"heart + muscle + disease",judged,verdict
+cardiovascular,"heart + vessel + of",judged,verdict
+carnation,"fold + petal + flower",flower,proposal
+carotene,"orange + pigment",judged,verdict
+carpet,"floor + cloth",judged,verdict
+carrot,"orange + root",judged,verdict
+cartridge,"shot + case",judged,verdict
+casein,"milk + protein",judged,verdict
+cassava,"starch + root",plant,proposal
+castor,"beaver + oil",judged,verdict
+cataract,"cloud + lens",judged,verdict
+catheter,"body + tube",judged,verdict
+cattail,"tail + water + grass",plant,proposal
+cauliflower,"white + flower + plant",plant,proposal
+cedar,"smell + conifer",tree,proposal
+celery,"crisp + stalk + plant",plant,proposal
+cellulose,"cell + sugar",judged,verdict
+cerebellum,"small + brain",judged,verdict
+cerebrospinal,"brain + spine + of",judged,verdict
+cerium,"rust + atom",atom,proposal
+cervix,"neck + of + womb",judged,verdict
+chalk,"powder + stone",rock,proposal
+chemotaxis,"chemical + move",judged,verdict
+chert,"dull + spark + stone",rock,proposal
+chess,"king + board + game",judged,verdict
+chestnut,"spine + nut + tree",judged,verdict
+chickpea,"round + seed",plant,proposal
+chive,"thin + onion + herb",plant,proposal
+chlorine,"green + atom",atom,proposal
+chloroform,"sleep + vapor",drug,proposal
+cholecystitis,"gall + bladder + swell",judged,verdict
+cholesterol,"bile + sterol",judged,verdict
+choline,"bile + amine",judged,verdict
+chromatin,"colour + thread",judged,verdict
+chromatography,"colour + write + craft",judged,verdict
+chrome,"shine + metal",judged,verdict
+chromium,"color + atom",atom,proposal
+chrysanthemum,"many + petal + flower",flower,proposal
+cigar,"roll + tobacco",judged,verdict
+cilantro,"sharp + smell + herb",plant,proposal
+cilium,"cell + hair",judged,verdict
+cinnamon,"name + bark",judged,verdict
+ciprofloxacin,"bacteria + kill + drug",drug,proposal
+cirrhosis,"liver + scar",judged,verdict
+clavicle,"collar + bone",judged,verdict
+cleft,"split + gap",judged,verdict
+clergy,"priest + body",judged,verdict
+cloak,"loose + coat",judged,verdict
+clover,"three + leaf + grass",plant,proposal
+coach,"road + carriage",judged,verdict
+coal,"char + stone",rock,proposal
+cobalt,"ring + atom",atom,proposal
+cocaine,"leaf + drug",judged,verdict
+cochlea,"ear + spiral",judged,verdict
+cocktail,"mixed + drink",judged,verdict
+cocoa,"chocolate + seed",plant,proposal
+codeine,"pain + cough + drug",drug,proposal
+coffee,"bitter + seed + drink",plant,proposal
+coke,"burn + coal",judged,verdict
+colitis,"gut + swell",judged,verdict
+collagen,"fibre + protein",judged,verdict
+colloid,"fine + hang + matter",judged,verdict
+columbine,"hang + bell + flower",flower,proposal
+coma,"deep + sleep",judged,verdict
+commerce,"goods + trade",judged,verdict
+commissure,"join + band",judged,verdict
+commonwealth,"common + wealth",judged,verdict
+commune,"share + village",judged,verdict
+conglomerate,"round + bit",rock,proposal
+conjunctiva,"join + eye + film",judged,verdict
+conjunctivitis,"eye + skin + swell",judged,verdict
+constipation,"bound + gut",judged,verdict
+contracture,"muscle + shorten",judged,verdict
+contusion,"deep + bruise",judged,verdict
+cookie,"small + sweet + cake",judged,verdict
+copernicium,"center + atom",atom,proposal
+copolymer,"two + kind + polymer",judged,verdict
+corn,"tall + grain + plant",plant,proposal
+cornea,"horn + eye + coat",judged,verdict
+corona,"light + ring",judged,verdict
+coronavirus,"crown + virus",judged,verdict
+corporation,"trade + body",judged,verdict
+corpuscle,"small + body",judged,verdict
+cortex,"outer + layer",judged,verdict
+cortisol,"stress + hormone",drug,proposal
+cosmos,"flat + round + flower",flower,proposal
+costume,"play + dress",judged,verdict
+cotton,"soft + fiber + plant",plant,proposal
+cottonwood,"cotton + seed + tree",tree,proposal
+crisis,"turn + point",judged,verdict
+crocus,"early + cup + flower",flower,proposal
+cucumber,"cool + water + fruit",plant,proposal
+cuff,"wrist + band",judged,verdict
+curium,"cheer + atom",atom,proposal
+cusp,"point + edge",judged,verdict
+cyanide,"blue + compound",judged,verdict
+cyanobacteria,"blue + green + germ",judged,verdict
+cypress,"silk + conifer",tree,proposal
+cysteine,"sulfur + amino + acid",judged,verdict
+cystitis,"bladder + swell",judged,verdict
+cytidine,"cytosine + sugar",judged,verdict
+cytology,"cell + study",judged,verdict
+cytotoxicity,"cell + poison + ness",judged,verdict
+daffodil,"yellow + trumpet + flower",flower,proposal
+dahlia,"round + many + flower",flower,proposal
+dairy,"milk + house",judged,verdict
+daisy,"chick + flower",flower,proposal
+dandelion,"lion + tooth",plant,proposal
+darmstadtium,"birth + atom",atom,proposal
+decarboxylase,"carbon + strip + enzyme",judged,verdict
+dehydratase,"water + strip + enzyme",judged,verdict
+dehydrogenase,"hydrogen + strip + enzyme",judged,verdict
+delphinium,"tall + blue + flower",flower,proposal
+dementia,"mind + loss",judged,verdict
+den,"beast + home",judged,verdict
+dentistry,"tooth + craft",judged,verdict
+dentition,"tooth + set",judged,verdict
+deoxyadenosine,"no + oxygen + adenosine",judged,verdict
+dermatitis,"skin + inflammation",judged,verdict
+dermis,"skin + layer",judged,verdict
+dextromethorphan,"cough + block + drug",drug,proposal
+diabetes,"sugar + waste + sickness",judged,verdict
+diarrhea,"loose + stool",judged,verdict
+diazepam,"calm + sleep + drug",drug,proposal
+dichloride,"two + chlorine + salt",judged,verdict
+diencephalon,"between + brain",judged,verdict
+diesel,"heavy + fuel",judged,verdict
+dill,"feather + herb",plant,proposal
+dinucleotide,"two + nucleotide",judged,verdict
+diol,"two + alcohol",judged,verdict
+diorite,"gray + grain",rock,proposal
+dioxide,"two + oxide",judged,verdict
+diphenhydramine,"allergy + sleep + drug",drug,proposal
+diphosphate,"two + phosphate",judged,verdict
+dismutase,"split + swap + enzyme",judged,verdict
+disulfide,"two + sulfur + bond",judged,verdict
+diverticulum,"gut + pouch",judged,verdict
+dogwood,"white + flower + tree",tree,proposal
+dopamine,"reward + drive + signal",drug,proposal
+dope,"dull + drug",judged,verdict
+drone,"male + bee",judged,verdict
+dubnium,"race + atom",atom,proposal
+duodenum,"twelve + gut",judged,verdict
+dwarfism,"dwarf + state",judged,verdict
+dysfunction,"bad + work",judged,verdict
+dysgenesis,"bad + growth",judged,verdict
+dysplasia,"bad + growth",judged,verdict
+dystrophy,"bad + feed",judged,verdict
+ebony,"black + wood + tree",tree,proposal
+ectoderm,"outer + skin",judged,verdict
+edelweiss,"white + mountain + flower",flower,proposal
+edema,"water + swell",judged,verdict
+eggplant,"purple + fruit",judged,verdict
+einsteinium,"smart + atom",atom,proposal
+electrostatic,"electric + static",judged,verdict
+elm,"wing + seed + tree",tree,proposal
+embankment,"bank + wall",judged,verdict
+embolism,"clot + block",judged,verdict
+emphysema,"lung + air + swell",judged,verdict
+emulsion,"fine + mix",judged,verdict
+enamel,"tooth + glaze",judged,verdict
+encephalopathy,"brain + disease",judged,verdict
+encounter,"in + counter",judged,verdict
+endocarditis,"inner + heart + swell",judged,verdict
+endocardium,"inner + heart + lining",judged,verdict
+endoderm,"inner + skin",judged,verdict
+endometrium,"inside + womb + lining",judged,verdict
+endorphin,"inner + pain + drug",judged,verdict
+endothelium,"inside + lining",judged,verdict
+enterprise,"between + take",judged,verdict
+eosinophilia,"white + cell + excess",judged,verdict
+epidemiology,"spread + sickness + study",judged,verdict
+epidermis,"upon + skin",judged,verdict
+epididymis,"upon + testis",judged,verdict
+epiglottis,"over + throat + flap",judged,verdict
+epilepsy,"seize + sickness",judged,verdict
+epinephrine,"alert + heart + hormone",drug,proposal
+epiphysis,"bone + end",judged,verdict
+epithelium,"cover + tissue",judged,verdict
+epoxide,"oxygen + ring",judged,verdict
+erbium,"glass + atom",atom,proposal
+erythema,"red + skin",judged,verdict
+erythroblast,"red + blood + bud",judged,verdict
+erythrocyte,"red + blood + cell",judged,verdict
+esophagus,"gullet + tube",judged,verdict
+estate,"hold + land",judged,verdict
+ester,"acid + alcohol + join",judged,verdict
+estradiol,"estrus + two + alcohol",judged,verdict
+estrogen,"female + sex + hormone",drug,proposal
+ethanol,"two + carbon + alcohol",judged,verdict
+ether,"sleep + vapor",drug,proposal
+ethyl,"two + carbon + group",judged,verdict
+etiology,"cause + study",judged,verdict
+eucalyptus,"smell + oil + tree",tree,proposal
+europium,"screen + atom",atom,proposal
+excision,"cut + out",judged,verdict
+exocrine,"out + secrete",judged,verdict
+eyeball,"eye + ball",judged,verdict
+fascia,"sheet + tissue",judged,verdict
+femur,"thigh + bone",judged,verdict
+fennel,"name + herb",judged,verdict
+fentanyl,"extreme + pain + drug",drug,proposal
+fermium,"rare + atom",atom,proposal
+fern,"sheep + tooth",plant,proposal
+fibrillation,"quiver + beat",judged,verdict
+fibroblast,"fibre + cell",judged,verdict
+fibroma,"fibre + growth",judged,verdict
+fibrosis,"fibre + growth",judged,verdict
+fibula,"side + leg + bone",judged,verdict
+fir,"flat + conifer",tree,proposal
+fistula,"wrong + passage",judged,verdict
+flank,"body + side",judged,verdict
+flask,"narrow + neck + bottle",judged,verdict
+flax,"fiber + seed + plant",plant,proposal
+fleece,"wool + coat",judged,verdict
+flerovium,"cloud + atom",atom,proposal
+flint,"fire + strike + stone",rock,proposal
+fluorine,"tooth + atom",atom,proposal
+fluorouracil,"fluorine + uracil",judged,verdict
+fluoxetine,"mood + lift + drug",drug,proposal
+follicle,"small + sac",judged,verdict
+fontanelle,"skull + soft + spot",judged,verdict
+football,"foot + ball",judged,verdict
+foramen,"bone + hole",judged,verdict
+forebrain,"fore + brain",judged,verdict
+forget-me-not,"small + blue + flower",flower,proposal
+fossa,"bone + hollow",judged,verdict
+foster,"raise + care",judged,verdict
+foxglove,"finger + bell + flower",flower,proposal
+francium,"loose + atom",atom,proposal
+freesia,"sweet + smell + flower",flower,proposal
+freshwater,"fresh + water",judged,verdict
+gabbro,"dark + grain",rock,proposal
+gadolinium,"seek + atom",atom,proposal
+galactose,"milk + sugar",judged,verdict
+gallbladder,"gall + bladder",judged,verdict
+gallium,"bird + atom",atom,proposal
+ganglion,"nerve + knot",judged,verdict
+gangrene,"dead + flesh",judged,verdict
+garbage,"throw + waste",judged,verdict
+gardenia,"white + smell + flower",flower,proposal
+garland,"flower + ring",judged,verdict
+garlic,"strong + smell + bulb",judged,verdict
+gastritis,"stomach + swell",judged,verdict
+gelatin,"bone + jelly",judged,verdict
+genre,"art + kind",judged,verdict
+geography,"earth + writing",judged,verdict
+geranium,"round + leaf + flower",flower,proposal
+germanium,"cave + atom",atom,proposal
+ginger,"hot + root",judged,verdict
+girdle,"waist + band",judged,verdict
+gladiolus,"sword + leaf + flower",flower,proposal
+glaucoma,"eye + press + sickness",judged,verdict
+glioblastoma,"glue + cell + cancer",judged,verdict
+glioma,"glue + cell + cancer",judged,verdict
+globulin,"ball + protein",judged,verdict
+glomerulus,"kidney + vessel + ball",judged,verdict
+glucan,"sugar + chain",judged,verdict
+glucosamine,"glucose + amine",judged,verdict
+glucose,"grape + sugar",judged,verdict
+glutamine,"amino + acid",judged,verdict
+glutathione,"three + amino + acid",judged,verdict
+glycerol,"sweet + alcohol",judged,verdict
+glycine,"sweet + acid",judged,verdict
+glycoprotein,"sugar + protein",judged,verdict
+gneiss,"band + press",rock,proposal
+gold,"king + atom",atom,proposal
+goldenrod,"gold + stalk + flower",flower,proposal
+gonadotropin,"gonad + turn + toward",judged,verdict
+gouge,"scoop + chisel",judged,verdict
+gourd,"hard + shell + fruit",plant,proposal
+granite,"flower + grain",rock,proposal
+granuloma,"grain + growth",judged,verdict
+grape,"vine + berry",plant,proposal
+grapefruit,"bitter + round + fruit",tree,proposal
+greenhouse,"green + house",judged,verdict
+greywacke,"mud + sand",rock,proposal
+guanosine,"guanine + sugar",judged,verdict
+guidelines,"guide + line",judged,verdict
+gum tree,"gum + sap + tree",tree,proposal
+gutter,"water + channel",judged,verdict
+gyrus,"brain + fold",judged,verdict
+hack,"rough + cut",judged,verdict
+hafnium,"tool + atom",atom,proposal
+hallux,"big + toe",judged,verdict
+hamartoma,"wrong + tissue + growth",judged,verdict
+harlequin,"patch + pattern",judged,verdict
+harness,"strap + gear",judged,verdict
+hassium,"fresh + atom",atom,proposal
+hawthorn,"thorn + berry + tree",tree,proposal
+headache,"head + ache",judged,verdict
+headgear,"head + gear",judged,verdict
+heather,"small + purple + shrub",plant,proposal
+hedge,"plant + wall",judged,verdict
+helium,"sun + atom",atom,proposal
+helmet,"head + guard",judged,verdict
+hemangioma,"blood + vessel + growth",judged,verdict
+hemlock,"droop + conifer",tree,proposal
+hemoglobin,"blood + protein",judged,verdict
+hemorrhage,"blood + burst",judged,verdict
+hemp,"strong + fiber + plant",plant,proposal
+heparin,"blood + clot + block",judged,verdict
+hepatitis,"liver + inflammation",judged,verdict
+hernia,"push + through",judged,verdict
+heroin,"strong + pleasure + drug",drug,proposal
+hibiscus,"large + trumpet + flower",flower,proposal
+hickory,"hard + nut + tree",judged,verdict
+histidine,"amino + acid",judged,verdict
+holly,"sharp + leaf + tree",tree,proposal
+hollyhock,"tall + flower + stalk",flower,proposal
+holmium,"permeate + atom",atom,proposal
+honeycomb,"honey + comb",judged,verdict
+honeysuckle,"sweet + vine + flower",flower,proposal
+hoop,"stiff + ring",judged,verdict
+horse chestnut,"big + chestnut + tree",tree,proposal
+horseshoe,"horse + shoe",judged,verdict
+humerus,"upper + arm + bone",judged,verdict
+husbandry,"farm + craft",judged,verdict
+hyacinth,"dense + bell + flower",flower,proposal
+hydrangea,"ball + flower",flower,proposal
+hydrocarbon,"hydrogen + carbon",judged,verdict
+hydrocephalus,"water + head",judged,verdict
+hydrochloride,"hydrogen + chlorine + salt",judged,verdict
+hydrocortisone,"skin + swell + hormone",drug,proposal
+hydrolase,"water + split + enzyme",judged,verdict
+hydroxyproline,"hydroxyl + proline",judged,verdict
+hygiene,"clean + craft",judged,verdict
+hyperplasia,"over + growth",judged,verdict
+hypertension,"high + blood + press",judged,verdict
+hypoplasia,"under + growth",judged,verdict
+hypotension,"low + blood + press",judged,verdict
+hypothalamus,"under + thalamus",judged,verdict
+hypothyroidism,"low + thyroid + state",judged,verdict
+hypoxia,"under + oxygen",judged,verdict
+ibuprofen,"pain + swell + drug",drug,proposal
+idiopathic,"no + known + cause",judged,verdict
+ileum,"twist + gut",judged,verdict
+imidazole,"nitrogen + ring",judged,verdict
+immunoglobulin,"immune + protein",judged,verdict
+implant,"in + set",judged,verdict
+indigo,"deep + blue",judged,verdict
+indium,"ghost + atom",atom,proposal
+indole,"nitrogen + double + ring",judged,verdict
+infant,"young + person",judged,verdict
+infarction,"dead + tissue + block",judged,verdict
+inflorescence,"flower + cluster",judged,verdict
+infrared,"below + red",judged,verdict
+inositol,"ring + alcohol",judged,verdict
+institute,"found + body",judged,verdict
+insulin,"sugar + hormone",judged,verdict
+interaction,"between + action",judged,verdict
+intercourse,"sex + act",judged,verdict
+international,"between + nation",judged,verdict
+intervertebral,"between + vertebra + of",judged,verdict
+intravenous,"within + vein + of",judged,verdict
+iodine,"stain + atom",atom,proposal
+iridium,"arch + atom",atom,proposal
+iris,"rainbow + flower",flower,proposal
+ironwood,"iron + hard + wood",tree,proposal
+isle,"small + island",judged,verdict
+isomerase,"isomer + enzyme",judged,verdict
+ivory,"tooth + bone",judged,verdict
+ivy,"cling + vine",plant,proposal
+jasmine,"night + smell + flower",flower,proposal
+jazz,"swing + music",judged,verdict
+jejunum,"empty + gut",judged,verdict
+jewelweed,"bright + wet + flower",flower,proposal
+joshua tree,"branch + yucca + tree",tree,proposal
+juniper,"berry + conifer",tree,proposal
+jurisprudence,"law + study",judged,verdict
+kale,"curl + leaf + plant",plant,proposal
+kapok,"soft + fiber + tree",tree,proposal
+keratinocyte,"horn + cell",judged,verdict
+keratitis,"cornea + swell",judged,verdict
+keratosis,"horn + skin + state",judged,verdict
+ketamine,"detach + anesthetic + drug",drug,proposal
+ketone,"carbon + oxygen + group",judged,verdict
+kinase,"phosphate + enzyme",judged,verdict
+kitchen,"cook + room",judged,verdict
+kite,"fly + sail",judged,verdict
+krypton,"hidden + atom",atom,proposal
+labyrinth,"maze + of + ear",judged,verdict
+lace,"hole + cloth",judged,verdict
+lactone,"ring + ester",judged,verdict
+lamina,"thin + plate",judged,verdict
+lane,"narrow + road",judged,verdict
+lantern,"carry + lamp",judged,verdict
+lanthanum,"air + atom",atom,proposal
+larch,"fall + conifer",tree,proposal
+laser,"thin + light + beam",judged,verdict
+laterite,"iron + soil",rock,proposal
+latex,"milk + sap",judged,verdict
+lavender,"calm + smell + flower",flower,proposal
+lawn,"cut + grass",judged,verdict
+lawrencium,"open + atom",atom,proposal
+league,"join + group",judged,verdict
+lectin,"sugar + bind + protein",judged,verdict
+lee,"shelter + side",judged,verdict
+leek,"long + onion + plant",plant,proposal
+leiomyoma,"smooth + muscle + growth",judged,verdict
+leiomyosarcoma,"smooth + muscle + cancer",judged,verdict
+lentil,"flat + seed",plant,proposal
+lettuce,"soft + leaf + plant",plant,proposal
+leucine,"amino + acid",judged,verdict
+leukocyte,"white + cell",judged,verdict
+lidocaine,"numb + pain + drug",drug,proposal
+ligament,"bind + tissue",judged,verdict
+ligand,"bind + thing",judged,verdict
+ligase,"join + enzyme",judged,verdict
+lilac,"spring + cluster + flower",flower,proposal
+lily,"hundred + join + flower",flower,proposal
+limestone,"lime + stone",rock,proposal
+linden,"heart + leaf + tree",tree,proposal
+ling,"thin + fish",judged,verdict
+linguistics,"speech + study",judged,verdict
+lipase,"fat + enzyme",judged,verdict
+lipoma,"fat + growth",judged,verdict
+lipoprotein,"fat + protein",judged,verdict
+liposarcoma,"fat + flesh + cancer",judged,verdict
+lithium,"rock + atom",judged,verdict
+litter,"scatter + waste",judged,verdict
+livermorium,"host + atom",atom,proposal
+locomotive,"rail + engine",judged,verdict
+locust,"thorn + pod + tree",tree,proposal
+loratadine,"allergy + block + drug",drug,proposal
+lotus,"water + flower",flower,proposal
+lumber,"cut + wood",judged,verdict
+lupine,"tall + spike + flower",flower,proposal
+lutetium,"swamp + atom",atom,proposal
+lyase,"split + enzyme",judged,verdict
+lymph,"clear + body + water",judged,verdict
+lymphadenitis,"lymph + gland + swell",judged,verdict
+lymphocyte,"lymph + cell",judged,verdict
+lymphoma,"lymph + cancer",judged,verdict
+lysine,"amino + acid",judged,verdict
+macrophage,"big + eat + cell",judged,verdict
+magnesium,"ancient + atom",atom,proposal
+magnolia,"big + flower + tree",tree,proposal
+magnolia flower,"big + white + flower",flower,proposal
+mahogany,"red + wood + tree",tree,proposal
+maiden,"young + unwed + woman",judged,verdict
+malformation,"bad + shape",judged,verdict
+mallet,"wood + hammer",judged,verdict
+manganese,"resist + atom",atom,proposal
+mannose,"manna + sugar",judged,verdict
+manure,"field + dung",judged,verdict
+maple,"frog + hand",tree,proposal
+marathon,"long + race",judged,verdict
+marble,"flower + stone",rock,proposal
+mare,"female + horse",judged,verdict
+marigold,"gold + flower",flower,proposal
+maroon,"dark + red",judged,verdict
+meatus,"body + passage",judged,verdict
+medal,"honour + disc",judged,verdict
+mediastinum,"chest + middle + space",judged,verdict
+medulla,"inner + part",judged,verdict
+meitnerium,"merge + atom",atom,proposal
+melanocyte,"black + cell",judged,verdict
+melanoma,"black + cancer",judged,verdict
+melatonin,"sleep + hormone",drug,proposal
+melon,"sweet + water + fruit",plant,proposal
+mendelevium,"lead + atom",atom,proposal
+meninges,"brain + skin",judged,verdict
+meningioma,"brain + skin + growth",judged,verdict
+meningitis,"brain + skin + swell",judged,verdict
+menthol,"cool + smell + compound",drug,proposal
+mercury,"liquid + atom",atom,proposal
+mesenchyme,"middle + tissue",judged,verdict
+mesentery,"gut + fold + sheet",judged,verdict
+mesoderm,"middle + skin",judged,verdict
+mesothelioma,"lining + tissue + cancer",judged,verdict
+mesquite,"dry + thorn + tree",tree,proposal
+metacarpal,"beyond + wrist + bone",judged,verdict
+metatarsal,"beyond + ankle + bone",judged,verdict
+metformin,"blood + sugar + lower",drug,proposal
+methacrylate,"methyl + acrylate",judged,verdict
+methamphetamine,"strong + energy + drug",drug,proposal
+methane,"one + carbon + gas",judged,verdict
+methanol,"one + carbon + alcohol",judged,verdict
+methionine,"sulfur + amino + acid",judged,verdict
+methyl,"one + carbon + group",judged,verdict
+methylphenidate,"attention + drug",drug,proposal
+microbiology,"small + life + study",judged,verdict
+microscopy,"small + view + craft",judged,verdict
+midbrain,"middle + brain",judged,verdict
+milkweed,"milk + sap + flower",flower,proposal
+mill,"grind + house",judged,verdict
+millet,"small + grain",plant,proposal
+mint,"cool + smell + leaf",plant,proposal
+mistletoe,"tree + parasite + plant",plant,proposal
+molybdenum,"dark + atom",atom,proposal
+monocyte,"single + white + cell",judged,verdict
+monohydrate,"one + water + salt",judged,verdict
+monooxygenase,"one + oxygen + enzyme",judged,verdict
+monophosphate,"one + phosphate",judged,verdict
+monoxide,"one + oxide",judged,verdict
+moor,"open + high + land",judged,verdict
+mop,"wash + tool",judged,verdict
+morning glory,"morning + vine + flower",flower,proposal
+morphine,"strong + pain + drug",drug,proposal
+morphogenesis,"shape + making",judged,verdict
+mortar,"stone + paste",judged,verdict
+mosaic,"piece + picture",judged,verdict
+moscovium,"heart + atom",atom,proposal
+moss,"soft + ground + plant",plant,proposal
+motif,"repeat + figure",judged,verdict
+mudstone,"mud + stone",rock,proposal
+mulberry,"many + berry + tree",tree,proposal
+musk,"deer + scent",judged,verdict
+mustard,"name + seed",judged,verdict
+mycoplasma,"fungus + like + germ",judged,verdict
+myeloma,"marrow + cancer",judged,verdict
+myocarditis,"heart + muscle + swell",judged,verdict
+myocardium,"heart + muscle",judged,verdict
+myopathy,"muscle + disease",judged,verdict
+myositis,"muscle + swell",judged,verdict
+myxoma,"slime + growth",judged,verdict
+naloxone,"pain + drug + block",drug,proposal
+naproxen,"long + pain + drug",drug,proposal
+nasopharynx,"nose + throat",judged,verdict
+neodymium,"magnet + atom",atom,proposal
+neon,"tube + atom",atom,proposal
+neonatal,"new + born + of",judged,verdict
+neoplasia,"new + growth",judged,verdict
+neoplasm,"new + growth",judged,verdict
+nephritis,"kidney + swell",judged,verdict
+nephron,"kidney + unit",judged,verdict
+nephropathy,"kidney + disease",judged,verdict
+neptunium,"wash + atom",atom,proposal
+nettle,"sting + leaf + plant",plant,proposal
+neuritis,"nerve + swell",judged,verdict
+neuroblastoma,"nerve + bud + cancer",judged,verdict
+neuromuscular,"nerve + muscle + of",judged,verdict
+neuropathy,"nerve + disease",judged,verdict
+neurotoxin,"nerve + poison",judged,verdict
+nevus,"skin + mark",judged,verdict
+newborn,"new + born",judged,verdict
+nick,"small + cut",judged,verdict
+nickel,"white + atom",atom,proposal
+nicotine,"alert + addict + drug",drug,proposal
+nihonium,"danger + atom",atom,proposal
+niobium,"snow + atom",atom,proposal
+nitroglycerin,"heart + vessel + open",drug,proposal
+nobelium,"prize + atom",atom,proposal
+northwest,"north + west",judged,verdict
+novocaine,"numb + pain + drug",drug,proposal
+nucleotide,"nucleus + unit",judged,verdict
+oak,"nut + cup + tree",tree,proposal
+oat,"grain + plant",plant,proposal
+obsidian,"lava + glass",rock,proposal
+oganesson,"join + atom",atom,proposal
+omeprazole,"stomach + acid + block",drug,proposal
+onion,"sharp + smell + bulb",plant,proposal
+onset,"on + set",judged,verdict
+orchid,"complex + flower",flower,proposal
+oregano,"strong + smell + herb",judged,verdict
+orifice,"body + hole",judged,verdict
+ornithine,"amino + acid",judged,verdict
+oropharynx,"mouth + throat",judged,verdict
+osmium,"wing + atom",atom,proposal
+osteoblast,"bone + bud + cell",judged,verdict
+osteomyelitis,"bone + marrow + swell",judged,verdict
+osteosarcoma,"bone + cancer",judged,verdict
+outdoor,"out + door",judged,verdict
+outflow,"out + flow",judged,verdict
+overgrowth,"over + growth",judged,verdict
+overhead,"over + head",judged,verdict
+oxidase,"oxygen + enzyme",judged,verdict
+oxidoreductase,"oxygen + move + enzyme",judged,verdict
+oxime,"nitrogen + oxygen + group",judged,verdict
+oxycodone,"strong + pain + drug",drug,proposal
+oxygen,"breath + atom",atom,proposal
+oxytocin,"bond + birth + hormone",drug,proposal
+pacemaker,"pace + make + agent",judged,verdict
+pall,"coffin + cloth",judged,verdict
+palladium,"wise + atom",atom,proposal
+palm,"crown + leaf + tree",tree,proposal
+pancreatitis,"pancreas + swell",judged,verdict
+pansy,"face + flower",flower,proposal
+papilla,"small + bump",judged,verdict
+papilloma,"bump + growth",judged,verdict
+paracetamol,"pain + fever + drug",drug,proposal
+paralysis,"no + move",judged,verdict
+parenchyma,"work + tissue",judged,verdict
+paresis,"weak + palsy",judged,verdict
+parsley,"green + curl + herb",plant,proposal
+patella,"knee + bone",judged,verdict
+pathway,"path + way",judged,verdict
+pea,"round + pod + seed",plant,proposal
+peanut,"under + ground + nut",plant,proposal
+peat,"bog + plant",rock,proposal
+pecan,"sweet + nut + tree",tree,proposal
+peduncle,"flower + stalk",judged,verdict
+pegmatite,"big + crystal",rock,proposal
+pendant,"hang + jewel",judged,verdict
+penicillin,"bacteria + kill + drug",drug,proposal
+penny,"small + coin. A currency",judged,verdict
+peony,"big + round + flower",flower,proposal
+pepper,"hot + fruit",plant,proposal
+peptidase,"peptide + enzyme",judged,verdict
+peptide,"short + protein + chain",judged,verdict
+pericarditis,"heart + sac + swell",judged,verdict
+pericardium,"around + heart",judged,verdict
+peridotite,"green + grain",rock,proposal
+peritoneum,"belly + lining",judged,verdict
+peritonitis,"belly + lining + swell",judged,verdict
+peroxidase,"peroxide + enzyme",judged,verdict
+peroxide,"beyond + oxide",judged,verdict
+pesticide,"pest + kill",judged,verdict
+petunia,"trumpet + flower",flower,proposal
+phalanx,"finger + bone",judged,verdict
+pharmacology,"drug + study",judged,verdict
+pharynx,"throat + passage",judged,verdict
+phenol,"ring + alcohol",judged,verdict
+phenylalanine,"phenyl + amino + acid",judged,verdict
+phosphatase,"phosphate + enzyme",judged,verdict
+phosphorus,"light + atom",atom,proposal
+phyllite,"silk + press",rock,proposal
+pickup,"pick + up",judged,verdict
+pie,"fill + crust",judged,verdict
+pine,"bundle + conifer",tree,proposal
+pinna,"outer + ear",judged,verdict
+pituitary,"brain + gland",judged,verdict
+plague,"spread + sickness",judged,verdict
+plaque,"flat + patch",judged,verdict
+platinum,"noble + atom",atom,proposal
+pleura,"lung + lining",judged,verdict
+plexus,"nerve + net",judged,verdict
+plunge,"down + rush",judged,verdict
+plutonium,"far + atom",atom,proposal
+pneumonia,"lung + swell + sickness",judged,verdict
+poker,"stir + rod",judged,verdict
+polo,"horse + ball + game",judged,verdict
+polonium,"shake + atom",atom,proposal
+polydactyly,"many + finger + state",judged,verdict
+polymerase,"polymer + enzyme",judged,verdict
+polysaccharide,"many + sugar",judged,verdict
+pomegranate,"red + seed + fruit",tree,proposal
+pons,"bridge + of + brain",judged,verdict
+poplar,"tall + fast + tree",tree,proposal
+poppy,"red + sleep + flower",flower,proposal
+porcelain,"fine + clay",judged,verdict
+porphyrin,"purple + ring",judged,verdict
+portrait,"face + picture",judged,verdict
+poster,"wall + sheet",judged,verdict
+potassium,"ash + atom",atom,proposal
+potato,"under + ground + stem",plant,proposal
+praseodymium,"wind + atom",atom,proposal
+prednisone,"swell + immune + drug",drug,proposal
+primer,"first + coat",judged,verdict
+primordium,"first + form",judged,verdict
+primrose,"early + flower",flower,proposal
+probe,"feel + search",judged,verdict
+progesterone,"pregnancy + hormone",judged,verdict
+prolapse,"forward + fall",judged,verdict
+proline,"amino + acid",judged,verdict
+promethium,"fire + atom",atom,proposal
+propofol,"sleep + anesthetic + drug",drug,proposal
+prosthesis,"false + part",judged,verdict
+protactinium,"brief + atom",atom,proposal
+protease,"protein + enzyme",judged,verdict
+proteinase,"protein + enzyme",judged,verdict
+proteinuria,"protein + urine",judged,verdict
+protozoan,"one + cell + animal",judged,verdict
+pseudoephedrine,"nose + open + drug",drug,proposal
+puberty,"sex + ripe + age",judged,verdict
+pudding,"soft + sweet + food",judged,verdict
+pumice,"lava + foam",rock,proposal
+pumpkin,"large + orange + gourd",plant,proposal
+purine,"double + ring + base",judged,verdict
+purpura,"purple + rash",judged,verdict
+purse,"small + bag",judged,verdict
+pyridine,"ring + nitrogen + base",judged,verdict
+pyrimidine,"single + ring + base",judged,verdict
+quail,"ground + bird",judged,verdict
+quartzite,"sand + press",rock,proposal
+queen anne's lace,"white + flat + flower",flower,proposal
+radiography,"ray + picture",judged,verdict
+radiotherapy,"ray + therapy",judged,verdict
+radish,"sharp + root",plant,proposal
+radium,"beam + atom",atom,proposal
+radon,"trace + atom",atom,proposal
+railroad,"rail + road",judged,verdict
+railway,"rail + way",judged,verdict
+rake,"tooth + tool",judged,verdict
+rally,"again + gather",judged,verdict
+ramp,"slope + way",judged,verdict
+rap,"sharp + knock",judged,verdict
+rash,"skin + spot",judged,verdict
+realism,"real + way",judged,verdict
+rebound,"again + bound",judged,verdict
+recess,"set + back + space",judged,verdict
+rectum,"straight + gut",judged,verdict
+redbud,"trunk + flower + tree",tree,proposal
+reductase,"reduce + enzyme",judged,verdict
+redwood,"tall + red + conifer",tree,proposal
+reed,"tall + water + grass",plant,proposal
+reflux,"back + flow",judged,verdict
+reform,"again + form",judged,verdict
+retail,"small + sell",judged,verdict
+reticulum,"small + net",judged,verdict
+retina,"eye + screen",judged,verdict
+retinopathy,"retina + disease",judged,verdict
+retrograde,"back + step",judged,verdict
+rhenium,"river + atom",atom,proposal
+rhinitis,"nose + swell",judged,verdict
+rhodium,"flower + atom",atom,proposal
+rhododendron,"large + shrub + flower",flower,proposal
+rhyolite,"light + fire",rock,proposal
+ribbon,"narrow + strip",judged,verdict
+ribose,"five + carbon + sugar",judged,verdict
+rice,"water + grain",plant,proposal
+rickets,"soft + bone + sickness",judged,verdict
+roentgenium,"see + atom",atom,proposal
+rose,"thorn + smell + flower",flower,proposal
+rosemary,"needle + smell + herb",plant,proposal
+rotavirus,"wheel + virus",judged,verdict
+rowan,"red + cluster + tree",tree,proposal
+rubber tree,"rubber + sap + tree",tree,proposal
+rubidium,"red + atom",atom,proposal
+rum,"sugar + spirit",judged,verdict
+ruthenium,"still + atom",atom,proposal
+rutherfordium,"structure + atom",atom,proposal
+rye,"grain + plant",plant,proposal
+sacrum,"base + spine + bone",judged,verdict
+sage,"soft + gray + herb",plant,proposal
+samarium,"power + atom",atom,proposal
+sandalwood,"burn + smell + wood",tree,proposal
+sandstone,"sand + stone",rock,proposal
+sarcoma,"flesh + cancer",judged,verdict
+satellite,"go + around + body",judged,verdict
+scandium,"soft + atom",atom,proposal
+scapula,"shoulder + blade",judged,verdict
+scarlet,"deep + red",judged,verdict
+schist,"slice + stone",rock,proposal
+scissors,"twin + blade",judged,verdict
+scleroderma,"hard + skin",judged,verdict
+sclerosis,"hard + state",judged,verdict
+scoria,"lava + hole",rock,proposal
+scrotum,"seed + sac",judged,verdict
+seaborgium,"force + atom",atom,proposal
+selenium,"moon + atom",atom,proposal
+semicircular,"half + circle + of",judged,verdict
+septum,"divide + wall",judged,verdict
+sequoia,"giant + conifer",tree,proposal
+serine,"amino + acid",judged,verdict
+serotonin,"mood + signal",drug,proposal
+serpentinite,"green + scale + rock",rock,proposal
+sertraline,"mood + lift + drug",drug,proposal
+shale,"page + stone",rock,proposal
+shank,"lower + leg",judged,verdict
+shingle,"roof + board",judged,verdict
+shovel,"dig + tool",judged,verdict
+shunt,"turn + aside",judged,verdict
+sickle,"reap + blade",judged,verdict
+sickness,"sick + state",judged,verdict
+sildenafil,"sex + blood + drug",drug,proposal
+silica,"sand + mineral",judged,verdict
+silkworm,"silk + worm",judged,verdict
+siltstone,"silt + stone",rock,proposal
+sinus,"bone + hollow",judged,verdict
+sinusitis,"sinus + swell",judged,verdict
+sinusoid,"wave + curve",judged,verdict
+ski,"snow + slide",judged,verdict
+skim,"take + top",judged,verdict
+slag,"melt + waste",judged,verdict
+slash,"long + cut",judged,verdict
+slate,"board + stone",rock,proposal
+sling,"hang + strap",judged,verdict
+slipper,"soft + shoe",judged,verdict
+sludge,"thick + mud",judged,verdict
+snapdragon,"mouth + flower",flower,proposal
+soapstone,"soap + stone",rock,proposal
+sociology,"society + study",judged,verdict
+sodium,"salt + atom",atom,proposal
+soprano,"high + voice",judged,verdict
+sorghum,"tall + dry + grain",plant,proposal
+southeast,"south + east",judged,verdict
+soybean,"oil + bean",plant,proposal
+spectrometry,"spectrum + measure",judged,verdict
+spectroscopy,"spectrum + view + craft",judged,verdict
+spinach,"dark + leaf + plant",plant,proposal
+spindle,"turn + rod",judged,verdict
+spruce,"sharp + conifer",tree,proposal
+squash,"soft + gourd",plant,proposal
+stature,"stand + height",judged,verdict
+stenosis,"narrow + state",judged,verdict
+sternum,"chest + bone",judged,verdict
+stomatitis,"mouth + swell",judged,verdict
+strabismus,"cross + eye",judged,verdict
+strawberry,"red + seed + berry",plant,proposal
+streptococcus,"chain + round + microbe",judged,verdict
+striatum,"stripe + brain + part",judged,verdict
+stricture,"narrow + place",judged,verdict
+stroma,"frame + tissue",judged,verdict
+strontium,"burst + atom",atom,proposal
+stub,"short + rest",judged,verdict
+stunt,"bold + feat",judged,verdict
+subclass,"under + class",judged,verdict
+subcutaneous,"under + skin + of",judged,verdict
+subdivision,"under + division",judged,verdict
+subfamily,"under + family",judged,verdict
+subgroup,"under + group",judged,verdict
+submarine,"under + sea",judged,verdict
+subunit,"under + unit",judged,verdict
+sugarcane,"sweet + tall + grass",plant,proposal
+suicide,"self + kill",judged,verdict
+sulcus,"brain + groove",judged,verdict
+sulfonamide,"sulfur + amide",judged,verdict
+sulfoxide,"sulfur + oxide",judged,verdict
+sumac,"sour + shrub",judged,verdict
+summary,"short + account",judged,verdict
+sunday,"sun + day",judged,verdict
+sunflower,"sun + face + flower",flower,proposal
+superfamily,"over + family",judged,verdict
+supplement,"add + fill",judged,verdict
+suture,"join + seam",judged,verdict
+sweet pea,"wing + vine + flower",flower,proposal
+sweet potato,"sweet + root",plant,proposal
+sycamore,"patch + bark + tree",tree,proposal
+syncope,"sudden + faint",judged,verdict
+syndactyly,"joined + finger + state",judged,verdict
+syndrome,"sign + set",judged,verdict
+synthase,"build + enzyme",judged,verdict
+synthesis,"put + together",judged,verdict
+syrup,"thick + sugar + water",judged,verdict
+tachycardia,"fast + heart",judged,verdict
+talus,"ankle + bone",judged,verdict
+tamarind,"sour + pod + tree",tree,proposal
+tandem,"one + behind",judged,verdict
+tantalum,"charge + atom",atom,proposal
+tea,"drink + leaf + plant",plant,proposal
+teak,"oil + hard + wood",tree,proposal
+technetium,"craft + atom",atom,proposal
+technique,"do + way",judged,verdict
+tellurium,"earth + atom",atom,proposal
+tennessine,"great + atom",atom,proposal
+tenor,"middle + voice",judged,verdict
+teratoma,"mixed + tissue + growth",judged,verdict
+terbium,"glow + atom",atom,proposal
+terrorism,"fear + rule",judged,verdict
+testosterone,"male + hormone",judged,verdict
+tetrachloride,"four + chlorine + salt",judged,verdict
+tetracycline,"bacteria + block + drug",drug,proposal
+thalamus,"brain + relay",judged,verdict
+thallium,"stick + atom",atom,proposal
+thistle,"sharp + flower + plant",plant,proposal
+thorium,"roar + atom",atom,proposal
+threonine,"amino + acid",judged,verdict
+thrombosis,"clot + state",judged,verdict
+thulium,"beyond + atom",atom,proposal
+thyme,"small + smell + herb",judged,verdict
+thymidine,"thymine + sugar",judged,verdict
+thymocyte,"thymus + cell",judged,verdict
+thymus,"chest + gland",judged,verdict
+thyroid,"throat + gland",judged,verdict
+thyroiditis,"thyroid + swell",judged,verdict
+tibia,"shin + bone",judged,verdict
+titanium,"strong + atom",atom,proposal
+tobacco,"smoke + leaf + plant",plant,proposal
+toenail,"toe + nail",judged,verdict
+tomato,"red + soft + fruit",judged,verdict
+tomography,"slice + writing",judged,verdict
+tonsil,"throat + gland",judged,verdict
+torch,"carry + flame",judged,verdict
+torpedo,"water + bomb",judged,verdict
+transaminase,"amine + move + enzyme",judged,verdict
+transduction,"across + lead",judged,verdict
+transferase,"transfer + enzyme",judged,verdict
+transfusion,"blood + pour",judged,verdict
+translocation,"across + place + move",judged,verdict
+transplant,"across + plant",judged,verdict
+travertine,"spring + lime",rock,proposal
+tricolor,"three + colour",judged,verdict
+triphosphate,"three + phosphate",judged,verdict
+trough,"long + vessel",judged,verdict
+truck,"goods + cart",judged,verdict
+tryptophan,"amino + acid",judged,verdict
+tuff,"ash + stone",judged,verdict
+tulip,"cup + flower",flower,proposal
+tungsten,"wolf + atom",atom,proposal
+turmeric,"yellow + root",judged,verdict
+turnip,"round + root",plant,proposal
+turpentine,"pine + oil",judged,verdict
+tyrosine,"amino + acid",judged,verdict
+ulna,"lower + arm + bone",judged,verdict
+ultrasound,"beyond + sound",judged,verdict
+ultraviolet,"beyond + violet",judged,verdict
+underground,"under + ground",judged,verdict
+unilateral,"one + side + of",judged,verdict
+upgrade,"up + grade",judged,verdict
+uptake,"up + take",judged,verdict
+uranium,"break + atom",atom,proposal
+urea,"water + waste",judged,verdict
+ureter,"kidney + tube",judged,verdict
+urethra,"water + tube",judged,verdict
+urogenital,"urine + genital",judged,verdict
+urticaria,"nettle + rash",judged,verdict
+uveitis,"eye + coat + swell",judged,verdict
+uvula,"throat + drop",judged,verdict
+vaccine,"teach + body + drug",judged,verdict
+vacuole,"cell + bubble",judged,verdict
+valine,"amino + acid",judged,verdict
+vamp,"again + patch",judged,verdict
+vanadium,"beauty + atom",atom,proposal
+vanilla,"sweet + smell + pod",judged,verdict
+varnish,"hard + gloss + coat",judged,verdict
+vasculitis,"vessel + swell",judged,verdict
+veneer,"thin + face + layer",judged,verdict
+ventricle,"heart + room",judged,verdict
+vermilion,"bright + red",judged,verdict
+vesicle,"small + sac",judged,verdict
+vest,"arm + less + coat",judged,verdict
+villus,"gut + hair",judged,verdict
+vinegar,"sour + wine",judged,verdict
+violet,"purple + small + flower",flower,proposal
+violin,"bow + string + box",judged,verdict
+volvulus,"gut + twist",judged,verdict
+vulva,"outer + sex + part",judged,verdict
+walnut,"fold + nut + tree",judged,verdict
+wan,"pale + weak",judged,verdict
+warfare,"war + fare",judged,verdict
+warfarin,"blood + clot + block",drug,proposal
+water lily,"float + water + flower",flower,proposal
+watermelon,"red + water + fruit",plant,proposal
+weed,"not + want + plant",plant,proposal
+wheat,"bread + grain",plant,proposal
+willow,"weep + water + tree",tree,proposal
+wisteria,"hang + purple + flower",flower,proposal
+wreath,"flower + ring",judged,verdict
+wrench,"twist + tool",judged,verdict
+xenon,"alien + atom",atom,proposal
+xylene,"double + methyl + benzene",judged,verdict
+yam,"large + root",plant,proposal
+yarrow,"flat + white + flower",flower,proposal
+yew,"red + seed + conifer",tree,proposal
+ytterbium,"memory + atom",atom,proposal
+yttrium,"bulb + atom",atom,proposal
+yucca,"sword + leaf + plant",plant,proposal
+zinc,"brittle + atom",atom,proposal
+zinnia,"bright + round + flower",flower,proposal
+zirconium,"opaque + atom",atom,proposal

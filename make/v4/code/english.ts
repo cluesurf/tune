@@ -181,7 +181,7 @@ const SOURCES: Array<[string, Array<string>]> = [
 const MINE = `
 orb blob slab slot brim tide
 
-discipline destiny ego empathy eternity gratitude humility intuition
+discipline destiny ego empathy gratitude humility intuition
 apology conceive dictate inscribe invade omit prescribe submit buoyant
 polar populate protrude etch vortex turbulent orient bother
 stuck ripple swirl surge uh computer stomach cactus lichen petal
@@ -300,7 +300,7 @@ dune bog meadow tundra delta reef lagoon oasis crater
 summit grove
 
 flute gong chime rattle chord octave tempo chorus
-broth garlic vinegar yeast nectar syrup resin soot
+broth yeast nectar resin soot
 
 fin mane membrane cartilage tusk hump
 weasel weed coral swarm wedge dwarf starch fountain
@@ -308,14 +308,50 @@ weep peck
 
 flux piece
 
-rye millet yam cassava carrot lettuce spinach celery
-asparagus melon tomato eggplant pear plum cherry mango avocado
-almond walnut chestnut poplar elm cypress acacia eucalyptus olive fig
-cacao sesame hemp
+// Fifty food and plant species were here and are gone. A species is a
+// LEAF, and a leaf never earns a root: the head does.
+//
+// The seven-language corpus settles it. Chinese does not root the
+// tomato, it builds one:
+//
+//   番茄     take turns + eggplant    tomato, chinese
+//   西莨     west + herb              tomato, chinese
+//   땅감     ground + feeling         tomato, korean
+//   paradicsom  paradise + apple      tomato, hungarian
+//
+// Same for every one of the fifty. Oregano, vanilla, thyme and
+// turmeric are not describable in two words and are not SUPPOSED to
+// be: they are names, carried by the naming mechanism with a head
+// saying what sort of thing they are, the way elm is a name plus
+// tree. What earns a root is the head the name hangs off, and all
+// thirteen of those were already in the pool before this cut:
+//
+//   herb spice nut bean grain melon berry
+//   gourd tuber vine fruit vegetable seed
+//
+// Keeping the leaves would have spent 50 of 4096 on one aisle of one
+// supermarket, and still not reached marjoram.
+//
+// melon is the one the cut took by accident and the only one of the
+// fifty that is a HEAD: Chinese 瓜 builds watermelon, cucumber and
+// pumpkin off it. It goes back.
+melon passion
 
-basil rosemary sage thyme parsley oregano dill cilantro lavender
-chamomile aloe ginger turmeric mustard cumin fennel anise cinnamon
-vanilla cannabis ginseng laurel
+// Shape and texture words that were missing. Six of the nine were
+// being excluded by a derivation, and they are listed in KEEP with
+// what each was excluded as, because two of those derivations are
+// real and worth reversing later if the cost shows up:
+//
+//   taper        tap + agent      FALSE, taper is not a thing that taps
+//   concave      in + curve       true, and kept anyway as a shape primitive
+//   convex       out + curve      true, and kept anyway as a shape primitive
+//   translucent  part + transparent   true, the best of the four
+//   pungent      sharp + taste    true of taste, and pungent is a SMELL
+//
+// grit carries two senses that share no meaning at all, the sand and
+// the perseverance, so it takes a CONTEXT entry rather than one root
+// asked to hold both.
+taper swell recess coil convex concave grit translucent pungent
 
 lava cyclone halo abyss rift bathe
 
@@ -384,7 +420,7 @@ extract distill yield conserve deplete replenish contaminate
 degrade corrode viscous polarity collide
 
 lame assimilate candidate sarcastic dynamic cascade repulse backup
-transmit convey utter attest glyph emphasize idiom realize discourse
+transmit convey utter attest glyph idiom realize discourse
 lexicon vague contrast mark
 
 feedback threshold trigger regulate couple damp emerge robust
@@ -407,7 +443,7 @@ actual potential contingent inevitable tend risk hazard vulnerable
 opportunity alternative outcome suppose occur ensure feasible
 compatible arbitrary coincidence luck
 
-acute obtuse obstruct cuticle sport racket puck wicket
+acute obtuse obstruct cuticle sport racket puck
 pry recruit float propagate
 
 mobilize polarize reciprocate contribute specialize faction deviate
@@ -424,7 +460,7 @@ dispatch
 
 wink convulse compulsion satiate scruff
 
-stratum magma uplift subside aquifer
+stratum magma uplift subside
 
 inflammation impair relieve relapse lesion
 
@@ -449,7 +485,7 @@ venture paramount gold bronze copper
 
 container covering support barrier opening passage connector fastener
 holder marker strand sheet rod projection depression mass bundle pile
-junction waterbody watercourse highland lowland landform secretion
+junction highland lowland secretion
 ingredient fabric residue specialist closure
 meeting droop knowledge
 
@@ -459,13 +495,47 @@ might acre inch foot yard
 lime plank stone acorn shrub petal conifer
 
 calyx bract sepal stamen awn frond husk rind sheath internode
-mottled wrinkled margin film keel lobed toothed
+mottle wrinkle margin film keel lobe
 orchid bracken lotus sedge bamboo palm
 
-eyebrow crotch sickle broom obscure lukewarm embankment
-pavilion alley throne chaff bran leech silkworm pheasant
+eyebrow crotch obscure lukewarm
+pavilion alley throne chaff bran leech pheasant
 cuckoo rug ferry chapter revive cleanse dredge overturn
 embroider generation widow
+
+// The add pass, judged by hand against a stricter rule than the
+// first one used:
+//
+//   ski is a sport, i wouldn't make that base, but compound
+//   calf is young cow, compound
+//   ivory isn't base i would say, just make it compound, too specific
+//   penny is not base, compound, specific to us
+//
+// **A base word is one that cannot be said in two or three words the
+// language already has.** calf is young cow, mare is female horse,
+// shovel is a dig tool, penny is a small coin of one country.
+// Applying that properly cut the base rate of the proposed list from
+// 26% to about 10%, and what survived is below.
+//
+// primitive and posture went the other way, promoted to base
+// because the modern sense has drifted off its parts: a primitive in
+// logic is not prime-like, and no two words give how a body is held.
+rag tract sector iris gall hybrid zinc nickel tan slack
+oblique flush scrub lap discharge cancer pulp jack toll ace
+major plus transit intermediate composite acoustic gross
+pedal cardinal reflex primitive posture rig stump
+manual welfare crescent
+
+// Every part used in a breakdown above has to be a root itself, or
+// the breakdown reaches for a word the language lacks. These are the
+// 53 that were missing.
+apex cornea cranium gullet lymph navel palate papilla pharynx
+pleura rectum retina scapula semen sebum thalamus vagina
+ventricle vestibule viscera alveolus chorion
+seam crisis par goods feat maze yoke violet fibre
+bromine chlorine iodine phosphorus estrus canon genus
+gamble cleave beget compel depress dispose intrude propel
+restrict retard retire academy trauma therapy
 
 alcohol acetone video algorithm battery camera engine motor radio
 robot rocket artery atom cell gene molecule nucleus organ organism
@@ -477,6 +547,13 @@ weber tesla henry lumen lux becquerel gray katal
 radian steradian celsius byte calorie
 gallon gallop fahrenheit liter radar ram trumpet
 `
+  // A `//` line is a note about the block under it, never a word. The
+  // block is a template literal, so nothing strips those for us, and a
+  // comment left in produced `has.**`, `held.`, `words` and `wouldn't`
+  // as candidate roots.
+  .split('\n')
+  .filter(line => !line.trim().startsWith('//'))
+  .join('\n')
   .split(/\s+/)
   .filter(Boolean)
 
@@ -565,13 +642,19 @@ const KEEP = new Set(
   // does not survive the rule: an ordinal and a fraction are what a
   // counting system BUILDS, and a language that roots them is paying
   // twice for arithmetic it already has.
-  `uncertain information location length width possible likely
+  // `passion` is a FALSE derivation, not a real one. `derive.ts` reads
+  // it as `paste + act` off a stem match, and passion is from Latin
+  // pati, to suffer, with no paste anywhere in it. A wrong breakdown
+  // blocks a root as effectively as a right one, so it is kept by name
+  // here until the deriver stops proposing that pair.
+  `passion taper concave convex translucent pungent recess
+   uncertain information location length width possible likely
    density species population health ancestor stranger attention
    sensation reference obligation transform replace
    reproduce cooperate identity lonely plane variable train mine
    solution elder activity
-   covering container fastener projection opening secretion landform
-   cavity food marker holder connector closure waterbody watercourse
+   covering container fastener projection opening secretion
+   cavity food marker holder connector closure
    garment particle candor bound`.split(/\s+/),
 )
 
@@ -599,16 +682,103 @@ const KEEP = new Set(
  * that leave because English BUILDS them, which is a different
  * question and a different file.
  */
+/**
+ * Words another source list supplies that this language does not want.
+ *
+ * Each is sayable in two or three words already present, so a root for
+ * it buys nothing:
+ *
+ * ```text
+ * kitchen      cook room
+ * pathway      path way, and it is `path` twice
+ * aquifer      water rock layer
+ * silkworm     silk worm
+ * embankment   bank wall
+ * passionate   passion + like, and `passion` stays
+ * patience     patient + ness, and `patient` stays
+ * eternity     eternal + ness, and `eternal` stays
+ * emphasize    emphasis + do, and `emphasis` stays
+ * ```
+ */
 const CUT = new Set(
-  `tonne siemens sievert hub thud tame litre lentil caulk`.split(/\s+/),
+  `tonne siemens sievert hub thud tame litre lentil caulk
+   kitchen pathway aquifer silkworm embankment
+   passionate patience eternity emphasize
+   sickle broom garlic vinegar syrup`.split(/\s+/),
 )
 
-const built = readDerivable()
-for (const word of KEEP) {
-  built.delete(word)
+/**
+ * The hand judgements, applied rather than transcribed.
+ *
+ * Every entry of the add list was classified by hand as base,
+ * compound, derived, variant or junk. Those rulings were reaching this
+ * file by somebody copying words into the `MINE` block, and that step
+ * failed in both directions: **75 of 118 `base` verdicts never arrived
+ * at all**, and the copying is what put `has.**` and `held.` on the
+ * candidate list.
+ *
+ * So the judged list is read. A `base` verdict adds a word and beats
+ * any derivation claimed for it, and the other four verdicts remove
+ * one.
+ *
+ * **Only a VERDICT counts, never a PROPOSAL.** `master.ts` writes both
+ * into `compound.csv`, and the difference is the whole point: a
+ * verdict says a word gets no root, while a proposal from `atom.csv`
+ * or `plant.csv` says how a name COULD be built and rules out nothing.
+ * Reading proposals as verdicts would cut `gold`, `rice`, `wheat` and
+ * `melon` out of the language on the strength of a naming exercise.
+ */
+function readJudged(): { keep: Set<string>; drop: Set<string> } {
+  const keep = new Set<string>()
+  const drop = new Set<string>()
+  const base = resolve(TERM, 'master', 'base.csv')
+  if (!existsSync(base)) return { keep, drop }
+
+  for (const kind of ['base', 'compound', 'derived', 'variant', 'junk']) {
+    const path = resolve(TERM, 'master', `${kind}.csv`)
+    if (!existsSync(path)) continue
+    for (const line of readFileSync(path, 'utf-8').split('\n').slice(1)) {
+      if (!line.trim()) continue
+      const term = line.slice(0, line.indexOf(',')).trim()
+      if (!term) continue
+      if (!line.endsWith(',verdict')) continue
+      if (kind === 'base') keep.add(term)
+      else drop.add(term)
+    }
+  }
+  // A word ruled base is never also dropped.
+  for (const word of keep) drop.delete(word)
+  return { keep, drop }
 }
+
+const judged = readJudged()
+
+const built = readDerivable()
+/**
+ * Order matters here and it cost an hour.
+ *
+ * Every ADD runs first and every KEEP runs last, because `KEEP` and
+ * `judged.keep` are explicit overrides: a word is named there to say
+ * that whatever excluded it was wrong.
+ *
+ * The first version deleted `KEEP` before adding `judged.drop`, and
+ * `judged.drop` carries every row of `derivable.english.csv`. So
+ * `taper` was removed by name, added straight back as `tap + agent`,
+ * and never reached the candidate list. It still appeared in
+ * `all.english.txt`, because that file is body plus extra plus BUILT,
+ * which is what made it look present.
+ */
 for (const word of CUT) {
   built.add(word)
+}
+for (const word of judged.drop) {
+  built.add(word)
+}
+for (const word of judged.keep) {
+  built.delete(word)
+}
+for (const word of KEEP) {
+  built.delete(word)
 }
 const seen = new Set<string>()
 const body: Array<string> = []
@@ -635,11 +805,27 @@ for (const [, words] of SOURCES) {
 body.sort()
 
 const extra: Array<string> = []
-for (const raw of MINE) {
+const NOT_A_WORD: Array<string> = []
+for (const raw of [...MINE, ...judged.keep]) {
   const word = raw.toLowerCase().trim()
+  // A root is plain letters. Anything carrying a full stop, a comma, an
+  // apostrophe or a star came out of prose rather than a word list, and
+  // reaching the candidate file is a bug in the block above, not a
+  // judgement to make later.
+  if (word && !/^[a-z]+$/.test(word)) {
+    NOT_A_WORD.push(word)
+    continue
+  }
   if (!word || seen.has(word) || built.has(word)) continue
   seen.add(word)
   extra.push(word)
+}
+
+if (NOT_A_WORD.length) {
+  console.log(
+    `\n${NOT_A_WORD.length} tokens in MINE are not words and were dropped:\n  ` +
+      `${NOT_A_WORD.join(' ')}\n`,
+  )
 }
 
 // ─── Context ────────────────────────────────────────────
@@ -661,6 +847,7 @@ for (const raw of MINE) {
  * Blank means the word is unambiguous enough to leave alone.
  */
 const CONTEXT: Record<string, string> = {
+  grit: 'sand',
   kind: 'nice',
   content: 'mood',
   doctor: 'treat',

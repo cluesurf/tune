@@ -96,7 +96,21 @@ export const LEXFILE: Record<number, string> = {
   44: 'adj.ppl',
 }
 
-export type Entry = { lemma: string; domain: string; role: string }
+/**
+ * `offset` is the synset id with the `oewn-` prefix stripped, so
+ * `oewn-08242255-n` reads as `08242255-n`.
+ *
+ * That is the shape every other wordnet keys on, including the Chinese
+ * Open Wordnet, and it is the only join between a Chinese word and a
+ * DOMAIN. Open English WordNet keeps the Princeton 3.0 offsets for
+ * synsets it inherited, which is what makes the join land.
+ */
+export type Entry = {
+  lemma: string
+  domain: string
+  role: string
+  offset: string
+}
 
 const ROLE: Record<string, string> = {
   n: 'noun',
@@ -155,10 +169,12 @@ export function readWordnet(): Array<Entry> {
     }
     const domain = LEXFILE[Number(key[2])]
     if (!domain) continue
+    const synset = /synset="oewn-([^"]*)"/.exec(line)
     out.push({
       lemma: lemma.replace(/&apos;/g, "'").replace(/&amp;/g, '&'),
       domain,
       role,
+      offset: synset ? synset[1] : '',
     })
   }
 

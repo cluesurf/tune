@@ -1,0 +1,2818 @@
+term,parts,where,kind
+abbreviation,"short + form",sense,verdict
+abdomen,"lower + body + region",sense,verdict
+abdominal,"abdomen + of",judged,verdict
+abduce,"best + explain + infer",sense,verdict
+ability,"able + nature",sense,verdict
+ablation,"ablate + act",judged,verdict
+abnormal,"away + normal",judged,verdict
+abnormality,"abnormal + ness",judged,verdict
+abortion,"abort + act",judged,verdict
+abrasive,"abrade + like",sense,verdict
+absence,"absent + state",sense,verdict
+absorption,"absorb + act",judged,verdict
+abstraction,"abstract + act",affix,verdict
+academic,"academy + of",judged,verdict
+acceleration,"accelerate + act",affix,verdict
+accelerator,"accelerate + thing",judged,verdict
+acceptance,"accept + act",judged,verdict
+acceptor,"accept + agent",judged,verdict
+accessory,"access + thing",judged,verdict
+accidental,"accident + like",affix,verdict
+accommodation,"accommodate + act",judged,verdict
+accordance,"accord + act",affix,verdict
+accountable,"answer + able",sense,verdict
+accumulation,"accumulate + act",judged,verdict
+accuracy,"accurate + nature",affix,verdict
+acetate,"acetic + salt",judged,verdict
+achievement,"achieve + act",affix,verdict
+acidity,"acid + ness",judged,verdict
+acknowledge,"know + say",sense,verdict
+acquaintance,"meet + person",sense,verdict
+acquisition,"acquire + act",judged,verdict
+action,"act + act",affix,verdict
+activate,"active + make",sense,verdict
+activation,"activate + act",judged,verdict
+activator,"activate + agent",judged,verdict
+active,"act + like",affix,verdict
+activist,"active + agent",affix,verdict
+activity,"active + nature",affix,verdict
+actor,"act + agent",affix,verdict
+ad,"advertisement",clipping,verdict
+adaptation,"adapt + act",affix,verdict
+adaptive,"adapt + like",judged,verdict
+addiction,"addict + act",judged,verdict
+addition,"add + act",affix,verdict
+additive,"add + like",judged,verdict
+adhesion,"adhere + act",judged,verdict
+adipose,"fat + of",judged,verdict
+adjective,"nature + term",sense,verdict
+adjoin,"next + join",sense,verdict
+adjustment,"adjust + act",judged,verdict
+administration,"administer + act",affix,verdict
+administrative,"administer + like",judged,verdict
+admiration,"admire + act",affix,verdict
+admission,"admit + act",sense,verdict
+adrenal,"upon + kidney",judged,verdict
+adrenergic,"adrenaline + of",judged,verdict
+adsorb,"surface + adhere",sense,verdict
+advection,"flow + carry",sense,verdict
+adverb,"manner + term",sense,verdict
+advertise,"notice + make",sense,verdict
+advertisement,"advertise + act",affix,verdict
+advice,"advise + act",sense,verdict
+aerial,"air + of",judged,verdict
+aerobic,"air + life + of",judged,verdict
+affiliate,"group + join",sense,verdict
+affinity,"affine + ness",judged,verdict
+afraid,"fear + full",sense,verdict
+afterlife,"after + life",compound,verdict
+afternoon,"after + noon",compound,verdict
+agency,"agent + ness",judged,verdict
+aggregation,"aggregate + act",judged,verdict
+agonist,"act + agent",judged,verdict
+agreement,"agree + act",affix,verdict
+agricultural,"agriculture + of",judged,verdict
+airport,"sky + port",sense,verdict
+albatross,"big + sea + bird",sense,verdict
+alignment,"align + act",judged,verdict
+alkaline,"alkali + like",judged,verdict
+allocation,"allocate + act",judged,verdict
+allowed,"allow + done",affix,verdict
+aloud,"out + loud",sense,verdict
+alphabet,"letter + code",sense,verdict
+alpine,"mountain + live",sense,verdict
+alternative,"alter + native",compound,verdict
+altruistic,"other + benefit + self + cost",sense,verdict
+aluminum,"light + metal",sense,verdict
+alveolar,"alveolus + of",judged,verdict
+am,"grammar",grammar,verdict
+amber,"tree + resin + rock",sense,verdict
+amendment,"amend + act",judged,verdict
+amethyst,"purple + gem",sense,verdict
+amino,"ammonia + group",judged,verdict
+ammonium,"ammonia + ion",judged,verdict
+amorphous,"no + shape",sense,verdict
+amplification,"amplify + act",judged,verdict
+amplify,"strong + make",sense,verdict
+anaesthetic,"anesthesia + thing",judged,verdict
+anal,"anus + of",judged,verdict
+analysis,"analyze + act",sense,verdict
+analytical,"analysis + of",judged,verdict
+anatomical,"anatomy + of",judged,verdict
+ancestor,"before + kin",sense,verdict
+anchovy,"salt + herring",sense,verdict
+anemia,"without + blood",judged,verdict
+anemone,"sea + flower + animal",sense,verdict
+angry,"anger + like",affix,verdict
+angular,"angle + like",judged,verdict
+anion,"negative + ion",sense,verdict
+anniversary,"year + loop + feast",sense,verdict
+annoyance,"annoy + act",affix,verdict
+annual,"one + year + live",sense,verdict
+annular,"ring + of",judged,verdict
+annulus,"ring + small",judged,verdict
+antagonist,"against + agent",judged,verdict
+anteater,"ant + eat + animal",sense,verdict
+antelope,"fast + deer",sense,verdict
+anterior,"before + more",judged,verdict
+antibiotic,"microbe + kill + medicine",sense,verdict
+antibodies,"antibody + many",judged,verdict
+antigen,"antibody + generate",judged,verdict
+antonym,"opposite + meaning",sense,verdict
+anvil,"iron + block",sense,verdict
+anxiety,"anxious + nature",sense,verdict
+aperture,"opening",sense,verdict
+aphid,"sap + suck + bug",sense,verdict
+apical,"apex + of",judged,verdict
+apologise,"apology + make",sense,verdict
+apologize,"apology + make",sense,verdict
+appearance,"appear + act",affix,verdict
+application,"apply + act",affix,verdict
+appointment,"appoint + act",affix,verdict
+appreciation,"appreciate + act",affix,verdict
+apprentice,"learn + agent",sense,verdict
+approximately,"approximate + manner",affix,verdict
+apricot,"small + peach",sense,verdict
+aquatic,"water + live",sense,verdict
+aqueduct,"water + road",sense,verdict
+aqueous,"water + of",judged,verdict
+arachnid,"spider + group",sense,verdict
+arboreal,"tree + live",sense,verdict
+archipelago,"island + group",sense,verdict
+architectural,"architecture + of",judged,verdict
+architecture,"architect + act",judged,verdict
+are,"grammar",grammar,verdict
+argument,"argue + act",affix,verdict
+arid,"very + dry",sense,verdict
+arise,"come + up",sense,verdict
+armadillo,"shell + animal",sense,verdict
+armor,"protect + covering",sense,verdict
+armory,"armor + like",affix,verdict
+army,"military + group",sense,verdict
+arousal,"arouse + like",affix,verdict
+arrangement,"arrange + act",affix,verdict
+array,"order + list",sense,verdict
+arrest,"law + seize",sense,verdict
+arsenate,"arsenic + salt",judged,verdict
+arterial,"artery + of",judged,verdict
+article,"point + term",sense,verdict
+articulation,"articulate + act",judged,verdict
+artist,"art + agent",affix,verdict
+artwork,"art + work",sense,verdict
+ascending,"ascend + act",affix,verdict
+ashamed,"ashame + done",affix,verdict
+aspiration,"aspirate + act",judged,verdict
+assassin,"hire + kill + agent",sense,verdict
+assembly,"assemble + like",affix,verdict
+assess,"as + female",affix,verdict
+assessment,"assess + act",judged,verdict
+asset,"own + thing",sense,verdict
+assignment,"assign + act",judged,verdict
+assist,"as + agent",affix,verdict
+assistance,"assist + act",judged,verdict
+assistant,"assist + agent",affix,verdict
+associated,"associate + done",affix,verdict
+association,"associate + act",affix,verdict
+asteroid,"rock + star",sense,verdict
+astronomical,"astronomy + of",judged,verdict
+asylum,"safe + place",sense,verdict
+asymmetric,"asymmetry + like",affix,verdict
+asymmetry,"asymmetric + like",affix,verdict
+asynchronous,"not + same + time",sense,verdict
+athletic,"athlete + like",affix,verdict
+atoll,"ring + reef",sense,verdict
+atomic,"atom + like",affix,verdict
+atrophy,"without + nourish",judged,verdict
+attached,"attach + done",affix,verdict
+attachment,"attach + act",judged,verdict
+attendance,"attend + act",affix,verdict
+attention,"attend + act",affix,verdict
+attentive,"attend + like",affix,verdict
+attenuate,"weak + make",sense,verdict
+attenuation,"attenuate + act",judged,verdict
+attraction,"attract + act",affix,verdict
+attractive,"attract + like",affix,verdict
+attractor,"attract + state",sense,verdict
+attrition,"rub + act",judged,verdict
+audacious,"very + bold",sense,verdict
+audible,"hear + able",sense,verdict
+auditory,"hear + of",judged,verdict
+augury,"sign + read",sense,verdict
+aunt,"parent + sibling",sense,verdict
+aurora,"pole + light",sense,verdict
+authenticate,"true + prove",sense,verdict
+authorize,"authority + give",sense,verdict
+automated,"self + move + done",judged,verdict
+autonomous,"autonomy + like",affix,verdict
+autonomy,"autonomous + like",affix,verdict
+autosomal,"autosome + of",judged,verdict
+avalanche,"snow + slide",sense,verdict
+avatar,"proxy + body",sense,verdict
+avenge,"revenge",sense,verdict
+avian,"bird + of",judged,verdict
+aviation,"fly + act",judged,verdict
+avoidable,"avoid + able",compound,verdict
+awareness,"aware + nature",affix,verdict
+axial,"axis + of",judged,verdict
+backup,"spare + copy",sense,verdict
+backward,"back + oriented",sense,verdict
+bacon,"pig + meat",sense,verdict
+bacterial,"bacteria + of",judged,verdict
+badger,"badge + agent",affix,verdict
+badminton,"racket + feather + ball + sport",sense,verdict
+balanced,"balance + done",affix,verdict
+bamboo,"hollow + grass",sense,verdict
+bandit,"rob + agent",sense,verdict
+banish,"ban + like",affix,verdict
+banner,"ban + agent",affix,verdict
+baobab,"fat + tree",sense,verdict
+baptism,"holy + bathe",sense,verdict
+barbecue,"fire + cook",sense,verdict
+barn,"farm + building",sense,verdict
+barnacle,"stick + shell",sense,verdict
+barracks,"soldier + house",sense,verdict
+barrel,"round + wood + container",sense,verdict
+barter,"thing + trade",sense,verdict
+basalt,"dark + rock",sense,verdict
+baseball,"bat + ball + sport",sense,verdict
+baseline,"base + line",compound,verdict
+basement,"base + act",affix,verdict
+basic,"base + like",affix,verdict
+basket,"weave + open + container",sense,verdict
+basketball,"basket + ball + sport",sense,verdict
+bath,"bathe + place",sense,verdict
+bearer,"bear + one",judged,verdict
+bearing,"bear + act",affix,verdict
+beautiful,"beauty + full",affix,verdict
+beautify,"beauty + make",affix,verdict
+beaver,"wood + cut + river + rat",sense,verdict
+beef,"cow + meat",sense,verdict
+been,"grammar",grammar,verdict
+beetle,"shell + bug",sense,verdict
+beggar,"beg + agent",sense,verdict
+beginner,"begin + agent",affix,verdict
+beginning,"begin + act",affix,verdict
+behavior,"behave + agent",affix,verdict
+being,"grammar",grammar,verdict
+belief,"believe + act",sense,verdict
+belittle,"less + important + make",sense,verdict
+belly,"bell + like",affix,verdict
+beneficial,"benefit + like",sense,verdict
+benevolent,"other + good + want",sense,verdict
+benzoate,"benzoic + salt",judged,verdict
+besides,"beside + many",affix,verdict
+best,"grammar",grammar,verdict
+best case,"best + possible + outcome",sense,verdict
+better,"grammar",grammar,verdict
+beverage,"drink + thing",judged,verdict
+bible,"holy + book",sense,verdict
+bicycle,"bike",sense,verdict
+bifurcate,"behavior + branch + threshold",sense,verdict
+bike,"bicycle",clipping,verdict
+bilateral,"two + side + symmetry",sense,verdict
+billion,"bill + act",affix,verdict
+binary,"two + system",sense,verdict
+binder,"bind + thing",judged,verdict
+biodiversity,"life + diversity",sense,verdict
+biological,"life + study + like",sense,verdict
+biology,"life + study",sense,verdict
+biome,"life + region",sense,verdict
+birch,"white + bark + tree",sense,verdict
+birthday,"birth + day",sense,verdict
+bishop,"church + chief",sense,verdict
+bison,"wild + cow",sense,verdict
+blackberry,"black + berry",sense,verdict
+blanket,"bed + covering",sense,verdict
+bleat,"sheep + call",sense,verdict
+blend in,"same + seem + become",sense,verdict
+blessing,"bless + act",affix,verdict
+blindness,"blind + ness",judged,verdict
+blizzard,"snow + storm",sense,verdict
+blockade,"block + act",sense,verdict
+blocker,"block + agent",judged,verdict
+blossom,"tree + flower",sense,verdict
+blotch,"rough + spot",sense,verdict
+blueberry,"blue + berry",sense,verdict
+blurred,"blur + done",affix,verdict
+boar,"wild + pig",sense,verdict
+boastful,"boast + like",sense,verdict
+bodily,"body + like",judged,verdict
+bony,"bone + like",judged,verdict
+boor,"rude + coarse + agent",sense,verdict
+boot,"tall + shoe",sense,verdict
+border,"bound + between",sense,verdict
+bored,"bore + done",affix,verdict
+boredom,"bore + state",affix,verdict
+boring,"bore + act",affix,verdict
+bother,"both + agent",affix,verdict
+bottle,"narrow + neck + container",sense,verdict
+bottleneck,"flow + limit + component",sense,verdict
+boulder,"big + rock + piece",sense,verdict
+boundary,"bound + line",sense,verdict
+bounded,"bound + have",sense,verdict
+bounty,"gift + pay",sense,verdict
+bovine,"cow + of",judged,verdict
+branching,"branch + act",affix,verdict
+brass,"yellow + copper",sense,verdict
+bray,"small + horse + call",sense,verdict
+brazen,"bold + shameless",sense,verdict
+breadth,"broad + measure",sense,verdict
+breaker,"break + thing",judged,verdict
+breakfast,"morning + meal",sense,verdict
+bridle,"horse + head + strap",sense,verdict
+brightness,"bright + nature",affix,verdict
+bristle,"stiff + hair",sense,verdict
+broadcast,"broad + cast",compound,verdict
+broker,"deal + middle + agent",sense,verdict
+bromide,"bromine + compound",judged,verdict
+bronze,"copper + tin",sense,verdict
+brook,"small + stream",sense,verdict
+buccal,"cheek + of",judged,verdict
+bucket,"open + carry + container",sense,verdict
+buddy,"bud + like",affix,verdict
+budget,"money + plan",sense,verdict
+buffalo,"wild + cow",sense,verdict
+builder,"build + one",judged,verdict
+building,"build + act",affix,verdict
+bunker,"under + shelter",sense,verdict
+buoyancy,"buoyant + nature",sense,verdict
+burglar,"house + steal + agent",sense,verdict
+bus,"omnibus",clipping,verdict
+busy,"bus + like",affix,verdict
+butte,"narrow + flat + hill",sense,verdict
+butterfly,"day + moth",sense,verdict
+cab,"cabriolet",clipping,verdict
+calcification,"calcium + act",judged,verdict
+calcite,"chalk + crystal",sense,verdict
+caldera,"big + crater",sense,verdict
+callous,"suffer + insensitive",sense,verdict
+camel,"hump + horse",sense,verdict
+canal,"can + like",affix,verdict
+candor,"candy + agent",affix,verdict
+canine,"point + tooth",sense,verdict
+canola,"oil + seed",sense,verdict
+canonical,"canon + of",judged,verdict
+capability,"cap + ability",affix,verdict
+capable,"cap + able",affix,verdict
+cape,"land + point",sense,verdict
+capillary,"narrow + tube + liquid + rise",sense,verdict
+captive,"capture + done",sense,verdict
+carapace,"back + shell",sense,verdict
+carbohydrate,"sugar + chain",sense,verdict
+carbonate,"carbon + salt",judged,verdict
+carbonyl,"carbon + group",judged,verdict
+carboxylate,"carboxyl + salt",judged,verdict
+carboxylic,"carboxyl + of",judged,verdict
+cardboard,"thick + paper",sense,verdict
+cardiac,"heart + of",judged,verdict
+careful,"care + full",affix,verdict
+cargo,"carry + load",sense,verdict
+caribou,"snow + deer",sense,verdict
+carnivore,"meat + eat + agent",sense,verdict
+carriage,"carry + vehicle",sense,verdict
+carrier,"carry + agent",judged,verdict
+carrying capacity,"environment + support + population + limit",sense,verdict
+cartilaginous,"cartilage + of",judged,verdict
+cash,"hand + money",sense,verdict
+cashew,"bend + nut",sense,verdict
+casket,"death + box",sense,verdict
+catalyst,"react + speed + thing",sense,verdict
+catalytic,"catalyst + of",judged,verdict
+catchy,"catch + like",affix,verdict
+catfish,"whisker + fish",sense,verdict
+cation,"positive + ion",sense,verdict
+caudal,"tail + of",judged,verdict
+caulk,"seal + paste",sense,verdict
+caustic,"harsh + cut + criticize",sense,verdict
+cavern,"big + cave",sense,verdict
+cavity,"cave + nature",affix,verdict
+caw,"crow + call",sense,verdict
+cedar,"red + pine",sense,verdict
+celebration,"celebrate + act",affix,verdict
+celestial,"sky + of",judged,verdict
+cellular,"cell + of",judged,verdict
+cemetery,"bury + place",sense,verdict
+census,"count + all + population",sense,verdict
+cent,"hundred + part + coin",sense,verdict
+centaur,"human + horse + body + join",sense,verdict
+centimeter,"hundred + part + meter",sense,verdict
+centipede,"many + foot + worm",sense,verdict
+centrality,"network + center + degree",sense,verdict
+centralize,"central + make",affix,verdict
+centralized,"centralize + done",affix,verdict
+cephalopod,"head + foot + mollusk",sense,verdict
+cerebral,"brain + of",judged,verdict
+ceremonial,"ceremony + of",judged,verdict
+certification,"certify + act",judged,verdict
+cervical,"neck + of",judged,verdict
+championship,"champion + ness",judged,verdict
+charcoal,"char + coal",compound,verdict
+charismatic,"charm + social + power",sense,verdict
+charity,"char + nature",affix,verdict
+charlatan,"false + skill + agent",sense,verdict
+chat,"light + talk",sense,verdict
+checkpoint,"check + place",sense,verdict
+cheerful,"cheer + full",affix,verdict
+cheetah,"fast + wild + cat",sense,verdict
+chela,"grasp + claw",sense,verdict
+chemical,"molecule + like",sense,verdict
+chemistry,"molecule + study",sense,verdict
+chicken,"chick + make",affix,verdict
+chickpea,"round + pea",sense,verdict
+childhood,"child + hood",compound,verdict
+chili,"hot + pepper",sense,verdict
+chimney,"smoke + pipe",sense,verdict
+chirp,"bird + beep",sense,verdict
+chive,"small + onion",sense,verdict
+chloride,"chlorine + compound",judged,verdict
+chloroplast,"green + organelle",sense,verdict
+choice,"choose + act",sense,verdict
+chorionic,"chorion + of",judged,verdict
+chromatic,"colour + of",judged,verdict
+chromosome,"gene + thread",sense,verdict
+chuckle,"small + laugh",sense,verdict
+church,"worship + building",sense,verdict
+cicada,"sing + bug",sense,verdict
+cinema,"move + picture + house",sense,verdict
+circular,"circle + like",sense,verdict
+circulation,"circulate + act",judged,verdict
+circumference,"around + line",sense,verdict
+cirrus,"hair + cloud",sense,verdict
+cistern,"water + hold + pit",sense,verdict
+citadel,"high + fortress",sense,verdict
+citrate,"citric + salt",judged,verdict
+civic,"city + of",judged,verdict
+civilization,"civil + act",affix,verdict
+civilize,"civil + make",affix,verdict
+clade,"ancestor + all + descendant",sense,verdict
+clarify,"clear + make",sense,verdict
+clarity,"clear + state",sense,verdict
+classic,"class + like",affix,verdict
+classify,"class + make",affix,verdict
+classroom,"teach + room",sense,verdict
+clearance,"clear + act",judged,verdict
+cleavage,"cleave + act",judged,verdict
+clinic,"small + hospital",sense,verdict
+cloaca,"shared + body + opening",sense,verdict
+clockwise,"clock + oriented",sense,verdict
+clog,"accumulate + channel + block",sense,verdict
+closed,"close + done",affix,verdict
+closer,"close + agent",affix,verdict
+clothes,"cloth + many",affix,verdict
+clothing,"cloth + act",affix,verdict
+cloudy,"cloud + like",affix,verdict
+clover,"three + leaf + grass",sense,verdict
+cluck,"hen + call",sense,verdict
+coagulation,"coagulate + act",judged,verdict
+coal,"burn + rock",sense,verdict
+cobble,"round + rock + piece",sense,verdict
+cockroach,"flat + bug",sense,verdict
+coconut,"palm + nut",sense,verdict
+cocoon,"silk + shell",sense,verdict
+coefficient,"together + do + thing",judged,verdict
+coexist,"together + exist",sense,verdict
+coffin,"death + box",sense,verdict
+cognate,"same + origin",sense,verdict
+cohere,"same + stick",sense,verdict
+coincidence,"coincide + act",affix,verdict
+collateral,"side + of",judged,verdict
+collection,"collect + act",affix,verdict
+collective,"collect + like",affix,verdict
+collision,"collide + act",sense,verdict
+colonial,"colony + like",sense,verdict
+colonize,"colon + make",affix,verdict
+colorful,"color + full",affix,verdict
+coloured,"colour + done",judged,verdict
+columnar,"column + of",judged,verdict
+combination,"combine + act",affix,verdict
+combust,"burn",sense,verdict
+combustion,"burn + act",sense,verdict
+comet,"tail + star",sense,verdict
+comfortable,"comfort + able",compound,verdict
+commensalism,"one + benefit + relation",sense,verdict
+comment,"come + act",affix,verdict
+commercial,"commerce + of",judged,verdict
+commission,"commit + act",judged,verdict
+commitment,"commit + act",affix,verdict
+committee,"commit + target",affix,verdict
+communication,"communicate + act",affix,verdict
+communion,"commune + act",judged,verdict
+commute,"swap + same",sense,verdict
+companion,"company + person",sense,verdict
+compensate,"pay + back",sense,verdict
+compensation,"compensate + act",judged,verdict
+competition,"compete + act",affix,verdict
+completely,"complete + manner",affix,verdict
+compliance,"comply + act",judged,verdict
+complication,"complicate + act",judged,verdict
+composition,"compose + act",judged,verdict
+compression,"compress + act",affix,verdict
+compromise,"middle + agree",sense,verdict
+compulsive,"compel + like",judged,verdict
+concave,"in + curve",sense,verdict
+concede,"give + point",sense,verdict
+conceited,"self + opinion + high",sense,verdict
+concentration,"concentrate + act",judged,verdict
+conception,"conceive + act",sense,verdict
+conclusion,"conclude + act",sense,verdict
+concord,"together + heart",judged,verdict
+concurrent,"same + time + run",sense,verdict
+condensation,"condense + act",judged,verdict
+condescending,"express + superior + toward + other",sense,verdict
+conditional,"condition + like",affix,verdict
+conditional probability,"probability + condition",sense,verdict
+conditioner,"condition + agent",judged,verdict
+conduction,"conduct + act",judged,verdict
+conductive,"conduct + like",affix,verdict
+conductivity,"conduct + ability",sense,verdict
+conductor,"conduct + agent",affix,verdict
+confederate,"together + federate",judged,verdict
+conference,"confer + act",judged,verdict
+confidence,"confident + nature",sense,verdict
+confidence interval,"estimate + uncertainty + range",sense,verdict
+confiscate,"law + take",sense,verdict
+confluence,"river + join",sense,verdict
+confusion,"confuse + act",sense,verdict
+congenital,"with + born + of",judged,verdict
+conglomerate,"pebble + rock",sense,verdict
+congruence,"same + shape",sense,verdict
+conjecture,"guess + claim",sense,verdict
+conjugate,"together + yoke",judged,verdict
+conjunction,"join + term",sense,verdict
+connected,"connect + done",affix,verdict
+connection,"connect + act",affix,verdict
+connective,"connect + like",judged,verdict
+connector,"connect + agent",affix,verdict
+conscience,"conscious + act",affix,verdict
+conscientious,"careful + duty + follow",sense,verdict
+consciousness,"conscious + nature",affix,verdict
+consecutive,"follow + order",sense,verdict
+consensus,"all + agree",sense,verdict
+conservation,"conserve + act",affix,verdict
+consistent,"consist + agent",affix,verdict
+consolidation,"consolidate + act",judged,verdict
+consonant,"close + sound",sense,verdict
+constituent,"constitute + agent",affix,verdict
+constitution,"constitute + act",judged,verdict
+construction,"construct + act",affix,verdict
+consulate,"nation + speak + place",sense,verdict
+consumer,"consume + agent",judged,verdict
+consumption,"consume + act",judged,verdict
+container,"contain + agent",affix,verdict
+contamination,"contaminate + act",judged,verdict
+contingency plan,"plan + alternative + condition",sense,verdict
+contingent,"depend + like",sense,verdict
+continuity,"continue + nature",affix,verdict
+continuous,"continue + like",affix,verdict
+contraceptive,"against + conceive + like",judged,verdict
+contraction,"contract + act",affix,verdict
+contradiction,"against + say",sense,verdict
+convection,"heat + flow + carry",sense,verdict
+convention,"custom + agree",sense,verdict
+conversion,"convert + act",judged,verdict
+convex,"out + curve",sense,verdict
+convolution,"convolute + act",sense,verdict
+cooked,"cook + done",affix,verdict
+cooperate,"with + operate",prefix,verdict
+cooperation,"cooperate + act",sense,verdict
+cooperative,"cooperate + like",judged,verdict
+coordination,"coordinate + act",judged,verdict
+coping,"cope + act",judged,verdict
+coriander,"cilantro + seed",sense,verdict
+corneal,"cornea + of",judged,verdict
+corollary,"follow + claim",sense,verdict
+coronary,"crown + of",judged,verdict
+corporate,"body + of",judged,verdict
+correction,"correct + act",judged,verdict
+correlated,"correlate + done",affix,verdict
+correlation,"correlate + act",judged,verdict
+correspondence,"correspond + act",judged,verdict
+corroborate,"more + support",sense,verdict
+cosmetic,"order + of",judged,verdict
+cough,"with + ugh",prefix,verdict
+could,"grammar",grammar,verdict
+counter,"count + agent",affix,verdict
+counterargument,"against + argument",sense,verdict
+counterclockwise,"against + clock + oriented",sense,verdict
+counterexample,"against + example",sense,verdict
+counterfactual,"not + fact",sense,verdict
+courthouse,"judge + building",sense,verdict
+covalent,"share + bond",sense,verdict
+cove,"small + bay",sense,verdict
+coverage,"cover + ness",judged,verdict
+covering,"cove + ring",compound,verdict
+cowardly,"coward + manner",affix,verdict
+cranberry,"sour + berry",sense,verdict
+cranial,"cranium + of",judged,verdict
+crass,"coarse + rude",sense,verdict
+crayfish,"river + lobster",sense,verdict
+creation,"create + act",affix,verdict
+creative,"create + like",affix,verdict
+credible,"believe + able",sense,verdict
+credulous,"believe + too + ready",sense,verdict
+crepuscular,"dusk + active",sense,verdict
+cricket,"bat + ball + wicket + sport",sense,verdict
+criminal,"crime + of",judged,verdict
+critical,"critic + of",judged,verdict
+criticize,"critic + make",affix,verdict
+croak,"frog + call",sense,verdict
+crop,"store + stomach",sense,verdict
+crown,"king + ring",sense,verdict
+crystalline,"crystal + like",sense,verdict
+cuboid,"cube + like",judged,verdict
+cultivation,"cultivate + act",judged,verdict
+cumulus,"heap + cloud",sense,verdict
+curvature,"curve + ness",judged,verdict
+curved,"curve + done",affix,verdict
+customer,"buy + agent",sense,verdict
+cutaneous,"skin + of",judged,verdict
+cutter,"cut + agent",judged,verdict
+cuttlefish,"bone + octopus",sense,verdict
+cylindrical,"cylinder + of",judged,verdict
+cytoplasm,"cell + fluid",sense,verdict
+dab,"the light form of tap",judged,verdict
+daily,"day + like",judged,verdict
+daisy,"sun + flower",sense,verdict
+dampen,"quiet + make",sense,verdict
+dangerous,"danger + like",affix,verdict
+darkness,"dark + nature",affix,verdict
+database,"data + base",compound,verdict
+deactivate,"not + active + make",sense,verdict
+deadline,"dead + line",compound,verdict
+deadpan,"humor + face + flat",sense,verdict
+deafness,"deaf + ness",judged,verdict
+debit,"owe + record",sense,verdict
+debug,"error + fix",sense,verdict
+deception,"deceive + act",sense,verdict
+deciduous,"leaf + shed + year",sense,verdict
+decision,"decide + act",sense,verdict
+declaration,"declare + act",affix,verdict
+decoration,"decorate + act",affix,verdict
+decouple,"not + couple",sense,verdict
+decrypt,"secret + open",sense,verdict
+deduction,"deduce + act",affix,verdict
+defeated,"defeat + done",affix,verdict
+defer,"defy + agent",affix,verdict
+deficiency,"deficient + ness",judged,verdict
+definition,"define + act",affix,verdict
+deformity,"deform + ness",judged,verdict
+degeneration,"degenerate + act",judged,verdict
+degradation,"degrade + act",judged,verdict
+delayed,"delay + done",affix,verdict
+deletion,"delete + act",judged,verdict
+delinquent,"young + crime + agent",sense,verdict
+delivery,"deliver + like",affix,verdict
+delta,"river + mouth + land",sense,verdict
+demean,"dignity + lower",sense,verdict
+democratic,"democracy + of",judged,verdict
+denim,"blue + cloth",sense,verdict
+density,"dense + nature",affix,verdict
+department,"depart + act",affix,verdict
+dependence,"depend + ness",judged,verdict
+dependent,"depend + agent",affix,verdict
+depletion,"deplete + act",judged,verdict
+deposit,"put + in",sense,verdict
+deposition,"deposit + act",judged,verdict
+depressed,"depress + done",judged,verdict
+deprivation,"deprive + act",judged,verdict
+depth,"deep + measure",sense,verdict
+dequeue,"queue + take",sense,verdict
+deride,"ridicule",sense,verdict
+derivation,"derive + act",affix,verdict
+derivative,"change + rate",sense,verdict
+derived,"derive + done",affix,verdict
+descendant,"after + kin",sense,verdict
+descending,"descend + act",affix,verdict
+description,"describe + act",sense,verdict
+designer,"design + one",judged,verdict
+desirable,"desire + able",affix,verdict
+destruction,"destroy + act",sense,verdict
+destructive,"destroy + like",sense,verdict
+detachment,"detach + act",judged,verdict
+detain,"hold + keep",sense,verdict
+detection,"detect + act",judged,verdict
+detector,"detect + device",sense,verdict
+detergent,"cleanse + agent",judged,verdict
+deterioration,"deteriorate + act",judged,verdict
+determination,"determine + act",judged,verdict
+detritivore,"dead + matter + eat + agent",sense,verdict
+development,"develop + act",affix,verdict
+deviation,"deviate + act",affix,verdict
+devotion,"devote + act",affix,verdict
+devout,"devote + like",sense,verdict
+diabetic,"diabetes + of",judged,verdict
+diagnosis,"diagnose + act",sense,verdict
+diagnostic,"diagnose + like",judged,verdict
+diamond,"hard + gem",sense,verdict
+dictator,"dictate + agent",sense,verdict
+dictionary,"term + book",sense,verdict
+did,"grammar",grammar,verdict
+difference,"differ + act",affix,verdict
+different,"differ + agent",affix,verdict
+diffract,"bend + spread",sense,verdict
+diffraction,"wave + edge + spread",sense,verdict
+diffusion,"diffuse + act",judged,verdict
+digestion,"digest + act",affix,verdict
+digestive,"digest + like",judged,verdict
+digital,"digit + like",affix,verdict
+dilatation,"dilate + act",judged,verdict
+dilute,"concentrate + lower",sense,verdict
+dinner,"night + meal",sense,verdict
+directory,"file + list",sense,verdict
+disability,"not + able + ness",judged,verdict
+disable,"not + able",prefix,verdict
+disabled,"disable + done",affix,verdict
+disagree,"not + agree",prefix,verdict
+disappear,"not + appear",prefix,verdict
+disappointment,"not + appointment",prefix,verdict
+disapprove,"not + approve",prefix,verdict
+disarrange,"not + arrange",prefix,verdict
+discard,"not + card",prefix,verdict
+discomfort,"not + comfort",prefix,verdict
+disconnect,"not + connect",prefix,verdict
+disconnected,"not + connected",prefix,verdict
+discontent,"not + content",prefix,verdict
+discourage,"not + courage",prefix,verdict
+discourse,"not + course",prefix,verdict
+discrepancy,"expect + observe + difference",sense,verdict
+discrimination,"discriminate + act",judged,verdict
+discussion,"discuss + act",affix,verdict
+disengage,"not + engage",sense,verdict
+disgust,"not + gust",prefix,verdict
+dishonest,"not + honest",prefix,verdict
+dishonorable,"not + honor + able",sense,verdict
+disingenuous,"not + genuine",sense,verdict
+dislike,"not + like",prefix,verdict
+dislocation,"dislocate + act",judged,verdict
+disloyal,"not + loyal",prefix,verdict
+disobey,"not + obey",prefix,verdict
+disorder,"not + order",prefix,verdict
+disown,"not + own",prefix,verdict
+disparage,"worth + lower + speak",sense,verdict
+dispersion,"disperse + act",judged,verdict
+displace,"move + away",sense,verdict
+displacement,"displace + act",judged,verdict
+displeasure,"not + pleasure",prefix,verdict
+disposal,"dispose + act",judged,verdict
+disposition,"not + position",prefix,verdict
+disprove,"not + prove",prefix,verdict
+disrespect,"not + respect",prefix,verdict
+disrespectful,"disrespect + full",affix,verdict
+dissection,"dissect + act",judged,verdict
+dissociation,"dissociate + act",judged,verdict
+distal,"distant + of",judged,verdict
+distill,"not + till",prefix,verdict
+distort,"twist + shape",sense,verdict
+distortion,"distort + act",judged,verdict
+distress,"apart + stress",judged,verdict
+distribute,"spread + give",sense,verdict
+distributed,"distribute + done",affix,verdict
+distribution,"distribute + act",affix,verdict
+distrust,"not + trust",prefix,verdict
+disturbance,"disturb + act",judged,verdict
+diurnal,"day + active",sense,verdict
+diverge,"not + converge",sense,verdict
+diversity,"diverse + nature",affix,verdict
+dividend,"profit + share",sense,verdict
+divination,"hidden + know + act",sense,verdict
+division,"divide + act",sense,verdict
+documentary,"document + like",affix,verdict
+documentation,"document + act",judged,verdict
+does,"grammar",grammar,verdict
+dolphin,"small + whale",sense,verdict
+donation,"donate + act",judged,verdict
+done,"grammar",grammar,verdict
+donkey,"small + horse",sense,verdict
+donor,"donate + agent",judged,verdict
+dorsal,"back + of",judged,verdict
+dosage,"dose + ness",judged,verdict
+double,"two + fold",sense,verdict
+doubtful,"doubt + full",affix,verdict
+downpour,"heavy + rain",sense,verdict
+downward,"down + oriented",sense,verdict
+dozen,"twelve + group",sense,verdict
+dragonfly,"dragon + fly",sense,verdict
+drainage,"drain + act",judged,verdict
+driver,"drive + agent",judged,verdict
+drizzle,"light + rain",sense,verdict
+droopy,"droop + like",sense,verdict
+ductile,"much + deform + without + fracture",sense,verdict
+dune,"sand + hill",sense,verdict
+duplex,"two + fold",judged,verdict
+duplication,"duplicate + act",affix,verdict
+earthquake,"earth + quake",compound,verdict
+eastward,"east + oriented",sense,verdict
+easy,"ease + like",affix,verdict
+ebb,"tide + fall",sense,verdict
+eccentric,"convention + unusual + differ",sense,verdict
+echinacea,"cone + flower",sense,verdict
+eclipse,"shadow + sun",sense,verdict
+ecology,"life + place + study",sense,verdict
+economy,"wealth + system",sense,verdict
+ecosystem,"life + place + system",sense,verdict
+ecotone,"ecosystem + between + zone",sense,verdict
+eddy,"small + vortex",sense,verdict
+edible,"eat + able",sense,verdict
+edition,"edit + act",judged,verdict
+education,"educate + act",affix,verdict
+effect size,"effect + magnitude",sense,verdict
+effective,"effect + like",affix,verdict
+efficiency,"efficient + nature",sense,verdict
+effusion,"effuse + act",judged,verdict
+eighteen,"ten + eight",sense,verdict
+eighth,"eight + order",sense,verdict
+eighty,"eight + ten",sense,verdict
+ejaculation,"ejaculate + act",judged,verdict
+elasticity,"elastic + ness",judged,verdict
+elder,"grammar",grammar,verdict
+eldest,"grammar",grammar,verdict
+election,"elect + act",affix,verdict
+electricity,"electric + nature",affix,verdict
+electron,"negative + particle",sense,verdict
+elevation,"elevate + act",affix,verdict
+eleven,"elevate + make",affix,verdict
+eleventh,"eleven + order",sense,verdict
+eligible,"requirement + satisfy",sense,verdict
+eliminate,"remove",sense,verdict
+elk,"big + deer",sense,verdict
+elongation,"elongate + act",judged,verdict
+embassy,"nation + speak + place",sense,verdict
+embody,"body + give",sense,verdict
+embryonic,"embryo + of",judged,verdict
+emerald,"green + gem",sense,verdict
+emigrate,"migrate + out",sense,verdict
+eminence,"eminent + ness",judged,verdict
+emission,"emit + act",sense,verdict
+emphasize,"emphasis + do",judged,verdict
+employee,"employ + target",affix,verdict
+employer,"employ + agent",affix,verdict
+employment,"employ + act",judged,verdict
+emulate,"imitate",sense,verdict
+enabled,"enable + done",affix,verdict
+encapsulate,"shell + put",sense,verdict
+encephalitis,"brain + inflammation",judged,verdict
+encrypt,"secret + make",sense,verdict
+endothermic,"heat + absorb",sense,verdict
+endpoint,"end + point",sense,verdict
+endurance,"endure + act",affix,verdict
+engagement,"engage + act",judged,verdict
+engineer,"engine + agent",affix,verdict
+enhancement,"enhance + act",judged,verdict
+enlargement,"large + make + act",judged,verdict
+enqueue,"queue + put",sense,verdict
+entail,"must + include",sense,verdict
+entitlement,"right + give",sense,verdict
+entity,"end + nature",affix,verdict
+entrain,"cause + synchronize",sense,verdict
+entrance,"entry + act",affix,verdict
+entry,"enter + like",affix,verdict
+epidermal,"epidermis + of",judged,verdict
+equal,"equate + like",affix,verdict
+equality,"equal + nature",affix,verdict
+equation,"equate + act",affix,verdict
+equator,"equate + agent",affix,verdict
+equine,"horse + of",judged,verdict
+equinox,"equal + night + day",sense,verdict
+equipment,"equip + act",judged,verdict
+equity,"own + share",sense,verdict
+erection,"erect + act",judged,verdict
+eruption,"erupt + act",judged,verdict
+escarpment,"long + cliff",sense,verdict
+esophageal,"esophagus + of",judged,verdict
+especial,"special",sense,verdict
+espresso,"strong + coffee",sense,verdict
+essential,"essence + of",judged,verdict
+establishment,"establish + act",judged,verdict
+estuary,"river + mouth",sense,verdict
+eternity,"eternal + ness",judged,verdict
+ethereal,"air + like",sense,verdict
+ethnic,"nation + of",judged,verdict
+etymology,"word + origin",sense,verdict
+evaluation,"evaluate + act",judged,verdict
+evergreen,"leaf + keep + always",sense,verdict
+everyone,"every + one",sense,verdict
+everything,"every + thing",sense,verdict
+evict,"force + out",sense,verdict
+evident,"evidence + like",sense,verdict
+exactly,"exact + manner",affix,verdict
+exam,"examination",clipping,verdict
+examination,"examine + act",judged,verdict
+exception,"except + act",affix,verdict
+excessive,"excess + like",affix,verdict
+excited,"excite + done",affix,verdict
+excretion,"excrete + act",judged,verdict
+execute,"run",sense,verdict
+execution,"execute + act",judged,verdict
+executive,"execute + like",judged,verdict
+exemplify,"example + give",sense,verdict
+exhaustion,"exhaust + act",affix,verdict
+exhaustive,"all + cover",sense,verdict
+exhibition,"exhibit + act",judged,verdict
+existence,"exist + act",affix,verdict
+exoskeleton,"outer + shell",sense,verdict
+exothermic,"heat + release",sense,verdict
+expectation,"expect + act",affix,verdict
+expected value,"probability + weigh + average",sense,verdict
+expense,"spend + act",sense,verdict
+expensive,"expense + like",affix,verdict
+explanation,"explain + act",affix,verdict
+explosion,"explode + act",sense,verdict
+explosive,"explode + like",sense,verdict
+extension,"extend + act",judged,verdict
+extinction,"extinct + act",affix,verdict
+extirpate,"local + extinct",sense,verdict
+extraction,"extract + act",judged,verdict
+extrapolate,"beyond + estimate",sense,verdict
+extremity,"extreme + ness",judged,verdict
+eyebrow,"eye + brow",sense,verdict
+eyelid,"eye + lid",sense,verdict
+eyespot,"simple + eye",sense,verdict
+fable,"beast + story",sense,verdict
+facet,"flat + face",sense,verdict
+facetious,"humor + not + serious",sense,verdict
+facial,"face + of",judged,verdict
+facility,"facilitate + like",affix,verdict
+faction,"face + act",affix,verdict
+factory,"factor + like",affix,verdict
+failure,"fail + act",sense,verdict
+fairness,"fair + nature",affix,verdict
+faithful,"faith + full",affix,verdict
+falcon,"fast + eagle",sense,verdict
+fallback,"spare + choice",sense,verdict
+falsify,"false + prove",sense,verdict
+familial,"family + of",judged,verdict
+fang,"long + sharp + tooth",sense,verdict
+farmer,"farm + agent",affix,verdict
+farther,"grammar",grammar,verdict
+farthest,"grammar",grammar,verdict
+fastener,"fasten + agent",affix,verdict
+faster,"fast + agent",affix,verdict
+fatigue,"repeat + stress + weaken",sense,verdict
+fatty,"fat + like",judged,verdict
+fault tolerance,"tolerate + fault",sense,verdict
+feasible,"do + able",sense,verdict
+featuring,"feature + act",affix,verdict
+fecal,"feces + of",judged,verdict
+federal,"federation + of",judged,verdict
+federation,"federate + act",judged,verdict
+feedback,"feed + back",compound,verdict
+feeder,"feed + agent",judged,verdict
+feeler,"feel + agent",affix,verdict
+feeling,"feel + act",affix,verdict
+femoral,"femur + of",judged,verdict
+fen,"wet + meadow",sense,verdict
+fenugreek,"bitter + seed",sense,verdict
+fermentation,"ferment + act",judged,verdict
+fertility,"fertile + ness",judged,verdict
+fertilization,"fertilize + act",judged,verdict
+fertilize,"fertile + make",affix,verdict
+fertilizer,"plant + food",sense,verdict
+fetus,"embryo + grow",sense,verdict
+fibrous,"fiber + like",affix,verdict
+fifth,"five + order",sense,verdict
+fifty,"five + ten",sense,verdict
+figurative,"not + literal",sense,verdict
+filler,"fill + agent",judged,verdict
+film,"thin + layer",sense,verdict
+filth,"foul + nature",sense,verdict
+filthy,"filth + like",affix,verdict
+filtration,"filter + act",judged,verdict
+finance,"fin + act",affix,verdict
+financial,"finance + of",judged,verdict
+finch,"small + sparrow",sense,verdict
+finish,"fin + like",affix,verdict
+fir,"needle + pine",sense,verdict
+firewood,"fire + wood",sense,verdict
+first,"one + order",sense,verdict
+fisher,"fish + agent",affix,verdict
+fission,"nucleus + split",sense,verdict
+fixation,"fix + act",judged,verdict
+fixed,"fix + done",affix,verdict
+fixture,"fix + thing",judged,verdict
+fjord,"deep + sea + valley",sense,verdict
+flattened,"flat + make + done",judged,verdict
+flea,"jump + bug",sense,verdict
+flexible,"flex + able",affix,verdict
+flexure,"flex + ness",judged,verdict
+flight,"fly + act",sense,verdict
+flint,"spark + rock",sense,verdict
+flipper,"swim + limb",sense,verdict
+floater,"float + agent",affix,verdict
+floodplain,"flood + plain",sense,verdict
+flounder,"flat + fish",sense,verdict
+flu,"influenza",clipping,verdict
+fluorescence,"fluoresce + act",judged,verdict
+fluoride,"fluorine + salt",judged,verdict
+flux,"flow + rate + boundary",sense,verdict
+folder,"file + hold",sense,verdict
+follower,"follow + agent",affix,verdict
+food,"feed + thing",sense,verdict
+foolish,"fool + like",affix,verdict
+foothill,"foot + hill",sense,verdict
+forbidden,"forbid + make",affix,verdict
+forced,"force + done",affix,verdict
+forceful,"force + full",affix,verdict
+ford,"river + cross + place",sense,verdict
+fore,"front",sense,verdict
+forearm,"front + arm",sense,verdict
+forecast,"before + predict",sense,verdict
+forehead,"front + head",sense,verdict
+foreigner,"foreign + agent",affix,verdict
+foresight,"before + sight",sense,verdict
+foretell,"before + tell",sense,verdict
+formate,"formic + salt",judged,verdict
+formation,"form + act",judged,verdict
+former,"form + agent",affix,verdict
+formulation,"formulate + act",judged,verdict
+forth,"forward",sense,verdict
+fortify,"fort + make",affix,verdict
+fortress,"fort + place",sense,verdict
+forty,"four + ten",sense,verdict
+forward,"front + oriented",sense,verdict
+fossorial,"burrow + live",sense,verdict
+foundation,"found + act",affix,verdict
+fourth,"four + order",sense,verdict
+fragility,"fragile + ness",judged,verdict
+fragmentation,"fragment + act",judged,verdict
+framework,"frame + work",compound,verdict
+freckle,"face + dot",sense,verdict
+freedom,"free + state",affix,verdict
+freight,"cargo",sense,verdict
+frequent,"often",sense,verdict
+friendly,"friend + manner",affix,verdict
+friendship,"friend + ship",compound,verdict
+frighten,"fright + make",affix,verdict
+fruitful,"fruit + full",affix,verdict
+fully,"full + like",judged,verdict
+fumarate,"fumaric + salt",judged,verdict
+fundamental,"base + like",sense,verdict
+funny,"fun + like",affix,verdict
+furious,"fur + like",affix,verdict
+furnish,"furniture + give",sense,verdict
+further,"grammar",grammar,verdict
+furthest,"grammar",grammar,verdict
+fusion,"nucleus + join",sense,verdict
+galaxy,"star + swarm",sense,verdict
+gale,"strong + wind",sense,verdict
+gambling,"gamble + act",judged,verdict
+gangster,"gang + member",sense,verdict
+gastric,"stomach + of",judged,verdict
+gazelle,"small + deer",sense,verdict
+generalize,"general + make",affix,verdict
+generate,"gene + rate",compound,verdict
+generation,"generate + act",sense,verdict
+generator,"generate + agent",affix,verdict
+generic,"genus + of",judged,verdict
+genetic,"gene + of",judged,verdict
+genital,"generate + of",judged,verdict
+genitalia,"genital + thing",judged,verdict
+genome,"gene + all",sense,verdict
+genotype,"gene + trait",sense,verdict
+geographic,"geography + of",judged,verdict
+geological,"geology + of",judged,verdict
+germinal,"germ + of",judged,verdict
+germinate,"seed + sprout",sense,verdict
+geyser,"hot + water + spout",sense,verdict
+gift,"give + thing",sense,verdict
+giraffe,"long + neck + deer",sense,verdict
+giver,"give + agent",affix,verdict
+gizzard,"grind + stomach",sense,verdict
+glacier,"ice + river",sense,verdict
+glandular,"gland + of",judged,verdict
+glossary,"term + list",sense,verdict
+glossy,"shine + like",sense,verdict
+glove,"hand + covering",sense,verdict
+glutamate,"glutamic + salt",judged,verdict
+glycol,"sweet + alcohol",judged,verdict
+gneiss,"band + rock",sense,verdict
+goddess,"god + female",affix,verdict
+golden,"gold + like",judged,verdict
+golem,"make + body + animate",sense,verdict
+golf,"club + ball + hole + sport",sense,verdict
+gorge,"deep + valley",sense,verdict
+government,"govern + act",affix,verdict
+graceful,"grace + full",affix,verdict
+gradient,"grade + agent",affix,verdict
+graduate,"grade + do",judged,verdict
+grainy,"grain + like",affix,verdict
+grammar,"language + code",sense,verdict
+grandchild,"child + child",sense,verdict
+grandfather,"parent + father",sense,verdict
+grandmother,"parent + mother",sense,verdict
+grandparent,"grand + parent",compound,verdict
+granite,"hard + rock",sense,verdict
+granular,"grain + like",sense,verdict
+granularity,"unit + scale",sense,verdict
+granule,"grain + small",judged,verdict
+granules,"granule + many",judged,verdict
+grapefruit,"grape + fruit",compound,verdict
+graphic,"graph + like",affix,verdict
+grasshopper,"grass + hop + bug",sense,verdict
+grassland,"grass + land",compound,verdict
+gratify,"grate + make",affix,verdict
+gravel,"small + rock + many",sense,verdict
+greater,"grammar",grammar,verdict
+greatest,"grammar",grammar,verdict
+greedy,"greed + like",affix,verdict
+grinder,"grind + thing",judged,verdict
+growl,"beast + low + call",sense,verdict
+growth,"grow + act",sense,verdict
+guardian,"guard + agent",sense,verdict
+guidance,"guide + act",judged,verdict
+guilty,"guilt + like",affix,verdict
+guitar,"string + instrument",sense,verdict
+gulf,"big + bay",sense,verdict
+gullible,"easy + deceive",sense,verdict
+gully,"small + ravine",sense,verdict
+gust,"sudden + wind",sense,verdict
+gym,"body + train + place",sense,verdict
+gypsum,"soft + crystal",sense,verdict
+had,"grammar",grammar,verdict
+haddock,"small + cod",sense,verdict
+hairy,"hair + like",affix,verdict
+half,"two + part",sense,verdict
+halibut,"big + flat + fish",sense,verdict
+halite,"salt + crystal",sense,verdict
+handkerchief,"hand + cloth",sense,verdict
+handy,"hand + like",affix,verdict
+hangar,"plane + shed",sense,verdict
+harden,"hard + make",affix,verdict
+hardware,"hard + ware",compound,verdict
+hare,"rabbit",sense,verdict
+harmful,"harm + full",affix,verdict
+harmonize,"harmony + make",sense,verdict
+has,"grammar",grammar,verdict
+haughty,"proud + distant",sense,verdict
+having,"grammar",grammar,verdict
+hawk,"small + eagle",sense,verdict
+hazelnut,"bush + nut",sense,verdict
+hazy,"haze + like",affix,verdict
+header,"head + agent",affix,verdict
+health,"whole + nature",sense,verdict
+healthy,"health + like",affix,verdict
+hearth,"fire + floor",sense,verdict
+hedgehog,"thorn + rat",sense,verdict
+helper,"help + agent",affix,verdict
+hematite,"iron + ore",sense,verdict
+hemisphere,"half + sphere",sense,verdict
+hepatic,"liver + of",judged,verdict
+her,"grammar",grammar,verdict
+herbaceous,"herb + like",sense,verdict
+herbivore,"plant + eat + agent",sense,verdict
+herder,"herd + agent",sense,verdict
+hereditary,"heredity + of",judged,verdict
+hero,"brave + person",sense,verdict
+heroic,"hero + like",affix,verdict
+heron,"river + crane",sense,verdict
+hers,"grammar",grammar,verdict
+herself,"grammar",grammar,verdict
+hesitant,"hesitate + agent",affix,verdict
+hexagon,"six + side + shape",sense,verdict
+higher,"grammar",grammar,verdict
+highest,"grammar",grammar,verdict
+highland,"high + land",compound,verdict
+highly,"high + like",judged,verdict
+highway,"big + road",sense,verdict
+him,"grammar",grammar,verdict
+himself,"grammar",grammar,verdict
+hind,"back",sense,verdict
+hinder,"hind + agent",affix,verdict
+hindsight,"after + sight",sense,verdict
+hippo,"river + beast",sense,verdict
+hippopotamus,"river + horse",sense,verdict
+his,"grammar",grammar,verdict
+histamine,"tissue + amine",judged,verdict
+histology,"tissue + study",judged,verdict
+hockey,"stick + puck + sport",sense,verdict
+holder,"hold + agent",affix,verdict
+homeland,"home + land",sense,verdict
+homeostasis,"self + regulate + stable",sense,verdict
+honesty,"honest + like",affix,verdict
+hoodlum,"violent + crime + agent",sense,verdict
+hooligan,"rowdy + agent",sense,verdict
+hoot,"owl + call",sense,verdict
+hopeful,"hope + full",affix,verdict
+hornet,"big + wasp",sense,verdict
+horrible,"fear + able",sense,verdict
+household,"house + hold",compound,verdict
+humanity,"human + nature",affix,verdict
+humeral,"humerus + of",judged,verdict
+humidity,"humid + nature",affix,verdict
+humiliation,"humiliate + act",affix,verdict
+hundredth,"hundred + order",sense,verdict
+hungry,"hunger + like",affix,verdict
+hunter,"hunt + agent",affix,verdict
+hurricane,"sea + cyclone",sense,verdict
+hurtful,"hurt + full",affix,verdict
+husband,"wed + male",sense,verdict
+husk,"seed + covering",sense,verdict
+hydrate,"water + compound",judged,verdict
+hydraulic,"water + of",judged,verdict
+hydride,"hydrogen + salt",judged,verdict
+hydroxide,"hydrogen + oxide",judged,verdict
+hydroxy,"water + oxygen group",judged,verdict
+hyena,"laugh + wild + dog",sense,verdict
+hymn,"god + song",sense,verdict
+hypertrophy,"over + nourish",judged,verdict
+hypha,"fungus + thread",sense,verdict
+hypothetical,"hypothesis + like",sense,verdict
+hysteresis,"state + depend + history",sense,verdict
+iceberg,"ice + mountain",sense,verdict
+identification,"identify + act",judged,verdict
+identifier,"identify + agent",affix,verdict
+identify,"identity + find",sense,verdict
+igneous,"fire + rock",sense,verdict
+ignorant,"ignore + agent",affix,verdict
+illegal,"not + legal",sense,verdict
+illegitimate,"not + legitimate",sense,verdict
+illness,"ill + nature",affix,verdict
+illogical,"not + logical",sense,verdict
+illumination,"illuminate + act",judged,verdict
+imagery,"image + ness",judged,verdict
+imaginary,"imagine + like",affix,verdict
+imagination,"imagine + act",affix,verdict
+imbibe,"drink + absorb",sense,verdict
+imitation,"imitate + act",affix,verdict
+immature,"not + mature",sense,verdict
+immense,"very + vast",sense,verdict
+immerse,"deep + put",sense,verdict
+immersion,"immerse + act",judged,verdict
+immigrate,"migrate + in",sense,verdict
+immortal,"not + die",sense,verdict
+immunity,"immune + ness",judged,verdict
+impairment,"impair + act",judged,verdict
+impartial,"not + side",sense,verdict
+impedance,"impede + ness",judged,verdict
+imperial,"empire + of",judged,verdict
+implantation,"implant + act",judged,verdict
+implosion,"collapse + inward",sense,verdict
+impolite,"not + polite",sense,verdict
+important,"import + agent",affix,verdict
+impossible,"not + possible",sense,verdict
+impostor,"false + identity + agent",sense,verdict
+impound,"seize + hold",sense,verdict
+impression,"impress + act",judged,verdict
+improper,"not + proper",sense,verdict
+improvement,"improve + ness",judged,verdict
+impulsive,"impulse + like",affix,verdict
+inaccurate,"not + accurate",sense,verdict
+inactivation,"not + activate + act",judged,verdict
+inactive,"not + active",sense,verdict
+inappropriate,"not + appropriate",sense,verdict
+incisor,"cut + tooth",sense,verdict
+inclusion,"include + act",sense,verdict
+incomplete,"not + complete",sense,verdict
+inconsistent,"not + consistent",sense,verdict
+incontinence,"not + hold + ness",judged,verdict
+incorporeal,"not + body",sense,verdict
+incorrect,"not + correct",sense,verdict
+incredible,"hard + believe",sense,verdict
+independence,"not + depend + ness",judged,verdict
+indeterminate,"determine + not + done",sense,verdict
+indicator,"indicate + thing",sense,verdict
+indirect,"not + direct",sense,verdict
+induction,"induce + act",judged,verdict
+industrial,"industry + of",judged,verdict
+inefficient,"not + efficient",sense,verdict
+inevitability,"prevent + not + able",sense,verdict
+infancy,"infant + ness",judged,verdict
+infantile,"infant + like",judged,verdict
+infection,"infect + act",affix,verdict
+inferior,"infer + agent",affix,verdict
+infertility,"infertile + ness",judged,verdict
+infiltration,"infiltrate + act",judged,verdict
+inflation,"price + rise",sense,verdict
+inflection,"inflect + act",affix,verdict
+informal,"inform + like",affix,verdict
+information,"inform + act",affix,verdict
+infrastructure,"base + structure",sense,verdict
+infusion,"infuse + act",judged,verdict
+ingenious,"clever + invent",sense,verdict
+ingestion,"ingest + act",judged,verdict
+inhabit,"live + in",sense,verdict
+inheritance,"inherit + act",affix,verdict
+inhibition,"inhibit + act",judged,verdict
+inhibitor,"inhibit + agent",judged,verdict
+initial,"initiate + like",affix,verdict
+initialize,"first + set",sense,verdict
+initiation,"initiate + act",judged,verdict
+initiative,"initiate + like",judged,verdict
+injection,"inject + act",judged,verdict
+injury,"injure + like",affix,verdict
+inner,"inn + agent",affix,verdict
+innovation,"innovate + act",judged,verdict
+inorganic,"not + organic",judged,verdict
+inquiry,"inquire + like",affix,verdict
+inscription,"inscribe + act",sense,verdict
+insertion,"insert + act",judged,verdict
+inspection,"inspect + act",judged,verdict
+instability,"not + stable + ness",judged,verdict
+installation,"set + place",sense,verdict
+instruction,"instruct + act",affix,verdict
+insufficiency,"insufficient + ness",judged,verdict
+insulating,"insulate + act",affix,verdict
+insulation,"insulate + act",judged,verdict
+insulator,"insulate + agent",affix,verdict
+insurance,"insure + act",judged,verdict
+intact,"whole",sense,verdict
+intake,"take + in",sense,verdict
+intangible,"not + touch + able",sense,verdict
+integral,"area + sum",sense,verdict
+integration,"integrate + act",judged,verdict
+integrity,"integrate + nature",affix,verdict
+intelligence,"intelligent + ness",judged,verdict
+intensity,"intense + nature",affix,verdict
+intensive,"intense + like",judged,verdict
+intention,"intent + act",affix,verdict
+intentional,"intention + like",affix,verdict
+interesting,"interest + act",affix,verdict
+interface,"between + face",prefix,verdict
+interference,"interfere + act",judged,verdict
+internet,"between + net",prefix,verdict
+interpolate,"between + estimate",sense,verdict
+interpretation,"interpret + act",affix,verdict
+intersect,"between + sect",prefix,verdict
+intersection,"between + section",prefix,verdict
+interstitial,"between + space + of",judged,verdict
+intervention,"intervene + act",judged,verdict
+intolerance,"not + tolerate + ness",judged,verdict
+intrinsic,"inward + of",judged,verdict
+introduction,"introduce + act",sense,verdict
+introductory,"introduce + like",sense,verdict
+intruder,"trespass + agent",sense,verdict
+intrusion,"intrude + act",judged,verdict
+invasion,"invade + act",sense,verdict
+invasive,"invade + like",judged,verdict
+inventory,"invent + thing",judged,verdict
+inversion,"invert + act",judged,verdict
+invertebrate,"not + spine + animal",sense,verdict
+investigation,"investigate + act",affix,verdict
+investment,"invest + act",judged,verdict
+involuntary,"not + voluntary",sense,verdict
+involvement,"involve + act",judged,verdict
+invulnerable,"not + hurt + able",sense,verdict
+inward,"in + oriented",sense,verdict
+iodide,"iodine + compound",judged,verdict
+ion,"charge + atom",sense,verdict
+ionic,"charge + bond",sense,verdict
+ionization,"ionize + act",judged,verdict
+irony,"iron + like",affix,verdict
+irradiation,"irradiate + act",judged,verdict
+irregular,"not + regular",sense,verdict
+irregularity,"irregular + ness",judged,verdict
+irrelevant,"not + relevant",sense,verdict
+irreversible,"not + reverse + able",sense,verdict
+irrigation,"irrigate + act",judged,verdict
+is,"grammar",grammar,verdict
+isolation,"isolate + act",judged,verdict
+isomorphism,"same + structure",sense,verdict
+isotope,"element + neutron + vary",sense,verdict
+its,"grammar",grammar,verdict
+itself,"grammar",grammar,verdict
+ivy,"wall + vine",sense,verdict
+jackal,"small + wild + dog",sense,verdict
+jade,"green + rock",sense,verdict
+jaded,"interest + wear + away",sense,verdict
+jar,"wide + mouth + container",sense,verdict
+jealousy,"jealous + like",affix,verdict
+jeer,"mock + shout",sense,verdict
+jellyfish,"jelly + fish",sense,verdict
+jimmy,"pry + open",sense,verdict
+judgment,"judge + act",judged,verdict
+judgmental,"judge + too + much",sense,verdict
+judicial,"judge + of",judged,verdict
+junior,"young + more",judged,verdict
+jupiter,"king + planet",sense,verdict
+jurisdiction,"law + reach",sense,verdict
+justify,"just + make",affix,verdict
+jute,"rough + thread",sense,verdict
+juvenile,"young + one",sense,verdict
+keeper,"keep + agent",affix,verdict
+keeping,"keep + act",affix,verdict
+kelp,"sea + weed",sense,verdict
+kettle,"boil + pot",sense,verdict
+killer,"kill + agent",judged,verdict
+kiln,"fire + oven",sense,verdict
+kilo,"thousand",sense,verdict
+kindle,"small + fire + wood",sense,verdict
+kinetic,"move + like",sense,verdict
+kingdom,"king + land",sense,verdict
+kingfisher,"king + fish + bird",sense,verdict
+koala,"tree + bear",sense,verdict
+krill,"tiny + shrimp",sense,verdict
+lacking,"lack + act",affix,verdict
+lactate,"milk + salt",judged,verdict
+lager,"lag + agent",affix,verdict
+lagoon,"shut + sea",sense,verdict
+laminar,"flow + layer + smooth",sense,verdict
+lamprey,"round + mouth + eel",sense,verdict
+landfill,"waste + ground",sense,verdict
+landform,"land + form",compound,verdict
+landmark,"land + mark",compound,verdict
+landscape,"land + view",sense,verdict
+landslide,"land + slide",sense,verdict
+larger,"grammar",grammar,verdict
+largest,"grammar",grammar,verdict
+lark,"sing + sparrow",sense,verdict
+latent,"late + agent",affix,verdict
+laterality,"lateral + ness",judged,verdict
+latitude,"north + south + position",sense,verdict
+laundry,"launder + thing",judged,verdict
+lawful,"law + full",affix,verdict
+leader,"lead + agent",affix,verdict
+leakage,"leak + ness",judged,verdict
+learner,"learn + agent",affix,verdict
+legacy,"leg + nature",affix,verdict
+legible,"read + able",sense,verdict
+legislation,"law + carry + act",judged,verdict
+lemma,"step + claim",sense,verdict
+lemongrass,"lemon + grass",sense,verdict
+lemur,"night + monkey",sense,verdict
+length,"long + measure",sense,verdict
+lengthen,"length + make",affix,verdict
+lentil,"flat + bean",sense,verdict
+leopard,"spot + wild + cat",sense,verdict
+lessen,"less + make",affix,verdict
+lesser,"less + agent",affix,verdict
+lethal,"death + of",judged,verdict
+leukemia,"white + blood",judged,verdict
+liability,"owe + thing",sense,verdict
+liberate,"liberty + make",sense,verdict
+licorice,"sweet + root",sense,verdict
+lid,"container + closure",sense,verdict
+lighten,"light + make",affix,verdict
+likely,"like + manner",affix,verdict
+limestone,"white + rock",sense,verdict
+limitation,"limit + act",judged,verdict
+linear,"line + like",affix,verdict
+liner,"line + agent",judged,verdict
+linguistic,"language + of",judged,verdict
+lining,"line + act",affix,verdict
+linkage,"link + act",judged,verdict
+lipid,"fat",sense,verdict
+liter,"lice + agent",affix,verdict
+literal,"liter + like",affix,verdict
+literature,"write + art",sense,verdict
+livelihood,"live + way",sense,verdict
+liver,"live + agent",affix,verdict
+livestock,"live + stock",compound,verdict
+living,"live + act",affix,verdict
+llama,"mountain + hump + horse",sense,verdict
+localization,"localize + act",judged,verdict
+location,"locate + act",affix,verdict
+locust,"swarm + bug",sense,verdict
+logarithm,"power + inverse",sense,verdict
+logic,"log + like",affix,verdict
+logical,"log + like",affix,verdict
+lonely,"lone + manner",affix,verdict
+longer,"grammar",grammar,verdict
+longest,"grammar",grammar,verdict
+longitude,"east + west + position",sense,verdict
+longitudinal,"length + of",judged,verdict
+lookup,"look + up",sense,verdict
+looter,"loot + agent",sense,verdict
+loss,"lose + act",sense,verdict
+lotus,"water + lily",sense,verdict
+louse,"hair + bug",sense,verdict
+lout,"crude + rude + agent",sense,verdict
+lower,"grammar",grammar,verdict
+lowest,"grammar",grammar,verdict
+lubrication,"friction + lower",sense,verdict
+lumbar,"loin + of",judged,verdict
+luminous,"light + full",sense,verdict
+lunar,"moon + of",judged,verdict
+lunch,"day + meal",sense,verdict
+lustful,"lust + full",affix,verdict
+lymphatic,"lymph + of",judged,verdict
+lynx,"small + wild + cat",sense,verdict
+lyre,"string + music + tool",sense,verdict
+lyric,"lyre + like",affix,verdict
+machinery,"machine + ness",judged,verdict
+mackerel,"stripe + fish",sense,verdict
+macromolecule,"big + molecule",sense,verdict
+macroscopic,"big + scale + visible",sense,verdict
+magazine,"news + book",sense,verdict
+magician,"magic + agent",affix,verdict
+magnetic,"magnet + like",affix,verdict
+magnetism,"magnet + practice",affix,verdict
+magnetite,"magnet + ore",sense,verdict
+magpie,"black + white + crow",sense,verdict
+maintenance,"maintain + act",sense,verdict
+maize,"corn",sense,verdict
+majestic,"grand + noble",sense,verdict
+maker,"make + agent",affix,verdict
+malevolent,"malice + like",sense,verdict
+malice,"bad + intent",sense,verdict
+malignant,"bad + like",judged,verdict
+malleable,"shape + able",sense,verdict
+mammalian,"mammal + of",judged,verdict
+mammary,"breast + of",judged,verdict
+management,"manage + act",judged,verdict
+manager,"manage + agent",affix,verdict
+manatee,"sea + cow",sense,verdict
+mandatory,"require",sense,verdict
+mandible,"lower + jaw",sense,verdict
+maneuver,"hand + work",judged,verdict
+mangrove,"sea + tree",sense,verdict
+manner,"man + agent",affix,verdict
+mantis,"pray + bug",sense,verdict
+mantle,"body + cover + layer",sense,verdict
+maple,"sweet + sap + tree",sense,verdict
+marble,"smooth + rock",sense,verdict
+margin,"allow + range",sense,verdict
+marine,"sea + live",sense,verdict
+maritime,"sea + of",judged,verdict
+marker,"mark + agent",affix,verdict
+marlin,"spear + fish",sense,verdict
+mars,"war + planet",sense,verdict
+marsupial,"pouch + mammal",sense,verdict
+martial,"war + of",judged,verdict
+maternal,"mother + of",judged,verdict
+maternity,"mother + ness",judged,verdict
+math,"mathematics",clipping,verdict
+mathematical,"mathematics + of",judged,verdict
+mathematics,"learn + thing",judged,verdict
+mattress,"matter + female",affix,verdict
+maturation,"mature + act",judged,verdict
+maxilla,"upper + jaw",sense,verdict
+maximize,"most + make",sense,verdict
+me,"grammar",grammar,verdict
+meaning,"mean + act",affix,verdict
+means,"mean + many",affix,verdict
+medial,"middle + of",judged,verdict
+medical,"medicine + of",judged,verdict
+medieval,"middle + age + of",judged,verdict
+meeting,"meet + act",affix,verdict
+megastructure,"huge + structure",sense,verdict
+memorize,"memory + make",affix,verdict
+mental,"mind + oriented",sense,verdict
+mentor,"teach + agent",sense,verdict
+meow,"cat + call",sense,verdict
+merchant,"trade + agent",sense,verdict
+mercury,"fast + planet",sense,verdict
+mermaid,"human + fish + body + join",sense,verdict
+mesa,"flat + hill",sense,verdict
+messenger,"message + agent",judged,verdict
+metabolic,"metabolism + of",judged,verdict
+metabolite,"metabolism + thing",judged,verdict
+metallic,"metal + bond",sense,verdict
+metamorphic,"change + rock",sense,verdict
+metamorphose,"body + form + change",sense,verdict
+meteor,"fall + star",sense,verdict
+metric,"meter + like",affix,verdict
+mic,"sound + catch + device",sense,verdict
+mica,"sheet + crystal",sense,verdict
+microphone,"sound + catch + device",sense,verdict
+microscope,"small + see + tool",sense,verdict
+microscopic,"small + scale + visible",sense,verdict
+might,"grammar",grammar,verdict
+migration,"migrate + act",affix,verdict
+migratory,"migrate + like",judged,verdict
+millipede,"thousand + foot + worm",sense,verdict
+mince,"tiny + slice",sense,verdict
+mine,"grammar",grammar,verdict
+mineralization,"mineral + act",judged,verdict
+miniature,"small + like",judged,verdict
+minimal,"minimum + of",judged,verdict
+minimize,"least + make",sense,verdict
+minus,"the noun of subtract",judged,verdict
+mirage,"false + vision",sense,verdict
+misalign,"wrong + align",sense,verdict
+mischief,"wrong + chief",prefix,verdict
+miscreant,"wrong + do + agent",sense,verdict
+mislead,"wrong + lead",prefix,verdict
+mission,"miss + act",affix,verdict
+mistake,"wrong + take",prefix,verdict
+misunderstand,"wrong + understand",prefix,verdict
+mite,"tiny + tick",sense,verdict
+mitochondrial,"mitochondrion + of",judged,verdict
+mixed,"mix + done",affix,verdict
+mixer,"mix + thing",judged,verdict
+mobility,"mobile + ness",judged,verdict
+mobilize,"mobile + make",affix,verdict
+moderate,"mode + rate",compound,verdict
+modification,"modify + act",judged,verdict
+modify,"mode + make",affix,verdict
+modular,"part + like",sense,verdict
+modulation,"module + act",affix,verdict
+modulator,"modulate + thing",judged,verdict
+molar,"grind + tooth",sense,verdict
+mole,"dirt + rat",sense,verdict
+molecular,"molecule + of",judged,verdict
+monastery,"monk + house",sense,verdict
+monetary,"money + of",judged,verdict
+mongoose,"snake + kill + weasel",sense,verdict
+monk,"worship + devote + agent",sense,verdict
+monomer,"one + unit",sense,verdict
+monsoon,"rain + season",sense,verdict
+moo,"cow + call",sense,verdict
+moose,"big + deer",sense,verdict
+morpheme,"meaning + part",sense,verdict
+morphism,"structure + map",sense,verdict
+morphological,"morphology + of",judged,verdict
+mortality,"mortal + ness",judged,verdict
+mosque,"worship + building",sense,verdict
+mostly,"most + manner",affix,verdict
+motility,"motile + ness",judged,verdict
+motivation,"motive + act",affix,verdict
+movement,"move + act",affix,verdict
+movie,"moving picture",clipping,verdict
+mucosa,"mucus + layer",judged,verdict
+mule,"mix + horse",sense,verdict
+multiplex,"many + fold",judged,verdict
+multistable,"many + stable + state",sense,verdict
+municipal,"municipality + of",judged,verdict
+muscular,"muscle + of",judged,verdict
+musculature,"muscle + set",judged,verdict
+mushroom,"mush + room",compound,verdict
+musician,"music + agent",affix,verdict
+mussel,"long + clam",sense,verdict
+must,"grammar",grammar,verdict
+mutation,"mud + act",affix,verdict
+mutton,"sheep + meat",sense,verdict
+mutualism,"both + benefit + relation",sense,verdict
+mutually exclusive,"both + impossible",sense,verdict
+mycelium,"fungus + thread",sense,verdict
+myself,"grammar",grammar,verdict
+naked,"bare + body",sense,verdict
+namespace,"name + space",sense,verdict
+narcotic,"numb + of",judged,verdict
+narrative,"narrate + thing",judged,verdict
+nasal,"nose + of",judged,verdict
+naturalized,"introduce + self + sustain",sense,verdict
+nautilus,"shell + octopus",sense,verdict
+navigation,"navigate + act",judged,verdict
+nearby,"near + place",sense,verdict
+nebula,"star + cloud",sense,verdict
+necessity,"necessary + nature",affix,verdict
+necrosis,"death + state",judged,verdict
+negate,"not + make",sense,verdict
+negative,"negate + like",affix,verdict
+negligent,"neglect + like",sense,verdict
+neigh,"horse + call",sense,verdict
+neighbor,"near + person",sense,verdict
+neighborhood,"near + place",sense,verdict
+nephew,"sibling + child",sense,verdict
+nested,"nest + done",affix,verdict
+nettle,"sting + weed",sense,verdict
+neural,"nerve + of",judged,verdict
+neuron,"nerve + cell",sense,verdict
+neutralize,"neutral + make",sense,verdict
+neutron,"neutral + particle",sense,verdict
+news,"new + many",affix,verdict
+newspaper,"news + paper",compound,verdict
+newt,"water + lizard",sense,verdict
+niece,"sibling + child",sense,verdict
+nightingale,"night + sing + bird",sense,verdict
+nineteen,"ten + nine",sense,verdict
+ninety,"nine + ten",sense,verdict
+ninth,"nine + order",sense,verdict
+nitrate,"nitrogen + salt",judged,verdict
+nitrite,"nitrogen + salt",judged,verdict
+nitrous,"nitrogen + of",judged,verdict
+nocturnal,"night + active",sense,verdict
+nodular,"node + of",judged,verdict
+nodule,"node + small",judged,verdict
+noisy,"noise + like",affix,verdict
+nominal,"name + of",judged,verdict
+nonexistence,"not + existence",prefix,verdict
+nonlinear,"not + proportion",sense,verdict
+normalize,"normal + make",affix,verdict
+northward,"north + oriented",sense,verdict
+not touching,"not + touch",sense,verdict
+notable,"not + able",affix,verdict
+notify,"not + make",affix,verdict
+notion,"not + act",affix,verdict
+notochord,"first + spine",sense,verdict
+noun,"object + term",sense,verdict
+novice,"new + agent",sense,verdict
+nuclear,"nucleus + like",sense,verdict
+nursery,"child + care + place",sense,verdict
+nutrition,"nutrient + act",sense,verdict
+nymph,"water + spirit",sense,verdict
+oasis,"water + desert",sense,verdict
+obelisk,"needle + pillar",sense,verdict
+obesity,"obese + ness",judged,verdict
+objective,"object + like",affix,verdict
+obligate,"obligation + make",sense,verdict
+obligation,"oblige + act",affix,verdict
+observation,"observe + act",affix,verdict
+observatory,"watch + sky + place",sense,verdict
+obsession,"obsess + act",affix,verdict
+obsidian,"glass + rock",sense,verdict
+obstruction,"obstruct + act",judged,verdict
+occasional,"occasion + like",affix,verdict
+occlusion,"occlude + act",judged,verdict
+occult,"hidden",judged,verdict
+occupation,"occupy + act",judged,verdict
+occupational,"occupation + of",judged,verdict
+occupied,"occupy + done",affix,verdict
+occurrence,"occur + act",affix,verdict
+octagon,"eight + side + shape",sense,verdict
+ocular,"eye + of",judged,verdict
+odds,"odd + many",affix,verdict
+offensive,"offense + like",affix,verdict
+offering,"offer + act",affix,verdict
+officer,"office + agent",affix,verdict
+oink,"pig + call",sense,verdict
+older,"grammar",grammar,verdict
+oldest,"grammar",grammar,verdict
+olfactory,"smell + of",judged,verdict
+omission,"omit + act",sense,verdict
+omnivore,"all + eat + agent",sense,verdict
+oneness,"one + nature",affix,verdict
+onward,"on + oriented",sense,verdict
+opacity,"opaque + ness",judged,verdict
+opal,"shine + gem",sense,verdict
+opening,"open + act",affix,verdict
+operation,"operate + act",affix,verdict
+operator,"operate + agent",judged,verdict
+opossum,"night + pouch + animal",sense,verdict
+optical,"eye + of",judged,verdict
+optimize,"best + make",sense,verdict
+optional,"option + like",affix,verdict
+oral,"mouth + of",judged,verdict
+orchard,"fruit + tree + garden",sense,verdict
+orchestra,"music + group",sense,verdict
+orchid,"rare + flower",sense,verdict
+ordinal,"ordinary + like",affix,verdict
+organelle,"cell + organ",sense,verdict
+organic,"organ + like",affix,verdict
+organization,"organize + act",sense,verdict
+organize,"organ + make",affix,verdict
+organized,"organize + done",affix,verdict
+orientation,"orient + act",sense,verdict
+oriented,"orient + done",affix,verdict
+orphan,"no + parent + child",sense,verdict
+orthodox,"straight + opinion",judged,verdict
+oscillation,"oscillate + act",affix,verdict
+osmosis,"solvent + diffuse + membrane",sense,verdict
+ossification,"bone + act",judged,verdict
+ostrich,"big + run + bird",sense,verdict
+otherwise,"other + wise",compound,verdict
+otter,"river + weasel",sense,verdict
+ought,"grammar",grammar,verdict
+ours,"grammar",grammar,verdict
+ourselves,"grammar",grammar,verdict
+outer,"out + agent",affix,verdict
+outlaw,"law + outside + agent",sense,verdict
+outlier,"observe + far + other",sense,verdict
+outpost,"far + base",sense,verdict
+outsider,"outside + agent",affix,verdict
+outward,"out + oriented",sense,verdict
+ovarian,"ovary + of",judged,verdict
+overcast,"all + cloud",sense,verdict
+overcome,"over + come",compound,verdict
+overload,"too + much + load",sense,verdict
+override,"over + ride",compound,verdict
+overshoot,"exceed + target",sense,verdict
+owner,"own + agent",affix,verdict
+ownership,"own + ness",judged,verdict
+ox,"work + cow",sense,verdict
+oxalate,"oxalic + salt",judged,verdict
+oxidation,"oxidize + act",judged,verdict
+oxide,"oxygen + compound",judged,verdict
+oxidize,"oxygen + join",sense,verdict
+oxygen,"breath + gas",sense,verdict
+oyster,"pearl + clam",sense,verdict
+painful,"pain + full",affix,verdict
+painter,"paint + one",judged,verdict
+palace,"king + house",sense,verdict
+palatine,"palate + of",judged,verdict
+palp,"feel + appendage",sense,verdict
+pancreas,"gut + gland",sense,verdict
+pancreatic,"pancreas + of",judged,verdict
+panic,"sudden + fear",sense,verdict
+panther,"dark + wild + cat",sense,verdict
+papaya,"tree + melon",sense,verdict
+papillary,"papilla + of",judged,verdict
+paradise,"parade + make",affix,verdict
+paragraph,"text + part",sense,verdict
+paranoid,"suspicion + extreme",sense,verdict
+paraphrase,"again + say",sense,verdict
+parasitism,"one + benefit + one + harm + relation",sense,verdict
+parietal,"wall + of",judged,verdict
+parity,"par + ness",judged,verdict
+parody,"imitate + mock",sense,verdict
+parrot,"talk + bird",sense,verdict
+participation,"participate + act",judged,verdict
+partition,"part + act",affix,verdict
+partly,"part + manner",affix,verdict
+partnership,"partner + ness",judged,verdict
+passion,"paste + act",affix,verdict
+passionate,"passion + like",judged,verdict
+passive,"pass + like",affix,verdict
+patent,"pace + agent",affix,verdict
+path dependence,"history + depend",sense,verdict
+pathogen,"disease + cause",sense,verdict
+pathological,"pathology + of",judged,verdict
+pathology,"disease + study",judged,verdict
+patience,"patient + ness",judged,verdict
+payment,"pay + act",affix,verdict
+peaceful,"peace + full",affix,verdict
+peacock,"fan + tail + bird",sense,verdict
+peanut,"ground + nut",sense,verdict
+pearl,"shell + gem",sense,verdict
+pebble,"small + rock + piece",sense,verdict
+pectoral,"chest + of",judged,verdict
+peel,"fruit + covering",sense,verdict
+pelican,"bag + throat + bird",sense,verdict
+pencil,"erase + able + pen",sense,verdict
+penetration,"penetrate + act",judged,verdict
+penguin,"ice + swim + bird",sense,verdict
+pentagon,"five + side + shape",sense,verdict
+percentage,"percent + amount",sense,verdict
+perception,"perceive + act",sense,verdict
+perch,"small + bass",sense,verdict
+percussion,"strike + act",judged,verdict
+perennial,"many + year + live",sense,verdict
+perforation,"perforate + act",judged,verdict
+performance,"perform + act",affix,verdict
+periodic,"period + like",affix,verdict
+peripheral,"periphery + like",affix,verdict
+perish,"per + like",affix,verdict
+permeability,"permeate + ability",sense,verdict
+permission,"permit + act",sense,verdict
+persistent,"persist + agent",affix,verdict
+personality,"personal + nature",affix,verdict
+personnel,"person + thing",judged,verdict
+persuasion,"persuade + act",sense,verdict
+petroleum,"rock + oil",sense,verdict
+petty,"small + matter + concern + too + much",sense,verdict
+pharmaceutical,"pharmacy + of",judged,verdict
+pharmacy,"medicine + shop",sense,verdict
+pharyngeal,"pharynx + of",judged,verdict
+phenotype,"show + trait",sense,verdict
+pheromone,"signal + smell",sense,verdict
+philosophy,"wisdom + love",sense,verdict
+phloem,"sugar + tube",sense,verdict
+phoenix,"fire + bird",sense,verdict
+phone,"telephone",clipping,verdict
+phosphate,"phosphorus + salt",judged,verdict
+phosphoric,"phosphorus + of",judged,verdict
+photo,"photograph",clipping,verdict
+photograph,"photo + graph",compound,verdict
+photography,"photograph + like",affix,verdict
+photon,"light + particle",sense,verdict
+phrase,"word + group",sense,verdict
+physician,"heal + one",judged,verdict
+physics,"matter + study",sense,verdict
+physiological,"physiology + of",judged,verdict
+piano,"pianoforte",clipping,verdict
+picky,"pick + like",affix,verdict
+pigeon,"town + dove",sense,verdict
+pigmentation,"pigment + act",judged,verdict
+pike,"long + tooth + fish",sense,verdict
+pilgrimage,"holy + journey",sense,verdict
+pincer,"grasp + claw",sense,verdict
+pineapple,"cone + fruit",sense,verdict
+pipeline,"pipe + line",sense,verdict
+pistachio,"green + nut",sense,verdict
+pitcher,"pour + thing",judged,verdict
+placement,"place + act",judged,verdict
+placenta,"birth + organ",sense,verdict
+placental,"placenta + of",judged,verdict
+plane,"airplane",clipping,verdict
+plantain,"cook + banana",sense,verdict
+plaster,"plastic + agent",affix,verdict
+plastic deformation,"deform + remain",sense,verdict
+platypus,"duck + mouth + animal",sense,verdict
+play,"plate + like",affix,verdict
+player,"play + agent",affix,verdict
+playground,"play + ground",sense,verdict
+plaza,"open + square",sense,verdict
+pleasant,"please + agent",affix,verdict
+pleural,"pleura + of",judged,verdict
+poacher,"illegal + hunt + agent",sense,verdict
+poem,"art + word + work",sense,verdict
+poet,"art + word + agent",sense,verdict
+pointed,"point + done",affix,verdict
+pointer,"point + thing",judged,verdict
+poisonous,"poison + bear",sense,verdict
+polar,"pole + like",affix,verdict
+polarity,"polar + nature",sense,verdict
+polarize,"polar + make",affix,verdict
+politic,"polite + like",affix,verdict
+political,"politics + of",judged,verdict
+pollen,"poll + make",affix,verdict
+pollinate,"pollen + carry",sense,verdict
+pollock,"north + cod",sense,verdict
+pollution,"pollute + act",affix,verdict
+polyhedron,"many + face + solid",sense,verdict
+polymer,"repeat + unit + chain",sense,verdict
+polyp,"stalk + body + animal",sense,verdict
+pompous,"self + important + show",sense,verdict
+poppy,"sleep + flower",sense,verdict
+population,"populate + act",sense,verdict
+porcine,"pig + like",judged,verdict
+porcupine,"big + thorn + rat",sense,verdict
+pork,"pig + meat",sense,verdict
+porous,"pore + like",affix,verdict
+portable,"carry + able",judged,verdict
+porter,"port + agent",affix,verdict
+portion,"pore + act",affix,verdict
+portray,"depict",sense,verdict
+possession,"possess + act",affix,verdict
+possibility,"possible + nature",sense,verdict
+possible,"can + able",sense,verdict
+posterior,"after + more",judged,verdict
+postulate,"assume + claim",sense,verdict
+potable,"drink + able",sense,verdict
+potter,"pot + make + agent",sense,verdict
+pottery,"potter + like",affix,verdict
+pouch,"small + bag",sense,verdict
+poultry,"bird + meat",sense,verdict
+poverty,"poor + state",sense,verdict
+powerful,"power + full",affix,verdict
+pox,"skin + disease",sense,verdict
+prairie,"grass + plain",sense,verdict
+prawn,"big + shrimp",sense,verdict
+prayer,"pray + word",sense,verdict
+precipitation,"fall + water",sense,verdict
+precognition,"before + know",sense,verdict
+precursor,"before + run + agent",judged,verdict
+predecessor,"before + one",sense,verdict
+predictable,"predict + able",compound,verdict
+prediction,"predicate + act",affix,verdict
+predisposition,"predispose + act",judged,verdict
+preference,"prefer + act",judged,verdict
+prefix,"before + fix",prefix,verdict
+pregnancy,"pregnant + state",sense,verdict
+premise,"first + claim",sense,verdict
+premolar,"small + grind + tooth",sense,verdict
+preparation,"prepare + act",affix,verdict
+preposition,"relation + term",sense,verdict
+prerequisite,"before + necessary + condition",sense,verdict
+prescribe,"before + scribe",prefix,verdict
+prescription,"prescribe + act",sense,verdict
+presentation,"present + act",judged,verdict
+preservation,"preserve + act",judged,verdict
+president,"lead + agent",sense,verdict
+presumptuous,"presume + too + much",sense,verdict
+presuppose,"before + suppose",prefix,verdict
+pretentious,"claim + self + greater + than + real",sense,verdict
+prevention,"prevent + act",judged,verdict
+preventive,"prevent + like",affix,verdict
+prey,"pre + like",affix,verdict
+priest,"holy + agent",sense,verdict
+primary,"first + like",sense,verdict
+prince,"king + child",sense,verdict
+princess,"king + child + female",sense,verdict
+principal,"prince + of",judged,verdict
+prior,"prize + agent",affix,verdict
+prioritize,"priority + make",affix,verdict
+priority,"prior + nature",affix,verdict
+prisoner,"prison + agent",affix,verdict
+privacy,"private + nature",affix,verdict
+probability,"probable + nature",sense,verdict
+proboscis,"long + feed + tube",sense,verdict
+processor,"process + thing",judged,verdict
+production,"produce + act",sense,verdict
+productive,"product + like",affix,verdict
+profession,"profess + act",affix,verdict
+professional,"profession + like",affix,verdict
+progenitor,"before + beget + agent",judged,verdict
+progression,"progress + act",judged,verdict
+progressive,"progress + like",judged,verdict
+prohibition,"prohibit + act",affix,verdict
+projection,"project + act",affix,verdict
+proliferation,"proliferate + act",judged,verdict
+prominence,"prominent + ness",judged,verdict
+prone,"tend",sense,verdict
+pronoun,"swap + term",sense,verdict
+pronunciation,"pronounce + act",sense,verdict
+proof,"prove + act",sense,verdict
+propellant,"propel + thing",judged,verdict
+propensity,"tend + nature",sense,verdict
+prostate,"seed + gland",sense,verdict
+protection,"protect + act",affix,verdict
+protective,"protect + like",judged,verdict
+protector,"protect + one",judged,verdict
+proton,"positive + particle",sense,verdict
+provision,"provide + act",sense,verdict
+proximal,"near + of",judged,verdict
+proxy measure,"substitute + measure",sense,verdict
+pruning,"prune + act",judged,verdict
+psychological,"psychology + of",judged,verdict
+psychology,"mind + study",judged,verdict
+publication,"publish + act",judged,verdict
+publish,"public + like",affix,verdict
+pufferfish,"swell + fish",sense,verdict
+pulmonary,"lung + of",judged,verdict
+pumice,"foam + rock",sense,verdict
+pumpkin,"big + squash",sense,verdict
+punctual,"on + time",sense,verdict
+punctuation,"write + mark",sense,verdict
+pungent,"sharp + taste",sense,verdict
+punishment,"punish + act",affix,verdict
+pupa,"change + shell",sense,verdict
+purify,"pure + make",affix,verdict
+purity,"pure + nature",affix,verdict
+purr,"cat + hum",sense,verdict
+pyramid,"point + tomb",sense,verdict
+pyrite,"false + gold",sense,verdict
+quack,"duck + call",sense,verdict
+quadrilateral,"four + side + shape",sense,verdict
+quadruple,"four + fold",judged,verdict
+quarrel,"word + fight",sense,verdict
+quarry,"rock + mine",sense,verdict
+quarter,"four + part",sense,verdict
+quartz,"clear + crystal",sense,verdict
+quartzite,"quartz + rock",sense,verdict
+queen,"king + female",sense,verdict
+query,"ask",sense,verdict
+raccoon,"mask + face + animal",sense,verdict
+racial,"race + of",judged,verdict
+radial,"ray + symmetry",sense,verdict
+radiate,"ray + emit",sense,verdict
+radiation,"radiate + act",affix,verdict
+radical,"root + of",judged,verdict
+radioactive,"radio + active",compound,verdict
+radish,"sharp + root",sense,verdict
+radula,"scrape + tongue",sense,verdict
+rainbow,"rain + light + arc",sense,verdict
+rainfall,"rain + fall",compound,verdict
+rainforest,"rain + forest",sense,verdict
+rampart,"war + wall",sense,verdict
+rapeseed,"oil + seed",sense,verdict
+rapids,"fast + water",sense,verdict
+rarefy,"density + lower",sense,verdict
+rarely,"rare + manner",affix,verdict
+raspberry,"red + berry",sense,verdict
+ration,"rat + act",affix,verdict
+rational,"ration + like",affix,verdict
+raven,"big + crow",sense,verdict
+ravine,"narrow + valley",sense,verdict
+react,"again + act",prefix,verdict
+reactant,"react + thing",sense,verdict
+reaction,"again + action",prefix,verdict
+reactive,"react + like",judged,verdict
+reactor,"react + thing",judged,verdict
+ready,"read + like",affix,verdict
+reagent,"react + cause + thing",sense,verdict
+reality,"real + nature",affix,verdict
+realize,"real + make",affix,verdict
+rearrangement,"rearrange + act",judged,verdict
+reassemble,"again + assemble",sense,verdict
+rebut,"against + answer",sense,verdict
+recall,"again + call",prefix,verdict
+receiver,"receive + agent",affix,verdict
+recent,"again + cent",prefix,verdict
+reception,"receive + act",sense,verdict
+receptor,"receive + structure",sense,verdict
+recession,"recede + act",judged,verdict
+recipient,"recipe + agent",affix,verdict
+reciprocal,"reciprocate + like",judged,verdict
+reclaim,"again + claim",sense,verdict
+recognition,"recognize + act",affix,verdict
+recombinant,"again + combine + like",judged,verdict
+recombination,"again + combine + act",judged,verdict
+reconcile,"friend + again + make",sense,verdict
+reconstruction,"again + construct + act",judged,verdict
+recording,"record + act",affix,verdict
+recovery,"recover + act",judged,verdict
+recreation,"again + create + act",judged,verdict
+recreational,"recreation + of",judged,verdict
+rectal,"rectum + of",judged,verdict
+recurrent,"again + run + like",judged,verdict
+recurse,"again + curse",prefix,verdict
+recursion,"recur + act",affix,verdict
+redirect,"again + direct",sense,verdict
+reduction,"reduce + act",sense,verdict
+redundant,"extra + copy",sense,verdict
+redwood,"red + tree",sense,verdict
+reef,"coral + ridge",sense,verdict
+reference,"refer + act",affix,verdict
+refine,"again + fine",prefix,verdict
+reflection,"reflect + act",affix,verdict
+reflexive,"self + relation",sense,verdict
+refract,"bend + light",sense,verdict
+refractive,"refract + like",judged,verdict
+refractory,"refract + like",judged,verdict
+refresh,"again + fresh",prefix,verdict
+regenerate,"again + grow",sense,verdict
+regeneration,"again + generate + act",judged,verdict
+regional,"region + like",affix,verdict
+registration,"register + act",affix,verdict
+regression,"regress + act",judged,verdict
+regulation,"regulate + act",judged,verdict
+regulations,"regulation + many",judged,verdict
+regulator,"regulate + agent",judged,verdict
+regulatory,"regulate + like",judged,verdict
+regurgitation,"back + throat + act",judged,verdict
+rehabilitation,"again + able + act",judged,verdict
+reindeer,"snow + deer",sense,verdict
+reinforce,"rein + force",compound,verdict
+rejection,"reject + act",affix,verdict
+relate,"again + late",prefix,verdict
+related,"relation + have",sense,verdict
+relationship,"relation + ship",compound,verdict
+relative,"relate + like",affix,verdict
+relay,"again + lay",prefix,verdict
+reliable,"rely + able",affix,verdict
+reliance,"rely + act",affix,verdict
+relic,"relate + like",affix,verdict
+religious,"religion + of",judged,verdict
+relinquish,"claim + release",sense,verdict
+remark,"again + mark",prefix,verdict
+remind,"again + mind",prefix,verdict
+remission,"remit + act",judged,verdict
+renal,"kidney + of",judged,verdict
+renew,"again + new",prefix,verdict
+repeated,"repeat + done",affix,verdict
+replace,"again + place",prefix,verdict
+replacement,"replace + act",judged,verdict
+replicate,"copy",sense,verdict
+replication,"replicate + act",judged,verdict
+representation,"represent + act",affix,verdict
+reproduce,"again + produce",prefix,verdict
+reproduction,"again + production",prefix,verdict
+reproductive,"reproduce + like",judged,verdict
+republic,"again + public",prefix,verdict
+repulse,"again + pulse",prefix,verdict
+required,"require + done",affix,verdict
+requirement,"require + act",affix,verdict
+resembling,"resemble + act",affix,verdict
+reservation,"reserve + act",judged,verdict
+reservoir,"hold + lake",sense,verdict
+reset,"again + set",prefix,verdict
+reside,"again + side",prefix,verdict
+residence,"reside + act",judged,verdict
+residual,"observe + predict + difference",sense,verdict
+resilient,"recover + able",sense,verdict
+resin,"again + sin",prefix,verdict
+resistance,"resist + act",affix,verdict
+resistant,"resist + agent",affix,verdict
+resolution,"again + solution",prefix,verdict
+resolve,"again + solve",prefix,verdict
+resonance,"resonate + act",affix,verdict
+resonant,"resonate + agent",affix,verdict
+resorption,"resorb + act",judged,verdict
+resort,"rest + place",sense,verdict
+resourceful,"skill + means + find",sense,verdict
+respiration,"breathe + act",judged,verdict
+respiratory,"breathe + of",judged,verdict
+responsibility,"response + ability",affix,verdict
+responsible,"response + able",affix,verdict
+responsive,"respond + like",judged,verdict
+restitution,"give + back",sense,verdict
+restoration,"restore + act",judged,verdict
+restrain,"again + strain",prefix,verdict
+restricted,"restrict + done",judged,verdict
+restriction,"restrict + act",judged,verdict
+resurrection,"die + rise + again",sense,verdict
+retardation,"retard + act",judged,verdict
+retention,"retain + act",judged,verdict
+retinal,"retina + of",judged,verdict
+retirement,"retire + act",judged,verdict
+retreat,"again + treat",prefix,verdict
+retry,"again + try",prefix,verdict
+reuse,"again + use",prefix,verdict
+revenue,"income",sense,verdict
+reverse,"again + verse",prefix,verdict
+reversible,"reverse + able",sense,verdict
+revision,"revise + act",sense,verdict
+revolt,"rebel",sense,verdict
+revolution,"revolve + act",judged,verdict
+rhino,"horn + beast",sense,verdict
+rhinoceros,"nose + horn + animal",sense,verdict
+rigidity,"rigid + ness",judged,verdict
+rioter,"riot + agent",sense,verdict
+robin,"red + chest + sparrow",sense,verdict
+rocky,"rock + like",judged,verdict
+roe,"fish + egg",sense,verdict
+rollback,"past + state + return",sense,verdict
+roller,"roll + agent",judged,verdict
+romantic,"romance + like",affix,verdict
+roof,"building + covering",sense,verdict
+rosette,"rose + small",judged,verdict
+rostrum,"point + snout",sense,verdict
+rotation,"rot + act",affix,verdict
+rotten,"rot + make",affix,verdict
+rubber,"rub + agent",affix,verdict
+rubbish,"rub + like",affix,verdict
+ruby,"red + gem",sense,verdict
+ruffian,"rough + violent + agent",sense,verdict
+rugby,"carry + ball + sport",sense,verdict
+ruler,"rule + agent",affix,verdict
+runaway,"feedback + reinforce + control + without",sense,verdict
+runner,"run + agent",judged,verdict
+rural,"country + of",judged,verdict
+saboteur,"secret + damage + agent",sense,verdict
+sack,"cloth + bag",sense,verdict
+sadistic,"other + suffer + pleasure",sense,verdict
+sadness,"sad + nature",affix,verdict
+safety,"safe + state",judged,verdict
+saga,"long + story",sense,verdict
+sailor,"sail + agent",sense,verdict
+saint,"holy + person",sense,verdict
+salary,"work + pay",sense,verdict
+sale,"sell + act",sense,verdict
+salicylate,"salicylic + salt",judged,verdict
+salivary,"saliva + of",judged,verdict
+salmon,"river + climb + fish",sense,verdict
+salty,"salt + like",affix,verdict
+sandstone,"sand + rock",sense,verdict
+sandy,"sand + like",judged,verdict
+sanitize,"clean + make",sense,verdict
+sapient,"wise + like",sense,verdict
+sapphire,"blue + gem",sense,verdict
+sardine,"small + herring",sense,verdict
+sardonic,"bitter + cynical + mock",sense,verdict
+satirical,"humor + criticize + expose",sense,verdict
+saturation,"saturate + act",judged,verdict
+saturn,"ring + planet",sense,verdict
+savings,"save + act",judged,verdict
+scalar,"single + number",sense,verdict
+scallion,"green + onion",sense,verdict
+scaly,"scale + like",affix,verdict
+scanner,"scan + thing",judged,verdict
+scapular,"scapula + of",judged,verdict
+scary,"scar + like",affix,verdict
+scavenger,"scavenge + agent",sense,verdict
+scenario,"possible + story",sense,verdict
+schist,"flake + rock",sense,verdict
+scientific,"science + of",judged,verdict
+scientist,"science + agent",affix,verdict
+scoff,"mock + dismiss",sense,verdict
+scornful,"scorn + full",affix,verdict
+scoundrel,"dishonest + agent",sense,verdict
+scribe,"write + agent",sense,verdict
+scripture,"holy + writing",sense,verdict
+scruffy,"scruff + like",affix,verdict
+seafloor,"sea + floor",sense,verdict
+seagrass,"sea + grass",sense,verdict
+seahorse,"sea + horse",sense,verdict
+sealed,"seal + done",affix,verdict
+seamount,"sea + mountain",sense,verdict
+seasoning,"taste + thing",sense,verdict
+seat,"sit + thing",sense,verdict
+sebaceous,"sebum + of",judged,verdict
+second,"two + order",sense,verdict
+secondary,"second + like",affix,verdict
+secretary,"secret + like",affix,verdict
+secretion,"secrete + act",affix,verdict
+secretory,"secrete + like",judged,verdict
+section,"sect + act",affix,verdict
+security,"secure + nature",affix,verdict
+sedge,"marsh + grass",sense,verdict
+sedimentary,"sediment + rock",sense,verdict
+sedimentation,"particle + settle + accumulate",sense,verdict
+segmentation,"segment + act",judged,verdict
+segmented,"segment + many",sense,verdict
+segregation,"segregate + act",judged,verdict
+seizure,"seize + act",judged,verdict
+selection,"select + act",affix,verdict
+selective,"select + like",judged,verdict
+self-organize,"self + organize",sense,verdict
+self-reliant,"self + rely",sense,verdict
+selfish,"self + like",affix,verdict
+semantics,"meaning + study",sense,verdict
+seminal,"semen + of",judged,verdict
+senior,"old + more",judged,verdict
+sensation,"sense + act",affix,verdict
+sensitivity,"sensitive + nature",affix,verdict
+sensor,"detect + device",sense,verdict
+sensory,"sense + of",judged,verdict
+sentence,"thought + line",sense,verdict
+separation,"separate + act",affix,verdict
+septic,"rot + of",judged,verdict
+sequential,"order + like",sense,verdict
+sequestration,"sequester + act",judged,verdict
+serialize,"line + form + make",sense,verdict
+serous,"serum + of",judged,verdict
+serpent,"snake",sense,verdict
+servant,"serve + agent",affix,verdict
+server,"serve + agent",affix,verdict
+sessile,"attach + fixed",sense,verdict
+seta,"bristle",sense,verdict
+setpoint,"target + value",sense,verdict
+setter,"set + one",judged,verdict
+settlement,"settle + act",affix,verdict
+seventeen,"ten + seven",sense,verdict
+seventh,"seven + order",sense,verdict
+seventy,"seven + ten",sense,verdict
+severity,"severe + ness",judged,verdict
+sewer,"waste + pipe",sense,verdict
+shaker,"shake + agent",judged,verdict
+shaky,"shake + like",affix,verdict
+shale,"mud + rock",sense,verdict
+shall,"grammar",grammar,verdict
+shaman,"spirit + talk + agent",sense,verdict
+shameful,"shame + full",affix,verdict
+shameless,"shame + without",sense,verdict
+shaped,"shape + done",affix,verdict
+shapeshift,"shape + change",sense,verdict
+shared,"share + done",affix,verdict
+sharpen,"sharp + make",affix,verdict
+shear,"she + like",affix,verdict
+shock wave,"shock + wave",sense,verdict
+shorten,"short + make",affix,verdict
+should,"grammar",grammar,verdict
+shower,"show + agent",affix,verdict
+shrew,"sharp + nose + rat",sense,verdict
+sieve,"filter + size",sense,verdict
+sight,"see + act",sense,verdict
+significance,"significant + ness",judged,verdict
+significant,"signify + agent",affix,verdict
+signify,"sign + make",affix,verdict
+silicate,"silicon + salt",judged,verdict
+silo,"grain + tower",sense,verdict
+silt,"fine + sand",sense,verdict
+similarity,"similar + nature",affix,verdict
+simulation,"simulate + act",affix,verdict
+sinew,"tendon",sense,verdict
+singleton,"one + set",sense,verdict
+siphon,"draw + tube",sense,verdict
+sixteen,"ten + six",sense,verdict
+sixteenth,"sixteen + order",sense,verdict
+sixth,"six + order",sense,verdict
+sixty,"six + ten",sense,verdict
+skate,"small + ray",sense,verdict
+skeletal,"skeleton + of",judged,verdict
+skiing,"ski + act",judged,verdict
+skillful,"skill + full",affix,verdict
+skinny,"skin + like",affix,verdict
+slate,"sheet + stone",sense,verdict
+sleepy,"sleep + like",affix,verdict
+sleet,"rain + snow",sense,verdict
+slightly,"slight + manner",affix,verdict
+slimy,"slim + like",affix,verdict
+slower,"slow + agent",affix,verdict
+smaller,"grammar",grammar,verdict
+smallest,"grammar",grammar,verdict
+smith,"metal + work + agent",sense,verdict
+smoker,"smoke + agent",judged,verdict
+smug,"self + satisfy + superior",sense,verdict
+smuggler,"secret + carry + agent",sense,verdict
+sneaky,"sneak + like",affix,verdict
+sneer,"contempt + face + show",sense,verdict
+snuff,"nose + powder",sense,verdict
+soccer,"foot + ball + sport",sense,verdict
+sock,"soft + foot + covering",sense,verdict
+soften,"soft + make",affix,verdict
+software,"soft + ware",compound,verdict
+solar,"sole + like",affix,verdict
+soldier,"war + agent",sense,verdict
+solitary,"sole + like",judged,verdict
+solstice,"sun + stand + day",sense,verdict
+soluble,"dissolve + able",sense,verdict
+solute,"dissolve + thing",sense,verdict
+solution,"solve + act",sense,verdict
+solvent,"solve + agent",affix,verdict
+somatic,"body + of",judged,verdict
+someone,"some + one",sense,verdict
+something,"some + thing",sense,verdict
+sometime,"some + time",sense,verdict
+sometimes,"some + time",sense,verdict
+song,"sing + thing",sense,verdict
+sophisticated,"refine + done",sense,verdict
+southward,"south + oriented",sense,verdict
+sovereignty,"highest + rule",sense,verdict
+soybean,"oil + bean",sense,verdict
+speaker,"speak + one",judged,verdict
+specialist,"special + agent",affix,verdict
+specialize,"special + make",affix,verdict
+speciation,"population + isolate + diverge",sense,verdict
+species,"life + kind",sense,verdict
+specification,"specify + act",judged,verdict
+specified,"specify + done",judged,verdict
+specimen,"one + sample",sense,verdict
+spectacular,"grand + sight",sense,verdict
+spectral,"ghost + like",sense,verdict
+speech,"speak + act",sense,verdict
+sphinx,"lion + body + human + head",sense,verdict
+spicy,"spice + like",affix,verdict
+spiny,"spine + like",judged,verdict
+spiracle,"breathe + opening",sense,verdict
+splenic,"spleen + of",judged,verdict
+splicing,"splice + act",judged,verdict
+spruce,"needle + pine",sense,verdict
+squawk,"bird + screech",sense,verdict
+squid,"long + octopus",sense,verdict
+squirrel,"tree + rat",sense,verdict
+squishy,"squish + like",affix,verdict
+stadium,"big + arena",sense,verdict
+staging,"stage + act",judged,verdict
+stairs,"stair + many",affix,verdict
+standard deviation,"typical + deviation",sense,verdict
+starfish,"star + fish",sense,verdict
+state space,"state + set",sense,verdict
+statement,"state + act",affix,verdict
+static,"state + like",affix,verdict
+station,"stay + act",affix,verdict
+statistics,"state + thing",judged,verdict
+stay,"state + like",affix,verdict
+steel,"hard + iron",sense,verdict
+stellate,"star + like",judged,verdict
+steppe,"dry + plain",sense,verdict
+steroid,"sterol + like",judged,verdict
+stevia,"sweet + leaf",sense,verdict
+sticky,"stick + like",affix,verdict
+stiffness,"stiff + ness",judged,verdict
+stimulation,"stimulate + act",judged,verdict
+stinger,"sting + part",sense,verdict
+stinking,"stink + act",affix,verdict
+stochastic,"random",sense,verdict
+stocking,"stock + act",affix,verdict
+stoic,"feeling + restrain",sense,verdict
+stomata,"leaf + pore",sense,verdict
+stork,"long + leg + crane",sense,verdict
+stranger,"unknown + person",sense,verdict
+stratification,"stratum + act",judged,verdict
+stratified,"stratum + done",judged,verdict
+stratus,"layer + cloud",sense,verdict
+strawberry,"grass + berry",sense,verdict
+strength,"strong + measure",sense,verdict
+strengthen,"strength + make",affix,verdict
+studio,"art + room",sense,verdict
+sturgeon,"ancient + fish",sense,verdict
+sub,"submarine",clipping,verdict
+sublimation,"solid + gas + become",sense,verdict
+submerge,"below + merge",prefix,verdict
+submission,"submit + act",sense,verdict
+subordinate,"below + rank",sense,verdict
+subscription,"subscribe + act",sense,verdict
+subset,"below + set",prefix,verdict
+subside,"below + side",prefix,verdict
+subsidy,"help + money",sense,verdict
+substation,"small + station",sense,verdict
+subsume,"under + include",sense,verdict
+subsystem,"below + system",prefix,verdict
+subtype,"below + type",prefix,verdict
+succession,"succeed + act",judged,verdict
+successive,"follow + order",sense,verdict
+successor,"next + one",sense,verdict
+succinate,"succinic + salt",judged,verdict
+suction,"suck + act",judged,verdict
+suffering,"suffer + act",affix,verdict
+suffice,"enough + be",sense,verdict
+sufficient,"enough",sense,verdict
+sugarcane,"sugar + grass",sense,verdict
+suggestion,"suggest + act",affix,verdict
+sulfate,"sulfur + salt",judged,verdict
+sulfide,"sulfur + salt",judged,verdict
+sunflower,"sun + flower",sense,verdict
+sunshine,"sun + light",sense,verdict
+superficial,"surface + of",judged,verdict
+supernatural,"above + natural",prefix,verdict
+supertype,"above + type",prefix,verdict
+supper,"night + meal",sense,verdict
+suppression,"suppress + act",judged,verdict
+surface tension,"surface + tension",sense,verdict
+surprised,"surprise + done",affix,verdict
+surrounding,"surround + act",affix,verdict
+surveillance,"over + watch + act",judged,verdict
+survey,"many + sample + observe",sense,verdict
+susceptibility,"susceptible + ness",judged,verdict
+suspension,"suspend + act",judged,verdict
+swan,"white + goose",sense,verdict
+swindler,"cheat + agent",sense,verdict
+swordfish,"sword + fish",sense,verdict
+syllable,"sound + beat",sense,verdict
+symbiosis,"live + together",sense,verdict
+symbolic,"symbol + like",affix,verdict
+symbolize,"symbol + make",affix,verdict
+symmetric,"symmetry + like",affix,verdict
+sympathetic,"sympathy + of",judged,verdict
+synchronize,"same + time + make",sense,verdict
+synchronous,"same + time",sense,verdict
+synergy,"combine + effect + greater",sense,verdict
+synonym,"same + meaning",sense,verdict
+synovial,"synovia + of",judged,verdict
+synthetic,"synthesis + like",judged,verdict
+tactful,"social + skill + offense + avoid",sense,verdict
+tactic,"tact + like",affix,verdict
+tactile,"touch + of",judged,verdict
+talkable,"talk + able",compound,verdict
+talkative,"talk + like",sense,verdict
+talky,"talk + like",affix,verdict
+tambourine,"shake + drum",sense,verdict
+tangible,"touch + able",sense,verdict
+tank,"big + liquid + container",sense,verdict
+taper,"tap + agent",affix,verdict
+tartrate,"tartaric + salt",judged,verdict
+tasty,"taste + like",affix,verdict
+taunt,"mock + provoke",sense,verdict
+taxation,"tax + act",judged,verdict
+taxi,"taximeter cab",clipping,verdict
+teacher,"teach + agent",affix,verdict
+tech,"technology",clipping,verdict
+technical,"technique + of",judged,verdict
+techniques,"technique + many",judged,verdict
+technology,"craft + study",sense,verdict
+telepathy,"far + mind + talk",sense,verdict
+telephone,"far + talk + machine",sense,verdict
+telescope,"far + see + tool",sense,verdict
+temple,"worship + building",sense,verdict
+temporal,"time + of",judged,verdict
+tenable,"ten + able",affix,verdict
+tenant,"ten + agent",affix,verdict
+tender,"tend + agent",affix,verdict
+tendon,"muscle + cord",sense,verdict
+tennis,"racket + ball + sport",sense,verdict
+tenth,"ten + order",sense,verdict
+terminal,"end + station",sense,verdict
+terminate,"end + make",sense,verdict
+termination,"terminate + act",judged,verdict
+termite,"wood + ant",sense,verdict
+terrace,"flat + step + land",sense,verdict
+terrain,"land + shape",sense,verdict
+terrestrial,"land + live",sense,verdict
+terrible,"fear + able",sense,verdict
+territory,"rule + land",sense,verdict
+tessellation,"tile + pattern",sense,verdict
+testimony,"witness + word",sense,verdict
+textile,"weave + thing",judged,verdict
+theft,"steal + act",sense,verdict
+theirs,"grammar",grammar,verdict
+them,"grammar",grammar,verdict
+themselves,"grammar",grammar,verdict
+theorem,"prove + claim",sense,verdict
+therapeutic,"therapy + of",judged,verdict
+thermal,"heat + of",judged,verdict
+they,"the + like",affix,verdict
+thickening,"thick + make + act",judged,verdict
+thicket,"thick + tree + group",sense,verdict
+thickness,"thick + ness",judged,verdict
+third,"three + order",sense,verdict
+thirsty,"thirst + like",affix,verdict
+thirty,"three + ten",sense,verdict
+thistle,"thorn + weed",sense,verdict
+thoracic,"thorax + of",judged,verdict
+thorax,"middle + body + region",sense,verdict
+thought,"think + act",sense,verdict
+thousandth,"thousand + order",sense,verdict
+threaten,"threat + make",affix,verdict
+thrifty,"thrift + like",affix,verdict
+throne,"king + seat",sense,verdict
+throughput,"output + rate",sense,verdict
+thug,"violent + intimidate + agent",sense,verdict
+tidy,"tide + like",affix,verdict
+tier,"level + layer",sense,verdict
+tiger,"stripe + wild + cat",sense,verdict
+tilapia,"lake + fish",sense,verdict
+timeout,"time + end",sense,verdict
+tipping point,"cascade + threshold",sense,verdict
+tired,"tire + done",affix,verdict
+titan,"giant + god",sense,verdict
+toad,"wart + frog",sense,verdict
+tolerance,"tolerate + act",affix,verdict
+topic,"top + like",affix,verdict
+torque,"turn + force",sense,verdict
+torsion,"twist + stress",sense,verdict
+tortoise,"land + turtle",sense,verdict
+torus,"ring + solid",sense,verdict
+totem,"kin + sign",sense,verdict
+touching,"touch + act",affix,verdict
+touchy,"offense + easy + take",sense,verdict
+tourism,"tour + ism",judged,verdict
+tourist,"tour + agent",affix,verdict
+toward,"to + oriented",sense,verdict
+tower,"tow + agent",affix,verdict
+toxin,"toxic + thing",sense,verdict
+trabecular,"trabecula + of",judged,verdict
+trachea,"air + tube",sense,verdict
+tradition,"trade + act",affix,verdict
+train,"fire + cart",sense,verdict
+trammel,"move + restrain",sense,verdict
+transaction,"trade + act",sense,verdict
+transcription,"transcribe + act",judged,verdict
+transform,"across + form",prefix,verdict
+transformation,"transform + act",affix,verdict
+transient,"transit + like",judged,verdict
+transitive,"chain + relation",sense,verdict
+translation,"translate + act",affix,verdict
+translucent,"part + transparent",sense,verdict
+transmission,"transmit + act",sense,verdict
+transport,"across + port",prefix,verdict
+transportation,"transport + act",judged,verdict
+transporter,"transport + thing",judged,verdict
+transverse,"across + turn",judged,verdict
+traumatic,"trauma + of",judged,verdict
+tray,"trace + like",affix,verdict
+treacherous,"betray + likely",sense,verdict
+treatment,"treat + act",affix,verdict
+treaty,"treat + like",affix,verdict
+trial,"try + like",affix,verdict
+triangular,"triangle + of",judged,verdict
+tributary,"branch + river",sense,verdict
+trickery,"trick + practice",sense,verdict
+triple,"three + fold",sense,verdict
+troublemaker,"trouble + make + agent",sense,verdict
+trouser,"leg + cloth",sense,verdict
+trout,"stream + fish",sense,verdict
+truth,"true + nature",sense,verdict
+tsunami,"big + sea + wave",sense,verdict
+tuber,"thick + root",sense,verdict
+tubercle,"small + bump",sense,verdict
+tuberculosis,"tubercle + state",judged,verdict
+tubular,"tube + of",judged,verdict
+tubule,"tube + small",judged,verdict
+tufted,"tuft + done",judged,verdict
+tulip,"cup + flower",sense,verdict
+tundra,"cold + plain",sense,verdict
+tuning,"tune + act",affix,verdict
+turbulent,"flow + irregular",sense,verdict
+turner,"turn + one",judged,verdict
+turnip,"round + root",sense,verdict
+turquoise,"blue + gem",sense,verdict
+tweet,"bird + beep",sense,verdict
+twelfth,"twelve + order",sense,verdict
+twentieth,"twenty + order",sense,verdict
+twenty,"two + ten",sense,verdict
+twice,"two + fold",sense,verdict
+twig,"small + branch",sense,verdict
+typhoon,"sea + cyclone",sense,verdict
+tyranny,"cruel + rule",sense,verdict
+ulceration,"ulcer + act",judged,verdict
+umbilical,"navel + of",judged,verdict
+unable,"not + able",prefix,verdict
+unavailable,"not + available",prefix,verdict
+unbind,"not + bind",prefix,verdict
+unbounded,"bound + without",sense,verdict
+uncertain,"not + certain",prefix,verdict
+uncertainty,"uncertain + nature",sense,verdict
+uncle,"parent + sibling",sense,verdict
+unconscious,"not + conscious",prefix,verdict
+uncover,"not + cover",prefix,verdict
+undead,"dead + animate",sense,verdict
+undershoot,"fall + short + target",sense,verdict
+understandable,"understand + able",compound,verdict
+underworld,"under + world",sense,verdict
+uneven,"not + even",prefix,verdict
+unfair,"not + fair",prefix,verdict
+unhappy,"not + happy",prefix,verdict
+unicorn,"one + horn + horse",sense,verdict
+uniformity,"uniform + nature",affix,verdict
+unity,"unit + like",affix,verdict
+university,"universe + nature",affix,verdict
+unjust,"not + just",sense,verdict
+unknowable,"know + impossible",sense,verdict
+unknown,"not + known",prefix,verdict
+unlike,"not + like",prefix,verdict
+unlikely,"not + likely",prefix,verdict
+unlink,"not + link",prefix,verdict
+unlock,"not + lock",prefix,verdict
+unmove,"not + move",prefix,verdict
+unpleasant,"not + pleasant",prefix,verdict
+unpredictable,"not + predictable",prefix,verdict
+unrelated,"not + related",prefix,verdict
+unsatisfiable,"not + satisfy + able",sense,verdict
+unstable,"not + stable",prefix,verdict
+untangle,"not + tangle",prefix,verdict
+untie,"not + tie",prefix,verdict
+untouch,"not + touch",prefix,verdict
+untreat,"not + treat",prefix,verdict
+unverify,"not + verify",prefix,verdict
+unwant,"not + want",prefix,verdict
+upper,"up + agent",affix,verdict
+upward,"up + oriented",sense,verdict
+urinate,"urine + make",sense,verdict
+urn,"ash + pot",sense,verdict
+us,"grammar",grammar,verdict
+useful,"use + full",affix,verdict
+useless,"use + without",affix,verdict
+user,"use + agent",sense,verdict
+usually,"usual + manner",affix,verdict
+utensil,"eat + tool",sense,verdict
+uterine,"uterus + of",judged,verdict
+utility,"use + ness",judged,verdict
+utilization,"utilize + act",judged,verdict
+vaccination,"vaccine + act",judged,verdict
+vagabond,"wander + home + without + agent",sense,verdict
+vaginal,"vagina + of",judged,verdict
+validate,"valid + make",sense,verdict
+valor,"brave + nature",sense,verdict
+valuable,"value + able",affix,verdict
+vandal,"vandalize + agent",sense,verdict
+vandalize,"vandal + make",affix,verdict
+vanish,"van + like",affix,verdict
+vanity,"van + nature",affix,verdict
+variability,"variable + ness",judged,verdict
+variable,"vary + able",sense,verdict
+variance,"spread + measure",sense,verdict
+variant,"vary + kind",sense,verdict
+variation,"various + act",affix,verdict
+variety,"vary + nature",sense,verdict
+various,"vary + like",sense,verdict
+vascular,"vessel + of",judged,verdict
+vasculature,"vessel + ness",judged,verdict
+vase,"flower + pot",sense,verdict
+veal,"young + cow + meat",sense,verdict
+venison,"deer + meat",sense,verdict
+venom,"inject + poison",sense,verdict
+venomous,"venom + bear",sense,verdict
+ventilation,"ventilate + act",judged,verdict
+ventral,"belly + of",judged,verdict
+ventricular,"ventricle + of",judged,verdict
+venus,"love + planet",sense,verdict
+verb,"action + term",sense,verdict
+verdict,"judge + word",sense,verdict
+vertebra,"spine + bone",sense,verdict
+vertebrate,"spine + animal",sense,verdict
+vertex,"corner + point",sense,verdict
+vestibular,"vestibule + of",judged,verdict
+veterinary,"vet + of",judged,verdict
+vibration,"vibrate + act",affix,verdict
+villain,"bad + person",sense,verdict
+vindictive,"persist + revenge + want",sense,verdict
+vineyard,"grape + field",sense,verdict
+violation,"violate + act",affix,verdict
+violence,"violate + act",affix,verdict
+violent,"violate + agent",affix,verdict
+virtuous,"virtue + like",affix,verdict
+visceral,"viscera + of",judged,verdict
+viscosity,"viscous + ness",judged,verdict
+viscous,"flow + resist",sense,verdict
+visible,"see + able",sense,verdict
+visualize,"visual + make",affix,verdict
+vitreous,"glass + of",judged,verdict
+vocabulary,"term + set",sense,verdict
+vocal,"voice + of",judged,verdict
+volatile,"change + sudden + strong",sense,verdict
+volcanic,"volcano + of",judged,verdict
+volcano,"fire + mountain",sense,verdict
+volleyball,"net + ball + sport",sense,verdict
+volumetric,"volume + of",judged,verdict
+volunteer,"will + agent",judged,verdict
+vortex,"flow + rotate",sense,verdict
+vowel,"open + sound",sense,verdict
+vulgar,"common + coarse",sense,verdict
+vulture,"dead + eat + eagle",sense,verdict
+walrus,"tusk + seal",sense,verdict
+wanderer,"wander + agent",sense,verdict
+wane,"shrink",sense,verdict
+warmth,"warm + nature",sense,verdict
+warning,"warn + act",affix,verdict
+warrant,"war + agent",affix,verdict
+was,"grammar",grammar,verdict
+waterbody,"water + body",compound,verdict
+watercourse,"water + course",compound,verdict
+waterfall,"water + fall",compound,verdict
+waterproof,"water + block",sense,verdict
+watershed,"water + gather + land",sense,verdict
+wavelength,"wave + length",compound,verdict
+weaken,"weak + make",affix,verdict
+weakness,"weak + ness",judged,verdict
+wealth,"rich + nature",sense,verdict
+weary,"wear + like",affix,verdict
+weathering,"break + down + place + expose",sense,verdict
+weaver,"weave + agent",sense,verdict
+weber,"web + agent",affix,verdict
+wedding,"wed + act",affix,verdict
+weevil,"grain + beetle",sense,verdict
+weight,"weigh + measure",sense,verdict
+were,"grammar",grammar,verdict
+werewolf,"human + wolf + change",sense,verdict
+westward,"west + oriented",sense,verdict
+wetland,"wet + land",sense,verdict
+whinny,"horse + call",sense,verdict
+whiny,"whine + like",affix,verdict
+whiten,"white + make",affix,verdict
+whom,"grammar",grammar,verdict
+whose,"grammar",grammar,verdict
+widen,"wide + make",affix,verdict
+widow,"dead + mate + woman",sense,verdict
+width,"wide + measure",sense,verdict
+wife,"wed + female",sense,verdict
+wilderness,"wild + land",sense,verdict
+wildfire,"wild + fire",sense,verdict
+willow,"weep + tree",sense,verdict
+wisdom,"wise + state",affix,verdict
+witchcraft,"witch + craft",sense,verdict
+withdraw,"with + draw",compound,verdict
+withhold,"with + hold",compound,verdict
+withstand,"against + stand",sense,verdict
+witty,"wit + like",affix,verdict
+wombat,"dig + pouch + animal",sense,verdict
+woodpecker,"wood + peck + bird",sense,verdict
+worker,"work + agent",affix,verdict
+workplace,"work + place",compound,verdict
+workshop,"work + shop",compound,verdict
+wormwood,"bitter + herb",sense,verdict
+worse,"grammar",grammar,verdict
+worsen,"worse + make",affix,verdict
+worst,"grammar",grammar,verdict
+worst case,"worst + possible + outcome",sense,verdict
+worthless,"worth + less",compound,verdict
+worthy,"worth + like",affix,verdict
+would,"grammar",grammar,verdict
+wraith,"dead + spirit",sense,verdict
+wren,"tiny + sparrow",sense,verdict
+wrestling,"wrestle + act",judged,verdict
+writing,"write + act",affix,verdict
+xylem,"water + tube",sense,verdict
+yarn,"thick + thread",sense,verdict
+yarrow,"feather + herb",sense,verdict
+younger,"grammar",grammar,verdict
+youngest,"grammar",grammar,verdict
+yours,"grammar",grammar,verdict
+yourself,"grammar",grammar,verdict
+youth,"young + state",judged,verdict
+zebra,"stripe + horse",sense,verdict
+zodiac,"beast + circle",sense,verdict
+zombie,"dead + body + animate",sense,verdict
+zone out,"mind + leave",sense,verdict
+zoo,"zoological garden",clipping,verdict
