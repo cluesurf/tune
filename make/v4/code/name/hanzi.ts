@@ -44,12 +44,16 @@ import { fileURLToPath } from 'url'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
+import lemmatize from 'wink-lemmatizer'
+
+import { breakDown } from '../derive'
 import { TERM } from '../pipe/board'
 
 const here = dirname(fileURLToPath(import.meta.url))
 
 const args = yargs(hideBin(process.argv))
   .option('show', { type: 'number', default: 40 })
+  .option('top', { type: 'number', default: 500 })
   .option('dir', { type: 'string' })
   .strict()
   .parseSync()
@@ -433,14 +437,85 @@ function headWord(english: string): string {
   return (english.split(/[,;(]/)[0] ?? '').trim().toLowerCase()
 }
 
-const top = ranked.slice(0, 500).filter(([ch]) => gloss.has(ch))
+/**
+ * Does Tune have a word for this gloss?
+ *
+ * The first version matched only the leading phrase, and it
+ * undercounted badly: `萼` glosses as `stem and calyx of a flower`,
+ * which has no comma, so the whole phrase was looked up and of course
+ * missed even after `calyx` was added.
+ *
+ * **A gloss is a sentence, and the question is whether any content
+ * word of it is a root.** So every word is tried, and the stop words
+ * come out first so `of` and `a` cannot make everything match.
+ */
+const STOP = new Set(
+  `a an the of and or to in for with on at from is are be as by
+   its his her their that this which what used usually often
+   something someone thing person place kind type sort`.split(/\s+/),
+)
+
+/**
+ * The lemma behind an inflected gloss word.
+ *
+ *   branches is branch, that should be base, flowery is a compound
+ *   too, etc., most of those are base, or should be, or compounds
+ *
+ * The glosses are ordinary English and the candidate list holds
+ * lemmas, so `branches`, `wings`, `ribs` and `wrinkles` all missed on
+ * a plain lookup and were reported as vocabulary Tune lacks. They are
+ * not. `branch` is there and the rest are its inflections.
+ *
+ * **`wink-lemmatizer` does this, and a hand-written rule set does
+ * not.** A first version here stripped `-s`, `-es` and `-ies` by hand
+ * and got `leaves` wrong in both directions: the plural of `leaf` and
+ * the verb `leave` are the same string and only a real lemmatizer with
+ * an exception list tells them apart. It also had no idea `teeth` is
+ * `tooth`.
+ *
+ * All three parts of speech are tried because a gloss does not say
+ * which it is, and the candidate list is asked about each result. That
+ * is looser than a tagged lemmatization and it is the right looseness:
+ * the question is whether Tune can SAY the word, not which sense the
+ * gloss meant.
+ */
+function lemma(word: string): Array<string> {
+  return [
+    word,
+    lemmatize.noun(word),
+    lemmatize.verb(word),
+    lemmatize.adjective(word),
+  ]
+}
+
+function sayable(english: string): string | null {
+  const words = english
+    .toLowerCase()
+    .split(/[^a-z-]+/)
+    .filter(one => one.length > 2 && !STOP.has(one))
+  for (const one of words) {
+    // Already a root, in any of its forms.
+    for (const form of lemma(one)) {
+      if (have.has(form)) return form
+    }
+    // Or something the language builds: `flowery` is flower + like.
+    const hit = breakDown(one)
+    if (hit && hit.parts.includes('+')) {
+      const parts = hit.parts.split('+').map(p => p.trim())
+      if (parts.every(p => have.has(p))) return `${one} = ${hit.parts}`
+    }
+  }
+  return null
+}
+
+const top = ranked.slice(0, args.top).filter(([ch]) => gloss.has(ch))
 const missing = top.filter(
-  ([ch]) => !have.has(headWord(gloss.get(ch)?.english ?? '')),
+  ([ch]) => !sayable(gloss.get(ch)?.english ?? ''),
 )
 
 process.stdout.write(
   `\nAGAINST TUNE'S OWN LIST\n\n` +
-    `  Of the 500 commonest morphemes, ${top.length} have a gloss and\n` +
+    `  Of the ${args.top} commonest morphemes, ${top.length} have a gloss and\n` +
     `  ${top.length - missing.length} are already Tune candidates ` +
     `(${(((top.length - missing.length) / top.length) * 100).toFixed(0)}%).\n\n`,
 )
@@ -502,11 +577,30 @@ for (const at of ['part', 'quality', 'kind', 'place', 'unknown'] as const) {
   )
   process.stdout.write(
     `${mine
-      .slice(0, 24)
+      .slice(0, args.show || 24)
       .map(([ch, english]) => `${ch} ${headWord(english)}`)
       .join(', ')}\n\n`,
   )
 }
+
+/**
+ * The add list, as plain English words ready to paste.
+ *
+ * Every miss that is a PART or a QUALITY, which are the two buckets
+ * that earn roots outright. Kinds are left out because the head
+ * argument decides those one at a time, and places are not vocabulary.
+ */
+const addable = [
+  ...(sorted.get('part') ?? []),
+  ...(sorted.get('quality') ?? []),
+]
+  .map(([, english]) => headWord(english))
+  .filter(one => one && /^[a-z][a-z -]*$/.test(one))
+
+writeFileSync(
+  resolve(TERM, 'scratchpad', 'chinese-add.txt'),
+  `${[...new Set(addable)].join('\n')}\n`,
+)
 
 // ─── Write ──────────────────────────────────────────────
 

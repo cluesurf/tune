@@ -462,6 +462,11 @@ calyx bract sepal stamen awn frond husk rind sheath internode
 mottled wrinkled margin film keel lobed toothed
 orchid bracken lotus sedge bamboo palm
 
+eyebrow crotch sickle broom obscure lukewarm embankment
+pavilion alley throne chaff bran leech silkworm pheasant
+cuckoo rug ferry chapter revive cleanse dredge overturn
+embroider generation widow
+
 alcohol acetone video algorithm battery camera engine motor radio
 robot rocket artery atom cell gene molecule nucleus organ organism
 testis tissue vein virus history ammonia

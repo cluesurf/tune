@@ -135,6 +135,7 @@ alive
 all
 allegiance
 allergy
+alley
 allocate
 allow
 allowed
@@ -625,6 +626,7 @@ brag
 braid
 brain
 brake
+bran
 branch
 branching
 brand
@@ -662,6 +664,7 @@ broker
 bronze
 brood
 brook
+broom
 broth
 brother
 brow
@@ -834,6 +837,7 @@ cereal
 ceremony
 certain
 certificate
+chaff
 chain
 chair
 chalk
@@ -847,6 +851,7 @@ channel
 chant
 chaos
 chaotic
+chapter
 char
 character
 charcoal
@@ -943,6 +948,7 @@ clause
 claw
 clay
 clean
+cleanse
 clear
 clerk
 clever
@@ -1276,6 +1282,7 @@ crocodile
 crooked
 crop
 cross
+crotch
 crouch
 crow
 crowd
@@ -1295,6 +1302,7 @@ cryptic
 crystal
 crystalline
 cube
+cuckoo
 cucumber
 cuddle
 cue
@@ -1652,6 +1660,7 @@ drama
 draw
 dread
 dream
+dredge
 dress
 drift
 drill
@@ -1764,12 +1773,14 @@ ellipse
 elm
 eloquent
 else
+embankment
 embarrass
 embassy
 embed
 ember
 embody
 embrace
+embroider
 embryo
 emerald
 emerge
@@ -2039,6 +2050,7 @@ fenugreek
 feral
 ferment
 fern
+ferry
 fertile
 fertilize
 fertilizer
@@ -3016,6 +3028,7 @@ least
 leather
 leave
 ledge
+leech
 left
 leg
 legacy
@@ -3150,6 +3163,7 @@ lubrication
 luck
 lucky
 luggage
+lukewarm
 lumen
 luminous
 lump
@@ -3578,6 +3592,7 @@ objective
 obligate
 obligation
 oblige
+obscure
 observation
 observatory
 observe
@@ -3717,6 +3732,7 @@ overlap
 overload
 override
 overshoot
+overturn
 ow
 owe
 owl
@@ -3806,6 +3822,7 @@ patter
 pattern
 pause
 pave
+pavilion
 paw
 pay
 payment
@@ -3876,6 +3893,7 @@ petroleum
 petty
 pharmacy
 phase
+pheasant
 phenomenon
 phenotype
 pheromone
@@ -4467,6 +4485,7 @@ reversible
 review
 revise
 revision
+revive
 revoke
 revolt
 revolve
@@ -4546,6 +4565,7 @@ rubbish
 ruby
 rude
 ruffian
+rug
 rugby
 ruin
 rule
@@ -4813,6 +4833,7 @@ shut
 shy
 sibling
 sick
+sickle
 side
 siege
 siemens
@@ -4828,6 +4849,7 @@ silence
 silent
 silicon
 silk
+silkworm
 sill
 silo
 silt

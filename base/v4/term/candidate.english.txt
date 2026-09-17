@@ -3222,6 +3222,7 @@ alas                                          interjection     0     0
 algae                                         noun             0     0
 alias                                         noun             0     0
 allegiance                                    noun             0     0
+alley                                         noun             0     0
 almond                                        noun             0     0
 aloe                                          noun             0     0
 altar                                         noun             0     0
@@ -3275,10 +3276,12 @@ boom                                          verb             0     0
 bound                                         adjective        0     0
 bracken                                       verb             0     0
 bract                                         verb             0     0
+bran                                          noun             0     0
 bravo                                         interjection     0     0
 brilliant                                     adjective        0     0
 brim                                          noun             0     0
 brood                                         noun             0     0
+broom                                         noun             0     0
 broth                                         noun             0     0
 brow                                          noun             0     0
 buckle                                        verb             0     0
@@ -3309,7 +3312,9 @@ cassava                                       noun             0     0
 cavity                                        noun             0     0
 celery                                        noun             0     0
 celsius                                       noun             0     0
+chaff                                         noun             0     0
 chamomile                                     noun             0     0
+chapter                                       noun             0     0
 cherry                                        noun             0     0
 chestnut                                      noun             0     0
 chime                                         noun             0     0
@@ -3324,6 +3329,7 @@ citrus                                        noun             0     0
 civil                                         adjective        0     0
 clam                                          noun             0     0
 clang                                         noun             0     0
+cleanse                                       verb             0     0
 cling                                         verb             0     0
 clone                                         verb             0     0
 closure                                       noun             0     0
@@ -3376,11 +3382,13 @@ credential                                    adjective        0     0
 crest                                         noun             0     0
 criterion                                     noun             0     0
 critic                                        noun             0     0
+crotch                                        noun             0     0
 crumb                                         noun             0     0
 crumble                                       verb             0     0
 crunch                                        noun             0     0
 crustacean                                    noun             0     0
 cryptic                                       adjective        0     0
+cuckoo                                        noun             0     0
 cumin                                         noun             0     0
 curate                                        verb             0     0
 cuticle                                       noun             0     0
@@ -3422,6 +3430,7 @@ domesticate                                   verb             0     0
 dormant                                       adjective        0     0
 dove                                          verb             0     0
 dragon                                        noun             0     0
+dredge                                        verb             0     0
 droop                                         noun             0     0
 duct                                          noun             0     0
 dumb                                          adjective        0     0
@@ -3438,7 +3447,9 @@ elicit                                        adjective        0     0
 ellipse                                       noun             0     0
 elm                                           noun             0     0
 eloquent                                      adjective        0     0
+embankment                                    noun             0     0
 embed                                         verb             0     0
+embroider                                     verb             0     0
 emerge                                        verb             0     0
 empathy                                       noun             0     0
 emphasis                                      noun             0     0
@@ -3478,6 +3489,7 @@ fahrenheit                                    noun             0     0
 farad                                         noun             0     0
 fastener                                      noun             0     0
 fennel                                        noun             0     0
+ferry                                         noun             0     0
 fetch                                         verb             0     0
 feud                                          noun             0     0
 fig                                                            0     0
@@ -3593,6 +3605,7 @@ lattice                                       noun             0     0
 laurel                                        noun             0     0
 lava                                          noun             0     0
 lavender                                      noun             0     0
+leech                                         verb             0     0
 legitimate                                    adjective        0     0
 legume                                        noun             0     0
 lenient                                       adjective        0     0
@@ -3611,6 +3624,7 @@ loot                                          verb             0     0
 lore                                          noun             0     0
 lowland                                       noun             0     0
 lubricate                                     verb             0     0
+lukewarm                                      noun             0     0
 lumen                                         noun             0     0
 lust                                          verb             0     0
 lux                                           noun             0     0
@@ -3658,6 +3672,7 @@ newton                                        noun             0     0
 niche                                         noun             0     0
 nostalgia                                     noun             0     0
 nuance                                        noun             0     0
+obscure                                       adjective        0     0
 obstruct                                      verb             0     0
 obtuse                                        noun             0     0
 octave                                        noun             0     0
@@ -3677,6 +3692,7 @@ orient                                        verb             0     0
 originate                                     verb             0     0
 ouch                                          interjection     0     0
 outcome                                       noun             0     0
+overturn                                      verb             0     0
 ow                                            interjection     0     0
 pander                                        noun             0     0
 parable                                       adjective        0     0
@@ -3688,6 +3704,7 @@ participate                                   verb             0     0
 pascal                                        noun             0     0
 pasture                                       noun             0     0
 patter                                        noun             0     0
+pavilion                                      noun             0     0
 pear                                          noun             0     0
 peck                                          noun             0     0
 peg                                           noun             0     0
@@ -3699,6 +3716,7 @@ persevere                                     verb             0     0
 perspective                                   noun             0     0
 pertain                                       noun             0     0
 petal                                         noun             0     0
+pheasant                                      noun             0     0
 phenomenon                                    noun             0     0
 phew                                          interjection     0     0
 pillar                                        adjective        0     0
@@ -3769,6 +3787,7 @@ resonate                                      verb             0     0
 restraint                                     noun             0     0
 retain                                        noun             0     0
 revere                                        verb             0     0
+revive                                        verb             0     0
 revoke                                        verb             0     0
 revolve                                       verb             0     0
 rhetoric                                      noun             0     0
@@ -3785,6 +3804,7 @@ robust                                        adjective        0     0
 roost                                         noun             0     0
 rose                                          noun             0     0
 rosemary                                      noun             0     0
+rug                                           noun             0     0
 rumble                                        noun             0     0
 rupture                                       noun             0     0
 rye                                           noun             0     0
@@ -3820,8 +3840,10 @@ shh                                           interjection     0     0
 shin                                          noun             0     0
 shrimp                                        noun             0     0
 shrub                                         noun             0     0
+sickle                                        noun             0     0
 siege                                         noun             0     0
 silicon                                       noun             0     0
+silkworm                                      noun             0     0
 simulate                                      verb             0     0
 sizzle                                        noun             0     0
 skeptical                                     adjective        0     0
