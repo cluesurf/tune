@@ -388,6 +388,29 @@ for (const [meaning, form] of formOf) {
 // ─── The compound and derived sheets ────────────────────
 
 /**
+ * Which English words are themselves compounds.
+ *
+ * A derivation ON a compound cannot be written with a tight join,
+ * because the operator has to reach the whole thing. That is the one
+ * case section 7 reserves `∘` for.
+ */
+const isCompound = new Set<string>()
+{
+  const path = resolve(TERM, 'master', 'compound.csv')
+  if (existsSync(path)) {
+    const rows = parse(readFileSync(path, 'utf-8'), {
+      columns: true,
+      skip_empty_lines: true,
+      relax_column_count: true,
+    }) as Array<{ term: string }>
+    for (const row of rows) {
+      const term = (row.term ?? '').trim()
+      if (term) isCompound.add(term)
+    }
+  }
+}
+
+/**
  * Both sheets carry the joined word AND the split parts, in both
  * languages, so a reader can check a spelling against its pieces
  * without holding the joiner rules in their head.
@@ -395,20 +418,53 @@ for (const [meaning, form] of formOf) {
 /**
  * Which joiner a row takes, decided per row rather than per file.
  *
- * `derivable.english.csv` mixes two different things under one name.
- * An `affix`, `prefix` or `grammar` row is a real derivation, so an
- * operator applies to a stem and the joiner is `wa`. A `sense` row is
- * a paraphrase, and `abdomen = lower + body + region` is not three
- * operators applied in turn, it is a description. Those compose, so
- * they take `ai` like any compound.
+ * ## A derivation is TIGHT COMPOSITION, not application
  *
- * Joining a paraphrase with `wa` would claim `region(body(lower))`,
- * which is not what the row says and not what it means.
+ * Section 5 of the specification is explicit, and it is the thing most
+ * easily got wrong:
+ *
+ * ```text
+ * two·cardinal      acquire·process      white·like
+ * black·cause       feather·relation
+ * ```
+ *
+ * > The semantic interpretation of `two·cardinal` may be equivalent to
+ * > `cardinal(two)`, but that meaning comes from the concept model.
+ * > The middle dot itself means only tight structural composition.
+ *
+ * So `dark·nature` is darkness and the joiner is `·`, said `au`. The
+ * operator reading is carried by what `nature` MEANS, not by the
+ * character between them. An earlier version wrote every derivation
+ * with `∘` and was wrong about all 760 of them.
+ *
+ * ## What `∘` is actually for
+ *
+ * Section 7: `∘` divides a word into COMPLETE structural expressions
+ * and applies one to the other. It earns its place when the operand is
+ * itself a compound, because then no amount of tightening can bind the
+ * operator to the whole thing:
+ *
+ * ```text
+ * great-white-shark∘many      many applies to all three
+ * ```
+ *
+ * So a derivation whose stem is itself a compound takes `wa`, and a
+ * derivation on a plain root takes `au`.
+ *
+ * ## A paraphrase is neither
+ *
+ * A `sense` row such as `abdomen = lower + body + region` is a
+ * description rather than a derivation. It composes, at the weakest
+ * level that holds it, which section 27 says is `-`.
  */
-function joinerFor(kind: 'compound' | 'derived', where: string): string {
+function joinerFor(
+  kind: 'compound' | 'derived',
+  where: string,
+  stem: string,
+): string {
   if (kind === 'compound') return LOOSE
   if (where === 'affix' || where === 'prefix' || where === 'grammar') {
-    return APPLY
+    return isCompound.has(stem) ? APPLY : TIGHT
   }
   return LOOSE
 }
@@ -440,7 +496,7 @@ function sheet(kind: 'compound' | 'derived'): { rows: number; whole: number } {
       .map(one => one.trim())
       .filter(Boolean)
     if (!term || !parts.length) continue
-    const joiner = joinerFor(kind, (row.where ?? '').trim())
+    const joiner = joinerFor(kind, (row.where ?? '').trim(), parts[0])
     const tuneParts = parts.map(one => tuneOf.get(one) ?? '')
     const complete = tuneParts.every(Boolean)
     if (complete) whole++
