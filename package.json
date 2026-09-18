@@ -29,6 +29,7 @@
     "v4:pipe": "tsx make/v4/code/pipe/run.ts",
     "v4:english": "tsx make/v4/code/english.ts",
     "v4:master": "tsx make/v4/code/master.ts",
+    "v4:alternate": "tsx make/v4/code/alternate.ts",
     "v4:final": "tsx make/v4/code/final.ts",
     "v4:joiner": "tsx make/v4/code/joiner.ts",
     "v4:chinese-spec": "tsx make/v4/code/name/chinese-spec.ts",
