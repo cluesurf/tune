@@ -127,9 +127,43 @@ process.stdout.write(
  * which is the same defect three times over. The breaker has to be a
  * different KIND of sound, not merely a different one.
  */
-const BREAKER: Record<string, string> = { s: 'k', z: 'g', x: 't', j: 'd' }
-const AFTER = new Set(['s', 'z', 'x', 'j'])
-const BEFORE = new Set(['z', 's', 'j', 'f'])
+const NARROW: Record<string, string> = { s: 'k', z: 'g', x: 't', j: 'd' }
+
+/**
+ * The wider rule, adding `f` and `v`.
+ *
+ * The narrow rule fires `after [szxj], before [zsjf]`, which is not
+ * symmetric: `f` triggers as a follower but never as a leader, and
+ * `x` the reverse. Two fricatives running together are the same
+ * problem whichever order they come in, so the wider rule covers
+ * every fricative on both sides, and gives `f` and `v` the stop at
+ * their own place.
+ */
+const WIDE: Record<string, string> = { ...NARROW, f: 'p', v: 'b' }
+
+const RULE = process.env.RULE ?? 'wide'
+const BREAKER = RULE === 'narrow' ? NARROW : WIDE
+const AFTER = new Set(Object.keys(BREAKER))
+const BEFORE =
+  RULE === 'narrow'
+    ? new Set(['z', 's', 'j', 'f'])
+    : new Set(Object.keys(BREAKER))
+
+/**
+ * `MODEL` is the assumption about what a listener can hear.
+ *
+ * ```text
+ * hiss    only fricatives collapse. A geminate stop holds a longer
+ *         closure, which Italian and Japanese both use contrastively,
+ *         so it is audible.
+ * all     every doubled consonant collapses. The pessimistic reading.
+ * ```
+ *
+ * The whole size of the problem depends on which is true, so it is a
+ * knob rather than a buried assumption.
+ */
+const FRICATIVE = new Set(['s', 'z', 'x', 'j', 'f', 'v', 'c', 'C', 'h'])
+const MODEL = process.env.MODEL ?? 'hiss'
 
 function join(a: string, b: string): string {
   const x = a[a.length - 1]
@@ -138,10 +172,15 @@ function join(a: string, b: string): string {
   return a + b
 }
 
-/** A doubled consonant is heard as one. */
+/** What the listener receives, under the chosen model. */
 function heard(s: string): string {
   let out = ''
-  for (const one of s) if (out[out.length - 1] !== one) out += one
+  for (const one of s) {
+    const doubles =
+      out[out.length - 1] === one &&
+      (MODEL === 'all' || FRICATIVE.has(one))
+    if (!doubles) out += one
+  }
   return out
 }
 
@@ -172,6 +211,7 @@ function readings(surface: string): Array<string> {
 let tried = 0
 let doubled = 0
 let amb = 0
+let missed = 0
 const show: Array<string> = []
 
 for (let n = 0; n < 200000; n++) {
@@ -181,10 +221,14 @@ for (let n = 0; n < 200000; n++) {
   if (join(a, b).length > a.length + b.length) doubled++
   const surface = heard(join(a, b))
   const read = readings(surface)
-  if (read.length > 1) {
-    amb++
+  if (read.length > 1) amb++
+  // The question that matters: does the pair come back at all.
+  if (!read.includes(`${a}+${b}`)) {
+    missed++
     if (show.length < 6) {
-      show.push(`  ${a} + ${b}  ->  ${surface}   also ${read.filter(one => one !== `${a}+${b}`).slice(0, 3).join(' ')}`)
+      show.push(
+        `  ${a} + ${b}  ->  ${surface}   recovers ${read.join(' ') || 'nothing'}`,
+      )
     }
   }
 }
@@ -194,14 +238,16 @@ process.stdout.write(
     `  seam doubles            ${doubled.toLocaleString()}  ` +
     `${((doubled / tried) * 100).toFixed(2)}%  these take the breaker\n` +
     `  heard two ways          ${amb.toLocaleString()}  ` +
-    `${((amb / tried) * 100).toFixed(2)}%\n\n`,
+    `${((amb / tried) * 100).toFixed(2)}%\n` +
+    `  intended pair LOST      ${missed.toLocaleString()}  ` +
+    `${((missed / tried) * 100).toFixed(2)}%   <- what the breaker is for\n\n`,
 )
 
 if (show.length) {
-  process.stdout.write('  still ambiguous:\n')
+  process.stdout.write('  still lost WITH the breaker:\n')
   for (const one of show) process.stdout.write(`${one}\n`)
 } else {
-  process.stdout.write('  every pair is heard exactly one way.\n')
+  process.stdout.write('  every pair comes back exactly as it went in.\n')
 }
 
 // ─── The same test WITHOUT the breaker, for contrast ────

@@ -39,6 +39,7 @@
     "v4:geminate": "tsx make/v4/code/geminate.ts",
     "v4:breaker": "tsx make/v4/code/breaker.ts",
     "v4:add-clusters": "tsx make/v4/code/add-clusters.ts",
+    "v4:settle": "tsx make/v4/code/settle.ts",
     "v4:final": "tsx make/v4/code/final.ts",
     "v4:joiner": "tsx make/v4/code/joiner.ts",
     "v4:chinese-spec": "tsx make/v4/code/name/chinese-spec.ts",
