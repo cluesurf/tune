@@ -79,7 +79,9 @@
     "v4:theme": "tsx make/v4/code/pipe/theme.ts",
     "v4:sweep": "tsx make/v4/code/pipe/sweep.ts",
     "v4:mirror-evolve": "tsx make/v4/code/pipe/mirror-evolve.ts",
-    "v4:words": "pnpm v4:english && pnpm v4:derive && pnpm v4:english && pnpm v4:doubt && pnpm v4:gap"
+    "v4:words": "pnpm v4:english && pnpm v4:derive && pnpm v4:english && pnpm v4:doubt && pnpm v4:gap",
+    "v4:check-eight": "tsx make/v4/code/check-eight.ts",
+    "v4:seam": "tsx make/v4/code/seam.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

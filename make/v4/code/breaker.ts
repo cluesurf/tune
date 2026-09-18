@@ -1,4 +1,32 @@
 /**
+ * SUPERSEDED BY `v4:seam`. Its answer is wrong. Kept as the record.
+ *
+ * This file concluded that a breaker is needed only where two
+ * FRICATIVES meet, and reported 0% ambiguity for that rule. Both
+ * halves are false, and `seam.ts` has the corrected measurement.
+ *
+ * **The defect is in `readings`, not in the rule.** It proposes a
+ * reading by CUTTING the surface, and a cut cannot express the one
+ * thing that goes wrong: two roots SHARING a boundary sound, because
+ * Tune has no length contrast and a doubled consonant is said once.
+ *
+ * ```text
+ * mimp + pim   ->   said [mimpim]   ->   also reads as mim + pim
+ * mig  + glim  ->   said [miglim]   ->   also reads as mig + lim
+ * ```
+ *
+ * Neither rival is reachable by cutting `mimpim` or `miglim`, so this
+ * file never saw them and reported clean. **A reader that cannot
+ * represent a failure will not report one**, which is why the 0% here
+ * was never evidence of anything.
+ *
+ * The true figures, over all 21,939,856 ordered pairs: 4.273% of pairs
+ * are heard two ways with no breaker, and the fricative rule below
+ * leaves 2.438% of them. The fricative half is RIGHT; what it lacks is
+ * a rule for two of the same sound, which `seam.ts` supplies with `l`.
+ *
+ * ---
+ *
  * The seam breaker: a joiner used ONLY where a consonant doubles.
  *
  * The proposal:
@@ -150,21 +178,37 @@ const BEFORE =
     : new Set(Object.keys(BREAKER))
 
 /**
- * `MODEL` is the assumption about what a listener can hear.
+ * **Tune has no geminates**, so a doubled consonant at a seam is not
+ * pronounced twice and not written twice. The two roots SHARE it.
  *
  * ```text
- * hiss    only fricatives collapse. A geminate stop holds a longer
- *         closure, which Italian and Japanese both use contrastively,
- *         so it is audible.
- * all     every doubled consonant collapses. The pessimistic reading.
+ * sab + bep   ->   sabep      one b, belonging to both
  * ```
  *
- * The whole size of the problem depends on which is true, so it is a
- * knob rather than a buried assumption.
+ * That is not a loss and it is not degemination. It is the correct
+ * surface, and it is recoverable so long as the reader tries a split
+ * where the boundary consonant serves both sides.
+ *
+ * An earlier version of this file treated the merge as damage and
+ * counted `sabep` as a word that "recovers nothing", because the
+ * parser only ever tried CUTTING the string and never tried sharing a
+ * sound across the cut. That made a correct form look like a failure.
  */
-const FRICATIVE = new Set(['s', 'z', 'x', 'j', 'f', 'v', 'c', 'C', 'h'])
-const MODEL = process.env.MODEL ?? 'hiss'
-
+/**
+ * Two identical consonants at a seam are simply written twice.
+ *
+ * ```text
+ * sab + bep   ->   sabbep
+ * ```
+ *
+ * No merging, no degemination, no rule. A merge rule was drafted and
+ * then dropped as unnecessary complexity, and dropping it removes the
+ * problem rather than solving it: `sabbep` splits exactly one way,
+ * because `ep` is not a root and neither is `sa`.
+ *
+ * **The only seam that needs anything is two FRICATIVES**, where
+ * length is the only cue and a stop is inserted to separate them.
+ */
 function join(a: string, b: string): string {
   const x = a[a.length - 1]
   const y = b[0]
@@ -172,16 +216,12 @@ function join(a: string, b: string): string {
   return a + b
 }
 
-/** What the listener receives, under the chosen model. */
+/**
+ * The surface IS what `join` produced. There is no separate listening
+ * step, because the merge already happened when the word was formed.
+ */
 function heard(s: string): string {
-  let out = ''
-  for (const one of s) {
-    const doubles =
-      out[out.length - 1] === one &&
-      (MODEL === 'all' || FRICATIVE.has(one))
-    if (!doubles) out += one
-  }
-  return out
+  return s
 }
 
 /**
@@ -193,13 +233,19 @@ function heard(s: string): string {
  */
 function readings(surface: string): Array<string> {
   const out: Array<string> = []
-  for (let at = 3; at <= surface.length - 3; at++) {
-    for (const left of [surface.slice(0, at)]) {
-      if (!set.has(left)) continue
-      // the breaker may or may not stand between them
-      for (const right of [surface.slice(at), surface.slice(at + 1)]) {
-        if (right.length < 3 || !set.has(right)) continue
-        if (heard(join(left, right)) === surface) out.push(`${left}+${right}`)
+  for (let at = 3; at <= surface.length; at++) {
+    const left = surface.slice(0, at)
+    if (!set.has(left)) continue
+    for (const right of [
+      // the roots simply abut
+      surface.slice(at),
+      // a breaker stands between them and belongs to neither
+      surface.slice(at + 1),
+    ]) {
+      if (right.length < 3 || !set.has(right)) continue
+      const made = join(left, right)
+      if (made === surface && !out.includes(`${left}+${right}`)) {
+        out.push(`${left}+${right}`)
       }
     }
   }

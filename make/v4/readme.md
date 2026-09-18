@@ -200,17 +200,37 @@ end: `h` only opens, in 199 words, and `q` only closes, in 285.
 
 ## Rules
 
-Seven, and no more.
+Eleven, in `WORD_RULES` in `sound.ts`, and no more.
 
 | rule | what it says |
 | :--- | :--- |
-| `no_weak_open` | a word never starts with `q`, `w` or `y` |
+| `no_weak_open` | a word never starts with `q` |
 | `no_weak_close` | a word never ends in `h`, `w` or `y` |
-| `no_lost_glide` | `w` is said nowhere in v4 |
+| `no_lost_sound` | nothing is refused outright, so every consonant reaches a word |
 | `no_blurred_rhyme` | a liquid closes only on `a` or `o` |
+| `no_wa_start` | **lifted.** A word never held `wa` while `wa` was the joiner |
+| `no_twin_vowel` | a word never carries `i`, `e` or `u` in both vowel slots |
+| `no_hush_clash` | `c` and `C` together stand at most once in a word |
 | `known_onset` | a word opening on two sounds opens on a listed cluster |
 | `known_coda` | a word closing on two sounds closes on a listed cluster |
+| `no_taboo` | a form that reads as a slur or as profanity is not a word |
 | `no_hush_in_cluster` | `x` and `j` never stand inside a cluster |
+
+Three of these are narrower than they look. `no_weak_open` refuses `q`
+alone: an earlier version refused `w` and `y` as well, and between that
+and a ban on `w` everywhere it left two of the 22 consonants in no word
+at all. **Every sound the inventory claims has to reach a word**, so
+`wat` and `yat` stand.
+
+`no_twin_vowel` and `no_hush_clash` never fire on a root, which has one
+vowel and rarely two hushes. They are there for the two-syllable
+shapes.
+
+`no_wa_start` is **no longer applied**. It existed so a listener could
+split a compound on every `wa`, and the joiner it protected is gone.
+See **Joining** below. It is kept in the list rather than deleted,
+because the 35 forms it used to cost are now in supply and a reader
+comparing two counts needs to know why.
 
 `no_blurred_rhyme` is there because a vowel running into a liquid blurs
 into it. `bil` cannot be held apart from `bi`. v3 named the two front
@@ -377,81 +397,320 @@ list is the same every time it is built.
 
 ## Joining
 
-Two words said as one leave their consonants touching, the last of the
-first word against the first of the second. **Every join is marked, so
-a word boundary is always heard.**
-
-The mark is `wa`, and it is the same after every ending.
+**There is no joiner.** Roots abut, and the word divides on its own.
 
 ```text
-man + drum + gon   ->   manwadrumwagon
-mat + man          ->   matwaman
-s   + s            ->   sawasa
+him + nep   ->   himnep       nothing · nature
+gat + yez   ->   gatyez       wake · act
+```
+
+That is the whole rule, and it is what three earlier systems were
+trying to buy with a mark. Getting it needed two things: a reason the
+seam is findable at all, and one narrow repair where it is not.
+
+### Why abutting works: the two piles
+
+A root is `CVC`, `CVCC` or `CCVC`. Put two together and the seam holds
+one, two or three consonants, and **the three-consonant case is the
+only ambiguous one**:
+
+```text
+cvc  + ccvc   ->   CVC CCVC   ->   CVCCCVC
+cvcc + cvc    ->   CVCC CVC   ->   CVCCCVC      the same string
+```
+
+`bar + dsiq` and `bard + siq` both give `bardsiq`, and nothing in it
+says where the cut goes. It is 1.19% of the 16,769,025 pairs, which is
+small and is not zero, and a code is either uniquely decodable or it is
+not.
+
+**Split the consonants into two piles and the collision cannot be
+built.** A cluster that OPENS a root and a cluster that CLOSES one draw
+their boundary sound from disjoint sets:
+
+| pile | sounds | where they stand |
+| :--- | :--- | :--- |
+| **open** | `b d f g s v` | the FIRST sound of a `CCVC` onset |
+| **close** | `c j k p t x z` | the SECOND sound of a `CVCC` coda |
+| neither | `m n q h w l r y C` | free everywhere else |
+
+For `CVCCCVC` to be read two ways, the middle three consonants have to
+split as `2 + 1` and as `1 + 2`. The first reading needs the second
+consonant to close a coda, so it is in the close pile; the second needs
+that same consonant to open an onset, so it is in the open pile. The
+piles share nothing, so no consonant can do both, so no string can be
+read both ways. **The ambiguity is not resolved, it is unbuildable.**
+
+One cut goes with it: `sk` leaves the codas, because `s` is in the open
+pile and `k` in the close pile and `sk` is on both lists.
+
+### What it costs, and what it leaves
+
+```text
+             supply     allocated
+CVC           1,836         1,536
+CVCC          1,523         1,280
+CCVC          1,325         1,280
+             ------        ------
+              4,684         4,096      588 spare
+```
+
+Ratio 6:5:5. The `no_wa_start` rule is **lifted**, since there is no
+`wa` joiner left for a root to be mistaken for, which hands back the
+35 forms it was costing.
+
+`v4:disjoint` builds the piles and `v4:settle` prints this table.
+
+### The seam breaker
+
+The one place abutting fails, and it is not where the first measurement
+said it was.
+
+**Tune has no length contrast.** Two of the same consonant at a seam
+are not two sounds, they are one:
+
+```text
+mand + dam   ->   said [mandam]   ->   which also reads as man + dam
+marn + nam   ->   said [marnam]   ->   which also reads as mar + nam
+mig  + glim  ->   said [miglim]   ->   which also reads as mig + lim
+```
+
+The spelling can hold two and the ear cannot, so the listener does not
+hesitate. **The listener is confidently wrong**, which is worse than
+being confused, and a count of strings that split more than one way
+reports it as a success.
+
+#### Which doubles hurt, and which repair themselves
+
+Collapsing a double removes one consonant, so a rival reading has to
+find its boundary one sound to the side of the real one. That is
+possible exactly twice:
+
+| family | example | rival |
+| :--- | :--- | :--- |
+| **A is `CVCC`**, B starts on A's last sound | `mimp + pim` | `mim + pim` |
+| **B is `CCVC`**, A ends on B's first sound | `mig + glim` | `mig + lim` |
+
+Everything else recovers itself, because dropping a sound leaves a
+VOWEL where the rival boundary would have to stand. `mat + tam` is
+`matam`, five sounds, and no two roots of three make five.
+
+`v4:seam` runs all 21,939,856 ordered pairs and finds losses in seven
+shape families and no others, which are those two seen from both sides:
+
+```text
+CVC  + CVC       245,274        the innocent party in both families
+CVC  + CCVC      138,413
+CVCC + CVC       134,476
+CVC  + CVCC      110,810
+CVCC + CVCC      110,810
+CCVC + CCVC       98,841
+CCVC + CVC        98,841
+```
+
+**4.273% of all pairs.** One word in twenty-three.
+
+#### The breaker
+
+**A breaker is a sound of the OTHER KIND from what it separates.** Two
+of the same sound have only length between them, and Tune has no
+length. Two hisses running together have only length between them
+either. Same defect, so the cure is the same shape.
+
+```text
+two of the SAME sound   ->   l        r, if the sound is l
+two DIFFERENT hisses    ->   the stop at that hiss's voicing
+                             s k   z g   x t   j d   f p   v b
 ```
 
 ```text
--mwa  -nwa  -qwa  -gwa  -dwa  -bwa  -pwa  -twa  -kwa  -swa
--fwa  -vwa  -zwa  -jwa  -xwa  -cwa  -Cwa  -lwa  -rwa
+mand + dam   ->   mandldam
+marn + nam   ->   marnlnam
+mig  + glim  ->   miglglim
+mas  + zam   ->   maskzam
 ```
 
-Nineteen sounds can close a word and `wa` follows all nineteen. There
-is no table to learn and no case to get wrong.
+A stop is a closure and a release, which is a boundary a listener
+cannot miss between two hisses. A liquid is a sonorant with its own
+resonance, which does the same between two stops.
 
-### The one thing it costs
+**Zero cuts, zero ambiguity, over all 21,939,856 ordered pairs.**
 
-**No root may begin with `wa`.**
+#### The order of the two halves is not cosmetic
 
-Without that rule `manwadrum` reads two ways: `man + drum`, or `man`
-followed by a root `wadrum`. A joiner that can be mistaken for the
-start of a word is not a joiner.
+`maj + jam` is two hisses AND two of the same sound, so the rules
+overlap and the one that fires decides whether it works.
 
-It costs **71 of the 6,233 legal forms, 1.1%**:
+```text
+hiss first      majdjam    ->   also reads maj + djam, `dj` opens roots
+sameness first  majljam    ->   one reading, nothing swallows `l`
+```
 
-| shape | lost | why |
-| :--- | ---: | :--- |
-| `CVC` | 19 | `wa` plus each of the 19 closing sounds |
-| `CVCC` | 46 | `wa` plus each legal closing cluster |
-| `CCVC` | 6 | a cluster whose second sound is `w` |
+Sameness first removes the only conflict in the stop table, and it is
+worth the 88 roots that cutting `dj` from the onsets would have cost.
 
-The rule lives in `sound.ts` as `BAD_HEAD`, and it rides the `rhyme`
-list because **`wa` can only ever occur word-initially** on this
-inventory: `w` closes nothing and stands in no coda cluster, so after
-the vowel the pair would read `aw` and never `wa`. Banning the pair
-anywhere and banning it at the head are the same test here.
+#### Why `l`, and what a breaker has to satisfy
 
-They stop being the same test at two syllables, where `w` can open the
-second syllable before an `a`: `bawat` begins on `b` and still holds
-the joiner. So `no_wa_start` in `sound.ts` tests the whole word, and a
-listener can split a compound on every `wa` and never land inside a
-root.
+A breaker `b` between `x` and `y` is findable only if `x + b` is not a
+legal coda and `b + y` is not a legal onset. Otherwise the root beside
+it swallows it, which is what rules out every obvious candidate:
+
+```text
+s   marp + s + pam   ->   marp + spam      `sp` is a legal onset
+z   mad  + z + dam   ->   madz + dam       `dz` is a legal coda
+```
+
+**`z` and `s` were the first proposal and they do not work.** Measured,
+they leave the ambiguity exactly where the hiss rule alone leaves it,
+2.438%, and closing every hole they lean on costs **2,177 roots**,
+leaving 2,507 against a target of 4,096.
+
+`l` is in neither pile: no coda ends in `l` and no onset begins with
+one. `r` is the same, and takes the one seam `l` cannot break, a
+doubled `l` itself.
+
+#### The runs it makes, to be judged by mouth
+
+48 distinct three consonant runs, and nothing else:
+
+| shape | seams | of all pairs | examples |
+| :--- | ---: | ---: | :--- |
+| hiss stop hiss | 2,960,397 | 13.50% | `zgs zgf zgv zgz zgj zgx` |
+| stop liquid stop | 463,867 | 2.11% | `plp tlt klk glg dld blb` |
+| nasal liquid nasal | 56,880 | 0.26% | `mlm nln` |
+| liquid liquid liquid | 23,328 | 0.11% | `lrl rlr` |
+
+The stop between two hisses takes no syllable, being a release. **The
+liquid fires on 2.48% of seams, one word in forty**, and the whole of
+it is `plp tlt klk glg dld blb mlm nln lrl rlr`. Whether any of those
+wants a vowel is a question for the ear, and the list is short enough
+to record.
+
+#### Measured
+
+Every policy, over all 21,939,856 ordered pairs. The intended pair is
+never LOST, because the surface is built from it, so `heard two ways`
+is the number that matters.
+
+| policy | seams marked | heard two ways |
+| :--- | ---: | ---: |
+| nothing at all | 0.000% | **4.273%** |
+| a stop between two hisses | 13.493% | **2.438%** |
+| that, plus `z` or `s` on a double | 15.973% | **2.438%** |
+| that, plus `l` on a double | 15.973% | 0.229% |
+| **`l` on a double FIRST, then the stop** | 15.973% | **0.000%** |
+
+The third row is the one to notice. **Adding `z` or `s` changed
+nothing at all**, because they are pile members and got swallowed. The
+fourth row leaves `maj + jam`, and the fifth fixes it by ordering
+rather than by cutting.
+
+`pnpm --dir deck/tune v4:seam`.
+
+#### The rule this corrects
+
+Until 2026-09-18 `settled-phonotactics.md` and `v4:breaker` said:
+
+> the ONLY seam needing anything is two FRICATIVES
+
+**The fricative half is right and it is only half.** A doubled stop,
+nasal or liquid collapses exactly as a doubled fricative does, and the
+fricative rule alone leaves 2.438% of pairs ambiguous:
+
+```text
+mand + dam   ->   said [mandam]   ->   also reads as man + dam
+marn + nam   ->   said [marnam]   ->   also reads as mar + nam
+```
+
+It read as clean because `v4:breaker`'s reader **only ever tried
+CUTTING the string**, so it never proposed a reading in which two roots
+share a boundary sound, and the rival it should have found was not on
+its list. A reader that cannot represent a failure will not report one.
+
+#### And `h` is not a candidate, though it measured clean
+
+An `h` breaker was proposed here and is wrong. It is in neither pile,
+so nothing swallows it, and over every pair it measured 4.367% of seams
+marked and 0.000% ambiguous.
+
+**It is also unsayable.** `h` may not close a syllable in Tune and
+stands in no cluster, so at `mandhdam` the `h` has no syllable to
+belong to: `dh` is not a coda and `hd` is not an onset. The very facts
+that make it safe to PARSE make it impossible to SAY.
+
+**The measurement could not see that, because it modelled strings and
+not mouths.** `readings` asked whether a form decodes to one pair of
+roots, which `mandhdam` does. Nothing in it asked whether the form can
+be syllabified at all. A decodability model will happily certify a word
+no one can pronounce, and this one did.
+
+#### If two DIFFERENT fricatives are wanted apart as well
+
+`mas + zam` said `[maszam]` is an ACOUSTIC question rather than a
+structural one, and the model above merges only identical sounds. It
+can be answered either way, and each stop has to be checked for
+swallowing before it is used. `v4:seam` prints the table:
+
+| breaker | coda it would make | onset it would make | safe |
+| :--- | :--- | :--- | :--- |
+| `s -> k` | `sk`, **105 roots** unless cut | opens nothing | only with the `sk` cut |
+| `z -> g` | `zg`, not a coda | opens nothing | yes |
+| `x -> t` | `xt`, a coda on paper, **0 roots** | opens nothing | yes |
+| `j -> d` | `jd`, not a coda | **`dj`, 88 roots** | no |
+| `f -> p` | `fp`, not a coda | opens nothing | yes |
+| `v -> b` | `vb`, not a coda | opens nothing | yes |
+
+**`xt` needs no cut and never did.** It survives the close-pile filter,
+since `t` closes clusters, and then `no_hush_in_cluster` refuses every
+word whose cluster holds an `x`, so no root ends in it. The cluster
+list and the rules have to be read together or this looks like a trap.
+
+**`dj` is the one real conflict**, and it is `xt`'s mirror image:
+`no_hush_in_cluster` deliberately EXEMPTS `dj` and `tx` as digraphs
+standing for one sound each, which is why `dj` survives where `xt` does
+not. Cutting it from the onsets makes `j -> d` safe and costs 88 roots
+of 4,684.
+
+**`sk` and `s -> k` are one decision.** Restoring `sk` to the codas
+hands back 105 roots, 4,684 to 4,789, and pushes the fricative rule
+from 2.438% ambiguous to 4.162%, because `vas + k + slam` then reads
+back as `vask + slam`.
+
+**None of that is needed for `h`**, which is safe against every coda
+and onset the language has and needs no cut anywhere. Restoring `sk`
+leaves `h` at 0.000%. The whole table above is the price of preferring
+a stop, and it buys nothing the ear has yet asked for: adding the
+fricative case to the `h` rule costs 15.973% of seams marked and leaves
+the ambiguity where it already is, at zero.
 
 ### What this replaced
 
-Until 2026-09-16 the joiner was a consonant chosen from a table: `z`
-after a voiced sound, `s` after a voiceless one, and `l` when the two
-consonants meeting were the same or differed only by voice.
+Two systems, both of which marked every join.
+
+**`wa`, until 2026-09-17.** One vowel joiner after every ending,
+`man + drum + gon` as `manwadrumwagon`. It worked, at the price of
+banning `wa` from the head of any root, and it was dropped for length:
+a three-root term grew by four sounds and read as a chant.
+
+**A consonant table, until 2026-09-16.** `z` after a voiced sound, `s`
+after a voiceless one, `l` when the two sounds meeting were the same or
+differed only by voice. Three joiners, 399 rows in `base/v4/join.csv`,
+and a speaker had to know the table to say a word. **It also did not
+work**: the seam read three ways, and `bats + tal` and `bat + stal`
+both came out `batsstal`.
+
+`base/v4/join.csv` and `make/v4/code/join.ts` are kept as the record.
+v3's attempt, with five joiners and most joins taking nothing, is in
+`make/v3.3/readme.md`.
+
+### Running it
 
 ```text
-man + man  ->  manzman
-mat + man  ->  matsman
-s   + s    ->  sls
+pnpm --dir deck/tune v4:disjoint       build the two piles
+pnpm --dir deck/tune v4:settle         the supply and the allocation
+pnpm --dir deck/tune v4:seam           every pair, every breaker policy
+pnpm --dir deck/tune v4:check-eight    the eight demonstration words
 ```
-
-Three joiners, 399 rows in `base/v4/join.csv`, and a speaker had to
-know the table to say a word. **It also did not work.** The seam could
-be read three ways, as a coda cluster then an onset, a coda then an
-onset cluster, or a coda then a joiner then an onset, and shutting the
-first two off would have cost ten closings and six openings. That trade
-was never made, so `bats + tal` and `bat + stal` both came out
-`batsstal` with nothing in the string to say which.
-
-`wa` has no such problem, because a vowel cannot be mistaken for part
-of a consonant run. One rule, one cost, and the cost is 1.1% of the
-forms.
-
-`base/v4/join.csv` and `make/v4/code/join.ts` are the old system and
-are kept as the record of it. v3's second attempt, with five joiners
-and most joins taking nothing, is in `make/v3.3/readme.md`.
 
 ## Two Syllables
 
