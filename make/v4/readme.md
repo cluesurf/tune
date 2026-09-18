@@ -512,42 +512,62 @@ CCVC + CVC        98,841
 
 #### The breaker
 
-**A breaker is a sound of the OTHER KIND from what it separates.** Two
-of the same sound have only length between them, and Tune has no
-length. Two hisses running together have only length between them
-either. Same defect, so the cure is the same shape.
+**A breaker is `l`, and it goes wherever two sounds would arrive as
+one.** `r` takes the one seam `l` cannot break, a doubled `l` itself.
+
+That is the whole rule.
 
 ```text
-two of the SAME sound   ->   l        r, if the sound is l
-two DIFFERENT hisses    ->   the stop at that hiss's voicing
-                             s k   z g   x t   j d   f p   v b
+mand + dam    ->   mandldam      the same sound twice
+marn + nam    ->   marnlnam
+mig  + glim   ->   miglglim
+mas  + zam    ->   maslzam       two hisses
+migz + djim   ->   migzldjim     a cluster meeting a cluster
 ```
+
+**16.480% of joins take one, 0.000% are heard two ways, and NOTHING is
+cut**, over all ordered pairs of the 4,789 roots.
+
+#### What it replaced, and what the replacement was costing
+
+Until 2026-09-18 this was a six entry table, a stop at each hiss's own
+place and voicing: `s k`, `z g`, `x t`, `j d`, `f p`, `v b`.
+
+**That table and the `sk` cut were mutually exclusive all along.** `sk`
+left the codas for one reason, so an inserted `k` after an `s` could
+not be read back into the first root. Restore `sk` and the stop table
+breaks. Keep the cut and 105 roots stay out of reach.
+
+Measured with `sk` restored:
+
+| policy | marked | heard two ways |
+| :--- | ---: | ---: |
+| a stop between two hisses | 13.128% | 4.162% |
+| `l` on a double, stop on two hisses | 15.638% | 1.004% |
+| stop only at a one-against-one seam | 15.638% | 0.760% |
+| **`l` everywhere** | **16.480%** | **0.000%** |
+
+**Only one breaker survives it.** Using `l` throughout does not pick a
+side of that trade, it dissolves it, and the supply goes to **4,789**.
+
+Gone with the table: the `sk` cut, the `dj` onset conflict and the 88
+roots it risked, the `xt` question, and the distinction between a seam
+of one against one and a seam with a cluster in it.
+
+#### No run is left with nothing to lean on
 
 ```text
-mand + dam   ->   mandldam
-marn + nam   ->   marnlnam
-mig  + glim  ->   miglglim
-mas  + zam   ->   maskzam
+of the 16.910% holding four or more consonants
+  holds a liquid or nasal    3,878,222   16.910%
+  ALL obstruent                      0    0.000%
 ```
 
-A stop is a closure and a release, which is a boundary a listener
-cannot miss between two hisses. A liquid is a sonorant with its own
-resonance, which does the same between two stops.
+A long run is only a problem when nothing in it can carry a beat.
+`migzgsmim` was five obstruents. `migzldjim` is the same length with a
+sonority peak in the middle, so it can be syllabified around the `l`.
 
-**Zero cuts, zero ambiguity, over all 21,939,856 ordered pairs.**
-
-#### The order of the two halves is not cosmetic
-
-`maj + jam` is two hisses AND two of the same sound, so the rules
-overlap and the one that fires decides whether it works.
-
-```text
-hiss first      majdjam    ->   also reads maj + djam, `dj` opens roots
-sameness first  majljam    ->   one reading, nothing swallows `l`
-```
-
-Sameness first removes the only conflict in the stop table, and it is
-worth the 88 roots that cutting `dj` from the onsets would have cost.
+The cost is `skf skv skz` becoming `slf slv slz`, and whether a stop
+beats a liquid between two hisses is a question for the ear.
 
 #### Why `l`, and what a breaker has to satisfy
 

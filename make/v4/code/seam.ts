@@ -105,19 +105,19 @@ const OPENS = new Set(['b', 'd', 'f', 'g', 's', 'v'])
 const CLOSES = new Set(['c', 'j', 'k', 'p', 't', 'x', 'z'])
 
 /**
- * Codas cut beyond what the close pile already refuses.
+ * Codas cut beyond what the close pile already refuses. **NOTHING, as
+ * of 2026-09-18.**
  *
  * `sk` was cut so that a `k` inserted as a breaker after an `s` could
- * not be read as part of the root before it. The `s -> k` breaker is
- * still in the rule, so the cut stays with it.
+ * not be read as part of the root before it. The breaker is `l` now
+ * and there is no `s -> k`, so the cut protects nothing and the 105
+ * roots come back.
  *
- * `CUT=` runs with nothing cut, which prices it: restoring `sk` hands
- * back 105 roots and pushes the hiss rule from 2.438% ambiguous to
- * 4.162%, because `vas + k + slam` then reads back as `vask + slam`.
+ * `CUT=sk` runs the old way, which prices it: with `sk` cut the stop
+ * table works and the supply is 4,684; with `sk` restored the stop
+ * table is 4.162% ambiguous and `l` is still 0.000%.
  */
-const CUT = new Set(
-  (process.env.CUT ?? 'sk').split(' ').filter(Boolean),
-)
+const CUT = new Set((process.env.CUT ?? '').split(' ').filter(Boolean))
 
 /**
  * `known_onset` and `known_coda` are skipped because the settled piles
@@ -168,6 +168,36 @@ for (const a of CONSONANTS) {
   }
 }
 const set = new Set(roots)
+
+// ─── What the piles cost, and what is left unavailable ──
+
+/**
+ * Which clusters survive and which the disjoint rule refuses.
+ *
+ * Worth printing because "gain back the lost clusters" has exactly one
+ * answer now: `sk` as a coda, which the breaker was costing. Everything
+ * else on the lost list is lost to the DISJOINT RULE, and that rule is
+ * load bearing: it is the only thing making `bar + dsiq` and
+ * `bard + siq` distinguishable. Putting `k` back at the head of an
+ * onset would put `k` in both piles and rebuild the collision.
+ */
+{
+  const lostOnset = ONSET_CLUSTERS.filter(one => !onsetOk.has(one))
+  const lostCoda = CODA_CLUSTERS.filter(one => !codaOk.has(one))
+  process.stdout.write(
+    'WHAT THE DISJOINT PILES COST\n\n' +
+      `  onsets kept  ${onsetOk.size} of ${ONSET_CLUSTERS.length}   ` +
+      `${[...onsetOk].join(' ')}\n` +
+      `  onsets lost  ${lostOnset.length}   ${lostOnset.join(' ')}\n` +
+      `  codas kept   ${codaOk.size} of ${CODA_CLUSTERS.length}   ` +
+      `${[...codaOk].join(' ')}\n` +
+      `  codas lost   ${lostCoda.length}   ${lostCoda.join(' ')}\n\n` +
+      '  Every one of those is refused because its boundary sound is in\n' +
+      '  the wrong pile, and the piles are what make the seam findable.\n' +
+      '  The only cluster a BREAKER was ever costing is sk, and it is\n' +
+      '  back.\n\n',
+  )
+}
 
 // ─── Cluster facts the breaker argument turns on ────────
 
@@ -273,9 +303,36 @@ const STOP: Record<string, string> = {
 type Policy = {
   name: string
   note: string
-  /** The breaker for this seam, or null for none. */
-  mark: (x: string, y: string) => string | null
+  /**
+   * The breaker for this seam, or null for none.
+   *
+   * It takes the WHOLE roots and not just the two facing sounds,
+   * because the right breaker depends on how many consonants are
+   * already there. A stop between two hisses is fine when the seam is
+   * one against one and the run comes to three. Put a cluster on
+   * either side and the same stop sits inside a run of four or five
+   * obstruents, which is a different thing entirely.
+   */
+  mark: (a: string, b: string) => string | null
 }
+
+/** Does this root END on a cluster: is it `CVCC`. */
+const endsCluster = (one: string) =>
+  one.length === 4 && VOWELS.includes(one[1])
+
+/** Does this root START on a cluster: is it `CCVC`. */
+const startsCluster = (one: string) =>
+  one.length === 4 && !VOWELS.includes(one[1])
+
+/**
+ * The sounds that can carry a run.
+ *
+ * A liquid or a nasal has its own resonance, so a long consonant run
+ * holding one has a sonority peak to lean on and can be syllabified
+ * around it. A run of nothing but obstruents has nowhere to breathe:
+ * `gzgsm` and `gzlsm` are the same LENGTH and not the same problem.
+ */
+const SONOROUS = new Set(['l', 'r', 'm', 'n', 'q', 'w', 'y'])
 
 /**
  * Voiced consonants, for choosing between `z` and `s`.
@@ -325,47 +382,157 @@ const POLICIES: Array<Policy> = [
   {
     name: 'hiss-stop',
     note: 'the old rule: a stop between two fricatives, nothing else',
-    mark: (x, y) => (HISS.has(x) && HISS.has(y) ? STOP[x] : null),
+    mark: (a, b) => {
+      const x = a[a.length - 1]
+      return HISS.has(x) && HISS.has(b[0]) ? STOP[x] : null
+    },
   },
   {
     name: 'stated',
     note: 'a stop between two hisses, z or s between two of the same',
-    mark: stated,
-  },
-  {
-    name: 'stop+l',
-    note: 'a stop between two hisses, l between two of the same',
-    mark: (x, y) => {
-      if (HISS.has(x) && HISS.has(y)) {
-        return STOP[x]
-      }
-      // `l` cannot break a doubled `l`, so that one case takes `r`.
-      // Both are safe for the same reason: neither closes a cluster
-      // and neither opens one.
-      return x === y ? (x === 'l' ? 'r' : 'l') : null
-    },
+    mark: (a, b) => stated(a[a.length - 1], b[0]),
   },
   {
     name: 'l-first',
     note: 'l between two of the same, a stop between two DIFFERENT hisses',
+    mark: (a, b) => {
+      const x = a[a.length - 1]
+      if (x === b[0]) {
+        return x === 'l' ? 'r' : 'l'
+      }
+      return HISS.has(x) && HISS.has(b[0]) ? STOP[x] : null
+    },
+  },
+  {
+    name: 'settled',
+    note: 'a stop ONLY at a one against one seam, l wherever a cluster meets',
     /**
-     * The same two rules with the order swapped, and the order is not
-     * cosmetic.
+     * The rule as it now stands, and the third clause is the new one.
      *
-     * `maj + jam` is two hisses AND two of the same sound. Taking the
-     * hiss branch gives `majdjam`, and `dj` is a legal onset, so it
-     * reads back as `maj + djam`. Taking the sameness branch gives
-     * `majljam`, and `jl` opens nothing while `lj` closes nothing.
+     * ```text
+     * two of the SAME sound        ->   l          r, if the sound is l
+     * two DIFFERENT hisses, 1 + 1  ->   the stop at that hiss's voicing
+     * two DIFFERENT hisses, else   ->   l
+     * ```
      *
-     * So sameness first removes the one conflict the stop table has,
-     * without cutting `dj` from the onsets and without losing 88
-     * roots.
+     * **A stop is right only when the run comes to three.** `mas + zam`
+     * is `maskzam`, and `skz` is a hiss, a stop and a hiss: three
+     * sounds, a clean closure and release in the middle, and a mouth
+     * can do it.
+     *
+     * Put a cluster on either side and the same stop lands inside four
+     * or five obstruents in a row:
+     *
+     * ```text
+     * migz + smim   ->   migzgsmim      gzgsm, five obstruents
+     * migz + smim   ->   migzlsmim      gzlsm, a liquid in the middle
+     * ```
+     *
+     * Neither is shorter. **The second one has a sonority peak**, so
+     * the run has something to lean on and the `l` can carry a beat of
+     * its own if it has to. Five obstruents have nowhere to breathe.
+     *
+     * Sameness is still checked first, for the `maj + jam` reason: it
+     * is two hisses and a double at once, and the hiss branch would
+     * give `majdjam`, which reads back as `maj + djam`.
      */
-    mark: (x, y) => {
+    mark: (a, b) => {
+      const x = a[a.length - 1]
+      const y = b[0]
       if (x === y) {
         return x === 'l' ? 'r' : 'l'
       }
-      return HISS.has(x) && HISS.has(y) ? STOP[x] : null
+      if (!HISS.has(x) || !HISS.has(y)) {
+        return null
+      }
+      return endsCluster(a) || startsCluster(b) ? 'l' : STOP[x]
+    },
+  },
+  {
+    name: 'settled+',
+    note: 'that, plus l where a cluster meets a cluster with no sonority',
+    /**
+     * The last hole, and it is one the other clauses cannot reach.
+     *
+     * ```text
+     * migz + djim   ->   migzdjim      gzdj, four obstruents
+     * ```
+     *
+     * `migz` ends on `z`, a hiss, but `djim` opens on `d`, which is
+     * not one. The two sounds are neither the same nor both hisses, so
+     * NO breaker fires, and a cluster still meets a cluster. Four
+     * obstruents with nothing between them.
+     *
+     * Every other four is already fine: where a breaker does fire and
+     * a cluster is present the rule above makes it `l`, and plenty of
+     * seams hold a liquid or nasal of their own. Measured, this is the
+     * only pattern left, at 0.713% of pairs.
+     *
+     * So the third clause is stated on the RUN rather than on the two
+     * facing sounds: if four or more consonants come together and none
+     * of them can carry a beat, put an `l` in.
+     */
+    mark: (a, b) => {
+      const x = a[a.length - 1]
+      const y = b[0]
+      if (x === y) {
+        return x === 'l' ? 'r' : 'l'
+      }
+      if (HISS.has(x) && HISS.has(y)) {
+        return endsCluster(a) || startsCluster(b) ? 'l' : STOP[x]
+      }
+      const seam =
+        (endsCluster(a) ? a.slice(2) : x) +
+        (startsCluster(b) ? b.slice(0, 2) : y)
+      if (seam.length >= 4 && ![...seam].some(one => SONOROUS.has(one))) {
+        return 'l'
+      }
+      return null
+    },
+  },
+  {
+    name: 'all-l',
+    note: 'ONE breaker. l everywhere, r only for a doubled l',
+    /**
+     * Drop the stop table entirely and let `l` do all of it.
+     *
+     * The stop survives in `settled+` for one case, two different
+     * hisses at a one against one seam, where `maskzam` is a clean
+     * three and a stop is the classical answer. It is worth asking
+     * what keeping it buys, because dropping it takes a great deal
+     * with it:
+     *
+     * ```text
+     * the six entry table  s k  z g  x t  j d  f p  v b     gone
+     * the `dj` onset conflict                               gone
+     * the `xt` question                                     gone
+     * the `sk` cut, which existed ONLY to keep s -> k
+     *   findable, so 105 roots come back                    gone
+     * ```
+     *
+     * `l` is safe between two hisses for the same reason it is safe
+     * anywhere: it is in neither pile, so `masl` is not a root and
+     * `lzam` is not a root.
+     *
+     * The rule then fits in one line: **a breaker is `l`, and it goes
+     * wherever two sounds would arrive as one.**
+     */
+    mark: (a, b) => {
+      const x = a[a.length - 1]
+      const y = b[0]
+      if (x === y) {
+        return x === 'l' ? 'r' : 'l'
+      }
+      if (HISS.has(x) && HISS.has(y)) {
+        return 'l'
+      }
+      const seam =
+        (endsCluster(a) ? a.slice(2) : x) +
+        (startsCluster(b) ? b.slice(0, 2) : y)
+      if (seam.length >= 4 && ![...seam].some(one => SONOROUS.has(one))) {
+        return 'l'
+      }
+      return null
     },
   },
 ]
@@ -377,13 +544,11 @@ const POLICIES: Array<Policy> = [
  * Tune has no geminates. That sharing is the whole problem.
  */
 function render(a: string, b: string, mark: Policy['mark']): string {
-  const x = a[a.length - 1]
-  const y = b[0]
-  const br = mark(x, y)
+  const br = mark(a, b)
   if (br) {
     return a + br + b
   }
-  return x === y ? a + b.slice(1) : a + b
+  return a[a.length - 1] === b[0] ? a + b.slice(1) : a + b
 }
 
 /**
@@ -431,7 +596,7 @@ const found: Array<string> = []
 const lostBy = new Map<string, number>()
 const sample = new Map<string, Array<string>>()
 /** Which policy the cut-list report is built for. */
-const BLAME_ON = process.env.BLAME_ON ?? 'stop+l'
+const BLAME_ON = process.env.BLAME_ON ?? 'settled'
 
 /** Which cluster each surviving ambiguity leans on, under `BLAME_ON`. */
 const blame = new Map<string, number>()
@@ -454,13 +619,12 @@ for (const policy of POLICIES) {
   let amb = 0
   let lost = 0
   for (const a of roots) {
-    const x = a[a.length - 1]
     for (const b of roots) {
       const surface = render(a, b, policy.mark)
       if (surface.length > a.length + b.length) {
         marked++
         if (policy.name === BLAME_ON) {
-          const run = `${x}${policy.mark(x, b[0])}${b[0]}`
+          const run = `${a[a.length - 1]}${policy.mark(a, b)}${b[0]}`
           runs.set(run, (runs.get(run) ?? 0) + 1)
         }
       }
@@ -600,6 +764,112 @@ if (runs.size) {
     `\n  distinct runs ${runs.size}, and every one is three consonants\n` +
       `  with the breaker in the middle.\n`,
   )
+}
+
+// ─── How long the consonant run gets ────────────────────
+
+/**
+ * The question `readings` cannot ask: how many consonants end up in a
+ * row, and can a mouth do that.
+ *
+ * **A `CVCC` meeting a `CCVC` is four consonants before any breaker
+ * is added**, and the disjoint rule makes it perfectly legal and
+ * perfectly unambiguous. `vabz + sram` is `vabzsram`. If the two
+ * facing sounds are both hisses a stop goes between them and it is
+ * five: `vabzgsram`.
+ *
+ * Nothing in the ambiguity measurement notices this, because it parses
+ * fine. It is the same blind spot that let an `h` breaker through, one
+ * level up: that one made an unsayable THREE, this makes an unsayable
+ * FIVE, and both decode to exactly one pair of roots.
+ */
+/**
+ * The sounds that can carry a run.
+ *
+ * A liquid or a nasal has its own resonance, so a long consonant run
+ * holding one has a sonority peak to lean on and can be syllabified
+ * around it. A run of nothing but obstruents has nowhere to breathe:
+ * `gzgsm` and `gzlsm` are the same LENGTH and not the same problem.
+ */
+{
+  const spread = new Map<number, number>()
+  let worst = ''
+  let worstAt = 0
+  let longFlat = 0
+  let longHeld = 0
+  const flatShow: Array<string> = []
+  const rule = POLICIES[POLICIES.length - 1].mark
+  for (const a of roots) {
+    for (const b of roots) {
+      const surface = render(a, b, rule)
+      let run = 0
+      let best = 0
+      let bestRun = ''
+      let now = ''
+      for (const ch of surface) {
+        if (VOWELS.includes(ch)) {
+          run = 0
+          now = ''
+          continue
+        }
+        run += 1
+        now += ch
+        if (run > best) {
+          best = run
+          bestRun = now
+        }
+      }
+      spread.set(best, (spread.get(best) ?? 0) + 1)
+      if (best >= 4) {
+        if ([...bestRun].some(one => SONOROUS.has(one))) {
+          longHeld++
+        } else {
+          longFlat++
+          if (flatShow.length < 6) {
+            flatShow.push(`${a} + ${b} -> ${surface}   ${bestRun}`)
+          }
+        }
+      }
+      if (best > worstAt) {
+        worstAt = best
+        worst = `${a} + ${b} -> ${surface}`
+      }
+    }
+  }
+  const all = roots.length * roots.length
+  process.stdout.write(
+    '\n  THE CONSONANT RUN AT A SEAM, under the settled rule\n\n' +
+      `  ${'run'.padEnd(8)}${'pairs'.padStart(14)}${'share'.padStart(10)}\n`,
+  )
+  for (const [size, n] of [...spread].sort((a, b) => a[0] - b[0])) {
+    process.stdout.write(
+      `  ${String(size).padEnd(8)}${n.toLocaleString().padStart(14)}` +
+        `${`${((n / all) * 100).toFixed(3)}%`.padStart(10)}` +
+        // Not "unsayable": English manages `sixths`, and Georgian and
+        // Polish go further. But NO TUNE ROOT holds more than two, so
+        // a speaker meets these only at a seam and has never practised
+        // them, and the language is meant to be easy across mouths.
+        `${size >= 4 ? '   <- more than any root allows' : ''}\n`,
+    )
+  }
+  const bad = [...spread]
+    .filter(([size]) => size >= 4)
+    .reduce((sum, [, n]) => sum + n, 0)
+  process.stdout.write(
+    `\n  ${((bad / all) * 100).toFixed(3)}% of pairs hold four or more ` +
+      `consonants in a row.\n  worst: ${worst}\n\n` +
+      '  OF THOSE LONG RUNS, does anything in them carry sonority:\n\n' +
+      `  ${'holds a liquid or nasal'.padEnd(26)}` +
+      `${longHeld.toLocaleString().padStart(12)}` +
+      `${`${((longHeld / all) * 100).toFixed(3)}%`.padStart(10)}\n` +
+      `  ${'ALL obstruent'.padEnd(26)}${longFlat.toLocaleString().padStart(12)}` +
+      `${`${((longFlat / all) * 100).toFixed(3)}%`.padStart(10)}` +
+      `${longFlat ? '   <- nowhere to breathe' : '   <- none left'}\n`,
+  )
+  if (flatShow.length) {
+    process.stdout.write('\n  still all obstruent:\n')
+    for (const one of flatShow) process.stdout.write(`    ${one}\n`)
+  }
 }
 
 process.stdout.write('\n  what each policy is:\n')

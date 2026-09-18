@@ -22,7 +22,8 @@ import { CODA_CLUSTERS, CONSONANTS, ONSET_CLUSTERS, VOWELS, WORD_RULES } from '.
 
 const OPENS = new Set(['b', 'd', 'f', 'g', 's', 'v'])
 const CLOSES = new Set(['c', 'j', 'k', 'p', 't', 'x', 'z'])
-const CUT = new Set(['sk'])
+/** Nothing is cut. `sk` came back when the stop breaker went away. */
+const CUT = new Set<string>()
 
 const SKIP = new Set(['known_onset', 'known_coda', 'no_wa_start'])
 const legal = (word: string) =>
@@ -47,36 +48,45 @@ for (const a of CONSONANTS) {
 }
 
 /**
- * The settled seam rule, and `v4:seam` is where it is measured.
+ * The settled seam rule, measured by `v4:seam`.
  *
- * ```text
- * two of the SAME sound   ->   l        r, if the sound is l
- * two DIFFERENT hisses    ->   the stop at that hiss's voicing
- * ```
+ * **A breaker is `l`, and it goes wherever two sounds would arrive as
+ * one.** `r` takes the one seam `l` cannot break, a doubled `l`.
  *
- * Sameness is checked FIRST. `maj + jam` is both cases at once, and
- * the hiss branch would give `majdjam`, which reads back as
- * `maj + djam` because `dj` opens roots.
+ * That is the whole rule. It replaced a six entry table of stops, one
+ * at each hiss's own place and voicing, which worked only while `sk`
+ * was cut from the codas and so was costing 105 roots.
  *
- * None of the eight takes a breaker either way: their seams are
- * `m|n`, `d|n`, `v|n`, `m|n` and `t|y`.
+ * None of the eight takes a breaker: their seams are `m|n`, `d|n`,
+ * `v|n`, `m|n` and `t|y`.
  */
-const STOP: Record<string, string> = {
-  s: 'k', z: 'g', x: 't', j: 'd', f: 'p', v: 'b',
-}
-const HISS = new Set(Object.keys(STOP))
+const HISS = new Set(['s', 'z', 'x', 'j', 'f', 'v'])
+const SONOROUS = new Set(['l', 'r', 'm', 'n', 'q', 'w', 'y'])
 
-function breaker(x: string, y: string): string {
+function breaker(a: string, b: string): string {
+  const x = a[a.length - 1]
+  const y = b[0]
   if (x === y) {
     return x === 'l' ? 'r' : 'l'
   }
-  return HISS.has(x) && HISS.has(y) ? STOP[x] : ''
+  if (HISS.has(x) && HISS.has(y)) {
+    return 'l'
+  }
+  // A cluster meeting a cluster is four consonants with nothing to
+  // lean on, even where neither rule above fires: `migz + djim`.
+  const seam =
+    (a.length === 4 && VOWELS.includes(a[1]) ? a.slice(2) : x) +
+    (b.length === 4 && !VOWELS.includes(b[1]) ? b.slice(0, 2) : y)
+  if (seam.length >= 4 && ![...seam].some(one => SONOROUS.has(one))) {
+    return 'l'
+  }
+  return ''
 }
 
 function join(parts: Array<string>): string {
   let out = parts[0]
   for (const one of parts.slice(1)) {
-    out += breaker(out[out.length - 1], one[0]) + one
+    out += breaker(out, one) + one
   }
   return out
 }
