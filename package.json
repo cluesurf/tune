@@ -85,7 +85,11 @@
     "v4:species": "tsx make/v4/code/species.ts",
     "v4:flat": "tsx make/v4/code/flat.ts",
     "v4:smooth": "tsx make/v4/code/smooth.ts",
-    "v4:close": "tsx make/v4/code/close.ts"
+    "v4:close": "tsx make/v4/code/close.ts",
+    "v8:pick": "tsx make/v8/code/pick.ts",
+    "v8:most": "tsx make/v8/code/most.ts",
+    "v8:join": "tsx make/v8/code/join.ts",
+    "v16:pick": "tsx make/v16/code/pick.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

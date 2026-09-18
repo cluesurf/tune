@@ -64,7 +64,7 @@ afford,noft,noft,CVCC,fill,kept
 after,ret,ret,CVC,hand,fixed
 afterward,plot,plot,CCVC,fill,kept
 again,pal,pal,CVC,short,kept
-against,zof,fed,CVC,short,moved
+against,zof,zof,CVC,short,kept
 age,hedj,hedj,CVCC,hand,fixed
 agent,yug,yug,CVC,short,kept
 aggregate,kan,kan,CVC,hand,fixed
@@ -80,7 +80,7 @@ aim,hond,hond,CVCC,fill,kept
 air,les,les,CVC,hand,fixed
 alarm,desk,desk,CVCC,fill,kept
 alas,grev,grev,CCVC,fill,kept
-alcohol,koqk,gadz,CVCC,fill,moved
+alcohol,koqk,xogz,CVCC,fill,moved
 alert,palv,palv,CVCC,fill,kept
 algorithm,riC,riC,CVC,hand,fixed
 alias,wolk,wolk,CVCC,fill,kept
@@ -111,7 +111,7 @@ always,naq,naq,CVC,short,kept
 amaze,smiq,smiq,CCVC,fill,kept
 ambiguous,vrax,vrax,CCVC,fill,kept
 ambush,yorp,yorp,CVCC,fill,kept
-ammonia,smav,slim,CCVC,fill,moved
+ammonia,smav,smav,CCVC,fill,kept
 among,gorf,gorf,CVCC,fill,fixed
 amount,barg,barg,CVCC,fill,fixed
 amp,trot,trot,CCVC,fill,kept
@@ -170,12 +170,12 @@ arena,glib,glib,CCVC,fill,kept
 argue,tint,tint,CVCC,fill,kept
 arithmetic,smex,smex,CCVC,fill,kept
 arm,marb,marb,CVCC,fill,kept
-around,poz,bin,CVC,short,moved
+around,poz,yum,CVC,short,moved
 arouse,snuv,snuv,CCVC,fill,kept
 arrange,hent,hent,CVCC,fill,kept
 arrive,tomp,tomp,CVCC,fill,kept
 arrogant,ribz,ribz,CVCC,fill,kept
-arrow,jift,Ceqk,CVCC,fill,moved
+arrow,jift,golz,CVCC,fill,moved
 arson,djun,djun,CCVC,fill,kept
 art,meqk,meqk,CVCC,fill,kept
 artery,yubz,yubz,CVCC,fill,kept
@@ -203,7 +203,7 @@ attach,totx,totx,CVCC,hand,fixed
 attack,wuf,wuf,CVC,short,kept
 attempt,tedj,tedj,CVCC,fill,kept
 attend,setx,setx,CVCC,fill,kept
-attention,rix,jig,CVC,short,moved
+attention,rix,hif,CVC,short,moved
 attitude,biks,biks,CVCC,fill,kept
 attract,yaqk,yaqk,CVCC,fill,fixed
 attribute,skev,skev,CCVC,fill,kept
@@ -278,7 +278,7 @@ beauty,bat,bat,CVC,hand,fixed
 because,tuz,tuz,CVC,hand,fixed
 become,jef,jef,CVC,short,kept
 bed,vif,vif,CVC,short,kept
-bee,fest,gabz,CVCC,fill,moved
+bee,fest,losk,CVCC,fill,moved
 beep,brip,brip,CCVC,hand,fixed
 beer,mimp,mimp,CVCC,fill,kept
 before,tor,tor,CVC,hand,fixed
@@ -287,14 +287,14 @@ begin,mork,mork,CVCC,fill,kept
 behave,kolv,kolv,CVCC,fill,kept
 behind,vib,vib,CVC,short,kept
 believe,pof,pof,CVC,short,kept
-bell,gent,gent,CVCC,fill,kept
+bell,gent,kubz,CVCC,fill,moved
 belong,norb,norb,CVCC,fill,kept
 below,dodj,dodj,CVCC,fill,kept
 belt,barz,barz,CVCC,fill,kept
 bend,bend,bend,CVCC,hand,fixed
 beneath,vodz,vodz,CVCC,fill,kept
 benefit,sint,sint,CVCC,fill,kept
-berry,glaf,blom,CCVC,fill,moved
+berry,glaf,spug,CCVC,fill,moved
 beside,sadj,sadj,CVCC,hand,fixed
 bet,vop,vop,CVC,short,kept
 betray,xedz,xedz,CVCC,fill,kept
@@ -305,7 +305,7 @@ bid,visk,visk,CVCC,fill,kept
 big,brat,brat,CCVC,hand,fixed
 bile,vriz,vriz,CCVC,fill,kept
 bill,xaz,xaz,CVC,short,kept
-bind,bin,poz,CVC,short,moved
+bind,bin,huc,CVC,short,moved
 bird,bax,bax,CVC,hand,fixed
 birth,dolb,dolb,CVCC,fill,fixed
 bit,vic,vic,CVC,hand,fixed
@@ -338,7 +338,7 @@ blue,bul,bul,CVC,hand,fixed
 bluff,calv,calv,CVCC,fill,kept
 blunt,ruqk,ruqk,CVCC,fill,kept
 blur,blor,blor,CCVC,hand,fixed
-board,marz,vint,CVCC,fill,moved
+board,marz,Ceqk,CVCC,fill,moved
 boast,spun,spun,CCVC,fill,kept
 boat,bot,bot,CVC,hand,fixed
 bob,ror,ror,CVC,short,kept
@@ -499,7 +499,7 @@ cavity,djub,djub,CCVC,fill,kept
 cease,skoq,skoq,CCVC,hand,fixed
 ceiling,xorf,xorf,CVCC,fill,kept
 celebrate,badz,badz,CVCC,fill,kept
-cell,mudz,weqk,CVCC,fill,moved
+cell,mudz,vint,CVCC,fill,moved
 celsius,sals,sals,CVCC,hand,fixed
 cement,lolb,lolb,CVCC,fill,kept
 center,nav,nav,CVC,hand,fixed
@@ -544,8 +544,8 @@ chime,xam,xam,CVC,hand,fixed
 chin,vigz,vigz,CVCC,fill,kept
 chip,txap,txap,CCVC,hand,fixed
 chisel,skam,skam,CCVC,fill,kept
-chlorine,vraq,djez,CCVC,fill,moved
-chocolate,dadj,jamp,CVCC,fill,moved
+chlorine,vraq,vraq,CCVC,fill,kept
+chocolate,dadj,sosp,CVCC,fill,moved
 choir,yups,yups,CVCC,fill,kept
 choke,cift,cift,CVCC,fill,kept
 choose,txuz,txuz,CCVC,hand,fixed
@@ -588,7 +588,7 @@ client,must,must,CVCC,fill,kept
 cliff,pidj,pidj,CVCC,fill,kept
 climate,glek,glek,CCVC,fill,kept
 climb,kim,kim,CVC,hand,fixed
-cling,blan,spug,CCVC,fill,moved
+cling,blan,blan,CCVC,fill,kept
 clip,yagz,yagz,CVCC,fill,kept
 clitoris,spuq,spuq,CCVC,fill,kept
 clock,klak,klak,CCVC,hand,fixed
@@ -657,7 +657,7 @@ comply,pron,pron,CCVC,fill,kept
 component,smif,smif,CCVC,fill,kept
 compose,smed,smed,CCVC,fill,kept
 composite,snov,snov,CCVC,fill,kept
-compound,Ceqk,jift,CVCC,fill,moved
+compound,Ceqk,vodj,CVCC,fill,moved
 compress,frav,frav,CCVC,fill,kept
 compulsion,snoc,snoc,CCVC,fill,kept
 compute,vrot,vrot,CCVC,fill,kept
@@ -781,7 +781,7 @@ crest,txeb,txeb,CCVC,fill,kept
 crew,neft,neft,CVCC,fill,kept
 crime,memp,memp,CVCC,fill,kept
 crimson,snaq,snaq,CCVC,fill,kept
-crisp,djez,vraq,CCVC,fill,moved
+crisp,djez,djez,CCVC,fill,kept
 critic,grat,grat,CCVC,fill,kept
 critique,flov,flov,CCVC,fill,kept
 crocodile,plev,plev,CCVC,fill,kept
@@ -801,7 +801,7 @@ crush,karb,karb,CVCC,fill,kept
 crust,djid,djid,CCVC,fill,kept
 cry,mard,mard,CVCC,fill,kept
 cryptic,spuf,spuf,CCVC,fill,kept
-crystal,kuqk,vodj,CVCC,fill,moved
+crystal,kuqk,kuqk,CVCC,fill,kept
 cube,kub,kub,CVC,hand,fixed
 cuckoo,djuk,djuk,CCVC,fill,kept
 cucumber,txok,txok,CCVC,fill,kept
@@ -822,7 +822,7 @@ curtain,fadz,fadz,CVCC,fill,kept
 curve,kurv,kurv,CVCC,hand,fixed
 cushion,plun,plun,CCVC,fill,kept
 custom,calf,calf,CVCC,fill,kept
-cut,zep,zep,CVC,short,kept
+cut,zep,haj,CVC,short,moved
 cute,klut,klut,CCVC,hand,fixed
 cycle,rol,rol,CVC,hand,fixed
 cylinder,smeb,smeb,CCVC,fill,kept
@@ -847,7 +847,7 @@ day,yam,yam,CVC,hand,fixed
 daylight,fuks,fuks,CVCC,fill,kept
 daze,flix,flix,CCVC,fill,kept
 dazzle,stex,stex,CCVC,fill,kept
-dead,tis,fud,CVC,short,moved
+dead,tis,tis,CVC,short,kept
 deaf,huks,huks,CVCC,fill,kept
 deal,djat,djat,CCVC,hand,fixed
 dear,zev,zev,CVC,short,kept
@@ -1025,7 +1025,7 @@ drift,ceqk,ceqk,CVCC,fill,kept
 drill,suqk,suqk,CVCC,fill,kept
 drink,dug,dug,CVC,hand,fixed
 drip,rand,rand,CVCC,fill,kept
-drive,feq,pij,CVC,short,moved
+drive,feq,feq,CVC,short,kept
 drool,drul,drul,CCVC,hand,fixed
 drop,drap,drap,CCVC,hand,fixed
 drought,snit,snit,CCVC,fill,kept
@@ -1125,7 +1125,7 @@ entire,wed,wed,CVC,short,kept
 envelope,falv,falv,CVCC,fill,kept
 environment,ron,ron,CVC,hand,fixed
 envy,fusp,fusp,CVCC,fill,kept
-enzyme,spug,blan,CCVC,fill,moved
+enzyme,spug,glaf,CCVC,fill,moved
 epic,pref,pref,CCVC,fill,kept
 episode,vand,vand,CVCC,fill,kept
 equilibrium,skix,skix,CCVC,fill,kept
@@ -1161,7 +1161,7 @@ example,dest,dest,CVCC,fill,kept
 exceed,snot,snot,CCVC,fill,kept
 excellent,musk,musk,CVCC,fill,kept
 except,Coz,Coz,CVC,hand,fixed
-excess,djoz,frep,CCVC,fill,moved
+excess,djoz,djoz,CCVC,fill,kept
 exchange,porb,porb,CVCC,fill,kept
 excite,plux,plux,CCVC,fill,kept
 exclude,bal,bal,CVC,short,kept
@@ -1212,7 +1212,7 @@ fad,vric,vric,CCVC,fill,kept
 fade,yarv,yarv,CVCC,fill,kept
 fahrenheit,vrab,vrab,CCVC,fill,kept
 fail,fur,fur,CVC,hand,fixed
-faint,xisk,golz,CVCC,fill,moved
+faint,xisk,xisk,CVCC,fill,kept
 fair,rom,rom,CVC,short,kept
 fairy,kalb,kalb,CVCC,fill,kept
 faith,narp,narp,CVCC,fill,kept
@@ -1232,7 +1232,7 @@ farm,desp,desp,CVCC,fill,kept
 fashion,tarv,tarv,CVCC,fill,kept
 fast,fast,fast,CVCC,hand,fixed
 fasten,grod,grod,CCVC,fill,kept
-fat,wes,yum,CVC,short,moved
+fat,wes,wes,CVC,short,kept
 fate,driv,driv,CCVC,hand,fixed
 father,bab,bab,CVC,hand,fixed
 fault,yob,yob,CVC,short,kept
@@ -1258,13 +1258,13 @@ fetch,vusp,vusp,CVCC,fill,kept
 feud,snax,snax,CCVC,fill,kept
 fever,pudz,tusk,CVCC,fill,moved
 few,flun,flun,CCVC,hand,fixed
-fiber,djot,blop,CCVC,fill,moved
+fiber,djot,slim,CCVC,fill,moved
 fiction,colb,colb,CVCC,fill,kept
 fiddle,glit,glit,CCVC,fill,kept
 field,gor,gor,CVC,short,kept
 fierce,lebz,lebz,CVCC,fill,kept
 fight,flet,flet,CCVC,hand,fixed
-figure,fud,tis,CVC,short,moved
+figure,fud,fud,CVC,short,kept
 file,nold,nold,CVCC,fill,kept
 fill,nolb,nolb,CVCC,fill,fixed
 filter,vek,vek,CVC,hand,fixed
@@ -1272,7 +1272,7 @@ fin,glov,glov,CCVC,fill,kept
 final,nend,nend,CVCC,fill,kept
 find,fan,fan,CVC,hand,fixed
 fine,pol,pol,CVC,short,kept
-finger,gart,kubz,CVCC,fill,moved
+finger,gart,gart,CVCC,fill,kept
 finite,freg,freg,CCVC,fill,fixed
 fire,for,for,CVC,hand,fixed
 firm,goqk,goqk,CVCC,fill,kept
@@ -1286,7 +1286,7 @@ flag,ded,ded,CVC,short,kept
 flair,pliv,pliv,CCVC,fill,kept
 flake,kron,kron,CCVC,fill,kept
 flame,flem,flem,CCVC,hand,fixed
-flap,briv,snaz,CCVC,fill,moved
+flap,briv,briv,CCVC,fill,kept
 flare,wogz,wogz,CVCC,fill,kept
 flash,hest,hest,CVCC,fill,kept
 flat,flat,flat,CCVC,hand,fixed
@@ -1314,7 +1314,7 @@ flush,flux,flux,CCVC,hand,fixed
 flute,txic,txic,CCVC,fill,kept
 flutter,skom,skom,CCVC,fill,kept
 fly,lab,lab,CVC,short,kept
-foam,glaq,flup,CCVC,fill,moved
+foam,glaq,glaq,CCVC,fill,kept
 focus,kat,kat,CVC,hand,fixed
 fog,farg,farg,CVCC,hand,fixed
 foil,snuf,snuf,CCVC,fill,kept
@@ -1425,7 +1425,7 @@ genius,gorg,gorg,CVCC,fill,kept
 gentle,kogz,kogz,CVCC,fill,kept
 genuine,xund,xund,CVCC,fill,kept
 geometry,trav,trav,CCVC,fill,kept
-germ,snop,brim,CCVC,fill,moved
+germ,snop,frep,CCVC,fill,moved
 gesture,jorg,jorg,CVCC,fill,kept
 get,cit,cit,CVC,hand,fixed
 ghost,gost,gost,CVCC,hand,fixed
@@ -1436,9 +1436,9 @@ girl,pud,pud,CVC,short,kept
 give,gif,gif,CVC,hand,fixed
 glad,vof,vof,CVC,short,kept
 glance,glop,glop,CCVC,fill,kept
-gland,smaq,glad,CCVC,fill,moved
+gland,smaq,fron,CCVC,fill,moved
 glass,malz,malz,CVCC,fill,fixed
-glaze,sket,grom,CCVC,fill,moved
+glaze,sket,blop,CCVC,fill,moved
 glide,glan,glan,CCVC,hand,fixed
 global,caqk,caqk,CVCC,fill,kept
 gloom,spix,spix,CCVC,fill,kept
@@ -1454,10 +1454,10 @@ god,gad,gad,CVC,hand,fixed
 gold,god,god,CVC,hand,fixed
 gong,bluv,bluv,CCVC,fill,kept
 good,taf,taf,CVC,hand,fixed
-goods,veft,hisp,CVCC,fill,moved
+goods,veft,sosk,CVCC,fill,moved
 goose,zarv,zarv,CVCC,fill,kept
 gossip,jebz,jebz,CVCC,fill,kept
-gourd,flup,glaq,CCVC,fill,moved
+gourd,flup,flup,CCVC,fill,kept
 govern,snut,snut,CCVC,fill,kept
 grab,mend,mend,CVCC,fill,kept
 grace,nuts,nuts,CVCC,fill,kept
@@ -1476,7 +1476,7 @@ grate,stiz,stiz,CCVC,fill,kept
 gratitude,jeft,jeft,CVCC,fill,kept
 grave,bint,bint,CVCC,fill,kept
 gravity,Cotx,Cotx,CVCC,fill,kept
-gray,petx,sosk,CVCC,fill,moved
+gray,petx,petx,CVCC,fill,kept
 graze,vreb,vreb,CCVC,fill,kept
 grease,Carg,Carg,CVCC,fill,kept
 great,mac,mac,CVC,hand,fixed
@@ -1527,7 +1527,7 @@ happen,sak,sak,CVC,short,kept
 happy,keq,keq,CVC,short,kept
 harass,snej,snej,CCVC,fill,kept
 harbor,vubz,vubz,CVCC,fill,kept
-hard,kad,pup,CVC,short,moved
+hard,kad,haf,CVC,short,moved
 harm,drak,drak,CCVC,hand,fixed
 harmony,maq,maq,CVC,hand,fixed
 harp,brem,brem,CCVC,fill,kept
@@ -1605,7 +1605,7 @@ hop,flap,flap,CCVC,hand,fixed
 hope,hop,hop,CVC,hand,fixed
 horizon,lutx,lutx,CVCC,fill,kept
 horizontal,smad,smad,CCVC,fill,kept
-hormone,snen,glaf,CCVC,fill,moved
+hormone,snen,snen,CCVC,fill,kept
 horn,peks,peks,CVCC,fill,kept
 horse,hors,hors,CVCC,hand,fixed
 hospital,xes,xes,CVC,short,kept
@@ -1638,7 +1638,7 @@ hurry,vaz,vaz,CVC,short,kept
 hurt,zis,zis,CVC,short,kept
 hut,zamp,zamp,CVCC,fill,kept
 hybrid,txav,txav,CCVC,fill,kept
-hydrogen,brim,snop,CCVC,fill,moved
+hydrogen,brim,brim,CCVC,fill,kept
 hypocrite,djik,djik,CCVC,fill,kept
 hypothesis,skon,skon,CCVC,fill,kept
 i,mim,mim,CVC,short,kept
@@ -1659,7 +1659,7 @@ image,madj,madj,CVCC,hand,fixed
 imagine,xip,xip,CVC,hand,fixed
 imitate,trut,trut,CCVC,fill,kept
 immediate,volf,volf,CVCC,fill,kept
-immune,weqk,suft,CVCC,fill,moved
+immune,weqk,weqk,CVCC,fill,kept
 impact,xidj,xidj,CVCC,fill,kept
 imply,druz,druz,CCVC,fill,kept
 import,beg,beg,CVC,short,kept
@@ -1684,7 +1684,7 @@ inevitable,yarb,yarb,CVCC,fill,kept
 infect,snub,snub,CCVC,fill,kept
 infer,fliq,fliq,CCVC,fill,kept
 infinite,git,git,CVC,hand,fixed
-inflammation,frep,djoz,CCVC,fill,moved
+inflammation,frep,snop,CCVC,fill,moved
 inflate,flox,flox,CCVC,fill,kept
 influence,hogz,hogz,CVCC,fill,kept
 inform,vips,vips,CVCC,fill,kept
@@ -1770,7 +1770,7 @@ jet,sift,sift,CVCC,fill,kept
 jewel,djul,djul,CCVC,hand,fixed
 jewelry,vudz,vudz,CVCC,fill,kept
 job,goq,goq,CVC,hand,fixed
-join,goz,huc,CVC,short,moved
+join,goz,goz,CVC,short,kept
 joint,dolf,dolf,CVCC,fill,kept
 joke,djok,djok,CCVC,hand,fixed
 jolt,snib,snib,CCVC,fill,kept
@@ -1829,7 +1829,7 @@ lamp,zunt,zunt,CVCC,fill,kept
 land,lan,lan,CVC,hand,fixed
 language,gar,gar,CVC,hand,fixed
 lap,ziqk,ziqk,CVCC,fill,kept
-large,giqk,xogz,CVCC,fill,moved
+large,giqk,gadz,CVCC,fill,moved
 larva,larv,larv,CVCC,hand,fixed
 larynx,spev,spev,CCVC,fill,kept
 lash,klag,klag,CCVC,fill,kept
@@ -1839,7 +1839,7 @@ late,seg,seg,CVC,short,kept
 lateral,smef,smef,CCVC,fill,kept
 laugh,laft,laft,CVCC,hand,fixed
 launch,puqk,puqk,CVCC,fill,kept
-lava,glod,skaq,CCVC,fill,moved
+lava,glod,glod,CCVC,fill,kept
 law,xuf,xuf,CVC,short,kept
 lay,gled,gled,CCVC,hand,fixed
 layer,grof,grof,CCVC,fill,kept
@@ -2099,7 +2099,7 @@ mumble,vrij,vrij,CCVC,fill,kept
 murder,yed,yed,CVC,short,kept
 murky,froz,froz,CCVC,fill,kept
 murmur,stum,stum,CCVC,fill,kept
-muscle,suft,mudz,CVCC,fill,moved
+muscle,suft,suft,CVCC,fill,kept
 museum,tunt,tunt,CVCC,fill,kept
 mush,draq,draq,CCVC,fill,kept
 music,feb,feb,CVC,short,kept
@@ -2273,7 +2273,7 @@ package,pak,pak,CVC,hand,fixed
 packet,blag,blag,CCVC,fill,kept
 pad,xunt,xunt,CVCC,fill,kept
 paddle,graz,graz,CCVC,fill,kept
-page,gadz,koqk,CVCC,fill,moved
+page,gadz,giqk,CVCC,fill,moved
 pain,muz,muz,CVC,hand,fixed
 paint,pent,pent,CVCC,hand,fixed
 pair,den,den,CVC,short,kept
@@ -2292,7 +2292,7 @@ parade,zump,zump,CVCC,fill,kept
 paradox,snod,snod,CCVC,fill,kept
 parallel,wist,wist,CVCC,fill,fixed
 paramount,pleq,pleq,CCVC,fill,kept
-parasite,blop,djot,CCVC,fill,moved
+parasite,blop,sket,CCVC,fill,moved
 parcel,snid,snid,CCVC,fill,kept
 pardon,mart,mart,CVCC,fill,kept
 parent,sas,sas,CVC,hand,fixed
@@ -2360,7 +2360,7 @@ perspective,xolf,xolf,CVCC,fill,kept
 persuade,cebz,cebz,CVCC,fill,kept
 pest,dred,dred,CCVC,fill,kept
 pet,polb,polb,CVCC,fill,kept
-petal,skaq,glod,CCVC,fill,moved
+petal,skaq,skaq,CCVC,fill,kept
 phase,vest,vest,CVCC,fill,kept
 pheasant,vrin,vrin,CCVC,fill,kept
 phenomenon,lolv,lolv,CVCC,fill,kept
@@ -2368,8 +2368,8 @@ phew,txep,txep,CCVC,fill,kept
 phosphorus,friq,friq,CCVC,fill,kept
 physical,dak,dak,CVC,hand,fixed
 pick,pruk,pruk,CCVC,hand,fixed
-picture,foz,hif,CVC,short,moved
-piece,fuf,fuf,CVC,short,kept
+picture,foz,foz,CVC,short,kept
+piece,fuf,jig,CVC,short,moved
 pierce,bent,bent,CVCC,fill,kept
 pig,prag,prag,CCVC,hand,fixed
 pile,zagz,zagz,CVCC,fill,kept
@@ -2449,7 +2449,7 @@ potato,volk,volk,CVCC,fill,kept
 potential,taft,taft,CVCC,fill,fixed
 pound,solv,solv,CVCC,fill,kept
 pour,haft,haft,CVCC,fill,kept
-powder,kubz,gart,CVCC,fill,moved
+powder,kubz,gent,CVCC,fill,moved
 power,fep,fep,CVC,short,fixed
 practical,vold,vold,CVCC,fill,kept
 practice,nalp,nalp,CVCC,fill,kept
@@ -2516,7 +2516,7 @@ propose,zomp,zomp,CVCC,fill,kept
 prose,stuf,stuf,CCVC,fill,kept
 prostitute,jarv,jarv,CVCC,fill,kept
 protect,meps,meps,CVCC,fill,kept
-protein,ludz,rosk,CVCC,fill,moved
+protein,ludz,ralz,CVCC,fill,moved
 protest,xarb,xarb,CVCC,fill,kept
 protocol,jogz,jogz,CVCC,fill,kept
 proud,lol,lol,CVC,short,kept
@@ -2747,12 +2747,12 @@ roll,mald,mald,CVCC,fill,kept
 romance,hemp,hemp,CVCC,fill,kept
 room,tif,tif,CVC,short,kept
 roost,skag,skag,CCVC,fill,kept
-root,febz,lalz,CVCC,fill,moved
+root,febz,febz,CVCC,fill,kept
 rope,bolk,bolk,CVCC,fill,kept
 rose,roz,roz,CVC,hand,fixed
-rot,jamp,dadj,CVCC,fill,moved
+rot,jamp,jamp,CVCC,fill,kept
 rotate,txub,txub,CCVC,fill,kept
-rough,gabz,fest,CVCC,fill,moved
+rough,gabz,gabz,CVCC,fill,kept
 round,maps,maps,CVCC,fill,kept
 route,peqk,peqk,CVCC,fill,kept
 routine,pusp,pusp,CVCC,fill,kept
@@ -2769,8 +2769,8 @@ rumor,fetx,fetx,CVCC,fill,kept
 run,rin,rin,CVC,hand,fixed
 rupture,snaj,snaj,CCVC,fill,kept
 rush,dift,dift,CVCC,fill,kept
-rust,blom,snen,CCVC,fill,moved
-sac,snaz,briv,CCVC,fill,moved
+rust,blom,blom,CCVC,fill,kept
+sac,snaz,snaz,CCVC,fill,kept
 sacred,sebz,sebz,CVCC,fill,kept
 sacrifice,kiks,kiks,CVCC,fill,kept
 sad,stud,stud,CCVC,hand,fixed
@@ -2874,7 +2874,7 @@ several,geps,geps,CVCC,fill,kept
 severe,xips,xips,CVCC,fill,kept
 sew,yodz,yodz,CVCC,fill,kept
 sewage,spib,spib,CCVC,fill,kept
-sex,fed,zof,CVC,short,moved
+sex,fed,fed,CVC,short,kept
 sexual,gudz,gudz,CVCC,fill,kept
 shack,yarg,yarg,CVCC,fill,kept
 shade,yimp,yimp,CVCC,fill,kept
@@ -2894,7 +2894,7 @@ she,mom,mom,CVC,short,kept
 sheath,flof,flof,CCVC,fill,kept
 shed,vuts,vuts,CVCC,fill,kept
 sheep,zigz,zigz,CVCC,fill,kept
-sheet,vodj,kuqk,CVCC,fill,moved
+sheet,vodj,marz,CVCC,fill,moved
 shelf,Cabz,Cabz,CVCC,fill,kept
 shell,txal,txal,CCVC,hand,fixed
 shelter,vond,vond,CVCC,fill,kept
@@ -2972,7 +2972,7 @@ sled,driq,driq,CCVC,fill,kept
 sleep,slip,slip,CCVC,hand,fixed
 sleeve,yald,yald,CVCC,fill,kept
 slender,vrat,vrat,CCVC,fill,kept
-slice,xogz,giqk,CVCC,fill,moved
+slice,xogz,koqk,CVCC,fill,moved
 slide,slad,slad,CCVC,hand,fixed
 slight,slet,slet,CCVC,hand,fixed
 slim,valb,valb,CVCC,fill,kept
@@ -2991,7 +2991,7 @@ small,smal,smal,CCVC,hand,fixed
 smart,rez,rez,CVC,short,fixed
 smash,smax,smax,CCVC,hand,fixed
 smear,plof,plof,CCVC,fill,kept
-smell,lug,hac,CVC,short,moved
+smell,lug,hij,CVC,short,moved
 smile,smul,smul,CCVC,hand,fixed
 smoke,smok,smok,CCVC,hand,fixed
 smooth,kind,kind,CVCC,fill,kept
@@ -3156,7 +3156,7 @@ stitch,jodj,jodj,CVCC,fill,kept
 stock,beps,beps,CVCC,fill,kept
 stomach,stok,stok,CCVC,hand,fixed
 stone,ston,ston,CCVC,hand,fixed
-stool,glad,smaq,CCVC,fill,moved
+stool,glad,glad,CCVC,fill,kept
 stop,nef,nef,CVC,short,fixed
 storage,stoj,stoj,CCVC,hand,fixed
 store,sut,sut,CVC,hand,fixed
@@ -3175,7 +3175,7 @@ stray,yuqk,yuqk,CVCC,fill,kept
 streak,yets,yets,CVCC,fill,kept
 stream,xuts,xuts,CVCC,fill,kept
 street,fef,fef,CVC,short,kept
-stress,hisp,veft,CVCC,fill,moved
+stress,hisp,hisp,CVCC,fill,kept
 stretch,hump,hump,CVCC,fill,kept
 strict,Cand,Cand,CVCC,fill,kept
 strike,nalc,nalc,CVCC,fill,kept
@@ -3211,7 +3211,7 @@ succeed,xigz,xigz,CVCC,fill,kept
 success,ref,ref,CVC,hand,fixed
 such,satx,satx,CVCC,hand,fixed
 suck,gotx,gotx,CVCC,fill,kept
-sudden,golz,xisk,CVCC,fill,moved
+sudden,golz,jift,CVCC,fill,moved
 sue,dabz,dabz,CVCC,fill,kept
 suffer,bugz,bugz,CVCC,fill,kept
 sugar,gand,gand,CVCC,fill,kept
@@ -3331,7 +3331,7 @@ therefore,sliC,sliC,CCVC,hand,fixed
 these,pez,pez,CVC,short,kept
 thick,sesp,sesp,CVCC,fill,kept
 thief,bald,bald,CVCC,fill,kept
-thigh,grom,sket,CCVC,fill,moved
+thigh,grom,grom,CCVC,fill,kept
 thin,porv,porv,CVCC,fill,kept
 thing,niv,niv,CVC,short,fixed
 think,ciqk,ciqk,CVCC,hand,fixed
@@ -3348,7 +3348,7 @@ three,suC,suC,CVC,hand,fixed
 threshold,droq,droq,CCVC,fill,fixed
 thrive,kruz,kruz,CCVC,fill,kept
 throat,galk,galk,CVCC,fill,kept
-through,pup,kad,CVC,short,moved
+through,pup,huj,CVC,short,moved
 throw,jet,jet,CVC,hand,fixed
 thrust,grix,grix,CCVC,fill,kept
 thumb,vals,vals,CVCC,fill,kept
@@ -3375,7 +3375,7 @@ to,mib,mib,CVC,short,kept
 toast,golv,golv,CVCC,fill,kept
 tobacco,Cadj,Cadj,CVCC,fill,kept
 today,taz,taz,CVC,short,kept
-toe,vint,marz,CVCC,fill,moved
+toe,vint,mudz,CVCC,fill,moved
 together,tug,tug,CVC,short,kept
 toil,staq,staq,CCVC,fill,kept
 toilet,daft,daft,CVCC,fill,kept
@@ -3516,7 +3516,7 @@ valley,baqk,baqk,CVCC,fill,kept
 value,val,val,CVC,hand,fixed
 valve,lidz,lidz,CVCC,fill,kept
 van,nidj,nidj,CVCC,fill,kept
-vapor,fron,fron,CCVC,fill,kept
+vapor,fron,smaq,CCVC,fill,moved
 variable,var,var,CVC,hand,fixed
 vary,stux,stux,CCVC,fill,kept
 vast,vast,vast,CVCC,hand,fixed
@@ -3570,7 +3570,7 @@ wage,djaj,djaj,CCVC,fill,kept
 wagon,kift,kift,CVCC,fill,kept
 waist,resp,resp,CVCC,fill,kept
 wait,wet,wet,CVC,hand,fixed
-wake,gat,zen,CVC,short,moved
+wake,gat,gat,CVC,short,kept
 walk,wak,wak,CVC,hand,fixed
 wall,medz,medz,CVCC,fill,kept
 wander,yemp,yemp,CVCC,fill,kept
@@ -3611,7 +3611,7 @@ weld,fraz,fraz,CCVC,fill,kept
 welfare,jiks,jiks,CVCC,fill,kept
 well,pig,pig,CVC,short,kept
 west,web,web,CVC,hand,fixed
-wet,gegz,sosp,CVCC,fill,moved
+wet,gegz,gegz,CVCC,fill,kept
 whale,vols,vols,CVCC,fill,kept
 what,wut,wut,CVC,hand,fixed
 wheat,yesk,yesk,CVCC,fill,kept
@@ -3696,7 +3696,7 @@ yesterday,rek,rek,CVC,short,kept
 yet,yut,yut,CVC,hand,fixed
 yield,dup,dup,CVC,short,kept
 you,dim,dim,CVC,hand,fixed
-young,zen,gat,CVC,short,moved
+young,zen,pij,CVC,short,moved
 yuck,graq,graq,CCVC,fill,kept
 yum,wuqk,wuqk,CVCC,fill,kept
 zap,zap,zap,CVC,hand,fixed
