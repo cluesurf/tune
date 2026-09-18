@@ -288,7 +288,21 @@ const set = new Set(roots)
  * syllable, so it never stands on the left of a seam, and it is the
  * breaker.
  */
-const HISS = new Set(['s', 'z', 'x', 'j', 'f', 'v'])
+/**
+ * The SIBILANTS, and only these four.
+ *
+ * `s z x j` are the strident fricatives, `/s z ʃ ʒ/`. They carry most
+ * of their energy in a narrow high band and they blur into each other,
+ * so two of them running together have only length and a voicing
+ * change between them.
+ *
+ * **`f` and `v` were on this list and should not have been.** They are
+ * non-strident: far lower amplitude and a flat, diffuse spectrum. `masfam`
+ * and `mafsam` are told apart without effort, because an `f` next to
+ * an `s` is a drop in loudness rather than a continuation of the same
+ * noise.
+ */
+const HISS = new Set(['s', 'z', 'x', 'j'])
 
 /** The stop at each fricative's own place and voicing. */
 const STOP: Record<string, string> = {

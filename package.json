@@ -83,7 +83,9 @@
     "v4:check-eight": "tsx make/v4/code/check-eight.ts",
     "v4:seam": "tsx make/v4/code/seam.ts",
     "v4:species": "tsx make/v4/code/species.ts",
-    "v4:flat": "tsx make/v4/code/flat.ts"
+    "v4:flat": "tsx make/v4/code/flat.ts",
+    "v4:smooth": "tsx make/v4/code/smooth.ts",
+    "v4:close": "tsx make/v4/code/close.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

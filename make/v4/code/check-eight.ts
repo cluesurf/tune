@@ -60,7 +60,8 @@ for (const a of CONSONANTS) {
  * None of the eight takes a breaker: their seams are `m|n`, `d|n`,
  * `v|n`, `m|n` and `t|y`.
  */
-const HISS = new Set(['s', 'z', 'x', 'j', 'f', 'v'])
+/** The SIBILANTS only. `f` and `v` are not strident and do not blur. */
+const HISS = new Set(['s', 'z', 'x', 'j'])
 const SONOROUS = new Set(['l', 'r', 'm', 'n', 'q', 'w', 'y'])
 
 function breaker(a: string, b: string): string {
