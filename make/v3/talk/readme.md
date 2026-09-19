@@ -1,3 +1,14 @@
+> **SUPERSEDED. Nothing here is current.**
+>
+> This is **v3 Talk**, and it holds the six joiner tables: `l` before
+> breath, `z` or `s` for a stop against its own family, `m` or `n` for
+> a rub against a rub, and sixty four named pairs behind them.
+>
+> **There is one breaker now, `l`**, and `r` for a doubled `l`. Every
+> policy was measured over every ordered pair and one breaker did the
+> whole job, so the tables are gone. See
+> **[v16](../../v16/readme.md)**. Kept as history.
+
 <h3 align='center'>tune talk</h3>
 <p align='center'>
   The Spoken Tune

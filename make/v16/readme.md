@@ -326,16 +326,66 @@ for. Grow that set, and **the code is ambiguous exactly when some
 dangling suffix is itself a root**, because that is a string which both
 completes one parse and stands alone in another.
 
-```
-pnpm --dir deck/tune v16:decode
+`pnpm --dir deck/tune v16:decode` runs it against two streams:
 
-  bare           4,096 strings   UNIQUELY DECODABLE
-  breakered     12,288 strings   UNIQUELY DECODABLE
+| stream | what it is built from | pieces | verdict |
+| --- | --- | --- | --- |
+| bare | the 4,096 roots, nothing between them | 4,096 | no two sequences spell the same thing |
+| breakered | each root also allowed to carry a breaker: 4,096 × (bare, `+l`, `+r`) | 12,288 | no two sequences spell the same thing |
+
+**"12,288 pieces" is not 12,288 words.** It is the 4,096 roots counted
+three times over, once bare and once for each breaker they might carry,
+because to the decoder `mam` and `maml` are two different things it
+could be looking at. Allowing a breaker after EVERY root is more than
+the rule ever emits, so a pass there covers every compound the language
+can actually produce.
+
+### Why it holds, which matters more than that it holds
+
+| code | tails | vowel-first | shortest | longest | 3 or longer |
+| --- | --- | --- | --- | --- | --- |
+| bare | 659 | 652 | 1 | 4 | 566 |
+| breakered | 2,126 | 2,103 | 1 | 5 | 2,014 |
+
+**It is not that the search dies quickly.** It finds 659 dangling
+suffixes and 566 of them are three letters or more, which is long
+enough to BE a root.
+
+None of them is one, and the reason is a single fact: **every root
+begins with a consonant.** 652 of the 659 start with a vowel, and the
+other 7 are lone consonants. A vowel-initial string is not a root and
+is not the start of one; a single letter is below the three letter
+floor. So the set can never contain a root, which is exactly the
+condition for unique decipherability.
+
+That argument **does not depend on which 4,096 roots were picked**.
+Adding roots, cutting them or swapping them cannot break it, so long as
+every root still opens on a consonant. It is a property of the shapes,
+not of the selection.
+
+### The role vowel needs no search at all
+
+```text
+dom + gon       ->  domgon     bare, a modifier
+dom + gon + a   ->  domgona    the entity
 ```
 
-`breakered` is every root plus every root carrying a breaker, which is
-a SUPERSET of what the rule ever emits, so the pass is conclusive
-rather than suggestive.
+**A role vowel attaches to the whole compound, not to each root.** It
+is the last letter of the word and appears nowhere else, so it never
+enters the stream between two roots and cannot create an ambiguity
+there.
+
+Peeling it off is unambiguous for one reason, and `v16:decode` checks
+that reason rather than assuming it:
+
+```
+roots ending in a vowel   0   none, as required
+breakers                  l r, both consonants
+```
+
+**Every root ends in a consonant and both breakers are consonants**, so
+a word ending in a vowel can only be ending in a role vowel. Strip it,
+and what remains is the stream already proven unique.
 
 **It calibrates itself first.** A verdict that returns in milliseconds
 over 4,096 roots is exactly when a broken check looks like a good

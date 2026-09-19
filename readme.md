@@ -199,18 +199,25 @@ triples. So the question is asked the right way instead, as whether
 the root set is a **uniquely decodable code**, which Sardinas and
 Patterson decide exactly, for every depth at once.
 
-```
-pnpm --dir deck/tune v16:decode
+It passes on both the bare stream and the stream where every root is
+also allowed to carry a breaker, which is more than the rule ever
+emits. **No concatenation of any number of roots can be read two
+ways.**
 
-  bare           4,096 strings   UNIQUELY DECODABLE
-  breakered     12,288 strings   UNIQUELY DECODABLE
-```
+The reason is one fact: **every root begins with a consonant.** The
+search finds 659 leftover fragments and 566 of them are long enough to
+be roots, but 652 start with a vowel and the other 7 are single
+letters, so not one of them can be a root. That argument does not
+depend on which 4,096 roots were chosen, so it survives any change to
+the lexicon.
 
-`breakered` allows a breaker after every root, which is more than the
-rule ever emits, so the pass is conclusive. **No concatenation of any
-number of roots can be read two ways.** The check calibrates itself
-first against a code known to be ambiguous, so a clean pass is not
-just a test that cannot fail.
+**Role vowels need no argument at all.** One lands on the end of a
+whole compound and nowhere else, and since every root ends in a
+consonant, a word ending in a vowel can only be ending in a role
+vowel. Strip it and the rest is the stream above.
+
+The check calibrates itself first against a code known to be
+ambiguous, so a clean pass is not just a test that cannot fail.
 
 ## Word Forms
 
@@ -238,27 +245,6 @@ Tune separates content from control. Things, actions, properties and
 relations carry the meaning. Operators say what to do with it. That is
 what lets a short sentence carry a complicated thought without extra
 grammar.
-
-## Tune Rock
-
-Tune has an older form, **[Tune Rock](make/v3/rock)**, with nine sounds
-and one syllable shape.
-
-```text
-i a u        m n        p t k        h
-```
-
-Every sound is one a body makes with nothing but itself. `m` and `n`
-are the two hums, good and bad. `p`, `t` and `k` are the three drum
-hits, lips and tongue and throat. `h` is the breath, and there it is
-grammar rather than vocabulary: it carries the role syllable and
-appears in no root.
-
-Rock is built for chant, song and humming, and for plain statements. It
-does not join words at all. **2,165 roots, 8,660 words.**
-
-Every Tune sound has exactly one Rock ancestor. The three beats carry
-almost the whole load, `t` alone standing behind `t d s z c C l r`.
 
 ## Word Selection Rules
 

@@ -9,6 +9,11 @@
   <img src='https://github.com/cluesurf/tune/blob/make/view/moon.svg?raw=true' height='222'/>
 </p>
 
+> **SUPERSEDED. Nothing here is current.**
+>
+> This describes **v3.2**, an earlier draft of the no-cluster model.
+> The current model is **[v16](../v16/readme.md)**. Kept as history.
+
 <h3 align='center'>tune moon</h3>
 <p align='center'>
   The Spoken Tune

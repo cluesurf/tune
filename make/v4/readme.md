@@ -1,3 +1,16 @@
+> **The FORM system here is superseded. The LEXICON is not.**
+>
+> v4's shapes are `CVC`, `CVCC` and `CCVC`, one vowel to a word.
+> **[v16](../v16/readme.md)** keeps all three and adds `CVCVC`, which
+> is where 2,304 of its 4,096 roots live. The similarity table, the
+> breaker rule and the distance measure have all moved on since, so
+> read v16 for any of those.
+>
+> What is still live here is `base/v4/term/`, the hand-curated meaning
+> work. **v16 reads none of it**: the pin list was copied to
+> `base/v16/term/pin.csv` on 2026-09-18 so the two can diverge, since a
+> pin that suits one need not suit the other.
+
 <h3 align='center'>tune v4</h3>
 <p align='center'>
   One syllable, and a cluster on one side of it

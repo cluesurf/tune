@@ -1,3 +1,13 @@
+> **SUPERSEDED. Nothing here is current.**
+>
+> This describes **v3**, which alternated consonant and vowel the whole
+> way through, allowed three syllable roots, and joined words with six
+> different joiners chosen from a table of sixty four named pairs.
+>
+> The current model is **[v16](../v16/readme.md)**: four shapes with a
+> cluster at one end, `l` as the only breaker, 4,096 roots. Kept as
+> history.
+
 <h3 align='center'>tune</h3>
 <p align='center'>
   Two Forms

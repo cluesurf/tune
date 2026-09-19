@@ -1,3 +1,12 @@
+> **SUPERSEDED. Nothing here is current.**
+>
+> This describes **v3.3**: `CVC`, `CVCVC` and `CVCVCVC` with no
+> consonant clusters anywhere, and the six joiner tables.
+>
+> The current model is **[v16](../v16/readme.md)**: four shapes with a
+> cluster at one end, no three syllable root, `l` as the only breaker,
+> 4,096 roots. Kept as history.
+
 <h3 align='center'>tune talk</h3>
 <p align='center'>
   The Spoken Tune
