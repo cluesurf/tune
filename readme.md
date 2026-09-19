@@ -162,67 +162,55 @@ syllable**, 44% of everything. The lists are in
 
 ## Word Joining
 
-Two base words joined make a compound. Seven pairings:
+Roots joined make a compound: 4,096 roots give **16,777,216 pairs**,
+and any number of roots may join.
 
-| join | shape | count |
-| :--- | :---- | ----: |
-| `CVC` + `CVC` | `CVCCVC` | 3,651,921 |
-| `CVC` + `CVCVC` | `CVCCVCVC` | 383,451,705 |
-| `CVCVC` + `CVC` | `CVCVCCVC` | 383,451,705 |
-| `CVC` + `CVCVCVC` | `CVCCVCVCVC` | 40,262,429,025 |
-| `CVCVCVC` + `CVC` | `CVCVCVCCVC` | 40,262,429,025 |
-| `CVCVC` + `CVCVCVC` | `CVCVCCVCVCVC` | 4,227,555,047,625 |
-| `CVCVCVC` + `CVCVC` | `CVCVCVCCVCVC` | 4,227,555,047,625 |
-| | **total** | **8,536,405,508,631** |
+Two roots run straight together, and a compound is told from a phrase
+by stress, which falls once on the first syllable of the whole thing
+rather than once per word.
 
-### The joiner
+### The breaker
 
-Where two words meet, sometimes a consonant goes between them and
-sometimes nothing does. Most joins take nothing.
+Where two roots meet, sometimes a sound goes between them. **The
+breaker is `l`, and it is the only one.** For a doubled `l` it is `r`,
+because `l` cannot break itself.
 
-| joiner | pairs |
-| :----- | ----: |
-| none | 258 |
-| `m` | 33 |
-| `n` | 32 |
-| `l` | 18 |
-| `s` | 11 |
-| `z` | 11 |
+It appears in **8.03%** of pairs, and for two reasons only:
 
-A joiner appears only where the two sounds meeting would be hard to
-tell apart.
+| | share | |
+| :--- | ----: | :--- |
+| the same sound twice | 4.51% | `man` + `nam` would be heard as `manam` |
+| two sibilants meeting | 3.52% | `mas` + `zam` would smear into one hiss |
 
-- **Before breath.** Everything takes `l` before `h`, except `l`
-  itself, which takes `m`.
-- **A stop or nasal against its own family** takes `z` or `s`. The
-  stop families split on the voice of the left sound, `bzb` `psp`
-  `dzd` `tst` `gzg` `ksk`. The nasals are all voiced so they split on
-  the right sound instead, `msm` `mzn` `nsm` `nzn`, with `q` running
-  the opposite way, `qsn` `qzm`.
-- **A rub against a rub** takes `m` or `n`, by a table of sixty four
-  named pairs, `sms` `snz` `fnf` `fmv` and so on.
-- **A liquid against a liquid**, `lsl` `lzr` `rzl` `rsr`.
-- Everything else runs straight together.
+Everything else runs straight together. There were once six joiners
+chosen by a table of sixty four named pairs; measuring every policy
+over every ordered pair showed one breaker does the whole job, and the
+tables are gone.
 
-The full tables are in [make/v3/talk](make/v3/talk).
+### No join is ambiguous, at any depth
 
-### No join is ambiguous
+Two roots cannot collide because a cluster opens from one pile and
+closes from another, and the piles share nothing. A string that could
+be cut two ways would need one consonant to be in both at once.
 
-This is what having no clusters buys, and it needs no rule to state it.
+**That argument covers two roots and says nothing about three.** The
+brute force check does not scale either: 4,096 roots is 68 billion
+triples. So the question is asked the right way instead, as whether
+the root set is a **uniquely decodable code**, which Sardinas and
+Patterson decide exactly, for every depth at once.
 
-Since every word alternates the whole way, two consonants never touch
-inside a word. The only place they can touch is a seam, and a seam is
-either two consonants or three.
+```
+pnpm --dir deck/tune v16:decode
 
-```text
-CVC + CVC        ->  CVCCVC      the CC is the seam
-CVC + J + CVC    ->  CVCCCVC     the middle C is the joiner
+  bare           4,096 strings   UNIQUELY DECODABLE
+  breakered     12,288 strings   UNIQUELY DECODABLE
 ```
 
-Either way it is the only such run in the word. The number of runs is
-the number of roots less one, and their positions are the cuts. Three
-base words give two runs, four give three. Nothing has to be memorised
-and no rule has to be applied to read a compound apart.
+`breakered` allows a breaker after every root, which is more than the
+rule ever emits, so the pass is conclusive. **No concatenation of any
+number of roots can be read two ways.** The check calibrates itself
+first against a code known to be ambiguous, so a clean pass is not
+just a test that cannot fail.
 
 ## Word Forms
 
@@ -274,43 +262,72 @@ almost the whole load, `t` alone standing behind `t d s z c C l r`.
 
 ## Word Selection Rules
 
-The three word rules say what is legal. These say what is worth using.
+The word rules say what is legal. These say what is worth using.
+
 Legal is not the same as usable: `mir` and `nir` are both legal and one
-of them has to go, or a listener cannot tell them apart. What follows
-is how the lexicon is narrowed from what the shapes allow down to words
-that stay distinct in the ear.
+of them has to go, or a listener cannot tell them apart. This is how
+169,798 legal forms are narrowed to 4,096 that stay distinct in the
+ear.
 
-### 5-letter words (CVCVC)
+### Distance
 
-- No `w` anywhere
-- No `q`, `w`, `y` at start
-- No `h`, `w`, `y` at end
-- No `h`, `y`, `q` in center consonant (position 2)
-- No `el`, `er`, `il`, `ir` sequences anywhere
-- `j` only at start of word
-- No mixed-voicing stop pairs across vowels: `d-t`, `t-d`, `b-p`, `p-b`,
-  `g-k`, `k-g` blocked
-- Fricative pairs across vowels: same pair always blocked
-  (`s-s`/`s-z`/`z-s`/`z-z`, likewise `f↔v`, `c↔C`, `j↔x`). Cross-pair
-  allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
-- Max 1 of `x`/`j`/`c`/`C` total per word
-- **Too close** if words differ by 1 position
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
-  and vowel is off by 1 notch (`ieaou` order)
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
-  vowel off by 2+, but consonant stays in the same broad group:
-  - Stops/nasals: `b m p n q d g t k`
-  - Fricatives: `h s f v z x j c C`
-  - Liquids: `l r`
+One measure, applied to every shape, replacing the long per-position
+lists this section used to carry.
 
-### 7-letter words (CVCVCVC)
+Compare two words of the same shape position by position:
 
-- All 5-letter rules above, plus:
-- No `h`, `y`, `q` in interior consonants (positions 2, 4)
-- No sequential same consonant across vowels (positions 0-2, 2-4, 4-6)
-  for `r l f v z x j C c s`
-- Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
-- Every word guaranteed at least one `a`
+```text
+0   the same sound
+1   a near sound
+2   a clear difference
+```
+
+**Two words are too close when no position scores `2`.** A single near
+sound is the only thing forbidden, since a pair differing in two places
+is already clear. Words of different shapes are never compared: a
+difference in length is a cue no listener misses, so `bat` and `brat`
+are not the problem that `bat` and `pat` is.
+
+Vowels are near when they sit next to each other on the `i e a o u`
+ladder. Consonants are near by this table:
+
+```text
+b~p  d~t  g~k          voicing
+b~d  p~t               place
+m~b~p  n~d~t  q~g~k    a nasal against its own stop
+s~z  x~j               sibilant voicing
+c~C                    the two dentals
+f~v                    labial voicing
+f~c  C~v               th-fronting
+l~r                    the liquids
+```
+
+### Where a sound sits changes what it is near
+
+Two entries in that table depend on position, and no flat list of pairs
+can say so.
+
+**The sibilant place pairs `s~x` and `z~j` are near in coda only.** A
+sibilant's place is heard in the vowel that follows it. In onset there
+is one, in coda there is not.
+
+```text
+siq  xiq             two words
+flus flux            one word twice
+```
+
+**In a three letter word all four sibilants stand apart.** A hiss is
+the longest sound the language has, and in `CVC` it is the whole back
+half with nothing competing for the ear.
+
+```text
+mas maz max maj      four words
+flos floz flox floj  two, and a choice of which two
+mac maC              one. c and C are never lifted
+```
+
+The nasals `m n q` are distinct everywhere, which is what lets `ram`
+`ran` `raq` stand together and `mam` mom sit beside `nan` grandmother.
 
 ## Summary
 

@@ -306,7 +306,42 @@ the table working rather than failing.
 
 **8.03%** of ordered pairs need an `l` between them: 4.51% where a word
 ends in the sound the next begins with, 3.52% where two sibilants meet.
-Everything else runs straight together.
+Everything else runs straight together. For a doubled `l` the breaker
+is `r`, since `l` cannot break itself.
+
+## No compound can be read two ways, at ANY depth
+
+The disjoint piles prove that TWO roots cannot collide. **They say
+nothing about three or four**, and brute force does not scale: 4,096
+roots is 68 billion triples and 281 trillion quadruples.
+
+So the question is asked the right way instead. It is not about
+triples, it is whether the root set is a **uniquely decodable code**,
+and Sardinas and Patterson decide that exactly, for every depth at
+once, in milliseconds.
+
+The idea is the DANGLING SUFFIX. If one root is a prefix of another,
+what is left over is a piece a second reading would have to account
+for. Grow that set, and **the code is ambiguous exactly when some
+dangling suffix is itself a root**, because that is a string which both
+completes one parse and stands alone in another.
+
+```
+pnpm --dir deck/tune v16:decode
+
+  bare           4,096 strings   UNIQUELY DECODABLE
+  breakered     12,288 strings   UNIQUELY DECODABLE
+```
+
+`breakered` is every root plus every root carrying a breaker, which is
+a SUPERSET of what the rule ever emits, so the pass is conclusive
+rather than suggestive.
+
+**It calibrates itself first.** A verdict that returns in milliseconds
+over 4,096 roots is exactly when a broken check looks like a good
+result, so the test is shown `a ab ba`, which is ambiguous, and
+`0 01 11`, which is not, and has to tell them apart before its answer
+about Tune is printed.
 
 ## Balance
 
