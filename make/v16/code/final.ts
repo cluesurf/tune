@@ -27,19 +27,123 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { Shape, every, scores } from './sound'
+import { SORT_ORDER } from '../../../code/phonology'
+import {
+  NEAR_VOWEL,
+  Shape,
+  VOWEL_AT,
+  every,
+  nearAt,
+  scores,
+} from './sound'
+
+/**
+ * Neighbours by MUTATION, never by comparing all pairs.
+ *
+ * `distance at least 2` forbids exactly one thing: a pair differing in
+ * one position by a near sound. So a word's neighbours are found by
+ * walking its positions and swapping in each near sound, which is
+ * about 25 tries, rather than by testing it against every other word.
+ *
+ * **The first version of this file compared all pairs and did not
+ * finish.** `CVCVC` has 164,682 forms, so that is 27 billion
+ * comparisons against 4 million mutations. `ceiling.ts` already had
+ * the right method and this did not reuse it.
+ *
+ * **The near table is imported and not rebuilt**, which is the second
+ * half of the same lesson: this file and `ceiling.ts` each held a
+ * private copy made from `areSimilar`, so a rule added to `scores`
+ * changed what `scores` said and nothing the solver did.
+ */
+
+function neighbours(words: Array<string>, shape: Shape) {
+  const at = new Map(words.map((one, i) => [one, i]))
+  const isVowel = new Set(VOWEL_AT[shape])
+  const edge: Array<Array<number>> = words.map(() => [])
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i]
+    for (let p = 0; p < word.length; p++) {
+      const swaps = isVowel.has(p)
+        ? (NEAR_VOWEL.get(word[p]) ?? [])
+        : nearAt(word[p], p, shape)
+      for (const s of swaps) {
+        const j = at.get(word.slice(0, p) + s + word.slice(p + 1))
+        if (j !== undefined && j > i) {
+          edge[i].push(j)
+          edge[j].push(i)
+        }
+      }
+    }
+  }
+  return { at, edge }
+}
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../../../base/v16')
 const PIN = resolve(here, '../../../base/v4/term/pin.csv')
 
-/** The chosen ratio, `5:5:4:18`. */
+/**
+ * The quota per shape: **`5:5:4:18`**, the ratio that maximises one
+ * syllable words.
+ *
+ * ```text
+ * CVC 640   CVCC 640   CCVC 512   CVCVC 2304
+ * ```
+ *
+ * 1,792 one syllable roots, 44% of the language.
+ *
+ * ## It did not fit for two days, and three rules are why
+ *
+ * ```text
+ *                              CVC   CVCC   CCVC    one syllable
+ * wanted                       640    640    512           1,792
+ *
+ * sibilant place pairs added   584    675    480           1,739
+ * nasals freed                 607    675    472           1,754
+ * place pairs freed in ONSET   647    753    472           1,872
+ * four more cluster onsets     647    753    603           2,003
+ * ```
+ *
+ * **Each of the three failures was a different kind of thing.** The
+ * first was a table that could not say where a rule applied, so `siq`
+ * and `xiq` counted as one word. The second was the same, for the
+ * nasals, so `mam` and `nan` could not both stand. The third was not a
+ * rule at all: `CCVC` sat at 472 through both fixes because no nasal
+ * and no hush can begin a cluster, so neither change could reach it.
+ * It was short of FORMS, and four more onsets, `sw dw gw vl`, supplied
+ * 131 more.
+ *
+ * `Q_CVC=` and friends override.
+ */
 const QUOTA: Record<string, number> = {
-  CVC: 640,
-  CVCC: 640,
-  CCVC: 512,
-  CVCVC: 2304,
+  CVC: Number(process.env.Q_CVC ?? 640),
+  CVCC: Number(process.env.Q_CVCC ?? 640),
+  CCVC: Number(process.env.Q_CCVC ?? 512),
+  CVCVC: Number(process.env.Q_CVCVC ?? 2304),
 }
+
+/**
+ * HOW COARSELY THE BEGINNING BALANCE IS READ, in words.
+ *
+ * **1, meaning exactly, because loosening it MEASURED WORSE.** The
+ * theory was that comparing the beginning count to the digit is a tie
+ * break that never ties, so `degree` under it was never consulted and
+ * the solver was spending picks on words that block many others.
+ * Banding near-equal beginnings together should have let the cheapest
+ * of them win.
+ *
+ * ```text
+ * band   CVC built   of 640
+ *    1          596          the exact comparison
+ *    4          572          24 WORSE
+ *    8          583          13 worse
+ * ```
+ *
+ * So the ordering that looked accidental was doing real work, and what
+ * is wrong is the degree itself: see `liveDeg`. Kept as a knob because
+ * the number is worth being able to re-measure.
+ */
+const BAND = Number(process.env.BAND ?? 1)
 
 const SIBILANT = new Set(['s', 'z', 'x', 'j'])
 const first = (one: string) => one[0]
@@ -78,10 +182,28 @@ const near = (a: string, b: string) =>
  * so `man` yields and `mind` takes the nearest form that does not
  * clash.
  */
+/**
+ * **`near` is not enough on its own: it says a form is not near
+ * ITSELF.**
+ *
+ * `near(a, b)` opens with `a !== b`, because a word at distance 0 from
+ * itself is the same word and not a conflict. That is right for
+ * comparing two candidates and WRONG as a filter for "may this pin
+ * take that form", where an exact match is the worst answer there is.
+ *
+ * It read as correct and ran clean, and four pins came out as `miq`:
+ * action type, energy, be and request, each moved off a clash and each
+ * landing on the same form because none of them could see the others
+ * had already taken it. `man` went to mind, garden and `the` the same
+ * way.
+ */
+const takenBy = (one: string, taken: Array<string>) =>
+  taken.some(had => had === one || near(had, one))
+
 function alternatives(form: string, taken: Array<string>) {
   const all = every(shapeOf(form))
   return all
-    .filter(one => one !== form && !taken.some(had => near(had, one)))
+    .filter(one => one !== form && !takenBy(one, taken))
     .map(one => {
       let differs = 0
       for (let at = 0; at < form.length; at++) {
@@ -114,14 +236,14 @@ for (const [concept, form] of pins) {
 
 if (moved.length) {
   process.stdout.write(
-    `  ${'concept'.padEnd(12)}${'asked'.padEnd(7)}${'clashes'.padEnd(9)}` +
+    `  ${'concept'.padEnd(18)}${'asked'.padEnd(7)}${'clashes with'.padEnd(24)}` +
       `${'takes'.padEnd(7)}other options\n`,
   )
   for (const [concept, form, other, options] of moved) {
     const who = kept.find(([, f]) => f === other)
     process.stdout.write(
-      `  ${concept.padEnd(12)}${form.padEnd(7)}` +
-        `${`${other} ${who ? who[0] : ''}`.padEnd(9)}` +
+      `  ${concept.padEnd(18)}${form.padEnd(7)}` +
+        `${`${other} ${who ? who[0] : ''}`.padEnd(24)}` +
         `${(options[0] ?? '—').padEnd(7)}${options.slice(1).join(' ')}\n`,
     )
   }
@@ -154,30 +276,53 @@ for (const shape of SHAPES) {
   const legal = new Set(all)
   const missing = mine.filter(one => !legal.has(one))
 
+  const { at, edge } = neighbours(all, shape)
+  const inSet = new Uint8Array(all.length)
+  const blocked = new Int32Array(all.length)
   const taken: Array<string> = []
-  const blocked = new Set<string>()
-  for (const one of mine) {
-    if (!legal.has(one)) continue
-    taken.push(one)
-    for (const other of all) {
-      if (near(one, other)) blocked.add(other)
-    }
-  }
-  for (const one of taken) {
-    E.set(last(one), (E.get(last(one)) ?? 0) + 1)
-    B.set(first(one), (B.get(first(one)) ?? 0) + 1)
+
+  /**
+   * HOW MANY OF A WORD'S NEIGHBOURS ARE STILL IN PLAY.
+   *
+   * **`edge[i].length` is the degree in the FULL graph and never
+   * changes.** Half the pool can be gone and it still reports what the
+   * word cost at the start, so ordering by it orders by a number that
+   * stopped being true. That is why promoting it lost words rather
+   * than gaining them: see `BAND`.
+   *
+   * This is the same count over the LIVE graph only, maintained as
+   * words leave. A word leaves when it is placed or when it is
+   * blocked, and either way every neighbour of it has one fewer
+   * neighbour left to lose.
+   */
+  const liveDeg = new Int32Array(all.length)
+  for (let i = 0; i < all.length; i++) liveDeg[i] = edge[i].length
+
+  /** `i` is out of play, so nobody still counts it. */
+  const retire = (i: number) => {
+    for (const other of edge[i]) liveDeg[other]--
   }
 
-  // Fill the rest: least crowded first, and among equals the one that
-  // adds least to the conflict count, so distinctness and quiet are
-  // both served.
-  const rest = all.filter(one => !blocked.has(one) && !taken.includes(one))
-  const degree = new Map<string, number>()
-  for (const a of rest) {
-    let d = 0
-    for (const b of rest) if (near(a, b)) d++
-    degree.set(a, d)
+  const place = (i: number) => {
+    inSet[i] = 1
+    taken.push(all[i])
+    retire(i)
+    for (const other of edge[i]) {
+      // 0 -> 1 is the moment it leaves the pool. Later increments are
+      // a word blocked twice over and must not retire it twice.
+      if (blocked[other]++ === 0) retire(other)
+    }
+    E.set(last(all[i]), (E.get(last(all[i])) ?? 0) + 1)
+    B.set(first(all[i]), (B.get(first(all[i])) ?? 0) + 1)
   }
+
+  // Pins first, and a pin is placed even if something near it was
+  // already blocked: that is what pinning means.
+  for (const one of mine) {
+    const i = at.get(one)
+    if (i !== undefined && !inSet[i]) place(i)
+  }
+
   const cost = (one: string) => {
     const f = first(one)
     const l = last(one)
@@ -187,24 +332,171 @@ for (const shape of SHAPES) {
     }
     return d
   }
-  const order = [...rest].sort(
-    (a, b) =>
-      (degree.get(a) as number) - (degree.get(b) as number) ||
-      cost(a) - cost(b),
-  )
-  for (const one of order) {
-    if (taken.length >= QUOTA[shape]) break
-    if (taken.some(had => near(had, one))) continue
-    taken.push(one)
-    E.set(last(one), (E.get(last(one)) ?? 0) + 1)
-    B.set(first(one), (B.get(first(one)) ?? 0) + 1)
+
+  /**
+   * How heavily a word leans on sounds already spent, per POSITION.
+   *
+   * **Without this the language spends itself lopsidedly.** `f` and
+   * `v` are similar, so `djif` and `djiv` are one near sound apart and
+   * only one can be in the set. Which one is decided by the tie break,
+   * and `f` comes first in the iteration order, so `f` won every time:
+   * the list came out `djif djuf drif druf` with `v` almost absent
+   * word-finally.
+   *
+   * The same holds for every similar pair, `s` over `z`, `p` over `b`,
+   * `t` over `d`. Half of each pair was being quietly starved.
+   *
+   * Counting per position rather than overall, because a sound can be
+   * common at the start and rare at the end and those are different
+   * facts about the language.
+   */
+  const spent = new Map<string, number>()
+  const key = (sound: string, at: number) => `${at}:${sound}`
+  const lean = (one: string) => {
+    let sum = 0
+    for (let at = 0; at < one.length; at++) {
+      sum += spent.get(key(one[at], at)) ?? 0
+    }
+    return sum
+  }
+  const spend = (one: string) => {
+    for (let at = 0; at < one.length; at++) {
+      const k = key(one[at], at)
+      spent.set(k, (spent.get(k) ?? 0) + 1)
+    }
+  }
+  for (const one of taken) spend(one)
+
+  /**
+   * ROUND ROBIN OVER ENDING SOUNDS, serving whichever is furthest
+   * behind.
+   *
+   * **Sorting words by degree is what starved the inventory**, and no
+   * tie break could fix it, because the starvation IS the objective. A
+   * maximum independent set maximises COUNT, and the cheapest words to
+   * take are those that block fewest others. The sounds that block the
+   * most are exactly the well connected ones:
+   *
+   * ```text
+   * C   near c z j v      four links
+   * c   near C s x f      four links
+   * m   near n q b p      four links
+   * n   near m q d t      four links
+   * k   near g q          two links
+   * ```
+   *
+   * So degree-first quietly decided that a language should have almost
+   * no nasal-final words and no `C` at all. It reached 11 nasal finals
+   * out of 4,096.
+   *
+   * The fix is to stop ordering by word and order by SOUND. Each
+   * ending keeps a bucket, and each pick serves the bucket furthest
+   * below its fair share. A sound that is expensive to place is placed
+   * EARLY, while the space is still open, which is the reverse of what
+   * degree-first does and the whole reason it works.
+   *
+   * Within the chosen bucket the word taken is the one whose BEGINNING
+   * is least used, so both edges are balanced, with degree and seam
+   * cost as the remaining tie breaks.
+   *
+   * A bucket whose pool is genuinely small, `C` and `c`, simply
+   * empties and stops being served. Its fair share is capped by what
+   * exists, so the others absorb the remainder rather than the whole
+   * run stalling.
+   */
+  const bucket = new Map<string, Array<number>>()
+  for (const i of all.keys()) {
+    if (inSet[i] || blocked[i]) continue
+    const l = last(all[i])
+    const held = bucket.get(l)
+    if (held) held.push(i)
+    else bucket.set(l, [i])
+  }
+  for (const held of bucket.values()) {
+    held.sort((a, b) => edge[a].length - edge[b].length)
+  }
+
+  const served = new Map<string, number>()
+  for (const l of bucket.keys()) served.set(l, 0)
+
+  /**
+   * One LINEAR SCAN per pick, and dead entries are compacted away.
+   *
+   * The obvious version filters and re-sorts the whole bucket every
+   * time, which for `CVCVC` is 2,560 picks over buckets of 8,600 and
+   * is far too slow: the same shape of mistake that made the first
+   * `final.ts` hang. Each pick only needs the single best entry, which
+   * is one pass, and the ordering key changes as words are placed so a
+   * pre-sort would go stale anyway.
+   *
+   * Compaction keeps each bucket from being re-walked over its own
+   * corpses: once a word is taken or blocked it is swapped out.
+   */
+  const head = new Map<string, number>()
+  for (const l of bucket.keys()) head.set(l, 0)
+
+  while (taken.length < QUOTA[shape]) {
+    let pickEnd = ''
+    let worst = Infinity
+    for (const [l, held] of bucket) {
+      if ((head.get(l) as number) >= held.length) continue
+      const had = served.get(l) ?? 0
+      if (had < worst) {
+        worst = had
+        pickEnd = l
+      }
+    }
+    if (!pickEnd) break
+
+    const held = bucket.get(pickEnd) as Array<number>
+    let at = head.get(pickEnd) as number
+    // Drop anything now taken or blocked from the front of the bucket.
+    let live: Array<number> = []
+    for (let k = at; k < held.length; k++) {
+      if (!inSet[held[k]] && !blocked[held[k]]) live.push(held[k])
+    }
+    bucket.set(pickEnd, live)
+    head.set(pickEnd, 0)
+    if (!live.length) {
+      served.set(pickEnd, Infinity)
+      continue
+    }
+
+    // Least used BEGINNING, then fewest neighbours, then quietest
+    // seam. One pass, no sort.
+    const keyOf = (i: number) => [
+      Math.floor((spent.get(`0:${first(all[i])}`) ?? 0) / BAND),
+      liveDeg[i],
+      cost(all[i]),
+    ]
+    let best = live[0]
+    let bestKey = keyOf(best)
+    for (const i of live) {
+      const key = keyOf(i)
+      if (
+        key[0] < bestKey[0] ||
+        (key[0] === bestKey[0] &&
+          (key[1] < bestKey[1] ||
+            (key[1] === bestKey[1] && key[2] < bestKey[2])))
+      ) {
+        best = i
+        bestKey = key
+      }
+    }
+    place(best)
+    spend(all[best])
+    served.set(pickEnd, (served.get(pickEnd) ?? 0) + 1)
+    void at
   }
 
   built.set(shape, taken)
   process.stdout.write(
     `  ${shape.padEnd(8)}${String(mine.length).padStart(6)}` +
       `${String(QUOTA[shape]).padStart(8)}${String(taken.length).padStart(8)}` +
-      `${rest.length.toLocaleString().padStart(11)}` +
+      `${[...bucket.values()]
+        .reduce((sum, held) => sum + held.length, 0)
+        .toLocaleString()
+        .padStart(11)}` +
       `${taken.length < QUOTA[shape] ? '   SHORT' : ''}` +
       `${missing.length ? `   pin not legal: ${missing.join(' ')}` : ''}\n`,
   )
@@ -215,10 +507,29 @@ process.stdout.write(`\n  total ${total.toLocaleString()} of 4,096\n`)
 
 // ─── Write ─────────────────────────────────────────────
 
+/**
+ * Written in TUNE ORDER, length first.
+ *
+ * The selection order is pins, then whatever the greedy reached, which
+ * is meaningless to read. **A file that has to be sorted by a separate
+ * command is a file that will be read unsorted**, and it was: these
+ * shipped in selection order once already.
+ */
+const rank = new Map(SORT_ORDER.map((one, at) => [one, at]))
+const inTuneOrder = (a: string, b: string) => {
+  if (a.length !== b.length) return a.length - b.length
+  for (let at = 0; at < a.length; at++) {
+    const x = rank.get(a[at]) ?? 99
+    const y = rank.get(b[at]) ?? 99
+    if (x !== y) return x - y
+  }
+  return 0
+}
+
 for (const [shape, words] of built) {
   writeFileSync(
     resolve(OUT, `final-${shape.toLowerCase()}.txt`),
-    `${words.join('\n')}\n`,
+    `${[...words].sort(inTuneOrder).join('\n')}\n`,
   )
 }
 process.stdout.write(
@@ -226,6 +537,88 @@ process.stdout.write(
     `  final-cvcvc.txt to ${OUT}\n` +
     '  THESE are the v16 lists. Everything else there is working.\n',
 )
+
+/**
+ * What the breaker rate came to, so the trade is a number.
+ *
+ * Balance leads now, so this is expected to be well above the 1.58%
+ * the quiet-first ordering reached. **That is the price of a language
+ * whose words can end in anything**, and it is worth printing beside
+ * the balance table rather than in another command.
+ */
+{
+  const words = [...built.values()].flat()
+  const E2 = new Map<string, number>()
+  const B2 = new Map<string, number>()
+  for (const one of words) {
+    E2.set(last(one), (E2.get(last(one)) ?? 0) + 1)
+    B2.set(first(one), (B2.get(first(one)) ?? 0) + 1)
+  }
+  let same = 0
+  let sib = 0
+  for (const [c, e] of E2) {
+    same += e * (B2.get(c) ?? 0)
+    if (!SIBILANT.has(c)) continue
+    for (const [d, b] of B2) {
+      if (d !== c && SIBILANT.has(d)) sib += e * b
+    }
+  }
+  const all = words.length * words.length
+  process.stdout.write(
+    `\n  seams needing an l   ${(((same + sib) / all) * 100).toFixed(2)}%` +
+      `   (same sound ${((same / all) * 100).toFixed(2)}%,` +
+      ` two sibilants ${((sib / all) * 100).toFixed(2)}%)\n`,
+  )
+}
+
+/**
+ * Does the language USE its sounds, or has it starved half of them.
+ *
+ * Every similar pair is shown side by side at the position it is most
+ * likely to be starved in, the END, because that is where the choice
+ * between them is forced: only one of `djif` and `djiv` can stand.
+ *
+ * **A ratio near 1 is the goal.** Far from 1 means a tie break is
+ * making a phonological decision nobody took.
+ */
+{
+  const PAIRS = [
+    ['f', 'v'],
+    ['s', 'z'],
+    ['p', 'b'],
+    ['t', 'd'],
+    ['k', 'g'],
+    ['x', 'j'],
+    ['c', 'C'],
+    ['m', 'n'],
+    ['l', 'r'],
+  ]
+  const words = [...built.values()].flat()
+  const endsIn = new Map<string, number>()
+  const startsWith = new Map<string, number>()
+  for (const one of words) {
+    endsIn.set(last(one), (endsIn.get(last(one)) ?? 0) + 1)
+    startsWith.set(first(one), (startsWith.get(first(one)) ?? 0) + 1)
+  }
+  process.stdout.write(
+    '\n  IS EVERY SOUND USED, or has a tie break starved half of them\n\n' +
+      `  ${'pair'.padEnd(8)}${'ends'.padStart(14)}${'ratio'.padStart(9)}` +
+      `${'begins'.padStart(14)}${'ratio'.padStart(9)}\n`,
+  )
+  for (const [a, b] of PAIRS) {
+    const ea = endsIn.get(a) ?? 0
+    const eb = endsIn.get(b) ?? 0
+    const sa = startsWith.get(a) ?? 0
+    const sb = startsWith.get(b) ?? 0
+    const say = (x: number, y: number) =>
+      y === 0 ? (x === 0 ? '—' : 'ALL ONE') : (x / y).toFixed(2)
+    process.stdout.write(
+      `  ${`${a} ${b}`.padEnd(8)}${`${ea} / ${eb}`.padStart(14)}` +
+        `${say(ea, eb).padStart(9)}` +
+        `${`${sa} / ${sb}`.padStart(14)}${say(sa, sb).padStart(9)}\n`,
+    )
+  }
+}
 
 const survived = kept.filter(([, f]) =>
   (built.get(shapeOf(f)) as Array<string>).includes(f),

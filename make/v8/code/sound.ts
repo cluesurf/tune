@@ -92,6 +92,12 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
+  // The sibilants differ in PLACE as well as voicing, and the place
+  // pairs were missing. `s~x` and `z~j` are one feature apart just as
+  // `s~z` is. What stays distinct is the CROSSED pairs, `s~j` and
+  // `z~x`, which differ in both.
+  ['s', 'x'],
+  ['z', 'j'],
   ['c', 'C'],
   ['f', 'v'],
   ['s', 'c'],

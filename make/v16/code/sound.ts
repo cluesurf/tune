@@ -73,6 +73,31 @@ export const BAD_RHYME = new Set(['il', 'el', 'ir', 'er', 'ul', 'ur'])
 export const TWIN_VOWEL = new Set(['u', 'e', 'i'])
 
 /**
+ * Consonants a two syllable word may not carry TWICE.
+ *
+ * ```text
+ * hahat  wawan  yayap     refused
+ * ```
+ *
+ * The weak consonants have little body of their own, so a word built
+ * on two of them has almost nothing for the ear to hold: `yayap` is
+ * a glide, a vowel, the same glide, the same vowel.
+ *
+ * **The rule reaches less far than it looks, and that is worth
+ * knowing rather than discovering.** In `CVCVC` the consonants sit at
+ * 0, 2 and 4:
+ *
+ * ```text
+ * h w y   cannot CLOSE a syllable, so never reach position 4
+ * q       cannot OPEN one, so only ever reaches position 4
+ * ```
+ *
+ * So `q` has a single slot and **twin `q` was already impossible**.
+ * The rule bites only on `h`, `w` and `y`, at the two openers.
+ */
+export const TWIN_WEAK = new Set(['h', 'w', 'y', 'q'])
+
+/**
  * The two piles, from v4's `settled-phonotactics.md`.
  *
  * A cluster's boundary sound decides which way a seam splits, so the
@@ -90,8 +115,28 @@ export const TWIN_VOWEL = new Set(['u', 'e', 'i'])
 export const OPEN = new Set(['b', 'd', 'f', 'g', 's', 'v'])
 export const CLOSE = new Set(['c', 'j', 'k', 'p', 't', 'x', 'z'])
 
+/**
+ * The cluster onsets, all of which must OPEN with a sound from `OPEN`.
+ *
+ * **This list is what caps `CCVC`, and nothing else does.** Freeing the
+ * nasals and freeing the sibilant place pairs at the onset each lifted
+ * `CVC` and `CVCVC` and left `CCVC` at 472, because neither `m n q` nor
+ * `x j` can begin a cluster: the first slot is drawn from `OPEN`, which
+ * is `b d f g s v`. The shape is short of forms, not short of contrast.
+ *
+ * The last four are the glide and liquid clusters the list was missing
+ * rather than refusing. Every one of them opens with a sound already in
+ * `OPEN`, so the disjoint-pile guarantee is untouched:
+ *
+ * ```text
+ * sw   swim      s is already in sl sm sn sk sp st
+ * dw   dwell     d is already in dr dj
+ * gw   Gwen      g is already in gr gl
+ * vl   Vlad      v is already in vr
+ * ```
+ */
 export const ONSETS =
-  'br bl dr fr fl gr gl vr sk sp st sl sm sn dj'.split(' ')
+  'br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl'.split(' ')
 
 export const CODAS = (
   'mp nt qk lp lx lz lt lc lk rp rz rt rk rx ft px kx bz gz dj tx dz sk sp st xt'
@@ -111,7 +156,32 @@ export const CODA_OK = CODAS.filter(
 )
 
 export const SIMILAR_GROUPS: Array<Array<string>> = [
-  ['m', 'n', 'q'],
+  /**
+   * **`m n q` ARE NOT A GROUP.** They were one until 2026-09-18.
+   *
+   * ```text
+   * ram  ran  raq      three words, not one word three ways
+   * mam  nam  qam      the same at the front
+   * ```
+   *
+   * The nasals differ in PLACE, and place is carried twice over: in
+   * the formant transitions of the vowel beside them, and in the
+   * closure itself. English keeps `ram`, `ran` and `rang` apart on
+   * nothing else, and keeps `mat`, `gnat` and — where the language
+   * allows it — a velar onset apart the same way.
+   *
+   * This was first written as a CODA-ONLY exception, on the theory
+   * that nasals blur as onsets and separate as codas. They do not
+   * blur as onsets: `mam` mom and `nan` grandmother are the pair the
+   * whole kinship axis is built on, and a table that calls them one
+   * sound cannot hold the axis.
+   *
+   * **What still separates them is the HOMORGANIC groups below**,
+   * which are untouched: `m~b~p`, `n~d~t`, `q~g~k`. A nasal is still
+   * near the stop it shares a place with, which is the real confusion
+   * (`yam` against `yab`), and that is a different claim from saying
+   * the three nasals are near each other.
+   */
   ['b', 'p'],
   ['d', 't'],
   ['b', 'd'],
@@ -125,14 +195,43 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
+  /**
+   * THE AFFRICATES ARE NEAR FOUR SOUNDS, NOT EIGHT.
+   *
+   * ```text
+   * c   near C and f       and nothing else
+   * C   near c and v       and nothing else
+   * ```
+   *
+   * `c` and `C` are the dental pair, and what they really lose to is
+   * **th-fronting**: the tongue is a hair behind the teeth instead of
+   * between them and `c` arrives as `f`, `C` as `v`. That is the same
+   * substitution the speech pipeline falls back on when a voice cannot
+   * say them, which is the clearest evidence there is that the two are
+   * one sound to an ear that is not listening for the difference.
+   *
+   * ```text
+   * c  C     one pair of teeth, one difference of voicing
+   * c  f     th-fronting, voiceless
+   * C  v     th-fronting, voiced
+   * ```
+   *
+   * **`s~c`, `x~c`, `z~C` and `j~C` were here and are gone.** A dental
+   * and a sibilant are not the same kind of noise: a sibilant has a
+   * groove down the tongue that throws a jet at the teeth and makes a
+   * loud high hiss, and a dental has no groove and makes a quiet flat
+   * one. They sit at neighbouring places and sound nothing alike, so
+   * `mas` against `mac` is two words.
+   *
+   * Written as explicit pairs and not as one group, because a group is
+   * all-pairs: `['c', 'C', 'f']` would quietly claim `C` is near `f`,
+   * which is th-fronting across a voicing line and is not a thing that
+   * happens.
+   */
   ['c', 'C'],
-  ['f', 'v'],
-  ['s', 'c'],
-  ['z', 'C'],
-  ['j', 'C'],
-  ['x', 'c'],
   ['f', 'c'],
   ['C', 'v'],
+  ['f', 'v'],
   ['l', 'r'],
 ]
 
@@ -164,9 +263,32 @@ export const VOWEL_AT: Record<Shape, Array<number>> = {
   CVCVC: [1, 3],
 }
 
+/**
+ * `-ul` STANDS AT THE END OF A WORD. Everywhere else the ban holds.
+ *
+ * ```text
+ * jul    jewel      stands
+ * julas             stands, the ul still closes a syllable
+ * gulan             refused, the l opens the next syllable
+ * ```
+ *
+ * `BAD_RHYME` exists because a close vowel before a liquid is swallowed
+ * into it: `il`, `ul` and `ir` are one gesture rather than two, and the
+ * vowel is what gets lost. Word-finally that is not true of `ul`. The
+ * `l` has nothing after it to lean into, so it stays its own beat, and
+ * `jul` is heard as two sounds and not one long dark vowel.
+ *
+ * Only `ul`, because only `ul` was asked for. `il`, `el`, `ir`, `er`
+ * and `ur` are refused in every position still.
+ */
+const END_OK = new Set(['ul'])
+
 function rhymeOk(word: string): boolean {
   for (let at = 0; at < word.length - 1; at++) {
-    if (BAD_RHYME.has(word[at] + word[at + 1])) return false
+    const pair = word[at] + word[at + 1]
+    if (!BAD_RHYME.has(pair)) continue
+    if (at + 2 === word.length && END_OK.has(pair)) continue
+    return false
   }
   return true
 }
@@ -211,6 +333,9 @@ export function every(shape: Shape): Array<string> {
       for (const v of VOWELS) {
         for (const b of CONSONANTS) {
           if (NO_OPEN.has(b)) continue
+          // The two syllable OPENERS may not both be the same weak
+          // consonant: `hahat`, `wawan`, `yayap`.
+          if (a === b && TWIN_WEAK.has(a)) continue
           for (const w of VOWELS) {
             // No close vowel in both slots: `fluwuz`, `tetek`.
             if (v === w && TWIN_VOWEL.has(v)) continue
@@ -234,6 +359,174 @@ export function every(shape: Shape): Array<string> {
  * problem that `bat` and `pat` are. v4's `tooClose` made the same
  * call.
  */
+/**
+ * THE SIBILANT PLACE PAIRS, WHICH ARE CLOSE IN CODA ONLY.
+ *
+ * ```text
+ *             alveolar   postalveolar
+ * voiceless      s            x
+ * voiced         z            j
+ * ```
+ *
+ * `s~z` and `x~j` are the VOICING pairs and hold everywhere, so they
+ * sit in `SIMILAR_GROUPS` above. `s~x` and `z~j` are the PLACE pairs
+ * and they do NOT hold everywhere:
+ *
+ * ```text
+ * siq   xiq      two words. the vowel after tells them apart
+ * flus  flux     one word twice. nothing follows to tell them apart
+ * ```
+ *
+ * **A sibilant's place is heard in what comes after it.** The tongue
+ * moving out of `s` and out of `x` shapes the following vowel
+ * differently, and that transition is the strongest cue either sound
+ * has. In onset the vowel is right there. In coda the word has ended
+ * and all that is left is the hiss itself, where `s` and `x` sit close
+ * enough to lose.
+ *
+ * So `floz flof floj` and `flus fluv flux` were right to refuse a
+ * place pair at the end, and `siq` beside `xiq` is right to allow one
+ * at the front. Both judgements are the same rule read at two
+ * positions.
+ *
+ * **The crossed pairs, `s~j` and `z~x`, are distinct in every
+ * position**, because they differ in place AND voicing.
+ */
+const PLACE_PAIRS = [
+  ['s', 'x'],
+  ['z', 'j'],
+]
+
+/**
+ * Which slots CLOSE a syllable, per shape. A place pair is close here
+ * and nowhere else.
+ *
+ * ```text
+ * CVC     s a x      0 opens, 2 closes
+ * CVCC    s a x t    0 opens, 2 and 3 close
+ * CCVC    s l a x    0 and 1 open, 3 closes
+ * CVCVC   s a x a x  0 and 2 open, 4 closes
+ * ```
+ *
+ * Position 2 of `CVCVC` is an ONSET, not a coda, which is why this is
+ * a table per shape rather than "the last consonant".
+ */
+export const CODA_AT: Record<Shape, Array<number>> = {
+  CVC: [2],
+  CVCC: [2, 3],
+  CCVC: [3],
+  CVCVC: [4],
+}
+
+const nearCoda = new Map<string, Set<string>>()
+for (const [one, also] of near) nearCoda.set(one, new Set(also))
+for (const [a, b] of PLACE_PAIRS) {
+  nearCoda.get(a)?.add(b)
+  nearCoda.get(b)?.add(a)
+}
+
+/**
+ * IN A THREE LETTER WORD ALL FOUR SIBILANTS STAND APART.
+ *
+ * ```text
+ * mas  maz  max  maj      four words
+ * flos floz flox floj     two words, and a choice of which two
+ * ```
+ *
+ * A hiss is the LONGEST sound the language has, and in `CVC` it is the
+ * whole back half of the word with nothing competing for the ear. The
+ * listener gets the full length of the frication to place it and to
+ * hear the voicing, so both axes survive: place in the pitch of the
+ * hiss, voicing in the buzz under it.
+ *
+ * **In the longer shapes it does not get that.** `floz` spends its
+ * first two slots on a cluster, so the hiss arrives after the ear has
+ * already done work, and `mast` closes the hiss with a stop that cuts
+ * it short and takes the release cue with it. That is where `s` and `z`
+ * fall together, and it is why the rule is written per shape rather
+ * than per sound.
+ *
+ * **`c` and `C` are NOT lifted, in any position.** Only hiss against
+ * hiss is. An affricate is a stop plus a hiss, and the two affricates
+ * share the stop, so the only thing separating `mac` from `maC` is the
+ * voicing of a release that is over before the word is. `mas maz max
+ * maj` is four words and `mac maC` is one.
+ *
+ * ```text
+ * s z x j     four ways, all kept
+ * c C         one way
+ * ```
+ *
+ * The mixed rows hold too, `s~c` and `x~c` and the rest, because the
+ * stop in the affricate is what is heard first and a hiss has none.
+ */
+const HISS = ['s', 'z', 'x', 'j']
+
+const nearShortCoda = new Map<string, Set<string>>()
+for (const [one, also] of near) {
+  nearShortCoda.set(
+    one,
+    new Set(
+      HISS.includes(one)
+        ? [...also].filter(other => other === one || !HISS.includes(other))
+        : also,
+    ),
+  )
+}
+
+export const similarAt = (
+  a: string,
+  b: string,
+  at: number,
+  shape: Shape,
+) => {
+  if (!CODA_AT[shape].includes(at)) return near.get(a)?.has(b) ?? false
+  const table = shape === 'CVC' ? nearShortCoda : nearCoda
+  return table.get(a)?.has(b) ?? false
+}
+
+/**
+ * THE ONE PLACE A MUTATION WALK ASKS WHAT IS NEAR WHAT.
+ *
+ * **Closeness was computed in three places and a rule reached one of
+ * them.** `scores` compares two words position by position, but
+ * `ceiling.ts` and `final.ts` cannot afford that: `CVCVC` holds
+ * 163,500 forms, so all-pairs is 27 billion comparisons. They build
+ * the conflict graph by MUTATION instead, swapping each near sound
+ * into each position, and each of them had built its own
+ * `nearConsonant` map out of `areSimilar`.
+ *
+ * So a rule added to `scores` changed nothing either of them saw. That
+ * happened on 2026-09-18: the nasal rule went in, and the ceilings came
+ * back identical to the digit across all four shapes. **Byte-identical
+ * output after a rule change is the tell**, and it is the only thing
+ * that caught it, because both versions run clean and print a
+ * plausible number.
+ *
+ * `nearAt` is exported so there is nothing left to duplicate, and it
+ * takes the SHAPE and the POSITION because the answer depends on both:
+ * see `PLACE_PAIRS`.
+ */
+export const NEAR_VOWEL = new Map(
+  VOWELS.map(one => [
+    one,
+    VOWELS.filter(other => other !== one && vowelsClose(one, other)),
+  ]),
+)
+
+const nearAtCache = new Map<string, Array<string>>()
+
+export function nearAt(one: string, at: number, shape: Shape) {
+  const key = `${shape}:${at}:${one}`
+  const had = nearAtCache.get(key)
+  if (had) return had
+  const got = CONSONANTS.filter(
+    other => other !== one && similarAt(one, other, at, shape),
+  )
+  nearAtCache.set(key, got)
+  return got
+}
+
 export function scores(a: string, b: string, shape: Shape): Array<number> {
   const vowelAt = new Set(VOWEL_AT[shape])
   const out: Array<number> = []
@@ -247,7 +540,7 @@ export function scores(a: string, b: string, shape: Shape): Array<number> {
         ? vowelsClose(a[at], b[at])
           ? 1
           : 2
-        : areSimilar(a[at], b[at])
+        : similarAt(a[at], b[at], at, shape)
           ? 1
           : 2,
     )

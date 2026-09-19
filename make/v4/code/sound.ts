@@ -537,6 +537,29 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
+  /**
+   * The PLACE pairs among the sibilants, added 2026-09-18.
+   *
+   * ```text
+   *             alveolar   postalveolar
+   * voiceless      s            x
+   * voiced         z            j
+   * ```
+   *
+   * The rows above carry `s~z` and `x~j`, which is one place differing
+   * in VOICE. The columns were missing, so `flus` against `flux`
+   * counted as maximally different when the two differ in one feature
+   * exactly as `s` and `z` do.
+   *
+   * **The crossed pairs stay distinct**: `s~j` and `z~x` differ in
+   * place AND voicing, so a word holding two sibilants should hold one
+   * of those.
+   *
+   * Same shape of omission as the homorganic nasals above: the table
+   * described one axis and the sounds have two.
+   */
+  ['s', 'x'],
+  ['z', 'j'],
   ['c', 'C'],
   ['f', 'v'],
   ['s', 'c'],
