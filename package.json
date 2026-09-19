@@ -97,6 +97,7 @@
     "v16:ratio": "tsx make/v16/code/ratio.ts",
     "v4:pin": "tsx make/v4/code/pin.ts",
     "v16:sort": "tsx make/v16/code/sort.ts",
+    "v16:every": "tsx make/v16/code/every.ts",
     "v16:final": "tsx make/v16/code/final.ts"
   },
   "devDependencies": {
