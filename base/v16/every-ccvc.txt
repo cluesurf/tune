@@ -49,7 +49,6 @@ grax
 graj
 graC
 grac
-grar
 gral
 grom
 gron
@@ -68,7 +67,6 @@ grox
 groj
 groC
 groc
-gror
 grol
 grum
 grun
@@ -140,7 +138,6 @@ glaj
 glaC
 glac
 glar
-glal
 glom
 glon
 gloq
@@ -159,7 +156,6 @@ gloj
 gloC
 gloc
 glor
-glol
 glum
 glun
 gluq
@@ -177,7 +173,6 @@ glux
 gluj
 gluC
 gluc
-glul
 gwim
 gwin
 gwiq
@@ -409,7 +404,6 @@ drax
 draj
 draC
 drac
-drar
 dral
 drom
 dron
@@ -428,7 +422,6 @@ drox
 droj
 droC
 droc
-dror
 drol
 drum
 drun
@@ -589,7 +582,6 @@ brax
 braj
 braC
 brac
-brar
 bral
 brom
 bron
@@ -608,7 +600,6 @@ brox
 broj
 broC
 broc
-bror
 brol
 brum
 brun
@@ -680,7 +671,6 @@ blaj
 blaC
 blac
 blar
-blal
 blom
 blon
 bloq
@@ -699,7 +689,6 @@ bloj
 bloC
 bloc
 blor
-blol
 blum
 blun
 bluq
@@ -717,7 +706,6 @@ blux
 bluj
 bluC
 bluc
-blul
 smim
 smin
 smiq
@@ -1220,7 +1208,6 @@ slaj
 slaC
 slac
 slar
-slal
 slom
 slon
 sloq
@@ -1239,7 +1226,6 @@ sloj
 sloC
 sloc
 slor
-slol
 slum
 slun
 sluq
@@ -1257,7 +1243,6 @@ slux
 sluj
 sluC
 sluc
-slul
 swim
 swin
 swiq
@@ -1399,7 +1384,6 @@ vrax
 vraj
 vraC
 vrac
-vrar
 vral
 vrom
 vron
@@ -1418,7 +1402,6 @@ vrox
 vroj
 vroC
 vroc
-vror
 vrol
 vrum
 vrun
@@ -1490,7 +1473,6 @@ vlaj
 vlaC
 vlac
 vlar
-vlal
 vlom
 vlon
 vloq
@@ -1509,7 +1491,6 @@ vloj
 vloC
 vloc
 vlor
-vlol
 vlum
 vlun
 vluq
@@ -1527,7 +1508,6 @@ vlux
 vluj
 vluC
 vluc
-vlul
 frim
 frin
 friq
@@ -1579,7 +1559,6 @@ frax
 fraj
 fraC
 frac
-frar
 fral
 from
 fron
@@ -1598,7 +1577,6 @@ frox
 froj
 froC
 froc
-fror
 frol
 frum
 frun
@@ -1670,7 +1648,6 @@ flaj
 flaC
 flac
 flar
-flal
 flom
 flon
 floq
@@ -1689,7 +1666,6 @@ floj
 floC
 floc
 flor
-flol
 flum
 flun
 fluq
@@ -1707,4 +1683,3 @@ flux
 fluj
 fluC
 fluc
-flul

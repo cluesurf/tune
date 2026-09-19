@@ -1,5 +1,18 @@
 /**
- * Sort every word list into TUNE alphabetical order.
+ * A SAFETY NET, and no longer where sorting happens.
+ *
+ * **Every v16 writer now sorts at source, through `writeList` in
+ * `order.ts`.** This file used to be the only thing that sorted, and
+ * the result was six files sitting unsorted on disk because nobody ran
+ * it: `ceiling-*.txt`, `cvc.txt`, `cvcc.txt`, `ccvc.txt`, `cvcvc.txt`,
+ * `ratio-*.txt` and `short-apart.txt` were all in the order the greedy
+ * happened to reach, which means nothing to a reader.
+ *
+ * It stays for the `v8` lists, whose writers have not been converted,
+ * and as a way to fix a file that arrives from somewhere else. It
+ * shares the comparator rather than holding a second copy.
+ *
+ * Sorts every word list into TUNE alphabetical order.
  *
  * Not ASCII order. The language has its own order and it is the one
  * `code/phonology.ts` declares:
@@ -26,35 +39,9 @@ import { readFileSync, readdirSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { SORT_ORDER } from '../../../code/phonology'
+import { inTuneOrder as compare } from './order'
 
 const here = dirname(fileURLToPath(import.meta.url))
-
-const rank = new Map(SORT_ORDER.map((one, at) => [one, at]))
-
-/**
- * LENGTH first, then the language's own order.
- *
- * A file holding more than one shape reads far better with the three
- * sound words together, then the four, then the five. Sorting purely
- * by sound interleaves them, so `bat`, `batx`, `bed` sit in a row and
- * the shape of the inventory is invisible.
- */
-function compare(a: string, b: string): number {
-  if (a.length !== b.length) return a.length - b.length
-  const size = a.length
-  for (let at = 0; at < size; at++) {
-    const x = rank.get(a[at])
-    const y = rank.get(b[at])
-    if (x === undefined || y === undefined) {
-      // A sound the order does not know: fall back rather than throw,
-      // so one stray line cannot stop the whole sort.
-      if (a[at] !== b[at]) return a[at] < b[at] ? -1 : 1
-      continue
-    }
-    if (x !== y) return x - y
-  }
-  return 0
-}
 
 const DIRS = ['../../../base/v8', '../../../base/v16'].map(one =>
   resolve(here, one),

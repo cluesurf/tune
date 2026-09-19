@@ -29,9 +29,10 @@
  *   pnpm --dir deck/tune v16:pick
  */
 
-import { mkdirSync, writeFileSync } from 'fs'
+import { mkdirSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
+import { writeList } from './order'
 import {
   CONSONANTS,
   SHAPES,
@@ -248,7 +249,7 @@ process.stdout.write(
  * The long shape has 185,031 forms against a need of 2,075, so any
  * well spread choice will do and dispersion is the right tool there.
  */
-writeFileSync(resolve(OUT, 'cvcvc.txt'), `${long.order.join('\n')}\n`)
+writeList(resolve(OUT, 'cvcvc.txt'), long.order)
 process.stdout.write(
   `\n  wrote cvcvc.txt only. The short roots belong to v16:most,\n` +
     `  which packs them better: 2,021 at distance 2 against the\n` +

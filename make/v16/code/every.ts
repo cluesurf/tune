@@ -24,27 +24,13 @@
  *   pnpm --dir deck/tune v16:every
  */
 
-import { writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { SORT_ORDER } from '../../../code/phonology'
+import { writeList } from './order'
 import { SHAPES, every } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../../../base/v16')
-
-const rank = new Map(SORT_ORDER.map((one, at) => [one, at]))
-
-/** Length first, then the Tune alphabet, as every v16 list is. */
-function inTuneOrder(a: string, b: string) {
-  if (a.length !== b.length) return a.length - b.length
-  for (let at = 0; at < a.length; at++) {
-    const x = rank.get(a[at]) ?? 99
-    const y = rank.get(b[at]) ?? 99
-    if (x !== y) return x - y
-  }
-  return 0
-}
 
 process.stdout.write(
   'EVERY LEGAL FORM, BEFORE ANYTHING IS CHOSEN\n\n' +
@@ -53,12 +39,9 @@ process.stdout.write(
 
 let all = 0
 for (const shape of SHAPES) {
-  const words = every(shape).sort(inTuneOrder)
+  const words = every(shape)
   all += words.length
-  writeFileSync(
-    resolve(OUT, `every-${shape.toLowerCase()}.txt`),
-    `${words.join('\n')}\n`,
-  )
+  writeList(resolve(OUT, `every-${shape.toLowerCase()}.txt`), words)
   process.stdout.write(
     `  ${shape.padEnd(8)}${words.length.toLocaleString().padStart(10)}\n`,
   )

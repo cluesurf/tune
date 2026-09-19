@@ -30,18 +30,24 @@
  *
  * ## Why the long shape carries the optimisation
  *
- * `CVCVC` has 65,147 forms at distance 2 and a quota near 2,400, so
- * **one root in twenty seven is taken** and the distribution of its
- * first and last sounds can be chosen almost freely. The short shapes
- * have far less room: `CCVC` offers 555 against a quota of 512.
+ * `CVCVC` has 50,616 forms at distance 2 against a quota near 2,400, so
+ * **one root in twenty two is taken** and the distribution of its first
+ * and last sounds can be chosen almost freely. The short shapes have
+ * far less room: `CCVC` offers 688 against a quota of 512.
+ *
+ * Every number in this file's prose moves when a similarity rule
+ * changes, so read the printed table rather than the comment: these
+ * said 65,147 and 555 for three rule changes after they stopped being
+ * true.
  *
  * Usage:
  *   pnpm --dir deck/tune v16:ratio
  */
 
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
+import { writeList } from './order'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../../../base/v16')
@@ -109,8 +115,8 @@ function quiet(
    * The cost of adding a word depends on nothing but that pair, so
    * every word in a bucket costs the same and only 484 buckets exist
    * at most. Scoring buckets instead of words takes the inner loop
-   * from 65,147 to a few hundred, which is what makes the long shape
-   * affordable: 2,432 picks over the raw pool would be 158 million
+   * from 50,616 to a few hundred, which is what makes the long shape
+   * affordable: 2,432 picks over the raw pool would be 123 million
    * scorings, and over buckets it is nearer 400 thousand.
    */
   const bucket = new Map<string, Array<string>>()
@@ -183,7 +189,7 @@ function quiet(
  *
  * Searching partitions is cheap because a partition is scored from a
  * 22 by 22 table of counts rather than from the words: 484 additions
- * per shape, against 65,147 words. Hill climbing over sound
+ * per shape, against 50,616 words. Hill climbing over sound
  * assignments converges in milliseconds.
  *
  * **Sibilants all on the BEGIN side** kills the second rule for free
@@ -292,11 +298,12 @@ type Plan = { name: string; cvc: number; cvcc: number; ccvc: number; cvcvc: numb
  * that spends 128 more of the budget on them is buying the scarce
  * good.
  *
- * Against the pools of 713 / 753 / 555, the quotas 640 / 640 / 512
- * take 90%, 85% and 92%. `CCVC` is the tight one at 512 of 555.
+ * Against the pools of 738 / 753 / 688, the quotas 640 / 640 / 512
+ * take 87%, 85% and 74%. `CCVC` was the tight one at 512 of 555 and is
+ * now the loosest, because four more cluster onsets took it to 688.
  *
- * The full ceiling is 2,021 one syllable words, so a clean ratio costs
- * 229 of them. That is the price of the shape counts being powers of
+ * The full ceiling is 2,179 one syllable words, so a clean ratio costs
+ * 387 of them. That is the price of the shape counts being powers of
  * two multiples rather than whatever the pools happened to allow.
  */
 const PLANS: Array<Plan> = [
@@ -482,27 +489,25 @@ if (blocked.length) {
   for (const [name, why] of blocked) {
     process.stdout.write(`  ${name.padEnd(11)}${why}\n`)
   }
+  // Read from the live pools, never retyped. These numbers move every
+  // time a similarity rule changes, and a hardcoded copy of them was
+  // still printing 65,147 and 555 after three rule changes had taken
+  // them to 50,616 and 688.
   process.stdout.write(
     '\n  A disjoint split roughly halves every shape\'s usable region,\n' +
       '  because a word needs its first sound on one side and its last\n' +
-      '  on the other. The LONG shape can pay that, with 65,147 forms\n' +
+      `  on the other. The LONG shape can pay that, with ${POOLS.CVCVC.length.toLocaleString()} forms\n` +
       '  against a quota near 2,400. The SHORT shapes cannot: CCVC is\n' +
-      '  already taking 512 of the 555 it has.\n',
+      `  already taking 512 of the ${POOLS.CCVC.length} it has.\n`,
   )
 }
 
 for (const [name, words] of best) {
-  writeFileSync(
-    resolve(BASE, `ratio-${name.replace(/:/g, '-')}.txt`),
-    `${words.join('\n')}\n`,
-  )
+  writeList(resolve(BASE, `ratio-${name.replace(/:/g, '-')}.txt`), words)
 }
 // The first plan is the preferred one, written again under a stable
 // name so the rest of the pipeline has one file to read.
-writeFileSync(
-  resolve(BASE, 'ratio-chosen.txt'),
-  `${best[0][1].join('\n')}\n`,
-)
+writeList(resolve(BASE, 'ratio-chosen.txt'), best[0][1])
 process.stdout.write(
   `\n  wrote ratio-*.txt to ${BASE}\n` +
     `  and ratio-chosen.txt, which is ${best[0][0]}\n`,

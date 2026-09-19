@@ -14,9 +14,9 @@
  *   pnpm --dir deck/tune v16:most
  */
 
-import { writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
+import { writeList } from './order'
 import { Shape, every, scores } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
@@ -120,10 +120,7 @@ for (const rule of RULES) {
     // the standard, and the count is whatever the shapes can hold
     // rather than a round number chosen in advance.
     SHORT.forEach((shape, at) => {
-      writeFileSync(
-        resolve(OUT, `${shape.toLowerCase()}.txt`),
-        `${got[at].join('\n')}\n`,
-      )
+      writeList(resolve(OUT, `${shape.toLowerCase()}.txt`), got[at])
     })
   }
 }
@@ -139,7 +136,7 @@ process.stdout.write(
 )
 
 if (chosen.length) {
-  writeFileSync(resolve(OUT, 'short-apart.txt'), `${chosen.join('\n')}\n`)
+  writeList(resolve(OUT, 'short-apart.txt'), chosen)
   process.stdout.write(
     `\n  at "distance at least 2" that is ${chosen.length.toLocaleString()}` +
       ` one syllable words,\n  leaving ${(4096 - chosen.length).toLocaleString()}` +

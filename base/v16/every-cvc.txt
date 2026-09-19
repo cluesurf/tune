@@ -1669,7 +1669,6 @@ rax
 raj
 raC
 rac
-rar
 ral
 rom
 ron
@@ -1688,7 +1687,6 @@ rox
 roj
 roC
 roc
-ror
 rol
 rum
 run
@@ -1760,7 +1758,6 @@ laj
 laC
 lac
 lar
-lal
 lom
 lon
 loq
@@ -1779,7 +1776,6 @@ loj
 loC
 loc
 lor
-lol
 lum
 lun
 luq
@@ -1797,7 +1793,6 @@ lux
 luj
 luC
 luc
-lul
 wim
 win
 wiq

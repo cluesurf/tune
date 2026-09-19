@@ -293,10 +293,63 @@ function rhymeOk(word: string): boolean {
   return true
 }
 
+/**
+ * NO `r.r` AND NO `l.l`: the same liquid twice with one vowel between.
+ *
+ * ```text
+ * rar  lal  lul  brar  varar  valal  ralal    refused
+ * lar  ral  jul  tul   varal  ralap  lariv    stand
+ * ```
+ *
+ * **The two liquids must be the SAME one.** `r.l` and `l.r` are two
+ * different gestures, the tongue tip taps for one and bunches for the
+ * other, so `varal` and `lariv` are as clear as any other word and are
+ * not touched.
+ *
+ * A liquid is the one consonant the tongue holds a shape for rather
+ * than striking, so `r a r` is one continuous gesture with a vowel
+ * coloured by it at both ends, and the word reads as a single smear
+ * instead of three segments. It is the same complaint as `hahat` and
+ * `wawan` under `TWIN_WEAK`, one step further out: there the two weak
+ * consonants were adjacent syllable openers, here the pair can sit
+ * anywhere.
+ *
+ * **So it is checked per WORD rather than per shape.** Written into
+ * the `CVCVC` generator it would have caught `ralal` and missed `rar`,
+ * `rart` and `brar` entirely, because those are one syllable words and
+ * that generator never sees them. Scanning `i` against `i + 2` over
+ * the whole string catches every shape with one rule:
+ *
+ * ```text
+ * CVC     r a r        0 and 2
+ * CVCC    r a r t      0 and 2
+ * CCVC    b r a r      1 and 3
+ * CVCVC   r a r a C    0 and 2, and 2 and 4
+ * ```
+ *
+ * `rVCVr` is NOT refused. Two liquids at opposite ends of a two
+ * syllable word have a whole consonant between them, which is enough
+ * to break the gesture, and the rule as asked for was `r.r` with one
+ * thing in the middle.
+ */
+const LIQUID = new Set(['l', 'r'])
+
+function liquidOk(word: string): boolean {
+  for (let at = 0; at + 2 < word.length; at++) {
+    if (!LIQUID.has(word[at])) continue
+    if (word[at] !== word[at + 2]) continue
+    if (VOWELS.includes(word[at + 1])) return false
+  }
+  return true
+}
+
 export function every(shape: Shape): Array<string> {
   const out: Array<string> = []
+  // Every legality test that reads the whole word lives here, so a
+  // rule cannot be added to one shape's generator and missed by the
+  // other three. That is how `r.r` would have gone in.
   const push = (word: string) => {
-    if (rhymeOk(word)) out.push(word)
+    if (rhymeOk(word) && liquidOk(word)) out.push(word)
   }
   if (shape === 'CVC') {
     for (const a of CONSONANTS) {

@@ -24,10 +24,10 @@
  *   pnpm --dir deck/tune v16:final
  */
 
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { SORT_ORDER } from '../../../code/phonology'
+import { writeList } from './order'
 import {
   NEAR_VOWEL,
   Shape,
@@ -515,22 +515,8 @@ process.stdout.write(`\n  total ${total.toLocaleString()} of 4,096\n`)
  * command is a file that will be read unsorted**, and it was: these
  * shipped in selection order once already.
  */
-const rank = new Map(SORT_ORDER.map((one, at) => [one, at]))
-const inTuneOrder = (a: string, b: string) => {
-  if (a.length !== b.length) return a.length - b.length
-  for (let at = 0; at < a.length; at++) {
-    const x = rank.get(a[at]) ?? 99
-    const y = rank.get(b[at]) ?? 99
-    if (x !== y) return x - y
-  }
-  return 0
-}
-
 for (const [shape, words] of built) {
-  writeFileSync(
-    resolve(OUT, `final-${shape.toLowerCase()}.txt`),
-    `${[...words].sort(inTuneOrder).join('\n')}\n`,
-  )
+  writeList(resolve(OUT, `final-${shape.toLowerCase()}.txt`), words)
 }
 process.stdout.write(
   `\n  wrote final-cvc.txt, final-cvcc.txt, final-ccvc.txt,\n` +

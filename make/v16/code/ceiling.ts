@@ -31,9 +31,9 @@
  *   pnpm --dir deck/tune v16:ceiling
  */
 
-import { writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
+import { writeList } from './order'
 import { NEAR_VOWEL, Shape, VOWEL_AT, every, nearAt } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
@@ -126,9 +126,6 @@ for (const target of [4096, 16384, 65536]) {
 }
 
 for (const [shape, kept] of sets) {
-  writeFileSync(
-    resolve(OUT, `ceiling-${shape.toLowerCase()}.txt`),
-    `${kept.join('\n')}\n`,
-  )
+  writeList(resolve(OUT, `ceiling-${shape.toLowerCase()}.txt`), kept)
 }
 process.stdout.write(`\n  wrote ceiling-*.txt to ${OUT}\n`)
