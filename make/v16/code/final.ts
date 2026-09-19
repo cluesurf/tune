@@ -24,11 +24,12 @@
  *   pnpm --dir deck/tune v16:final
  */
 
-import { readFileSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { writeList } from './order'
 import {
+  FRICATIVE,
   NEAR_VOWEL,
   Shape,
   VOWEL_AT,
@@ -158,9 +159,45 @@ const QUOTA: Record<string, number> = {
  */
 const BAND = Number(process.env.BAND ?? 1)
 
-const SIBILANT = new Set(['s', 'z', 'x', 'j'])
+/**
+ * The seam family, imported rather than retyped.
+ *
+ * This said `s z x j` while the rule had grown to every fricative, so
+ * the printed breaker rate was counting fewer seams than the language
+ * actually breaks.
+ */
+const SIBILANT = FRICATIVE
 const first = (one: string) => one[0]
 const last = (one: string) => one[one.length - 1]
+
+/**
+ * WISHES: forms that should sound like the word they will mean.
+ *
+ * Written by `v16:lexicon` from the English spellings, against every
+ * LEGAL form. Read here so the chosen 4,096 can CONTAIN them.
+ *
+ * Without this step the ordering was backwards: 4,096 were chosen for
+ * distinctness, and only then was meaning assigned to whatever had
+ * been chosen. `rabit` and `fores` are both legal Tune words and
+ * neither was among the chosen, so echo reached 27 concepts out of
+ * 1,204 and the rest got forms with no relationship to their meaning.
+ *
+ * **A wish is a PREFERENCE, never a pin.** A pin is placed even if it
+ * blocks its neighbours, because a pin is a decision. A wish is placed
+ * only where nothing already there conflicts, so it can never cost a
+ * distinction, and a wish that does not fit is simply not granted.
+ */
+const WISH = resolve(here, '../../../base/v16/term/wish.csv')
+
+const wishes: Array<[string, string]> = []
+try {
+  for (const line of readFileSync(WISH, 'utf-8').split('\n').slice(1)) {
+    const cut = line.split(',')
+    if (cut[0] && cut[1]) wishes.push([cut[0].trim(), cut[1].trim()])
+  }
+} catch {
+  // No wish list yet: the very first build has nothing to echo.
+}
 
 const pins: Array<[string, string]> = []
 for (const line of readFileSync(PIN, 'utf-8').split('\n').slice(1)) {
@@ -282,6 +319,7 @@ process.stdout.write(
 const E = new Map<string, number>()
 const B = new Map<string, number>()
 const built = new Map<Shape, Array<string>>()
+let granted = 0
 
 for (const shape of SHAPES) {
   const all = every(shape)
@@ -335,6 +373,26 @@ for (const shape of SHAPES) {
     const i = at.get(one)
     if (i !== undefined && !inSet[i]) place(i)
   }
+
+  /**
+   * Then the WISHES, which yield to everything already standing.
+   *
+   * `!blocked[i]` is the whole difference between a wish and a pin. A
+   * wish that would sit within one near sound of a placed word is
+   * dropped, so granting them can never cost the language a
+   * distinction, only give a word a better sound than the pool would.
+   */
+  const wished = wishes
+    .filter(([, f]) => shapeOf(f) === shape)
+    .map(([, f]) => f)
+  for (const one of wished) {
+    const i = at.get(one)
+    if (i !== undefined && !inSet[i] && !blocked[i]) place(i)
+  }
+  granted += wished.filter(one => {
+    const i = at.get(one)
+    return i !== undefined && inSet[i]
+  }).length
 
   const cost = (one: string) => {
     const f = first(one)
@@ -516,7 +574,12 @@ for (const shape of SHAPES) {
 }
 
 const total = [...built.values()].reduce((sum, one) => sum + one.length, 0)
-process.stdout.write(`\n  total ${total.toLocaleString()} of 4,096\n`)
+process.stdout.write(
+  `\n  total ${total.toLocaleString()} of 4,096\n` +
+    (wishes.length
+      ? `  echo wishes granted   ${granted} of ${wishes.length}\n`
+      : ''),
+)
 
 // ─── Write ─────────────────────────────────────────────
 
@@ -618,6 +681,24 @@ process.stdout.write(
     )
   }
 }
+
+/**
+ * WHERE EACH PIN ACTUALLY LANDED, written for anything downstream.
+ *
+ * Eleven of them move off a clash with an earlier pin, so the form in
+ * `pin.csv` is what was ASKED for and not always what was placed. A
+ * lexicon built from the asked column would be wrong in eleven places
+ * and look right.
+ */
+writeFileSync(
+  resolve(OUT, 'term/pin-placed.csv'),
+  `concept,form,asked\n${kept
+    .map(([concept, form]) => {
+      const asked = pins.find(([c]) => c === concept)?.[1] ?? form
+      return `${concept},${form},${asked}`
+    })
+    .join('\n')}\n`,
+)
 
 const survived = kept.filter(([, f]) =>
   (built.get(shapeOf(f)) as Array<string>).includes(f),

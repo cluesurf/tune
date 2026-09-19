@@ -1,0 +1,703 @@
+english,base,build,form,uses,note
+a,one,one,nip,197,
+is,be,be,biq,188,
+i,me,me,miz,184,
+are,be,be,biq,91,
+was,be,be,biq,88,
+my,me,me,miz,69,
+her,she,she,kes,53,
+trees,tre,tre + plural,taralmis,29,"stem guessed, review"
+would,will,will,wol,24,
+has,have,have,hav,24,
+your,you,you,dis,23,
+beautiful,beauty,beauty + full,betalfal,23,
+us,we,we,tim,21,
+were,be,be,biq,21,
+don't,not,not,nat,20,
+him,he,he,hin,19,
+had,have,have,hav,19,
+leaves,leaf,leaf + plural,lefmis,19,
+birds,bird,bird + plural,bartmis,19,
+could,can,can,kon,18,
+animals,animal,animal + plural,mijmis,18,
+into,in,in,bit,18,
+flowers,flower,flower + plural,flormis,18,
+our,we,we,tim,16,
+an,one,one,nip,16,
+his,he,he,hin,15,
+them,they,they,zin,14,
+it's,be,be,biq,14,
+let's,let,let,let,14,
+did,do,do,jid,13,
+no,not,not,nat,13,
+rocks,rock,rock + plural,rakmis,12,
+seen,see,see + done,ximdon,12,
+stars,star,star + plural,starmis,12,
+does,do,do,jid,11,
+made,make,make + past,makpas,11,
+been,be,be,biq,10,
+covered,cover,cover + past,kavarpas,10,
+best,good,good + most,tafmos,10,
+eyes,eye,eye + plural,haqmis,10,
+its,it,it,kid,10,
+am,be,be,biq,9,
+berries,berry,berry + plural,baralmis,9,
+children,child,child + plural,kikmis,8,
+wanted,want,want + past,wintpas,8,
+sitting,sit,sit + doing,sitalwareC,8,
+going,go,go + doing,cimreC,8,
+their,they,they,zin,8,
+those,that,that,kat,8,
+clouds,cloud,cloud + plural,gladmis,8,
+walked,walk,walk + past,wolakpas,7,
+can't,not,not,nat,7,
+which,what,what,wit,7,
+looked,look,look + past,lokpas,6,
+loves,lov,lov + plural,lavalmis,6,"stem guessed, review"
+years,year,year + plural,yarmis,6,
+looking,look,look + doing,lokreC,6,
+plants,plant,plant,blan,6,
+got,get,get + past,getpas,6,
+brought,bring,bring + past,barinpas,6,
+saw,see,see + past,ximpas,6,
+these,this,this,sis,6,
+making,make,make + doing,makreC,6,
+bushes,bush,bush + plural,bakasmis,6,
+mountains,mountain,mountain + plural,monotmis,6,
+friends,friend,friend + plural,farinmis,6,
+ears,ear,ear + plural,zipmis,6,"stem guessed, review"
+parents,parent,parent + plural,parunmis,5,
+fruits,fruit,fruit + plural,fratmis,5,
+cannot,not,not,nat,5,
+used,use,use + past,bolompas,5,
+swimming,swim,swim + doing,siwamreC,5,
+won't,not,not,nat,5,
+playing,play,play + doing,bulwareC,5,
+ran,run,run + past,ranalpas,5,
+interesting,interest,interest + doing,nitarlreC,5,"stem guessed, review"
+falling,fall,fall + doing,falarlreC,5,
+filled,fill,fill + past,falonpas,5,
+times,tim,tim + plural,timalmis,4,"stem guessed, review"
+climbing,climb,climb + doing,kalimreC,4,
+didn't,not,not,nat,4,
+might,may,may,vig,4,
+wants,want,want,wint,4,
+people,person,person + plural,parzmis,4,
+heard,hear,hear + past,Cidpas,4,
+wouldn't,not,not,nat,4,
+i've,have,have,hav,4,
+makes,mak,mak + plural,mikenmis,4,"stem guessed, review"
+went,go,go + past,cimpas,4,
+hills,hill,hill + plural,halarmis,4,
+rises,rise,rise,risal,4,
+usually,usual,usual + manner,salarmun,4,"stem guessed, review"
+rains,rain,rain + plural,ranmis,4,
+delicious,deliciou,deliciou + plural,dalesmis,4,"stem guessed, review"
+took,take,take + past,takpas,4,
+wonderful,wonder,wonder + full,wenadfal,4,
+feet,foot,foot + plural,votmis,4,
+riding,ride,ride + doing,rodolwareC,4,
+came,come,come + past,hiqpas,4,
+glanced,glanc,glanc + past,galanpas,4,"stem guessed, review"
+branches,branch,branch + plural,bronmis,4,
+rabbits,rabbit,rabbit + plural,rabatmis,4,
+quickly,quick,quick + manner,kiwakmun,4,
+being,be,be,biq,4,
+takes,tak,tak + plural,tokolmis,4,"stem guessed, review"
+approaches,approach,approach + plural,parotmis,4,"stem guessed, review"
+sounds,sound,sound + plural,santmis,4,
+things,thing,thing + plural,sinagmis,4,
+said,say,say + past,pifpas,3,
+thought,think,think + past,snikpas,3,
+careful,care,care + full,karalfal,3,
+walking,walk,walk + doing,wolakreC,3,
+running,run,run + doing,ranalwareC,3,
+within,in,in,bit,3,
+tired,tir,tir + past,tarinpas,3,"stem guessed, review"
+coming,come,come + doing,hiqreC,3,
+jumped,jump,jump + past,dajampas,3,
+digging,dig,dig + doing,digalwareC,3,
+grew,grow,grow + past,grolpas,3,
+longer,long,long + more,lonlid,3,
+shouldn't,not,not,nat,3,
+shades,shad,shad + plural,kasadmis,3,"stem guessed, review"
+dripping,drip,drip + doing,doripreC,3,"stem guessed, review"
+felt,feel,feel + past,flanpas,3,
+sides,sid,sid + plural,sadanmis,3,"stem guessed, review"
+getting,get,get + doing,getreC,3,
+lying,lie,lie + doing,dalokreC,3,"stem guessed, review"
+woke,wake,wake + past,wegpas,3,
+tides,tid,tid + plural,tidalmis,3,"stem guessed, review"
+flying,fly,fly + doing,folorlreC,3,
+wolves,wolf,wolf + plural,wolafmis,3,
+butterflies,butterfly,butterfly + plural,falatkifmis,3,
+we're,we,we,tim,3,
+shrubs,shrub,shrub + plural,yehizmis,3,"stem guessed, review"
+having,hav,hav + doing,havalwareC,3,"stem guessed, review"
+gets,get,get,get,3,
+lights,light,light + plural,lutmis,3,
+sat,sit,sit + past,sitalpas,3,
+watching,watch,watch + doing,wodreC,3,
+wings,wing,wing + plural,wonmis,3,"stem guessed, review"
+living,live,live + doing,livalwareC,3,
+waves,wav,wav + plural,wivalmis,3,"stem guessed, review"
+gave,give,give + past,givpas,3,
+seemingly,seeming,seeming + manner,wegozmun,3,"stem guessed, review"
+stops,stop,stop,stap,3,
+eating,eat,eat + doing,pigreC,3,
+finally,final,final + manner,finalmun,3,"stem guessed, review"
+comes,com,com + plural,kamalmis,3,"stem guessed, review"
+paws,paw,paw + plural,hayocmis,3,
+others,other,other + plural,zormis,3,
+seems,seem,seem,semin,3,"stem guessed, review"
+growing,grow,grow + doing,grolwareC,3,
+legs,leg,leg + plural,lugmis,3,"stem guessed, review"
+feels,feel,feel,flan,3,
+what's,what',what' + plural,tiwagmis,3,"stem guessed, review"
+moves,mov,mov + plural,mavalmis,2,"stem guessed, review"
+planned,plan,plan + past,palanpas,2,
+fallen,fall,fall + done,falardon,2,
+gone,go,go + done,cimdon,2,
+climbed,climb,climb + past,kalimpas,2,
+onto,on,on,fin,2,
+regarding,regard,regard + doing,regarlreC,2,"stem guessed, review"
+versus,versu,versu + plural,varesmis,2,"stem guessed, review"
+forests,forest,forest + plural,farasmis,2,
+ate,eat,eat + past,pigpas,2,
+actually,actual,actual + manner,katalmun,2,"stem guessed, review"
+moved,move,move + past,muvpas,2,
+finding,find,find + doing,fintreC,2,
+couldn't,not,not,nat,2,
+planning,plan,plan + doing,palanreC,2,
+moving,move,move + doing,muvreC,2,
+sent,send,send + past,sunodpas,2,
+budding,bud,bud + doing,bidalwareC,2,"stem guessed, review"
+blossoming,blossom,blossom + doing,balasreC,2,
+scorching,scorch,scorch + doing,sakarlreC,2,"stem guessed, review"
+happened,happen,happen + past,hapanpas,2,
+following,follow,follow + doing,folanreC,2,
+loving,love,love + doing,lovreC,2,
+blending,blend,blend + doing,bolanreC,2,"stem guessed, review"
+blooms,bloom,bloom,balem,2,
+various,variou,variou + plural,varulmis,2,"stem guessed, review"
+works,work,work + plural,workmis,2,
+weekends,weekend,weekend + plural,wekanmis,2,
+runs,run,run,ranal,2,
+taken,take,take + done,takdon,2,
+i'll,will,will,wol,2,
+lost,lose,lose + past,losolpas,2,
+shined,shine,shine + past,kisenpas,2,
+drew,draw,draw + past,doralpas,2,
+laughed,laugh,laugh + past,wegaspas,2,"stem guessed, review"
+carefully,careful,careful + manner,karafmun,2,
+waited,wait,wait + past,witenpas,2,
+goes,go,go,cim,2,
+bugs,bug,bug + plural,kifmis,2,
+staying,stay,stay + doing,satalwareC,2,
+shining,shine,shine + doing,kisenreC,2,
+watched,watch,watch + past,wodpas,2,
+towards,toward,toward,tort,2,
+rushing,rush,rush + doing,bolinreC,2,"stem guessed, review"
+flowing,flow,flow + doing,flemreC,2,"stem guessed, review"
+fields,field,field + plural,falidmis,2,
+species,specy,specy + plural,sepikmis,2,"stem guessed, review"
+colorful,color,color + full,glarfal,2,
+curious,curiou,curiou + plural,karulmis,2,"stem guessed, review"
+happily,happy,happy + manner,hapalmun,2,
+unusually,unusual,unusual + manner,nosolmun,2,"stem guessed, review"
+fishes,fish,fish + plural,fikmis,2,
+peacefully,peaceful,peaceful + manner,pesafmun,2,"stem guessed, review"
+currently,current,current + manner,koronmun,2,"stem guessed, review"
+scattered,scatter,scatter + past,sakatpas,2,
+ducks,duck,duck + plural,dakalmis,2,
+reptiles,reptil,reptil + plural,repitmis,2,"stem guessed, review"
+playfully,playful,playful + manner,palafmun,2,"stem guessed, review"
+tried,try,try + past,torulpas,2,
+shines,shin,shin + plural,jayuvmis,2,"stem guessed, review"
+stones,ston,ston + plural,coretmis,2,"stem guessed, review"
+games,gam,gam + plural,gemalmis,2,"stem guessed, review"
+thanks,thank,thank + plural,kinagmis,2,"stem guessed, review"
+siblings,sibling,sibling + plural,sibalmis,2,
+counted,count,count + past,kantpas,2,
+brightly,bright,bright + manner,marmun,2,
+woods,wood,wood + plural,gismis,2,
+likes,lik,lik + plural,likormis,2,"stem guessed, review"
+extremely,extreme,extreme + manner,kosotmun,2,"stem guessed, review"
+swims,swim,swim,siwam,2,
+stayed,stay,stay + past,satalpas,2,
+insects,insect,insect + plural,nisekmis,2,"stem guessed, review"
+ending,end,end + doing,jipreC,2,
+gems,gem,gem + plural,xeyucmis,2,"stem guessed, review"
+bees,bee,bee + plural,laruqmis,2,
+drops,drop,drop,darap,2,
+seeds,seed,seed + plural,sedmis,2,
+doesn't,not,not,nat,2,
+traveled,travel,travel + past,taravpas,2,
+jumping,jump,jump + doing,dajamreC,2,
+asked,ask,ask + past,skulpas,2,
+stopped,stop,stop + past,staplpas,2,
+orders,order,order + plural,redmis,2,
+gifts,gift,gift + plural,gifatmis,2,
+pleased,please,please + past,polzpas,2,
+happiness,happy,happy + state,hapalzet,2,
+mine,me,me,miz,2,
+grown,grow,grow + done,groldon,2,
+falls,fall,fall,falar,2,
+flew,fly,fly + past,folorpas,2,
+traveling,travel,travel + doing,taravreC,2,
+valleys,valley,valley + plural,valormis,2,
+lakes,lak,lak + plural,likalmis,2,"stem guessed, review"
+surrounded,surround,surround + past,saranpas,2,
+trying,try,try + doing,torulwareC,2,
+grasshoppers,grasshopper,grasshopper + plural,graslhapmis,2,
+toes,toe,toe + plural,kijmis,2,"stem guessed, review"
+keeps,keep,keep,kepal,2,
+sinking,sink,sink + doing,senikreC,2,
+becoming,become,become + doing,bekomreC,2,
+endless,end,end + lack,jipleg,2,
+needs,need,need,nid,2,
+totally,total,total + manner,tatalmun,2,
+slowly,slow,slow + manner,slormun,2,"stem guessed, review"
+rays,ray,ray + plural,cihezmis,2,"stem guessed, review"
+kept,keep,keep + past,kepalpas,2,
+wilderness,wilder,wilder + state,wolodzet,2,"stem guessed, review"
+crickets,cricket,cricket + plural,karikmis,2,"stem guessed, review"
+jumps,jump,jump,dajam,1,
+biggest,big,big + most,pagmos,1,
+calling,call,call + doing,kalwareC,1,
+calmest,calm,calm + most,kamlmos,1,
+talked,talk,talk + past,talakpas,1,
+minutes,minut,minut + plural,manatmis,1,"stem guessed, review"
+older,old,old + more,ladlid,1,
+slept,sleep,sleep + past,sleplpas,1,
+sits,sit,sit,sital,1,
+aren't,not,not,nat,1,
+equally,equal,equal + manner,kewalmun,1,"stem guessed, review"
+shone,shine,shine + past,kisenpas,1,
+lots,lot,lot + plural,yuhexmis,1,
+hers,she,she,kes,1,
+bigger,big,big + more,paglid,1,
+probably,probab,probab + manner,parobmun,1,"stem guessed, review"
+working,work,work + doing,workreC,1,
+rooms,room,room + plural,romolmis,1,
+realizing,realiz,realiz + doing,ralezreC,1,"stem guessed, review"
+truly,tru,tru + manner,torenmun,1,"stem guessed, review"
+savers,saver,saver + plural,ziyesmis,1,"stem guessed, review"
+leafs,leaf,leaf + plural,lefmis,1,
+turning,turn,turn + doing,dranreC,1,
+shoes,sho,sho + plural,zolidmis,1,"stem guessed, review"
+entered,enter,enter + past,nadarpas,1,
+pleasing,please,please + doing,polzreC,1,
+wondering,wonder,wonder + doing,wenadreC,1,
+evolved,evolv,evolv + past,valevpas,1,"stem guessed, review"
+finished,finish,finish + past,finakpas,1,
+picking,pick,pick + doing,pikalwareC,1,
+amazing,amaz,amaz + doing,mazalwareC,1,"stem guessed, review"
+excitement,excite,excite + result,wolanres,1,"stem guessed, review"
+rained,rain,rain + past,ranpas,1,
+mostly,most,most + manner,mosmun,1,
+higher,high,high + more,miclid,1,
+eaten,eat,eat + done,pigdon,1,
+settled,settle,settle + past,badalpas,1,
+players,player,player + plural,kewormis,1,"stem guessed, review"
+helped,help,help + past,haleplpas,1,
+throws,throw,throw,korol,1,
+wisely,wise,wise + manner,wisalmun,1,"stem guessed, review"
+routines,routin,routin + plural,talumlmis,1,"stem guessed, review"
+forgot,forget,forget + past,varegpas,1,
+tree's,tree,tree + owned,tarwib,1,
+attempted,attempt,attempt + past,tamaplpas,1,"stem guessed, review"
+conditions,condition,condition + plural,vorezmis,1,"stem guessed, review"
+limited,limit,limit + past,limatpas,1,"stem guessed, review"
+shopping,shop,shop + doing,golukreC,1,"stem guessed, review"
+jeans,jean,jean + plural,yohojmis,1,"stem guessed, review"
+writes,writ,writ + plural,woritmis,1,"stem guessed, review"
+brushes,brush,brush + plural,xeyacmis,1,"stem guessed, review"
+teeth,tooth,tooth + plural,koraqmis,1,
+catches,catch,catch,katak,1,
+clothes,cloth,cloth + plural,galokmis,1,"stem guessed, review"
+smells,smell,smell + plural,semalmis,1,
+truthful,truth,truth + full,jahatfal,1,"stem guessed, review"
+we'll,will,will,wol,1,
+i'm,be,be,biq,1,
+waiting,wait,wait + doing,witenreC,1,
+promised,promis,promis + past,parimpas,1,"stem guessed, review"
+petals,petal,petal + plural,voripmis,1,"stem guessed, review"
+shivered,shiver,shiver + past,kisevpas,1,"stem guessed, review"
+chilly,chil,chil + manner,tikasmun,1,"stem guessed, review"
+checked,check,check + past,lihespas,1,"stem guessed, review"
+divided,divid,divid + past,divadpas,1,"stem guessed, review"
+groups,group,group + plural,grapmis,1,"stem guessed, review"
+met,meet,meet + past,mitalpas,1,
+arrived,arriv,arriv + past,vizempas,1,"stem guessed, review"
+enjoys,enjoy,enjoy + plural,nedajmis,1,
+cooking,cook,cook + doing,kokolwareC,1,"stem guessed, review"
+boots,boot,boot + plural,daletmis,1,"stem guessed, review"
+hours,hour,hour + plural,haralmis,1,
+meaning,mean,mean + doing,fariqreC,1,"stem guessed, review"
+showing,show,show + doing,kosolwareC,1,
+argument,argu,argu + result,ragalwares,1,"stem guessed, review"
+describing,describ,describ + doing,desikreC,1,"stem guessed, review"
+events,event,event + plural,venatmis,1,"stem guessed, review"
+enjoyed,enjoy,enjoy + past,nedajpas,1,
+rabbit's,rabbit,rabbit + owned,rabatwib,1,
+activities,activity,activity + plural,katavmis,1,
+there's,be,be,biq,1,
+cloudless,cloud,cloud + lack,gladleg,1,
+raining,rain,rain + doing,ranreC,1,
+darker,dark,dark + more,ramlid,1,
+standing,stand,stand + doing,dalamreC,1,
+chipping,chip,chip + doing,tokosreC,1,"stem guessed, review"
+buried,bury,bury + past,barompas,1,"stem guessed, review"
+dropped,drop,drop + past,daraplpas,1,
+houses,house,house + plural,hosolmis,1,
+harder,hard,hard + more,hartlid,1,
+highest,high,high + most,micmos,1,
+threw,throw,throw + past,korolpas,1,
+isn't,not,not,nat,1,
+disappeared,disappear,disappear + past,tizegpas,1,"stem guessed, review"
+building,build,build + doing,baladreC,1,
+pieces,piec,piec + plural,darobmis,1,"stem guessed, review"
+chairs,chair,chair + plural,behovmis,1,"stem guessed, review"
+breathed,breath,breath + past,brekpas,1,
+lily,ly,ly + manner,Caroxmun,1,"stem guessed, review"
+islands,island,island + plural,wutlontmis,1,
+beaches,beach,beach + plural,betakmis,1,
+absolutely,absolute,absolute + manner,basalmun,1,"stem guessed, review"
+crammed,cram,cram + past,karampas,1,"stem guessed, review"
+oasis,oasi,oasi + plural,kolagmis,1,"stem guessed, review"
+blossoms,blossom,blossom + plural,balasmis,1,
+scorpions,scorpion,scorpion + plural,Caromlmis,1,"stem guessed, review"
+numerous,numerou,numerou + plural,Colomlmis,1,"stem guessed, review"
+regions,region,region + plural,reginmis,1,
+dashes,dash,dash + plural,torebmis,1,
+chirping,chirp,chirp + doing,yuheqreC,1,"stem guessed, review"
+chilling,chil,chil + doing,tikasreC,1,"stem guessed, review"
+fearlessly,fearless,fearless + manner,forulmun,1,"stem guessed, review"
+frogs,frog,frog + plural,forogmis,1,
+trilling,tril,tril + doing,nalonreC,1,"stem guessed, review"
+amazingly,amazing,amazing + manner,mazanmun,1,
+grazing,graz,graz + doing,garazreC,1,"stem guessed, review"
+chasing,chas,chas + doing,jihumreC,1,"stem guessed, review"
+contains,contain,contain + plural,norotmis,1,"stem guessed, review"
+howling,howl,howl + doing,holanreC,1,
+caused,caus,caus + past,wizarpas,1,"stem guessed, review"
+noises,noise,noise + plural,nosarmis,1,"stem guessed, review"
+slopes,slop,slop + plural,talobmis,1,"stem guessed, review"
+approaching,approach,approach + doing,parotreC,1,"stem guessed, review"
+hopping,hop,hop + doing,hapreC,1,
+joyously,joyous,joyous + manner,dajasmun,1,"stem guessed, review"
+mice,mouse,mouse + plural,mosolmis,1,
+squeaking,squeak,squeak + doing,tinorlreC,1,"stem guessed, review"
+drinking,drink,drink + doing,drinreC,1,
+merrily,merry,merry + manner,moralmun,1,"stem guessed, review"
+builds,build,build,balad,1,
+twigs,twig,twig + plural,diwegmis,1,"stem guessed, review"
+snores,snor,snor + plural,valupmis,1,"stem guessed, review"
+rolls,roll,roll + plural,rolormis,1,
+blissfully,blissful,blissful + manner,balismun,1,"stem guessed, review"
+harvested,harvest,harvest + past,haravpas,1,"stem guessed, review"
+moths,moth,moth + plural,macmis,1,"stem guessed, review"
+speaks,speak,speak,spek,1,"stem guessed, review"
+skies,sky,sky + plural,skalmis,1,
+clearing,clear,clear + doing,kalarlreC,1,
+yours,you,you,dis,1,
+wakes,wak,wak + plural,wekarmis,1,"stem guessed, review"
+welcoming,welcome,welcome + doing,farexreC,1,
+cubes,cub,cub + plural,farebmis,1,"stem guessed, review"
+closely,close,close + manner,glosmun,1,
+sets,set,set + plural,stonmis,1,
+gives,giv,giv + plural,givalmis,1,"stem guessed, review"
+crossed,cros,cros + past,gorispas,1,"stem guessed, review"
+howled,howl,howl + past,holanpas,1,
+sounded,sound,sound + past,santpas,1,
+thanked,thank,thank + past,kinagpas,1,"stem guessed, review"
+started,start,start + past,zotpas,1,
+enjoying,enjoy,enjoy + doing,nedajreC,1,
+windows,window,window + plural,winodmis,1,
+slightly,slight,slight + manner,jahogmun,1,"stem guessed, review"
+chirped,chirp,chirp + past,yuheqpas,1,"stem guessed, review"
+fed,fe,fe + past,larebpas,1,"stem guessed, review"
+collections,collection,collection + plural,kalakmis,1,
+kinds,kind,kind + plural,kintmis,1,
+occurs,occur,occur + plural,wolipmis,1,"stem guessed, review"
+roughly,rough,rough + manner,Caledmun,1,
+bringing,bring,bring + doing,barinreC,1,
+days,day,day + plural,sigmis,1,
+uses,use,use + plural,bolomlmis,1,
+twinkles,twinkl,twinkl + plural,tiwanmis,1,"stem guessed, review"
+reading,read,read + doing,wolunreC,1,
+rings,ring,ring + plural,noharmis,1,"stem guessed, review"
+plays,play,play,bul,1,
+lives,life,life + plural,vitmis,1,
+freshly,fresh,fresh + manner,farekmun,1,
+picked,pick,pick + past,pikalpas,1,
+hides,hid,hid + plural,vihezmis,1,"stem guessed, review"
+members,member,member + plural,memabmis,1,"stem guessed, review"
+creatures,creatur,creatur + plural,Carupmis,1,"stem guessed, review"
+refreshing,refresh,refresh + doing,ColapreC,1,"stem guessed, review"
+glimmered,glimmer,glimmer + past,rezixpas,1,"stem guessed, review"
+bubbles,bubbl,bubbl + plural,resijmis,1,"stem guessed, review"
+boils,boil,boil + plural,tozarmis,1,"stem guessed, review"
+helpful,help,help + full,halepfal,1,
+fully,ful,ful + manner,falenmun,1,"stem guessed, review"
+ripened,ripen,ripen + past,ripenpas,1,"stem guessed, review"
+climates,climat,climat + plural,noribmis,1,"stem guessed, review"
+vastness,vast,vast + state,vasatzet,1,"stem guessed, review"
+glimmering,glimmer,glimmer + doing,rezixreC,1,"stem guessed, review"
+starting,start,start + doing,zotreC,1,
+warms,warm,warm + plural,ciqmis,1,
+begins,begin,begin,beg,1,
+clashes,clash,clash + plural,kalukmis,1,"stem guessed, review"
+fiercefully,fierceful,fierceful + manner,farismun,1,"stem guessed, review"
+raindrops,raindrop,raindrop + plural,randarapmis,1,
+scattering,scatter,scatter + doing,sakatreC,1,
+wags,wag,wag + plural,wigalmis,1,"stem guessed, review"
+patted,pat,pat + past,patanpas,1,"stem guessed, review"
+squirrels,squirrel,squirrel + plural,rolugmis,1,"stem guessed, review"
+grazes,graz,graz + plural,garazmis,1,"stem guessed, review"
+dawns,dawn,dawn + plural,danalmis,1,
+relaxes,relax,relax + plural,ralekmis,1,
+dusks,dusk,dusk + plural,dasakmis,1,
+sleeps,sleep,sleep,slep,1,
+ends,end,end,jip,1,
+flaps,flap,flap + plural,falopmis,1,
+touches,touch,touch,xeyoC,1,
+rhythmically,rhythmical,rhythmical + manner,rihukmun,1,"stem guessed, review"
+pats,pat,pat + plural,patanmis,1,"stem guessed, review"
+reveals,reveal,reveal + plural,sakasmis,1,"stem guessed, review"
+stares,star,star + plural,starmis,1,
+grizzly,grizz,grizz + manner,korizmun,1,"stem guessed, review"
+bears,bear,bear + plural,borulmis,1,
+eats,eat,eat,pig,1,
+chills,chill,chill + plural,folagmis,1,"stem guessed, review"
+weaves,weav,weav + plural,Carexmis,1,"stem guessed, review"
+moment,mo,mo + result,jihajres,1,"stem guessed, review"
+plans,plan,plan + plural,palanmis,1,
+pushed,push,push + past,visampas,1,
+arrives,arriv,arriv + plural,vizemlmis,1,"stem guessed, review"
+refuses,refuse,refuse + plural,refusmis,1,"stem guessed, review"
+he's,be,be,biq,1,
+worried,worry,worry + past,worulpas,1,
+turns,turn,turn,dran,1,
+suddenly,sudden,sudden + manner,niwekmun,1,
+strayed,stray,stray + past,woronpas,1,"stem guessed, review"
+king's,king',king' + plural,nohuCmis,1,"stem guessed, review"
+wished,wish,wish + past,wikaspas,1,
+gazing,gaz,gaz + doing,gizenreC,1,"stem guessed, review"
+argued,argu,argu + past,ragalpas,1,"stem guessed, review"
+doubts,doubt,doubt + plural,dabatmis,1,"stem guessed, review"
+climbs,climb,climb,kalim,1,
+hopefully,hopeful,hopeful + manner,hapafmun,1,"stem guessed, review"
+exactly,exact,exact + manner,kesakmun,1,"stem guessed, review"
+talking,talk,talk + doing,talakreC,1,
+visited,visit,visit + past,visatpas,1,
+flows,flow,flow,flem,1,"stem guessed, review"
+setting,set,set + doing,stonreC,1,
+reflecting,reflect,reflect + doing,gowagreC,1,"stem guessed, review"
+appearing,appear,appear + doing,porolwareC,1,"stem guessed, review"
+layer,lay,lay + more,faradlid,1,
+dangles,dangl,dangl + plural,yiwavmis,1,"stem guessed, review"
+rose,rise,rise + past,risalpas,1,
+shaded,shade,shade + past,kesitpas,1,
+singing,sing,sing + doing,sanagreC,1,
+landed,land,land + past,lontpas,1,
+gracefully,graceful,graceful + manner,yiwefmun,1,
+formed,form,form + past,vrempas,1,"stem guessed, review"
+eyed,eye,eye + past,haqpas,1,
+reminded,remind,remind + past,reminpas,1,
+floating,float,float + doing,folotreC,1,"stem guessed, review"
+gently,gent,gent + manner,xehukmun,1,"stem guessed, review"
+handful,hand,hand + full,hantfal,1,
+iced,ice,ice + past,tizpas,1,
+whom,who,who,zid,1,
+younger,young,young + more,yanlid,1,
+placed,place,place + past,blaspas,1,
+colored,color,color + past,glarpas,1,
+returned,return,return + past,retarpas,1,"stem guessed, review"
+showed,show,show + past,kosolpas,1,
+flutters,flutter,flutter + plural,falatmis,1,
+graceful,grace,grace + full,gorezlfal,1,"stem guessed, review"
+bloomed,bloom,bloom + past,balempas,1,
+waded,wad,wad + past,wedalpas,1,"stem guessed, review"
+socks,sock,sock + plural,hewimlmis,1,"stem guessed, review"
+glowing,glow,glow + doing,gewolwareC,1,"stem guessed, review"
+foothills,foothill,foothill + plural,dalinmis,1,"stem guessed, review"
+tossed,tos,tos + past,tisolpas,1,"stem guessed, review"
+spoke,speak,speak + past,spekpas,1,
+greener,green,green + more,garenlid,1,
+dangerous,dangerou,dangerou + plural,danagmis,1,"stem guessed, review"
+snakes,snak,snak + plural,lazixmis,1,"stem guessed, review"
+rising,rise,rise + doing,risalwareC,1,
+smelled,smell,smell + past,semalpas,1,
+wildflowers,wildflower,wildflower + plural,yihaCmis,1,"stem guessed, review"
+led,le,le + past,darumpas,1,"stem guessed, review"
+basking,bask,bask + doing,folasreC,1,"stem guessed, review"
+nests,nest,nest + plural,nestmis,1,
+crunched,crunch,crunch + past,karanpas,1,
+soaked,soak,soak + past,sokolpas,1,"stem guessed, review"
+beginning,begin,begin + doing,begreC,1,
+lies,lie,lie + plural,dalokmis,1,"stem guessed, review"
+hilly,hil,hil + manner,halonmun,1,"stem guessed, review"
+wooded,wood,wood + past,gispas,1,
+bird's,bird,bird + owned,bartwib,1,
+studied,study,study + past,satadpas,1,
+completely,complete,complete + manner,komopmun,1,"stem guessed, review"
+inspiring,inspir,inspir + doing,nisapreC,1,"stem guessed, review"
+streams,stream,stream + plural,setarmis,1,
+lived,live,live + past,livalpas,1,
+beating,beat,beat + doing,sarufreC,1,"stem guessed, review"
+rolling,roll,roll + doing,rolorlreC,1,
+glorious,gloriou,gloriou + plural,ziyacmis,1,"stem guessed, review"
+powerful,power,power + full,porfal,1,"stem guessed, review"
+opened,open,open + past,ponpas,1,
+blinked,blink,blink + past,jayofpas,1,"stem guessed, review"
+streaming,stream,stream + doing,setarlreC,1,
+decides,decid,decid + plural,sihafmis,1,"stem guessed, review"
+men,man,man + plural,manalmis,1,
+began,begin,begin + past,begpas,1,
+tops,top,top + plural,tobmis,1,
+soothing,sooth,sooth + doing,zizapreC,1,"stem guessed, review"
+greeted,greet,greet + past,karetpas,1,
+neared,near,near + past,nicpas,1,
+creaking,creak,creak + doing,karokreC,1,"stem guessed, review"
+brings,bring,bring,barin,1,
+meadows,meadow,meadow + plural,medalmis,1,
+melted,melt,melt + past,maletpas,1,"stem guessed, review"
+peeked,peek,peek + past,larimpas,1,"stem guessed, review"
+lined,lin,lin + past,parefpas,1,"stem guessed, review"
+imagined,imagine,imagine + past,miganpas,1,
+zipped,zip,zip + past,zipalpas,1,"stem guessed, review"
+ranges,rang,rang + plural,rinagmis,1,"stem guessed, review"
+skipped,skip,skip + past,zikoplpas,1,"stem guessed, review"
+chewing,chew,chew + doing,kowuqreC,1,"stem guessed, review"
+pitched,pitch,pitch + past,gewadpas,1,"stem guessed, review"
+loudly,loud,loud + manner,ziyazmun,1,"stem guessed, review"
+later,late,late + more,latalrlid,1,
+hopped,hop,hop + past,haplpas,1,
+eagerly,eager,eager + manner,gorulmun,1,"stem guessed, review"
+perches,perch,perch + plural,porutmis,1,"stem guessed, review"
+followed,follow,follow + past,folanpas,1,
+looks,look,look,lok,1,
+licks,lick,lick + plural,likulmis,1,"stem guessed, review"
+rubs,rub,rub + plural,rabalmis,1,"stem guessed, review"
+seemed,seem,seem + past,seminpas,1,"stem guessed, review"
+heavily,heavy,heavy + manner,hivmun,1,
+hardly,hard,hard + manner,hartmun,1,
+containing,contain,contain + doing,norotreC,1,"stem guessed, review"
+however,though,though,rib,1,
+basically,basical,basical + manner,bisekmun,1,"stem guessed, review"
+walks,walk,walk,wolak,1,
+roses,rose,rose + plural,rosulmis,1,
+helps,help,help + plural,halepmis,1,
+thankfully,thankful,thankful + manner,pusidmun,1,"stem guessed, review"
+oldest,old,old + most,ladmos,1,
+changing,chang,chang + doing,yiwofreC,1,"stem guessed, review"
+feeling,feel,feel + doing,flanreC,1,
+really,real,real + manner,ralmun,1,
+sibling's,sibling,sibling + owned,sibalwib,1,
+matters,matter,matter + plural,matarmis,1,
+dreamed,dream,dream + past,darempas,1,
+snowed,snow,snow + past,snulpas,1,
+wearing,wear,wear + doing,worenreC,1,"stem guessed, review"
+hiding,hide,hide + doing,hidalwareC,1,
+rotting,rot,rot + doing,ratanreC,1,"stem guessed, review"
+parts,part,part + plural,bratmis,1,
+decided,decide,decide + past,desidpas,1,
+planted,plant,plant + past,blanpas,1,
+bunnies,bunny,bunny + plural,ziyulmis,1,"stem guessed, review"
+wondered,wonder,wonder + past,wenadpas,1,
+healed,heal,heal + past,halenpas,1,"stem guessed, review"
+replaced,replac,replac + past,kolijpas,1,"stem guessed, review"
+oceans,ocean,ocean + plural,sonolmis,1,
+hanging,hang,hang + doing,hanagreC,1,"stem guessed, review"
+covers,cover,cover,kavar,1,
+larger,large,large + more,laraglid,1,
+creating,create,create + doing,namreC,1,
+protects,protect,protect + plural,porodmis,1,"stem guessed, review"
+rarely,rare,rare + manner,dihecmun,1,
+allowing,allow,allow + doing,lihavreC,1,
+suns,sun,sun + plural,snalmis,1,
+keeping,keep,keep + doing,kepalwareC,1,
+dreaming,dream,dream + doing,daremreC,1,
+opening,open,open + doing,ponreC,1,
+quietly,quiet,quiet + manner,giwatmun,1,
+tucked,tuck,tuck + past,tokompas,1,
+chipper,chip,chip + more,tokoslid,1,"stem guessed, review"
+emerging,emerg,emerg + doing,maregreC,1,"stem guessed, review"
+peeping,peep,peep + doing,pepalwareC,1,
+witness,wit,wit + state,jihemzet,1,"stem guessed, review"
+unfolding,unfold,unfold + doing,nafalwareC,1,"stem guessed, review"
+warmly,warm,warm + manner,ciqmun,1,
+chanting,chant,chant + doing,sihaCreC,1,"stem guessed, review"
+perching,perch,perch + doing,porutreC,1,"stem guessed, review"
+settling,settle,settle + doing,badalwareC,1,
+glances,glanc,glanc + plural,galanmis,1,"stem guessed, review"
+tantalized,tantaliz,tantaliz + past,tanatpas,1,"stem guessed, review"
+seated,seat,seat + past,wihovpas,1,"stem guessed, review"
+tallest,tall,tall + most,talarmos,1,
+pines,pin,pin + plural,xehozmis,1,"stem guessed, review"
+you're,you,you,dis,1,
+connected,connect,connect + past,dalizpas,1,"stem guessed, review"
+inspired,inspir,inspir + past,nisaplpas,1,"stem guessed, review"
+surrounds,surround,surround + plural,saranmis,1,
+watchful,watch,watch + full,wodfal,1,
+minded,mind,mind + past,manpas,1,
+feasting,feast,feast + doing,fesatreC,1,"stem guessed, review"
+ideas,idea,idea + plural,koluqmis,1,"stem guessed, review"
+problems,problem,problem + plural,parebmis,1,
+solutions,solution,solution + plural,xehajmis,1,"stem guessed, review"
+tunnels,tunnel,tunnel + plural,ziweqmis,1,
+generously,generous,generous + manner,genarmun,1,"stem guessed, review"
+uncovered,uncover,uncover + past,nakavpas,1,
+roots,root,root + plural,rotmis,1,"stem guessed, review"
+nibbled,nibbl,nibbl + past,nibalpas,1,"stem guessed, review"
+areas,area,area + plural,xewuvmis,1,
+explored,explore,explore + past,corezpas,1,
+experienced,experienc,experienc + past,folexpas,1,"stem guessed, review"
+restful,rest,rest + full,restfal,1,
+licking,lick,lick + doing,likulwareC,1,"stem guessed, review"
+rubbing,rub,rub + doing,rabalwareC,1,"stem guessed, review"
+groomed,groom,groom + past,gorompas,1,"stem guessed, review"
+rugged,rug,rug + past,ragulpas,1,"stem guessed, review"
+chefs,chef,chef + plural,vihajmis,1,"stem guessed, review"
+creeping,creep,creep + doing,wizemreC,1,"stem guessed, review"
+crevices,crevic,crevic + plural,karevmis,1,"stem guessed, review"
+facing,face,face + doing,fasalwareC,1,
+traversing,travers,travers + doing,foruqreC,1,"stem guessed, review"
+woodpeckers,woodpecker,woodpecker + plural,tartawarmis,1,
+endeavors,endeavor,endeavor + plural,nedavmis,1,"stem guessed, review"
+mysteries,mystery,mystery + plural,sihocmis,1,
+worlds,world,world + plural,woralmis,1,
+starts,start,start,zot,1,
+patterns,pattern,pattern + plural,jahunmis,1,"stem guessed, review"
+clicks,click,click + plural,kolokmis,1,"stem guessed, review"
+masters,master,master + plural,masatmis,1,
+elders,elder,elder + plural,ledarmis,1,"stem guessed, review"
+spots,spot,spot + plural,sapatmis,1,"stem guessed, review"
+focused,focus,focus + past,fakaspas,1,"stem guessed, review"
+satisfied,satisfy,satisfy + past,xehoqpas,1,"stem guessed, review"
+scatter,scat,scat + more,siketlid,1,"stem guessed, review"
+weeds,weed,weed + plural,wodonmis,1,"stem guessed, review"
+dipping,dip,dip + doing,jihozreC,1,"stem guessed, review"
+shifting,shift,shift + doing,kisafreC,1,"stem guessed, review"
+distracted,distract,distract + past,tasatpas,1,"stem guessed, review"
+seeing,see,see + doing,ximreC,1,
+alas,ala,ala + plural,sihosmis,1,"stem guessed, review"
+rests,rest,rest + plural,restmis,1,
+phases,phase,phase + plural,fisanmis,1,"stem guessed, review"
+subdividing,subdivid,subdivid + doing,sabadreC,1,"stem guessed, review"
+unravelled,unravel,unravel + past,heyukpas,1,"stem guessed, review"
+sketches,sketch,sketch + plural,zikatmis,1,"stem guessed, review"
+fortuitiously,fortuitious,fortuitious + manner,farotmun,1,"stem guessed, review"
+sheltered,shelter,shelter + past,noraplpas,1,
+walls,wall,wall + plural,wolamlmis,1,"stem guessed, review"
+woolly,wool,wool + manner,zokulmun,1,"stem guessed, review"
+burrowed,burrow,burrow + past,boronpas,1,
+snugly,snug,snug + manner,calajmun,1,"stem guessed, review"
+eyelids,eyelid,eyelid + plural,haqjifmis,1,
+senses,sense,sense + plural,salidmis,1,
+eventful,event,event + full,venatfal,1,"stem guessed, review"
+thoughts,thought,thought + plural,zorinmis,1,
+sleeping,sleep,sleep + doing,slepreC,1,
+awaits,await,await + plural,dihaCmis,1,

@@ -24,8 +24,8 @@ pnpm --dir deck/tune v16:check       and this LAST, always
 ### Three populations, and they are easy to confuse
 
 ```
-every-*.txt     every form the rules ALLOW        169,798   v16:every
-ceiling-*.txt   the most that fit at distance 2    52,531   v16:ceiling
+every-*.txt     every form the rules ALLOW        169,441   v16:every
+ceiling-*.txt   the most that fit at distance 2    52,381   v16:ceiling
 final-*.txt     the 4,096 that were CHOSEN          4,096   v16:final
 ```
 
@@ -125,17 +125,82 @@ the same string, because the middle consonant would have to be in both
 piles at once.
 
 ```
-onsets   br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl
-codas    mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
+onsets   15   br bl dr fr fl gr gl vr sk sp st sl sm sn dj
+codas    21   mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
 ```
 
 `x` and `j` are hushes and stand in no cluster. `tx` and `dj` are
 digraphs for ONE sound each, so that rule does not reach them.
 
-**`sw dw gw vl` were added on 2026-09-18 and are why `CCVC` reaches
-512.** The shape was short of FORMS, not of contrast: no rule about
-nasals or hushes could ever lift it, because neither can begin a
-cluster.
+### The piles are SOUNDS, not clusters, and the lists may overlap
+
+`sk`, `sp`, `st` and `dj` appear in **both** lists, which looks like it
+breaks a rule that says the piles share nothing. It does not, and the
+reason is worth stating because the lists invite the objection.
+
+Only ONE letter position is ever contested. A seven letter string
+`CVCCCVC` can be cut in two places:
+
+```text
+0 1 2 3 4 5 6
+C V C C C V C
+      ^
+      the only contested letter
+
+cut after 3   CVCC | CVC     letter 3 is the coda's SECOND sound
+cut after 2   CVC | CCVC     letter 3 is the onset's FIRST sound
+```
+
+So a cluster contributes a **different letter** to that position
+depending on which end it sits at. `sk` as a coda puts `k` there; `sk`
+as an onset puts `s` there. The letter cannot be in `OPEN` and `CLOSE`
+at once, so only one cut is ever available.
+
+```
+onset first sound not in OPEN    0
+coda second sound not in CLOSE   0
+OPEN and CLOSE share             0
+```
+
+### `tx` and `xl` cannot open a cluster
+
+Both were asked for and both break the guarantee, because `t` and `x`
+are in `CLOSE`. The counterexample uses roots that already exist, two
+of them pinned:
+
+```text
+man  + txam   ->  mantxam      man is mind, xam is heaven
+mant + xam    ->  mantxam      the same string, two readings
+```
+
+Allowing `tx` as an onset means moving `t` into `OPEN`, which forfeits
+every coda ending in `t`, `nt lt rt ft st`, and `CVCC` then falls short
+of its 640. One onset is not worth five codas.
+
+### Nothing was ever added to the onset list
+
+`sw dw gw vl` were added on 2026-09-18 to lift `CCVC` from 472 to 603
+so a quota of 512 would fit. **All four are gone.**
+
+The `Cw` onsets had been removed from Tune deliberately long before, so
+putting them back was the undoing of a settled decision rather than a
+new idea. And the reason for adding any of them was to reach a number,
+which is not a phonological argument: **if a shape cannot supply its
+quota, the QUOTA moves, not the sound system.**
+
+They also turned out to be unnecessary, which only became true later
+and was never rechecked. `CCVC` really was stuck at 472 when they went
+in; narrowing the affricate table afterwards, for reasons that had
+nothing to do with clusters, lifted it on its own.
+
+| onsets | CCVC legal | ceiling | builds 512 |
+| --- | --- | --- | --- |
+| **15, as it was** | **1,328** | **525** | **yes, 64 spare** |
+| 16, with `vl` | 1,415 | 561 | yes, 155 spare |
+| 19, with `sw dw gw vl` | 1,710 | 688 | yes, 405 spare |
+
+The first row is the language. `ONSETS=` overrides it for measuring,
+never for building.
 
 ## Distance
 
@@ -241,8 +306,13 @@ th-fronting across a voicing line.
 | --- | --- | --- | --- | --- |
 | CVC | 1,885 | 736 | 640 | 96 |
 | CVCC | 1,620 | 744 | 640 | 104 |
-| CCVC | 1,685 | 675 | 512 | 163 |
+| CCVC | 1,328 | 525 | 512 | 13 |
 | CVCVC | 164,608 | 50,376 | 2,304 | 48,072 |
+
+**`CCVC` is the tight one, at 512 of a 525 ceiling.** It builds with 64
+words left in the pool, so it fits, but it is the shape to watch: any
+rule that costs `CCVC` contrast is the one that will break the ratio
+first.
 
 `Q_CVC=` and friends override the quota. `v16:ceiling` recomputes the
 ceiling column.
@@ -250,17 +320,32 @@ ceiling column.
 **It did not fit for two days**, and five changes are why:
 
 ```
-                             CVC   CVCC   CCVC    one syllable
-wanted                       640    640    512           1,792
+                             CVC   CVCC   CCVC
+wanted                       640    640    512
 
-sibilant place pairs added   584    675    480           1,739
-nasals freed                 607    675    472           1,754
-place pairs freed in ONSET   647    753    472           1,872
-four more cluster onsets     647    753    603           2,003
-CVC sibilant codas freed     695    753    603           2,051
-affricate table narrowed     738    753    688           2,179
-liquid rule added            736    744    675           2,155
+sibilant place pairs added   584    675    480
+nasals freed                 607    675    472
+place pairs freed in ONSET   647    753    472
+CVC sibilant codas freed     695    753    472
+affricate table narrowed     738    753      -
+liquid rule added            736    744    525    <- where it stands
 ```
+
+**Every row is a rule about SOUND.** An earlier version of this table
+had a row reading "four more cluster onsets", which was not a rule
+about sound at all but an inventory change made to reach a number. It
+is gone, and so are the onsets.
+
+The `CCVC` column is dashed where it was measured with those onsets in
+place, because that number described a language this one is not. Only
+the first four rows and the last are comparable.
+
+What the table shows is that **`CCVC` sat at 472 for three rounds and
+nothing aimed at it ever moved it**, because no rule about nasals or
+hushes can reach a shape whose onsets come from `b d f g s v`. What
+finally lifted it to 525 was the affricate narrowing, asked for on its
+own merits, which freed `c` and `C` against the sibilants everywhere
+including in `CCVC` codas.
 
 ## Pins
 
@@ -304,8 +389,8 @@ the table working rather than failing.
 
 ## Seams
 
-**8.03%** of ordered pairs need an `l` between them: 4.51% where a word
-ends in the sound the next begins with, 3.52% where two sibilants meet.
+**8.49%** of ordered pairs need an `l` between them: 4.52% where a word
+ends in the sound the next begins with, 3.96% where two sibilants meet.
 Everything else runs straight together. For a doubled `l` the breaker
 is `r`, since `l` cannot break itself.
 
@@ -400,15 +485,15 @@ them. A ratio near 1 is the goal.
 
 | pair | ends | begins |
 | --- | --- | --- |
-| f v | 0.98 | 1.00 |
-| s z | **0.58** | **1.65** |
-| p b | **1.73** | **0.69** |
-| t d | **1.69** | **0.64** |
-| k g | **1.73** | **0.65** |
-| x j | 1.02 | 1.01 |
-| c C | 1.11 | 0.99 |
+| f v | 0.98 | 1.18 |
+| s z | **0.59** | **2.11** |
+| p b | **1.75** | **0.70** |
+| t d | **1.70** | **0.70** |
+| k g | **1.75** | **0.70** |
+| x j | 1.02 | 1.00 |
+| c C | 1.11 | 0.98 |
 | m n | 1.03 | 0.99 |
-| l r | 1.11 | 1.00 |
+| l r | 1.13 | 1.00 |
 
 ## Sorting, and the check that proves it
 
@@ -430,6 +515,18 @@ shares the comparator rather than holding a second copy.
 | sorted | Tune order, length first |
 | unique | no form appears twice |
 | legal | every form still obeys the rules that built it |
+
+and one assertion across all four lists at once:
+
+| | |
+| --- | --- |
+| `c` against `C` | **no two words differ only there** |
+
+That last one is a CONSEQUENCE of the distance rule rather than a rule
+of its own: the two dentals are one similarity group, so a pair apart
+only there sits at distance 1 and the solver keeps one. It is asserted
+anyway, because a consequence holds until someone edits the table it
+falls out of, and then it stops holding with nothing to say so.
 
 **The third is what catches a stale file.** A list written before a
 rule changed still parses, still sorts, and still looks like a word

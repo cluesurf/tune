@@ -134,9 +134,19 @@ string that could be read two ways would need one consonant to be in
 both piles at once.
 
 ```text
-onsets   br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl
-codas    mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
+onsets   15   br bl dr fr fl gr gl vr sk sp st sl sm sn dj
+codas    21   mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
 ```
+
+`sk`, `sp`, `st` and `dj` sit in both lists, which is allowed: **the
+piles are sets of SOUNDS, not of clusters.** Only one letter of a
+joined string is ever contested, and a cluster contributes a different
+letter to it depending on which end it sits at. `sk` as a coda puts `k`
+there, `sk` as an onset puts `s`.
+
+`tx` and `xl` cannot open a cluster, because `t` and `x` close them.
+Allowing `tx` would make `man` + `txam` and `mant` + `xam` spell the
+same word.
 
 ## Word Counts
 
@@ -144,9 +154,9 @@ codas    mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
 | :------ | ----: | ------------: | -----: |
 | `CVC`   | 1,885 | 736 | 640 |
 | `CVCC`  | 1,620 | 744 | 640 |
-| `CCVC`  | 1,685 | 675 | 512 |
+| `CCVC`  | 1,328 | 525 | 512 |
 | `CVCVC` | 164,608 | 50,376 | 2,304 |
-| **total** | **169,798** | **52,531** | **4,096** |
+| **total** | **169,441** | **52,381** | **4,096** |
 
 **Legal** is every form the rules above allow.
 
@@ -175,12 +185,12 @@ Where two roots meet, sometimes a sound goes between them. **The
 breaker is `l`, and it is the only one.** For a doubled `l` it is `r`,
 because `l` cannot break itself.
 
-It appears in **8.03%** of pairs, and for two reasons only:
+It appears in **8.49%** of pairs, and for two reasons only:
 
 | | share | |
 | :--- | ----: | :--- |
-| the same sound twice | 4.51% | `man` + `nam` would be heard as `manam` |
-| two sibilants meeting | 3.52% | `mas` + `zam` would smear into one hiss |
+| the same sound twice | 4.52% | `man` + `nam` would be heard as `manam` |
+| two sibilants meeting | 3.96% | `mas` + `zam` would smear into one hiss |
 
 Everything else runs straight together. There were once six joiners
 chosen by a table of sixty four named pairs; measuring every policy
@@ -252,7 +262,7 @@ The word rules say what is legal. These say what is worth using.
 
 Legal is not the same as usable: `mir` and `nir` are both legal and one
 of them has to go, or a listener cannot tell them apart. This is how
-169,798 legal forms are narrowed to 4,096 that stay distinct in the
+169,441 legal forms are narrowed to 4,096 that stay distinct in the
 ear.
 
 ### Distance

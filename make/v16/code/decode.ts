@@ -186,7 +186,19 @@ process.stdout.write(
     `${[...new Set(roots.map(one => one.length))].sort().join(' ')}\n\n`,
 )
 
-const BREAKER = ['l', 'r']
+/**
+ * EVERY breaker, including the two letter one.
+ *
+ * `wa` goes between two different liquids, and it is the only breaker
+ * that is a whole syllable. Leaving it out of this list would have the
+ * test certify a guarantee the language no longer has: a stream it
+ * never examined.
+ *
+ * It is also the reason no root may begin `wa`. If one could, then
+ * `kal + rim` spelling `kalwarim` would also read as `kal + warim`,
+ * and this test would say so.
+ */
+const BREAKER = ['l', 'r', 'wa']
 
 const codes: Array<[string, Array<string>]> = [
   ['bare', roots],

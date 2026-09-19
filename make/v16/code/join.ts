@@ -25,7 +25,7 @@
 import { readFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { VOWELS } from './sound'
+import { VOWELS, breaker } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../../../base/v16')
@@ -41,7 +41,6 @@ const long = read('cvcvc.txt')
 const roots = [...short, ...long]
 const legal = new Set(roots)
 
-const SIBILANT = new Set(['s', 'z', 'x', 'j'])
 const SONOROUS = new Set(['l', 'r', 'm', 'n', 'q', 'w', 'y'])
 
 const isVowel = (ch: string) => VOWELS.includes(ch)
@@ -58,11 +57,16 @@ const head = (one: string) => {
   return one.slice(0, at)
 }
 
-function breaker(a: string, b: string): string {
-  const x = a[a.length - 1]
-  const y = b[0]
-  if (x === y) return x === 'l' ? 'r' : 'l'
-  if (SIBILANT.has(x) && SIBILANT.has(y)) return 'l'
+/**
+ * The shared rule, plus the CLUSTER case this file alone cares about.
+ *
+ * `breaker` in `sound.ts` covers the same sound and two fricatives.
+ * What it does not know is the four and five consonant seam, which
+ * only arises here where two clusters meet.
+ */
+function seamMark(a: string, b: string): string {
+  const shared = breaker(a, b)
+  if (shared) return shared
   const seam = tail(a) + head(b)
   if (seam.length >= 4 && ![...seam].some(one => SONOROUS.has(one))) {
     return 'l'
@@ -70,7 +74,7 @@ function breaker(a: string, b: string): string {
   return ''
 }
 
-const join = (a: string, b: string) => a + breaker(a, b) + b
+const join = (a: string, b: string) => a + seamMark(a, b) + b
 
 /**
  * Every pair of roots that could have produced this surface.
@@ -110,7 +114,7 @@ const show: Array<string> = []
 
 for (const a of roots) {
   for (const b of roots) {
-    const mark = breaker(a, b)
+    const mark = seamMark(a, b)
     const word = join(a, b)
     length += word.length
     if (mark) marked++

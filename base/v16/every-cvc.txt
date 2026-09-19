@@ -1363,8 +1363,6 @@ Civ
 Cif
 Cix
 Cij
-CiC
-Cic
 Cem
 Cen
 Ceq
@@ -1380,8 +1378,6 @@ Cev
 Cef
 Cex
 Cej
-CeC
-Cec
 Cam
 Can
 Caq
@@ -1397,8 +1393,6 @@ Cav
 Caf
 Cax
 Caj
-CaC
-Cac
 Car
 Cal
 Com
@@ -1416,8 +1410,6 @@ Cov
 Cof
 Cox
 Coj
-CoC
-Coc
 Cor
 Col
 Cum
@@ -1435,8 +1427,6 @@ Cuv
 Cuf
 Cux
 Cuj
-CuC
-Cuc
 Cul
 cim
 cin
@@ -1453,8 +1443,6 @@ civ
 cif
 cix
 cij
-ciC
-cic
 cem
 cen
 ceq
@@ -1470,8 +1458,6 @@ cev
 cef
 cex
 cej
-ceC
-cec
 cam
 can
 caq
@@ -1487,8 +1473,6 @@ cav
 caf
 cax
 caj
-caC
-cac
 car
 cal
 com
@@ -1506,8 +1490,6 @@ cov
 cof
 cox
 coj
-coC
-coc
 cor
 col
 cum
@@ -1525,8 +1507,6 @@ cuv
 cuf
 cux
 cuj
-cuC
-cuc
 cul
 yim
 yin
@@ -1827,25 +1807,6 @@ wex
 wej
 weC
 wec
-wam
-wan
-waq
-wag
-wad
-wab
-wap
-wat
-wak
-was
-waz
-wav
-waf
-wax
-waj
-waC
-wac
-war
-wal
 wom
 won
 woq

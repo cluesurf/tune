@@ -124,19 +124,37 @@ export const CLOSE = new Set(['c', 'j', 'k', 'p', 't', 'x', 'z'])
  * `x j` can begin a cluster: the first slot is drawn from `OPEN`, which
  * is `b d f g s v`. The shape is short of forms, not short of contrast.
  *
- * The last four are the glide and liquid clusters the list was missing
- * rather than refusing. Every one of them opens with a sound already in
- * `OPEN`, so the disjoint-pile guarantee is untouched:
+ * ## FIFTEEN ONSETS, AND NOTHING WAS EVER ADDED TO THEM
+ *
+ * `sw dw gw vl` were added here on 2026-09-18 to lift `CCVC` from 472
+ * to 603 so a quota of 512 would fit. **All four are gone, and the
+ * episode is worth keeping written down.**
+ *
+ * Two things were wrong with it. The `Cw` onsets had been taken OUT of
+ * Tune deliberately, long before, so putting them back was not a new
+ * idea but the undoing of a settled one. And the reason for adding any
+ * of them was to reach a number, which is not a phonological argument:
+ * **if a shape cannot supply its quota, the QUOTA moves, not the sound
+ * system.**
+ *
+ * They were also unnecessary, which only became true later and was
+ * never rechecked. `CCVC` really was stuck at 472 when they went in.
+ * Narrowing the affricate table afterwards, for reasons that had
+ * nothing to do with clusters, lifted it to 525 on its own:
  *
  * ```text
- * sw   swim      s is already in sl sm sn sk sp st
- * dw   dwell     d is already in dr dj
- * gw   Gwen      g is already in gr gl
- * vl   Vlad      v is already in vr
+ * onsets              CCVC legal   ceiling   builds 512
+ * 15, as it was            1,328       525   yes, 64 spare
+ * 16, with vl              1,415       561   yes, 155 spare
+ * 19, with sw dw gw vl     1,710       688   yes, 405 spare
  * ```
+ *
+ * The first row is the language. `ONSETS=` overrides it for measuring,
+ * never for building.
  */
-export const ONSETS =
-  'br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl'.split(' ')
+export const ONSETS = (
+  process.env.ONSETS ?? 'br bl dr fr fl gr gl vr sk sp st sl sm sn dj'
+).split(' ')
 
 export const CODAS = (
   'mp nt qk lp lx lz lt lc lk rp rz rt rk rx ft px kx bz gz dj tx dz sk sp st xt'
@@ -251,6 +269,66 @@ export const ADJACENT = new Set('ie ei ea ae ao oa ou uo'.split(' '))
 export const vowelsClose = (a: string, b: string) =>
   a === b || ADJACENT.has(a + b)
 
+/**
+ * TWO FRICATIVES MEETING NEED A BREAKER, not just two sibilants.
+ *
+ * ```text
+ * gras + sihuf   ->  graslsihuf    same sound
+ * sihuf + vib    ->  sihuflvib     f meets v
+ * ```
+ *
+ * A fricative is a sound made of air alone, with no closure anywhere
+ * in it. Two in a row have nothing between them to mark where one ends
+ * and the next begins, so they arrive as one longer noise. That is the
+ * whole argument, and it never depended on the hiss being loud: `f`
+ * running into `v` blurs for exactly the reason `s` running into `z`
+ * does.
+ *
+ * The rule was `s z x j` only, which was right about sibilants and
+ * silent about the rest of the family. `h` is here too, and only ever
+ * matters on the right, since it cannot close a syllable.
+ */
+export const FRICATIVE = new Set(['s', 'z', 'x', 'j', 'f', 'v', 'c', 'C', 'h'])
+
+/**
+ * What goes between two words, if anything. THE ONE DEFINITION.
+ *
+ * This was written out in five files: `lexicon.ts`, `join.ts`,
+ * `final.ts`, `ratio.ts` and `quiet.ts`. Five copies of a rule that
+ * changes is five chances for four of them to be wrong, which is the
+ * same trap as the near table and the sort order.
+ */
+/**
+ * TWO DIFFERENT LIQUIDS TAKE A WHOLE SYLLABLE, `wa`.
+ *
+ * ```text
+ * kal + rim   ->  kalwarim
+ * mar + lud   ->  marwalud
+ * ```
+ *
+ * `l` and `r` are the only pair a single consonant cannot separate,
+ * because the breaker IS `l`, and `r` is the escape used when `l`
+ * meets itself. `l` against `r` has nowhere left to go: an `l` between
+ * them makes `llr`, an `r` makes `lrr`, and both are worse than the
+ * seam they were meant to fix. A vowel is the only thing that puts
+ * real distance between two liquids.
+ *
+ * **This is why `wa` may not START a root.** `kalwarim` has to be
+ * `kal` and `rim`, and if `warim` were a word it could also be `kal`
+ * and `warim`. v4 hit this exact wall and answered it the same way,
+ * in `BAD_HEAD`.
+ */
+export const WA = 'wa'
+
+export function breaker(left: string, right: string) {
+  const x = left[left.length - 1]
+  const y = right[0]
+  if (x === y) return x === 'l' ? 'r' : 'l'
+  if (LIQUID.has(x) && LIQUID.has(y)) return WA
+  if (FRICATIVE.has(x) && FRICATIVE.has(y)) return 'l'
+  return ''
+}
+
 export type Shape = 'CVC' | 'CVCC' | 'CCVC' | 'CVCVC'
 
 export const SHAPES: Array<Shape> = ['CVC', 'CVCC', 'CCVC', 'CVCVC']
@@ -332,6 +410,35 @@ function rhymeOk(word: string): boolean {
  * to break the gesture, and the rule as asked for was `r.r` with one
  * thing in the middle.
  */
+/**
+ * ONE DENTAL TO A WORD. Never two, in any combination.
+ *
+ * ```text
+ * cac  caC  Cac  CaC  catxac  ->  refused
+ * cak  kaC  bracat              ->  stand
+ * ```
+ *
+ * `c` and `C` are the quietest sounds the language has: a flat, low
+ * hiss with no groove behind it and almost no energy. Two of them in
+ * one short word give the ear two faint events to place and to tell
+ * apart from each other, and they are already a similarity pair, so
+ * the second one carries very little that the first did not.
+ *
+ * This counts `c` and `C` TOGETHER rather than separately. Two of the
+ * same is the worst case and one of each is barely better, because the
+ * only thing separating them is the voicing of a release that is over
+ * before the word is.
+ */
+const DENTAL = new Set(['c', 'C'])
+
+function dentalOk(word: string): boolean {
+  let seen = 0
+  for (const one of word) {
+    if (DENTAL.has(one) && ++seen > 1) return false
+  }
+  return true
+}
+
 const LIQUID = new Set(['l', 'r'])
 
 function liquidOk(word: string): boolean {
@@ -349,7 +456,8 @@ export function every(shape: Shape): Array<string> {
   // rule cannot be added to one shape's generator and missed by the
   // other three. That is how `r.r` would have gone in.
   const push = (word: string) => {
-    if (rhymeOk(word) && liquidOk(word)) out.push(word)
+    if (word.startsWith(WA)) return
+    if (rhymeOk(word) && liquidOk(word) && dentalOk(word)) out.push(word)
   }
   if (shape === 'CVC') {
     for (const a of CONSONANTS) {
@@ -515,6 +623,39 @@ for (const [a, b] of PLACE_PAIRS) {
  */
 const HISS = ['s', 'z', 'x', 'j']
 
+/**
+ * A NASAL AND ITS OWN STOP ALSO SEPARATE AT THE END OF A SHORT WORD.
+ *
+ * ```text
+ * kik  kiq     child, and action type. both stand
+ * ram  rab     rap
+ * ran  rad     rat
+ * ```
+ *
+ * A nasal and a stop at the same place differ in MANNER, which is the
+ * loudest difference the mouth makes: one is air running continuously
+ * out through the nose, the other is silence and then a burst. The
+ * vowel in front of a nasal is nasalised for its whole length, so the
+ * cue starts before the consonant does.
+ *
+ * `yam` against `yab` was the example for keeping them together, and
+ * it holds where the word is longer and the ear has more to track. In
+ * `CVC` there is nothing else competing, exactly as with the hisses.
+ *
+ * **Only the nasal-against-stop links go.** `b~p`, `d~t` and `g~k` are
+ * VOICING pairs and stay similar everywhere, as do the place pairs
+ * `b~d` and `p~t`.
+ *
+ * Asked for as `k~q`. Written for all three places, because the
+ * argument does not know which place it is at. Narrowing it to the
+ * velars alone would need a reason the other two do not share.
+ */
+const NASAL_STOP: Array<[string, string]> = [
+  ['m', 'b'], ['m', 'p'],
+  ['n', 'd'], ['n', 't'],
+  ['q', 'g'], ['q', 'k'],
+]
+
 const nearShortCoda = new Map<string, Set<string>>()
 for (const [one, also] of near) {
   nearShortCoda.set(
@@ -525,6 +666,10 @@ for (const [one, also] of near) {
         : also,
     ),
   )
+}
+for (const [a, b] of NASAL_STOP) {
+  nearShortCoda.get(a)?.delete(b)
+  nearShortCoda.get(b)?.delete(a)
 }
 
 export const similarAt = (
