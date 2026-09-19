@@ -80,7 +80,20 @@ function neighbours(words: Array<string>, shape: Shape) {
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../../../base/v16')
-const PIN = resolve(here, '../../../base/v4/term/pin.csv')
+/**
+ * **v16's OWN pin list, not v4's.**
+ *
+ * It was read from `base/v4/term/pin.csv` until 2026-09-18, which meant
+ * editing the pins for v16 edited v4's lexicon at the same time. The
+ * two versions have different shapes, different rules and different
+ * forms available, so a pin that suits one need not suit the other:
+ * `kluq` is refused here for a cluster rule v4 does not have.
+ *
+ * The file was copied across rather than moved, so v4 keeps the list it
+ * was built from. **The two are now free to diverge**, which is the
+ * point.
+ */
+const PIN = resolve(here, '../../../base/v16/term/pin.csv')
 
 /**
  * The quota per shape: **`5:5:4:18`**, the ratio that maximises one

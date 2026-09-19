@@ -95,49 +95,70 @@ Five vowels and twenty two consonants, twenty seven sounds in all.
 
 ## Words
 
-Every Tune word alternates consonant and vowel the whole way through.
-There are no consonant clusters anywhere, and nearly everything else
-about the language follows from that one decision.
+A root is one syllable or two, and at most five letters. Four shapes,
+and a cluster at one end or neither, never both.
 
 ```text
-CVC
-CVCVC
-CVCVCVC
+CVC     mam      one syllable
+CVCC    malt     one syllable, cluster at the end
+CCVC    blam     one syllable, cluster at the front
+CVCVC   malam    two syllables
 ```
 
-- A **base word** is one, two or three syllables
-- A **compound word** is two base words joined
+- A **base word** is one of those four shapes
+- A **compound word** is two or more base words joined
 - Every word starts and ends with a consonant
+
+There is no three syllable root. Emphasis falls on the first syllable,
+and it is what marks a compound apart from a phrase.
 
 ## Word Rules
 
-Three rules, and no more.
+| rule | says |
+| :--- | :--- |
+| open | `q` never opens a syllable |
+| close | `y`, `w` and `h` never close one |
+| rhyme | no `il`, `el`, `ir`, `er`, `ul`, `ur` |
+| ending | except `-ul` at the very end of a word, as in `jul` and `tul` |
+| twin vowel | no two syllable word with `i`, `e` or `u` in both vowel slots |
+| twin weak | no two syllable word opening both syllables with the same `h`, `w`, `y` or `q` |
+| liquid | no `r.r` and no `l.l`, the same liquid twice with one vowel between |
+| piles | a cluster opens from `b d f g s v` and closes from `c j k p t x z` |
 
-- `q` never opens a syllable
-- `y`, `w` and `h` never close one
-- No word ends on `il`, `el`, `ir` or `er`
+The **piles** rule is what keeps compounds readable, and it is the one
+that is not about the mouth. A cluster means two consonants can touch
+inside a root, so a run of consonants is no longer certainly a seam.
+Drawing the sound that OPENS a cluster and the sound that CLOSES one
+from sets that share nothing makes the colliding shape unbuildable: a
+string that could be read two ways would need one consonant to be in
+both piles at once.
 
-With no clusters there is nothing else to constrain. Emphasis falls on
-the first syllable.
+```text
+onsets   br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl
+codas    mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
+```
 
 ## Word Counts
 
-| syllables | characters | pattern     | by the rules | after closeness |
-| :-------- | :--------- | :---------- | -----------: | --------------: |
-| 1         | 3          | `CVC`       |        1,911 |             312 |
-| 2         | 5          | `CVCVC`     |      200,655 |          11,232 |
-| 3         | 7          | `CVCVCVC`   |   21,068,775 |    not computed |
-|           |            | **total**   | **21,271,341** |               |
+| pattern | legal | at distance 2 | chosen |
+| :------ | ----: | ------------: | -----: |
+| `CVC`   | 1,885 | 736 | 640 |
+| `CVCC`  | 1,620 | 744 | 640 |
+| `CCVC`  | 1,685 | 675 | 512 |
+| `CVCVC` | 164,608 | 50,376 | 2,304 |
+| **total** | **169,798** | **52,531** | **4,096** |
 
-**By the rules** is the arithmetic. `CVC` is 21 openings, since `q`
-cannot open, times 5 vowels times 19 closings, less the 4 banned
-rhymes: 21 × 91 = 1,911. Each further syllable multiplies by another
-21 × 5.
+**Legal** is every form the rules above allow.
 
-**After closeness** is what survives once no two words are alike all
-the way through, where every consonant is similar to its counterpart
-and every vowel next to its counterpart on the `i e a o u` ladder. That
-is what the selection rules below are for.
+**At distance 2** is what survives once no two words of a shape are
+within a single near sound of each other. Each position scores `0` for
+the same sound, `1` for a near one and `2` for a clear difference, and
+two words are too close when no position scores `2`.
+
+**Chosen** is the language: 4,096 roots, of which **1,792 are one
+syllable**, 44% of everything. The lists are in
+[base/v16](base/v16), and how they are built is in
+[make/v16](make/v16).
 
 ## Word Joining
 

@@ -99,6 +99,7 @@
     "v16:sort": "tsx make/v16/code/sort.ts",
     "v16:every": "tsx make/v16/code/every.ts",
     "v16:check": "tsx make/v16/code/check.ts",
+    "v16:decode": "tsx make/v16/code/decode.ts",
     "v16:final": "tsx make/v16/code/final.ts"
   },
   "devDependencies": {
