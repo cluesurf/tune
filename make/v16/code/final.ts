@@ -271,7 +271,17 @@ process.stdout.write('THE PINS, AGAINST EACH OTHER\n\n')
 const kept: Array<[string, string]> = []
 const moved: Array<[string, string, string, Array<string>]> = []
 for (const [concept, form] of pins) {
-  const clash = kept.find(([, other]) => near(form, other))
+  /**
+   * **`takenBy`, not `near`.** `near(a, b)` opens with `a !== b`, so
+   * an EXACT duplicate reads as "not close" and no clash is reported.
+   *
+   * This is the same bug that gave four pins the form `miq`, fixed
+   * then in `alternatives` and left standing here. It put `det` on
+   * both `three` and `timestamp`, and `bid` on two pins, with the
+   * report saying all clear: a duplicate is the one collision the
+   * distance rule cannot see.
+   */
+  const clash = kept.find(([, other]) => takenBy(form, [other]))
   if (!clash) {
     kept.push([concept, form])
     continue

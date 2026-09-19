@@ -12,62 +12,23 @@ nothing,siz,peace,peace is displaced. him is freed
 cause,kaz,cause,
 god,gad,god,
 individual,zak,effect,effect is displaced
-red,rid,,THE COLOURS. vowels i a u u a i, a palindrome across the wheel
-orange,ran,,
-yellow,yul,,
-green,gun,,
-blue,bag,,
-purple,pin,,
-black,bul,,THE GREYS. u a i, dark to light, a scale and not a wheel
-gray,gap,,
-white,wit,,six of the nine echo the english. v16:color recomputes
-x axis,pij,,THE AXES NAMED. each takes its positive pole's consonant
-y axis,taj,,
-z axis,kuj,,i a u, the vowels the poles do not use. j is free in all three
-left,bep,,THE POLES. b d g against p t k, with the vowel binary
-right,pob,,
-down,dot,,
-up,ted,,
-back,gok,,
-front,keg,,
-north,yin,,THE COMPASS. w l r y feet left to right, vowels around
-east,rog,,
-south,lut,,
-west,web,,
 zero,yom,,THE NUMBERS. onset is the hex code, vowel alternates o e
-one,med,,given
-two,noc,,given
-three,dez,,det is datetime and was there first, so three is computed
-four,boj,,
+one,med,,
+two,noc,,
+three,det,,DISPLACES timestamp, which also asked for det
+four,bon,,
 five,tem,,
-six,kos,,
+six,koq,,
 seven,hen,,
-eight,son,,
-nine,zeb,,
-ten,voq,,
-eleven,feg,,
-twelve,xob,,
-thirteen,ceq,,
-fourteen,roz,,
+eight,sob,,
+nine,zeq,,
+ten,vod,,
+eleven,feb,,
+twelve,xog,,
+thirteen,ceg,,
+fourteen,rop,,
 fifteen,lep,,
-sixteen,wod,,tightest pair is 3, and no two share a consonant frame
-hundred,yemib,,THE POWERS. onset from the digit, first vowel flipped
-thousand,monog,,10^3. second vowel cycles i o u e
-million,nekun,,10^6
-billion,doses,,10^9
-trillion,befif,,10^12
-quadrillion,toxoC,,10^15
-quintillion,keCuj,,10^18
-sextillion,hoyem,,10^21
-septillion,sewiq,,10^24
-octillion,zolor,,10^27
-nonillion,vetul,,10^30
-decillion,fobet,,10^33
-power36,xegis,,10^36
-power39,cozof,,10^39
-power42,rejuk,,10^42
-power45,lorej,,10^45
-power48,weyiC,,10^48. tightest pair 6. each holds a hard sound
+sixteen,wot,,closest pair in the set is 3 apart. v16:number recomputes
 type,tap,,THE TYPE AND INSTANCE PARADIGM. was tuq
 action type,kiq,,CLASHES with kik child at the coda. k~q homorganic
 object type,kaq,,
@@ -133,8 +94,7 @@ cell,kox,,biology. CLASHES with kax. o~a are adjacent vowels
 call,kal,,
 calm,kam,,
 home,hom,,
-clue,kul,,kl cannot open a cluster, k is not in the OPEN pile. glun also works
-surf,suf,,
+clue,kluq,,NOT LEGAL. kl cannot open: k is not in the OPEN pile
 reserved bid,bid,,CLASHES with mid positive. m~b homorganic
 reserved dub,dub,,CLASHES with dum negative. m~b homorganic
 ignorant,dib,,

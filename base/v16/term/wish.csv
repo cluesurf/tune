@@ -49,7 +49,6 @@ here,har
 land,lant
 make,mak
 sky,skal
-down,don
 should,kas
 star,star
 walk,wolak
@@ -60,7 +59,6 @@ take,tak
 love,lov
 begin,beg
 grass,gras
-green,garen
 moon,mon
 must,mas
 through,kar
@@ -86,7 +84,6 @@ rabbit,rabat
 small,smal
 swim,siwam
 berry,baral
-blue,balar
 end,ned
 ever,varal
 feel,flar
@@ -96,7 +93,6 @@ run,ranal
 sniff,sinaf
 still,stal
 year,yar
-back,bak
 breeze,barez
 bring,barin
 cover,kavar
@@ -145,7 +141,6 @@ found,fanad
 hot,hat
 near,nar
 old,lad
-three,kar
 while,wol
 winter,winet
 wolf,wolaf
@@ -157,14 +152,12 @@ live,lival
 never,nev
 once,nasal
 parent,paran
-piece,pisal
-red,redal
+piece,pesal
 sibling,sibal
 sound,sant
 spring,sipar
 until,nat
 watch,wit
-white,wital
 wind,wint
 work,work
 yet,yetal
@@ -181,7 +174,6 @@ help,halep
 late,latal
 lot,latal
 pond,panad
-purple,parap
 set,stal
 sink,sinak
 such,sat
@@ -204,23 +196,19 @@ first,farz
 flutter,falat
 follow,folor
 hour,haral
-left,left
 lov,laval
 much,matak
 only,nal
 open,pan
 part,part
 pretty,paret
-right,rit
 self,slef
 short,kas
 state,sat
 talk,talak
 well,wolar
 without,wik
-yellow,yolor
 approach,parat
-black,balak
 bloom,bolom
 both,bakal
 breath,brek
@@ -264,7 +252,7 @@ deer,daral
 deliciou,dales
 dense,denas
 drink,drin
-drop,darap
+drop,darop
 earth,rek
 enjoy,nedaj
 even,venal
@@ -332,7 +320,6 @@ else,lesal
 entire,netar
 fast,fast
 final,final
-five,fiv
 flow,flor
 fragrance,farag
 fragrant,farag
@@ -446,7 +433,6 @@ different,dif
 distance,disat
 draw,daral
 dusk,dasak
-east,setal
 elk,lekal
 enter,netar
 event,venat
@@ -461,7 +447,6 @@ finish,finak
 flap,falap
 flicker,falik
 flock,falak
-four,far
 free,faral
 frog,farag
 gam,gamal
@@ -538,7 +523,7 @@ solve,salav
 somebody,samab
 song,sanag
 speak,spek
-special,sepis
+special,sepas
 specy,sepik
 stand,satan
 steady,setad
@@ -664,7 +649,7 @@ condition,kanad
 connect,kanak
 consider,kanas
 construct,kanas
-cook,kokol
+cook,kakol
 cosy,kasal
 couple,kapal
 courage,korog
@@ -733,14 +718,13 @@ flown,folon
 fluffy,falaf
 flute,falut
 focus,fakas
-fog,fagal
+fog,fogal
 foothill,fosol
 forget,farag
 forgotten,farag
 form,fram
 fortuitious,farat
 freeze,farez
-front,fran
 frost,faras
 ful,falar
 fur,fral
@@ -765,7 +749,7 @@ graceful,garas
 grand,garan
 grizz,gariz
 groom,gorom
-group,grap
+group,grop
 growth,gorok
 guidance,gadan
 hadn't,hadan
@@ -785,7 +769,6 @@ hit,hital
 honest,hanas
 hopeful,hapaf
 hug,hagal
-hundred,hant
 illustrate,lisut
 important,mipar
 indoor,nidor
@@ -849,7 +832,6 @@ numerou,namar
 o'clock,kalak
 occur,karal
 ones,nasal
-orange,ranag
 outcome,tokom
 outdoor,todor
 outside,tost
@@ -910,8 +892,6 @@ reserve,resar
 resist,resis
 return,retar
 reveal,reval
-rhythm,rihak
-rhythmical,rihak
 ring,rinag
 ripen,ripen
 road,rodol
@@ -936,7 +916,6 @@ season,ses
 seat,setal
 second,sekan
 seek,sekal
-seven,sev
 shady,kasad
 shall,kasal
 shed,kesad
@@ -948,7 +927,7 @@ sho,kasal
 shop,kasap
 shoulder,kasal
 silver,saliv
-single,sineg
+single,sinag
 sister,siset
 situation,sitat
 sketch,sekat
@@ -969,10 +948,9 @@ sock,sakal
 solution,salat
 sooth,sokol
 source,saras
-south,sakal
 space,spas
 sparkle,sapar
-specimen,sepis
+specimen,sepas
 speck,sepak
 spine,sipen
 spiral,sipar
@@ -1004,7 +982,6 @@ task,tasak
 taste,tasat
 team,temal
 temperature,temap
-ten,ten
 tent,tenat
 thankful,kanak
 thick,sikal
@@ -1025,14 +1002,12 @@ trip,tarip
 tru,taral
 truth,tarak
 tube,tubal
-twelve,tewal
 twice,tiwes
 twig,tiwag
 twinkl,tiwan
 uncle,nakal
 underbrush,nadar
 unfold,nafal
-unhealthy,nuhal
 unknown,nukon
 unless,nalas
 unravel,narav
@@ -1052,7 +1027,6 @@ weav,weval
 weed,wedal
 weep,wepal
 weird,wored
-west,wesat
 what'd,witad
 whenever,wenav
 whole,wol

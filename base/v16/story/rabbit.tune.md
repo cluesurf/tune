@@ -8,107 +8,107 @@ A <word> in angle brackets had no form in the lexicon.
 
 # rabata
 
-"muq..." miza yoheka, ponreCi miza haqmisa. miza lugmisa biq sita giwatmun tokompasa
-bite. muq... miza homa flani borata ziyuza sislsig. nat winti gine wega dife, let
-kat haqmisa doropa tene frale daj nip litala lonlidu! muq!! din borona hav nip
-nosolmuna gowoqa semala pute kida. kida biq toma gine jid worka! tokoslida miza sis.
-nod vim wol biq wolara, daj witeni nod ximi.
+"muq..." miba xayoCa, ponreCi miba haqmisa. miba lugmisa biq sita giwathiq tokompasa
+dime. muq... miba homa flani torama rasiCa sislsig. nat winti nipe wega tede, lit
+kat haqmisa dorupa dote frale duj med litala lonlibu! muq!! din borona hav med
+nosolhiqa pikuCa semala pote tika. tika biq doma nipe jin worka! tokosliba miba sis.
+nod vin wol biq wolara, duj witali nod ximi.
 
-hapa hapa hapa, nive pine miza borona. maregreCa frame din garona, miza hinada lugmisa
-heyuva miza pepalwareCa haqmisa. loki rante! ximi din betala. jihemzeta din
-gixa nafalwareCa. din cihezmisa pine din snala ciqmun xeyoCi miza like nip kisala.
-saranpasa kize garenu nod parap, redalu nod balar, miza flani din yolor sihaCreCa
-wike vim pine tima. sinafa. sinafa. "tiwagmisa sis?" porutreCa fine vim kijmisa, miza
-fareza. zipmisa kepalpasi kasara nod sitata. balp. nip botola pine rana badalwareCi bite
-din darita. diC, wim kulu.
+hapa hapa hapa, gige bive miba borona. maregreCa frame din garona, miba hinada lugmisa
+wekida miba pepalwareCa haqmisa. loki rante! ximi din betala. witensuta din
+gixa nafalwareCa. din yawikmisa bive din snala cighiq Cisupi miba like med kisala.
+saranpasa kide gunu nod pin, ridu nod bag, miba flani din yul yiwoqreCa
+wike vin bive piga. sinafa. sinafa. "wetarmisa sis?" boratreCa fime vin yitmisa, miba
+fareza. Cibmisa kepalpasi kasara nod sitata. balp. med botola bive rina nekatreCi dime
+din darita. vem, wim kulu.
 
-nip saft bareza galanmisa miza xika. bum, biq wenadfali gine biq nizola. gine biq
-tanatpasa kize din liheja pine wolid sagala; gine biq wihovpasa menaka din talarmos
-xehozmisa. paleka! nip balakbarala. wit lid kon nip winti.
+med saft bareza galanmisa miba fruma. bum, biq wenadfali nipe biq polena. nipe biq
+tanatpasa kide din golima bive wolid sagala; nipe biq yowunpasa menaka din talarmaz
+golidmisa. palika! med bulbarala. wut lib kon med winti.
 
-hit, miza farina! sara disa biq, disa buda! semala din mist. biq like din
-nebara cihega nod taki nip maraqa. flani din rihaka, flani dalizpasa. flani
-nisaplpasa. din foleka nod xita kat saranmisa tima biq Cine kida
-tafmos.
+wis, miba farina! sara gina biq, gina buda! semala din miz. biq like din
+nebara woyula nod taki med karoda. flani din wikusa, flani kinagpasa. flani
+nisaplpasa. din rikara nod xita kat saranmisa piga biq Cime tika
+tafmaz.
 
-wodfali like nip hanata, poni manpasa like nip betalfala balar flora, redusa
-like din wonta, tima begi tima bohaCa. folanreCi din reziza pine din wolodzeta,
-fesatreCa fine kida vihexa. zormisa wol senasa dajana bite yime zina ximi voreta.
+viflfali like med hanata, poni manpasa like med betalfala bag flora, rodola
+like din wonta, piga pogi piga lukora. torenreCi din wigaxa bive din wolodsuta,
+fesatreCa fime tika digoza. zormisa wol senasa dajana dime yime zina ximi hokala.
 
-dixa biq toma frale worka. sinagmisa gine biq don. koluqmisa gine nama. parebmisa gine
-lisuta, xehajmisa gine yihoxa poke rante, like din ziweqmisa tima wim
-genarmuna hav refala. lid mist biq refala. xeyucmisa nakavpasa. rotmisa nibalpasa
-pinala, xewuvmisa corezpasa nod safata nod norema folexpasa. fute vim,
-sis lihaga nidi som kamapa. let din mana moleda din ruka, nod miza
-kos hav nip yuhisa restfala homa frale din nuta. sinafa sinafa.
+tiva biq doma frale worka. sinagmisa nipe biq don. xizopmisa nipe nama. parabmisa nipe
+lisuta, hiyeqmisa nipe yuwoqa goke rante, like din tenalmisa piga wim
+genarhiqa hav digora. lib miz biq digora. horatmisa nakavpasa. rotmisa nibalpasa
+pinala, karafmisa loruxpasa nod ligola nod laraja jugezpasa. fute vin,
+sis fayofa nidi som kamapa. lit din mana moleda din ruka, nod miba
+gas hav med jeyuca restfala homa frale din nuta. sinafa sinafa.
 
-likulwareCa tima zipmisa nod rabalwareCa tima hayocmisa, wolara-gorompasa rabatmisa begi tima
-ragulpasa dajara. like masata vihajmisa ralara bite din danala. piC piC piC, tima
-digali rine. tima mist taki nip xiba senita stapi lene din minata, gig. gine ximi
-din lutmisu nod keni tiwagmisa hadala bite din daraka.
+likulwareCa piga Cibmisa nod rabalwareCa piga zetikmisa, wolara-gorompasa rabatmisa pogi piga
+ragulpasa dajara. like masata limatmisa ralara dime din danala. xis xis xis, piga
+digali wiqe. piga miz taki med riga senita stapi lene din minata, dis. nipe ximi
+din ladmisu nod keni wetarmisa hadala dime din dorika.
 
-bum. nip jiz soda. nip sepaka pine din nusena. nip biweqa pine din valeta pine
-johada.
+bum. med meq zeta. med sepaka bive din fayuca. med xiseka bive din valeta bive
+koruta.
 
-kuwoqa. witada disa finti?! som kalada wizemreCa nive frame din karevmisa pine sis
+yawuza. witada gina finti?! som galoda karepreCa gige frame din ziwomlmisa bive sis
 raka. nisala.
 
-dixa, mapala kida nive. wit jid tima jid neka? tima saliva din bamala pareba tima
-fasalwareCa bite foruqreCa tene sis rabata holora.
+tiva, mapala tika gige. wut jin piga jin noka? piga salava din gorika paraba piga
+fasalwareCa dime CidekreCa dote sis rabata holora.
 
-din snala biq senikreCa bite din haraza. din bareza biq sita kul.
-graslhapmisa nod tartawarmisa falika pute. din calota sita faloni din
-setara. tita biq bekomreCi viseba, nod yetala, tima hav nat disora gine jipi tima
-nedavmisa. wit sihocmisa dihaCa? wit lid mist tima finti nod larena gine
-coripa sis mapala nod boloma kida gine din woralmisa yiwuva?
+din snala biq senikreCa dime din haraza. din bareza biq sita kul.
+graslhapmisa nod tarhuzolmisa falika pote. din vineka sita saleni din
+setara. tiza biq bekomreCi viseba, nod yetala, piga hav nat disara nipe fiqi piga
+nedavmisa. wut misedmisa mizeca? wut lib miz piga finti nod larena nipe
+vayuja sis mapala nod yuwaga tika nipe din woralmisa molona?
 
-rana. tima mist masata din rana. keni bik kida zoti, nod bik gine barini kida
-poke wen sinagmisa biq nice. tima mist finti din jahunmisa bite din lutu nod
-nuta, bite din pagu nod smalu, bite din Caleda nod somoka, tik kida daj
-kolokmisa. disa keni bitara hibe miza wit sis flani like. tima biq masatmisa,
-daj like vim sinagmisa zid retaki bite din nukona nod poni gine din wizeda
-pine din ledarmisa. nasala tima figara kida nive, tima wol biq balena gine muvi monotmisa.
+rina. piga miz masata din rina. keni bic tika zoti, nod bic nipe barini tika
+goke wen sinagmisa biq nore. piga miz finti din yiwetmisa dime din ladu nod
+nuta, dime din boku nod smalu, dime din bamala nod somoka, zip tika duj
+kolikmisa. gina keni pitara xike miba wut sis flani like. piga biq masatmisa,
+duj like vin sinagmisa sib retaki dime din nukona nod poni nipe din wisada
+bive din yuwaxmisa. nasala piga figara tika gige, piga wol biq balara nipe muvi monotmisa.
 
-bat, frale dixa, tima biq hara. fine toma. sitalwareCi fine tima yohuxa sapatmisa. glen,
-fakaspasa, xehoqpasa, nod kapaba. sinafa. sinafa. miza vihega fine nip siketlida pine
-wodonmisa. wit biq disa dife gine neka? miza begi jihozreCa miza hayocmisa bite din solora gine
-digali bite kida, kisafreCa kida sis minata nod kat. miza taki miza toma, tasatpasa
-kize miza ziwesa, lokreCi kore miza haqmisa gine miza vrana nod sadanmisa, yetala
-ximreCi wike miza poda. disa keni kida wen disa ximi kida, disa keni kida wen disa
-flani kida, disa keni kida wen disa jid kida. daj wikasa kida kon miza hav nip litala
-botola lid toma gine torula sis nip lasta sinaga. bat sihosmisa, din snala hav stona.
+bat, frale tiva, piga biq hara. fime doma. sitalwareCi fime piga wolema sapatmisa. glen,
+fakaspasa, Coleqpasa, nod kapaba. sinafa. sinafa. miba xiyuca fime med zikatliba bive
+wodonmisa. wut biq gina tede nipe noka? miba pogi dipalwareCa miba zetikmisa dime din tiweqa nipe
+digali dime tika, kisafreCa tika sis minata nod kat. miba taki miba doma, tasatpasa
+kide miba morola, lokreCi kore miba haqmisa nipe miba kega nod sadanmisa, yetala
+ximreCi wike miba pada. gina keni tika wen gina ximi tika, gina keni tika wen gina
+flani tika, gina keni tika wen gina jin tika. duj wikasa tika kon miba hav med litala
+botola lib doma nipe torula sis med lasta sinaga. bat xuyivmisa, din snala hav stona.
 
-miza dajara restmisa wike din ram balaru nod kalada. din tita jayuvmisa wike kida
-frus Calixa fisanmisa, sabadreCa bite nip folema nod karulmisa nampa 7. nip
-jihexa pine johada, nip toreba pine hart worka, nod din borita biq magaka.
+miba dajara restmisa wike din ram bagu nod galoda. din tiza dekijmisa wike tika
+boj xoyiCa fesamlmisa, sabadreCa dime med Cizeba nod karulmisa nampa 7. med
+nolada bive koruta, med digasa bive hart worka, nod din kiweqa biq magaka.
 
-finalmuna, miza pepala rante din sihoca hav heyukpasa. wepala Cine din zikatmisa
-tima hav vim wim farotmuna makpasi. sinafa. sinafa. tima hav makpasi tima homa
-yuhisa, makpasi kida siheja, tima kon nef losola satasa pine kida. kida wol kepali tima
-noraplpasa wolara. din wolamlmisa biq laraga salava gine let miza bisara miza zipmisa rim miza
-nidi gine. nod yetala, marona salava gine kavari miza poda like nip zokulmuna balona. miza
-taki nip tup breka bite. nod nip nive, gine kareta din nuta nod pifi kinagmisa gine
+finalhiqa, miba pepala rante din miseda hav wexizpasa. larisa Cime din sikadmisa
+piga hav vin wim paledhiqa makpasi. sinafa. sinafa. piga hav makpasi piga homa
+jeyuca, makpasi tika gorina, piga kon nef losola satasa bive tika. tika wol kepali piga
+kazalpasa wolara. din wolunmisa biq laraga jowupa nipe lit miba cekora miba Cibmisa rim miba
+nidi nipe. nod yetala, casuta jowupa nipe kavari miba pada like med wolomhiqa balena. miba
+taki med tup breka dime. nod med gige, nipe gorota din nuta nod hisi ginekmisa nipe
 din siga.
 
-miza hav boronpasa bite miza holora. miza homa.
+miba hav boronpasa dime miba holora. miba homa.
 
-miza tokoma miza lugmisa bite calajmuna, makreCi miza nip faruna bala pine hapalzet. miza zipmisa
-bekomi falepa. miza homa larada flani hayosa. miza let miza haqjifmisa nohafa
-tene, hula minata kore. miza salidmisa kowoga bive. wit nip venatfala siga kida hav
-biq. disa gig? miza givi mizlslefa nip hayoca fine miza poke, yime miza zorinmisa badali
-tene. tima nip taf wiheva, nod miza nat witeni frale zormisa gine dajana.
+miba tokoma miba lugmisa dime cisamhiqa, makreCi miba med galaba bala bive hapalsut. miba Cibmisa
+bekomi moriga. miba homa larada flani voroka. miba lit miba haqnexmisa salida
+dote, hula minata kore. miba tekaxmisa xiseba kife. wut med venatfala siga tika hav
+biq. gina dis? miba givi mibslefa med zetika fime miba goke, yime miba ciyevmisa nekati
+dote. piga med taf nekoza, nod miba nat witali frale zormisa nipe dajana.
 
-sinafa sinafa. muq... toma frale resta. toma gine tiheba din mana nod norupi
-tiwagmisa tafmos. parisi bite.... parisi nive... breka bite... breka nive...
-taf nuta vim. sinafa sinafa. sinafa.
+sinafa sinafa. muq... doma frale resta. doma nipe porufa din mana nod loraqi
+wetarmisa tafmaz. ripeni dime.... ripeni gige... breka dime... breka gige...
+taf nuta vin. sinafa sinafa. sinafa.
 
-santmisa pine din wonta rolora vrole din tubala frame wit tima hav makpasi tima
-slepreCi spasa. miza daremi pine vim din jiz sinagmisa miza geti gine jid nod maki bite
-din neka brata pine din kikala. wim glosi, yetala wim frula, nod yetala sis biq wit
-kepali miza cimreCi.
+santmisa bive din wonta rolora vrole din holeba frame wut piga hav makpasi piga
+slepreCi spasa. miba daremi bive vin din meq sinagmisa miba geti nipe jin nod maki dime
+din noka brata bive din kikala. wim glosi, yetala wim frula, nod yetala sis biq wut
+kepali miba cinreCi.
 
-santmisa pine din setara bite din disata. nip xiba karikmisa.
+santmisa bive din setara dime din disata. med riga karikmisa.
 
-lid karikmisa. sis biq din vita.
+lib karikmisa. sis biq din vita.
 
-lid wonta... lid wolodzeta dihaCmisa.
+lib wonta... lib wolodsuta mizecmisa.

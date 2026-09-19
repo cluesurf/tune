@@ -91,7 +91,6 @@ mul
 nim
 nin
 niq
-nig
 nid
 nib
 nip
@@ -108,7 +107,6 @@ nic
 nem
 nen
 neq
-neg
 ned
 neb
 nep
@@ -184,7 +182,6 @@ giq
 gig
 gid
 gib
-gip
 git
 gik
 gis
@@ -276,7 +273,6 @@ did
 dib
 dip
 dit
-dik
 dis
 diz
 div
@@ -457,7 +453,6 @@ pib
 pip
 pit
 pik
-pis
 piz
 piv
 pif
@@ -545,7 +540,6 @@ tig
 tid
 tib
 tip
-tit
 tik
 tis
 tiz
@@ -689,7 +683,6 @@ kod
 kob
 kop
 kot
-kok
 kos
 koz
 kov
@@ -700,7 +693,6 @@ koC
 koc
 kor
 kol
-kum
 kun
 kuq
 kug
@@ -708,7 +700,6 @@ kud
 kub
 kup
 kut
-kuk
 kus
 kuz
 kuv
@@ -1115,7 +1106,6 @@ fec
 fam
 fan
 faq
-fag
 fad
 fab
 fap
@@ -1158,7 +1148,6 @@ fud
 fub
 fup
 fut
-fuk
 fus
 fuz
 fuv
@@ -1181,8 +1170,6 @@ xis
 xiz
 xiv
 xif
-xix
-xij
 xiC
 xic
 xem
@@ -1198,8 +1185,6 @@ xes
 xez
 xev
 xef
-xex
-xej
 xeC
 xec
 xam
@@ -1215,8 +1200,6 @@ xas
 xaz
 xav
 xaf
-xax
-xaj
 xaC
 xac
 xar
@@ -1234,8 +1217,6 @@ xos
 xoz
 xov
 xof
-xox
-xoj
 xoC
 xoc
 xor
@@ -1253,8 +1234,6 @@ xus
 xuz
 xuv
 xuf
-xux
-xuj
 xuC
 xuc
 xul
@@ -1268,11 +1247,8 @@ jip
 jit
 jik
 jis
-jiz
 jiv
 jif
-jix
-jij
 jiC
 jic
 jem
@@ -1288,8 +1264,6 @@ jes
 jez
 jev
 jef
-jex
-jej
 jeC
 jec
 jam
@@ -1298,15 +1272,12 @@ jaq
 jag
 jad
 jab
-jap
 jat
 jak
 jas
 jaz
 jav
 jaf
-jax
-jaj
 jaC
 jac
 jar
@@ -1324,8 +1295,6 @@ jos
 joz
 jov
 jof
-jox
-joj
 joC
 joc
 jor
@@ -1343,8 +1312,6 @@ jus
 juz
 juv
 juf
-jux
-juj
 juC
 juc
 jul
@@ -1638,7 +1605,6 @@ raq
 rag
 rad
 rab
-rap
 rat
 rak
 ras

@@ -12,6 +12,62 @@ nothing,siz,siz
 cause,kaz,kaz
 god,gad,gad
 individual,zak,zak
+red,rid,rid
+orange,ran,ran
+yellow,yul,yul
+green,gun,gun
+blue,bag,bag
+purple,pin,pin
+black,bul,bul
+gray,gap,gap
+white,wit,wit
+x axis,pij,pij
+y axis,taj,taj
+z axis,kuj,kuj
+left,bep,bep
+right,pob,pob
+down,dot,dot
+up,ted,ted
+back,gok,gok
+front,keg,keg
+north,yin,yin
+east,rog,rog
+south,lut,lut
+west,web,web
+zero,yom,yom
+one,med,med
+two,noc,noc
+three,dez,dez
+four,boj,boj
+five,tem,tem
+six,kos,kos
+seven,hen,hen
+eight,son,son
+nine,zeb,zeb
+ten,voq,voq
+eleven,feg,feg
+twelve,xob,xob
+thirteen,ceq,ceq
+fourteen,roz,roz
+fifteen,lep,lep
+sixteen,wod,wod
+hundred,yemib,yemib
+thousand,monog,monog
+million,nekun,nekun
+billion,doses,doses
+trillion,befif,befif
+quadrillion,toxoC,toxoC
+quintillion,keCuj,keCuj
+sextillion,hoyem,hoyem
+septillion,sewiq,sewiq
+octillion,zolor,zolor
+nonillion,vetul,vetul
+decillion,fobet,fobet
+power36,xegis,xegis
+power39,cozof,cozof
+power42,rejuk,rejuk
+power45,lorej,lorej
+power48,weyiC,weyiC
 type,tap,tap
 action type,kiq,kiq
 object type,kaq,kaq
@@ -49,14 +105,14 @@ the,din,dan
 understand,das,das
 negative,num,dum
 neutral,naq,naq
-positive,mid,mid
+positive,mim,mid
 move,muv,muv
 write,run,run
 energy,xiq,xiq
 computation,xit,xit
 cosine,bug,bug
 sine,dig,dig
-tangent,mad,bad
+tangent,bid,bad
 awake,bud,bud
 be,biq,biq
 request,niq,piq
@@ -77,8 +133,9 @@ cell,box,kox
 call,kal,kal
 calm,kam,kam
 home,hom,hom
-clue,kluq,kluq
-reserved bid,bim,bid
+clue,kul,kul
+surf,suf,suf
+reserved bid,bik,bid
 reserved dub,dub,dub
 ignorant,dib,dib
 reserved lij,lij,lij

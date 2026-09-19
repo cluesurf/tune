@@ -101,6 +101,8 @@
     "v16:check": "tsx make/v16/code/check.ts",
     "v16:decode": "tsx make/v16/code/decode.ts",
     "v16:lexicon": "tsx make/v16/code/lexicon.ts",
+    "v16:number": "tsx make/v16/code/number.ts",
+    "v16:color": "tsx make/v16/code/color.ts",
     "v16:render": "tsx make/v16/code/render.ts",
     "v16:story": "tsx make/v16/code/story.ts",
     "v16:final": "tsx make/v16/code/final.ts"

@@ -320,11 +320,31 @@ export const FRICATIVE = new Set(['s', 'z', 'x', 'j', 'f', 'v', 'c', 'C', 'h'])
  */
 export const WA = 'wa'
 
+/**
+ * A WORD BEGINNING `y` ALWAYS TAKES A BREAKER.
+ *
+ * ```text
+ * mas + yin   ->  maslyin
+ * nod + yul   ->  nodlyul
+ * kal + yin   ->  kalryin
+ * ```
+ *
+ * `y` is a glide, which is a vowel moving rather than a sound of its
+ * own, so it has almost no body to mark where it starts. Run straight
+ * onto a consonant it does not sit beside that consonant, it colours
+ * it: `s` plus `y` is heard as one palatal noise rather than two
+ * sounds, and the same happens after every stop and every nasal.
+ *
+ * It needs a breaker whatever precedes it, which makes this the first
+ * rule about ONE side of the seam rather than about the pair. After
+ * `l` the breaker is `r`, as everywhere else `l` cannot break itself.
+ */
 export function breaker(left: string, right: string) {
   const x = left[left.length - 1]
   const y = right[0]
   if (x === y) return x === 'l' ? 'r' : 'l'
   if (LIQUID.has(x) && LIQUID.has(y)) return WA
+  if (y === 'y') return x === 'l' ? 'r' : 'l'
   if (FRICATIVE.has(x) && FRICATIVE.has(y)) return 'l'
   return ''
 }
@@ -439,6 +459,91 @@ function dentalOk(word: string): boolean {
   return true
 }
 
+/**
+ * ONE HUSH TO A WORD, exactly as with the dentals.
+ *
+ * ```text
+ * xoj  jax  xix  jaj  xatx  ->  refused
+ * xob  jad  matx  madj       ->  stand
+ * ```
+ *
+ * `x` and `j` are `ʃ` and `ʒ`, the same long noise voiced and
+ * voiceless. Two of them in one short word give the ear two smears to
+ * hold apart, and they differ only in whether the voice is on, which
+ * is the weakest cue a fricative has.
+ *
+ * Counted TOGETHER, as `c` and `C` are: two of the same is the worst
+ * case and one of each is barely better.
+ *
+ * A digraph contributes one letter and one sound, so `matx` and `madj`
+ * each hold a single hush and stand.
+ */
+/**
+ * NO `h` BETWEEN TWO VOWELS. It cannot be said there.
+ *
+ * ```text
+ * miheg  yoheka  gahim   ->  refused
+ * hepa   hom     xahd    ->  stand, h opens
+ * ```
+ *
+ * `h` is a puff of breath with no closure and no voicing of its own.
+ * Opening a word it has silence in front of it to push off, which is
+ * what makes it audible at all. Between two vowels there is no
+ * silence: the voice is already running, and asking a speaker to stop
+ * voicing, breathe, and start again in the middle of a word is the
+ * hardest thing the language asks.
+ *
+ * Every language that keeps `h` keeps it at the front for this reason,
+ * and the ones that allowed it medially mostly lost it there.
+ *
+ * `h` still opens a word and still opens the second syllable when a
+ * consonant closes the first, since a closure gives it the silence it
+ * needs. In `CVCVC` the middle slot has a vowel on both sides and is
+ * the one place this bites.
+ */
+function medialHOk(word: string): boolean {
+  for (let at = 1; at < word.length - 1; at++) {
+    if (word[at] !== 'h') continue
+    if (VOWELS.includes(word[at - 1]) && VOWELS.includes(word[at + 1])) {
+      return false
+    }
+  }
+  return true
+}
+
+/**
+ * FRAGMENTS THAT READ AS SOMETHING ELSE, refused wherever they fall.
+ *
+ * `moneg` for a thousand carried `neg`, which is a slur fragment in
+ * English, and nothing in the sound system could have noticed: every
+ * rule here is about what a mouth can say, and this is about what a
+ * reader will see.
+ *
+ * **It belongs at the source rather than in a review pass.** A word
+ * that has to be caught by eye will eventually be missed by eye, and
+ * these surface in generated vocabulary constantly, because the
+ * generator is sampling the same short strings English is.
+ *
+ * Matched anywhere in a word, not just at an edge. Add to it freely:
+ * the cost is a handful of forms out of a hundred and fifty thousand.
+ */
+const TABOO = [
+  'neg', 'nig', 'fag', 'fuk', 'kok', 'kuk', 'pis', 'kum', 'jiz', 'kunt',
+  'kok', 'dik', 'tit', 'rap', 'nazi', 'jap', 'gip',
+]
+
+const tabooOk = (word: string) => !TABOO.some(one => word.includes(one))
+
+const HUSH_LETTER = new Set(['x', 'j'])
+
+function hushOk(word: string): boolean {
+  let seen = 0
+  for (const one of word) {
+    if (HUSH_LETTER.has(one) && ++seen > 1) return false
+  }
+  return true
+}
+
 const LIQUID = new Set(['l', 'r'])
 
 function liquidOk(word: string): boolean {
@@ -457,7 +562,16 @@ export function every(shape: Shape): Array<string> {
   // other three. That is how `r.r` would have gone in.
   const push = (word: string) => {
     if (word.startsWith(WA)) return
-    if (rhymeOk(word) && liquidOk(word) && dentalOk(word)) out.push(word)
+    if (
+      rhymeOk(word) &&
+      liquidOk(word) &&
+      dentalOk(word) &&
+      hushOk(word) &&
+      medialHOk(word) &&
+      tabooOk(word)
+    ) {
+      out.push(word)
+    }
   }
   if (shape === 'CVC') {
     for (const a of CONSONANTS) {

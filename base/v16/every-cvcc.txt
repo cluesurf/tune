@@ -79,7 +79,6 @@ muft
 nimp
 nint
 niqk
-nigz
 nidz
 nidj
 nibz
@@ -91,7 +90,6 @@ nift
 nemp
 nent
 neqk
-negz
 nedz
 nedj
 nebz
@@ -396,9 +394,6 @@ pidz
 pidj
 pibz
 pitx
-pisp
-pist
-pisk
 pift
 pemp
 pent
@@ -473,7 +468,6 @@ tigz
 tidz
 tidj
 tibz
-titx
 tisp
 tist
 tisk
@@ -610,8 +604,6 @@ kolt
 kolk
 kolz
 kolc
-kump
-kunt
 kuqk
 kugz
 kudz
@@ -961,7 +953,6 @@ feft
 famp
 fant
 faqk
-fagz
 fadz
 fadj
 fabz
@@ -1017,9 +1008,7 @@ xint
 xiqk
 xigz
 xidz
-xidj
 xibz
-xitx
 xisp
 xist
 xisk
@@ -1029,9 +1018,7 @@ xent
 xeqk
 xegz
 xedz
-xedj
 xebz
-xetx
 xesp
 xest
 xesk
@@ -1041,9 +1028,7 @@ xant
 xaqk
 xagz
 xadz
-xadj
 xabz
-xatx
 xasp
 xast
 xask
@@ -1062,9 +1047,7 @@ xont
 xoqk
 xogz
 xodz
-xodj
 xobz
-xotx
 xosp
 xost
 xosk
@@ -1083,9 +1066,7 @@ xunt
 xuqk
 xugz
 xudz
-xudj
 xubz
-xutx
 xusp
 xust
 xusk
@@ -1095,9 +1076,7 @@ jint
 jiqk
 jigz
 jidz
-jidj
 jibz
-jitx
 jisp
 jist
 jisk
@@ -1107,9 +1086,7 @@ jent
 jeqk
 jegz
 jedz
-jedj
 jebz
-jetx
 jesp
 jest
 jesk
@@ -1119,9 +1096,7 @@ jant
 jaqk
 jagz
 jadz
-jadj
 jabz
-jatx
 jasp
 jast
 jask
@@ -1140,9 +1115,7 @@ jont
 joqk
 jogz
 jodz
-jodj
 jobz
-jotx
 josp
 jost
 josk
@@ -1161,9 +1134,7 @@ junt
 juqk
 jugz
 judz
-judj
 jubz
-jutx
 jusp
 just
 jusk

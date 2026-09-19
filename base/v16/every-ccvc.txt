@@ -38,7 +38,6 @@ graq
 grag
 grad
 grab
-grap
 grat
 grak
 gras
@@ -183,11 +182,8 @@ djip
 djit
 djik
 djis
-djiz
 djiv
 djif
-djix
-djij
 djiC
 djic
 djem
@@ -203,8 +199,6 @@ djes
 djez
 djev
 djef
-djex
-djej
 djeC
 djec
 djam
@@ -213,15 +207,12 @@ djaq
 djag
 djad
 djab
-djap
 djat
 djak
 djas
 djaz
 djav
 djaf
-djax
-djaj
 djaC
 djac
 djar
@@ -239,8 +230,6 @@ djos
 djoz
 djov
 djof
-djox
-djoj
 djoC
 djoc
 djor
@@ -258,8 +247,6 @@ djus
 djuz
 djuv
 djuf
-djux
-djuj
 djuC
 djuc
 djul
@@ -303,7 +290,6 @@ draq
 drag
 drad
 drab
-drap
 drat
 drak
 dras
@@ -391,7 +377,6 @@ braq
 brag
 brad
 brab
-brap
 brat
 brak
 bras
@@ -619,7 +604,6 @@ smul
 snim
 snin
 sniq
-snig
 snid
 snib
 snip
@@ -636,7 +620,6 @@ snic
 snem
 snen
 sneq
-sneg
 sned
 sneb
 snep
@@ -715,7 +698,6 @@ spib
 spip
 spit
 spik
-spis
 spiz
 spiv
 spif
@@ -803,7 +785,6 @@ stig
 stid
 stib
 stip
-stit
 stik
 stis
 stiz
@@ -947,7 +928,6 @@ skod
 skob
 skop
 skot
-skok
 skos
 skoz
 skov
@@ -958,7 +938,6 @@ skoC
 skoc
 skor
 skol
-skum
 skun
 skuq
 skug
@@ -966,7 +945,6 @@ skud
 skub
 skup
 skut
-skuk
 skus
 skuz
 skuv
@@ -1103,7 +1081,6 @@ vraq
 vrag
 vrad
 vrab
-vrap
 vrat
 vrak
 vras
@@ -1191,7 +1168,6 @@ fraq
 frag
 frad
 frab
-frap
 frat
 frak
 fras

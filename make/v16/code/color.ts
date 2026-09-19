@@ -1,0 +1,176 @@
+/**
+ * The colour words. Three letters each, with the vowel carrying the
+ * structure of the wheel.
+ *
+ * ```text
+ * red orange yellow green blue purple    i a u u a i
+ * black gray white                       u a i
+ * ```
+ *
+ * **The six are a palindrome, and that is the point.** Reading the
+ * vowels out and back pairs the colours across the wheel: `red` with
+ * `purple`, `orange` with `blue`, `yellow` with `green`. A speaker who
+ * knows one of a pair has half of the other.
+ *
+ * The three greys run `u a i` straight through, dark to light, which
+ * is a scale rather than a wheel and gets a scale's shape.
+ *
+ * ## The vowel is given, so the consonants echo
+ *
+ * With the vowel fixed there are two slots left, and the first thing
+ * to try is `choosing-a-form.md`'s rung one: does a legal form sound
+ * like the English word. `red` wants `r_d` and with `i` that is `rid`.
+ * `white` wants `w_t`, and with `i` that is `wit`.
+ *
+ * An echo is taken only when it is free and plainly clear of every
+ * pinned word. Otherwise the form is searched for, and says so.
+ *
+ * Usage:
+ *   pnpm --dir deck/tune v16:color
+ */
+
+import { readFileSync, writeFileSync } from 'fs'
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+import { CONSONANTS, NO_CLOSE, NO_OPEN, every, scores } from './sound'
+
+const here = dirname(fileURLToPath(import.meta.url))
+const TERM = resolve(here, '../../../base/v16/term')
+
+/** Colour, its vowel, and the English consonants to echo. */
+const WANT: Array<[string, string, string]> = [
+  ['red', 'i', 'rd'],
+  ['orange', 'a', 'rnj'],
+  ['yellow', 'u', 'yl'],
+  ['green', 'u', 'grn'],
+  ['blue', 'a', 'bl'],
+  ['purple', 'i', 'prpl'],
+  ['black', 'u', 'blk'],
+  ['gray', 'a', 'gr'],
+  ['white', 'i', 'wt'],
+]
+
+const COLOR = new Set(WANT.map(one => one[0]))
+const legal = new Set(every('CVC'))
+const opens = CONSONANTS.filter(one => !NO_OPEN.has(one))
+const closes = CONSONANTS.filter(one => !NO_CLOSE.has(one))
+
+/** Every pinned form except the colours themselves. */
+const standing: Array<string> = []
+for (const line of readFileSync(`${TERM}/pin.csv`, 'utf-8')
+  .split('\n')
+  .slice(1)
+  .filter(Boolean)) {
+  const cut = line.split(',')
+  const concept = (cut[0] ?? '').trim()
+  const form = (cut[1] ?? '').trim()
+  if (form && form.length === 3 && !COLOR.has(concept)) standing.push(form)
+}
+
+/**
+ * Plainly different: one position scoring a clear 2.
+ *
+ * The summed distance is the wrong test, as the numbers showed. A pair
+ * can total 2 by having two NEAR positions and nothing unmistakable.
+ */
+const clearOf = (a: string, b: string) =>
+  scores(a, b, 'CVC').some(one => one === 2)
+
+const free = (word: string) =>
+  legal.has(word) && standing.every(had => clearOf(had, word))
+
+/** The echo, if the English consonants make a legal free word. */
+function echo(bones: string, vowel: string) {
+  for (let a = 0; a < bones.length; a++) {
+    for (let b = a + 1; b < bones.length; b++) {
+      const one = bones[a] + vowel + bones[b]
+      if (free(one)) return one
+    }
+  }
+  return null
+}
+
+const chosen: Array<[string, string, boolean]> = []
+const taken: Array<string> = []
+
+for (const [name, vowel, bones] of WANT) {
+  const heard = echo(bones, vowel)
+  if (heard && taken.every(had => clearOf(had, heard))) {
+    chosen.push([name, heard, true])
+    taken.push(heard)
+    continue
+  }
+  /**
+   * No whole echo. KEEP THE OPENING SOUND at least.
+   *
+   * `gray` wants `gar`, which is legal and unpinned and sits `[1,0,1]`
+   * from `kal` for call: near, near, nothing plainly different. So it
+   * cannot be had. The first version then took the best form anywhere
+   * in the space and returned `naj`, which shares nothing with the
+   * word it names.
+   *
+   * Half an echo is worth a great deal more than none, so a candidate
+   * that opens on the English word's first sound wins over one that
+   * merely sits further away.
+   */
+  let best = ''
+  let bestScore = -1
+  for (const a of opens) {
+    for (const b of closes) {
+      const one = a + vowel + b
+      if (!free(one)) continue
+      if (!taken.every(had => clearOf(had, one))) continue
+      const apart = taken.length
+        ? Math.min(
+            ...taken.map(had =>
+              scores(had, one, 'CVC').reduce((x, y) => x + y, 0),
+            ),
+          )
+        : 9
+      // Opening on the right sound is worth more than any extra
+      // distance, so it is scored as a whole tier above.
+      const score = apart + (a === bones[0] ? 100 : 0)
+      if (score > bestScore) {
+        bestScore = score
+        best = one
+      }
+    }
+  }
+  chosen.push([name, best, false])
+  taken.push(best)
+}
+
+process.stdout.write(
+  'THE COLOUR WORDS\n\n' +
+    `  ${'colour'.padEnd(9)}${'word'.padEnd(7)}${'vowel'.padEnd(7)}how\n`,
+)
+for (const [name, word, heard] of chosen) {
+  process.stdout.write(
+    `  ${name.padEnd(9)}${word.padEnd(7)}${word[1].padEnd(7)}` +
+      `${heard ? 'echoes the english' : 'searched'}\n`,
+  )
+}
+
+let worst = 99
+let pair: [string, string] = ['', '']
+for (let a = 0; a < taken.length; a++) {
+  for (let b = a + 1; b < taken.length; b++) {
+    const got = scores(taken[a], taken[b], 'CVC').reduce((x, y) => x + y, 0)
+    if (got < worst) {
+      worst = got
+      pair = [taken[a], taken[b]]
+    }
+  }
+}
+process.stdout.write(
+  `\n  closest pair   ${pair[0]} and ${pair[1]}, at distance ${worst}\n` +
+    `  echoed         ${chosen.filter(one => one[2]).length} of ${chosen.length}\n`,
+)
+
+writeFileSync(
+  `${TERM}/color.csv`,
+  'colour,form,vowel,echo\n' +
+    chosen.map(([n, w, e]) => [n, w, w[1], e ? 'yes' : 'no'].join(',')).join('\n') +
+    '\n',
+)
+process.stdout.write(`\n  wrote ${TERM}/color.csv\n`)

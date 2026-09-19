@@ -44,7 +44,6 @@ muft
 nimp
 nint
 niqk
-nigz
 nidj
 nibz
 nitx
@@ -127,6 +126,9 @@ gutx
 gusp
 gusk
 guft
+digz
+desp
+desk
 bidz
 bist
 bemp
@@ -136,8 +138,6 @@ begz
 bedj
 bebz
 betx
-besp
-besk
 beft
 badz
 bast
@@ -162,6 +162,8 @@ bolz
 bolc
 budz
 bust
+pesp
+pesk
 tidz
 tist
 temp
@@ -171,8 +173,6 @@ tegz
 tedj
 tebz
 tetx
-tesp
-tesk
 teft
 tadz
 tast
@@ -358,13 +358,13 @@ vist
 vemp
 vent
 veqk
-vegz
 vedj
 vebz
 vetx
 vesp
 vesk
 veft
+vagz
 vadz
 vast
 varp
@@ -374,7 +374,6 @@ valt
 vomp
 vont
 voqk
-vogz
 vodj
 vobz
 votx
@@ -386,6 +385,7 @@ volp
 volk
 volz
 volc
+vugz
 vudz
 vust
 fimp
@@ -403,7 +403,6 @@ fest
 famp
 fant
 faqk
-fagz
 fadj
 fabz
 fatx
@@ -415,6 +414,7 @@ falp
 falk
 falz
 falc
+fogz
 fodz
 fost
 forp
@@ -424,7 +424,6 @@ folt
 fump
 funt
 fuqk
-fugz
 fudj
 fubz
 futx
@@ -435,9 +434,7 @@ ximp
 xint
 xiqk
 xigz
-xidj
 xibz
-xitx
 xisp
 xisk
 xift
@@ -447,9 +444,7 @@ xamp
 xant
 xaqk
 xagz
-xadj
 xabz
-xatx
 xasp
 xask
 xaft
@@ -468,9 +463,7 @@ xump
 xunt
 xuqk
 xugz
-xudj
 xubz
-xutx
 xusp
 xusk
 xuft
@@ -480,9 +473,7 @@ jemp
 jent
 jeqk
 jegz
-jedj
 jebz
-jetx
 jesp
 jesk
 jeft
@@ -496,9 +487,7 @@ jomp
 jont
 joqk
 jogz
-jodj
 jobz
-jotx
 josp
 josk
 joft
@@ -524,7 +513,6 @@ Cest
 Camp
 Cant
 Caqk
-Cagz
 Cadj
 Cabz
 Catx
@@ -535,6 +523,7 @@ Cart
 Calp
 Calk
 Calz
+Cogz
 Codz
 Cost
 Corp
@@ -544,7 +533,6 @@ Colt
 Cump
 Cunt
 Cuqk
-Cugz
 Cudj
 Cubz
 Cutx
@@ -556,13 +544,13 @@ cist
 cemp
 cent
 ceqk
-cegz
 cedj
 cebz
 cetx
 cesp
 cesk
 ceft
+cagz
 cadz
 cast
 carp
@@ -572,7 +560,6 @@ calt
 comp
 cont
 coqk
-cogz
 codj
 cobz
 cotx
@@ -583,6 +570,7 @@ cort
 colp
 colk
 colz
+cugz
 cudz
 cust
 yimp
