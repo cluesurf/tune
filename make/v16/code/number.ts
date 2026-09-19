@@ -42,6 +42,7 @@
  */
 
 import { readFileSync, writeFileSync } from 'fs'
+import { writeRoster, type Roster } from './roster'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import {
@@ -86,10 +87,22 @@ const codas = CONSONANTS.filter(one => !NO_CLOSE.has(one))
  *
  * A paradigm is worth more than any single number's first choice, and
  * a coda is free.
+ *
+ * **THE MULTIPLIERS BELONG TO THIS TOOL TOO, and leaving them out of
+ * this set made every run disagree with the last one.** A power that is
+ * already in `pin.csv` is a word this file wrote, so counting it as
+ * standing makes `powerOptions` route the new hundred around the old
+ * hundred, and the seventeen come back different every time for no
+ * reason anybody chose. That is the same circularity the note below
+ * gives for not reading `pin-placed.csv`, reached through the other
+ * door: a tool must not treat its own past output as a constraint.
  */
 const NUMBER_CONCEPT = new Set(
   ('zero one two three four five six seven eight nine ten eleven twelve ' +
-    'thirteen fourteen fifteen sixteen').split(' '),
+    'thirteen fourteen fifteen sixteen ' +
+    'hundred thousand million billion trillion quadrillion quintillion ' +
+    'sextillion septillion octillion nonillion decillion ' +
+    'power36 power39 power42 power45 power48').split(' '),
 )
 
 /**
@@ -532,3 +545,21 @@ writeFileSync(
     '\n',
 )
 process.stdout.write(`\n  wrote ${TERM}/number.csv\n`)
+
+/**
+ * And back into `pin.csv`, so the file and the tool cannot disagree.
+ *
+ * The digit names and the power names are the concepts this file owns,
+ * in the order `ONSET` runs, which is the order `NUMBER_CONCEPT` lists
+ * them in.
+ */
+const DIGIT_NAME = ('zero one two three four five six seven eight nine ten ' +
+  'eleven twelve thirteen fourteen fifteen sixteen').split(' ')
+const POWER_NAME = ('hundred thousand million billion trillion quadrillion ' +
+  'quintillion sextillion septillion octillion nonillion decillion ' +
+  'power36 power39 power42 power45 power48').split(' ')
+
+const roster: Roster = new Map()
+choice.forEach((one, at) => roster.set(DIGIT_NAME[at], one))
+power.forEach((one, at) => roster.set(POWER_NAME[at], one))
+writeRoster(`${TERM}/pin.csv`, roster, 'the numbers and powers')

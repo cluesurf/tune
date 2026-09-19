@@ -33,11 +33,27 @@ import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { CONSONANTS, NO_CLOSE, NO_OPEN, every, scores } from './sound'
+import { writeRoster } from './roster'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TERM = resolve(here, '../../../base/v16/term')
 
-/** Colour, its vowel, and the English consonants to echo. */
+/**
+ * Word, its vowel, and the English consonants to echo.
+ *
+ * Three closed sets, each with its vowels given:
+ *
+ * ```text
+ * the wheel    i a u u a i   a palindrome, pairing across it
+ * the greys    u a i         a scale, dark to light
+ * the metals   i a u         a scale, base to precious
+ * ```
+ *
+ * The metals run the same three vowels as the greys and in the same
+ * order, which is not an accident worth hiding: both are scales of
+ * worth read off a surface, and a speaker who has one has the shape of
+ * the other.
+ */
 const WANT: Array<[string, string, string]> = [
   ['red', 'i', 'rd'],
   ['orange', 'a', 'rnj'],
@@ -48,6 +64,9 @@ const WANT: Array<[string, string, string]> = [
   ['black', 'u', 'blk'],
   ['gray', 'a', 'gr'],
   ['white', 'i', 'wt'],
+  ['copper', 'i', 'kpr'],
+  ['silver', 'a', 'slvr'],
+  ['gold', 'u', 'gld'],
 ]
 
 const COLOR = new Set(WANT.map(one => one[0]))
@@ -174,3 +193,10 @@ writeFileSync(
     '\n',
 )
 process.stdout.write(`\n  wrote ${TERM}/color.csv\n`)
+
+// And back into pin.csv, for the reason given in roster.ts.
+writeRoster(
+  `${TERM}/pin.csv`,
+  new Map(chosen.map(([name, word]) => [name, word])),
+  'the colours',
+)

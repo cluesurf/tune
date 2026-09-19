@@ -786,13 +786,48 @@ for (const [a, b] of NASAL_STOP) {
   nearShortCoda.get(b)?.delete(a)
 }
 
+/**
+ * A NASAL AND ITS OWN STOP SEPARATE AT THE ONSET, IN EVERY SHAPE.
+ *
+ * ```text
+ * nev  taf     on, and good. both stand
+ * not  dot     note, and down
+ * nom  num     know, and negative
+ * ```
+ *
+ * The coda rule above was argued from MANNER, and manner is heard best
+ * exactly where this table applies. A consonant that opens a word is
+ * released into the vowel with nothing in front of it to mask it: a
+ * stop is silence and then a burst, a nasal is airflow already running
+ * through the nose before the vowel starts. Nothing competes with that
+ * cue, because there is nothing before it.
+ *
+ * So the separation the coda got in `CVC` only, on the grounds that a
+ * short word has nothing else competing, the onset gets everywhere. A
+ * longer word gives the ear MORE to track after the onset, never less
+ * to hear at it.
+ *
+ * **Only the nasal-against-stop links go**, the same six. `b~p`, `d~t`
+ * and `g~k` are voicing pairs and stay near in every position, and so
+ * do the place pairs `b~d` and `p~t`. The three nasals against each
+ * other were freed separately and for a different reason.
+ */
+const nearOnset = new Map<string, Set<string>>()
+for (const [one, also] of near) {
+  nearOnset.set(one, new Set(also))
+}
+for (const [a, b] of NASAL_STOP) {
+  nearOnset.get(a)?.delete(b)
+  nearOnset.get(b)?.delete(a)
+}
+
 export const similarAt = (
   a: string,
   b: string,
   at: number,
   shape: Shape,
 ) => {
-  if (!CODA_AT[shape].includes(at)) return near.get(a)?.has(b) ?? false
+  if (!CODA_AT[shape].includes(at)) return nearOnset.get(a)?.has(b) ?? false
   const table = shape === 'CVC' ? nearShortCoda : nearCoda
   return table.get(a)?.has(b) ?? false
 }
