@@ -95,113 +95,129 @@ Five vowels and twenty two consonants, twenty seven sounds in all.
 
 ## Words
 
-Every Tune word alternates consonant and vowel the whole way through.
-There are no consonant clusters anywhere, and nearly everything else
-about the language follows from that one decision.
+A root is one syllable or two, and at most five letters. Four shapes,
+and a cluster at one end or neither, never both.
 
 ```text
-CVC
-CVCVC
-CVCVCVC
+CVC     mam      one syllable
+CVCC    malt     one syllable, cluster at the end
+CCVC    blam     one syllable, cluster at the front
+CVCVC   malam    two syllables
 ```
 
-- A **base word** is one, two or three syllables
-- A **compound word** is two base words joined
+- A **base word** is one of those four shapes
+- A **compound word** is two or more base words joined
 - Every word starts and ends with a consonant
+
+There is no three syllable root. Emphasis falls on the first syllable,
+and it is what marks a compound apart from a phrase.
 
 ## Word Rules
 
-Three rules, and no more.
+| rule | says |
+| :--- | :--- |
+| open | `q` never opens a syllable |
+| close | `y`, `w` and `h` never close one |
+| rhyme | no `il`, `el`, `ir`, `er`, `ul`, `ur` |
+| ending | except `-ul` at the very end of a word, as in `jul` and `tul` |
+| twin vowel | no two syllable word with `i`, `e` or `u` in both vowel slots |
+| twin weak | no two syllable word opening both syllables with the same `h`, `w`, `y` or `q` |
+| liquid | no `r.r` and no `l.l`, the same liquid twice with one vowel between |
+| piles | a cluster opens from `b d f g s v` and closes from `c j k p t x z` |
 
-- `q` never opens a syllable
-- `y`, `w` and `h` never close one
-- No word ends on `il`, `el`, `ir` or `er`
+The **piles** rule is what keeps compounds readable, and it is the one
+that is not about the mouth. A cluster means two consonants can touch
+inside a root, so a run of consonants is no longer certainly a seam.
+Drawing the sound that OPENS a cluster and the sound that CLOSES one
+from sets that share nothing makes the colliding shape unbuildable: a
+string that could be read two ways would need one consonant to be in
+both piles at once.
 
-With no clusters there is nothing else to constrain. Emphasis falls on
-the first syllable.
+```text
+onsets   br bl dr fr fl gr gl vr sk sp st sl sm sn dj sw dw gw vl
+codas    mp nt qk lp lz lt lc lk rp rz rt rk ft bz gz dj tx dz sk sp st
+```
 
 ## Word Counts
 
-| syllables | characters | pattern     | by the rules | after closeness |
-| :-------- | :--------- | :---------- | -----------: | --------------: |
-| 1         | 3          | `CVC`       |        1,911 |             312 |
-| 2         | 5          | `CVCVC`     |      200,655 |          11,232 |
-| 3         | 7          | `CVCVCVC`   |   21,068,775 |    not computed |
-|           |            | **total**   | **21,271,341** |               |
+| pattern | legal | at distance 2 | chosen |
+| :------ | ----: | ------------: | -----: |
+| `CVC`   | 1,885 | 736 | 640 |
+| `CVCC`  | 1,620 | 744 | 640 |
+| `CCVC`  | 1,685 | 675 | 512 |
+| `CVCVC` | 164,608 | 50,376 | 2,304 |
+| **total** | **169,798** | **52,531** | **4,096** |
 
-**By the rules** is the arithmetic. `CVC` is 21 openings, since `q`
-cannot open, times 5 vowels times 19 closings, less the 4 banned
-rhymes: 21 × 91 = 1,911. Each further syllable multiplies by another
-21 × 5.
+**Legal** is every form the rules above allow.
 
-**After closeness** is what survives once no two words are alike all
-the way through, where every consonant is similar to its counterpart
-and every vowel next to its counterpart on the `i e a o u` ladder. That
-is what the selection rules below are for.
+**At distance 2** is what survives once no two words of a shape are
+within a single near sound of each other. Each position scores `0` for
+the same sound, `1` for a near one and `2` for a clear difference, and
+two words are too close when no position scores `2`.
+
+**Chosen** is the language: 4,096 roots, of which **1,792 are one
+syllable**, 44% of everything. The lists are in
+[base/v16](base/v16), and how they are built is in
+[make/v16](make/v16).
 
 ## Word Joining
 
-Two base words joined make a compound. Seven pairings:
+Roots joined make a compound: 4,096 roots give **16,777,216 pairs**,
+and any number of roots may join.
 
-| join | shape | count |
-| :--- | :---- | ----: |
-| `CVC` + `CVC` | `CVCCVC` | 3,651,921 |
-| `CVC` + `CVCVC` | `CVCCVCVC` | 383,451,705 |
-| `CVCVC` + `CVC` | `CVCVCCVC` | 383,451,705 |
-| `CVC` + `CVCVCVC` | `CVCCVCVCVC` | 40,262,429,025 |
-| `CVCVCVC` + `CVC` | `CVCVCVCCVC` | 40,262,429,025 |
-| `CVCVC` + `CVCVCVC` | `CVCVCCVCVCVC` | 4,227,555,047,625 |
-| `CVCVCVC` + `CVCVC` | `CVCVCVCCVCVC` | 4,227,555,047,625 |
-| | **total** | **8,536,405,508,631** |
+Two roots run straight together, and a compound is told from a phrase
+by stress, which falls once on the first syllable of the whole thing
+rather than once per word.
 
-### The joiner
+### The breaker
 
-Where two words meet, sometimes a consonant goes between them and
-sometimes nothing does. Most joins take nothing.
+Where two roots meet, sometimes a sound goes between them. **The
+breaker is `l`, and it is the only one.** For a doubled `l` it is `r`,
+because `l` cannot break itself.
 
-| joiner | pairs |
-| :----- | ----: |
-| none | 258 |
-| `m` | 33 |
-| `n` | 32 |
-| `l` | 18 |
-| `s` | 11 |
-| `z` | 11 |
+It appears in **8.03%** of pairs, and for two reasons only:
 
-A joiner appears only where the two sounds meeting would be hard to
-tell apart.
+| | share | |
+| :--- | ----: | :--- |
+| the same sound twice | 4.51% | `man` + `nam` would be heard as `manam` |
+| two sibilants meeting | 3.52% | `mas` + `zam` would smear into one hiss |
 
-- **Before breath.** Everything takes `l` before `h`, except `l`
-  itself, which takes `m`.
-- **A stop or nasal against its own family** takes `z` or `s`. The
-  stop families split on the voice of the left sound, `bzb` `psp`
-  `dzd` `tst` `gzg` `ksk`. The nasals are all voiced so they split on
-  the right sound instead, `msm` `mzn` `nsm` `nzn`, with `q` running
-  the opposite way, `qsn` `qzm`.
-- **A rub against a rub** takes `m` or `n`, by a table of sixty four
-  named pairs, `sms` `snz` `fnf` `fmv` and so on.
-- **A liquid against a liquid**, `lsl` `lzr` `rzl` `rsr`.
-- Everything else runs straight together.
+Everything else runs straight together. There were once six joiners
+chosen by a table of sixty four named pairs; measuring every policy
+over every ordered pair showed one breaker does the whole job, and the
+tables are gone.
 
-The full tables are in [make/talk](make/talk).
+### No join is ambiguous, at any depth
 
-### No join is ambiguous
+Two roots cannot collide because a cluster opens from one pile and
+closes from another, and the piles share nothing. A string that could
+be cut two ways would need one consonant to be in both at once.
 
-This is what having no clusters buys, and it needs no rule to state it.
+**That argument covers two roots and says nothing about three.** The
+brute force check does not scale either: 4,096 roots is 68 billion
+triples. So the question is asked the right way instead, as whether
+the root set is a **uniquely decodable code**, which Sardinas and
+Patterson decide exactly, for every depth at once.
 
-Since every word alternates the whole way, two consonants never touch
-inside a word. The only place they can touch is a seam, and a seam is
-either two consonants or three.
+It passes on both the bare stream and the stream where every root is
+also allowed to carry a breaker, which is more than the rule ever
+emits. **No concatenation of any number of roots can be read two
+ways.**
 
-```text
-CVC + CVC        ->  CVCCVC      the CC is the seam
-CVC + J + CVC    ->  CVCCCVC     the middle C is the joiner
-```
+The reason is one fact: **every root begins with a consonant.** The
+search finds 659 leftover fragments and 566 of them are long enough to
+be roots, but 652 start with a vowel and the other 7 are single
+letters, so not one of them can be a root. That argument does not
+depend on which 4,096 roots were chosen, so it survives any change to
+the lexicon.
 
-Either way it is the only such run in the word. The number of runs is
-the number of roots less one, and their positions are the cuts. Three
-base words give two runs, four give three. Nothing has to be memorised
-and no rule has to be applied to read a compound apart.
+**Role vowels need no argument at all.** One lands on the end of a
+whole compound and nowhere else, and since every root ends in a
+consonant, a word ending in a vowel can only be ending in a role
+vowel. Strip it and the rest is the stream above.
+
+The check calibrates itself first against a code known to be
+ambiguous, so a clean pass is not just a test that cannot fail.
 
 ## Word Forms
 
@@ -230,66 +246,74 @@ relations carry the meaning. Operators say what to do with it. That is
 what lets a short sentence carry a complicated thought without extra
 grammar.
 
-## Tune Rock
-
-Tune has an older form, **[Tune Rock](make/rock)**, with nine sounds
-and one syllable shape.
-
-```text
-i a u        m n        p t k        h
-```
-
-Every sound is one a body makes with nothing but itself. `m` and `n`
-are the two hums, good and bad. `p`, `t` and `k` are the three drum
-hits, lips and tongue and throat. `h` is the breath, and there it is
-grammar rather than vocabulary: it carries the role syllable and
-appears in no root.
-
-Rock is built for chant, song and humming, and for plain statements. It
-does not join words at all. **2,165 roots, 8,660 words.**
-
-Every Tune sound has exactly one Rock ancestor. The three beats carry
-almost the whole load, `t` alone standing behind `t d s z c C l r`.
-
 ## Word Selection Rules
 
-The three word rules say what is legal. These say what is worth using.
+The word rules say what is legal. These say what is worth using.
+
 Legal is not the same as usable: `mir` and `nir` are both legal and one
-of them has to go, or a listener cannot tell them apart. What follows
-is how the lexicon is narrowed from what the shapes allow down to words
-that stay distinct in the ear.
+of them has to go, or a listener cannot tell them apart. This is how
+169,798 legal forms are narrowed to 4,096 that stay distinct in the
+ear.
 
-### 5-letter words (CVCVC)
+### Distance
 
-- No `w` anywhere
-- No `q`, `w`, `y` at start
-- No `h`, `w`, `y` at end
-- No `h`, `y`, `q` in center consonant (position 2)
-- No `el`, `er`, `il`, `ir` sequences anywhere
-- `j` only at start of word
-- No mixed-voicing stop pairs across vowels: `d-t`, `t-d`, `b-p`, `p-b`,
-  `g-k`, `k-g` blocked
-- Fricative pairs across vowels: same pair always blocked
-  (`s-s`/`s-z`/`z-s`/`z-z`, likewise `f↔v`, `c↔C`, `j↔x`). Cross-pair
-  allowed only if voicing matches (e.g. `f-s` fine, `f-C` blocked)
-- Max 1 of `x`/`j`/`c`/`C` total per word
-- **Too close** if words differ by 1 position
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
-  and vowel is off by 1 notch (`ieaou` order)
-- **Too close** if words differ by 1 vowel + 1 neighboring consonant,
-  vowel off by 2+, but consonant stays in the same broad group:
-  - Stops/nasals: `b m p n q d g t k`
-  - Fricatives: `h s f v z x j c C`
-  - Liquids: `l r`
+One measure, applied to every shape, replacing the long per-position
+lists this section used to carry.
 
-### 7-letter words (CVCVCVC)
+Compare two words of the same shape position by position:
 
-- All 5-letter rules above, plus:
-- No `h`, `y`, `q` in interior consonants (positions 2, 4)
-- No sequential same consonant across vowels (positions 0-2, 2-4, 4-6)
-  for `r l f v z x j C c s`
-- Weighted random sampling with frequency weights (e.g. `t`:10, `j`:0.3)
-- Every word guaranteed at least one `a`
+```text
+0   the same sound
+1   a near sound
+2   a clear difference
+```
+
+**Two words are too close when no position scores `2`.** A single near
+sound is the only thing forbidden, since a pair differing in two places
+is already clear. Words of different shapes are never compared: a
+difference in length is a cue no listener misses, so `bat` and `brat`
+are not the problem that `bat` and `pat` is.
+
+Vowels are near when they sit next to each other on the `i e a o u`
+ladder. Consonants are near by this table:
+
+```text
+b~p  d~t  g~k          voicing
+b~d  p~t               place
+m~b~p  n~d~t  q~g~k    a nasal against its own stop
+s~z  x~j               sibilant voicing
+c~C                    the two dentals
+f~v                    labial voicing
+f~c  C~v               th-fronting
+l~r                    the liquids
+```
+
+### Where a sound sits changes what it is near
+
+Two entries in that table depend on position, and no flat list of pairs
+can say so.
+
+**The sibilant place pairs `s~x` and `z~j` are near in coda only.** A
+sibilant's place is heard in the vowel that follows it. In onset there
+is one, in coda there is not.
+
+```text
+siq  xiq             two words
+flus flux            one word twice
+```
+
+**In a three letter word all four sibilants stand apart.** A hiss is
+the longest sound the language has, and in `CVC` it is the whole back
+half with nothing competing for the ear.
+
+```text
+mas maz max maj      four words
+flos floz flox floj  two, and a choice of which two
+mac maC              one. c and C are never lifted
+```
+
+The nasals `m n q` are distinct everywhere, which is what lets `ram`
+`ran` `raq` stand together and `mam` mom sit beside `nan` grandmother.
 
 ## Summary
 

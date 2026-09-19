@@ -1,0 +1,81 @@
+# Stage one: the tree inventory.
+#
+# What a speaker should be able to name, which is NOT the same list as
+# what English lexicalized. One concept per line, `#` for a comment.
+#
+# This is a person's judgement and the whole pipeline exists to serve
+# it. Edit it by hand.
+
+# conifers
+pine
+spruce
+fir
+hemlock
+larch
+cypress
+juniper
+cedar
+redwood
+sequoia
+yew
+
+# nut and acorn
+oak
+beech
+chestnut
+hickory
+walnut
+hazel
+pecan
+
+# distinctive leaf
+maple
+linden
+ginkgo
+aspen
+willow
+poplar
+cottonwood
+birch
+sycamore
+elm
+ash
+alder
+holly
+
+# flower and pod
+magnolia
+dogwood
+jacaranda
+catalpa
+acacia
+locust
+redbud
+
+# timber
+teak
+mahogany
+ebony
+balsa
+eucalyptus
+
+# tropical and form
+baobab
+mangrove
+palm
+banyan
+rubber tree
+
+# fruit
+apple
+pear
+peach
+plum
+cherry
+fig
+olive
+mango
+avocado
+coconut
+date
+mulberry

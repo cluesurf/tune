@@ -1,0 +1,350 @@
+# rock: names with nothing in the sources to propose from.
+#
+# Written by `v4:name:propose`. 341 of these have
+# no parseable gloss and no cross-linguistic echo, so the data
+# cannot say what they are and a model has to be asked.
+#
+# Capped at 400 here. Raise it deliberately, and read the cost
+# estimate `v4:field:describe` prints before committing.
+
+Aeolianite (where cemented)
+Alcrete
+Ankeritestone
+Benmoreite
+Boninite
+Celestine
+Cementstone (historical use only)
+Dolerite
+Dolostone
+Effluent
+Gabbro (s.s.)
+Gabbronorite
+Gaylussite
+Gypsum
+Hawaiite
+Hyaloclastite
+Ignimbrite
+Ironstone
+Latite (TAS)
+Leucitite
+Leucitolite
+Leucodiorite
+Leucogabbro
+Leucogranite
+Leucogranodiorite
+Leucomicrodiorite
+Leucomicrogranite
+Leucomicrogranodiorite
+Leucomicromonzogranite
+Leucomicromonzonite
+Leucomicrosyenite
+Leucomicrotonalite
+Leucomonzogranite
+Leucosyenite
+Leucotonalite
+Lithomarge
+Loam (clay, silt and sand, admixed, subequal) [UDCS-X]
+Magnesitestone
+Meladiorite
+Melagabbro
+Melagranite
+Melagranodiorite
+Melametatroctolite
+Melamicrodiorite
+Melamicrogabbro
+Melamicrogranite
+Melamicrogranodiorite
+Melamicrosyenite
+Melamonzonite
+Melasyenite
+Melatroctolite
+Metabasalt
+Metabasalt (TAS)
+Metabasanite
+Metabasanite (TAS)
+Metabauxite
+Metabenmoreite
+Metaboninite
+Metabreccia
+Metacalcilutite
+Metacalciocarbonatite
+Metacarbonatite
+Metachalk
+Metachert
+Metachromitite
+Metaclarain
+Metacoal
+Metaconglomerate
+Metadacite
+Metadacite (TAS)
+Metadiamictite
+Metadiatomite
+Metadiorite
+Metadolerite
+Metadolostone
+Metadunite
+Metadurain
+Metafelsite
+Metaferricrete (iron laterite/iron pan)
+Metaferrocarbonatite
+Metaflint
+Metafoidite
+Metafoidite (TAS)
+Metafoidolite
+Metagabbro
+Metagabbro (s.s.)
+Metagabbronorite
+Metagaylussite
+Metagranite
+Metagranodiorite
+Metaharzburgite
+Metahawaiite
+Metahornblendite
+Metahyaloclastite
+Metailmenitite
+Metajasper
+Metakalsilitite
+Metakalsilitolite
+Metakersantite
+Metakimberlite
+Metakomatiite
+Metalamalginite
+Metalamproite
+Metalamprophyre
+Metalapillistone
+Metalatite
+Metalatite (TAS)
+Metalava
+Metaleucitite
+Metaleucitolite
+Metaleucodiorite
+Metaleucogranite
+Metaleucogranodiorite
+Metaleucomonzogranite
+Metaleucosyenite
+Metaleucotonalite
+Metalignite
+Metalimestone
+Metalithomarge
+Metamafite
+Metamagnesiocarbonatite
+Metamagnetitite
+Metameimechite
+Metameladiorite
+Metamelagabbro
+Metamelagranite
+Metamelagranodiorite
+Metamelamonzonite
+Metamelasyenite
+Metamelilitite
+Metamelilitolite
+Metamicrogabbro
+Metamicrogranite
+Metaminette
+Metamonchiquite
+Metamonzodiorite
+Metamonzogabbro
+Metamonzogranite
+Metamonzonite
+Metamudstone
+Metamugearite
+Metanatrocarbonatite
+Metanatron
+Metanephelinite
+Metanephelinolite
+Metanorite
+Metaobsidian
+Metaorthopyroxenite
+Metapegmatite
+Metapépérite
+Metaperidotite
+Metaphonolite
+Metaphonolite (TAS)
+Metaphosphorite
+Metapicrite
+Metapicrobasalt
+Metapitchstone
+Metaporcellanite
+Metaporphyry
+Metapyroxenite
+Metapyroxenite (s.s.)
+Metaquartzolite
+Metaradiolarite
+Metarhyolite
+Metarhyolite (TAS)
+Metarudite (Psephite)
+Metasandstone
+Metasannaite
+Metasapropelite
+Metashoshonite
+Metasiltstone
+Metasinter
+Metaspessartite
+Metaspiculite
+Metasyenite
+Metasyenogranite
+Metatelaginite
+Metatephrite
+Metatephrite (TAS)
+Metathermonatrite
+Metatonalite
+Metatrachyandesite
+Metatrachyandesite (TAS)
+Metatrachybasalt
+Metatrachydacite
+Metatrachyte
+Metatrachyte (TAS)
+Metatroctolite
+Metatuff
+Metatuffisite
+Metatuffite
+Metavitrain
+Metavogesite
+Metawacke
+Microgabbro (s.s.)
+Microgabbronorite
+Microhornblendite (s.s.)
+Microkalsilitolite
+Microleucitolite
+Micromagnetitite
+Micromelilitolite
+Micronephelinolite
+Micropyroxenite (s.s.)
+Mudstone
+Mugearite
+Natron
+Nephelinite
+Nephelinolite
+Nodules (undifferentiated)
+Oilshale
+Palaeosoil
+Paper
+Pépérite
+Phosphorite
+Plasterboard
+Pseudotachylite
+Rhyodacite
+Sand (unknown/industrial)
+Shoshonite
+Tephra
+Thermonatrite
+Trachyandesite (TAS)
+Trona
+adakite
+alaskite
+alluvium
+ankaramite
+ankerite
+aplite
+argillite
+arkose
+bafflestone
+bentonite
+bindstone
+biomicrite
+biosparite
+blueschist
+boundstone
+calcisiltite
+charnockite
+colluvium
+comendite
+coquina
+diabase
+diatexite
+eluvium
+encrinite
+floatstone
+framestone
+grainstone
+granofel
+granophyre
+graywacke
+greenschist
+greenstone
+greywacke
+gyttja
+intramicrite
+intrasparite
+litharenite
+metabasite
+metagraywacke
+metaigneous
+metamorphic
+metapelite
+metasedimentary
+metavolcanic
+micrite
+migmatite
+novaculite
+oolite
+oomicrite
+oosparite
+packstone
+paleosol
+pelmicrite
+pelsparite
+phyllite
+plutonic
+rudstone
+scoria
+sedimentary
+siliciclastic
+spilite
+subarkose
+sublitharenite
+tillite
+trondhjemite
+volcanic
+volcaniclastic
+wackestone
+Aphanite
+Appinite
+Blairmorite
+Calcflinta
+Conglomerate (geology)
+corsite
+Dolomite (rock)
+Enderbite
+Epidosite
+Essexite
+Geyserite
+Gritstone
+Icelandite
+Ijolite
+Itacolumite
+Jadeitite
+Jasperoid
+Jaspillite
+Larvikite
+Leaverite
+Listwanite
+Litchfieldite
+Llanite
+Luxullianite
+Mangerite
+Napoleonite
+Pāhoehoe
+Pantellerite
+Phonotephrite
+Pietersite
+Porphyry (geology)
+protolith
+Pyrolite
+Rodingite
+Shonkinite
+Sovite
+Suevite
+Sylvinite
+Tachylite
+Tachylyte
+Tectonite
+Tephriphonolite
+Teschenite
+Theralite
+Turbidite
+Unakite
+Variolite
+Vitrophyre
+Wad (mineral)
+Whiteschist

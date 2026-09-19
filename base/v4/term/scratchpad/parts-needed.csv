@@ -1,0 +1,158 @@
+part,verdict,note
+apex,base,the top point
+cornea,base,the clear front of the eye
+cranium,base,the brain case
+gullet,base,the food passage
+lymph,base,the clear body fluid
+navel,base,the belly scar
+palate,base,the mouth roof
+papilla,base,the small bump
+pharynx,base,the throat passage
+pleura,base,the lung lining
+rectum,base,the last gut
+retina,base,the eye screen
+scapula,base,the shoulder blade
+semen,base,the seed fluid
+sebum,base,the skin oil
+thalamus,base,the relay in the brain
+vagina,base,the passage
+ventricle,base,the chamber
+vestibule,base,the entry space
+viscera,base,the inner organs
+alveolus,base,the air sac
+chorion,base,the outer membrane
+seam,base,the joining line
+crisis,base,the turning point
+par,base,the level to match
+goods,base,what is traded
+feat,base,the done deed
+maze,base,the winding way
+yoke,base,the joining bar
+violet,base,the colour
+fibre,base,the thread of matter
+bromine,base,the element
+chlorine,base,the element
+iodine,base,the element
+phosphorus,base,the element
+gamble,base,to stake on chance
+cleave,base,to split, and to cling
+beget,base,to father
+compel,base,to force
+depress,base,to press down
+dispose,base,to place, and to be inclined
+intrude,base,to push in
+propel,base,to drive forward
+restrict,base,to hold within bounds
+retard,base,to slow
+retire,base,to withdraw
+gambling,derived,gamble + act
+epidermis,compound,upon + skin
+genital,derived,generate + of
+mitochondrion,compound,thread + grain + body
+esophagus,compound,gullet + tube
+femur,compound,thigh + bone
+humerus,compound,upper + arm + bone
+trabecula,compound,small + beam
+synovia,compound,joint + fluid
+anatomy,compound,body + study
+architecture,compound,build + craft
+astronomy,compound,star + study
+geography,compound,earth + writing
+geology,compound,earth + study
+mathematics,compound,number + study
+morphology,compound,shape + study
+pathology,compound,disease + study
+physiology,compound,body + work + study
+psychology,compound,mind + study
+politics,compound,city + craft
+democracy,compound,people + rule
+oxide,derived,oxygen + compound
+phosphate,derived,phosphorus + salt
+carbonate,derived,carbon + salt
+carboxyl,compound,carbon + oxygen + group
+amine,compound,nitrogen + group
+amide,compound,ammonia + acid + group
+amino,compound,ammonia + group
+phenyl,compound,ring + group
+sterol,compound,solid + alcohol
+acetic,derived,acetate + of
+citric,derived,citrus + of
+tartaric,derived,tartar + of
+glutamic,derived,gluten + of
+salicylic,derived,willow + of
+colour,variant,the British spelling of color
+sickness,compound,sick + state
+unwed,compound,not + wed
+making,derived,make + act
+ness,junk,a suffix, not a word
+ism,junk,a suffix, not a word
+abnormal,derived,away + normal
+academy,base,drifted from a grove, now the place of learning
+technique,compound,do + way
+transit,base,the passing across
+trauma,base,the wound
+therapy,base,the treating
+vaccine,compound,teach + body + drug
+vet,derived,a clipping of veterinary
+ablate,derived,away + carry
+articulate,derived,joint + do
+aspirate,derived,breathe + do
+coagulate,derived,curd + do
+consolidate,derived,together + solid + do
+degenerate,derived,down + kind + do
+deteriorate,derived,worse + do
+discriminate,derived,apart + sift
+dislocate,derived,apart + place
+dissect,derived,apart + cut
+dissociate,derived,apart + join
+effuse,derived,out + pour
+ejaculate,derived,out + throw
+elongate,derived,out + long + do
+enhance,derived,up + raise
+equip,derived,fit + out
+federate,derived,league + do
+federation,derived,federate + act
+fluoresce,derived,fluorine + shine
+formulate,derived,formula + do
+illuminate,derived,in + light + do
+implant,derived,in + plant
+infiltrate,derived,in + filter
+infuse,derived,in + pour
+innovate,derived,in + new + do
+ionize,derived,ion + make
+irradiate,derived,in + ray + do
+launder,derived,wash + do
+localize,derived,local + make
+occlude,derived,against + close
+perforate,derived,through + bore
+proliferate,derived,offspring + bear
+regress,derived,back + step
+sequester,derived,apart + set
+specify,derived,species + make
+stimulate,derived,goad + do
+transcribe,derived,across + write
+utilize,derived,use + make
+ventilate,derived,wind + do
+affine,derived,to + border
+canon,base,the rule and the list
+confer,derived,together + bring
+deficient,derived,fail + like
+eminent,derived,out + stand
+genus,base,the kind above species
+granule,derived,grain + small
+intelligent,derived,between + choose
+motile,derived,move + like
+mortal,derived,death + like
+municipality,derived,municipal + ness
+occupation,derived,occupy + act
+recreation,derived,again + create + act
+regulation,derived,regulate + act
+susceptible,derived,under + take + able
+alkali,compound,acid + opposite
+agriculture,compound,field + craft
+antibody,compound,against + body
+commerce,compound,goods + trade
+estrus,base,the heat of season
+architect,derived,chief + builder
+diabetes,compound,through + pass + sickness
+synthesis,compound,put + together

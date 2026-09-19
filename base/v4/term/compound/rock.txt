@@ -1,0 +1,38 @@
+term          parts
+------------  ----------------------------
+granite       flower grain
+diorite       gray grain
+gabbro        dark grain
+rhyolite      light fire
+andesite      gray fire
+basalt        dark fire
+peridotite    green grain
+pegmatite     big crystal
+obsidian      lava glass
+pumice        lava foam
+scoria        lava hole
+tuff          ash stone
+slate         board stone
+phyllite      silk press
+schist        slice stone
+gneiss        band press
+quartzite     sand press
+marble        flower stone
+serpentinite  green scale rock
+soapstone     soap stone
+sandstone     sand stone
+limestone     lime stone
+mudstone      mud stone
+siltstone     silt stone
+shale         page stone
+conglomerate  round bit
+breccia       sharp bit
+arkose        granite sand
+greywacke     mud sand
+chert         dull spark stone
+flint         fire strike stone
+travertine    spring lime
+chalk         powder stone
+coal          char stone
+peat          bog plant
+laterite      iron soil

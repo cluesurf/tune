@@ -1,0 +1,147 @@
+# A proposed ADD pass, 2026-09-16, fifth and final draft.
+#
+# Graded by `pnpm --dir deck/tune v4:add`. Nothing here is applied by
+# running that. It reports.
+#
+# The criterion, after five drafts:
+#
+#   Add a root when it is a major irreducible natural kind, a highly
+#   productive scientific primitive, or a concept whose ordinary
+#   composition would be awkward or misleading. Do NOT add a root
+#   merely because English or science has a lexicalized word for it.
+#
+# Two decisions in this draft are the ones that matter.
+#
+# **The elements go positional.** Roots for the few dozen a culture
+# names without a laboratory, and `element + atomic number` for the
+# rest. Ninety arbitrary roots for the periodic table cannot be
+# justified against 1,024 short forms, and an element is already a
+# coordinate.
+#
+# **A natural kind is not a scientific compound.** `chloroplast`
+# advertises how to build it. `quartz` does not. That distinction is
+# what the `compose-instead` band is for.
+
+## rock
+
+granite basalt limestone sandstone shale slate marble gneiss schist
+quartzite rhyolite andesite diorite gabbro obsidian pumice scoria tuff
+conglomerate breccia chert dolostone travertine mudstone siltstone
+pegmatite peridotite serpentinite amphibolite hornfels phyllite coal
+peat
+
+## mineral
+
+quartz feldspar mica calcite dolomite gypsum halite fluorite apatite
+magnetite hematite pyrite galena graphite diamond corundum olivine
+garnet amphibole pyroxene kaolinite talc serpentine zircon tourmaline
+beryl topaz rutile ilmenite chromite cinnabar chalcopyrite sphalerite
+aragonite opal jade turquoise
+
+## ground
+
+mantle gravel silt loam humus glacier moraine geyser karst dune delta
+estuary fjord volcano caldera
+
+## plant-group
+
+shrub alga conifer cycad ginkgo bamboo sedge orchid kelp plankton
+
+## plant-part
+
+pollen petal sepal stamen anther pistil rhizome tuber resin chlorophyll
+xylem phloem cambium
+
+## plant-kind
+
+maple birch willow cedar fir spruce juniper baobab mangrove sequoia
+redwood alder hazel ivy clover nettle thistle daisy sunflower lotus
+
+## animal-group
+
+arachnid marsupial monotreme cetacean ungulate nematode
+
+## animal-kind
+
+jellyfish squid oyster
+
+## animal-form
+
+pupa carapace
+
+## life
+
+archaea protist pathogen genome chromosome plasmid prion
+
+## element
+
+hydrogen helium carbon nitrogen oxygen sodium magnesium aluminum
+silicon phosphorus sulfur chlorine potassium calcium iron cobalt nickel
+copper zinc arsenic selenium bromine silver tin iodine tungsten
+platinum gold mercury lead uranium
+
+## atom
+
+ion isotope proton neutron electron orbital valence
+
+## chemistry
+
+solvent solute catalyst reagent monomer polymer radical electrolyte
+
+## organic
+
+alkane alkene alkyne isomer ether aldehyde ketone ester amine amide
+nitrile thiol phenol
+
+## group
+
+carboxyl hydroxyl carbonyl phosphate carbonate nitrate sulfate sulfide
+silicate oxide hydride halide
+
+## biochemistry
+
+lipid cellulose vitamin toxin antibody carb
+
+## medicine
+
+infection cancer ulcer rash deficiency disorder vaccine antibiotic
+antiseptic analgesic
+
+## anatomy
+
+pancreas ligament tendon
+
+## ecology
+
+biome prey symbiosis detritus tundra
+
+## physics
+
+photon torque viscosity buoyancy diffraction refraction capacitance
+impedance quark boson fermion neutrino entropy
+
+## sky
+
+asteroid comet meteor galaxy nebula quasar pulsar
+
+## compose-instead
+
+# The proposal's own refusals, kept so the grader can confirm that
+# `derive.ts` already rejects them. A pass that names the right
+# refusals is worth more than one that only names additions.
+
+tectonic bedrock laterite bryophyte angiosperm gymnosperm monocot dicot
+seaweed phytoplankton bovine feline canine mustelid zooplankton peptide
+mitochondrion chloroplast ribosome organelle cytoplasm lithium
+beryllium boron fluorine neon argon scandium titanium vanadium chromium
+manganese gallium germanium krypton rubidium strontium zirconium
+niobium molybdenum technetium ruthenium rhodium palladium cadmium
+indium antimony tellurium xenon cesium barium rhenium osmium iridium
+bismuth radon radium thorium plutonium cation anion stoichiometry
+hydrocarbon carbohydrate ecosystem selection extinction biodiversity
+trophic decomposer wetland acceleration resistance wavelength radiation
+resonance induction eclipse supernova exoplanet satellite woody
+woodland hairy thorny spotted striped winged horned aquatic terrestrial
+nocturnal diurnal saltwater freshwater groundwater broadleaf needleleaf
+crystalline volcanic sedimentary metamorphic poisonous edible flammable
+conductive insoluble endangered seasonal

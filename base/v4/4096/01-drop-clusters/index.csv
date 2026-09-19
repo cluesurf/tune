@@ -1,0 +1,13 @@
+variant,cvc,cvcc,ccvc,all,lean,open,close,onset,coda,coda_liquid,p_close,p_coda,refused,dropped_openings,dropped_closings,dropped_onset_clusters,dropped_coda_clusters
+01,1009,1869,1218,4096,646,15,14,18,33,20,67,105,-310,j x c C r y,j x c C r,vr sl sm,sk sp st
+02,978,1528,1590,4096,579,13,16,21,30,16,74,102,-254,j x c C w l r y,j x c,,lp lb lt ld sp st
+03,924,2187,985,4096,724,17,11,18,33,18,55,111,-284,j x c C,v z j x c C l r,vr sl sm,lp lb st
+04,1123,1842,1131,4096,600,14,17,14,34,19,79,113,-302,j x c C l r y,j x,vr st sl sm sn tx dj,lp st
+05,1054,1839,1203,4096,680,15,15,17,31,16,69,107,-283,j x c C r y,j x c C,vr sl sm sn,lp lb lt ld st
+06,1009,1869,1218,4096,682,15,14,18,31,15,67,110,-235,j x c C r y,j x c C r,vr sl sm,lp lb lt ld rp
+07,1193,1702,1201,4096,594,14,18,14,32,19,84,103,-302,j x c C l r y,x,vr st sl sm sn tx dj,lp sk sp st
+08,1069,2010,1017,4096,656,18,12,17,30,19,60,93,-322,j x c,z j x c C l r,vr sl sm sn,lp tx dz sk sp st
+09,1205,1754,1137,4096,579,16,16,15,30,20,74,90,-362,j x c C y,j x c,vr sl sm sn tx dj,dj tx dz sk sp st
+10,1204,1599,1293,4096,599,15,17,16,29,19,79,88,-327,j x c C r y,j x,vr sl sm sn dj,lp dj tx dz sk sp st
+11,1263,1562,1271,4096,594,14,19,14,30,19,89,93,-302,j x c C l r y,,vr st sl sm sn tx dj,lp tx dz sk sp st
+12,1193,1786,1117,4096,619,14,18,13,32,16,84,112,-260,j x c C l r y,x,vr sp st sl sm sn tx dj,lp lb lt ld

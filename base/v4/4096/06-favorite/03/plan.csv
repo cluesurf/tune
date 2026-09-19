@@ -1,0 +1,4 @@
+shape,count,how
+CVC,1024,"a voiced stop opens a three letter word three quarters of the time; echo similar; sieve 0 1 of 3"
+CVCC,1792,"1 other closings go; p, t and k open half the words they could; sieve 0 1 2 3 of 5"
+CCVC,1280,"a hush or a tooth sound stands second in an opening cluster three quarters of the time; echo similar; sieve 0 1 2 3 4 of 6"

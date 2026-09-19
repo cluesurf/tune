@@ -1,0 +1,59 @@
+term,parts,kind
+oak,nut cup tree,tree
+maple,frog hand,tree
+pine,bundle conifer,tree
+spruce,sharp conifer,tree
+fir,flat conifer,tree
+cedar,smell conifer,tree
+redwood,tall red conifer,tree
+sequoia,giant conifer,tree
+cypress,silk conifer,tree
+juniper,berry conifer,tree
+hemlock,droop conifer,tree
+larch,fall conifer,tree
+yew,red seed conifer,tree
+birch,paper bark tree,tree
+beech,smooth bark tree,tree
+elm,wing seed tree,tree
+willow,weep water tree,tree
+poplar,tall fast tree,tree
+aspen,shake leaf tree,tree
+cottonwood,cotton seed tree,tree
+sycamore,patch bark tree,tree
+chestnut,spine nut tree,tree
+walnut,fold nut tree,tree
+hickory,hard nut tree,tree
+pecan,sweet nut tree,tree
+alder,water cone tree,tree
+linden,heart leaf tree,tree
+locust,thorn pod tree,tree
+holly,sharp leaf tree,tree
+eucalyptus,smell oil tree,tree
+acacia,thorn tree,tree
+baobab,fat trunk tree,tree
+palm,crown leaf tree,tree
+almond,milk nut tree,tree
+grapefruit,bitter round fruit,tree
+avocado,fat green fruit,tree
+breadfruit,bread fruit tree,tree
+mulberry,many berry tree,tree
+pomegranate,red seed fruit,tree
+rubber tree,rubber sap tree,tree
+teak,oil hard wood,tree
+mahogany,red wood tree,tree
+ebony,black wood tree,tree
+sandalwood,burn smell wood,tree
+banyan,root branch tree,tree
+magnolia,big flower tree,tree
+dogwood,white flower tree,tree
+hawthorn,thorn berry tree,tree
+redbud,trunk flower tree,tree
+rowan,red cluster tree,tree
+buckeye,eye seed tree,tree
+horse chestnut,big chestnut tree,tree
+tamarind,sour pod tree,tree
+mesquite,dry thorn tree,tree
+joshua tree,branch yucca tree,tree
+ironwood,iron hard wood,tree
+kapok,soft fiber tree,tree
+gum tree,gum sap tree,tree

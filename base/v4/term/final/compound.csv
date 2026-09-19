@@ -1,0 +1,1115 @@
+english,english_parts,tune,tune_parts,joiner,parts,whole,where,kind
+abscess,"pus + pocket",stepaigalc,"step + galc",ai,2,yes,judged,verdict
+abuse,"bad + use",futaiyuz,"fut + yuz",ai,2,yes,judged,verdict
+acacia,"thorn + tree",rargaidip,"rarg + dip",ai,2,yes,tree,proposal
+acetamide,"acetate + amide",,"? + ?",ai,2,no,judged,verdict
+acetaminophen,"pain + fever + drug",muzaipudzaisom,"muz + pudz + som",ai,3,yes,drug,proposal
+acidemia,"acid + blood",falfaibloC,"falf + bloC",ai,2,yes,judged,verdict
+acidosis,"acid + state",falfaidom,"falf + dom",ai,2,yes,judged,verdict
+acinus,"gland + sac",smaqaisnaz,"smaq + snaz",ai,2,yes,judged,verdict
+actinium,"spark + atom",cadjaitom,"cadj + tom",ai,2,yes,atom,proposal
+adenocarcinoma,"gland + cancer",smaqaibudj,"smaq + budj",ai,2,yes,judged,verdict
+adenoma,"gland + growth",,"smaq + ?",ai,2,no,judged,verdict
+adenosine,"gland + sugar + base",smaqaigandaibes,"smaq + gand + bes",ai,3,yes,judged,verdict
+adenovirus,"gland + virus",smaqaitagz,"smaq + tagz",ai,2,yes,judged,verdict
+adipocyte,"fat + cell",wesaimudz,"wes + mudz",ai,2,yes,judged,verdict
+adjuvant,"help + drug",neqaisom,"neq + som",ai,2,yes,judged,verdict
+adrenaline,"alert + heart + hormone",palvaizifaisnen,"palv + zif + snen",ai,3,yes,drug,proposal
+agave,"sharp + thick + leaf",bontaisespailif,"bont + sesp + lif",ai,3,yes,plant,proposal
+agenesis,"no + growth",,"nop + ?",ai,2,no,judged,verdict
+agriculture,"field + craft",goraiyabz,"gor + yabz",ai,2,yes,judged,verdict
+aircraft,"air + craft",lesaiyabz,"les + yabz",ai,2,yes,judged,verdict
+airway,"air + way",lesaiyat,"les + yat",ai,2,yes,judged,verdict
+alanine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+albinism,"no + colour + state",,"nop + ? + dom",ai,3,no,judged,verdict
+album,"gather + book",gaCaivam,"gaC + vam",ai,2,yes,judged,verdict
+albumin,"white + protein",wipailudz,"wip + ludz",ai,2,yes,judged,verdict
+albuterol,"lung + open + drug",xolsaizarkaisom,"xols + zark + som",ai,3,yes,drug,proposal
+aldehyde,"carbon + oxygen + group",,"rint + ? + hip",ai,3,no,judged,verdict
+alder,"water + cone + tree",waCaikorbaidip,"waC + korb + dip",ai,3,yes,judged,verdict
+alkali,"acid + opposite",falfaihand,"falf + hand",ai,2,yes,judged,verdict
+allergen,"allergy + cause",klebaikaz,"kleb + kaz",ai,2,yes,judged,verdict
+alligator,"broad + snout + lizard",horbaiskodaizart,"horb + skod + zart",ai,3,yes,judged,verdict
+almond,"milk + nut + tree",nudjaihiksaidip,"nudj + hiks + dip",ai,3,yes,tree,proposal
+aloe,"gel + leaf + plant",klofailifaidorf,"klof + lif + dorf",ai,3,yes,plant,proposal
+alopecia,"hair + loss",,"fif + ?",ai,2,no,judged,verdict
+alprazolam,"calm + anxiety + drug",,"kam + ? + som",ai,3,no,drug,proposal
+alum,"sour + salt",yedzaitigz,"yedz + tigz",ai,2,yes,judged,verdict
+aluminum,"shine + atom",palbaitom,"palb + tom",ai,2,yes,atom,proposal
+amaryllis,"bare + stalk + flower",xoldaiklepaiflor,"xold + klep + flor",ai,3,yes,flower,proposal
+americium,"smoke + atom",smokaitom,"smok + tom",ai,2,yes,atom,proposal
+amidase,"amide + enzyme",,"? + spug",ai,2,no,judged,verdict
+amide,"ammonia + acid + group",smavaifalfaihip,"smav + falf + hip",ai,3,yes,judged,verdict
+amine,"nitrogen + group",snucaihip,"snuc + hip",ai,2,yes,judged,verdict
+amoxicillin,"bacteria + kill + drug",brakaiklubaisom,"brak + klub + som",ai,3,yes,drug,proposal
+amphetamine,"energy + alert + drug",bupaipalvaisom,"bup + palv + som",ai,3,yes,drug,proposal
+amyloidosis,"starch + protein + state",snebailudzaidom,"sneb + ludz + dom",ai,3,yes,judged,verdict
+anatomy,"body + study",vatainedz,"vat + nedz",ai,2,yes,judged,verdict
+andesite,"gray + fire",petxaifor,"petx + for",ai,2,yes,rock,proposal
+anemone,"wind + flower",wandaiflor,"wand + flor",ai,2,yes,flower,proposal
+anesthesia,"no + feel",nopainag,"nop + nag",ai,2,yes,judged,verdict
+aneurysm,"vessel + bulge",vesaistox,"ves + stox",ai,2,yes,judged,verdict
+angioma,"vessel + growth",,"ves + ?",ai,2,no,judged,verdict
+angiosarcoma,"vessel + flesh + cancer",vesaiflaxaibudj,"ves + flax + budj",ai,3,yes,judged,verdict
+anhydride,"no + water + compound",nopaiwaCaiCeqk,"nop + waC + Ceqk",ai,3,yes,judged,verdict
+anhydrous,"no + water",nopaiwaC,"nop + waC",ai,2,yes,judged,verdict
+anthropology,"people + study",pedainedz,"ped + nedz",ai,2,yes,judged,verdict
+antibody,"against + body",zofaivat,"zof + vat",ai,2,yes,judged,verdict
+antimony,"paint + atom",pentaitom,"pent + tom",ai,2,yes,atom,proposal
+antique,"old + made + thing",,"marg + ? + niv",ai,3,no,judged,verdict
+aorta,"great + artery",macaiyubz,"mac + yubz",ai,2,yes,judged,verdict
+apex,"top + point",sukaileC,"suk + leC",ai,2,yes,judged,verdict
+aplasia,"no + growth",,"nop + ?",ai,2,no,judged,verdict
+apoptosis,"fall + away + cell + death",zuraiyadaimudzaidac,"zur + yad + mudz + dac",ai,4,yes,judged,verdict
+aquaculture,"water + farm",waCaidesp,"waC + desp",ai,2,yes,judged,verdict
+aquifer,"water + rock + layer",waCairakaigrof,"waC + rak + grof",ai,3,yes,judged,verdict
+archaeology,"old + study",margainedz,"marg + nedz",ai,2,yes,judged,verdict
+arginine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+argon,"slow + atom",slomaitom,"slom + tom",ai,2,yes,atom,proposal
+arkose,"granite + sand",,"? + sand",ai,2,no,rock,proposal
+arsenic,"poison + atom",borzaitom,"borz + tom",ai,2,yes,atom,proposal
+arteriole,"small + artery",smalaiyubz,"smal + yubz",ai,2,yes,judged,verdict
+arteritis,"artery + swell",yubzaiparb,"yubz + parb",ai,2,yes,judged,verdict
+arthritis,"joint + inflammation",dolfaifrep,"dolf + frep",ai,2,yes,judged,verdict
+arthropathy,"joint + disease",dolfaibidj,"dolf + bidj",ai,2,yes,judged,verdict
+artillery,"heavy + gun",nantaizaz,"nant + zaz",ai,2,yes,judged,verdict
+asbestos,"thread + rock",rentairak,"rent + rak",ai,2,yes,judged,verdict
+ascites,"belly + water",blinaiwaC,"blin + waC",ai,2,yes,judged,verdict
+aside,"at + side",hataisard,"hat + sard",ai,2,yes,judged,verdict
+asparagine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+aspen,"shake + leaf + tree",gempailifaidip,"gemp + lif + dip",ai,3,yes,tree,proposal
+aspirin,"pain + fever + drug",muzaipudzaisom,"muz + pudz + som",ai,3,yes,drug,proposal
+assay,"test + sample",tasaihund,"tas + hund",ai,2,yes,judged,verdict
+astatine,"quick + atom",klokaitom,"klok + tom",ai,2,yes,atom,proposal
+aster,"star + flower",staraiflor,"star + flor",ai,2,yes,flower,proposal
+asthma,"tight + breath",tratainogz,"trat + nogz",ai,2,yes,judged,verdict
+astrocyte,"star + cell",staraimudz,"star + mudz",ai,2,yes,judged,verdict
+ataxia,"no + order",nopainord,"nop + nord",ai,2,yes,judged,verdict
+atlas,"map + book",deqaivam,"deq + vam",ai,2,yes,judged,verdict
+atorvastatin,"blood + fat + lower",,"bloC + wes + ?",ai,3,no,drug,proposal
+atresia,"no + passage",nopaijaqk,"nop + jaqk",ai,2,yes,judged,verdict
+atrium,"enter + room",drozaitif,"droz + tif",ai,2,yes,judged,verdict
+automobile,"self + move",depaimuv,"dep + muv",ai,2,yes,judged,verdict
+avocado,"fat + green + fruit",wesaipesaimag,"wes + pes + mag",ai,3,yes,judged,verdict
+azalea,"bright + shrub + flower",,"din + ? + flor",ai,3,no,flower,proposal
+azithromycin,"bacteria + block + drug",brakaigiksaisom,"brak + giks + som",ai,3,yes,drug,proposal
+bacillus,"rod + germ",fitsaisnop,"fits + snop",ai,2,yes,judged,verdict
+background,"back + ground",gokaimits,"gok + mits",ai,2,yes,judged,verdict
+balsam,"smell + resin",,"lug + ?",ai,2,no,judged,verdict
+bamboo,"arrow + flute",jiftaitxic,"jift + txic",ai,2,yes,plant,proposal
+banyan,"root + branch + tree",febzailumaidip,"febz + lum + dip",ai,3,yes,tree,proposal
+baobab,"fat + trunk + tree",wesaitimpaidip,"wes + timp + dip",ai,3,yes,tree,proposal
+barium,"heavy + atom",nantaitom,"nant + tom",ai,2,yes,atom,proposal
+barley,"grain + plant",letxaidorf,"letx + dorf",ai,2,yes,plant,proposal
+baroque,"ornate + style",,"? + deks",ai,2,no,judged,verdict
+basalt,"dark + fire",ramaifor,"ram + for",ai,2,yes,rock,proposal
+basil,"sweet + smell + herb",skitailugairorb,"skit + lug + rorb",ai,3,yes,plant,proposal
+bathroom,"bath + room",,"? + tif",ai,2,no,judged,verdict
+bean,"pod + seed",pardaisid,"pard + sid",ai,2,yes,plant,proposal
+beech,"smooth + bark + tree",kindaiyogzaidip,"kind + yogz + dip",ai,3,yes,tree,proposal
+beet,"red + root",gicaifebz,"gic + febz",ai,2,yes,plant,proposal
+begonia,"uneven + leaf + flower",,"? + lif + flor",ai,3,no,flower,proposal
+bench,"long + seat",,"nuc + ?",ai,2,no,judged,verdict
+benign,"no + harm",nopaidrak,"nop + drak",ai,2,yes,judged,verdict
+benzene,"six + carbon + ring",vipairintairop,"vip + rint + rop",ai,3,yes,judged,verdict
+berkelium,"bright + atom",dinaitom,"din + tom",ai,2,yes,atom,proposal
+beryllium,"precious + atom",prexaitom,"prex + tom",ai,2,yes,atom,proposal
+betaine,"beet + amine",,"? + ?",ai,2,no,judged,verdict
+bicarbonate,"two + carbonate",,"dob + ?",ai,2,no,judged,verdict
+bicolor,"two + colour",,"dob + ?",ai,2,no,judged,verdict
+bin,"open + box",zarkaibraz,"zark + braz",ai,2,yes,judged,verdict
+biogenesis,"life + birth",cadaidolb,"cad + dolb",ai,2,yes,judged,verdict
+biomarker,"life + mark",cadaiwen,"cad + wen",ai,2,yes,judged,verdict
+biopsy,"live + sample",kibaihund,"kib + hund",ai,2,yes,judged,verdict
+biosynthesis,"life + synthesis",,"cad + ?",ai,2,no,judged,verdict
+biotin,"life + vitamin",,"cad + ?",ai,2,no,judged,verdict
+bipolar,"two + pole + of",dobaiviksaiyov,"dob + viks + yov",ai,3,yes,judged,verdict
+birch,"paper + bark + tree",yofaiyogzaidip,"yof + yogz + dip",ai,3,yes,tree,proposal
+bismuth,"shadow + atom",petsaitom,"pets + tom",ai,2,yes,atom,proposal
+blight,"plant + rot",dorfaijamp,"dorf + jamp",ai,2,yes,judged,verdict
+blister,"raise + skin",mumpaiskin,"mump + skin",ai,2,yes,judged,verdict
+bluebell,"blue + bell + flower",bulaigentaiflor,"bul + gent + flor",ai,3,yes,flower,proposal
+blush,"red + face",gicaifes,"gic + fes",ai,2,yes,judged,verdict
+bohrium,"deep + atom",govaitom,"gov + tom",ai,2,yes,atom,proposal
+bonnet,"head + cap",hadaitalb,"had + talb",ai,2,yes,judged,verdict
+boron,"bone + atom",brodaitom,"brod + tom",ai,2,yes,atom,proposal
+bracket,"hold + arm",hoqaimarb,"hoq + marb",ai,2,yes,judged,verdict
+breadfruit,"bread + fruit + tree",dalfaimagaidip,"dalf + mag + dip",ai,3,yes,tree,proposal
+breccia,"sharp + bit",bontaivic,"bont + vic",ai,2,yes,rock,proposal
+broccoli,"green + flower + plant",pesaifloraidorf,"pes + flor + dorf",ai,3,yes,plant,proposal
+bromine,"ocean + atom",vrunaitom,"vrun + tom",ai,2,yes,atom,proposal
+bronchiole,"small + airway",,"smal + ?",ai,2,no,judged,verdict
+bronchus,"lung + tube",xolsaitub,"xols + tub",ai,2,yes,judged,verdict
+broom,"sweep + brush",fuskaisisp,"fusk + sisp",ai,2,yes,judged,verdict
+buck,"male + deer",mafaixars,"maf + xars",ai,2,yes,judged,verdict
+buckeye,"eye + seed + tree",xicaisidaidip,"xic + sid + dip",ai,3,yes,tree,proposal
+buoy,"float + mark",flotaiwen,"flot + wen",ai,2,yes,judged,verdict
+bush,"dense + low + plant",txifailemaidorf,"txif + lem + dorf",ai,3,yes,plant,proposal
+business,"work + trade",warkaitred,"wark + tred",ai,2,yes,judged,verdict
+butanol,"four + carbon + alcohol",lafairintaikoqk,"laf + rint + koqk",ai,3,yes,judged,verdict
+buttercup,"yellow + cup + flower",buxainipsaiflor,"bux + nips + flor",ai,3,yes,flower,proposal
+buttress,"prop + wall",,"? + medz",ai,2,no,judged,verdict
+bypass,"by + pass",baCaiyef,"baC + yef",ai,2,yes,judged,verdict
+cabbage,"round + leaf + plant",mapsailifaidorf,"maps + lif + dorf",ai,3,yes,plant,proposal
+cabinet,"door + case",dorainor,"dor + nor",ai,2,yes,judged,verdict
+cadmium,"source + atom",mabaitom,"mab + tom",ai,2,yes,atom,proposal
+caesium,"sky + atom",xumaitom,"xum + tom",ai,2,yes,atom,proposal
+caffeine,"wake + drug",gataisom,"gat + som",ai,2,yes,drug,proposal
+calcaneus,"heel + bone",jumpaibrod,"jump + brod",ai,2,yes,judged,verdict
+calf,"young + cow",zenaivaqk,"zen + vaqk",ai,2,yes,judged,verdict
+californium,"bare + atom",xoldaitom,"xold + tom",ai,2,yes,atom,proposal
+callus,"hard + skin",kadaiskin,"kad + skin",ai,2,yes,judged,verdict
+camellia,"smooth + petal + flower",kindaiskaqaiflor,"kind + skaq + flor",ai,3,yes,flower,proposal
+campaign,"plan + run",planairin,"plan + rin",ai,2,yes,judged,verdict
+candidiasis,"yeast + sickness",,"skog + ?",ai,2,no,judged,verdict
+cane,"stalk + stick",klepaireb,"klep + reb",ai,2,yes,judged,verdict
+cannon,"big + gun",brataizaz,"brat + zaz",ai,2,yes,judged,verdict
+canopy,"over + cover",djipaikov,"djip + kov",ai,2,yes,judged,verdict
+canthus,"eye + corner",xicaimuft,"xic + muft",ai,2,yes,judged,verdict
+canton,"land + part",lanaipart,"lan + part",ai,2,yes,judged,verdict
+capsule,"small + shell",smalaitxal,"smal + txal",ai,2,yes,judged,verdict
+carbamate,"carbon + nitrogen + salt",rintaisnucaitigz,"rint + snuc + tigz",ai,3,yes,judged,verdict
+carboxamide,"carboxyl + amide",,"? + ?",ai,2,no,judged,verdict
+carcinoma,"cover + tissue + cancer",kovaitxumaibudj,"kov + txum + budj",ai,3,yes,judged,verdict
+cardiomyopathy,"heart + muscle + disease",zifaisuftaibidj,"zif + suft + bidj",ai,3,yes,judged,verdict
+cardiovascular,"heart + vessel + of",zifaivesaiyov,"zif + ves + yov",ai,3,yes,judged,verdict
+carnation,"fold + petal + flower",foldaiskaqaiflor,"fold + skaq + flor",ai,3,yes,flower,proposal
+carotene,"orange + pigment",,"dej + ?",ai,2,no,judged,verdict
+carpet,"floor + cloth",rimaicorv,"rim + corv",ai,2,yes,judged,verdict
+carrot,"orange + root",dejaifebz,"dej + febz",ai,2,yes,judged,verdict
+cartridge,"shot + case",,"? + nor",ai,2,no,judged,verdict
+casein,"milk + protein",nudjailudz,"nudj + ludz",ai,2,yes,judged,verdict
+cassava,"starch + root",snebaifebz,"sneb + febz",ai,2,yes,plant,proposal
+castor,"beaver + oil",,"? + gips",ai,2,no,judged,verdict
+cataract,"cloud + lens",kladailalv,"klad + lalv",ai,2,yes,judged,verdict
+catheter,"body + tube",vataitub,"vat + tub",ai,2,yes,judged,verdict
+cattail,"tail + water + grass",tadaiwaCaigras,"tad + waC + gras",ai,3,yes,plant,proposal
+cauliflower,"white + flower + plant",wipaifloraidorf,"wip + flor + dorf",ai,3,yes,plant,proposal
+cedar,"smell + conifer",,"lug + ?",ai,2,no,tree,proposal
+celery,"crisp + stalk + plant",djezaiklepaidorf,"djez + klep + dorf",ai,3,yes,plant,proposal
+cellulose,"cell + sugar",mudzaigand,"mudz + gand",ai,2,yes,judged,verdict
+cerebellum,"small + brain",smalaibren,"smal + bren",ai,2,yes,judged,verdict
+cerebrospinal,"brain + spine + of",brenaispanaiyov,"bren + span + yov",ai,3,yes,judged,verdict
+cerium,"rust + atom",blomaitom,"blom + tom",ai,2,yes,atom,proposal
+cervix,"neck + of + womb",mondaiyovaigloq,"mond + yov + gloq",ai,3,yes,judged,verdict
+chalk,"powder + stone",kubzaiston,"kubz + ston",ai,2,yes,rock,proposal
+chemotaxis,"chemical + move",kremaimuv,"krem + muv",ai,2,yes,judged,verdict
+chert,"dull + spark + stone",vaspaicadjaiston,"vasp + cadj + ston",ai,3,yes,rock,proposal
+chess,"king + board + game",fubaimarzaigem,"fub + marz + gem",ai,3,yes,judged,verdict
+chestnut,"spine + nut + tree",spanaihiksaidip,"span + hiks + dip",ai,3,yes,judged,verdict
+chickpea,"round + seed",mapsaisid,"maps + sid",ai,2,yes,plant,proposal
+chive,"thin + onion + herb",porvaiwontairorb,"porv + wont + rorb",ai,3,yes,plant,proposal
+chlorine,"green + atom",pesaitom,"pes + tom",ai,2,yes,atom,proposal
+chloroform,"sleep + vapor",slipaifron,"slip + fron",ai,2,yes,drug,proposal
+cholecystitis,"gall + bladder + swell",txozaiwutsaiparb,"txoz + wuts + parb",ai,3,yes,judged,verdict
+cholesterol,"bile + sterol",,"vriz + ?",ai,2,no,judged,verdict
+choline,"bile + amine",,"vriz + ?",ai,2,no,judged,verdict
+chromatin,"colour + thread",,"? + rent",ai,2,no,judged,verdict
+chromatography,"colour + write + craft",,"? + rat + yabz",ai,3,no,judged,verdict
+chrome,"shine + metal",palbaimalt,"palb + malt",ai,2,yes,judged,verdict
+chromium,"color + atom",kloraitom,"klor + tom",ai,2,yes,atom,proposal
+chrysanthemum,"many + petal + flower",mavaiskaqaiflor,"mav + skaq + flor",ai,3,yes,flower,proposal
+cigar,"roll + tobacco",maldaiCadj,"mald + Cadj",ai,2,yes,judged,verdict
+cilantro,"sharp + smell + herb",bontailugairorb,"bont + lug + rorb",ai,3,yes,plant,proposal
+cilium,"cell + hair",mudzaifif,"mudz + fif",ai,2,yes,judged,verdict
+cinnamon,"name + bark",namaiyogz,"nam + yogz",ai,2,yes,judged,verdict
+ciprofloxacin,"bacteria + kill + drug",brakaiklubaisom,"brak + klub + som",ai,3,yes,drug,proposal
+cirrhosis,"liver + scar",,"? + xoks",ai,2,no,judged,verdict
+clavicle,"collar + bone",fedjaibrod,"fedj + brod",ai,2,yes,judged,verdict
+cleft,"split + gap",ditaiwets,"dit + wets",ai,2,yes,judged,verdict
+clergy,"priest + body",,"? + vat",ai,2,no,judged,verdict
+cloak,"loose + coat",txotainusp,"txot + nusp",ai,2,yes,judged,verdict
+clover,"three + leaf + grass",suCailifaigras,"suC + lif + gras",ai,3,yes,plant,proposal
+coach,"road + carriage",,"yeb + ?",ai,2,no,judged,verdict
+coal,"char + stone",smutaiston,"smut + ston",ai,2,yes,rock,proposal
+cobalt,"ring + atom",ropaitom,"rop + tom",ai,2,yes,atom,proposal
+cocaine,"leaf + drug",lifaisom,"lif + som",ai,2,yes,judged,verdict
+cochlea,"ear + spiral",ditsaikriv,"dits + kriv",ai,2,yes,judged,verdict
+cocktail,"mixed + drink",,"? + dug",ai,2,no,judged,verdict
+cocoa,"chocolate + seed",dadjaisid,"dadj + sid",ai,2,yes,plant,proposal
+codeine,"pain + cough + drug",muzaikafaisom,"muz + kaf + som",ai,3,yes,drug,proposal
+coffee,"bitter + seed + drink",vumpaisidaidug,"vump + sid + dug",ai,3,yes,plant,proposal
+coke,"burn + coal",,"molc + ?",ai,2,no,judged,verdict
+colitis,"gut + swell",gutaiparb,"gut + parb",ai,2,yes,judged,verdict
+collagen,"fibre + protein",,"? + ludz",ai,2,no,judged,verdict
+colloid,"fine + hang + matter",polaiheqaituf,"pol + heq + tuf",ai,3,yes,judged,verdict
+columbine,"hang + bell + flower",heqaigentaiflor,"heq + gent + flor",ai,3,yes,flower,proposal
+coma,"deep + sleep",govaislip,"gov + slip",ai,2,yes,judged,verdict
+commerce,"goods + trade",veftaitred,"veft + tred",ai,2,yes,judged,verdict
+commissure,"join + band",gozaimups,"goz + mups",ai,2,yes,judged,verdict
+commonwealth,"common + wealth",,"nobz + ?",ai,2,no,judged,verdict
+commune,"share + village",xalaigolt,"xal + golt",ai,2,yes,judged,verdict
+conglomerate,"round + bit",mapsaivic,"maps + vic",ai,2,yes,rock,proposal
+conjunctiva,"join + eye + film",,"goz + xic + ?",ai,3,no,judged,verdict
+conjunctivitis,"eye + skin + swell",xicaiskinaiparb,"xic + skin + parb",ai,3,yes,judged,verdict
+constipation,"bound + gut",tudjaigut,"tudj + gut",ai,2,yes,judged,verdict
+contracture,"muscle + shorten",,"suft + ?",ai,2,no,judged,verdict
+contusion,"deep + bruise",govaidjif,"gov + djif",ai,2,yes,judged,verdict
+cookie,"small + sweet + cake",smalaiskitaikrek,"smal + skit + krek",ai,3,yes,judged,verdict
+copernicium,"center + atom",navaitom,"nav + tom",ai,2,yes,atom,proposal
+copolymer,"two + kind + polymer",,"dob + nab + ?",ai,3,no,judged,verdict
+corn,"tall + grain + plant",talsailetxaidorf,"tals + letx + dorf",ai,3,yes,plant,proposal
+cornea,"horn + eye + coat",peksaixicainusp,"peks + xic + nusp",ai,3,yes,judged,verdict
+corona,"light + ring",litairop,"lit + rop",ai,2,yes,judged,verdict
+coronavirus,"crown + virus",kartaitagz,"kart + tagz",ai,2,yes,judged,verdict
+corporation,"trade + body",tredaivat,"tred + vat",ai,2,yes,judged,verdict
+corpuscle,"small + body",smalaivat,"smal + vat",ai,2,yes,judged,verdict
+cortex,"outer + layer",,"? + grof",ai,2,no,judged,verdict
+cortisol,"stress + hormone",hispaisnen,"hisp + snen",ai,2,yes,drug,proposal
+cosmos,"flat + round + flower",flataimapsaiflor,"flat + maps + flor",ai,3,yes,flower,proposal
+costume,"play + dress",plarailiz,"plar + liz",ai,2,yes,judged,verdict
+cotton,"soft + fiber + plant",saftaidjotaidorf,"saft + djot + dorf",ai,3,yes,plant,proposal
+cottonwood,"cotton + seed + tree",siksaisidaidip,"siks + sid + dip",ai,3,yes,tree,proposal
+crisis,"turn + point",kakaileC,"kak + leC",ai,2,yes,judged,verdict
+crocus,"early + cup + flower",yabainipsaiflor,"yab + nips + flor",ai,3,yes,flower,proposal
+cucumber,"cool + water + fruit",zoraiwaCaimag,"zor + waC + mag",ai,3,yes,plant,proposal
+cuff,"wrist + band",feftaimups,"feft + mups",ai,2,yes,judged,verdict
+curium,"cheer + atom",tondaitom,"tond + tom",ai,2,yes,atom,proposal
+cusp,"point + edge",leCaipadj,"leC + padj",ai,2,yes,judged,verdict
+cyanide,"blue + compound",bulaiCeqk,"bul + Ceqk",ai,2,yes,judged,verdict
+cyanobacteria,"blue + green + germ",bulaipesaisnop,"bul + pes + snop",ai,3,yes,judged,verdict
+cypress,"silk + conifer",,"ford + ?",ai,2,no,tree,proposal
+cysteine,"sulfur + amino + acid",,"spiz + ? + falf",ai,3,no,judged,verdict
+cystitis,"bladder + swell",wutsaiparb,"wuts + parb",ai,2,yes,judged,verdict
+cytidine,"cytosine + sugar",,"? + gand",ai,2,no,judged,verdict
+cytology,"cell + study",mudzainedz,"mudz + nedz",ai,2,yes,judged,verdict
+cytotoxicity,"cell + poison + ness",,"mudz + borz + ?",ai,3,no,judged,verdict
+daffodil,"yellow + trumpet + flower",buxaiwolbaiflor,"bux + wolb + flor",ai,3,yes,flower,proposal
+dahlia,"round + many + flower",mapsaimavaiflor,"maps + mav + flor",ai,3,yes,flower,proposal
+dairy,"milk + house",nudjaipuz,"nudj + puz",ai,2,yes,judged,verdict
+daisy,"chick + flower",bipsaiflor,"bips + flor",ai,2,yes,flower,proposal
+dandelion,"lion + tooth",groqaicutx,"groq + cutx",ai,2,yes,plant,proposal
+darmstadtium,"birth + atom",dolbaitom,"dolb + tom",ai,2,yes,atom,proposal
+decarboxylase,"carbon + strip + enzyme",rintaihitsaispug,"rint + hits + spug",ai,3,yes,judged,verdict
+dehydratase,"water + strip + enzyme",waCaihitsaispug,"waC + hits + spug",ai,3,yes,judged,verdict
+dehydrogenase,"hydrogen + strip + enzyme",brimaihitsaispug,"brim + hits + spug",ai,3,yes,judged,verdict
+delphinium,"tall + blue + flower",talsaibulaiflor,"tals + bul + flor",ai,3,yes,flower,proposal
+dementia,"mind + loss",,"man + ?",ai,2,no,judged,verdict
+den,"beast + home",bistaihom,"bist + hom",ai,2,yes,judged,verdict
+dentistry,"tooth + craft",cutxaiyabz,"cutx + yabz",ai,2,yes,judged,verdict
+dentition,"tooth + set",cutxaigig,"cutx + gig",ai,2,yes,judged,verdict
+deoxyadenosine,"no + oxygen + adenosine",,"nop + ? + ?",ai,3,no,judged,verdict
+dermatitis,"skin + inflammation",skinaifrep,"skin + frep",ai,2,yes,judged,verdict
+dermis,"skin + layer",skinaigrof,"skin + grof",ai,2,yes,judged,verdict
+dextromethorphan,"cough + block + drug",kafaigiksaisom,"kaf + giks + som",ai,3,yes,drug,proposal
+diabetes,"sugar + waste + sickness",,"gand + musp + ?",ai,3,no,judged,verdict
+diarrhea,"loose + stool",txotaiglad,"txot + glad",ai,2,yes,judged,verdict
+diazepam,"calm + sleep + drug",kamaislipaisom,"kam + slip + som",ai,3,yes,drug,proposal
+dichloride,"two + chlorine + salt",dobaivraqaitigz,"dob + vraq + tigz",ai,3,yes,judged,verdict
+diencephalon,"between + brain",tinaibren,"tin + bren",ai,2,yes,judged,verdict
+diesel,"heavy + fuel",nantaiful,"nant + ful",ai,2,yes,judged,verdict
+dill,"feather + herb",cindairorb,"cind + rorb",ai,2,yes,plant,proposal
+dinucleotide,"two + nucleotide",,"dob + ?",ai,2,no,judged,verdict
+diol,"two + alcohol",dobaikoqk,"dob + koqk",ai,2,yes,judged,verdict
+diorite,"gray + grain",petxailetx,"petx + letx",ai,2,yes,rock,proposal
+dioxide,"two + oxide",,"dob + ?",ai,2,no,judged,verdict
+diphenhydramine,"allergy + sleep + drug",klebaislipaisom,"kleb + slip + som",ai,3,yes,drug,proposal
+diphosphate,"two + phosphate",,"dob + ?",ai,2,no,judged,verdict
+dismutase,"split + swap + enzyme",ditaisolpaispug,"dit + solp + spug",ai,3,yes,judged,verdict
+disulfide,"two + sulfur + bond",dobaispizainuq,"dob + spiz + nuq",ai,3,yes,judged,verdict
+diverticulum,"gut + pouch",,"gut + ?",ai,2,no,judged,verdict
+dogwood,"white + flower + tree",wipaifloraidip,"wip + flor + dip",ai,3,yes,tree,proposal
+dopamine,"reward + drive + signal",kipsaidivaitet,"kips + div + tet",ai,3,yes,drug,proposal
+dope,"dull + drug",vaspaisom,"vasp + som",ai,2,yes,judged,verdict
+drone,"male + bee",mafaifest,"maf + fest",ai,2,yes,judged,verdict
+dubnium,"race + atom",malkaitom,"malk + tom",ai,2,yes,atom,proposal
+duodenum,"twelve + gut",mopaigut,"mop + gut",ai,2,yes,judged,verdict
+dwarfism,"dwarf + state",djobaidom,"djob + dom",ai,2,yes,judged,verdict
+dysfunction,"bad + work",futaiwark,"fut + wark",ai,2,yes,judged,verdict
+dysgenesis,"bad + growth",,"fut + ?",ai,2,no,judged,verdict
+dysplasia,"bad + growth",,"fut + ?",ai,2,no,judged,verdict
+dystrophy,"bad + feed",futainubz,"fut + nubz",ai,2,yes,judged,verdict
+ebony,"black + wood + tree",vogaivriCaidip,"vog + vriC + dip",ai,3,yes,tree,proposal
+ectoderm,"outer + skin",,"? + skin",ai,2,no,judged,verdict
+edelweiss,"white + mountain + flower",wipaimotaiflor,"wip + mot + flor",ai,3,yes,flower,proposal
+edema,"water + swell",waCaiparb,"waC + parb",ai,2,yes,judged,verdict
+eggplant,"purple + fruit",sifaimag,"sif + mag",ai,2,yes,judged,verdict
+einsteinium,"smart + atom",rezaitom,"rez + tom",ai,2,yes,atom,proposal
+electrostatic,"electric + static",kespained,"kesp + ned",ai,2,yes,judged,verdict
+elm,"wing + seed + tree",wiqaisidaidip,"wiq + sid + dip",ai,3,yes,tree,proposal
+embankment,"bank + wall",lasaimedz,"las + medz",ai,2,yes,judged,verdict
+embolism,"clot + block",truzaigiks,"truz + giks",ai,2,yes,judged,verdict
+emphysema,"lung + air + swell",xolsailesaiparb,"xols + les + parb",ai,3,yes,judged,verdict
+emulsion,"fine + mix",polaimiks,"pol + miks",ai,2,yes,judged,verdict
+enamel,"tooth + glaze",cutxaisket,"cutx + sket",ai,2,yes,judged,verdict
+encephalopathy,"brain + disease",brenaibidj,"bren + bidj",ai,2,yes,judged,verdict
+encounter,"in + counter",,"ras + ?",ai,2,no,judged,verdict
+endocarditis,"inner + heart + swell",,"? + zif + parb",ai,3,no,judged,verdict
+endocardium,"inner + heart + lining",,"? + zif + ?",ai,3,no,judged,verdict
+endoderm,"inner + skin",,"? + skin",ai,2,no,judged,verdict
+endometrium,"inside + womb + lining",,"geb + gloq + ?",ai,3,no,judged,verdict
+endorphin,"inner + pain + drug",,"? + muz + som",ai,3,no,judged,verdict
+endothelium,"inside + lining",,"geb + ?",ai,2,no,judged,verdict
+enterprise,"between + take",tinaitek,"tin + tek",ai,2,yes,judged,verdict
+eosinophilia,"white + cell + excess",wipaimudzaidjoz,"wip + mudz + djoz",ai,3,yes,judged,verdict
+epidemiology,"spread + sickness + study",,"dend + ? + nedz",ai,3,no,judged,verdict
+epidermis,"upon + skin",pandaiskin,"pand + skin",ai,2,yes,judged,verdict
+epididymis,"upon + testis",,"pand + ?",ai,2,no,judged,verdict
+epiglottis,"over + throat + flap",djipaigalkaibriv,"djip + galk + briv",ai,3,yes,judged,verdict
+epilepsy,"seize + sickness",,"lidj + ?",ai,2,no,judged,verdict
+epinephrine,"alert + heart + hormone",palvaizifaisnen,"palv + zif + snen",ai,3,yes,drug,proposal
+epiphysis,"bone + end",brodaiguv,"brod + guv",ai,2,yes,judged,verdict
+epithelium,"cover + tissue",kovaitxum,"kov + txum",ai,2,yes,judged,verdict
+epoxide,"oxygen + ring",,"? + rop",ai,2,no,judged,verdict
+erbium,"glass + atom",malzaitom,"malz + tom",ai,2,yes,atom,proposal
+erythema,"red + skin",gicaiskin,"gic + skin",ai,2,yes,judged,verdict
+erythroblast,"red + blood + bud",gicaibloCaigond,"gic + bloC + gond",ai,3,yes,judged,verdict
+erythrocyte,"red + blood + cell",gicaibloCaimudz,"gic + bloC + mudz",ai,3,yes,judged,verdict
+esophagus,"gullet + tube",,"? + tub",ai,2,no,judged,verdict
+estate,"hold + land",hoqailan,"hoq + lan",ai,2,yes,judged,verdict
+ester,"acid + alcohol + join",falfaikoqkaigoz,"falf + koqk + goz",ai,3,yes,judged,verdict
+estradiol,"estrus + two + alcohol",,"? + dob + koqk",ai,3,no,judged,verdict
+estrogen,"female + sex + hormone",fimaifedaisnen,"fim + fed + snen",ai,3,yes,drug,proposal
+ethanol,"two + carbon + alcohol",dobairintaikoqk,"dob + rint + koqk",ai,3,yes,judged,verdict
+ether,"sleep + vapor",slipaifron,"slip + fron",ai,2,yes,drug,proposal
+ethyl,"two + carbon + group",dobairintaihip,"dob + rint + hip",ai,3,yes,judged,verdict
+etiology,"cause + study",kazainedz,"kaz + nedz",ai,2,yes,judged,verdict
+eucalyptus,"smell + oil + tree",lugaigipsaidip,"lug + gips + dip",ai,3,yes,tree,proposal
+europium,"screen + atom",boftaitom,"boft + tom",ai,2,yes,atom,proposal
+excision,"cut + out",zepaibuk,"zep + buk",ai,2,yes,judged,verdict
+exocrine,"out + secrete",,"buk + ?",ai,2,no,judged,verdict
+eyeball,"eye + ball",xicaibral,"xic + bral",ai,2,yes,judged,verdict
+fascia,"sheet + tissue",vodjaitxum,"vodj + txum",ai,2,yes,judged,verdict
+femur,"thigh + bone",gromaibrod,"grom + brod",ai,2,yes,judged,verdict
+fennel,"name + herb",namairorb,"nam + rorb",ai,2,yes,judged,verdict
+fentanyl,"extreme + pain + drug",vuftaimuzaisom,"vuft + muz + som",ai,3,yes,drug,proposal
+fermium,"rare + atom",raraitom,"rar + tom",ai,2,yes,atom,proposal
+fern,"sheep + tooth",zigzaicutx,"zigz + cutx",ai,2,yes,plant,proposal
+fibrillation,"quiver + beat",,"? + bit",ai,2,no,judged,verdict
+fibroblast,"fibre + cell",,"? + mudz",ai,2,no,judged,verdict
+fibroma,"fibre + growth",,"? + ?",ai,2,no,judged,verdict
+fibrosis,"fibre + growth",,"? + ?",ai,2,no,judged,verdict
+fibula,"side + leg + bone",sardailegzaibrod,"sard + legz + brod",ai,3,yes,judged,verdict
+fir,"flat + conifer",,"flat + ?",ai,2,no,tree,proposal
+fistula,"wrong + passage",raqaijaqk,"raq + jaqk",ai,2,yes,judged,verdict
+flank,"body + side",vataisard,"vat + sard",ai,2,yes,judged,verdict
+flask,"narrow + neck + bottle",,"Ceft + mond + ?",ai,3,no,judged,verdict
+flax,"fiber + seed + plant",djotaisidaidorf,"djot + sid + dorf",ai,3,yes,plant,proposal
+fleece,"wool + coat",laqkainusp,"laqk + nusp",ai,2,yes,judged,verdict
+flerovium,"cloud + atom",kladaitom,"klad + tom",ai,2,yes,atom,proposal
+flint,"fire + strike + stone",forainalcaiston,"for + nalc + ston",ai,3,yes,rock,proposal
+fluorine,"tooth + atom",cutxaitom,"cutx + tom",ai,2,yes,atom,proposal
+fluorouracil,"fluorine + uracil",,"? + ?",ai,2,no,judged,verdict
+fluoxetine,"mood + lift + drug",mudaigorvaisom,"mud + gorv + som",ai,3,yes,drug,proposal
+follicle,"small + sac",smalaisnaz,"smal + snaz",ai,2,yes,judged,verdict
+fontanelle,"skull + soft + spot",horfaisaftaimals,"horf + saft + mals",ai,3,yes,judged,verdict
+football,"foot + ball",gralaibral,"gral + bral",ai,2,yes,judged,verdict
+foramen,"bone + hole",brodaihatx,"brod + hatx",ai,2,yes,judged,verdict
+forebrain,"fore + brain",,"? + bren",ai,2,no,judged,verdict
+forget-me-not,"small + blue + flower",smalaibulaiflor,"smal + bul + flor",ai,3,yes,flower,proposal
+fossa,"bone + hollow",brodaivabz,"brod + vabz",ai,2,yes,judged,verdict
+foster,"raise + care",mumpaikriq,"mump + kriq",ai,2,yes,judged,verdict
+foxglove,"finger + bell + flower",gartaigentaiflor,"gart + gent + flor",ai,3,yes,flower,proposal
+francium,"loose + atom",txotaitom,"txot + tom",ai,2,yes,atom,proposal
+freesia,"sweet + smell + flower",skitailugaiflor,"skit + lug + flor",ai,3,yes,flower,proposal
+freshwater,"fresh + water",fraxaiwaC,"frax + waC",ai,2,yes,judged,verdict
+gabbro,"dark + grain",ramailetx,"ram + letx",ai,2,yes,rock,proposal
+gadolinium,"seek + atom",sikaitom,"sik + tom",ai,2,yes,atom,proposal
+galactose,"milk + sugar",nudjaigand,"nudj + gand",ai,2,yes,judged,verdict
+gallbladder,"gall + bladder",txozaiwuts,"txoz + wuts",ai,2,yes,judged,verdict
+gallium,"bird + atom",baxaitom,"bax + tom",ai,2,yes,atom,proposal
+ganglion,"nerve + knot",nurvaigrox,"nurv + grox",ai,2,yes,judged,verdict
+gangrene,"dead + flesh",tisaiflax,"tis + flax",ai,2,yes,judged,verdict
+garbage,"throw + waste",jetaimusp,"jet + musp",ai,2,yes,judged,verdict
+gardenia,"white + smell + flower",wipailugaiflor,"wip + lug + flor",ai,3,yes,flower,proposal
+garland,"flower + ring",florairop,"flor + rop",ai,2,yes,judged,verdict
+garlic,"strong + smell + bulb",livailugaiwusk,"liv + lug + wusk",ai,3,yes,judged,verdict
+gastritis,"stomach + swell",stokaiparb,"stok + parb",ai,2,yes,judged,verdict
+gelatin,"bone + jelly",brodaiCift,"brod + Cift",ai,2,yes,judged,verdict
+genre,"art + kind",meqkainab,"meqk + nab",ai,2,yes,judged,verdict
+geography,"earth + writing",,"riq + ?",ai,2,no,judged,verdict
+geranium,"round + leaf + flower",mapsailifaiflor,"maps + lif + flor",ai,3,yes,flower,proposal
+germanium,"cave + atom",klivaitom,"kliv + tom",ai,2,yes,atom,proposal
+ginger,"hot + root",gepaifebz,"gep + febz",ai,2,yes,judged,verdict
+girdle,"waist + band",respaimups,"resp + mups",ai,2,yes,judged,verdict
+gladiolus,"sword + leaf + flower",bibzailifaiflor,"bibz + lif + flor",ai,3,yes,flower,proposal
+glaucoma,"eye + press + sickness",,"xic + malf + ?",ai,3,no,judged,verdict
+glioblastoma,"glue + cell + cancer",yistaimudzaibudj,"yist + mudz + budj",ai,3,yes,judged,verdict
+glioma,"glue + cell + cancer",yistaimudzaibudj,"yist + mudz + budj",ai,3,yes,judged,verdict
+globulin,"ball + protein",bralailudz,"bral + ludz",ai,2,yes,judged,verdict
+glomerulus,"kidney + vessel + ball",fundaivesaibral,"fund + ves + bral",ai,3,yes,judged,verdict
+glucan,"sugar + chain",gandailip,"gand + lip",ai,2,yes,judged,verdict
+glucosamine,"glucose + amine",,"? + ?",ai,2,no,judged,verdict
+glucose,"grape + sugar",grepaigand,"grep + gand",ai,2,yes,judged,verdict
+glutamine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+glutathione,"three + amino + acid",,"suC + ? + falf",ai,3,no,judged,verdict
+glycerol,"sweet + alcohol",skitaikoqk,"skit + koqk",ai,2,yes,judged,verdict
+glycine,"sweet + acid",skitaifalf,"skit + falf",ai,2,yes,judged,verdict
+glycoprotein,"sugar + protein",gandailudz,"gand + ludz",ai,2,yes,judged,verdict
+gneiss,"band + press",mupsaimalf,"mups + malf",ai,2,yes,rock,proposal
+gold,"king + atom",fubaitom,"fub + tom",ai,2,yes,atom,proposal
+goldenrod,"gold + stalk + flower",godaiklepaiflor,"god + klep + flor",ai,3,yes,flower,proposal
+gonadotropin,"gonad + turn + toward",,"? + kak + nol",ai,3,no,judged,verdict
+gouge,"scoop + chisel",skupaiskam,"skup + skam",ai,2,yes,judged,verdict
+gourd,"hard + shell + fruit",kadaitxalaimag,"kad + txal + mag",ai,3,yes,plant,proposal
+granite,"flower + grain",florailetx,"flor + letx",ai,2,yes,rock,proposal
+granuloma,"grain + growth",,"letx + ?",ai,2,no,judged,verdict
+grape,"vine + berry",txekaiglaf,"txek + glaf",ai,2,yes,plant,proposal
+grapefruit,"bitter + round + fruit",vumpaimapsaimag,"vump + maps + mag",ai,3,yes,tree,proposal
+greenhouse,"green + house",pesaipuz,"pes + puz",ai,2,yes,judged,verdict
+greywacke,"mud + sand",cataisand,"cat + sand",ai,2,yes,rock,proposal
+guanosine,"guanine + sugar",,"? + gand",ai,2,no,judged,verdict
+guidelines,"guide + line",gibaizob,"gib + zob",ai,2,yes,judged,verdict
+gum tree,"gum + sap + tree",zibzaiglomaidip,"zibz + glom + dip",ai,3,yes,tree,proposal
+gutter,"water + channel",waCaibark,"waC + bark",ai,2,yes,judged,verdict
+gyrus,"brain + fold",brenaifold,"bren + fold",ai,2,yes,judged,verdict
+hack,"rough + cut",gabzaizep,"gabz + zep",ai,2,yes,judged,verdict
+hafnium,"tool + atom",tulaitom,"tul + tom",ai,2,yes,atom,proposal
+hallux,"big + toe",brataivint,"brat + vint",ai,2,yes,judged,verdict
+hamartoma,"wrong + tissue + growth",,"raq + txum + ?",ai,3,no,judged,verdict
+harlequin,"patch + pattern",patxaijom,"patx + jom",ai,2,yes,judged,verdict
+harness,"strap + gear",regzaikutx,"regz + kutx",ai,2,yes,judged,verdict
+hassium,"fresh + atom",fraxaitom,"frax + tom",ai,2,yes,atom,proposal
+hawthorn,"thorn + berry + tree",rargaiglafaidip,"rarg + glaf + dip",ai,3,yes,tree,proposal
+headache,"head + ache",hadaiblat,"had + blat",ai,2,yes,judged,verdict
+headgear,"head + gear",hadaikutx,"had + kutx",ai,2,yes,judged,verdict
+heather,"small + purple + shrub",,"smal + sif + ?",ai,3,no,plant,proposal
+hedge,"plant + wall",dorfaimedz,"dorf + medz",ai,2,yes,judged,verdict
+helium,"sun + atom",sanaitom,"san + tom",ai,2,yes,atom,proposal
+helmet,"head + guard",hadaimoft,"had + moft",ai,2,yes,judged,verdict
+hemangioma,"blood + vessel + growth",,"bloC + ves + ?",ai,3,no,judged,verdict
+hemlock,"droop + conifer",,"? + ?",ai,2,no,tree,proposal
+hemoglobin,"blood + protein",bloCailudz,"bloC + ludz",ai,2,yes,judged,verdict
+hemorrhage,"blood + burst",bloCaibust,"bloC + bust",ai,2,yes,judged,verdict
+hemp,"strong + fiber + plant",livaidjotaidorf,"liv + djot + dorf",ai,3,yes,plant,proposal
+heparin,"blood + clot + block",bloCaitruzaigiks,"bloC + truz + giks",ai,3,yes,judged,verdict
+hepatitis,"liver + inflammation",,"? + frep",ai,2,no,judged,verdict
+hernia,"push + through",lepaipup,"lep + pup",ai,2,yes,judged,verdict
+heroin,"strong + pleasure + drug",livaizimaisom,"liv + zim + som",ai,3,yes,drug,proposal
+hibiscus,"large + trumpet + flower",giqkaiwolbaiflor,"giqk + wolb + flor",ai,3,yes,flower,proposal
+hickory,"hard + nut + tree",kadaihiksaidip,"kad + hiks + dip",ai,3,yes,judged,verdict
+histidine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+holly,"sharp + leaf + tree",bontailifaidip,"bont + lif + dip",ai,3,yes,tree,proposal
+hollyhock,"tall + flower + stalk",talsaifloraiklep,"tals + flor + klep",ai,3,yes,flower,proposal
+holmium,"permeate + atom",pimaitom,"pim + tom",ai,2,yes,atom,proposal
+honeycomb,"honey + comb",kavaicolf,"kav + colf",ai,2,yes,judged,verdict
+honeysuckle,"sweet + vine + flower",skitaitxekaiflor,"skit + txek + flor",ai,3,yes,flower,proposal
+hoop,"stiff + ring",fatxairop,"fatx + rop",ai,2,yes,judged,verdict
+horse chestnut,"big + chestnut + tree",,"brat + ? + dip",ai,3,no,tree,proposal
+horseshoe,"horse + shoe",horsaidebz,"hors + debz",ai,2,yes,judged,verdict
+humerus,"upper + arm + bone",,"? + marb + brod",ai,3,no,judged,verdict
+husbandry,"farm + craft",despaiyabz,"desp + yabz",ai,2,yes,judged,verdict
+hyacinth,"dense + bell + flower",txifaigentaiflor,"txif + gent + flor",ai,3,yes,flower,proposal
+hydrangea,"ball + flower",bralaiflor,"bral + flor",ai,2,yes,flower,proposal
+hydrocarbon,"hydrogen + carbon",brimairint,"brim + rint",ai,2,yes,judged,verdict
+hydrocephalus,"water + head",waCaihad,"waC + had",ai,2,yes,judged,verdict
+hydrochloride,"hydrogen + chlorine + salt",brimaivraqaitigz,"brim + vraq + tigz",ai,3,yes,judged,verdict
+hydrocortisone,"skin + swell + hormone",skinaiparbaisnen,"skin + parb + snen",ai,3,yes,drug,proposal
+hydrolase,"water + split + enzyme",waCaiditaispug,"waC + dit + spug",ai,3,yes,judged,verdict
+hydroxyproline,"hydroxyl + proline",,"? + ?",ai,2,no,judged,verdict
+hygiene,"clean + craft",klinaiyabz,"klin + yabz",ai,2,yes,judged,verdict
+hyperplasia,"over + growth",,"djip + ?",ai,2,no,judged,verdict
+hypertension,"high + blood + press",molaibloCaimalf,"mol + bloC + malf",ai,3,yes,judged,verdict
+hypoplasia,"under + growth",,"bet + ?",ai,2,no,judged,verdict
+hypotension,"low + blood + press",lemaibloCaimalf,"lem + bloC + malf",ai,3,yes,judged,verdict
+hypothalamus,"under + thalamus",,"bet + ?",ai,2,no,judged,verdict
+hypothyroidism,"low + thyroid + state",,"lem + ? + dom",ai,3,no,judged,verdict
+hypoxia,"under + oxygen",,"bet + ?",ai,2,no,judged,verdict
+ibuprofen,"pain + swell + drug",muzaiparbaisom,"muz + parb + som",ai,3,yes,drug,proposal
+idiopathic,"no + known + cause",nopaixefaikaz,"nop + xef + kaz",ai,3,yes,judged,verdict
+ileum,"twist + gut",vitsaigut,"vits + gut",ai,2,yes,judged,verdict
+imidazole,"nitrogen + ring",snucairop,"snuc + rop",ai,2,yes,judged,verdict
+immunoglobulin,"immune + protein",weqkailudz,"weqk + ludz",ai,2,yes,judged,verdict
+implant,"in + set",rasaigig,"ras + gig",ai,2,yes,judged,verdict
+indigo,"deep + blue",govaibul,"gov + bul",ai,2,yes,judged,verdict
+indium,"ghost + atom",gostaitom,"gost + tom",ai,2,yes,atom,proposal
+indole,"nitrogen + double + ring",,"snuc + ? + rop",ai,3,no,judged,verdict
+infant,"young + person",zenainar,"zen + nar",ai,2,yes,judged,verdict
+infarction,"dead + tissue + block",tisaitxumaigiks,"tis + txum + giks",ai,3,yes,judged,verdict
+inflorescence,"flower + cluster",floraisnan,"flor + snan",ai,2,yes,judged,verdict
+infrared,"below + red",dodjaigic,"dodj + gic",ai,2,yes,judged,verdict
+inositol,"ring + alcohol",ropaikoqk,"rop + koqk",ai,2,yes,judged,verdict
+institute,"found + body",totaivat,"tot + vat",ai,2,yes,judged,verdict
+insulin,"sugar + hormone",gandaisnen,"gand + snen",ai,2,yes,judged,verdict
+interaction,"between + action",tinaikiq,"tin + kiq",ai,2,yes,judged,verdict
+intercourse,"sex + act",fedaiyez,"fed + yez",ai,2,yes,judged,verdict
+international,"between + nation",tinaipomp,"tin + pomp",ai,2,yes,judged,verdict
+intervertebral,"between + vertebra + of",,"tin + ? + yov",ai,3,no,judged,verdict
+intravenous,"within + vein + of",modjaiglizaiyov,"modj + gliz + yov",ai,3,yes,judged,verdict
+iodine,"stain + atom",stenaitom,"sten + tom",ai,2,yes,atom,proposal
+iridium,"arch + atom",gruqaitom,"gruq + tom",ai,2,yes,atom,proposal
+iris,"rainbow + flower",,"? + flor",ai,2,no,flower,proposal
+ironwood,"iron + hard + wood",kitxaikadaivriC,"kitx + kad + vriC",ai,3,yes,tree,proposal
+isle,"small + island",smalaigend,"smal + gend",ai,2,yes,judged,verdict
+isomerase,"isomer + enzyme",,"? + spug",ai,2,no,judged,verdict
+ivory,"tooth + bone",cutxaibrod,"cutx + brod",ai,2,yes,judged,verdict
+ivy,"cling + vine",blanaitxek,"blan + txek",ai,2,yes,plant,proposal
+jasmine,"night + smell + flower",yitailugaiflor,"yit + lug + flor",ai,3,yes,flower,proposal
+jazz,"swing + music",slidaifeb,"slid + feb",ai,2,yes,judged,verdict
+jejunum,"empty + gut",nuvaigut,"nuv + gut",ai,2,yes,judged,verdict
+jewelweed,"bright + wet + flower",dinaigegzaiflor,"din + gegz + flor",ai,3,yes,flower,proposal
+joshua tree,"branch + yucca + tree",,"lum + ? + dip",ai,3,no,tree,proposal
+juniper,"berry + conifer",,"glaf + ?",ai,2,no,tree,proposal
+jurisprudence,"law + study",xufainedz,"xuf + nedz",ai,2,yes,judged,verdict
+kale,"curl + leaf + plant",korkailifaidorf,"kork + lif + dorf",ai,3,yes,plant,proposal
+kapok,"soft + fiber + tree",saftaidjotaidip,"saft + djot + dip",ai,3,yes,tree,proposal
+keratinocyte,"horn + cell",peksaimudz,"peks + mudz",ai,2,yes,judged,verdict
+keratitis,"cornea + swell",,"? + parb",ai,2,no,judged,verdict
+keratosis,"horn + skin + state",peksaiskinaidom,"peks + skin + dom",ai,3,yes,judged,verdict
+ketamine,"detach + anesthetic + drug",bogaisnetaisom,"bog + snet + som",ai,3,yes,drug,proposal
+ketone,"carbon + oxygen + group",,"rint + ? + hip",ai,3,no,judged,verdict
+kinase,"phosphate + enzyme",,"? + spug",ai,2,no,judged,verdict
+kitchen,"cook + room",nalfaitif,"nalf + tif",ai,2,yes,judged,verdict
+kite,"fly + sail",lefaifras,"lef + fras",ai,2,yes,judged,verdict
+krypton,"hidden + atom",pedjaitom,"pedj + tom",ai,2,yes,atom,proposal
+labyrinth,"maze + of + ear",blitaiyovaidits,"blit + yov + dits",ai,3,yes,judged,verdict
+lace,"hole + cloth",hatxaicorv,"hatx + corv",ai,2,yes,judged,verdict
+lactone,"ring + ester",,"rop + ?",ai,2,no,judged,verdict
+lamina,"thin + plate",porvaiplet,"porv + plet",ai,2,yes,judged,verdict
+lane,"narrow + road",Ceftaiyeb,"Ceft + yeb",ai,2,yes,judged,verdict
+lantern,"carry + lamp",maftaizunt,"maft + zunt",ai,2,yes,judged,verdict
+lanthanum,"air + atom",lesaitom,"les + tom",ai,2,yes,atom,proposal
+larch,"fall + conifer",,"zur + ?",ai,2,no,tree,proposal
+laser,"thin + light + beam",porvailitaiblim,"porv + lit + blim",ai,3,yes,judged,verdict
+laterite,"iron + soil",kitxairit,"kitx + rit",ai,2,yes,rock,proposal
+latex,"milk + sap",nudjaiglom,"nudj + glom",ai,2,yes,judged,verdict
+lavender,"calm + smell + flower",kamailugaiflor,"kam + lug + flor",ai,3,yes,flower,proposal
+lawn,"cut + grass",zepaigras,"zep + gras",ai,2,yes,judged,verdict
+lawrencium,"open + atom",zarkaitom,"zark + tom",ai,2,yes,atom,proposal
+league,"join + group",gozaihip,"goz + hip",ai,2,yes,judged,verdict
+lectin,"sugar + bind + protein",gandaibinailudz,"gand + bin + ludz",ai,3,yes,judged,verdict
+lee,"shelter + side",vondaisard,"vond + sard",ai,2,yes,judged,verdict
+leek,"long + onion + plant",nucaiwontaidorf,"nuc + wont + dorf",ai,3,yes,plant,proposal
+leiomyoma,"smooth + muscle + growth",,"kind + suft + ?",ai,3,no,judged,verdict
+leiomyosarcoma,"smooth + muscle + cancer",kindaisuftaibudj,"kind + suft + budj",ai,3,yes,judged,verdict
+lentil,"flat + seed",flataisid,"flat + sid",ai,2,yes,plant,proposal
+lettuce,"soft + leaf + plant",saftailifaidorf,"saft + lif + dorf",ai,3,yes,plant,proposal
+leucine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+leukocyte,"white + cell",wipaimudz,"wip + mudz",ai,2,yes,judged,verdict
+lidocaine,"numb + pain + drug",ruspaimuzaisom,"rusp + muz + som",ai,3,yes,drug,proposal
+ligament,"bind + tissue",binaitxum,"bin + txum",ai,2,yes,judged,verdict
+ligand,"bind + thing",binainiv,"bin + niv",ai,2,yes,judged,verdict
+ligase,"join + enzyme",gozaispug,"goz + spug",ai,2,yes,judged,verdict
+lilac,"spring + cluster + flower",dempaisnanaiflor,"demp + snan + flor",ai,3,yes,flower,proposal
+lily,"hundred + join + flower",wefaigozaiflor,"wef + goz + flor",ai,3,yes,flower,proposal
+limestone,"lime + stone",djimaiston,"djim + ston",ai,2,yes,rock,proposal
+linden,"heart + leaf + tree",zifailifaidip,"zif + lif + dip",ai,3,yes,tree,proposal
+ling,"thin + fish",porvaifrix,"porv + frix",ai,2,yes,judged,verdict
+linguistics,"speech + study",ximainedz,"xim + nedz",ai,2,yes,judged,verdict
+lipase,"fat + enzyme",wesaispug,"wes + spug",ai,2,yes,judged,verdict
+lipoma,"fat + growth",,"wes + ?",ai,2,no,judged,verdict
+lipoprotein,"fat + protein",wesailudz,"wes + ludz",ai,2,yes,judged,verdict
+liposarcoma,"fat + flesh + cancer",wesaiflaxaibudj,"wes + flax + budj",ai,3,yes,judged,verdict
+lithium,"rock + atom",rakaitom,"rak + tom",ai,2,yes,judged,verdict
+litter,"scatter + waste",blupaimusp,"blup + musp",ai,2,yes,judged,verdict
+livermorium,"host + atom",harfaitom,"harf + tom",ai,2,yes,atom,proposal
+locomotive,"rail + engine",lumpaidiks,"lump + diks",ai,2,yes,judged,verdict
+locust,"thorn + pod + tree",rargaipardaidip,"rarg + pard + dip",ai,3,yes,tree,proposal
+loratadine,"allergy + block + drug",klebaigiksaisom,"kleb + giks + som",ai,3,yes,drug,proposal
+lotus,"water + flower",waCaiflor,"waC + flor",ai,2,yes,flower,proposal
+lumber,"cut + wood",zepaivriC,"zep + vriC",ai,2,yes,judged,verdict
+lupine,"tall + spike + flower",talsaispakaiflor,"tals + spak + flor",ai,3,yes,flower,proposal
+lutetium,"swamp + atom",xestaitom,"xest + tom",ai,2,yes,atom,proposal
+lyase,"split + enzyme",ditaispug,"dit + spug",ai,2,yes,judged,verdict
+lymph,"clear + body + water",vobaivataiwaC,"vob + vat + waC",ai,3,yes,judged,verdict
+lymphadenitis,"lymph + gland + swell",,"? + smaq + parb",ai,3,no,judged,verdict
+lymphocyte,"lymph + cell",,"? + mudz",ai,2,no,judged,verdict
+lymphoma,"lymph + cancer",,"? + budj",ai,2,no,judged,verdict
+lysine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+macrophage,"big + eat + cell",brataigabaimudz,"brat + gab + mudz",ai,3,yes,judged,verdict
+magnesium,"ancient + atom",xantaitom,"xant + tom",ai,2,yes,atom,proposal
+magnolia,"big + flower + tree",brataifloraidip,"brat + flor + dip",ai,3,yes,tree,proposal
+magnolia flower,"big + white + flower",brataiwipaiflor,"brat + wip + flor",ai,3,yes,flower,proposal
+mahogany,"red + wood + tree",gicaivriCaidip,"gic + vriC + dip",ai,3,yes,tree,proposal
+maiden,"young + unwed + woman",,"zen + ? + nom",ai,3,no,judged,verdict
+malformation,"bad + shape",futaideps,"fut + deps",ai,2,yes,judged,verdict
+mallet,"wood + hammer",vriCaivent,"vriC + vent",ai,2,yes,judged,verdict
+manganese,"resist + atom",zistaitom,"zist + tom",ai,2,yes,atom,proposal
+mannose,"manna + sugar",,"? + gand",ai,2,no,judged,verdict
+manure,"field + dung",,"gor + ?",ai,2,no,judged,verdict
+maple,"frog + hand",ranaizeqk,"ran + zeqk",ai,2,yes,tree,proposal
+marathon,"long + race",nucaimalk,"nuc + malk",ai,2,yes,judged,verdict
+marble,"flower + stone",floraiston,"flor + ston",ai,2,yes,rock,proposal
+mare,"female + horse",fimaihors,"fim + hors",ai,2,yes,judged,verdict
+marigold,"gold + flower",godaiflor,"god + flor",ai,2,yes,flower,proposal
+maroon,"dark + red",ramaigic,"ram + gic",ai,2,yes,judged,verdict
+meatus,"body + passage",vataijaqk,"vat + jaqk",ai,2,yes,judged,verdict
+medal,"honour + disc",,"? + brud",ai,2,no,judged,verdict
+mediastinum,"chest + middle + space",gitxaimadaipas,"gitx + mad + pas",ai,3,yes,judged,verdict
+medulla,"inner + part",,"? + part",ai,2,no,judged,verdict
+meitnerium,"merge + atom",basaitom,"bas + tom",ai,2,yes,atom,proposal
+melanocyte,"black + cell",vogaimudz,"vog + mudz",ai,2,yes,judged,verdict
+melanoma,"black + cancer",vogaibudj,"vog + budj",ai,2,yes,judged,verdict
+melatonin,"sleep + hormone",slipaisnen,"slip + snen",ai,2,yes,drug,proposal
+melon,"sweet + water + fruit",skitaiwaCaimag,"skit + waC + mag",ai,3,yes,plant,proposal
+mendelevium,"lead + atom",lidaitom,"lid + tom",ai,2,yes,atom,proposal
+meninges,"brain + skin",brenaiskin,"bren + skin",ai,2,yes,judged,verdict
+meningioma,"brain + skin + growth",,"bren + skin + ?",ai,3,no,judged,verdict
+meningitis,"brain + skin + swell",brenaiskinaiparb,"bren + skin + parb",ai,3,yes,judged,verdict
+menthol,"cool + smell + compound",zorailugaiCeqk,"zor + lug + Ceqk",ai,3,yes,drug,proposal
+mercury,"liquid + atom",kridaitom,"krid + tom",ai,2,yes,atom,proposal
+mesenchyme,"middle + tissue",madaitxum,"mad + txum",ai,2,yes,judged,verdict
+mesentery,"gut + fold + sheet",gutaifoldaivodj,"gut + fold + vodj",ai,3,yes,judged,verdict
+mesoderm,"middle + skin",madaiskin,"mad + skin",ai,2,yes,judged,verdict
+mesothelioma,"lining + tissue + cancer",,"? + txum + budj",ai,3,no,judged,verdict
+mesquite,"dry + thorn + tree",dralairargaidip,"dral + rarg + dip",ai,3,yes,tree,proposal
+metacarpal,"beyond + wrist + bone",numpaifeftaibrod,"nump + feft + brod",ai,3,yes,judged,verdict
+metatarsal,"beyond + ankle + bone",numpaixuftaibrod,"nump + xuft + brod",ai,3,yes,judged,verdict
+metformin,"blood + sugar + lower",,"bloC + gand + ?",ai,3,no,drug,proposal
+methacrylate,"methyl + acrylate",,"? + ?",ai,2,no,judged,verdict
+methamphetamine,"strong + energy + drug",livaibupaisom,"liv + bup + som",ai,3,yes,drug,proposal
+methane,"one + carbon + gas",zanairintaimesk,"zan + rint + mesk",ai,3,yes,judged,verdict
+methanol,"one + carbon + alcohol",zanairintaikoqk,"zan + rint + koqk",ai,3,yes,judged,verdict
+methionine,"sulfur + amino + acid",,"spiz + ? + falf",ai,3,no,judged,verdict
+methyl,"one + carbon + group",zanairintaihip,"zan + rint + hip",ai,3,yes,judged,verdict
+methylphenidate,"attention + drug",rixaisom,"rix + som",ai,2,yes,drug,proposal
+microbiology,"small + life + study",smalaicadainedz,"smal + cad + nedz",ai,3,yes,judged,verdict
+microscopy,"small + view + craft",smalaiyuvaiyabz,"smal + yuv + yabz",ai,3,yes,judged,verdict
+midbrain,"middle + brain",madaibren,"mad + bren",ai,2,yes,judged,verdict
+milkweed,"milk + sap + flower",nudjaiglomaiflor,"nudj + glom + flor",ai,3,yes,flower,proposal
+mill,"grind + house",grotaipuz,"grot + puz",ai,2,yes,judged,verdict
+millet,"small + grain",smalailetx,"smal + letx",ai,2,yes,plant,proposal
+mint,"cool + smell + leaf",zorailugailif,"zor + lug + lif",ai,3,yes,plant,proposal
+mistletoe,"tree + parasite + plant",dipaiblopaidorf,"dip + blop + dorf",ai,3,yes,plant,proposal
+molybdenum,"dark + atom",ramaitom,"ram + tom",ai,2,yes,atom,proposal
+monocyte,"single + white + cell",miskaiwipaimudz,"misk + wip + mudz",ai,3,yes,judged,verdict
+monohydrate,"one + water + salt",zanaiwaCaitigz,"zan + waC + tigz",ai,3,yes,judged,verdict
+monooxygenase,"one + oxygen + enzyme",,"zan + ? + spug",ai,3,no,judged,verdict
+monophosphate,"one + phosphate",,"zan + ?",ai,2,no,judged,verdict
+monoxide,"one + oxide",,"zan + ?",ai,2,no,judged,verdict
+moor,"open + high + land",zarkaimolailan,"zark + mol + lan",ai,3,yes,judged,verdict
+mop,"wash + tool",saxaitul,"sax + tul",ai,2,yes,judged,verdict
+morning glory,"morning + vine + flower",tanaitxekaiflor,"tan + txek + flor",ai,3,yes,flower,proposal
+morphine,"strong + pain + drug",livaimuzaisom,"liv + muz + som",ai,3,yes,drug,proposal
+morphogenesis,"shape + making",,"deps + ?",ai,2,no,judged,verdict
+mortar,"stone + paste",stonaipest,"ston + pest",ai,2,yes,judged,verdict
+mosaic,"piece + picture",fufaifoz,"fuf + foz",ai,2,yes,judged,verdict
+moscovium,"heart + atom",zifaitom,"zif + tom",ai,2,yes,atom,proposal
+moss,"soft + ground + plant",saftaimitsaidorf,"saft + mits + dorf",ai,3,yes,plant,proposal
+motif,"repeat + figure",vavaifud,"vav + fud",ai,2,yes,judged,verdict
+mudstone,"mud + stone",cataiston,"cat + ston",ai,2,yes,rock,proposal
+mulberry,"many + berry + tree",mavaiglafaidip,"mav + glaf + dip",ai,3,yes,tree,proposal
+musk,"deer + scent",xarsaiyind,"xars + yind",ai,2,yes,judged,verdict
+mustard,"name + seed",namaisid,"nam + sid",ai,2,yes,judged,verdict
+mycoplasma,"fungus + like + germ",ploqailakaisnop,"ploq + lak + snop",ai,3,yes,judged,verdict
+myeloma,"marrow + cancer",djuzaibudj,"djuz + budj",ai,2,yes,judged,verdict
+myocarditis,"heart + muscle + swell",zifaisuftaiparb,"zif + suft + parb",ai,3,yes,judged,verdict
+myocardium,"heart + muscle",zifaisuft,"zif + suft",ai,2,yes,judged,verdict
+myopathy,"muscle + disease",suftaibidj,"suft + bidj",ai,2,yes,judged,verdict
+myositis,"muscle + swell",suftaiparb,"suft + parb",ai,2,yes,judged,verdict
+myxoma,"slime + growth",,"? + ?",ai,2,no,judged,verdict
+naloxone,"pain + drug + block",muzaisomaigiks,"muz + som + giks",ai,3,yes,drug,proposal
+naproxen,"long + pain + drug",nucaimuzaisom,"nuc + muz + som",ai,3,yes,drug,proposal
+nasopharynx,"nose + throat",nozaigalk,"noz + galk",ai,2,yes,judged,verdict
+neodymium,"magnet + atom",nampaitom,"namp + tom",ai,2,yes,atom,proposal
+neon,"tube + atom",tubaitom,"tub + tom",ai,2,yes,atom,proposal
+neonatal,"new + born + of",gumpailofaiyov,"gump + lof + yov",ai,3,yes,judged,verdict
+neoplasia,"new + growth",,"gump + ?",ai,2,no,judged,verdict
+neoplasm,"new + growth",,"gump + ?",ai,2,no,judged,verdict
+nephritis,"kidney + swell",fundaiparb,"fund + parb",ai,2,yes,judged,verdict
+nephron,"kidney + unit",fundaigalp,"fund + galp",ai,2,yes,judged,verdict
+nephropathy,"kidney + disease",fundaibidj,"fund + bidj",ai,2,yes,judged,verdict
+neptunium,"wash + atom",saxaitom,"sax + tom",ai,2,yes,atom,proposal
+nettle,"sting + leaf + plant",Campailifaidorf,"Camp + lif + dorf",ai,3,yes,plant,proposal
+neuritis,"nerve + swell",nurvaiparb,"nurv + parb",ai,2,yes,judged,verdict
+neuroblastoma,"nerve + bud + cancer",nurvaigondaibudj,"nurv + gond + budj",ai,3,yes,judged,verdict
+neuromuscular,"nerve + muscle + of",nurvaisuftaiyov,"nurv + suft + yov",ai,3,yes,judged,verdict
+neuropathy,"nerve + disease",nurvaibidj,"nurv + bidj",ai,2,yes,judged,verdict
+neurotoxin,"nerve + poison",nurvaiborz,"nurv + borz",ai,2,yes,judged,verdict
+nevus,"skin + mark",skinaiwen,"skin + wen",ai,2,yes,judged,verdict
+newborn,"new + born",gumpailof,"gump + lof",ai,2,yes,judged,verdict
+nick,"small + cut",smalaizep,"smal + zep",ai,2,yes,judged,verdict
+nickel,"white + atom",wipaitom,"wip + tom",ai,2,yes,atom,proposal
+nicotine,"alert + addict + drug",palvaiyolbaisom,"palv + yolb + som",ai,3,yes,drug,proposal
+nihonium,"danger + atom",nolfaitom,"nolf + tom",ai,2,yes,atom,proposal
+niobium,"snow + atom",snomaitom,"snom + tom",ai,2,yes,atom,proposal
+nitroglycerin,"heart + vessel + open",zifaivesaizark,"zif + ves + zark",ai,3,yes,drug,proposal
+nobelium,"prize + atom",prazaitom,"praz + tom",ai,2,yes,atom,proposal
+northwest,"north + west",yinaiweb,"yin + web",ai,2,yes,judged,verdict
+novocaine,"numb + pain + drug",ruspaimuzaisom,"rusp + muz + som",ai,3,yes,drug,proposal
+nucleotide,"nucleus + unit",klisaigalp,"klis + galp",ai,2,yes,judged,verdict
+oak,"nut + cup + tree",hiksainipsaidip,"hiks + nips + dip",ai,3,yes,tree,proposal
+oat,"grain + plant",letxaidorf,"letx + dorf",ai,2,yes,plant,proposal
+obsidian,"lava + glass",glodaimalz,"glod + malz",ai,2,yes,rock,proposal
+oganesson,"join + atom",gozaitom,"goz + tom",ai,2,yes,atom,proposal
+omeprazole,"stomach + acid + block",stokaifalfaigiks,"stok + falf + giks",ai,3,yes,drug,proposal
+onion,"sharp + smell + bulb",bontailugaiwusk,"bont + lug + wusk",ai,3,yes,plant,proposal
+onset,"on + set",vunaigig,"vun + gig",ai,2,yes,judged,verdict
+orchid,"complex + flower",fluzaiflor,"fluz + flor",ai,2,yes,flower,proposal
+oregano,"strong + smell + herb",livailugairorb,"liv + lug + rorb",ai,3,yes,judged,verdict
+orifice,"body + hole",vataihatx,"vat + hatx",ai,2,yes,judged,verdict
+ornithine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+oropharynx,"mouth + throat",mucaigalk,"muc + galk",ai,2,yes,judged,verdict
+osmium,"wing + atom",wiqaitom,"wiq + tom",ai,2,yes,atom,proposal
+osteoblast,"bone + bud + cell",brodaigondaimudz,"brod + gond + mudz",ai,3,yes,judged,verdict
+osteomyelitis,"bone + marrow + swell",brodaidjuzaiparb,"brod + djuz + parb",ai,3,yes,judged,verdict
+osteosarcoma,"bone + cancer",brodaibudj,"brod + budj",ai,2,yes,judged,verdict
+outdoor,"out + door",bukaidor,"buk + dor",ai,2,yes,judged,verdict
+outflow,"out + flow",bukaisunt,"buk + sunt",ai,2,yes,judged,verdict
+overgrowth,"over + growth",,"djip + ?",ai,2,no,judged,verdict
+overhead,"over + head",djipaihad,"djip + had",ai,2,yes,judged,verdict
+oxidase,"oxygen + enzyme",,"? + spug",ai,2,no,judged,verdict
+oxidoreductase,"oxygen + move + enzyme",,"? + muv + spug",ai,3,no,judged,verdict
+oxime,"nitrogen + oxygen + group",,"snuc + ? + hip",ai,3,no,judged,verdict
+oxycodone,"strong + pain + drug",livaimuzaisom,"liv + muz + som",ai,3,yes,drug,proposal
+oxygen,"breath + atom",nogzaitom,"nogz + tom",ai,2,yes,atom,proposal
+oxytocin,"bond + birth + hormone",nuqaidolbaisnen,"nuq + dolb + snen",ai,3,yes,drug,proposal
+pacemaker,"pace + make + agent",futsaimekaiyug,"futs + mek + yug",ai,3,yes,judged,verdict
+pall,"coffin + cloth",,"? + corv",ai,2,no,judged,verdict
+palladium,"wise + atom",daldaitom,"dald + tom",ai,2,yes,atom,proposal
+palm,"crown + leaf + tree",kartailifaidip,"kart + lif + dip",ai,3,yes,tree,proposal
+pancreatitis,"pancreas + swell",,"? + parb",ai,2,no,judged,verdict
+pansy,"face + flower",fesaiflor,"fes + flor",ai,2,yes,flower,proposal
+papilla,"small + bump",smalaibamp,"smal + bamp",ai,2,yes,judged,verdict
+papilloma,"bump + growth",,"bamp + ?",ai,2,no,judged,verdict
+paracetamol,"pain + fever + drug",muzaipudzaisom,"muz + pudz + som",ai,3,yes,drug,proposal
+paralysis,"no + move",nopaimuv,"nop + muv",ai,2,yes,judged,verdict
+parenchyma,"work + tissue",warkaitxum,"wark + txum",ai,2,yes,judged,verdict
+paresis,"weak + palsy",slokaiflex,"slok + flex",ai,2,yes,judged,verdict
+parsley,"green + curl + herb",pesaikorkairorb,"pes + kork + rorb",ai,3,yes,plant,proposal
+patella,"knee + bone",holbaibrod,"holb + brod",ai,2,yes,judged,verdict
+pathway,"path + way",pacaiyat,"pac + yat",ai,2,yes,judged,verdict
+pea,"round + pod + seed",mapsaipardaisid,"maps + pard + sid",ai,3,yes,plant,proposal
+peanut,"under + ground + nut",betaimitsaihiks,"bet + mits + hiks",ai,3,yes,plant,proposal
+peat,"bog + plant",stopaidorf,"stop + dorf",ai,2,yes,rock,proposal
+pecan,"sweet + nut + tree",skitaihiksaidip,"skit + hiks + dip",ai,3,yes,tree,proposal
+peduncle,"flower + stalk",floraiklep,"flor + klep",ai,2,yes,judged,verdict
+pegmatite,"big + crystal",brataikuqk,"brat + kuqk",ai,2,yes,rock,proposal
+pendant,"hang + jewel",heqaidjul,"heq + djul",ai,2,yes,judged,verdict
+penicillin,"bacteria + kill + drug",brakaiklubaisom,"brak + klub + som",ai,3,yes,drug,proposal
+penny,"small + coin. A currency",,"smal + ?",ai,2,no,judged,verdict
+peony,"big + round + flower",brataimapsaiflor,"brat + maps + flor",ai,3,yes,flower,proposal
+pepper,"hot + fruit",gepaimag,"gep + mag",ai,2,yes,plant,proposal
+peptidase,"peptide + enzyme",,"? + spug",ai,2,no,judged,verdict
+peptide,"short + protein + chain",letailudzailip,"let + ludz + lip",ai,3,yes,judged,verdict
+pericarditis,"heart + sac + swell",zifaisnazaiparb,"zif + snaz + parb",ai,3,yes,judged,verdict
+pericardium,"around + heart",pozaizif,"poz + zif",ai,2,yes,judged,verdict
+peridotite,"green + grain",pesailetx,"pes + letx",ai,2,yes,rock,proposal
+peritoneum,"belly + lining",,"blin + ?",ai,2,no,judged,verdict
+peritonitis,"belly + lining + swell",,"blin + ? + parb",ai,3,no,judged,verdict
+peroxidase,"peroxide + enzyme",,"? + spug",ai,2,no,judged,verdict
+peroxide,"beyond + oxide",,"nump + ?",ai,2,no,judged,verdict
+pesticide,"pest + kill",dredaiklub,"dred + klub",ai,2,yes,judged,verdict
+petunia,"trumpet + flower",wolbaiflor,"wolb + flor",ai,2,yes,flower,proposal
+phalanx,"finger + bone",gartaibrod,"gart + brod",ai,2,yes,judged,verdict
+pharmacology,"drug + study",somainedz,"som + nedz",ai,2,yes,judged,verdict
+pharynx,"throat + passage",galkaijaqk,"galk + jaqk",ai,2,yes,judged,verdict
+phenol,"ring + alcohol",ropaikoqk,"rop + koqk",ai,2,yes,judged,verdict
+phenylalanine,"phenyl + amino + acid",,"? + ? + falf",ai,3,no,judged,verdict
+phosphatase,"phosphate + enzyme",,"? + spug",ai,2,no,judged,verdict
+phosphorus,"light + atom",litaitom,"lit + tom",ai,2,yes,atom,proposal
+phyllite,"silk + press",fordaimalf,"ford + malf",ai,2,yes,rock,proposal
+pickup,"pick + up",prukaited,"pruk + ted",ai,2,yes,judged,verdict
+pie,"fill + crust",nolbaidjid,"nolb + djid",ai,2,yes,judged,verdict
+pine,"bundle + conifer",,"grim + ?",ai,2,no,tree,proposal
+pinna,"outer + ear",,"? + dits",ai,2,no,judged,verdict
+pituitary,"brain + gland",brenaismaq,"bren + smaq",ai,2,yes,judged,verdict
+plague,"spread + sickness",,"dend + ?",ai,2,no,judged,verdict
+plaque,"flat + patch",flataipatx,"flat + patx",ai,2,yes,judged,verdict
+platinum,"noble + atom",hugzaitom,"hugz + tom",ai,2,yes,atom,proposal
+pleura,"lung + lining",,"xols + ?",ai,2,no,judged,verdict
+plexus,"nerve + net",nurvaihift,"nurv + hift",ai,2,yes,judged,verdict
+plunge,"down + rush",dotaidift,"dot + dift",ai,2,yes,judged,verdict
+plutonium,"far + atom",zadaitom,"zad + tom",ai,2,yes,atom,proposal
+pneumonia,"lung + swell + sickness",,"xols + parb + ?",ai,3,no,judged,verdict
+poker,"stir + rod",yiksaifits,"yiks + fits",ai,2,yes,judged,verdict
+polo,"horse + ball + game",horsaibralaigem,"hors + bral + gem",ai,3,yes,judged,verdict
+polonium,"shake + atom",gempaitom,"gemp + tom",ai,2,yes,atom,proposal
+polydactyly,"many + finger + state",mavaigartaidom,"mav + gart + dom",ai,3,yes,judged,verdict
+polymerase,"polymer + enzyme",,"? + spug",ai,2,no,judged,verdict
+polysaccharide,"many + sugar",mavaigand,"mav + gand",ai,2,yes,judged,verdict
+pomegranate,"red + seed + fruit",gicaisidaimag,"gic + sid + mag",ai,3,yes,tree,proposal
+pons,"bridge + of + brain",nalbaiyovaibren,"nalb + yov + bren",ai,3,yes,judged,verdict
+poplar,"tall + fast + tree",talsaifastaidip,"tals + fast + dip",ai,3,yes,tree,proposal
+poppy,"red + sleep + flower",gicaislipaiflor,"gic + slip + flor",ai,3,yes,flower,proposal
+porcelain,"fine + clay",polaivart,"pol + vart",ai,2,yes,judged,verdict
+porphyrin,"purple + ring",sifairop,"sif + rop",ai,2,yes,judged,verdict
+portrait,"face + picture",fesaifoz,"fes + foz",ai,2,yes,judged,verdict
+poster,"wall + sheet",medzaivodj,"medz + vodj",ai,2,yes,judged,verdict
+potassium,"ash + atom",praxaitom,"prax + tom",ai,2,yes,atom,proposal
+potato,"under + ground + stem",betaimitsaiplef,"bet + mits + plef",ai,3,yes,plant,proposal
+praseodymium,"wind + atom",wandaitom,"wand + tom",ai,2,yes,atom,proposal
+prednisone,"swell + immune + drug",parbaiweqkaisom,"parb + weqk + som",ai,3,yes,drug,proposal
+primer,"first + coat",,"? + nusp",ai,2,no,judged,verdict
+primordium,"first + form",,"? + nunt",ai,2,no,judged,verdict
+primrose,"early + flower",yabaiflor,"yab + flor",ai,2,yes,flower,proposal
+probe,"feel + search",nagainesp,"nag + nesp",ai,2,yes,judged,verdict
+progesterone,"pregnancy + hormone",,"? + snen",ai,2,no,judged,verdict
+prolapse,"forward + fall",mataizur,"mat + zur",ai,2,yes,judged,verdict
+proline,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+promethium,"fire + atom",foraitom,"for + tom",ai,2,yes,atom,proposal
+propofol,"sleep + anesthetic + drug",slipaisnetaisom,"slip + snet + som",ai,3,yes,drug,proposal
+prosthesis,"false + part",rotaipart,"rot + part",ai,2,yes,judged,verdict
+protactinium,"brief + atom",brifaitom,"brif + tom",ai,2,yes,atom,proposal
+protease,"protein + enzyme",ludzaispug,"ludz + spug",ai,2,yes,judged,verdict
+proteinase,"protein + enzyme",ludzaispug,"ludz + spug",ai,2,yes,judged,verdict
+proteinuria,"protein + urine",ludzaicidj,"ludz + cidj",ai,2,yes,judged,verdict
+protozoan,"one + cell + animal",zanaimudzaizul,"zan + mudz + zul",ai,3,yes,judged,verdict
+pseudoephedrine,"nose + open + drug",nozaizarkaisom,"noz + zark + som",ai,3,yes,drug,proposal
+puberty,"sex + ripe + age",fedaiwoftaihedj,"fed + woft + hedj",ai,3,yes,judged,verdict
+pudding,"soft + sweet + food",saftaiskitaifiz,"saft + skit + fiz",ai,3,yes,judged,verdict
+pumice,"lava + foam",glodaiglaq,"glod + glaq",ai,2,yes,rock,proposal
+pumpkin,"large + orange + gourd",giqkaidejaiflup,"giqk + dej + flup",ai,3,yes,plant,proposal
+purine,"double + ring + base",,"? + rop + bes",ai,3,no,judged,verdict
+purpura,"purple + rash",,"sif + ?",ai,2,no,judged,verdict
+purse,"small + bag",smalairod,"smal + rod",ai,2,yes,judged,verdict
+pyridine,"ring + nitrogen + base",ropaisnucaibes,"rop + snuc + bes",ai,3,yes,judged,verdict
+pyrimidine,"single + ring + base",miskairopaibes,"misk + rop + bes",ai,3,yes,judged,verdict
+quail,"ground + bird",mitsaibax,"mits + bax",ai,2,yes,judged,verdict
+quartzite,"sand + press",sandaimalf,"sand + malf",ai,2,yes,rock,proposal
+queen anne's lace,"white + flat + flower",wipaiflataiflor,"wip + flat + flor",ai,3,yes,flower,proposal
+radiography,"ray + picture",reqaifoz,"req + foz",ai,2,yes,judged,verdict
+radiotherapy,"ray + therapy",reqaitund,"req + tund",ai,2,yes,judged,verdict
+radish,"sharp + root",bontaifebz,"bont + febz",ai,2,yes,plant,proposal
+radium,"beam + atom",blimaitom,"blim + tom",ai,2,yes,atom,proposal
+radon,"trace + atom",tresaitom,"tres + tom",ai,2,yes,atom,proposal
+railroad,"rail + road",lumpaiyeb,"lump + yeb",ai,2,yes,judged,verdict
+railway,"rail + way",lumpaiyat,"lump + yat",ai,2,yes,judged,verdict
+rake,"tooth + tool",cutxaitul,"cutx + tul",ai,2,yes,judged,verdict
+rally,"again + gather",palaigaC,"pal + gaC",ai,2,yes,judged,verdict
+ramp,"slope + way",slopaiyat,"slop + yat",ai,2,yes,judged,verdict
+rap,"sharp + knock",bontainak,"bont + nak",ai,2,yes,judged,verdict
+rash,"skin + spot",skinaimals,"skin + mals",ai,2,yes,judged,verdict
+realism,"real + way",lamaiyat,"lam + yat",ai,2,yes,judged,verdict
+rebound,"again + bound",palaitudj,"pal + tudj",ai,2,yes,judged,verdict
+recess,"set + back + space",gigaigokaipas,"gig + gok + pas",ai,3,yes,judged,verdict
+rectum,"straight + gut",ricaigut,"ric + gut",ai,2,yes,judged,verdict
+redbud,"trunk + flower + tree",timpaifloraidip,"timp + flor + dip",ai,3,yes,tree,proposal
+reductase,"reduce + enzyme",dusaispug,"dus + spug",ai,2,yes,judged,verdict
+redwood,"tall + red + conifer",,"tals + gic + ?",ai,3,no,tree,proposal
+reed,"tall + water + grass",talsaiwaCaigras,"tals + waC + gras",ai,3,yes,plant,proposal
+reflux,"back + flow",gokaisunt,"gok + sunt",ai,2,yes,judged,verdict
+reform,"again + form",palainunt,"pal + nunt",ai,2,yes,judged,verdict
+retail,"small + sell",smalairok,"smal + rok",ai,2,yes,judged,verdict
+reticulum,"small + net",smalaihift,"smal + hift",ai,2,yes,judged,verdict
+retina,"eye + screen",xicaiboft,"xic + boft",ai,2,yes,judged,verdict
+retinopathy,"retina + disease",,"? + bidj",ai,2,no,judged,verdict
+retrograde,"back + step",gokaitip,"gok + tip",ai,2,yes,judged,verdict
+rhenium,"river + atom",narvaitom,"narv + tom",ai,2,yes,atom,proposal
+rhinitis,"nose + swell",nozaiparb,"noz + parb",ai,2,yes,judged,verdict
+rhodium,"flower + atom",floraitom,"flor + tom",ai,2,yes,atom,proposal
+rhododendron,"large + shrub + flower",,"giqk + ? + flor",ai,3,no,flower,proposal
+rhyolite,"light + fire",litaifor,"lit + for",ai,2,yes,rock,proposal
+ribbon,"narrow + strip",Ceftaihits,"Ceft + hits",ai,2,yes,judged,verdict
+ribose,"five + carbon + sugar",komairintaigand,"kom + rint + gand",ai,3,yes,judged,verdict
+rice,"water + grain",waCailetx,"waC + letx",ai,2,yes,plant,proposal
+rickets,"soft + bone + sickness",,"saft + brod + ?",ai,3,no,judged,verdict
+roentgenium,"see + atom",visaitom,"vis + tom",ai,2,yes,atom,proposal
+rose,"thorn + smell + flower",rargailugaiflor,"rarg + lug + flor",ai,3,yes,flower,proposal
+rosemary,"needle + smell + herb",valdailugairorb,"vald + lug + rorb",ai,3,yes,plant,proposal
+rotavirus,"wheel + virus",dudzaitagz,"dudz + tagz",ai,2,yes,judged,verdict
+rowan,"red + cluster + tree",gicaisnanaidip,"gic + snan + dip",ai,3,yes,tree,proposal
+rubber tree,"rubber + sap + tree",,"? + glom + dip",ai,3,no,tree,proposal
+rubidium,"red + atom",gicaitom,"gic + tom",ai,2,yes,atom,proposal
+rum,"sugar + spirit",gandaijan,"gand + jan",ai,2,yes,judged,verdict
+ruthenium,"still + atom",ponaitom,"pon + tom",ai,2,yes,atom,proposal
+rutherfordium,"structure + atom",tokaitom,"tok + tom",ai,2,yes,atom,proposal
+rye,"grain + plant",letxaidorf,"letx + dorf",ai,2,yes,plant,proposal
+sacrum,"base + spine + bone",besaispanaibrod,"bes + span + brod",ai,3,yes,judged,verdict
+sage,"soft + gray + herb",saftaipetxairorb,"saft + petx + rorb",ai,3,yes,plant,proposal
+samarium,"power + atom",fepaitom,"fep + tom",ai,2,yes,atom,proposal
+sandalwood,"burn + smell + wood",molcailugaivriC,"molc + lug + vriC",ai,3,yes,tree,proposal
+sandstone,"sand + stone",sandaiston,"sand + ston",ai,2,yes,rock,proposal
+sarcoma,"flesh + cancer",flaxaibudj,"flax + budj",ai,2,yes,judged,verdict
+satellite,"go + around + body",bigaipozaivat,"big + poz + vat",ai,3,yes,judged,verdict
+scandium,"soft + atom",saftaitom,"saft + tom",ai,2,yes,atom,proposal
+scapula,"shoulder + blade",bidzaizalf,"bidz + zalf",ai,2,yes,judged,verdict
+scarlet,"deep + red",govaigic,"gov + gic",ai,2,yes,judged,verdict
+schist,"slice + stone",xogzaiston,"xogz + ston",ai,2,yes,rock,proposal
+scissors,"twin + blade",fepsaizalf,"feps + zalf",ai,2,yes,judged,verdict
+scleroderma,"hard + skin",kadaiskin,"kad + skin",ai,2,yes,judged,verdict
+sclerosis,"hard + state",kadaidom,"kad + dom",ai,2,yes,judged,verdict
+scoria,"lava + hole",glodaihatx,"glod + hatx",ai,2,yes,rock,proposal
+scrotum,"seed + sac",sidaisnaz,"sid + snaz",ai,2,yes,judged,verdict
+seaborgium,"force + atom",rosaitom,"ros + tom",ai,2,yes,atom,proposal
+selenium,"moon + atom",lunaitom,"lun + tom",ai,2,yes,atom,proposal
+semicircular,"half + circle + of",,"? + salk + yov",ai,3,no,judged,verdict
+septum,"divide + wall",kuvaimedz,"kuv + medz",ai,2,yes,judged,verdict
+sequoia,"giant + conifer",,"dudj + ?",ai,2,no,tree,proposal
+serine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+serotonin,"mood + signal",mudaitet,"mud + tet",ai,2,yes,drug,proposal
+serpentinite,"green + scale + rock",pesaiskalairak,"pes + skal + rak",ai,3,yes,rock,proposal
+sertraline,"mood + lift + drug",mudaigorvaisom,"mud + gorv + som",ai,3,yes,drug,proposal
+shale,"page + stone",gadzaiston,"gadz + ston",ai,2,yes,rock,proposal
+shank,"lower + leg",,"? + legz",ai,2,no,judged,verdict
+shingle,"roof + board",,"? + marz",ai,2,no,judged,verdict
+shovel,"dig + tool",narzaitul,"narz + tul",ai,2,yes,judged,verdict
+shunt,"turn + aside",,"kak + ?",ai,2,no,judged,verdict
+sickle,"reap + blade",,"? + zalf",ai,2,no,judged,verdict
+sickness,"sick + state",vufaidom,"vuf + dom",ai,2,yes,judged,verdict
+sildenafil,"sex + blood + drug",fedaibloCaisom,"fed + bloC + som",ai,3,yes,drug,proposal
+silica,"sand + mineral",sandaibrom,"sand + brom",ai,2,yes,judged,verdict
+silkworm,"silk + worm",fordaifald,"ford + fald",ai,2,yes,judged,verdict
+siltstone,"silt + stone",,"? + ston",ai,2,no,rock,proposal
+sinus,"bone + hollow",brodaivabz,"brod + vabz",ai,2,yes,judged,verdict
+sinusitis,"sinus + swell",,"? + parb",ai,2,no,judged,verdict
+sinusoid,"wave + curve",wevaikurv,"wev + kurv",ai,2,yes,judged,verdict
+ski,"snow + slide",snomaislad,"snom + slad",ai,2,yes,judged,verdict
+skim,"take + top",tekaisuk,"tek + suk",ai,2,yes,judged,verdict
+slag,"melt + waste",jutxaimusp,"jutx + musp",ai,2,yes,judged,verdict
+slash,"long + cut",nucaizep,"nuc + zep",ai,2,yes,judged,verdict
+slate,"board + stone",marzaiston,"marz + ston",ai,2,yes,rock,proposal
+sling,"hang + strap",heqairegz,"heq + regz",ai,2,yes,judged,verdict
+slipper,"soft + shoe",saftaidebz,"saft + debz",ai,2,yes,judged,verdict
+sludge,"thick + mud",sespaicat,"sesp + cat",ai,2,yes,judged,verdict
+snapdragon,"mouth + flower",mucaiflor,"muc + flor",ai,2,yes,flower,proposal
+soapstone,"soap + stone",haqkaiston,"haqk + ston",ai,2,yes,rock,proposal
+sociology,"society + study",xarkainedz,"xark + nedz",ai,2,yes,judged,verdict
+sodium,"salt + atom",tigzaitom,"tigz + tom",ai,2,yes,atom,proposal
+soprano,"high + voice",molaivoz,"mol + voz",ai,2,yes,judged,verdict
+sorghum,"tall + dry + grain",talsaidralailetx,"tals + dral + letx",ai,3,yes,plant,proposal
+southeast,"south + east",lutairog,"lut + rog",ai,2,yes,judged,verdict
+soybean,"oil + bean",gipsaiColv,"gips + Colv",ai,2,yes,plant,proposal
+spectrometry,"spectrum + measure",tromaiyaj,"trom + yaj",ai,2,yes,judged,verdict
+spectroscopy,"spectrum + view + craft",tromaiyuvaiyabz,"trom + yuv + yabz",ai,3,yes,judged,verdict
+spinach,"dark + leaf + plant",ramailifaidorf,"ram + lif + dorf",ai,3,yes,plant,proposal
+spindle,"turn + rod",kakaifits,"kak + fits",ai,2,yes,judged,verdict
+spruce,"sharp + conifer",,"bont + ?",ai,2,no,tree,proposal
+squash,"soft + gourd",saftaiflup,"saft + flup",ai,2,yes,plant,proposal
+stature,"stand + height",zesaixisp,"zes + xisp",ai,2,yes,judged,verdict
+stenosis,"narrow + state",Ceftaidom,"Ceft + dom",ai,2,yes,judged,verdict
+sternum,"chest + bone",gitxaibrod,"gitx + brod",ai,2,yes,judged,verdict
+stomatitis,"mouth + swell",mucaiparb,"muc + parb",ai,2,yes,judged,verdict
+strabismus,"cross + eye",krasaixic,"kras + xic",ai,2,yes,judged,verdict
+strawberry,"red + seed + berry",gicaisidaiglaf,"gic + sid + glaf",ai,3,yes,plant,proposal
+streptococcus,"chain + round + microbe",,"lip + maps + ?",ai,3,no,judged,verdict
+striatum,"stripe + brain + part",smogaibrenaipart,"smog + bren + part",ai,3,yes,judged,verdict
+stricture,"narrow + place",Ceftainad,"Ceft + nad",ai,2,yes,judged,verdict
+stroma,"frame + tissue",fretaitxum,"fret + txum",ai,2,yes,judged,verdict
+strontium,"burst + atom",bustaitom,"bust + tom",ai,2,yes,atom,proposal
+stub,"short + rest",letaizax,"let + zax",ai,2,yes,judged,verdict
+stunt,"bold + feat",jarbaismej,"jarb + smej",ai,2,yes,judged,verdict
+subclass,"under + class",betaigev,"bet + gev",ai,2,yes,judged,verdict
+subcutaneous,"under + skin + of",betaiskinaiyov,"bet + skin + yov",ai,3,yes,judged,verdict
+subdivision,"under + division",,"bet + ?",ai,2,no,judged,verdict
+subfamily,"under + family",betaifam,"bet + fam",ai,2,yes,judged,verdict
+subgroup,"under + group",betaihip,"bet + hip",ai,2,yes,judged,verdict
+submarine,"under + sea",betaimalc,"bet + malc",ai,2,yes,judged,verdict
+subunit,"under + unit",betaigalp,"bet + galp",ai,2,yes,judged,verdict
+sugarcane,"sweet + tall + grass",skitaitalsaigras,"skit + tals + gras",ai,3,yes,plant,proposal
+suicide,"self + kill",depaiklub,"dep + klub",ai,2,yes,judged,verdict
+sulcus,"brain + groove",brenaiworg,"bren + worg",ai,2,yes,judged,verdict
+sulfonamide,"sulfur + amide",,"spiz + ?",ai,2,no,judged,verdict
+sulfoxide,"sulfur + oxide",,"spiz + ?",ai,2,no,judged,verdict
+sumac,"sour + shrub",,"yedz + ?",ai,2,no,judged,verdict
+summary,"short + account",letainodz,"let + nodz",ai,2,yes,judged,verdict
+sunday,"sun + day",sanaiyam,"san + yam",ai,2,yes,judged,verdict
+sunflower,"sun + face + flower",sanaifesaiflor,"san + fes + flor",ai,3,yes,flower,proposal
+superfamily,"over + family",djipaifam,"djip + fam",ai,2,yes,judged,verdict
+supplement,"add + fill",laxainolb,"lax + nolb",ai,2,yes,judged,verdict
+suture,"join + seam",gozaifrev,"goz + frev",ai,2,yes,judged,verdict
+sweet pea,"wing + vine + flower",wiqaitxekaiflor,"wiq + txek + flor",ai,3,yes,flower,proposal
+sweet potato,"sweet + root",skitaifebz,"skit + febz",ai,2,yes,plant,proposal
+sycamore,"patch + bark + tree",patxaiyogzaidip,"patx + yogz + dip",ai,3,yes,tree,proposal
+syncope,"sudden + faint",golzaixisk,"golz + xisk",ai,2,yes,judged,verdict
+syndactyly,"joined + finger + state",,"? + gart + dom",ai,3,no,judged,verdict
+syndrome,"sign + set",saqkaigig,"saqk + gig",ai,2,yes,judged,verdict
+synthase,"build + enzyme",gufaispug,"guf + spug",ai,2,yes,judged,verdict
+synthesis,"put + together",dradaitug,"drad + tug",ai,2,yes,judged,verdict
+syrup,"thick + sugar + water",sespaigandaiwaC,"sesp + gand + waC",ai,3,yes,judged,verdict
+tachycardia,"fast + heart",fastaizif,"fast + zif",ai,2,yes,judged,verdict
+talus,"ankle + bone",xuftaibrod,"xuft + brod",ai,2,yes,judged,verdict
+tamarind,"sour + pod + tree",yedzaipardaidip,"yedz + pard + dip",ai,3,yes,tree,proposal
+tandem,"one + behind",zanaivib,"zan + vib",ai,2,yes,judged,verdict
+tantalum,"charge + atom",rufaitom,"ruf + tom",ai,2,yes,atom,proposal
+tea,"drink + leaf + plant",dugailifaidorf,"dug + lif + dorf",ai,3,yes,plant,proposal
+teak,"oil + hard + wood",gipsaikadaivriC,"gips + kad + vriC",ai,3,yes,tree,proposal
+technetium,"craft + atom",yabzaitom,"yabz + tom",ai,2,yes,atom,proposal
+technique,"do + way",duzaiyat,"duz + yat",ai,2,yes,judged,verdict
+tellurium,"earth + atom",riqaitom,"riq + tom",ai,2,yes,atom,proposal
+tennessine,"great + atom",macaitom,"mac + tom",ai,2,yes,atom,proposal
+tenor,"middle + voice",madaivoz,"mad + voz",ai,2,yes,judged,verdict
+teratoma,"mixed + tissue + growth",,"? + txum + ?",ai,3,no,judged,verdict
+terbium,"glow + atom",flokaitom,"flok + tom",ai,2,yes,atom,proposal
+terrorism,"fear + rule",froCainesk,"froC + nesk",ai,2,yes,judged,verdict
+testosterone,"male + hormone",mafaisnen,"maf + snen",ai,2,yes,judged,verdict
+tetrachloride,"four + chlorine + salt",lafaivraqaitigz,"laf + vraq + tigz",ai,3,yes,judged,verdict
+tetracycline,"bacteria + block + drug",brakaigiksaisom,"brak + giks + som",ai,3,yes,drug,proposal
+thalamus,"brain + relay",,"bren + ?",ai,2,no,judged,verdict
+thallium,"stick + atom",rebaitom,"reb + tom",ai,2,yes,atom,proposal
+thistle,"sharp + flower + plant",bontaifloraidorf,"bont + flor + dorf",ai,3,yes,plant,proposal
+thorium,"roar + atom",wudzaitom,"wudz + tom",ai,2,yes,atom,proposal
+threonine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+thrombosis,"clot + state",truzaidom,"truz + dom",ai,2,yes,judged,verdict
+thulium,"beyond + atom",numpaitom,"nump + tom",ai,2,yes,atom,proposal
+thyme,"small + smell + herb",smalailugairorb,"smal + lug + rorb",ai,3,yes,judged,verdict
+thymidine,"thymine + sugar",,"? + gand",ai,2,no,judged,verdict
+thymocyte,"thymus + cell",,"? + mudz",ai,2,no,judged,verdict
+thymus,"chest + gland",gitxaismaq,"gitx + smaq",ai,2,yes,judged,verdict
+thyroid,"throat + gland",galkaismaq,"galk + smaq",ai,2,yes,judged,verdict
+thyroiditis,"thyroid + swell",,"? + parb",ai,2,no,judged,verdict
+tibia,"shin + bone",djopaibrod,"djop + brod",ai,2,yes,judged,verdict
+titanium,"strong + atom",livaitom,"liv + tom",ai,2,yes,atom,proposal
+tobacco,"smoke + leaf + plant",smokailifaidorf,"smok + lif + dorf",ai,3,yes,plant,proposal
+toenail,"toe + nail",vintaitogz,"vint + togz",ai,2,yes,judged,verdict
+tomato,"red + soft + fruit",gicaisaftaimag,"gic + saft + mag",ai,3,yes,judged,verdict
+tomography,"slice + writing",,"xogz + ?",ai,2,no,judged,verdict
+tonsil,"throat + gland",galkaismaq,"galk + smaq",ai,2,yes,judged,verdict
+torch,"carry + flame",maftaiflem,"maft + flem",ai,2,yes,judged,verdict
+torpedo,"water + bomb",waCaimudj,"waC + mudj",ai,2,yes,judged,verdict
+transaminase,"amine + move + enzyme",,"? + muv + spug",ai,3,no,judged,verdict
+transduction,"across + lead",roqailid,"roq + lid",ai,2,yes,judged,verdict
+transferase,"transfer + enzyme",palfaispug,"palf + spug",ai,2,yes,judged,verdict
+transfusion,"blood + pour",bloCaihaft,"bloC + haft",ai,2,yes,judged,verdict
+translocation,"across + place + move",roqainadaimuv,"roq + nad + muv",ai,3,yes,judged,verdict
+transplant,"across + plant",roqaidorf,"roq + dorf",ai,2,yes,judged,verdict
+travertine,"spring + lime",dempaidjim,"demp + djim",ai,2,yes,rock,proposal
+tricolor,"three + colour",,"suC + ?",ai,2,no,judged,verdict
+triphosphate,"three + phosphate",,"suC + ?",ai,2,no,judged,verdict
+trough,"long + vessel",nucaives,"nuc + ves",ai,2,yes,judged,verdict
+truck,"goods + cart",veftaixets,"veft + xets",ai,2,yes,judged,verdict
+tryptophan,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+tuff,"ash + stone",praxaiston,"prax + ston",ai,2,yes,judged,verdict
+tulip,"cup + flower",nipsaiflor,"nips + flor",ai,2,yes,flower,proposal
+tungsten,"wolf + atom",wolfaitom,"wolf + tom",ai,2,yes,atom,proposal
+turmeric,"yellow + root",buxaifebz,"bux + febz",ai,2,yes,judged,verdict
+turnip,"round + root",mapsaifebz,"maps + febz",ai,2,yes,plant,proposal
+turpentine,"pine + oil",compaigips,"comp + gips",ai,2,yes,judged,verdict
+tyrosine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+ulna,"lower + arm + bone",,"? + marb + brod",ai,3,no,judged,verdict
+ultrasound,"beyond + sound",numpaisam,"nump + sam",ai,2,yes,judged,verdict
+ultraviolet,"beyond + violet",numpaikoj,"nump + koj",ai,2,yes,judged,verdict
+underground,"under + ground",betaimits,"bet + mits",ai,2,yes,judged,verdict
+unilateral,"one + side + of",zanaisardaiyov,"zan + sard + yov",ai,3,yes,judged,verdict
+upgrade,"up + grade",tedaidatx,"ted + datx",ai,2,yes,judged,verdict
+uptake,"up + take",tedaitek,"ted + tek",ai,2,yes,judged,verdict
+uranium,"break + atom",geqaitom,"geq + tom",ai,2,yes,atom,proposal
+urea,"water + waste",waCaimusp,"waC + musp",ai,2,yes,judged,verdict
+ureter,"kidney + tube",fundaitub,"fund + tub",ai,2,yes,judged,verdict
+urethra,"water + tube",waCaitub,"waC + tub",ai,2,yes,judged,verdict
+urogenital,"urine + genital",,"cidj + ?",ai,2,no,judged,verdict
+urticaria,"nettle + rash",,"? + ?",ai,2,no,judged,verdict
+uveitis,"eye + coat + swell",xicainuspaiparb,"xic + nusp + parb",ai,3,yes,judged,verdict
+uvula,"throat + drop",galkaidrap,"galk + drap",ai,2,yes,judged,verdict
+vaccine,"teach + body + drug",titxaivataisom,"titx + vat + som",ai,3,yes,judged,verdict
+vacuole,"cell + bubble",mudzaijimp,"mudz + jimp",ai,2,yes,judged,verdict
+valine,"amino + acid",,"? + falf",ai,2,no,judged,verdict
+vamp,"again + patch",palaipatx,"pal + patx",ai,2,yes,judged,verdict
+vanadium,"beauty + atom",bataitom,"bat + tom",ai,2,yes,atom,proposal
+vanilla,"sweet + smell + pod",skitailugaipard,"skit + lug + pard",ai,3,yes,judged,verdict
+varnish,"hard + gloss + coat",kadaismopainusp,"kad + smop + nusp",ai,3,yes,judged,verdict
+vasculitis,"vessel + swell",vesaiparb,"ves + parb",ai,2,yes,judged,verdict
+veneer,"thin + face + layer",porvaifesaigrof,"porv + fes + grof",ai,3,yes,judged,verdict
+ventricle,"heart + room",zifaitif,"zif + tif",ai,2,yes,judged,verdict
+vermilion,"bright + red",dinaigic,"din + gic",ai,2,yes,judged,verdict
+vesicle,"small + sac",smalaisnaz,"smal + snaz",ai,2,yes,judged,verdict
+vest,"arm + less + coat",marbaigefainusp,"marb + gef + nusp",ai,3,yes,judged,verdict
+villus,"gut + hair",gutaifif,"gut + fif",ai,2,yes,judged,verdict
+vinegar,"sour + wine",yedzaimalv,"yedz + malv",ai,2,yes,judged,verdict
+violet,"purple + small + flower",sifaismalaiflor,"sif + smal + flor",ai,3,yes,flower,proposal
+violin,"bow + string + box",pobzaidesaibraz,"pobz + des + braz",ai,3,yes,judged,verdict
+volvulus,"gut + twist",gutaivits,"gut + vits",ai,2,yes,judged,verdict
+vulva,"outer + sex + part",,"? + fed + part",ai,3,no,judged,verdict
+walnut,"fold + nut + tree",foldaihiksaidip,"fold + hiks + dip",ai,3,yes,judged,verdict
+wan,"pale + weak",xuskaislok,"xusk + slok",ai,2,yes,judged,verdict
+warfare,"war + fare",gekaicond,"gek + cond",ai,2,yes,judged,verdict
+warfarin,"blood + clot + block",bloCaitruzaigiks,"bloC + truz + giks",ai,3,yes,drug,proposal
+water lily,"float + water + flower",flotaiwaCaiflor,"flot + waC + flor",ai,3,yes,flower,proposal
+watermelon,"red + water + fruit",gicaiwaCaimag,"gic + waC + mag",ai,3,yes,plant,proposal
+weed,"not + want + plant",masaiwantaidorf,"mas + want + dorf",ai,3,yes,plant,proposal
+wheat,"bread + grain",dalfailetx,"dalf + letx",ai,2,yes,plant,proposal
+willow,"weep + water + tree",yotxaiwaCaidip,"yotx + waC + dip",ai,3,yes,tree,proposal
+wisteria,"hang + purple + flower",heqaisifaiflor,"heq + sif + flor",ai,3,yes,flower,proposal
+wreath,"flower + ring",florairop,"flor + rop",ai,2,yes,judged,verdict
+wrench,"twist + tool",vitsaitul,"vits + tul",ai,2,yes,judged,verdict
+xenon,"alien + atom",kebzaitom,"kebz + tom",ai,2,yes,atom,proposal
+xylene,"double + methyl + benzene",,"? + ? + ?",ai,3,no,judged,verdict
+yam,"large + root",giqkaifebz,"giqk + febz",ai,2,yes,plant,proposal
+yarrow,"flat + white + flower",flataiwipaiflor,"flat + wip + flor",ai,3,yes,flower,proposal
+yew,"red + seed + conifer",,"gic + sid + ?",ai,3,no,tree,proposal
+ytterbium,"memory + atom",gujaitom,"guj + tom",ai,2,yes,atom,proposal
+yttrium,"bulb + atom",wuskaitom,"wusk + tom",ai,2,yes,atom,proposal
+yucca,"sword + leaf + plant",bibzailifaidorf,"bibz + lif + dorf",ai,3,yes,plant,proposal
+zinc,"brittle + atom",snimaitom,"snim + tom",ai,2,yes,atom,proposal
+zinnia,"bright + round + flower",dinaimapsaiflor,"din + maps + flor",ai,3,yes,flower,proposal
+zirconium,"opaque + atom",prikaitom,"prik + tom",ai,2,yes,atom,proposal

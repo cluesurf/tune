@@ -1,0 +1,60 @@
+term            parts
+--------------  ----------------------------
+oak             nut cup tree
+maple           frog hand
+pine            bundle conifer
+spruce          sharp conifer
+fir             flat conifer
+cedar           smell conifer
+redwood         tall red conifer
+sequoia         giant conifer
+cypress         silk conifer
+juniper         berry conifer
+hemlock         droop conifer
+larch           fall conifer
+yew             red seed conifer
+birch           paper bark tree
+beech           smooth bark tree
+elm             wing seed tree
+willow          weep water tree
+poplar          tall fast tree
+aspen           shake leaf tree
+cottonwood      cotton seed tree
+sycamore        patch bark tree
+chestnut        spine nut tree
+walnut          fold nut tree
+hickory         hard nut tree
+pecan           sweet nut tree
+alder           water cone tree
+linden          heart leaf tree
+locust          thorn pod tree
+holly           sharp leaf tree
+eucalyptus      smell oil tree
+acacia          thorn tree
+baobab          fat trunk tree
+palm            crown leaf tree
+almond          milk nut tree
+grapefruit      bitter round fruit
+avocado         fat green fruit
+breadfruit      bread fruit tree
+mulberry        many berry tree
+pomegranate     red seed fruit
+rubber tree     rubber sap tree
+teak            oil hard wood
+mahogany        red wood tree
+ebony           black wood tree
+sandalwood      burn smell wood
+banyan          root branch tree
+magnolia        big flower tree
+dogwood         white flower tree
+hawthorn        thorn berry tree
+redbud          trunk flower tree
+rowan           red cluster tree
+buckeye         eye seed tree
+horse chestnut  big chestnut tree
+tamarind        sour pod tree
+mesquite        dry thorn tree
+joshua tree     branch yucca tree
+ironwood        iron hard wood
+kapok           soft fiber tree
+gum tree        gum sap tree

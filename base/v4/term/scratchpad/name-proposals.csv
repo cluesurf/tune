@@ -1,0 +1,1684 @@
+name,kind,proposal,from
+Actinolite,gem_material,green flash stone,echo
+Actinolite,gem_material,radiate stone,echo
+Adularia,gem_material,ice long stone,echo
+Agate,gem_material,jinx string,echo
+Alexandrite,gem_material,change stone,echo
+Almandine,gem_material,noble garnet,echo
+Alunite,gem_material,bright alum stone,echo
+Amber,gem_material,cinnabar vigor,echo
+Amber,gem_material,sea resin,echo
+Amethyst,gem_material,purple clear,echo
+Amethyst,gem_material,letter way attachment,echo
+Andalusite,gem_material,red pillar stone,echo
+Anhydrite,gem_material,hard stone grease,echo
+Anorthite,gem_material,ashes long stone,echo
+Anorthite,gem_material,lime feldspar,echo
+Anthracite,gem_material,white coal,echo
+Anthracite,gem_material,hard coal,echo
+Anthracite,gem_material,negative smoke charcoal,echo
+Anthracite,gem_material,smokeless coal,echo
+Apatite,gem_material,phosphorus ashes stone,echo
+Aquamarine,gem_material,green jade,echo
+Aquamarine,gem_material,water marine,echo
+Aragonite,gem_material,literature stone,echo
+Aragonite,gem_material,hail stone,echo
+Asbestos,gem_material,stone cotton wad,echo
+Azurite,gem_material,stone blue,echo
+Azurite,gem_material,blue copper mine,echo
+Bauxite,gem_material,alum soil,echo
+Bauxite,gem_material,aluminum soil,echo
+Beryl,gem_material,green pillar stone,echo
+Biotite,gem_material,black enamel,echo
+Bone,gem_material,skeleton head,echo
+Bornite,gem_material,mottled copper mine,echo
+Carnallite,gem_material,mixed salt,echo
+Cassiterite,gem_material,tin stone,echo
+Cassiterite,gem_material,kassite rite,echo
+Chalcopyrite,gem_material,yellow copper mine,echo
+Chalcopyrite,gem_material,copper gravel,echo
+Chromite,gem_material,chromium ironstone,echo
+Chrysoberyl,gem_material,gold green stone,echo
+Cinnabar,gem_material,early morning pebbles,echo
+Citrine,gem_material,yellow water,echo
+Coral,gem_material,mountain number,echo
+Cordierite,gem_material,celery blue stone,echo
+Corundum,gem_material,hard jade,echo
+Corundum,gem_material,firm jade,echo
+Corundum,gem_material,steel jade,echo
+Covellite,gem_material,copper blue,echo
+Cryolite,gem_material,ice stone,echo
+Diamond,gem_material,drill stone,echo
+Diamond,gem_material,beautiful jade stone,echo
+Diamond,gem_material,gold firm,echo
+Dolomite,gem_material,pure clouds stone,echo
+Emerald,gem_material,green jade,echo
+Emerald,gem_material,green jade stone,echo
+Feldspar,gem_material,long stone,echo
+Feldspar,gem_material,field spar,echo
+Feldspar,gem_material,earth spar,echo
+Flint,gem_material,fire stone,echo
+Flint,gem_material,flintstone stone,echo
+Flint,gem_material,fire strike stone,echo
+Flint,gem_material,tooth stone,echo
+Fluorapatite,gem_material,fluorine apatite,echo
+Fluorite,gem_material,firefly stone,echo
+Garnet,gem_material,pomegranate stone,echo
+Gibbsite,gem_material,water alum soil,echo
+Glaucophane,gem_material,blue flash stone,echo
+Goethite,gem_material,needle iron mine,echo
+Halite,gem_material,cliff salt,echo
+Halite,gem_material,stone salt,echo
+Halite,gem_material,mine salt,echo
+Hemimorphite,gem_material,different extreme mine,echo
+Ilmenite,gem_material,facial expression rivet,echo
+Ivory,gem_material,elephant tooth,echo
+Ivory,gem_material,female elf leg,echo
+Jade,gem_material,orphan stable,echo
+Jade,gem_material,thin horse,echo
+Jade,gem_material,girl hussy,echo
+Jasper,gem_material,jade jade,echo
+Jet,gem_material,spurt gas,echo
+Jet,gem_material,shoot flow,echo
+Jet,gem_material,coal jade,echo
+Jet,gem_material,coal essence,echo
+Jet,gem_material,spurt flow,echo
+Jet,gem_material,gush out issue,echo
+Lepidolite,gem_material,lithium enamel,echo
+Malachite,gem_material,stone green,echo
+Malachite,gem_material,opening sparrow stone,echo
+Marcasite,gem_material,pure iron mine,echo
+Mellite,gem_material,honey wax stone,echo
+Nambulite,gem_material,south part stone,echo
+Nepheline,gem_material,rosy clouds cliff,echo
+Nepheline,gem_material,rosy clouds stone,echo
+Nephrite,gem_material,soft jade,echo
+Obsidian,gem_material,black glorious cliff,echo
+Obsidian,gem_material,black glorious stone,echo
+Obsidian,gem_material,lava glass,echo
+Olivine,gem_material,burseraceae stone,echo
+Opal,gem_material,inlet treasure,echo
+Opal,gem_material,eggs pure stone,echo
+Orthoclase,gem_material,right long stone,echo
+Pearl,gem_material,precious precious stone,echo
+Pearl,gem_material,bright precious stone,echo
+Pearl,gem_material,upright precious stone,echo
+Pearl,gem_material,real precious stone,echo
+Peridotite,gem_material,olive olive cliff,echo
+Petalite,gem_material,leaf long stone,echo
+Phlogopite,gem_material,gold clouds mother,echo
+Phosphophyllite,gem_material,phosphorus leaf stone,echo
+Plagioclase,gem_material,slanting long stone,echo
+Pyrite,gem_material,yellow iron mine,echo
+Pyrope,gem_material,fire eye,echo
+Pyrophyllite,gem_material,leaf wax stone,echo
+Pyrophyllite,gem_material,chicken blood stone,echo
+Quartz,gem_material,stone petal,echo
+Rainbow,gem_material,sky belt,echo
+Realgar,gem_material,cockscomb stone,echo
+Ruby,gem_material,red jade,echo
+Ruby,gem_material,rampart rain,echo
+Rutile,gem_material,gold red stone,echo
+Scheelite,gem_material,ashes heavy stone,echo
+Seashell,gem_material,forerunner casing,echo
+Seashell,gem_material,shellfish shell,echo
+Seashell,gem_material,clam shell,echo
+Selenite,gem_material,maria glass,echo
+Serpentine,gem_material,snake line stone,echo
+Serpentine,gem_material,snake stone,echo
+Siderite,gem_material,freeze spar,echo
+Siderite,gem_material,iron meteorite,echo
+Siderite,gem_material,bandage rite,echo
+Soapstone,gem_material,freeze stone,echo
+Soapstone,gem_material,fat stone,echo
+Spinel,gem_material,sharp crystal stone,echo
+Talc,gem_material,slip stone,echo
+Topaz,gem_material,yellow jade,echo
+Topaz,gem_material,yellow jade stone,echo
+Tourmaline,gem_material,jade imperial signet,echo
+Tourmaline,gem_material,electricity air stone,echo
+Tremolite,gem_material,penetrate flash stone,echo
+Turquoise,gem_material,fir tree stone,echo
+Vivianite,gem_material,blue iron mine,echo
+Wulfenite,gem_material,yellow lead mine,echo
+Zircon,gem_material,zirconium stone,echo
+Boulder,grain_size,large stone,echo
+Boulder,grain_size,float gravel,echo
+Boulder,grain_size,large gravel,echo
+Boulder,grain_size,rock block,echo
+Boulder,grain_size,rock fragment,echo
+Clay,grain_size,gram goosefoot,echo
+Clay,grain_size,sand mud,echo
+Clay,grain_size,gum mud,echo
+Clay,grain_size,viscous soil,echo
+Clay,grain_size,pottery magnetic,echo
+Cobble,grain_size,horn stone,echo
+Cobble,grain_size,round stone,echo
+Cobble,grain_size,roll chip stone,echo
+Colloid,grain_size,gum body,echo
+Colloid,grain_size,gum grain,echo
+Colloid,grain_size,gum matter,echo
+Colloid,grain_size,glue body,echo
+Colloid,grain_size,glue matter,echo
+amphibole,lithology_attribute,flash stone,echo
+amphibole,lithology_attribute,horn flash stone,echo
+angular,lithology_attribute,angle shaped,echo
+biotite,lithology_attribute,black enamel,echo
+black,lithology_attribute,real obscure close,echo
+black,lithology_attribute,blue hair,echo
+black,lithology_attribute,sword all,echo
+black,lithology_attribute,sword silver,echo
+black,lithology_attribute,sword attachment,echo
+black,lithology_attribute,gum attachment,echo
+blue,lithology_attribute,spring onion rang,echo
+blue,lithology_attribute,sine suit,echo
+botryoidal,lithology_attribute,wine grapelike,echo
+boulder,lithology_attribute,large stone,echo
+boulder,lithology_attribute,float gravel,echo
+boulder,lithology_attribute,large gravel,echo
+boulder,lithology_attribute,rock block,echo
+boulder,lithology_attribute,rock fragment,echo
+brown,lithology_attribute,cloth clear,echo
+brown,lithology_attribute,deep hemp palm,echo
+brown,lithology_attribute,blue deer hair,echo
+coarse,lithology_attribute,rough foolish,echo
+coarse,lithology_attribute,rough bad,echo
+coarse,lithology_attribute,rough neglect,echo
+dark,lithology_attribute,black obscure,echo
+dark,lithology_attribute,sad weak,echo
+dark,lithology_attribute,obscure weak,echo
+dark,lithology_attribute,shallow black,echo
+dark,lithology_attribute,black black,echo
+dark,lithology_attribute,crafty flattery,echo
+dark,lithology_attribute,crafty culprit,echo
+dark,lithology_attribute,adultery evil,echo
+diatom,lithology_attribute,silicon splendid,echo
+diatom,lithology_attribute,pebble alga,echo
+feldspar,lithology_attribute,long stone,echo
+feldspar,lithology_attribute,field spar,echo
+feldspar,lithology_attribute,earth spar,echo
+fine,lithology_attribute,superior good,echo
+fine,lithology_attribute,penalty item,echo
+fine,lithology_attribute,tow line small,echo
+fine,lithology_attribute,thin hair,echo
+fine,lithology_attribute,penalty money,echo
+fine,lithology_attribute,punish item,echo
+fine,lithology_attribute,punish gold,echo
+fine,lithology_attribute,delicate dense,echo
+granule,lithology_attribute,grain grain,echo
+gray,lithology_attribute,halberd felicitous omen,echo
+gray,lithology_attribute,halberd thunder,echo
+green,lithology_attribute,fruit mountain ridge,echo
+green,lithology_attribute,jade tile,echo
+green,lithology_attribute,turquoise kingfisher eagle,echo
+lenticular,lithology_attribute,lentil formed,echo
+light,lithology_attribute,clear weak,echo
+light,lithology_attribute,dot fire,echo
+light,lithology_attribute,flowery lamp,echo
+light,lithology_attribute,shallow weak,echo
+light,lithology_attribute,dot bright,echo
+light,lithology_attribute,lightning lamp,echo
+light,lithology_attribute,trillion name back,echo
+lithic,lithology_attribute,lithium containing,echo
+mafic,lithology_attribute,bitter iron matter,echo
+manganese,lithology_attribute,fullness personal pronoun,echo
+manganese,lithology_attribute,net salty seasonings,echo
+massive,lithology_attribute,heavy thick,echo
+medium,lithology_attribute,central rank,echo
+medium,lithology_attribute,forerunner matter,echo
+medium,lithology_attribute,central usual,echo
+medium,lithology_attribute,spirit offspring,echo
+medium,lithology_attribute,blend matter,echo
+medium,lithology_attribute,intermediate substance,echo
+mica,lithology_attribute,cloud female elders,echo
+mica,lithology_attribute,clouds mother,echo
+mica,lithology_attribute,luck mother,echo
+muddy,lithology_attribute,moisten full,echo
+muscovite,lithology_attribute,cloud flowery,echo
+muscovite,lithology_attribute,cloud sand,echo
+muscovite,lithology_attribute,cloud liquid,echo
+muscovite,lithology_attribute,cloud precious stone,echo
+muscovite,lithology_attribute,cloud petal,echo
+muscovite,lithology_attribute,phosphorus stone,echo
+muscovite,lithology_attribute,potash mica,echo
+olivine,lithology_attribute,burseraceae stone,echo
+organic,lithology_attribute,have desk,echo
+organic,lithology_attribute,have weaving machine,echo
+organic,lithology_attribute,receptacle matter nature,echo
+organic,lithology_attribute,receptacle matter possessive,echo
+pink,lithology_attribute,article red,echo
+pink,lithology_attribute,peach red,echo
+pink,lithology_attribute,powder red,echo
+pink,lithology_attribute,silver red,echo
+pink,lithology_attribute,strip red,echo
+pink,lithology_attribute,bun red,echo
+pink,lithology_attribute,bun red light,echo
+pink,lithology_attribute,light red,echo
+quartz,lithology_attribute,stone petal,echo
+radiolarian,lithology_attribute,put scatter insects,echo
+radiolarian,lithology_attribute,ray animal,echo
+red,lithology_attribute,cinnabar smear,echo
+red,lithology_attribute,real reddish brown,echo
+red,lithology_attribute,gold time,echo
+siliceous,lithology_attribute,silicon matter,echo
+tan,lithology_attribute,light brown,echo
+vesicular,lithology_attribute,small womb,echo
+white,lithology_attribute,bosom special,echo
+white,lithology_attribute,last lamb,echo
+yellow,lithology_attribute,string egg,echo
+yellow,lithology_attribute,string rang,echo
+Actinolite,mineral,green flash stone,echo
+Actinolite,mineral,radiate stone,echo
+Adularia,mineral,ice long stone,echo
+Agate,mineral,jinx string,echo
+Akaganeite,mineral,red gold mine,echo
+Alexandrite,mineral,change stone,echo
+Almandine,mineral,noble garnet,echo
+Alum,mineral,obtain profession life,echo
+Alunite,mineral,bright alum stone,echo
+Amalgam,mineral,mercury grease,echo
+Amalgam,mineral,mercury even,echo
+Amethyst,mineral,purple clear,echo
+Amethyst,mineral,letter way attachment,echo
+Andalusite,mineral,red pillar stone,echo
+Anhydrite,mineral,hard stone grease,echo
+Anorthite,mineral,ashes long stone,echo
+Anorthite,mineral,lime feldspar,echo
+Anthophyllite,mineral,straight flash stone,echo
+Antimony,mineral,offering many,echo
+Apatite,mineral,phosphorus ashes stone,echo
+Aquamarine,mineral,green jade,echo
+Aquamarine,mineral,water marine,echo
+Aragonite,mineral,literature stone,echo
+Aragonite,mineral,hail stone,echo
+Arsenic,mineral,rain cow,echo
+Arsenic,mineral,shard cobalt,echo
+Arsenolite,mineral,letter stone,echo
+Arsenopyrite,mineral,poison pebbles,echo
+Augite,mineral,brightness stone,echo
+Azurite,mineral,stone blue,echo
+Azurite,mineral,blue copper mine,echo
+Beryl,mineral,green pillar stone,echo
+Bieberite,mineral,red alum,echo
+Biotite,mineral,black enamel,echo
+Bismuth,mineral,blue lead,echo
+Bornite,mineral,mottled copper mine,echo
+Bronze,mineral,blue copper,echo
+Bronze,mineral,tang dynasty gold,echo
+Bronze,mineral,tang dynasty copper,echo
+Bronze,mineral,request moon,echo
+Calomel,mineral,sweetness mercury,echo
+Carnallite,mineral,mixed salt,echo
+Cassiterite,mineral,tin stone,echo
+Cassiterite,mineral,kassite rite,echo
+Chalcanthite,mineral,gallbladder alum,echo
+Chalcocite,mineral,brightness copper mine,echo
+Chalcopyrite,mineral,yellow copper mine,echo
+Chalcopyrite,mineral,copper gravel,echo
+Charcoal,mineral,wood coal,echo
+Charcoal,mineral,coal pen,echo
+Chromite,mineral,chromium ironstone,echo
+Chrysoberyl,mineral,gold green stone,echo
+Cinnabar,mineral,early morning pebbles,echo
+Copper,mineral,cinnabar side,echo
+Copper,mineral,red metal,echo
+Copper,mineral,gold wing,echo
+Cordierite,mineral,celery blue stone,echo
+Corundum,mineral,hard jade,echo
+Corundum,mineral,firm jade,echo
+Corundum,mineral,steel jade,echo
+Covellite,mineral,copper blue,echo
+Cryolite,mineral,ice stone,echo
+Diamond,mineral,drill stone,echo
+Diamond,mineral,beautiful jade stone,echo
+Diamond,mineral,gold firm,echo
+Dolomite,mineral,pure clouds stone,echo
+Feldspar,mineral,long stone,echo
+Feldspar,mineral,field spar,echo
+Feldspar,mineral,earth spar,echo
+Ferberite,mineral,iron heavy stone,echo
+Fluorapatite,mineral,fluorine apatite,echo
+Fluorite,mineral,firefly stone,echo
+Fukuchilite,mineral,happiness earth mine,echo
+Garnet,mineral,pomegranate stone,echo
+Germanite,mineral,germanium stone,echo
+Gibbsite,mineral,water alum soil,echo
+Glauconite,mineral,sea green stone,echo
+Glaucophane,mineral,blue flash stone,echo
+Goethite,mineral,needle iron mine,echo
+Graphite,mineral,black lead,echo
+Halite,mineral,cliff salt,echo
+Halite,mineral,stone salt,echo
+Halite,mineral,mine salt,echo
+Haradaite,mineral,source field stone,echo
+Hemimorphite,mineral,different extreme mine,echo
+Horobetsuite,mineral,curtain separate mine,echo
+Horomanite,mineral,curtain fullness mine,echo
+Ilmenite,mineral,facial expression rivet,echo
+Iodine,mineral,water degree,echo
+Iron,mineral,scald clothes,echo
+Iron,mineral,all way beauty,echo
+Iwateite,mineral,cliff hand stone,echo
+Jamesonite,mineral,hair mine,echo
+Kamaishilite,mineral,cauldron stone stone,echo
+Kawazulite,mineral,stream ferry mine,echo
+Kinoshitalite,mineral,tree down stone,echo
+Lead,mineral,direct delicate,echo
+Lead,mineral,delicate make,echo
+Lead,mineral,drag head,echo
+Lead,mineral,master direct,echo
+Lead,mineral,pull feet,echo
+Lead,mineral,drag support,echo
+Lead,mineral,drag neck,echo
+Lead,mineral,rate neck,echo
+Lepidolite,mineral,lithium enamel,echo
+Lime,mineral,stone ash,echo
+Lime,mineral,acid orange tree,echo
+Lime,mineral,blue lemon,echo
+Lime,mineral,green lemon,echo
+Limonite,mineral,brown ironstone,echo
+Malachite,mineral,stone green,echo
+Malachite,mineral,opening sparrow stone,echo
+Manganese,mineral,fullness personal pronoun,echo
+Manganese,mineral,net salty seasonings,echo
+Marcasite,mineral,pure iron mine,echo
+Massicot,mineral,lead dandruff,echo
+Melanterite,mineral,green alum,echo
+Melilite,mineral,yellow long stone,echo
+Mellite,mineral,honey wax stone,echo
+Mercury,mineral,water star,echo
+Mercury,mineral,water silver,echo
+Mercury,mineral,way castle,echo
+Mica,mineral,cloud female elders,echo
+Mica,mineral,clouds mother,echo
+Mica,mineral,luck mother,echo
+Minium,mineral,red cinnabar,echo
+Minium,mineral,red lead,echo
+Minium,mineral,lead cinnabar,echo
+Mirabilite,mineral,simple saltpeter,echo
+Mirabilite,mineral,miscanthus sinensis saltpeter,echo
+Molybdenite,mineral,molybdenum gleam,echo
+Muscovite,mineral,cloud flowery,echo
+Muscovite,mineral,cloud sand,echo
+Muscovite,mineral,cloud liquid,echo
+Muscovite,mineral,cloud precious stone,echo
+Muscovite,mineral,cloud petal,echo
+Muscovite,mineral,phosphorus stone,echo
+Muscovite,mineral,potash mica,echo
+Nambulite,mineral,south part stone,echo
+Nepheline,mineral,rosy clouds cliff,echo
+Nepheline,mineral,rosy clouds stone,echo
+Olivine,mineral,burseraceae stone,echo
+Ominelite,mineral,big peak stone,echo
+Opal,mineral,inlet treasure,echo
+Opal,mineral,eggs pure stone,echo
+Orpiment,mineral,stone yellow,echo
+Orpiment,mineral,high yellow,echo
+Orthoclase,mineral,right long stone,echo
+Osumilite,mineral,big corner stone,echo
+Petalite,mineral,leaf long stone,echo
+Phlogopite,mineral,gold clouds mother,echo
+Phosphophyllite,mineral,phosphorus leaf stone,echo
+Plagioclase,mineral,slanting long stone,echo
+Platinum,mineral,white gold,echo
+Pyrite,mineral,yellow iron mine,echo
+Pyrolusite,mineral,brown stone,echo
+Pyrope,mineral,fire eye,echo
+Pyrophyllite,mineral,leaf wax stone,echo
+Pyrophyllite,mineral,chicken blood stone,echo
+Pyroxene,mineral,brightness stone,echo
+Quartz,mineral,stone petal,echo
+Realgar,mineral,cockscomb stone,echo
+Ruby,mineral,red jade,echo
+Ruby,mineral,rampart rain,echo
+Rutile,mineral,gold red stone,echo
+Sakuraiite,mineral,cherry well mine,echo
+Samaniite,mineral,shape resemble mine,echo
+Scheelite,mineral,ashes heavy stone,echo
+Siderite,mineral,freeze spar,echo
+Siderite,mineral,iron meteorite,echo
+Siderite,mineral,bandage rite,echo
+Silicon,mineral,tooth stone,echo
+Spinel,mineral,sharp crystal stone,echo
+Stibnite,mineral,brightness peaceful mine,echo
+Stibnite,mineral,antimony gleam,echo
+Talc,mineral,slip stone,echo
+Tenorite,mineral,black copper mine,echo
+Todorokite,mineral,rumble stone,echo
+Topaz,mineral,yellow jade,echo
+Topaz,mineral,yellow jade stone,echo
+Tourmaline,mineral,jade imperial signet,echo
+Tourmaline,mineral,electricity air stone,echo
+Toyohaite,mineral,abundant feather mine,echo
+Travertine,mineral,lukewarm spring flowery,echo
+Tremolite,mineral,penetrate flash stone,echo
+Tsugaruite,mineral,ferry light mine,echo
+Turquoise,mineral,fir tree stone,echo
+Urea,mineral,urine white,echo
+Urea,mineral,urine substance,echo
+Urea,mineral,urinary substance,echo
+Vermiculite,mineral,leech stone,echo
+Vivianite,mineral,blue iron mine,echo
+Watanabeite,mineral,cross edge mine,echo
+Wulfenite,mineral,yellow lead mine,echo
+Zeolite,mineral,boil stone,echo
+Zircon,mineral,zirconium stone,echo
+Amphibole,mineral,flash stone,echo
+Amphibole,mineral,horn flash stone,echo
+Emerald,mineral,green jade,echo
+Emerald,mineral,green jade stone,echo
+Ice,mineral,soul hmm,echo
+Barite,mineral,heavy crystal stone,echo
+Agate,mineral_variety,jinx string,echo
+Alexandrite,mineral_variety,change stone,echo
+Alum,mineral_variety,obtain profession life,echo
+Amethyst,mineral_variety,purple clear,echo
+Amethyst,mineral_variety,letter way attachment,echo
+Aquamarine,mineral_variety,green jade,echo
+Aquamarine,mineral_variety,water marine,echo
+Asbestos,mineral_variety,stone cotton wad,echo
+Bauxite,mineral_variety,alum soil,echo
+Bauxite,mineral_variety,aluminum soil,echo
+Citrine,mineral_variety,yellow water,echo
+Emerald,mineral_variety,green jade,echo
+Emerald,mineral_variety,green jade stone,echo
+Jade,mineral_variety,orphan stable,echo
+Jade,mineral_variety,thin horse,echo
+Jade,mineral_variety,girl hussy,echo
+Jasper,mineral_variety,jade jade,echo
+Nephrite,mineral_variety,soft jade,echo
+Opal,mineral_variety,inlet treasure,echo
+Opal,mineral_variety,eggs pure stone,echo
+Ruby,mineral_variety,red jade,echo
+Ruby,mineral_variety,rampart rain,echo
+Satinspar,mineral_variety,mineral gypsum,class
+Selenite,mineral_variety,maria glass,echo
+Selenite,mineral_variety,mineral gypsum,class
+Simetite,mineral_variety,mineral amber,class
+Spectrolite,mineral_variety,mineral labradorite,class
+Stantienite,mineral_variety,mineral amber,class
+Agate,rock,quartz chert,gloss
+Agate,rock,chalcedony chert,gloss
+Agate,rock,mixed chert,gloss
+Agate,rock,jinx string,echo
+Agate,rock,argillaceous limestone chert,sibling
+Agate,rock,dolostone chert,sibling
+Agate,rock,limestone chert,sibling
+Agglomerate,rock,pyroclastic rock,gloss
+Agglomerate,rock,fragments rock,gloss
+Agglomerate,rock,exceed rock,gloss
+Agglomerate,rock,andesitic rock,sibling
+Agglomerate,rock,anorthositic rock,sibling
+Aggregate,rock,deposit artificial,gloss
+Aggregate,rock,building artificial,gloss
+Aggregate,rock,industry artificial,gloss
+Aggregate,rock,combine plan,echo
+Aggregate,rock,assemble consider,echo
+Aggregate,rock,skeleton consider,echo
+Aggregate,rock,collect tie,echo
+Aggregate,rock,bone wood,echo
+Amphibolite,rock,rock metamorphic,gloss
+Amphibolite,rock,protolith metamorphic,gloss
+Amphibolite,rock,based metamorphic,gloss
+Amphibolite,rock,horn flash cliff,echo
+Andesite,rock,andesitic rock,gloss
+Andesite,rock,name rock,gloss
+Andesite,rock,fine rock,gloss
+Andesite,rock,peaceful mountain cliff,echo
+Andesite,rock,anorthositic rock,sibling
+Andesite (TAS),rock,andesitic rock,gloss
+Andesite (TAS),rock,total rock,gloss
+Andesite (TAS),rock,alkali rock,gloss
+Andesite (TAS),rock,anorthositic rock,sibling
+Anorthosite,rock,anorthositic rock,gloss
+Anorthosite,rock,coarse rock,gloss
+Anorthosite,rock,grained rock,gloss
+Anorthosite,rock,slanting long cliff,echo
+Anorthosite,rock,andesitic rock,sibling
+Anthracite,rock,pure coal,gloss
+Anthracite,rock,order coal,gloss
+Anthracite,rock,peat coal,gloss
+Anthracite,rock,white coal,echo
+Anthracite,rock,hard coal,echo
+Anthracite,rock,negative smoke charcoal,echo
+Anthracite,rock,smokeless coal,echo
+Anthracite,rock,banded bright coal,sibling
+Arenite,rock,silicate sandstone,gloss
+Arenite,rock,rock sandstone,gloss
+Arenite,rock,have sandstone,gloss
+Arenite,rock,andesitic metavolcaniclastic sandstone,sibling
+Arenite,rock,andesitic volcaniclastic sandstone,sibling
+Arenite,rock,basaltic lava sandstone,sibling
+Ash,rock,pyroclastic sediment,gloss
+Ash,rock,rock sediment,gloss
+Ash,rock,average sediment,gloss
+Ash,rock,size sediment,gloss
+Ash,rock,pyroclastic rock sediment,gloss
+Ash,rock,fire dust,echo
+Ash,rock,ankerite sediment,sibling
+Ash,rock,aragonite sediment,sibling
+Ballast,rock,deposit artificial,gloss
+Ballast,rock,coarse artificial,gloss
+Ballast,rock,stone artificial,gloss
+Ballast,rock,oppress load,echo
+Ballast,rock,path stone tablet,echo
+Ballast,rock,bottom accumulate,echo
+Ballast,rock,bottom lotus,echo
+Ballast,rock,leg lotus,echo
+Baryte (vein),rock,rock vein,gloss
+Baryte (vein),rock,pyritic rock vein,sibling
+Basalt,rock,basaltic rock,gloss
+Basalt,rock,name rock,gloss
+Basalt,rock,fine rock,gloss
+Basalt,rock,andesitic rock,sibling
+Basalt,rock,anorthositic rock,sibling
+Basalt (TAS),rock,basaltic rock,gloss
+Basalt (TAS),rock,total rock,gloss
+Basalt (TAS),rock,alkali rock,gloss
+Basalt (TAS),rock,andesitic rock,sibling
+Basalt (TAS),rock,anorthositic rock,sibling
+Basanite,rock,tephritic rock,gloss
+Basanite,rock,name rock,gloss
+Basanite,rock,fine rock,gloss
+Basanite,rock,andesitic rock,sibling
+Basanite,rock,anorthositic rock,sibling
+Basanite (TAS),rock,tephritic rock,gloss
+Basanite (TAS),rock,total rock,gloss
+Basanite (TAS),rock,alkali rock,gloss
+Basanite (TAS),rock,andesitic rock,sibling
+Basanite (TAS),rock,anorthositic rock,sibling
+Bauxite,rock,alum soil,echo
+Bauxite,rock,aluminum soil,echo
+Blastomylonite,rock,mylonitic rock,gloss
+Blastomylonite,rock,where rock,gloss
+Blastomylonite,rock,mineral rock,gloss
+Blastomylonite,rock,andesitic rock,sibling
+Blastomylonite,rock,anorthositic rock,sibling
+Boulders [UDCS],rock,superficial natural,gloss
+Boulders [UDCS],rock,deposit natural,gloss
+Boulders [UDCS],rock,civil natural,gloss
+Breccia,rock,silicate conglomerate,gloss
+Breccia,rock,rock conglomerate,gloss
+Breccia,rock,term conglomerate,gloss
+Breccia,rock,horn gravel cliff,echo
+Breccia,rock,andesite sandstone conglomerate,sibling
+Breccia,rock,feldspathic arenite conglomerate,sibling
+Brick,rock,tile piece,echo
+Brick,rock,tile head,echo
+Brick,rock,tile stone,echo
+Brick,rock,smelt tile,echo
+Brick,rock,wall rock chapter,echo
+Calcarenite,rock,term limestone,gloss
+Calcarenite,rock,sand limestone,gloss
+Calcarenite,rock,grade limestone,gloss
+Calcarenite,rock,aragonite limestone,sibling
+Calcarenite,rock,calcareous mudstone limestone,sibling
+Calcarenite,rock,calcareous sandstone limestone,sibling
+Calcilutite,rock,term limestone,gloss
+Calcilutite,rock,grade limestone,gloss
+Calcilutite,rock,research limestone,gloss
+Calcilutite,rock,aragonite limestone,sibling
+Calcilutite,rock,calcareous mudstone limestone,sibling
+Calcilutite,rock,calcareous sandstone limestone,sibling
+Calciocarbonatite,rock,rock carbonatite,gloss
+Calciocarbonatite,rock,term carbonatite,gloss
+Calciocarbonatite,rock,when carbonatite,gloss
+Calciocarbonatite,rock,siilinjärvi carbonatite,sibling
+Calciocarbonatite,rock,calcite carbonatite,sibling
+Calciocarbonatite,rock,dolomite carbonatite,sibling
+Calcrete,rock,conglomerate duricrust,gloss
+Calcrete,rock,sand duricrust,gloss
+Calcrete,rock,gravel duricrust,gloss
+Camptonite,rock,rock lamprophyre,gloss
+Camptonite,rock,plagioclase lamprophyre,gloss
+Camptonite,rock,dominant lamprophyre,gloss
+Camptonite,rock,biotite lamprophyre,sibling
+Camptonite,rock,foliated lamprophyre,sibling
+Camptonite,rock,foliated biotite lamprophyre,sibling
+Carbonatite,rock,crystalline exotic,gloss
+Carbonatite,rock,igneous exotic,gloss
+Carbonatite,rock,rock exotic,gloss
+Cardboard,rock,hard paper,echo
+Cardboard,rock,paper plank,echo
+Cardboard,rock,paper skin,echo
+Cataclasite,rock,cataclastic rock,gloss
+Cataclasite,rock,fragments rock,gloss
+Cataclasite,rock,matrix rock,gloss
+Cataclasite,rock,andesitic rock,sibling
+Cataclasite,rock,anorthositic rock,sibling
+Chalk,rock,white soil,echo
+Chalk,rock,white holy,echo
+Chalk,rock,white ink,echo
+Chalk,rock,powder pen,echo
+Chalk,rock,pure ink,echo
+Chert,rock,rock siliceous,gloss
+Chert,rock,dense siliceous,gloss
+Chert,rock,hard siliceous,gloss
+Chromitite,rock,restricted rock,gloss
+Chromitite,rock,mineralogy rock,gloss
+Chromitite,rock,coarse rock,gloss
+Chromitite,rock,andesitic rock,sibling
+Chromitite,rock,anorthositic rock,sibling
+Clarain,rock,bituminous coal,gloss
+Clarain,rock,bright coal,gloss
+Clarain,rock,bands coal,gloss
+Clarain,rock,banded bright coal,sibling
+Clarain,rock,banded coal,sibling
+Clarain,rock,banded dull coal,sibling
+Clay,rock,gram goosefoot,echo
+Clay,rock,sand mud,echo
+Clay,rock,gum mud,echo
+Clay,rock,viscous soil,echo
+Clay,rock,pottery magnetic,echo
+Clay [UDCS],rock,superficial natural,gloss
+Clay [UDCS],rock,deposit natural,gloss
+Clay [UDCS],rock,civil natural,gloss
+Claystone,rock,research mudstone,gloss
+Claystone,rock,report mudstone,gloss
+Claystone,rock,silicate mudstone,gloss
+Claystone,rock,ankerite mudstone,sibling
+Claystone,rock,aragonite mudstone,sibling
+Claystone,rock,bituminous mudstone,sibling
+Clinker,rock,hard tile,echo
+Clinopyroxenite,rock,pyroxene pyroxenite,gloss
+Clinopyroxenite,rock,almost pyroxenite,gloss
+Clinopyroxenite,rock,clinopyroxene pyroxenite,gloss
+Clinopyroxenite,rock,biotite pyroxenite,sibling
+Clinopyroxenite,rock,hornblende pyroxenite,sibling
+Clinopyroxenite,rock,olivine hornblende pyroxenite,sibling
+Coal,rock,sedimentary rock,gloss
+Coal,rock,rich rock,gloss
+Coal,rock,organic rock,gloss
+Coal,rock,stone charcoal,echo
+Coal,rock,black charcoal,echo
+Coal,rock,sword silver gold,echo
+Coal,rock,andesitic rock,sibling
+Coal,rock,anorthositic rock,sibling
+Cobble,rock,horn stone,echo
+Cobble,rock,round stone,echo
+Cobble,rock,roll chip stone,echo
+Cobbles [UDCS],rock,superficial natural,gloss
+Cobbles [UDCS],rock,deposit natural,gloss
+Cobbles [UDCS],rock,civil natural,gloss
+Concrete,rock,deposit artificial,gloss
+Concrete,rock,material artificial,gloss
+Concrete,rock,composed artificial,gloss
+Concrete,rock,stone excrement,echo
+Concrete,rock,mix coagulate soil,echo
+Conglomerate,rock,gravel cliff,echo
+Conglomerate,rock,many field enterprise,echo
+Copper (vein),rock,rock vein,gloss
+Copper (vein),rock,pyritic rock vein,sibling
+Dacite,rock,dacitic rock,gloss
+Dacite,rock,name rock,gloss
+Dacite,rock,fine rock,gloss
+Dacite,rock,andesitic rock,sibling
+Dacite,rock,anorthositic rock,sibling
+Dacite (TAS),rock,dacitic rock,gloss
+Dacite (TAS),rock,total rock,gloss
+Dacite (TAS),rock,alkali rock,gloss
+Dacite (TAS),rock,andesitic rock,sibling
+Dacite (TAS),rock,anorthositic rock,sibling
+Diamictite,rock,sediment siliciclastic,gloss
+Diamictite,rock,sedimentary siliciclastic,gloss
+Diamictite,rock,rock siliciclastic,gloss
+Diamictite,rock,mixed carbonate siliciclastic,sibling
+Diamicton,rock,sediment siliciclastic,gloss
+Diamicton,rock,sedimentary siliciclastic,gloss
+Diamicton,rock,rock siliciclastic,gloss
+Diamicton,rock,mixed carbonate siliciclastic,sibling
+Diatomite,rock,rock siliceous,gloss
+Diatomite,rock,composed siliceous,gloss
+Diatomite,rock,equivalent siliceous,gloss
+Diorite,rock,dioritic rock,gloss
+Diorite,rock,coarse rock,gloss
+Diorite,rock,grained rock,gloss
+Diorite,rock,flash green cliff,echo
+Diorite,rock,andesitic rock,sibling
+Diorite,rock,anorthositic rock,sibling
+Dunite,rock,rock peridotite,gloss
+Dunite,rock,olivine peridotite,gloss
+Dunite,rock,pyroxene peridotite,gloss
+Dunite,rock,feldspathic peridotite,sibling
+Dunite,rock,garnet peridotite,sibling
+Dunite,rock,garnet bearing peridotite,sibling
+Durain,rock,bituminous coal,gloss
+Durain,rock,dark coal,gloss
+Durain,rock,black coal,gloss
+Durain,rock,banded bright coal,sibling
+Durain,rock,banded coal,sibling
+Durain,rock,banded dull coal,sibling
+Duricrust,rock,deposit residual,gloss
+Duricrust,rock,general residual,gloss
+Duricrust,rock,term residual,gloss
+Eclogite,rock,rock metamorphic,gloss
+Eclogite,rock,protolith metamorphic,gloss
+Eclogite,rock,based metamorphic,gloss
+Eclogite,rock,pomegranate brightness cliff,echo
+Felsite,rock,fine grained,gloss
+Felsite,rock,normal grained,gloss
+Felsite,rock,crystalline grained,gloss
+Fenite,rock,metasomatic rock,gloss
+Fenite,rock,rocks rock,gloss
+Fenite,rock,rich rock,gloss
+Fenite,rock,andesitic rock,sibling
+Fenite,rock,anorthositic rock,sibling
+Ferricrete,rock,conglomerate duricrust,gloss
+Ferricrete,rock,sand duricrust,gloss
+Ferricrete,rock,gravel duricrust,gloss
+Ferrocarbonatite,rock,rock carbonatite,gloss
+Ferrocarbonatite,rock,term carbonatite,gloss
+Ferrocarbonatite,rock,when carbonatite,gloss
+Ferrocarbonatite,rock,siilinjärvi carbonatite,sibling
+Ferrocarbonatite,rock,calcite carbonatite,sibling
+Ferrocarbonatite,rock,dolomite carbonatite,sibling
+Fill,rock,observe full,echo
+Fill,rock,append mend,echo
+Fill,rock,full make,echo
+Fines (silts and clays),rock,deposit artificial,gloss
+Fines (silts and clays),rock,rock artificial,gloss
+Fines (silts and clays),rock,sediment artificial,gloss
+Flint,rock,fire stone,echo
+Flint,rock,flintstone stone,echo
+Flint,rock,fire strike stone,echo
+Flint,rock,tooth stone,echo
+Foidite,rock,foiditic rock,gloss
+Foidite,rock,name rock,gloss
+Foidite,rock,fine rock,gloss
+Foidite,rock,andesitic rock,sibling
+Foidite,rock,anorthositic rock,sibling
+Foidite (TAS),rock,foiditic rock,gloss
+Foidite (TAS),rock,total rock,gloss
+Foidite (TAS),rock,alkali rock,gloss
+Foidite (TAS),rock,andesitic rock,sibling
+Foidite (TAS),rock,anorthositic rock,sibling
+Foidolite,rock,foidolitic rock,gloss
+Foidolite,rock,coarse rock,gloss
+Foidolite,rock,grained rock,gloss
+Foidolite,rock,andesitic rock,sibling
+Foidolite,rock,anorthositic rock,sibling
+Fusain,rock,bituminous coal,gloss
+Fusain,rock,black coal,gloss
+Fusain,rock,soft coal,gloss
+Fusain,rock,banded bright coal,sibling
+Fusain,rock,banded coal,sibling
+Fusain,rock,banded dull coal,sibling
+Gabbro,rock,gabbroic rock,gloss
+Gabbro,rock,coarse rock,gloss
+Gabbro,rock,grained rock,gloss
+Gabbro,rock,andesitic rock,sibling
+Gabbro,rock,anorthositic rock,sibling
+Ganister,rock,quartz arenite,gloss
+Ganister,rock,hard arenite,gloss
+Ganister,rock,fine arenite,gloss
+Ganister,rock,coarse meta arenite,sibling
+Ganister,rock,conglomerate feldspathic arenite,sibling
+Ganister,rock,feldspathic arenite,sibling
+Gneiss,rock,rock metamorphic,gloss
+Gneiss,rock,protolith metamorphic,gloss
+Gneiss,rock,based metamorphic,gloss
+Gneiss,rock,slice hemp cliff,echo
+Gneiss,rock,together spark,echo
+Gossan,rock,near duricrust,gloss
+Gossan,rock,surface duricrust,gloss
+Gossan,rock,iron duricrust,gloss
+Granite,rock,granitic rock,gloss
+Granite,rock,coarse rock,gloss
+Granite,rock,grained rock,gloss
+Granite,rock,blossoms post cliff,echo
+Granite,rock,anger river cancer,echo
+Granite,rock,andesitic rock,sibling
+Granite,rock,anorthositic rock,sibling
+Granodiorite,rock,granitic rock,gloss
+Granodiorite,rock,coarse rock,gloss
+Granodiorite,rock,grained rock,gloss
+Granodiorite,rock,andesitic rock,sibling
+Granodiorite,rock,anorthositic rock,sibling
+Granofels,rock,rock metamorphic,gloss
+Granofels,rock,protolith metamorphic,gloss
+Granofels,rock,based metamorphic,gloss
+Gravel,rock,stone refuse,echo
+Gravel (Sea bed sediment, based on Folk),rock,sediment marine,gloss
+Gravel (Sea bed sediment, based on Folk),rock,based marine,gloss
+Gravel (Sea bed sediment, based on Folk),rock,folk marine,gloss
+Gravel [UDCS],rock,superficial natural,gloss
+Gravel [UDCS],rock,deposit natural,gloss
+Gravel [UDCS],rock,civil natural,gloss
+Greisen,rock,metasomatic rock,gloss
+Greisen,rock,granitic rock,gloss
+Greisen,rock,altered rock,gloss
+Greisen,rock,andesitic rock,sibling
+Greisen,rock,anorthositic rock,sibling
+Guano,rock,phosphate phosphorite,gloss
+Guano,rock,rich phosphorite,gloss
+Guano,rock,deposit phosphorite,gloss
+Guano,rock,bird manure,echo
+Guano,rock,sea bird manure,echo
+Guano,rock,bird manure stone,echo
+Guano,rock,metamicrooncoid phosphorite,sibling
+Guano,rock,metaoncoid phosphorite,sibling
+Halite,rock,cliff salt,echo
+Halite,rock,stone salt,echo
+Halite,rock,mine salt,echo
+Harzburgite,rock,pyroxene peridotite,gloss
+Harzburgite,rock,rock peridotite,gloss
+Harzburgite,rock,olivine peridotite,gloss
+Harzburgite,rock,feldspathic peridotite,sibling
+Harzburgite,rock,garnet peridotite,sibling
+Harzburgite,rock,garnet bearing peridotite,sibling
+Hematite (vein),rock,rock vein,gloss
+Hematite (vein),rock,pyritic rock vein,sibling
+Herbicide,rock,weeding substance,echo
+Herbicide,rock,plant poison,echo
+Hornblendite,rock,ultramafic rock,gloss
+Hornblendite,rock,coarse rock,gloss
+Hornblendite,rock,grained rock,gloss
+Hornblendite,rock,andesitic rock,sibling
+Hornblendite,rock,anorthositic rock,sibling
+Hornblendite (s.s.),rock,hornblende rich,gloss
+Hornblendite (s.s.),rock,rock rich,gloss
+Hornblendite (s.s.),rock,olivine rich,gloss
+Hornfels,rock,metamorphic contact,gloss
+Hornfels,rock,rock contact,gloss
+Hornfels,rock,granofels contact,gloss
+Ilmenitite,rock,restricted rock,gloss
+Ilmenitite,rock,mineralogy rock,gloss
+Ilmenitite,rock,coarse rock,gloss
+Ilmenitite,rock,andesitic rock,sibling
+Ilmenitite,rock,anorthositic rock,sibling
+Iron (vein),rock,rock vein,gloss
+Iron (vein),rock,pyritic rock vein,sibling
+Jasper,rock,presence chert,gloss
+Jasper,rock,research chert,gloss
+Jasper,rock,report chert,gloss
+Jasper,rock,jade jade,echo
+Jasper,rock,argillaceous limestone chert,sibling
+Jasper,rock,dolostone chert,sibling
+Jasper,rock,limestone chert,sibling
+Kalsilitite,rock,rock kalsilitic,gloss
+Kalsilitite,rock,general kalsilitic,gloss
+Kalsilitite,rock,name kalsilitic,gloss
+Kalsilitolite,rock,rock kalsilitic,gloss
+Kalsilitolite,rock,coarse kalsilitic,gloss
+Kalsilitolite,rock,grained kalsilitic,gloss
+Kersantite,rock,rock lamprophyre,gloss
+Kersantite,rock,plagioclase lamprophyre,gloss
+Kersantite,rock,dominant lamprophyre,gloss
+Kersantite,rock,biotite lamprophyre,sibling
+Kersantite,rock,foliated lamprophyre,sibling
+Kersantite,rock,foliated biotite lamprophyre,sibling
+Kimberlite,rock,crystalline exotic,gloss
+Kimberlite,rock,igneous exotic,gloss
+Kimberlite,rock,rock exotic,gloss
+Komatiite,rock,picritic rock,gloss
+Komatiite,rock,research rock,gloss
+Komatiite,rock,report rock,gloss
+Komatiite,rock,andesitic rock,sibling
+Komatiite,rock,anorthositic rock,sibling
+Lamalginite,rock,algal sapropelite,gloss
+Lamalginite,rock,matter sapropelite,gloss
+Lamalginite,rock,thin sapropelite,gloss
+Lamproite,rock,crystalline exotic,gloss
+Lamproite,rock,igneous exotic,gloss
+Lamproite,rock,rock exotic,gloss
+Lamprophyre,rock,crystalline exotic,gloss
+Lamprophyre,rock,igneous exotic,gloss
+Lamprophyre,rock,rock exotic,gloss
+Lapillistone,rock,pyroclastic rock,gloss
+Lapillistone,rock,average rock,gloss
+Lapillistone,rock,size rock,gloss
+Lapillistone,rock,andesitic rock,sibling
+Lapillistone,rock,anorthositic rock,sibling
+Latite,rock,trachytic rock,gloss
+Latite,rock,name rock,gloss
+Latite,rock,fine rock,gloss
+Latite,rock,andesitic rock,sibling
+Latite,rock,anorthositic rock,sibling
+Lava,rock,melt cliff,echo
+Lava,rock,melt rock,echo
+Lead (vein),rock,rock vein,gloss
+Lead (vein),rock,pyritic rock vein,sibling
+Lherzolite,rock,pyroxene peridotite,gloss
+Lherzolite,rock,rock peridotite,gloss
+Lherzolite,rock,olivine peridotite,gloss
+Lherzolite,rock,feldspathic peridotite,sibling
+Lherzolite,rock,garnet peridotite,sibling
+Lherzolite,rock,garnet bearing peridotite,sibling
+Lignite,rock,pure coal,gloss
+Lignite,rock,order coal,gloss
+Lignite,rock,peat coal,gloss
+Lignite,rock,banded bright coal,sibling
+Lignite,rock,banded coal,sibling
+Lignite,rock,banded dull coal,sibling
+Limestone,rock,ash cliff,echo
+Limestone,rock,stone ashes cliff,echo
+Limestone,rock,stone ashes stone,echo
+Mafite,rock,fine grained,gloss
+Mafite,rock,normal grained,gloss
+Mafite,rock,crystalline grained,gloss
+Magnesiocarbonatite,rock,rock carbonatite,gloss
+Magnesiocarbonatite,rock,term carbonatite,gloss
+Magnesiocarbonatite,rock,when carbonatite,gloss
+Magnesiocarbonatite,rock,siilinjärvi carbonatite,sibling
+Magnesiocarbonatite,rock,calcite carbonatite,sibling
+Magnesiocarbonatite,rock,dolomite carbonatite,sibling
+Magnetitite,rock,restricted rock,gloss
+Magnetitite,rock,mineralogy rock,gloss
+Magnetitite,rock,coarse rock,gloss
+Magnetitite,rock,andesitic rock,sibling
+Magnetitite,rock,anorthositic rock,sibling
+Marble,rock,rock metamorphic,gloss
+Marble,rock,protolith metamorphic,gloss
+Marble,rock,based metamorphic,gloss
+Marble,rock,pellet precious stone,echo
+Marble,rock,shoot precious stone,echo
+Marble,rock,flower stone,echo
+Marble,rock,big reason stone,echo
+Marble,rock,glass ball,echo
+Meimechite,rock,picritic rock,gloss
+Meimechite,rock,research rock,gloss
+Meimechite,rock,report rock,gloss
+Meimechite,rock,andesitic rock,sibling
+Meimechite,rock,anorthositic rock,sibling
+Melilitite,rock,ultramafic rock,gloss
+Melilitite,rock,melilitic rock,gloss
+Melilitite,rock,general rock,gloss
+Melilitite,rock,andesitic rock,sibling
+Melilitite,rock,anorthositic rock,sibling
+Melilitolite,rock,ultramafic rock,gloss
+Melilitolite,rock,melilitic rock,gloss
+Melilitolite,rock,general rock,gloss
+Melilitolite,rock,andesitic rock,sibling
+Melilitolite,rock,anorthositic rock,sibling
+Microclinopyroxenite,rock,rock micropyroxenite,gloss
+Microclinopyroxenite,rock,medium micropyroxenite,gloss
+Microclinopyroxenite,rock,grained micropyroxenite,gloss
+Microclinopyroxenite,rock,hornblende micropyroxenite,sibling
+Microclinopyroxenite,rock,olivine hornblende micropyroxenite,sibling
+Microclinopyroxenite,rock,olivine micropyroxenite,sibling
+Microdiorite,rock,microdioritic rock,gloss
+Microdiorite,rock,medium rock,gloss
+Microdiorite,rock,grained rock,gloss
+Microdiorite,rock,andesitic rock,sibling
+Microdiorite,rock,anorthositic rock,sibling
+Microdunite,rock,rock microperidotite,gloss
+Microdunite,rock,medium microperidotite,gloss
+Microdunite,rock,grained microperidotite,gloss
+Microdunite,rock,hornblende microperidotite,sibling
+Microdunite,rock,pyroxene hornblende microperidotite,sibling
+Microdunite,rock,pyroxene microperidotite,sibling
+Microfoidolite,rock,microfoidolitic rock,gloss
+Microfoidolite,rock,medium rock,gloss
+Microfoidolite,rock,grained rock,gloss
+Microfoidolite,rock,andesitic rock,sibling
+Microfoidolite,rock,anorthositic rock,sibling
+Microgabbro,rock,microgabbroic rock,gloss
+Microgabbro,rock,medium rock,gloss
+Microgabbro,rock,grained rock,gloss
+Microgabbro,rock,andesitic rock,sibling
+Microgabbro,rock,anorthositic rock,sibling
+Microgranite,rock,microgranitic rock,gloss
+Microgranite,rock,medium rock,gloss
+Microgranite,rock,grained rock,gloss
+Microgranite,rock,andesitic rock,sibling
+Microgranite,rock,anorthositic rock,sibling
+Microgranodiorite,rock,microgranitic rock,gloss
+Microgranodiorite,rock,medium rock,gloss
+Microgranodiorite,rock,grained rock,gloss
+Microgranodiorite,rock,andesitic rock,sibling
+Microgranodiorite,rock,anorthositic rock,sibling
+Microharzburgite,rock,pyroxene microperidotite,gloss
+Microharzburgite,rock,rock microperidotite,gloss
+Microharzburgite,rock,medium microperidotite,gloss
+Microharzburgite,rock,hornblende microperidotite,sibling
+Microharzburgite,rock,pyroxene hornblende microperidotite,sibling
+Microhornblendite,rock,ultramafic rock,gloss
+Microhornblendite,rock,medium rock,gloss
+Microhornblendite,rock,andesitic rock,sibling
+Microhornblendite,rock,anorthositic rock,sibling
+Microlherzolite,rock,pyroxene microperidotite,gloss
+Microlherzolite,rock,rock microperidotite,gloss
+Microlherzolite,rock,medium microperidotite,gloss
+Microlherzolite,rock,hornblende microperidotite,sibling
+Microlherzolite,rock,pyroxene hornblende microperidotite,sibling
+Micromonzodiorite,rock,microdioritic rock,gloss
+Micromonzodiorite,rock,medium rock,gloss
+Micromonzodiorite,rock,grained rock,gloss
+Micromonzodiorite,rock,andesitic rock,sibling
+Micromonzodiorite,rock,anorthositic rock,sibling
+Micromonzogabbro,rock,microgabbroic rock,gloss
+Micromonzogabbro,rock,medium rock,gloss
+Micromonzogabbro,rock,grained rock,gloss
+Micromonzogabbro,rock,andesitic rock,sibling
+Micromonzogabbro,rock,anorthositic rock,sibling
+Micromonzogranite,rock,rock microgranite,gloss
+Micromonzogranite,rock,medium microgranite,gloss
+Micromonzogranite,rock,grained microgranite,gloss
+Micromonzogranite,rock,alkali feldspar microgranite,sibling
+Micromonzogranite,rock,aplitic microgranite,sibling
+Micromonzogranite,rock,aplitic foliated microgranite,sibling
+Micromonzonite,rock,microsyenitic rock,gloss
+Micromonzonite,rock,medium rock,gloss
+Micromonzonite,rock,grained rock,gloss
+Micromonzonite,rock,andesitic rock,sibling
+Micromonzonite,rock,anorthositic rock,sibling
+Micronorite,rock,rock microgabbro,gloss
+Micronorite,rock,medium microgabbro,gloss
+Micronorite,rock,grained microgabbro,gloss
+Micronorite,rock,analcime microgabbro,sibling
+Micronorite,rock,basalt microgabbro,sibling
+Micronorite,rock,biotite bytownite microgabbro,sibling
+Microperidotite,rock,ultramafic rock,gloss
+Microperidotite,rock,medium rock,gloss
+Microperidotite,rock,andesitic rock,sibling
+Microperidotite,rock,anorthositic rock,sibling
+Micropyroxenite,rock,ultramafic rock,gloss
+Micropyroxenite,rock,medium rock,gloss
+Micropyroxenite,rock,andesitic rock,sibling
+Micropyroxenite,rock,anorthositic rock,sibling
+Microquartzolite,rock,quartz rock,gloss
+Microquartzolite,rock,rich rock,gloss
+Microquartzolite,rock,medium rock,gloss
+Microquartzolite,rock,andesitic rock,sibling
+Microquartzolite,rock,anorthositic rock,sibling
+Microsyenite,rock,microsyenitic rock,gloss
+Microsyenite,rock,medium rock,gloss
+Microsyenite,rock,grained rock,gloss
+Microsyenite,rock,andesitic rock,sibling
+Microsyenite,rock,anorthositic rock,sibling
+Microsyenogranite,rock,rock microgranite,gloss
+Microsyenogranite,rock,medium microgranite,gloss
+Microsyenogranite,rock,grained microgranite,gloss
+Microsyenogranite,rock,alkali feldspar microgranite,sibling
+Microsyenogranite,rock,aplitic microgranite,sibling
+Microsyenogranite,rock,aplitic foliated microgranite,sibling
+Microtonalite,rock,microgranitic rock,gloss
+Microtonalite,rock,medium rock,gloss
+Microtonalite,rock,grained rock,gloss
+Microtonalite,rock,andesitic rock,sibling
+Microtonalite,rock,anorthositic rock,sibling
+Microtroctolite,rock,rock microgabbro,gloss
+Microtroctolite,rock,medium microgabbro,gloss
+Microtroctolite,rock,grained microgabbro,gloss
+Microtroctolite,rock,analcime microgabbro,sibling
+Microtroctolite,rock,basalt microgabbro,sibling
+Microtroctolite,rock,biotite bytownite microgabbro,sibling
+Microwebsterite,rock,rock micropyroxenite,gloss
+Microwebsterite,rock,medium micropyroxenite,gloss
+Microwebsterite,rock,grained micropyroxenite,gloss
+Microwebsterite,rock,hornblende micropyroxenite,sibling
+Microwebsterite,rock,olivine hornblende micropyroxenite,sibling
+Microwebsterite,rock,olivine micropyroxenite,sibling
+Microwehrlite,rock,pyroxene microperidotite,gloss
+Microwehrlite,rock,rock microperidotite,gloss
+Microwehrlite,rock,medium microperidotite,gloss
+Microwehrlite,rock,hornblende microperidotite,sibling
+Microwehrlite,rock,pyroxene hornblende microperidotite,sibling
+Minette,rock,rock lamprophyre,gloss
+Minette,rock,orthoclase lamprophyre,gloss
+Minette,rock,dominant lamprophyre,gloss
+Minette,rock,biotite lamprophyre,sibling
+Minette,rock,foliated lamprophyre,sibling
+Minette,rock,foliated biotite lamprophyre,sibling
+Monchiquite,rock,rock lamprophyre,gloss
+Monchiquite,rock,feldspar lamprophyre,gloss
+Monchiquite,rock,absent lamprophyre,gloss
+Monchiquite,rock,biotite lamprophyre,sibling
+Monchiquite,rock,foliated lamprophyre,sibling
+Monchiquite,rock,foliated biotite lamprophyre,sibling
+Monzodiorite,rock,dioritic rock,gloss
+Monzodiorite,rock,coarse rock,gloss
+Monzodiorite,rock,grained rock,gloss
+Monzodiorite,rock,andesitic rock,sibling
+Monzodiorite,rock,anorthositic rock,sibling
+Monzogabbro,rock,gabbroic rock,gloss
+Monzogabbro,rock,coarse rock,gloss
+Monzogabbro,rock,grained rock,gloss
+Monzogabbro,rock,andesitic rock,sibling
+Monzogabbro,rock,anorthositic rock,sibling
+Monzogranite,rock,rock granite,gloss
+Monzogranite,rock,coarse granite,gloss
+Monzogranite,rock,grained granite,gloss
+Monzogranite,rock,alkali granite,sibling
+Monzogranite,rock,alkali feldspar granite,sibling
+Monzogranite,rock,biotite granite,sibling
+Monzonite,rock,syenitic rock,gloss
+Monzonite,rock,coarse rock,gloss
+Monzonite,rock,grained rock,gloss
+Monzonite,rock,andesitic rock,sibling
+Monzonite,rock,anorthositic rock,sibling
+Mud,rock,gin dirt,echo
+Mud (Sea bed sediment, based on Folk),rock,sediment marine,gloss
+Mud (Sea bed sediment, based on Folk),rock,based marine,gloss
+Mud (Sea bed sediment, based on Folk),rock,folk marine,gloss
+Mud (Sea bed sediment, based on Folk),rock,research marine,gloss
+Mud (Sea bed sediment, based on Folk),rock,sediment based marine,gloss
+Mud [UDCS-X],rock,superficial natural,gloss
+Mud [UDCS-X],rock,deposit natural,gloss
+Mud [UDCS-X],rock,original natural,gloss
+Mud [UDCS-X],rock,superficial deposit natural,gloss
+Mylonite,rock,mylonitic rock,gloss
+Mylonite,rock,porphyroclasts rock,gloss
+Mylonite,rock,comprise rock,gloss
+Mylonite,rock,andesitic rock,sibling
+Mylonite,rock,anorthositic rock,sibling
+Natrocarbonatite,rock,rock carbonatite,gloss
+Natrocarbonatite,rock,term carbonatite,gloss
+Natrocarbonatite,rock,when carbonatite,gloss
+Natrocarbonatite,rock,siilinjärvi carbonatite,sibling
+Natrocarbonatite,rock,calcite carbonatite,sibling
+Natrocarbonatite,rock,dolomite carbonatite,sibling
+Norite,rock,rock gabbro,gloss
+Norite,rock,plagioclase gabbro,gloss
+Norite,rock,olivine gabbro,gloss
+Norite,rock,analcime gabbro,sibling
+Norite,rock,biotite gabbro,sibling
+Norite,rock,biotite metaquartz gabbro,sibling
+Obsidian,rock,glassy rock,gloss
+Obsidian,rock,igneous rock,gloss
+Obsidian,rock,fresh rock,gloss
+Obsidian,rock,black glorious cliff,echo
+Obsidian,rock,black glorious stone,echo
+Obsidian,rock,lava glass,echo
+Obsidian,rock,andesitic rock,sibling
+Obsidian,rock,anorthositic rock,sibling
+Orthogneiss,rock,meta igneous,gloss
+Orthogneiss,rock,rock igneous,gloss
+Orthogneiss,rock,based igneous,gloss
+Orthogranofels,rock,meta igneous,gloss
+Orthogranofels,rock,rock igneous,gloss
+Orthogranofels,rock,based igneous,gloss
+Orthopyroxenite,rock,pyroxene pyroxenite,gloss
+Orthopyroxenite,rock,almost pyroxenite,gloss
+Orthopyroxenite,rock,orthopyroxene pyroxenite,gloss
+Orthopyroxenite,rock,biotite pyroxenite,sibling
+Orthopyroxenite,rock,hornblende pyroxenite,sibling
+Orthopyroxenite,rock,olivine hornblende pyroxenite,sibling
+Orthoschist,rock,meta igneous,gloss
+Orthoschist,rock,rock igneous,gloss
+Orthoschist,rock,based igneous,gloss
+Paragneiss,rock,rock metasedimentary,gloss
+Paragneiss,rock,based metasedimentary,gloss
+Paragneiss,rock,textural metasedimentary,gloss
+Paragranofels,rock,rock metasedimentary,gloss
+Paragranofels,rock,based metasedimentary,gloss
+Paragranofels,rock,textural metasedimentary,gloss
+Paraschist,rock,rock metasedimentary,gloss
+Paraschist,rock,based metasedimentary,gloss
+Paraschist,rock,textural metasedimentary,gloss
+Peat,rock,rich sediment,gloss
+Peat,rock,organic sediment,gloss
+Peat,rock,matter sediment,gloss
+Peat,rock,mud charcoal,echo
+Peat,rock,mud coal,echo
+Peat,rock,ankerite sediment,sibling
+Peat,rock,aragonite sediment,sibling
+Peat,rock,biological sediment,sibling
+Peat [UDCS],rock,superficial natural,gloss
+Peat [UDCS],rock,deposit natural,gloss
+Peat [UDCS],rock,civil natural,gloss
+Pegmatite,rock,coarse grained,gloss
+Pegmatite,rock,normal grained,gloss
+Pegmatite,rock,crystalline grained,gloss
+Pelite,rock,rock metasedimentary,gloss
+Pelite,rock,composed metasedimentary,gloss
+Pelite,rock,largely metasedimentary,gloss
+Peridotite,rock,ultramafic rock,gloss
+Peridotite,rock,coarse rock,gloss
+Peridotite,rock,grained rock,gloss
+Peridotite,rock,olive olive cliff,echo
+Peridotite,rock,andesitic rock,sibling
+Peridotite,rock,anorthositic rock,sibling
+Pesticide,rock,agriculture drugs,echo
+Pesticide,rock,nong medicine,echo
+Pesticide,rock,plant protection appliance,echo
+Pesticide,rock,defense medium,echo
+Phonolite,rock,phonolitic rock,gloss
+Phonolite,rock,name rock,gloss
+Phonolite,rock,fine rock,gloss
+Phonolite,rock,andesitic rock,sibling
+Phonolite,rock,anorthositic rock,sibling
+Phonolite (TAS),rock,phonolitic rock,gloss
+Phonolite (TAS),rock,total rock,gloss
+Phonolite (TAS),rock,alkali rock,gloss
+Phonolite (TAS),rock,andesitic rock,sibling
+Phonolite (TAS),rock,anorthositic rock,sibling
+Phyllonite,rock,mylonitic rock,gloss
+Phyllonite,rock,rocks rock,gloss
+Phyllonite,rock,phyllitic rock,gloss
+Phyllonite,rock,andesitic rock,sibling
+Phyllonite,rock,anorthositic rock,sibling
+Picrite,rock,picritic rock,gloss
+Picrite,rock,research rock,gloss
+Picrite,rock,report rock,gloss
+Picrite,rock,andesitic rock,sibling
+Picrite,rock,anorthositic rock,sibling
+Picrobasalt,rock,research mafite,gloss
+Picrobasalt,rock,report mafite,gloss
+Picrobasalt,rock,chlorite actinolite mafite,sibling
+Pitchstone,rock,glassy rock,gloss
+Pitchstone,rock,igneous rock,gloss
+Pitchstone,rock,altered rock,gloss
+Pitchstone,rock,andesitic rock,sibling
+Pitchstone,rock,anorthositic rock,sibling
+Porcellanite,rock,rock siliceous,gloss
+Porcellanite,rock,have siliceous,gloss
+Porcellanite,rock,texture siliceous,gloss
+Porphyry,rock,fine grained,gloss
+Porphyry,rock,normal grained,gloss
+Porphyry,rock,crystalline grained,gloss
+Porphyry,rock,mottled cliff,echo
+Protocataclasite,rock,cataclastic rock,gloss
+Protocataclasite,rock,fragments rock,gloss
+Protocataclasite,rock,matrix rock,gloss
+Protocataclasite,rock,andesitic rock,sibling
+Protocataclasite,rock,anorthositic rock,sibling
+Protomylonite,rock,mylonitic rock,gloss
+Protomylonite,rock,porphyroclasts rock,gloss
+Protomylonite,rock,comprise rock,gloss
+Protomylonite,rock,andesitic rock,sibling
+Protomylonite,rock,anorthositic rock,sibling
+Psammite,rock,rock metasedimentary,gloss
+Psammite,rock,composed metasedimentary,gloss
+Psammite,rock,largely metasedimentary,gloss
+Pyrite (vein),rock,rock vein,gloss
+Pyrite (vein),rock,pyritic rock vein,sibling
+Pyroxenite,rock,ultramafic rock,gloss
+Pyroxenite,rock,coarse rock,gloss
+Pyroxenite,rock,grained rock,gloss
+Pyroxenite,rock,andesitic rock,sibling
+Pyroxenite,rock,anorthositic rock,sibling
+Pyroxenite (s.s.),rock,pyroxene rich,gloss
+Pyroxenite (s.s.),rock,rock rich,gloss
+Pyroxenite (s.s.),rock,olivine rich,gloss
+Quartz (vein),rock,rock vein,gloss
+Quartz (vein),rock,pyritic rock vein,sibling
+Quartzite,rock,rock metasedimentary,gloss
+Quartzite,rock,composed metasedimentary,gloss
+Quartzite,rock,largely metasedimentary,gloss
+Quartzolite,rock,rich rock,gloss
+Quartzolite,rock,coarse rock,gloss
+Quartzolite,rock,andesitic rock,sibling
+Quartzolite,rock,anorthositic rock,sibling
+Radiolarite,rock,rock siliceous,gloss
+Radiolarite,rock,composed siliceous,gloss
+Radiolarite,rock,equivalent siliceous,gloss
+Regolith,rock,deposit residual,gloss
+Regolith,rock,general residual,gloss
+Regolith,rock,term residual,gloss
+Rhyolite,rock,rhyolitic rock,gloss
+Rhyolite,rock,name rock,gloss
+Rhyolite,rock,fine rock,gloss
+Rhyolite,rock,flow line cliff,echo
+Rhyolite,rock,andesitic rock,sibling
+Rhyolite,rock,anorthositic rock,sibling
+Rhyolite (TAS),rock,rhyolitic rock,gloss
+Rhyolite (TAS),rock,total rock,gloss
+Rhyolite (TAS),rock,alkali rock,gloss
+Rhyolite (TAS),rock,andesitic rock,sibling
+Rhyolite (TAS),rock,anorthositic rock,sibling
+Rock,rock,cliff stone,echo
+Rock,rock,shake bright,echo
+Rock,rock,suddenly long,echo
+Rock,rock,bright pond,echo
+Rock,rock,wag bright,echo
+Rock,rock,shake move,echo
+Rock,rock,bright move,echo
+Rock,rock,bright sway,echo
+Rodingites,rock,metasomatic rock,gloss
+Rodingites,rock,rocks rock,gloss
+Rodingites,rock,rich rock,gloss
+Rodingites,rock,andesitic rock,sibling
+Rodingites,rock,anorthositic rock,sibling
+Sand,rock,pebbles offspring,echo
+Sand,rock,mother flesh,echo
+Sand,rock,mother bird,echo
+Sand (Sea bed sediment, based on Folk),rock,sediment marine,gloss
+Sand (Sea bed sediment, based on Folk),rock,based marine,gloss
+Sand (Sea bed sediment, based on Folk),rock,folk marine,gloss
+Sand [UDCS],rock,superficial natural,gloss
+Sand [UDCS],rock,deposit natural,gloss
+Sand [UDCS],rock,civil natural,gloss
+Sandstone,rock,pebbles stone,echo
+Sannaite,rock,rock lamprophyre,gloss
+Sannaite,rock,orthoclase lamprophyre,gloss
+Sannaite,rock,dominant lamprophyre,gloss
+Sannaite,rock,biotite lamprophyre,sibling
+Sannaite,rock,foliated lamprophyre,sibling
+Sannaite,rock,foliated biotite lamprophyre,sibling
+Saprolite,rock,weathered regolith,gloss
+Saprolite,rock,materials regolith,gloss
+Saprolite,rock,parent regolith,gloss
+Sapropelite,rock,sedimentary rock,gloss
+Sapropelite,rock,rich rock,gloss
+Sapropelite,rock,organic rock,gloss
+Sapropelite,rock,andesitic rock,sibling
+Sapropelite,rock,anorthositic rock,sibling
+Schist,rock,rock metamorphic,gloss
+Schist,rock,protolith metamorphic,gloss
+Schist,rock,based metamorphic,gloss
+Schist,rock,piece cliff,echo
+Schist,rock,sheet cliff,echo
+Schist,rock,slice cliff,echo
+Schist,rock,party cancer,echo
+Sediment,rock,injure refuse,echo
+Sediment,rock,sink accumulate,echo
+Sediment,rock,accumulate thing,echo
+Selenite,rock,maria glass,echo
+Semipelite,rock,rock metasedimentary,gloss
+Semipelite,rock,composed metasedimentary,gloss
+Semipelite,rock,largely metasedimentary,gloss
+Serpentinite,rock,meta rock,gloss
+Serpentinite,rock,ultramafic rock,gloss
+Serpentinite,rock,dominant rock,gloss
+Serpentinite,rock,snake line cliff,echo
+Serpentinite,rock,andesitic rock,sibling
+Serpentinite,rock,anorthositic rock,sibling
+Sewage,rock,filthy water,echo
+Sewage,rock,down water,echo
+Shells [UDCS-X],rock,superficial natural,gloss
+Shells [UDCS-X],rock,deposit natural,gloss
+Shells [UDCS-X],rock,original natural,gloss
+Silcrete,rock,silicate conglomerate,gloss
+Silcrete,rock,sand conglomerate,gloss
+Silcrete,rock,gravel conglomerate,gloss
+Silcrete,rock,andesite sandstone conglomerate,sibling
+Silcrete,rock,breccia conglomerate,sibling
+Silcrete,rock,feldspathic arenite conglomerate,sibling
+Silt,rock,dust soil,echo
+Silt,rock,mud sand,echo
+Silt,rock,powder pebbles,echo
+Silt,rock,sink mud,echo
+Silt [UDCS],rock,superficial natural,gloss
+Silt [UDCS],rock,deposit natural,gloss
+Silt [UDCS],rock,civil natural,gloss
+Siltstone,rock,research mudstone,gloss
+Siltstone,rock,report mudstone,gloss
+Siltstone,rock,silicate mudstone,gloss
+Siltstone,rock,ankerite mudstone,sibling
+Siltstone,rock,aragonite mudstone,sibling
+Siltstone,rock,bituminous mudstone,sibling
+Sinter,rock,rock siliceous,gloss
+Sinter,rock,composed siliceous,gloss
+Sinter,rock,white siliceous,gloss
+Sinter,rock,spring flowery,echo
+Sinter,rock,burn tie,echo
+Skarn,rock,metasomatic rock,gloss
+Skarn,rock,many rock,gloss
+Skarn,rock,result rock,gloss
+Skarn,rock,andesitic rock,sibling
+Skarn,rock,anorthositic rock,sibling
+Slate,rock,rock metamorphic,gloss
+Slate,rock,protolith metamorphic,gloss
+Slate,rock,based metamorphic,gloss
+Slate,rock,plank cliff,echo
+Slate,rock,stone plank,echo
+Slate,rock,page cliff,echo
+Slate,rock,rock painting,echo
+Slate,rock,schist flagstone,echo
+Soil,rock,earth material,echo
+Spessartite,rock,rock lamprophyre,gloss
+Spessartite,rock,plagioclase lamprophyre,gloss
+Spessartite,rock,dominant lamprophyre,gloss
+Spessartite,rock,biotite lamprophyre,sibling
+Spessartite,rock,foliated lamprophyre,sibling
+Spessartite,rock,foliated biotite lamprophyre,sibling
+Spiculite,rock,rock siliceous,gloss
+Spiculite,rock,composed siliceous,gloss
+Spiculite,rock,sponge siliceous,gloss
+Syenite,rock,syenitic rock,gloss
+Syenite,rock,coarse rock,gloss
+Syenite,rock,grained rock,gloss
+Syenite,rock,andesitic rock,sibling
+Syenite,rock,anorthositic rock,sibling
+Syenogranite,rock,rock granite,gloss
+Syenogranite,rock,coarse granite,gloss
+Syenogranite,rock,grained granite,gloss
+Syenogranite,rock,alkali granite,sibling
+Syenogranite,rock,alkali feldspar granite,sibling
+Syenogranite,rock,biotite granite,sibling
+Telaginite,rock,organic sapropelite,gloss
+Telaginite,rock,matter sapropelite,gloss
+Telaginite,rock,present sapropelite,gloss
+Tephrite,rock,tephritic rock,gloss
+Tephrite,rock,name rock,gloss
+Tephrite,rock,fine rock,gloss
+Tephrite,rock,andesitic rock,sibling
+Tephrite,rock,anorthositic rock,sibling
+Tephrite (TAS),rock,tephritic rock,gloss
+Tephrite (TAS),rock,total rock,gloss
+Tephrite (TAS),rock,alkali rock,gloss
+Tephrite (TAS),rock,andesitic rock,sibling
+Tephrite (TAS),rock,anorthositic rock,sibling
+Tonalite,rock,granitic rock,gloss
+Tonalite,rock,coarse rock,gloss
+Tonalite,rock,grained rock,gloss
+Tonalite,rock,andesitic rock,sibling
+Tonalite,rock,anorthositic rock,sibling
+Tonstein,rock,aluminium monomineralic,gloss
+Tonstein,rock,silicate monomineralic,gloss
+Tonstein,rock,sedimentary monomineralic,gloss
+Trachyandesite,rock,trachytic rock,gloss
+Trachyandesite,rock,total rock,gloss
+Trachyandesite,rock,alkali rock,gloss
+Trachyandesite,rock,andesitic rock,sibling
+Trachyandesite,rock,anorthositic rock,sibling
+Trachybasalt,rock,trachytic rock,gloss
+Trachybasalt,rock,total rock,gloss
+Trachybasalt,rock,alkali rock,gloss
+Trachybasalt,rock,andesitic rock,sibling
+Trachybasalt,rock,anorthositic rock,sibling
+Trachydacite,rock,trachytic rock,gloss
+Trachydacite,rock,total rock,gloss
+Trachydacite,rock,alkali rock,gloss
+Trachydacite,rock,andesitic rock,sibling
+Trachydacite,rock,anorthositic rock,sibling
+Trachyte,rock,trachytic rock,gloss
+Trachyte,rock,name rock,gloss
+Trachyte,rock,fine rock,gloss
+Trachyte,rock,rough face cliff,echo
+Trachyte,rock,andesitic rock,sibling
+Trachyte,rock,anorthositic rock,sibling
+Trachyte (TAS),rock,trachytic rock,gloss
+Trachyte (TAS),rock,total rock,gloss
+Trachyte (TAS),rock,alkali rock,gloss
+Trachyte (TAS),rock,andesitic rock,sibling
+Trachyte (TAS),rock,anorthositic rock,sibling
+Troctolite,rock,rock gabbro,gloss
+Troctolite,rock,plagioclase gabbro,gloss
+Troctolite,rock,pyroxene gabbro,gloss
+Troctolite,rock,analcime gabbro,sibling
+Troctolite,rock,biotite gabbro,sibling
+Troctolite,rock,biotite metaquartz gabbro,sibling
+Tufa,rock,deposit chemical,gloss
+Tufa,rock,natural chemical,gloss
+Tufa,rock,superficial chemical,gloss
+Tufa,rock,calcium flowery,echo
+Tuff,rock,pyroclastic rock,gloss
+Tuff,rock,average rock,gloss
+Tuff,rock,size rock,gloss
+Tuff,rock,coagulate ashes cliff,echo
+Tuff,rock,andesitic rock,sibling
+Tuff,rock,anorthositic rock,sibling
+Tuffisite,rock,intrusion breccia,gloss
+Tuffisite,rock,brecciated breccia,gloss
+Tuffisite,rock,country breccia,gloss
+Tuffisite,rock,ash breccia,sibling
+Tuffisite,rock,basaltic metavolcaniclastic breccia,sibling
+Tuffisite,rock,basaltic pyroclastic breccia,sibling
+Tuffite,rock,igneous volcaniclastic,gloss
+Tuffite,rock,rock volcaniclastic,gloss
+Tuffite,rock,sediment volcaniclastic,gloss
+Ultracataclasite,rock,cataclastic rock,gloss
+Ultracataclasite,rock,fragments rock,gloss
+Ultracataclasite,rock,matrix rock,gloss
+Ultracataclasite,rock,andesitic rock,sibling
+Ultracataclasite,rock,anorthositic rock,sibling
+Ultramafitite,rock,rock mafite,gloss
+Ultramafitite,rock,fine mafite,gloss
+Ultramafitite,rock,grained mafite,gloss
+Ultramafitite,rock,chlorite actinolite mafite,sibling
+Ultramylonite,rock,mylonitic rock,gloss
+Ultramylonite,rock,porphyroclasts rock,gloss
+Ultramylonite,rock,comprise rock,gloss
+Ultramylonite,rock,andesitic rock,sibling
+Ultramylonite,rock,anorthositic rock,sibling
+Uranium (vein),rock,rock vein,gloss
+Uranium (vein),rock,pyritic rock vein,sibling
+Vitrain,rock,bituminous coal,gloss
+Vitrain,rock,black coal,gloss
+Vitrain,rock,glassy coal,gloss
+Vitrain,rock,banded bright coal,sibling
+Vitrain,rock,banded coal,sibling
+Vitrain,rock,banded dull coal,sibling
+Vogesite,rock,rock lamprophyre,gloss
+Vogesite,rock,orthoclase lamprophyre,gloss
+Vogesite,rock,dominant lamprophyre,gloss
+Vogesite,rock,biotite lamprophyre,sibling
+Vogesite,rock,foliated lamprophyre,sibling
+Vogesite,rock,foliated biotite lamprophyre,sibling
+Void,rock,empty white,echo
+Void,rock,false empty,echo
+Wacke,rock,silicate sandstone,gloss
+Wacke,rock,rock sandstone,gloss
+Wacke,rock,have sandstone,gloss
+Wacke,rock,andesitic metavolcaniclastic sandstone,sibling
+Wacke,rock,andesitic volcaniclastic sandstone,sibling
+Wacke,rock,basaltic lava sandstone,sibling
+Websterite,rock,orthopyroxene pyroxenite,gloss
+Websterite,rock,clinopyroxene pyroxenite,gloss
+Websterite,rock,present pyroxenite,gloss
+Websterite,rock,biotite pyroxenite,sibling
+Websterite,rock,hornblende pyroxenite,sibling
+Websterite,rock,olivine hornblende pyroxenite,sibling
+Wehrlite,rock,pyroxene peridotite,gloss
+Wehrlite,rock,rock peridotite,gloss
+Wehrlite,rock,olivine peridotite,gloss
+Wehrlite,rock,feldspathic peridotite,sibling
+Wehrlite,rock,garnet peridotite,sibling
+Wehrlite,rock,garnet bearing peridotite,sibling
+Wood,rock,deposit artificial,gloss
+Wood,rock,when artificial,gloss
+Wood,rock,context artificial,gloss
+Wood,rock,tree head,echo
+Wood,rock,tree material,echo
+Wood,rock,neck ash,echo
+Wood,rock,tree medium,echo
+Wood,rock,tree racket,echo
+Zinc (vein),rock,rock vein,gloss
+Zinc (vein),rock,pyritic rock vein,sibling
+anhydrite,rock,hard stone grease,echo
+carbonate,rock,charcoal tart salt,echo
+dolomite,rock,pure clouds stone,echo
+drift,rock,flat alley,echo
+drift,rock,slip unborn child,echo
+drift,rock,float park,echo
+drift,rock,float flow,echo
+drift,rock,float swim,echo
+drift,rock,float change place,echo
+drift,rock,float change,echo
+drift,rock,whirlwind change place,echo
+evaporite,rock,steam issue cliff,echo
+granulite,rock,pure grain cliff,echo
+greensand,rock,life sand,echo
+grit,rock,pebbles gravel,echo
+grit,rock,rough pebbles,echo
+grit,rock,sink sand,echo
+igneous,rock,fire completed,echo
+igneous,rock,issue hot nature,echo
+laterite,rock,red soil,echo
+loess,rock,yellow soil,echo
+mafic,rock,bitter iron matter,echo
+marl,rock,mud ashes cliff,echo
+pumice,rock,pop stone,echo
+pumice,rock,float cliff,echo
+pumice,rock,float stone,echo
+pumice,rock,light stone,echo
+shale,rock,mud plank cliff,echo
+shale,rock,page cliff,echo
+shale,rock,blood cancer,echo
+siderite,rock,freeze spar,echo
+siderite,rock,iron meteorite,echo
+siderite,rock,bandage rite,echo
+tar,rock,burned oil,echo
+till,rock,plow seed,echo
+travertine,rock,lukewarm spring flowery,echo
+Adamellite,rock,monzonite quartz,gloss
+Adamellite,rock,milky quartz,sibling
+Adamellite,rock,rose quartz,sibling
+Adamellite,rock,shocked quartz,sibling
+Borolanite,rock,syenite nepheline,gloss
+Borolanite,rock,barium nepheline,sibling
+Kenyte,rock,found phonolite,gloss
+Kenyte,rock,mount phonolite,gloss
+Kenyte,rock,found mount phonolite,gloss
+Kenyte,rock,metatephri phonolite,sibling
+Kenyte,rock,metatephritic phonolite,sibling
+Kenyte,rock,tephri phonolite,sibling
+Minette (ore),rock,biotite lamprophyre,sibling
+Minette (ore),rock,foliated lamprophyre,sibling
+Minette (ore),rock,foliated biotite lamprophyre,sibling
+Soapstone,rock,freeze stone,echo
+Soapstone,rock,fat stone,echo
+Taconite,rock,horn cliff,echo
+anticline,structure,back slanting,echo
+cleavage,structure,breast ditch,echo
+cleavage,structure,wave crack,echo
+cleavage,structure,breast groove,echo
+cleavage,structure,loosen reason,echo
+cleavage,structure,breast interval,echo
+cleavage,structure,cut apart initiate,echo
+cleavage,structure,initiate split,echo
+cleavage,structure,breast furrow,echo
+contact,structure,connect tie,echo
+contact,structure,cut dot,echo
+contact,structure,catch dot,echo
+contact,structure,mutual receive,echo
+contact,structure,connect attach,echo
+contact,structure,join enmesh service,echo
+contact,structure,join attach,echo
+dike,structure,cliff blood vessels,echo
+enclave,structure,fly earth,echo
+fault,structure,pass wrong,echo
+fault,structure,evil injure,echo
+fault,structure,sever layer,echo
+fault,structure,disobey lose,echo
+fault,structure,cross lose,echo
+fault,structure,wrong place,echo
+fault,structure,wrong lose,echo
+fold,structure,break off pile,echo
+fold,structure,break off wrinkles,echo
+fold,structure,break off rise,echo
+fold,structure,cover signboard,echo
+fold,structure,sheep discard,echo
+fold,structure,pleat scar,echo
+fold,structure,pleat wrinkles,echo
+fold,structure,sheep small house,echo
+foliation,structure,peel reason,echo
+foliation,structure,issue leaf,echo
+foliation,structure,leaf reason,echo
+foliation,structure,life leaf,echo
+fracture,structure,sever split,echo
+fracture,structure,sever mouth,echo
+fracture,structure,break break off,echo
+fracture,structure,bone break off,echo
+fracture,structure,gorge temple,echo
+fracture,structure,gorge temple award,echo
+fracture,structure,bone break,echo
+joint,structure,off knot,echo
+joint,structure,tie dot,echo
+joint,structure,door bolt knot,echo
+joint,structure,skeleton knot,echo
+joint,structure,look earth,echo
+joint,structure,knot reason,echo
+joint,structure,continue look,echo
+joint,structure,frontier pass knot,echo
+schistosity,structure,slice reason,echo
+sill,structure,earth piece,echo
+sill,structure,vessel log,echo
+syncline,structure,toward slanting,echo
+vein,structure,quiet blood vessels,echo
+vein,structure,silent blood vessels,echo
+vein,structure,still pulse,echo
+vein,structure,leaf blood vessel,echo
+xenolith,structure,arrest obtain cliff,echo

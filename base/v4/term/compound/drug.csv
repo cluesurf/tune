@@ -1,0 +1,60 @@
+term,parts,kind
+aspirin,pain fever drug,drug
+ibuprofen,pain swell drug,drug
+acetaminophen,pain fever drug,drug
+paracetamol,pain fever drug,drug
+naproxen,long pain drug,drug
+morphine,strong pain drug,drug
+codeine,pain cough drug,drug
+fentanyl,extreme pain drug,drug
+oxycodone,strong pain drug,drug
+heroin,strong pleasure drug,drug
+penicillin,bacteria kill drug,drug
+amoxicillin,bacteria kill drug,drug
+tetracycline,bacteria block drug,drug
+ciprofloxacin,bacteria kill drug,drug
+azithromycin,bacteria block drug,drug
+insulin,sugar hormone,drug
+epinephrine,alert heart hormone,drug
+adrenaline,alert heart hormone,drug
+dopamine,reward drive signal,drug
+serotonin,mood signal,drug
+melatonin,sleep hormone,drug
+cortisol,stress hormone,drug
+testosterone,male hormone,drug
+estrogen,female sex hormone,drug
+progesterone,pregnancy hormone,drug
+oxytocin,bond birth hormone,drug
+caffeine,wake drug,drug
+nicotine,alert addict drug,drug
+ethanol,two carbon alcohol,drug
+menthol,cool smell compound,drug
+lidocaine,numb pain drug,drug
+novocaine,numb pain drug,drug
+ketamine,detach anesthetic drug,drug
+propofol,sleep anesthetic drug,drug
+diazepam,calm sleep drug,drug
+alprazolam,calm anxiety drug,drug
+fluoxetine,mood lift drug,drug
+sertraline,mood lift drug,drug
+amphetamine,energy alert drug,drug
+methamphetamine,strong energy drug,drug
+methylphenidate,attention drug,drug
+diphenhydramine,allergy sleep drug,drug
+loratadine,allergy block drug,drug
+pseudoephedrine,nose open drug,drug
+dextromethorphan,cough block drug,drug
+omeprazole,stomach acid block,drug
+metformin,blood sugar lower,drug
+warfarin,blood clot block,drug
+heparin,blood clot block,drug
+atorvastatin,blood fat lower,drug
+prednisone,swell immune drug,drug
+hydrocortisone,skin swell hormone,drug
+albuterol,lung open drug,drug
+naloxone,pain drug block,drug
+nitroglycerin,heart vessel open,drug
+sildenafil,sex blood drug,drug
+lithium,rock atom,drug
+chloroform,sleep vapor,drug
+ether,sleep vapor,drug

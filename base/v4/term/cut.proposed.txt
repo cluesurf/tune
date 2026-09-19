@@ -1,0 +1,82 @@
+# A proposed cut pass, 2026-09-16, from ChatGPT.
+#
+# Graded by `pnpm --dir deck/tune v4:cut`. Nothing here is applied by
+# running that. It reports.
+#
+# The sections are the proposal's own confidence levels, kept so a
+# reader can see which band a refusal lands in. A refusal in the
+# "definite" band is the interesting kind.
+
+## definite
+
+abroad absense abstain accord admin adventure affair allure already
+although amplitude apparatus archive arithmetic arrogant arson artifact
+athlete audio badge balloon battery blog bonus boss browse bullet
+calendar camera capital captain castle catalog certificate champion
+chocolate choir cigarette circuit citizen client college comedy concert
+convenient conversation currency custom dandy decimal delegate desk
+dialect diplomatic district document dollar domain drama essay expert
+festival font format fort garage gasoline holiday keyboard media mile
+museum navy nylon packet parcel parliament percent poetry protocol
+radio receipt restaurant resume serial spec storage taboo tattoo
+television title tour traffic vice village voyage wagon wicket
+
+apple banana barley beech beet cabbage cucumber lemon pepper potato
+rice tobacco walnut wheat yam
+
+elephant goat hen monkey mosquito rabbit rat weasel whale wolf
+
+brick canvas cement cork curtain furniture linen stair
+
+brag complain complaint flatter mock mope whim whimsical whine
+
+wow yay yuck yum whoa
+
+splendid excellent awful nasty naughty neat cute fancy
+
+## likely
+
+abundant accurate actual adequate adjacent afford aggregate alternate
+ambiguous anticipate appropriate approximate artificial available basis
+bland brittle broken capacity casual central certain cheap chief
+chronic clever clumsy coarse common complete complex concrete confident
+crucial crude delicate delicious dense difficult direct distinct
+diverse domestic durable efficient elegant enormous entire equivalent
+exact exclusive external familiar famous feeble feral final finite
+formal fortunate fragile fragrant fresh general generous hidden
+identical immediate independent innocent interior intermittent known
+likely lonely modern modest natural necessary opaque ordinary partial
+potential precise previous probable relevant remote rigid ripe scarce
+shiny simultaneous sincere solemn sparse special specific tropical
+uncertain vast voluntary vulnerable willing wicked
+
+accompany accumulate adapt address administer admire adopt advise
+allocate alter analyze announce appoint appreciate approve arouse
+assemble assign associate assume attribute calculate collaborate
+communicate comply concentrate conclude confirm cooperate coordinate
+correlate correspond decelerate decode decorate dedicate deduce
+demonstrate derive describe determine diagnose dismiss disperse
+distinguish distract edit educate enable encode evaluate examine
+exclude experiment explore fulfill indicate inspect interpret introduce
+iterate locate manufacture negotiate operate profess recommend regulate
+retrieve stabilize summarize synthesize transmit
+
+advantage assurance category comparison component concept consequence
+context deficit degree destination detail dimension effect equilibrium
+evidence example exclusion expansion exposure factor formula function
+hierarchy hypothesis ingredient institution interval magnitude matrix
+maximum median mode model momentum network node norm obligation
+opportunity parameter pathway precision procedure quantity ratio
+reference repetition satisfaction stability symmetry transition
+variable vector virtue
+
+## family
+
+# The derivational pairs. Only the DERIVED member is listed, since the
+# proposal keeps the base.
+
+absence activity aggression apparent approval assurance awareness
+beauty comparison consciousness curiosity density description
+direction distance diversity equality evolution expansion exposure
+expression fertility fragrance frequency generosity moisture necessity
+precision repetition satisfaction stability strength symmetry

@@ -1,0 +1,2037 @@
+class,generic,english,names
+A,里,"inside",6612
+A,乡,"country",5711
+A,镇,"town",4149
+A,縣,"A type of administrative division:",3167
+A,尔,"you",2964
+A,斯,"this",2581
+A,省,"province",2490
+A,村,"village",2274
+A,道,"path",2261
+A,县,"county",2119
+A,区,"zone",1836
+A,區,"area",1438
+A,克,"gram",1416
+A,拉,"pull",1314
+A,特,"special",1171
+A,州,"state",1154
+A,市,"market",914
+A,德,"virtue",801
+A,爾,"you",758
+A,夫,"man",673
+A,瓦,"tile",642
+A,莱,"goosefoot",605
+A,埃,"fine dust",568
+A,山,"mountain",557
+A,雷,"thunder",554
+A,纳,"admit",548
+A,亚,"Asia",523
+A,格,"pattern",515
+A,尼,"Buddhist nun",501
+A,姆,"child's governess",464
+A,诺,"promise",448
+A,塞,"stop up",414
+A,城,"castle",392
+A,勒,"strangle",387
+A,亞,"a house",368
+A,木,"tree",364
+A,府,"prefecture",361
+A,内,"inside",359
+A,塔,"tower",357
+A,西,"west",344
+A,路,"road",322
+A,河,"river",320
+A,安,"peaceful",317
+A,罗,"net for catching birds",310
+A,恩,"favour",296
+A,托,"hold up with palm",288
+A,多,"many",283
+A,兰,"orchid",279
+A,利,"sharp",276
+A,庄,"village",276
+A,龙,"dragon",259
+A,达,"arrive at",257
+A,納,"admit",256
+A,伊,"third person pronoun",252
+A,南,"south",252
+A,洛,"river in Shanxi province",246
+A,耶,"interrogative particle",246
+A,加,"add",244
+A,科,"section",243
+A,赫,"bright",238
+A,朗,"clear",237
+A,根,"root",234
+A,鎮,"press down",230
+A,奥,"mysterious",229
+A,鄉,"township",229
+A,堡,"fort",218
+A,萨,"Buddhist gods or immortals",218
+A,阳,"'male' principle",211
+A,厄,"adversity",209
+A,东,"east",206
+A,森,"forest",205
+A,蒙,"cover",205
+A,桑,"mulberry tree",200
+A,热,"hot",196
+A,江,"river",194
+A,子,"offspring",193
+A,戈,"halberd",189
+A,茨,"thatching",186
+A,泰,"great",185
+A,桥,"bridge",181
+A,马,"horse",176
+A,郡,"administrative division",175
+A,盖,"cover",171
+A,隆,"prosperous",170
+A,卡,"card",170
+A,普,"universal",169
+A,達,"lead to",168
+A,阿,"prefix for people's names",165
+A,索,"rope",161
+A,林,"forest",159
+A,奈,"but",159
+A,坦,"flat",157
+A,洞,"hole",151
+A,湖,"lake",150
+A,兴,"thrive",149
+A,巴,"greatly desire",149
+A,羅,"net for catching birds",144
+A,薩,"short for 菩薩／菩萨",140
+A,图,"chart",140
+A,集,"assemble",140
+A,店,"shop",136
+A,霍,"quickly",132
+A,平,"flat",129
+A,希,"rare",127
+A,溪,"river",125
+A,沃,"water",124
+A,韦,"tanned leather",121
+A,口,"mouth",121
+A,諾,"you",120
+A,梅,"plums",119
+A,翁,"old man",119
+A,代,"generation",117
+A,波,"wave",116
+A,昂,"rise",113
+A,松,"fir tree",112
+A,略,"approximately",111
+A,兹,"now",108
+A,鲁,"foolish",108
+A,邦,"nation",106
+A,水,"water",106
+A,岛,"island",103
+A,泽,"marsh",103
+A,坪,"level ground",102
+A,关,"off",101
+A,蒂,"peduncle or stem of plants",98
+A,塘,"pond",98
+A,街,"street",98
+A,登,"rise",97
+A,国,"nation",95
+A,家,"home",95
+A,吉,"lucky",91
+A,场,"open space",90
+A,讷,"slow of speech",89
+A,台,"platform",88
+A,布,"cloth",87
+A,寨,"stockade",85
+A,沟,"ditch",85
+A,北,"north",84
+A,营,"encampment",84
+A,岗,"post",83
+A,宁,"calm",82
+A,华,"flowery",82
+A,岭,"mountain ridge",82
+A,门,"door",81
+A,奧,"southwest corner of a room",81
+A,头,"head",80
+A,比,"ratio",79
+A,什,"file of ten soldiers",78
+A,谢,"thank",78
+A,港,"port",78
+A,杜,"stop",78
+A,泉,"spring",78
+A,和,"and",78
+A,丹,"cinnabar",76
+A,都,"all",76
+A,川,"river",76
+A,海,"sea",75
+A,哈,"sound of laughter",72
+A,楼,"building of two or more stories",72
+A,扎,"stab",71
+A,涅,"blacken",71
+A,島,"island",69
+A,坝,"embankment",69
+A,旺,"prosper",68
+A,源,"source",68
+A,旗,"flag",67
+A,园,"park",66
+A,庙,"temple",66
+A,倫,"same type/kind/class",64
+A,伦,"normal human relationships",63
+A,赖,"bad",63
+A,通,"pass through",63
+A,维,"maintain",62
+A,田,"field",62
+A,卢,"cottage",61
+A,迪,"enlighten",61
+A,米,"rice",61
+A,莫,"do not",61
+A,丰,"abundant",61
+A,地,"earth",60
+A,曼,"long",60
+A,当,"while",60
+A,湾,"a bay",60
+A,蘭,"orchid",59
+A,日,"day",59
+A,峰,"peak",59
+A,佐,"assist",58
+A,馬,"horse",57
+A,屯,"village",57
+A,因,"cause",56
+A,芒,"Miscanthus sinensis",56
+A,苏,"revive",55
+A,石,"stone",55
+A,约,"treaty",53
+A,昌,"light of sun",53
+A,井,"well",52
+A,花,"flower",52
+A,让,"let",52
+A,尚,"still",51
+A,滕,"an ancient state in Shandong province",50
+A,博,"gamble",49
+A,新,"new",49
+A,乐,"happy",49
+A,明,"bright",48
+A,齐,"even",47
+A,列,"column",47
+A,中,"central",46
+A,化,"change",46
+A,郊,"suburbs",46
+A,廖,"name of an ancient state",46
+A,佩,"belt ornament",45
+A,万,"thousand",45
+A,赛,"compete",45
+A,藏,"hide",45
+A,农,"agriculture",45
+A,班,"class",45
+A,國,"country",42
+A,福,"good fortune",42
+A,芬,"fragrance",41
+A,乌,"crow",41
+A,岑,"steep",40
+A,沙,"sand",39
+A,潘,"water in which rice has been rinsed",39
+A,星,"star",39
+A,古,"old",38
+A,胜,"victory",38
+A,寺,"court",38
+A,贝,"sea shell",37
+A,廷,"court",37
+A,皮,"skin",37
+A,滩,"bank",37
+A,孔,"opening",37
+A,施,"grant",37
+A,陵,"hill",37
+A,树,"tree",36
+A,义,"right conduct",36
+A,合,"combine",36
+A,圩,"dike",36
+A,吕,"a musical note",35
+A,云,"cloud",35
+A,池,"pool",35
+A,唐,"Tang dynasty",35
+A,本,"root",35
+A,蓬,"type of raspberry",34
+A,铺,"spread out",34
+A,瑙,"agate",33
+A,丁,"male adult",33
+A,努,"exert",33
+A,康,"peaceful",33
+A,仁,"humaneness",33
+A,坡,"slope",33
+A,舍,"discard",32
+A,亭,"pavilion",32
+A,切,"cut",31
+A,贡,"offer tribute",31
+A,原,"source",31
+A,洲,"continent",30
+A,绍,"continue",30
+A,瑟,"large stringed musical instrument",30
+A,费,"expenses",30
+A,亨,"smoothly",30
+A,嘎,"sound of laughter",30
+A,宗,"lineage",30
+A,济,"help",30
+A,潭,"deep pool",30
+A,邑,"area",30
+A,居,"live",30
+A,赞,"help",30
+A,庆,"congratulate",29
+A,岩,"cliff",29
+A,库,"armory",28
+A,武,"military",28
+A,民,"people",28
+A,冈,"ridge or crest of hill",28
+A,弗,"not",27
+A,永,"eternal",27
+A,光,"light",27
+A,肖,"look like",26
+A,帕,"turban",26
+A,魯,"excellent",26
+A,茹,"roots",25
+A,基,"foundation",25
+A,谷,"corn",25
+A,来,"come",25
+A,瓜,"melon",24
+A,结,"tie",24
+A,进,"advance",24
+A,考,"examine",24
+A,訥,"slow of speech",23
+A,甸,"suburbs of capital",23
+A,春,"spring",23
+A,坊,"neighborhood",23
+A,夏,"summer",23
+A,族,"a family clan",23
+A,辛,"bitter",22
+A,哥,"elder brother",22
+A,雄,"male of species",22
+A,远,"far",22
+A,定,"decide",22
+A,浦,"bank of river",22
+A,元,"first",22
+A,凤,"male phoenix",22
+A,风,"wind",22
+A,厂,"factory",22
+A,王,"king",22
+A,扬,"scatter",22
+A,其,"his",22
+A,艾,"artemisia",21
+A,約,"bundle up",21
+A,依,"rely on",21
+A,文,"literature",21
+A,渡,"cross",21
+A,堂,"hall",21
+A,劳,"labor",20
+A,奇,"strange",20
+A,那,"that",20
+A,默,"silent",20
+A,柳,"pleasure",20
+A,玛,"agate",20
+A,竹,"flute",20
+A,方,"a square",20
+A,站,"stand",20
+A,房,"house",20
+P,村,"village",335863
+P,庄,"village",22527
+P,沟,"ditch",18716
+P,区,"zone",17772
+P,子,"offspring",17159
+P,山,"mountain",14941
+P,屯,"village",13732
+P,湾,"a bay",12871
+P,坪,"level ground",11188
+P,寨,"stockade",11127
+P,家,"home",9694
+P,塘,"pond",8478
+P,里,"inside",7390
+P,头,"head",7195
+P,坑,"pit",6529
+P,口,"mouth",6528
+P,岭,"mountain ridge",6221
+P,坝,"embankment",6142
+P,河,"river",5909
+P,坡,"slope",5665
+P,桥,"bridge",5611
+P,冲,"bolt",5425
+P,场,"open space",5060
+P,洞,"hole",4772
+P,田,"field",4571
+P,镇,"town",4091
+P,溪,"river",4055
+P,克,"gram",3865
+P,堡,"fort",3591
+P,岗,"post",3582
+P,林,"forest",3562
+P,营,"encampment",3482
+P,庙,"temple",3285
+P,尔,"you",3275
+P,地,"earth",3145
+P,园,"park",3121
+P,店,"shop",3014
+P,上,"up",3013
+P,楼,"building of two or more stories",2985
+P,队,"team",2907
+P,下,"down",2797
+P,台,"platform",2793
+P,屋,"house",2754
+P,龙,"dragon",2745
+P,斯,"this",2621
+P,乡,"country",2510
+P,井,"well",2333
+P,岩,"cliff",2320
+P,德,"virtue",2275
+P,特,"special",2273
+P,爾,"you",2249
+P,城,"castle",2214
+P,寺,"court",2200
+P,湖,"lake",2192
+P,房,"house",2172
+P,铺,"spread out",2108
+P,门,"door",2103
+P,水,"water",2093
+P,咀,"suck",2022
+P,街,"street",1924
+P,树,"tree",1906
+P,石,"stone",1844
+P,江,"river",1808
+P,拉,"pull",1790
+P,安,"peaceful",1759
+P,滩,"bank",1691
+P,卡,"card",1650
+P,尾,"tail",1647
+P,市,"market",1627
+P,西,"west",1604
+P,堂,"hall",1601
+P,圩,"dike",1575
+P,窑,"coal mine pit",1569
+P,东,"east",1526
+P,洋,"ocean",1509
+P,脚,"feet",1461
+P,寮,"shanty",1417
+P,平,"flat",1386
+P,泉,"spring",1380
+P,边,"side",1371
+P,格,"pattern",1342
+P,达,"arrive at",1323
+P,峪,"valley",1314
+P,马,"horse",1304
+P,坳,"a hollow in the ground",1303
+P,院,"courtyard",1301
+P,墩,"heap",1298
+P,梁,"beam",1278
+P,底,"bottom",1271
+P,洼,"hollow",1264
+P,窝,"cave",1255
+P,社,"god of the soil and altars to him",1253
+P,源,"source",1247
+P,坊,"neighborhood",1243
+P,兴,"thrive",1235
+P,阳,"'male' principle",1221
+P,厝,"cut or engrave",1202
+P,南,"south",1199
+P,棚,"tent",1197
+P,箐,"draw a bamboo bow or crossbow",1171
+P,背,"back",1158
+P,潭,"deep pool",1151
+P,勒,"strangle",1134
+P,基,"foundation",1122
+P,垭,"character used in place names",1101
+P,道,"path",1099
+P,厂,"factory",1092
+P,夫,"man",1091
+P,集,"assemble",1089
+P,塔,"tower",1073
+P,港,"port",1067
+P,巴,"greatly desire",1046
+P,利,"sharp",1043
+P,组,"group",1000
+P,洲,"continent",997
+P,路,"road",993
+P,角,"horn",987
+P,根,"root",981
+P,姆,"child's governess",968
+P,木,"tree",945
+P,沙,"sand",943
+P,王,"king",942
+P,合,"combine",907
+P,连,"join",899
+P,丰,"abundant",893
+P,前,"forward",869
+P,多,"many",859
+P,仔,"small thing",854
+P,北,"north",828
+P,川,"river",817
+P,峰,"peak",816
+P,岔,"diverge",796
+P,瓦,"tile",784
+P,和,"and",780
+P,畈,"field",774
+P,隆,"prosperous",769
+P,池,"pool",767
+P,垌,"a field",754
+P,巷,"alley",752
+P,坞,"entrenchment",739
+P,星,"star",731
+P,埔,"plain",724
+P,凹,"concave",721
+P,洛,"river in Shanxi province",707
+P,华,"flowery",706
+P,坎,"pit",704
+P,乐,"happy",698
+P,花,"flower",697
+P,科,"section",691
+P,恩,"favour",681
+P,后,"backward",680
+P,宅,"residence",672
+P,尼,"Buddhist nun",666
+P,頓,"strike downwards to a surface:",655
+P,围,"surround",655
+P,心,"heart",652
+P,罗,"net for catching birds",651
+P,古,"old",644
+P,排,"row",613
+P,光,"light",613
+P,布,"cloth",605
+P,福,"good fortune",604
+P,关,"off",600
+P,纳,"admit",599
+P,嘎,"sound of laughter",590
+P,圈,"circle",589
+P,竹,"flute",587
+P,堰,"embankment",586
+P,兰,"orchid",582
+P,埠,"port city",581
+P,海,"sea",581
+P,槽,"groove",572
+P,登,"rise",571
+P,塆,"col",568
+P,垈,"Japanese -nuta",565
+P,顶,"top",558
+P,弄,"do",549
+P,岙,"island",548
+P,普,"universal",545
+P,内,"inside",540
+P,果,"fruit",537
+P,盘,"tray",534
+P,亭,"pavilion",533
+P,明,"bright",511
+P,界,"boundary",506
+P,民,"people",503
+P,庵,"Buddhist monastery or nunnery",499
+P,号,"mark",498
+P,吉,"lucky",496
+P,舍,"discard",495
+P,包,"pack",490
+P,森,"forest",486
+P,新,"new",486
+P,胜,"victory",485
+P,旺,"prosper",483
+P,张,"stretch",483
+P,垄,"grave",482
+P,脑,"head",480
+P,亚,"Asia",470
+P,渡,"cross",470
+P,甲,"armor",470
+P,崖,"cliff",466
+P,日,"day",465
+P,李,"plum",465
+P,朗,"clear",464
+P,埭,"a dam",460
+P,赫,"bright",454
+P,中,"central",453
+P,玛,"agate",452
+P,元,"first",451
+P,县,"county",442
+P,堆,"heap",440
+P,谷,"corn",438
+P,雷,"thunder",436
+P,都,"all",435
+P,頭,"head",434
+P,茨,"thatching",433
+P,美,"beauty",431
+P,塬,"plateau",430
+P,掌,"palm of hand",426
+P,良,"good",416
+P,落,"fall",414
+P,岸,"shore",408
+P,渠,"canal",408
+P,弯,"bend",406
+P,納,"admit",401
+P,奇,"strange",400
+P,亞,"a house",396
+P,陈,"exhibit",390
+P,依,"rely on",389
+P,联,"connect",388
+P,刘,"kill",388
+P,峒,"mountain in Gansu province",382
+P,顿,"pause",376
+P,松,"fir tree",375
+P,郎,"gentleman",375
+P,杨,"willow",373
+P,莱,"goosefoot",372
+P,土,"soil",371
+P,坂,"hillside",368
+P,那,"that",366
+P,金,"gold",366
+P,莫,"do not",365
+P,干,"dry",365
+P,垅,"mound",361
+P,板,"plank",357
+P,扎,"stab",356
+P,站,"stand",349
+P,埃,"fine dust",348
+P,仁,"humaneness",347
+P,所,"place",345
+P,托,"hold up with palm",344
+P,加,"add",342
+P,来,"come",341
+P,什,"file of ten soldiers",338
+P,伊,"third person pronoun",338
+P,園,"garden",338
+P,桑,"mulberry tree",334
+P,州,"state",334
+P,丁,"male adult",328
+P,云,"cloud",328
+P,坨,"a lump",322
+P,丘,"mountain",321
+P,炉,"fireplace",320
+P,通,"pass through",318
+P,孜,"be as diligent as possible",316
+P,文,"literature",315
+P,当,"while",315
+P,嘴,"mouth",309
+P,车,"cart",306
+P,同,"alley",306
+P,岘,"steep hill",305
+P,公,"fair",304
+P,鲁,"foolish",302
+P,贡,"offer tribute",302
+P,荣,"glory",301
+P,陂,"dam",301
+P,希,"rare",300
+P,进,"advance",300
+P,农,"agriculture",299
+P,坟,"grave",299
+P,耶,"interrogative particle",296
+P,梅,"plums",293
+P,昌,"light of sun",293
+P,坦,"flat",292
+P,白,"white",291
+P,斗,"a dipper",291
+P,柳,"pleasure",288
+P,力,"power",287
+P,凤,"male phoenix",285
+P,团,"sphere",281
+P,疃,"hamlet",279
+P,莊,"grassy",279
+P,宁,"calm",278
+P,建,"build",278
+P,旗,"flag",278
+P,热,"hot",277
+P,浪,"wave",277
+P,青,"blue",275
+P,高,"high",274
+P,翁,"old man",269
+P,沃,"water",269
+P,峁,"yellow dirt mount",269
+P,甸,"suburbs of capital",267
+P,腊,"year-end sacrifice",265
+P,户,"family",264
+P,蒙,"cover",263
+P,义,"right conduct",263
+P,頂,"top of the head",261
+P,敦,"esteem",259
+P,化,"change",259
+P,风,"wind",259
+P,仓,"granary",257
+P,堤,"dike",257
+P,康,"peaceful",256
+P,库,"armory",254
+P,埂,"ditches for irrigation",254
+P,则,"rule",253
+P,畔,"boundary path dividing fields",253
+P,保,"protect",250
+P,阿,"prefix for people's names",249
+P,红,"red",248
+P,哨,"whistle",246
+P,观,"see",246
+P,官,"official",244
+P,蘭,"orchid",241
+P,哈,"sound of laughter",239
+P,诺,"promise",238
+P,牌,"signboard",238
+P,老,"old",236
+P,生,"life",236
+P,庆,"congratulate",235
+P,伦,"normal human relationships",234
+P,曼,"long",233
+P,厦,"big building",233
+P,盖,"cover",231
+P,结,"tie",231
+P,宫,"palace",231
+P,碑,"stone tablet",231
+P,波,"wave",230
+P,腳,"foot",230
+P,米,"rice",229
+P,孔,"opening",229
+P,段,"section",229
+P,迪,"enlighten",228
+P,立,"stand",228
+P,本,"root",226
+P,曲,"crooked",226
+P,周,"week",225
+P,居,"live",224
+P,興,"rise",222
+P,洪,"vast",222
+P,黄,"yellow",222
+P,比,"ratio",217
+P,牛,"cow",216
+P,苏,"revive",215
+P,阁,"chamber",214
+P,浦,"bank of river",213
+P,方,"a square",212
+P,麦,"wheat",211
+P,戛,"lance",210
+P,祠,"ancestral temple",209
+P,麻,"hemp",208
+P,沿,"follow a course",207
+P,灣,"bend in a river",206
+P,雄,"male of species",206
+P,垸,"a dyke",206
+P,宝,"treasure",205
+P,面,"face",205
+P,套,"set",204
+P,发,"issue",203
+P,涧,"brook",202
+P,珠,"precious stone",202
+P,点,"dot",202
+P,丹,"cinnabar",201
+P,邦,"nation",200
+P,萨,"Buddhist gods or immortals",199
+P,浜,"creek",199
+P,流,"flow",197
+P,柏,"cypress",195
+P,尖,"sharp",195
+P,戈,"halberd",194
+P,原,"source",194
+P,怀,"bosom",194
+P,垴,"small",194
+P,達,"lead to",192
+P,武,"military",192
+P,富,"rich",191
+P,采,"fief",190
+P,郭,"outer part",190
+P,邑,"area",190
+P,代,"generation",189
+P,玉,"jade",189
+P,喀,"vomit",189
+P,赖,"bad",187
+P,甫,"begin",187
+P,黑,"black",187
+P,外,"outside",186
+P,羊,"sheep",186
+P,赵,"ancient state",186
+P,宗,"lineage",185
+P,固,"become solid",185
+P,章,"chapter",184
+P,荡,"pond",183
+P,祥,"good luck",183
+P,肚,"bowels",183
+P,径,"narrow path",182
+P,塞,"stop up",180
+P,徐,"slowly",180
+P,索,"rope",179
+P,香,"fragrant",179
+P,泽,"marsh",177
+P,磨,"rub",177
+P,泥,"mud",177
+P,涅,"blacken",176
+P,会,"would",176
+P,盆,"basin",176
+P,崙,"Kunlun mountains in Jiangsu",176
+P,定,"decide",175
+P,殿,"palace",175
+P,查,"investigate",173
+P,么,"interrogative particle",172
+P,身,"body",172
+P,春,"spring",171
+P,陵,"hill",170
+P,墙,"wall",170
+P,架,"rack",170
+P,諾,"you",169
+P,图,"chart",169
+P,行,"column",169
+P,朝,"at",168
+P,其,"his",167
+P,打,"beat",167
+P,圍,"surround",165
+P,提,"hold in hand",165
+P,因,"cause",164
+P,闸,"sluice",164
+P,孟,"first in series",162
+P,昂,"rise",161
+P,大,"big",161
+P,窩,"nest",161
+P,灵,"spirit",160
+P,佛,"Buddha",160
+P,草,"grass",160
+P,英,"petal",160
+P,垟,"a cultivated field",160
+P,吴,"one of warring states",159
+P,墘,"halfway",159
+P,得,"obtain",158
+P,班,"class",158
+P,觉,"wake up from sleep",158
+P,叶,"leaf",158
+P,雅,"elegant",157
+P,峡,"gorge",156
+P,芬,"fragrance",155
+P,灶,"kitchen stove",155
+P,贤,"virtuous",154
+P,滕,"an ancient state in Shandong province",153
+P,桃,"peach",153
+P,学,"learning",152
+P,泰,"great",151
+P,形,"form",150
+P,凼,"ditch",150
+P,厄,"adversity",149
+P,汪,"vast",149
+P,国,"nation",149
+P,升,"arise",147
+P,皮,"skin",146
+P,乌,"crow",146
+P,陇,"mountain located between Shanxi",146
+P,务,"affairs",146
+P,夼,"low or swampy land",146
+P,區,"area",145
+P,岛,"island",145
+P,壁,"partition wall",145
+P,列,"column",143
+P,夏,"summer",143
+P,锅,"cooking-pot",143
+P,胡,"recklessly",142
+P,博,"gamble",141
+P,谢,"thank",141
+P,郢,"ancient city in Hubei",141
+P,內,"inside",139
+P,才,"talent",139
+P,母,"female elders",139
+P,卜,"radish",139
+P,倫,"same type/kind/class",138
+P,牙,"tooth",138
+P,秀,"ear of grain",137
+P,宋,"Song dynasty",137
+P,贝,"sea shell",135
+P,茶,"tea",135
+P,仙,"Taoist super-being",135
+P,冈,"ridge or crest of hill",134
+P,强,"strong",133
+P,馬,"horse",132
+P,蓬,"type of raspberry",132
+P,若,"if",132
+P,盛,"abundant",132
+P,府,"prefecture",132
+P,韦,"tanned leather",131
+P,岐,"high",131
+P,衣,"clothes",131
+P,凰,"female phoenix",130
+P,清,"clear",129
+P,垛,"heap",129
+P,天,"sky",129
+P,锋,"point of spear",129
+P,仑,"logical reasons",129
+P,奥,"mysterious",128
+P,益,"profit",128
+P,嶺,"mountain whose peak is accessible by road",126
+P,桂,"cassia or cinnamon",126
+P,肯,"willing",125
+P,维,"maintain",125
+P,穷,"poor",125
+P,贵,"expensive",125
+P,虎,"brave",125
+P,齐,"even",124
+P,主,"master",124
+P,音,"sound",124
+P,鎮,"press down",123
+P,蒂,"peduncle or stem of plants",123
+P,曹,"ministry officials",123
+P,劳,"labor",122
+P,如,"if",122
+P,兜,"pouch",122
+P,步,"step",121
+P,榜,"placard",121
+P,绒,"silk",120
+P,色,"color",120
+P,赛,"compete",120
+P,成,"completed",120
+P,姑,"father's sister",120
+P,拐,"kidnap",119
+P,吕,"a musical note",119
+P,茂,"thick",119
+P,腰,"pocket",119
+P,满,"full",118
+P,汉,"Chinese people",118
+P,塌,"fall in ruins",118
+P,亮,"bright",117
+P,帕,"turban",116
+P,佐,"assist",116
+P,月,"month",116
+P,莲,"lotus",116
+P,泡,"bubbles",116
+P,韋,"tanned leather",115
+P,朵,"cluster of flowers",115
+P,太,"very",115
+P,苑,"pasture",115
+P,烈,"fiery",114
+P,别,"not",114
+P,族,"a family clan",114
+P,岳,"mountain peak",114
+P,儿,"son",114
+P,旦,"dawn",113
+P,业,"profession",113
+P,荒,"wasteland",113
+P,开,"on",112
+P,窠,"nest",112
+P,善,"good",111
+P,碾,"roller",111
+P,榨,"squeeze",111
+P,奈,"but",110
+P,崎,"rough",110
+P,尧,"a legendary ancient emperor-sage",110
+P,祖,"ancestor",110
+P,朱,"cinnabar",109
+P,畲,"cultivate land by first setting fire to it",109
+P,鱼,"fish",109
+P,潘,"water in which rice has been rinsed",108
+P,永,"eternal",108
+P,涌,"surge up",108
+P,察,"examine",107
+P,久,"long time",107
+P,董,"direct",107
+P,乃,"then",107
+P,俄,"sudden",107
+P,寿,"old age",107
+P,留,"stop",107
+P,辛,"bitter",106
+P,屿,"island",106
+P,治,"govern",105
+P,唐,"Tang dynasty",105
+P,群,"group",105
+P,泊,"park",105
+P,全,"maintain",105
+P,岱,"Daishan",105
+P,余,"surplus",105
+P,申,"monkey",104
+P,瑙,"agate",104
+P,尤,"especially",104
+P,让,"let",104
+P,郊,"suburbs",104
+P,毛,"hair",103
+P,藏,"hide",103
+P,沱,"rivers",102
+P,爱,"love",102
+P,好,"nice",102
+P,陶,"pottery",99
+P,羅,"net for catching birds",99
+P,司,"take charge of",99
+P,思,"think",98
+P,杜,"stop",98
+P,薩,"short for 菩薩／菩萨",97
+P,相,"mutual",97
+P,各,"each",96
+P,望,"look at",96
+P,迳,"pass by",96
+P,茲,"this",95
+P,设,"build",95
+P,许,"allow",95
+P,广,"wide",95
+P,澳,"inlet",95
+P,足,"foot",95
+P,兹,"now",94
+P,作,"work",94
+P,鹿,"deer",94
+P,央,"center",94
+P,梯,"ladder",94
+P,者,"that which",94
+P,一,"one",93
+P,景,"scenery",93
+P,鼓,"drum",93
+P,燕,"swallow",93
+P,橋,"bridge",92
+P,卫,"guard",92
+P,可,"may",92
+P,屏,"folding screen",92
+P,鸡,"chicken",92
+P,信,"letter",92
+P,长,"long",92
+P,桐,"name applied various trees",92
+P,壕,"trench",92
+P,切,"cut",91
+P,讷,"slow of speech",90
+P,远,"far",90
+P,左,"left",90
+P,坛,"altar",90
+P,杆,"pole",89
+P,京,"capital city",89
+P,韩,"fence",89
+P,斜,"slanting",88
+P,际,"border",88
+P,柯,"axe-handle",88
+P,艾,"artemisia",87
+P,约,"treaty",87
+P,给,"give",87
+P,苗,"sprouts",87
+P,瑶,"precious jade",87
+P,吾,"i",86
+P,圳,"furrow in field",86
+P,表,"sheet",86
+P,间,"interval",86
+P,堀,"cave",86
+P,堵,"wall",86
+P,股,"thighs",86
+P,津,"ferry",85
+P,彭,"name of ancient country",85
+P,門,"gate",85
+P,禄,"blessing",85
+P,哇,"vomit",85
+P,孙,"grandchild",85
+P,柱,"pillar",84
+P,墅,"villa",84
+P,朋,"friend",84
+P,墕,"",84
+P,宜,"suitable",84
+P,瓜,"melon",83
+P,峨,"lofty",83
+P,陆,"land",83
+P,照,"shine",83
+P,正,"upright",83
+P,仲,"middle brother",83
+P,塅,"a large flat area",83
+P,扒,"scratch",83
+P,廷,"court",82
+P,郑,"state in today's Henan",82
+P,顺,"obey",82
+P,等,"rank",82
+P,栏,"railing",82
+P,于,"in",82
+P,范,"bee-like insect",82
+P,沅,"name of a river in western Hunan that flows into",82
+P,年,"year",81
+P,芦,"rushes",81
+P,狮,"lion",81
+P,垇,"",81
+P,卓,"profound",81
+P,威,"pomp",80
+P,泾,"name of a river",80
+P,鹤,"Grus species",80
+P,银,"silver",80
+P,字,"word",80
+P,旧,"old",80
+P,呷,"suck",79
+P,埕,"a large",79
+P,灯,"lamp",79
+P,士,"scholar",78
+P,鞍,"saddle",78
+P,教,"teach",78
+P,度,"degree",78
+P,溝,"ditch",78
+P,黎,"numerous",77
+P,何,"what",77
+P,空,"empty",77
+P,友,"friend",77
+P,灘,"shoal",76
+P,杰,"hero",76
+P,召,"imperial decree",76
+P,塝,"flat bank",76
+P,令,"command",76
+P,卢,"cottage",75
+P,尕,"small",75
+P,汤,"soup",75
+P,放,"put",75
+P,租,"lease",75
+P,眼,"eyelet",75
+P,岑,"steep",74
+P,伯,"older brother",74
+P,龍,"Chinese dragon",74
+P,葛,"edible bean",74
+P,工,"labor",74
+P,程,"journey",74
+P,耳,"ear",74
+P,火,"fire",74
+P,潮,"wet",74
+P,島,"island",73
+P,施,"grant",73
+P,東,"east",73
+P,秋,"autumn",73
+P,垣,"low wall",73
+P,然,"yes",72
+P,弗,"not",72
+P,拖,"haul",72
+P,支,"disperse",72
+P,梨,"pear",72
+P,份,"portion",72
+P,军,"army",72
+P,片,"piece",72
+P,奧,"southwest corner of a room",71
+P,恰,"just",71
+P,告,"with",71
+P,料,"consider",71
+P,蚌,"oysters",71
+P,共,"together with",71
+P,齊,"even",70
+P,法,"law",70
+P,苴,"sackcloth",70
+P,野,"open country",70
+P,常,"common",70
+P,二,"two",70
+P,驿,"relay station",69
+P,皇,"royal",69
+P,滨,"beach",69
+P,独,"alone",69
+P,歪,"slant",69
+P,改,"change",68
+P,矿,"mine",68
+P,丈,"unit of length equal 3.3 meters",68
+P,的,"possessive",68
+P,甘,"sweetness",67
+P,尚,"still",67
+P,芒,"Miscanthus sinensis",67
+P,亩,"Chinese land measure",67
+P,琼,"jade",67
+P,眉,"eyebrows",67
+P,勇,"brave",67
+P,辉,"brightness",67
+P,油,"oil",67
+P,溶,"melt",67
+P,勢,"power",67
+P,皋,"high land along a river",66
+P,礼,"social custom",66
+P,厚,"thick",66
+P,分,"divide",66
+P,境,"boundary",66
+P,萊,"goosefoot",65
+P,伍,"five",65
+P,喜,"like",65
+P,埝,"bank",65
+P,岜,"rock mountain",65
+P,贯,"a string of 1000 coins",65
+P,扣,"knock",65
+P,窊,"pit",65
+P,亨,"smoothly",64
+P,任,"trust to",64
+P,肖,"look like",64
+P,钦,"respect",64
+P,部,"tribe",64
+P,邓,"a county in Henan",64
+P,印,"print",64
+P,漕,"transport by water",64
+P,更,"more",64
+P,埤,"add",64
+P,济,"help",63
+P,枧,"bamboo tube",63
+P,洒,"sprinkle",63
+P,要,"necessary",63
+P,密,"dense",63
+P,培,"bank up with dirt",63
+P,默,"silent",62
+P,敏,"fast",62
+P,处,"place",62
+P,垵,"cover with earth",62
+P,帮,"help",62
+P,瑞,"felicitous omen",61
+P,冯,"gallop",61
+P,棉,"cotton padded",61
+P,人,"person",61
+P,产,"give birth",61
+P,窖,"pit",61
+P,额,"tablet",61
+P,棠,"crab apple tree",61
+P,岚,"mountain mist",61
+P,瘩,"pimples",61
+P,万,"thousand",60
+P,贾,"merchant",60
+P,雪,"snow",60
+P,惹,"irritate",60
+P,铁,"iron",60
+P,管,"pipe",60
+P,降,"fall",60
+P,枝,"branches",60
+P,侯,"marquis",60
+P,豆,"beans",60
+P,节,"knot",60
+P,窟,"hole",60
+P,町,"raised path between fields",60
+P,温,"lukewarm",59
+P,維,"tie",59
+P,标,"mark",59
+P,造,"construct",59
+P,有,"have",59
+P,鸟,"bird",59
+P,冬,"winter",58
+P,崩,"die - of an emperor",58
+P,杂,"mixed",58
+P,霞,"rosy clouds",58
+P,块,"piece",58
+P,鸣,"cry of bird or animal",58
+P,樟,"camphor tree",58
+P,杠,"lever",58
+P,烟,"smoke",58
+P,埚,"crucible",58
+P,廍,"sugar mill",58
+P,考,"examine",57
+P,場,"open space",57
+P,期,"period of time",57
+P,娃,"baby",57
+P,厅,"hall",57
+P,蒋,"Hydropyrum latifolium",57
+P,念,"think of",57
+P,墓,"grave",57
+P,吐,"spit",57
+P,能,"be able",57
+P,鹅,"goose",56
+P,律,"statute",56
+P,乍,"first time",56
+P,佩,"belt ornament",55
+P,措,"place",55
+P,伞,"umbrella",55
+P,坤,"earth",55
+P,凌,"pure",55
+P,栗,"shiver",55
+P,隘,"narrow",55
+P,钟,"bell",55
+P,馆,"public building",55
+P,刀,"knife",55
+P,垒,"rampart",55
+P,琴,"Chinese lute or guitar",55
+P,交,"hand",54
+P,谊,"friendship",54
+P,邱,"hill",54
+P,姚,"handsome",54
+P,颈,"neck",54
+P,槐,"locust tree",54
+P,环,"ring",54
+P,应,"should",54
+P,凸,"protrude",54
+P,欧,"translit.: Europe",54
+P,榔,"betel-nut tree",54
+P,把,"hold",54
+P,崗,"post",54
+P,寧,"peaceful",53
+P,嫩,"soft",53
+P,迈,"take a big stride",53
+P,廖,"name of an ancient state",53
+P,匠,"craftsman",53
+P,必,"surely",53
+P,裕,"abundant",52
+P,芳,"fragrant",52
+P,蔡,"species of tortoise",52
+P,碧,"jade",52
+P,娘,"young girl",52
+P,理,"reason",52
+P,局,"bureau",52
+P,补,"mend",52
+P,革,"leather",52
+P,娜,"elegant",51
+P,伏,"crouch",51
+P,梓,"Chinese catalpa",51
+P,也,"also",51
+P,垱,"a dike used to divert water in a rice paddy or field",51
+P,坭,"mud",51
+P,冷,"cold",51
+P,苦,"bitter",51
+P,後,"behind",51
+P,扬,"scatter",50
+P,魏,"kingdom of Wei",50
+P,党,"political party",50
+P,楞,"used for Ceylon in Buddhist texts",50
+P,茅,"reeds",50
+P,育,"produce",50
+P,船,"boat",50
+P,回,"return",50
+P,练,"practice",50
+P,霍,"quickly",49
+P,哥,"elder brother",49
+P,现,"appear",49
+P,圣,"holy",49
+P,游,"swim",49
+P,双,"pair",49
+P,容,"looks",49
+P,蕉,"banana",49
+P,志,"purpose",49
+P,史,"history",49
+P,柄,"authority",49
+P,辽,"distant",49
+P,显,"manifest",49
+P,磜,"",49
+P,莎,"kind of sedge grass",48
+P,摩,"rub",48
+P,汗,"sweat",48
+P,梧,"Chinese parasol tree",48
+P,政,"government",48
+P,圃,"garden",48
+P,跃,"skip",48
+P,佳,"good",48
+P,汀,"sandbar",48
+P,见,"see",48
+P,罕,"rare",48
+P,館,"accommodation",48
+P,模,"model",47
+P,榄,"olive",47
+P,首,"head",47
+P,嶂,"cliff",47
+P,仰,"raise the head to look",47
+P,浩,"great",47
+P,条,"strip",47
+P,荷,"lotus",47
+P,砭,"stone probe",47
+P,凡,"all",46
+P,乔,"tall",46
+P,魯,"excellent",46
+P,菜,"vegetables",46
+P,座,"throne",46
+P,陀,"steep bank",46
+P,种,"seed",46
+P,帽,"hat",46
+P,腾,"fly",46
+P,杭,"cross stream",46
+P,撒,"release",46
+P,努,"exert",45
+P,奎,"stride of man",45
+P,麓,"foothill",45
+P,勤,"industrious",45
+P,禾,"grain still on stalk",45
+P,拱,"fold hands on breast",45
+P,盟,"swear",45
+P,砦,"stockade",45
+P,总,"collect",45
+P,三,"three",45
+P,笼,"cage-like basket",45
+P,棒,"stick",45
+P,略,"approximately",44
+P,岡,"ridge or crest of a mountain",44
+P,瑟,"large stringed musical instrument",44
+P,囊,"bag",44
+P,泗,"mucous",44
+P,旁,"side",44
+P,冢,"burial mound",44
+P,逢,"come upon",44
+P,贺,"congratulate",43
+P,午,"seventh earthly branch",43
+P,祝,"pray for happiness or blessings",43
+P,忠,"loyalty",43
+P,历,"history",43
+P,谭,"talk",43
+P,对,"correct",43
+P,咱,"we",43
+P,渣,"refuse",43
+P,淌,"trickle",43
+P,汇,"a concourse",42
+P,绕,"entwine",42
+P,锦,"brocade",42
+P,恒,"constant",42
+P,功,"achievement",42
+P,笋,"bamboo shoots",42
+P,畬,"reclaimed field",42
+P,峯,"peak",42
+P,介,"forerunner",42
+P,绍,"continue",41
+P,过,"pass",41
+P,书,"book",41
+P,锡,"tin",41
+P,宾,"guest",41
+P,派,"school of thought",41
+P,彩,"hue",41
+P,目,"eye",41
+P,位,"throne",41
+P,带,"bring",41
+P,端,"end",41
+P,崁,"a place in Taiwan Tainan",41
+P,華,"blossom",40
+P,凯,"triumphant",40
+P,典,"law",40
+P,珍,"precious",40
+P,弓,"bow",40
+P,仪,"ceremony",40
+P,钱,"money",40
+P,芽,"bud",40
+P,哩,"mile",40
+P,先,"first",39
+P,勐,"imperial degree",39
+P,码,"number",39
+P,姜,"ginger",39
+P,宽,"wide",39
+P,横,"across",39
+P,砂,"pebbles",39
+P,芝,"sesame",39
+P,敢,"dare",39
+P,耀,"shine",39
+P,棵,"numerary adjunct for trees",39
+P,由,"cause",39
+P,阱,"pitfall",39
+P,邊,"edge",39
+P,季,"quarter of year",38
+P,阴,"'female' principle",38
+P,雨,"rain",38
+P,宿,"stop",38
+P,笔,"pen",38
+P,简,"simple",38
+P,桶,"bucket",38
+P,焦,"burned",37
+P,拥,"embrace",37
+P,项,"neck",37
+P,婆,"old woman",37
+P,直,"straight",37
+P,穴,"cave",37
+P,袁,"robe",37
+P,袍,"long gown",37
+P,輋,"land near mountain",37
+P,碓,"pestle",37
+P,半,"incomplete",37
+P,用,"with",37
+P,倮,"bare",37
+P,线,"line",37
+P,拜,"bye",36
+P,露,"dew",36
+P,渎,"ditch",36
+P,朴,"simple",36
+P,办,"manage",36
+P,象,"elephant",36
+P,驼,"a camel",36
+P,真,"real",36
+P,鸦,"crow",36
+P,睦,"friendly",36
+P,螺,"spiral shell",36
+P,细,"fine",36
+P,浅,"shallow",36
+P,省,"province",35
+P,赞,"help",35
+P,费,"expenses",35
+P,庞,"disorderly",35
+P,遜,"humble",35
+P,封,"letter",35
+P,豐,"luxuriant",35
+P,羌,"Qiang nationality",35
+P,错,"wrong",35
+P,渚,"small sand bank",35
+P,权,"power",35
+P,鼻,"nose",35
+P,往,"go",35
+P,硐,"cave",35
+P,邵,"various place names",35
+P,秧,"rice seedlings",35
+P,统,"govern",35
+P,意,"thought",35
+P,气,"gas",35
+P,庭,"courtyard",34
+P,滚,"turn",34
+P,逊,"humble",34
+P,兔,"rabbit",34
+P,五,"five",34
+P,言,"words",34
+P,镜,"mirror",34
+P,垡,"plow soil",34
+P,占,"observe",34
+P,阜,"mound",34
+P,杏,"almond",34
+P,运,"luck",34
+P,刚,"hard",34
+P,漈,"shore",34
+P,沈,"sink",34
+P,蒲,"type of rush",34
+P,神,"god",34
+P,四,"four",34
+P,彦,"elegant",34
+P,丫,"forked",34
+P,鸭,"Anas species",34
+P,机,"desk",34
+P,怕,"fear",34
+P,涯,"shore",33
+P,妹,"younger sister",33
+P,陽,"side",33
+P,乙,"second",33
+P,计,"plan",33
+P,墟,"high mound",33
+P,尹,"govern",33
+P,尺,"Chinese measure approx. 'foot'",33
+P,栋,"main beams supporting house",33
+P,住,"reside",33
+P,乾,"dry",33
+P,稍,"little",33
+P,增,"increase",33
+P,叉,"crotch",33
+P,咪,"sound of cat",33
+P,夺,"take by force",33
+P,丙,"red",33
+P,修,"study",33
+P,庫,"warehouse",32
+P,營,"encampment",32
+P,且,"moreover",32
+P,闹,"quarrel",32
+P,归,"return to",32
+P,伟,"great",32
+P,脉,"blood vessels",32
+P,迷,"bewitch",32
+P,客,"guest",32
+P,隔,"separate",32
+P,蓉,"hibiscus",32
+P,严,"strict",32
+P,早,"early",32
+P,坜,"a hole",32
+P,收,"gather together",32
+P,叫,"call",32
+P,养,"raise",32
+P,汶,"a river in Shandong province",31
+P,農,"cultivate",31
+P,伙,"companion",31
+P,响,"make sound",31
+P,楚,"name of feudal state",31
+P,小,"small",31
+P,昆,"elder brother",31
+P,惠,"favor",31
+P,虹,"rainbow",31
+P,柴,"firewood",31
+P,品,"article",31
+P,郡,"administrative division",31
+P,从,"from",31
+P,床,"bed",31
+P,糯,"glutinous rice",31
+P,垮,"be defeated",31
+P,碉,"room made of stone",31
+P,桩,"stake",31
+P,累,"implicate",31
+P,凱,"music of triumph",30
+P,奴,"slave",30
+P,买,"buy",30
+P,魁,"chief",30
+P,纪,"record",30
+P,幕,"curtain",30
+P,靖,"pacify",30
+P,淮,"river in Anhui province",30
+P,妥,"satisfactory",30
+P,荆,"thorns",30
+P,锣,"gong",30
+P,六,"six",30
+P,娄,"a constellation",30
+P,皂,"soap",30
+P,塄,"elevated bank in field",30
+P,近,"near",30
+P,助,"help",30
+P,征,"invade",30
+P,芫,"Daphne genkwa",30
+P,點,"count",30
+P,豪,"brave",29
+P,盧,"rice bowl",29
+P,約,"bundle up",29
+P,汝,"you",29
+P,充,"fill",29
+P,秦,"feudal state of Qin",29
+P,冠,"cap",29
+P,顾,"look back",29
+P,佑,"help",29
+P,将,"will",29
+P,起,"rise",29
+P,九,"nine",29
+P,溜,"slide",29
+P,耕,"plow",29
+P,忙,"busy",29
+P,摆,"put",29
+P,举,"lift",29
+P,兵,"soldier",29
+P,顷,"a moment",29
+P,盂,"basin",29
+P,呈,"submit",29
+P,砬,"big stone",29
+P,味,"taste",29
+P,初,"beginning",29
+P,晒,"dry in sun",29
+P,圭,"jade pointed at top",28
+P,素,"white",28
+P,第,"sequence",28
+P,舟,"boat",28
+P,嘉,"excellent",28
+P,冶,"smelt",28
+P,垯,"a pimple",28
+P,俭,"temperate",28
+P,君,"sovereign",28
+P,了,"finish",28
+P,峙,"stand erect",28
+P,便,"convenience",28
+P,晚,"late",28
+P,演,"perform",28
+P,渊,"gulf",28
+P,缸,"earthenware jug",28
+P,延,"delay",28
+P,烧,"burn",28
+P,抗,"resist",28
+P,向,"toward",28
+P,屲,"",28
+P,猛,"violent",28
+P,策,"scheme",27
+P,师,"teacher",27
+P,灰,"ash",27
+P,敖,"ramble",27
+P,众,"multitude",27
+P,沥,"trickle",27
+P,雀,"sparrow",27
+P,单,"single",27
+P,招,"beckon",27
+P,湳,"",27
+P,均,"equal",27
+P,垓,"border",27
+P,故,"ancient",27
+P,樹,"tree",27
+P,峴,"steep hill",27
+P,溫,"lukewarm",26
+P,曾,"already",26
+P,珀,"amber",26
+P,旭,"rising sun",26
+P,姓,"one's family name",26
+P,拔,"uproot",26
+P,厢,"side-room",26
+P,崇,"esteem",26
+P,卧,"lie down",26
+P,凳,"bench",26
+P,猫,"cat",26
+P,拨,"move",26
+P,吞,"absorb",26
+P,盏,"small cup or container",26
+P,芹,"celery",26
+P,毕,"end",26
+P,粮,"food",26
+P,闷,"gloomy",26
+P,晓,"dawn",26
+P,聯,"connect",26
+P,傑,"outstanding",26
+P,时,"time",25
+P,鲍,"dried fish",25
+P,茹,"roots",25
+P,隅,"corner",25
+P,智,"wisdom",25
+P,须,"must",25
+P,炳,"bright",25
+P,臺,"tower",25
+P,饶,"bountiful",25
+P,沽,"buy and sell",25
+P,凉,"cool",25
+P,胆,"gall bladder",25
+P,岌,"perilous",25
+P,付,"give",25
+P,缺,"be short of",25
+P,拢,"collect",25
+P,妈,"mother",25
+P,候,"expect",25
+P,着,"make move",25
+P,解,"loosen",24
+P,蛇,"snake",24
+P,资,"property",24
+P,妙,"mysterious",24
+P,晏,"peaceful",24
+P,兆,"trillion",24
+P,夹,"be wedged or inserted between",24
+P,肥,"fat",24
+P,迁,"move",24
+P,深,"deep",24
+P,宕,"stone quarry",24
+P,傅,"tutor",24
+P,聋,"deaf",24
+P,挖,"dig",24
+P,虾,"shrimp",24
+P,壳,"shell",24
+P,易,"change",24
+P,读,"read",24
+P,驮,"carry on back",24
+P,零,"zero",24
+P,崮,"a mesa",24
+P,颜,"face",23
+P,昔,"formerly",23
+P,卿,"noble",23
+P,榴,"pomegranate",23
+P,少,"few",23
+P,润,"soft",23
+P,球,"ball",23
+P,礁,"reef",23
+P,堪,"adequately capable of",23
+P,案,"table",23
+P,休,"rest",23
+P,绿,"green",23
+P,龚,"give",23
+P,崀,"place name in Hunan province",23
+P,飞,"fly",23
+P,戴,"wear on top",23
+P,鸠,"pigeon",23
+P,冒,"risk",23
+P,沖,"pour water on",23
+P,哄,"beguile",23
+P,萬,"Original form of 蠆／虿 .",23
+P,活,"live",22
+P,舒,"open up",22
+P,昭,"bright",22
+P,楠,"name of tree",22
+P,稿,"draft",22
+P,罐,"jar",22
+P,赤,"red",22
+P,浮,"float",22
+P,册,"book",22
+P,汾,"river in Shanxi province",22
+P,琅,"a variety of white carnelian",22
+P,席,"seat",22
+P,名,"name",22
+P,坵,"earthenware",22
+P,经,"classic works",22
+P,八,"eight",22
+P,宏,"wide",22
+P,不,"not",22
+P,棍,"stick",22
+P,扁,"flat",22
+P,稔,"ripe grain",22
+P,骨,"skeleton",22
+P,雁,"wild goose",22
+P,完,"complete",22
+P,椅,"chair",22
+P,稠,"dense",22
+P,瓮,"earthen jar",22
+P,孝,"filial piety",22
+P,埌,"waste",22
+P,結,"tie",22
+P,烏,"crow",21
+P,欣,"happy",21
+P,亥,"twelfth earthly branch",21
+P,卷,"volume",21
+P,坐,"sit",21
+P,棋,"chess",21
+P,录,"copy",21
+P,苟,"careless",21
+P,播,"sow",21
+P,墨,"ink",21
+P,逻,"patrol",21
+P,巩,"bind",21
+P,峧,"",21
+P,域,"district",21
+P,引,"pull",21
+P,薛,"kind of marsh grass",21
+P,障,"separate",21
+P,埇,"name of bridge",21
+P,榕,"banyan tree",21
+P,箭,"arrow",21
+P,杉,"various species of pine and fir",21
+P,阔,"wide",21
+P,脊,"spine",21
+P,优,"superior",21
+P,复,"repeat",21
+P,到,"go to",21
+P,淖,"slush",21
+P,漯,"river in northern Shandong",21
+P,铃,"bell",21
+P,毫,"fine hair",21
+P,碥,"steep",21
+P,佃,"tenant farmer",21
+P,僚,"companion",21
+P,灌,"water",21
+P,奶,"woman's breasts",21
+P,爬,"climb",21
+P,淤,"mud",21
+P,散,"scatter",21
+P,电,"electric",21
+P,送,"dispatch",21
+P,湴,"mud",21
+P,巖,"cliff",21
+P,卖,"sell",20
+P,鄂,"Hubei province",20
+P,呼,"breathe sigh",20
+P,渔,"fish",20
+P,簸,"winnower",20
+P,浒,"riverbank",20
+P,邢,"state in today's Hebei",20
+P,备,"prepare",20
+P,義,"right conduct",20
+P,展,"open",20
+P,暖,"warm",20
+P,唇,"lip",20
+P,扶,"support",20
+P,仕,"official",20
+P,锁,"lock",20
+P,巨,"large",20
+P,歹,"bad",20
+P,漏,"leak",20
+P,氹,"ditch",20
+P,址,"site",20
+P,室,"room",20
+P,坌,"dust",20
+P,吓,"scare",20
+P,崔,"high",20
+P,麟,"female of Chinese unicorn",20
+P,耿,"bright",20
+P,廊,"corridor",20
+P,折,"break off",20
+P,为,"do",20
+P,蒿,"mugwort",20
+P,來,"come",20
+P,寒,"cold",20
+P,犂,"plow",20
+L,勒,"strangle",2872
+L,玛,"agate",428
+L,嘎,"sound of laughter",302
+L,多,"many",297
+L,布,"cloth",222
+L,巴,"greatly desire",212
+L,果,"fruit",196
+L,村,"village",196
+L,阿,"prefix for people's names",188
+L,弄,"do",154
+L,穷,"poor",153
+L,园,"park",145
+L,卡,"card",145
+L,扎,"stab",133
+L,沟,"ditch",133
+L,拉,"pull",129
+L,區,"area",127
+L,达,"arrive at",126
+L,马,"horse",120
+L,坑,"pit",114
+L,里,"inside",106
+L,園,"garden",98
+L,木,"tree",98
+L,尔,"you",96
+L,日,"day",92
+L,来,"come",87
+L,龙,"dragon",85
+L,那,"that",80
+L,克,"gram",80
+L,波,"wave",79
+L,岗,"post",78
+L,热,"hot",75
+L,雄,"male of species",73
+L,区,"zone",72
+L,山,"mountain",69
+L,格,"pattern",66
+L,东,"east",57
+L,洞,"hole",56
+L,塘,"pond",53
+L,子,"offspring",53
+L,岭,"mountain ridge",53
+L,普,"universal",51
+L,莱,"goosefoot",49
+L,丁,"male adult",49
+L,如,"if",47
+L,钦,"respect",47
+L,朵,"cluster of flowers",46
+L,加,"add",45
+L,湾,"a bay",45
+L,桑,"mulberry tree",44
+L,朗,"clear",44
+L,沙,"sand",43
+L,地,"earth",42
+L,场,"open space",42
+L,纳,"admit",41
+L,德,"virtue",40
+L,仁,"humaneness",40
+L,坪,"level ground",40
+L,乃,"then",39
+L,青,"blue",39
+L,萨,"Buddhist gods or immortals",38
+L,则,"rule",38
+L,若,"if",38
+L,登,"rise",37
+L,赖,"bad",36
+L,贡,"offer tribute",35
+L,骇,"terrify",35
+L,古,"old",34
+L,林,"forest",33
+L,给,"give",33
+L,查,"investigate",32
+L,母,"female elders",32
+L,隆,"prosperous",31
+L,色,"color",30
+L,松,"fir tree",29
+L,当,"while",29
+L,头,"head",29
+L,孜,"be as diligent as possible",28
+L,冬,"winter",28
+L,莫,"do not",27
+L,瓦,"tile",27
+L,庄,"village",27
+L,得,"obtain",27
+L,打,"beat",27
+L,呢,"interrogative or emphatic final",27
+L,坡,"slope",26
+L,觉,"wake up from sleep",26
+L,顶,"top",26
+L,黎,"numerous",26
+L,西,"west",25
+L,窝,"cave",25
+L,尼,"Buddhist nun",24
+L,通,"pass through",24
+L,脚,"feet",24
+L,宗,"lineage",23
+L,吉,"lucky",23
+L,可,"may",23
+L,库,"armory",22
+L,间,"interval",22
+L,港,"port",21
+L,久,"long time",21
+L,口,"mouth",21
+L,庆,"congratulate",21
+L,曲,"crooked",21
+L,夺,"take by force",21
+L,淌,"trickle",21
+L,戈,"halberd",21
+L,儿,"son",21
+L,列,"column",21
+L,堆,"heap",20
+L,荣,"glory",20
+L,琼,"jade",20
+L,让,"let",20
+L,罗,"net for catching birds",20
+L,特,"special",20
+S,橋,"bridge",5871
+S,場,"open space",2450
+S,小,"small",1681
+S,站,"stand",1615
+S,场,"open space",1338
+S,桥,"bridge",909
+S,宮,"house",810
+S,院,"courtyard",745
+S,中,"central",672
+S,学,"learning",579
+S,寺,"court",456
+S,墓,"grave",341
+S,堂,"hall",325
+S,學,"comprehend",323
+S,厂,"factory",305
+S,館,"accommodation",263
+S,校,"school",235
+S,馆,"public building",231
+S,所,"place",228
+S,堡,"fort",191
+S,廟,"temple",187
+S,塔,"tower",177
+S,廠,"shack",167
+S,心,"heart",152
+S,会,"would",135
+S,山,"mountain",134
+S,连,"join",125
+S,矿,"mine",121
+S,殿,"palace",115
+S,府,"prefecture",78
+S,地,"earth",77
+S,壩,"dam",77
+S,园,"park",76
+S,礦,"mineral deposit",76
+S,園,"garden",67
+S,城,"castle",60
+S,宫,"palace",56
+S,斯,"this",55
+S,班,"class",55
+S,店,"shop",53
+S,工,"labor",53
+S,局,"bureau",52
+S,莊,"grassy",50
+S,克,"gram",48
+S,廈,"mansion",47
+S,闸,"sluice",47
+S,司,"take charge of",47
+S,队,"team",45
+S,台,"platform",43
+S,商,"business",43
+S,頭,"head",41
+S,门,"door",38
+S,業,"profession",37
+S,碑,"stone tablet",35
+S,祠,"ancestral temple",35
+S,厦,"big building",33
+S,廳,"hall",33
+S,区,"zone",33
+S,庙,"temple",32
+S,庄,"village",31
+S,道,"path",29
+S,坝,"embankment",29
+S,部,"tribe",28
+S,專,"monopolize",27
+S,樓,"building",26
+S,卡,"card",24
+S,子,"offspring",24
+S,厅,"hall",23
+S,尔,"you",23
+S,拉,"pull",23
+S,驛,"posthorse",22
+S,港,"port",21
+S,哨,"whistle",21
+S,寮,"shanty",21
+S,爾,"you",20
+T,山,"mountain",5399
+T,島,"island",972
+T,岛,"island",855
+T,拉,"pull",637
+T,峰,"peak",556
+T,脈,"blood vessels",202
+T,岩,"cliff",201
+T,洲,"continent",199
+T,屿,"island",196
+T,角,"horn",159
+T,防,"defend",157
+T,嶺,"mountain whose peak is accessible by road",144
+T,岭,"mountain ridge",113
+T,堤,"dike",106
+T,峯,"peak",101
+T,顶,"top",96
+T,尖,"sharp",93
+T,日,"day",92
+T,嶼,"island",84
+T,礁,"reef",74
+T,咀,"suck",73
+T,尕,"small",65
+T,沟,"ditch",59
+T,头,"head",55
+T,玛,"agate",50
+T,子,"offspring",49
+T,口,"mouth",47
+T,脉,"blood vessels",44
+T,原,"source",42
+T,排,"row",42
+T,石,"stone",41
+T,峴,"steep hill",39
+T,岗,"post",34
+T,頭,"head",33
+T,鼻,"nose",33
+T,仔,"small thing",30
+T,尔,"you",28
+T,尾,"tail",27
+T,地,"earth",26
+T,坑,"pit",26
+T,頂,"top of the head",26
+T,嘎,"sound of laughter",25
+T,克,"gram",24
+T,社,"god of the soil and altars to him",21
+T,坂,"hillside",20
+T,谷,"corn",20
+H,库,"armory",3078
+H,河,"river",1553
+H,溪,"river",1355
+H,湖,"lake",513
+H,曲,"crooked",496
+H,错,"wrong",306
+H,港,"port",303
+H,湾,"a bay",243
+H,口,"mouth",176
+H,灣,"bend in a river",165
+H,布,"cloth",143
+H,坑,"pit",141
+H,江,"river",127
+H,埤,"add",113
+H,川,"river",108
+H,礁,"reef",83
+H,池,"pool",83
+H,海,"sea",74
+H,線,"thread",69
+H,屿,"island",64
+H,渠,"canal",63
+H,水,"water",59
+H,溝,"ditch",54
+H,泉,"spring",51
+H,圳,"furrow in field",50
+H,泡,"bubbles",47
+H,沟,"ditch",45
+H,庫,"warehouse",42
+H,玛,"agate",40
+H,塘,"pond",39
+H,道,"path",36
+H,排,"row",34
+H,子,"offspring",33
+H,克,"gram",25
+H,卡,"card",21
+H,勒,"strangle",20
+U,沙,"sand",47
+U,礁,"reef",29
+R,道,"path",386
+R,路,"road",24

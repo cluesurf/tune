@@ -8,7 +8,12 @@
   "eslint.validate": ["javascript", "typescript"],
   "eslint.nodePath": "./node_modules/eslint",
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
+    "0": {
+      "viewType": "vscode.markdown.preview.editor",
+      "filenamePattern": "*.md"
+    },
+    "*.md": "vscode.markdown.preview.editor",
+    "*.csv": "default"
   },
   "markdown.preview.breaks": true
 }
