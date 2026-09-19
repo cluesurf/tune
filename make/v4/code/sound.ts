@@ -505,6 +505,36 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['b', 'd'],
   ['p', 't'],
   ['g', 'k'],
+  /**
+   * HOMORGANIC nasal and stop: one place, differing only in nasality.
+   *
+   * ```text
+   * bilabial   m b p
+   * alveolar   n d t
+   * velar      q g k
+   * ```
+   *
+   * **Added 2026-09-18, and the omission was a real hole.** The rows
+   * above pair `b~p`, `d~t` and `g~k`, which is one place differing in
+   * VOICE, and `m~n~q`, which is one manner across three places. None
+   * of them crosses the nasal line AT the same place, so `yam` against
+   * `yab` scored as a clear difference when the two are made at one
+   * pair of lips and differ only in whether the air goes through the
+   * nose. `yon` against `yod` is the same at the alveolar ridge.
+   *
+   * Nasality is the weakest cue in the inventory and weakest of all at
+   * the END of a word, where the nasal release is slight.
+   *
+   * The rule a speaker can hold: **a nasal is safe against a stop at a
+   * DIFFERENT place and never against its own.** `m` with `d` or `t`,
+   * `n` with `b` or `p`.
+   *
+   * This moves every closeness count in the project at once, which is
+   * why it is dated. `v4:close` reports the new figure.
+   */
+  ['m', 'b', 'p'],
+  ['n', 'd', 't'],
+  ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
   ['c', 'C'],

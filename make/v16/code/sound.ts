@@ -88,6 +88,12 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['b', 'd'],
   ['p', 't'],
   ['g', 'k'],
+  // Homorganic nasal and stop: same place, differing only in
+  // nasality, which is the weakest cue there is and weakest of all
+  // word-finally. `yam` against `yab` is one pair of lips twice.
+  ['m', 'b', 'p'],
+  ['n', 'd', 't'],
+  ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
   ['c', 'C'],

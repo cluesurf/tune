@@ -89,7 +89,13 @@
     "v8:pick": "tsx make/v8/code/pick.ts",
     "v8:most": "tsx make/v8/code/most.ts",
     "v8:join": "tsx make/v8/code/join.ts",
-    "v16:pick": "tsx make/v16/code/pick.ts"
+    "v16:pick": "tsx make/v16/code/pick.ts",
+    "v16:join": "tsx make/v16/code/join.ts",
+    "v16:most": "tsx make/v16/code/most.ts",
+    "v16:quiet": "tsx make/v16/code/quiet.ts",
+    "v16:ceiling": "tsx make/v16/code/ceiling.ts",
+    "v16:ratio": "tsx make/v16/code/ratio.ts",
+    "v4:pin": "tsx make/v4/code/pin.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

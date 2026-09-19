@@ -133,9 +133,31 @@ function disperse(words: Array<string>, shape: Shape, want: number) {
 
 mkdirSync(OUT, { recursive: true })
 
+/**
+ * The budget, and it is MEASURED rather than chosen.
+ *
+ * 1,024 was a power of two. `v16:most` asks what the three short
+ * shapes can actually hold at `distance at least 2`, and the answer is
+ * **2,021**:
+ *
+ * ```text
+ * CVC   713      CVCC  753      CCVC  555      total 2,021
+ * ```
+ *
+ * So 2,075 `CVCVC` make up the 4,096, and **49% of the language is one
+ * syllable** rather than 25%.
+ *
+ * An earlier version of this comment said 1,720, which was the same
+ * question answered with a worse tie break. See `most.ts`.
+ *
+ * The short roots come from `v16:most`, which solves for the largest
+ * set at a standard. This file's dispersion is the wrong tool for that
+ * and is used only for the long shape, where the supply is so far
+ * ahead of the need that any well spread 2,376 will do.
+ */
 const SHORT: Array<Shape> = ['CVC', 'CVCC', 'CCVC']
-const WANT_SHORT = 1024
-const WANT_LONG = 3072
+const WANT_SHORT = Number(process.env.SHORT ?? 2021)
+const WANT_LONG = Number(process.env.LONG ?? 4096 - WANT_SHORT)
 
 process.stdout.write('V16: FOUR SHAPES, 4,096 ROOTS\n\n')
 
@@ -179,7 +201,8 @@ for (let n = 0; n < WANT_SHORT; n++) {
 }
 
 process.stdout.write(
-  `\n  THE 1,024 SHORT ROOTS, split by what each shape could give:\n\n` +
+  `\n  WHAT DISPERSION WOULD GIVE for ${WANT_SHORT.toLocaleString()} short roots,\n` +
+    `  shown only for comparison. The real ones come from v16:most.\n\n` +
     `  ${'shape'.padEnd(8)}${'taken'.padStart(8)}${'of'.padStart(10)}\n`,
 )
 for (const shape of SHORT) {
@@ -197,15 +220,38 @@ const long = curve.get('CVCVC') as {
   apart: Array<number>
 }
 process.stdout.write(
-  `  worst separation among the 3,072 CVCVC   ` +
+  `  worst separation among the ${WANT_LONG.toLocaleString()} CVCVC   ` +
     `${Math.min(...long.apart.slice(1))}\n`,
 )
 
-for (const shape of SHORT) {
-  writeFileSync(
-    resolve(OUT, `${shape.toLowerCase()}.txt`),
-    `${picked[shape].join('\n')}\n`,
-  )
-}
+/**
+ * ONLY the long shape is written here.
+ *
+ * **`v16:most` owns the short roots** and this file must not overwrite
+ * them. The two use different algorithms for different questions, and
+ * for the short shapes the difference is large:
+ *
+ * ```text
+ * v16:most   independent set   713 + 753 + 555 = 2,021, all 2 apart
+ * this file  dispersion        2,021, but the closest pair is 1 apart
+ * ```
+ *
+ * **The COUNT is the same and the quality is not**, which is exactly
+ * how this would have gone unnoticed: the files would have had the
+ * right number of lines and the wrong words in them.
+ *
+ * Dispersion answers "how far apart is a set of size N" and packs
+ * worse than an independent set solver at a fixed standard. An earlier
+ * version of this file wrote all four and silently replaced the better
+ * short sets with its own.
+ *
+ * The long shape has 185,031 forms against a need of 2,075, so any
+ * well spread choice will do and dispersion is the right tool there.
+ */
 writeFileSync(resolve(OUT, 'cvcvc.txt'), `${long.order.join('\n')}\n`)
-process.stdout.write(`\n  wrote ${OUT}\n`)
+process.stdout.write(
+  `\n  wrote cvcvc.txt only. The short roots belong to v16:most,\n` +
+    `  which packs them better: 2,021 at distance 2 against the\n` +
+    `  ${Object.values(picked).reduce((sum, one) => sum + one.length, 0).toLocaleString()} this file's dispersion would give.\n` +
+    `  ${OUT}\n`,
+)

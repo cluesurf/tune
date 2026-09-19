@@ -174,10 +174,13 @@ function most(words: Array<string>, tooNear: Rule['tooNear']) {
    * and the best is a real lower bound.
    */
   const build = (round: number) => {
+    // Round 0 leaves ties in PHONOLOGICAL SORT ORDER, the rest hash.
+    // The sort order packs better, by a wide margin, because it
+    // exhausts one similarity region before moving to the next.
     const order = [...Array(n).keys()].sort(
       (a, b) =>
         edge[a].length - edge[b].length ||
-        rank(words[a], round) - rank(words[b], round),
+        (round === 0 ? a - b : rank(words[a], round) - rank(words[b], round)),
     )
     const inSet = new Uint8Array(n)
     const blocked = new Int32Array(n)

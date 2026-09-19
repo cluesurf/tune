@@ -34,7 +34,61 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { VOWELS, toShape, tooClose } from './sound'
+import { VOWELS, areSimilar, toShape, tooClose, vowelsClose } from './sound'
+
+/**
+ * `HOMORGANIC=1` adds the nasal and stop pairs made at the same place.
+ *
+ * ```text
+ * bilabial   m b p
+ * alveolar   n d t
+ * velar      q g k
+ * ```
+ *
+ * **`sound.ts` does not have these and should.** Its table pairs
+ * `b~p`, `d~t` and `g~k`, which is one place differing in VOICE, but
+ * it never crosses the nasal line at the same place. So `yam` against
+ * `yab` counts as a clear difference when the two are made at one pair
+ * of lips and differ only in whether the air goes through the nose.
+ *
+ * This is a FLAG rather than an edit to `sound.ts` because that table
+ * is what the whole v4 lexicon was built under, and changing it moves
+ * every count in the project at once. The flag says what the number
+ * would become so the change can be decided rather than absorbed.
+ */
+const HOMORGANIC = process.env.HOMORGANIC === '1'
+
+const SAME_PLACE: Array<Array<string>> = [
+  ['m', 'b', 'p'],
+  ['n', 'd', 't'],
+  ['q', 'g', 'k'],
+]
+
+const alsoNear = new Map<string, Set<string>>()
+for (const group of SAME_PLACE) {
+  for (const a of group) {
+    const held = alsoNear.get(a) ?? new Set<string>()
+    for (const b of group) held.add(b)
+    alsoNear.set(a, held)
+  }
+}
+
+const near = (a: string, b: string) =>
+  areSimilar(a, b) || (HOMORGANIC && (alsoNear.get(a)?.has(b) ?? false))
+
+/** `tooClose`, with the homorganic pairs folded in when asked for. */
+function closeEnough(a: string, b: string): boolean {
+  if (!HOMORGANIC) return tooClose(a, b)
+  if (a === b) return false
+  const shape = toShape(a)
+  if (shape === null || shape !== toShape(b)) return false
+  for (let at = 0; at < a.length; at++) {
+    const ok =
+      shape[at] === 'V' ? vowelsClose(a[at], b[at]) : near(a[at], b[at])
+    if (!ok) return false
+  }
+  return true
+}
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TERM = resolve(here, '../../../base/v4/term')
@@ -81,7 +135,7 @@ const found: Array<Pair> = []
 for (const a of roots) {
   for (const v of NEAR[vowelOf(a)] ?? []) {
     for (const b of bucket.get(`${toShape(a)} ${v}`) ?? []) {
-      if (b <= a || !tooClose(a, b)) continue
+      if (b <= a || !closeEnough(a, b)) continue
       let distance = 0
       for (let at = 0; at < a.length; at++) {
         if (a[at] !== b[at]) distance++

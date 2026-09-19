@@ -63,6 +63,33 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
   ['b', 'd'],
   ['p', 't'],
   ['g', 'k'],
+  /**
+   * HOMORGANIC nasal and stop: same place, differing only in nasality.
+   *
+   * ```text
+   * bilabial   m b p
+   * alveolar   n d t
+   * velar      q g k
+   * ```
+   *
+   * **These were missing and they should not have been.** The table
+   * had `b~p`, `d~t` and `g~k`, which is same place differing in
+   * VOICE, but never crossed the nasal line at the same place. So
+   * `yam` against `yab` scored as a clear difference when the two are
+   * made at the same lips and differ only in whether the air goes
+   * through the nose.
+   *
+   * Nasality is the weakest cue in the set, and weakest of all at the
+   * END of a word where the nasal release is slight. `yon` against
+   * `yod` is the same problem at the alveolar ridge.
+   *
+   * The rule this gives is easy to say: **a nasal is safe against a
+   * stop at a DIFFERENT place and never against its own.** `m` with
+   * `d` or `t`, `n` with `b` or `p`.
+   */
+  ['m', 'b', 'p'],
+  ['n', 'd', 't'],
+  ['q', 'g', 'k'],
   ['s', 'z'],
   ['x', 'j'],
   ['c', 'C'],
