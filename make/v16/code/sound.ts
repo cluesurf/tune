@@ -44,6 +44,35 @@ export const NO_CLOSE = new Set(['y', 'w', 'h'])
 export const BAD_RHYME = new Set(['il', 'el', 'ir', 'er', 'ul', 'ur'])
 
 /**
+ * Vowels a two syllable word may not carry in BOTH slots.
+ *
+ * ```text
+ * CuCuC   fluwuz   refused
+ * CeCeC   tetek    refused
+ * CaCaC   batam    stands
+ * CoCoC   dotok    stands
+ * ```
+ *
+ * A close vowel sung twice makes a word that is all one colour, and
+ * the close vowels are the ones it happens to: `u` and `e` here. `a`
+ * and `o` are open enough to carry a word twice over.
+ *
+ * **All three close vowels**, which is what v4's `no_twin_vowel`
+ * refuses too. `i` was weighed separately and costs almost nothing:
+ *
+ * ```text
+ *                  CVCVC legal   ceiling   spare over 4,096
+ * u, e banned          171,465    55,835        53,760
+ * u, e, i banned       164,682    48,884        46,809
+ * ```
+ *
+ * 6,951 fewer two syllable words at the ceiling, against a need of
+ * 2,304. **48,884 is still twenty one times the requirement**, so the
+ * rule is free in practice and the language is more even for it.
+ */
+export const TWIN_VOWEL = new Set(['u', 'e', 'i'])
+
+/**
  * The two piles, from v4's `settled-phonotactics.md`.
  *
  * A cluster's boundary sound decides which way a seam splits, so the
@@ -183,6 +212,8 @@ export function every(shape: Shape): Array<string> {
         for (const b of CONSONANTS) {
           if (NO_OPEN.has(b)) continue
           for (const w of VOWELS) {
+            // No close vowel in both slots: `fluwuz`, `tetek`.
+            if (v === w && TWIN_VOWEL.has(v)) continue
             for (const c of CONSONANTS) {
               if (NO_CLOSE.has(c)) continue
               push(a + v + b + w + c)
