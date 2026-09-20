@@ -11,7 +11,7 @@
  *   pnpm --dir deck/tune v17:guide
  */
 
-import { writeFileSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -23,6 +23,7 @@ import {
   ONSET_TWO,
   TEMPLATE,
   VOWEL,
+  everyRoot,
   fricMate,
   inIpa,
   kindOf,
@@ -34,7 +35,12 @@ import {
 } from './rule'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const OUT = resolve(here, '../cheatsheet.md')
+// `V17_GUIDE_OUT` writes a TRIAL somewhere else, so weighing a change
+// with the `V17_*` levers cannot overwrite the real guide with a
+// configuration the language does not have.
+const OUT = process.env.V17_GUIDE_OUT
+  ? resolve(process.env.V17_GUIDE_OUT)
+  : resolve(here, '../readme.md')
 
 const got = pool()
 const total = got.kept.length
@@ -58,6 +64,19 @@ const byText = new Map(roots.map(one => [one.text, one]))
 const sizes = [...new Set(roots.map(one => one.text.length))].sort(
   (a, b) => a - b,
 )
+
+/**
+ * THE SHORTEST AND LONGEST ROOT, MEASURED RATHER THAN TYPED.
+ *
+ * `pairsOf` walks every place the left root could end, and the bounds
+ * of that walk used to be the literals 3 and 7, which were true of the
+ * eight templates and of nothing else. Weighing three letter clusters
+ * makes the longest root `CCCDCCC`, eight letters, and a hardcoded 7
+ * never tries that cut. The witness then reports no ambiguity because
+ * it never looked, which is the worst answer a check can give.
+ */
+const SHORTEST = sizes[0]
+const LONGEST = sizes[sizes.length - 1]
 
 const doubted = new Set<string>()
 const doubt = (a: Root, b: Root) => doubted.has(`${a.text}|${b.text}`)
@@ -89,7 +108,11 @@ function pairsOf(text: string, useDoubt: boolean) {
     seen.add(key)
     out.push([x, y])
   }
-  for (let L = 3; L <= Math.min(text.length - 3, 7); L++) {
+  for (
+    let L = SHORTEST;
+    L <= Math.min(text.length - SHORTEST, LONGEST);
+    L++
+  ) {
     const x = byText.get(text.slice(0, L))
     if (x) {
       see(x, byText.get(text.slice(L)))
@@ -131,9 +154,15 @@ function pairsOf(text: string, useDoubt: boolean) {
  * one. 65,432 pairs then read two ways with the `l` supposedly in
  * place, which was a hole in the detector rather than in the language.
  */
+/** A seam carrying a three letter cluster takes a liquid whatever the
+ * pool looks like, so asking whether this pool happens to collide
+ * there is both pointless and slow. */
+const forced = (a: Root, b: Root) => a.co.length > 2 || b.on.length > 2
+
 for (const a of roots) {
   for (const b of roots) {
     if (kindOf(a, b) !== '') continue
+    if (forced(a, b)) continue
     if (pairsOf(a.text + b.text, false).length > 1) {
       doubted.add(`${a.text}|${b.text}`)
     }
@@ -149,6 +178,7 @@ const count: Record<string, number> = {
   nasal: 0,
   liquid: 0,
   glide: 0,
+  three: 0,
   doubt: 0,
   '': 0,
 }
@@ -156,7 +186,11 @@ let length = 0
 for (const a of roots) {
   for (const b of roots) {
     const kind = kindOf(a, b)
+    // `three` before `doubt`, and both before nothing: a forced liquid
+    // IS written, and counting it as nothing written overstated the
+    // silent share and hid the rule entirely.
     if (kind) count[kind]++
+    else if (forced(a, b)) count.three++
     else if (doubt(a, b)) count.doubt++
     else count['']++
     length += write([a, b], doubt).length
@@ -177,7 +211,11 @@ const sound =
 const VOICELESS = 'ptksfcx'
 
 const CASE: Array<[string, (a: Root, b: Root) => boolean]> = [
-  ['nothing written', (a, b) => kindOf(a, b) === '' && !doubt(a, b)],
+  [
+    'nothing written',
+    (a, b) => kindOf(a, b) === '' && !doubt(a, b) && !forced(a, b),
+  ],
+  ['a three letter cluster at the seam', (a, b) => kindOf(a, b) === '' && forced(a, b)],
   [
     'two stops of one place, voiceless left',
     (a, b) =>
@@ -305,10 +343,49 @@ for (const depth of [3, 4]) {
 
 // ─── Write it ──────────────────────────────────────────
 
+/**
+ * Rows in one of the generated tables, headers and comments aside.
+ *
+ * Counted rather than typed, and `not built yet` where the file is
+ * missing, so this page can never claim a number for something that
+ * has not been generated.
+ */
+const lines = (name: string) => {
+  const path = resolve(here, '../base/term', name)
+  if (!existsSync(path)) return 'not built yet,'
+  return readFileSync(path, 'utf-8')
+    .split('\n')
+    .filter(one => one.trim() && !one.startsWith('#'))
+    .length - 1
+}
+
+/**
+ * How many rows of the joiner table say "a liquid" rather than a
+ * letter. It was typed as "Five" and went stale the moment a row was
+ * added, which is what every hand counted figure in a generated file
+ * eventually does.
+ */
+const LIQUID_ROWS = [
+  'after a coda opening on s',
+  'a fricative voicing pair',
+  'the same sound doubled, cluster right',
+  'a root opening on y',
+  'a three letter cluster at the seam',
+  'the cut is in doubt',
+].filter(one => example.has(one)).length
+
+/** Columns as wide as the longest entry, so a `CCCVVCCC` still lines up. */
 const rows = (list: Array<string>, per: number) => {
+  const wide = Math.max(...list.map(one => one.length)) + 1
   const out: Array<string> = []
   for (let at = 0; at < list.length; at += per) {
-    out.push(list.slice(at, at + per).map(one => one.padEnd(4)).join(' '))
+    out.push(
+      list
+        .slice(at, at + per)
+        .map(one => one.padEnd(wide))
+        .join(' ')
+        .trimEnd(),
+    )
   }
   return out.join('\n')
 }
@@ -320,11 +397,28 @@ const say = (name: string) => {
   return said ? `${got}<br>*${said}*` : got
 }
 
+/**
+ * LEGAL and USABLE are different questions and the guide prints both.
+ *
+ * Legal is what the sound rules allow. Usable is what survives the
+ * distance rule, which is the number that matters, and the gap between
+ * them is what the distance rule COSTS, per shape. `CVC` keeps 62% of
+ * its forms and `CVCC` keeps 40%, so a shape being big is not the same
+ * as a shape being useful.
+ */
+const legalPer = new Map<string, number>()
+for (const one of everyRoot()) {
+  const key = templateOf(one)
+  legalPer.set(key, (legalPer.get(key) ?? 0) + 1)
+}
+const legalTotal = [...legalPer.values()].reduce((a, b) => a + b, 0)
+
 const perTemplate = Object.keys(TEMPLATE)
   .filter(key => got.per.has(key))
   .map(
     key =>
-      `| \`${TEMPLATE[key]}\` | ${(got.per.get(key) as number).toLocaleString()} |`,
+      `| \`${TEMPLATE[key]}\` | ${(legalPer.get(key) ?? 0).toLocaleString()} | ` +
+      `${(got.per.get(key) as number).toLocaleString()} |`,
   )
   .join('\n')
 
@@ -336,9 +430,11 @@ writeFileSync(
 vowels.** Every compound must read exactly one way, and the letters that
 make that true must be as few as possible.
 
-Generated by \`make/v17/code/guide.ts\` from \`make/v17/code/rule.ts\`.
+Generated by \`case/v17/code/guide.ts\` from \`case/v17/code/rule.ts\`.
 Every figure is measured over all ${pairs.toLocaleString()} ordered
-pairs of a 4,096, and every example is a real pair found in the pool.
+pairs of ${roots.length.toLocaleString()} roots, drawn across the
+shapes in proportion, and every example is a real pair found in the
+pool.
 
 ## The sounds
 
@@ -387,11 +483,15 @@ A single consonant opens a root except \`q\`, and closes one except
 
 ## The shapes
 
-Every root is one syllable. \`V\` is a vowel, \`D\` a diphthong.
+Every root is one syllable. \`VV\` is a diphthong, \`ai\` or \`au\`.
 
 \`\`\`
-CVC    CVCC    CCVC    CCVCC
-CDC    CDCC    CCDC    CCDCC
+${rows(
+  Object.keys(TEMPLATE)
+    .filter(key => got.per.has(key))
+    .map(key => TEMPLATE[key]),
+  6,
+)}
 \`\`\`
 
 ## What a root may not be
@@ -428,7 +528,7 @@ every consonant position:
 b p     d t     g k     m n
 \`\`\`
 
-\`CVC\` and \`CDC\` are exempt, which is what keeps the short words.
+\`CVC\` and \`CVVC\` are exempt, which is what keeps the short words.
 
 \`\`\`
 nain  main     no cluster       both stand
@@ -453,6 +553,7 @@ faind vaind    cluster coda     one of them goes
 | ${say('a doubled nasal')} | \`z\` | a doubled nasal | ${pct(count.nasal)} |
 | ${say('a doubled liquid')} | \`r\` after \`l\`, \`z\` after \`r\` | a doubled liquid | ${pct(count.liquid)} |
 | ${say('a root opening on y')} | a liquid | a root opening on \`y\` | ${pct(count.glide)} |
+| ${say('a three letter cluster at the seam')} | a liquid | a three letter cluster at the seam | ${pct(count.three)} |
 | ${say('the cut is in doubt')} | a liquid | the cut is in doubt | ${pct(count.doubt)} |
 
 Every example above is the bare seam. **Said aloud a noun takes the
@@ -466,7 +567,7 @@ joiner is not heard: \`djulrluna\` is said \`djulırluna\`,
 
 ### Which liquid
 
-Five of the rows above write "a liquid" rather than an \`l\`, because an
+${LIQUID_ROWS} of the rows above write "a liquid" rather than an \`l\`, because an
 \`l\` stops being a joiner the moment it lands beside another one: \`ll\`
 is one long \`l\` to a listener, and a joiner nobody can hear is not a
 joiner. So the letter moves, and where both liquids are already spoken
@@ -495,9 +596,16 @@ once and followed by a \`w\`, so \`vit + tok\` is \`vitwok\`.
 | | share |
 | --- | --- |
 | for SOUND, the six cases | ${pct(sound)} |
-| for the CUT, a plain \`l\` | ${pct(count.doubt)} |
-| **anything at all** | **${pct(sound + count.doubt)}** |
+| for the CUT, a three letter cluster | ${pct(count.three)} |
+| for the CUT, this pool would read two ways | ${pct(count.doubt)} |
+| **anything at all** | **${pct(sound + count.three + count.doubt)}** |
 | nothing written | ${pct(count[''])} |
+
+**The two cut rows are not the same kind of fact.** A three letter
+cluster takes a liquid because of what the two roots ARE, so it holds
+whatever words the language later gains. The last row is what THIS
+pool of ${roots.length.toLocaleString()} would otherwise spell two
+ways, so it moves when the words do.
 
 Mean length of a joined pair: ${(length / pairs).toFixed(2)} sounds.
 
@@ -523,10 +631,13 @@ lists allow no such letter**, so it can be lifted back out.
 
 ## How many roots
 
-| template | usable |
-| --- | --- |
+| template | legal | usable |
+| --- | --- | --- |
 ${perTemplate}
-| **total** | **${total.toLocaleString()}** |
+| **total** | **${legalTotal.toLocaleString()}** | **${total.toLocaleString()}** |
+
+**Legal** is what the sound rules allow. **Usable** is what survives
+the distance rule, and the gap is what that rule costs per shape.
 
 ${
   total >= 4096
@@ -535,6 +646,24 @@ ${
 }
 
 Run with \`V17_DIPHTHONG=0\` for the count without \`ai\` and \`au\`.
+
+## What else is here
+
+| file | what |
+| --- | --- |
+| \`base/term/usable/\` | every usable root, one file per shape, plus \`all.txt\` and \`all-ipa.txt\` |
+| \`base/term/legal/\` | every root the sound rules allow, before the distance rule |
+| \`base/term/pinned.csv\` | ${lines('pinned.csv')} concepts that already have a form |
+| \`base/term/lost.csv\` | ${lines('lost.csv')} v16 words v17 cannot spell, and why |
+| \`base/term/words.csv\` | ${lines('words.csv')} words, the ones the video says |
+| \`base/voice/\` | the recordings, and the video in both shapes |
+
+\`\`\`
+pnpm --dir deck/tune v17:every     the root lists
+pnpm --dir deck/tune v17:pinned    the pins
+pnpm --dir deck/tune v17:words     the words file
+pnpm --dir deck/tune v17:guide     this page
+\`\`\`
 `,
 )
 

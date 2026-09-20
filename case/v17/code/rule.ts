@@ -55,17 +55,40 @@ export const CODA_ONE = 'mnqbdgptkszfvxjcClr'.split('')
 const more = (name: string) =>
   (process.env[name] ?? '').split(/\s+/).filter(Boolean)
 
+/**
+ * A root opens on one of these, or on one consonant.
+ *
+ * The five three letter onsets are the `s` plus stop plus liquid pile,
+ * and each is safe against the `s` joiner by construction rather than
+ * by luck: writing `s` needs the left root to end in a voiceless stop
+ * of the same place as the onset's stop, which would BE that stop, and
+ * `kindOf` asks sameness before place, so it is a twin and never
+ * reaches the stop clause. `s + pl` and `spl` can never collide.
+ */
 export const ONSET_TWO = [
   ...(
-    'bl br cr dj dr fl fr gl gr kl kr pl pr ' + 'sk sl sm sn sp st tr tx xl'
+    'bl br cr dj dr fl fr gl gr kl kr pl pr ' +
+    'sk sl sm sn sp st tr tx xl ' +
+    'skl skr spl spr str'
   ).split(' '),
   ...more('V17_ADD_ONSET'),
 ]
 
+/**
+ * A root closes on one of these, or on one consonant.
+ *
+ * `ntx` and `qkc` are the two that let a cut SLIDE, because dropping
+ * their last letter leaves a coda that is also legal and that letter
+ * can then open the root after it, through the `xl` and `cr` onsets.
+ * The seam rule answers that: a three letter cluster at a seam always
+ * takes a liquid. `ndj` cannot slide at all, since no onset opens on
+ * `j` with anything left over.
+ */
 export const CODA_TWO = [
   ...(
     'dj ft fk lc lf lk lp lt mp nd nt qk rb rd rf rg rk rp rt ' +
-    'sk sp st tx zb zd zg'
+    'sk sp st tx zb zd zg ' +
+    'ndj ntx qkc'
   ).split(' '),
   ...more('V17_ADD_CODA'),
 ]
@@ -107,8 +130,8 @@ const isLiquid = (one: string) => one === 'l' || one === 'r'
  * end single, `blak` or `lark`, stands.
  */
 const liquidFlank = (on: string, co: string) =>
-  on.length === 2 &&
-  co.length === 2 &&
+  on.length >= 2 &&
+  co.length >= 2 &&
   isLiquid(last(on)) &&
   isLiquid(co[0])
 
@@ -331,7 +354,7 @@ export function nearGraph(group: Array<Root>) {
     const root = group[i]
     const onLen = root.on.length
     const nucLen = root.nuc.length
-    const clustered = root.on.length === 2 || root.co.length === 2
+    const clustered = root.on.length > 1 || root.co.length > 1
     for (let p = 0; p < root.text.length; p++) {
       if (p >= onLen && p < onLen + nucLen) continue
       // `similarAt` branches only on whether a position is a coda, so
@@ -393,15 +416,31 @@ export function ceiling(roots: Array<Root>, first?: Set<string>) {
 export const templateOf = (one: Root) =>
   `${one.on.length}${one.nuc.length}${one.co.length}`
 
+/**
+ * The key is onset, nucleus and coda LENGTHS, so the name is those
+ * lengths spelled out. Written as a table rather than built from the
+ * digits because it is also the order the guide prints, shortest
+ * first.
+ */
 export const TEMPLATE: Record<string, string> = {
   '111': 'CVC',
   '112': 'CVCC',
-  '121': 'CDC',
-  '122': 'CDCC',
+  '113': 'CVCCC',
+  '121': 'CVVC',
+  '122': 'CVVCC',
+  '123': 'CVVCCC',
   '211': 'CCVC',
   '212': 'CCVCC',
-  '221': 'CCDC',
-  '222': 'CCDCC',
+  '213': 'CCVCCC',
+  '221': 'CCVVC',
+  '222': 'CCVVCC',
+  '223': 'CCVVCCC',
+  '311': 'CCCVC',
+  '312': 'CCCVCC',
+  '313': 'CCCVCCC',
+  '321': 'CCCVVC',
+  '322': 'CCCVVCC',
+  '323': 'CCCVVCCC',
 }
 
 // ─── The seam ──────────────────────────────────────────
@@ -499,7 +538,7 @@ const just = (joiner: string): Seam => ({
 function liquid(a: Root, b: Root): Seam {
   const x = last(a.text)
   const y = b.text[0]
-  if (a.co.length === 2 && a.co[0] === 'l') {
+  if (a.co.length >= 2 && a.co[0] === 'l') {
     return just(y === 'r' ? 'ri' : 'r')
   }
   if ((x === 'l' && (y === 'l' || y === 'r')) || (x === 'r' && y === 'l')) {
@@ -540,7 +579,7 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
        * have each been called right once. The spelling is what stands
        * here, so `pizg + gim` is `pizgrgim`.
        */
-      if (a.co.length === 2 && (a.co[0] === 's' || a.co[0] === 'z')) {
+      if (a.co.length >= 2 && (a.co[0] === 's' || a.co[0] === 'z')) {
         return just(a.co[0] === 's' ? 'l' : 'r')
       }
       return just(VOICELESS.includes(last(a.text)) ? 's' : 'z')
@@ -598,7 +637,35 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
      */
     case 'fricPair':
       return liquid(a, b)
+    /**
+     * A THREE LETTER CLUSTER AT A SEAM ALWAYS TAKES A LIQUID.
+     *
+     * A three letter coda can END where a two letter one ends, one
+     * letter short, and the letter it gave up can open the root after
+     * it. So the cut SLIDES, and both readings write nothing:
+     *
+     * ```text
+     * kant  + xlim     nothing written      kantxlim
+     * kantx + lim      nothing written      kantxlim
+     * ```
+     *
+     * `ntx` does it through the `xl` onset and `qkc` through `cr`.
+     * `ndj` cannot, because no onset opens on `j` with anything left
+     * over, so there is no second reading to have.
+     *
+     * **The cut clause below would catch these, and that is not good
+     * enough.** It asks whether any OTHER pair in the pool spells the
+     * same string, which is a fact about the 4,096 words chosen rather
+     * than about the sounds. Add a word next year and a seam that was
+     * safe stops being safe, with nothing to notice it. This clause
+     * asks only what the two roots ARE, so it cannot go stale.
+     *
+     * It fires on the three letter side alone, which is enough: the
+     * rival reading has a two letter cluster there and writes nothing,
+     * so the two strings part company either way.
+     */
     default:
+      if (a.co.length > 2 || b.on.length > 2) return liquid(a, b)
       return doubt ? liquid(a, b) : NONE
   }
 }

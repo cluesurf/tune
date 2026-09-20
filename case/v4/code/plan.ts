@@ -164,12 +164,24 @@ function sidesOf(plan: Plan, shape: Shape): [Array<string>, Array<string>] {
 }
 
 /**
- * A word is refused if it CONTAINS a taboo form, not only if it is one,
- * the same reading `isTaboo` in `sound.ts` takes. `guks`, `fagz` and
- * `xiks` had reached the 4:7:5 set on the whole word test.
+ * A word is refused when it HOLDS a taboo form at a syllable onset, the
+ * same reading `isTaboo` in `sound.ts` takes and for the same reasons.
+ *
+ * Whole word only let `guks`, `fagz` and `xiks` into the 4:7:5 set.
+ * Anywhere at all refused `snek`, where the `n` is bound into the
+ * cluster `sn` and no part of the word is said as `nek`.
  */
 function holdsTaboo(plan: Plan, word: string): boolean {
-  return plan.taboo.some(form => word.includes(form))
+  return plan.taboo.some(form => {
+    let at = word.indexOf(form)
+    while (at !== -1) {
+      if (at === 0 || plan.vowel.includes(word[at - 1])) {
+        return true
+      }
+      at = word.indexOf(form, at + 1)
+    }
+    return false
+  })
 }
 
 /** More than one of the clashing sounds in the word. */

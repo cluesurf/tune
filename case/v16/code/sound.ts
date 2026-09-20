@@ -579,15 +579,44 @@ function medialHOk(word: string): boolean {
  * these surface in generated vocabulary constantly, because the
  * generator is sampling the same short strings English is.
  *
- * Matched anywhere in a word, not just at an edge. Add to it freely:
- * the cost is a handful of forms out of a hundred and fifty thousand.
+ * Add to it freely: the cost is a handful of forms out of a hundred and
+ * fifty thousand.
+ *
+ * ## Where a match counts, which is not everywhere
+ *
+ * A listener hears a word in syllables, so a fragment only reads as
+ * itself when it starts where a syllable starts: at the front of the
+ * word, or straight after a vowel.
+ *
+ * ```text
+ * nigat   nig at 0    heard as nig-at    refused
+ * banik   nik at 2    heard as ba-nik    refused
+ * titx    tit at 0    heard as tit       refused
+ * snek    nek at 1    heard as sn-e-k    fine
+ * ```
+ *
+ * `snek` settled it, stated 2026-09-20: **inside an onset cluster the
+ * match is not a match**, because the `n` is bound to the `s` in front
+ * of it and no part of the word is ever said as `nek`. Matching
+ * anywhere at all cost a run of innocent words for a sound nobody
+ * makes.
  */
 const TABOO = [
   'neg', 'nek', 'nig', 'nik', 'fag', 'fak', 'fuk', 'kok', 'kuk', 'pis',
   'kum', 'jiz', 'kunt', 'dik', 'tit', 'rap', 'nazi', 'jap', 'gip',
 ]
 
-const tabooOk = (word: string) => !TABOO.some(one => word.includes(one))
+const tabooOk = (word: string) =>
+  !TABOO.some(one => {
+    let at = word.indexOf(one)
+    while (at !== -1) {
+      if (at === 0 || VOWELS.includes(word[at - 1])) {
+        return true
+      }
+      at = word.indexOf(one, at + 1)
+    }
+    return false
+  })
 
 const HUSH_LETTER = new Set(['x', 'j'])
 

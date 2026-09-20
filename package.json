@@ -118,7 +118,16 @@
     "v17:pinned": "tsx case/v17/code/pinned.ts",
     "v17:words": "tsx case/v17/code/words.ts",
     "v17:english": "tsx case/v17/code/english.ts",
-    "v17:split": "tsx case/v17/code/split.ts"
+    "v17:split": "tsx case/v17/code/split.ts",
+    "v17:echo": "tsx case/v17/code/echo.ts",
+    "v24:guide": "tsx case/v24/code/guide.ts",
+    "v24:every": "tsx case/v24/code/every.ts",
+    "v24:pinned": "tsx case/v24/code/pinned.ts",
+    "v24:words": "tsx case/v24/code/words.ts",
+    "v24:english": "tsx case/v24/code/english.ts",
+    "v24:split": "tsx case/v24/code/split.ts",
+    "v24:echo": "tsx case/v24/code/echo.ts",
+    "v24:test": "vitest run case/v24/test"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

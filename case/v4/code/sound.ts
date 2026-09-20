@@ -300,8 +300,39 @@ export const TABOO = [...TABOO_SLUR, ...TABOO_CRUDE]
  * had let `guks`, `fagz` and `xiks` into the 4:7:5 set. Stated
  * 2026-09-16: "neg/nek/nig/nik are not allowed in the words".
  */
+/**
+ * WHERE A MATCH HAS TO START.
+ *
+ * A listener hears a word in syllables, so a listed form only reads as
+ * itself when it begins where a syllable begins: at the front of the
+ * word, or straight after a vowel.
+ *
+ * ```text
+ * nigat   nig at 0    heard as nig-at       refused
+ * banik   nik at 2    heard as ba-nik       refused
+ * snek    nek at 1    heard as sn-e-k       fine
+ * ```
+ *
+ * `snek` is the case that settled it, stated 2026-09-20: **inside an
+ * onset cluster the match is not a match**, because the `n` is bound to
+ * the `s` in front of it and nothing in the word is ever said as `nek`.
+ *
+ * Matching anywhere at all refused a run of innocent words for a sound
+ * nobody makes, and matching only whole words let `guks`, `fagz` and
+ * `xiks` through, which are the plurals of three listed forms and are
+ * heard exactly as they read. This is the line between the two.
+ */
 export function isTaboo(word: string): boolean {
-  return TABOO.some(form => word.includes(form))
+  return TABOO.some(form => {
+    let at = word.indexOf(form)
+    while (at !== -1) {
+      if (at === 0 || VOWELS.includes(word[at - 1])) {
+        return true
+      }
+      at = word.indexOf(form, at + 1)
+    }
+    return false
+  })
 }
 
 /**
