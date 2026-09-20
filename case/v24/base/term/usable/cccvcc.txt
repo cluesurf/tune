@@ -1,6 +1,7 @@
 sprimp
 sprind
 spriqk
+sprigd
 spridj
 sprisk
 sprizb
@@ -8,6 +9,7 @@ sprift
 spremp
 sprend
 spreqk
+spregd
 spredj
 spresk
 sprezb
@@ -15,6 +17,7 @@ spreft
 spramp
 sprand
 spraqk
+spragd
 spradj
 sprask
 sprazb
@@ -22,6 +25,7 @@ spraft
 spromp
 sprond
 sproqk
+sprogd
 sprodj
 sprosk
 sprozb
@@ -29,6 +33,7 @@ sproft
 sprump
 sprund
 spruqk
+sprugd
 sprudj
 sprusk
 spruzb
@@ -36,6 +41,7 @@ spruft
 splimp
 splind
 spliqk
+spligd
 splidj
 splisk
 splizb
@@ -43,6 +49,7 @@ splift
 splemp
 splend
 spleqk
+splegd
 spledj
 splesk
 splezb
@@ -50,6 +57,7 @@ spleft
 splamp
 spland
 splaqk
+splagd
 spladj
 splask
 splazb
@@ -57,6 +65,7 @@ splaft
 splomp
 splond
 sploqk
+splogd
 splodj
 splosk
 splozb
@@ -64,6 +73,7 @@ sploft
 splump
 splund
 spluqk
+splugd
 spludj
 splusk
 spluzb
@@ -71,6 +81,7 @@ spluft
 strimp
 strind
 striqk
+strigd
 stridj
 strisk
 strizb
@@ -78,6 +89,7 @@ strift
 stremp
 strend
 streqk
+stregd
 stredj
 stresk
 strezb
@@ -85,6 +97,7 @@ streft
 stramp
 strand
 straqk
+stragd
 stradj
 strask
 strazb
@@ -92,6 +105,7 @@ straft
 stromp
 strond
 stroqk
+strogd
 strodj
 strosk
 strozb
@@ -99,6 +113,7 @@ stroft
 strump
 strund
 struqk
+strugd
 strudj
 strusk
 struzb
@@ -106,6 +121,7 @@ struft
 skrimp
 skrind
 skriqk
+skrigd
 skridj
 skrisk
 skrizb
@@ -113,6 +129,7 @@ skrift
 skremp
 skrend
 skreqk
+skregd
 skredj
 skresk
 skrezb
@@ -120,6 +137,7 @@ skreft
 skramp
 skrand
 skraqk
+skragd
 skradj
 skrask
 skrazb
@@ -127,6 +145,7 @@ skraft
 skromp
 skrond
 skroqk
+skrogd
 skrodj
 skrosk
 skrozb
@@ -134,6 +153,7 @@ skroft
 skrump
 skrund
 skruqk
+skrugd
 skrudj
 skrusk
 skruzb
@@ -141,6 +161,7 @@ skruft
 sklimp
 sklind
 skliqk
+skligd
 sklidj
 sklisk
 sklizb
@@ -148,6 +169,7 @@ sklift
 sklemp
 sklend
 skleqk
+sklegd
 skledj
 sklesk
 sklezb
@@ -155,6 +177,7 @@ skleft
 sklamp
 skland
 sklaqk
+sklagd
 skladj
 sklask
 sklazb
@@ -162,6 +185,7 @@ sklaft
 sklomp
 sklond
 skloqk
+sklogd
 sklodj
 sklosk
 sklozb
@@ -169,6 +193,7 @@ skloft
 sklump
 sklund
 skluqk
+sklugd
 skludj
 sklusk
 skluzb

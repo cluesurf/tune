@@ -127,7 +127,11 @@
     "v24:english": "tsx case/v24/code/english.ts",
     "v24:split": "tsx case/v24/code/split.ts",
     "v24:echo": "tsx case/v24/code/echo.ts",
-    "v24:test": "vitest run case/v24/test"
+    "v24:test": "vitest run case/v24/test",
+    "v24:taxon": "tsx case/v24/code/taxon.ts",
+    "v24:sift": "tsx case/v24/code/sift.ts",
+    "v24:build": "tsx case/v24/code/build.ts",
+    "v24:choose": "tsx case/v24/code/choose.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",
