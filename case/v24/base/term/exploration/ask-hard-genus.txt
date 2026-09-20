@@ -44,68 +44,10 @@ Reply with JSON only, no prose around it:
 
 ── the genus words, worst first ──
 
-  Symphysodontella   blocks 3 species
-      Symphysodontella parvifolia   瓢叶藓属小叶瓢叶藓   piáo yè xiǎn shǔ xiǎo yè piáo yè xiǎn
-      Symphysodontella siamensis   瓢叶藓属双肋瓢叶藓   piáo yè xiǎn shǔ shuāng lèi piáo yè xiǎn
-      Symphysodontella tortifolia   瓢叶藓属扭尖瓢叶藓   piáo yè xiǎn shǔ niǔ jiān piáo yè xiǎn
-      beside: parvifolia, siamensis, tortifolia
-
-  Colutea   blocks 3 species
-      Colutea arborescens   鱼鳔槐属鱼鳔槐   yú biào huái shǔ yú biào huái
-      Colutea media   鱼鳔槐属杂种鱼鳔槐   yú biào huái shǔ zá zhǒng yú biào huái
-      Colutea nepalensis   鱼鳔槐属尼泊尔鱼鳔槐   yú biào huái shǔ ní bó ěr yú biào huái
-      beside: arborescens, media, nepalensis
-
-  Alchemilla   blocks 3 species
-      Alchemilla glabra   羽衣草属无毛羽衣草   yǔ yī cǎo shǔ wú máo yǔ yī cǎo
-      Alchemilla japonica   羽衣草属羽衣草   yǔ yī cǎo shǔ yǔ yī cǎo
-      Alchemilla monticola   羽衣草属纤细羽衣草   yǔ yī cǎo shǔ xiān xì yǔ yī cǎo
-      beside: glabra, japonica, monticola
-
-  Hovenia   blocks 3 species
-      Hovenia acerba   枳椇属枳椇   zhǐ jǔ shǔ zhǐ jǔ
-      Hovenia dulcis   枳椇属北枳椇   zhǐ jǔ shǔ běi zhǐ jǔ
-      Hovenia trichocarpa   枳椇属毛果枳椇   zhǐ jǔ shǔ máo guǒ zhǐ jǔ
-      beside: acerba, dulcis, trichocarpa
-
-  Siraitia   blocks 3 species
-      Siraitia grosvenorii   罗汉果属罗汉果   luó hàn guǒ shǔ luó hàn guǒ
-      Siraitia siamensis   罗汉果属翅子罗汉果   luó hàn guǒ shǔ chì zǐ luó hàn guǒ
-      Siraitia sikkimensis   罗汉果属锡金罗汉果   luó hàn guǒ shǔ xī jīn luó hàn guǒ
-      beside: grosvenorii, siamensis, sikkimensis
-
-  Matthiola   blocks 3 species
-      Matthiola chorassanica   紫罗兰属伊朗紫罗兰   zǐ luó lán shǔ yī lǎng zǐ luó lán
-      Matthiola incana   紫罗兰属紫罗兰   zǐ luó lán shǔ zǐ luó lán
-      Matthiola superba   紫罗兰属沙地紫罗兰   zǐ luó lán shǔ shā dì zǐ luó lán
-      beside: chorassanica, incana, superba
-
-  Moehringia   blocks 3 species
-      Moehringia lateriflora   种阜草属种阜草   zhǒng fù cǎo shǔ zhǒng fù cǎo
-      Moehringia trinervia   种阜草属三脉种阜草   zhǒng fù cǎo shǔ sān mài zhǒng fù cǎo
-      Moehringia umbrosa   种阜草属新疆种阜草   zhǒng fù cǎo shǔ xīn jiāng zhǒng fù cǎo
-      beside: lateriflora, trinervia, umbrosa
-
-  Brunfelsia   blocks 3 species
-      Brunfelsia brasiliensis   鸳鸯茉莉属   yuān yāng mò lì shǔ
-      Brunfelsia pauciflora   鸳鸯茉莉属少花鸳鸯茉莉   yuān yāng mò lì shǔ shǎo huā yuān yāng mò lì
-      Brunfelsia macrophylla   鸳鸯茉莉属大叶鸳鸯茉莉   yuān yāng mò lì shǔ dà yè yuān yāng mò lì
-      beside: brasiliensis, pauciflora, macrophylla
-
   Chenia   blocks 2 species
       Chenia leptophylla   陈氏藓属陈氏藓   chén shì xiǎn shǔ chén shì xiǎn
       Chenia zanderi   陈氏藓属多疣陈氏藓   chén shì xiǎn shǔ duō yóu chén shì xiǎn
       beside: leptophylla, zanderi
-
-  Warnstorfia   blocks 2 species
-      Warnstorfia exannulata   范氏藓属范氏藓   fàn shì xiǎn shǔ fàn shì xiǎn
-      Warnstorfia fluitans   范氏藓属浮生范氏藓   fàn shì xiǎn shǔ fú shēng fàn shì xiǎn
-      beside: exannulata, fluitans
-
-  Leskeella   blocks 2 species
-      Leskeella nervosa   细罗藓属细罗藓   xì luó xiǎn shǔ xì luó xiǎn
-      Leskeella pusilla   细罗藓属小细罗藓   xì luó xiǎn shǔ xiǎo xì luó xiǎn
-      beside: nervosa, pusilla
 
   Clevea   blocks 2 species
       Clevea hyalina   克氏苔属克氏苔   kè shì tái shǔ kè shì tái
@@ -116,51 +58,6 @@ Reply with JSON only, no prose around it:
       Yua austro-orientalis   俞藤属大果俞藤   yú téng shǔ dà guǒ yú téng
       Yua thomsonii   俞藤属俞藤   yú téng shǔ yú téng
       beside: austro-orientalis, thomsonii
-
-  Zornia   blocks 2 species
-      Zornia gibbosa   丁癸草属丁癸草   dīng guǐ cǎo shǔ dīng guǐ cǎo
-      Zornia intecta   丁癸草属台东丁癸草   dīng guǐ cǎo shǔ tái dōng dīng guǐ cǎo
-      beside: gibbosa, intecta
-
-  Coix   blocks 2 species
-      Coix aquatica   薏苡属水生薏苡   yì yǐ shǔ shuǐ shēng yì yǐ
-      Coix lacryma-jobi   薏苡属薏苡   yì yǐ shǔ yì yǐ
-      beside: aquatica, lacryma-jobi
-
-  Roemeria   blocks 2 species
-      Roemeria hybrida   疆罂粟属紫花疆罂粟   jiāng yīng sù shǔ zǐ huā jiāng yīng sù
-      Roemeria refracta   疆罂粟属红花疆罂粟   jiāng yīng sù shǔ hóng huā jiāng yīng sù
-      beside: hybrida, refracta
-
-  Hepatica   blocks 2 species
-      Hepatica henryi   獐耳细辛属川鄂獐耳细辛   zhāng ěr xì xīn shǔ chuān è zhāng ěr xì xīn
-      Hepatica nobilis   獐耳细辛属   zhāng ěr xì xīn shǔ
-      beside: henryi, nobilis
-
-  Alcea   blocks 2 species
-      Alcea nudiflora   蜀葵属裸花蜀葵   shǔ kuí shǔ luǒ huā shǔ kuí
-      Alcea rosea   蜀葵属蜀葵   shǔ kuí shǔ shǔ kuí
-      beside: nudiflora, rosea
-
-  Celosia   blocks 2 species
-      Celosia argentea   青葙属青葙   qīng xiāng shǔ qīng xiāng
-      Celosia taitoensis   青葙属台湾青葙   qīng xiāng shǔ tái wān qīng xiāng
-      beside: argentea, taitoensis
-
-  Pottsia   blocks 2 species
-      Pottsia grandiflora   帘子藤属大花帘子藤   lián zi téng shǔ dà huā lián zi téng
-      Pottsia laxiflora   帘子藤属帘子藤   lián zi téng shǔ lián zi téng
-      beside: grandiflora, laxiflora
-
-  Lavandula   blocks 2 species
-      Lavandula angustifolia   薰衣草属薰衣草   xūn yī cǎo shǔ xūn yī cǎo
-      Lavandula latifolia   薰衣草属宽叶薰衣草   xūn yī cǎo shǔ kuān yè xūn yī cǎo
-      beside: angustifolia, latifolia
-
-  Torilis   blocks 2 species
-      Torilis japonica   窃衣属小窃衣   qiè yī shǔ xiǎo qiè yī
-      Torilis scabra   窃衣属窃衣   qiè yī shǔ qiè yī
-      beside: japonica, scabra
 
   Kaschgaria   blocks 2 species
       Kaschgaria brachanthemoides   喀什菊属密枝喀什菊   kā shí jú shǔ mì zhī kā shí jú
@@ -218,10 +115,6 @@ Reply with JSON only, no prose around it:
       Thujopsis dolabrata   罗汉柏属罗汉柏   luó hàn bǎi shǔ luó hàn bǎi
       beside: dolabrata
 
-  Houttuynia   blocks 1 species
-      Houttuynia cordata   蕺菜属蕺菜   jí cài shǔ jí cài
-      beside: cordata
-
   Woonyoungia   blocks 1 species
       Woonyoungia septentrionalis   焕镛木属焕镛木   huàn yōng mù shǔ huàn yōng mù
       beside: septentrionalis
@@ -233,10 +126,6 @@ Reply with JSON only, no prose around it:
   Aponogeton   blocks 1 species
       Aponogeton lakhonensis   水蕹属水蕹   shuǐ wèng shǔ shuǐ wèng
       beside: lakhonensis
-
-  Biermannia   blocks 1 species
-      Biermannia calcarata   胼胝兰属胼胝兰   pián zhī lán shǔ pián zhī lán
-      beside: calcarata
 
   Hsenhsua   blocks 1 species
       Hsenhsua chrysea   先骕兰属先骕兰   xiān sù lán shǔ xiān sù lán

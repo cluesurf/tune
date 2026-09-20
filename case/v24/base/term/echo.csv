@@ -122,7 +122,6 @@ fish,fɪʃ,fix,CVC,crowded,21,11
 blood,blʌd,blad,CCVC,crowded,44,5
 sleep,sliːp,slip,CCVC,crowded,36,7
 coat,koʊt,kot,CVC,crowded,14,12
-wood,wʊd,wud,CVC,crowded,34,7
 mouth,maʊθ,mauc,CDC,crowded,18,10
 pipe,paɪp,paip,CDC,crowded,16,10
 ship,ʃɪp,xip,CVC,crowded,15,10
@@ -232,6 +231,7 @@ wave,weɪv,wev,CVC,held by wave,25,11
 leaf,liːf,lif,CVC,held by leaf,20,12
 tone,toʊn,ton,CVC,held by contain,15,13
 pot,pɑːt,pat,CVC,held by passive,14,13
+wood,wʊd,wud,CVC,held by would,34,7
 wall,wɔːl,wol,CVC,held by we,17,10
 rain,ɹeɪn,ren,CVC,held by relation,12,7
 bread,bɹɛd,bred,CCVC,held by braid,14,6

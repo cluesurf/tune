@@ -112,7 +112,6 @@
     "v16:color": "tsx case/v16/code/color.ts",
     "v16:render": "tsx case/v16/code/render.ts",
     "v16:story": "tsx case/v16/code/story.ts",
-    "v16:book": "tsx case/v16/code/book.ts",
     "v16:final": "tsx case/v16/code/final.ts",
     "v17:guide": "tsx case/v17/code/guide.ts",
     "v17:every": "tsx case/v17/code/every.ts",
@@ -143,7 +142,14 @@
     "v24:ask-hard": "tsx case/v24/code/ask-hard.ts",
     "v24:latin": "tsx case/v24/code/latin.ts",
     "v24:why": "tsx case/v24/code/why.ts",
-    "v24:field-mineral": "tsx case/v24/code/field-mineral.ts"
+    "v24:pins": "tsx case/v24/code/pins.ts",
+    "v24:parts": "tsx case/v24/code/parts.ts",
+    "v24:merge": "tsx case/v24/code/merge.ts",
+    "v24:said": "tsx case/v24/code/said.ts",
+    "v24:draft": "tsx case/v24/code/draft.ts",
+    "v24:dirty": "tsx case/v24/code/dirty.ts",
+    "v24:field-mineral": "tsx case/v24/code/field-mineral.ts",
+    "v24:book": "tsx case/v24/code/book.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

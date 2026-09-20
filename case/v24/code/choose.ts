@@ -118,11 +118,22 @@ for (const line of readFileSync(ATOMS, 'utf-8').split('\n')) {
   atoms++
 }
 
-/** And what the shortest forms are already promised to. */
-for (const line of readFileSync(resolve(TERM, 'word-short.csv'), 'utf-8')
+/**
+ * And what the shortest forms are already promised to.
+ *
+ * **READ THE `.txt`, NEVER THE `.csv`.** Both files list the same 648
+ * concepts and only the `.txt` carries the `said as X` column, so the
+ * `.txt` is the one that gets edited and the `.csv` is the copy that
+ * will silently fall behind. Two files holding one decision is the
+ * drift this whole directory is trying to stop.
+ *
+ * The columns are separated by runs of spaces rather than commas, so
+ * the concept is everything before the first run of two.
+ */
+for (const line of readFileSync(resolve(TERM, 'word-short.txt'), 'utf-8')
   .split('\n')
   .slice(1)) {
-  const one = (line.split(',')[0] ?? '').trim().toLowerCase()
+  const one = (line.trim().split(/\s{2,}/)[0] ?? '').trim().toLowerCase()
   if (one) note(one, 'holds a short form', true)
 }
 
@@ -377,9 +388,50 @@ const seat = (term: string, fixed = false) => {
 
 for (const one of cand.values()) if (one.fixed) seat(one.term, true)
 
-const sayable = (term: string) =>
-  conceptsOf(term).some(one => seated.has(one)) ||
-  partsOf(term, seated).length > 0
+/**
+ * **A JUDGED COMPOUND IS SAYABLE ONCE ITS PARTS ARE.**
+ *
+ * `sayable` asked the seated set and the generic splitter, and never
+ * the judgements. So `lunch`, `first`, `second`, `tennis` and `half`
+ * went on topping `choose-open.csv` as the most wanted unsayable
+ * meanings AFTER being judged as compounds, which is the same failure
+ * that kept `sedge` at the top of the blocker list for 621 species:
+ * **a judgement has to reach every stage that could use it.**
+ *
+ * The user reads that file to decide what deserves a seat, so a word
+ * already ruled out sitting at the top of it is worse than useless.
+ */
+const judgedParts = new Map<string, Array<string>>()
+try {
+  for (const one of parse(readFileSync(resolve(OUT, 'ask-split.csv')), {
+    columns: true,
+    skip_empty_lines: true,
+    relax_quotes: true,
+    relax_column_count: true,
+  }) as Array<Record<string, string>>) {
+    if (one.verdict !== 'compound') continue
+    const leaf = (one.leaf ?? '').trim().toLowerCase()
+    const parts = (one.parts ?? '')
+      .split(/[\s+]+/)
+      .map(two => two.trim().toLowerCase())
+      .filter(Boolean)
+    if (leaf && parts.length) judgedParts.set(leaf, parts)
+  }
+} catch {
+  // No judgements yet.
+}
+
+function sayable(term: string, depth = 0): boolean {
+  const flat = term.trim().toLowerCase()
+  if (conceptsOf(flat).some(one => seated.has(one))) return true
+  if (partsOf(flat, seated).length > 0) return true
+  if (depth >= 3) return false
+  /** Ruled a name: never sayable and never a candidate either. */
+  if (ruledOut.has(flat) && !judgedParts.has(flat)) return true
+  const parts = judgedParts.get(flat)
+  if (!parts) return false
+  return parts.every(one => sayable(one, depth + 1))
+}
 
 /** What each unseated candidate would unlock if it took a seat. */
 /**
@@ -652,10 +704,72 @@ writeFileSync(
     '\n',
 )
 
+/**
+ * **A PHRASE IS NOT A CANDIDATE. ITS MISSING PART IS.**
+ *
+ * 533 of the 3,000 rows here are phrases: `peak amplitude` at the top
+ * with 13,467 occurrences, `hammerhead shark`, `funeral pyre`, `holm
+ * oak`. None of them is a word to seat. Each becomes sayable the
+ * moment its parts are, and reading the file as a list of candidates
+ * puts `peak amplitude` at the top of a list of words to consider,
+ * where there is no word.
+ *
+ * So each row now names what is actually MISSING. A single word names
+ * itself; a phrase names whichever of its parts have no root yet, and
+ * those are the words worth weighing.
+ *
+ * ```text
+ * term              occurrences  missing
+ * peak amplitude         13,467  peak amplitude
+ * holm oak                4,042  holm
+ * having cilia            3,361  cilia
+ * ```
+ *
+ * A phrase missing TWO parts is worth less than the number suggests,
+ * because seating either one alone unlocks nothing, and the `missing`
+ * column shows that at a glance.
+ */
+const missingOf = (term: string) =>
+  term
+    .split(/[ ,\-/]+/)
+    .filter(Boolean)
+    .filter(word => !conceptsOf(word).some(one => seated.has(one)))
+    .join(' ')
+
 writeFileSync(
   resolve(OUT, 'choose-open.csv'),
-  'term,occurrences\n' +
-    open.slice(0, 3000).map(one => `${one.term},${one.uses}`).join('\n') +
+  'term,occurrences,missing\n' +
+    open
+      .slice(0, 3000)
+      .map(one => `"${one.term}",${one.uses},"${missingOf(one.term)}"`)
+      .join('\n') +
+    '\n',
+)
+
+/**
+ * AND THE SAME LIST FOLDED ONTO THE MISSING WORDS THEMSELVES, which
+ * is the list to actually read when asking what deserves a seat.
+ */
+const perWord = new Map<string, { uses: number; from: number }>()
+for (const one of open) {
+  const parts = missingOf(one.term).split(/\s+/).filter(Boolean)
+  /** A phrase missing two or more credits neither, as in `worth`. */
+  if (parts.length !== 1) continue
+  const had = perWord.get(parts[0] as string)
+  if (had) {
+    had.uses += one.uses
+    had.from++
+  } else perWord.set(parts[0] as string, { uses: one.uses, from: 1 })
+}
+
+writeFileSync(
+  resolve(OUT, 'choose-want.csv'),
+  'word,occurrences,meanings_it_unlocks\n' +
+    [...perWord.entries()]
+      .sort((a, b) => b[1].uses - a[1].uses)
+      .slice(0, 2000)
+      .map(([word, one]) => `"${word}",${one.uses},${one.from}`)
+      .join('\n') +
     '\n',
 )
 

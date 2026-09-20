@@ -1,10 +1,8 @@
 <!--
-RENDERED in v16 FORMS by `pnpm --dir deck/tune v16:book`, from the
-gloss in `tao-te-ching.tune.en.md`, which holds the grammar and the
-notes. The forms are `case/v16/base/term/`, the newest set that can
-render a whole book, and every one is a root of the v16 4,096.
+RENDERED in v24 by `pnpm --dir deck/tune v24:book`, from the gloss
+in `tao-te-ching.tune.en.md`, which holds the grammar and the notes.
 Endings: -i action, -a object, -o feature, -e relation, and a
-modifier is bare. Compounds go through the v16 seam rule. Every
+modifier is bare. Compounds go through the v24 seam rule. Every
 word here reads back as exactly one root or compound.
 -->
 
@@ -25,16 +23,15 @@ word here reads back as exactly one root or compound.
 > 同謂之玄。
 > 玄之又玄，眾妙之門。
 
-gin vibi taqa pim conkal taqa.
-gin nami nama pim conkal nama.
-pimnama sama dige xuma gime ruga.
-havnama wumsa dige con kina.
-zige kima,
-conkal pim weni, nime visi hin wenta.
-conkal weni, nime visi hin daja.
-kim noca komi zige sem paka gime havi kor nama.
+fend jopi taqa fiz Cik taqa.
+fend nami nama fiz Cik nama.
+fiznama sama nize xuma Ceke puma.
+havnama wenda nize con kina.
+xeze Cik fiz nipi, rite visi hint yaja.
+Cik nipi, rite visi hint daja.
+kim noca komi frame sem paka Ceke havi kor nama.
 kugi con noca rama.
-rama dige rama geta dige con wenta.
+rama nize rama geta nize con yaja.
 
 ### 2
 
@@ -58,25 +55,23 @@ rama dige rama geta dige con wenta.
 > 功成而弗居。
 > 夫唯弗居，是以不去。
 
-con zboka nomi batsa batso,
-zige kima pava kesi.
+con bisa nomi haja hajo,
+xeze gaimpa kesi.
 con nomi tava tavo,
-zige kima pim tava kesi.
-zige kima
-kesa gime pimkesa meki tegkora,
-hara gime noqga forzi tegkora,
-lena gime gisa ciji tegkora,
-tika gime liza raji nime tegkora,
-kupa gime voza djoni tegkora,
-kega gime goka flori tegkora.
-zige kima
-klaf tida timi goqa dige pimtima,
-timi veta dige pim vibi,
-con kina rezi gime hina pim refsi,
-meki gime pim havi,
-timi gime pim raji,
-goqa kombo gime pim stuli kide hina.
-nal zige pim stuli, zige kima hina pim higi.
+xeze fiz tava kesi.
+xeze kesa Ceke fizkesa meki mepkora,
+harda Ceke fiba formi mepkora,
+loqa Ceke xorta fiqi mepkora,
+bipa Ceke depa lini rite mepkora,
+kupa Ceke voza cibi mepkora,
+kega Ceke goka gibi mepkora.
+xeze xuc peja bezi goqa nize fizbeza,
+bezi zuba nize fiz jopi,
+con kina rezi Ceke hina fiz nefki,
+meki Ceke fiz havi,
+bezi Ceke fiz lini,
+goqa pojo Ceke fiz baCi deqe hina.
+hes frame fiz baCi, xeze hina fiz heji.
 
 ### 3
 
@@ -96,21 +91,21 @@ nal zige pim stuli, zige kima hina pim higi.
 > 為無為，
 > 則無不治。
 
-pim defi blar tida,
-meki tida pim kevi.
-pim niji har gemi kina,
-meki tida pim yeti.
-pim rifti gin weni kina,
-meki tid yika pim deCo.
-zige kima klaf tida ruli,
-xuni Cef yika,
-fimi Cef ceqa,
-hiji Cef wula,
-jemi Cef mefa.
-conkal meki tida pim nomi gime pim weni,
-meki xeg tida pim saxi timi.
-timi pimtima,
-jide kimo, pim med kina pim rulo.
+fiz jari bej peja,
+meki hexa fiz fafi.
+fiz ciqi hard gemi kina,
+meki hexa fiz kikti.
+fiz nazi fend nipi kina,
+meki hex nafa fiz meso.
+xeze xuc peja ruli,
+xuni Ceft nafa,
+fimi Ceft roiva,
+fufi Ceft wula,
+stroqi Ceft woma.
+Cik meki hexa fiz nomi Ceke fiz nipi,
+meki yeqk peja fiz daCi bezi.
+bezi fizbeza,
+nije kimo, fiz med kina fiz rulo.
 
 ### 4
 
@@ -126,15 +121,15 @@ jide kimo, pim med kina pim rulo.
 > 象帝之先。
 
 taqa xuno,
-gime yuzi hina gime hina pim vral fimo.
-dapo, semo zige ruta dige con kina.
-wiCi hin zbida,
-saCi hin jeza,
-zofi hin ziba,
-djoni hin hepa.
-zoto, sem kesi zige kina.
-musta pim nomi hina kika dige wectida,
-hina mor rals kesi zige gada.
+Ceke yuzi hina Ceke hina fiz geb fimo.
+xizo, semo frame puja nize con kina.
+xauqi hint wempa,
+lusi hint cuqa,
+safti hint laita,
+cibi hint ciska.
+hixo, sem kesi frame kina.
+musa fiz nomi hina kika nize wecpeja,
+hina mor wij kesi frame gada.
 
 ### 5
 
@@ -148,15 +143,15 @@ hina mor rals kesi zige gada.
 > 多言數窮，
 > 不如守中。
 
-xuma gime ruga pim kijo,
-hodi con kina nax roba.
-klaf tida pim kijo,
-hodi tida nax roba.
-dez pesa kide moda dige xuma gime ruga semo zige xaga?
-xuno gime pim wixi,
-muvi gime mor tin komi.
-vig vibi gime nen neqi,
-pen mor tavo zige hodi moda.
+xuma Ceke puma fiz yego,
+hodi con kina taum doga.
+xuc peja fiz yego,
+hodi hexa taum doga.
+wun pesa deqe moda nize xuma Ceke puma semo frame potxa?
+xuno Ceke fiz figdi,
+muvi Ceke mor tin komi.
+lix jopi Ceke nen neqi,
+vov mor tavo frame hodi moda.
 
 ### 6
 
@@ -164,9 +159,9 @@ pen mor tavo zige hodi moda.
 > 玄牝之門，是謂天地根。
 > 綿綿若存，用之不勤。
 
-vals jaqa pim yifi, kugi kima ram fema.
-geta dige ram fema, kugi kima ruta dige xuma gime ruga.
-sem koz kesi zige bema, yuzi hina gime hina pim vevo.
+maib jaqa fiz saifi, kugi kima ram fema.
+geta nize ram fema, kugi kima puja nize xuma Ceke puma.
+sem koz kesi frame creda, yuzi hina Ceke hina fiz gulo.
 
 ### 7
 
@@ -181,16 +176,16 @@ sem koz kesi zige bema, yuzi hina gime hina pim vevo.
 > 非以其無私邪？
 > 故能成其私。
 
-xuma leno gime ruga laso.
-kaza dige xuma gime ruga gin leno gime laso,
-hina zige Cef pim smiki nime sefa,
-zige kima Cefa gin len smiki.
-zige kima klaf tida gok pudi Cef vasa
-gime Cef vasa kego,
-tin pudi Cef vasa
-gime Cef vasa kesi.
-dez pim zige Cef pim havi sefa?
-zige kima Cefa gin bizi Cef sefa.
+xuma loqo Ceke puma lasto.
+kaza nize xuma Ceke puma fend loqo Ceke lasto,
+hina frame Ceft fiz sozi rite sefa,
+xeze Cefa fend loq sozi.
+xeze xuc peja gok yati Ceft vasa
+Ceke Ceft vasa kego,
+tin yati Ceft vasa
+Ceke Ceft vasa kesi.
+wun fiz frame Ceft fiz havi sefa?
+xeze Cefa fend yidji Ceft sefa.
 
 ### 8
 
@@ -208,19 +203,19 @@ zige kima Cefa gin bizi Cef sefa.
 > 夫唯不爭，
 > 故無尤。
 
-miz tava semo zige wota.
-wota tav halbi con kina gime zoto,
-stuli kide con tida jeni paka,
-zige kima hina loso nime taqa.
-stuli tav kide grana,
-yika tav kide dapa,
-gevi tav kide kija,
-vibi tav kide toca,
-ruli tav kide dora,
-goqi tav kide blara,
-muvi tav kide kala.
-nal zige pim kevi,
-zige kima pim cena kesi.
+zeb tava semo frame wota.
+wota tav gexi con kina Ceke hixo,
+baCi deqe con peja mifi paka,
+xeze hina loso rite taqa.
+baCi tav deqe graunda,
+nafa tav deqe xiza,
+gevi tav deqe yega,
+jopi tav deqe toca,
+ruli tav deqe dora,
+goqi tav deqe beja,
+muvi tav deqe kala.
+hes frame fiz fafi,
+xeze fiz baja kesi.
 
 ### 9
 
@@ -230,11 +225,11 @@ zige kima pim cena kesi.
 > 富貴而驕，自遺其咎。
 > 功遂身退，天之道。
 
-hodi gime fimi hina, pen mor tavo zige sopi hina.
-yugzi gime zbidi hina, pim gin conkal kugzi hina.
-guma gime giCa fimi mava, pim med tida gin kugzi hina.
-kimso gime tiko gime prudo, sefa skimi hin cena.
-goqa kombo gime vasa gok higi, kima taqa dige xuma.
+hodi Ceke fimi hina, vov mor tavo frame sopi hina.
+lizi Ceke wempi hina, fiz fend Cik honi hina.
+guma Ceke groma fimi zegda, fiz med peja fend honi hina.
+jaido Ceke bipo Ceke lojo, sefa xendi hint baja.
+goqa pojo Ceke vasa gok heji, kima taqa nize xuma.
 
 ### 10
 
@@ -256,23 +251,23 @@ goqa kombo gime vasa gok higi, kima taqa dige xuma.
 > 長而不宰，
 > 是謂玄德 。
 
-Cizi vasa gime sola gime hodi meda,
-dez gin pim pari?
-vaki ruca gime flimi zofa,
-dez gin semo zige pupa?
-kigzi gime glini ram Cexa,
-dez gin pim havi suba?
-lovi tida gime ruli lona,
-dez gin pim nomi?
-xum geta poni gime losi,
-dez gin femo?
-maro gime flimi boq zada,
-dez gin pim timi?
-meki hina gime hici hina,
-meki gime pim havi,
-timi gime pim raji,
-hidi gime pim ruli,
-kugi kima ram mixa.
+soji vasa Ceke sola Ceke hodi meda,
+wun fend fiz pari?
+woji ruca Ceke gofi safta,
+wun fend semo frame pupa?
+liqki Ceke glini ram teqa,
+wun fend fiz havi yaita?
+ximi hexa Ceke ruli landa,
+wun fend fiz nomi?
+xum geta poni Ceke losi,
+wun fend femo?
+maro Ceke gofi boq pima,
+wun fend fiz bezi?
+meki hina Ceke fidi hina,
+meki Ceke fiz havi,
+bezi Ceke fiz lini,
+hifi Ceke fiz ruli,
+kugi kima ram taizga.
 
 ### 11
 
@@ -285,14 +280,14 @@ kugi kima ram mixa.
 > 故有之以為利，
 > 無之以為用。
 
-demvop zapa vovi med tada,
-kide hin pimkesa, yuza dige miCa kesi.
-ciji roja nime meki foqga,
-kide hin pimkesa, yuza dige foqga kesi.
-tici drina gime wonta nime meki romsa,
-kide hin pimkesa, yuza dige romsa kesi.
-zige kima kesa gevi gama,
-pimkesa gevi yuza.
+demvop nifka domi med lita,
+deqe hint fizkesa, yuza nize yofa kesi.
+fiqi woita rite meki laja,
+deqe hint fizkesa, yuza nize laja kesi.
+peCi caiga Ceke maisa rite meki kada,
+deqe hint fizkesa, yuza nize kada kesi.
+xeze kesa gevi gama,
+fizkesa gevi yuza.
 
 ### 12
 
@@ -304,13 +299,13 @@ pimkesa gevi yuza.
 > 是以聖人為腹不為目，
 > 故去彼取此。
 
-ten weqa meki tid haqa yijo,
-ten kupa meki tid nifa pexo,
-ten vrexa meki tid muca momo,
-vrodi gime hanti meki tid yika gloko,
-har gemi kina meki tid claqa raqo.
-zige kima klaf tida goqi nime ceqa gime pim nime haqa,
-zige kima skimi Cata gime vogi kima.
+ten foka meki pej haqa woijo,
+ten kupa meki pej nula defo,
+ten testa meki pej muca baigo,
+nuxi Ceke hanti meki pej nafa fiqko,
+hard gemi kina meki pej raCa raqo.
+xeze xuc peja goqi rite roiva Ceke fiz rite haqa,
+xeze xendi Cata Ceke vogi kima.
 
 ### 13
 
@@ -328,19 +323,19 @@ zige kima skimi Cata gime vogi kima.
 > 愛以身為天下，
 > 若可託天下。
 
-meqa gime tema semo zige deba,
-niji big fexa semo zige vasa.
-weca znofi meqa gime tema semo zige deba?
-meqa lizo.
-gemi hina semo zige deba, lomi hina semo zige deba,
-kugi kima meqa gime tema semo zige deba.
-weca znofi niji big fexa semo zige vasa?
-musta havi big fexa zige musta havi vasa.
-jide musta pim havi vasa, musta havi wec fexa?
-zige kima niji zboka semo zige vasa,
-jide kimo, gin gevi zboka nime hina.
-lovi zboka semo zige vasa,
-jide kimo, gin pixi zboka nime hina.
+paiba Ceke nuCa semo frame vifa,
+ciqi big Cuka semo frame vasa.
+weca tidi paiba Ceke nuCa semo frame vifa?
+paiba depo.
+gemi hina semo frame vifa, lomi hina semo frame vifa,
+kugi kima paiba Ceke nuCa semo frame vifa.
+weca tidi ciqi big Cuka semo frame vasa?
+musa havi big Cuka frame musa havi vasa.
+nije musa fiz havi vasa, musa havi wec Cuka?
+xeze ciqi bisa semo frame vasa,
+nije kimo, fend gevi bisa rite hina.
+ximi bisa semo frame vasa,
+nije kimo, fend trasti bisa rite hina.
 
 ### 14
 
@@ -356,17 +351,17 @@ jide kimo, gin pixi zboka nime hina.
 > 執今之道以御今之有，能知古始，
 > 是謂道紀。
 
-lugi kide hina gime pim visi, kugi hina naba.
-lazi nime hina gime pim yidi, kugi hina feja.
-cezi hina gime pim gemi, kugi hina xiba.
-kim dema pim gin zoki nime neqa, zige kima mimi gime medo.
-hin tuba pim maro, hin saga pim ramo,
-koz kozo gime pim gin nami, gok higi nime pimkina,
-kugi kima cija dige pimcija, forza dige pimkina,
-kugi kima gifa gime xeba.
-yombi hina gime pim visi hin heda, flori hina gime pim visi hin goka.
-hodi taqa dige xoma nime lefi kesa dige xoma, gin nomi kif sama,
-kugi kima bema dige taqa.
+jibi deqe hina Ceke fiz visi, kugi hina nuja.
+lobi rite hina Ceke fiz fugi, kugi hina cina.
+graspi hina Ceke fiz gemi, kugi hina smola.
+kim dema fiz fend Cufi rite neqa, xeze mimi Ceke medo.
+hint xida fiz maro, hint mixa fiz ramo,
+koz kozo Ceke fiz fend nami, gok heji rite fizkina,
+kugi kima fiqa nize fizfiqa, forma nize fizkina,
+kugi kima haca Ceke muba.
+poxi hina Ceke fiz visi hint heda, gibi hina Ceke fiz visi hint goka.
+hodi taqa nize xoma rite sudi kesa nize xoma, fend nomi fed sama,
+kugi kima creda nize taqa.
 
 ### 15
 
@@ -385,20 +380,20 @@ kugi kima bema dige taqa.
 > 保此道不欲盈。
 > 夫唯不盈，故能蔽而新成。
 
-kif tav timi taqa tida, xib wento,
-ram flimo, dapo gime pim gin nomo.
-nal zige pim gin nomo, zige kima fosi cija nime hina.
-tixo, semo zige kasi mimba kide winta.
-taco, semo zige debi boq laja.
-yeno, semo zige dama.
-saCo, semo zige bisa nen molti.
-liCo, semo zige wif Cida.
-pono, semo zige valsa.
-cevo, semo zige Ced wota.
-wectida gin zoti Ceda nime tix klaro?
-wectida gin muvi reqa nime tix smiko?
-kugzi kim taqa gime pim weni fimi.
-nal zige pim fimi, zige kima gin skozo gime hiv kombo.
+fed tav bezi taqa peja, smol yajo,
+ram gofo, xizo Ceke fiz fend nomo.
+hes frame fiz fend nomo, xeze fosi fiqa rite hina.
+guxo, semo frame kasi wigda deqe tifka.
+yuCo, semo frame vifi boq paiga.
+wiqko, semo frame gesta.
+luso, semo frame migda nen begdi.
+pleno, semo frame giC wuda.
+pono, semo frame maiba.
+nibo, semo frame xag wota.
+wecpeja fend hixi xaga rite gux yimo?
+wecpeja fend muvi reqa rite gux sozo?
+honi kim taqa Ceke fiz nipi fimi.
+hes frame fiz fimi, xeze fend ruxo Ceke pib pojo.
 
 ### 16
 
@@ -419,22 +414,22 @@ nal zige pim fimi, zige kima gin skozo gime hiv kombo.
 > 道乃久，
 > 沒身不殆。
 
-flimi miz xuna. kugzi dap zota.
-con kina teks rezi,
-musta zige kima visi xuva.
-kina vig vigo, tega gok higi nime hin ruta,
-kugi gok higi nime ruta zota,
-kugi kima xuva nime vita.
-kugi xuva nime vita conkala,
-kugi nomi conkala mara.
-pim nomi conkala gime glok timi, vato.
-nomi conkala gime hodo.
-hodo gime zige kima torpo,
-torpo gime zige kima Ciso,
-Ciso gime zige kima xumo,
-xumo gime zige kima taqo,
-taqo gime zige kima laso,
-lomi vasa gime pim cemo.
+gofi zeb xuna. honi xiz hixa.
+con kina wez rezi,
+musa wime kima visi xuva.
+kina lix lixo, mepa gok heji rite hint puja,
+kugi gok heji rite puja hixa,
+kugi kima xuva rite vita.
+kugi xuva rite vita Cika,
+kugi nomi Cika mara.
+fiz nomi Cika Ceke fiqk bezi, vato.
+nomi Cika Ceke hodo.
+hodo Ceke xeze boxo,
+boxo Ceke xeze gigdo,
+gigdo Ceke xeze xumo,
+xumo Ceke xeze taqo,
+taqo Ceke xeze lasto,
+lomi vasa Ceke fiz Cizgo.
 
 ### 17
 
@@ -447,14 +442,14 @@ lomi vasa gime pim cemo.
 > 功成事遂，
 > 百姓皆謂我自然。
 
-miz tik soca, liz tida nomi hina kesi.
-gena, Cefa loso gime bixi hina.
-gena, Cefa debi hina.
-gena, Cefa yeqi hina.
-pixa pim trexo, gime pimpixa kesi.
-tixo, hina niji worda,
-goqa kombo gime kina dono,
-con tida vibi wola seflCimo.
+zeb bip raca, dep peja nomi hina kesi.
+gena, Cefa loso Ceke zuvi hina.
+gena, Cefa vifi hina.
+gena, Cefa cauzi hina.
+trasta fiz sixo, Ceke fiztrasta kesi.
+guxo, hina ciqi vora,
+goqa pojo Ceke kina lusko,
+con hexa jopi wola sefCaso.
 
 ### 18
 
@@ -463,10 +458,10 @@ con tida vibi wola seflCimo.
 > 六親不和有孝慈，
 > 國家昏亂有忠臣。
 
-big taqa zori, gime kija gime poba kesi.
-xega tin komi, gime big ceta kesi.
-kon heca pim djono, gime kik lova gime sas lova kesi.
-lona ramo gime deCo, gime toc sinta kesi.
+big taqa zori, Ceke yega Ceke poba kesi.
+yeqka tin komi, Ceke big ceta kesi.
+kon launa fiz cibo, Ceke kik xima Ceke sas xima kesi.
+landa ramo Ceke meso, Ceke toc skuqa kesi.
 
 ### 19
 
@@ -478,13 +473,13 @@ lona ramo gime deCo, gime toc sinta kesi.
 > 見素抱樸，
 > 少私寡欲。
 
-tici klafa gime dripi xega, tida gami yemp kala.
-tici kija gime dripi poba, tida gok higi nime kik lova gime sas lova.
-tici zeba gime dripi gama, zega pim kesi.
-kim dema, hodi hina worda gime pim trexo,
-zige kima meki hina havi paka:
-visi liCa gime hodi wif Cida,
-xib sefa gime tiv wena.
+peCi xuca Ceke drapi yeqka, hexa gami yemp kala.
+peCi yega Ceke drapi poba, hexa gok heji rite kik xima Ceke sas xima.
+peCi roqa Ceke drapi gama, cifa fiz kesi.
+kim dema, hodi hina vora Ceke fiz sixo,
+xeze meki hina havi paka:
+visi plena Ceke hodi giC wuda,
+smol sefa Ceke cem nipa.
 
 ### 20
 
@@ -510,27 +505,27 @@ xib sefa gime tiv wena.
 > 我獨異於人，
 > 而貴求食於母。
 
-tici stada gime pim barpa kesi.
-yasa gime noqa, pari zige tegkora wecnato?
-tava gime vata, pari zige tegkora wecnato?
-tida debi kina, dez pim gin pim debi?
-yiso gime hina pim vral neqi.
-con tida mar maro,
-semo zige bini big fista,
-semo zige klimi spar kuda.
-musta nal zoto gime pim vral rifti,
-semo zige pupa pim vral smoli,
-koC koCo gime semo zige pim havi higi hom paka.
-con tida havi mora,
-gime musta nal semo zige lomi kina.
-musta havi geb yika. rac raco.
-biC tida mar maro, musta nal ram ramo.
-biC tida zbid zbido, musta nal gif gifo.
-zoto gime semo zige ram fida,
-xuso gime semo zige pim havi sop paka.
-con tida havi yuza, musta nal haro gime lizo.
-musta nal koro zige tida,
-gime musta niji bini zige wumsa.
+peCi saxa Ceke fiz caba kesi.
+yasa Ceke noqa, pari frame mepkora wecnato?
+tava Ceke vata, pari frame mepkora wecnato?
+peja vifi kina, wun fiz fend fiz vifi?
+puqo Ceke hina fiz geb neqi.
+con peja mar maro,
+semo frame bexi big fista,
+semo frame vikti spriq Catxa.
+musa hes hixo Ceke fiz geb nazi,
+semo frame pupa fiz geb yindi,
+drift drifto Ceke semo frame fiz havi heji hom paka.
+con peja havi mora,
+Ceke musa hes semo frame lomi kina.
+musa havi ful nafa. dal dalo.
+rauz peja mar maro, musa hes ram ramo.
+rauz peja wemp wempo, musa hes hac haco.
+hixo Ceke semo frame ram toza,
+xuso Ceke semo frame fiz havi sop paka.
+con peja havi yuza, musa hes hardo Ceke depo.
+musa hes koro frame peja,
+Ceke musa ciqi bexi frame wenda.
 
 ### 21
 
@@ -549,19 +544,19 @@ gime musta niji bini zige wumsa.
 > 吾何以知眾甫之然哉？
 > 以此。
 
-cija dige big mixa,
-nal flori taqa.
-taqa kide kina,
-nal xebo gime nal gifo.
-gifo gime xebo, gime forza kesi kide hin moda.
-xebo gime gifo, gime kina kesi kide hin moda.
-dapo gime ramo,
-gime wija kesi kide hin moda.
-hin wija cin toco, gime pixa kesi kide hin moda.
-zige kif kala nime xoma,
-hin nama pim higi,
-nime visi con sama.
-musta nomi con sama Cimo wime weca?
+fiqa nize big taizga,
+hes gibi taqa.
+taqa deqe kina,
+hes mubo Ceke hes haco.
+haco Ceke mubo, Ceke forma kesi deqe hint moda.
+mubo Ceke haco, Ceke kina kesi deqe hint moda.
+xizo Ceke ramo,
+Ceke vaga kesi deqe hint moda.
+hint vaga hen toco, Ceke trasta kesi deqe hint moda.
+frame fed kala rite xoma,
+hint nama fiz heji,
+rite visi con sama.
+musa nomi con sama Caso wime weca?
 wime kima.
 
 ### 22
@@ -584,23 +579,23 @@ wime kima.
 > 豈虛言哉！
 > 誠全而歸之。
 
-jide Cifo, holo.
-jide gexo, vreko.
-jide domo, falo.
-jide zavo, hivo.
-jide tivo, gemi.
-jide vigo, lomo.
-zige kima klaf tida hodi meda,
-gime mada dige zboka.
-pim rifti sefa, zige kima maro.
-pim bixi sefa, zige kima diqgi.
-pim pobi sefa, zige kima havi goqa.
-pim jedi sefa, zige kima lasi.
-nal zige pim kevi,
-zige kima pim med tida kide zboka gin kevi wime hina.
-kif tida sut vibi kina, jide Cifo holo,
-dez xun wordo?
-toc holo gime gok higi nime hina.
+nije volfo, holo.
+nije faulo, boCo.
+nije rezgo, falo.
+nije zapo, pibo.
+nije cemo, gemi.
+nije lixo, losto.
+xeze xuc peja hodi meda,
+Ceke mada nize bisa.
+fiz nazi sefa, xeze maro.
+fiz zuvi sefa, xeze jovi.
+fiz pobi sefa, xeze havi goqa.
+fiz nagi sefa, xeze lasti.
+hes frame fiz fafi,
+xeze fiz med peja deqe bisa fend fafi wime hina.
+fed peja sut jopi kina, nije volfo holo,
+wun xun voro?
+toc holo Ceke gok heji rite hina.
 
 ### 23
 
@@ -620,21 +615,21 @@ toc holo gime gok higi nime hina.
 > 信不足焉，
 > 有不信焉。
 
-tiv worda seflCimo.
-zige kima glok wuna pim lasi nime neqa dige yambega,
-har rexa pim lasi nime neqa dige yama.
-wectida timi kima?
-vons xuma gime ruga pim gin lasi,
-dez gime tida moro?
-zige kima flori taqa tida,
-taq tida semo wime taqa,
-mix tida semo wime mixa,
-lom tida semo wime loma.
-semo wime taqa tida, taqa lus glad gemi hina.
-semo wime mixa tida, mixa lus glad gemi hina.
-semo wime loma tida, loma lus glad gemi hina.
-pixa pim trexo,
-gime pimpixa kesi.
+cem vora sefCaso.
+xeze fiqk winda fiz lasti rite neqa nize sauza,
+hard rexa fiz lasti rite neqa nize yama.
+wecpeja bezi kima?
+ras xuma Ceke puma fiz fend lasti,
+wun Ceke peja moro?
+xeze gibi taqa peja,
+taq peja semo wime taqa,
+taizg peja semo wime taizga,
+lom peja semo wime loma.
+semo wime taqa peja, taqa lez glad gemi hina.
+semo wime taizga peja, taizga lez glad gemi hina.
+semo wime loma peja, loma lez glad gemi hina.
+trasta fiz sixo,
+Ceke fiztrasta kesi.
 
 ### 24
 
@@ -649,16 +644,16 @@ gime pimpixa kesi.
 > 物或惡之，
 > 故有道者不處也。
 
-stoni kide kiCa tida pim stoni.
-wexi tida pim woki.
-rifti sefa tida pim maro.
-pobi sefa tida pim diqgi.
-bixi sefa tida pim havi goqa.
-jedi sefa tida pim lasi.
-kima kide taqa,
-kugi hina bep feda gime fits claqa.
-kina vral jeni hina,
-zige kima havi taqa tida pim stuli kide hina.
+standi deqe Cetxa peja fiz standi.
+wiCi peja fiz woki.
+nazi sefa peja fiz maro.
+pobi sefa peja fiz jovi.
+zuvi sefa peja fiz havi goqa.
+nagi sefa peja fiz lasti.
+kima deqe taqa,
+kugi hina bep fuda Ceke heb raCa.
+kina geb mifi hina,
+xeze havi taqa peja fiz baCi deqe hina.
 
 ### 25
 
@@ -685,28 +680,28 @@ zige kima havi taqa tida pim stuli kide hina.
 > 天法道，
 > 道法自然。
 
-kina kesi, mim forzo,
-mor rals sut komi zige xuma gime ruga,
-xuso gime zoto,
-nal stoni gime pim kani,
-rand higi gime pim vevi,
-gin wumso dige zboka.
-musta pim nomi hin nama,
+kina kesi, mim formo,
+mor wij sut komi frame xuma Ceke puma,
+xuso Ceke hixo,
+hes standi Ceke fiz kani,
+bom heji Ceke fiz guli,
+fend wendo nize bisa.
+musa fiz nomi hint nama,
 kugi hina taqa,
-fosi nama nime hina gime kugi hina biga.
-kugi biga higa,
-kugi higa fada,
+fosi nama rite hina Ceke kugi hina biga.
+kugi biga heja,
+kugi heja fada,
 kugi fada xuva.
-zige kima taqa bigo,
+xeze taqa bigo,
 xuma bigo,
-ruga bigo,
-Cisa lus bigo.
-boq biga kesi kide moda dige cona,
-gime Cisa stuli kide meda.
-tida flori ruga,
-ruga flori xuma,
-xuma flori taqa,
-taqa flori seflCima.
+puma bigo,
+gigda lez bigo.
+boq biga kesi deqe moda nize cona,
+Ceke gigda baCi deqe meda.
+peja gibi puma,
+puma gibi xuma,
+xuma gibi taqa,
+taqa gibi sefCasa.
 
 ### 26
 
@@ -720,15 +715,15 @@ taqa flori seflCima.
 > 輕則失根，
 > 躁則失君。
 
-heva ruta dige ziba,
-zota gudja dige riksa,
-zige kima kad tida woki con yama gime pim skimi miCa.
-vons jide havi mep stora,
-reqo gime stuli kide tuba dige hina.
-wectaqa meki gudja dige vopmont miCa
-zibo wime vasa kide zboka?
-jide zibo, lomi ruta.
-jide rikso, lomi gudja.
+beqka puja nize laita,
+hixa paiqa nize raxa,
+xeze reqk peja woki con yama Ceke fiz xendi yofa.
+ras nije havi cus voca,
+reqo Ceke baCi deqe xida nize hina.
+wectaqa meki paiqa nize vopmont yofa
+laito wime vasa deqe bisa?
+nije laito, lomi puja.
+nije raxo, lomi paiqa.
 
 ### 27
 
@@ -749,22 +744,22 @@ jide rikso, lomi gudja.
 > 雖智大迷。
 > 是謂要妙。
 
-tav woka, pim havi draka.
-tav worda, pim havi suba.
-tav cika, pim yuzi stiga.
-tav losa, pim havi xava gime pim gin poni.
-tav peza, pim havi laqa gime pim gin saCi.
-zige kima klaf tida conkal tav kluni tida,
-zige kima pim havi bep tida.
-tav kluni kina,
-zige kima pim havi bep kina,
-kugi kima nop mara.
-zige kima tav tida penta dige pim tav tida.
-pim tav tida meja dige tav tida.
-pim niji hin penta,
-pim lovi hin meja,
-vons jide xego, cin lomo.
-kugi kima cux wenta.
+tav woka, fiz havi draka.
+tav vora, fiz havi yaita.
+tav Cipa, fiz yuzi xeCa.
+tav losa, fiz havi siqka Ceke fiz fend poni.
+tav wusa, fiz havi ropa Ceke fiz fend lusi.
+xeze xuc peja Cik tav pidji peja,
+xeze fiz havi bep peja.
+tav pidji kina,
+xeze fiz havi bep kina,
+kugi kima djom mara.
+xeze tav peja zada nize fiz tav peja.
+fiz tav peja saija nize tav peja.
+fiz ciqi hint zada,
+fiz ximi hint saija,
+ras nije yeqko, hen losto.
+kugi kima cux yaja.
 
 ### 28
 
@@ -787,24 +782,24 @@ kugi kima cux wenta.
 > 聖人用之則為官長。
 > 故大制不割。
 
-nomi hin mofa,
-kugzi hin fema,
-staro dige zboka.
-staro dige zboka, gime conkal mixa pim skimi,
-gok higi nime pupa.
-nomi hin wiqa,
-kugzi hin bula,
-mado dige zboka.
-mado dige zboka, gime conkal mixa pim kuvi,
-gok higi nime pimneqa.
-nomi hin xada,
-kugzi hin tema,
-valso dige zboka.
-valso dige zboka, gime conkal mixa zige kima trexo,
-gok higi nime wif Cida.
-jide wif Cida braki, tulo.
-jide klaf tida yuzi hina, dazo.
-zige kima big tica pim tici.
+nomi hint mofa,
+honi hint fema,
+strimo nize bisa.
+strimo nize bisa, Ceke Cik taizga fiz xendi,
+gok heji rite pupa.
+nomi hint wiqa,
+honi hint bula,
+mado nize bisa.
+mado nize bisa, Ceke Cik taizga fiz gifi,
+gok heji rite fizneqa.
+nomi hint kauna,
+honi hint nuCa,
+maibo nize bisa.
+maibo nize bisa, Ceke xeze Cik taizga sixo,
+gok heji rite giC wuda.
+nije giC wuda Codi, tulo.
+nije xuc peja yuzi hina, txifo.
+xeze big peCa fiz peCi.
 
 ### 29
 
@@ -821,18 +816,18 @@ zige kima big tica pim tici.
 > 是以聖人去甚。
 > 去奢、去泰。
 
-wul weni vogi zboka gime timi hina,
-musta visi hina pim gino.
-zboka jaq tula,
-pim gin timi hina.
-timi tida braki hina,
-hodi tida lomi hina.
-zige kima kina, lina ladi gime lina flori,
-lina leji wita gime lina leji wisa,
-lina jemo gime lina hijo,
-lina Cizi gime lina zori.
-zige kima klaf tida skimi mip cruja.
-skimi haga, skimi hexa.
+tis nipi vogi bisa Ceke bezi hina,
+musa visi hina fiz fendo.
+bisa jaq tula,
+fiz fend bezi hina.
+bezi peja Codi hina,
+hodi peja lomi hina.
+xeze kina, zeca ladi Ceke zeca gibi,
+zeca riqki worma Ceke zeca riqki buCa,
+zeca stroqo Ceke zeca fufo,
+zeca soji Ceke zeca zori.
+xeze xuc peja xendi gij matxa.
+xendi toma, xendi bixa.
 
 ### 30
 
@@ -852,21 +847,21 @@ skimi haga, skimi hexa.
 > 是謂不道，
 > 不道早已。
 
-halbi gudja wime taqa tida,
-pim fosi zboka wime viCa,
-hin goqa glad xuvi.
-keja stuli paka, gaka hidi kide hina.
-kide goka dige big keja, mez kesi vat yeza.
-zige kima tav tida bizi gime komb sopi,
-pim saxi vogi fosa.
-bizi gime nex pim jedi,
-bizi gime nex pim bixi sefa,
-bizi gime nex pim prudo,
-bizi gime pim gino kora,
-bizi gime nex pim fosi.
-jide kina jemo, kifo.
-kugi kima pim taqa,
-pim taqa rals neqi.
+gexi paiqa wime taqa peja,
+fiz fosi bisa wime zoba,
+hint goqa glad xuvi.
+keba baCi paka, corna hifi deqe hina.
+deqe goka nize big keba, can kesi vat yeza.
+xeze tav peja yidji Ceke poj sopi,
+fiz daCi vogi fosa.
+yidji Ceke dimp fiz nagi,
+yidji Ceke dimp fiz zuvi sefa,
+yidji Ceke dimp fiz lojo,
+yidji Ceke fiz fendo kora,
+yidji Ceke dimp fiz fosi.
+nije kina stroqo, fedo.
+kugi kima fiz taqa,
+fiz taqa wij neqi.
 
 ### 31
 
@@ -891,26 +886,26 @@ pim taqa rals neqi.
 > 殺人之眾，以悲哀蒞之。
 > 戰勝，以喪禮處之。
 
-mep viCa tula dige vat hena,
-kina vral jeni hina,
-zige kima havi taqa tida pim stuli kide hina.
-zige kima jide kad tida reqi, niji bepa.
-jide yuzi viCa, niji poba.
-viCa tula dige vat hena,
-pim tula dige kad tida.
-pim gino kora gime yuzi hina,
-kama miz tavo,
-gizi gime pim batsi hina.
-batsi hina tida, kima glado kide fepi tida.
-glado kide fepi tida tida,
-pim gin gemi wula kide zboka.
-zige kima tav kina defi bepa,
-vat kina defi poba.
-zige kima liz geqa stuli kide bepa,
-tik geqa stuli kide poba,
-hodi hina wime dag pica.
-fepi vig tida, yombi hina wime Ceja.
-gizi hesa, hodi hina wime dag pica.
+cus zoba tula nize vat saina,
+kina geb mifi hina,
+xeze havi taqa peja fiz baCi deqe hina.
+xeze nije reqk peja reqi, ciqi bepa.
+nije yuzi zoba, ciqi poba.
+zoba tula nize vat saina,
+fiz tula nize reqk peja.
+fiz fendo kora Ceke yuzi hina,
+kama zeb tavo,
+lofi Ceke fiz haji hina.
+haji hina peja, kima glado deqe joki peja.
+glado deqe joki peja peja,
+fiz fend gemi wula deqe bisa.
+xeze tav kina jari bepa,
+vat kina jari poba.
+xeze dep geqa baCi deqe bepa,
+bip geqa baCi deqe poba,
+hodi hina wime miz pauza.
+joki lix peja, poxi hina wime loCa.
+lofi tuta, hodi hina wime miz pauza.
 
 ### 32
 
@@ -928,19 +923,19 @@ gizi hesa, hodi hina wime dag pica.
 > 譬道之在天下，
 > 由川谷之於江海。
 
-taqa conkal pim havi nama.
-vons jide wif Cida xibo,
-zboka pim saxi ruli hina.
-jide lora gin kugzi hina,
-con kina wul sefa komi.
-xuma gime ruga djoni tegkora,
-nime dripi xic zorpa,
-pim med tida dori hina gime hina sefa vonso.
-beg tici gime nama kesi.
-nama komb kesi, gime wul nomi sopi.
-nomi sopi kaza dige pim cemo.
-taqa kide zboka semo
-zige stara gime valsa kide mimba gime tigza.
+taqa Cik fiz havi nama.
+ras nije giC wuda smolo,
+bisa fiz daCi ruli hina.
+nije lora fend honi hina,
+con kina tis sefa komi.
+xuma Ceke puma cibi mepkora,
+rite drapi pud pakta,
+fiz med peja dori hina Ceke hina sefa raso.
+riC peCi Ceke nama kesi.
+nama poj kesi, Ceke tis nomi sopi.
+nomi sopi kaza nize fiz Cizgo.
+taqa deqe bisa semo
+frame strima Ceke maiba deqe wigda Ceke moCa.
 
 ### 33
 
@@ -953,14 +948,14 @@ zige stara gime valsa kide mimba gime tigza.
 > 不失其所者久，
 > 死而不亡者壽。
 
-nomi tida tida xego.
-nomi sefa tida maro.
-gizi tida tida havi fosa.
-gizi sefa tida jemo.
-nomi trexa tida kimso.
-fos woki tida havi wula.
-pim lomi hin paka tida lasi.
-yifi gime pim higo tida len smiki.
+nomi peja peja yeqko.
+nomi sefa peja maro.
+lofi peja peja havi fosa.
+lofi sefa peja stroqo.
+nomi sixa peja jaido.
+fos woki peja havi wula.
+fiz lomi hint paka peja lasti.
+saifi Ceke fiz jedo peja loq sozi.
 
 ### 34
 
@@ -976,17 +971,17 @@ yifi gime pim higo tida len smiki.
 > 是以聖人終不為大，
 > 故能成其大。
 
-big taqa vaxo,
-hina gin bepo pike pobo.
-con kina raji nime hina nime smiki gime hina pim refsi,
-goqa kombo gime pim nami havi.
-yibdi con kina gime pim gudjo,
-conkal pim weni,
-gin kugi hina xiba.
-con kina higi nime hina gime hina pim gudjo,
-gin kugi hina biga.
-zige kima klaf tida nime neqa pim bigi,
-zige kima gin bizi hin biga.
+big taqa flado,
+hina fend bepo vace pobo.
+con kina lini rite hina rite sozi Ceke hina fiz nefki,
+goqa pojo Ceke fiz nami havi.
+xefi con kina Ceke fiz paiqo,
+Cik fiz nipi,
+fend kugi hina smola.
+con kina heji rite hina Ceke hina fiz paiqo,
+fend kugi hina biga.
+xeze xuc peja rite neqa fiz bigi,
+xeze fend yidji hint biga.
 
 ### 35
 
@@ -1002,17 +997,17 @@ zige kima gin bizi hin biga.
 > 聽之不可聞，
 > 用之不可既。
 
-hodi big forza,
-zboka komi.
-komi gime pim zijo,
-reqo gime vaCo gime kamo.
-rusa gime feda,
-yiCi dama sopi.
-taqa tin komi zige muca,
-liCo gime pim havi vrexa,
-lugi kide hina gime pim gin visi,
-lazi nime hina gime pim gin yidi,
-yuzi hina gime pim gin neqi.
+hodi big forma,
+bisa komi.
+komi Ceke fiz harmo,
+reqo Ceke yigo Ceke kamo.
+yosa Ceke fuda,
+pasi gesta sopi.
+taqa tin komi frame muca,
+pleno Ceke fiz havi testa,
+jibi deqe hina Ceke fiz fend visi,
+lobi rite hina Ceke fiz fend fugi,
+yuzi hina Ceke fiz fend neqi.
 
 ### 36
 
@@ -1025,14 +1020,14 @@ yuzi hina gime pim gin neqi.
 > 魚不可脫於淵，
 > 國之利器不可以示人。
 
-jide wul weni losi hina, mez deq poni hina.
-jide wul weni hiji hina, mez deq jemi hina.
-jide wul weni dripi hina, mez deq hegi hina.
-jide wul weni vogi hina, mez deq gevi hina.
-kugi kima xib mara,
-zofa gizi hara gime hija gizi jema.
-fika pim gin skimi dap wota,
-zbid tula dige lona pim gin rifti nime tida.
+nije tis nipi losi hina, can txan poni hina.
+nije tis nipi fufi hina, can txan stroqi hina.
+nije tis nipi drapi hina, can txan huqi hina.
+nije tis nipi vogi hina, can txan gevi hina.
+kugi kima smol mara,
+safta lofi harda Ceke fufa lofi stroqa.
+fixa fiz fend xendi xiz wota,
+wemp tula nize landa fiz fend nazi rite peja.
 
 ### 37
 
@@ -1045,14 +1040,14 @@ zbid tula dige lona pim gin rifti nime tida.
 > 不欲以靜，
 > 天下將自正。
 
-taqa conkal pim timi gime pim med kina pim timo.
-jide lora gin kugzi hina,
-con kina wul sefa kani.
-kani gime wena rezi,
-musta wul pemi hina wime pimnam wif Cida.
-pimnam wif Cida, lus wul pim weni.
-pim weni nime zoto,
-zboka wul sefa pobo.
+taqa Cik fiz bezi Ceke fiz med kina fiz bezo.
+nije lora fend honi hina,
+con kina tis sefa kani.
+kani Ceke nipa rezi,
+musa tis presi hina wime fiznam giC wuda.
+fiznam giC wuda, lez tis fiz nipi.
+fiz nipi rite hixo,
+bisa tis sefa pobo.
 
 ## 下篇
 
@@ -1081,28 +1076,28 @@ zboka wul sefa pobo.
 > 居其實，不居其華。
 > 故去彼取此。
 
-tik mixa pim mixi,
-zige kima havi mixa.
-liz mixa pim lomi mixa,
-zige kima pim havi mixa.
-tik mixa pim timi gime pim havi kaza nime timi,
-liz mixa timi hina gime havi kaza nime timi.
-tik kija timi hina gime pim havi kaza nime timi.
-tik poba timi hina gime havi kaza nime timi.
-tik pica timi hina gime pim med tida xeti hina,
-jide kimo, brani jepa gime rofi hina.
-zige kima lomi taqa gime mixa flori,
-lomi mixa gime kija flori,
-lomi kija gime poba flori,
-lomi poba gime pica flori.
-pica,
-feja dige toca gime pixa, gime heda dige deCa.
+bip taizga fiz taizgi,
+xeze havi taizga.
+dep taizga fiz lomi taizga,
+xeze fiz havi taizga.
+bip taizga fiz bezi Ceke fiz havi kaza rite bezi,
+dep taizga bezi hina Ceke havi kaza rite bezi.
+bip yega bezi hina Ceke fiz havi kaza rite bezi.
+bip poba bezi hina Ceke havi kaza rite bezi.
+bip pauza bezi hina Ceke fiz med peja roxi hina,
+nije kimo, naimi goma Ceke pali hina.
+xeze lomi taqa Ceke taizga gibi,
+lomi taizga Ceke yega gibi,
+lomi yega Ceke poba gibi,
+lomi poba Ceke pauza gibi.
+pauza,
+cina nize toca Ceke trasta, Ceke heda nize mesa.
 keg noma,
-fula dige taqa gime sama dige geba.
-zige kima big tida stuli kide hin skina,
-pim stuli kide hin feja.
-stuli kide hin viqa, pim stuli kide hin fula.
-zige kima skimi Cata gime vogi kima.
+xafa nize taqa Ceke sama nize fula.
+xeze big peja baCi deqe hint cika,
+fiz baCi deqe hint cina.
+baCi deqe hint fruta, fiz baCi deqe hint xafa.
+xeze xendi Cata Ceke vogi kima.
 
 ### 39
 
@@ -1129,28 +1124,28 @@ zige kima skimi Cata gime vogi kima.
 > 不欲琭琭如玉，
 > 落落如石。
 
-kif gemi meda kina:
-xuma gemi meda nime klaro,
-ruga gemi meda nime zoto,
-jaqa gemi meda nime kamo,
-valsa gemi meda nime falo,
-con kina gemi meda nime smiki,
-lora gemi meda nime pobo kide zboka,
-Cefa flimi hina zige meda.
-jide xuma pim havi klara, wul debi braki.
-jide ruga pim havi zota, wul debi zazi.
-jide jaqa pim havi kama, wul debi sopi.
-jide valsa pim havi fala, wul debi dari.
-jide con kina pim havi smika, wul debi yifi.
-jide lora pim havi poba gime tika,
-wul debi zori.
-zige kima tika hodi liza ruta,
-talsa hodi saga vafa.
-lora kugi sefa xefa gime tiva gime pim tava.
-dez kima hodi liza ruta? dez pimo?
-zige kima ciki miCa gime pim havi miCa.
-pim weni sem diqgi zige giCa,
-sem znari zige mifa.
+fed gemi meda kina:
+xuma gemi meda rite yimo,
+puma gemi meda rite hixo,
+jaqa gemi meda rite kamo,
+maiba gemi meda rite falo,
+con kina gemi meda rite sozi,
+lora gemi meda rite pobo deqe bisa,
+Cefa gofi hina frame meda.
+nije xuma fiz havi yima, tis vifi Codi.
+nije puma fiz havi hixa, tis vifi mavi.
+nije jaqa fiz havi kama, tis vifi sopi.
+nije maiba fiz havi fala, tis vifi taipi.
+nije con kina fiz havi soza, tis vifi saifi.
+nije lora fiz havi poba Ceke bipa,
+tis vifi zori.
+xeze bipa hodi depa puja,
+tola hodi mixa besa.
+lora kugi sefa hupa Ceke cema Ceke fiz tava.
+wun kima hodi depa puja? wun fizo?
+xeze Cipi yofa Ceke fiz havi yofa.
+fiz nipi sem jovi frame groma,
+sem xiqki frame stona.
 
 ### 40
 
@@ -1159,10 +1154,10 @@ sem znari zige mifa.
 > 天下萬物生於有，
 > 有生於無。
 
-xuva muva dige taqa.
-hija yuza dige taqa.
-con kina kide zboka smiki zige kesa.
-kesa smiki zige pimkesa.
+xuva muva nize taqa.
+fufa yuza nize taqa.
+con kina deqe bisa sozi frame kesa.
+kesa sozi frame fizkesa.
 
 ### 41
 
@@ -1185,24 +1180,24 @@ kesa smiki zige pimkesa.
 > 大象無形。
 > 夫惟道，善貸且成。
 
-tik veca yidi taqa, gime har timi hina.
-mod veca yidi taqa, gime sem kugzi hina zige lomi hina.
-liz veca yidi taqa, gime big kogzi kide hina,
-jide pim kogzi, pim trexo nime taqo.
-zige kima kif worda vibi hina:
-mar taqa semo zige rama,
-zev taqa semo zige gok higa,
-nab taqa semo zige pubza,
-tik mixa semo zige valsa,
-big wiqa semo zige tema,
-yis mixa semo zige pim trexa,
-nag mixa semo zige hija,
-liC toca semo zige kana,
-big wema pim havi meCa,
-big tula lits bizo,
-big suma tiv vozo,
-big forza pim havi cija.
-nal taqa, tav gevi gime bizi.
+bip pifka fugi taqa, Ceke hard bezi hina.
+mod pifka fugi taqa, Ceke sem honi hina frame lomi hina.
+dep pifka fugi taqa, Ceke big lafi deqe hina,
+nije fiz lafi, fiz sixo rite taqo.
+xeze fed vora jopi hina:
+mar taqa semo frame rama,
+creg taqa semo frame gok heja,
+nuj taqa semo frame rafa,
+bip taizga semo frame maiba,
+big wiqa semo frame nuCa,
+puq taizga semo frame fiz sixa,
+rup taizga semo frame fufa,
+plen toca semo frame kana,
+big fauta fiz havi rusa,
+big tula seC yidjo,
+big suma cem vozo,
+big forma fiz havi fiqa.
+hes taqa, tav gevi Ceke yidji.
 
 ### 42
 
@@ -1225,16 +1220,16 @@ taqa meki meda,
 meda meki noca,
 noca meki dema,
 dema meki con kina.
-con kina Cizi rama gime hodi ziba,
-mimi ruca nime djono.
-tida jeni kina,
-xefa gime tiva gime pim tava,
-gime Cisa hodi hina nama.
-zige kima kina, lina lomi gime gami,
-lina gami gime lomi.
-tida veti kina, musta lus veti hina:
-fosi tida pim gemi hin daga,
-musta wul hodi hina vet rodja.
+con kina soji rama Ceke hodi laita,
+mimi ruca rite cibo.
+peja mifi kina,
+hupa Ceke cema Ceke fiz tava,
+Ceke gigda hodi hina nama.
+xeze kina, zeca lomi Ceke gami,
+zeca gami Ceke lomi.
+peja zubi kina, musa lez zubi hina:
+fosi peja fiz gemi hint miza,
+musa tis hodi hina zub woiba.
 
 ### 43
 
@@ -1246,13 +1241,13 @@ musta wul hodi hina vet rodja.
 > 無為之益，
 > 天下希及之。
 
-miz zofa dige zboka,
-lefi miz hara dige zboka,
-pimkesa nebi nime pimfaja,
-musta zige kima nomi gama dige pimtima.
-veta dige pim vibi,
-gama dige pimtima,
-tiva kide zboka flimi hina.
+zeb safta nize bisa,
+sudi zeb harda nize bisa,
+fizkesa nebi rite fizlgapa,
+xeze musa nomi gama nize fizbeza.
+zuba nize fiz jopi,
+gama nize fizbeza,
+cema deqe bisa gofi hina.
 
 ### 44
 
@@ -1264,13 +1259,13 @@ tiva kide zboka flimi hina.
 > 知足不辱，
 > 知止不殆，可以長久。
 
-nama gime vasa, wecmeda mor loso?
-vasa gime kina, wecmeda mor crujo?
-gama gime loma, wecmeda mor vato?
-zige kima cin lovi gime mez big cami,
-vig kugzi gime mez skin lomi.
-nomi trexa gime pim temo,
-nomi sopi gime pim cemo, gin len lasi.
+nama Ceke vasa, wecmeda mor loso?
+vasa Ceke kina, wecmeda mor matxo?
+gama Ceke loma, wecmeda mor vato?
+xeze hen ximi Ceke can big spendi,
+lix honi Ceke can cik lomi.
+nomi sixa Ceke fiz nuCo,
+nomi sopi Ceke fiz Cizgo, fend loq lasti.
 
 ### 45
 
@@ -1285,16 +1280,16 @@ nomi sopi gime pim cemo, gin len lasi.
 > 靜勝熱，
 > 清靜為天下正。
 
-big biza semo zige lama,
-hin yuza pim skozi.
-big fala semo zige xuna,
-hin yuza pim neqi.
-big vreka semo zige Cifa,
-big zeba semo zige lapa,
-big spixa semo zige moka.
-muva gizi wisa,
-zota gizi hada,
-klar zota pobo dige zboka.
+big yidja semo frame lama,
+hint yuza fiz ruxi.
+big fala semo frame xuna,
+hint yuza fiz neqi.
+big boCa semo frame volfa,
+big roqa semo frame dafa,
+big spixa semo frame xala.
+muva lofi buCa,
+hixa lofi hita,
+yim hixa pobo nize bisa.
 
 ### 46
 
@@ -1307,14 +1302,14 @@ klar zota pobo dige zboka.
 > 咎莫大於欲得。
 > 故知之足，常足。
 
-jide zboka havi taqa,
-bija gok higi nime tami cuva.
-jide zboka pim havi taqa,
-hes bija jevo kide daja dige tensa.
-pim med peqa mor bigo zige gin weni,
-pim med zija mor bigo zige pim nomi trexa,
-pim med cena mor bigo zige weni gemi.
-zige kima nomi trexa dige trexa, conkal trexo.
+nije bisa havi taqa,
+yuma gok heji rite sugdi cuva.
+nije bisa fiz havi taqa,
+tut yuma borno deqe daja nize tauna.
+fiz med ruga mor bigo frame fend nipi,
+fiz med harma mor bigo frame fiz nomi sixa,
+fiz med baja mor bigo frame nipi gemi.
+xeze nomi sixa nize sixa, Cik sixo.
 
 ### 47
 
@@ -1327,14 +1322,14 @@ zige kima nomi trexa dige trexa, conkal trexo.
 > 不見而名，
 > 不為而成。
 
-pim tin higi zige drina,
-nomi zboka.
-pim lugi zige wonta,
-visi taqa dige xuma.
-jide hina higi mor fado, hina nomi mor tivo.
-zige kima klaf tida pim woki gime nomi,
-pim visi gime nami,
-pim timi gime bizi.
+fiz tin heji frame caiga,
+nomi bisa.
+fiz jibi frame maisa,
+visi taqa nize xuma.
+nije hina heji mor fado, hina nomi mor cemo.
+xeze xuc peja fiz woki Ceke nomi,
+fiz visi Ceke nami,
+fiz bezi Ceke yidji.
 
 ### 48
 
@@ -1348,15 +1343,15 @@ pim timi gime bizi.
 > 及其有事，
 > 不足以取天下。
 
-timi stada gime teg yama gami,
-timi taqa gime teg yama lomi.
-lomi gime mor lomi,
-nime flimi pimtima.
-pim timi gime pim med kina pim timo.
-zige kima vogi zboka tida,
-conkal yuzi pimgoqa.
-jide hina havi goqa,
-pim trexo nime vogi zboka.
+bezi saxa Ceke mep yama gami,
+bezi taqa Ceke mep yama lomi.
+lomi Ceke mor lomi,
+rite gofi fizbeza.
+fiz bezi Ceke fiz med kina fiz bezo.
+xeze vogi bisa peja,
+Cik yuzi fizlgoqa.
+nije hina havi goqa,
+fiz sixo rite vogi bisa.
 
 ### 49
 
@@ -1373,18 +1368,18 @@ pim trexo nime vogi zboka.
 > 百姓皆注其耳目，
 > 聖人皆孩之。
 
-klaf tida pim havi conkal yika,
-hodi tid yika Cef yika.
-tav tida, musta tavi hina.
-pim tav tida, musta lus tavi hina.
-mixa tavo kombo.
-pix tida, musta pixi hina.
-pim pix tida, musta lus pixi hina.
-mixa pixo kombo.
-klaf tida kide zboka deb debo,
-nime zboka mimi Cef yika.
-con tida zeji Cef nifa gime haqa,
-klaf tida con kiki hina.
+xuc peja fiz havi Cik nafa,
+hodi hex nafa Ceft nafa.
+tav peja, musa tavi hina.
+fiz tav peja, musa lez tavi hina.
+taizga tavo pojo.
+trast peja, musa trasti hina.
+fiz trast peja, musa lez trasti hina.
+taizga trasto pojo.
+xuc peja deqe bisa vif vifo,
+rite bisa mimi Ceft nafa.
+con hexa mogi Ceft nula Ceke haqa,
+xuc peja con kiki hina.
 
 ### 50
 
@@ -1404,21 +1399,21 @@ klaf tida con kiki hina.
 > 夫何故？
 > 以其無死地。
 
-tin komi nime vita gime nut higi nime daga.
-flori vita tida dema dige vopa.
-flori daga tida dema dige vopa.
-tida smiki, gime muvi nime dag paka,
-lus dema dige vopa.
-zige wec kaza?
-zige Cef skin smiki smika.
-yidi tav kugzi vita tida,
-woki kide lona gime pim yombi ceba pike teca,
-nebi keja gime pim skozi Cixa pike viCa.
-ceba pim havi paksi hin bexa paka,
-teca pim havi pudi hin yema paka,
-viCa pim havi hodi hin daja paka.
-zige wec kaza?
-zige Cef pim havi dag paka.
+tin komi rite vita Ceke nut heji rite miza.
+gibi vita peja dema nize vopa.
+gibi miza peja dema nize vopa.
+hexa sozi, Ceke muvi rite miz paka,
+lez dema nize vopa.
+frame wec kaza?
+frame Ceft cik sozi soza.
+fugi tav honi vita peja,
+woki deqe landa Ceke fiz poxi droba vace fendja,
+nebi keba Ceke fiz ruxi saba vace zoba.
+droba fiz havi paxi hint horna paka,
+fendja fiz havi yati hint tanta paka,
+zoba fiz havi hodi hint daja paka.
+frame wec kaza?
+frame Ceft fiz havi miz paka.
 
 ### 51
 
@@ -1441,22 +1436,22 @@ zige Cef pim havi dag paka.
 > 是謂玄德。
 
 taqa meki hina,
-mixa hici hina,
-kina ciji hina,
-fosa bizi hina.
-zige kima con kina
-pim medo pim defi taqa gime niji mixa.
-defa dige taqa,
-nija dige mixa,
-pim med tida dori hina gime hina conkal seflCimo.
-zige kima taqa meki hina gime mixa hici hina,
-hidi hina gime hegi hina,
-bizi hina gime fluxi hina,
-hici hina gime kugzi hina.
-meki gime pim havi,
-timi gime pim raji,
-hidi gime pim ruli,
-kugi kima ram mixa.
+taizga fidi hina,
+kina fiqi hina,
+fosa yidji hina.
+xeze con kina
+fiz medo fiz jari taqa Ceke ciqi taizga.
+jara nize taqa,
+ciqa nize taizga,
+fiz med peja dori hina Ceke hina Cik sefCaso.
+xeze taqa meki hina Ceke taizga fidi hina,
+hifi hina Ceke huqi hina,
+yidji hina Ceke flufi hina,
+fidi hina Ceke honi hina.
+meki Ceke fiz havi,
+bezi Ceke fiz lini,
+hifi Ceke fiz ruli,
+kugi kima ram taizga.
 
 ### 52
 
@@ -1479,24 +1474,24 @@ kugi kima ram mixa.
 > 無遺身殃，
 > 是謂習常。
 
-zboka havi sama gime hodi hina wumsa dige zboka.
-komb gemi hin wumsa,
-nime nomi hin kika.
-komb nomi hin kika,
-gok kugzi hin wumsa,
-lomi vasa gime pim cemo.
-rosi hin pona,
-losi hin drina,
-nime neqa dige vasa pim vevo.
-poni hin pona,
-halbi hin goqa,
-nime neqa dige vasa pim kluno.
-kugi visi xiba mara,
-kugi kugzi zofa jema.
-yuzi hin ziba,
-gok higi nime hin mara,
-pim skimi zija nime vasa,
-kugi kima doqi conkala.
+bisa havi sama Ceke hodi hina wenda nize bisa.
+poj gemi hint wenda,
+rite nomi hint kika.
+poj nomi hint kika,
+gok honi hint wenda,
+lomi vasa Ceke fiz Cizgo.
+blaki hint bleza,
+losi hint caiga,
+rite neqa nize vasa fiz gulo.
+poni hint bleza,
+gexi hint goqa,
+rite neqa nize vasa fiz pidjo.
+kugi visi smola mara,
+kugi honi safta stroqa.
+yuzi hint laita,
+gok heji rite hint mara,
+fiz xendi harma rite vasa,
+kugi kima ripi Cika.
 
 ### 53
 
@@ -1514,19 +1509,19 @@ kugi kima doqi conkala.
 > 是謂盜夸。
 > 非道也哉！
 
-jide musta havi xib noma,
-woki kide big taqa,
-nal debi cropi.
-big taqa cin nabo,
-gime tida liki xib paca.
-naCa cin glino gime cuva cin gloko,
-tora cin xuno,
-skozi mep kloka,
-Cizi zbid nusa,
-falo zige viza gime feda,
+nije musa havi smol noma,
+woki deqe big taqa,
+hes vifi vupi.
+big taqa hen nujo,
+Ceke hexa liki smol paca.
+paifa hen glino Ceke cuva hen fiqko,
+tora hen xuno,
+ruxi cus kloca,
+soji wemp cula,
+falo frame driqka Ceke fuda,
 havi mor kina,
-kugi kima zeg jeda.
-pim taqo!
+kugi kima cif naga.
+fiz taqo!
 
 ### 54
 
@@ -1551,25 +1546,25 @@ pim taqo!
 > 吾何以知天下之然哉？
 > 以此。
 
-tav balti tida pim rofo tina,
-tav hodi tida pim xaco,
-kika gime Ceka pim sopi pica.
-jide hidi hina kide vasa,
-hin mixa zige kima toco.
-jide hidi hina kide flica,
-hin mixa zige kima moro.
-jide hidi hina kide valga,
-hin mixa zige kima leno.
-jide hidi hina kide lona,
-hin mixa zige kima kimso.
-jide hidi hina kide zboka,
-hin mixa zige kima yiso.
-zige kima visi vasa wime vasa,
-visi flica wime flica,
-visi valga wime valga,
-visi lona wime lona,
-visi zboka wime zboka.
-musta nomi zboka Cimo wime weca?
+tav yebi peja fiz palo tina,
+tav hodi peja fiz yedjo,
+kika Ceke keCa fiz sopi pauza.
+nije hifi hina deqe vasa,
+xeze hint taizga toco.
+nije hifi hina deqe hausa,
+xeze hint taizga moro.
+nije hifi hina deqe naizga,
+xeze hint taizga loqo.
+nije hifi hina deqe landa,
+xeze hint taizga jaido.
+nije hifi hina deqe bisa,
+xeze hint taizga puqo.
+xeze visi vasa wime vasa,
+visi hausa wime hausa,
+visi naizga wime naizga,
+visi landa wime landa,
+visi bisa wime bisa.
+musa nomi bisa Caso wime weca?
 wime kima.
 
 ### 55
@@ -1592,23 +1587,23 @@ wime kima.
 > 是謂不道，
 > 不道早已。
 
-skina dige hodi mixa,
-semo zige red kika.
-nub buga pim laCi,
-glok fava pim jeci,
-hant xima pim gezi.
-mefa hijo gime foba zofo gime roCa nago.
-pim vral nomi djona dige fema gime mofa gime hol rezi,
-miza dige wija.
-daci con yama gime doga pim geco,
-miza dige djona.
-kugi nomi djona conkala,
-kugi nomi conkala mara,
-kugi fezi nime vita vat hena,
-kugi yika lefi ruca fosa.
-jide kina jemo, kifo.
-kugi kima pim taqa,
-pim taqa rals neqi.
+cika nize hodi taizga,
+semo frame red kika.
+taz Cola fiz stiqi,
+fiqk bista fiz grabi,
+hant woqa fiz xoqi.
+woma fufo Ceke tada safto Ceke gripa rupo.
+fiz geb nomi ciba nize fema Ceke mofa Ceke hol rezi,
+zeba nize vaga.
+haxi con yama Ceke crota fiz txuko,
+zeba nize ciba.
+kugi nomi ciba Cika,
+kugi nomi Cika mara,
+kugi Civi rite vita vat saina,
+kugi nafa sudi ruca fosa.
+nije kina stroqo, fedo.
+kugi kima fiz taqa,
+fiz taqa wij neqi.
 
 ### 56
 
@@ -1629,22 +1624,22 @@ pim taqa rals neqi.
 > 不可得而賤。
 > 故為天下貴。
 
-nomi tida pim vibi,
-vibi tida pim nomi.
-rosi hin pona,
-losi hin drina,
-wiCi hin zbida,
-saCi hin jeza,
-zofi hin ziba,
-djoni hin hepa,
+nomi peja fiz jopi,
+jopi peja fiz nomi.
+blaki hint bleza,
+losi hint caiga,
+xauqi hint wempa,
+lusi hint cuqa,
+safti hint laita,
+cibi hint ciska,
 kugi kima ram sema.
-pim gin gemi hina gime losi hina,
-pim gin gemi hina gime fadi hina.
-pim gin gemi hina gime halbi hina,
-pim gin gemi hina gime ziji hina.
-pim gin gemi hina gime niji hina,
-pim gin gemi hina gime kiqgi hina.
-zige kima hina miz nijo kide zboka.
+fiz fend gemi hina Ceke losi hina,
+fiz fend gemi hina Ceke fadi hina.
+fiz fend gemi hina Ceke gexi hina,
+fiz fend gemi hina Ceke harmi hina.
+fiz fend gemi hina Ceke ciqi hina,
+fiz fend gemi hina Ceke sagi hina.
+xeze hina zeb ciqo deqe bisa.
 
 ### 57
 
@@ -1667,24 +1662,24 @@ zige kima hina miz nijo kide zboka.
 > 我無事而民自富，
 > 我無欲而民自朴。
 
-ruli lona wime poba,
-yuzi viCa wime sova,
-vogi zboka wime pimgoqa.
-dez musta nomi hina Cimo wime weca?
+ruli landa wime poba,
+yuzi zoba wime pauxa,
+vogi bisa wime fizlgoqa.
+wun musa nomi hina Caso wime weca?
 wime kima:
-zboka havi vig zexa,
-gime tida mor gapo.
-tida havi vig zbid tula,
-gime lona mor ramo.
-tida havi vig zeba,
-gime sov kina mor rezi.
-simba mor rifti,
-gime zega vig kesi.
-zige kima klaf tida vibi:
-musta pim timi gime tida sefa kani,
-musta liki zota gime tida sefa pobo,
-musta pim goqi gime tida sefa kimso,
-musta pim weni gime tida sefa liCo.
+bisa havi lix rauma,
+Ceke hexa mor giqko.
+hexa havi lix wemp tula,
+Ceke landa mor ramo.
+hexa havi lix roqa,
+Ceke paux kina mor rezi.
+fipa mor nazi,
+Ceke cifa lix kesi.
+xeze xuc peja jopi:
+musa fiz bezi Ceke hexa sefa kani,
+musa liki hixa Ceke hexa sefa pobo,
+musa fiz goqi Ceke hexa sefa jaido,
+musa fiz nipi Ceke hexa sefa pleno.
 
 ### 58
 
@@ -1704,21 +1699,21 @@ musta pim weni gime tida sefa liCo.
 > 直而不肆，
 > 光而不耀。
 
-hin rula rac raco,
-hin tida liC liCo.
-hin rula zbid zbido,
-hin tida lam lamo.
-zija, teva raji kide hina.
-teva, zija glazi kide hina.
-wectida nomi hin neqa?
-hina pim havi poba.
-poba gok tuni nime sova,
-tava gok tuni nime vata, gime tida lomo,
-gime Cef yama leno kombo.
-zige kima klaf tida wemo gime pim tici,
-zbido gime pim bifi,
-vreko gime pim paksi,
-maro gime pim yiji.
+hint rula dal dalo,
+hint hexa plen pleno.
+hint rula wemp wempo,
+hint hexa lam lamo.
+harma, dusa lini deqe hina.
+dusa, harma haidi deqe hina.
+wecpeja nomi hint neqa?
+hina fiz havi poba.
+poba gok tuni rite pauxa,
+tava gok tuni rite vata, Ceke hexa losto,
+Ceke Ceft yama loqo pojo.
+xeze xuc peja fauto Ceke fiz peCi,
+wempo Ceke fiz nuqi,
+boCo Ceke fiz paxi,
+maro Ceke fiz woiji.
 
 ### 59
 
@@ -1735,18 +1730,18 @@ maro gime pim yiji.
 > 是謂深根固蒂，
 > 長生久視之道。
 
-ruli tida gime keci xuma, pim med kina sem tavo zige ziCi.
-nal zige ziCi,
-kugi kima rals luska.
-kugi rals luska hev plini mixa,
-jide hev plini mixa, pim med kina pim gizo,
-jide pim med kina pim gizo, pim med tida nomi hin neqa,
-jide pim med tida nomi hin neqa,
-gin havi lona.
-havi wumsa dige lona,
-gin len lasi.
-kugi kima dap ruta gime nag ruva,
-taqa dige len smiki gime len visi.
+ruli peja Ceke duji xuma, fiz med kina sem tavo frame libi.
+hes frame libi,
+kugi kima wij yola.
+kugi wij yola beqk fusi taizga,
+nije beqk fusi taizga, fiz med kina fiz lofo,
+nije fiz med kina fiz lofo, fiz med peja nomi hint neqa,
+nije fiz med peja nomi hint neqa,
+fend havi landa.
+havi wenda nize landa,
+fend loq lasti.
+kugi kima xiz puja Ceke rup stema,
+taqa nize loq sozi Ceke loq visi.
 
 ### 60
 
@@ -1760,15 +1755,15 @@ taqa dige len smiki gime len visi.
 > 夫兩不相傷，
 > 故德交歸焉。
 
-ruli big lona semo zige kaksi xib fika.
-komi nime zboka wime taqa,
-hin feCa pim jaqo.
-pim hin feCa pim jaqo,
-hin jaqa pim bifi tida.
-pim hin jaqa pim bifi tida,
-klaf tida lus pim bifi tida.
-con noca pim bifi tegkora,
-zige kima mixa djoni gime higi nime hina.
+ruli big landa semo frame roji smol fixa.
+komi rite bisa wime taqa,
+hint faita fiz jaqo.
+fiz hint faita fiz jaqo,
+hint jaqa fiz nuqi peja.
+fiz hint jaqa fiz nuqi peja,
+xuc peja lez fiz nuqi peja.
+con noca fiz nuqi mepkora,
+xeze taizga cibi Ceke heji rite hina.
 
 ### 61
 
@@ -1788,21 +1783,21 @@ zige kima mixa djoni gime higi nime hina.
 > 夫兩者各得其所欲，
 > 故大者宜為下。
 
-big lona liz stara.
-yomb paka dige zboka,
-fema dige zboka.
-fema conkal gizi mofa wime zota,
-hodi zota liza.
-zige kima jide big lona lizo nime xib lona,
-vogi xib lona.
-jide xib lona lizo nime big lona,
-vogi big lona.
-zige kima lina lizo nime vogi,
-lina lizo gime vogi.
-big lona nal weni vaki gime hici tida,
-xib lona nal weni nebi gime keci tida,
-con noca tega gemi hin weni kina,
-zige kima biga gas lizo.
+big landa dep strima.
+pox paka nize bisa,
+fema nize bisa.
+fema Cik lofi mofa wime hixa,
+hodi hixa depa.
+xeze nije big landa depo rite smol landa,
+vogi smol landa.
+nije smol landa depo rite big landa,
+vogi big landa.
+xeze zeca depo rite vogi,
+zeca depo Ceke vogi.
+big landa hes nipi woji Ceke fidi peja,
+smol landa hes nipi nebi Ceke duji peja,
+con noca mepa gemi hint nipi kina,
+xeze biga xad depo.
 
 ### 62
 
@@ -1821,20 +1816,20 @@ zige kima biga gas lizo.
 > 有罪以免邪？
 > 故為天下貴。
 
-taqa dap paka dige con kina,
-tresa dige tav tida,
-pim tav tida kugzi kina.
-bats worda gin hami,
-def claqa gin fezi nime tida.
-tida pim tavo, gime wec kaza nime dripi hina!
-zige kima hegi xum kika,
-zeti dem lora,
-vons jide havi giCa gime boq bija kide kega,
-pen mor tavo zige setsi gime gevi kim taqa.
-kif tida sut niji kim taqa zige wec kaza?
-dez pim vibi siki gime gemi,
-havi peqa gime framo?
-zige kima hina miz nijo kide zboka.
+taqa xiz paka nize con kina,
+Carga nize tav peja,
+fiz tav peja honi kina.
+haj vora fend zoci,
+jar raCa fend Civi rite peja.
+peja fiz tavo, Ceke wec kaza rite drapi hina!
+xeze huqi xum kika,
+kizi dem lora,
+ras nije havi groma Ceke boq yuma deqe kega,
+vov mor tavo frame vizbi Ceke gevi kim taqa.
+fed peja sut ciqi kim taqa frame wec kaza?
+wun fiz jopi siki Ceke gemi,
+havi ruga Ceke lozo?
+xeze hina zeb ciqo deqe bisa.
 
 ### 63
 
@@ -1854,21 +1849,21 @@ zige kima hina miz nijo kide zboka.
 > 是以聖人猶難之。
 > 故終無難。
 
-timi pimtima,
-goqi pimgoqa,
-vrexi pimvrexa.
-biga xibo gime viga tivo,
-xeti jena wime mixa.
-blani hara kide hin noqga,
-timi biga kide hin xiba.
-har goqa kide zboka mez rezi zige noqga,
-big goqa kide zboka mez rezi zige xiba,
-zige kima klaf tida nime neqa pim bigi,
-zige kima gin bizi hin biga.
-zib beja mez tiv pixo,
-vig noqga mez vig haro,
-zige kima klaf tida zot hari hina.
-zige kima nime neqa pim havi hara.
+bezi fizbeza,
+goqi fizlgoqa,
+testi fiztesta.
+biga smolo Ceke lixa cemo,
+roxi mifa wime taizga.
+blani harda deqe hint fiba,
+bezi biga deqe hint smola.
+hard goqa deqe bisa can rezi frame fiba,
+big goqa deqe bisa can rezi frame smola,
+xeze xuc peja rite neqa fiz bigi,
+xeze fend yidji hint biga.
+lait jufa can cem trasto,
+lix fiba can lix hardo,
+xeze xuc peja hix hardi hina.
+xeze rite neqa fiz havi harda.
 
 ### 64
 
@@ -1895,28 +1890,28 @@ zige kima nime neqa pim havi hara.
 > 以輔萬物之自然，
 > 而不敢為。
 
-hin reqa noqg hodo,
-hin pim vral rifta noqg blano,
-hin nasa noqg brako,
-hin xiba noqg skito.
-timi hina kide pim vral kesa,
-ruli hina kide pim vral deCa.
-jeplyis toka hidi zige wes beCa.
-zez marp kuda rezi zige plini ruga.
-mont jab woka sami zige saga dige fota.
-timi tida braki hina,
-hodi tida lomi hina.
-klaf tida pim timi, zige kima pim wixi.
-pim hodi, zige kima pim lomi.
-tida flori goqa, conkal kide nen bizi gime wixi hina.
-sem krali kide neqa zige sama,
-jide kimo, pim havi wix goqa.
-zige kima klaf tida weni pim wena,
-pim niji har gemi kina.
-stadi pim stada,
-gok higi nime con tida yiCi paka.
-nime halbi seflCima dige con kina,
-gime pim saxi timi.
+hint reqa fib hodo,
+hint fiz geb naza fib blano,
+hint taca fib Codo,
+hint smola fib ceqko.
+bezi hina deqe fiz geb kesa,
+ruli hina deqe fiz geb mesa.
+gomlpuq toka hifi frame cex Cikta.
+zez flor Catxa rezi frame fusi puma.
+mont pluc woka sami frame mixa nize pofa.
+bezi peja Codi hina,
+hodi peja lomi hina.
+xuc peja fiz bezi, xeze fiz figdi.
+fiz hodi, xeze fiz lomi.
+hexa gibi goqa, Cik deqe nen yidji Ceke figdi hina.
+sem Cidi deqe neqa frame sama,
+nije kimo, fiz havi figd goqa.
+xeze xuc peja nipi fiz nipa,
+fiz ciqi hard gemi kina.
+saxi fiz saxa,
+gok heji rite con peja pasi paka.
+rite gexi sefCasa nize con kina,
+Ceke fiz daCi bezi.
 
 ### 65
 
@@ -1933,18 +1928,18 @@ gime pim saxi timi.
 > 玄德深矣，遠矣，
 > 與物反矣，乃至于大順。
 
-kif tav timi taqa tida,
-pim yuzi hina nime mari tida,
-wul yuzi hina nime gebi tida.
-tida haro nime ruli,
-zige Cef cruj xega.
-ruli lona wime xega, zega dige lona.
-pim ruli lona wime xega, teva dige lona.
-nomi kim noca, lus mada.
-gin nomi mada,
-kugi kima ram mixa.
-ram mixa dapo kombo, fado kombo,
-gok tuni wime kina kombo, gime zige kima flimi big fola.
+fed tav bezi taqa peja,
+fiz yuzi hina rite mari hexa,
+tis yuzi hina rite fuli hexa.
+hexa hardo rite ruli,
+frame Ceft matx yeqka.
+ruli landa wime yeqka, cifa nize landa.
+fiz ruli landa wime yeqka, dusa nize landa.
+nomi kim noca, lez mada.
+fend nomi mada,
+kugi kima ram taizga.
+ram taizga xizo pojo, fado pojo,
+gok tuni wime kina pojo, Ceke xeze gofi big fola.
 
 ### 66
 
@@ -1965,22 +1960,22 @@ gok tuni wime kina kombo, gime zige kima flimi big fola.
 > 若肖，
 > 久矣其細也夫。
 
-kaza dige mimba gime tigza gin Ciso dige yemp valsa,
-hina zige Cef tav lizo nime hina,
-zige kima Cefa gin Ciso dige yemp valsa.
-zige kima jide klaf tida weni tiko nime tida,
-mez lizi sefa nime hina wime worda. jide weni kego nime tida,
-mez gok pudi sefa nime hina wime vasa.
-zige kima klaf tida stuli kide tuba gime tida pim hevo,
-stuli kide kega gime tida pim zijo,
-zige kima zboka glad paksi hina
-gime pim vevi.
-zige Cef pim kevi,
-zige kima pim med tida kide zboka gin kevi wime hina.
-con zboka vibi must taqa bigo, semo zige pim lika.
-nal zige bigo, zige kima semo zige pim lika.
-jide semo zige lika,
-hina xibo zige len kala kombo.
+kaza nize wigda Ceke moCa fend gigdo nize yemp maiba,
+hina frame Ceft tav depo rite hina,
+xeze Cefa fend gigdo nize yemp maiba.
+xeze nije xuc peja nipi bipo rite peja,
+can depi sefa rite hina wime vora. nije nipi kego rite peja,
+can gok yati sefa rite hina wime vasa.
+xeze xuc peja baCi deqe xida Ceke peja fiz beqko,
+baCi deqe kega Ceke peja fiz harmo,
+xeze bisa glad paxi hina
+Ceke fiz guli.
+frame Ceft fiz fafi,
+xeze fiz med peja deqe bisa fend fafi wime hina.
+con bisa jopi zab taqa bigo, semo frame fiz lika.
+hes frame bigo, xeze semo frame fiz lika.
+nije semo frame lika,
+hina smolo frame loq kala pojo.
 
 ### 67
 
@@ -1999,20 +1994,20 @@ hina xibo zige len kala kombo.
 > 以守則固，
 > 天將救之，以慈衛之。
 
-musta havi dem tresa, hodi gime tresi hina.
-kugi meda lova,
-kugi noca ziCa,
-kugi dema pim saxi kego dige zboka.
-lovo, zige kima gin brevo.
-ziCo, zige kima gin yiso.
-pim saxi kego dige zboka,
-zige kima gin bizi tul daza.
-xom dripi lova gime brevo,
-dripi ziCa gime yiso,
-dripi hin goka gime kego, yifi kombo!
-lova, jide kevi wime hina, gizi.
-jide kugzi wime hina, nago.
-xuma wul kluni hina, lafi hina wime lova.
+musa havi dem Carga, hodi Ceke Cargi hina.
+kugi meda xima,
+kugi noca liba,
+kugi dema fiz daCi kego nize bisa.
+ximo, xeze fend hegdo.
+libo, xeze fend puqo.
+fiz daCi kego nize bisa,
+xeze fend yidji tul txifa.
+xom drapi xima Ceke hegdo,
+drapi liba Ceke puqo,
+drapi hint goka Ceke kego, saifi pojo!
+xima, nije fafi wime hina, lofi.
+nije honi wime hina, rupo.
+xuma tis pidji hina, gardi hina wime xima.
 
 ### 68
 
@@ -2024,13 +2019,13 @@ xuma wul kluni hina, lafi hina wime lova.
 > 是謂用人之力，
 > 是謂配天古之極。
 
-tav jato tida pim suCo,
-tav kevi tida pim suxo,
-tav gizi leqa tida pim kevi,
-tav yuzi tida tida lizo nime hina.
-kugi kima mixa dige pim kevi,
-kugi kima fosa dige yuzi tida,
-kugi kima masi xuma gime miza dige kifa.
+tav slozo peja fiz xando,
+tav fafi peja fiz bafo,
+tav lofi jaiva peja fiz fafi,
+tav yuzi peja peja depo rite hina.
+kugi kima taizga nize fiz fafi,
+kugi kima fosa nize yuzi peja,
+kugi kima masi xuma Ceke zeba nize feda.
 
 ### 69
 
@@ -2046,17 +2041,17 @@ kugi kima masi xuma gime miza dige kifa.
 > 故抗兵相加，
 > 哀者勝矣。
 
-yuzi viCa havi worda,
-musta pim saxi peCo gime damo,
-pim saxi zev higi med kuca gime gok higi med fota.
-kugi kima woki pimwoka,
-brani pimjepa,
-kroli pimleqa,
-hodi pimviCa.
-pim med zija mor bigo zige zibi leqa,
-zibi leqa nen lomi must tresa.
-zige kima jide keja yombi tegkora,
-pasa gizi kombo.
+yuzi zoba havi vora,
+musa fiz daCi jazgo Ceke gesto,
+fiz daCi creg heji med muta Ceke gok heji med pofa.
+kugi kima woki fizwoka,
+naimi fizlgoma,
+dosi fizjaiva,
+hodi fizoba.
+fiz med harma mor bigo frame laiti jaiva,
+laiti jaiva nen lomi zab Carga.
+xeze nije keba poxi mepkora,
+sada lofi pojo.
 
 ### 70
 
@@ -2068,13 +2063,13 @@ pasa gizi kombo.
 > 知我者希，則我者貴，
 > 是以聖人被褐懷玉。
 
-must worda cin noqg nomo, cin noqg timo.
-pim med tida kide zboka gin nomi, pim med tida gin timi.
-worda havi ruta,
-goqa havi gudja.
-nal zige pim nomi, zige kima pim nomi musta.
-nomi musta tida tivo, flori musta tida nijo,
-zige kima klaf tida skozi pubz kloka gime hodi giCa.
+zab vora hen fib nomo, hen fib bezo.
+fiz med peja deqe bisa fend nomi, fiz med peja fend bezi.
+vora havi puja,
+goqa havi paiqa.
+hes frame fiz nomi, xeze fiz nomi musa.
+nomi musa peja cemo, gibi musa peja ciqo,
+xeze xuc peja ruxi raf kloca Ceke hodi groma.
 
 ### 71
 
@@ -2086,13 +2081,13 @@ zige kima klaf tida skozi pubz kloka gime hodi giCa.
 > 以其病病，
 > 是以不病。
 
-nomi pimnoma, tiko.
-pim nomi noma, yizo.
-nal zige yizi yiza,
-zige kima pim yizo.
-klaf tida pim yizo,
-zige Cef yizi yiza,
-zige kima pim yizo.
+nomi fiznoma, bipo.
+fiz nomi noma, soCo.
+hes frame soCi soCa,
+xeze fiz soCo.
+xuc peja fiz soCo,
+frame Ceft soCi soCa,
+xeze fiz soCo.
 
 ### 72
 
@@ -2105,14 +2100,14 @@ zige kima pim yizo.
 > 自愛，不自貴。
 > 故去彼取此。
 
-jide tida pim debi fosa,
-big fosa komi kombo. nex pim pemi Cef smiki paka,
-nex pim yixi Cef smiki kina.
-nal zige pim yixi,
-zige kima pim yixo.
-zige kima klaf tida nomi sefa, pim rifti sefa.
-lovi sefa, pim niji sefa.
-zige kima skimi Cata gime vogi kima.
+nije hexa fiz vifi fosa,
+big fosa komi pojo. dimp fiz presi Ceft sozi paka,
+dimp fiz kraxi Ceft sozi kina.
+hes frame fiz kraxi,
+xeze fiz kraxo.
+xeze xuc peja nomi sefa, fiz nazi sefa.
+ximi sefa, fiz ciqi sefa.
+xeze xendi Cata Ceke vogi kima.
 
 ### 73
 
@@ -2130,19 +2125,19 @@ zige kima skimi Cata gime vogi kima.
 > 天綱恢恢，
 > 疏而不漏。
 
-jide brevo kide saxi, fepo.
-jide brevo kide pim saxi, smiko.
-kim noca, lina halbi gime lina ziji.
-xuma jeni kina,
-wectida nomi hin kaza?
-zige kima klaf tida zot hari hina.
-taqa dige xuma,
-pim kevi gime tav gizi,
-pim vibi gime tav xeti,
-pim kugi gime sefa komi,
-kamo gime tav blani.
-xum weza yis yiso,
-saCo gime pim zeci.
+nije hegdo deqe daCi, joko.
+nije hegdo deqe fiz daCi, sozo.
+kim noca, zeca gexi Ceke zeca harmi.
+xuma mifi kina,
+wecpeja nomi hint kaza?
+xeze xuc peja hix hardi hina.
+taqa nize xuma,
+fiz fafi Ceke tav lofi,
+fiz jopi Ceke tav roxi,
+fiz kugi Ceke sefa komi,
+kamo Ceke tav blani.
+xum cuza puq puqo,
+luso Ceke fiz baizi.
 
 ### 74
 
@@ -2157,16 +2152,16 @@ saCo gime pim zeci.
 > 夫代大匠斲者，
 > 希有不傷手矣。
 
-jide tida pim debi daga,
-tasi hina wime daga zige wec kaza!
-jide meki tida conkal debi daga,
-gime musta gin hodi gime fepi timi sov kina tida,
-wectida saxi?
-conkal kesi ruli fepa tida, gime hina fepi.
-teqi ruli fepa tida gime fepi,
-kugi kima teqi big geka gime tici.
-teqi big geka gime tici tida,
-tivo pim bifi hana kombo.
+nije hexa fiz vifi miza,
+yogi hina wime miza frame wec kaza!
+nije meki hexa Cik vifi miza,
+Ceke musa fend hodi Ceke joki bezi paux kina peja,
+wecpeja daCi?
+Cik kesi ruli joka peja, Ceke hina joki.
+xeski ruli joka peja Ceke joki,
+kugi kima xeski big vuda Ceke peCi.
+xeski big vuda Ceke peCi peja,
+cemo fiz nuqi handa pojo.
 
 ### 75
 
@@ -2182,17 +2177,17 @@ tivo pim bifi hana kombo.
 > 夫惟無以生為者，
 > 是賢於貴生。
 
-tida xeCo,
-zige Cef soca bini cruj dava,
-zige kima xeCo.
-tida haro nime ruli,
-zige Cef soca havi tima,
-zige kima haro nime ruli.
-tida zibi daga,
-zige Cef skin siki vita,
-zige kima zibi daga.
-nal pim timi nime vita tida,
-kima mor tavo zige niji vita.
+hexa wibo,
+frame Ceft raca bexi matx baixa,
+xeze wibo.
+hexa hardo rite ruli,
+frame Ceft raca havi beza,
+xeze hardo rite ruli.
+hexa laiti miza,
+frame Ceft cik siki vita,
+xeze laiti miza.
+hes fiz bezi rite vita peja,
+kima mor tavo frame ciqi vita.
 
 ### 76
 
@@ -2207,16 +2202,16 @@ kima mor tavo zige niji vita.
 > 強大處下，
 > 柔弱處上。
 
-tida kide vita zofo gime hijo,
-kide daga haro gime jemo.
-con kina gime gara gime toka kide vita zofo gime naso,
-kide daga daro gime siqko.
-zige kima haro gime jemo kina foqa dige daga,
-zofo gime hijo kina foqa dige vita.
-zige kima jide keja jemo, pim gizi.
-jide toka jemo, tico.
-jema gime biga stuli kide saga,
-zofa gime hija stuli kide tuba.
+peja deqe vita safto Ceke fufo,
+deqe miza hardo Ceke stroqo.
+con kina Ceke grasa Ceke toka deqe vita safto Ceke taco,
+deqe miza taipo Ceke jauzgo.
+xeze hardo Ceke stroqo kina foqa nize miza,
+safto Ceke fufo kina foqa nize vita.
+xeze nije keba stroqo, fiz lofi.
+nije toka stroqo, peCo.
+stroqa Ceke biga baCi deqe mixa,
+safta Ceke fufa baCi deqe xida.
 
 ### 77
 
@@ -2236,21 +2231,21 @@ zofa gime hija stuli kide tuba.
 > 功成而不處，
 > 其不欲見賢耶。
 
-taqa dige xuma,
-dez hina semo zige druli Cepa!
-tika, pemi hina dota.
-liza, faci hina.
+taqa nize xuma,
+wun hina semo frame tami fuCa!
+bipa, presi hina dota.
+depa, lifti hina.
 havi mora kina, lomi hina.
-pim trexa kina, fezi nime hina.
-taqa dige xuma,
-lomi mora gime fezi nime pim trexa.
-taqa dige tida pim semo,
-lomi pim trexa nime keci mora.
-wectida gin havi mora nime keci zboka?
-nal havi taqa tida.
-zige kima klaf tida timi gime pim raji,
-goqa kombo gime pim stuli kide hina,
-dez hina pim weni rifti blara.
+fiz sixa kina, Civi rite hina.
+taqa nize xuma,
+lomi mora Ceke Civi rite fiz sixa.
+taqa nize peja fiz semo,
+lomi fiz sixa rite duji mora.
+wecpeja fend havi mora rite duji bisa?
+hes havi taqa peja.
+xeze xuc peja bezi Ceke fiz lini,
+goqa pojo Ceke fiz baCi deqe hina,
+wun hina fiz nipi nazi beja.
 
 ### 78
 
@@ -2267,18 +2262,18 @@ dez hina pim weni rifti blara.
 > 受國之不祥，是謂天下王。
 > 正言若反。
 
-zofa gime hija kide zboka
-pim med kina moro zige wota,
-gime pim med kina gin gizi hina kide gezi hara gime jema,
-pim havi kina nime teqi hina.
-hija gizi jema,
-zofa gizi hara,
-pim med tida kide zboka pim nomi,
-pim med tida gin timi.
-zige kima klaf tida vibi,
-vogi darda dige lona, kugi kima gudja dige lona.
-vogi vat hena dige lona, kugi kima Cisa dige zboka.
-pob worda semo zige xuva.
+safta Ceke fufa deqe bisa
+fiz med kina moro frame wota,
+Ceke fiz med kina fend lofi hina deqe xoqi harda Ceke stroqa,
+fiz havi kina rite xeski hina.
+fufa lofi stroqa,
+safta lofi harda,
+fiz med peja deqe bisa fiz nomi,
+fiz med peja fend bezi.
+xeze xuc peja jopi,
+vogi yeja nize landa, kugi kima paiqa nize landa.
+vogi vat saina nize landa, kugi kima gigda nize bisa.
+pob vora semo frame xuva.
 
 ### 79
 
@@ -2292,15 +2287,15 @@ pob worda semo zige xuva.
 > 天道無親，
 > 常與善人。
 
-jide nitsi big jena,
-mez kesi mor jena,
-dez gin tavo?
-zige kima klaf tida hodi bep hula dige texa,
-gime pim pemi tida.
-havi mixa tida ruli texa,
-pim havi mixa tida ruli dava.
-taqa dige xuma pim havi losa,
-conkal wime tav tida.
+nije pikti big mifa,
+can kesi mor mifa,
+wun fend tavo?
+xeze xuc peja hodi bep hafa nize caga,
+Ceke fiz presi peja.
+havi taizga peja ruli caga,
+fiz havi taizga peja ruli baixa.
+taqa nize xuma fiz havi losa,
+Cik wime tav peja.
 
 ### 80
 
@@ -2320,21 +2315,21 @@ conkal wime tav tida.
 > 雞犬之聲相聞，
 > 民至老死不相往來。
 
-xib lona gime tiv tida,
-meki havi tula dige vop yemp tida gime pim yuzi,
-meki tida hevi daga gime pim fad muvi.
-vons jide havi yafta gime miCa,
-pim havi vrodi hina paka.
-vons jide havi Cixa gime viCa,
-pim havi rifti hina paka.
-meki tida gok pezi laqa gime yuzi hina.
-xici Cef feda,
-batsi Cef kloka,
-reqi Cef homa,
-gladi Cef beqa.
-nen lona visi tegkora,
-suma dige cesa gime roba yidi tegkora,
-tida flimi kifa gime daga gime pim vesti tegkora.
+smol landa Ceke cem hexa,
+meki havi tula nize vop yemp peja Ceke fiz yuzi,
+meki hexa beqki miza Ceke fiz fad muvi.
+ras nije havi xota Ceke yofa,
+fiz havi nuxi hina paka.
+ras nije havi saba Ceke zoba,
+fiz havi nazi hina paka.
+meki hexa gok wusi ropa Ceke yuzi hina.
+pudi Ceft fuda,
+haji Ceft kloca,
+reqi Ceft homa,
+gladi Ceft golva.
+nen landa visi mepkora,
+suma nize casa Ceke doga fugi mepkora,
+hexa gofi feda Ceke miza Ceke fiz cifti mepkora.
 
 ### 81
 
@@ -2352,16 +2347,16 @@ tida flimi kifa gime daga gime pim vesti tegkora.
 > 聖人之道，
 > 為而不爭。
 
-toc worda pim batso,
-bats worda pim toco.
-tav tida pim jesi,
-jesi tida pim tavo.
-nomi tida pim yiso,
-yis tida pim nomi.
-klaf tida pim plini.
-komb timi nime tida, gime sefa mor havi.
-komb gevi nime tida, gime sefa mor crujo.
-taqa dige xuma,
-halbi gime pim ziji.
-taqa dige klaf tida,
-timi gime pim kevi.
+toc vora fiz hajo,
+haj vora fiz toco.
+tav peja fiz yusi,
+yusi peja fiz tavo.
+nomi peja fiz puqo,
+puq peja fiz nomi.
+xuc peja fiz fusi.
+poj bezi rite peja, Ceke sefa mor havi.
+poj gevi rite peja, Ceke sefa mor matxo.
+taqa nize xuma,
+gexi Ceke fiz harmi.
+taqa nize xuc peja,
+bezi Ceke fiz fafi.

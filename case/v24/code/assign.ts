@@ -79,11 +79,19 @@ for (const line of readFileSync(resolve(OUT, 'choose-seated.csv'), 'utf-8')
   }
 }
 
-/** The concepts already promised a short form, which is a fixed list. */
-for (const line of readFileSync(resolve(TERM, 'word-short.csv'), 'utf-8')
+/**
+ * The concepts already promised a short form, which is a fixed list.
+ *
+ * **READ THE `.txt`, NEVER THE `.csv`.** Both hold the same 648
+ * concepts and only the `.txt` carries the `said as X` column, which
+ * the pin loop below reads. Reading the concepts from one file and
+ * their intended forms from another is two sources of truth for one
+ * decision, and the `.csv` is the half nobody edits.
+ */
+for (const line of readFileSync(resolve(TERM, 'word-short.txt'), 'utf-8')
   .split('\n')
   .slice(1)) {
-  const one = (line.split(',')[0] ?? '').trim().toLowerCase()
+  const one = (line.trim().split(/\s{2,}/)[0] ?? '').trim().toLowerCase()
   const got = note(one)
   if (got) got.short = true
 }
@@ -101,6 +109,86 @@ for (const line of readFileSync(resolve(TERM, 'pinned.csv'), 'utf-8')
     pinned.set(concept, form)
     note(concept)
   }
+}
+
+/**
+ * **`word-short.txt` CARRIES INTENDED FORMS AND NOTHING WAS READING
+ * THEM.**
+ *
+ * Its `why` column is not only prose. For 24 words it names the form
+ * outright:
+ *
+ * ```text
+ * light   said   pair.weight   said as lait
+ * beat    said                 said as bit
+ * sight   said                 said as sait
+ * ```
+ *
+ * Only 7 of those 24 were being honoured, and the other 17 got
+ * whatever the load ranking handed out: `beat` came out `niz`,
+ * `sight` came out `tef`, `push` came out `pax` against a stated
+ * `pex`. The user has corrected several of these by hand more than
+ * once, which is what a decision recorded in a file nobody reads
+ * looks like from the outside.
+ *
+ * **A stated form is a pin.** It is read here, beside the pins, and
+ * seated the same way.
+ */
+/**
+ * **A FORM MAY BE CLAIMED ONCE, AND `pinned.csv` CLAIMS IT FIRST.**
+ *
+ * Guarding only against the same CONCEPT being pinned twice is not
+ * enough, because the collision that actually happened was two
+ * different concepts asking for one form out of two different hand
+ * written files:
+ *
+ * ```text
+ * pinned.csv       miss,min,111
+ * word-short.txt   mean   said   said as min
+ * ```
+ *
+ * Both were seated, so `mean` and `miss` came out of `form.csv` on
+ * the same root: two of the 4,096 coordinates landing on one point,
+ * which is the exact thing the base rule forbids. Nothing reported
+ * it, because every check counted rows and the row counts were right.
+ *
+ * `pinned.csv` is the file that wins a disagreement, so the `said as`
+ * note is refused and NAMED rather than dropped in silence.
+ */
+const claimed = new Map<string, string>()
+for (const [concept, form] of pinned) claimed.set(form, concept)
+
+let saidAs = 0
+const refused: Array<[string, string, string]> = []
+for (const line of readFileSync(resolve(TERM, 'word-short.txt'), 'utf-8')
+  .split('\n')
+  .slice(1)) {
+  const got = line.match(/said as ([A-Za-z]+)/)
+  if (!got) continue
+  const concept = (line.trim().split(/\s{2,}/)[0] ?? '').trim().toLowerCase()
+  if (!concept || pinned.has(concept)) continue
+  const form = (got[1] ?? '').trim()
+  const owner = claimed.get(form)
+  if (owner && owner !== concept) {
+    refused.push([concept, form, owner])
+    continue
+  }
+  pinned.set(concept, form)
+  claimed.set(form, concept)
+  note(concept)
+  saidAs++
+}
+
+if (refused.length) {
+  process.stdout.write(
+    `\n  A SAID-AS FORM ALREADY BELONGS TO A PIN, so it is refused\n` +
+      refused
+        .map(
+          ([a, b, c]) =>
+            `    ${a.padEnd(16)}wants ${b.padEnd(8)}held by ${c} in pinned.csv\n`,
+        )
+        .join(''),
+  )
 }
 
 // ─── How every concept is said in English ──────────────

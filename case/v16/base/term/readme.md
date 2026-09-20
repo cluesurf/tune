@@ -13,7 +13,6 @@ What the 4,096 forms MEAN. The forms themselves are in
 | `candidate.base.csv` | 1,208 | concepts needing a root of their own |
 | `candidate.derived.csv` | 597 | a base plus an ending or another word |
 | `candidate.compound.csv` | 34 | two bases joined into one word |
-| `book.csv` | 200 | **the roots the Tao Te Ching needed that none of the above had**, and the form each was given |
 
 Built from the 1,000 sentences in `base/v0/sentence/full.csv` and the
 rabbit story in `base/v16/story/rabbit.md`. 592 take a `CVC` and 616 a
@@ -23,22 +22,12 @@ The rendered texts are `base/v16/sentence/full.csv` and
 `base/v16/story/rabbit.tune.md`, both **glosses**: English word order
 with Tune words in it.
 
-**`case/v24/base/text/tao-te-ching.tune.md` is not a gloss.** It is
-the eighty one chapters in Tune grammar and v16 forms, rendered by
-`pnpm --dir deck/tune v16:book` from `tao-te-ching.tune.en.md` beside
-it, which is the same text in Tune grammar with English roots and is
-where the notes are. The texts live under v24, the current case, and
-the forms are v16's because v24 has no lexicon yet. The book needed 552 distinct roots, 352 of which the files
-above already had. The other 200 were drawn from the free pool, most
-used first, round robin over the opening sound, and written to
-`book.csv` so a second run gives every one the same form. Every one of
-the 5,644 words written reads back through the seam parser as exactly
-one root or compound.
-
-**The free pool is the 4,096 and not `spare.txt`.** The first run drew
-from `spare.txt` and 197 of its words could not be read back, because
-that file holds forms from the wider usable pool and the seam parser
-knows only the roots the language has.
+**These are not the language's words.** The Tao Te Ching was rendered
+from `candidate.base.csv` for an hour on 2026-09-20 and came out with
+`zboka` for world and `batsa` for beauty, forms that were dealt by
+frequency and never chosen. The lexicon is `case/v24/base/term/` and
+the renderer is `pnpm --dir deck/tune v24:book`. A `book.csv` this
+directory may still hold is that hour's output and reads nothing.
 
 **Read `pin-placed.csv`, never the `form` column of `pin.csv`.** Seven
 pins move off a clash with an earlier pin, so `pin.csv` records what

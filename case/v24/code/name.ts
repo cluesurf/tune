@@ -32,8 +32,14 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { parse } from 'csv-parse/sync'
 
-import { conceptsOf, isEnding, isGrammar, isNameWord } from './gloss'
-import { everyRoot, write, type Root } from './rule'
+import {
+  cleanWord,
+  conceptsOf,
+  isEnding,
+  isGrammar,
+  isNameWord,
+} from './gloss'
+import { everyRoot, kindOf, read, write, type Root } from './rule'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TERM = resolve(here, '../base/term')
@@ -60,6 +66,45 @@ for (const line of readFileSync(resolve(TERM, 'form.csv'), 'utf-8')
 /** Every root as `rule.ts` knows it, so the seam rules can be asked. */
 const rootOf = new Map<string, Root>()
 for (const one of everyRoot()) rootOf.set(one.text, one)
+
+/**
+ * **THE CUT CLAUSE, WHICH THE SPECIES NAMES WERE SPELLED WITHOUT.**
+ *
+ * `write` takes the doubt rule as an argument and DEFAULTS IT TO
+ * `() => false`, and every call here passed nothing, so the clause
+ * never fired once across four million names. `rule.test.ts` calls
+ * spelling without it "a language nobody uses", and that is what was
+ * being written: `fal + kaug` is `falkaug` bare, which `falk + kaug`
+ * also spells, and the clause is what puts a liquid in to part them.
+ *
+ * **The pool to read against is the SEATED forms, not every legal
+ * root.** A reader only ever mistakes a name for another real word,
+ * and `everyRoot()` is 15,361 shapes of which 4,096 mean anything, so
+ * reading against all of them would report doubt that nobody could
+ * actually have.
+ *
+ * Memoised, because the same genus root meets the same epithet root
+ * over and over and each miss costs a two deep read.
+ */
+const seated: Array<Root> = []
+for (const form of new Set(formOf.values())) {
+  const got = rootOf.get(form)
+  if (got) seated.push(got)
+}
+
+const doubted = new Map<string, boolean>()
+const doubt = (a: Root, b: Root): boolean => {
+  const key = `${a.text}|${b.text}`
+  const had = doubted.get(key)
+  if (had !== undefined) return had
+  // Seeded false first, so the read below cannot recurse into itself.
+  doubted.set(key, false)
+  const got =
+    kindOf(a, b) === '' &&
+    read(a.text + b.text, seated, () => false, 2).length > 1
+  doubted.set(key, got)
+  return got
+}
 
 /**
  * THE JUDGEMENTS, APPLIED WHERE THEY ACTUALLY NAME THINGS.
@@ -385,14 +430,34 @@ function describedAlike(word: string): string | undefined {
   if (!AGREES.test(word)) return undefined
   const stem = word.replace(AGREES, '')
   if (stem.length < 3) return undefined
-  for (const end of [
-    'ensis', 'ense', 'ensium',
-    'ica', 'icum', 'icus',
-    'ana', 'anum', 'anus',
-    'iana', 'ianum', 'ianus',
-  ]) {
-    const said = described.get(`${stem}${end}`)
-    if (said) return said
+
+  /**
+   * **THE STEM'S OWN LAST VOWEL IS NOT PART OF THE PLACE EITHER.**
+   *
+   * One place arrives with the joining vowel kept or dropped as well
+   * as with the gender changed: `luzonense` beside `luzoniensis`,
+   * `lhasaensis` beside `lhasanum`. Stripping only the ending leaves
+   * `luzon` against `luzoni` and `lhasa` against `lhas`, which do not
+   * meet, so each spelling wanted its own hand-written row for the
+   * sake of one letter.
+   *
+   * So the stem is tried as written, without a final vowel, and with
+   * each of the three that a Latinised place name takes.
+   */
+  const stems = [stem]
+  if (/[aeiou]$/.test(stem) && stem.length > 3) stems.push(stem.slice(0, -1))
+  else for (const one of ['a', 'i', 'e']) stems.push(`${stem}${one}`)
+
+  for (const base of stems) {
+    for (const end of [
+      'ensis', 'ense', 'ensium',
+      'ica', 'icum', 'icus',
+      'ana', 'anum', 'anus',
+      'iana', 'ianum', 'ianus',
+    ]) {
+      const said = described.get(`${base}${end}`)
+      if (said) return said
+    }
   }
   return undefined
 }
@@ -436,7 +501,9 @@ function say(word: string): Made | undefined {
     if (isEnding(one)) continue
     // A gloss part may itself be two words, `holm oak`, so each word
     // is asked for separately and the name keeps their order.
-    for (const said of one.split(/[ ,\-/]+/).filter(Boolean)) {
+    for (const raw of one.split(/[ ,\-/]+/).filter(Boolean)) {
+      const said = cleanWord(raw)
+      if (!said) continue
       const word = said.toLowerCase()
       // Counted whether or not it resolves. This is the concept's
       // VALUE, and it must not change when the concept gets a seat.
@@ -467,7 +534,7 @@ function say(word: string): Made | undefined {
     }
   }
   if (open.length || !roots.length) return { tune: '', parts, open }
-  return { tune: write(roots), parts, open: [] }
+  return { tune: write(roots, doubt), parts, open: [] }
 }
 
 // ─── Walk the species ──────────────────────────────────
@@ -619,7 +686,9 @@ function sayGloss(gloss: Array<string>): Made {
   const open: Array<string> = []
   for (const one of gloss) {
     if (isEnding(one)) continue
-    for (const said of one.split(/[ ,\-/]+/).filter(Boolean)) {
+    for (const raw of one.split(/[ ,\-/]+/).filter(Boolean)) {
+      const said = cleanWord(raw)
+      if (!said) continue
       const word = said.toLowerCase()
       if (isGrammar(word) || isNameWord(said) || notAConcept.has(word)) {
         continue
@@ -631,7 +700,7 @@ function sayGloss(gloss: Array<string>): Made {
     }
   }
   if (open.length || !roots.length) return { tune: '', parts: gloss, open }
-  return { tune: write(roots), parts: gloss, open: [] }
+  return { tune: write(roots, doubt), parts: gloss, open: [] }
 }
 
 /** Say a Chinese reading in Tune, or report what stopped it. */
@@ -711,7 +780,7 @@ function sayCommon(latin: string): Made | undefined {
     else open.push(word)
   }
   if (open.length || !roots.length) return { tune: '', parts: had.gloss, open }
-  return { tune: write(roots), parts: had.gloss, open: [] }
+  return { tune: write(roots, doubt), parts: had.gloss, open: [] }
 }
 
 const already = new Set<string>()
@@ -740,12 +809,89 @@ let hadEng = 0
 let hadHan = 0
 const missing = new Map<string, number>()
 
-for (const one of parse(readFileSync(resolve(PLANTS, FILE)), {
-  columns: true,
-  skip_empty_lines: true,
-  relax_quotes: true,
-  relax_column_count: true,
-}) as Array<Record<string, string>>) {
+/**
+ * **THE WHOLE TAXONOMY, NOT ONE FLORA.**
+ *
+ * This walked `cn-sp2000` and nothing else, so 39,640 Chinese plants
+ * were named and the other four and a quarter million species were
+ * never asked about. Every coverage figure this project reported was
+ * a share of that one file.
+ *
+ * ```text
+ * cn-sp2000 scientific_names      39,640   Chinese plants
+ * col species-id.tsv           4,331,384   every accepted species
+ * ```
+ *
+ * The reading machinery was never the limit. `reading.csv` is built
+ * from a breakdown covering 1,039,419 forms across the whole
+ * Catalogue of Life, and the genus and epithet split works on any
+ * binomial. Only the SOURCE LIST was narrow.
+ *
+ * `--all` walks the full list. The Chinese file is still read, for
+ * the Chinese and folk names, which only exist for its own species.
+ * Outside that flora the Latin and the English common name are the
+ * witnesses left, which is why the English corpus matters far more
+ * here than it did before.
+ */
+const ALL = process.argv.includes('--all')
+
+function everySpecies(): Array<Record<string, string>> {
+  if (!ALL) {
+    return parse(readFileSync(resolve(PLANTS, FILE)), {
+      columns: true,
+      skip_empty_lines: true,
+      relax_quotes: true,
+      relax_column_count: true,
+    }) as Array<Record<string, string>>
+  }
+
+  const path = process.env.COL_TAXON ?? '/tmp/col/species-id.tsv'
+  if (!existsSync(path)) {
+    process.stdout.write(
+      `no species list at ${path}\n` +
+        `extract it from NameUsage.tsv, or set COL_TAXON\n`,
+    )
+    process.exit(1)
+  }
+
+  /**
+   * The Chinese rows keep their own columns, since they carry the
+   * Chinese name and the identifier. Everything else arrives as a
+   * bare id and binomial, so it is shaped to match.
+   */
+  const out = parse(readFileSync(resolve(PLANTS, FILE)), {
+    columns: true,
+    skip_empty_lines: true,
+    relax_quotes: true,
+    relax_column_count: true,
+  }) as Array<Record<string, string>>
+
+  const had = new Set(
+    out.map(one =>
+      `${(one.genus ?? '').trim()} ${(one.species ?? '').trim()}`
+        .trim()
+        .toLowerCase(),
+    ),
+  )
+
+  for (const line of readFileSync(path, 'utf-8').split('\n')) {
+    const at = line.indexOf('\t')
+    if (at < 1) continue
+    const latin = line.slice(at + 1).trim()
+    const cut = latin.split(/\s+/)
+    if (cut.length !== 2) continue
+    if (had.has(latin.toLowerCase())) continue
+    out.push({
+      name_code: line.slice(0, at),
+      genus: cut[0] as string,
+      species: cut[1] as string,
+      is_accepted_name: '1',
+    })
+  }
+  return out
+}
+
+for (const one of everySpecies()) {
   if (one.is_accepted_name !== '1') continue
   const genus = (one.genus ?? '').trim()
   const species = (one.species ?? '').trim()

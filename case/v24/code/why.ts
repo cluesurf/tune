@@ -125,7 +125,21 @@ function canSay(word: string, depth = 0): boolean {
  * So the two are counted apart, and a check no longer asserts a
  * ceiling it has not measured.
  */
-const OF_A_PLACE = /(ensis|ense|ensium|ica|icum|icus|ana|anum|anus)$/
+/**
+ * **`-ana` IS AN HONORIFIC FAR MORE OFTEN THAN A PLACE.**
+ *
+ * It was counted as a place here, and the bucket filled with
+ * `hemsleyana`, `zhengyiana`, `wuana`, `zollingerianus`, `hampeana`
+ * and `junghuhniana`, every one of them a botanist. That overstated
+ * the work remaining and understated the part that is shut, which is
+ * the flattering direction and therefore the one to distrust.
+ *
+ * `formosana` and `japonica` really are places, and they are already
+ * described, so they never reach this test. Where the ending alone
+ * cannot decide, taxonomy's own habit is the better guide: a Latin
+ * adjective built on a personal name honours a person.
+ */
+const OF_A_PLACE = /(ensis|ense|ensium|ica|icum|icus)$/
 /**
  * `-ae` alone, not just `-iae`. `louae`, `akiyamae`, `tagawae`,
  * `balansae`, `soae` are all the genitive of somebody's name, and
@@ -133,7 +147,7 @@ const OF_A_PLACE = /(ensis|ense|ensium|ica|icum|icus|ana|anum|anus)$/
  * where they read as work that had not been tried. They had been
  * tried. They are people.
  */
-const OF_A_PERSON = /(ii|iae|ae|iorum|i)$/
+const OF_A_PERSON = /(ii|iae|ae|iorum|i|ana|anum|anus|iana|ianum|ianus)$/
 
 type Why =
   | 'epithet is a place'
@@ -159,8 +173,30 @@ for (const one of read(resolve(TERM, 'species.csv'))) {
 
   const epithet = latin.split(/\s+/)[1]?.toLowerCase() ?? ''
 
+  /**
+   * **AN OPEN CONCEPT IS A CONCEPT PROBLEM, WHATEVER THE EPITHET
+   * LOOKS LIKE.**
+   *
+   * `Aganope dinghuensis` has a hand description, `cauldron + lake`,
+   * and `cauldron` holds no root. The epithet read perfectly and the
+   * species is still unnamed. Asking the epithet's SHAPE first filed
+   * it under `epithet is a place`, where it read as work that needed
+   * a place described, when the place was described and the word was
+   * the problem.
+   *
+   * So what actually failed is asked before what it looks like.
+   */
+  const open = (one.open ?? '').trim()
+
   let at: Why
-  if (!kind) at = 'genus unread'
+  if (open) {
+    at = 'concept unseated'
+    /** `open` already names exactly what had no root. Count it. */
+    for (const word of open.split(/[\s+,]+/).filter(Boolean)) {
+      const flat = word.toLowerCase()
+      missing.set(flat, (missing.get(flat) ?? 0) + 1)
+    }
+  } else if (!kind) at = 'genus unread'
   else if (!head) {
     at = OF_A_PLACE.test(epithet)
       ? 'epithet is a place'

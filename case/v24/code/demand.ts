@@ -117,12 +117,28 @@ export function loadDemand(base: string): Loaded {
       skip_empty_lines: true,
       relax_quotes: true,
     }) as Array<Record<string, string>>) {
-      const term = (one.term ?? '').trim().toLowerCase()
+      /**
+       * **THE CASE IS TESTED BEFORE IT IS THROWN AWAY.**
+       *
+       * `isName` decides partly on capitalisation, because every
+       * source writes a proper name with a capital and writes nothing
+       * else with one. Lowercasing the term first destroyed the only
+       * evidence, so `Thomas`, `Thai`, `Thane`, `Corinth`,
+       * `Elizabeth`, `Goliath` and `Tangier` all walked into the base
+       * set, several of them scoring high enough to take a seat that
+       * a real concept wanted.
+       *
+       * This exact fix was made in `name.ts` and never carried here,
+       * which is the project's own recurring failure: a judgement has
+       * to reach EVERY stage that could use it or it is just a file.
+       */
       const said = (one.gloss ?? '').trim()
+      const raw = (one.term ?? '').trim()
+      const term = raw.toLowerCase()
       if (!term || one.decided_by === 'no term') continue
       const uses = real.get(said) ?? 0
       if (!uses) continue
-      if (isGrammar(term) || isName(term, said)) continue
+      if (isGrammar(term) || isName(raw, said)) continue
       wants.push({ term, gloss: said, uses, domain: field.name })
     }
   }

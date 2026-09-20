@@ -619,7 +619,7 @@ it entries for `and`, `not` and `what`.
 
 **The reference is clear and the page was not reading it.** The
 equative is `John-a same tall-o from-e Mary-a`, as tall as Mary: `same`
-modifies and the standard sits on `from`. There are seven relations,
+modifies and the standard sits on `from`. There are six relations,
 they are Pāṇini's, and `same` is not one of them.
 
 ```text

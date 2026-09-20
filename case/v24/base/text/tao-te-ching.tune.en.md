@@ -7,9 +7,9 @@ what is being tested here is the STRUCTURE.
 Written 2026-09-20 against `note/tune/grammar/reference.md`, from the
 Classical Chinese in `tao-te-ching.zh.md`, with the Wikisource English
 in `tao-te-ching.en.md` for sense. **`tao-te-ching.tune.md` is this
-text in v16 forms**, rendered from this file by
-`pnpm --dir deck/tune v16:book`: the grammar is decided here and the
-sounds are looked up there. **The Chinese is the source**,
+text in v24 forms**, rendered from this file by
+`pnpm --dir deck/tune v24:book`: the grammar is decided here and the
+sounds are looked up in `../term/`. **The Chinese is the source**,
 because Classical Chinese is the one natural language built the way
 Tune is built: isolating, one syllable a word, no inflection, a small
 closed set of particles doing all the grammar. Every device it uses
@@ -34,7 +34,7 @@ without re-deriving them:
 | 之 | `of-e`, or a bare modifier | the genitive |
 | 其 | `its` `their` | the possessive |
 | 而 | `and-e` | and, yet, but |
-| 故 是以 | `from-e this-a` | therefore, and 是以 says it the same way, by this |
+| 故 是以 乃 | `so-e` | therefore. A word, since this book: see note two |
 | 夫唯 | `only from-e` | only because |
 | 者 | a relative clause on `person-a` or `thing-a` | the one who |
 | 所 | a relative clause with the gap in the object | what is V-ed |
@@ -80,8 +80,7 @@ can say-i way-a not forever way-a.
 can name-i name-a not forever name-a.
 not+name-a start-a of-e sky-a and-e earth-a.
 have+name-a mother-a of-e all thing-a.
-from-e this-a,
-forever not want-i, to-e see-i its wonder-a.
+so-e forever not want-i, to-e see-i its wonder-a.
 forever want-i, to-e see-i its edge-a.
 this two-a come-i from-e same place-a and-e have-i other name-a.
 call-i all two-a dark-a.
@@ -97,7 +96,8 @@ identify. 非 is not a copula and neither is anything in Tune.
 caller is unsaid, and the two objects after it are the thing and its
 name. See note one.
 
-**`from-e this-a` is 故.** See note two.
+**`so-e` is 故**, therefore, and it opens what follows from what came
+before. See note two.
 
 ### 2
 
@@ -123,24 +123,22 @@ name. See note one.
 
 ```text
 all world-a know-i beauty-a beauty-o,
-from-e this-a ugly-a exist-i.
+so-e ugly-a exist-i.
 all know-i good-a good-o,
-from-e this-a not good-a exist-i.
-from-e this-a
-exist-a and-e not+exist-a make-i each+other-a,
+so-e not good-a exist-i.
+so-e exist-a and-e not+exist-a make-i each+other-a,
 hard-a and-e easy-a form-i each+other-a,
 long-a and-e short-a shape-i each+other-a,
 high-a and-e low-a lean-i to-e each+other-a,
 tone-a and-e voice-a join-i each+other-a,
 front-a and-e back-a follow-i each+other-a.
-from-e this-a
-wise person-a do-i work-a of-e not+do-a,
+so-e wise person-a do-i work-a of-e not+do-a,
 do-i teach-a of-e not say-i,
 all thing-a rise-i and-e it-a not refuse-i,
 make-i and-e not have-i,
 do-i and-e not lean-i,
 work-a complete-o and-e not stay-i at-e it-a.
-only from-e not stay-i, from-e this-a it-a not go-i.
+only from-e not stay-i, so-e it-a not go-i.
 ```
 
 **`know-i beauty-a beauty-o` is 知美之爲美.** A complement clause,
@@ -174,7 +172,7 @@ not value-i hard get-i thing-a,
 make-i people-a not steal-i.
 not show-i can want-i thing-a,
 make-i people heart-a not mess-o.
-from-e this-a wise person-a rule-i,
+so-e wise person-a rule-i,
 empty-i their heart-a,
 fill-i their belly-a,
 weak-i their will-a,
@@ -293,13 +291,13 @@ same continue exist-i from-e thread-a, use-i it-a and-e it-a not tire-o.
 sky-a long-o and-e earth-a last-o.
 cause-a of-e sky-a and-e earth-a can long-o and-e last-o,
 it-a from-e their not live-i to-e self-a,
-from-e this-a they-a can long live-i.
-from-e this-a wise person-a back put-i their body-a
+so-e they-a can long live-i.
+so-e wise person-a back put-i their body-a
 and-e their body-a front-o,
 out put-i their body-a
 and-e their body-a exist-i.
 question not from-e their not have-i self-a?
-from-e this-a they-a can achieve-i their self-a.
+so-e they-a can achieve-i their self-a.
 ```
 
 **`cause-a of-e sky-a and-e earth-a can long-o and-e last-o` is
@@ -336,7 +334,7 @@ verb, and the checker said so. Every 成 and 果 on the page is
 most good-a same-o from-e water-a.
 water-a good help-i all thing-a and-e still-o,
 stay-i at-e all person-a hate-i place-a,
-from-e this-a it-a close-o to-e way-a.
+so-e it-a close-o to-e way-a.
 stay-i good at-e ground-a,
 heart-a good at-e deep-a,
 give-i good at-e kind-a,
@@ -345,7 +343,7 @@ rule-i good at-e order-a,
 work-i good at-e able-a,
 move-i good at-e time-a.
 only from-e not fight-i,
-from-e this-a not blame-a exist-i.
+so-e not blame-a exist-i.
 ```
 
 **`all person-a hate-i place-a` is 眾人之所惡.** The place everybody
@@ -441,7 +439,7 @@ shape-i clay-a to-e make-i pot-a,
 at-e its not+exist-a, use-a of-e pot-a exist-i.
 cut-i door-a and-e window-a to-e make-i room-a,
 at-e its not+exist-a, use-a of-e room-a exist-i.
-from-e this-a exist-a give-i gain-a,
+so-e exist-a give-i gain-a,
 not+exist-a give-i use-a.
 ```
 
@@ -465,8 +463,8 @@ five tone-a make-i person ear-a deaf-o,
 five taste-a make-i person mouth-a numb-o,
 ride-i and-e hunt-i make-i person heart-a wild-o,
 hard get-i thing-a make-i person act-a wrong-o.
-from-e this-a wise person-a work-i to-e belly-a and-e not to-e eye-a,
-from-e this-a leave-i that-a and-e take-i this-a.
+so-e wise person-a work-i to-e belly-a and-e not to-e eye-a,
+so-e leave-i that-a and-e take-i this-a.
 ```
 
 **`leave-i that-a and-e take-i this-a` is 去彼取此.** The
@@ -499,7 +497,7 @@ call-i this-a favour-a and-e shame-a same-o from-e fear-a.
 what-a mean-i value-i big trouble-a same-o from-e body-a?
 I-a have-i big trouble-a from-e I-a have-i body-a.
 if-e I-a not have-i body-a, I-a have-i what trouble-a?
-from-e this-a value-i world-a same-o from-e body-a,
+so-e value-i world-a same-o from-e body-a,
 if-e this-o, can give-i world-a to-e it-a.
 love-i world-a same-o from-e body-a,
 if-e this-o, can trust-i world-a to-e it-a.
@@ -530,7 +528,7 @@ quotation marks and the extent rule takes the rest as the complement.
 look-i at-e it-a and-e not see-i, call-i it-a flat-a.
 listen-i to-e it-a and-e not hear-i, call-i it-a thin-a.
 grasp-i it-a and-e not get-i, call-i it-a small-a.
-this three-a not can ask-i to-e end-a, from-e this-a mix-i and-e one-o.
+this three-a not can ask-i to-e end-a, so-e mix-i and-e one-o.
 its top-a not bright-o, its under-a not dark-o,
 continue continue-o and-e not can name-i, back go-i to-e not+thing-a,
 call-i this-a shape-a of-e not+shape-a, form-a of-e not+thing-a,
@@ -564,7 +562,7 @@ the checker passes and the grammar has not ruled on. See note four.
 ```text
 old good do-i way-a person-a, small wonder-o,
 dark reach-o, deep-o and-e not can know-o.
-only from-e not can know-o, from-e this-a force-i shape-a to-e it-a.
+only from-e not can know-o, so-e force-i shape-a to-e it-a.
 slow-o, same-o from-e cross-i river-a at-e winter-a.
 wary-o, same-o from-e fear-i four neighbour-a.
 grave-o, same-o from-e guest-a.
@@ -575,7 +573,7 @@ mixed-o, same-o from-e muddy water-a.
 what+person-a can still-i muddy-a to-e slow clear-o?
 what+person-a can move-i rest-a to-e slow live-o?
 keep-i this way-a and-e not want-i fill-i.
-only from-e not fill-i, from-e this-a can wear-o and-e new complete-o.
+only from-e not fill-i, so-e can wear-o and-e new complete-o.
 ```
 
 **`old good do-i way-a person-a` is 古之善為道者.** Three modifiers
@@ -604,7 +602,7 @@ person. It parses, and it is the densest thing on the page.
 ```text
 reach-i most empty-a. keep-i deep still-a.
 all thing-a together rise-i,
-I-a from-e this-a see-i return-a.
+I-a with-e this-a see-i return-a.
 thing-a many many-o, each-a back go-i to-e its root-a,
 call-i back go-i to-e root-a still-a,
 call-i this-a return-a to-e life-a.
@@ -612,11 +610,11 @@ call-i return-a to-e life-a forever-a,
 call-i know-i forever-a bright-a.
 not know-i forever-a and-e wild do-i, bad-o.
 know-i forever-a and-e hold-o.
-hold-o and-e from-e this-a fair-o,
-fair-o and-e from-e this-a king-o,
-king-o and-e from-e this-a sky-o,
-sky-o and-e from-e this-a way-o,
-way-o and-e from-e this-a last-o,
+hold-o and-e so-e fair-o,
+fair-o and-e so-e king-o,
+king-o and-e so-e sky-o,
+sky-o and-e so-e way-o,
+way-o and-e so-e last-o,
 lose-i body-a and-e not danger-o.
 ```
 
@@ -625,8 +623,8 @@ a clause, "knowing the eternal", and it sits in the object slot the
 way any term does. `forever-a`, the eternal, is an aspect word as a
 thing.
 
-**`hold-o and-e from-e this-a fair-o` is 容乃公.** 乃 is "then, and so"
-and it is `and-e from-e this-a`, the connective plus the cause.
+**`hold-o and-e so-e fair-o` is 容乃公.** 乃 is "then, and so" and it
+is `and-e so-e`, the connective plus the consequence.
 
 ### 17
 
@@ -647,7 +645,7 @@ next-a, they-a mock-i it-a.
 trust-a not enough-o, and-e not+trust-a exist-i.
 slow-o, it-a value-i word-a,
 work-a complete-o and-e thing-a done-o,
-all people-a say-i we-a self+so-o.
+all people-a say-i we-a self+thus-o.
 ```
 
 ### 18
@@ -684,7 +682,7 @@ cut-i wise-a and-e drop-i clever-a, people-a gain-i hundred time-a.
 cut-i kind-a and-e drop-i right-a, people-a back go-i to-e child love-a and-e parent love-a.
 cut-i skill-a and-e drop-i gain-a, thief-a not exist-i.
 this three-a, hold-i it-a word-a and-e not enough-o,
-from-e this-a make-i it-a have-i place-a:
+so-e make-i it-a have-i place-a:
 see-i plain-a and-e hold-i raw wood-a,
 small self-a and-e few want-a.
 ```
@@ -775,7 +773,7 @@ its essence-a very true-o, and-e trust-a exist-i at-e its middle-a.
 from-e old time-a to-e now-a,
 its name-a not go-i,
 to-e see-i all start-a.
-I-a know-i all start-a so-o with-e what-a?
+I-a know-i all start-a thus-o with-e what-a?
 with-e this-a.
 ```
 
@@ -811,14 +809,14 @@ if-e hollow-o, full-o.
 if-e worn-o, new-o.
 if-e few-o, get-i.
 if-e many-o, lost-o.
-from-e this-a wise person-a hold-i one-a,
+so-e wise person-a hold-i one-a,
 and-e model-a of-e world-a.
-not show-i self-a, from-e this-a bright-o.
-not praise-i self-a, from-e this-a shine-i.
-not right-i self-a, from-e this-a have-i work-a.
-not boast-i self-a, from-e this-a last-i.
+not show-i self-a, so-e bright-o.
+not praise-i self-a, so-e shine-i.
+not right-i self-a, so-e have-i work-a.
+not boast-i self-a, so-e last-i.
 only from-e not fight-i,
-from-e this-a not one person-a at-e world-a can fight-i with-e it-a.
+so-e not one person-a at-e world-a can fight-i with-e it-a.
 old person-a past say-i thing-a, if-e bent-o whole-o,
 question empty word-o?
 true whole-o and-e back go-i to-e it-a.
@@ -828,7 +826,7 @@ true whole-o and-e back go-i to-e it-a.
 two words each, and Tune matches the length: the condition word and
 two features. 則 needs no word.
 
-**`not show-i self-a, from-e this-a bright-o` is 不自見故明.** The
+**`not show-i self-a, so-e bright-o` is 不自見故明.** The
 object goes before the verb in Chinese under negation, 自見, and Tune
 leaves it after. Nothing in the meaning moves.
 
@@ -851,13 +849,13 @@ leaves it after. Nothing in the meaning moves.
 > 有不信焉。
 
 ```text
-few word-a self+so-o.
-from-e this-a wild wind-a not last-i to-e end-a of-e morning-a,
+few word-a self+thus-o.
+so-e wild wind-a not last-i to-e end-a of-e morning-a,
 hard rain-a not last-i to-e end-a of-e day-a.
 what+person-a do-i this-a?
 even sky-a and-e earth-a not can last-i,
 question and-e person-a more-o?
-from-e this-a follow-i way-a person-a,
+so-e follow-i way-a person-a,
 way person-a same-o with-e way-a,
 virtue person-a same-o with-e virtue-a,
 lose person-a same-o with-e lose-a.
@@ -897,7 +895,7 @@ boast-i self-a person-a not last-i.
 this-a at-e way-a,
 call-i it-a left food-a and-e extra act-a.
 thing-a ever hate-i it-a,
-from-e this-a have-i way-a person-a not stay-i at-e it-a.
+so-e have-i way-a person-a not stay-i at-e it-a.
 ```
 
 **`show-i self-a person-a not bright-o` is 自見者不明.** 者 makes a
@@ -942,7 +940,7 @@ force-i name-a to-e it-a and-e call-i it-a big-a.
 call-i big-a go-a,
 call-i go-a far-a,
 call-i far-a return-a.
-from-e this-a way-a big-o,
+so-e way-a big-o,
 sky-a big-o,
 earth-a big-o,
 king-a also big-o.
@@ -951,16 +949,18 @@ and-e king-a stay-i at-e one-a.
 person-a follow-i earth-a,
 earth-a follow-i sky-a,
 sky-a follow-i way-a,
-way-a follow-i self+so-a.
+way-a follow-i self+thus-a.
 ```
 
 **`call-i big-a go-a` is 大曰逝.** Three words for three characters,
 and the thing called and its name are both closed words as things.
 
-**`self+so-a` is 自然**, self-so, nature. One compound where the
+**`self+thus-a` is 自然**, self-so, nature. One compound where the
 Chinese has two characters that long ago became one word, and the
 first root is the closed word `self`. A closed word can begin a
-compound the way `what+person-a` does.
+compound the way `what+person-a` does. The second root is `thus`,
+because `so` became the word for 故 and a root cannot share a form
+with a closed word.
 
 ### 26
 
@@ -977,7 +977,7 @@ compound the way `what+person-a` does.
 ```text
 heavy-a root-a of-e light-a,
 still-a master-a of-e rush-a,
-from-e this-a noble person-a walk-i all day-a and-e not leave-i cart-a.
+so-e noble person-a walk-i all day-a and-e not leave-i cart-a.
 even if-e have-i fine sight-a,
 rest-o and-e stay-i at-e top-a of-e it-a.
 what+way-a make-i master-a of-e ten+thousand cart-a
@@ -1015,12 +1015,12 @@ good word-a, not have-i flaw-a.
 good count-a, not use-i stick-a.
 good close-a, not have-i lock-a and-e not can open-i.
 good tie-a, not have-i rope-a and-e not can loose-i.
-from-e this-a wise person-a forever good save-i person-a,
-from-e this-a not have-i left person-a.
+so-e wise person-a forever good save-i person-a,
+so-e not have-i left person-a.
 good save-i thing-a,
-from-e this-a not have-i left thing-a,
+so-e not have-i left thing-a,
 call-i this-a hidden bright-a.
-from-e this-a good person-a teacher-a of-e not good person-a.
+so-e good person-a teacher-a of-e not good person-a.
 not good person-a stock-a of-e good person-a.
 not value-i its teacher-a,
 not love-i its stock-a,
@@ -1068,11 +1068,11 @@ back go-i to-e not+end-a.
 know-i its glory-a,
 keep-i its shame-a,
 valley-o of-e world-a.
-valley-o of-e world-a, and-e forever virtue-a from-e this-a enough-o,
+valley-o of-e world-a, and-e so-e forever virtue-a enough-o,
 back go-i to-e raw wood-a.
 if-e raw wood-a break-i, tool-o.
 if-e wise person-a use-i it-a, chief-o.
-from-e this-a big cut-a not cut-i.
+so-e big cut-a not cut-i.
 ```
 
 **`stream-o of-e world-a` is 為天下谿.** "Be the world's stream", and
@@ -1101,11 +1101,11 @@ world-a spirit tool-a,
 not can do-i it-a.
 do-i person-a break-i it-a,
 hold-i person-a lose-i it-a.
-from-e this-a thing-a, some-a lead-i and-e some-a follow-i,
+so-e thing-a, some-a lead-i and-e some-a follow-i,
 some-a blow-i warm-a and-e some-a blow-i cold-a,
 some-a strong-o and-e some-a weak-o,
 some-a carry-i and-e some-a fall-i.
-from-e this-a wise person-a leave-i too much-a.
+so-e wise person-a leave-i too much-a.
 leave-i waste-a, leave-i excess-a.
 ```
 
@@ -1136,7 +1136,7 @@ not force-i world-a with-e weapon-a,
 its work-a glad return-i.
 army-a stay-i place-a, thorn-a grow-i at-e it-a.
 at-e back-a of-e big army-a, must exist-i bad year-a.
-from-e this-a good person-a achieve-i and-e complete stop-i,
+so-e good person-a achieve-i and-e complete stop-i,
 not dare-i take-i force-a.
 achieve-i and-e command not boast-i,
 achieve-i and-e command not praise-i self-a,
@@ -1185,8 +1185,8 @@ a relation in either language.
 ```text
 fine weapon-a tool-a of-e bad sign-a,
 thing-a ever hate-i it-a,
-from-e this-a have-i way-a person-a not stay-i at-e it-a.
-from-e this-a if-e noble person-a rest-i, value-i left-a.
+so-e have-i way-a person-a not stay-i at-e it-a.
+so-e if-e noble person-a rest-i, value-i left-a.
 if-e use-i weapon-a, value-i right-a.
 weapon-a tool-a of-e bad sign-a,
 not tool-a of-e noble person-a.
@@ -1196,9 +1196,9 @@ win-i and-e not beauty-i it-a.
 beauty-i it-a person-a, this-a glad-o at-e kill-i person-a.
 glad-o at-e kill-i person-a person-a,
 not can get-i will-a at-e world-a.
-from-e this-a good thing-a honour-i left-a,
+so-e good thing-a honour-i left-a,
 bad thing-a honour-i right-a.
-from-e this-a low general-a stay-i at-e left-a,
+so-e low general-a stay-i at-e left-a,
 high general-a stay-i at-e right-a,
 hold-i it-a with-e death rite-a.
 kill-i many person-a, meet-i it-a with-e sorrow-a.
@@ -1298,8 +1298,8 @@ forever not want-i,
 can call-i it-a small-a.
 all thing-a go-i to-e it-a and-e it-a not master-o,
 can call-i it-a big-a.
-from-e this-a wise person-a to-e end-a not big-i,
-from-e this-a can achieve-i its big-a.
+so-e wise person-a to-e end-a not big-i,
+so-e can achieve-i its big-a.
 ```
 
 **`not big-i` is 不為大.** "Does not make big", to act big, the
@@ -1415,16 +1415,16 @@ negative read as written: no thing is not done.
 
 ```text
 high virtue-a not virtue-i,
-from-e this-a have-i virtue-a.
+so-e have-i virtue-a.
 low virtue-a not lose-i virtue-a,
-from-e this-a not have-i virtue-a.
+so-e not have-i virtue-a.
 high virtue-a not do-i and-e not have-i cause-a to-e do-i,
 low virtue-a do-i it-a and-e have-i cause-a to-e do-i.
 high kind-a do-i it-a and-e not have-i cause-a to-e do-i.
 high right-a do-i it-a and-e have-i cause-a to-e do-i.
 high rite-a do-i it-a and-e not one person-a answer-i it-a,
 if-e this-o, bare-i arm-a and-e pull-i it-a.
-from-e this-a lose-i way-a and-e virtue-a follow-i,
+so-e lose-i way-a and-e virtue-a follow-i,
 lose-i virtue-a and-e kind-a follow-i,
 lose-i kind-a and-e right-a follow-i,
 lose-i right-a and-e rite-a follow-i.
@@ -1432,10 +1432,10 @@ rite-a,
 thin-a of-e true-a and-e trust-a, and-e head-a of-e mess-a.
 front know-a,
 flower-a of-e way-a and-e start-a of-e fool-a.
-from-e this-a big person-a stay-i at-e its thick-a,
+so-e big person-a stay-i at-e its thick-a,
 not stay-i at-e its thin-a.
 stay-i at-e its fruit-a, not stay-i at-e its flower-a.
-from-e this-a leave-i that-a and-e take-i this-a.
+so-e leave-i that-a and-e take-i this-a.
 ```
 
 **`high virtue-a not virtue-i` is 上德不德.** Virtue does not
@@ -1487,11 +1487,11 @@ if-e valley-a not have-i full-a, future fear-i dry-i.
 if-e all thing-a not have-i live-a, future fear-i die-i.
 if-e lord-a not have-i right-a and-e high-a,
 future fear-i fall-i.
-from-e this-a high-a hold-i low-a root-a,
+so-e high-a hold-i low-a root-a,
 tall-a hold-i under-a base-a.
 lord-a call-i self-a alone-a and-e few-a and-e not good-a.
 question this-a hold-i low-a root-a? question not-o?
-from-e this-a count-i cart-a and-e not have-i cart-a.
+so-e count-i cart-a and-e not have-i cart-a.
 not want-i same shine-i from-e jade-a,
 same lie-i from-e stone-a.
 ```
@@ -1539,7 +1539,7 @@ high student-a hear-i way-a, and-e hard do-i it-a.
 middle student-a hear-i way-a, and-e same keep-i it-a from-e lose-i it-a.
 low student-a hear-i way-a, and-e big laugh-i at-e it-a,
 if-e not laugh-i, not enough-o to-e way-o.
-from-e this-a old word-a say-i it-a:
+so-e old word-a say-i it-a:
 bright way-a same-o from-e dark-a,
 forward way-a same-o from-e back go-a,
 flat way-a same-o from-e rough-a,
@@ -1586,7 +1586,7 @@ mix-i breath-a to-e join-o.
 person-a hate-i thing-a,
 alone-a and-e few-a and-e not good-a,
 and-e king-a hold-i it-a name-a.
-from-e this-a thing-a, some-a lose-i and-e gain-i,
+so-e thing-a, some-a lose-i and-e gain-i,
 some-a gain-i and-e lose-i.
 person-a teach-i thing-a, I-a also teach-i it-a:
 force-i person-a not get-i its death-a,
@@ -1610,7 +1610,7 @@ and the numbers are things.
 most soft-a of-e world-a,
 drive-i most hard-a of-e world-a,
 not+exist-a enter-i to-e not+gap-a,
-I-a from-e this-a know-i gain-a of-e not+do-a.
+so-e I-a know-i gain-a of-e not+do-a.
 teach-a of-e not say-i,
 gain-a of-e not+do-a,
 few-a at-e world-a reach-i it-a.
@@ -1630,7 +1630,7 @@ few-a at-e world-a reach-i it-a.
 name-a and-e body-a, what+one-a more close-o?
 body-a and-e thing-a, what+one-a more much-o?
 gain-a and-e lose-a, what+one-a more bad-o?
-from-e this-a very love-i and-e must big spend-i,
+so-e very love-i and-e must big spend-i,
 many keep-i and-e must thick lose-i.
 know-i enough-a and-e not shame-o,
 know-i stop-i and-e not danger-o, can long last-i.
@@ -1686,7 +1686,7 @@ war horse-a born-o at-e edge-a of-e town-a.
 not one crime-a more big-o from-e can want-i,
 not one harm-a more big-o from-e not know-i enough-a,
 not one blame-a more big-o from-e want-i get-i.
-from-e this-a know-i enough-a of-e enough-a, forever enough-o.
+so-e know-i enough-a of-e enough-a, forever enough-o.
 ```
 
 **`not one crime-a more big-o from-e can want-i` is 罪莫大於可欲.**
@@ -1710,7 +1710,7 @@ know-i world-a.
 not look-i from-e window-a,
 see-i way-a of-e sky-a.
 if-e it-a go-i more far-o, it-a know-i more few-o.
-from-e this-a wise person-a not walk-i and-e know-i,
+so-e wise person-a not walk-i and-e know-i,
 not see-i and-e name-i,
 not do-i and-e achieve-i.
 ```
@@ -1739,7 +1739,7 @@ do-i way-a and-e each day-a lose-i.
 lose-i and-e more lose-i,
 to-e reach-i not+do-a.
 not do-i and-e not one thing-a not do-o.
-from-e this-a take-i world-a person-a,
+so-e take-i world-a person-a,
 forever use-i not+work-a.
 if-e it-a have-i work-a,
 not enough-o to-e take-i world-a.
@@ -1854,12 +1854,12 @@ way-a make-i it-a,
 virtue-a feed-i it-a,
 thing-a shape-i it-a,
 force-a achieve-i it-a.
-from-e this-a all thing-a
+so-e all thing-a
 not one-o not honour-i way-a and-e value-i virtue-a.
 honour-a of-e way-a,
 value-a of-e virtue-a,
-not one person-a order-i it-a and-e it-a forever self+so-o.
-from-e this-a way-a make-i it-a and-e virtue-a feed-i it-a,
+not one person-a order-i it-a and-e it-a forever self+thus-o.
+so-e way-a make-i it-a and-e virtue-a feed-i it-a,
 grow-i it-a and-e raise-i it-a,
 achieve-i it-a and-e ripe-i it-a,
 feed-i it-a and-e keep-i it-a.
@@ -1977,28 +1977,27 @@ good build-i person-a not pull-o out-a,
 good hold-i person-a not slip-o,
 child-a and-e grandchild-a not stop-i rite-a.
 if-e grow-i it-a at-e body-a,
-its virtue-a from-e this-a true-o.
+so-e its virtue-a true-o.
 if-e grow-i it-a at-e house-a,
-its virtue-a from-e this-a more-o.
+so-e its virtue-a more-o.
 if-e grow-i it-a at-e village-a,
-its virtue-a from-e this-a long-o.
+so-e its virtue-a long-o.
 if-e grow-i it-a at-e land-a,
-its virtue-a from-e this-a rich-o.
+so-e its virtue-a rich-o.
 if-e grow-i it-a at-e world-a,
-its virtue-a from-e this-a wide-o.
-from-e this-a see-i body-a with-e body-a,
+so-e its virtue-a wide-o.
+so-e see-i body-a with-e body-a,
 see-i house-a with-e house-a,
 see-i village-a with-e village-a,
 see-i land-a with-e land-a,
 see-i world-a with-e world-a.
-I-a know-i world-a so-o with-e what-a?
+I-a know-i world-a thus-o with-e what-a?
 with-e this-a.
 ```
 
-**`its virtue-a from-e this-a true-o` is 其德乃真.** 乃 sits between
-subject and predicate and so does `from-e this-a`. A relation phrase
-can go anywhere after the term it follows, and the order carries
-nothing.
+**`so-e its virtue-a true-o` is 其德乃真.** 乃 sits between subject
+and predicate in Chinese, and `so` opens the clause it governs, the
+way `if` does: `if-e X, so-e Y`, if X then Y.
 
 ### 55
 
@@ -2078,7 +2077,7 @@ not can get-i it-a and-e help-i it-a,
 not can get-i it-a and-e harm-i it-a.
 not can get-i it-a and-e value-i it-a,
 not can get-i it-a and-e scorn-i it-a.
-from-e this-a it-a most value-o at-e world-a.
+so-e it-a most value-o at-e world-a.
 ```
 
 **`know-i person-a not say-i, say-i person-a not know-i` is 知者不言，
@@ -2110,7 +2109,7 @@ way to say it in any language.
 rule-i land-a with-e right-a,
 use-i weapon-a with-e strange-a,
 take-i world-a with-e not+work-a.
-question I-a know-i it-a so-o with-e what-a?
+question I-a know-i it-a thus-o with-e what-a?
 with-e this-a:
 world-a have-i many ban-a,
 and-e people-a more poor-o.
@@ -2120,7 +2119,7 @@ people-a have-i many skill-a,
 and-e strange thing-a more rise-i.
 law-a more show-i,
 and-e thief-a many exist-i.
-from-e this-a wise person-a say-i:
+so-e wise person-a say-i:
 I-a not do-i and-e people-a self-a change-i,
 I-a like-i still-a and-e people-a self-a right-o,
 I-a not work-i and-e people-a self-a rich-o,
@@ -2161,7 +2160,7 @@ it-a not have-i right-a.
 right-a back turn-i to-e strange-a,
 good-a back turn-i to-e bad-a, and-e people-a lost-o,
 and-e their day-a long-o complete-o.
-from-e this-a wise person-a square-o and-e not cut-i,
+so-e wise person-a square-o and-e not cut-i,
 sharp-o and-e not hurt-i,
 straight-o and-e not push-i,
 bright-o and-e not blind-i.
@@ -2226,7 +2225,7 @@ its spirit-a not hurt-i person-a.
 not its spirit-a not hurt-i person-a,
 wise person-a also not hurt-i person-a.
 all two-a not hurt-i each+other-a,
-from-e this-a virtue-a join-i and-e go-i to-e it-a.
+so-e virtue-a join-i and-e go-i to-e it-a.
 ```
 
 **`not its ghost-a not spirit-o` is 非其鬼不神.** It is not that its
@@ -2258,16 +2257,16 @@ meet place-a of-e world-a,
 female-a of-e world-a.
 female-a forever win-i male-a with-e still-a,
 hold-i still-a low-a.
-from-e this-a if-e big land-a low-o to-e small land-a,
+so-e if-e big land-a low-o to-e small land-a,
 take-i small land-a.
 if-e small land-a low-o to-e big land-a,
 take-i big land-a.
-from-e this-a some-a low-o to-e take-i,
+so-e some-a low-o to-e take-i,
 some-a low-o and-e take-i.
 big land-a only want-i gather-i and-e feed-i person-a,
 small land-a only want-i enter-i and-e serve-i person-a,
 all two-a each-a get-i its want-i thing-a,
-from-e this-a big-a should low-o.
+so-e big-a should low-o.
 ```
 
 **`big-a should low-o` is 大者宜為下.** 宜 is "ought", and `should` is
@@ -2298,14 +2297,14 @@ not good person-a keep-i thing-a.
 beauty word-a can sell-i,
 honour act-a can add-i to-e person-a.
 person-a not good-o, and-e what cause-a to-e drop-i it-a!
-from-e this-a raise-i sky child-a,
+so-e raise-i sky child-a,
 set-i three lord-a,
 even if-e have-i jade-a and-e four horse-a at-e front-a,
 inverse more good-o from-e sit-i and-e give-i this way-a.
 old person-a past value-i this way-a from-e what cause-a?
 question not say-i seek-i and-e get-i,
 have-i crime-a and-e free-o?
-from-e this-a it-a most value-o at-e world-a.
+so-e it-a most value-o at-e world-a.
 ```
 
 **`old person-a past value-i this way-a from-e what cause-a?` is
@@ -2341,12 +2340,12 @@ plan-i hard-a at-e its easy-a,
 do-i big-a at-e its small-a.
 hard work-a at-e world-a must rise-i from-e easy-a,
 big work-a at-e world-a must rise-i from-e small-a,
-from-e this-a wise person-a to-e end-a not big-i,
-from-e this-a can achieve-i its big-a.
+so-e wise person-a to-e end-a not big-i,
+so-e can achieve-i its big-a.
 light promise-a must few trust-o,
 many easy-a must many hard-o,
-from-e this-a wise person-a still hard-i it-a.
-from-e this-a to-e end-a not have-i hard-a.
+so-e wise person-a still hard-i it-a.
+so-e to-e end-a not have-i hard-a.
 ```
 
 **`do-i not+do-a, work-i not+work-a, taste-i not+taste-a` is 為無為，
@@ -2390,16 +2389,16 @@ nine floor tower-a rise-i from-e pile-i earth-a.
 thousand mile walk-a start-i from-e under-a of-e foot-a.
 do-i person-a break-i it-a,
 hold-i person-a lose-i it-a.
-wise person-a not do-i, from-e this-a not fail-i.
-not hold-i, from-e this-a not lose-i.
+wise person-a not do-i, so-e not fail-i.
+not hold-i, so-e not lose-i.
 people-a follow-i work-a, forever at-e near achieve-i and-e fail-i it-a.
 same care-i at-e end-a from-e start-a,
 if-e this-o, not have-i fail work-a.
-from-e this-a wise person-a want-i not want-a,
+so-e wise person-a want-i not want-a,
 not value-i hard get-i thing-a.
 study-i not study-a,
 back go-i to-e all person-a pass-i place-a.
-to-e help-i self+so-a of-e all thing-a,
+to-e help-i self+thus-a of-e all thing-a,
 and-e not dare-i do-i.
 ```
 
@@ -2437,7 +2436,7 @@ know-i this two-a, also model-a.
 can know-i model-a,
 call-i this-a dark virtue-a.
 dark virtue-a deep-o complete-o, far-o complete-o,
-back turn-i with-e thing-a complete-o, and-e from-e this-a reach-i big flow-a.
+back turn-i with-e thing-a complete-o, and-e so-e reach-i big flow-a.
 ```
 
 ### 66
@@ -2462,18 +2461,18 @@ back turn-i with-e thing-a complete-o, and-e from-e this-a reach-i big flow-a.
 ```text
 cause-a of-e river-a and-e sea-a can king-o of-e hundred valley-a,
 it-a from-e their good low-o to-e it-a,
-from-e this-a they-a can king-o of-e hundred valley-a.
-from-e this-a if-e wise person-a want-i high-o to-e person-a,
+so-e they-a can king-o of-e hundred valley-a.
+so-e if-e wise person-a want-i high-o to-e person-a,
 must low-i self-a to-e it-a with-e word-a. if-e want-i front-o to-e person-a,
 must back put-i self-a to-e it-a with-e body-a.
-from-e this-a wise person-a stay-i at-e top-a and-e person-a not heavy-o,
+so-e wise person-a stay-i at-e top-a and-e person-a not heavy-o,
 stay-i at-e front-a and-e person-a not harm-o,
-from-e this-a world-a glad push-i it-a
+so-e world-a glad push-i it-a
 and-e not tire-i.
 from-e their not fight-i,
-from-e this-a not one person-a at-e world-a can fight-i with-e it-a.
+so-e not one person-a at-e world-a can fight-i with-e it-a.
 all world-a say-i my way-a big-o, same-o from-e not like-a.
-only from-e big-o, from-e this-a same-o from-e not like-a.
+only from-e big-o, so-e same-o from-e not like-a.
 if-e same-o from-e like-a,
 it-a small-o from-e long time-a complete-o.
 ```
@@ -2500,10 +2499,10 @@ I-a have-i three treasure-a, hold-i and-e treasure-i it-a.
 call-i one-a love-a,
 call-i two-a spare-a,
 call-i three-a not dare-i front-o of-e world-a.
-love-o, from-e this-a can brave-o.
-spare-o, from-e this-a can wide-o.
+love-o, so-e can brave-o.
+spare-o, so-e can wide-o.
 not dare-i front-o of-e world-a,
-from-e this-a can achieve-i tool chief-a.
+so-e can achieve-i tool chief-a.
 now drop-i love-a and-e brave-o,
 drop-i spare-a and-e wide-o,
 drop-i its back-a and-e front-o, die-i complete-o!
@@ -2556,7 +2555,7 @@ throw-i not+enemy-a,
 hold-i not+weapon-a.
 not one harm-a more big-o from-e light-i enemy-a,
 light-i enemy-a near lose-i my treasure-a.
-from-e this-a if-e army-a meet-i each+other-a,
+so-e if-e army-a meet-i each+other-a,
 sad-a win-i complete-o.
 ```
 
@@ -2579,9 +2578,9 @@ my word-a very easy know-o, very easy do-o.
 not one person-a at-e world-a can know-i, not one person-a can do-i.
 word-a have-i root-a,
 work-a have-i master-a.
-only from-e not know-i, from-e this-a not know-i I-a.
+only from-e not know-i, so-e not know-i I-a.
 know-i I-a person-a few-o, follow-i I-a person-a value-o,
-from-e this-a wise person-a wear-i rough cloth-a and-e hold-i jade-a.
+so-e wise person-a wear-i rough cloth-a and-e hold-i jade-a.
 ```
 
 **`not know-i I-a` is 不我知.** Chinese fronts the object under
@@ -2601,10 +2600,10 @@ negation and Tune leaves it where objects go.
 know-i not+know-a, high-o.
 not know-i know-a, sick-o.
 only from-e sick-i sick-a,
-from-e this-a not sick-o.
+so-e not sick-o.
 wise person-a not sick-o,
 from-e their sick-i sick-a,
-from-e this-a not sick-o.
+so-e not sick-o.
 ```
 
 **`sick-i sick-a` is 病病.** To sicken at sickness, to treat the
@@ -2627,10 +2626,10 @@ if-e people-a not fear-i force-a,
 big force-a come-i complete-o. command not press-i their live-i place-a,
 command not crush-i their live-i thing-a.
 only from-e not crush-i,
-from-e this-a not crush-o.
-from-e this-a wise person-a know-i self-a, not show-i self-a.
+so-e not crush-o.
+so-e wise person-a know-i self-a, not show-i self-a.
 love-i self-a, not value-i self-a.
-from-e this-a leave-i that-a and-e take-i this-a.
+so-e leave-i that-a and-e take-i this-a.
 ```
 
 ### 73
@@ -2655,7 +2654,7 @@ if-e brave-o at-e not dare-i, live-o.
 this two-a, some-a help-i and-e some-a harm-i.
 sky-a hate-i thing-a,
 what+person-a know-i its cause-a?
-from-e this-a wise person-a still hard-i it-a.
+so-e wise person-a still hard-i it-a.
 way-a of-e sky-a,
 not fight-i and-e good win-i,
 not say-i and-e good answer-i,
@@ -2708,13 +2707,13 @@ few-o not hurt-i hand-a complete-o.
 ```text
 people-a hungry-o,
 from-e their ruler-a eat-i much tax-a,
-from-e this-a hungry-o.
+so-e hungry-o.
 people-a hard-o to-e rule-i,
 from-e their ruler-a have-i do-a,
-from-e this-a hard-o to-e rule-i.
+so-e hard-o to-e rule-i.
 people-a light-i death-a,
 from-e their thick seek-i life-a,
-from-e this-a light-i death-a.
+so-e light-i death-a.
 only not do-i to-e life-a person-a,
 this-a more good-o from-e value-i life-a.
 ```
@@ -2742,9 +2741,9 @@ person-a at-e life-a soft-o and-e weak-o,
 at-e death-a hard-o and-e strong-o.
 all thing-a and-e grass-a and-e tree-a at-e life-a soft-o and-e brittle-o,
 at-e death-a dry-o and-e withered-o.
-from-e this-a hard-o and-e strong-o thing-a follower-a of-e death-a,
+so-e hard-o and-e strong-o thing-a follower-a of-e death-a,
 soft-o and-e weak-o thing-a follower-a of-e life-a.
-from-e this-a if-e army-a strong-o, not win-i.
+so-e if-e army-a strong-o, not win-i.
 if-e tree-a strong-o, cut-o.
 strong-a and-e big-a stay-i at-e under-a,
 soft-a and-e weak-a stay-i at-e top-a.
@@ -2781,7 +2780,7 @@ way-a of-e person-a not same-o,
 lose-i not enough-a to-e serve-i more-a.
 what+person-a can have-i more-a to-e serve-i world-a?
 only have-i way-a person-a.
-from-e this-a wise person-a do-i and-e not lean-i,
+so-e wise person-a do-i and-e not lean-i,
 work-a complete-o and-e not stay-i at-e it-a,
 question it-a not want-i show-i able-a.
 ```
@@ -2814,7 +2813,7 @@ weak-a win-i strong-a,
 soft-a win-i hard-a,
 not one person-a at-e world-a not know-i,
 not one person-a can do-i.
-from-e this-a wise person-a say-i,
+so-e wise person-a say-i,
 take-i dirt-a of-e land-a, call-i this-a master-a of-e land-a.
 take-i bad sign-a of-e land-a, call-i this-a king-a of-e world-a.
 right word-a same-o from-e return-a.
@@ -2836,7 +2835,7 @@ right word-a same-o from-e return-a.
 if-e settle-i big hate-a,
 must exist-i more hate-a,
 question can good-o?
-from-e this-a wise person-a hold-i left half-a of-e deal-a,
+so-e wise person-a hold-i left half-a of-e deal-a,
 and-e not press-i person-a.
 have-i virtue-a person-a rule-i deal-a,
 not have-i virtue-a person-a rule-i tax-a.
@@ -2929,8 +2928,8 @@ The Chinese was chosen as the source because it is the one natural
 language built the way Tune is built, and the test was whether every
 particle it uses lands somewhere in the 51. **Every one did.** Eleven
 things are worth writing down. Four changed the checker, one changed a
-rule, and six are recorded so the next reader does not re-derive
-them.
+rule, two changed the closed list, one word in and one word out, and
+the rest are recorded so the next reader does not re-derive them.
 
 ## One. "Is called" is the verb first and the caller unsaid
 
@@ -2955,24 +2954,34 @@ the fronted object and the caller is nobody.
 first and the doer unsaid. This is the verb first and the doer unsaid.
 Both are what "no voice" means.
 
-## Two. 故 is `from-e this-a`, and it is the strongest case for a fifty second word
+## Two. 故 is `so`, a word
 
 故 appears sixty seven times and 是以 thirty eight, a hundred and five
-in eighty one chapters, and the Tune has `from-e this-a` a hundred and
-twenty four times once 乃, 斯 and a causal 以 are counted. **"Therefore"
-is said more than any other function word in the book**, and Tune says
-it in two words, `from-e this-a`, from this.
+in eighty one chapters, and the Tune has `so-e` a hundred and twenty
+three times once 乃, 斯 and a causal 以 are counted. **"Therefore" is
+said more than any other function word in the book**: one utterance in
+ten opens with it.
 
-The case for a word is the same case that made `we` and `my` words:
-the most said words should be the shortest. The case against is that
-**Classical Chinese itself says it both ways**, 故 in one syllable and
-是以 in two, by-this, which is exactly `from-e this-a`, and the book
-uses both freely. The two-word form is attested in the source
-language, it is derived from the seven relations, and adding a word
-for one connective is what rule 2 exists to refuse.
+The first draft said it in two words, `from-e this-a`, from this,
+which is exactly what 是以 says, by-this, and is derived from the
+relations. The case for a word is the case that made `we` and `my`
+words: the most said words should be the shortest, and a connective
+said in a tenth of all sentences is said constantly.
 
-**Not adopted, and recorded as the open question it is.** If a
-fifty second word is ever added, this is the one.
+**Adopted.** `so` is the consequence word and sits with `if` in the
+condition group, the two halves of the one construction: `if-e X`
+opens what a thing follows from, and `so-e Y` opens what follows.
+Like `if` it takes `-e` and takes a clause. `-e` stays on ten words,
+because `topic` left the list the same day, so the count is still 51.
+
+```text
+only from-e not stay-i, so-e it-a not go-i     夫唯弗居，是以不去
+if-e bent-o, whole-o                          曲則全
+hold-o and-e so-e fair-o                      容乃公
+```
+
+The root for 然, "so, thus", is `thus`, because a root cannot share a
+form with a closed word: `self+thus-a` is 自然.
 
 ## Three. `-e` is on ten words and on nothing else
 
@@ -3014,7 +3023,7 @@ would still mean "is imminent" rather than "is close", so 幾於道 and
 Recorded because it is the commonest slip a translator makes, and
 the checker holds it.
 
-## Five. Topic and comment is bare juxtaposition, and `topic` went unused
+## Five. Topic and comment is bare juxtaposition, and `topic` is gone
 
 The Tao Te Ching is the most topic-prominent text there is. 者...也
 frames a definition, 兮 marks a topic pause, and the book sets a thing
@@ -3033,10 +3042,13 @@ was not used once in eighty one chapters**, and the rabbit story did
 not use it either. The relation word has now sat through the two
 texts most likely to need it and been reached for by neither.
 
-**Not removed, and flagged.** The word may have a job in a sentence
-where the topic is not the subject and not an object of anything,
-which neither text produced. Until one does, it is the one member of
-the 51 with no attested use.
+**Removed.** A word with no attested use across the two texts most
+likely to need it is not a word the language has. The case it was
+kept for, a topic that is neither the subject nor an object of
+anything, did not occur in 1,374 utterances, and when it does the
+answer is the one every line above uses: name it, then say the
+clause. The relations are now Pāṇini's six with no addition, and the
+seat went to `so`.
 
 **The one cost of bare topic** is the 者 clause whose object and head
 are the same noun:
@@ -3172,4 +3184,4 @@ a word the 51 do not have.** The things that carried the most weight:
 - **`not one`** handled every 莫, twenty of them, and sixteen 無
   besides
 - **`command not`** handled every 勿, and `even if-e` every 雖
-- **`self-a`** handled every 自, and `self+so-a` is 自然
+- **`self-a`** handled every 自, and `self+thus-a` is 自然

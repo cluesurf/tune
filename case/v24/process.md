@@ -151,6 +151,43 @@ mythological         22
 Only `descriptive` is demand. Reading the others as meaning put
 `zeus`, `leah`, `opus` and `praenomen` into a base list.
 
+## Where a form comes from when nothing obvious presents itself
+
+**THE OBVIOUS ENGLISH SOUND FIRST. WHEN THERE ISN'T ONE, ASK THE OLD
+LANGUAGES, AND ASK THEM IN THEIR ESOTERIC SENSE.**
+
+The echo rule covers the easy case: a root should sound like its
+English word, so `horn` is `horn` and `leaf` is `lif`. Plenty of
+concepts have no English sound worth taking, either because the word
+is long, or because the short form is already spent, or because the
+English word is a borrowing that says nothing.
+
+For those, the question to ask is:
+
+```text
+what is this called in Sanskrit, Greek, Latin, Old Norse, Hebrew,
+especially in an esoteric or older sense, and what related esoteric
+words sit near it
+```
+
+and then take one of those as the form, or as inspiration for it.
+
+```text
+science   ved     Sanskrit veda, knowledge
+divine    dev     Sanskrit deva
+sound     fon     Greek phone
+thunder   crum    Old Norse
+```
+
+**This is a source of FORMS, never of MEANINGS.** The concept is
+still settled the usual way and the word is still one syllable under
+the phonology. What the old languages give is a sound with some weight
+behind it instead of an arbitrary assignment from the load ranking.
+
+It also keeps the pairs honest: `life` is `vit` and `dead` is `tuv`,
+which reads as a deliberate opposition rather than two unrelated
+noises, and an opposition is easier to hold than a list.
+
 ## The techniques
 
 **Grow to a fixpoint, never choose from a ranked list once.** Adding a
@@ -292,6 +329,28 @@ because it only ever appeared in rows the aligner had to skip.
 
 **A stated meaning outranks a mined one**, and a witness already on
 disk outranks a plan to go and get one.
+
+**A HAND DESCRIPTION MUST SPEND CONCEPTS THAT ALREADY HOLD ROOTS.**
+`Aganope dinghuensis` was described as `cauldron + lake`, which is
+right about the place and wrong as a name, because `cauldron` holds no
+root and will not earn one on four species. The epithet read
+perfectly and the species stayed unnamed.
+
+The fix is never to buy the root. `pot` is seated at three sounds and
+is the same vessel, so the name costs nothing. `Globba` was the same
+case: `dance + ginger` for 舞花姜, dancing-flower ginger, where `dance`
+has no root and `shake` does, and the flowers do shake.
+
+**A name that needs a new root for a concept nobody else wants is a
+name to rewrite, not a root to buy.** That is the 4,096 budget doing
+its job rather than getting in the way.
+
+**AND THE CHECK HAS TO ASK WHAT FAILED, NOT WHAT IT LOOKS LIKE.**
+`why.ts` filed both of those under `epithet is a place`, because it
+tested the epithet's SHAPE before asking whether anything was open.
+They read as places still needing description when the description
+was written and the word was the problem. Asking `open` first moved
+94 species into the bucket where the work actually is.
 
 **A NAME MAY NOT DEPEND ON A FIELD THAT CHANGES WHEN SOMEBODY GOES
 LOOKING.** Once places turned out to be describable, the obvious next
@@ -493,3 +552,165 @@ bought nothing.
 
 Chinese is still the model for HOW to compound, which is a different
 question from where a root's sound comes from.
+
+## The three pins that named forms the language cannot say
+
+`wide` was pinned to `waid`, `wonder` to `wand`, `wood` to `kaxt`.
+None of the three is in `everyRoot()`. `w` never takes `a` in this
+phonology, so the first two were impossible from the day they were
+written, and `kaxt` is not a shape the rules build at all.
+
+`rootOf.get('kaxt')` answered nothing, so `wood` had no usable root
+while sitting in `form.csv` looking perfectly seated. It blocked
+**21,407 species**. `v24:pins` reported it held its exact pinned form,
+which it did.
+
+**Matching the pin is not the same as the pin being possible.** The
+check now asks `everyRoot()` about every pin AND about every seated
+form, and reports the two separately, because a pin naming an
+impossible form may fail to seat at all rather than seat wrongly, and
+then it never reaches `form.csv` for the second test to find.
+
+Now `wide` is `wid`, `wonder` is `wond`, `wood` is `wod`.
+
+## A catch that turned a crash into a clean empty answer
+
+`gloss.ts` had NO imports and called `readFileSync`, `resolve`,
+`dirname` and `fileURLToPath` anyway, inside a `try`. Every call threw
+`ReferenceError: resolve is not defined`, was caught, and answered
+with an EMPTY SET.
+
+So `isForeign` refused nothing for as long as it existed, while
+reading as a working gate, and the comment above it described a
+dictionary test that never ran once.
+
+This is the same shape as a check that cannot evaluate a case
+reporting no errors. A `catch` that returns the empty value is only
+safe when the empty value is distinguishable from a real answer.
+
+## The derived flag was wrong for 772 words
+
+`isDerived` fired on 1,211 words of the demand list. The three letter
+stem floor stopped `five` and `city`, and nothing stopped `thrive`,
+`native`, `varnish`, `swordfish` or `belly`.
+
+**A suffix only fires when the stem it leaves is a real word.** `thr`,
+`nat`, `varn` and `swordf` are not words, so the suffix has nothing in
+front of it. Looking the stem up in CMUdict took the flag from 1,211
+to 439 and removed every `-fish` and `-fly` species name at once,
+without banning those endings: `selfish` and `wolfish` still answer
+yes, because `self` and `wolf` are words.
+
+English does not concatenate cleanly, so the lookup asks for several
+spellings of the stem:
+
+```text
+scaly     -ly eats the stem's own l     scal + e   -> scale
+bristly   and the silent e as well      brist + le -> bristle
+happiness the y became an i             happi      -> happy
+sunny     the consonant is doubled      sunn       -> sun
+```
+
+`scaly` is the one that matters, because `-y` is not in the suffix
+list and `-ly` matches it anyway, taking a letter that was never part
+of the ending. Without the extra spellings the gate answered no for
+two words that are plainly built, and `v24:test` caught both.
+
+The residue, where the stem IS a word and the derivation is still
+false, is hand listed in `base/term/whole.csv` with a reason per row:
+`belly`, `early`, `archive`, `punish`, `science`, `supply`, `beehive`.
+
+## "Ignored" was two different things
+
+`v24:said` reported five `said as X` rows as IGNORED. Three of them
+are settled rather than broken: the form they asked for had since been
+pinned to a DIFFERENT concept, so it cannot be honoured and the
+word-short.txt line is simply out of date.
+
+```text
+write   wants rat    rat is PINNED to rate      settled
+name    wants nem    nem is PINNED to minimum   settled
+vibe    wants vaib   vaib is held by nobody     a real question
+```
+
+Reporting both as one number buried two real questions among three
+settled rows. The check now separates them.
+
+## Four million species names were spelled without the cut clause
+
+`write` takes the doubt rule as an argument and DEFAULTS IT TO
+`() => false`. All three calls in `name.ts` passed nothing, so the
+clause never fired once.
+
+`rule.test.ts` calls spelling without it "a language nobody uses", and
+that is what was being written. `fal + kaug` is `falkaug` bare, which
+`falk + kaug` also spells, and the clause is what puts a liquid in to
+part them.
+
+Measured on 400 random pairs of seated roots, **0.3% of two root names
+need a joiner**, so roughly five thousand of the named species could
+not be read back into the roots they were built from:
+
+```text
+bist + xog    bare bistxog    with the clause bistlxog
+```
+
+**The pool to read against is the SEATED forms, not `everyRoot()`.** A
+reader only ever mistakes a name for another real word, and
+`everyRoot()` is 15,361 shapes of which 4,096 mean anything, so
+reading against all of them reports doubt nobody could have.
+
+A default argument that makes a rule vanish is worse than a required
+one. The count of named species did not move (38,389 either way),
+because the clause changes the SPELLING and not whether a name can be
+built, which is exactly why nothing noticed.
+
+## Two concepts on one root, and every check said fine
+
+```text
+pinned.csv       miss,min,111
+word-short.txt   mean   said   said as min
+```
+
+`assign.ts` reads a `said as X` note as a pin and guarded only against
+the same CONCEPT being pinned twice. Two different concepts asking for
+one form out of two different hand written files went straight
+through, so `form.csv` carried `mean` and `miss` on the same root:
+two of the 4,096 coordinates landing on one point.
+
+`v24:pins` reported 496 pinned, 496 held exactly, 0 moved, 0 missing,
+and was right about every one of those numbers. **A count cannot see a
+collision.** The check now asks whether any form is held twice, and
+`assign.ts` refuses a `said as` note whose form already belongs to a
+pin, naming the refusal rather than dropping it.
+
+`pinned.csv` wins, so `miss` keeps `min`.
+
+## A literal NUL byte made a source file binary
+
+`split.ts` used a raw 0x00 as a map key separator, written as the byte
+rather than the escape. `grep -l` matched it, `grep -n` printed
+nothing, and `file` reported `data`, so a search of the directory
+reported the same file as both containing and not containing a string.
+
+That cost an hour of a file audit: `pin-said.csv` and
+`interjection.csv` were reported as READ by `split.ts` when the only
+mention is in a comment, and the true answer was unreachable until the
+byte was found. Inside a TypeScript string literal `\0` is the same
+value.
+
+## The files nothing reads
+
+Measured by searching `case/v24/code` for each filename and discarding
+matches that are only a comment. Nine files under `base/term/` are
+read by no stage: `affix.csv`, `interjection.csv`, `interjection.txt`,
+`pin-said.csv`, `pin-said.txt`, `pinned.txt`, `word-long.csv`,
+`word-long.txt`, `word-short.csv`.
+
+The readme's old table was wrong three ways: it called `english.txt`,
+`words.csv` and `book.csv` dead when a live stage writes each, and it
+called `word-short.csv` superseded while `assign.ts` and `choose.ts`
+were both still reading it. Both now read `word-short.txt`, which is
+the half that carries `said as X` and therefore the half that gets
+edited. The numbers did not move, because the two files still agreed:
+648 concepts each, zero difference.

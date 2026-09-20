@@ -1059,7 +1059,7 @@ function sortPicks(all: Array<Pick>) {
     if (!set) {
       continue
     }
-    const key = pick.group + ' ' + set.name
+    const key = pick.group + '\0' + set.name
     best.set(key, Math.max(best.get(key) ?? 0, weight(pick.one)))
   }
 
@@ -1067,7 +1067,7 @@ function sortPicks(all: Array<Pick>) {
   const keyOf = (pick: Pick) => {
     const set = setOf.get(pick.one.english)
     return set
-      ? { name: set.name, at: set.at, rank: best.get(pick.group + ' ' + set.name) ?? 0 }
+      ? { name: set.name, at: set.at, rank: best.get(pick.group + '\0' + set.name) ?? 0 }
       : { name: pick.one.english, at: 0, rank: weight(pick.one) }
   }
 

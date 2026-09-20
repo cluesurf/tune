@@ -140,7 +140,7 @@ span,pan,111
 response,paq,111
 capability,pab,111
 passive,pat,111
-place,pak,111
+place,ples,112
 present,paz,111
 path,pac,111
 part,par,111
@@ -178,10 +178,10 @@ store,tor,111
 turn,tun,111
 inside,tuq,111
 sine,tuk,111
-conscious,tuv,111
+conscious,hum,111
 tool,tul,111
 this,kim,111
-thing,kin,111
+thing,ciq,111
 action type,kiq,111
 tune,kip,111
 child,kik,111
@@ -233,7 +233,6 @@ have,hav,111
 home,hom,111
 hold,hod,111
 whole,hol,111
-reserved hum,hum,111
 distance,sin,111
 action instance,siq,111
 seed,sid,111
@@ -477,3 +476,23 @@ your,yart,112
 power42,resp,112
 power45,lorf,112
 our,wolt,112
+science,ved,111
+device,mak,111
+divine,dev,111
+dead,tuv,111
+sound,fon,111
+sea,xan,111
+trip,trip,211
+wide,wid,112
+wonder,wond,112
+wood,wod,112
+would,wud,111
+should,xud,111
+could,kud,111
+beat,bit,111
+launch,lantx,211
+terrify,trif,211
+thorax,crak,211
+throne,cron,211
+thrive,craiv,212
+thunder,crum,211

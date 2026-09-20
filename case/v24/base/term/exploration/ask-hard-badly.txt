@@ -59,7 +59,7 @@ beside each, because it is usually right where the Latin is not.
       chinese: 老鹳草属白花老鹳草   lǎo guàn cǎo shǔ bái huā lǎo guàn cǎo
       wrong because: 15 letters
 
-  Michelia   45 species
+  Michelia   46 species
       latin reads: white + orchid
       chinese: 含笑属白兰   hán xiào shǔ bái lán
       wrong because: 14 letters
@@ -84,7 +84,7 @@ beside each, because it is usually right where the Latin is not.
       chinese: 巴豆属银叶巴豆   bā dòu shǔ yín yè bā dòu
       wrong because: same word as Ricinus
 
-  Limonium   22 species
+  Limonium   23 species
       latin reads: beet
       chinese: 补血草属黄花补血草   bǔ xuè cǎo shǔ huáng huā bǔ xuè cǎo
       wrong because: same word as Beta
@@ -109,10 +109,20 @@ beside each, because it is usually right where the Latin is not.
       chinese: 山茱萸属红瑞木   shān zhū yú shǔ hóng ruì mù
       wrong because: same word as Eleusine, Carallia, Pometia
 
+  Hypodematium   20 species
+      latin reads: under + band + Tium
+      chinese: 肿足蕨属肿足蕨   zhǒng zú jué shǔ zhǒng zú jué
+      wrong because: a name in the gloss
+
   Disporum   19 species
       latin reads: ten thousand + old age + bamboo
       chinese: 万寿竹属尖被万寿竹   wàn shòu zhú shǔ jiān bèi wàn shòu zhú
       wrong because: 18 letters
+
+  Anoectochilus   19 species
+      latin reads: ruthless + Dirphys
+      chinese: 金线兰属保亭金线兰   jīn xiàn lán shǔ bǎo tíng jīn xiàn lán
+      wrong because: a name in the gloss
 
   Roscoea   19 species
       latin reads: elephant + tooth + take part in
@@ -144,25 +154,25 @@ beside each, because it is usually right where the Latin is not.
       chinese: 还阳参属果山还阳参   huán yáng shēn shǔ guǒ shān huán yáng shēn
       wrong because: same word as Crepidium
 
-  Hypodematium   19 species
-      latin reads: under + band + Tium
-      chinese: 肿足蕨属肿足蕨   zhǒng zú jué shǔ zhǒng zú jué
-      wrong because: a name in the gloss
-
   Campylopus   18 species
       latin reads: bent + Opus
       chinese: 曲柄藓属长叶曲柄藓   qū bǐng xiǎn shǔ cháng yè qū bǐng xiǎn
       wrong because: a name in the gloss
 
-  Anoectochilus   18 species
-      latin reads: ruthless + Dirphys
-      chinese: 金线兰属保亭金线兰   jīn xiàn lán shǔ bǎo tíng jīn xiàn lán
-      wrong because: a name in the gloss
+  Neckera   18 species
+      latin reads: nor + death
+      chinese: 平藓属不丹平藓   píng xiǎn shǔ bù dān píng xiǎn
+      wrong because: same word as Indoneckera
 
   Eleutherococcus   18 species
       latin reads: Eleutherus + grain
       chinese: 五加属宝兴五加   wǔ jiā shǔ bǎo xīng wǔ jiā
       wrong because: a name in the gloss
+
+  Tragopogon   18 species
+      latin reads: bearded
+      chinese: 婆罗门参属阿勒泰婆罗门参   pó luó mén shēn shǔ ā lè tài pó luó mén shēn
+      wrong because: same word as Pogonatum
 
   Luisia   17 species
       latin reads: ornamental hairpin + seed + thighs
@@ -179,20 +189,40 @@ beside each, because it is usually right where the Latin is not.
       chinese: 豇豆属乌头叶豇豆   jiāng dòu shǔ wū tóu yè jiāng dòu
       wrong because: 14 letters
 
+  Hiptage   17 species
+      latin reads: wind + stringed musical instrument + fruit
+      chinese: 风筝果属尖叶风筝果   fēng zheng guǒ shǔ jiān yè fēng zheng guǒ
+      wrong because: 21 letters
+
   Crawfurdia   17 species
       latin reads: creeper + dragon + gall bladder
       chinese: 蔓龙胆属大花蔓龙胆   màn lóng dǎn shǔ dà huā màn lóng dǎn
-      wrong because: 17 letters
+      wrong because: 16 letters
 
   Lomatogonium   17 species
       latin reads: fringe
       chinese: 肋柱花属美丽肋柱花   lèi zhù huā shǔ měi lì lèi zhù huā
       wrong because: same word as Crossidium, Trachyloma
 
+  Clinopodium   17 species
+      latin reads: bend + balcony
+      chinese: 风轮菜属风轮菜   fēng lún cài shǔ fēng lún cài
+      wrong because: 15 letters
+
   Plagiothecium   16 species
       latin reads: slanted + storage space
       chinese: 棉藓属圆条棉藓   mián xiǎn shǔ yuán tiáo mián xiǎn
       wrong because: 14 letters
+
+  Gollania   16 species
+      latin reads: coarse + branch + moss
+      chinese: 粗枝藓属阿里粗枝藓   cū zhī xiǎn shǔ ā lǐ cū zhī xiǎn
+      wrong because: 14 letters
+
+  Actinodaphne   16 species
+      latin reads: ray + Daphne
+      chinese: 黄肉楠属南投黄肉楠   huáng ròu nán shǔ nán tóu huáng ròu nán
+      wrong because: a name in the gloss, same word as Actinoschoenus, Actinocarya, Actinostachys
 
   Pyrus   16 species
       latin reads: wheat
@@ -214,20 +244,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 度量草属长叶度量草   dù liáng cǎo shǔ cháng yè dù liáng cǎo
       wrong because: a name in the gloss, same word as Mitella
 
-  Clinopodium   16 species
-      latin reads: bend + balcony
-      chinese: 风轮菜属风轮菜   fēng lún cài shǔ fēng lún cài
-      wrong because: 15 letters
-
   Vitex   16 species
       latin reads: chaste tree
       chinese: 牡荆属穗花牡荆   mǔ jīng shǔ suì huā mǔ jīng
       wrong because: same word as Lygisma
-
-  Tragopogon   16 species
-      latin reads: bearded
-      chinese: 婆罗门参属阿勒泰婆罗门参   pó luó mén shēn shǔ ā lè tài pó luó mén shēn
-      wrong because: same word as Pogonatum
 
   Ulota   15 species
       latin reads: curled + leaf + moss
@@ -239,20 +259,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 偏蒴藓属蕨叶偏蒴藓   piān shuò xiǎn shǔ jué yè piān shuò xiǎn
       wrong because: 20 letters
 
-  Actinodaphne   15 species
-      latin reads: ray + Daphne
-      chinese: 黄肉楠属南投黄肉楠   huáng ròu nán shǔ nán tóu huáng ròu nán
-      wrong because: a name in the gloss, same word as Actinoschoenus, Actinocarya, Actinostachys
-
   Cissus   15 species
       latin reads: ivy
       chinese: 白粉藤属贴生白粉藤   bái fěn téng shǔ tiē shēng bái fěn téng
       wrong because: same word as Hedera
-
-  Hiptage   15 species
-      latin reads: wind + stringed musical instrument + fruit
-      chinese: 风筝果属尖叶风筝果   fēng zheng guǒ shǔ jiān yè fēng zheng guǒ
-      wrong because: 21 letters
 
   Gomphostemma   15 species
       latin reads: Gomphi + garland
@@ -268,11 +278,6 @@ beside each, because it is usually right where the Latin is not.
       latin reads: sacrifice
       chinese: 羽藓属绿羽藓   yǔ xiǎn shǔ lǜ yǔ xiǎn
       wrong because: same word as Indothuidium
-
-  Gollania   14 species
-      latin reads: coarse + branch + moss
-      chinese: 粗枝藓属粗枝藓   cū zhī xiǎn shǔ cū zhī xiǎn
-      wrong because: 15 letters
 
   Veratrum   14 species
       latin reads: hellebore
@@ -334,6 +339,11 @@ beside each, because it is usually right where the Latin is not.
       chinese: 菅属瘤菅   jiān shǔ liú jiān
       wrong because: same word as Asperugo
 
+  Fragaria   13 species
+      latin reads: strawberry + holm oak
+      chinese: 草莓属草莓   cǎo méi shǔ cǎo méi
+      wrong because: 15 letters
+
   Dysoxylum   13 species
       latin reads: difficult + Oxylus
       chinese: 樫木属高大樫木   jiān mù shǔ gāo dà jiān mù
@@ -358,6 +368,11 @@ beside each, because it is usually right where the Latin is not.
       latin reads: water + east + elder brother
       chinese: 水东哥属蜡质水东哥   shuǐ dōng gē shǔ là zhì shuǐ dōng gē
       wrong because: 14 letters
+
+  Biondia   13 species
+      latin reads: Bion + throughout
+      chinese: 秦岭藤属秦岭藤   qín lǐng téng shǔ qín lǐng téng
+      wrong because: a name in the gloss
 
   Olea   13 species
       latin reads: olive
@@ -404,15 +419,20 @@ beside each, because it is usually right where the Latin is not.
       chinese: 轮环藤属毛叶轮环藤   lún huán téng shǔ máo yè lún huán téng
       wrong because: same word as Cyclocarya
 
-  Fragaria   12 species
-      latin reads: strawberry + holm oak
-      chinese: 草莓属草莓   cǎo méi shǔ cǎo méi
-      wrong because: 15 letters
-
   Atraphaxis   12 species
       latin reads: orach
       chinese: 木蓼属沙木蓼   mù liǎo shǔ shā mù liǎo
       wrong because: same word as Atriplex
+
+  Fagopyrum   12 species
+      latin reads: beech tree
+      chinese: 荞麦属疏穗野荞麦   qiáo mài shǔ shū suì yě qiáo mài
+      wrong because: same word as Fagus
+
+  Comastoma   12 species
+      latin reads: hair + mouth
+      chinese: 喉毛花属蓝钟喉毛花   hóu máo huā shǔ lán zhōng hóu máo huā
+      wrong because: same word as Trichostomum
 
   Cuscuta   12 species
       latin reads: dodder + thread + seed
@@ -425,7 +445,7 @@ beside each, because it is usually right where the Latin is not.
       wrong because: 15 letters
 
   Cystopteris   12 species
-      latin reads: light + leaf + fern
+      latin reads: cystic + species of fern
       chinese: 冷蕨属光叶蕨   lěng jué shǔ guāng yè jué
       wrong because: 14 letters
 
@@ -464,20 +484,20 @@ beside each, because it is usually right where the Latin is not.
       chinese: 黄皮属细叶黄皮   huáng pí shǔ xì yè huáng pí
       wrong because: a name in the gloss
 
-  Fagopyrum   11 species
-      latin reads: beech tree
-      chinese: 荞麦属疏穗野荞麦   qiáo mài shǔ shū suì yě qiáo mài
-      wrong because: same word as Fagus
+  Reevesia   11 species
+      latin reads: pillar + flower
+      chinese: 梭罗树属台湾梭罗树   suō luó shù shǔ tái wān suō luó shù
+      wrong because: same word as Stylosanthes
+
+  Hilliella   11 species
+      latin reads: bladder + fruit + water-chestnuts
+      chinese: 脬果荠属脬果荠   pāo guǒ jì shǔ pāo guǒ jì
+      wrong because: 15 letters
 
   Myrsine   11 species
       latin reads: myrtle
       chinese: 铁仔属拟密花树   tiě zǎi shǔ nǐ mì huā shù
       wrong because: same word as Myrtus
-
-  Comastoma   11 species
-      latin reads: hair + mouth
-      chinese: 喉毛花属蓝钟喉毛花   hóu máo huā shǔ lán zhōng hóu máo huā
-      wrong because: same word as Trichostomum
 
   Convolvulus   11 species
       latin reads: caterpillar
@@ -487,7 +507,7 @@ beside each, because it is usually right where the Latin is not.
   Conioselinum   11 species
       latin reads: mountain + kind of herb
       chinese: 山芎属山芎   shān xiōng shǔ shān xiōng
-      wrong because: 16 letters
+      wrong because: 15 letters
 
   Galatella   11 species
       latin reads: milk + luxuriance of growth
@@ -507,7 +527,7 @@ beside each, because it is usually right where the Latin is not.
   Metagentiana   11 species
       latin reads: narrow + stamen + dragon + gall bladder
       chinese: 狭蕊龙胆属翅萼龙胆   xiá ruǐ lóng dǎn shǔ chì è lóng dǎn
-      wrong because: 24 letters
+      wrong because: 23 letters
 
   Mnium   10 species
       latin reads: hold in hand + lantern + moss
@@ -554,25 +574,15 @@ beside each, because it is usually right where the Latin is not.
       chinese: 山芝麻属山芝麻   shān zhī ma shǔ shān zhī ma
       wrong because: a name in the gloss
 
-  Reevesia   10 species
-      latin reads: pillar + flower
-      chinese: 梭罗树属瑶山梭罗树   suō luó shù shǔ yáo shān suō luó shù
-      wrong because: same word as Stylosanthes
-
   Dontostemon   10 species
       latin reads: gift + roasted + Emona
       chinese: 花旗杆属厚叶花旗杆   huā qí gān shǔ hòu yè huā qí gān
       wrong because: a name in the gloss
 
   Smelowskia   10 species
-      latin reads: hide + water-chestnuts
+      latin reads: celery + leaf + water-chestnuts
       chinese: 芹叶荠属藏荠   qín yè jì shǔ zàng jì
       wrong because: 14 letters
-
-  Hilliella   10 species
-      latin reads: bladder + fruit + water-chestnuts
-      chinese: 脬果荠属脬果荠   pāo guǒ jì shǔ pāo guǒ jì
-      wrong because: 15 letters
 
   Myricaria   10 species
       latin reads: myriad + Caria
@@ -582,12 +592,12 @@ beside each, because it is usually right where the Latin is not.
   Bassia   10 species
       latin reads: sand + ice + chenopodium album
       chinese: 沙冰藜属刺果藜   shā bīng lí shǔ cì guǒ lí
-      wrong because: 16 letters
+      wrong because: 17 letters
 
   Aucuba   10 species
       latin reads: peach + leaf + coral + coral
       chinese: 桃叶珊瑚属斑叶珊瑚   táo yè shān hú shǔ bān yè shān hú
-      wrong because: 17 letters
+      wrong because: 15 letters
 
   Erycibe   10 species
       latin reads: male adult + fair + vine
@@ -598,6 +608,11 @@ beside each, because it is usually right where the Latin is not.
       latin reads: Hanno + flower + s
       chinese: 红丝线属红丝线   hóng sī xiàn shǔ hóng sī xiàn
       wrong because: a name in the gloss, same word as Prasanthus, Maianthemum, Atropanthe
+
+  Whytockia   10 species
+      latin reads: strange + leaf + lettuce + moss
+      chinese: 异叶苣苔属毕节异叶苣苔   yì yè jù tái shǔ bì jié yì yè jù tái
+      wrong because: 14 letters
 
   Chondrilla   10 species
       latin reads: powder + bract + chrysanthemum
@@ -622,7 +637,7 @@ beside each, because it is usually right where the Latin is not.
   Campylium   9 species
       latin reads: bent + forms instrument nouns
       chinese: 细湿藓属短尖拟细湿藓   xì shī xiǎn shǔ duǎn jiān nǐ xì shī xiǎn
-      wrong because: 15 letters
+      wrong because: 14 letters
 
   Leptopterigynandrum   9 species
       latin reads: husked + wing + woman + andron
@@ -694,10 +709,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 漏斗苣苔属长梗漏斗苣苔   lòu dǒu jù tái shǔ cháng gěng lòu dǒu jù tái
       wrong because: 15 letters
 
-  Whytockia   9 species
-      latin reads: strange + leaf + lettuce + moss
-      chinese: 异叶苣苔属毕节异叶苣苔   yì yè jù tái shǔ bì jié yì yè jù tái
-      wrong because: 14 letters
+  Sinocarum   9 species
+      latin reads: sinus
+      chinese: 小芹属紫茎小芹   xiǎo qín shǔ zǐ jīng xiǎo qín
+      wrong because: same word as Sinosassafras, Sinowilsonia, Sinocrassula
 
   Alseodaphnopsis   9 species
       latin reads: Ausa + move + Daphne + appearance
@@ -707,7 +722,7 @@ beside each, because it is usually right where the Latin is not.
   Kuepferia   9 species
       latin reads: ear + pleat + dragon + gall bladder
       chinese: 耳褶龙胆属石竹叶龙胆   ěr zhě lóng dǎn shǔ shí zhú yè lóng dǎn
-      wrong because: 20 letters
+      wrong because: 19 letters
 
   Atrichum   8 species
       latin reads: Atreid + fluid
@@ -779,10 +794,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 绣球防风属蜂巢草   xiù qiú fáng fēng shǔ fēng cháo cǎo
       wrong because: 15 letters
 
-  Sinocarum   8 species
-      latin reads: sinus
-      chinese: 小芹属紫茎小芹   xiǎo qín shǔ zǐ jīng xiǎo qín
-      wrong because: same word as Sinosassafras, Sinowilsonia, Sinocrassula
+  Allardia   8 species
+      latin reads: flat + awn + chrysanthemum
+      chinese: 扁芒菊属西藏扁芒菊   biǎn máng jú shǔ xī zàng biǎn máng jú
+      wrong because: 14 letters
 
   Centaurea   8 species
       latin reads: Centaurea centaurium
@@ -792,7 +807,7 @@ beside each, because it is usually right where the Latin is not.
   Faberia   8 species
       latin reads: flower + belt ornament + chrysanthemum
       chinese: 花佩菊属小花花佩菊   huā pèi jú shǔ xiǎo huā huā pèi jú
-      wrong because: 15 letters
+      wrong because: 14 letters
 
   Himalaiella   8 species
       latin reads: Himalayas + little
@@ -808,6 +823,11 @@ beside each, because it is usually right where the Latin is not.
       latin reads: red + flower
       chinese: 沟酸浆属匍生沟酸浆   gōu suān jiāng shǔ pú shēng gōu suān jiāng
       wrong because: same word as Carthamus
+
+  Sabulina   8 species
+      latin reads: mountain + varnish + father's sister
+      chinese: 山漆姑属腺毛山漆姑   shān qī gū shǔ xiàn máo shān qī gū
+      wrong because: 17 letters
 
   Oligotrichum   7 species
       latin reads: few + hair
@@ -912,17 +932,17 @@ beside each, because it is usually right where the Latin is not.
   Gamochaeta   7 species
       latin reads: combine + crown + mouse + bent
       chinese: 合冠鼠曲属直茎合冠鼠曲   hé guān shǔ qū shǔ zhí jīng hé guān shǔ qū
-      wrong because: 17 letters
+      wrong because: 16 letters
 
   Soroseris   7 species
       latin reads: heap + Eris
       chinese: 绢毛苣属矮生绢毛苣   juàn máo jù shǔ ǎi shēng juàn máo jù
       wrong because: a name in the gloss, same word as Mukia, Korthalsella
 
-  Sabulina   7 species
-      latin reads: mountain + varnish + father's sister
-      chinese: 山漆姑属腺毛山漆姑   shān qī gū shǔ xiàn máo shān qī gū
-      wrong because: 16 letters
+  Diplopterygium   7 species
+      latin reads: something double + fin
+      chinese: 里白属中华里白   lǐ bái shǔ zhōng huá lǐ bái
+      wrong because: 14 letters
 
   Polytrichum   6 species
       latin reads: many + hair
@@ -949,10 +969,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 树羽苔属树羽苔   shù yǔ tái shǔ shù yǔ tái
       wrong because: 16 letters
 
-  Chamaecyparis   6 species
-      latin reads: terrestrial + ship + bow drill
-      chinese: 扁柏属红桧   biǎn bǎi shǔ hóng guì
-      wrong because: 14 letters
+  Caryodaphnopsis   6 species
+      latin reads: nut + Daphnis + view
+      chinese: 檬果樟属老挝檬果樟   méng guǒ zhāng shǔ lǎo wō méng guǒ zhāng
+      wrong because: a name in the gloss
 
   Stemona   6 species
       latin reads: warp
@@ -977,7 +997,7 @@ beside each, because it is usually right where the Latin is not.
   Arenga   6 species
       latin reads: coir-palm + betel-nut tree
       chinese: 桄榔属双籽棕   guāng láng shǔ shuāng zǐ zōng
-      wrong because: 18 letters
+      wrong because: 19 letters
 
   Boesenbergia   6 species
       latin reads: cattle + old man + Berga
@@ -1009,11 +1029,6 @@ beside each, because it is usually right where the Latin is not.
       chinese: 条果芥属柳叶条果芥   tiáo guǒ jiè shǔ liǔ yè tiáo guǒ jiè
       wrong because: same word as Parryodes
 
-  Arceuthobium   6 species
-      latin reads: oil + fir + send + life
-      chinese: 油杉寄生属油杉寄生   yóu shān jì shēng shǔ yóu shān jì shēng
-      wrong because: 14 letters
-
   Dichroa   6 species
       latin reads: two + Christ
       chinese: 常山属大明常山   cháng shān shǔ dà míng cháng shān
@@ -1022,7 +1037,7 @@ beside each, because it is usually right where the Latin is not.
   Nothapodytes   6 species
       latin reads: false + firewood + dragon + tree
       chinese: 假柴龙树属厚叶假柴龙树   jiǎ chái lóng shù shǔ hòu yè jiǎ chái lóng shù
-      wrong because: 16 letters
+      wrong because: 17 letters
 
   Melodinus   6 species
       latin reads: honey + Odin
@@ -1067,7 +1082,7 @@ beside each, because it is usually right where the Latin is not.
   Gnaphalium   6 species
       latin reads: wet + mouse + bent + grass
       chinese: 湿鼠曲草属星芒湿鼠曲草   shī shǔ qū cǎo shǔ xīng máng shī shǔ qū cǎo
-      wrong because: 16 letters
+      wrong because: 15 letters
 
   Ixeris   6 species
       latin reads: bitter + plant name + vegetable
@@ -1078,11 +1093,6 @@ beside each, because it is usually right where the Latin is not.
       latin reads: one + branch + yellow + flower
       chinese: 一枝黄花属高大一枝黄花   yī zhī huáng huā shǔ gāo dà yī zhī huáng huā
       wrong because: 16 letters
-
-  Diplopterygium   6 species
-      latin reads: something double + fin
-      chinese: 里白属大里白   lǐ bái shǔ dà lǐ bái
-      wrong because: 14 letters
 
   Chamaelirium   6 species
       latin reads: terrestrial + Madonna lily
@@ -1144,6 +1154,11 @@ beside each, because it is usually right where the Latin is not.
       chinese: 肉果兰属二色肉果兰   ròu guǒ lán shǔ èr sè ròu guǒ lán
       wrong because: same word as Bryobium, Myrtama, Phytolacca
 
+  Myrmechis   5 species
+      latin reads: Myron + means
+      chinese: 全唇兰属全唇兰   quán chún lán shǔ quán chún lán
+      wrong because: a name in the gloss
+
   Papilionanthe   5 species
       latin reads: papal + Troy + flower
       chinese: 凤蝶兰属白花凤蝶兰   fèng dié lán shǔ bái huā fèng dié lán
@@ -1187,7 +1202,7 @@ beside each, because it is usually right where the Latin is not.
   Wallichia   5 species
       latin reads: tile + reason + hemp palm
       chinese: 瓦理棕属琴叶瓦理棕   wǎ lǐ zōng shǔ qín yè wǎ lǐ zōng
-      wrong because: 15 letters
+      wrong because: 16 letters
 
   Pontederia   5 species
       latin reads: weaver's shuttle + fish + grass
@@ -1279,6 +1294,11 @@ beside each, because it is usually right where the Latin is not.
       chinese: 四棱荠属短梗四棱荠   sì léng jì shǔ duǎn gěng sì léng jì
       wrong because: 18 letters
 
+  Stevenia   5 species
+      latin reads: bright + south + mustard plant
+      chinese: 曙南芥属曙南芥   shǔ nán jiè shǔ shǔ nán jiè
+      wrong because: 19 letters
+
   Macrosolen   5 species
       latin reads: large
       chinese: 鞘花属双花鞘花   qiào huā shǔ shuāng huā qiào huā
@@ -1287,7 +1307,7 @@ beside each, because it is usually right where the Latin is not.
   Spergularia   5 species
       latin reads: cow + varnish + father's sister
       chinese: 牛漆姑属二蕊牛漆姑   niú qī gū shǔ èr ruǐ niú qī gū
-      wrong because: 17 letters
+      wrong because: 18 letters
 
   Phytolacca   5 species
       latin reads: plant + swelling
@@ -1312,7 +1332,7 @@ beside each, because it is usually right where the Latin is not.
   Rochelia   5 species
       latin reads: twins + fruit + crane + louse
       chinese: 孪果鹤虱属孪果鹤虱   luán guǒ hè shī shǔ luán guǒ hè shī
-      wrong because: 17 letters
+      wrong because: 16 letters
 
   Lindenbergia   5 species
       latin reads: bell + calyx + grass
@@ -1354,6 +1374,11 @@ beside each, because it is usually right where the Latin is not.
       chinese: 异裂菊属凹脉异裂菊   yì liè jú shǔ āo mài yì liè jú
       wrong because: 14 letters
 
+  Nemosenecio   5 species
+      latin reads: distribute + old man
+      chinese: 羽叶菊属裸果羽叶菊   yǔ yè jú shǔ luǒ guǒ yǔ yè jú
+      wrong because: 15 letters
+
   Pluchea   5 species
       latin reads: broad + bract + chrysanthemum
       chinese: 阔苞菊属美洲阔苞菊   kuò bāo jú shǔ měi zhōu kuò bāo jú
@@ -1377,7 +1402,7 @@ beside each, because it is usually right where the Latin is not.
   Grubovia   5 species
       latin reads: fog + ice + chenopodium album
       chinese: 雾冰藜属短齿雾冰藜   wù bīng lí shǔ duǎn chǐ wù bīng lí
-      wrong because: 15 letters
+      wrong because: 16 letters
 
   Symblepharis   4 species
       latin reads: Syme + eyelash
@@ -1447,17 +1472,17 @@ beside each, because it is usually right where the Latin is not.
   Anthoceros   4 species
       latin reads: wagtail + full of wax
       chinese: 角苔属空腔角苔   jiǎo tái shǔ kōng qiāng jiǎo tái
-      wrong because: 20 letters
+      wrong because: 19 letters
 
   Folioceros   4 species
       latin reads: coarse woolen cloth + horn + moss
       chinese: 褐角苔属乳孢褐角苔   hè jiǎo tái shǔ rǔ bāo hè jiǎo tái
-      wrong because: 18 letters
+      wrong because: 19 letters
 
-  Caryodaphnopsis   4 species
-      latin reads: nut + Daphnis + view
-      chinese: 檬果樟属老挝檬果樟   méng guǒ zhāng shǔ lǎo wō méng guǒ zhāng
-      wrong because: a name in the gloss
+  Stuckenia   4 species
+      latin reads: fine-toothed comb + tooth + eye + seed + vegetable
+      chinese: 篦齿眼子菜属钝叶菹草   bì chǐ yǎn zi cài shǔ dùn yè zū cǎo
+      wrong because: 24 letters
 
   Conchidium   4 species
       latin reads: shell
@@ -1475,7 +1500,7 @@ beside each, because it is usually right where the Latin is not.
       wrong because: same word as Cistanche
 
   Loropetalum   4 species
-      latin reads: loropetalum chinense + tree
+      latin reads: thong + husk
       chinese: 檵木属檵木   jì mù shǔ jì mù
       wrong because: 15 letters
 
@@ -1492,7 +1517,7 @@ beside each, because it is usually right where the Latin is not.
   Guihaia   4 species
       latin reads: stone + mountain + hemp palm
       chinese: 石山棕属石山棕   shí shān zōng shǔ shí shān zōng
-      wrong because: 16 letters
+      wrong because: 17 letters
 
   Trachycarpus   4 species
       latin reads: Trachis + fruit
@@ -1534,10 +1559,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 柳兰属柳兰   liǔ lán shǔ liǔ lán
       wrong because: a name in the gloss
 
-  Stevenia   4 species
-      latin reads: bright + south + mustard plant
-      chinese: 曙南芥属曙南芥   shǔ nán jiè shǔ shǔ nán jiè
-      wrong because: 19 letters
+  Orychophragmus   4 species
+      latin reads: pickaxe + mound + blockage
+      chinese: 诸葛菜属诸葛菜   zhū gě cài shǔ zhū gě cài
+      wrong because: 16 letters
 
   Yinshania   4 species
       latin reads: 'female' principle + mountain + water-chestnuts
@@ -1547,7 +1572,7 @@ beside each, because it is usually right where the Latin is not.
   Axyris   4 species
       latin reads: axle + chenopodium album
       chinese: 轴藜属轴藜   zhóu lí shǔ zhóu lí
-      wrong because: 15 letters
+      wrong because: 16 letters
 
   Krascheninnikovia   4 species
       latin reads: camel + silk + chenopodium album
@@ -1577,7 +1602,7 @@ beside each, because it is usually right where the Latin is not.
   Tournefortia   4 species
       latin reads: purple + cinnabar (native hgs)
       chinese: 紫丹属银毛树   zǐ dān shǔ yín máo shù
-      wrong because: 15 letters
+      wrong because: 14 letters
 
   Anisodus   4 species
       latin reads: participle + tooth
@@ -1592,7 +1617,7 @@ beside each, because it is usually right where the Latin is not.
   Prunella   4 species
       latin reads: summer + dried out + grass
       chinese: 夏枯草属山菠菜   xià kū cǎo shǔ shān bō cài
-      wrong because: 14 letters
+      wrong because: 16 letters
 
   Asystasia   4 species
       latin reads: ten + ten thousand + error
@@ -1609,10 +1634,15 @@ beside each, because it is usually right where the Latin is not.
       chinese: 芦莉草属赛山蓝   lú lì cǎo shǔ sài shān lán
       wrong because: 15 letters
 
+  Aegopodium   4 species
+      latin reads: Aegeus + balcony
+      chinese: 羊角芹属东北羊角芹   yáng jiǎo qín shǔ dōng běi yáng jiǎo qín
+      wrong because: a name in the gloss, same word as Lycopodium
+
   Schulzia   4 species
       latin reads: bract + split + celery
       chinese: 苞裂芹属白花苞裂芹   bāo liè qín shǔ bái huā bāo liè qín
-      wrong because: 18 letters
+      wrong because: 17 letters
 
   Trachyspermum   4 species
       latin reads: Trachis + seed
@@ -1634,15 +1664,10 @@ beside each, because it is usually right where the Latin is not.
       chinese: 大丁草属大丁草   dà dīng cǎo shǔ dà dīng cǎo
       wrong because: 14 letters
 
-  Nemosenecio   4 species
-      latin reads: distribute + old man
-      chinese: 羽叶菊属裸果羽叶菊   yǔ yè jú shǔ luǒ guǒ yǔ yè jú
-      wrong because: 15 letters
-
   Leycesteria   4 species
       latin reads: ghost + blow + bamboo flute
       chinese: 鬼吹箫属鬼吹箫   guǐ chuī xiāo shǔ guǐ chuī xiāo
-      wrong because: 15 letters
+      wrong because: 17 letters
 
   Lycopodium   4 species
       latin reads: Phaedromus + balcony
@@ -1729,6 +1754,11 @@ beside each, because it is usually right where the Latin is not.
       chinese: 拟疣胞藓属短茎拟疣胞藓   nǐ yóu bāo xiǎn shǔ duǎn jīng nǐ yóu bāo xiǎn
       wrong because: 17 letters
 
+  Pylaisiadelpha   3 species
+      latin reads: wing + will know + sister
+      chinese: 毛锦藓属弯叶毛锦藓   máo jǐn xiǎn shǔ wān yè máo jǐn xiǎn
+      wrong because: 14 letters
+
   Hylocomiastrum   3 species
       latin reads: wood + courteous + Ionic
       chinese: 星塔藓属喜马拉雅星塔藓   xīng tǎ xiǎn shǔ xǐ mǎ lā yǎ xīng tǎ xiǎn
@@ -1738,6 +1768,11 @@ beside each, because it is usually right where the Latin is not.
       latin reads: slender + Hymen
       chinese: 薄膜藓属短柄薄膜藓   báo mó xiǎn shǔ duǎn bǐng báo mó xiǎn
       wrong because: a name in the gloss, same word as Leptobryum, Leptocladium, Leptolejeunea
+
+  Rhytidiadelphus   3 species
+      latin reads: wrinkle + interests + Delphian
+      chinese: 拟垂枝藓属仰尖拟垂枝藓   nǐ chuí zhī xiǎn shǔ yǎng jiān nǐ chuí zhī xiǎn
+      wrong because: a name in the gloss
 
   Horikawaea   3 species
       latin reads: pouch + leaf + moss
@@ -1789,15 +1824,15 @@ beside each, because it is usually right where the Latin is not.
       chinese: 莲桂属莲桂   lián guì shǔ lián guì
       wrong because: 15 letters
 
-  Stuckenia   3 species
-      latin reads: fine-toothed comb + tooth + eye + seed + vegetable
-      chinese: 篦齿眼子菜属钝叶菹草   bì chǐ yǎn zi cài shǔ dùn yè zū cǎo
-      wrong because: 24 letters
-
   Dienia   3 species
       latin reads: without + ear + lake + orchid
       chinese: 无耳沼兰属筒穗无耳沼兰   wú ěr zhǎo lán shǔ tǒng suì wú ěr zhǎo lán
-      wrong because: 14 letters
+      wrong because: 15 letters
+
+  Pogonia   3 species
+      latin reads: comet
+      chinese: 朱兰属朱兰   zhū lán shǔ zhū lán
+      wrong because: same word as Typhonium
 
   Schoenorchis   3 species
       latin reads: Plataea + orchid
@@ -1817,7 +1852,7 @@ beside each, because it is usually right where the Latin is not.
   Etlingera   3 species
       latin reads: fennel + fragrant + sand + humaneness
       chinese: 茴香砂仁属火炬姜   huí xiāng shā rén shǔ huǒ jù jiāng
-      wrong because: 15 letters
+      wrong because: 16 letters
 
   Bulbostylis   3 species
       latin reads: ball + pillar + grass
@@ -1832,7 +1867,7 @@ beside each, because it is usually right where the Latin is not.
   Bothriochloa   3 species
       latin reads: stinking + root + seed + grass
       chinese: 孔颖草属臭根子草   kǒng yǐng cǎo shǔ chòu gēn zǐ cǎo
-      wrong because: 17 letters
+      wrong because: 18 letters
 
   Briza   3 species
       latin reads: rye
@@ -1924,11 +1959,6 @@ beside each, because it is usually right where the Latin is not.
       chinese: 黄檗属黄檗   huáng bò shǔ huáng bò
       wrong because: a name in the gloss, same word as Dendrochilum, Mayodendron
 
-  Orychophragmus   3 species
-      latin reads: pickaxe + mound + blockage
-      chinese: 诸葛菜属诸葛菜   zhū gě cài shǔ zhū gě cài
-      wrong because: 16 letters
-
   Buckleya   3 species
       latin reads: rice + face + luxuriant vegetation
       chinese: 米面蓊属棱果米面蓊   mǐ miàn wěng shǔ léng guǒ mǐ miàn wěng
@@ -1972,7 +2002,7 @@ beside each, because it is usually right where the Latin is not.
   Corallodiscus   3 species
       latin reads: coral + coral + lettuce + moss
       chinese: 珊瑚苣苔属小石花   shān hú jù tái shǔ xiǎo shí huā
-      wrong because: 16 letters
+      wrong because: 15 letters
 
   Didymostigma   3 species
       latin reads: Salina + stigma
@@ -2018,34 +2048,4 @@ beside each, because it is usually right where the Latin is not.
       latin reads: ivy
       chinese: 常春藤属   cháng chūn téng shǔ
       wrong because: same word as Cissus
-
-  Aegopodium   3 species
-      latin reads: Aegeus + balcony
-      chinese: 羊角芹属东北羊角芹   yáng jiǎo qín shǔ dōng běi yáng jiǎo qín
-      wrong because: a name in the gloss, same word as Lycopodium
-
-  Asyneuma   3 species
-      latin reads: tend cattle + root + grass
-      chinese: 牧根草属球果牧根草   mù gēn cǎo shǔ qiú guǒ mù gēn cǎo
-      wrong because: 15 letters
-
-  Wahlenbergia   3 species
-      latin reads: star + flower + grass
-      chinese: 蓝花参属星花草   lán huā shēn shǔ xīng huā cǎo
-      wrong because: 16 letters
-
-  Dichrocephala   3 species
-      latin reads: two + Christ + head
-      chinese: 鱼眼草属小鱼眼草   yú yǎn cǎo shǔ xiǎo yú yǎn cǎo
-      wrong because: a name in the gloss
-
-  Helianthus   3 species
-      latin reads: flower
-      chinese: 向日葵属向日葵   xiàng rì kuí shǔ xiàng rì kuí
-      wrong because: same word as Prasanthus, Maianthemum, Atropanthe
-
-  Sinacalia   3 species
-      latin reads: Lingnan + hut
-      chinese: 华蟹甲属双花华蟹甲   huá xiè jiǎ shǔ shuāng huā huá xiè jiǎ
-      wrong because: a name in the gloss
 

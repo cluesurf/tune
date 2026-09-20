@@ -28,6 +28,23 @@
  * wrong guess costs nothing: `loving` offers `lov` and `love`, and
  * only the second is ever a concept.
  */
+
+/**
+ * **THESE WERE MISSING, AND BOTH READERS SWALLOWED THE ERROR.**
+ *
+ * `knownEnglish` and the whole-word list each reach for the disk
+ * inside a `try`, and the file had no imports at all, so every call
+ * threw `ReferenceError: resolve is not defined`, was caught, and
+ * answered with an EMPTY SET. `isForeign` therefore refused nothing
+ * for as long as it has existed, while reading as a working gate.
+ *
+ * A catch that turns a crash into a clean empty answer is the same
+ * shape as a check that cannot evaluate a case reporting no errors.
+ */
+import { readFileSync } from 'fs'
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+
 const CONCEPT: Array<[RegExp, Array<string>]> = [
   [/^to /, ['']],
   [/^being /, ['']],
@@ -83,6 +100,15 @@ const CONCEPT: Array<[RegExp, Array<string>]> = [
    * which is why `''` stays first.
    */
   [/ly$/, ['', 'e', 'le']],
+  /**
+   * `-ied` RESTORES THE `-y`, and must be asked before `-ed`.
+   *
+   * `terrified` under `-ed` gives `terrifi` and `terrifie`, neither a
+   * word, so the demand sat on the past participle and `terrify`
+   * never got a seat. The same holds for `carried`, `buried`,
+   * `studied`, `married`, `copied`.
+   */
+  [/ied$/, ['y', 'ie']],
   [/ed$/, ['', 'e']],
   [/er$/, ['', 'e']],
   [/or$/, ['', 'e']],
@@ -166,10 +192,106 @@ const SPELLING: Array<[RegExp, string]> = [
  * without this the form wins simply by being the spelling the corpus
  * happened to use.
  */
+/**
+ * THE WORDS WHOSE ENDING ONLY LOOKS LIKE A SUFFIX.
+ *
+ * Hand written, one word per row with the reason beside it, and read
+ * from `base/term/whole.csv` rather than typed here so it can be
+ * argued with. `belly` is not `bell` plus `-y`, `early` is not `ear`
+ * plus `-ly`, `archive` is not `arch` plus `-ive`, and `science` is
+ * a pinned concept that the `-ence` rule was calling a derived form.
+ *
+ * The dictionary gate below catches most of the class on its own.
+ * This list is for the residue, where the stem happens to be a real
+ * word and the derivation is still false.
+ */
+let wholeWords: Set<string> | undefined
+
+function wholeWord(): Set<string> {
+  if (wholeWords) return wholeWords
+  wholeWords = new Set<string>()
+  try {
+    const path = resolve(
+      dirname(fileURLToPath(import.meta.url)),
+      '../base/term/whole.csv',
+    )
+    for (const line of readFileSync(path, 'utf-8').split('\n').slice(1)) {
+      const word = (line.split(',')[0] ?? '').trim().toLowerCase()
+      if (word) wholeWords.add(word)
+    }
+  } catch {
+    // Without it nothing is excused, which is the loud direction.
+  }
+  return wholeWords
+}
+
 export function isDerived(term: string): boolean {
   const flat = term.trim().toLowerCase()
   if (SAME[flat]) return true
-  return DERIVED.some(one => one.test(flat))
+  if (wholeWord().has(flat)) return false
+  /**
+   * **A SUFFIX NEEDS A STEM IN FRONT OF IT, AND THE STEM MUST BE A
+   * WORD.**
+   *
+   * `five` is not `f` plus `-ive`, and neither are `give`, `live`,
+   * `dive`, `hive`, `wife` or `city`. The ending is the whole word.
+   * Without the length floor the rule called `five` an inflected
+   * form, which put a pinned number into the queue of words awaiting
+   * a decision.
+   *
+   * Three letters is the floor, and it is not enough on its own:
+   * `thrive`, `native`, `swordfish` and `varnish` all clear it, and
+   * `thr`, `nat`, `swordf` and `varn` are not words. So the stem is
+   * looked up, and a suffix with nothing real in front of it does
+   * not fire.
+   *
+   * That gate is what handles the twenty five `-fish` and `-fly`
+   * species names at once, without banning those endings outright:
+   * `selfish` and `wolfish` still answer yes, because `self` and
+   * `wolf` are words and `swordf` is not.
+   *
+   * The dictionary is only consulted when it actually loaded. With
+   * no dictionary the length floor decides alone, which is the
+   * behaviour this had before.
+   */
+  const known = knownEnglish()
+  return DERIVED.some(one => {
+    if (!one.test(flat)) return false
+    const stem = flat.replace(one, '')
+    if (stem.length < 3) return false
+    if (known.size === 0) return true
+    return stemsOf(flat, stem).some(two => known.has(two))
+  })
+}
+
+/**
+ * THE SPELLINGS ONE STEM CAN WEAR UNDER A SUFFIX.
+ *
+ * English does not simply concatenate, so asking the dictionary for
+ * the letters left over answers no for words that are plainly built:
+ *
+ * ```text
+ * scaly     -ly eats the stem's own l     scal + e   -> scale
+ * bristly   and the silent e as well      brist + le -> bristle
+ * sunny     the consonant is doubled      sunn       -> sun
+ * happiness the y became an i             happi      -> happy
+ * ```
+ *
+ * `scaly` is the one that matters most, because `-y` is not in the
+ * suffix list and `-ly` matches it anyway, taking a letter that was
+ * never part of the ending.
+ */
+function stemsOf(flat: string, stem: string): Array<string> {
+  const out = new Set<string>([stem, `${stem}e`, `${stem}le`])
+  out.add(stem.replace(/i$/, 'y'))
+  out.add(stem.replace(/([bdfglmnprt])\1$/, '$1'))
+  if (flat.endsWith('y')) {
+    const short = flat.slice(0, -1)
+    out.add(short)
+    out.add(`${short}e`)
+    out.add(short.replace(/([bdfglmnprt])\1$/, '$1'))
+  }
+  return [...out].filter(one => one.length >= 3)
 }
 
 /**
@@ -335,15 +457,63 @@ const AN_ENDING = new Set([
  * collide: every genus the dictionary shrugged at lands on the same
  * word.
  */
+/**
+ * **ONLY WHOLE PHRASES, NEVER BARE WORDS.**
+ *
+ * This list held `plant`, `name`, `form`, `genus`, `species`, `stem`
+ * and `kind` as single words, which are all REAL CONCEPTS: a plant is
+ * a plant, a stem is a stem, and 918 species genuinely want `plant`.
+ * Listing them here declared them meaningless and would have dropped
+ * them out of finished names.
+ *
+ * A dictionary shrugging says `a female name` or `an unknown plant`,
+ * as a whole phrase. `plant` on its own beside another word is the
+ * plant. **The shrug is in the phrase, never in the word**, so every
+ * entry here is a phrase and this is only ever asked of a whole gloss
+ * part.
+ */
 const A_SHRUG = [
   'a female name', 'female name', 'a male given name', 'a male name',
   'male name', 'a given name', 'given name', 'a surname', 'surname',
-  'a name', 'name', 'name of', 'the name of', 'a plant', 'plant',
-  'an unknown plant', 'unknown plant', 'a tree', 'unknown',
-  'a genus', 'genus', 'a species', 'species', 'a kind', 'kind of',
-  'a word', 'a term', 'of unknown origin', 'origin unknown', 'unclear',
-  'uncertain', 'obscure', 'doubtful', 'not known',
+  'a name', 'name of', 'the name of',
+  'an unknown plant', 'unknown plant', 'a plant', 'a tree',
+  'a genus', 'a species', 'a kind', 'kind of',
+  'a word', 'a term', 'of unknown origin', 'origin unknown',
+  'unknown', 'unclear', 'uncertain', 'obscure', 'doubtful', 'not known',
 ]
+
+/**
+ * A GLOSS PART CLEANED OF EVERYTHING THAT IS NOT THE WORD.
+ *
+ * Dictionary glosses carry asides in brackets, and nothing was
+ * stripping them, so the brackets became part of the concept:
+ *
+ * ```text
+ * (capsule)     blocked 348 species
+ * hgs)          blocked 201
+ * (silk)        blocked 105
+ * sudden(ly)    blocked  20
+ * ```
+ *
+ * Every one of those is a word with punctuation stuck to it, and no
+ * seat will ever be spent on `(capsule)`, so they sat at the top of
+ * the blocker list looking like unmet demand.
+ *
+ * **A parenthetical is dropped, not unwrapped.** `sudden(ly)` is the
+ * source showing an optional ending and the word is `sudden`.
+ * `(capsule)` standing alone as a whole part is the aside itself, so
+ * the brackets come off and the word inside is kept.
+ */
+export function cleanWord(said: string): string {
+  let out = said.trim()
+  /** A bracketed tail on a word is an optional ending: drop it. */
+  out = out.replace(/\(.*?\)$/, '')
+  /** A wholly bracketed part is the word itself: unwrap it. */
+  out = out.replace(/^\((.*)\)$/, '$1')
+  /** Anything left is a stray half-bracket or stray punctuation. */
+  out = out.replace(/[()[\]{}<>"'`;:!?*]/g, '')
+  return out.trim()
+}
 
 export function isEnding(said: string): boolean {
   const flat = said.trim().toLowerCase().replace(/\s+/g, ' ')

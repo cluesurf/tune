@@ -57,17 +57,9 @@ Reply with JSON only, no prose around it:
       Warnstorfia fluitans   范氏藓属浮生范氏藓   fàn shì xiǎn shǔ fú shēng fàn shì xiǎn
       beside: Warnstorfia
 
-  multiovula   blocks 1 species
-      Cycas multiovula   苏铁属多胚苏铁   sū tiě shǔ duō pēi sū tiě
-      beside: Cycas
-
   decidua   blocks 1 species
       Larix decidua   落叶松属欧洲落叶松   luò yè sōng shǔ ōu zhōu luò yè sōng
       beside: Larix
-
-  seguine   blocks 1 species
-      Dieffenbachia seguine   黛粉芋属黛粉芋   dài fěn yù shǔ dài fěn yù
-      beside: Dieffenbachia
 
   filamentosa   blocks 1 species
       Burmannia filamentosa   水玉簪属粤东水玉簪   shuǐ yù zān shǔ yuè dōng shuǐ yù zān

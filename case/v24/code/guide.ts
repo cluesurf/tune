@@ -109,9 +109,20 @@ function pairsOf(text: string, useDoubt: boolean) {
     seen.add(key)
     out.push([x, y])
   }
+  /**
+   * ONE LETTER PAST WHERE A WHOLE RIGHT ROOT COULD START.
+   *
+   * The dropped-sound branch below puts a letter BACK, so the right
+   * root can be one letter longer than what the string holds after the
+   * cut. `fizg + gap` spells `fizgap`, the same as `fiz + gap`, and with
+   * the bound at `length - SHORTEST` the cut at 4 was never tried,
+   * because `ap` is shorter than a root. Found 2026-09-20 by `book.ts`
+   * reading the Tao Te Ching back: four words read two ways that this
+   * had called clean.
+   */
   for (
     let L = SHORTEST;
-    L <= Math.min(text.length - SHORTEST, LONGEST);
+    L <= Math.min(text.length - SHORTEST + 1, LONGEST);
     L++
   ) {
     const x = byText.get(text.slice(0, L))

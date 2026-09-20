@@ -259,7 +259,7 @@ magistrate,compound,law head,a law officer
 livid,compound,blue gray,a bruised colour
 agrimony,compound,field herb,the field plant
 yawn,compound,mouth open,to open the mouth wide
-fragile,compound,break easy,easily broken
+fragile,compound,break weak,weak enough to break
 craftsman,compound,craft man,plainly its parts
 masthead,compound,mast head,plainly its parts
 nickname,compound,play name,an informal name
@@ -521,8 +521,8 @@ sluggish,compound,slow,moving slowly
 enveloped,compound,wrap,wrapped around
 kidnap,compound,child steal,to steal a person
 capillary,compound,hair,hair like
-lowered,compound,lower,a word form and not a concept
-dilated,compound,widen,made wide
+lowered,compound,low,a word form and not a concept
+dilated,compound,wide,made wide
 incurved,compound,bend in,curved inward
 chilliness,compound,cold,a word form and not a concept
 buttocked,compound,rump,having a rump
@@ -544,7 +544,7 @@ cargo,compound,carry load,what is carried
 crutch,compound,walk prop,a walking support
 absent,compound,away,not present
 oxtongue,compound,ox tongue,plainly its parts
-brittle,compound,break easy,easily broken
+brittle,compound,break weak,weak enough to break
 marshy,compound,marsh,of the marsh
 pleura,compound,rib side,the chest lining
 curl,base,,a common shape
@@ -579,7 +579,7 @@ basil,base,,a common herb
 iodine,name,,an element already covered by atom
 snailery,compound,snail place,where snails are kept
 burial,compound,bury,a word form and not a concept
-vanishing,compound,vanish,a word form and not a concept
+vanishing,compound,go away,passing out of sight
 clad,compound,cover cloth,clothed
 crosspiece,compound,cross piece,plainly its parts
 shin,compound,leg front,the front of the lower leg
@@ -625,7 +625,7 @@ kindred,compound,kin,of one family
 clamor,compound,loud noise,a loud outcry
 melilot,compound,honey clover,the honey clover
 cockshead,compound,cock head,plainly its parts
-folly,compound,foolish,a word form and not a concept
+folly,compound,fool,the state of a fool
 twice,compound,two time,plainly its parts
 ransom,compound,free pay,payment to free
 coot,compound,water bird,the water bird
@@ -677,3 +677,372 @@ callous,compound,hard skin,the same thing said of a surface
 houttuynia,name,,a genus name leaking through a chinese gloss
 cordata,name,,a latin epithet leaking through a chinese gloss
 henan,name,,a province
+sprout,compound,young shoot,a shoot while it is still young
+sprouts,compound,young shoot,the plural of the same
+18th,name,,an ordinal from a chinese place name
+filamentous,compound,thread,a filament is a thread and the ending is a form
+filament,compound,thread,the same thing under its noun
+marshmallow,compound,marsh mallow,the mallow that grows in marsh
+shavings,compound,shave,what comes off a thing being shaved
+shaving,compound,shave,the same
+alternating,compound,alternate,a form of alternate
+haughtily,compound,proud,haughty is proud and the ending is a form
+haughty,compound,proud,the same under its adjective
+equilateral,compound,same side,every side the same length
+highway,compound,big road,a road built wide
+hurl,compound,throw,to hurl is to throw hard
+wipe,compound,rub,to wipe is to rub across
+internode,compound,between joint,the stem between two joints
+sustenance,compound,food,what sustains is food
+prosper,compound,win,to prosper is to keep winning
+behold,compound,see,to behold is to see
+declare,compound,say,to declare is to say openly
+chorus,compound,sing group,many singing together
+cocoon,compound,silk case,the silk case a grub spins
+stilts,compound,long leg,a plant standing on long prop roots
+stilt,compound,long leg,the same
+dregs,compound,sink part,what sinks to the bottom
+secrete,compound,ooze,to secrete is to ooze out
+medick,compound,clover,medick is a clover kind
+allium,name,,a genus name leaking through a gloss
+victorialis,name,,a latin epithet leaking through a gloss
+newt,compound,water lizard,a lizard that lives in water
+tenant,compound,rent person,one who rents rather than owns
+caraway,compound,seed spice,the spice seed of an umbellifer
+alive,compound,life,alive is having life and needs no seat of its own
+live,compound,life,to live is to have life and needs no seat of its own
+living,compound,life,the same
+lives,compound,life,the same
+paul,name,,a given name and never a base
+lid,compound,cover,a lid is what covers a thing and needs no seat
+eyelid,compound,eye cover,the cover that closes over the eye
+eyelids,compound,eye cover,the plural of the same
+swart,compound,dark,swart is an old word for dark and dark is already pinned
+swarthy,compound,dark,the same under its usual form
+stork,compound,long leg bird,a wading bird known by its legs
+tangier,name,,a city in morocco that leaked into the base set
+lunch,compound,midday meal,the meal taken in the middle of the day
+half,compound,inverse two,a fraction is the inverse of its number
+quarter,compound,inverse four,the same
+tenth,compound,inverse ten,the same
+fifth,compound,inverse five,the same
+fourth,compound,inverse four,the same
+seventh,compound,inverse seven,the same
+third,compound,inverse three,the same
+first,compound,order one,an ordinal is order plus its number
+second,compound,order two,the same
+corinth,name,,a city and never a base
+elizabeth,name,,a given name and never a base
+goliath,name,,a name and never a base
+tennis,compound,ball game,a game played with a ball and never a base
+terrified,compound,terrify,a word form and never the base
+tesselated,compound,tesselate,a word form and never the base
+tessellated,compound,tesselate,the same under its other spelling
+thane,compound,lord,an old word for a lord and lord is already seated
+thoracic,compound,thorax,a word form and never the base
+threshing,compound,thresh,a word form and never the base
+thrown,compound,throw,a word form and never the base
+theatrical,compound,theater,a word form and never the base
+thirty,compound,three ten,a number built from its parts
+thirtysomething,name,,not a word at all
+tomahawk,compound,hand axe,a borrowed name for an axe and never a base
+torah,name,,a named book and never a base
+tormenting,compound,torment,a word form and never the base
+tortuous,compound,twist,a word form of twisting and never a base
+tourist,compound,travel person,one who travels for pleasure
+threshing,compound,thresh,a word form and never the base
+tram,compound,rail car,a car running on rails and never a base
+species,compound,kind,a taxonomic rank is a kind and kind is seated
+genus,compound,kind,the same rank one step up
+object,compound,thing,an object is a thing and thing is pinned
+collection,compound,group,what is collected is a group and group is pinned
+humaneness,compound,mercy,the chinese ren is mercy toward others
+bristly,compound,bristle,the form of bristle and bristle takes the seat
+obscure,name,,a dictionary saying it does not know
+unclear,name,,the same
+intersection,compound,cross place,where two ways cross
+variegated,compound,many color,marked in more than one colour
+gnat,compound,small fly,the tiny biting fly
+asp,compound,poison snake,the venomous snake of the nile
+neighbouring,compound,near,the form of near
+booty,compound,steal thing,what is carried off in a raid
+tinder,compound,fire stuff,what catches the first flame
+coccus,compound,round seed,the latin is a berry or a round body
+unity,compound,one,the state of being one
+countryside,compound,field land,the land outside the town
+active,compound,act,the form of act
+ravenous,compound,big hunger,hunger past measure
+mace,compound,nut cover,the red aril over the nutmeg and not the club
+cubit,compound,arm length,the forearm taken as a measure
+er,name,,a fragment of a word and not a word
+apt,compound,fit,suited to the thing
+seining,compound,net fish,fishing with a drag net
+plectrum,compound,string tool,what plucks the string
+sebesten,name,,the cordia tree named only for itself
+firefly,compound,fire fly,the fly that carries light
+depth,compound,deep,the measure of deep
+kitchen,compound,cook room,the room food is made in
+hammerhead,compound,hammer head,the head shaped like a hammer
+axletree,compound,wheel bar,the bar the wheels turn on
+thrifty,compound,save,the form of save
+proto,compound,begin,the earliest of its kind
+maiden,compound,young woman,the unmarried woman
+bestial,compound,beast,the form of beast
+rectum,compound,end gut,the last stretch of the gut
+was,name,,the source grammar and not a meaning
+superlative,compound,most,the degree that names the most
+sift,compound,sieve,to pass through a sieve
+puffball,compound,dust ball,the fungus that bursts into dust
+nourishment,compound,food,what feeds
+botanical,compound,plant,the form of plant
+polypody,name,,a fern genus named only for itself
+enclosed,compound,shut in,shut on every side
+nemesis,name,,the greek goddess of retribution
+cardoon,name,,the cynara thistle named only for itself
+granular,compound,grain,made of grains
+fungal,compound,fungus,the form of fungus
+marasmus,compound,dry shrink,the greek is a withering away
+uneven,compound,not even,not level
+gangue,compound,waste rock,the worthless rock around the ore
+southeast,compound,south east,the quarter between the two
+abdomen,compound,belly,the belly as a part of the body
+monochrome,compound,one color,in a single colour
+hams,compound,thigh,the thighs
+porcini,name,,the boletus mushroom named only for itself
+metope,name,,the panel of a doric frieze
+photophobe,compound,light fear,what shuns the light
+ichneumon,name,,the mongoose and the wasp named for it
+ovular,compound,egg,the form of egg
+gens,compound,clan,the latin for the clan
+renal,compound,kidney,the form of kidney
+bleating,compound,sheep cry,the cry of the sheep
+xenon,name,,the element named only for itself
+doubling,compound,double,the form of double
+tibial,compound,leg bone,the form of the shin bone
+crowned,compound,crown,bearing a crown
+psoas,compound,loin muscle,the muscle of the loin
+appease,compound,calm,to make calm
+varicose,compound,swell vein,having swollen veins
+unlike,compound,not like,not alike
+fissure,compound,crack,a crack through
+discus,compound,throw disk,the disk that is thrown
+lowest,compound,most low,the lowest of them
+intricate,compound,many fold,folded many ways over itself
+landlady,compound,rent woman,the woman who lets the house
+hornet,compound,big wasp,the large stinging wasp
+chiton,name,,the mollusc and the greek tunic it is named for
+anoint,compound,oil rub,to rub with oil
+stood,compound,stand,the form of stand
+serf,compound,tie farm work,the labourer bound to the land
+blight,compound,plant sick,the sickness that withers a crop
+marbled,compound,marble,veined like marble
+scum,compound,foam dirt,the dirty film on a liquid
+wallet,compound,money bag,the bag that holds money
+posterior,compound,back,the hinder part
+turreted,compound,crown tower,bearing small towers
+weel,compound,fish trap,the basket trap for fish
+suture,compound,sew line,the seam where two edges join
+atrium,compound,heart room,the upper chamber of the heart
+bilateral,compound,two side,having two sides alike
+girdled,compound,belt ring,ringed about with a band
+geo,compound,earth,the greek for earth
+corselet,compound,chest shell,the plate over the chest
+reprisal,compound,revenge,a blow returned
+drawn,compound,draw,the form of draw
+nearest,compound,most near,the nearest of them
+pickled,compound,salt sour,kept in brine or vinegar
+cyclops,compound,one eye,the one eyed giant and the crustacean named for it
+humerus,compound,arm bone,the bone of the upper arm
+changeable,compound,change,able to change
+obol,compound,small coin,the small greek coin
+tragacanth,compound,goat thorn,the greek is goat thorn for the astragalus gum
+worn,compound,wear,the form of wear
+granddaughter,compound,child daughter,the daughter of a child
+riverbank,compound,river edge,the edge of the river
+scurf,compound,skin scale,the flaking of the skin
+helmeted,compound,helmet,bearing a helmet
+cuckoopint,name,,the arum named only for itself
+seaweed,compound,sea weed,the weed of the sea
+eminent,compound,high stand,standing above the rest
+ode,compound,song,the sung poem
+verpus,name,,a latin word for a man and not a concept
+samphire,name,,the crithmum named only for itself
+halved,compound,cut two,cut in two
+emulation,compound,copy,the copying of another
+ciliated,compound,small hair,bearing fine hairs
+osmium,name,,the element named only for itself
+kernellous,compound,kernel,bearing kernels
+trial,compound,try,the form of try
+spearhead,compound,spear head,the head of the spear
+maxillary,compound,up jaw,the form of the upper jaw
+ringlet,compound,hair curl,the curl of hair
+celandine,name,,the chelidonium named only for itself
+granulous,compound,grain,made of grains
+savory,compound,taste herb,the satureja herb used for taste
+trickster,compound,trick,the one who tricks
+pliant,compound,bend,easily bent
+thirds,compound,inverse three,the fraction is the inverse of the number
+filthy,compound,dirty,the form of dirty
+struma,compound,neck swell,the swelling of the neck
+gone,compound,go,the form of go
+gilthead,compound,gold head,the fish with the gold mark on its head
+oblong,compound,long round,longer than it is wide
+thrush,compound,song bird,the singing bird
+emmer,compound,old wheat,the early wheat
+arcade,compound,arch line,a row of arches
+bellied,compound,belly,bearing a belly
+crevice,compound,thin crack,the narrow crack
+twentieth,compound,inverse twenty,the fraction is the inverse of the number
+tonsillitis,compound,throat sick,the sickness of the throat
+famous,compound,fame,the form of fame
+mongoose,name,,the herpestes named only for itself
+snowflake,compound,snow piece,a piece of snow and flake earns no seat of its own
+deme,compound,land group,the greek township
+possession,compound,own,what is owned
+zebra,compound,stripe horse,the striped horse
+uterine,compound,womb,the form of womb
+fetters,compound,foot tie,what binds the feet
+colander,compound,hole bowl,the bowl full of holes
+multicoloured,compound,many color,in many colours
+playing,compound,play,the form of play
+ides,compound,month middle,the middle day of the roman month
+dorsal,compound,back,the form of back
+urchin,compound,thorn sea bug,the spined creature of the sea floor
+rügen,name,,a german island
+dewfall,compound,dew drop,the falling of the dew
+pronged,compound,fork point,bearing forked points
+bereaved,compound,lose,having lost one
+apparition,compound,ghost appear,the appearing of a ghost
+dun,compound,gray brown,the dull grey brown
+droplet,compound,small drop,the small drop
+statesman,compound,rule man,the man who rules
+finished,compound,done,brought to an end
+plebeian,compound,common man,the common roman
+bifurcate,compound,two branch,forked in two
+hoarseness,compound,throat rough,the roughness of the voice
+volute,compound,spiral,the spiral scroll
+fraternal,compound,brother,the form of brother
+tunny,compound,tuna,the tuna fish
+inglorious,compound,not glory,without glory
+kidnapper,compound,steal child,the one who steals a child
+signatory,compound,sign write,the one who writes the sign
+altogether,compound,all,taken all together
+breastbone,compound,chest bone,the bone of the chest
+arachnid,compound,spider,the form of spider
+therein,compound,in that,within that
+metalliferous,compound,metal bear,bearing metal
+lacteal,compound,milk,the form of milk
+tri,compound,three,the greek for three
+obolus,compound,small coin,the small greek coin
+tibia,compound,leg bone,the bone of the lower leg
+inland,compound,in land,within the land
+besiege,compound,siege,to lay siege to
+cities,compound,city,the form of city
+scarab,compound,shell bug,the egyptian beetle
+fenestrated,compound,window,pierced with windows
+gecko,compound,wall lizard,the lizard that climbs the wall
+stilus,compound,write pen,the roman writing pen
+is,name,,the source grammar and not a meaning
+bridle,compound,horse head rope,what steers the horse
+sang,compound,sing,the form of sing
+exceedingly,compound,much,past measure
+villa,compound,field house,the country house
+sir,name,,a title of address and not a meaning
+blistered,compound,blister,bearing blisters
+hgs,name,,a code fragment and not a word
+skiff,compound,small boat,the small light boat
+gnaw,compound,bite,to bite away at
+assistant,compound,help man,the one who helps
+phylum,compound,life kind,a rank of the taxonomy
+evade,compound,escape,to get away from
+swordfish,compound,sword fish,the fish with the sword
+halve,compound,cut two,to cut in two
+thrice,compound,three time,three times over
+caparison,compound,horse cloth,the cloth over the horse
+passable,compound,pass,able to be passed
+chestnuts,compound,chestnut,the form of chestnut
+said,compound,say,the form of say
+weaponry,compound,weapon,weapons taken together
+bombast,compound,swell word,swollen speech
+wooly,compound,wool,the form of wool
+monads,compound,one,the form of one
+buttress,compound,wall prop,what props the wall
+whisker,compound,face hair,the hair of the face
+sawdust,compound,saw dust,the dust of the saw
+chariot,compound,war cart,the cart of war
+fishhook,compound,fish hook,the hook for fish
+redress,compound,right again,to set right again
+bedbug,compound,bed bug,the bug of the bed
+gruel,compound,grain soup,the thin grain soup
+gown,compound,long dress,the long loose dress
+vertex,compound,top point,the highest point
+tris,compound,three,the greek for three
+fecal,compound,dung,the form of dung
+turbinal,compound,nose curl bone,the scrolled bone of the nose
+radical,compound,root,of the root
+laurestine,name,,the viburnum named only for itself
+poverty,compound,poor,the state of poor
+mightily,compound,strong,with strength
+bristled,compound,bristle,bearing bristles
+doubled,compound,double,the form of double
+rhombus,compound,four side slope,the slanted four sided figure
+auger,compound,wood drill,the tool that bores wood
+aspergillum,compound,water throw tool,what sprinkles the water
+ly,name,,a suffix fragment and not a word
+despise,compound,hate,to look on with hate
+abnormal,compound,not normal,away from the normal
+necessity,compound,need,what is needed
+perforation,compound,pierce hole,the hole pierced through
+gladiator,compound,sword slave fight,the roman who fought with a sword
+peculiarly,compound,strange,in a strange way
+squid,compound,ink fish,the ink bearing sea creature
+luxuriance,compound,rich grow,growing richly
+attendant,compound,serve man,the one who serves
+longhorn,compound,long horn,bearing long horns
+sundial,compound,sun clock,the clock read by the sun
+antelope,compound,horn deer,the horned running beast
+nock,compound,arrow notch,the notch that holds the string
+pacification,compound,peace make,the making of peace
+razorfish,compound,blade fish,the fish shaped like a blade
+askew,compound,slope,set at a slant
+doorstone,compound,door stone,the stone at the door
+inhabitant,compound,dwell man,the one who dwells there
+equally,compound,same measure,in the same measure and same is already seated
+saltworks,compound,salt work,where salt is made
+lard,compound,pig fat,the fat of the pig
+plica,compound,fold,the latin for a fold
+duckpond,compound,duck pond,the pond of the ducks
+flank,compound,side,the side of the body
+distributor,compound,give out,the one who gives out
+sparticle,compound,small piece,a word form and not a concept
+otherwise,compound,else way,in another way
+petition,compound,ask,a formal asking
+scutum,compound,shield,the latin for a shield
+vertebrate,compound,back bone,bearing a backbone
+fully,compound,full,in full
+hyoid,compound,throat bone,the bone of the throat
+equipment,compound,tool,the tools for the work
+suckle,compound,milk suck,to feed at the breast
+peta,name,,a unit prefix and not a word
+wailing,compound,cry,the drawn out cry
+mime,compound,body copy,to act a thing out without speech
+continuous,compound,not break,going on unbroken
+obelisk,compound,tall stone post,the tapering stone pillar
+hadron,compound,heavy bit,the greek is heavy for the heavy particle
+meandering,compound,wander curve,winding as a river does
+ruddle,compound,red earth,the red earth used to mark sheep
+skink,compound,smooth lizard,the smooth scaled lizard
+carbonaceous,compound,carbon,made of carbon
+caudal,compound,tail,the form of tail
+cauldron,compound,big boil pot,the great pot for boiling
+fattened,compound,fat,made fat
+omer,compound,grain measure,the hebrew measure of grain
+arean,compound,war god,of mars the war god
+refined,compound,clean,made clean
+gild,compound,gold cover,to cover with gold
+peel,compound,skin,the skin taken off
+nymph,compound,young woman spirit,the greek maiden spirit
+viper,compound,poison snake,the venomous snake
+figurative,compound,picture,standing for a picture and not the plain thing
+noxious,compound,harm,doing harm
+kingfisher,compound,king fish bird,the bird that fishes
