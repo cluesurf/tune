@@ -455,6 +455,10 @@ faind vaind    cluster coda     one of them goes
 | ${say('a root opening on y')} | a liquid | a root opening on \`y\` | ${pct(count.glide)} |
 | ${say('the cut is in doubt')} | a liquid | the cut is in doubt | ${pct(count.doubt)} |
 
+Every example above is the bare seam. **Said aloud a noun takes the
+ending \`-a\`**, and the stress is penultimate, so \`rij + drom\` is
+spoken \`rijdroma\`, /ɾiʒˈdɾoma/.
+
 ### Which liquid
 
 Five of the rows above write "a liquid" rather than an \`l\`, because an

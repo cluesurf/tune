@@ -9,7 +9,7 @@
  *
  * ```text
  * tune,english,roots,glosses,voice,locale,subs
- * balryan,still flame,bal yan,still flame,,,
+ * rijdroma,rhythm drum,rij drom,rhythm drum,,,
  * ```
  *
  * The recorder reads columns 0, 1, 4, 5 and 6. The slide maker reads 0
@@ -17,8 +17,14 @@
  * `LOCALE` govern, which is `tr-TR-AhmetNeural` per
  * `note/tune/pipeline/recording.md`.
  *
- * **A word with no meaning is skipped.** v17 has no lexicon, so six of
- * the seventeen joiner cases have no English to put on a card, and a
+ * **The word carries the noun ending `-a` and the roots do not.** Every
+ * compound here is a noun, and a noun said aloud ends in `-a`, so the
+ * word column is `rijdroma` where the roots column is `rij drom`. The
+ * cheatsheet shows the bare seam, because a joiner rule is about where
+ * two roots meet rather than about what part of speech the result is.
+ *
+ * **A word with no meaning is skipped.** v17 has no lexicon, so three
+ * of the thirteen joiner cases have no English to put on a card, and a
  * card with an empty meaning row teaches nothing. They stay in the
  * cheatsheet, where the rule is the point, and stay out of the video,
  * where the word is.
@@ -33,7 +39,23 @@ import { fileURLToPath } from 'url'
 
 import { CHOSEN, speakable } from './example'
 import { pool } from './pin'
-import { write } from './rule'
+import { seam, spell, write } from './rule'
+
+/**
+ * THE HELPER VOWEL, said and never written.
+ *
+ * A liquid joiner stands between two consonants, and a voice reading
+ * `lɾl` or `mlj` runs them together: `djulrluna` came back with no
+ * `ɾ` in it at all. Giving the joiner a nucleus of its own is what
+ * makes it survive, and `ı` is Turkish for `ɯ`, the unrounded back
+ * vowel. Turkish has no schwa, so `ə` would be a segment the voice
+ * lacks.
+ *
+ * A sibilant joiner needs none of this: `s` and `z` carry their own
+ * noise and come through between two stops, which is what `toksgana`
+ * and `sidztoka` already show.
+ */
+const HELP = 'ı'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../term/words.csv')
@@ -71,19 +93,45 @@ for (const [rule, one] of Object.entries(CHOSEN)) {
     skipped.push(`${joined}   ${said.length} glosses for 2 roots`)
     continue
   }
-  rows.push(`${joined},${meaning},${left} ${right},${said.join(' ')},,,`)
+  /**
+   * A NOUN SAID ALOUD CARRIES `-a`, and every one of these is a noun.
+   *
+   * The ending is grammar rather than spelling, so it goes on the WORD
+   * and never on the roots: `rij drom` are the parts and `rijdroma` is
+   * the word. `note/tune/pipeline/eight-words.md` is where it is
+   * settled, and `himnepa`, `zusa` and `xuva` are the recorded shape.
+   *
+   * It also moves the stress, which is the reason this cannot be left
+   * to the voice. Stress is penultimate, so `rijdrom` would be said
+   * `ˈriʒdrom` and `rijdroma` is said `riʒˈdroma`.
+   */
+  const word = `${joined}a`
+  // Column eight is what to SAY, and it is empty unless the seam needs
+  // the helper vowel. The recorder falls back to column one.
+  const got = seam(a, b)
+  const say = 'l r ri'.split(' ').includes(got.joiner)
+    ? `${spell(a, false, got.mark)}${HELP}${got.joiner}${spell(b, got.dropped, '')}a`
+    : ''
+  rows.push(
+    `${word},${meaning},${left} ${right},${said.join(' ')},,,,${say}`,
+  )
 }
 
 writeFileSync(
   OUT,
-  `# tune,english,roots,glosses,voice,locale,subs\n` +
+  `# tune,english,roots,glosses,voice,locale,subs,say\n` +
     `# written by make/v17/code/words.ts from example.ts\n` +
     `${rows.join('\n')}\n`,
 )
 
+const shown = (one: string) => {
+  const cut = one.split(',')
+  return cut[7] ? `${cut[0].padEnd(12)}said ${cut[7]}` : cut[0]
+}
+
 process.stdout.write(
   `wrote ${OUT}\n\n  ${rows.length} words\n` +
-    rows.map(one => `    ${one.split(',')[0]}\n`).join('') +
+    rows.map(one => `    ${shown(one)}\n`).join('') +
     `\n  ${skipped.length} left out\n` +
     skipped.map(one => `    ${one}\n`).join(''),
 )

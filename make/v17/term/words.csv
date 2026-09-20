@@ -1,12 +1,12 @@
-# tune,english,roots,glosses,voice,locale,subs
+# tune,english,roots,glosses,voice,locale,subs,say
 # written by make/v17/code/words.ts from example.ts
-rijdrom,rhythm drum,rij drom,rhythm drum,,,
-toksgan,tree garden,tok gan,tree garden,,,
-sidztok,seed tree,sid tok,seed tree,,,
-mantsdrom,mountain drum,mant drom,mountain drum,,,
-liflvit,leaf life,lif vit,leaf life,,,
-vitwok,life tree,vit tok,life tree,,,
-redldrom,red drum,red drom,red drum,,,
-dromzman,drum mind,drom man,drum mind,,,
-djulrlun,jewel moon,djul lun,jewel moon,,,
-ramlyam,dark day,ram yam,dark day,,,
+rijdroma,rhythm drum,rij drom,rhythm drum,,,,
+toksgana,tree garden,tok gan,tree garden,,,,
+sidztoka,seed tree,sid tok,seed tree,,,,
+mantsdroma,mountain drum,mant drom,mountain drum,,,,
+liflvita,leaf life,lif vit,leaf life,,,,lifılvita
+vitwoka,life tree,vit tok,life tree,,,,
+redldroma,red drum,red drom,red drum,,,,redıldroma
+dromzmana,drum mind,drom man,drum mind,,,,
+djulrluna,jewel moon,djul lun,jewel moon,,,,djulırluna
+ramlyama,dark day,ram yam,dark day,,,,ramılyama

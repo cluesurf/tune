@@ -122,6 +122,10 @@ faind vaind    cluster coda     one of them goes
 | ram + yam = ramlyam<br>*dark day* | a liquid | a root opening on `y` | 2.98% |
 | mim + plin = mimlplin | a liquid | the cut is in doubt | 0.76% |
 
+Every example above is the bare seam. **Said aloud a noun takes the
+ending `-a`**, and the stress is penultimate, so `rij + drom` is
+spoken `rijdroma`, /ɾiʒˈdɾoma/.
+
 ### Which liquid
 
 Five of the rows above write "a liquid" rather than an `l`, because an
@@ -144,22 +148,9 @@ it. A seam is not inside a root, and a vowel is the one thing that
 cannot be mistaken for cluster material, so it is the safest joiner the
 language has and the least available inside a word.
 
-### Nothing is written inside a root, and one sound is dropped
-
-Every joiner above stands BETWEEN two roots, so both roots keep their
-own spelling and a reader can lift the joiner out. One case breaks
-that, and it is the only one:
-
-```
-vit + tok = vitwok      the same sound doubled, said once, then w
-```
-
-A fricative voicing pair used to break it too, writing a letter inside
-the left root and a `w` for the right root's dropped sound, so
-`lif + vit` was `lilfwit` and `bedj + xum` was `berdjwum`. Three
-sounds moved for a seam that only has to keep `f` and `v` apart, and
-`bedj` disappeared from its own compound. It is a liquid now, and the
-five rows that case needed are one.
+Every joiner stands BETWEEN two roots, so both keep their spelling and
+the joiner lifts back out. One row does not: a doubled sound is said
+once and followed by a `w`, so `vit + tok` is `vitwok`.
 
 ## How often anything is written
 
@@ -185,9 +176,8 @@ disagreement can span three roots without appearing in any pair.
 
 Three facts carry it. **No root holds a `w`**, so a `w` is always a
 joiner. **No root opens or closes on a vowel**, so a vowel between two
-consonants is never root material. **A mark before a coda is an `l` or
-an `r` the coda list does not allow there**, so it can be lifted back
-out.
+consonants is never root material. **A joiner sits where the cluster
+lists allow no such letter**, so it can be lifted back out.
 
 ## How many roots
 
