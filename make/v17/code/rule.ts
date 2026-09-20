@@ -273,8 +273,66 @@ const NEAR_CODA = nearClusters(CODA_TWO, [3, 'CVCC'])
  * each the same length, so the graph is built inside each template and
  * never across them. Within one, a near pair differs in exactly one
  * CONSONANT, because two different nuclei are never near.
+ *
+ * **`first` names roots to seat before any other.** The pool is picked
+ * greedily by fewest neighbours, which is what makes it large, and that
+ * order knows nothing about which forms already carry a meaning. A word
+ * v16 pinned is worth more than an unspoken form with one fewer
+ * neighbour, so passing the pins here seats them and fills around them.
+ * Two pins that are near EACH OTHER still cannot both stand: no order
+ * saves both, and that is a fact about the pins rather than about the
+ * order they are read in.
  */
-export function ceiling(roots: Array<Root>) {
+/**
+ * WHO IS ONE STEP FROM WHOM, inside one template.
+ *
+ * Returned as an adjacency list over the group's own indices. It is
+ * separate from `ceiling` because the graph answers a question the
+ * pool does not: WHICH root took the place of the one that is missing.
+ * A count of losses cannot be argued with, and a named neighbour can.
+ */
+export function nearGraph(group: Array<Root>) {
+  const at = new Map(group.map((one, i) => [one.text, i]))
+  const n = group.length
+  const edge: Array<Array<number>> = Array.from({ length: n }, () => [])
+  const tie = (i: number, j: number | undefined) => {
+    if (j === undefined || j <= i) return
+    edge[i].push(j)
+    edge[j].push(i)
+  }
+  for (let i = 0; i < n; i++) {
+    const root = group[i]
+    const onLen = root.on.length
+    const nucLen = root.nuc.length
+    const clustered = root.on.length === 2 || root.co.length === 2
+    for (let p = 0; p < root.text.length; p++) {
+      if (p >= onLen && p < onLen + nucLen) continue
+      // `similarAt` branches only on whether a position is a coda, so
+      // an onset position is asked as a `CCVC` one and a coda as a
+      // `CVCC` one. Same question, same table.
+      const role: [number, Shape] = p < onLen ? [p, 'CCVC'] : [3, 'CVCC']
+      const swaps = [...nearAt(root.text[p], role[0], role[1])]
+      if (clustered) {
+        const mate = TIGHT.get(root.text[p])
+        if (mate && !swaps.includes(mate)) swaps.push(mate)
+      }
+      for (const s of swaps) {
+        tie(i, at.get(root.text.slice(0, p) + s + root.text.slice(p + 1)))
+      }
+    }
+    // And the WHOLE cluster swapped for a near one, which a walk over
+    // single letters cannot reach: `dj` and `tx` differ in both.
+    for (const s of NEAR_ONSET.get(root.on) ?? []) {
+      tie(i, at.get(s + root.nuc + root.co))
+    }
+    for (const s of NEAR_CODA.get(root.co) ?? []) {
+      tie(i, at.get(root.on + root.nuc + s))
+    }
+  }
+  return edge
+}
+
+export function ceiling(roots: Array<Root>, first?: Set<string>) {
   const byTemplate = new Map<string, Array<Root>>()
   for (const one of roots) {
     const key = templateOf(one)
@@ -285,58 +343,12 @@ export function ceiling(roots: Array<Root>) {
   const kept: Array<Root> = []
   const per = new Map<string, number>()
   for (const [key, group] of byTemplate) {
-    const at = new Map(group.map((one, i) => [one.text, i]))
     const n = group.length
-    const edge: Array<Array<number>> = Array.from(
-      { length: n },
-      () => [],
-    )
-    for (let i = 0; i < n; i++) {
-      const root = group[i]
-      const onLen = root.on.length
-      const nucLen = root.nuc.length
-      const clustered = root.on.length === 2 || root.co.length === 2
-      for (let p = 0; p < root.text.length; p++) {
-        if (p >= onLen && p < onLen + nucLen) continue
-        // `similarAt` branches only on whether a position is a coda, so
-        // an onset position is asked as a `CCVC` one and a coda as a
-        // `CVCC` one. Same question, same table.
-        const role: [number, Shape] =
-          p < onLen ? [p, 'CCVC'] : [3, 'CVCC']
-        const swaps = [...nearAt(root.text[p], role[0], role[1])]
-        if (clustered) {
-          const mate = TIGHT.get(root.text[p])
-          if (mate && !swaps.includes(mate)) swaps.push(mate)
-        }
-        for (const s of swaps) {
-          const other =
-            root.text.slice(0, p) + s + root.text.slice(p + 1)
-          const j = at.get(other)
-          if (j !== undefined && j > i) {
-            edge[i].push(j)
-            edge[j].push(i)
-          }
-        }
-      }
-      // And the WHOLE cluster swapped for a near one, which a walk over
-      // single letters cannot reach: `dj` and `tx` differ in both.
-      for (const s of NEAR_ONSET.get(root.on) ?? []) {
-        const j = at.get(s + root.nuc + root.co)
-        if (j !== undefined && j > i) {
-          edge[i].push(j)
-          edge[j].push(i)
-        }
-      }
-      for (const s of NEAR_CODA.get(root.co) ?? []) {
-        const j = at.get(root.on + root.nuc + s)
-        if (j !== undefined && j > i) {
-          edge[i].push(j)
-          edge[j].push(i)
-        }
-      }
-    }
+    const edge = nearGraph(group)
+    const seated = (i: number) => (first?.has(group[i].text) ? 0 : 1)
     const order = [...Array(n).keys()].sort(
-      (a, b) => edge[a].length - edge[b].length || a - b,
+      (a, b) =>
+        seated(a) - seated(b) || edge[a].length - edge[b].length || a - b,
     )
     const blocked = new Int32Array(n)
     let count = 0
@@ -433,6 +445,44 @@ const just = (joiner: string): Seam => ({
 })
 
 /**
+ * THE LIQUID JOINER, WHICH MUST NOT REPEAT THE SOUND BESIDE IT.
+ *
+ * `l` is the joiner. It stops being one the moment it lands next to
+ * another liquid, because `ll` is one long `l` to a listener and `lr`
+ * and `rl` are a stumble. So four exceptions, in this order:
+ *
+ * ```text
+ * the coda is l and a consonant      r        balcrCak
+ *   and the right root opens on r    ri
+ * l meeting l, l meeting r, r meeting l   i   balilan
+ * the left root closes on l          r        balryan
+ * anything else                      l        batlyan
+ * ```
+ *
+ * **The `i` breaks the `il` and `ir` rhyme ban on purpose.** That rule
+ * governs ROOTS, where a close vowel before a liquid is swallowed into
+ * it. A seam is not inside a root, and a vowel is the one thing that
+ * cannot be mistaken for cluster material, so it is the safest joiner
+ * the language has and the least available inside a word.
+ *
+ * **It reaches every `l` the rule writes**, not only the one before a
+ * `y`. The same collision falls out of the cut clause, the `s` coda
+ * clause and both cluster fallbacks.
+ */
+function liquid(a: Root, b: Root): Seam {
+  const x = last(a.text)
+  const y = b.text[0]
+  if (a.co.length === 2 && a.co[0] === 'l') {
+    return just(y === 'r' ? 'ri' : 'r')
+  }
+  if ((x === 'l' && (y === 'l' || y === 'r')) || (x === 'r' && y === 'l')) {
+    return just('i')
+  }
+  if (x === 'l') return just('r')
+  return just('l')
+}
+
+/**
  * THE ONE PLACE A JOINER IS DECIDED. Both writer and reader ask here.
  *
  * `doubt` is the reading clause and is passed in rather than computed,
@@ -445,7 +495,7 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
   const cluster = b.on.length > 1
   switch (kind) {
     case 'glide':
-      return just('l')
+      return liquid(a, b)
     case 'stop': {
       /**
        * A CODA ALREADY OPENING ON `s` OR `z` TAKES A LIQUID.
@@ -479,7 +529,7 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
      */
     case 'twin':
       return cluster
-        ? just('l')
+        ? liquid(a, b)
         : { mark: '', joiner: '', dropped: true }
     case 'fricPair':
       /**
@@ -493,7 +543,7 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
        * to the plain `l` with both roots whole: `larflvag`.
        */
       return cluster || (a.co.length === 2 && isLiquid(a.co[0]))
-        ? just('l')
+        ? liquid(a, b)
         : {
             /**
              * The mark stands before the WHOLE coda, not before its
@@ -506,7 +556,7 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
             dropped: true,
           }
     default:
-      return doubt ? just('l') : NONE
+      return doubt ? liquid(a, b) : NONE
   }
 }
 
@@ -627,9 +677,15 @@ export function read(
     const seen = new Set<Root>()
     // Written whole, with nothing between.
     for (const b of byFirst.get(text[at]) ?? none) seen.add(b)
-    // A joiner, then the root written whole.
-    if ('lrsz'.includes(text[at])) {
+    // A joiner, then the root written whole. `i` is one of them: a
+    // vowel between two consonants can only ever be a joiner, since no
+    // root opens or closes on one.
+    if ('lrszi'.includes(text[at])) {
       for (const b of byFirst.get(text[at + 1]) ?? none) seen.add(b)
+    }
+    // `ri` is the one joiner of two letters.
+    if (text[at] === 'r' && text[at + 1] === 'i') {
+      for (const b of byFirst.get(text[at + 2]) ?? none) seen.add(b)
     }
     // A `w`, so the root lost its first sound. Which sound that was is
     // fixed by the left root: the same one, or its voicing partner.

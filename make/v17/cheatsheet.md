@@ -47,7 +47,6 @@ zd   zg
 
 diphthongs 2
 ai  au
-ai  au
 ```
 
 A single consonant opens a root except `q`, and closes one except
@@ -109,24 +108,43 @@ faind vaind    cluster coda     one of them goes
 
 | example | written | the seam | share |
 | --- | --- | --- | --- |
-| mim + nim = mimnim | nothing | anything else | 84.96% |
-| git + dim = gitsdim | `s` | two stops of one place, voiceless left | 7.37% |
-| dig + kim = digzkim | `z` | two stops of one place, voiced left | above |
-| dig + gim = digzgim | `s` or `z` | the same stop doubled | above |
-| hiqk + gim = hiqksgim | `s` or `z` | the same, after a cluster coda | above |
-| bisk + gim = bisklgim | `l` | the same, after a coda opening on `s` | above |
-| pizg + gim = pizgrgim | `r` | the same, after a coda opening on `z` | above |
-| mis + zik = milswik | `l` before the coda, `w` before the right vowel | a fricative voicing pair, voiceless left | 1.40% |
-| miz + sim = mirzwim | `r` before the coda, `w` before the right vowel | a fricative voicing pair, voiced left | above |
-| ditx + jik = diltxwik | the mark before the WHOLE coda | the same, with a `dj` or `tx` coda | above |
-| larf + vag = larflvag | `l`, both roots whole | the same, where the coda opens on a liquid | above |
-| miz + sliq = mizlsliq | `l`, both roots whole | the same, cluster on the right | above |
-| mis + sim = miswim | the sound once, then `w` | a doubled fricative | 1.54% |
-| mis + sliq = mislsliq | `l`, both roots whole | the same, cluster on the right | above |
-| mim + mim = mimzmim | `z` | a doubled nasal | 0.28% |
-| mul + lim = mulslim | `s` | a doubled liquid | 0.09% |
-| mim + yim = mimlyim | `l` | a root opening on `y` | 3.44% |
-| mim + plin = mimlplin | `l` | the cut is in doubt | 0.92% |
+| bal + dan = baldan<br>*still water* | nothing | anything else | 85.09% |
+| bat + dan = batsdan<br>*night water* | `s` | two stops of one place, voiceless left | 3.88% |
+| bag + kan = bagzkan | `z` | two stops of one place, voiced left | above |
+| balk + gan = balksgan | `s` or `z` | the same, after a cluster coda | above |
+| bisk + gan = bisklgan | a liquid | the same, after a coda opening on `s` | above |
+| bazb + pan = bazbrpan | `r` | the same, after a coda opening on `z` | above |
+| bas + zak = balswak<br>*breath light* | `l` before the coda, `w` before the right vowel | a fricative voicing pair, voiceless left | 1.40% |
+| baz + sag = barzwag | `r` before the coda, `w` before the right vowel | a fricative voicing pair, voiced left | above |
+| badj + xag = bardjwag | the mark before the WHOLE coda | the same, with a `dj` or `tx` coda | above |
+| larf + vag = larflvag | a liquid, both roots whole | the same, where the coda opens on a liquid | above |
+| baz + skas = bazlskas | a liquid, both roots whole | the same, cluster on the right | above |
+| bas + sag = baswag<br>*breath song* | the sound once, then `w` | the same sound doubled | 5.03% |
+| bas + skas = baslskas | a liquid, both roots whole | the same, cluster on the right | above |
+| bam + man = bamzman<br>*drum mind* | `z` | a doubled nasal | 0.28% |
+| bal + lan = balslan<br>*still land* | `s` | a doubled liquid | 0.09% |
+| bal + yan = balryan<br>*still flame* | a liquid | a root opening on `y` | 3.44% |
+| mim + plin = mimlplin | a liquid | the cut is in doubt | 0.79% |
+
+### Which liquid
+
+Six of the rows above write "a liquid" rather than an `l`, because an
+`l` stops being a joiner the moment it lands beside another one. `ll`
+is one long `l` to a listener, and `lr` and `rl` are a stumble.
+
+```
+the coda is l and a consonant        r      balc + Cak = balcrCak
+  and the right root opens on r      ri
+l meeting l, l meeting r, r meeting l   i
+the left root closes on l            r      bal + yan = balryan
+anything else                        l      bat + yan = batlyan
+```
+
+**The `i` breaks the `il` and `ir` rhyme ban on purpose.** That rule
+governs ROOTS, where a close vowel before a liquid is swallowed into
+it. A seam is not inside a root, and a vowel is the one thing that
+cannot be mistaken for cluster material, so it is the safest joiner the
+language has and the least available inside a word.
 
 **The mark stands before the WHOLE coda**, not before its last sound.
 For a one sound coda the two coincide, which is why `-lsw-` reads like
@@ -139,11 +157,11 @@ would land in front of that liquid.
 | | share |
 | --- | --- |
 | for SOUND, the six cases | 14.12% |
-| for the CUT, a plain `l` | 0.92% |
-| **anything at all** | **15.04%** |
-| nothing written | 84.96% |
+| for the CUT, a plain `l` | 0.79% |
+| **anything at all** | **14.91%** |
+| nothing written | 85.09% |
 
-Mean length of a joined pair: 8.45 sounds.
+Mean length of a joined pair: 8.44 sounds.
 
 ## Does it read
 

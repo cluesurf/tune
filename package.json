@@ -114,7 +114,9 @@
     "v16:story": "tsx make/v16/code/story.ts",
     "v16:final": "tsx make/v16/code/final.ts",
     "v17:guide": "tsx make/v17/code/guide.ts",
-    "v17:every": "tsx make/v17/code/every.ts"
+    "v17:every": "tsx make/v17/code/every.ts",
+    "v17:pinned": "tsx make/v17/code/pinned.ts",
+    "v17:words": "tsx make/v17/code/words.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

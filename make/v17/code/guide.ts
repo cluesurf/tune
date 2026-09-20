@@ -429,7 +429,6 @@ ${rows(CODA_TWO, 8)}
 
 diphthongs ${DIPHTHONG.length}
 ${DIPHTHONG.join('  ')}
-${DIPHTHONG.map(one => [...one].map(inIpa).join('')).join('  ')}
 \`\`\`
 
 A single consonant opens a root except \`q\`, and closes one except
@@ -495,19 +494,39 @@ faind vaind    cluster coda     one of them goes
 | ${say('two stops of one place, voiceless left')} | \`s\` | two stops of one place, voiceless left | ${pct(count.stop)} |
 | ${say('two stops of one place, voiced left')} | \`z\` | two stops of one place, voiced left | above |
 | ${say('after a cluster coda')} | \`s\` or \`z\` | the same, after a cluster coda | above |
-| ${say('after a coda opening on s')} | \`l\` | the same, after a coda opening on \`s\` | above |
+| ${say('after a coda opening on s')} | a liquid | the same, after a coda opening on \`s\` | above |
 | ${say('after a coda opening on z')} | \`r\` | the same, after a coda opening on \`z\` | above |
 | ${say('a fricative voicing pair, voiceless left')} | \`l\` before the coda, \`w\` before the right vowel | a fricative voicing pair, voiceless left | ${pct(count.fricPair)} |
 | ${say('a fricative voicing pair, voiced left')} | \`r\` before the coda, \`w\` before the right vowel | a fricative voicing pair, voiced left | above |
 | ${say('a fricative pair, dj or tx coda')} | the mark before the WHOLE coda | the same, with a \`dj\` or \`tx\` coda | above |
-| ${say('a fricative pair, liquid coda')} | \`l\`, both roots whole | the same, where the coda opens on a liquid | above |
-| ${say('a fricative pair, cluster right')} | \`l\`, both roots whole | the same, cluster on the right | above |
+| ${say('a fricative pair, liquid coda')} | a liquid, both roots whole | the same, where the coda opens on a liquid | above |
+| ${say('a fricative pair, cluster right')} | a liquid, both roots whole | the same, cluster on the right | above |
 | ${say('the same sound doubled')} | the sound once, then \`w\` | the same sound doubled | ${pct(count.twin)} |
-| ${say('the same sound doubled, cluster right')} | \`l\`, both roots whole | the same, cluster on the right | above |
+| ${say('the same sound doubled, cluster right')} | a liquid, both roots whole | the same, cluster on the right | above |
 | ${say('a doubled nasal')} | \`z\` | a doubled nasal | ${pct(count.nasal)} |
 | ${say('a doubled liquid')} | \`s\` | a doubled liquid | ${pct(count.liquid)} |
-| ${say('a root opening on y')} | \`l\` | a root opening on \`y\` | ${pct(count.glide)} |
-| ${say('the cut is in doubt')} | \`l\` | the cut is in doubt | ${pct(count.doubt)} |
+| ${say('a root opening on y')} | a liquid | a root opening on \`y\` | ${pct(count.glide)} |
+| ${say('the cut is in doubt')} | a liquid | the cut is in doubt | ${pct(count.doubt)} |
+
+### Which liquid
+
+Six of the rows above write "a liquid" rather than an \`l\`, because an
+\`l\` stops being a joiner the moment it lands beside another one. \`ll\`
+is one long \`l\` to a listener, and \`lr\` and \`rl\` are a stumble.
+
+\`\`\`
+the coda is l and a consonant        r      balc + Cak = balcrCak
+  and the right root opens on r      ri
+l meeting l, l meeting r, r meeting l   i
+the left root closes on l            r      bal + yan = balryan
+anything else                        l      bat + yan = batlyan
+\`\`\`
+
+**The \`i\` breaks the \`il\` and \`ir\` rhyme ban on purpose.** That rule
+governs ROOTS, where a close vowel before a liquid is swallowed into
+it. A seam is not inside a root, and a vowel is the one thing that
+cannot be mistaken for cluster material, so it is the safest joiner the
+language has and the least available inside a word.
 
 **The mark stands before the WHOLE coda**, not before its last sound.
 For a one sound coda the two coincide, which is why \`-lsw-\` reads like
