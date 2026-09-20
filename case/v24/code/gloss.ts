@@ -40,10 +40,28 @@ const CONCEPT: Array<[RegExp, Array<string>]> = [
   [/ility$/, ['le']],
   [/ity$/, ['e', '']],
   [/tion$/, ['te', 't', 'd']],
+  /**
+   * `-ision` HAS TO OFFER `-ide`, and it must be asked before
+   * `-sion`, because the table stops at the first rule that matches.
+   *
+   * `division` under `-sion` gives `divise`, `divid` and `divit`, and
+   * none of them is a word, so the demand of 184 species stayed on
+   * `division` while `divide` sat in the base list unseated. The same
+   * holds for `decision`, `incision` and `provision`.
+   */
+  [/ision$/, ['ide', 'ise']],
   [/sion$/, ['se', 'd', 't']],
   [/ance$/, ['', 'e']],
   [/ence$/, ['', 'e']],
   [/ing$/, ['', 'e']],
+  /**
+   * `-ious` before `-ous`, for the same reason `-ision` comes first.
+   *
+   * `spacious` under `-ous` keeps the `i` and offers `spaci`,
+   * `spacie`, `spaciy`. The word is `space`, and it is already a
+   * base. Also `gracious`, `furious`, `glorious`, `envious`.
+   */
+  [/ious$/, ['', 'e', 'y']],
   [/ous$/, ['', 'e', 'y']],
   [/ful$/, ['']],
   [/less$/, ['']],
@@ -120,6 +138,81 @@ const SAME: Record<string, string> = {
  * list is safer than a clever one: a candidate that is not a word
  * simply never matches.
  */
+/** The same word, spelled the other way round. Both directions. */
+const SPELLING: Array<[RegExp, string]> = [
+  [/re$/, 'er'],
+  [/er$/, 're'],
+  [/our$/, 'or'],
+  [/or$/, 'our'],
+  [/ise$/, 'ize'],
+  [/ize$/, 'ise'],
+  [/yse$/, 'yze'],
+  [/yze$/, 'yse'],
+  [/ogue$/, 'og'],
+  [/^ae/, 'e'],
+  [/^oe/, 'e'],
+]
+
+/**
+ * IS THIS A DERIVED FORM RATHER THAN THE CONCEPT ITSELF.
+ *
+ * True when one of the suffix rules fires, so `bristly`, `supportive`
+ * and `southern` answer yes and `bristle`, `support` and `south`
+ * answer no. It says nothing about WHICH of the offered spellings is
+ * the concept, only that the word in hand is not it.
+ *
+ * That is enough to break the tie that matters: when a form and a
+ * concept are both wanted, the demand belongs to the concept, and
+ * without this the form wins simply by being the spelling the corpus
+ * happened to use.
+ */
+export function isDerived(term: string): boolean {
+  const flat = term.trim().toLowerCase()
+  if (SAME[flat]) return true
+  return DERIVED.some(one => one.test(flat))
+}
+
+/**
+ * THE SUFFIXES THAT CANNOT BE ANYTHING ELSE.
+ *
+ * `CONCEPT` is a LOOKUP table and is deliberately generous: it offers
+ * `flow` for `flower` because a candidate that is not the word simply
+ * never matches a seat, and the cost of a wrong offer is nothing.
+ *
+ * Reading it as a list of SUFFIXES inverts that. `-er` is a suffix in
+ * `carrier` and is the whole word in `flower`, `water`, `winter`,
+ * `silver`, `finger`. Using `CONCEPT` to decide derivation sent the
+ * demand of 6,102 species from `flower` to `flow`, and did the same
+ * to `water`, `animal`, `garden` and `plate`. Coverage fell from
+ * 96.62% to 95.15% and clashes went from 478 to 798.
+ *
+ * So the derivation test gets its own list, holding only endings that
+ * are a suffix every time they appear. `-er`, `-or`, `-al`, `-en`,
+ * `-ate`, `-ed` and `-ing` are all excluded, because `seed`, `king`,
+ * `metal` and `gate` are words that end that way and are not built
+ * that way.
+ */
+const DERIVED: Array<RegExp> = [
+  /ly$/,
+  /ous$/,
+  /ious$/,
+  /ive$/,
+  /ness$/,
+  /ment$/,
+  /ity$/,
+  /ility$/,
+  /ation$/,
+  /tion$/,
+  /sion$/,
+  /ision$/,
+  /ance$/,
+  /ence$/,
+  /ish$/,
+  /ful$/,
+  /less$/,
+  /like$/,
+]
+
 export function conceptsOf(term: string): Array<string> {
   const flat = term.trim().toLowerCase()
   const out = new Set<string>([flat])
@@ -141,6 +234,25 @@ export function conceptsOf(term: string): Array<string> {
   for (const one of [...out]) {
     const cut = one.replace(/([bdfglmnprt])\1$/, '$1')
     if (cut !== one) out.add(cut)
+  }
+  /**
+   * BRITISH AND AMERICAN SPELLING ARE ONE CONCEPT.
+   *
+   * The base list was written with `fiber` and the taxon glosses are
+   * written with `fibre`, so `fibrous` folded to `fibre`, found
+   * nothing, and went on blocking 28 species while the seat it needed
+   * was already sitting in `english.csv` under the other spelling.
+   * `colour`, `grey` and `-ise` do the same thing.
+   *
+   * Both spellings are offered, in both directions, because neither
+   * file is the authority on the other's habits.
+   */
+  if (!process.env.TUNE_NO_SPELLING) {
+    for (const one of [...out]) {
+      for (const [from, to] of SPELLING) {
+        if (from.test(one)) out.add(one.replace(from, to))
+      }
+    }
   }
   // `sword, brand` and `beside, alongside`: the first is the meaning,
   // the rest is the dictionary hedging.
@@ -175,6 +287,74 @@ const LETTER = new Set(
     ' ',
   ),
 )
+
+/**
+ * A LATIN ENDING, GLOSSED AS A PHRASE, IS NOT PART OF A NAME.
+ *
+ * `-atus` comes back from the dictionary as `provided with`, `-osus`
+ * as `full of`, `-oides` as `resembling`. Each of those is TWO
+ * ordinary words, and both words are real concepts with real roots,
+ * so testing them one at a time lets the whole phrase through.
+ * `Didymodon anserinocapitatus` came out `hedCezgwim`, head-provided-
+ * with, for a moss whose Chinese name is simply goose head.
+ *
+ * **So the test is on the whole gloss part, before it is split.**
+ *
+ * These phrases are not banned from the language. `hold`, `like` and
+ * `about` are among the 21 relations measured as carrying half a
+ * million uses, and they are ordinary roots doing relational work.
+ * What they are not is part of a species name: Chinese builds
+ * `goose head moss` with no joint at all, and that is the model.
+ */
+const AN_ENDING = new Set([
+  'provided with', 'furnished with', 'full of', 'having', 'bearing',
+  'resembling', 'similar to', 'like', 'belonging to', 'pertaining to',
+  'relating to', 'of or pertaining to', 'made of', 'consisting of',
+  'in the manner of', 'in the form of', 'having the form of',
+  'named after', 'named for', 'so', 'thus', 'object', 'suffix',
+  'adjective forming', 'diminutive of', 'denoting', 'indicating',
+])
+
+/**
+ * True when a gloss PART carries grammar rather than a thing. Call it
+ * on the whole part, since that is the unit the dictionary wrote.
+ */
+/**
+ * A GLOSS THAT DESCRIBES ITSELF INSTEAD OF MEANING SOMETHING.
+ *
+ * A dictionary that does not know a word still writes a row, and what
+ * it writes is a description of its own ignorance: `a female name`,
+ * `an unknown plant`, `name of a tree`, `a plant`. Every one of those
+ * is made of ordinary English words with ordinary roots, so nothing
+ * in the name test or the grammar test refuses them, and they come
+ * out as finished Tune words.
+ *
+ * `Veronica` was `female + name` over 52 species, `Androsace` was
+ * `unknown + plant` over 45, and `Photinia` was `stone + name of
+ * tree`. None of those says anything about a plant, and worse, they
+ * collide: every genus the dictionary shrugged at lands on the same
+ * word.
+ */
+const A_SHRUG = [
+  'a female name', 'female name', 'a male given name', 'a male name',
+  'male name', 'a given name', 'given name', 'a surname', 'surname',
+  'a name', 'name', 'name of', 'the name of', 'a plant', 'plant',
+  'an unknown plant', 'unknown plant', 'a tree', 'unknown',
+  'a genus', 'genus', 'a species', 'species', 'a kind', 'kind of',
+  'a word', 'a term', 'of unknown origin', 'origin unknown', 'unclear',
+  'uncertain', 'obscure', 'doubtful', 'not known',
+]
+
+export function isEnding(said: string): boolean {
+  const flat = said.trim().toLowerCase().replace(/\s+/g, ' ')
+  if (!flat) return true
+  if (AN_ENDING.has(flat)) return true
+  if (A_SHRUG.includes(flat)) return true
+  /** `name of a tree`, `name of an Egyptian plant`. */
+  if (/^(the )?(a |an )?name of\b/.test(flat)) return true
+  if (/^(an? )?(unknown|unidentified|obscure) /.test(flat)) return true
+  return isGrammar(flat)
+}
 
 export function isGrammar(term: string): boolean {
   const flat = term.trim().toLowerCase()
@@ -275,9 +455,125 @@ const DEMONYM = /(ian|ean|an|ese|ish|ic)$/
  */
 const CLASSICAL = /(us|um|ae|os|on|ia|es)$/
 
+/**
+ * A MULTI WORD GLOSS CARRYING A NAME IS STILL A NAME.
+ *
+ * The single word checks miss `sri lanka`, `ad unguem`, `centaurea
+ * centaurium` and `ursa major`, because none of those words is on a
+ * stoplist and none of them is capitalised in the source. They
+ * reached the queue of things to judge, and a wrong answer there puts
+ * a place name into the base list, which the design forbids outright.
+ *
+ * Three tells, and any one is enough: a word already known to be a
+ * place or a people, a Latin phrase the gloss never translated, or a
+ * binomial repeating its own genus.
+ */
+const PLACE_WORD =
+  /\b(lanka|india|china|japan|korea|persia|arabia|egypt|greece|rome|italy|spain|france|germany|russia|turkey|mexico|brazil|peru|chile|cuba|java|sumatra|borneo|siam|burma|tibet|mongolia|siberia|caucasus|anatolia|balkan|sahara|amazon|andes|alps|himalaya|adriatic|aegean|baltic|caspian|ganges|nile|danube|volga|yangtze|mekong)\b/
+
+/** A constellation or a classical phrase the gloss left untranslated. */
+const LATIN_PHRASE = /\b(ursa|major|minor|ad |ex |in situ|sensu|unguem)\b/
+
+/**
+ * IS THIS EVEN AN ENGLISH WORD?
+ *
+ * A stoplist can never catch what keeps arriving: `aléria`, `tium`,
+ * `laevi`, `gomphi`, `dirphys`, `lejeune`, `amenemhat`, `49674`,
+ * `hd`. Those are Latin fragments, proper names and junk, and every
+ * one of them was competing for a root.
+ *
+ * So the test is a dictionary rather than a list. CMUdict is 118,000
+ * English words and is already in the tree for the echo. A gloss word
+ * that is not in it, and not a compound of words that are, is not a
+ * meaning this language needs.
+ *
+ * **Loaded once, lazily**, because most callers never need it and it
+ * is a 5 MB file.
+ */
+let englishWords: Set<string> | undefined
+
+function knownEnglish(): Set<string> {
+  if (englishWords) return englishWords
+  englishWords = new Set<string>()
+  try {
+    const path = resolve(
+      dirname(fileURLToPath(import.meta.url)),
+      '../../../../../base/export/language/english/cmu-pronunciations.jsonl',
+    )
+    for (const line of readFileSync(path, 'utf-8').split('\n')) {
+      if (!line.trim()) continue
+      const at = line.indexOf('","ipa"')
+      if (at < 9) continue
+      const word = line.slice(9, at).toLowerCase()
+      if (/^[a-z]+$/.test(word)) englishWords.add(word)
+    }
+  } catch {
+    // Without it nothing is refused, which is the safe direction.
+  }
+  return englishWords
+}
+
+/**
+ * A word no English dictionary knows, which is a Latin fragment or a
+ * name nine times in ten. Refused only when the dictionary actually
+ * loaded, so a missing file never silently rejects everything.
+ */
+export function isForeign(term: string): boolean {
+  const flat = term.trim().toLowerCase()
+  if (!flat) return true
+  if (/[^a-z -]/.test(flat)) return true
+  if (flat.replace(/[^a-z]/g, '').length < 3) return true
+  const known = knownEnglish()
+  if (!known.size) return false
+  // A phrase is English if every word in it is.
+  return !flat
+    .split(/[\s-]+/)
+    .filter(Boolean)
+    .every(one => known.has(one) || conceptsOf(one).some(also => known.has(also)))
+}
+
+/**
+ * IS THIS WORD A NAME, JUDGED ON ITS SHAPE ALONE.
+ *
+ * `isName` below wants a term AND the gloss a dictionary gave it,
+ * because half its evidence is the RELATION between the two: a gloss
+ * that merely repeats the term translated nothing, which is what a
+ * name does. That is a good test and it needs both halves.
+ *
+ * A caller walking the words of a gloss has only one half. It has
+ * been passing the word as its own gloss, `isName(word, word)`, which
+ * hands the repetition test a repetition it manufactured itself. Any
+ * word with a classical ending and five letters then answers yes:
+ * `cotton`, `lotus`, `melon`, `hibiscus` were all being read as
+ * somebody's name.
+ *
+ * That was survivable while the flag only suppressed bookkeeping.
+ * Once junk began to be skipped outright it started eating words out
+ * of finished names, and `Bombax ceiba`, the silk cotton tree, came
+ * out as `tok`, tree, alongside six other species reduced to the same
+ * bare word.
+ *
+ * So a caller with no gloss asks THIS, which runs only the tests that
+ * need nothing but the word.
+ */
+export function isNameWord(term: string): boolean {
+  const flat = term.trim().toLowerCase()
+  if (OF_A_PLACE.test(flat) || A_PEOPLE.test(flat)) return true
+  if (PLACE_WORD.test(flat) || LATIN_PHRASE.test(flat)) return true
+  /** A capital mid-gloss is how every source writes a name. */
+  return /^[A-Z][a-z]{2,}$/.test(term.trim())
+}
+
 export function isName(term: string, gloss: string): boolean {
   const flat = term.trim().toLowerCase()
   if (OF_A_PLACE.test(flat) || A_PEOPLE.test(flat)) return true
+  if (PLACE_WORD.test(flat) || LATIN_PHRASE.test(flat)) return true
+  // `centaurea centaurium`: a binomial saying its own genus twice is
+  // a taxon, not a meaning.
+  const words2 = flat.split(/\s+/).filter(Boolean)
+  if (words2.length === 2 && words2[1].startsWith(words2[0].slice(0, 5))) {
+    return true
+  }
   const said = gloss.toLowerCase()
   if (NAME_SAID.some(one => said.includes(one))) return true
   // The sources capitalise a name mid-sentence and nothing else.

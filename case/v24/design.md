@@ -218,7 +218,30 @@ compounds are equally short, take the one a speaker would arrive at
 unaided. `water + atom` for hydrogen is obvious. A clever one is not
 worth its cleverness.
 
-### Chinese is the model, and the data proves it
+### A root should sound like its English word
+
+Where the sound rules allow it, a root takes the sound of the English
+word for its concept. A speaker who meets `lif` for leaf or `drom` for
+drum already knows it, and that is the cheapest vocabulary a language
+will ever get.
+
+```text
+leaf    lif        drum    drom       mind    man
+dark    dark       light   lait       sound   saund
+```
+
+**English first, Sanskrit where English gives nothing.** Not Chinese
+and not Arabic: their sound systems are far enough from Tune's that
+the echo does not survive the transcription, and a borrowed form that
+no longer sounds like its source has bought nothing at all.
+
+This is what `code/echo.ts` is for, and `assign.ts` prefers an echo
+before dealing an arbitrary root.
+
+### Chinese is the model for compounding, not for sound
+
+Its sounds are too far away to borrow. Its METHOD is the one to take,
+and the two are separate questions.
 
 **Take the compounding style from Chinese.** It builds a technical
 vocabulary out of common concrete morphemes and almost never borrows,
@@ -261,19 +284,45 @@ general bases already held will describe it, it does not take a root,
 however often it is said. That is the same test as everything else
 here: a root is for what cannot be built.
 
-## The shortness rule
+## Frequency is the weakest signal, and the loudest
 
-**The shortest forms go to the most load-bearing concepts.** Load is
-measured two ways and they are not the same question:
+A corpus hands you a count first, which makes it easy to mistake for
+the answer. It is the last of the three things that matter.
 
 ```text
-uses     how often the corpus says it
-head     how many other concepts define themselves BY it
+PRODUCTIVITY   how many other concepts are built out of it
+USEFULNESS     what becomes sayable the moment it is held
+FREQUENCY      how often anybody happens to say it
 ```
 
+**A concept can go almost unmentioned and still be essential**, and
+the corpus cannot tell you which. `tooth` is said seven times in the
+English list and blocks 543 species. `stone` is said thirty six times
+and blocks 647. Neither would survive a ranking by frequency, and
+neither can be lived without.
+
+**The reverse trap is just as real.** A word said constantly may be
+saying nothing that another word could not: it is common because it is
+vague, and a vague word is exactly what a compound is for.
+
+So frequency only ever breaks a tie. In `choose.ts` it is divided by a
+thousand for that reason, and `head`, the count of other concepts
+defining themselves by this one, outranks it by two hundred to one.
+
+## The shortness rule
+
+**The shortest forms go to the most load-bearing concepts**, by the
+ranking above, and never by frequency alone.
+
 `person` heads 358 concepts, `place` 257, `part` 255. A word a hundred
-other words lean on is load-bearing whatever its frequency, so `head`
-is the column that decides a tie.
+other words lean on is said inside every one of those definitions, so
+its cost is multiplied rather than counted.
+
+**Three sounds are the scarcest thing the language has**, and they
+belong to the core concepts of the universe: the short list, the pins,
+and the relations. Not to whatever a domain corpus happens to repeat.
+`horn` is a common word in plant names and has no claim on a
+three-sound root.
 
 ## What the pins outrank
 

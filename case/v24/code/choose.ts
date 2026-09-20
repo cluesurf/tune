@@ -40,12 +40,13 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { parse } from 'csv-parse/sync'
 
-import { conceptsOf, isGrammar, isName, partsOf } from './gloss'
+import { conceptsOf, isDerived, partsOf } from './gloss'
+import { foldWants, loadDemand } from './demand'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TERM = resolve(here, '../base/term')
 const OUT = resolve(TERM, 'exploration')
-const TAXON = resolve(here, '../../../../../base/import/taxon')
+const IMPORT = resolve(here, '../../../../../base/import')
 const ATOMS = resolve(here, '../../v0/base/inspiration/atoms.csv')
 
 mkdirSync(OUT, { recursive: true })
@@ -58,6 +59,8 @@ type Cand = {
   term: string
   uses: number
   head: number
+  /** Species that cannot be named without it. */
+  species: number
   /** Held by a pin, an element, or the short list: cannot be cut. */
   fixed: boolean
   why: string
@@ -76,7 +79,7 @@ const note = (term: string, why: string, fixed = false) => {
     }
     return
   }
-  cand.set(flat, { term: flat, uses: 0, head: 0, fixed, why })
+  cand.set(flat, { term: flat, uses: 0, head: 0, species: 0, fixed, why })
 }
 
 /** What the language already says, with its own load figures. */
@@ -127,31 +130,19 @@ for (const line of readFileSync(resolve(TERM, 'word-short.csv'), 'utf-8')
 
 type Want = { term: string; uses: number }
 
-const realUses = new Map<string, number>()
-for (const one of parse(readFileSync(resolve(TAXON, 'breakdown.csv')), {
-  columns: true,
-  skip_empty_lines: true,
-  relax_quotes: true,
-  relax_column_count: true,
-}) as Array<Record<string, string>>) {
-  if (one.name_type !== 'descriptive') continue
-  const said = (one.gloss ?? '').trim()
-  if (!said) continue
-  realUses.set(said, (realUses.get(said) ?? 0) + (Number(one.occurrences) || 0))
-}
-
+/**
+ * EVERY FIELD AT ONCE, not just the plants.
+ *
+ * A terminology is a pile of literal meanings joined by grammar, and
+ * the same few thousand concepts underwrite all of them. So the
+ * demand comes from every domain whose breakdown exists, and the
+ * report says which were counted and which are simply absent.
+ */
+const loaded = loadDemand(IMPORT)
 const wants: Array<Want> = []
-for (const one of parse(readFileSync(resolve(TAXON, 'gloss.csv')), {
-  columns: true,
-  skip_empty_lines: true,
-  relax_quotes: true,
-}) as Array<Record<string, string>>) {
-  const term = (one.term ?? '').trim().toLowerCase()
-  const said = (one.gloss ?? '').trim()
-  if (!term || one.decided_by === 'no term') continue
-  const uses = realUses.get(said) ?? 0
-  if (!uses) continue
-  if (isGrammar(term) || isName(term, said)) continue
+for (const one of foldWants(loaded.wants)) {
+  const term = one.term
+  const uses = one.uses
   wants.push({ term, uses })
   if (/[ ,\-/]/.test(term)) continue
   /**
@@ -173,10 +164,218 @@ for (const one of parse(readFileSync(resolve(TAXON, 'gloss.csv')), {
   got.uses += uses
 }
 
+/**
+ * THE FEEDBACK FROM WHAT IS ACTUALLY BEING NAMED.
+ *
+ * `name.ts` writes the concepts that block the most species, and for
+ * a long while nothing read it. A concept competed on how often its
+ * gloss appears in a dictionary rather than on how many real names it
+ * would unlock, and those are different numbers: `oleander` blocks
+ * 741 species while barely registering as a gloss.
+ *
+ * This closes the loop. It is deliberately additive rather than a
+ * replacement, because a concept can be worth a seat for either
+ * reason, and it is absent on the first run when no species file
+ * exists yet.
+ */
+let blocked = 0
+try {
+  // `name-need.csv`, NOT `name-open.csv`. The open list holds what is
+  // currently blocked, which changes the moment a concept is seated,
+  // so reading it made the pipeline oscillate with a period of two.
+  // The need list counts every concept a name USES, seated or not.
+  for (const line of readFileSync(resolve(OUT, 'name-need.csv'), 'utf-8')
+    .split('\n')
+    .slice(1)) {
+    const cut = line.split(',')
+    const term = (cut[0] ?? '').trim().toLowerCase()
+    const species = Number(cut[1] ?? 0) || 0
+    if (!term || !species) continue
+    const onto = conceptsOf(term).find(one => cand.has(one)) ?? term
+    if (!cand.has(onto)) note(onto, 'it blocks species')
+    const got = cand.get(onto) as Cand
+    /**
+     * KEPT APART FROM `uses`, and this matters.
+     *
+     * Folding it in looked right and was not: `uses` is divided by a
+     * thousand in the score so that popularity only breaks ties, so
+     * a concept blocking 233 species contributed FOUR POINTS and
+     * lost every seat. `wag`, `yew`, `ivy`, `orchid` and `twig` all
+     * sat at the top of the blocker list because of it.
+     *
+     * A species that cannot be named is the most concrete demand
+     * there is, so it gets its own term at full weight.
+     */
+    got.species += species
+    blocked++
+  }
+} catch {
+  // No species file yet. The first run has nothing to feed back.
+}
+
+/**
+ * THE JUDGEMENTS, WHICH OUTRANK THE ARITHMETIC.
+ *
+ * `ask-split.csv` holds decisions a corpus cannot make: whether a
+ * leaf earns a root or is a compound of concepts already held. A
+ * corpus records what a word HAS meant and can never say what a word
+ * SHOULD be in a language that does not exist yet.
+ *
+ * ```text
+ * nape      compound   back + neck     takes no seat
+ * ochre     compound   yellow + earth  takes no seat
+ * fig       base                       competes for one
+ * ```
+ *
+ * A `compound` verdict removes the leaf from the running AND makes
+ * its parts demand, because those parts now have to exist.
+ */
+const ruledOut = new Set<string>()
+let judged = 0
+let named = 0
+try {
+  for (const one of parse(readFileSync(resolve(OUT, 'ask-split.csv')), {
+    columns: true,
+    skip_empty_lines: true,
+    relax_quotes: true,
+  }) as Array<Record<string, string>>) {
+    const leaf = (one.leaf ?? '').trim().toLowerCase()
+    if (!leaf) continue
+    judged++
+    /**
+     * `name` IS A THIRD VERDICT, and it means not a concept at all.
+     *
+     * `aléria`, `lejeune`, `amenemhat`, `utica`, `49674` kept coming
+     * back to the top of the blocker list because a stoplist cannot
+     * anticipate them and a dictionary gate proved unreliable, so
+     * they are judged explicitly and the judgement is kept.
+     */
+    if (one.verdict === 'name') {
+      ruledOut.add(leaf)
+      named++
+      continue
+    }
+    if (one.verdict !== 'compound') continue
+    ruledOut.add(leaf)
+    for (const part of (one.parts ?? '').split(/[\s+]+/).filter(Boolean)) {
+      const word = part.trim().toLowerCase()
+      if (!word) continue
+      const onto = conceptsOf(word).find(other => cand.has(other)) ?? word
+      if (!cand.has(onto)) note(onto, 'a judged compound needs it')
+      // A part of a judged compound is load bearing by construction:
+      // the compound cannot be said without it.
+      // A part of a judged compound inherits the compound's own
+      // blocking weight: the compound cannot be said without it.
+      ;(cand.get(onto) as Cand).species += 20
+    }
+  }
+} catch {
+  // No judgements yet.
+}
+
+for (const one of ruledOut) cand.delete(one)
+
 // ─── Seat them ─────────────────────────────────────────
 
 const seated = new Set<string>()
-for (const one of cand.values()) if (one.fixed) seated.add(one.term)
+
+/**
+ * EVERY SPELLING OF EVERY SEAT, so the fold guard works both ways.
+ *
+ * `seated` holds the terms that took a seat. `taken` holds those and
+ * every form each of them folds through, which is what a later
+ * candidate has to be tested against.
+ */
+const taken = new Set<string>()
+/** Which seat put each blocked spelling there, for the report. */
+const foldFrom = new Map<string, string>()
+const seat = (term: string, fixed = false) => {
+  seated.add(term)
+  /**
+   * **A FIXED SEAT BLOCKS NOTHING BUT ITSELF.**
+   *
+   * Pins and short forms are seated for reasons that have nothing to
+   * do with meaning: the user wants `early` to be a short word, and
+   * that is the whole reason it holds a seat. It is not competing
+   * with anything and it has no demand behind it.
+   *
+   * Letting it extend the blocked set through the fold rules cost
+   * `ear` its seat. `-ly` makes `early` look derived, `ear` is one of
+   * the spellings it folds through, and `ear` carries 2,228 species.
+   * So a pin with no demand silently vetoed the concept that 412
+   * species were waiting on, and the report did not even list it,
+   * because a refusal onto an exact match reads as an ordinary
+   * already-seated exclusion.
+   *
+   * The fold guard exists to stop two CHOSEN candidates splitting one
+   * idea between them. A pin is not a candidate.
+   */
+  if (fixed) return
+  taken.add(term)
+  foldFrom.set(term, term)
+  /**
+   * **ONLY A DERIVED FORM PUTS ITS FOLDS BEYOND REACH.**
+   *
+   * The guard exists to stop a word FORM sitting beside its own
+   * concept, so a seat only blocks other spellings when the thing
+   * seated is a form in the first place. Seating `bristly` blocks
+   * `bristle`, because they are one idea. Seating `fish` blocks
+   * nothing, because `fish` is not built from anything.
+   *
+   * Adding every fold of every seat was the same mistake as reading
+   * the lookup table as a suffix list, one level deeper. `conceptsOf`
+   * offers `fe` for `fish`, `ke` for `king`, `be` for `bed`, `me` for
+   * `meal`, none of them words, all of them harmless as offers and
+   * poisonous as vetoes. 275 real concepts were refused a seat onto
+   * spellings that do not exist, `fish` and `king` and `bed` and
+   * `fly` among them, and that is where 2,000 species went.
+   */
+  if (!isDerived(term)) return
+  for (const one of conceptsOf(term)) {
+    /**
+     * **AND THE FOLD ITSELF HAS TO BE A REAL CANDIDATE.**
+     *
+     * Narrowing the guard to derived words was not enough, because
+     * `conceptsOf` invents spellings for those too: `fence` is a
+     * `-ence` word, so it offers `fe`, and `fe` in the blocked set
+     * then refused `fish` a seat. `me` from another word refused
+     * `meal`, `be` refused `bed`.
+     *
+     * A fold nobody wants can never take a seat, so blocking it wins
+     * nothing and costs whatever real word happens to spell the same
+     * way. Only a fold that is ITSELF a candidate is a fold the guard
+     * has any business refusing.
+     */
+    if (one === term || !cand.has(one)) continue
+
+    /**
+     * **AND IT NEVER BLOCKS A WORD THAT WANTS THE SEAT MORE.**
+     *
+     * `apply` folds to `apple`, `derive` to `deer`, `lily` to `lie`,
+     * `polish` to `pole`. Those are not one idea split in two, they
+     * are unrelated words that the suffix rules happen to connect,
+     * and no rule about length or shared prefix separates them from
+     * `bristly` and `bristle`, which look exactly the same.
+     *
+     * Since the pairs cannot be told apart by shape, the guard is
+     * made cheap to get wrong instead. A real fold puts the demand on
+     * ONE of the two, so refusing the lighter one costs nothing. A
+     * false fold has real demand on both, and refusing the heavier
+     * one is the expensive mistake, the one that cost `ear` a seat
+     * that 412 species were waiting on.
+     *
+     * So the fold only blocks downhill.
+     */
+    const mine = (cand.get(term) as Cand).species
+    const theirs = (cand.get(one) as Cand).species
+    if (theirs > mine) continue
+
+    taken.add(one)
+    foldFrom.set(one, term)
+  }
+}
+
+for (const one of cand.values()) if (one.fixed) seat(one.term, true)
 
 const sayable = (term: string) =>
   conceptsOf(term).some(one => seated.has(one)) ||
@@ -192,8 +391,34 @@ const sayable = (term: string) =>
  * `extend` was CUT for having no unlocked value while `extended` sat
  * at the top of the open list. The fold has to happen on both sides.
  */
-const seatFor = (word: string) =>
-  conceptsOf(word).find(one => cand.has(one)) ?? word
+/**
+ * A SWITCH, so a coverage change can be ATTRIBUTED rather than
+ * argued about. Coverage fell from 96.62% to 95.01% across a handful
+ * of changes made together, and the only honest way to say which one
+ * did it is to turn each off and measure.
+ */
+const NO_REDIRECT = process.argv.includes('--no-redirect')
+
+const seatFor = (word: string) => {
+  const folds = conceptsOf(word)
+  /**
+   * A DERIVED FORM NEVER KEEPS THE DEMAND WHEN THE CONCEPT WANTS IT.
+   *
+   * `conceptsOf` lists the word itself first, so a form that is also a
+   * candidate always matched before its own concept did. `bristly`
+   * collected 18,962 points of demand that belonged to `bristle`,
+   * bought a seat in round 2 on it, and `bristle` bought another in
+   * round 5. The language carried `doqk` and `codj` for one idea.
+   *
+   * So when the word is a derived form, the folds are searched from
+   * the second one on, and the word itself is only the fallback.
+   */
+  if (!NO_REDIRECT && isDerived(word)) {
+    const onto = folds.slice(1).find(one => cand.has(one))
+    if (onto) return onto
+  }
+  return folds.find(one => cand.has(one)) ?? word
+}
 
 function worth() {
   const got = new Map<string, number>()
@@ -222,37 +447,154 @@ function worth() {
 }
 
 const order: Array<[string, number, number]> = []
+
+/**
+ * WHAT THE FOLD GUARD REFUSED, AND WHAT IT FOLDED IT ONTO.
+ *
+ * The guard exists to stop `bristly` and `bristle` both buying a
+ * seat, and it works by asking whether any spelling a candidate folds
+ * through is already taken. `conceptsOf` is deliberately generous,
+ * offering `brist`, `briste` and `bristly` alongside `bristle`,
+ * because a candidate that is not a word simply never matches.
+ *
+ * Generous is safe for a LOOKUP and dangerous for a VETO. A loose
+ * candidate that happens to collide with an unrelated concept would
+ * refuse that concept a seat and never say so. So every refusal is
+ * recorded with the seat it was folded onto, and the pair is printed,
+ * which is the only way to tell a correct fold from a collision.
+ */
+const folded: Array<[string, string, number]> = []
+/** Every candidate the round filter dropped, and what it folded onto. */
+const refused = new Map<string, string>()
 let round = 0
 
 while (seated.size < SEATS && round < 400) {
   round++
   const value = worth()
   const open = [...cand.values()]
-    .filter(one => !seated.has(one.term))
+    /**
+     * A CONCEPT ALREADY SEATED UNDER ANOTHER SPELLING IS SEATED.
+     *
+     * Excluding only the exact term let a word form and its concept
+     * both buy a seat, so long as they came up in different rounds.
+     * `bristly` was seated in round 2 and `bristle` in round 5, and
+     * the language carried `doqk` and `codj` for one idea. `scaly`
+     * beside `scale`, `supportive` beside `support`, `southern`
+     * beside `south`: the user has caught this one more often than
+     * anything else, and the guard belongs here, at the moment the
+     * seat is spent, rather than in a report afterwards.
+     *
+     * **THE TEST HAS TO RUN BOTH WAYS.** Folding is one-directional:
+     * `bristly` offers `bristle` and `bristle` offers nothing back.
+     * So asking only what the candidate folds to catches the concept
+     * arriving second and never the form arriving first, which is the
+     * order that actually happened. `taken` holds every spelling of
+     * every seat, so either arrival order is caught.
+     *
+     * `case/v24/test/gloss.test.ts` asserts the invariant.
+     */
+    .filter(one => {
+      /**
+       * **COUNTED HERE, NOT ONLY AT THE SEAT.**
+       *
+       * The first version of this guard recorded a refusal where the
+       * seat is spent, and silently dropped candidates in this
+       * filter. That made it report three refusals, which is what a
+       * harmless guard looks like, while this line ran over every
+       * candidate every round against a `taken` set holding roughly
+       * four spellings for each of 814 fixed seats.
+       *
+       * A veto that does not count itself is indistinguishable from
+       * no veto at all, and that is exactly how it read.
+       */
+      /** Already seated, under this very spelling. Not a fold. */
+      if (seated.has(one.term)) return false
+
+      /**
+       * In `taken` but not seated means a DERIVED seat folded onto
+       * this word. That is the guard firing, not an ordinary
+       * exclusion, and it has to be reported. Treating it as ordinary
+       * is how `ear` disappeared without a line of output.
+       */
+      if (taken.has(one.term)) {
+        if (!refused.has(one.term)) {
+          refused.set(one.term, foldFrom.get(one.term) ?? 'a derived seat')
+        }
+        return false
+      }
+
+      /**
+       * **ONLY A DERIVED CANDIDATE IS REFUSED FOR ITS FOLD.**
+       *
+       * The seat side already writes a derived word's folds into
+       * `taken`, so seating `bristly` puts `bristle` there and the
+       * exact check above catches `bristle` arriving later. What it
+       * cannot catch is the other order, `bristle` seated first and
+       * `bristly` arriving after, because `bristle` folds to nothing.
+       *
+       * That is the only case left, and it is exactly a derived
+       * candidate. Asking the question of every candidate instead
+       * refused `meal` for folding to `me`, `bed` to `be`, `story` to
+       * `store`, `signal` to `sign`: different words that the
+       * generous lookup happens to connect.
+       */
+      if (!isDerived(one.term)) return true
+      const onto = conceptsOf(one.term).find(two => taken.has(two))
+      if (!onto) return true
+      if (!refused.has(one.term)) refused.set(one.term, onto)
+      return false
+    })
     .map(one => ({
       one,
       /**
-       * A SEAT IS BOUGHT BY WHAT IT UNLOCKS, not by being popular.
+       * A SEAT IS BOUGHT BY PRODUCTIVITY, not by frequency.
        *
-       * The score was `unlocked + head + uses`, and that third term
-       * paid for concepts whose meaning another seat already covers.
-       * `uses` stays only as a tiebreak, a thousandth of its old
-       * weight, so two concepts that unlock the same amount are
-       * settled by which the corpus says more often.
+       * How often a word is said is the weakest of the three signals
+       * and it is the one a corpus hands you first, which is why it
+       * is easy to mistake for the answer. The question is what a
+       * concept LETS YOU SAY that nothing else would.
        *
-       * `head` is scaled up because heading a hundred concepts is
-       * worth more than being said a hundred times: it is the shape
-       * of the lexicon rather than its traffic.
+       * ```text
+       * head      how many other concepts define themselves by it
+       *           `person` heads 358. Every one of those definitions
+       *           says it, so its cost is multiplied, not counted.
+       * unlocked  what becomes sayable the moment it is seated,
+       *           including the species it stops blocking
+       * uses      how often the corpus says it. A tiebreak.
+       * ```
+       *
+       * `head` is the productivity term and outranks everything: a
+       * word a hundred other words are built from is load bearing
+       * whether or not anybody says it aloud. `uses` is divided by a
+       * thousand so it settles ties and never decides one.
        */
       score:
-        (value.get(one.term) ?? 0) + one.head * 200 + one.uses / 1000,
+        (value.get(one.term) ?? 0) +
+        one.head * 200 +
+        one.species * 50 +
+        one.uses / 1000,
     }))
     .filter(one => one.score > 0)
     .sort((a, b) => b.score - a.score)
   if (!open.length) break
   const take = open.slice(0, Math.min(100, SEATS - seated.size))
   for (const { one, score } of take) {
-    seated.add(one.term)
+    /**
+     * The filter above ran once for the whole round, so a form and
+     * its concept sitting in the SAME batch of a hundred both passed
+     * it. The guard is repeated here, where the seat is actually
+     * spent and `taken` is current.
+     */
+    const onto = taken.has(one.term)
+      ? one.term
+      : isDerived(one.term)
+        ? conceptsOf(one.term).find(two => taken.has(two))
+        : undefined
+    if (onto) {
+      folded.push([one.term, onto, score])
+      continue
+    }
+    seat(one.term)
     order.push([one.term, score, round])
   }
 }
@@ -273,10 +615,33 @@ const cut = [...cand.values()].filter(
 )
 cut.sort((a, b) => b.head - a.head || b.uses - a.uses)
 
+/**
+ * THE WHOLE SEATED SET, fixed rows included.
+ *
+ * This file used to hold only the CHOSEN, and the 809 seated first
+ * were left out of it: the pins, the short list, and the concepts the
+ * periodic table rides on. `assign.ts` reads this to decide who gets
+ * a form, so `stone` and `tooth` were seated in the language and had
+ * no word, which blocked 1,190 species between them.
+ *
+ * A file that names its rows `seated` has to hold every seat.
+ */
+const fixedRows = [...cand.values()]
+  .filter(one => one.fixed)
+  .map(one => [one.term, 0, 0, one.why] as [string, number, number, string])
+
 writeFileSync(
   resolve(OUT, 'choose-seated.csv'),
   'term,score,round,why\n' +
-    order.map(([term, score, at]) => `${term},${score},${at},chosen`).join('\n') +
+    [
+      ...fixedRows,
+      ...order.map(
+        ([term, score, at]) =>
+          [term, score, at, 'chosen'] as [string, number, number, string],
+      ),
+    ]
+      .map(one => one.join(','))
+      .join('\n') +
     '\n',
 )
 
@@ -299,9 +664,14 @@ const fixed = [...cand.values()].filter(one => one.fixed).length
 
 process.stdout.write(
   `WHICH 4,096\n\n` +
+    `  fields counted   ${loaded.held.join(', ')}\n` +
+    `  fields ABSENT    ${loaded.missing.join(', ')}\n` +
+    `                   no corpus, so nothing here speaks for them\n\n` +
     `  candidates       ${cand.size.toLocaleString()}\n` +
     `  seats            ${SEATS.toLocaleString()}\n` +
     `  fixed first      ${fixed.toLocaleString()}   pins, elements, short forms\n` +
+    `  judged           ${judged.toLocaleString()}   ` +
+    `${ruledOut.size - named} compounds, ${named} names, freeing a seat each\n` +
     `  chosen           ${order.length.toLocaleString()}\n` +
     `  seated in all    ${seated.size.toLocaleString()}\n\n` +
     `  meanings wanted  ${wants.length.toLocaleString()}   ` +
@@ -316,6 +686,13 @@ process.stdout.write(
           `  ${one.term.padEnd(22)}${String(one.uses).padStart(6)} uses  ` +
           `${String(one.head).padStart(4)} head\n`,
       )
+      .join('') +
+    `\n  REFUSED, FOLDED ONTO A SEAT ALREADY TAKEN  ` +
+    `${(refused.size + folded.length).toLocaleString()}\n` +
+    `  every one of these must be the SAME concept, not a collision\n\n` +
+    [...refused.entries()]
+      .slice(0, 25)
+      .map(([term, onto]) => `  ${term.padEnd(22)}onto ${onto}\n`)
       .join('') +
     `\n  STILL OPEN, the ten most wanted\n\n` +
     open

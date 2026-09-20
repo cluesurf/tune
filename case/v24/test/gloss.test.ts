@@ -16,7 +16,7 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { describe, expect, test } from 'vitest'
 
-import { conceptsOf, isGrammar, isName } from '../code/gloss'
+import { conceptsOf, isDerived, isGrammar, isName } from '../code/gloss'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TERM = resolve(here, '../base/term')
@@ -55,6 +55,49 @@ describe('a word form reduces to its concept', () => {
   for (const [form, concept] of FOLDS) {
     test(`${form} offers ${concept}`, () => {
       expect(conceptsOf(form)).toContain(concept)
+    })
+  }
+})
+
+/**
+ * A WORD THAT MERELY ENDS LIKE A SUFFIX IS NOT BUILT FROM ONE.
+ *
+ * `conceptsOf` is a generous LOOKUP: it offers `flow` for `flower`
+ * because an offer that matches no seat costs nothing. `isDerived` is
+ * a VETO, and reading the lookup table as the suffix list made it say
+ * `flower` comes from `flow`, `water` from `wat`, `animal` from
+ * `anim`. The demand of 6,102 species moved off `flower`, coverage
+ * fell from 96.62% to 95.01%, and 1,936 species lost their names.
+ *
+ * These are the words that end like a suffix and are not one.
+ */
+describe('an ordinary word is not read as a derived form', () => {
+  const WHOLE = [
+    'flower', 'water', 'winter', 'silver', 'finger', 'paper', 'river',
+    'timber', 'feather', 'leather', 'other', 'under', 'over',
+    'animal', 'metal', 'petal', 'coral', 'signal', 'oral', 'rival',
+    'garden', 'open', 'oven', 'linen', 'iron', 'queen', 'green',
+    'plate', 'gate', 'late', 'state', 'climate', 'private',
+    'seed', 'bed', 'red', 'weed', 'reed', 'bead',
+    'king', 'ring', 'wing', 'thing', 'spring', 'string',
+    'color', 'odor', 'razor', 'tumor', 'door', 'floor',
+  ]
+  for (const one of WHOLE) {
+    test(`${one} is a word, not a form`, () => {
+      expect(isDerived(one)).toBe(false)
+    })
+  }
+})
+
+describe('a real derived form is still caught', () => {
+  const FORM = [
+    'bristly', 'scaly', 'supportive', 'spacious', 'fibrous',
+    'division', 'creation', 'darkness', 'movement', 'clarity',
+    'southern', 'northern', 'childish', 'colorful', 'leafless',
+  ]
+  for (const one of FORM) {
+    test(`${one} is a form`, () => {
+      expect(isDerived(one)).toBe(true)
     })
   }
 })

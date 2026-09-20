@@ -1,0 +1,448 @@
+You are naming living things for a constructed language whose
+words are built from about 4000 plain concepts. Every name must be
+a literal compound of ordinary concrete words.
+
+Each line below is a Latin name that carries NO meaning: it is a
+person's surname, a place, or a word whose sense is lost. It must
+be replaced by a description of the actual living thing.
+
+For each one, do four things in order.
+
+1 DESCRIBE it richly, in prose. What does it look like: shape,
+  colour, size, texture, the leaf, the flower, the seed, the fruit.
+  Where does it live: ground, water, rock, tree bark, bog, desert,
+  cold, hot. What does it do: climb, creep, float, sting, cling,
+  open at night, die back in winter. How does it meet the senses:
+  smell, taste, touch, the sound of it in wind. What do people use
+  it for: food, medicine, dye, rope, timber, thatch. And above all,
+  what would a person notice FIRST on meeting it.
+
+2 GATHER every trait from that description that could name it.
+
+3 DISTIL to the two or three most telling. Ranked, in this order:
+  MINIMALISM, fewest parts. ACCURACY, it must be true of this group
+  and not of its neighbours. OBVIOUSNESS, a speaker meeting the
+  plant should be able to guess the name.
+
+4 NAME it as two or three plain English concepts joined by +.
+
+Rules.
+Never use a proper name, a person, a place, a people, or a god.
+Never use a technical botanical term. Say leaf cup, not calyx; say
+spore box, not capsule; say seed leaf, not cotyledon.
+Use plain concrete words a hunter gatherer would know, plus
+ordinary modern ones.
+A name is a CONCEPT, not a word form: write horn, not horned.
+The name must distinguish this group from the ones beside it, so
+read the sibling names given and do not pick a trait they share.
+If you genuinely do not know the group, say so in `why` and leave
+`name` empty. An invented description is worse than a gap.
+
+Reply with JSON only, no prose around it:
+{"answers":[{"word":"","kind":"genus","described":"","traits":"",
+"name":"x + y","why":""}]}
+
+── the genus words, worst first ──
+
+  Symphysodontella   blocks 3 species
+      Symphysodontella parvifolia   瓢叶藓属小叶瓢叶藓   piáo yè xiǎn shǔ xiǎo yè piáo yè xiǎn
+      Symphysodontella siamensis   瓢叶藓属双肋瓢叶藓   piáo yè xiǎn shǔ shuāng lèi piáo yè xiǎn
+      Symphysodontella tortifolia   瓢叶藓属扭尖瓢叶藓   piáo yè xiǎn shǔ niǔ jiān piáo yè xiǎn
+      beside: parvifolia, siamensis, tortifolia
+
+  Colutea   blocks 3 species
+      Colutea arborescens   鱼鳔槐属鱼鳔槐   yú biào huái shǔ yú biào huái
+      Colutea media   鱼鳔槐属杂种鱼鳔槐   yú biào huái shǔ zá zhǒng yú biào huái
+      Colutea nepalensis   鱼鳔槐属尼泊尔鱼鳔槐   yú biào huái shǔ ní bó ěr yú biào huái
+      beside: arborescens, media, nepalensis
+
+  Alchemilla   blocks 3 species
+      Alchemilla glabra   羽衣草属无毛羽衣草   yǔ yī cǎo shǔ wú máo yǔ yī cǎo
+      Alchemilla japonica   羽衣草属羽衣草   yǔ yī cǎo shǔ yǔ yī cǎo
+      Alchemilla monticola   羽衣草属纤细羽衣草   yǔ yī cǎo shǔ xiān xì yǔ yī cǎo
+      beside: glabra, japonica, monticola
+
+  Hovenia   blocks 3 species
+      Hovenia acerba   枳椇属枳椇   zhǐ jǔ shǔ zhǐ jǔ
+      Hovenia dulcis   枳椇属北枳椇   zhǐ jǔ shǔ běi zhǐ jǔ
+      Hovenia trichocarpa   枳椇属毛果枳椇   zhǐ jǔ shǔ máo guǒ zhǐ jǔ
+      beside: acerba, dulcis, trichocarpa
+
+  Siraitia   blocks 3 species
+      Siraitia grosvenorii   罗汉果属罗汉果   luó hàn guǒ shǔ luó hàn guǒ
+      Siraitia siamensis   罗汉果属翅子罗汉果   luó hàn guǒ shǔ chì zǐ luó hàn guǒ
+      Siraitia sikkimensis   罗汉果属锡金罗汉果   luó hàn guǒ shǔ xī jīn luó hàn guǒ
+      beside: grosvenorii, siamensis, sikkimensis
+
+  Matthiola   blocks 3 species
+      Matthiola chorassanica   紫罗兰属伊朗紫罗兰   zǐ luó lán shǔ yī lǎng zǐ luó lán
+      Matthiola incana   紫罗兰属紫罗兰   zǐ luó lán shǔ zǐ luó lán
+      Matthiola superba   紫罗兰属沙地紫罗兰   zǐ luó lán shǔ shā dì zǐ luó lán
+      beside: chorassanica, incana, superba
+
+  Moehringia   blocks 3 species
+      Moehringia lateriflora   种阜草属种阜草   zhǒng fù cǎo shǔ zhǒng fù cǎo
+      Moehringia trinervia   种阜草属三脉种阜草   zhǒng fù cǎo shǔ sān mài zhǒng fù cǎo
+      Moehringia umbrosa   种阜草属新疆种阜草   zhǒng fù cǎo shǔ xīn jiāng zhǒng fù cǎo
+      beside: lateriflora, trinervia, umbrosa
+
+  Brunfelsia   blocks 3 species
+      Brunfelsia brasiliensis   鸳鸯茉莉属   yuān yāng mò lì shǔ
+      Brunfelsia pauciflora   鸳鸯茉莉属少花鸳鸯茉莉   yuān yāng mò lì shǔ shǎo huā yuān yāng mò lì
+      Brunfelsia macrophylla   鸳鸯茉莉属大叶鸳鸯茉莉   yuān yāng mò lì shǔ dà yè yuān yāng mò lì
+      beside: brasiliensis, pauciflora, macrophylla
+
+  Chenia   blocks 2 species
+      Chenia leptophylla   陈氏藓属陈氏藓   chén shì xiǎn shǔ chén shì xiǎn
+      Chenia zanderi   陈氏藓属多疣陈氏藓   chén shì xiǎn shǔ duō yóu chén shì xiǎn
+      beside: leptophylla, zanderi
+
+  Warnstorfia   blocks 2 species
+      Warnstorfia exannulata   范氏藓属范氏藓   fàn shì xiǎn shǔ fàn shì xiǎn
+      Warnstorfia fluitans   范氏藓属浮生范氏藓   fàn shì xiǎn shǔ fú shēng fàn shì xiǎn
+      beside: exannulata, fluitans
+
+  Leskeella   blocks 2 species
+      Leskeella nervosa   细罗藓属细罗藓   xì luó xiǎn shǔ xì luó xiǎn
+      Leskeella pusilla   细罗藓属小细罗藓   xì luó xiǎn shǔ xiǎo xì luó xiǎn
+      beside: nervosa, pusilla
+
+  Clevea   blocks 2 species
+      Clevea hyalina   克氏苔属克氏苔   kè shì tái shǔ kè shì tái
+      Clevea pusilla   克氏苔属小克氏苔   kè shì tái shǔ xiǎo kè shì tái
+      beside: hyalina, pusilla
+
+  Yua   blocks 2 species
+      Yua austro-orientalis   俞藤属大果俞藤   yú téng shǔ dà guǒ yú téng
+      Yua thomsonii   俞藤属俞藤   yú téng shǔ yú téng
+      beside: austro-orientalis, thomsonii
+
+  Zornia   blocks 2 species
+      Zornia gibbosa   丁癸草属丁癸草   dīng guǐ cǎo shǔ dīng guǐ cǎo
+      Zornia intecta   丁癸草属台东丁癸草   dīng guǐ cǎo shǔ tái dōng dīng guǐ cǎo
+      beside: gibbosa, intecta
+
+  Coix   blocks 2 species
+      Coix aquatica   薏苡属水生薏苡   yì yǐ shǔ shuǐ shēng yì yǐ
+      Coix lacryma-jobi   薏苡属薏苡   yì yǐ shǔ yì yǐ
+      beside: aquatica, lacryma-jobi
+
+  Roemeria   blocks 2 species
+      Roemeria hybrida   疆罂粟属紫花疆罂粟   jiāng yīng sù shǔ zǐ huā jiāng yīng sù
+      Roemeria refracta   疆罂粟属红花疆罂粟   jiāng yīng sù shǔ hóng huā jiāng yīng sù
+      beside: hybrida, refracta
+
+  Hepatica   blocks 2 species
+      Hepatica henryi   獐耳细辛属川鄂獐耳细辛   zhāng ěr xì xīn shǔ chuān è zhāng ěr xì xīn
+      Hepatica nobilis   獐耳细辛属   zhāng ěr xì xīn shǔ
+      beside: henryi, nobilis
+
+  Alcea   blocks 2 species
+      Alcea nudiflora   蜀葵属裸花蜀葵   shǔ kuí shǔ luǒ huā shǔ kuí
+      Alcea rosea   蜀葵属蜀葵   shǔ kuí shǔ shǔ kuí
+      beside: nudiflora, rosea
+
+  Celosia   blocks 2 species
+      Celosia argentea   青葙属青葙   qīng xiāng shǔ qīng xiāng
+      Celosia taitoensis   青葙属台湾青葙   qīng xiāng shǔ tái wān qīng xiāng
+      beside: argentea, taitoensis
+
+  Pottsia   blocks 2 species
+      Pottsia grandiflora   帘子藤属大花帘子藤   lián zi téng shǔ dà huā lián zi téng
+      Pottsia laxiflora   帘子藤属帘子藤   lián zi téng shǔ lián zi téng
+      beside: grandiflora, laxiflora
+
+  Lavandula   blocks 2 species
+      Lavandula angustifolia   薰衣草属薰衣草   xūn yī cǎo shǔ xūn yī cǎo
+      Lavandula latifolia   薰衣草属宽叶薰衣草   xūn yī cǎo shǔ kuān yè xūn yī cǎo
+      beside: angustifolia, latifolia
+
+  Torilis   blocks 2 species
+      Torilis japonica   窃衣属小窃衣   qiè yī shǔ xiǎo qiè yī
+      Torilis scabra   窃衣属窃衣   qiè yī shǔ qiè yī
+      beside: japonica, scabra
+
+  Kaschgaria   blocks 2 species
+      Kaschgaria brachanthemoides   喀什菊属密枝喀什菊   kā shí jú shǔ mì zhī kā shí jú
+      Kaschgaria komarovii   喀什菊属喀什菊   kā shí jú shǔ kā shí jú
+      beside: brachanthemoides, komarovii
+
+  Hippeastrum   blocks 2 species
+      Hippeastrum striatum   朱顶红属朱顶红   zhū dǐng hóng shǔ zhū dǐng hóng
+      Hippeastrum vittatum   朱顶红属花朱顶红   zhū dǐng hóng shǔ huā zhū dǐng hóng
+      beside: striatum, vittatum
+
+  Chengiodendron   blocks 2 species
+      Chengiodendron marginatum   万钧木属万钧木   wàn jūn mù shǔ wàn jūn mù
+      Chengiodendron minor   万钧木属小叶万钧木   wàn jūn mù shǔ xiǎo yè wàn jūn mù
+      beside: marginatum, minor
+
+  Vuhuangia   blocks 2 species
+      Vuhuangia flava   吴黄木属吴黄木   wú huáng mù shǔ wú huáng mù
+      Vuhuangia penduliflora   吴黄木属垂序吴黄木   wú huáng mù shǔ chuí xù wú huáng mù
+      beside: flava, penduliflora
+
+  Wilsoniella   blocks 1 species
+      Wilsoniella decipiens   威氏藓属威氏藓   wēi shì xiǎn shǔ wēi shì xiǎn
+      beside: decipiens
+
+  Luisierella   blocks 1 species
+      Luisierella barbula   芦氏藓属短茎芦氏藓   lú shì xiǎn shǔ duǎn jīng lú shì xiǎn
+      beside: barbula
+
+  Reimersia   blocks 1 species
+      Reimersia inconspicua   仰叶藓属仰叶藓   yǎng yè xiǎn shǔ yǎng yè xiǎn
+      beside: inconspicua
+
+  Tuerckheimia   blocks 1 species
+      Tuerckheimia svihlae   托氏藓属线叶托氏藓   tuō shì xiǎn shǔ xiàn yè tuō shì xiǎn
+      beside: svihlae
+
+  Hampeella   blocks 1 species
+      Hampeella pallens   汉氏藓属汉氏藓   hàn shì xiǎn shǔ hàn shì xiǎn
+      beside: pallens
+
+  Alleniella   blocks 1 species
+      Alleniella complanata   艾氏藓属艾氏藓   ài shì xiǎn shǔ ài shì xiǎn
+      beside: complanata
+
+  Treubia   blocks 1 species
+      Treubia insignis   陶氏苔属陶氏苔   táo shì tái shǔ táo shì tái
+      beside: insignis
+
+  Gottschelia   blocks 1 species
+      Gottschelia schizopleura   戈氏苔属戈氏苔   gē shì tái shǔ gē shì tái
+      beside: schizopleura
+
+  Thujopsis   blocks 1 species
+      Thujopsis dolabrata   罗汉柏属罗汉柏   luó hàn bǎi shǔ luó hàn bǎi
+      beside: dolabrata
+
+  Houttuynia   blocks 1 species
+      Houttuynia cordata   蕺菜属蕺菜   jí cài shǔ jí cài
+      beside: cordata
+
+  Woonyoungia   blocks 1 species
+      Woonyoungia septentrionalis   焕镛木属焕镛木   huàn yōng mù shǔ huàn yōng mù
+      beside: septentrionalis
+
+  Phoebe   blocks 1 species
+      Phoebe hunanensis   楠属湘楠   nán shǔ xiāng nán
+      beside: hunanensis
+
+  Aponogeton   blocks 1 species
+      Aponogeton lakhonensis   水蕹属水蕹   shuǐ wèng shǔ shuǐ wèng
+      beside: lakhonensis
+
+  Biermannia   blocks 1 species
+      Biermannia calcarata   胼胝兰属胼胝兰   pián zhī lán shǔ pián zhī lán
+      beside: calcarata
+
+  Hsenhsua   blocks 1 species
+      Hsenhsua chrysea   先骕兰属先骕兰   xiān sù lán shǔ xiān sù lán
+      beside: chrysea
+
+  Ohbaea   blocks 1 species
+      Ohbaea balfourii   岷江景天属岷江景天   mín jiāng jǐng tiān shǔ mín jiāng jǐng tiān
+      beside: balfourii
+
+  Alhagi   blocks 1 species
+      Alhagi camelorum   骆驼刺属骆驼刺   luò tuo cì shǔ luò tuo cì
+      beside: camelorum
+
+  Strongylodon   blocks 1 species
+      Strongylodon macrobotrys   翡翠葛属翡翠葛   fěi cuì gé shǔ fěi cuì gé
+      beside: macrobotrys
+
+  Arundinaria   blocks 1 species
+      Arundinaria qingchengshanensis   青篱竹属饱竹子   qīng lí zhú shǔ bǎo zhú zǐ
+      beside: qingchengshanensis
+
+  Beckmannia   blocks 1 species
+      Beckmannia syzigachne   菵草属菵草   wǎng cǎo shǔ wǎng cǎo
+      beside: syzigachne
+
+  Ichnanthus   blocks 1 species
+      Ichnanthus pallens   距花黍属   jù huā shǔ shǔ
+      beside: pallens
+
+  Spinifex   blocks 1 species
+      Spinifex littoreus   鬣刺属鬣刺   liè cì shǔ liè cì
+      beside: littoreus
+
+  Tripsacum   blocks 1 species
+      Tripsacum laxum   摩擦草属摩擦草   mó cā cǎo shǔ mó cā cǎo
+      beside: laxum
+
+  Lloydia   blocks 1 species
+      Lloydia serotina   洼瓣花属   wā bàn huā shǔ
+      beside: serotina
+
+  Cordyline   blocks 1 species
+      Cordyline fruticosa   朱蕉属朱蕉   zhū jiāo shǔ zhū jiāo
+      beside: fruticosa
+
+  Argemone   blocks 1 species
+      Argemone mexicana   蓟罂粟属蓟罂粟   jì yīng sù shǔ jì yīng sù
+      beside: mexicana
+
+  Droguetia   blocks 1 species
+      Droguetia iners   单蕊麻属   dān ruǐ má shǔ
+      beside: iners
+
+  Zhengyia   blocks 1 species
+      Zhengyia shennongensis   征镒麻属征镒麻   zhēng yì má shǔ zhēng yì má
+      beside: shennongensis
+
+  Ecballium   blocks 1 species
+      Ecballium elaterium   喷瓜属喷瓜   pēn guā shǔ pēn guā
+      beside: elaterium
+
+  Roureopsis   blocks 1 species
+      Roureopsis emarginata   朱果藤属朱果藤   zhū guǒ téng shǔ zhū guǒ téng
+      beside: emarginata
+
+  Hura   blocks 1 species
+      Hura crepitans   响盒子属响盒子   xiǎng hé zi shǔ xiǎng hé zi
+      beside: crepitans
+
+  Oncoba   blocks 1 species
+      Oncoba spinosa   鼻烟盒树属鼻烟盒树   bí yān hé shù shǔ bí yān hé shù
+      beside: spinosa
+
+  Lawsonia   blocks 1 species
+      Lawsonia inermis   散沫花属散沫花   sàn mò huā shǔ sàn mò huā
+      beside: inermis
+
+  Koelreuteria   blocks 1 species
+      Koelreuteria paniculata   栾属栾   luán shǔ luán
+      beside: paniculata
+
+  Durio   blocks 1 species
+      Durio zibethinus   榴梿属榴梿   liú lián shǔ liú lián
+      beside: zibethinus
+
+  Shorea   blocks 1 species
+      Shorea robusta   娑罗双属娑罗双   suō luó shuāng shǔ suō luó shuāng
+      beside: robusta
+
+  Shangrilaia   blocks 1 species
+      Shangrilaia nana   香格里拉荠属香格里拉荠   xiāng gé lǐ lā jì shǔ xiāng gé lǐ lā jì
+      beside: nana
+
+  Kochia   blocks 1 species
+      Kochia prostrata   地肤属   dì fū shǔ
+      beside: prostrata
+
+  Spinacia   blocks 1 species
+      Spinacia oleracea   菠菜属菠菜   bō cài shǔ bō cài
+      beside: oleracea
+
+  PERESKIA   blocks 1 species
+      PERESKIA aculeata   木麒麟属木麒麟   mù qí lín shǔ mù qí lín
+      beside: aculeata
+
+  Eucommia   blocks 1 species
+      Eucommia ulmoides   杜仲属杜仲   dù zhòng shǔ dù zhòng
+      beside: ulmoides
+
+  Tarennoidea   blocks 1 species
+      Tarennoidea wallichii   岭罗麦属岭罗麦   lǐng luó mài shǔ lǐng luó mài
+      beside: wallichii
+
+  Apocynum   blocks 1 species
+      Apocynum venetum   罗布麻属罗布麻   luó bù má shǔ luó bù má
+      beside: venetum
+
+  Thevetia   blocks 1 species
+      Thevetia peruviana   黄花夹竹桃属黄花夹竹桃   huáng huā jiā zhú táo shǔ huáng huā jiā zhú táo
+      beside: peruviana
+
+  Operculina   blocks 1 species
+      Operculina turpethum   盒果藤属盒果藤   hé guǒ téng shǔ hé guǒ téng
+      beside: turpethum
+
+  Brugmansia   blocks 1 species
+      Brugmansia suaveolens   木曼陀罗属大花木曼陀罗   mù màn tuó luó shǔ dà huā mù màn tuó luó
+      beside: suaveolens
+
+  Omphalotrix   blocks 1 species
+      Omphalotrix longipes   脐草属脐草   qí cǎo shǔ qí cǎo
+      beside: longipes
+
+  Kudoacanthus   blocks 1 species
+      Kudoacanthus albonervosa   银脉爵床属银脉爵床   yín mài jué chuáng shǔ yín mài jué chuáng
+      beside: albonervosa
+
+  Ammi   blocks 1 species
+      Ammi majus   阿米芹属大阿米芹   ā mǐ qín shǔ dà ā mǐ qín
+      beside: majus
+
+  Sinolimprichtia   blocks 1 species
+      Sinolimprichtia alpina   舟瓣芹属舟瓣芹   zhōu bàn qín shǔ zhōu bàn qín
+      beside: alpina
+
+  Eclipta   blocks 1 species
+      Eclipta prostrata   鳢肠属鳢肠   lǐ cháng shǔ lǐ cháng
+      beside: prostrata
+
+  Farfugium   blocks 1 species
+      Farfugium japonicum   大吴风草属大吴风草   dà wú fēng cǎo shǔ dà wú fēng cǎo
+      beside: japonicum
+
+  Handelia   blocks 1 species
+      Handelia trichophylla   天山蓍属天山蓍   tiān shān shī shǔ tiān shān shī
+      beside: trichophylla
+
+  Pseudohandelia   blocks 1 species
+      Pseudohandelia umbellifera   拟天山蓍属拟天山蓍   nǐ tiān shān shī shǔ nǐ tiān shān shī
+      beside: umbellifera
+
+  Baccharoides   blocks 1 species
+      Baccharoides anthelmintica   驱虫菊属驱虫菊   qū chóng jú shǔ qū chóng jú
+      beside: anthelmintica
+
+  Teratophyllum   blocks 1 species
+      Teratophyllum hainanense   符藤蕨属海南符藤蕨   fú téng jué shǔ hǎi nán fú téng jué
+      beside: hainanense
+
+  Hayata   blocks 1 species
+      Hayata tabiyahanensis   早田兰属   zǎo tián lán shǔ
+      beside: tabiyahanensis
+
+  Wuacanthus   blocks 1 species
+      Wuacanthus microdontus   小齿爵床属小齿爵床   xiǎo chǐ jué chuáng shǔ xiǎo chǐ jué chuáng
+      beside: microdontus
+
+  Wuodendron   blocks 1 species
+      Wuodendron praecox   征镒木属征镒木   zhēng yì mù shǔ zhēng yì mù
+      beside: praecox
+
+  Dixonia   blocks 1 species
+      Dixonia orientalis   狄氏藓属东方狄氏藓   dí shì xiǎn shǔ dōng fāng dí shì xiǎn
+      beside: orientalis
+
+  Pengchengwua   blocks 1 species
+      Pengchengwua obtusata   鹏程藓属鹏程藓   péng chéng xiǎn shǔ péng chéng xiǎn
+      beside: obtusata
+
+  Listia   blocks 1 species
+      Listia bainesii   蔓罗豆属牧用蔓罗豆   màn luó dòu shǔ mù yòng màn luó dòu
+      beside: bainesii
+
+  Gerbera   blocks 1 species
+      Gerbera jamesonii   非洲菊属非洲菊   fēi zhōu jú shǔ fēi zhōu jú
+      beside: jamesonii
+
+  Kingsboroughia   blocks 1 species
+      Kingsboroughia alba   珂楠树属珂楠树   kē nán shù shǔ kē nán shù
+      beside: alba
+
+  Corrigiola   blocks 1 species
+      Corrigiola litoralis   韦草属韦草   wéi cǎo shǔ wéi cǎo
+      beside: litoralis
+
+  Mengzia   blocks 1 species
+      Mengzia foliosa   蒙自兰属蒙自兰   méng zì lán shǔ méng zì lán
+      beside: foliosa
+

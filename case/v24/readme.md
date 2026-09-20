@@ -251,8 +251,8 @@ Run with `V17_DIPHTHONG=0` for the count without `ai` and `au`.
 | --- | --- |
 | `base/term/usable/` | every usable root, one file per shape, plus `all.txt` and `all-ipa.txt` |
 | `base/term/legal/` | every root the sound rules allow, before the distance rule |
-| `base/term/pinned.csv` | 460 concepts that already have a form |
-| `base/term/lost.csv` | 25 v16 words v17 cannot spell, and why |
+| `base/term/pinned.csv` | 478 concepts that already have a form |
+| `base/term/lost.csv` | 7 v16 words v17 cannot spell, and why |
 | `base/term/words.csv` | 9 words, the ones the video says |
 | `base/voice/` | the recordings, and the video in both shapes |
 

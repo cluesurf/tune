@@ -112,6 +112,7 @@
     "v16:color": "tsx case/v16/code/color.ts",
     "v16:render": "tsx case/v16/code/render.ts",
     "v16:story": "tsx case/v16/code/story.ts",
+    "v16:book": "tsx case/v16/code/book.ts",
     "v16:final": "tsx case/v16/code/final.ts",
     "v17:guide": "tsx case/v17/code/guide.ts",
     "v17:every": "tsx case/v17/code/every.ts",
@@ -131,7 +132,18 @@
     "v24:taxon": "tsx case/v24/code/taxon.ts",
     "v24:sift": "tsx case/v24/code/sift.ts",
     "v24:build": "tsx case/v24/code/build.ts",
-    "v24:choose": "tsx case/v24/code/choose.ts"
+    "v24:choose": "tsx case/v24/code/choose.ts",
+    "v24:distill": "tsx case/v24/code/distill.ts",
+    "v24:relate": "tsx case/v24/code/relate.ts",
+    "v24:assign": "tsx case/v24/code/assign.ts",
+    "v24:name": "tsx case/v24/code/name.ts",
+    "v24:clash": "tsx case/v24/code/clash.ts",
+    "v24:perfect": "tsx case/v24/code/perfect.ts",
+    "v24:ask-split": "tsx case/v24/code/ask-split.ts",
+    "v24:ask-hard": "tsx case/v24/code/ask-hard.ts",
+    "v24:latin": "tsx case/v24/code/latin.ts",
+    "v24:why": "tsx case/v24/code/why.ts",
+    "v24:field-mineral": "tsx case/v24/code/field-mineral.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",
