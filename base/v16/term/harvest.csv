@@ -1,0 +1,668 @@
+form,meaning,page,state
+simat,symmetry,index,free
+nuq,bond,action,free
+vut,be,action,free
+wug,emanate,action,free
+luj,drive,action,free
+nav,listen,action,free
+buq,go,action,free
+lav,love,action,free
+cov,brown,color,free
+kiz,cyan,color,free
+hix,peach,color,free
+zet,olive,color,free
+lip,list,computation,free
+lux,string,computation,free
+lus,bit off,computation,free
+lap,boolean,computation,free
+fal,file,computation,free
+lon,loan,computation,free
+mix,immutable,computation,free
+zok,try,computation,free
+vuc,catch,computation,free
+bin,bind,computation,free
+cat,hook,computation,free
+gik,user,computation,free
+mav,implementation,computation,free
+had,head,computation,free
+wit,context,computation,free
+kuc,cast,computation,free
+ruq,content,computation,free
+huv,handle,computation,free
+xar,resource,computation,free
+hox,host,computation,free
+tum,term,computation,free
+pud,error,computation,free
+bun,halt,computation,free
+vor,evaluation,computation,free
+xal,of,cradle,free
+boc,together,cradle,free
+sag,beyond,cradle,free
+bis,across,cradle,free
+zix,as,cradle,free
+saj,beside,cradle,free
+rox,to (assign),cradle,free
+tub,over,cradle,free
+nul,toward,cradle,free
+lax,plus,cradle,free
+buf,excluding,cradle,free
+cum,through,cradle,free
+tux,until,cradle,free
+Can,than,cradle,free
+cin,then,cradle,free
+bok,otherwise,cradle,free
+wif,iff,cradle,free
+cis,unless,cradle,free
+Coz,except,cradle,free
+yat,yet,cradle,free
+hid,but,cradle,free
+xev,as soon as (once),cradle,free
+hic,either,cradle,free
+Cot,though,cradle,free
+teq,like (as if),cradle,free
+nak,like (filler),cradle,free
+maz,as,cradle,free
+soz,also,cradle,free
+wuC,whether,cradle,free
+tev,however,cradle,free
+sax,such,cradle,free
+nif,a,design,free
+hej,every/each,design,free
+yod,past tense "-ed" like "created",design,free
+kix,x process,design,free
+wux,x system,design,free
+dom,state of being (-dom),design,free
+dax,the state of being x (-acy, -ness, -ship),design,free
+nal,period of x (-hood),design,free
+yog,practice of focusing on x (-ism),design,free
+gin,the nature of doing x (-ence),design,free
+mox,the model of the action ("the transform", "the create"),design,free
+ciq,thing (hatchling),design,free
+gar,language (-ese),design,free
+nix,having some aspects of (-ish),design,free
+lef,less of (-less),design,free
+taz,very much of (-some),design,free
+tub,over (overburden),design,free
+yip,resembling (-istic),design,free
+kif,future tense like "will create",design,free
+huf,opposite (anti),design,free
+mex,mesh (inter-),design,free
+zig,equal (iso-),design,free
+rup,partial (semi-),design,free
+djen,x generating,design,free
+len,general (infinitive "to"),design,free
+vak,ever,design,free
+smal,small,design,free
+brat,large,design,free
+drit,right (now),design,free
+yov,consequence,design,free
+laz,-ize,design,free
+rac,straight,gender,free
+wos,queer,gender,free
+baf,lack (like a-sexual),gender,free
+cid,cisgender,gender,free
+dij,relatively,manner,free
+daf,previously,manner,free
+hes,hence,manner,free
+sun,soon,manner,free
+vuk,ever,manner,free
+jed,absolutely,manner,free
+Cas,thus,manner,free
+wom,well,manner,free
+yex,possibly,manner,free
+yov,consequently,manner,free
+yut,yet,manner,free
+yuv,usually,manner,free
+besk,basically,manner,free
+sadj,besides,manner,free
+last,last,manner,free
+lored,already,manner,free
+lax,add,math,free
+vak,multiply,math,free
+kuv,divide,math,free
+gal,exponentiate,math,free
+lug,square root,math,free
+rup,logarithm,math,free
+vraj,mean (average),math,free
+hub,x-axis / horizontal,math,free
+payan,$\pi$,math,free
+vativ,derivative,math,free
+skar,square,math,free
+gant,polygon (2d),math,free
+hidj,polyhedron (3d),math,free
+tolp,polytope (nd),math,free
+gac,regular,math,free
+drus,radius,math,free
+zav,angle,math,free
+drig,degree,math,free
+rotet,rotate,math,free
+sutx,set,math,free
+ritx,ring,math,free
+flat,flat,math,free
+pant,mathematical space,math,free
+tarp,topology,math,free
+lowaq,groupoid (group theory),math,free
+sitx,second,measurement,free
+gram,gram,measurement,free
+drav,candela,measurement,free
+hamp,ampere,measurement,free
+webar,weber,measurement,free
+farad,farad,measurement,free
+homan,ohm,measurement,free
+luman,lumen,measurement,free
+litar,liter,measurement,free
+hoz,position (cardinal),number,free
+pum,time (iteration),number,free
+wis,inverse,number,free
+york,$10^{2}$,number,free
+zotx,$10^{3}$,number,free
+glez,$10^{4}$,number,free
+pogz,$10^{5}$,number,free
+drib,$10^{6}$,number,free
+kiqk,$10^{15}$,number,free
+vrug,$10^{18}$,number,free
+morp,$10^{36}$,number,free
+widj,$10^{45}$,number,free
+bolt,lightning,object,free
+frut,fruit,object,free
+dort,dirt,object,free
+star,star,object,free
+vrun,sea/ocean,object,free
+yarz,forest,object,free
+pem,they/them,object,free
+dak,minute,time,free
+hek,hour,time,free
+mes,month,time,free
+ratx,a sound,tone,free
+hudj,u sound,tone,free
+fred,e sound,tone,free
+molt,o sound,tone,free
+reqk,english r vowel sound,tone,free
+natx,n sound,tone,free
+drup,d sound,tone,free
+parz,p sound,tone,free
+snor,s sound,tone,free
+flom,f sound,tone,free
+vust,v sound,tone,free
+zuqk,z sound,tone,free
+xarp,x sound,tone,free
+Cork,c sound,tone,free
+witx,w sound,tone,free
+ladj,l sound,tone,free
+ramp,r sound,tone,free
+datsul,sculpture,index,not legal
+djinzit,pyramid,index,not legal
+txeqtxik,hierarchy,index,not legal
+m,m,tone,not legal
+n,n,tone,not legal
+q,ŋ,tone,not legal
+g,ɡ,tone,not legal
+d,d,tone,not legal
+b,b,tone,not legal
+p,p,tone,not legal
+t,t,tone,not legal
+k,k,tone,not legal
+h,h,tone,not legal
+s,s,tone,not legal
+f,f,tone,not legal
+v,v,tone,not legal
+z,z,tone,not legal
+j,ʒ,tone,not legal
+x,ʃ,tone,not legal
+c,θ,tone,not legal
+C,ð,tone,not legal
+w,w,tone,not legal
+l,l,tone,not legal
+r,r,tone,not legal
+y,j,tone,not legal
+i,i,tone,not legal
+e,e,tone,not legal
+a,a,tone,not legal
+o,o,tone,not legal
+u,u,tone,not legal
+i,1,tone,not legal
+e,2,tone,not legal
+a,3,tone,not legal
+o,4,tone,not legal
+u,5,tone,not legal
+m,6,tone,not legal
+n,7,tone,not legal
+q,8,tone,not legal
+g,9,tone,not legal
+d,10,tone,not legal
+b,20,tone,not legal
+p,30,tone,not legal
+t,40,tone,not legal
+k,50,tone,not legal
+h,60,tone,not legal
+s,70,tone,not legal
+f,80,tone,not legal
+v,90,tone,not legal
+z,100,tone,not legal
+j,200,tone,not legal
+x,300,tone,not legal
+c,400,tone,not legal
+C,500,tone,not legal
+w,600,tone,not legal
+l,700,tone,not legal
+r,800,tone,not legal
+y,900,tone,not legal
+zus,do,action,held by experience
+bud,awaken,action,held by awake
+tuv,input,action,held by conscious
+him,chime,action,held by peace
+hum,urge,action,held by reserved hum
+vit,output,action,held by life
+jil,stream,action,not legal
+wig,kaleidoscope/mesh,action,held by kaleidoscope
+lij,orient,action,held by reserved lij
+nan,negate,action,held by grandmother
+bev,drink,action,1 from bef before
+kon,intersect,action,held by six
+hin,conclude,action,held by it
+hit,eat,action,1 from hip group
+faq,imitate,action,1 from vaq center
+zor,induce,action,held by fall
+jur,measure,action,not legal
+cor,unite,action,held by protect
+cuv,reverse,action,held by field
+Con,transition,action,1 from con all
+xid,grey,color,1 from xit computation
+mag,magenta,color,held by among
+nik,pink,color,not legal
+tar,tan,color,held by target
+yal,turquoise,color,1 from yar you
+vic,information,computation,1 from fic belief
+zip,graph,computation,1 from sip size
+rek,array,computation,held by receive
+run,character,computation,held by write
+sal,bit on,computation,held by silence
+det,date,computation,held by timestamp
+zod,folder,computation,1 from sod son
+wov,require,computation,held by sixteen
+sev,save,computation,1 from sef self
+kap,clone,computation,1 from kat that
+lup,loop,computation,1 from lut south
+wil,default,computation,not legal
+dif,definition,computation,held by different
+vep,interface,computation,1 from veb byte
+tok,parse,computation,held by tree
+man,mine,computation,held by mind
+nut,mint,computation,held by in
+pol,mill,computation,1 from por process
+yul,lace,computation,held by yellow
+kop,scope,computation,held by compare
+vat,fork,computation,held by bad
+taj,integer,computation,held by y axis
+hot,floating point numbers,computation,1 from hod hold
+foz,hash,computation,1 from voz voice
+kes,case,computation,held by exist
+wiq,project,computation,held by white
+diz,package,computation,held by disconnect
+mel,mail,computation,not legal
+goq,job,computation,held by work
+pad,thread,computation,1 from pat passive
+vas,environment,computation,held by body
+rap,print,computation,not legal
+baq,band,computation,held by individual
+sok,around,cradle,1 from sog eight
+dud,during,cradle,1 from dub reserved dub
+pes,despite,cradle,held by space
+lak,as,cradle,1 from lag align
+les,behind,cradle,held by less
+mak,forward,cradle,1 from mag among
+hum,against,cradle,held by reserved hum
+mob,about,cradle,1 from mod middle
+mat,about,cradle,1 from mad model
+pal,to (location),cradle,1 from par part
+lop,from,cradle,1 from lot solution
+for,for,cradle,1 from fol flow
+lan,away,cradle,held by line
+xul,except,cradle,1 from jul universe
+fab,including,cradle,1 from vab vibe
+bit,under,cradle,1 from bid reserved bid
+ban,by,cradle,held by balance
+los,apart,cradle,held by close
+ced,rather,cradle,1 from cet false
+nep,instead,cradle,1 from net network
+voz,versus,cradle,held by voice
+hat,at,cradle,1 from hap hop
+kon,and,cradle,held by six
+cor,or,cradle,held by protect
+kit,if,cradle,1 from kip tune
+din,then,cradle,held by identity
+son,so,cradle,1 from zon zone
+zag,because,cradle,1 from zak effect
+wal,while,cradle,not legal
+nun,not,cradle,held by union
+tep,still (time),cradle,held by step
+sus,since (time),cradle,1 from zus experience
+nos,almost,cradle,held by note
+jas,just,cradle,1 from xas eternal
+tan,so,cradle,held by pattern
+lam,low,design,held by lack
+mol,high,design,1 from mor more
+ven,even,design,held by event
+sin,soon,design,held by distance
+marC,quite,design,not legal
+pot,complete state "-ed",design,held by position
+reC,progress "-ing",design,held by doing
+gut,state of action "-ing" (gerund),design,held by gut
+bak,possesive ("the bird's food"),design,1 from bag blue
+byas,possesive plural ("the birds' food"),design,not legal
+hap,x event,design,held by hop
+gem,x game,design,held by get
+fos,x force,design,held by force
+ses,x essence,design,held by spec
+van,x nature, having the nature of (-ivity, -ity, -ance),design,1 from fan find
+zek,one who does x,design,1 from sek sink
+koz,one who receives x,design,held by continue
+lak,x like,design,1 from lag align
+hip,emanating x,design,held by group
+fin,belief in x,design,held by finite
+zir,pertaining to x (pleasantry),design,not legal
+ved,study or science of (-ology),design,1 from veb byte
+tul,it's a tool (zipper),design,held by tool
+mon,featuring x,design,held by maximum
+lij,x oriented,design,held by reserved lij
+fom,formal x,design,1 from vom volume
+kos,disease (-osis),design,held by source
+kin,ability (-ability),design,held by thing
+sox,x society,design,1 from zox sense
+kun,-ableness,design,held by uncertain
+xit,shaped,design,held by computation
+kan,capable of being (-able),design,held by change
+fol,full of (-full),design,held by flow
+rav,reminiscent of (-esque),design,held by particle
+mor,more (-er),design,held by more
+mis,most (-est),design,held by plural
+tof,relates to (affectional),design,1 from toc true
+fir,hating/fearing/resisting (-phobia),design,not legal
+leg,containing,design,1 from lek select
+baq,self (auto-),design,held by individual
+pak,undo,design,held by place
+sup,exceed (super),design,1 from sut past
+sem,same (sym-),design,held by same
+dit,distance (tele-),design,held by perpendicular
+gen,again (re-),design,held by next
+sud,somewhat (pseudo-),design,1 from sut past
+mad,thing about the thing (meta-),design,held by model
+ples,place x,design,not legal
+land,land x,design,not legal
+prab,probable,design,not legal
+fit,right (correct),design,1 from vit life
+did,indeed,design,1 from dib ignorant
+zed,side,direction,1 from sed send
+hib,binary,gender,1 from hip group
+tints,tense,glyph,not legal
+nuc,long,glyph,1 from nuf uniformity
+meb,maybe,manner,1 from med one
+nom,normally,manner,held by know
+nuf,enough,manner,held by uniformity
+ten,potentially,manner,held by five
+tuf,wrongly,manner,1 from tuv conscious
+kaf,much,manner,held by clarify
+haf,often,manner,1 from hav have
+sus,since,manner,1 from zus experience
+vaq,however,manner,held by center
+jan,occasionally,manner,held by orange
+jun,generally,manner,1 from xun empty
+let,lately,manner,1 from lep fifteen
+lur,virtually,manner,not legal
+ric,straight,manner,1 from rif reference
+rer,rarely,manner,not legal
+barl,barely,manner,not legal
+prab,probably,manner,not legal
+sorg,recently,manner,not legal
+prent,apparently,manner,not legal
+tward,towards,manner,not legal
+skers,scarcely,manner,not legal
+slayt,slightly,manner,not legal
+murib,suspiciously,manner,not legal
+gavist,eagerly,manner,not legal
+prizum,presumably,manner,not legal
+haspex,especially,manner,not legal
+saldom,seldom,manner,not legal
+surtan,certainly,manner,not legal
+legant,elegantly,manner,not legal
+retxiq,enthusiastically,manner,not legal
+sikwent,subsequently,manner,not legal
+hekstrim,extremely,manner,not legal
+frikwant,frequently,manner,not legal
+dat,decimal,math,1 from dad dad
+xul,subtract,math,1 from jul universe
+lirk,ratio,math,not legal
+lal,y-axis / vertical,math,not legal
+noz,z-axis / depth,math,held by nose
+hoylar,$e$ (euler's number),math,not legal
+kanform,conformal,math,not legal
+salk,circle,math,held by solve
+wan,ellipse,math,not legal
+sfir,sphere,math,not legal
+kyub,cube,math,not legal
+preb,parabola,math,not legal
+hyak,hyperbola,math,not legal
+kurv,curve,math,not legal
+skunak,skew,math,not legal
+skalet,scale,math,not legal
+tranzet,translate,math,not legal
+glayd,glide,math,not legal
+slind,cylinder,math,not legal
+tret,ray,math,not legal
+baks,rectangle,math,not legal
+tras,torus,math,not legal
+kras,lattice,math,not legal
+norm,normal (math),math,not legal
+sarf,manifold,math,not legal
+tric,metric,math,not legal
+prodj,projection,math,not legal
+narb,neighbor,math,not legal
+magman,magma (group theory),math,not legal
+dalg,magnitude,math,not legal
+norm,polynomial,math,not legal
+his,inverse,math,held by snake
+hintx,inch,measurement,not legal
+fretx,foot,measurement,not legal
+kyard,yard,measurement,not legal
+smilt,mile,measurement,not legal
+nardj,farenheit,measurement,not legal
+plond,pound,measurement,not legal
+honts,ounce,measurement,not legal
+mirt,meter,measurement,not legal
+cets,mole,measurement,not legal
+kalv,kelvin,measurement,not legal
+sals,celsius,measurement,not legal
+teslan,tesla,measurement,not legal
+henrik,henry,measurement,not legal
+nilaks,lux,measurement,not legal
+paskal,pascal,measurement,not legal
+redyan,radian,measurement,not legal
+jak,count,number,held by wisdom
+mab,bind,number,1 from mad model
+swat,$10^{9}$,number,not legal
+larx,$10^{12}$,number,not legal
+xarm,$10^{21}$,number,not legal
+farv,$10^{24}$,number,not legal
+neks,$10^{27}$,number,not legal
+bold,$10^{30}$,number,not legal
+crak,$10^{33}$,number,not legal
+rups,$10^{39}$,number,not legal
+trag,$10^{42}$,number,not legal
+tat,sibling,object,1 from tap type
+max,earth,object,held by mesh
+zol,animal,object,1 from zor fall
+cux,stream,object,held by key
+klad,cloud,object,not legal
+darg,dig,object,not legal
+tals,tall,object,not legal
+narv,river,object,not legal
+fyor,fire,object,not legal
+storm,storm,object,not legal
+suq,i/me,object,held by feature instance
+bib,we/us,object,1 from bid reserved bid
+slur,my,object,not legal
+wik,week,time,1 from wig kaleidoscope
+trid,i sound,tone,not legal
+gemz,e sound,tone,not legal
+vorx,o sound,tone,not legal
+warp,a sound,tone,not legal
+yild,i sound,tone,not legal
+nurf,u sound,tone,not legal
+corn,british o vowel sound,tone,not legal
+morn,m sound,tone,not legal
+txeq,q sound,tone,not legal
+garm,g sound,tone,not legal
+bard,b sound,tone,not legal
+told,t sound,tone,not legal
+kliq,k sound,tone,not legal
+hold,h sound,tone,not legal
+jalf,j sound,tone,not legal
+crop,c sound,tone,not legal
+yarn,y sound,tone,not legal
+rend,french r sound,tone,not legal
+plap,glottal stop,tone,not legal
+siz,experience,index,pinned at zus
+sorn,sun,index,pinned at san
+niq,flow,action,pinned at fol
+dib,perfect,action,pinned at kax
+dub,aware,action,pinned at ran
+bid,connect,action,pinned at kog
+pik,find,action,pinned at fan
+puk,release,action,pinned at rem
+tiv,absorb,action,pinned at bas
+jul,jewel,action,pinned at djul
+get,get,action,pinned at gem
+piz,step,action,pinned at tep
+vik,test,action,pinned at tes
+zun,talk,action,pinned at tak
+wak,walk,action,pinned at wok
+vax,receive,action,pinned at rek
+daj,orange,color,pinned at jan
+lad,yellow,color,pinned at yul
+fez,green,color,pinned at gun
+bul,blue,color,pinned at bag
+sef,purple,color,pinned at pin
+vog,black,color,pinned at bul
+wat,white,color,pinned at wiq
+sav,silver,color,pinned at var
+god,gold,color,pinned at gum
+rov,copper,color,pinned at kis
+xap,computation,computation,pinned at xit
+dip,tree,computation,pinned at tok
+liC,point,computation,pinned at leC
+bon,link,computation,pinned at liq
+bip,bit,computation,pinned at vij
+vin,byte,computation,pinned at veb
+tir,true,computation,pinned at toc
+rot,false,computation,pinned at cet
+not,note,computation,pinned at nos
+kux,type,computation,pinned at tap
+bol,self,computation,pinned at sef
+lib,other,computation,pinned at kor
+nub,else,computation,pinned at lis
+var,variable,computation,pinned at vaz
+rat,write,computation,pinned at run
+lid,lead,computation,pinned at lad
+rug,hold,computation,pinned at hod
+dut,data,computation,pinned at daq
+tek,take,computation,pinned at vog
+nem,name,computation,pinned at nam
+jar,run,computation,pinned at rin
+pan,yes,computation,pinned at yas
+nop,no,computation,pinned at noq
+yuc,with,cradle,pinned at wim
+vun,off,cradle,pinned at von
+ras,in,cradle,pinned at nut
+sur,out,cradle,pinned at tin
+maq,among,cradle,pinned at mag
+sup,above,cradle,pinned at suz
+pas,below,cradle,pinned at zis
+rif,near,cradle,pinned at nen
+far,far,cradle,pinned at fad
+kol,all,design,pinned at con
+lig,this,design,pinned at kim
+gul,that,design,pinned at kat
+fid,next,design,pinned at gen
+daf,previous,design,pinned at nog
+mis,different,design,pinned at dif
+vav,repeat,design,pinned at rep
+fut,there,design,pinned at kem
+dav,here,design,pinned at hem
+rik,up,direction,pinned at ted
+kar,down,direction,pinned at dot
+fut,right,direction,pinned at pob
+taf,left,direction,pinned at bep
+sil,front,direction,pinned at keg
+las,back,direction,pinned at gok
+nod,center,direction,pinned at vaq
+mid,middle,direction,pinned at mod
+tur,before,direction,pinned at bef
+leg,start,direction,pinned at sam
+gol,end,direction,pinned at neq
+rit,after,direction,pinned at fap
+norc,north,direction,pinned at yin
+dart,east,direction,pinned at rog
+cron,south,direction,pinned at lut
+trad,west,direction,pinned at web
+klek,click,glyph,pinned at glik
+vram,stop,glyph,pinned at sop
+dis,number,math,pinned at num
+jit,digit,math,pinned at jis
+skim,minimum,math,pinned at nem
+maks,maximum,math,pinned at mon
+pleks,complex,math,pinned at mop
+pral,parallel,math,pinned at pam
+parp,perpendicular,math,pinned at dit
+lorn,line,math,pinned at lan
+riflak,reflect,math,pinned at ref
+plen,plane,math,pinned at blun
+dir,direction,math,pinned at dim
+grup,group,math,pinned at hip
+flid,field,math,pinned at cuv
+poz,position,math,pinned at pot
+nist,nest,math,pinned at nes
+ril,relation,math,pinned at ren
+gag,child,object,pinned at kik
+ciq,thing,object,pinned at kin
+klor,color,object,pinned at glor
+surn,sun,object,pinned at san
+txan,moon,object,pinned at lun
+sloC,water,object,pinned at wot
+rim,you,object,pinned at yar
+val,it,object,pinned at hin
+glok,your,object,pinned at yart
+vlam,its,object,pinned at hint
+bliz,our,object,pinned at wolt
+plek,their,object,pinned at Ceft
+xan,year,time,pinned at yez
+riz,rise,time,pinned at rez
+zar,fall,time,pinned at zor
+kip,tune,action,stands
+kup,tone,action,stands
+mek,make,action,stands
+rom,explore,action,stands
+red,red,color,stands
+hip,group,computation,stands
+guj,memory,computation,stands
+kiq,action type,computation,stands
+kaq,object type,computation,stands
+muv,move,computation,stands
+kaz,cause,computation,stands
+rid,read,computation,stands
+siq,action instance,computation,stands
+saq,object instance,computation,stands
+nev,on,cradle,stands
+dan,the,design,stands
+xom,now,manner,stands
+bad,tangent,math,stands
+bug,cosine,math,stands
+dig,sine,math,stands
+pac,path,math,stands
+rol,cycle,math,stands
+map,map,math,stands
+sas,parent,object,stands
+lif,leaf,object,stands
+fam,family,object,stands
+rak,rock,object,stands
+xum,sky,object,stands
+yam,day,time,stands

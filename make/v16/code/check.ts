@@ -67,6 +67,42 @@ for (const file of readdirSync(BASE).filter(one => one.endsWith('.txt')).sort())
   )
 }
 
+/**
+ * NO TWO WORDS DIFFER ONLY BY `c` AGAINST `C`.
+ *
+ * The two dentals are one similarity group, so a pair apart only there
+ * sits at distance 1 and the solver keeps one of them. That makes this
+ * a CONSEQUENCE of the distance rule rather than a rule of its own,
+ * which is exactly why it is worth asserting: a consequence holds
+ * until someone edits the table it falls out of, and then it stops
+ * holding with nothing to say so.
+ *
+ * Checked across every final list at once, because the rule is about
+ * the language and not about one shape.
+ */
+{
+  const words = ['cvc', 'cvcc', 'ccvc', 'cvcvc'].flatMap(shape =>
+    readFileSync(resolve(BASE, `final-${shape}.txt`), 'utf-8')
+      .split('\n')
+      .map(one => one.trim())
+      .filter(Boolean),
+  )
+  const all = new Set(words)
+  const clash: Array<string> = []
+  for (const word of words) {
+    for (let at = 0; at < word.length; at++) {
+      if (word[at] !== 'c') continue
+      const other = `${word.slice(0, at)}C${word.slice(at + 1)}`
+      if (all.has(other)) clash.push(`${word} ${other}`)
+    }
+  }
+  process.stdout.write(
+    `\n  words differing ONLY by c against C   ${clash.length}` +
+      `${clash.length ? `   ${clash.slice(0, 6).join(', ')}` : '   none, as required'}\n`,
+  )
+  if (clash.length) bad++
+}
+
 process.stdout.write(
   bad
     ? `\n  ${bad} file${bad === 1 ? '' : 's'} FAILED. A list that is not sorted was\n` +

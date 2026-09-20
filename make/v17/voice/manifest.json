@@ -1,0 +1,116 @@
+{
+  "voice": "tr-TR-AhmetNeural",
+  "locale": "tr-TR",
+  "words": [
+    {
+      "tune": "rijdroma",
+      "english": "rhythm drum",
+      "ipa": "ɾiʒdɾˈoma",
+      "file": "rijdroma.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 70272,
+      "ms": 2891.6041
+    },
+    {
+      "tune": "toksgana",
+      "english": "tree garden",
+      "ipa": "toksɡˈana",
+      "file": "toksgana.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 63936,
+      "ms": 2639.375
+    },
+    {
+      "tune": "sidztoka",
+      "english": "seed tree",
+      "ipa": "sidztˈoka",
+      "file": "sidztoka.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 66816,
+      "ms": 2755.8333
+    },
+    {
+      "tune": "mantsdroma",
+      "english": "mountain drum",
+      "ipa": "mantsdɾˈoma",
+      "file": "mantsdroma.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 73728,
+      "ms": 3047.9583
+    },
+    {
+      "tune": "liflvita",
+      "english": "leaf life",
+      "ipa": "lifɯlvˈita",
+      "file": "liflvita.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 72576,
+      "ms": 2989.6666
+    },
+    {
+      "tune": "vitwoka",
+      "english": "life tree",
+      "ipa": "vitwˈoka",
+      "file": "vitwoka.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 65664,
+      "ms": 2697.5833
+    },
+    {
+      "tune": "redldroma",
+      "english": "red drum",
+      "ipa": "ɾedɯldɾˈoma",
+      "file": "redldroma.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 71424,
+      "ms": 2931.4583
+    },
+    {
+      "tune": "dromzmana",
+      "english": "drum mind",
+      "ipa": "dɾomzmˈana",
+      "file": "dromzmana.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 73728,
+      "ms": 3028.3541
+    },
+    {
+      "tune": "djulrluna",
+      "english": "jewel moon",
+      "ipa": "dʒulɯɾlˈuna",
+      "file": "djulrluna.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 70272,
+      "ms": 2891.5
+    },
+    {
+      "tune": "ramlyama",
+      "english": "dark day",
+      "ipa": "ɾamɯljˈama",
+      "file": "ramlyama.mp3",
+      "voice": "tr-TR-AhmetNeural",
+      "locale": "tr-TR",
+      "subs": "",
+      "bytes": 73152,
+      "ms": 3009.2083
+    }
+  ]
+}

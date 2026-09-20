@@ -4,14 +4,77 @@ grandmother,nan,,nana nonna nain. KINSHIP AXIS
 dad,dad,content,dada. KINSHIP AXIS. content is displaced
 grandfather,bab,father,baba. KINSHIP AXIS. father is displaced
 child,kik,kick,kick is displaced. gag is freed
-baby,pip,individual,individual moves to zak. beb is freed
+baby,pup,individual,individual moves to zak. beb is freed. pip freed for pit cosine
+parent,sas,,nine gave up zes. a digit's coda is free, its onset and vowel are not
 tune,kip,tune,the language names itself
 tone,kup,tone,
 experience,zus,experience,
 nothing,siz,peace,peace is displaced. him is freed
+no,noq,,previous took nog
+note,nos,,node took not. d~t are a voicing pair at the coda
+know,nom,,restored. num and nam are clear now the five vowels are distinct
 cause,kaz,cause,
 god,gad,god,
-individual,zak,effect,effect is displaced
+individual,baq,,was yun
+red,red,,THE COLOURS. the english word exactly. its e BREAKS the i a u u a i palindrome
+orange,jan,,orange is /ɒrɪndʒ/, so the j is its own sound. spirit gave this up
+yellow,yul,,
+green,gun,,
+blue,bag,,
+purple,pin,,
+black,bul,,THE GREYS. u a i, dark to light, a scale and not a wheel
+gray,gaj,,
+white,wiq,,six of the nine echo the english. v16:color recomputes
+copper,kis,,THE METALS. i a u, the greys' vowels. both are scales of worth
+silver,var,,
+gold,gum,,gul is 1 from kul clue, gud is 1 from gun green, so g is kept alone
+x axis,pij,,THE AXES NAMED. each takes its positive pole's consonant
+y axis,taj,,
+z axis,kuj,,i a u, the vowels the poles do not use. j is free in all three
+left,bep,,THE POLES. b d g against p t k, with the vowel binary
+right,pob,,
+down,dot,,
+up,ted,,
+back,gok,,
+front,keg,,
+north,yin,,THE COMPASS. w l r y feet left to right, vowels around
+east,rog,,
+south,lut,,
+west,web,,
+zero,yom,,THE NUMBERS. onset is the hex code, vowel alternates o e
+one,med,,given
+two,noc,,given
+three,dem,,det is datetime and was there first, so three is computed
+four,boq,,boj went to maj magic
+five,ten,,
+six,kon,,
+seven,heq,,
+eight,sog,,
+nine,zez,,was zeb then zes. sep took the b frame and sas took the s
+ten,vop,,voq went to vaq center
+eleven,fef,,
+twelve,xos,,
+thirteen,ceg,,
+fourteen,roz,,
+fifteen,lep,,
+sixteen,wov,,tightest pair is 3, and no two share a consonant frame
+hundred,yemp,,THE POWERS. onset from the digit, first vowel flipped
+thousand,mont,,10^3. second vowel cycles i o u e
+million,neqk,,10^6
+billion,dolc,,10^9
+trillion,bedj,,10^12
+quadrillion,tops,,10^15
+quintillion,kegd,,10^18
+sextillion,holv,,10^21
+septillion,seft,,10^24
+octillion,zotx,,10^27
+nonillion,veks,,10^30
+decillion,fosk,,10^33
+power36,xebz,,10^36
+power39,coqg,,10^39
+power42,resp,,10^42
+power45,lorf,,10^45
+power48,wemb,,10^48. tightest pair 6. each holds a hard sound
 type,tap,,THE TYPE AND INSTANCE PARADIGM. was tuq
 action type,kiq,,CLASHES with kik child at the coda. k~q homorganic
 object type,kaq,,
@@ -19,26 +82,55 @@ feature type,kuq,,
 action instance,siq,,
 object instance,saq,,
 feature instance,suq,,resolves the kuq named twice
-network,mix,,
+network,net,,
 bright,mar,,
 dark,ram,,mirror of mar
 rock,rak,,
 mind,man,,stands now. m~n are distinct as onsets
+memory,guj,,restored, the rule that refused it is gone
 mmm,muq,,
+boom,bum,,
+hop,hap,,english hop is /hɑp/, so the vowel is a and not o
+doing,reC,,the -ing attachment, carried over from the old system
+eye,haq,,
+see,vis,,
+sense,zox,,
+plural,mis,,341 uses. the most said words get the shortest forms
+ball,bal,,
 pain,muz,,
-peace,zam,,peace displaced from siz lands here
+torture,cub,,
+field,cuv,,
+key,cux,,
+peace,him,,was zam. the reserved him slot gave this up
 pleasure,zim,,mirror of zam
 mouth,muc,,
+inhale,sep,,THE BREATH. airy s closing to stopped p as the breath comes in
+exhale,pos,,stopped p opening to airy s as the breath goes out
 heaven,xam,,placed BEFORE max so the mirror survives a clash
-hell,max,,mirror of xam
-moth,mac,,was marc. rc is not a legal coda. CLASHES with max. x~c
-need,nid,,
+hell,gax,,was max, the mirror of xam
+great,gret,,math took mac. gret keeps the g r t of great
+male,mof,,restored, the rule that refused it is gone
+female,fem,,the mirror of mif, consonants swapped end for end
+molecule,molk,,asked as mal, which sat [0,0,1] from mar bright and [1,0,0] from bal ball
+mountain,mant,,
+need,niC,,was nid, which frees the ni_ stop frame
 nature,nox,,
-center,nav,,
+center,vaq,,central point or origin. ten gave up voq. its coda was free to move
+middle,mod,,position between extremes. mid is one step from med one
+zone,zon,,eight gave up son. a digit's coda is free, its onset and vowel are not
+above,suz,,ABOVE AND BELOW. asked as suv and vis. suv is distance 1 from suf surf
+below,zis,,z is the voiced fricative nearest the v, so the mirror survives
+outside,tiq,,INSIDE AND OUTSIDE. i is outside, u is inside. the vowels are 2 apart
+inside,tuq,,interior rather than exterior. tuq was type's first form and was freed
 nose,noz,,
 infinite,gix,,
 garden,gan,,CLASHES with gad god at the coda. n~d homorganic
 timestamp,det,,
+day,yam,,zero gave up yom. a digit's coda is free, its onset and vowel are not
+year,yez,,yar went to you. yir and yer both break the rhyme ban
+past,sut,,THE TENSES. past and future are a mirror, s u t against t i s
+present,paz,,u a i are each two steps apart on i e a o u, so all three are clear
+future,tis,,sut keeps the s and t of past, and tis reads it backwards
 the,dan,,CLASHES with dad at the coda. n~d homorganic
 understand,das,,
 negative,dum,,
@@ -46,35 +138,349 @@ neutral,naq,,
 positive,mid,,
 move,muv,,
 write,run,,
-energy,xiq,,
+read,rid,,red had this. english read and red are homophones, so both wanted it
+run,rin,,
+soil,ris,,asked as rit, which is distance 1 from rid read
+algorithm,rig,,riC is free again but rig is the better word
+rise,rez,,
+fall,zor,,sol soul is [1,0,1] away. s~z at the front and l~r at the end, both near
+wrong,raq,,fourteen gave up roq
+particle,rav,,reC is [0,2,1] away now the one syllable table has loosened. rav raf raC are mutually distance 1
+reference,rif,,asked as raf. only one of rav raf raC can stand, so this keeps the f
+rhythm,rij,,was ruC. breath wanted ruc and c~C are a voicing pair
+rain,rex,,ren is distance 1 from BOTH ran orange and rin run. the r_n frame is full
+cycle,rol,,
+realm,rum,,
+lead,lad,,THE L FAMILY PAYS FOR THE R FAMILY. l~r are near, so each ri- blocks its li-
+leaf,lif,,restored, the rule that refused it is gone
+link,liq,,liq is l i q, which is the ling of link with no k needed
+like,lik,,rig is [2,0,1] away now the one syllable table has loosened. link took liq so this keeps lik
+point,leC,,restored, the rule that refused it is gone
+lord,lor,,rol is [2,0,1] away now the one syllable table has loosened
+moon,lun,,restored, the rule that refused it is gone
+sun,san,,zon zone is [1,2,0] away now that the five vowels are all distinct
+when,win,,a location in time
+kaleidoscope,wig,,
+wait,wet,,white had wit. wit is distance 1 from this, so the colour is recomputed
+wave,wev,,
+why,won,,asked as wan. NO root may begin wa. that is the liquid breaker, l wa r
+um,wuq,,asked as waq, the same wa ban
+water,wot,,asked as waC, the same wa ban
+what,wec,,asked as wat, the same wa ban. w_n is full with when and why
+hello,grit,,gr is one of the fifteen legal onsets, so this one stands as asked
+group,hip,,math. was grup. hit re-echoed off this
+strength,gruk,,asked as grut, which is distance 1 from grup group
+lip,glip,,grit is [0,2,0,1] away now the one syllable table has loosened
+gene,djin,,dj is a legal onset, so this stands as asked
+justice,djas,,
+joke,djok,,
+jewel,djul,,jul went to universe, so the jewel comes back on the dj onset
+dream,drim,,
+human,dram,,brab is [2,0,0,2] away now the one syllable table has loosened. b~d at the onset, m~b at the coda
+drum,drom,,restored. dram human is [0,0,2,0] away now the five vowels are distinct
+bring,briq,,q is the ng, so this is the english word exactly
+simple,smip,,was briz, which echoed nothing. smip holds the s m p of simple
+please,bliz,,asked as pliz. pl cannot open, so p takes its voicing twin b
+plan,blan,,asked as plen. pl cannot open, so p takes its voicing twin b
+chip,xap,,asked as txap. tx CANNOT be an onset, it breaks decodability. measured
+sneeze,sniz,,sn is a legal onset, so this echoes properly
+choice,tox,,
+trade,drad,,asked as tred. tr cannot open, t takes its voicing twin d
+triangle,draq,,the same tr swap
+track,drak,,the same tr swap
+trap,dras,,drap holds the taboo chunk rap, and drak went to track
+plane,blun,,asked as plen. blen is distance 1 from blan plan, as in english
+liquid,glis,,asked as krid. kr cannot open, and clean and click took glin and glik
+clean,glin,,asked as klin. kl cannot open, so k takes its voicing twin g
+click,glik,,the same kl swap, and an exact echo of the english
+color,glor,,the same kl swap
+seek,sik,,
+come,kom,,kam calm is [0,2,0] away now the five vowels are distinct
+community,kamun,,the first two syllable pin that is not a number
+braid,bred,,brab is [0,0,2,1] away now the one syllable table has loosened
+brow,brol,,
+blood,bloC,,
+prove,bruv,,asked as ruv, distance 1 from ruC rhythm. pr cannot open, so br
+gate,get,,gad is [0,2,1] away now the one syllable table has loosened
+solve,salk,,asked as salv. no CVCC can end in v, the coda must close on c j k p t x z
+problem,brab,,asked as prab. pr cannot open, the onset must open on b d f g s v
+will,wul,,was xiq. wil and wel break the rhyme ban, wal hits the wa ban
+energy,xiq,,restored. will moved to wul
+speech,spix,,was xim
+machine,jip,,was xin. xik is 1 from xig imagine. NOT CLEAR of xit computation at sum 2
+imagine,xig,,asked as xip, which is distance 1 from xit computation
+eternal,xas,,asked as xax. one x or j to a word, so xax is not legal at all
+permanent,yaq,,PERMANENCE. i against a, two steps apart, so the vowel alone is clear
+impermanent,yiq,,
+now,xom,,restored, the rule that refused it is gone
+sky,xum,,
+quiet,xus,,
+return,xuv,,
+digit,jis,,asked as jit, distance 1 from xit computation. x~j is a voicing pair
+paradise,jin,,
+spirit,jaq,,was jan, which orange took
+wisdom,jak,,
 computation,xit,,
-cosine,bug,,
-sine,dig,,
-tangent,bad,,CLASHES with bab grandfather. b~d similar
+bit,vij,,
+byte,veb,,
+void,vod,,ten gave up vob. fat bad is [1,2,1] away now the table has loosened
+voice,voz,,
+vibe,vab,,restored again
+body,vas,,asked as vat, which is distance 1 from fat bad
+data,daq,,asked as dat, which is distance 1 from dad, dot down AND det timestamp
+function,fuq,,
+self,sef,,nine gave up zef
+belief,fic,,asked as fix, distance 1 from vix sustain. fic is faith almost exactly
+face,fes,,vis is [1,2,0] away now the one syllable table has loosened
+family,fam,,restored, the rule that refused it is gone
+find,fan,,von is [1,2,0] away now the one syllable table has loosened
+else,lis,,force took fos. foz is 1 from voz voice
+next,gen,,the mirror of nog previous
+previous,nog,,the mirror of gen next
+cosine,pit,,THE TRIANGLE. corners p t k, edges i u a. base p to t
+sine,tuk,,THE TRIANGLE. the right side, t to k
+tangent,kap,,THE TRIANGLE. the way home, k to p. freed bad and mad
 awake,bud,,
-be,biq,,
+on,nev,,
+off,von,,the mirror of nev, consonants swapped end for end
 request,piq,,CLASHES with biq be at the onset. b~p homorganic
 response,paq,,
-conscious,tiv,,
-life,vit,,mirror of tiv
+conscious,tuv,,was tiv. tiv is freed
+soul,sol,,restored, the rule that refused it is gone
+life,vit,,
 create,bam,,THE THREE ACTS. CLASHES with bab grandfather. m~b homorganic
 sustain,vix,,
 destroy,xiv,,mirror of vix
-good,taf,,
-bad,fat,,mirror of taf
-intuition,luj,,
-jewel,jul,,the ul ban is lifted word-finally
+protect,cor,,
+give,gev,,
+take,vog,,was fog. gev read backwards, so give and take are a mirror, e against o
+good,tav,,was taf
+bad,vat,,was fat, still the mirror of good
+intuition,mun,,was luj, which is freed
+universe,jul,,was jewel. the ul ban is lifted word-finally
 tool,tul,,the same lift. two words want it, so it is a RULE not an exception
+vehicle,yan,,
+way,taq,,was tal
+use,yuz,,
+magic,muj,,was mij
 perfect,kax,,
 code,kod,,
 cell,kox,,biology. CLASHES with kax. o~a are adjacent vowels
-call,kal,,
+call,kug,,pushed twice, first by time taking kal, then by cross taking kas
+time,kal,,the k_l frame holds exactly one word and this is it
 calm,kam,,
 home,hom,,
-clue,kluq,,NOT LEGAL. kl cannot open: k is not in the OPEN pile
+clue,kul,,kl cannot open a cluster, k is not in the OPEN pile. glun also works
+surf,suf,,
+I,mus,,THE PRONOUNS. u a i, and the other form adds a t
+you,yar,,keeps the y and the r of your
+sound,sum,,was sund in the older lists
+goal,gol,,restored, the rule that refused it is gone
+gut,gut,,restored, the rule that refused it is gone
+drug,som,,zam peace and sum sound are both clear now the five vowels are distinct
+seed,sid,,
+have,hav,,
+snake,his,,
 reserved bid,bid,,CLASHES with mid positive. m~b homorganic
 reserved dub,dub,,CLASHES with dum negative. m~b homorganic
 ignorant,dib,,
 reserved lij,lij,,
-reserved him,him,,freed when nothing moved to siz
 reserved hum,hum,,CLASHES with hom home. o~u are adjacent vowels
+explore,rom,,form gave this up
+form,forz,,form itself is not legal, a CVCC coda must close on c j k p t x z
+same,sem,,
+true,toc,,TRUTH AND FALSE. a mirror, o against e. toc is truth's own t and th
+false,cet,,toc read backwards
+enter,neb,,ENTER AND EXIT. the same mirror. nek is taboo, so b not k
+exit,bon,,neb read backwards
+space,pes,,presence gave this up and re-echoed
+perpendicular,dit,,asked as dik, which is on the taboo list
+maximum,mon,,MAX AND MIN. a mirror, o against e
+minimum,nem,,mon read backwards, and nem is min itself reversed
+effect,zak,,individual gave this back, it was effect original
+yes,yas,,the english word. no is noq
+presence,peb,,PRESENCE AND ABSENCE. a mirror, e against o
+absense,bop,,peb read backwards. each keeps its own consonant, p and b
+attract,top,,ATTRACT AND REPEL. a mirror, o against e
+repel,pet,,top read backwards. attract keeps its t, repel keeps its p
+model,mad,,
+active,tip,,ACTIVE AND PASSIVE. a mirror, i against a
+passive,pat,,tip read backwards. active keeps its t, passive keeps its p
+source,kos,,SOURCE AND SINK. a mirror, o against e
+sink,sek,,kos read backwards. individual gave up zek so this could stand
+cross,kas,,call gave this up
+edge,daj,,
+it,hin,,
+me,must,,
+your,yart,,
+its,hint,,
+we,wol,,keeps the w of we. whole re-echoed off this
+our,wolt,,
+they,Cef,,C is the th of they
+their,Ceft,,
+node,nod,,
+path,pac,,pac is path exactly, c is the th
+tree,tok,,touching was here and is now an alias of on
+mesh,max,,was mex
+make,mek,,mesh moved to mex. SEE create at bam, one of the three acts
+real,ral,,parallel re-echoed off this
+any,nec,,ANY AND ALL. a mirror, e against o. nec keeps the n of any
+all,con,,nec read backwards
+discrete,dej,,DISCRETE AND CONTINUOUS. a mirror, e against o
+continuous,jod,,dej read backwards. dec would read as death
+line,lan,,align re-echoed off this
+song,git,,
+walk,wok,,asked as wak. NO root may begin wa, that is the liquid breaker
+talk,tak,,target re-echoed off tag
+separate,bed,,
+empty,xun,,
+work,goq,,
+hunt,hant,,
+silence,sal,,start re-echoed off sar
+name,nam,,nem is minimums, the mon nem mirror where nem is min reversed
+breath,ruc,,ruc is /ruθ/, the th of breath
+vague,veg,,NOT CLEAR of fek frequency at sum 2
+son,sod,,SON AND DAUGHTER. a mirror, o against e. eight gave up sob, solution re-echoed off sot
+daughter,des,,sod read backwards. son keeps its s, daughter keeps its d
+being,biq,,the noun, not the copula. renamed from be
+force,fos,,keeps the f and s of force
+in,nut,,IN AND OUT. a mirror, u against i. in keeps its n
+out,tin,,nut read backwards. out keeps its t
+variable,vaz,,vibe has vab. vaj and vav are equally free
+math,mac,,mac is /maθ/, which is math exactly
+image,mij,,was mig. magic freed this when it took muj
+exist,kes,,v3.3 words.md, the abstract core
+thing,kin,,v3.3 words.md, the abstract core
+identity,din,,v3.3 words.md, the abstract core
+number,num,,v3.3 words.md, the abstract core
+this,kim,,v3.3 words.md, the abstract core
+that,Cat,,v3.3 words.md, the abstract core. the English word sound for sound. kat freed for kap tangent
+here,hem,,v3.3 words.md, the abstract core
+there,kem,,v3.3 words.md, the abstract core
+between,ben,,v3.3 words.md, the abstract core
+among,mag,,v3.3 words.md, the abstract core
+part,par,,v3.3 words.md, the abstract core
+whole,hol,,v3.3 words.md, the abstract core
+other,kor,,v3.3 words.md, the abstract core
+more,mor,,v3.3 words.md, the abstract core
+less,les,,v3.3 words.md, the abstract core
+place,pak,,v3.3 words.md, the abstract core
+original,ron,,v3.3 words.md, the abstract core
+direction,dim,,v3.3 words.md, the abstract core
+orientation,rot,,v3.3 words.md, the abstract core
+solution,lot,,v3.3 words.md, the abstract core
+persist,res,,v3.3 words.md, the abstract core
+dimension,dis,,v3.3 words.md, the abstract core
+obstacle,bos,,v3.3 words.md, the abstract core
+state,sat,,v3.3 words.md, the abstract core
+span,pan,,v3.3 words.md, the abstract core
+collection,lok,,v3.3 words.md, the abstract core
+sequence,sen,,v3.3 words.md, the abstract core
+order,dor,,v3.3 words.md, the abstract core
+rate,rat,,v3.3 words.md, the abstract core
+relation,ren,,v3.3 words.md, the abstract core
+target,tar,,v3.3 words.md, the abstract core
+confuse,kof,,v3.3 words.md, the abstract core
+rule,rul,,v3.3 words.md, the abstract core
+flow,fol,,v3.3 words.md, the abstract core
+event,ven,,v3.3 words.md, the abstract core
+store,tor,,v3.3 words.md, the abstract core
+get,gem,,v3.3 words.md, the abstract core
+release,rem,,v3.3 words.md, the abstract core
+send,sed,,v3.3 words.md, the abstract core
+receive,rek,,v3.3 words.md, the abstract core
+pattern,tan,,v3.3 words.md, the abstract core
+instance,nis,,v3.3 words.md, the abstract core
+change,kan,,v3.3 words.md, the abstract core
+rest,req,,v3.3 words.md, the abstract core
+different,dif,,v3.3 words.md, the abstract core
+distance,sin,,v3.3 words.md, the abstract core
+near,nen,,v3.3 words.md, the abstract core
+far,fad,,v3.3 words.md, the abstract core
+open,pon,,v3.3 words.md, the abstract core
+close,los,,v3.3 words.md, the abstract core
+gain,gam,,v3.3 words.md, the abstract core
+lose,lom,,v3.3 words.md, the abstract core
+merge,mem,,v3.3 words.md, the abstract core
+repeat,rep,,v3.3 words.md, the abstract core
+step,tep,,v3.3 words.md, the abstract core
+size,sip,,v3.3 words.md, the abstract core
+intensity,nit,,v3.3 words.md, the abstract core
+density,den,,v3.3 words.md, the abstract core
+frequency,fek,,v3.3 words.md, the abstract core
+duration,dut,,v3.3 words.md, the abstract core
+uniformity,nuf,,v3.3 words.md, the abstract core
+diversity,diq,,v3.3 words.md, the abstract core
+reflect,ref,,v3.3 words.md, the abstract core
+absorb,bas,,v3.3 words.md, the abstract core
+convert,nov,,v3.3 words.md, the abstract core
+map,map,,v3.3 words.md, the abstract core
+union,nun,,v3.3 words.md, the abstract core
+intersection,nin,,v3.3 words.md, the abstract core
+align,lag,,v3.3 words.md, the abstract core
+oppose,pom,,v3.3 words.md, the abstract core
+predictable,pek,,v3.3 words.md, the abstract core
+unpredictable,nuk,,v3.3 words.md, the abstract core
+confidence,non,,v3.3 words.md, the abstract core
+certain,ket,,v3.3 words.md, the abstract core
+uncertain,kun,,v3.3 words.md, the abstract core
+boundary,bod,,v3.3 words.md, the abstract core
+contain,ton,,v3.3 words.md, the abstract core
+limit,lim,,v3.3 words.md, the abstract core
+border,bor,,v3.3 words.md, the abstract core
+region,rej,,v3.3 words.md, the abstract core
+compare,kop,,v3.3 words.md, the abstract core
+match,mas,,v3.3 words.md, the abstract core
+detect,dek,,v3.3 words.md, the abstract core
+nest,nes,,v3.3 words.md, the abstract core
+recursion,ken,,v3.3 words.md, the abstract core
+select,lek,,v3.3 words.md, the abstract core
+test,tes,,v3.3 words.md, the abstract core
+constraint,nor,,v3.3 words.md, the abstract core
+result,seq,,v3.3 words.md, the abstract core
+accept,kak,,v3.3 words.md, the abstract core
+reject,jek,,v3.3 words.md, the abstract core
+position,pot,,v3.3 words.md, the abstract core
+aware,ran,,v3.3 words.md, the abstract core
+process,por,,v3.3 words.md, the abstract core
+general,geq,,v3.3 words.md, the abstract core
+specific,pef,,v3.3 words.md, the abstract core
+before,bef,,v3.3 words.md, the abstract core
+with,wim,,v3.3 words.md, the abstract core
+after,fap,,v3.3 words.md, the abstract core
+start,sam,,v3.3 words.md, the abstract core
+end,neq,,v3.3 words.md, the abstract core
+contact,koq,,v3.3 words.md, the abstract core
+connect,kog,,v3.3 words.md, the abstract core
+disconnect,diz,,v3.3 words.md, the abstract core
+mix,mim,,v3.3 words.md, the abstract core
+clarify,kaf,,v3.3 words.md, the abstract core
+hit,hiq,,v3.3 words.md, the abstract core
+miss,min,,v3.3 words.md, the abstract core
+power,poq,,v3.3 words.md, the abstract core
+potential,pog,,v3.3 words.md, the abstract core
+possible,sos,,v3.3 words.md, the abstract core
+turn,tun,,v3.3 words.md, the abstract core
+hold,hod,,v3.3 words.md, the abstract core
+fill,fim,,v3.3 words.md, the abstract core
+threshold,led,,v3.3 words.md, the abstract core
+amount,nat,,v3.3 words.md, the abstract core
+continue,koz,,v3.3 words.md, the abstract core
+stop,sop,,v3.3 words.md, the abstract core
+polarity,poz,,v3.3 words.md, the abstract core
+axis,kaC,,v3.3 words.md, the abstract core. kab freed for kap tangent
+surface,suk,,v3.3 words.md, the abstract core
+volume,vom,,v3.3 words.md, the abstract core
+parallel,pam,,v3.3 words.md, the abstract core
+agent,gaq,,v3.3 words.md, the abstract core
+lack,lam,,v3.3 words.md, the abstract core
+finite,fin,,v3.3 words.md, the abstract core
+leader,lem,,v3.3 words.md, the abstract core
+follower,foq,,v3.3 words.md, the abstract core
+risk,rim,,v3.3 words.md, the abstract core
+safe,saf,,v3.3 words.md, the abstract core
+spec,ses,,v3.3 words.md, the abstract core
+capacity,kaj,,v3.3 words.md, the abstract core
+capability,pab,,v3.3 words.md, the abstract core
+balance,ban,,v3.3 words.md, the abstract core
+complex,mop,,v3.3 words.md, the abstract core
