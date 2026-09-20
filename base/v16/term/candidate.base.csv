@@ -1,1203 +1,1203 @@
 concept,form,shape,role,uses,source,english
 the,dan,CVC,bare,754,pin,the
 plural,mis,CVC,bare,506,pin,plural
-be,biq,CVC,bare,483,pin,am are be been being he's i'm is it's there's was were
-me,mep,CVC,entity,296,pin,i me mine my myself
+be,miq,CVC,bare,483,assigned,am are be been being he's i'm is it's there's was were
+me,must,CVCC,entity,296,pin,i me mine my myself
 past,sut,CVC,bare,276,pin,past
 one,med,CVC,bare,249,pin,a an another one
 doing,reC,CVC,bare,220,pin,doing
-to,nal,CVC,relation,210,assigned,to
-you,din,CVC,entity,174,pin,you you're your yours yourself
-in,nim,CVC,relation,161,pin,in into within
-and,gin,CVC,bare,144,assigned,and
-of,dag,CVC,relation,140,assigned,of
-she,kes,CVC,entity,139,assigned,her hers she
-we,bik,CVC,entity,139,assigned,our ourselves us we we're
+to,nim,CVC,relation,210,assigned,to
+you,yar,CVC,entity,174,pin,you you're your yours yourself
+in,nut,CVC,relation,161,pin,in into within
+and,gim,CVC,bare,144,assigned,and
+of,dig,CVC,relation,140,assigned,of
+she,ges,CVC,entity,139,assigned,her hers she
+we,wol,CVC,entity,139,pin,our ourselves us we we're
 have,hav,CVC,bare,118,pin,had has have i've
-it,tik,CVC,entity,113,pin,it its itself
-this,kid,CVC,bare,102,pin,these this today tonight
-he,pig,CVC,entity,99,assigned,he him his
-not,tiv,CVC,bare,92,assigned,aren't can't cannot couldn't didn't doesn't don't isn't no not shouldn't won't wouldn't
-will,xiq,CVC,bare,84,pin,i'll we'll will would
-manner,hiq,CVC,bare,78,assigned,manner
+it,hin,CVC,entity,113,pin,it its itself
+this,kim,CVC,bare,102,pin,these this today tonight
+he,bim,CVC,entity,99,assigned,he him his
+not,pim,CVC,bare,92,assigned,aren't can't cannot couldn't didn't doesn't don't isn't no not shouldn't won't wouldn't
+will,wul,CVC,bare,84,pin,i'll we'll will would
+manner,men,CVC,bare,78,assigned,manner
 day,yam,CVC,entity,76,pin,day days evening morning today tomorrow yesterday
-they,zip,CVC,entity,76,assigned,their them they
-that,kab,CVC,bare,71,pin,that those
-all,lax,CVC,bare,67,pin,all always everyone everything everywhere forever
+they,Cef,CVC,entity,76,pin,their them they
+that,Cat,CVC,bare,71,pin,that those
+all,con,CVC,bare,67,pin,all always everyone everything everywhere forever
 on,nev,CVC,relation,63,pin,on onto
 see,vis,CVC,action,61,pin,saw see seeing seen
-do,vim,CVC,bare,56,assigned,did do does
-forest,faras,CVCVC,entity,55,assigned,forest forests
-at,fik,CVC,relation,52,assigned,at
-for,fral,CCVC,relation,52,assigned,for
-tree,ten,CVC,entity,52,pin,tree tree's woodpecker
-go,xib,CVC,action,49,assigned,go goes going gone went
-can,jid,CVC,bare,48,assigned,can could
-full,vul,CVC,bare,48,assigned,full
-time,tiz,CVC,entity,48,pin,always forever sometimes time
+do,tim,CVC,bare,56,assigned,did do does
+forest,fars,CVCC,entity,55,assigned,forest forests
+at,kid,CVC,relation,52,assigned,at
+for,vor,CVC,relation,52,assigned,for
+tree,tok,CVC,entity,52,pin,tree tree's woodpecker
+go,hig,CVC,action,49,assigned,go goes going gone went
+can,gin,CVC,bare,48,assigned,can could
+full,fal,CVC,bare,48,assigned,full
+time,kal,CVC,entity,48,pin,always forever sometimes time
 with,wim,CVC,relation,45,pin,with
-as,Cin,CVC,relation,44,assigned,as
-from,fram,CCVC,relation,44,assigned,from
+as,siv,CVC,relation,44,assigned,as
+from,zig,CVC,relation,44,assigned,from
 sun,san,CVC,entity,43,pin,sun sunlight sunrise suns sunset sunshine
-fruit,frat,CCVC,entity,42,assigned,fruit fruits
-there,kef,CVC,entity,41,pin,there
+fruit,viq,CVC,entity,42,assigned,fruit fruits
+there,kem,CVC,entity,41,pin,there
 what,wec,CVC,bare,40,pin,what which
 rock,rak,CVC,entity,37,pin,rock rocks
 like,lik,CVC,relation,36,pin,like
-night,cim,CVC,entity,35,assigned,midnight night tonight
-bird,bart,CVCC,entity,34,assigned,bird bird's birds
+night,fid,CVC,entity,35,assigned,midnight night tonight
+bird,xim,CVC,entity,34,assigned,bird bird's birds
 get,gem,CVC,action,32,pin,get gets getting got
-if,yim,CVC,bare,31,assigned,if
-look,rim,CVC,action,31,assigned,look looked looking looks
+if,jid,CVC,bare,31,assigned,if
+look,lug,CVC,action,31,assigned,look looked looking looks
 rain,rex,CVC,entity,31,pin,rain rainbow raindrop rained raining rains
-more,mop,CVC,bare,30,pin,more
-so,wid,CVC,bare,30,assigned,so
+more,mor,CVC,bare,30,pin,more
+so,Cim,CVC,bare,30,assigned,so
 when,win,CVC,bare,30,pin,when
-tre,taral,CVCVC,entity,29,assigned,trees
-river,rivar,CVCVC,entity,28,assigned,river
-very,var,CVC,bare,28,assigned,very
+tre,tral,CCVC,entity,29,assigned,trees
+river,mimb,CVCC,entity,28,assigned,river
+very,cin,CVC,bare,28,assigned,very
 water,wot,CVC,entity,28,pin,island water waterfall
-animal,nul,CVC,entity,27,assigned,animal animals
+animal,yim,CVC,entity,27,assigned,animal animals
 home,hom,CVC,entity,27,pin,home
-leaf,luf,CVC,entity,27,pin,leaf leafs leaves
-let,gif,CVC,bare,27,assigned,let let's
-beauty,betal,CVCVC,entity,26,assigned,beautiful beauty
-flower,flor,CCVC,entity,26,assigned,flower flowers
-want,wint,CVCC,action,26,assigned,want wanted wants
-over,vrol,CCVC,relation,25,assigned,over
-done,dac,CVC,bare,24,assigned,done
+leaf,lif,CVC,entity,27,pin,leaf leafs leaves
+let,lid,CVC,bare,27,assigned,let let's
+beauty,bats,CVCC,entity,26,assigned,beautiful beauty
+flower,ful,CVC,entity,26,assigned,flower flowers
+want,wen,CVC,action,26,assigned,want wanted wants
+over,riq,CVC,relation,25,assigned,over
+done,don,CVC,bare,24,assigned,done
 find,fan,CVC,action,24,pin,find finding
-good,taf,CVC,feature,24,pin,best good
-out,tom,CVC,relation,24,pin,out
-some,smal,CCVC,bare,24,assigned,some someone something sometimes somewhere
-thing,kim,CVC,entity,24,pin,anything everything something thing things
-around,rant,CVCC,relation,23,assigned,around
+good,tav,CVC,feature,24,pin,best good
+out,tin,CVC,relation,24,pin,out
+some,lin,CVC,bare,24,assigned,some someone something sometimes somewhere
+thing,kin,CVC,entity,24,pin,anything everything something thing things
+around,wib,CVC,relation,23,assigned,around
 but,bat,CVC,bare,22,assigned,but
-here,heb,CVC,entity,22,pin,here
-land,lont,CVCC,entity,22,assigned,desert island land landed landscape
-make,biz,CVC,action,22,assigned,made make making
+here,hem,CVC,entity,22,pin,here
+land,lon,CVC,entity,22,assigned,desert island land landed landscape
+make,mek,CVC,action,22,pin,made make making
 sky,xum,CVC,entity,22,pin,skies sky
-too,pix,CVC,bare,21,assigned,too
+too,mip,CVC,bare,21,assigned,too
 up,ted,CVC,relation,21,pin,up
 down,dot,CVC,relation,20,pin,down
-how,tuj,CVC,bare,20,assigned,how
-should,gus,CVC,bare,20,assigned,should
-star,star,CCVC,entity,20,assigned,star stares stars
-walk,lag,CVC,action,20,pin,walk walked walking walks
-about,hiv,CVC,relation,19,assigned,about
+how,niq,CVC,bare,20,assigned,how
+should,gas,CVC,bare,20,assigned,should
+star,zit,CVC,entity,20,assigned,star stares stars
+walk,wok,CVC,action,20,pin,walk walked walking walks
+about,dij,CVC,relation,19,assigned,about
 child,kik,CVC,entity,19,pin,child children
-friend,farin,CVCVC,entity,19,assigned,friend friends
-most,zij,CVC,bare,19,assigned,most mostly
-take,fog,CVC,action,19,pin,take taken took
-love,vek,CVC,action,18,assigned,love loving
+friend,vrin,CCVC,entity,19,assigned,friend friends
+most,miz,CVC,bare,19,assigned,most mostly
+take,vog,CVC,action,19,pin,take taken took
+love,lov,CVC,action,18,assigned,love loving
 begin,beg,CVC,action,17,assigned,began begin beginning begins morning
-eat,fun,CVC,action,17,assigned,ate eat eaten eating eats
-grass,gras,CCVC,entity,17,assigned,grass grasshopper
-green,gum,CVC,feature,17,pin,green greener
-moon,luq,CVC,entity,17,pin,moon moonlight
-must,xiz,CVC,bare,17,assigned,must
-through,gar,CVC,relation,17,assigned,through
-climb,kalim,CVCVC,action,16,assigned,climb climbed climbing climbs
-know,nos,CVC,action,16,pin,know
-other,kon,CVC,entity,16,pin,another other others
-person,parz,CVCC,entity,16,assigned,anyone everyone people person someone
-sit,sital,CVCVC,action,16,assigned,sat sit sits sitting
-after,faj,CVC,relation,15,pin,after afternoon tomorrow
-before,bex,CVC,relation,15,pin,before yesterday
-by,jip,CVC,relation,15,assigned,by
-come,koc,CVC,action,15,pin,came come coming
-grow,grol,CCVC,action,15,assigned,grew grow growing grown
-just,doj,CVC,bare,15,assigned,just
-last,last,CVCC,entity,15,assigned,last
-light,Ciq,CVC,feature,15,assigned,light lights moonlight sunlight
-many,cig,CVC,entity,15,assigned,many
-place,pan,CVC,entity,15,pin,everywhere place placed somewhere
-who,yig,CVC,bare,15,assigned,who whom
-wild,wolid,CVCVC,feature,15,assigned,wild
-far,fak,CVC,entity,14,pin,far
-jump,dajam,CVCVC,action,14,assigned,jump jumped jumping jumps
-keep,kepal,CVCVC,action,14,assigned,keep keeping keeps kept
-rabbit,rabat,CVCVC,entity,14,assigned,rabbit rabbit's rabbits
-small,smul,CCVC,feature,14,assigned,small
-swim,siwam,CVCVC,action,14,assigned,swim swimming swims
+eat,bin,CVC,action,17,assigned,ate eat eaten eating eats
+grass,gar,CVC,entity,17,assigned,grass grasshopper
+green,gun,CVC,feature,17,pin,green greener
+moon,lun,CVC,entity,17,pin,moon moonlight
+must,mez,CVC,bare,17,assigned,must
+through,pib,CVC,relation,17,assigned,through
+climb,klim,CCVC,action,16,assigned,climb climbed climbing climbs
+know,nom,CVC,action,16,pin,know
+other,kor,CVC,entity,16,pin,another other others
+person,tid,CVC,entity,16,assigned,anyone everyone people person someone
+sit,sets,CVCC,action,16,assigned,sat sit sits sitting
+after,fap,CVC,relation,15,pin,after afternoon tomorrow
+before,bef,CVC,relation,15,pin,before yesterday
+by,kiz,CVC,relation,15,assigned,by
+come,kom,CVC,action,15,pin,came come coming
+grow,hid,CVC,action,15,assigned,grew grow growing grown
+just,sic,CVC,bare,15,assigned,just
+last,las,CVC,entity,15,assigned,last
+light,zib,CVC,feature,15,assigned,light lights moonlight sunlight
+many,vig,CVC,entity,15,assigned,many
+place,pak,CVC,entity,15,pin,everywhere place placed somewhere
+who,fip,CVC,bare,15,assigned,who whom
+wild,glok,CCVC,feature,15,assigned,wild
+far,fad,CVC,entity,14,pin,far
+jump,djam,CCVC,action,14,assigned,jump jumped jumping jumps
+keep,kugz,CVCC,action,14,assigned,keep keeping keeps kept
+rabbit,rabd,CVCC,entity,14,assigned,rabbit rabbit's rabbits
+small,xib,CVC,feature,14,assigned,small
+swim,slov,CCVC,action,14,assigned,swim swimming swims
 two,noc,CVC,bare,14,pin,two
 why,won,CVC,bare,14,pin,why
-any,nam,CVC,bare,13,pin,any anyone anything
-berry,baral,CVCVC,entity,13,assigned,berries berry blackberry raspberry
-blue,xaz,CVC,feature,13,pin,blue
+any,nec,CVC,bare,13,pin,any anyone anything
+berry,bral,CCVC,entity,13,assigned,berries berry blackberry raspberry
+blue,bag,CVC,feature,13,pin,blue
 dark,ram,CVC,feature,13,pin,dark darker
-end,nif,CVC,action,13,pin,end ending endless ends evening
-ever,varal,CVCVC,entity,13,assigned,ever
-feel,flan,CCVC,action,13,assigned,feel feeling feels felt
+end,neq,CVC,action,13,pin,end ending endless ends evening
+ever,vral,CCVC,entity,13,assigned,ever
+feel,jik,CVC,action,13,assigned,feel feeling feels felt
 mountain,mant,CVCC,entity,13,pin,mountain mountains
 plan,blan,CCVC,entity,13,pin,plan planned planning plans
 run,rin,CVC,action,13,pin,ran run running runs
-sniff,sinaf,CVCVC,entity,13,assigned,sniff
-still,stol,CCVC,entity,13,assigned,still
-way,tal,CVC,entity,13,pin,way
-year,yar,CVC,entity,13,pin,year years
+sniff,snif,CCVC,entity,13,assigned,sniff
+still,zot,CVC,entity,13,assigned,still
+way,taq,CVC,entity,13,pin,way
+year,yez,CVC,entity,13,pin,year years
 back,gok,CVC,relation,12,pin,back
-breeze,barez,CVCVC,entity,12,assigned,breeze
+breeze,brez,CCVC,entity,12,assigned,breeze
 bring,briq,CCVC,action,12,pin,bring bringing brings brought
-call,kal,CVC,action,12,pin,call calling
-cover,kavar,CVCVC,action,12,assigned,cover covered covers
-every,vran,CCVC,bare,12,assigned,every
+call,kug,CVC,action,12,pin,call calling
+cover,yibd,CVCC,action,12,assigned,cover covered covers
+every,Ciq,CVC,bare,12,assigned,every
 eye,haq,CVC,entity,12,pin,eyed eyelid eyes
-hard,hart,CVCC,feature,12,assigned,hard harder hardly
+hard,har,CVC,feature,12,assigned,hard harder hardly
 move,muv,CVC,action,12,pin,move moved moving
-play,bul,CVC,action,12,assigned,play playing plays
+play,pul,CVC,action,12,assigned,play playing plays
 please,bliz,CCVC,bare,12,pin,please pleased pleasing
-shine,kisen,CVCVC,action,12,assigned,shine shined shining shone sunshine
-sleep,slep,CCVC,action,12,assigned,sleep sleeping sleeps slept
-snow,snol,CCVC,entity,12,assigned,snow snowed
-tall,talar,CVCVC,feature,12,assigned,tall tallest
-think,snik,CCVC,action,12,assigned,think thought
-again,wip,CVC,bare,11,assigned,again
-big,pag,CVC,feature,11,assigned,big bigger biggest
+shine,diqg,CVCC,action,12,assigned,shine shined shining shone sunshine
+sleep,zul,CVC,action,12,assigned,sleep sleeping sleeps slept
+snow,zun,CVC,entity,12,assigned,snow snowed
+tall,tals,CVCC,feature,12,assigned,tall tallest
+think,cib,CVC,action,12,assigned,think thought
+again,gon,CVC,bare,11,assigned,again
+big,big,CVC,feature,11,assigned,big bigger biggest
 bright,mar,CVC,feature,11,pin,bright brightly
-cool,gij,CVC,feature,11,assigned,cool
-dig,digal,CVCVC,action,11,assigned,dig digging
-dirt,darit,CVCVC,entity,11,assigned,dirt
+cool,gul,CVC,feature,11,assigned,cool
+dig,prom,CCVC,action,11,assigned,dig digging
+dirt,dard,CVCC,entity,11,assigned,dirt
 fall,zor,CVC,action,11,pin,fall fallen falling falls waterfall
-family,fom,CVC,entity,11,pin,family
+family,fam,CVC,entity,11,pin,family
 give,gev,CVC,action,11,pin,gave give
-hear,har,CVC,action,11,assigned,hear heard
-hill,halar,CVCVC,entity,11,assigned,hill hills hilltop
-house,hosol,CVCVC,entity,11,assigned,house houses
-lake,lakal,CVCVC,entity,11,assigned,lake
-long,dof,CVC,feature,11,assigned,long longer
-path,pax,CVC,entity,11,pin,path
-plant,pic,CVC,action,11,assigned,plant planted plants
-stay,satal,CVCVC,action,11,assigned,stay stayed staying
-warm,hix,CVC,feature,11,assigned,warm warmly warms
-where,ziC,CVC,bare,11,assigned,where
-away,vav,CVC,relation,10,assigned,away
-behind,fud,CVC,relation,10,assigned,behind
-cloud,glad,CCVC,entity,10,assigned,cloud cloudless clouds
+hear,yid,CVC,action,11,assigned,hear heard
+hill,vefs,CVCC,entity,11,assigned,hill hills hilltop
+house,flic,CCVC,entity,11,assigned,house houses
+lake,laks,CVCC,entity,11,assigned,lake
+long,len,CVC,feature,11,assigned,long longer
+path,pac,CVC,entity,11,pin,path
+plant,rip,CVC,action,11,assigned,plant planted plants
+stay,stul,CCVC,action,11,assigned,stay stayed staying
+warm,wit,CVC,feature,11,assigned,warm warmly warms
+where,mik,CVC,bare,11,assigned,where
+away,nib,CVC,relation,10,assigned,away
+behind,giq,CVC,relation,10,assigned,behind
+cloud,diC,CVC,entity,10,assigned,cloud cloudless clouds
 color,glor,CCVC,entity,10,pin,color colored colorful
-dry,dral,CCVC,feature,10,assigned,desert dry
-fly,falar,CVCVC,action,10,assigned,flew fly flying
-fresh,farek,CVCVC,feature,10,assigned,fresh freshly
-little,lital,CVCVC,entity,10,assigned,little
-next,nak,CVC,entity,10,pin,next
-ocean,sonol,CVCVC,entity,10,assigned,ocean oceans
-or,xic,CVC,bare,10,assigned,or
-rest,sej,CVC,entity,10,pin,rest restful rests
+dry,dar,CVC,feature,10,assigned,desert dry
+fly,flar,CCVC,action,10,assigned,flew fly flying
+fresh,frik,CCVC,feature,10,assigned,fresh freshly
+little,wibz,CVCC,entity,10,assigned,little
+next,gen,CVC,entity,10,pin,next
+ocean,snol,CCVC,entity,10,assigned,ocean oceans
+or,pik,CVC,bare,10,assigned,or
+rest,req,CVC,entity,10,pin,rest restful rests
 rise,rez,CVC,action,10,pin,rise rises rising rose sunrise
-sea,mimeg,CVCVC,entity,10,assigned,sea
-stop,sic,CVC,action,10,pin,stop stopped stops
-valley,valor,CVCVC,entity,10,assigned,valley valleys
-arc,rikol,CVCVC,entity,9,assigned,arc rainbow
+sea,tigz,CVCC,entity,10,assigned,sea
+stop,sop,CVC,action,10,pin,stop stopped stops
+valley,vals,CVCC,entity,10,assigned,valley valleys
+arc,raks,CVCC,entity,9,assigned,arc rainbow
 calm,kam,CVC,feature,9,pin,calm calmest
-fish,jik,CVC,entity,9,assigned,fish fishes
-found,fanad,CVCVC,entity,9,assigned,found
-high,Cib,CVC,feature,9,assigned,high higher highest
-hot,hot,CVC,feature,9,assigned,hot
-near,neb,CVC,relation,9,pin,near neared
-old,cid,CVC,feature,9,assigned,old older oldest
-three,dez,CVC,bare,9,pin,three
-while,yid,CVC,bare,9,assigned,while
-winter,winet,CVCVC,entity,9,assigned,winter
-wolf,wolaf,CVCVC,entity,9,assigned,wolf wolves
-wonder,wenad,CVCVC,action,9,assigned,wonder wondered wonderful wondering
-across,grus,CCVC,relation,8,assigned,across
-bush,bakas,CVCVC,entity,8,assigned,bush bushes
-energy,nej,CVC,entity,8,pin,energy
-food,wis,CVC,entity,8,assigned,food
+fish,fik,CVC,entity,9,assigned,fish fishes
+found,fond,CVCC,entity,9,assigned,found
+high,tik,CVC,feature,9,assigned,high higher highest
+hot,hut,CVC,feature,9,assigned,hot
+near,nen,CVC,relation,9,pin,near neared
+old,kif,CVC,feature,9,assigned,old older oldest
+three,dem,CVC,bare,9,pin,three
+while,hiz,CVC,bare,9,assigned,while
+winter,wint,CVCC,entity,9,assigned,winter
+wolf,wolv,CVCC,entity,9,assigned,wolf wolves
+wonder,went,CVCC,action,9,assigned,wonder wondered wonderful wondering
+across,seC,CVC,relation,8,assigned,across
+bush,biks,CVCC,entity,8,assigned,bush bushes
+energy,xiq,CVC,entity,8,pin,energy
+food,fed,CVC,entity,8,assigned,food
 hop,hap,CVC,entity,8,pin,grasshopper hop hopped hopping
 life,vit,CVC,entity,8,pin,life lives
-live,lival,CVCVC,action,8,assigned,live lived living
-never,giC,CVC,bare,8,assigned,never
-now,xoq,CVC,entity,8,pin,now
+live,smik,CCVC,action,8,assigned,live lived living
+never,naf,CVC,bare,8,assigned,never
+now,xom,CVC,entity,8,pin,now
 off,von,CVC,relation,8,pin,off
-once,nasal,CVCVC,entity,8,assigned,once
+once,jubd,CVCC,entity,8,assigned,once
 parent,sas,CVC,entity,8,pin,parent parents
-piece,pesal,CVCVC,entity,8,assigned,piece
-red,mim,CVC,feature,8,pin,raspberry red
-say,hic,CVC,action,8,assigned,said say
-sibling,sibal,CVCVC,entity,8,assigned,sibling sibling's siblings
+piece,nebd,CVCC,entity,8,assigned,piece
+red,red,CVC,feature,8,pin,raspberry red
+say,vib,CVC,action,8,assigned,said say
+sibling,zbul,CCVC,entity,8,assigned,sibling sibling's siblings
 sound,sum,CVC,entity,8,pin,sound sounded sounds
-spring,sipar,CVCVC,entity,8,assigned,spring
-until,zeb,CVC,bare,8,assigned,until
+spring,spar,CCVC,entity,8,assigned,spring
+until,xiz,CVC,bare,8,assigned,until
 use,yuz,CVC,entity,8,pin,use used uses
-watch,wud,CVC,action,8,assigned,watch watched watchful watching
+watch,wut,CVC,action,8,assigned,watch watched watchful watching
 white,wiq,CVC,feature,8,pin,white
-wind,wont,CVCC,entity,8,assigned,wind
-work,work,CVCC,entity,8,assigned,work working works
-yet,yetal,CVCVC,entity,8,assigned,yet
-along,fup,CVC,relation,7,assigned,along
-beach,betak,CVCVC,entity,7,assigned,beach beaches
-because,xek,CVC,bare,7,assigned,because
-branch,bron,CCVC,entity,7,assigned,branch branches
-bug,jif,CVC,entity,7,assigned,bugs butterfly
+wind,wun,CVC,entity,8,assigned,wind
+work,goq,CVC,entity,8,pin,work working works
+yet,drol,CCVC,entity,8,assigned,yet
+along,jif,CVC,relation,7,assigned,along
+beach,semb,CVCC,entity,7,assigned,beach beaches
+because,puk,CVC,bare,7,assigned,because
+branch,Cig,CVC,entity,7,assigned,branch branches
+bug,bug,CVC,entity,7,assigned,bugs butterfly
 close,los,CVC,action,7,pin,close closely
-dance,danas,CVCVC,action,7,assigned,dance
-early,ralar,CVCVC,entity,7,assigned,early
-fill,fiq,CVC,action,7,pin,fill filled
-help,halep,CVCVC,entity,7,assigned,help helped helpful helps
-late,latal,CVCVC,entity,7,assigned,late later
-lot,funog,CVCVC,entity,7,assigned,lot lots
-need,nid,CVC,action,7,pin,need needs
-pond,panad,CVCVC,entity,7,assigned,pond
-purple,gis,CVC,feature,7,pin,purple
-set,stin,CCVC,entity,7,assigned,set sets setting
-sink,sin,CVC,entity,7,pin,sinking sunset
-such,zot,CVC,bare,7,assigned,such
-summer,samar,CVCVC,entity,7,assigned,summer
-than,Cik,CVC,relation,7,assigned,than
-then,snar,CCVC,bare,7,assigned,then
-travel,tarav,CVCVC,action,7,assigned,travel traveled traveling
-try,torul,CVCVC,entity,7,assigned,tried try trying
+dance,dans,CVCC,action,7,assigned,dance
+early,rals,CVCC,entity,7,assigned,early
+fill,fim,CVC,action,7,pin,fill filled
+help,halb,CVCC,entity,7,assigned,help helped helpful helps
+late,lits,CVCC,entity,7,assigned,late later
+lot,zbeq,CCVC,entity,7,assigned,lot lots
+need,niC,CVC,action,7,pin,need needs
+pond,bend,CVCC,entity,7,assigned,pond
+purple,pin,CVC,feature,7,pin,purple
+set,zet,CVC,entity,7,assigned,set sets setting
+sink,sek,CVC,entity,7,pin,sinking sunset
+such,cit,CVC,bare,7,assigned,such
+summer,zmar,CCVC,entity,7,assigned,summer
+than,yip,CVC,relation,7,assigned,than
+then,riz,CVC,bare,7,assigned,then
+travel,trav,CCVC,action,7,assigned,travel traveled traveling
+try,trol,CCVC,entity,7,assigned,tried try trying
 wait,wet,CVC,action,7,pin,wait waited waiting
-weather,wesar,CVCVC,entity,7,assigned,weather
-wet,cip,CVC,feature,7,assigned,wet
-ahead,hadal,CVCVC,entity,6,assigned,ahead
-blossom,balas,CVCVC,entity,6,assigned,blossom blossoming blossoms
-care,karal,CVCVC,entity,6,assigned,care careful
-cold,kalt,CVCC,feature,6,assigned,cold
+weather,rebz,CVCC,entity,7,assigned,weather
+wet,lip,CVC,feature,7,assigned,wet
+ahead,begd,CVCC,entity,6,assigned,ahead
+blossom,blas,CCVC,entity,6,assigned,blossom blossoming blossoms
+care,kral,CCVC,entity,6,assigned,care careful
+cold,wis,CVC,feature,6,assigned,cold
 dream,drim,CCVC,action,6,pin,dream dreamed dreaming
-ear,yip,CVC,entity,6,assigned,ears
-enough,buniv,CVCVC,entity,6,assigned,enough
+ear,nif,CVC,entity,6,assigned,ears
+enough,trex,CCVC,entity,6,assigned,enough
 field,cuv,CVC,entity,6,pin,field fields
-fire,frul,CCVC,entity,6,assigned,fire
-first,farz,CVCC,entity,6,assigned,first
-flutter,falat,CVCVC,entity,6,assigned,butterfly flutters
-follow,folor,CVCVC,action,6,assigned,follow followed following
-hour,haral,CVCVC,entity,6,assigned,hour hours
+fire,gib,CVC,entity,6,assigned,fire
+first,deq,CVC,entity,6,assigned,first
+flutter,flat,CCVC,entity,6,assigned,butterfly flutters
+follow,flor,CCVC,action,6,assigned,follow followed following
+hour,hars,CVCC,entity,6,assigned,hour hours
 left,bep,CVC,entity,6,pin,left
-lov,laval,CVCVC,entity,6,assigned,loves
-may,wif,CVC,bare,6,assigned,may might
-much,matak,CVCVC,entity,6,assigned,much
-only,gez,CVC,bare,6,assigned,only
-open,pot,CVC,action,6,pin,open opened opening
+lov,fotx,CVCC,entity,6,assigned,loves
+may,bip,CVC,bare,6,assigned,may might
+much,cruj,CCVC,entity,6,assigned,much
+only,nal,CVC,bare,6,assigned,only
+open,pon,CVC,action,6,pin,open opened opening
 part,par,CVC,entity,6,pin,part parts
-pretty,paret,CVCVC,feature,6,assigned,pretty
+pretty,pret,CCVC,feature,6,assigned,pretty
 right,pob,CVC,entity,6,pin,right
 self,sef,CVC,entity,6,pin,itself myself ourselves yourself
-short,doC,CVC,feature,6,assigned,short
+short,gis,CVC,feature,6,assigned,short
 state,sat,CVC,bare,6,pin,state
-talk,talak,CVCVC,entity,6,assigned,talk talked talking
-well,wolar,CVCVC,entity,6,assigned,well
-without,wok,CVC,relation,6,assigned,without
+talk,tak,CVC,entity,6,pin,talk talked talking
+well,wols,CVCC,entity,6,assigned,well
+without,wuk,CVC,relation,6,assigned,without
 yellow,yul,CVC,feature,6,pin,yellow
-air,buf,CVC,entity,5,assigned,air
-approach,porat,CVCVC,entity,5,assigned,approaches approaching
-black,buz,CVC,feature,5,pin,black blackberry
-bloom,bolom,CVCVC,action,5,assigned,bloom bloomed blooms
-both,bokol,CVCVC,entity,5,assigned,both
-breath,breg,CCVC,entity,5,assigned,breath breathed
-clear,kalar,CVCVC,feature,5,assigned,clear clearing
-except,kesap,CVCVC,entity,5,assigned,except
-favorite,favar,CVCVC,entity,5,assigned,favorite
-few,pad,CVC,entity,5,assigned,few
-glanc,galan,CVCVC,entity,5,assigned,glanced glances
-ground,garon,CVCVC,entity,5,assigned,ground
-happy,hapal,CVCVC,feature,5,assigned,happily happiness happy
-heavy,heC,CVC,feature,5,assigned,heavily heavy
-interest,nitar,CVCVC,entity,5,assigned,interesting
-kind,kint,CVCC,entity,5,assigned,kind kinds
-large,larag,CVCVC,entity,5,assigned,large larger
-leave,yumed,CVCVC,action,5,assigned,leave
-maybe,zet,CVC,bare,5,assigned,maybe
+air,piz,CVC,entity,5,assigned,air
+approach,prat,CCVC,entity,5,assigned,approaches approaching
+black,bul,CVC,feature,5,pin,black blackberry
+bloom,blom,CCVC,action,5,assigned,bloom bloomed blooms
+both,beks,CVCC,entity,5,assigned,both
+breath,ruc,CVC,entity,5,pin,breath breathed
+clear,klar,CCVC,feature,5,assigned,clear clearing
+except,kesp,CVCC,entity,5,assigned,except
+favorite,grob,CCVC,entity,5,assigned,favorite
+few,tiv,CVC,entity,5,assigned,few
+glanc,glan,CCVC,entity,5,assigned,glanced glances
+ground,gran,CCVC,entity,5,assigned,ground
+happy,hops,CVCC,feature,5,assigned,happily happiness happy
+heavy,hev,CVC,feature,5,assigned,heavily heavy
+interest,kebd,CVCC,entity,5,assigned,interesting
+kind,kij,CVC,entity,5,assigned,kind kinds
+large,larg,CVCC,entity,5,assigned,large larger
+leave,skim,CCVC,action,5,assigned,leave
+maybe,mub,CVC,bare,5,assigned,maybe
 middle,mod,CVC,entity,5,pin,middle midnight
-nest,nec,CVC,entity,5,pin,nest nests
-new,vof,CVC,feature,5,assigned,new
+nest,nes,CVC,entity,5,pin,nest nests
+new,hiv,CVC,feature,5,assigned,new
 nothing,siz,CVC,entity,5,pin,nothing
-often,fatan,CVCVC,entity,5,assigned,often
-quick,kiwak,CVCVC,entity,5,assigned,quick quickly
-quite,kiwet,CVCVC,entity,5,assigned,quite
-ride,ridal,CVCVC,entity,5,assigned,ride riding
-smell,semal,CVCVC,entity,5,assigned,smell smelled smells
-stream,setar,CVCVC,entity,5,assigned,stream streaming streams
-sunny,sanal,CVCVC,entity,5,assigned,sunny
-tell,xef,CVC,action,5,assigned,tell
-under,jiC,CVC,relation,5,assigned,under
-view,salap,CVCVC,entity,5,assigned,landscape view
+often,cagd,CVCC,entity,5,assigned,often
+quick,gans,CVCC,entity,5,assigned,quick quickly
+quite,zalg,CVCC,entity,5,assigned,quite
+ride,vrod,CCVC,entity,5,assigned,ride riding
+smell,smal,CCVC,entity,5,assigned,smell smelled smells
+stream,star,CCVC,entity,5,assigned,stream streaming streams
+sunny,sans,CVCC,entity,5,assigned,sunny
+tell,dul,CVC,action,5,assigned,tell
+under,sag,CVC,relation,5,assigned,under
+view,labd,CVCC,entity,5,assigned,landscape view
 wake,wek,CVC,entity,5,assigned,wake woke
-able,balar,CVCVC,entity,4,assigned,able
+able,blar,CCVC,entity,4,assigned,able
 above,suz,CVC,relation,4,pin,above
-against,Cem,CVC,relation,4,assigned,against
-ago,naral,CVCVC,entity,4,assigned,ago
-also,cis,CVC,bare,4,assigned,also
-ask,skal,CCVC,entity,4,assigned,ask asked
-bear,borul,CVCVC,entity,4,assigned,bear bears
-bee,jokes,CVCVC,entity,4,assigned,bee bees
-beside,best,CVCC,relation,4,assigned,beside
-better,patar,CVCVC,entity,4,assigned,better
-build,balad,CVCVC,action,4,assigned,build building builds
-burrow,boron,CVCVC,entity,4,assigned,burrow burrowed
-countryside,konot,CVCVC,entity,4,assigned,countryside
-deep,yis,CVC,feature,4,assigned,deep
-deer,darul,CVCVC,entity,4,assigned,deer
-deliciou,dales,CVCVC,entity,4,assigned,delicious
-dense,torep,CVCVC,entity,4,assigned,dense
-drink,drin,CCVC,action,4,assigned,drink drinking
-drop,darop,CVCVC,action,4,assigned,dropped drops raindrop
-earth,wix,CVC,entity,4,assigned,earth
-enjoy,nedaj,CVCVC,entity,4,assigned,enjoy enjoyed enjoying enjoys
-even,venal,CVCVC,entity,4,assigned,even
-floor,volar,CVCVC,entity,4,assigned,floor
-foot,vut,CVC,entity,4,assigned,feet
-gift,gifat,CVCVC,entity,4,assigned,gift gifts
-girl,garol,CVCVC,entity,4,assigned,girl
-gold,mus,CVC,entity,4,pin,gold
-great,mac,CVC,entity,4,pin,great
-hole,holor,CVCVC,entity,4,assigned,hole
-hope,hob,CVC,action,4,assigned,hope
-huge,hugal,CVCVC,feature,4,assigned,huge
-juice,dujis,CVCVC,entity,4,assigned,juice
-lie,larud,CVCVC,entity,4,assigned,lies lying
+against,zif,CVC,relation,4,assigned,against
+ago,pabd,CVCC,entity,4,assigned,ago
+also,lus,CVC,bare,4,assigned,also
+ask,zok,CVC,entity,4,assigned,ask asked
+bear,brul,CCVC,entity,4,assigned,bear bears
+bee,kliq,CCVC,entity,4,assigned,bee bees
+beside,bes,CVC,relation,4,assigned,beside
+better,jips,CVCC,entity,4,assigned,better
+build,balt,CVCC,action,4,assigned,build building builds
+burrow,brun,CCVC,entity,4,assigned,burrow burrowed
+countryside,kont,CVCC,entity,4,assigned,countryside
+deep,dap,CVC,feature,4,assigned,deep
+deer,dral,CCVC,entity,4,assigned,deer
+deliciou,dalz,CVCC,entity,4,assigned,delicious
+dense,dens,CVCC,entity,4,assigned,dense
+drink,viz,CVC,action,4,assigned,drink drinking
+drop,drip,CCVC,action,4,assigned,dropped drops raindrop
+earth,rug,CVC,entity,4,assigned,earth
+enjoy,nedj,CVCC,entity,4,assigned,enjoy enjoyed enjoying enjoys
+even,vons,CVCC,entity,4,assigned,even
+floor,marp,CVCC,entity,4,assigned,floor
+foot,fot,CVC,entity,4,assigned,feet
+gift,gift,CVCC,entity,4,assigned,gift gifts
+girl,gral,CCVC,entity,4,assigned,girl
+gold,gum,CVC,entity,4,pin,gold
+great,gret,CCVC,entity,4,pin,great
+hole,djoq,CCVC,entity,4,assigned,hole
+hope,hop,CVC,action,4,assigned,hope
+huge,hats,CVCC,feature,4,assigned,huge
+juice,djus,CCVC,entity,4,assigned,juice
+lie,znar,CCVC,entity,4,assigned,lies lying
 lose,lom,CVC,entity,4,pin,lose lost
-lush,lakas,CVCVC,entity,4,assigned,lush
-mak,makal,CVCVC,entity,4,assigned,makes
-meet,metal,CVCVC,entity,4,assigned,meet met
+lush,luks,CVCC,entity,4,assigned,lush
+mak,maks,CVCC,entity,4,assigned,makes
+meet,yomb,CVCC,entity,4,assigned,meet met
 mind,man,CVC,entity,4,pin,mind minded
 mmm,muq,CVC,bare,4,pin,mmm
-neither,nesar,CVCVC,entity,4,assigned,neither
+neither,dalb,CVCC,entity,4,assigned,neither
 order,dor,CVC,entity,4,pin,order orders
-own,valig,CVCVC,entity,4,assigned,own
-owned,gec,CVC,bare,4,assigned,owned
-paw,dalor,CVCVC,entity,4,assigned,paw paws
-relax,ralek,CVCVC,entity,4,assigned,relax relaxes
-ripe,ripal,CVCVC,feature,4,assigned,ripe
-seem,semin,CVCVC,action,4,assigned,seemed seems
-several,sevar,CVCVC,entity,4,assigned,several
-since,sines,CVCVC,entity,4,assigned,since
-sing,sinag,CVCVC,action,4,assigned,sing singing
-start,sav,CVC,action,4,pin,start started starting starts
-surround,saran,CVCVC,entity,4,assigned,surround surrounded surrounds
-sweet,duk,CVC,feature,4,assigned,sweet
-tak,tokol,CVCVC,entity,4,assigned,takes
-tim,timal,CVCVC,entity,4,assigned,times
-together,tagas,CVCVC,entity,4,assigned,together
-top,buj,CVC,entity,4,assigned,hilltop top tops
-toward,tort,CVCC,relation,4,assigned,toward towards
-train,taran,CVCVC,entity,4,assigned,train
-usual,salar,CVCVC,entity,4,assigned,usually
-visit,visat,CVCVC,entity,4,assigned,visit visited
-wish,wikas,CVCVC,entity,4,assigned,wish wished
-wood,pux,CVC,entity,4,assigned,wood wooded woods
-young,yun,CVC,feature,4,assigned,young younger
-abundant,canol,CVCVC,entity,3,assigned,abundant
-adventure,davan,CVCVC,entity,3,assigned,adventure
+own,plej,CCVC,entity,4,assigned,own
+owned,fiv,CVC,bare,4,assigned,owned
+paw,vugd,CVCC,entity,4,assigned,paw paws
+relax,ralg,CVCC,entity,4,assigned,relax relaxes
+ripe,flux,CCVC,feature,4,assigned,ripe
+seem,sems,CVCC,action,4,assigned,seemed seems
+several,wolz,CVCC,entity,4,assigned,several
+since,zins,CVCC,entity,4,assigned,since
+sing,znag,CCVC,action,4,assigned,sing singing
+start,sam,CVC,action,4,pin,start started starting starts
+surround,talv,CVCC,entity,4,assigned,surround surrounded surrounds
+sweet,xic,CVC,feature,4,assigned,sweet
+tak,tiks,CVCC,entity,4,assigned,takes
+tim,tims,CVCC,entity,4,assigned,times
+together,teks,CVCC,entity,4,assigned,together
+top,tub,CVC,entity,4,assigned,hilltop top tops
+toward,jiC,CVC,relation,4,assigned,toward towards
+train,tran,CCVC,entity,4,assigned,train
+usual,slor,CCVC,entity,4,assigned,usually
+visit,vest,CVCC,entity,4,assigned,visit visited
+wish,wiks,CVCC,entity,4,assigned,wish wished
+wood,Cid,CVC,entity,4,assigned,wood wooded woods
+young,yon,CVC,feature,4,assigned,young younger
+abundant,bant,CVCC,entity,3,assigned,abundant
+adventure,snuC,CCVC,entity,3,assigned,adventure
 among,mag,CVC,entity,3,pin,among
-area,halim,CVCVC,entity,3,assigned,area areas
-become,bekom,CVCVC,action,3,assigned,become becoming
+area,Calz,CVCC,entity,3,assigned,area areas
+become,nofs,CVCC,action,3,assigned,become becoming
 below,zis,CVC,relation,3,pin,below
-beneath,benak,CVCVC,entity,3,assigned,beneath
-beyond,bent,CVCC,relation,3,assigned,beyond
-brother,paras,CVCVC,entity,3,assigned,brother
-brown,boren,CVCVC,feature,3,assigned,brown
-catch,katak,CVCVC,action,3,assigned,catch catches
-chance,tekis,CVCVC,entity,3,assigned,chance
+beneath,brom,CCVC,entity,3,assigned,beneath
+beyond,bun,CVC,relation,3,assigned,beyond
+brother,bras,CCVC,entity,3,assigned,brother
+brown,bron,CCVC,feature,3,assigned,brown
+catch,sorz,CVCC,action,3,assigned,catch catches
+chance,daks,CVCC,entity,3,assigned,chance
 clean,glin,CCVC,feature,3,pin,clean
-climate,manut,CVCVC,entity,3,assigned,climate
-com,kamal,CVCVC,entity,3,assigned,comes
-continue,niC,CVC,entity,3,pin,continue
-count,kant,CVCC,action,3,assigned,count counted
-country,kanat,CVCVC,entity,3,assigned,country
-dawn,danal,CVCVC,entity,3,assigned,dawn dawns
-despite,desip,CVCVC,entity,3,assigned,despite
-drip,darep,CVCVC,action,3,assigned,dripping
-duck,dakal,CVCVC,entity,3,assigned,duck ducks
-dug,digas,CVCVC,entity,3,assigned,dug
-each,had,CVC,entity,3,assigned,each
-either,saral,CVCVC,entity,3,assigned,either
-else,fos,CVC,entity,3,pin,else
-entire,nidor,CVCVC,entity,3,assigned,entire
-fast,fast,CVCC,feature,3,assigned,fast
-final,final,CVCVC,entity,3,assigned,finally
-five,tem,CVC,bare,3,pin,five
+climate,klam,CCVC,entity,3,assigned,climate
+com,kams,CVCC,entity,3,assigned,comes
+continue,koz,CVC,entity,3,pin,continue
+count,cik,CVC,action,3,assigned,count counted
+country,kant,CVCC,entity,3,assigned,country
+dawn,dins,CVCC,entity,3,assigned,dawn dawns
+despite,desp,CVCC,entity,3,assigned,despite
+drip,trip,CCVC,action,3,assigned,dripping
+duck,deks,CVCC,entity,3,assigned,duck ducks
+dug,zlet,CCVC,entity,3,assigned,dug
+each,teg,CVC,entity,3,assigned,each
+either,rolb,CVCC,entity,3,assigned,either
+else,lis,CVC,entity,3,pin,else
+entire,borp,CVCC,entity,3,assigned,entire
+fast,vus,CVC,feature,3,assigned,fast
+final,kris,CCVC,entity,3,assigned,finally
+five,ten,CVC,bare,3,pin,five
 flow,fol,CVC,action,3,pin,flowing flows
-fragrance,farag,CVCVC,entity,3,assigned,fragrance
-fragrant,farig,CVCVC,entity,3,assigned,fragrant
-fun,fanal,CVCVC,entity,3,assigned,fun
-gentle,genat,CVCVC,feature,3,assigned,gentle
-greet,garet,CVCVC,entity,3,assigned,greet greeted
-happen,hapan,CVCVC,action,3,assigned,happen happened
-hav,haval,CVCVC,entity,3,assigned,having
-head,hud,CVC,entity,3,assigned,head
-heart,zez,CVC,entity,3,assigned,heart
-hence,henas,CVCVC,entity,3,assigned,hence
-hide,hidal,CVCVC,entity,3,assigned,hide hiding
-howl,holan,CVCVC,entity,3,assigned,howl howled howling
-humid,hamad,CVCVC,feature,3,assigned,humid
+fragrance,frag,CCVC,entity,3,assigned,fragrance
+fragrant,freg,CCVC,entity,3,assigned,fragrant
+fun,fans,CVCC,entity,3,assigned,fun
+gentle,gent,CVCC,feature,3,assigned,gentle
+greet,grat,CCVC,entity,3,assigned,greet greeted
+happen,xabz,CVCC,action,3,assigned,happen happened
+hav,clum,CCVC,entity,3,assigned,having
+head,hed,CVC,entity,3,assigned,head
+heart,yik,CVC,entity,3,assigned,heart
+hence,hens,CVCC,entity,3,assigned,hence
+hide,glaz,CCVC,entity,3,assigned,hide hiding
+howl,korf,CVCC,entity,3,assigned,howl howled howling
+humid,slep,CCVC,feature,3,assigned,humid
 imagine,xig,CVC,entity,3,pin,imagine imagined
 inside,tuq,CVC,relation,3,pin,inside
-journey,dajar,CVCVC,entity,3,assigned,journey
-lack,laC,CVC,bare,3,pin,lack
-least,list,CVCC,entity,3,assigned,least
-leg,voj,CVC,entity,3,assigned,legs
-low,xeC,CVC,feature,3,assigned,low
-magical,magak,CVCVC,entity,3,assigned,magical
-man,manal,CVCVC,entity,3,assigned,man men
-master,masat,CVCVC,entity,3,assigned,master masters
-money,munon,CVCVC,entity,3,assigned,money
+journey,djor,CCVC,entity,3,assigned,journey
+lack,lam,CVC,bare,3,pin,lack
+least,lez,CVC,entity,3,assigned,least
+leg,riC,CVC,entity,3,assigned,legs
+low,liz,CVC,feature,3,assigned,low
+magical,cutx,CVCC,entity,3,assigned,magical
+man,mans,CVCC,entity,3,assigned,man men
+master,gudj,CVCC,entity,3,assigned,master masters
+money,mens,CVCC,entity,3,assigned,money
 nature,nox,CVC,entity,3,pin,nature
-noon,nonol,CVCVC,entity,3,assigned,afternoon
-nor,narul,CVCVC,entity,3,assigned,nor
-number,nub,CVC,entity,3,pin,number
-otherwise,xanaf,CVCVC,entity,3,assigned,otherwise
-pick,pikal,CVCVC,action,3,assigned,pick picked picking
+noon,nons,CVCC,entity,3,assigned,afternoon
+nor,praq,CCVC,entity,3,assigned,nor
+number,num,CVC,entity,3,pin,number
+otherwise,vems,CVCC,entity,3,assigned,otherwise
+pick,piks,CVCC,action,3,assigned,pick picked picking
 problem,brab,CCVC,entity,3,pin,problem problems
-put,jem,CVC,action,3,assigned,put
-reach,retak,CVCVC,action,3,assigned,reach
-ready,rodol,CVCVC,entity,3,assigned,ready
-real,lev,CVC,entity,3,pin,real really
-result,len,CVC,bare,3,pin,result
-roll,rolor,CVCVC,entity,3,assigned,roll rolling rolls
-rough,parop,CVCVC,entity,3,assigned,rough roughly
-sand,sant,CVCC,entity,3,assigned,sand
-save,saval,CVCVC,entity,3,assigned,save
-scatter,sakat,CVCVC,action,3,assigned,scattered scattering
-scenery,senar,CVCVC,entity,3,assigned,scenery
-scent,senat,CVCVC,entity,3,assigned,scent
+put,pud,CVC,action,3,assigned,put
+reach,flim,CCVC,action,3,assigned,reach
+ready,lusk,CVCC,entity,3,assigned,ready
+real,ral,CVC,entity,3,pin,real really
+result,seq,CVC,bare,3,pin,result
+roll,rols,CVCC,entity,3,assigned,roll rolling rolls
+rough,pubz,CVCC,entity,3,assigned,rough roughly
+sand,wiz,CVC,entity,3,assigned,sand
+save,klun,CCVC,entity,3,assigned,save
+scatter,skit,CCVC,action,3,assigned,scattered scattering
+scenery,znor,CCVC,entity,3,assigned,scenery
+scent,sent,CVCC,entity,3,assigned,scent
 seed,sid,CVC,entity,3,pin,seed seeds
-seeming,zamin,CVCVC,entity,3,assigned,seemingly
-settle,rekit,CVCVC,action,3,assigned,settle settled settling
-shad,kasad,CVCVC,entity,3,assigned,shades
-shade,gised,CVCVC,entity,3,assigned,shade shaded
-sharp,kasar,CVCVC,entity,3,assigned,sharp
-show,kosol,CVCVC,entity,3,assigned,show showed showing
-shrub,ziwed,CVCVC,entity,3,assigned,shrubs
-sid,sadan,CVCVC,entity,3,assigned,sides
-sight,satas,CVCVC,entity,3,assigned,sight
+seeming,jorv,CVCC,entity,3,assigned,seemingly
+settle,nits,CVCC,action,3,assigned,settle settled settling
+shad,dron,CCVC,entity,3,assigned,shades
+shade,huft,CVCC,entity,3,assigned,shade shaded
+sharp,zbid,CCVC,entity,3,assigned,sharp
+show,rift,CVCC,entity,3,assigned,show showed showing
+shrub,bitx,CVCC,entity,3,assigned,shrubs
+sid,trij,CCVC,entity,3,assigned,sides
+sight,stor,CCVC,entity,3,assigned,sight
 soil,ris,CVC,entity,3,pin,soil
-soon,sinal,CVCVC,entity,3,assigned,soon
-spent,sepan,CVCVC,entity,3,assigned,spent
-stone,ston,CCVC,entity,3,assigned,stone
-storm,ganet,CVCVC,entity,3,assigned,storm
-study,satad,CVCVC,entity,3,assigned,studied study
-sudden,Cemis,CVCVC,entity,3,assigned,sudden suddenly
-tea,wikez,CVCVC,entity,3,assigned,tea
-thank,kanak,CVCVC,entity,3,assigned,thanked thanks
-throw,korol,CVCVC,action,3,assigned,threw throw throws
-tid,tidal,CVCVC,entity,3,assigned,tides
-tir,tarin,CVCVC,entity,3,assigned,tired
-total,tatal,CVCVC,entity,3,assigned,total totally
-turn,tup,CVC,action,3,pin,turn turning turns
-upon,panal,CVCVC,entity,3,assigned,upon
+soon,snal,CCVC,entity,3,assigned,soon
+spent,falv,CVCC,entity,3,assigned,spent
+stone,mif,CVC,entity,3,assigned,stone
+storm,crol,CCVC,entity,3,assigned,storm
+study,stad,CCVC,entity,3,assigned,studied study
+sudden,zden,CCVC,entity,3,assigned,sudden suddenly
+tea,gras,CCVC,entity,3,assigned,tea
+thank,kisp,CVCC,entity,3,assigned,thanked thanks
+throw,krol,CCVC,action,3,assigned,threw throw throws
+tid,stot,CCVC,entity,3,assigned,tides
+tir,trul,CCVC,entity,3,assigned,tired
+total,cegd,CVCC,entity,3,assigned,total totally
+turn,tun,CVC,action,3,pin,turn turning turns
+upon,pans,CVCC,entity,3,assigned,upon
 voice,voz,CVC,entity,3,pin,voice
-wav,wival,CVCVC,entity,3,assigned,waves
-weekend,wekan,CVCVC,entity,3,assigned,weekend weekends
-what',wital,CVCVC,entity,3,assigned,what's
-whoo,Ceg,CVC,bare,3,assigned,whoo
-window,winod,CVCVC,entity,3,assigned,window windows
-wing,cij,CVC,entity,3,assigned,wings
-aboard,bared,CVCVC,entity,2,assigned,aboard
-activity,katav,CVCVC,entity,2,assigned,activities activity
-actual,katal,CVCVC,entity,2,assigned,actually
-allow,fisem,CVCVC,entity,2,assigned,allow allowing
-already,larad,CVCVC,entity,2,assigned,already
-amongst,manag,CVCVC,entity,2,assigned,amongst
-anywhere,norol,CVCVC,entity,2,assigned,anywhere
-appearance,parun,CVCVC,entity,2,assigned,appearance
-argu,ragal,CVCVC,entity,2,assigned,argued argument
-aromatic,ramat,CVCVC,feature,2,assigned,aromatic
-arriv,biwax,CVCVC,entity,2,assigned,arrived arrives
-autumn,taman,CVCVC,entity,2,assigned,autumn
-await,yimun,CVCVC,entity,2,assigned,await awaits
-bad,fat,CVC,feature,2,pin,bad
+wav,gebd,CVCC,entity,3,assigned,waves
+weekend,blaq,CCVC,entity,3,assigned,weekend weekends
+what',wets,CVCC,entity,3,assigned,what's
+whoo,nix,CVC,bare,3,assigned,whoo
+window,wont,CVCC,entity,3,assigned,window windows
+wing,gik,CVC,entity,3,assigned,wings
+aboard,brod,CCVC,entity,2,assigned,aboard
+activity,zadz,CVCC,entity,2,assigned,activities activity
+actual,vras,CCVC,entity,2,assigned,actually
+allow,lesk,CVCC,entity,2,assigned,allow allowing
+already,lart,CVCC,entity,2,assigned,already
+amongst,pesk,CVCC,entity,2,assigned,amongst
+anywhere,krup,CCVC,entity,2,assigned,anywhere
+appearance,pran,CCVC,entity,2,assigned,appearance
+argu,xuft,CVCC,entity,2,assigned,argued argument
+aromatic,magz,CVCC,feature,2,assigned,aromatic
+arriv,djan,CCVC,entity,2,assigned,arrived arrives
+autumn,hesk,CVCC,entity,2,assigned,autumn
+await,zniv,CCVC,entity,2,assigned,await awaits
+bad,vat,CVC,feature,2,pin,bad
 ball,bal,CVC,entity,2,pin,ball
-bare,baran,CVCVC,entity,2,assigned,bare
-believe,balev,CVCVC,action,2,assigned,believe
+bare,bran,CCVC,entity,2,assigned,bare
+believe,balv,CVCC,action,2,assigned,believe
 between,ben,CVC,relation,2,pin,between
 bit,vij,CVC,entity,2,pin,bit
-blanket,balen,CVCVC,entity,2,assigned,blanket
-blend,balon,CVCVC,action,2,assigned,blending
-boat,botol,CVCVC,entity,2,assigned,boat
+blanket,blen,CCVC,entity,2,assigned,blanket
+blend,blin,CCVC,action,2,assigned,blending
+boat,yaft,CVCC,entity,2,assigned,boat
 body,vas,CVC,entity,2,pin,body
 boom,bum,CVC,bare,2,pin,boom
-boy,sinev,CVCVC,entity,2,assigned,boy
-breathe,nimed,CVCVC,action,2,assigned,breathe
-bud,badal,CVCVC,action,2,assigned,budding
-careful,karaf,CVCVC,entity,2,assigned,carefully
-cave,xukos,CVCVC,entity,2,assigned,cave
-certain,keC,CVC,entity,2,pin,certain
-chil,tikas,CVCVC,entity,2,assigned,chilling chilly
+boy,dabz,CVCC,entity,2,assigned,boy
+breathe,bres,CCVC,action,2,assigned,breathe
+bud,pliC,CCVC,action,2,assigned,budding
+careful,karf,CVCC,entity,2,assigned,carefully
+cave,vorv,CVCC,entity,2,assigned,cave
+certain,ket,CVC,entity,2,pin,certain
+chil,floc,CCVC,entity,2,assigned,chilling chilly
 chip,xap,CVC,entity,2,pin,chipper chipping
-chirp,tokos,CVCVC,entity,2,assigned,chirped chirping
-closer,kalas,CVCVC,entity,2,assigned,closer
-cloudy,kalad,CVCVC,entity,2,assigned,cloudy
+chirp,wosp,CVCC,entity,2,assigned,chirped chirping
+closer,klas,CCVC,entity,2,assigned,closer
+cloudy,klad,CCVC,entity,2,assigned,cloudy
 collection,lok,CVC,entity,2,pin,collection collections
-contain,toz,CVC,entity,2,pin,containing contains
+contain,ton,CVC,entity,2,pin,containing contains
 create,bam,CVC,entity,2,pin,create creating
-creation,punev,CVCVC,entity,2,assigned,creation
-cricket,karik,CVCVC,entity,2,assigned,crickets
-crunch,karan,CVCVC,entity,2,assigned,crunch crunched
-curiou,karul,CVCVC,entity,2,assigned,curious
-current,koron,CVCVC,entity,2,assigned,currently
+creation,krat,CCVC,entity,2,assigned,creation
+cricket,krik,CCVC,entity,2,assigned,crickets
+crunch,kran,CCVC,entity,2,assigned,crunch crunched
+curiou,krul,CCVC,entity,2,assigned,curious
+current,kren,CCVC,entity,2,assigned,currently
 cycle,rol,CVC,entity,2,pin,cycle
 dad,dad,CVC,entity,2,pin,dad
-dash,rolog,CVCVC,entity,2,assigned,dash dashes
-decide,desid,CVCVC,entity,2,assigned,decide decided
-different,fin,CVC,entity,2,pin,different
-distance,nik,CVC,entity,2,pin,distance
-draw,dorol,CVCVC,entity,2,assigned,drew
-dusk,dasak,CVCVC,entity,2,assigned,dusk dusks
+dash,task,CVCC,entity,2,assigned,dash dashes
+decide,Cast,CVCC,entity,2,assigned,decide decided
+different,dif,CVC,entity,2,pin,different
+distance,sin,CVC,entity,2,pin,distance
+draw,drul,CCVC,entity,2,assigned,drew
+dusk,dask,CVCC,entity,2,assigned,dusk dusks
 east,rog,CVC,entity,2,pin,east
-easy,zonag,CVCVC,feature,2,assigned,easy
-elk,likal,CVCVC,entity,2,assigned,elk
-enter,nex,CVC,entity,2,pin,enter entered
+easy,noqg,CVCC,feature,2,assigned,easy
+elk,leks,CVCC,entity,2,assigned,elk
+enter,neb,CVC,entity,2,pin,enter entered
 event,ven,CVC,entity,2,pin,eventful events
-expect,gorom,CVCVC,entity,2,assigned,expect
-explore,Conar,CVCVC,entity,2,assigned,explore explored
-extreme,kesit,CVCVC,entity,2,assigned,extremely
+expect,kasp,CVCC,entity,2,assigned,expect
+explore,rom,CVC,entity,2,pin,explore explored
+extreme,sogz,CVCC,entity,2,assigned,extremely
 face,fes,CVC,entity,2,pin,face facing
-familiar,famal,CVCVC,entity,2,assigned,familiar
-father,fasar,CVCVC,entity,2,assigned,father
-fear,fren,CCVC,entity,2,assigned,fear
-finish,finak,CVCVC,entity,2,assigned,finish finished
-flap,kotol,CVCVC,entity,2,assigned,flap flaps
-flicker,falik,CVCVC,entity,2,assigned,flicker
-flock,falak,CVCVC,entity,2,assigned,flock
-four,bov,CVC,bare,2,pin,four
-free,farol,CVCVC,feature,2,assigned,free
-frog,foreg,CVCVC,entity,2,assigned,frog frogs
-gam,gemal,CVCVC,entity,2,assigned,games
-gem,gemor,CVCVC,entity,2,assigned,gems
-glad,galed,CVCVC,entity,2,assigned,glad
-glimmer,wezul,CVCVC,entity,2,assigned,glimmered glimmering
-graz,garaz,CVCVC,entity,2,assigned,grazes grazing
-half,yiz,CVC,entity,2,assigned,half
-hand,hant,CVCC,entity,2,assigned,hand handful
-hike,hikal,CVCVC,entity,2,assigned,hike
-horizon,haraz,CVCVC,entity,2,assigned,horizon
-hunter,hanat,CVCVC,entity,2,assigned,hunter
-ice,wiC,CVC,entity,2,assigned,ice iced
-imagination,migan,CVCVC,entity,2,assigned,imagination
+familiar,zbus,CCVC,entity,2,assigned,familiar
+father,rodj,CVCC,entity,2,assigned,father
+fear,deb,CVC,entity,2,assigned,fear
+finish,boqg,CVCC,entity,2,assigned,finish finished
+flap,flip,CCVC,entity,2,assigned,flap flaps
+flicker,flik,CCVC,entity,2,assigned,flicker
+flock,flok,CCVC,entity,2,assigned,flock
+four,boq,CVC,bare,2,pin,four
+free,fram,CCVC,feature,2,assigned,free
+frog,frug,CCVC,entity,2,assigned,frog frogs
+gam,gams,CVCC,entity,2,assigned,games
+gem,gems,CVCC,entity,2,assigned,gems
+glad,glad,CCVC,entity,2,assigned,glad
+glimmer,glim,CCVC,entity,2,assigned,glimmered glimmering
+graz,graz,CCVC,entity,2,assigned,grazes grazing
+half,hul,CVC,entity,2,assigned,half
+hand,han,CVC,entity,2,assigned,hand handful
+hike,hiks,CVCC,entity,2,assigned,hike
+horizon,truv,CCVC,entity,2,assigned,horizon
+hunter,hent,CVCC,entity,2,assigned,hunter
+ice,bis,CVC,entity,2,assigned,ice iced
+imagination,xent,CVCC,entity,2,assigned,imagination
 infinite,gix,CVC,entity,2,pin,infinite
-insect,nisek,CVCVC,entity,2,assigned,insects
-inspir,nisap,CVCVC,entity,2,assigned,inspired inspiring
-instead,niset,CVCVC,entity,2,assigned,instead
-join,dajan,CVCVC,entity,2,assigned,join
+insect,nisk,CVCC,entity,2,assigned,insects
+inspir,nisp,CVCC,entity,2,assigned,inspired inspiring
+instead,clon,CCVC,entity,2,assigned,instead
+join,djon,CCVC,entity,2,assigned,join
 key,cux,CVC,entity,2,pin,key
-kiss,kisal,CVCVC,entity,2,assigned,kiss
-lak,lakor,CVCVC,entity,2,assigned,lakes
-laugh,falaf,CVCVC,action,2,assigned,laughed
-lay,bonev,CVCVC,entity,2,assigned,lay layer
+kiss,glef,CCVC,entity,2,assigned,kiss
+lak,liks,CVCC,entity,2,assigned,lakes
+laugh,kogz,CVCC,action,2,assigned,laughed
+lay,skut,CCVC,entity,2,assigned,lay layer
 less,les,CVC,entity,2,pin,less
-lick,likor,CVCVC,entity,2,assigned,licking licks
-lik,lokar,CVCVC,entity,2,assigned,likes
-main,manum,CVCVC,entity,2,assigned,main
-map,maq,CVC,entity,2,pin,map
-matter,matar,CVCVC,entity,2,assigned,matter matters
-meadow,madal,CVCVC,entity,2,assigned,meadow meadows
-mild,malid,CVCVC,entity,2,assigned,mild
-mist,misat,CVCVC,entity,2,assigned,mist
+lick,loks,CVCC,entity,2,assigned,licking licks
+lik,cols,CVCC,entity,2,assigned,likes
+main,mins,CVCC,entity,2,assigned,main
+map,map,CVC,entity,2,pin,map
+matter,golg,CVCC,entity,2,assigned,matter matters
+meadow,preg,CCVC,entity,2,assigned,meadow meadows
+mild,malt,CVCC,entity,2,assigned,mild
+mist,vimb,CVCC,entity,2,assigned,mist
 mom,mam,CVC,entity,2,pin,mom
-mov,maval,CVCVC,entity,2,assigned,moves
-mystery,mizet,CVCVC,entity,2,assigned,mysteries mystery
-name,namal,CVCVC,entity,2,assigned,name
-newborn,nebar,CVCVC,entity,2,assigned,newborn
-nice,nisal,CVCVC,entity,2,assigned,nice
-none,gaC,CVC,entity,2,assigned,none
-nowhere,naras,CVCVC,entity,2,assigned,nowhere
-okay,yanen,CVCVC,entity,2,assigned,okay
-owl,seyic,CVCVC,entity,2,assigned,owl
-pat,patan,CVCVC,entity,2,assigned,pats patted
-peaceful,pesaf,CVCVC,entity,2,assigned,peacefully
-peak,pakal,CVCVC,entity,2,assigned,peak
-peep,pepal,CVCVC,entity,2,assigned,peep peeping
-per,parul,CVCVC,entity,2,assigned,per
-perch,porut,CVCVC,entity,2,assigned,perches perching
+mov,fraC,CCVC,entity,2,assigned,moves
+mystery,lunt,CVCC,entity,2,assigned,mysteries mystery
+name,nam,CVC,entity,2,pin,name
+newborn,polt,CVCC,entity,2,assigned,newborn
+nice,kloq,CCVC,entity,2,assigned,nice
+none,piv,CVC,entity,2,assigned,none
+nowhere,jogz,CVCC,entity,2,assigned,nowhere
+okay,mutx,CVCC,entity,2,assigned,okay
+owl,dref,CCVC,entity,2,assigned,owl
+pat,pats,CVCC,entity,2,assigned,pats patted
+peaceful,humb,CVCC,entity,2,assigned,peacefully
+peak,peks,CVCC,entity,2,assigned,peak
+peep,zdoc,CCVC,entity,2,assigned,peep peeping
+per,pars,CVCC,entity,2,assigned,per
+perch,pard,CVCC,entity,2,assigned,perches perching
 perfect,kax,CVC,entity,2,pin,perfect
-playful,palaf,CVCVC,entity,2,assigned,playfully
-pleasant,pales,CVCVC,entity,2,assigned,pleasant
-plus,balis,CVCVC,entity,2,assigned,plus
-pool,polor,CVCVC,entity,2,assigned,pool
-process,poC,CVC,entity,2,pin,process
-proud,parad,CVCVC,entity,2,assigned,proud
-provide,porov,CVCVC,entity,2,assigned,provide
-push,pikes,CVCVC,action,2,assigned,push pushed
+playful,plif,CCVC,entity,2,assigned,playfully
+pleasant,ples,CCVC,entity,2,assigned,pleasant
+plus,plas,CCVC,entity,2,assigned,plus
+pool,plor,CCVC,entity,2,assigned,pool
+process,por,CVC,entity,2,pin,process
+proud,prud,CCVC,entity,2,assigned,proud
+provide,prov,CCVC,entity,2,assigned,provide
+push,paks,CVCC,action,2,assigned,push pushed
 quiet,xus,CVC,feature,2,pin,quiet quietly
-rare,nenol,CVCVC,feature,2,assigned,rare rarely
-ray,janop,CVCVC,entity,2,assigned,rays
+rare,rins,CVCC,feature,2,assigned,rare rarely
+ray,duft,CVCC,entity,2,assigned,rays
 read,rid,CVC,action,2,pin,read reading
-regard,regar,CVCVC,entity,2,assigned,regarding
-region,geq,CVC,entity,2,pin,region regions
-remember,remam,CVCVC,action,2,assigned,remember
-remind,remin,CVCVC,entity,2,assigned,remind reminded
-reptil,repit,CVCVC,entity,2,assigned,reptiles
-rich,tarom,CVCVC,entity,2,assigned,rich
-room,romol,CVCVC,entity,2,assigned,room rooms
-round,ranad,CVCVC,entity,2,assigned,round
-rub,rabal,CVCVC,entity,2,assigned,rubbing rubs
-rush,lekar,CVCVC,action,2,assigned,rushing
-safe,faC,CVC,entity,2,pin,safe
-scorch,sakar,CVCVC,action,2,assigned,scorching
-send,seg,CVC,action,2,pin,sent
+regard,pluc,CCVC,entity,2,assigned,regarding
+region,rej,CVC,entity,2,pin,region regions
+remember,fast,CVCC,action,2,assigned,remember
+remind,crom,CCVC,entity,2,assigned,remind reminded
+reptil,grez,CCVC,entity,2,assigned,reptiles
+rich,kims,CVCC,entity,2,assigned,rich
+room,roms,CVCC,entity,2,assigned,room rooms
+round,rand,CVCC,entity,2,assigned,round
+rub,stek,CCVC,entity,2,assigned,rubbing rubs
+rush,riks,CVCC,action,2,assigned,rushing
+safe,saf,CVC,entity,2,pin,safe
+scorch,skor,CCVC,action,2,assigned,scorching
+send,sed,CVC,action,2,pin,sent
 sense,zox,CVC,entity,2,pin,sense senses
-shelter,kazal,CVCVC,entity,2,assigned,shelter sheltered
-shin,vemux,CVCVC,entity,2,assigned,shines
-shore,cizub,CVCVC,entity,2,assigned,shore
-side,zud,CVC,entity,2,assigned,side
-slow,slor,CCVC,feature,2,assigned,slowly
-smile,mikor,CVCVC,action,2,assigned,smile
-soft,saft,CVCC,feature,2,assigned,soft
+shelter,cidz,CVCC,entity,2,assigned,shelter sheltered
+shin,gisk,CVCC,entity,2,assigned,shines
+shore,bleq,CCVC,entity,2,assigned,shore
+side,zad,CVC,entity,2,assigned,side
+slow,tix,CVC,feature,2,assigned,slowly
+smile,smol,CCVC,action,2,assigned,smile
+soft,zof,CVC,feature,2,assigned,soft
 solve,salk,CVCC,entity,2,pin,solve
-somebody,samab,CVCVC,entity,2,assigned,somebody
-song,sanag,CVCVC,entity,2,assigned,song
-speak,spek,CCVC,action,2,assigned,speaks spoke
-special,sepas,CVCVC,feature,2,assigned,special
-specy,sepik,CVCVC,entity,2,assigned,species
-stand,xinot,CVCVC,action,2,assigned,stand standing
-steady,sitat,CVCVC,entity,2,assigned,steady
-steep,setap,CVCVC,feature,2,assigned,steep
-ston,piwaj,CVCVC,entity,2,assigned,stones
-straight,rinaf,CVCVC,entity,2,assigned,straight
-super,sapar,CVCVC,entity,2,assigned,super
-table,tabal,CVCVC,entity,2,assigned,table
-teacher,tetak,CVCVC,entity,2,assigned,teacher
-till,talon,CVCVC,entity,2,assigned,till
-toe,dus,CVC,entity,2,assigned,toes
-told,talad,CVCVC,entity,2,assigned,told
-topic,tapak,CVCVC,entity,2,assigned,topic
-touch,zimoc,CVCVC,action,2,assigned,touch touches
-trail,giteg,CVCVC,entity,2,assigned,trail
-true,tud,CVC,entity,2,pin,true
-tuck,tokom,CVCVC,entity,2,assigned,tuck tucked
-tunnel,tenal,CVCVC,entity,2,assigned,tunnel tunnels
-uncover,nakav,CVCVC,entity,2,assigned,uncover uncovered
-underneath,nudar,CVCVC,entity,2,assigned,underneath
-unlike,naluk,CVCVC,entity,2,assigned,unlike
-unusual,nusal,CVCVC,entity,2,assigned,unusually
-variety,varat,CVCVC,entity,2,assigned,variety
-variou,varul,CVCVC,entity,2,assigned,various
-versu,vares,CVCVC,entity,2,assigned,versus
-via,Cimes,CVCVC,entity,2,assigned,via
-vibrant,vibar,CVCVC,feature,2,assigned,vibrant
-village,valag,CVCVC,entity,2,assigned,village
-visible,viseb,CVCVC,entity,2,assigned,visible
-wander,wenid,CVCVC,action,2,assigned,wander
-welcome,wolak,CVCVC,entity,2,assigned,welcome welcoming
-whatever,wetav,CVCVC,entity,2,assigned,whatever
-whichever,witek,CVCVC,entity,2,assigned,whichever
-wilder,wolet,CVCVC,entity,2,assigned,wilderness
-windy,wenut,CVCVC,entity,2,assigned,windy
-word,worad,CVCVC,entity,2,assigned,word
-world,woral,CVCVC,entity,2,assigned,world worlds
-worry,worul,CVCVC,entity,2,assigned,worried worry
-yard,yarad,CVCVC,entity,2,assigned,yard
-you'd,yadal,CVCVC,entity,2,assigned,you'd
-ability,bolut,CVCVC,entity,1,assigned,ability
-abroad,borad,CVCVC,entity,1,assigned,abroad
-absolute,basal,CVCVC,entity,1,assigned,absolutely
-act,kital,CVCVC,entity,1,assigned,act
-advantage,tunav,CVCVC,entity,1,assigned,advantage
-ah,has,CVC,bare,1,assigned,ah
-ala,lorub,CVCVC,entity,1,assigned,alas
-alive,voleg,CVCVC,entity,1,assigned,alive
-almost,lamas,CVCVC,entity,1,assigned,almost
-amaz,mazal,CVCVC,entity,1,assigned,amazing
-amazing,mazan,CVCVC,entity,1,assigned,amazingly
-annoy,dolen,CVCVC,entity,1,assigned,annoy
-anymore,conog,CVCVC,entity,1,assigned,anymore
-anytime,natam,CVCVC,entity,1,assigned,anytime
-appear,poral,CVCVC,entity,1,assigned,appearing
-apple,palan,CVCVC,entity,1,assigned,apple
-arid,redus,CVCVC,entity,1,assigned,arid
-aroma,ramal,CVCVC,entity,1,assigned,aroma
-aside,horen,CVCVC,entity,1,assigned,aside
-asleep,malip,CVCVC,entity,1,assigned,asleep
-attempt,tamap,CVCVC,action,1,assigned,attempted
-attractive,tarek,CVCVC,entity,1,assigned,attractive
-aunt,natal,CVCVC,entity,1,assigned,aunt
-available,valab,CVCVC,entity,1,assigned,available
-avoid,vadal,CVCVC,entity,1,assigned,avoid
+somebody,samb,CVCC,entity,2,assigned,somebody
+song,git,CVC,entity,2,pin,song
+speak,zap,CVC,action,2,assigned,speaks spoke
+special,sips,CVCC,feature,2,assigned,special
+specy,spek,CCVC,entity,2,assigned,species
+stand,ston,CCVC,action,2,assigned,stand standing
+steady,stid,CCVC,entity,2,assigned,steady
+steep,stap,CCVC,feature,2,assigned,steep
+ston,zedz,CVCC,entity,2,assigned,stones
+straight,vrek,CCVC,entity,2,assigned,straight
+super,spor,CCVC,entity,2,assigned,super
+table,lent,CVCC,entity,2,assigned,table
+teacher,pent,CVCC,entity,2,assigned,teacher
+till,kros,CCVC,entity,2,assigned,till
+toe,kiC,CVC,entity,2,assigned,toes
+told,talt,CVCC,entity,2,assigned,told
+topic,xolv,CVCC,entity,2,assigned,topic
+touch,metx,CVCC,action,2,assigned,touch touches
+trail,djem,CCVC,entity,2,assigned,trail
+true,toc,CVC,entity,2,pin,true
+tuck,zmot,CCVC,entity,2,assigned,tuck tucked
+tunnel,yans,CVCC,entity,2,assigned,tunnel tunnels
+uncover,deft,CVCC,entity,2,assigned,uncover uncovered
+underneath,plim,CCVC,entity,2,assigned,underneath
+unlike,nalg,CVCC,entity,2,assigned,unlike
+unusual,vont,CVCC,entity,2,assigned,unusually
+variety,vart,CVCC,entity,2,assigned,variety
+variou,vrol,CCVC,entity,2,assigned,various
+versu,fors,CVCC,entity,2,assigned,versus
+via,flom,CCVC,entity,2,assigned,via
+vibrant,tamb,CVCC,feature,2,assigned,vibrant
+village,valg,CVCC,entity,2,assigned,village
+visible,visp,CVCC,entity,2,assigned,visible
+wander,wunt,CVCC,action,2,assigned,wander
+welcome,wolg,CVCC,entity,2,assigned,welcome welcoming
+whatever,Cets,CVCC,entity,2,assigned,whatever
+whichever,narf,CVCC,entity,2,assigned,whichever
+wilder,bren,CCVC,entity,2,assigned,wilderness
+windy,sarf,CVCC,entity,2,assigned,windy
+word,word,CVCC,entity,2,assigned,word
+world,zbok,CCVC,entity,2,assigned,world worlds
+worry,barp,CVCC,entity,2,assigned,worried worry
+yard,yord,CVCC,entity,2,assigned,yard
+you'd,troj,CCVC,entity,2,assigned,you'd
+ability,blot,CCVC,entity,1,assigned,ability
+abroad,brud,CCVC,entity,1,assigned,abroad
+absolute,xind,CVCC,entity,1,assigned,absolutely
+act,claq,CCVC,entity,1,assigned,act
+advantage,glix,CCVC,entity,1,assigned,advantage
+ah,hix,CVC,bare,1,assigned,ah
+ala,skal,CCVC,entity,1,assigned,alas
+alive,coks,CVCC,entity,1,assigned,alive
+almost,lams,CVCC,entity,1,assigned,almost
+amaz,godj,CVCC,entity,1,assigned,amazing
+amazing,prid,CCVC,entity,1,assigned,amazingly
+annoy,zunt,CVCC,entity,1,assigned,annoy
+anymore,friC,CCVC,entity,1,assigned,anymore
+anytime,losp,CVCC,entity,1,assigned,anytime
+appear,pral,CCVC,entity,1,assigned,appearing
+apple,plar,CCVC,entity,1,assigned,apple
+arid,pobz,CVCC,entity,1,assigned,arid
+aroma,rams,CVCC,entity,1,assigned,aroma
+aside,jarz,CVCC,entity,1,assigned,aside
+asleep,slip,CCVC,entity,1,assigned,asleep
+attempt,timp,CVCC,action,1,assigned,attempted
+attractive,trak,CCVC,entity,1,assigned,attractive
+aunt,molz,CVCC,entity,1,assigned,aunt
+available,flab,CCVC,entity,1,assigned,available
+avoid,drix,CCVC,entity,1,assigned,avoid
 awake,bud,CVC,entity,1,pin,awake
-babe,xonop,CVCVC,entity,1,assigned,babe
-baby,pip,CVC,entity,1,pin,baby
-bam,bamal,CVCVC,entity,1,assigned,bam
-bank,binok,CVCVC,entity,1,assigned,bank
-barren,barin,CVCVC,feature,1,assigned,barren
-basical,ponac,CVCVC,entity,1,assigned,basically
-bask,zenaC,CVCVC,entity,1,assigned,basking
-basketball,galig,CVCVC,entity,1,assigned,basketball
-beat,Camaz,CVCVC,entity,1,assigned,beating
-begun,began,CVCVC,entity,1,assigned,begun
-beneficial,benif,CVCVC,entity,1,assigned,beneficial
-benefit,banef,CVCVC,entity,1,assigned,benefit
-benevolence,benav,CVCVC,entity,1,assigned,benevolence
-birthday,barik,CVCVC,entity,1,assigned,birthday
-blew,bolan,CVCVC,entity,1,assigned,blew
-blink,bolin,CVCVC,entity,1,assigned,blinked
-blissful,boles,CVCVC,entity,1,assigned,blissfully
-blizzard,karex,CVCVC,entity,1,assigned,blizzard
-bloop,balp,CVCC,bare,1,assigned,bloop
-boil,balim,CVCVC,entity,1,assigned,boils
-book,bikas,CVCVC,entity,1,assigned,book
-boot,wenis,CVCVC,entity,1,assigned,boots
-bought,fexiz,CVCVC,entity,1,assigned,bought
-boundary,bon,CVC,entity,1,pin,boundary
-brave,barav,CVCVC,entity,1,assigned,brave
-bread,borud,CVCVC,entity,1,assigned,bread
-break,barak,CVCVC,entity,1,assigned,break
-brink,porin,CVCVC,entity,1,assigned,brink
-broken,yemat,CVCVC,entity,1,assigned,broken
-brush,sized,CVCVC,entity,1,assigned,brushes
-bubbl,nikeb,CVCVC,entity,1,assigned,bubbles
-bunny,jinum,CVCVC,entity,1,assigned,bunnies
-bury,barom,CVCVC,entity,1,assigned,buried
-buy,tiwax,CVCVC,entity,1,assigned,buy
-buzz,linav,CVCVC,entity,1,assigned,buzz
-canopy,konup,CVCVC,entity,1,assigned,canopy
-capable,kapab,CVCVC,entity,1,assigned,capable
-cat,vimoC,CVCVC,entity,1,assigned,cat
-caus,digez,CVCVC,entity,1,assigned,caused
-chair,tiges,CVCVC,entity,1,assigned,chairs
-chang,tikez,CVCVC,entity,1,assigned,changing
-chant,cimez,CVCVC,entity,1,assigned,chanting
-chas,kunat,CVCVC,entity,1,assigned,chasing
-chat,folag,CVCVC,entity,1,assigned,chat
-check,bolem,CVCVC,entity,1,assigned,checked
-chef,yonin,CVCVC,entity,1,assigned,chefs
-cherry,safat,CVCVC,entity,1,assigned,cherry
-chew,nakal,CVCVC,entity,1,assigned,chewing
-chill,jonoc,CVCVC,entity,1,assigned,chills
-chocolate,tonaC,CVCVC,entity,1,assigned,chocolate
-chosen,larit,CVCVC,entity,1,assigned,chosen
-city,vanol,CVCVC,entity,1,assigned,city
-clash,kalak,CVCVC,entity,1,assigned,clashes
+babe,hosk,CVCC,entity,1,assigned,babe
+baby,pup,CVC,entity,1,pin,baby
+bam,bams,CVCC,entity,1,assigned,bam
+bank,zdag,CCVC,entity,1,assigned,bank
+barren,brin,CCVC,feature,1,assigned,barren
+basical,bask,CVCC,entity,1,assigned,basically
+bask,bisk,CVCC,entity,1,assigned,basking
+basketball,besk,CVCC,entity,1,assigned,basketball
+beat,yugz,CVCC,entity,1,assigned,beating
+begun,dumb,CVCC,entity,1,assigned,begun
+beneficial,fedj,CVCC,entity,1,assigned,beneficial
+benefit,cran,CCVC,entity,1,assigned,benefit
+benevolence,griz,CCVC,entity,1,assigned,benevolence
+birthday,bark,CVCC,entity,1,assigned,birthday
+blew,blor,CCVC,entity,1,assigned,blew
+blink,blon,CCVC,entity,1,assigned,blinked
+blissful,blis,CCVC,entity,1,assigned,blissfully
+blizzard,blaz,CCVC,entity,1,assigned,blizzard
+bloop,sab,CVC,bare,1,assigned,bloop
+boil,blam,CCVC,entity,1,assigned,boils
+book,tuqg,CVCC,entity,1,assigned,book
+boot,spuk,CCVC,entity,1,assigned,boots
+bought,Cugd,CVCC,entity,1,assigned,bought
+boundary,bod,CVC,entity,1,pin,boundary
+brave,brev,CCVC,entity,1,assigned,brave
+bread,brat,CCVC,entity,1,assigned,bread
+break,brak,CCVC,entity,1,assigned,break
+brink,prin,CCVC,entity,1,assigned,brink
+broken,bruk,CCVC,entity,1,assigned,broken
+brush,prak,CCVC,entity,1,assigned,brushes
+bubbl,gins,CVCC,entity,1,assigned,bubbles
+bunny,bans,CVCC,entity,1,assigned,bunnies
+bury,bram,CCVC,entity,1,assigned,buried
+buy,bliq,CCVC,entity,1,assigned,buy
+buzz,zibd,CVCC,entity,1,assigned,buzz
+canopy,vris,CCVC,entity,1,assigned,canopy
+capable,libd,CVCC,entity,1,assigned,capable
+cat,pigd,CVCC,entity,1,assigned,cat
+caus,kraf,CCVC,entity,1,assigned,caused
+chair,xoft,CVCC,entity,1,assigned,chairs
+chang,mifs,CVCC,entity,1,assigned,changing
+chant,glux,CCVC,entity,1,assigned,chanting
+chas,hibd,CVCC,entity,1,assigned,chasing
+chat,zmet,CCVC,entity,1,assigned,chat
+check,yebd,CVCC,entity,1,assigned,checked
+chef,deqg,CVCC,entity,1,assigned,chefs
+cherry,pruq,CCVC,entity,1,assigned,cherry
+chew,flaq,CCVC,entity,1,assigned,chewing
+chill,webd,CVCC,entity,1,assigned,chills
+chocolate,tegd,CVCC,entity,1,assigned,chocolate
+chosen,smop,CCVC,entity,1,assigned,chosen
+city,Cist,CVCC,entity,1,assigned,city
+clash,klik,CCVC,entity,1,assigned,clashes
 click,glik,CCVC,entity,1,pin,clicks
-climat,dalin,CVCVC,entity,1,assigned,climates
-cloth,kolok,CVCVC,entity,1,assigned,clothes
-cluster,kolis,CVCVC,entity,1,assigned,cluster
-coast,kosot,CVCVC,entity,1,assigned,coast
-coastal,camaj,CVCVC,entity,1,assigned,coastal
-coat,harab,CVCVC,entity,1,assigned,coat
+climat,klom,CCVC,entity,1,assigned,climates
+cloth,klok,CCVC,entity,1,assigned,clothes
+cluster,kles,CCVC,entity,1,assigned,cluster
+coast,nabd,CVCC,entity,1,assigned,coast
+coastal,sadj,CVCC,entity,1,assigned,coastal
+coat,zbap,CCVC,entity,1,assigned,coat
 community,kamun,CVCVC,entity,1,pin,community
-company,kamap,CVCVC,entity,1,assigned,company
-complete,komop,CVCVC,entity,1,assigned,completely
+company,kimp,CVCC,entity,1,assigned,company
+complete,komb,CVCC,entity,1,assigned,completely
 computation,xit,CVC,entity,1,pin,computation
-condition,konud,CVCVC,entity,1,assigned,conditions
-connect,kiv,CVC,entity,1,pin,connected
-consider,kanas,CVCVC,entity,1,assigned,consider
-construct,manik,CVCVC,entity,1,assigned,construct
-cook,kakol,CVCVC,entity,1,assigned,cooking
-cosy,xenuc,CVCVC,entity,1,assigned,cosy
-couple,kabal,CVCVC,entity,1,assigned,couple
-courage,korog,CVCVC,entity,1,assigned,courage
-coyote,pasab,CVCVC,entity,1,assigned,coyote
-cozy,renof,CVCVC,entity,1,assigned,cozy
-cram,karam,CVCVC,entity,1,assigned,crammed
-crawl,goral,CVCVC,entity,1,assigned,crawl
-crazy,karez,CVCVC,entity,1,assigned,crazy
-creak,karok,CVCVC,entity,1,assigned,creaking
-creatur,zizeb,CVCVC,entity,1,assigned,creatures
-creek,korak,CVCVC,entity,1,assigned,creek
-creep,karep,CVCVC,entity,1,assigned,creeping
-crevic,karev,CVCVC,entity,1,assigned,crevices
-crisp,karis,CVCVC,feature,1,assigned,crisp
-cros,gares,CVCVC,entity,1,assigned,crossed
-cub,Cisom,CVCVC,entity,1,assigned,cubes
-cup,kemar,CVCVC,entity,1,assigned,cup
-dangerou,danag,CVCVC,entity,1,assigned,dangerous
-dangl,tinag,CVCVC,entity,1,assigned,dangles
-darkness,wigej,CVCVC,entity,1,assigned,darkness
-darn,daron,CVCVC,entity,1,assigned,darn
-death,zev,CVC,entity,1,assigned,death
-decid,disat,CVCVC,entity,1,assigned,decides
-describ,desik,CVCVC,entity,1,assigned,describing
-desire,desar,CVCVC,entity,1,assigned,desire
-dew,fineq,CVCVC,entity,1,assigned,dew
-difference,difar,CVCVC,entity,1,assigned,difference
-difficult,difak,CVCVC,feature,1,assigned,difficult
-dinner,dinar,CVCVC,entity,1,assigned,dinner
-dip,dipal,CVCVC,entity,1,assigned,dipping
-disappear,bigax,CVCVC,entity,1,assigned,disappeared
-distract,tasat,CVCVC,entity,1,assigned,distracted
-diversity,dix,CVC,entity,1,pin,diversity
-divid,divad,CVCVC,entity,1,assigned,divided
-door,doran,CVCVC,entity,1,assigned,door
-double,vub,CVC,entity,1,assigned,double
-doubt,dabat,CVCVC,entity,1,assigned,doubts
-drank,daren,CVCVC,entity,1,assigned,drank
-dress,tares,CVCVC,entity,1,assigned,dress
-droop,dorip,CVCVC,entity,1,assigned,droop
-due,yimeg,CVCVC,entity,1,assigned,due
-e,hunoq,CVCVC,entity,1,assigned,e
-eager,gorul,CVCVC,entity,1,assigned,eagerly
-eagle,golor,CVCVC,entity,1,assigned,eagle
-ease,muneq,CVCVC,entity,1,assigned,ease
-eight,soC,CVC,bare,1,pin,eight
-elder,ledar,CVCVC,entity,1,assigned,elders
-emerg,mareg,CVCVC,entity,1,assigned,emerging
-endeavor,nedav,CVCVC,entity,1,assigned,endeavors
-equal,kewal,CVCVC,entity,1,assigned,equally
-essential,senit,CVCVC,entity,1,assigned,essential
-evolution,valet,CVCVC,entity,1,assigned,evolution
-evolv,valev,CVCVC,entity,1,assigned,evolved
-exact,kesak,CVCVC,entity,1,assigned,exactly
-excite,xunov,CVCVC,entity,1,assigned,excitement
-experienc,polap,CVCVC,entity,1,assigned,experienced
-extra,romaj,CVCVC,entity,1,assigned,extra
-extremeley,zanof,CVCVC,entity,1,assigned,extremeley
-fact,fakat,CVCVC,entity,1,assigned,fact
-fair,foral,CVCVC,entity,1,assigned,fair
-fat,fatal,CVCVC,entity,1,assigned,fat
-fe,goris,CVCVC,entity,1,assigned,fed
-fearless,forul,CVCVC,entity,1,assigned,fearlessly
-feast,fesat,CVCVC,entity,1,assigned,feasting
-fertile,faret,CVCVC,entity,1,assigned,fertile
-fierceful,faris,CVCVC,entity,1,assigned,fiercefully
-figure,figar,CVCVC,entity,1,assigned,figure
-fit,fital,CVCVC,entity,1,assigned,fit
-float,folot,CVCVC,action,1,assigned,floating
-floppy,Comas,CVCVC,entity,1,assigned,floppy
-flown,kaluq,CVCVC,entity,1,assigned,flown
-fluffy,yamed,CVCVC,entity,1,assigned,fluffy
-flute,falut,CVCVC,entity,1,assigned,flute
-focus,fakas,CVCVC,entity,1,assigned,focused
-fog,fogal,CVCVC,entity,1,assigned,fog
-foothill,fosol,CVCVC,entity,1,assigned,foothills
-forget,vareg,CVCVC,action,1,assigned,forgot
-forgotten,vorag,CVCVC,entity,1,assigned,forgotten
-form,fov,CVC,entity,1,pin,formed
-fortuitious,forat,CVCVC,entity,1,assigned,fortuitiously
-freeze,farez,CVCVC,entity,1,assigned,freeze
+condition,kind,CVCC,entity,1,assigned,conditions
+connect,kog,CVC,entity,1,pin,connected
+consider,kans,CVCC,entity,1,assigned,consider
+construct,kins,CVCC,entity,1,assigned,construct
+cook,kaks,CVCC,entity,1,assigned,cooking
+cosy,rabz,CVCC,entity,1,assigned,cosy
+couple,bagd,CVCC,entity,1,assigned,couple
+courage,kork,CVCC,entity,1,assigned,courage
+coyote,funt,CVCC,entity,1,assigned,coyote
+cozy,cleq,CCVC,entity,1,assigned,cozy
+cram,kram,CCVC,entity,1,assigned,crammed
+crawl,grol,CCVC,entity,1,assigned,crawl
+crazy,kraz,CCVC,entity,1,assigned,crazy
+creak,krek,CCVC,entity,1,assigned,creaking
+creatur,grut,CCVC,entity,1,assigned,creatures
+creek,krok,CCVC,entity,1,assigned,creek
+creep,krep,CCVC,entity,1,assigned,creeping
+crevic,krov,CCVC,entity,1,assigned,crevices
+crisp,kras,CCVC,feature,1,assigned,crisp
+cros,kres,CCVC,entity,1,assigned,crossed
+cub,gruz,CCVC,entity,1,assigned,cubes
+cup,kadj,CVCC,entity,1,assigned,cup
+dangerou,skez,CCVC,entity,1,assigned,dangerous
+dangl,calt,CVCC,entity,1,assigned,dangles
+darkness,dark,CVCC,entity,1,assigned,darkness
+darn,dran,CCVC,entity,1,assigned,darn
+death,dag,CVC,entity,1,assigned,death
+decid,galg,CVCC,entity,1,assigned,decides
+describ,desk,CVCC,entity,1,assigned,describing
+desire,blub,CCVC,entity,1,assigned,desire
+dew,zorp,CVCC,entity,1,assigned,dew
+difference,vrus,CCVC,entity,1,assigned,difference
+difficult,loms,CVCC,feature,1,assigned,difficult
+dinner,palt,CVCC,entity,1,assigned,dinner
+dip,deps,CVCC,entity,1,assigned,dipping
+disappear,disp,CVCC,entity,1,assigned,disappeared
+distract,klek,CCVC,entity,1,assigned,distracted
+diversity,diq,CVC,entity,1,pin,diversity
+divid,jant,CVCC,entity,1,assigned,divided
+door,drin,CCVC,entity,1,assigned,door
+double,dob,CVC,entity,1,assigned,double
+doubt,dabd,CVCC,entity,1,assigned,doubts
+drank,dren,CCVC,entity,1,assigned,drank
+dress,dres,CCVC,entity,1,assigned,dress
+droop,trop,CCVC,entity,1,assigned,droop
+due,mobz,CVCC,entity,1,assigned,due
+e,djuz,CCVC,entity,1,assigned,e
+eager,grul,CCVC,entity,1,assigned,eagerly
+eagle,glar,CCVC,entity,1,assigned,eagle
+ease,homb,CVCC,entity,1,assigned,ease
+eight,sog,CVC,bare,1,pin,eight
+elder,zdip,CCVC,entity,1,assigned,elders
+emerg,morg,CVCC,entity,1,assigned,emerging
+endeavor,yorf,CVCC,entity,1,assigned,endeavors
+equal,dosk,CVCC,entity,1,assigned,equally
+essential,snet,CCVC,entity,1,assigned,essential
+evolution,flut,CCVC,entity,1,assigned,evolution
+evolv,flev,CCVC,entity,1,assigned,evolved
+exact,kesk,CVCC,entity,1,assigned,exactly
+excite,plom,CCVC,entity,1,assigned,excitement
+experienc,kosp,CVCC,entity,1,assigned,experienced
+extra,fits,CVCC,entity,1,assigned,extra
+extremeley,cren,CCVC,entity,1,assigned,extremeley
+fact,wuks,CVCC,entity,1,assigned,fact
+fair,torp,CVCC,entity,1,assigned,fair
+fat,fats,CVCC,entity,1,assigned,fat
+fe,spaf,CCVC,entity,1,assigned,fed
+fearless,vrul,CCVC,entity,1,assigned,fearlessly
+feast,fist,CVCC,entity,1,assigned,feasting
+fertile,fort,CVCC,entity,1,assigned,fertile
+fierceful,farz,CVCC,entity,1,assigned,fiercefully
+figure,Cork,CVCC,entity,1,assigned,figure
+fit,fots,CVCC,entity,1,assigned,fit
+float,flod,CCVC,action,1,assigned,floating
+floppy,flop,CCVC,entity,1,assigned,floppy
+flown,flon,CCVC,entity,1,assigned,flown
+fluffy,flaf,CCVC,entity,1,assigned,fluffy
+flute,fled,CCVC,entity,1,assigned,flute
+focus,foks,CVCC,entity,1,assigned,focused
+fog,nugz,CVCC,entity,1,assigned,fog
+foothill,sups,CVCC,entity,1,assigned,foothills
+forget,farg,CVCC,action,1,assigned,forgot
+forgotten,forg,CVCC,entity,1,assigned,forgotten
+form,forz,CVCC,entity,1,pin,formed
+fortuitious,fard,CVCC,entity,1,assigned,fortuitiously
+freeze,vrez,CCVC,entity,1,assigned,freeze
 front,keg,CVC,entity,1,pin,front
-frost,niyex,CVCVC,entity,1,assigned,frost
-ful,janiv,CVCVC,entity,1,assigned,fully
-fur,fron,CCVC,entity,1,assigned,fur
-furry,tarip,CVCVC,entity,1,assigned,furry
-game,gamar,CVCVC,entity,1,assigned,game
-gander,ganad,CVCVC,entity,1,assigned,gander
-gaz,gizen,CVCVC,entity,1,assigned,gazing
-gear,goran,CVCVC,entity,1,assigned,gear
-generous,genar,CVCVC,entity,1,assigned,generously
-gent,genut,CVCVC,entity,1,assigned,gently
-george,gareg,CVCVC,entity,1,assigned,george
-giant,ganot,CVCVC,entity,1,assigned,giant
-giv,gival,CVCVC,entity,1,assigned,gives
-glass,galis,CVCVC,entity,1,assigned,glass
-gloriou,lenaC,CVCVC,entity,1,assigned,glorious
-glow,goles,CVCVC,action,1,assigned,glowing
-goal,gov,CVC,entity,1,pin,goal
-golden,vizot,CVCVC,feature,1,assigned,golden
-gotten,gatan,CVCVC,entity,1,assigned,gotten
-grace,gariz,CVCVC,entity,1,assigned,graceful
-graceful,gorez,CVCVC,entity,1,assigned,gracefully
-grand,cison,CVCVC,entity,1,assigned,grand
-grizz,koriz,CVCVC,entity,1,assigned,grizzly
-groom,henaq,CVCVC,entity,1,assigned,groomed
-group,grup,CCVC,entity,1,pin,groups
-growth,gorok,CVCVC,entity,1,assigned,growth
-guidance,migeb,CVCVC,entity,1,assigned,guidance
-hadn't,hadan,CVCVC,entity,1,assigned,hadn't
-halfway,halaf,CVCVC,entity,1,assigned,halfway
-halt,halat,CVCVC,entity,1,assigned,halt
-hang,hanag,CVCVC,entity,1,assigned,hanging
-harvest,harav,CVCVC,entity,1,assigned,harvested
-haven't,havan,CVCVC,entity,1,assigned,haven't
-heal,halen,CVCVC,entity,1,assigned,healed
-health,halek,CVCVC,entity,1,assigned,health
-heat,xag,CVC,entity,1,assigned,heat
-herd,hared,CVCVC,entity,1,assigned,herd
-hid,xinek,CVCVC,entity,1,assigned,hides
-hil,halon,CVCVC,entity,1,assigned,hilly
-hind,hinad,CVCVC,entity,1,assigned,hind
-hit,hit,CVC,entity,1,pin,hit
-honest,pitak,CVCVC,feature,1,assigned,honest
-hopeful,hapaf,CVCVC,entity,1,assigned,hopefully
-hug,hagal,CVCVC,entity,1,assigned,hug
-hundred,yemib,CVCVC,entity,1,pin,hundred
-idea,rimef,CVCVC,entity,1,assigned,ideas
-illustrate,lisut,CVCVC,entity,1,assigned,illustrate
-important,mipar,CVCVC,feature,1,assigned,important
-indoor,nadar,CVCVC,entity,1,assigned,indoor
-information,nifar,CVCVC,entity,1,assigned,information
-innocent,nisan,CVCVC,entity,1,assigned,innocent
-intelligent,sunod,CVCVC,entity,1,assigned,intelligent
-jean,nukon,CVCVC,entity,1,assigned,jeans
-job,junoC,CVCVC,entity,1,assigned,job
-joy,djal,CCVC,entity,1,assigned,joy
-joyous,dajas,CVCVC,entity,1,assigned,joyously
-juicy,dajak,CVCVC,entity,1,assigned,juicy
-king',kinag,CVCVC,entity,1,assigned,king's
-kitchen,kitek,CVCVC,entity,1,assigned,kitchen
-kite,tolat,CVCVC,entity,1,assigned,kite
-knock,ginek,CVCVC,entity,1,assigned,knock
-laid,lorin,CVCVC,entity,1,assigned,laid
-lawn,lanal,CVCVC,entity,1,assigned,lawn
-lazy,lazal,CVCVC,entity,1,assigned,lazy
-le,vonaq,CVCVC,entity,1,assigned,led
+frost,vros,CCVC,entity,1,assigned,frost
+ful,flan,CCVC,entity,1,assigned,fully
+fur,zix,CVC,entity,1,assigned,fur
+furry,zlug,CCVC,entity,1,assigned,furry
+game,gims,CVCC,entity,1,assigned,game
+gander,kund,CVCC,entity,1,assigned,gander
+gaz,rusp,CVCC,entity,1,assigned,gazing
+gear,gren,CCVC,entity,1,assigned,gear
+generous,bubd,CVCC,entity,1,assigned,generously
+gent,gant,CVCC,entity,1,assigned,gently
+george,gark,CVCC,entity,1,assigned,george
+giant,gint,CVCC,entity,1,assigned,giant
+giv,krex,CCVC,entity,1,assigned,gives
+glass,glas,CCVC,entity,1,assigned,glass
+gloriou,klor,CCVC,entity,1,assigned,glorious
+glow,glon,CCVC,action,1,assigned,glowing
+goal,gol,CVC,entity,1,pin,goal
+golden,kald,CVCC,feature,1,assigned,golden
+gotten,xalz,CVCC,entity,1,assigned,gotten
+grace,gres,CCVC,entity,1,assigned,graceful
+graceful,grus,CCVC,entity,1,assigned,gracefully
+grand,grin,CCVC,entity,1,assigned,grand
+grizz,groz,CCVC,entity,1,assigned,grizzly
+groom,grom,CCVC,entity,1,assigned,groomed
+group,hip,CVC,entity,1,pin,groups
+growth,grik,CCVC,entity,1,assigned,growth
+guidance,miqg,CVCC,entity,1,assigned,guidance
+hadn't,glox,CCVC,entity,1,assigned,hadn't
+halfway,half,CVCC,entity,1,assigned,halfway
+halt,halt,CVCC,entity,1,assigned,halt
+hang,kutx,CVCC,entity,1,assigned,hanging
+harvest,harv,CVCC,entity,1,assigned,harvested
+haven't,slup,CCVC,entity,1,assigned,haven't
+heal,yisp,CVCC,entity,1,assigned,healed
+health,halg,CVCC,entity,1,assigned,health
+heat,had,CVC,entity,1,assigned,heat
+herd,hard,CVCC,entity,1,assigned,herd
+hid,dibd,CVCC,entity,1,assigned,hides
+hil,prob,CCVC,entity,1,assigned,hilly
+hind,hont,CVCC,entity,1,assigned,hind
+hit,hiq,CVC,entity,1,pin,hit
+honest,hins,CVCC,feature,1,assigned,honest
+hopeful,vaqk,CVCC,entity,1,assigned,hopefully
+hug,fleg,CCVC,entity,1,assigned,hug
+hundred,yemp,CVCC,entity,1,pin,hundred
+idea,wisp,CVCC,entity,1,assigned,ideas
+illustrate,list,CVCC,entity,1,assigned,illustrate
+important,tips,CVCC,feature,1,assigned,important
+indoor,smep,CCVC,entity,1,assigned,indoor
+information,jusp,CVCC,entity,1,assigned,information
+innocent,nesk,CVCC,entity,1,assigned,innocent
+intelligent,drug,CCVC,entity,1,assigned,intelligent
+jean,djen,CCVC,entity,1,assigned,jeans
+job,djab,CCVC,entity,1,assigned,job
+joy,vif,CVC,entity,1,assigned,joy
+joyous,djos,CCVC,entity,1,assigned,joyously
+juicy,djik,CCVC,entity,1,assigned,juicy
+king',sedj,CVCC,entity,1,assigned,king's
+kitchen,zbes,CCVC,entity,1,assigned,kitchen
+kite,reft,CVCC,entity,1,assigned,kite
+knock,betx,CVCC,entity,1,assigned,knock
+laid,forb,CVCC,entity,1,assigned,laid
+lawn,lans,CVCC,entity,1,assigned,lawn
+lazy,cliq,CCVC,entity,1,assigned,lazy
+le,grof,CCVC,entity,1,assigned,led
 lead,lad,CVC,entity,1,pin,lead
-learn,laren,CVCVC,entity,1,assigned,learn
-letter,comax,CVCVC,entity,1,assigned,letter
-lid,jeq,CVC,entity,1,assigned,eyelid
-lifetime,lifet,CVCVC,entity,1,assigned,lifetime
-limit,lit,CVC,action,1,pin,limited
-lin,linal,CVCVC,entity,1,assigned,lined
-listen,lust,CVCC,action,1,assigned,listen
-log,legal,CVCVC,entity,1,assigned,log
-lonely,honek,CVCVC,entity,1,assigned,lonely
-loud,masul,CVCVC,feature,1,assigned,loudly
-lovely,xalar,CVCVC,feature,1,assigned,lovely
-lower,lorol,CVCVC,entity,1,assigned,lower
-lucky,lekin,CVCVC,entity,1,assigned,lucky
-ly,palod,CVCVC,entity,1,assigned,lily
-magic,maj,CVC,entity,1,pin,magic
-mail,malar,CVCVC,entity,1,assigned,mail
-majestic,madaj,CVCVC,entity,1,assigned,majestic
-mature,ramej,CVCVC,entity,1,assigned,mature
-meal,molor,CVCVC,entity,1,assigned,meal
-mean,minam,CVCVC,entity,1,assigned,meaning
-meat,zemuv,CVCVC,entity,1,assigned,meat
-melt,malet,CVCVC,entity,1,assigned,melted
-member,memab,CVCVC,entity,1,assigned,members
-merry,maral,CVCVC,entity,1,assigned,merrily
-mighty,garad,CVCVC,entity,1,assigned,mighty
-mike,mikal,CVCVC,entity,1,assigned,mike
-minut,minat,CVCVC,entity,1,assigned,minutes
-mo,Cesat,CVCVC,entity,1,assigned,moment
-month,monek,CVCVC,entity,1,assigned,month
-moth,makul,CVCVC,entity,1,assigned,moths
-mother,masar,CVCVC,entity,1,assigned,mother
-mould,malad,CVCVC,entity,1,assigned,mould
-mouse,mosol,CVCVC,entity,1,assigned,mice
-mud,wemig,CVCVC,entity,1,assigned,mud
-munch,manat,CVCVC,entity,1,assigned,munch
-musty,mised,CVCVC,entity,1,assigned,musty
-narrow,femoz,CVCVC,feature,1,assigned,narrow
-nearby,nareb,CVCVC,entity,1,assigned,nearby
-necessary,nesas,CVCVC,entity,1,assigned,necessary
-nectar,nekat,CVCVC,entity,1,assigned,nectar
-nibbl,nibal,CVCVC,entity,1,assigned,nibbled
-noise,nosol,CVCVC,entity,1,assigned,noises
-northern,baniv,CVCVC,entity,1,assigned,northern
-numerou,yiwem,CVCVC,entity,1,assigned,numerous
-o'clock,kolek,CVCVC,entity,1,assigned,o'clock
-oasi,ninez,CVCVC,entity,1,assigned,oasis
-occur,jineC,CVCVC,entity,1,assigned,occurs
-odd,tikex,CVCVC,entity,1,assigned,odd
-ones,nasor,CVCVC,entity,1,assigned,ones
-orange,hag,CVC,entity,1,pin,orange
-outcome,limec,CVCVC,entity,1,assigned,outcome
-outdoor,todor,CVCVC,entity,1,assigned,outdoor
+learn,catx,CVCC,entity,1,assigned,learn
+letter,gadj,CVCC,entity,1,assigned,letter
+lid,feq,CVC,entity,1,assigned,eyelid
+lifetime,lift,CVCC,entity,1,assigned,lifetime
+limit,lim,CVC,action,1,pin,limited
+lin,lins,CVCC,entity,1,assigned,lined
+listen,laz,CVC,action,1,assigned,listen
+log,blob,CCVC,entity,1,assigned,log
+lonely,zomp,CVCC,entity,1,assigned,lonely
+loud,vrof,CCVC,feature,1,assigned,loudly
+lovely,last,CVCC,feature,1,assigned,lovely
+lower,lors,CVCC,entity,1,assigned,lower
+lucky,klis,CCVC,entity,1,assigned,lucky
+ly,jeqk,CVCC,entity,1,assigned,lily
+magic,muj,CVC,entity,1,pin,magic
+mail,malb,CVCC,entity,1,assigned,mail
+majestic,madj,CVCC,entity,1,assigned,majestic
+mature,djoz,CCVC,entity,1,assigned,mature
+meal,haft,CVCC,entity,1,assigned,meal
+mean,znof,CCVC,entity,1,assigned,meaning
+meat,yogz,CVCC,entity,1,assigned,meat
+melt,molt,CVCC,entity,1,assigned,melted
+member,memb,CVCC,entity,1,assigned,members
+merry,dalc,CVCC,entity,1,assigned,merrily
+mighty,plaq,CCVC,entity,1,assigned,mighty
+mike,miks,CVCC,entity,1,assigned,mike
+minut,mint,CVCC,entity,1,assigned,minutes
+mo,vups,CVCC,entity,1,assigned,moment
+month,crin,CCVC,entity,1,assigned,month
+moth,meks,CVCC,entity,1,assigned,moths
+mother,wums,CVCC,entity,1,assigned,mother
+mould,toqg,CVCC,entity,1,assigned,mould
+mouse,spit,CCVC,entity,1,assigned,mice
+mud,Cons,CVCC,entity,1,assigned,mud
+munch,munt,CVCC,entity,1,assigned,munch
+musty,norf,CVCC,entity,1,assigned,musty
+narrow,solk,CVCC,feature,1,assigned,narrow
+nearby,narp,CVCC,entity,1,assigned,nearby
+necessary,zlag,CCVC,entity,1,assigned,necessary
+nectar,rolv,CVCC,entity,1,assigned,nectar
+nibbl,bolb,CVCC,entity,1,assigned,nibbled
+noise,krij,CCVC,entity,1,assigned,noises
+northern,xask,CVCC,entity,1,assigned,northern
+numerou,club,CCVC,entity,1,assigned,numerous
+o'clock,glek,CCVC,entity,1,assigned,o'clock
+oasi,glac,CCVC,entity,1,assigned,oasis
+occur,kron,CCVC,entity,1,assigned,occurs
+odd,kols,CVCC,entity,1,assigned,odd
+ones,slat,CCVC,entity,1,assigned,ones
+orange,jan,CVC,entity,1,pin,orange
+outcome,yims,CVCC,entity,1,assigned,outcome
+outdoor,gusp,CVCC,entity,1,assigned,outdoor
 outside,tiq,CVC,relation,1,pin,outside
-pace,vimef,CVCVC,entity,1,assigned,pace
-pack,goloj,CVCVC,entity,1,assigned,pack
-park,Cumax,CVCVC,entity,1,assigned,park
-particular,barot,CVCVC,entity,1,assigned,particular
-patient,worib,CVCVC,feature,1,assigned,patient
-pattern,pac,CVC,entity,1,pin,patterns
-peace,zam,CVC,entity,1,pin,peace
-peck,yomip,CVCVC,entity,1,assigned,woodpecker
-peek,namuc,CVCVC,entity,1,assigned,peeked
-peel,palin,CVCVC,entity,1,assigned,peel
-period,parid,CVCVC,entity,1,assigned,period
-petal,joniC,CVCVC,entity,1,assigned,petals
-phase,fisan,CVCVC,entity,1,assigned,phases
-phone,fonol,CVCVC,entity,1,assigned,phone
-picturesque,pikut,CVCVC,entity,1,assigned,picturesque
-piec,talob,CVCVC,entity,1,assigned,pieces
-pile,palem,CVCVC,entity,1,assigned,pile
-pillow,polim,CVCVC,entity,1,assigned,pillow
-pin,pinal,CVCVC,entity,1,assigned,pines
-pine,vamas,CVCVC,entity,1,assigned,pine
-pink,pinak,CVCVC,entity,1,assigned,pink
-pitch,cenul,CVCVC,entity,1,assigned,pitched
-planet,menup,CVCVC,entity,1,assigned,planet
-player,xenav,CVCVC,entity,1,assigned,players
+pace,pras,CCVC,entity,1,assigned,pace
+pack,vebd,CVCC,entity,1,assigned,pack
+park,park,CVCC,entity,1,assigned,park
+particular,pord,CVCC,entity,1,assigned,particular
+patient,puft,CVCC,feature,1,assigned,patient
+pattern,tan,CVC,entity,1,pin,patterns
+peace,him,CVC,entity,1,pin,peace
+peck,klut,CCVC,entity,1,assigned,woodpecker
+peek,jols,CVCC,entity,1,assigned,peeked
+peel,plen,CCVC,entity,1,assigned,peel
+period,bard,CVCC,entity,1,assigned,period
+petal,nift,CVCC,entity,1,assigned,petals
+phase,drok,CCVC,entity,1,assigned,phases
+phone,fens,CVCC,entity,1,assigned,phone
+picturesque,sigd,CVCC,entity,1,assigned,picturesque
+piec,zbiz,CCVC,entity,1,assigned,pieces
+pile,plin,CCVC,entity,1,assigned,pile
+pillow,plon,CCVC,entity,1,assigned,pillow
+pin,pins,CVCC,entity,1,assigned,pines
+pine,pens,CVCC,entity,1,assigned,pine
+pink,rent,CVCC,entity,1,assigned,pink
+pitch,bift,CVCC,entity,1,assigned,pitched
+planet,plan,CCVC,entity,1,assigned,planet
+player,treq,CCVC,entity,1,assigned,players
 pleasure,zim,CVC,entity,1,pin,pleasure
-plenty,panec,CVCVC,entity,1,assigned,plenty
-pluck,zinof,CVCVC,entity,1,assigned,pluck
-poem,pomol,CVCVC,entity,1,assigned,poem
-polite,polot,CVCVC,entity,1,assigned,polite
-pollution,palut,CVCVC,entity,1,assigned,pollution
-possible,bop,CVC,entity,1,pin,possible
-pot,giwen,CVCVC,entity,1,assigned,pot
-pour,param,CVCVC,entity,1,assigned,pour
-power,pol,CVC,entity,1,pin,powerful
-prefer,paref,CVCVC,entity,1,assigned,prefer
-probab,pareb,CVCVC,entity,1,assigned,probably
-promis,parim,CVCVC,entity,1,assigned,promised
+plenty,plun,CCVC,entity,1,assigned,plenty
+pluck,pluk,CCVC,entity,1,assigned,pluck
+poem,pems,CVCC,entity,1,assigned,poem
+polite,bolt,CVCC,entity,1,assigned,polite
+pollution,plat,CCVC,entity,1,assigned,pollution
+possible,sos,CVC,entity,1,pin,possible
+pot,foqg,CVCC,entity,1,assigned,pot
+pour,prol,CCVC,entity,1,assigned,pour
+power,poq,CVC,entity,1,pin,powerful
+prefer,pref,CCVC,entity,1,assigned,prefer
+probab,prab,CCVC,entity,1,assigned,probably
+promis,pram,CCVC,entity,1,assigned,promised
 protect,cor,CVC,entity,1,pin,protects
-prune,Cinaf,CVCVC,entity,1,assigned,prune
-punctual,panak,CVCVC,entity,1,assigned,punctual
-purify,parof,CVCVC,entity,1,assigned,purify
-quack,kawak,CVCVC,entity,1,assigned,quack
-queen,kewan,CVCVC,entity,1,assigned,queen
-rainfall,ranaf,CVCVC,entity,1,assigned,rainfall
-rang,ranag,CVCVC,entity,1,assigned,ranges
-rather,rasar,CVCVC,entity,1,assigned,rather
-realiz,ralez,CVCVC,entity,1,assigned,realizing
-reason,Cep,CVC,entity,1,assigned,reason
-receive,kej,CVC,entity,1,pin,receive
-reduce,kisaf,CVCVC,entity,1,assigned,reduce
-reflect,fez,CVC,entity,1,pin,reflecting
-refresh,winec,CVCVC,entity,1,assigned,refreshing
-refuse,refus,CVCVC,entity,1,assigned,refuses
-replac,fimej,CVCVC,entity,1,assigned,replaced
-research,dunaC,CVCVC,entity,1,assigned,research
-reserve,cumoz,CVCVC,entity,1,assigned,reserve
-resist,resis,CVCVC,entity,1,assigned,resist
+prune,prun,CCVC,entity,1,assigned,prune
+punctual,crub,CCVC,entity,1,assigned,punctual
+purify,parf,CVCC,entity,1,assigned,purify
+quack,graj,CCVC,entity,1,assigned,quack
+queen,kemb,CVCC,entity,1,assigned,queen
+rainfall,ceks,CVCC,entity,1,assigned,rainfall
+rang,gesp,CVCC,entity,1,assigned,ranges
+rather,zafs,CVCC,entity,1,assigned,rather
+realiz,ralz,CVCC,entity,1,assigned,realizing
+reason,ras,CVC,entity,1,assigned,reason
+receive,rek,CVC,entity,1,pin,receive
+reduce,rats,CVCC,entity,1,assigned,reduce
+reflect,ref,CVC,entity,1,pin,reflecting
+refresh,vraj,CCVC,entity,1,assigned,refreshing
+refuse,refs,CVCC,entity,1,assigned,refuses
+replac,pams,CVCC,entity,1,assigned,replaced
+research,kruv,CCVC,entity,1,assigned,research
+reserve,jint,CVCC,entity,1,assigned,reserve
+resist,matx,CVCC,entity,1,assigned,resist
 return,xuv,CVC,entity,1,pin,returned
-reveal,refal,CVCVC,entity,1,assigned,reveals
-rhythm,ruC,CVC,entity,1,pin,rhythm
-rhythmical,holab,CVCVC,entity,1,assigned,rhythmically
-ring,rinag,CVCVC,entity,1,assigned,rings
-ripen,ripen,CVCVC,entity,1,assigned,ripened
-road,mogor,CVCVC,entity,1,assigned,road
-root,cen,CVC,entity,1,assigned,roots
-rose,xunik,CVCVC,entity,1,assigned,roses
-rot,ratan,CVCVC,entity,1,assigned,rotting
-routin,poroc,CVCVC,entity,1,assigned,routines
-rug,rigal,CVCVC,entity,1,assigned,rugged
-sacred,ralag,CVCVC,entity,1,assigned,sacred
-safety,zewam,CVCVC,entity,1,assigned,safety
-sage,sagal,CVCVC,entity,1,assigned,sage
-salmon,galuj,CVCVC,entity,1,assigned,salmon
-sandy,sanad,CVCVC,entity,1,assigned,sandy
-satisfy,Careq,CVCVC,entity,1,assigned,satisfied
-sauna,sinor,CVCVC,entity,1,assigned,sauna
-saver,kaleg,CVCVC,entity,1,assigned,savers
-scat,wegaj,CVCVC,entity,1,assigned,scatter
-scenic,senik,CVCVC,entity,1,assigned,scenic
-school,sotok,CVCVC,entity,1,assigned,school
-scorpion,yegim,CVCVC,entity,1,assigned,scorpions
-season,yix,CVC,entity,1,assigned,season
-seat,jenov,CVCVC,entity,1,assigned,seated
-second,sekan,CVCVC,entity,1,assigned,second
+reveal,djat,CCVC,entity,1,assigned,reveals
+rhythm,rij,CVC,entity,1,pin,rhythm
+rhythmical,hams,CVCC,entity,1,assigned,rhythmically
+ring,znef,CCVC,entity,1,assigned,rings
+ripen,yarf,CVCC,entity,1,assigned,ripened
+road,pleg,CCVC,entity,1,assigned,road
+root,rut,CVC,entity,1,assigned,roots
+rose,vols,CVCC,entity,1,assigned,roses
+rot,rots,CVCC,entity,1,assigned,rotting
+routin,fluq,CCVC,entity,1,assigned,routines
+rug,tark,CVCC,entity,1,assigned,rugged
+sacred,snov,CCVC,entity,1,assigned,sacred
+safety,saft,CVCC,entity,1,assigned,safety
+sage,Carb,CVCC,entity,1,assigned,sage
+salmon,nobd,CVCC,entity,1,assigned,salmon
+sandy,sand,CVCC,entity,1,assigned,sandy
+satisfy,zats,CVCC,entity,1,assigned,satisfied
+sauna,snul,CCVC,entity,1,assigned,sauna
+saver,sops,CVCC,entity,1,assigned,savers
+scat,skad,CCVC,entity,1,assigned,scatter
+scenic,snak,CCVC,entity,1,assigned,scenic
+school,stok,CCVC,entity,1,assigned,school
+scorpion,rotx,CVCC,entity,1,assigned,scorpions
+season,xeq,CVC,entity,1,assigned,season
+seat,bobd,CVCC,entity,1,assigned,seated
+second,sken,CCVC,entity,1,assigned,second
 seek,sik,CVC,entity,1,pin,seek
-sequence,sem,CVC,entity,1,pin,sequence
-seven,hen,CVC,bare,1,pin,seven
-shady,tanat,CVCVC,entity,1,assigned,shady
-shall,diwaj,CVCVC,entity,1,assigned,shall
-shed,cinav,CVCVC,entity,1,assigned,shed
-shift,gisef,CVCVC,entity,1,assigned,shifting
-shiny,hinut,CVCVC,feature,1,assigned,shiny
-shirt,mined,CVCVC,entity,1,assigned,shirt
-shiver,kisev,CVCVC,entity,1,assigned,shivered
-sho,ximeC,CVCVC,entity,1,assigned,shoes
-shop,bunac,CVCVC,action,1,assigned,shopping
-shoulder,yumop,CVCVC,entity,1,assigned,shoulder
-silver,yas,CVC,feature,1,pin,silver
-single,sinug,CVCVC,entity,1,assigned,single
-sister,siset,CVCVC,entity,1,assigned,sister
-situation,soneq,CVCVC,entity,1,assigned,situation
-sketch,junic,CVCVC,entity,1,assigned,sketches
-skip,sikap,CVCVC,entity,1,assigned,skipped
-sleepy,torof,CVCVC,entity,1,assigned,sleepy
-slender,salen,CVCVC,entity,1,assigned,slender
-slide,salid,CVCVC,entity,1,assigned,slide
-slight,lomes,CVCVC,entity,1,assigned,slightly
-slop,donef,CVCVC,entity,1,assigned,slopes
-slower,solor,CVCVC,entity,1,assigned,slower
-smooth,somok,CVCVC,entity,1,assigned,smooth
-snak,sanek,CVCVC,entity,1,assigned,snakes
-snor,zinar,CVCVC,entity,1,assigned,snores
-snowy,carog,CVCVC,entity,1,assigned,snowy
-snug,sunag,CVCVC,entity,1,assigned,snugly
-soak,sokol,CVCVC,entity,1,assigned,soaked
-sock,sikal,CVCVC,entity,1,assigned,socks
-solution,lon,CVC,entity,1,pin,solutions
-sooth,sakas,CVCVC,entity,1,assigned,soothing
-source,sok,CVC,entity,1,pin,source
+sequence,sen,CVC,entity,1,pin,sequence
+seven,heq,CVC,bare,1,pin,seven
+shady,xets,CVCC,entity,1,assigned,shady
+shall,clot,CCVC,entity,1,assigned,shall
+shed,glam,CCVC,entity,1,assigned,shed
+shift,kotx,CVCC,entity,1,assigned,shifting
+shiny,slig,CCVC,feature,1,assigned,shiny
+shirt,cund,CVCC,entity,1,assigned,shirt
+shiver,golv,CVCC,entity,1,assigned,shivered
+sho,prez,CCVC,entity,1,assigned,shoes
+shop,kusp,CVCC,action,1,assigned,shopping
+shoulder,vidj,CVCC,entity,1,assigned,shoulder
+silver,var,CVC,feature,1,pin,silver
+single,znog,CCVC,entity,1,assigned,single
+sister,sost,CVCC,entity,1,assigned,sister
+situation,stut,CCVC,entity,1,assigned,situation
+sketch,sked,CCVC,entity,1,assigned,sketches
+skip,skap,CCVC,entity,1,assigned,skipped
+sleepy,slop,CCVC,entity,1,assigned,sleepy
+slender,frov,CCVC,entity,1,assigned,slender
+slide,slid,CCVC,entity,1,assigned,slide
+slight,zlit,CCVC,entity,1,assigned,slightly
+slop,zlap,CCVC,entity,1,assigned,slopes
+slower,zlar,CCVC,entity,1,assigned,slower
+smooth,smok,CCVC,entity,1,assigned,smooth
+snak,snok,CCVC,entity,1,assigned,snakes
+snor,lugz,CVCC,entity,1,assigned,snores
+snowy,pumb,CVCC,entity,1,assigned,snowy
+snug,znug,CCVC,entity,1,assigned,snugly
+soak,soks,CVCC,entity,1,assigned,soaked
+sock,saks,CVCC,entity,1,assigned,socks
+solution,lot,CVC,entity,1,pin,solutions
+sooth,siks,CVCC,entity,1,assigned,soothing
+source,kos,CVC,entity,1,pin,source
 south,lut,CVC,entity,1,pin,south
-space,sac,CVC,entity,1,pin,space
-sparkle,halam,CVCVC,entity,1,assigned,sparkle
-specimen,xanoc,CVCVC,entity,1,assigned,specimen
-speck,sepak,CVCVC,entity,1,assigned,speck
-spine,sipen,CVCVC,entity,1,assigned,spine
-spiral,resic,CVCVC,entity,1,assigned,spiral
-spot,sapat,CVCVC,entity,1,assigned,spots
-spread,ziwab,CVCVC,entity,1,assigned,spread
-sprinkle,ganup,CVCVC,entity,1,assigned,sprinkle
-squeak,Cemoz,CVCVC,entity,1,assigned,squeaking
-squirrel,kanut,CVCVC,entity,1,assigned,squirrels
-stare,wikox,CVCVC,entity,1,assigned,stare
-step,teg,CVC,entity,1,pin,step
-stick,sitak,CVCVC,entity,1,assigned,stick
-stir,fizen,CVCVC,entity,1,assigned,stir
-stray,yines,CVCVC,entity,1,assigned,strayed
+space,pes,CVC,entity,1,pin,space
+sparkle,klos,CCVC,entity,1,assigned,sparkle
+specimen,saps,CVCC,entity,1,assigned,specimen
+speck,spak,CCVC,entity,1,assigned,speck
+spine,joks,CVCC,entity,1,assigned,spine
+spiral,nims,CVCC,entity,1,assigned,spiral
+spot,spad,CCVC,entity,1,assigned,spots
+spread,hugz,CVCC,entity,1,assigned,spread
+sprinkle,zdup,CCVC,entity,1,assigned,sprinkle
+squeak,ridj,CVCC,entity,1,assigned,squeaking
+squirrel,bins,CVCC,entity,1,assigned,squirrels
+stare,trid,CCVC,entity,1,assigned,stare
+step,tep,CVC,entity,1,pin,step
+stick,stig,CCVC,entity,1,assigned,stick
+stir,farp,CVCC,entity,1,assigned,stir
+stray,crop,CCVC,entity,1,assigned,strayed
 strength,gruk,CCVC,entity,1,pin,strength
-stretch,sinaC,CVCVC,entity,1,assigned,stretch
-strong,dux,CVC,feature,1,assigned,strong
-stuff,sataf,CVCVC,entity,1,assigned,stuff
-subdivid,sabad,CVCVC,entity,1,assigned,subdividing
-success,nimeC,CVCVC,entity,1,assigned,success
-suck,jimad,CVCVC,entity,1,assigned,suck
-sugar,punoc,CVCVC,entity,1,assigned,sugar
-sundown,zaned,CVCVC,entity,1,assigned,sundown
-support,rumes,CVCVC,entity,1,assigned,support
-sure,sarul,CVCVC,entity,1,assigned,sure
-surface,ruk,CVC,entity,1,pin,surface
-swum,sawam,CVCVC,entity,1,assigned,swum
-tail,hax,CVC,entity,1,assigned,tail
-talkative,zunik,CVCVC,entity,1,assigned,talkative
-tantaliz,goliz,CVCVC,entity,1,assigned,tantalized
-task,Coraq,CVCVC,entity,1,assigned,task
-taste,korix,CVCVC,entity,1,assigned,taste
-team,tomul,CVCVC,entity,1,assigned,team
-temperature,weyid,CVCVC,entity,1,assigned,temperature
-ten,vok,CVC,bare,1,pin,ten
-tent,fomoz,CVCVC,entity,1,assigned,tent
-thankful,genak,CVCVC,entity,1,assigned,thankfully
-thick,bonoc,CVCVC,feature,1,assigned,thick
-though,zex,CVC,bare,1,assigned,however
-thought,yanub,CVCVC,entity,1,assigned,thoughts
-throne,januv,CVCVC,entity,1,assigned,throne
-tiny,tonol,CVCVC,feature,1,assigned,tiny
-tooth,talit,CVCVC,entity,1,assigned,teeth
-tos,tasal,CVCVC,entity,1,assigned,tossed
-town,lamis,CVCVC,entity,1,assigned,town
-tranquil,toron,CVCVC,entity,1,assigned,tranquil
-travers,venul,CVCVC,entity,1,assigned,traversing
-treasure,cemax,CVCVC,entity,1,assigned,treasure
-treat,tarut,CVCVC,entity,1,assigned,treat
-trek,hanon,CVCVC,entity,1,assigned,trek
-trickle,mizem,CVCVC,entity,1,assigned,trickle
-tril,xinuf,CVCVC,entity,1,assigned,trilling
-trip,tarab,CVCVC,entity,1,assigned,trip
-tru,toren,CVCVC,entity,1,assigned,truly
-truth,penaq,CVCVC,entity,1,assigned,truthful
-tube,tubal,CVCVC,entity,1,assigned,tube
-twelve,xod,CVC,entity,1,pin,twelve
-twice,tiwes,CVCVC,entity,1,assigned,twice
-twig,tiwag,CVCVC,entity,1,assigned,twigs
-twinkl,tiwan,CVCVC,entity,1,assigned,twinkles
+stretch,greC,CCVC,entity,1,assigned,stretch
+strong,jem,CVC,feature,1,assigned,strong
+stuff,staf,CCVC,entity,1,assigned,stuff
+subdivid,sabd,CVCC,entity,1,assigned,subdividing
+success,suks,CVCC,entity,1,assigned,success
+suck,skul,CCVC,entity,1,assigned,suck
+sugar,kigd,CVCC,entity,1,assigned,sugar
+sundown,sund,CVCC,entity,1,assigned,sundown
+support,citx,CVCC,entity,1,assigned,support
+sure,bles,CCVC,entity,1,assigned,sure
+surface,suk,CVC,entity,1,pin,surface
+swum,zest,CVCC,entity,1,assigned,swum
+tail,Cip,CVC,entity,1,assigned,tail
+talkative,talg,CVCC,entity,1,assigned,talkative
+tantaliz,tant,CVCC,entity,1,assigned,tantalized
+task,tisk,CVCC,entity,1,assigned,task
+taste,vrex,CCVC,entity,1,assigned,taste
+team,tems,CVCC,entity,1,assigned,team
+temperature,demp,CVCC,entity,1,assigned,temperature
+ten,vop,CVC,bare,1,pin,ten
+tent,tent,CVCC,entity,1,assigned,tent
+thankful,legz,CVCC,entity,1,assigned,thankfully
+thick,skin,CCVC,feature,1,assigned,thick
+though,civ,CVC,bare,1,assigned,however
+thought,pegz,CVCC,entity,1,assigned,thoughts
+throne,krin,CCVC,entity,1,assigned,throne
+tiny,tins,CVCC,feature,1,assigned,tiny
+tooth,kroj,CCVC,entity,1,assigned,teeth
+tos,xuns,CVCC,entity,1,assigned,tossed
+town,tens,CVCC,entity,1,assigned,town
+tranquil,trin,CCVC,entity,1,assigned,tranquil
+travers,trev,CCVC,entity,1,assigned,traversing
+treasure,tres,CCVC,entity,1,assigned,treasure
+treat,tret,CCVC,entity,1,assigned,treat
+trek,trik,CCVC,entity,1,assigned,trek
+trickle,trok,CCVC,entity,1,assigned,trickle
+tril,meft,CVCC,entity,1,assigned,trilling
+trip,trab,CCVC,entity,1,assigned,trip
+tru,trun,CCVC,entity,1,assigned,truly
+truth,trug,CCVC,entity,1,assigned,truthful
+tube,djet,CCVC,entity,1,assigned,tube
+twelve,xos,CVC,entity,1,pin,twelve
+twice,hedj,CVCC,entity,1,assigned,twice
+twig,zmug,CCVC,entity,1,assigned,twigs
+twinkl,yadj,CVCC,entity,1,assigned,twinkles
 type,tap,CVC,entity,1,pin,type
-uncle,rinuf,CVCVC,entity,1,assigned,uncle
-underbrush,zinef,CVCVC,entity,1,assigned,underbrush
-unfold,nafal,CVCVC,entity,1,assigned,unfolding
-unhealthy,gisac,CVCVC,entity,1,assigned,unhealthy
-unknown,nikan,CVCVC,entity,1,assigned,unknown
-unless,Cimax,CVCVC,entity,1,assigned,unless
-unravel,narav,CVCVC,entity,1,assigned,unravelled
-unseen,nusen,CVCVC,entity,1,assigned,unseen
-unstable,nasat,CVCVC,entity,1,assigned,unstable
-upside,pusid,CVCVC,entity,1,assigned,upside
-vast,vasat,CVCVC,feature,1,assigned,vastness
-wad,wedal,CVCVC,entity,1,assigned,waded
-wag,wigal,CVCVC,entity,1,assigned,wags
-wak,wekar,CVCVC,entity,1,assigned,wakes
-wall,wolan,CVCVC,entity,1,assigned,walls
-wavy,kimal,CVCVC,entity,1,assigned,wavy
-we've,lumex,CVCVC,entity,1,assigned,we've
-weaker,vumox,CVCVC,entity,1,assigned,weaker
-wear,woren,CVCVC,entity,1,assigned,wearing
-weav,dolob,CVCVC,entity,1,assigned,weaves
-weed,wodon,CVCVC,entity,1,assigned,weeds
-weep,wepal,CVCVC,entity,1,assigned,weep
-weird,worit,CVCVC,entity,1,assigned,weird
+uncle,dant,CVCC,entity,1,assigned,uncle
+underbrush,plit,CCVC,entity,1,assigned,underbrush
+unfold,vops,CVCC,entity,1,assigned,unfolding
+unhealthy,wogz,CVCC,entity,1,assigned,unhealthy
+unknown,tagz,CVCC,entity,1,assigned,unknown
+unless,nalz,CVCC,entity,1,assigned,unless
+unravel,snev,CCVC,entity,1,assigned,unravelled
+unseen,Cand,CVCC,entity,1,assigned,unseen
+unstable,salz,CVCC,entity,1,assigned,unstable
+upside,zboc,CCVC,entity,1,assigned,upside
+vast,vust,CVCC,feature,1,assigned,vastness
+wad,romb,CVCC,entity,1,assigned,waded
+wag,balb,CVCC,entity,1,assigned,wags
+wak,woks,CVCC,entity,1,assigned,wakes
+wall,xiks,CVCC,entity,1,assigned,walls
+wavy,clas,CCVC,entity,1,assigned,wavy
+we've,glen,CCVC,entity,1,assigned,we've
+weaker,kalz,CVCC,entity,1,assigned,weaker
+wear,skoz,CCVC,entity,1,assigned,wearing
+weav,cord,CVCC,entity,1,assigned,weaves
+weed,gosp,CVCC,entity,1,assigned,weeds
+weep,wips,CVCC,entity,1,assigned,weep
+weird,priv,CCVC,entity,1,assigned,weird
 west,web,CVC,entity,1,pin,west
-what'd,witad,CVCVC,entity,1,assigned,what'd
-whenever,wenav,CVCVC,entity,1,assigned,whenever
-whole,wol,CVC,entity,1,pin,whole
-wide,xar,CVC,feature,1,assigned,wide
-wiggle,corag,CVCVC,entity,1,assigned,wiggle
-wildflower,horob,CVCVC,entity,1,assigned,wildflowers
+what'd,zudz,CVCC,entity,1,assigned,what'd
+whenever,frev,CCVC,entity,1,assigned,whenever
+whole,hol,CVC,entity,1,pin,whole
+wide,yis,CVC,feature,1,assigned,wide
+wiggle,lorg,CVCC,entity,1,assigned,wiggle
+wildflower,poft,CVCC,entity,1,assigned,wildflowers
 wisdom,jak,CVC,entity,1,pin,wisdom
-wise,wisal,CVCVC,entity,1,assigned,wisely
-wit,wetol,CVCVC,entity,1,assigned,witness
-witty,wetar,CVCVC,entity,1,assigned,witty
-wooden,moniq,CVCVC,entity,1,assigned,wooden
-wool,xonuv,CVCVC,entity,1,assigned,woolly
-wow,jeg,CVC,bare,1,assigned,wow
-writ,porem,CVCVC,entity,1,assigned,writes
+wise,klaf,CCVC,entity,1,assigned,wisely
+wit,jalp,CVCC,entity,1,assigned,witness
+witty,hork,CVCC,entity,1,assigned,witty
+wooden,zdax,CCVC,entity,1,assigned,wooden
+wool,yutx,CVCC,entity,1,assigned,woolly
+wow,rab,CVC,bare,1,assigned,wow
+writ,dugz,CVCC,entity,1,assigned,writes
 wrong,raq,CVC,entity,1,pin,wrong
-yes,yus,CVC,bare,1,assigned,yes
-you've,yaval,CVCVC,entity,1,assigned,you've
-zip,zipal,CVCVC,entity,1,assigned,zipped
+yes,yas,CVC,bare,1,pin,yes
+you've,plub,CCVC,entity,1,assigned,you've
+zip,zeps,CVCC,entity,1,assigned,zipped

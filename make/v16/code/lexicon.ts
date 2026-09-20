@@ -33,7 +33,8 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { SHAPES, breaker, every } from './sound'
+import { SHAPES, every } from './sound'
+import { seamOf } from './seam'
 import { normalize } from './word'
 
 const here = dirname(fileURLToPath(import.meta.url))
@@ -732,15 +733,25 @@ function spread(list: Array<string>, width = 1) {
  * got a two syllable form while rarer ones held a `CVC`.
  */
 /**
- * TWO POOLS, one per syllable count.
+ * TWO POOLS, AND THE LINE BETWEEN THEM MOVED. 2026-09-19.
  *
- * The abstract core draws from `CVC`, `CVCC` and `CCVC`; everything
- * else draws from `CVCVC`. Within a pool the order is still the onset
- * round robin, so the short words do not all start with `m`.
+ * It used to be one pool per SYLLABLE: the abstract core took `CVC`,
+ * `CVCC` and `CCVC`, and everything else took `CVCVC`. Dropping the
+ * cluster piles took the one syllable ceiling to 4,605, past the whole
+ * 4,096, so `CVCVC` has no quota any more and that pool is empty.
+ *
+ * The distinction survives as LENGTH instead of syllables:
+ *
+ * ```text
+ * short   CVC          three letters, the abstract core
+ * long    CVCC, CCVC   four letters, everything else
+ * ```
+ *
+ * It says the same thing it always said, that the most abstract and
+ * most said words get the fewest sounds, and it matches the two lists
+ * in `word-short.csv` and `word-long.csv` exactly.
  */
-const short = byShape
-  .slice(0, 3)
-  .flatMap(list => spread(list.filter(one => !taken.has(one))))
+const short = spread(byShape[0].filter(one => !taken.has(one)))
 /**
  * THE LONG POOL IS WOVEN, not bucketed.
  *
@@ -771,7 +782,9 @@ function weave(list: Array<string>) {
   return out
 }
 
-const long = weave(byShape[3].filter(one => !taken.has(one)))
+const long = weave(
+  [...byShape[1], ...byShape[2]].filter(one => !taken.has(one)),
+)
 
 /**
  * ECHO: a form that SOUNDS like the English word.
@@ -1108,11 +1121,28 @@ const shapeOf = (one: string) =>
   one.length === 3 ? 'CVC' : one.length === 5 ? 'CVCVC'
     : 'ieaou'.includes(one[1]) ? 'CVCC' : 'CCVC'
 
-// ─── the breaker, for compounds ────────────────────────
+// ─── the seam rule, for compounds ──────────────────────
+
+/**
+ * THE WHOLE SEAM RULE, AND THE LEFT ROOT RATHER THAN THE STRING SO FAR.
+ *
+ * Two bugs lived in one line here. It called `breaker`, which answers
+ * only whether a seam can be HEARD, so every compound this file wrote
+ * was missing the mark that says where a seam IS: `mim + brim` came out
+ * `mimbrim`, which also reads as `mimb + rim`.
+ *
+ * And it passed the accumulated string as the left side. `breaker`
+ * reads only the last letter so it could not tell, but the cut clause
+ * reads the left ROOT in full, and handing it three roots joined
+ * together would have it ask its question about the wrong word.
+ */
+const SEAM = seamOf(byShape.flat())
 
 function join(parts: Array<string>) {
   let out = parts[0]
-  for (const next of parts.slice(1)) out += breaker(out, next) + next
+  for (let at = 1; at < parts.length; at++) {
+    out += SEAM.mark(parts[at - 1], parts[at]) + parts[at]
+  }
   return out
 }
 

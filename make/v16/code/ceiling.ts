@@ -34,7 +34,7 @@
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { writeList } from './order'
-import { NEAR_VOWEL, Shape, VOWEL_AT, every, nearAt } from './sound'
+import { Shape, VOWEL_AT, every, nearAt, nearVowelAt } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../../../base/v16')
@@ -56,7 +56,7 @@ function ceiling(shape: Shape) {
       // What is near a sound depends on the SHAPE and the POSITION,
       // never on the sound alone. See `nearAt` in `sound.ts`.
       const swaps = isVowel.has(p)
-        ? (NEAR_VOWEL.get(word[p]) ?? [])
+        ? nearVowelAt(word[p], shape)
         : nearAt(word[p], p, shape)
       for (const s of swaps) {
         const other = word.slice(0, p) + s + word.slice(p + 1)

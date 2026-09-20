@@ -194,9 +194,30 @@ writeFileSync(
 )
 process.stdout.write(`\n  wrote ${TERM}/color.csv\n`)
 
-// And back into pin.csv, for the reason given in roster.ts.
-writeRoster(
-  `${TERM}/pin.csv`,
-  new Map(chosen.map(([name, word]) => [name, word])),
-  'the colours',
-)
+/**
+ * THE COLOURS ARE HELD, NOT RECOMPUTED. `--commit` is what moves them.
+ *
+ * Recomputing on every build made them yield to every new word, and the
+ * cost was invisible because nothing complained. Across one day they
+ * lost five echoes: red `rid`, copper `kim`, white `wit`, silver `sal`,
+ * gray `gap`, each to an unrelated pin that happened to land one step
+ * away. Committing 189 core words before this ran finished the job and
+ * left red on `mim`, which echoes nothing at all.
+ *
+ * The direction has to be the other way round. The colours sit near the
+ * top of `pin.csv`, so `v16:final` places them BEFORE almost everything
+ * else and a later word is the one that moves. That only works if this
+ * file stops volunteering them, so it now reports by default and writes
+ * only when asked.
+ */
+if (process.argv.includes('--commit')) {
+  writeRoster(
+    `${TERM}/pin.csv`,
+    new Map(chosen.map(([name, word]) => [name, word])),
+    'the colours',
+  )
+} else {
+  process.stdout.write(
+    '\n  the colours are HELD. pass --commit to rewrite them in pin.csv\n',
+  )
+}

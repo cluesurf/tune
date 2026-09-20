@@ -28,13 +28,14 @@ import { readFileSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { writeList } from './order'
+import { seamOf } from './seam'
 import {
   FRICATIVE,
-  NEAR_VOWEL,
   Shape,
   VOWEL_AT,
   every,
   nearAt,
+  nearVowelAt,
   scores,
 } from './sound'
 
@@ -65,7 +66,7 @@ function neighbours(words: Array<string>, shape: Shape) {
     const word = words[i]
     for (let p = 0; p < word.length; p++) {
       const swaps = isVowel.has(p)
-        ? (NEAR_VOWEL.get(word[p]) ?? [])
+        ? nearVowelAt(word[p], shape)
         : nearAt(word[p], p, shape)
       for (const s of swaps) {
         const j = at.get(word.slice(0, p) + s + word.slice(p + 1))
@@ -97,16 +98,56 @@ const OUT = resolve(here, '../../../base/v16')
 const PIN = resolve(here, '../../../base/v16/term/pin.csv')
 
 /**
- * The quota per shape: **`5:5:4:18`**, the ratio that maximises one
- * syllable words.
+ * The quota per shape: **`8:14:10:0`**.
  *
  * ```text
- * CVC 640   CVCC 640   CCVC 512   CVCVC 2304
+ * CVC 1024   CVCC 1792   CCVC 1280   CVCVC 0
  * ```
  *
- * 1,792 one syllable roots, 44% of the language.
+ * **EVERY ROOT IS ONE SYLLABLE.** There are no two syllable roots at
+ * all any more, which is what dropping the piles bought: the three
+ * short shapes hold 4,570 usable forms against a budget of 4,096.
  *
- * ## It did not fit for two days, and three rules are why
+ * ```text
+ *                     CVC   CVCC   CCVC   usable
+ * piles kept         1122   1052    876    3,050   short by 1,046
+ * piles dropped      1122   1947   1501    4,570   fits, 474 spare
+ * ```
+ *
+ * `CVC` is the binding one at 1,122, so it takes 8 units of 128 and
+ * cannot take 9. The other 24 units go 14 and 10, which leaves `CVCC`
+ * at 92% of its pool and `CCVC` at 85%. Handing `CVCC` a unit more
+ * would push `CCVC` to 94% and leave almost nothing to choose with.
+ *
+ * ## The older ratios, and what they were for
+ *
+ * ## What paid for it
+ *
+ * The pools were 809 / 716 / 528 when `5:5:4:18` was chosen, and `CCVC`
+ * was taking 512 of the 528 it had. Loosening the one syllable table
+ * took them to 1,140 / 1,052 / 887: only the four fricative voicing
+ * pairs stay near at the onset, and all five vowels are distinct.
+ *
+ * ```text
+ * ratio        CVC   CVCC   CCVC   1 syllable   breakers
+ * 5:5:4:18     640    640    512        1,792      6.93%
+ * 7:6:5:14     896    768    640        2,304      8.40%
+ * 8:7:6:11    1024    896    768        2,688      8.72%
+ * 8:8:6:10    1024   1024    768        2,816      8.63%
+ * ```
+ *
+ * **It is not free.** Seams needing a breaker go from 6.9% to 8.7%,
+ * because short roots meet at their edges more often, and the mean
+ * distance inside a shape falls from 3.81 to 3.52 as the selection
+ * reaches deeper into each pool. The floor is 2 either way.
+ *
+ * `8:8:6:10` holds 128 more short roots and was not taken: it spends
+ * the whole of `CVCC` and leaves `CVCVC` at 1,280, which is thin for
+ * every concrete word the language still has to name.
+ *
+ * ## The history, before any of that
+ *
+ * It did not fit at all for two days, and three rules are why
  *
  * ```text
  *                              CVC   CVCC   CCVC    one syllable
@@ -130,10 +171,10 @@ const PIN = resolve(here, '../../../base/v16/term/pin.csv')
  * `Q_CVC=` and friends override.
  */
 const QUOTA: Record<string, number> = {
-  CVC: Number(process.env.Q_CVC ?? 640),
-  CVCC: Number(process.env.Q_CVCC ?? 640),
-  CCVC: Number(process.env.Q_CCVC ?? 512),
-  CVCVC: Number(process.env.Q_CVCVC ?? 2304),
+  CVC: Number(process.env.Q_CVC ?? 1024),
+  CVCC: Number(process.env.Q_CVCC ?? 1792),
+  CCVC: Number(process.env.Q_CCVC ?? 1280),
+  CVCVC: Number(process.env.Q_CVCVC ?? 0),
 }
 
 /**
@@ -336,6 +377,30 @@ for (const shape of SHAPES) {
   const mine = kept.filter(([, f]) => shapeOf(f) === shape).map(([, f]) => f)
   const legal = new Set(all)
   const missing = mine.filter(one => !legal.has(one))
+
+  /**
+   * A QUOTA OF ZERO MEANS THE LANGUAGE DOES NOT HAVE THAT SHAPE.
+   *
+   * The quota loop already stops at zero, and that was not enough: pins
+   * and wishes are placed BEFORE it, so 460 `CVCVC` words shipped in a
+   * build whose quota for them was 0, and the total came to 4,556
+   * rather than 4,096. `wish.csv` is written by the PREVIOUS run of
+   * `v16:lexicon`, so it still held 761 five letter wishes from the era
+   * when the shape existed, and 459 of them fitted.
+   *
+   * The file is written EMPTY rather than left alone, because a stale
+   * list on disk reads as a fresh result.
+   */
+  if (!QUOTA[shape]) {
+    built.set(shape, [])
+    process.stdout.write(
+      `  ${shape.padEnd(8)}${String(mine.length).padStart(6)}` +
+        `${'0'.padStart(8)}${'0'.padStart(8)}${'—'.padStart(11)}` +
+        `   shape dropped` +
+        `${mine.length ? `, ${mine.length} pins need a new form: ${mine.join(' ')}` : ''}\n`,
+    )
+    continue
+  }
 
   const { at, edge } = neighbours(all, shape)
   const inSet = new Uint8Array(all.length)
@@ -640,6 +705,27 @@ process.stdout.write(
     `\n  seams needing an l   ${(((same + sib) / all) * 100).toFixed(2)}%` +
       `   (same sound ${((same / all) * 100).toFixed(2)}%,` +
       ` two sibilants ${((sib / all) * 100).toFixed(2)}%)\n`,
+  )
+
+  /**
+   * AND THE WHOLE RULE, WHICH IS A BIGGER NUMBER THAN THE SOUND HALF.
+   *
+   * The line above counts only seams that cannot be HEARD, which is
+   * what the ordering above optimises for and all it can optimise for.
+   * `seam.ts` also marks a seam that cannot be FOUND, and printing only
+   * the sound half here read as the language's mark rate for a while
+   * when it was four fifths of it.
+   */
+  const seam = seamOf(words)
+  const count = { sound: 0, cluster: 0, cut: 0, '': 0 }
+  for (const a of words) {
+    for (const b of words) count[seam.why(a, b)]++
+  }
+  process.stdout.write(
+    `  marks in all         ${(((all - count['']) / all) * 100).toFixed(2)}%` +
+      `   (sound ${((count.sound / all) * 100).toFixed(2)}%,` +
+      ` cluster ${((count.cluster / all) * 100).toFixed(2)}%,` +
+      ` cut ${((count.cut / all) * 100).toFixed(2)}%)\n`,
   )
 }
 

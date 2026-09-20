@@ -6,109 +6,109 @@ translation. Endings: -a entity, -i action, -u feature,
 A <word> in angle brackets had no form in the lexicon.
 -->
 
-# rabata
+# rabda
 
-"muq..." mepa sinaCa, potreCi mepa haqmisa. mepa vojmisa biq stola xuslhiq tokomsuta
-nime. muq... mepa homa flani romaja renofa kidlyam. tiv winti nale weka tede, gif
-kab haqmisa doripa dote frale doj med litala dofmopu! muq!! dan borona hav med
-nusalhiqa miseda semala hive tika. tika biq tiza nale vim worka! xapmopa mepa kid.
-gin lax xiq biq wolara, doj weti gin visi.
+"muq..." musta greCa, ponreCi musta haqmisa. musta riCmisa miq zota xusmen zmotsuta
+nute. muq... musta homa jiki fitsa cleqa kimlyam. pim weni nime weka tede, lid
+Cat haqmisa tropa dote vore sic med wibza lenmoru! muq!! dan bruna hav med
+vontmena norfa smala dije hina. hina miq kala nime tim goqa! xapmora musta kim.
+gim con wul miq wolsa, sic weti gim visi.
 
-hapa hapa hapa, tome dage mepa borona. maregreCa frame dan garona, mepa hinada vojmisa
-rumesa mepa pepalwareCa haqmisa. rimi rante! visi dan betala. wetolsata dan
-gixa nafalwareCa. dan janopmisa dage dan sana hixlhiq zimoci mepa like med kisala.
-saransuta jipe gumu gin gis, mimu gin xaz, mepa flani dan yul cimezreCa
-wime lax dage bika. sinafa. sinafa. "witalmisa kid?" porutreCa neve lax dusmisa, mepa
-fareza. yipmisa kepalsuti kasara gin sitata. balp. med vija dage rexa rekitreCi nime
-dan darita. jeg, wid giju.
+hapa hapa hapa, tine dige musta bruna. morglreCa zige dan grana, musta honta riCmisa
+citxa musta zdocreCa haqmisa. lugi wibe! visi dan batsa. jalpsata dan
+gixa vopsreCa. dan duftmisa dige dan sana witmen metxi musta like med glefa.
+talvlsuta kize gunu gim pin, redu gim bag, musta jiki dan yul gluxreCa
+wime con dige wola. snifa. snifa. "wetsmisa kim?" pardlreCa neve con kiCmisa, musta
+vreza. nifmisa kugzlsuti zbida gim stida. sab. med vija dige rexa nitsreCi nute
+dan darda. rab, Cim gulu.
 
-med saft bareza galanmisa mepa frona. bum, biq wenadvuli nale biq volega. nale biq
-golizlsuta jipe dan ramala dage wolid sagala; nale biq jenovlsuta managa dan talarzij
-pinalmisa. zinofa! med buzbarala. wec mop jid med winti.
+med zof breza glanmisa musta zixa. bum, miq wentfali nime miq coksa. nime miq
+tantsuta kize dan ramsa dige glok Carba; nime miq bobdsuta peska dan talsmiz
+pinsmisa. pluka! med bulbrala. wec mor gin med weni.
 
-has, mepa farina! kefa dina biq, dina buda! semala dan xiz. biq like dan
-nebara xonopa gin fogi med ganada. flani dan ruCa, flani kivlsuta. flani
-nisapsuta. dan nifara gin xita kab saranmisa bika biq fike tika
-taflzij.
+hix, musta vrina! kema yara miq, yara buda! smala dan mez. miq like dan
+polta hoska gim vogi med kunda. jiki dan rija, jiki kogsuta. jiki
+nispsuta. dan juspa gim xita Cat talvmisa wola miq kide hina
+tavmiz.
 
-wudvuli like med hanata, poti mansuta like med betalvula xaz flora, rodola
-like dan wonta, bika begi bika hanona. folorlreCi dan gitega dage dan woletsata,
-fesatreCa neve tika dixa. konmisa xiq sinala dajana nime Cine zipa visi fitala.
+wutfali like med henta, poni mansuta like med batslfala bag fula, luska
+like dan wuna, wola begi wola trika. florlreCi dan djema dige dan brensata,
+fistreCa neve hina diqa. kormisa wul snala djona nute sive Cefa visi fotsa.
 
-xoqa biq tiza frale worka. kimlmisa nale biq dac. rimefmisa nale bama. brabmisa nale
-lisuta, lonmisa nale resica goke rante, like dan tenalmisa bika wid
-genarhiqa hav digasa. mop xiz biq digasa. gemormisa nakavlsuta. cenmisa nibalsuta
-panala, halimlmisa Conarsuta gin zewama gin benava polapsuta. faje lax,
-kid poCa nidi smal kamapa. gif dan mana malada dan wixa, gin mepa
-gus hav med faCa sejlvula homa frale dan cima. sinafa sinafa.
+xoma miq kala vore goqa. kinmisa nime miq don. wispmisa nime bama. brabmisa nime
+lista, lotmisa nime nimsa goke wibe, like dan yansmisa wola Cim
+bubdmena hav zleta. mor mez miq zleta. gemsmisa deftsuta. rutmisa bolbsuta
+pansa, Calzmisa romsuta gim safta gim griza kospsuta. fape con,
+kim pora niCi lin kimpa. lid dan mana toqga dan ruga, gim musta
+gas hav med safa reqfala homa vore dan fida. snifa snifa.
 
-likorlreCa bika yipmisa gin rabalwareCa bika dalormisa, wolara-henaqsuta rabatmisa begi bika
-rigalsuta dajara. like masata yoninmisa ralara nime dan danala. Ceg Ceg Ceg, bika
-digali vave. bika xiz fogi med pada senita sici fupe dan tala, pix. nale visi
-dan Ciqmisu gin nosi witalmisa hadala nime dan wigeja.
+loksreCa wola nifmisa gim stekreCa wola vugdmisa, wolsa-gromsuta rabdmisa begi wola
+tarksuta djora. like gudja deqgmisa ralsa nute dan dinsa. nix nix nix, wola
+promi nibe. wola mez vogi med tiva sneta sopi jife dan taqa, mip. nime visi
+dan zibmisu gim nomi wetsmisa begda nute dan darka.
 
-bum. med vof stona. med sepaka dage dan nusena. med xanoca dage dan valeta dage
-puneva.
+bum. med hiv mifa. med spaka dige dan Canda. med sapsa dige dan fluta dige
+krata.
 
-bamala. witada dina fani?! smal musa karepreCa tome frame dan karevmisa dage kid
-raka. nisala.
+bamsa. zudza yara fani?! lin guma krepreCa tine zige dan krovmisa dige kim
+raka. kloqa.
 
-xoqa, maqa tika tome. wec vim bika vim naka? bika salka dan manuma braba bika
-fesreCa nime venulwareCa dote kid rabata holora.
+xoma, mapa hina tine. wec tim wola tim gena? wola salka dan minsa braba wola
+fesreCa nute trevreCa dote kim rabda djoqa.
 
-dan sana biq sinreCa nime dan haraza. dan bareza biq stola gij.
-graslhapmisa gin tenlyomipmisa falika hive. dan galuja stola fiqi dan
-setara. luqa biq bekomreCi viseba, gin yetala, bika hav tiv desara nale nifi bika
-nedavmisa. wec mizetmisa yimuna? wec mop xiz bika fani gin larena nale
-manika kid maqa gin yuza tika nale dan woralmisa tunava?
+dan sana miq sekreCa nute dan truva. dan breza miq zota gul.
+garhaplmisa gim toklklutmisa flika dije. dan nobda zota fimi dan
+stara. luna miq nofsreCi vispa, gim drola, wola hav pim bluba nime neqi wola
+yorfmisa. wec luntmisa zniva? wec mor mez wola fani gim catxa nime
+kinsa kim mapa gim yuza hina nime dan zbokmisa glixa?
 
-rexa. bika xiz masata dan rexa. nosi tuj tika savi, gin tuj nale briqi tika
-goke win kimlmisa biq nebe. bika xiz fani dan pacmisa nime dan Ciqu gin
-cima, nime dan pagu gin smulu, nime dan paropa gin somoka, zeb tika doj
-glikmisa. dina nosi patara Cike mepa wec kid flani like. bika biq masatmisa,
-doj like lax kimlmisa yig retaki nime dan nikana gin poti nale dan jaka
-dage dan ledarmisa. nasala bika figara tika tome, bika xiq biq balara nale muvi mantmisa.
+rexa. wola mez gudja dan rexa. nomi niq hina sami, gim niq nime briqi hina
+goke win kinmisa miq nene. wola mez fani dan tanmisa nute dan zibu gim
+fida, nute dan bigu gim xibu, nute dan pubza gim smoka, xiz hina sic
+glikmisa. yara nomi jipsa yipe musta wec kim jiki like. wola miq gudjmisa,
+sic like con kinmisa fip flimi nute dan tagza gim poni nime dan jaka
+dige dan zdipmisa. jubda wola Corka hina tine, wola wul miq blara nime muvi mantmisa.
 
-bat, frale xoqa, bika biq heba. neve tiza. sitalwareCi neve bika larita sapatmisa. glin,
-fakaslsuta, Careqsuta, gin kapaba. sinafa. sinafa. mepa manata neve med wegajmopa dage
-wodonmisa. wec biq dina tede nale naka? mepa begi dipalwareCa mepa dalormisa nime dan risa nale
-digali nime tika, gisefreCa tika kid tala gin kab. mepa fogi mepa tiza, tasatsuta
-jipe mepa migana, rimreCi gare mepa haqmisa nale mepa kega gin sadanmisa, yetala
-visreCi wime mepa vasa. dina nosi tika win dina visi tika, dina nosi tika win dina
-flani tika, dina nosi tika win dina vim tika. doj wikasa tika jid mepa hav med litala
-vija mop tiza nale torula kid med lasta kima. bat lorubmisa, dan sana hav stina.
+bat, vore xoma, wola miq hema. neve kala. setsreCi neve wola smopa spadmisa. glin,
+fokslsuta, zatslsuta, gim libda. snifa. snifa. musta munta neve med skadmora dige
+gospmisa. wec miq yara tede nime gena? musta begi depsreCa musta vugdmisa nute dan risa nime
+promi nute hina, kotxreCa hina kim taqa gim Cat. musta vogi musta kala, kleksuta
+kize musta xenta, lugreCi pibe musta haqmisa nime musta kega gim trijmisa, drola
+visreCi wime musta vasa. yara nomi hina win yara visi hina, yara nomi hina win yara
+jiki hina, yara nomi hina win yara tim hina. sic wiksa hina gin musta hav med wibza
+vija mor kala nime trola kim med lasa kina. bat skalmisa, dan sana hav zeta.
 
-mepa dajara sejmisa wime dan ram xazu gin musa. dan luqa vemuxmisa wime tika
-bov cuxa fisanmisa, sabadreCa nime med tikexa gin karulmisa nuba 7. med
-ganupa dage puneva, med rologa dage hart worka, gin dan limeca biq magaka.
+musta djora reqmisa wime dan ram bagu gim guma. dan luna giskmisa wime hina
+boq cuxa drokmisa, sabdlreCa nute med kolsa gim krulmisa numa 7. med
+zdupa dige krata, med taska dige har goqa, gim dan yimsa miq cutxa.
 
-finalhiqa, mepa pepala rante dan mizeta hav naravlsuta. wepala fike dan junicmisa
-bika hav lax wid forathiqa bizlsuti. sinafa. sinafa. bika hav bizlsuti bika homa
-faCa, bizlsuti tika cisona, bika jid giC loma satasa dage tika. tika xiq kepali bika
-kazalsuta wolara. dan wolanmisa biq laraga buniva nale gif mepa coraga mepa yipmisa yim mepa
-nidi nale. gin yetala, xenuca buniva nale kavari mepa vasa like med xonuvlhiqa balena. mepa
-fogi med yis brega nime. gin med tome, nale gareta dan cima gin hici kanakmisa nale
+krismena, musta zdoca wibe dan lunta hav snevlsuta. wipsa kide dan skedmisa
+wola hav con Cim fardmena meksuti. snifa. snifa. wola hav meksuti wola homa
+safa, meksuti hina grina, wola gin naf loma stora dige hina. hina wul kugzi wola
+cidzlsuta wolsa. dan xiksmisa miq larga trexa nime lid musta lorga musta nifmisa jid musta
+niCi nime. gim drola, rabza trexa nime yibdi musta vasa like med yutxmena blena. musta
+vogi med dap ruca nute. gim med tine, nime grata dan fida gim vibi kispmisa nime
 dan yama.
 
-mepa hav boronsuta nime mepa holora. mepa homa.
+musta hav brunsuta nute musta djoqa. musta homa.
 
-mepa tokoma mepa vojmisa nime sunaghiqa, bizreCi mepa med taripa bala dage hapalsat. mepa yipmisa
-bekomi Comasa. mepa homa larada flani famala. mepa gif mepa haqjeqmisa salida
-dote, yiza tala gare. mepa zoxmisa muneqa vone. wec med venvula yama tika hav
-biq. dina pix? mepa gevi mepsefa med dalora neve mepa goke, Cine mepa yanubmisa rekiti
-dote. bika med taf tomula, gin mepa tiv weti frale konmisa nale dajana.
+musta zmota musta riCmisa nute znugmena, mekreCi musta med zluga bala dige hopslsat. musta nifmisa
+nofsi flopa. musta homa larta jiki zbusa. musta lid musta haqfeqlmisa slida
+dote, hula taqa pibe. musta zoxmisa homba vone. wec med venfala yama hina hav
+miq. yara mip? musta gevi mustsefa med vugda neve musta goke, sive musta pegzmisa nitsi
+dote. wola med tav temsa, gim musta pim weti vore kormisa nime djona.
 
-sinafa sinafa. muq... tiza frale seja. tiza nale parofa dan mana gin yumedi
-witalmisa taflzij. nimedi nime.... nimedi tome... brega nime... brega tome...
-taf cima lax. sinafa sinafa. sinafa.
+snifa snifa. muq... kala vore reqa. kala nime parfa dan mana gim skimi
+wetsmisa tavmiz. bresi nute.... bresi tine... ruca nute... ruca tine...
+tav fida con. snifa snifa. snifa.
 
-sumlmisa dage dan wonta rolora vrole dan tubala frame wec bika hav bizlsuti bika
-slepreCi saca. mepa drimi dage lax dan vof kimlmisa mepa gemi nale vim gin bizi nime
-dan naka para dage dan rola. wid losi, yetala wid faka, gin yetala kid biq wec
-kepali mepa xibreCi.
+sumlmisa dige dan wuna rolsa riqe dan djeta zige wec wola hav meksuti wola
+zulwareCi pesa. musta drimi dige con dan hiv kinmisa musta gemi nime tim gim meki nute
+dan gena para dige dan rola. Cim losi, drola Cim fada, gim drola kim miq wec
+kugzi musta higreCi.
 
-sumlmisa dage dan setara nime dan nika. med pada karikmisa.
+sumlmisa dige dan stara nute dan sina. med tiva krikmisa.
 
-mop karikmisa. kid biq dan vita.
+mor krikmisa. kim miq dan vita.
 
-mop wonta... mop woletsata yimunmisa.
+mor wuna... mor brensata znivmisa.

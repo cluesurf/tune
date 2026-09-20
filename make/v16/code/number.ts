@@ -46,6 +46,7 @@ import { writeRoster, type Roster } from './roster'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import {
+  CODA_OK,
   CONSONANTS,
   NO_CLOSE,
   NO_OPEN,
@@ -393,9 +394,6 @@ if (clash.length) {
  * thousand, and the rest run `10^3` to `10^48`.
  */
 const flip = (one: string) => (one === 'e' ? 'o' : 'e')
-const longLegal = new Set(every('CVCVC'))
-const longCodas = CONSONANTS.filter(one => !NO_CLOSE.has(one))
-const middles = CONSONANTS.filter(one => !NO_OPEN.has(one))
 
 /** Everything a multiplier has to stay clear of. */
 const against = [...standing, ...choice]
@@ -437,21 +435,41 @@ const hasEdge = (word: string) =>
  */
 const CYCLE = ['i', 'o', 'u', 'e']
 
+/**
+ * THE MULTIPLIERS ARE FOUR LETTERS NOW, NOT TWO SYLLABLES. 2026-09-19.
+ *
+ * They were `CVCVC` on purpose: two syllables against the digits' one,
+ * so a multiplier could never be heard as a digit. Dropping the
+ * cluster piles took the one syllable ceiling past the whole 4,096, so
+ * `CVCVC` has no quota any more and the seventeen had nowhere to live.
+ *
+ * **The property they were built for survives, because LENGTH still
+ * separates them.** A digit is three letters and a multiplier is four:
+ *
+ * ```text
+ * med    one          m + e, the hex frame
+ * medz   thousand     the same onset and vowel, one letter longer
+ * ```
+ *
+ * The scheme is otherwise untouched. The onset still comes from the
+ * digit that shares the multiplier, the vowel is still flipped against
+ * it, and what used to be the second vowel's cycle is now the choice
+ * of coda cluster, which does the same job of keeping neighbours apart.
+ */
+const shortLegal = new Set([...every('CVCC'), ...every('CCVC')])
+
 function powerOptions(at: number) {
   const head = ONSET[at] + flip(vowelAt(at))
-  const tail = CYCLE[at % CYCLE.length]
   const all: Array<string> = []
-  for (const mid of middles) {
-    for (const coda of longCodas) {
-      const one = head + mid + tail + coda
-      if (longLegal.has(one) && hasEdge(one)) all.push(one)
-    }
+  for (const coda of CODA_OK) {
+    const one = head + coda
+    if (shortLegal.has(one) && hasEdge(one)) all.push(one)
   }
   const clear = all.filter(one =>
     against.every(had =>
       had.length !== one.length
         ? true
-        : scores(had, one, 'CVCVC').some(s => s === 2),
+        : scores(had, one, 'CVCC').some(s => s === 2),
     ),
   )
   return clear.length ? clear : all

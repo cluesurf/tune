@@ -307,9 +307,39 @@ type Plan = { name: string; cvc: number; cvcc: number; ccvc: number; cvcvc: numb
  * two multiples rather than whatever the pools happened to allow.
  */
 const PLANS: Array<Plan> = [
+  /**
+   * THE ADOPTED ONE. Every root is ONE SYLLABLE and `CVCVC` is gone.
+   *
+   * Dropping the OPEN and CLOSE piles added 12 onsets and 23 codas and
+   * took the short pools to 1,140 / 1,947 / 1,518, which is 4,605
+   * against a 4,096 budget. So the whole language fits in one syllable
+   * with 509 spare, and the two syllable shape is not needed at all.
+   *
+   * **The piles were what made free concatenation readable**, and that
+   * is what this ratio gives up: a seam is marked by the breaker rule
+   * rather than by which sound may sit on which side. It costs a
+   * breaker at 21.27% of seams against the 19.69% the piles reached.
+   */
+  { name: '8:14:10:0', cvc: 1024, cvcc: 1792, ccvc: 1280, cvcvc: 0 },
+  { name: '8:7:6:11', cvc: 1024, cvcc: 896, ccvc: 768, cvcvc: 1408 },
   { name: '5:5:4:18', cvc: 640, cvcc: 640, ccvc: 512, cvcvc: 2304 },
   { name: '5:4:4:19', cvc: 640, cvcc: 512, ccvc: 512, cvcvc: 2432 },
   { name: '1:1:1:5', cvc: 512, cvcc: 512, ccvc: 512, cvcvc: 2560 },
+  /**
+   * WHAT THE LOOSENED ONE SYLLABLE TABLE OPENED UP.
+   *
+   * The pools were 809 / 716 / 528 when `5:5:4:18` was chosen, and
+   * `CCVC` was taking 512 of the 528 it had, which is what stopped the
+   * short shapes going further. Freeing the onset to the four fricative
+   * voicing pairs and making all five vowels distinct took the pools to
+   * 1,143 / 1,052 / 889.
+   *
+   * The budget is 4,096 and a ratio counts in 32nds, so one unit is 128
+   * words. At the new pools each shape can hold 8, 8 and 6 units, which
+   * is 2,816 one syllable words against the 1,792 in use now.
+   */
+  { name: '7:6:5:14', cvc: 896, cvcc: 768, ccvc: 640, cvcvc: 1792 },
+  { name: '8:8:6:10', cvc: 1024, cvcc: 1024, ccvc: 768, cvcvc: 1280 },
 ]
 
 process.stdout.write(

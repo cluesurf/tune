@@ -87,25 +87,62 @@ const legal: Record<Shape, Set<string>> = {
  * the form it asks for, which is the best guess available until the
  * solver has had a say.
  */
+/**
+ * A PLACED FORM IS ONLY GOOD WHILE THE ASK BEHIND IT IS UNCHANGED.
+ *
+ * `pin-placed.csv` records both the form a pin landed on and the form it
+ * asked for. When the pin file has since been given a DIFFERENT ask, the
+ * landing is stale and says nothing about where that word will be. On
+ * 2026-09-19 sequence was moved from `sek` to `sen` in the pin file and
+ * this still reported `zek` blocked by `sek`, a form nothing was going
+ * to hold any more.
+ *
+ * So the placed form wins only when the two asks agree.
+ */
 const placed = `${TERM}/pin-placed.csv`
 const readPins = (path: string) => {
-  const out = new Map<string, string>()
+  const out = new Map<string, { form: string; asked: string }>()
   if (!existsSync(path)) return out
   for (const line of readFileSync(path, 'utf-8').split('\n').slice(1).filter(Boolean)) {
     const cut = line.split(',')
     const concept = (cut[0] ?? '').trim()
     const form = (cut[1] ?? '').trim()
-    if (concept && form) out.set(concept, form)
+    if (concept && form) {
+      out.set(concept, { form, asked: (cut[2] ?? '').trim() || form })
+    }
   }
   return out
 }
-const asked = readPins(`${TERM}/pin.csv`)
-const lives = readPins(placed)
+const asked = new Map(
+  [...readPins(`${TERM}/pin.csv`)].map(([one, row]) => [one, row.form]),
+)
+const placedRows = readPins(placed)
+const lives = new Map<string, string>()
+for (const [concept, row] of placedRows) {
+  if (asked.get(concept) === row.asked) lives.set(concept, row.form)
+}
 
+/**
+ * WHO ALREADY HOLDS EACH PROPOSED FORM, WHICH IS NOT THE SAME QUESTION.
+ *
+ * A form being checked is dropped from `standing` so it cannot match
+ * itself, which is what lets an existing pin be re-asked. The cost is
+ * that a form held by a DIFFERENT concept also vanishes, and the tool
+ * then calls it clear. On 2026-09-19 it reported `kup` free while `kup`
+ * is tone, and `kas` free while `kas` is call.
+ *
+ * That is worse than a wrong distance, because a wrong distance is a
+ * judgement and this is just false. So the holder is looked up and said
+ * out loud, and taking the form means moving whoever has it.
+ */
+const holder = new Map<string, string>()
 const standing: Array<[string, string]> = []
 for (const [concept, wanted] of asked) {
   const form = lives.get(concept) ?? wanted
-  if (want.includes(form)) continue
+  if (want.includes(form)) {
+    if (!holder.has(form)) holder.set(form, concept)
+    continue
+  }
   standing.push([
     form,
     form !== wanted ? `${concept} (asked ${wanted})` : concept,
@@ -118,8 +155,10 @@ let bad = 0
 for (const one of want) {
   const shape = shapeOf(one)
   const ok = shape ? legal[shape].has(one) : false
+  const has = holder.get(one)
   process.stdout.write(
-    `\n  ${one}   ${shape ?? 'no shape'}   ${ok ? 'legal' : 'NOT LEGAL'}\n`,
+    `\n  ${one}   ${shape ?? 'no shape'}   ${ok ? 'legal' : 'NOT LEGAL'}` +
+      `${has ? `   HELD BY ${has}, which must move` : ''}\n`,
   )
   if (!shape || !ok) {
     bad++

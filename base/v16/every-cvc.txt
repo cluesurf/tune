@@ -95,7 +95,6 @@ nid
 nib
 nip
 nit
-nik
 nis
 niz
 niv
@@ -111,7 +110,6 @@ ned
 neb
 nep
 net
-nek
 nes
 nez
 nev
@@ -1110,7 +1108,6 @@ fad
 fab
 fap
 fat
-fak
 fas
 faz
 fav

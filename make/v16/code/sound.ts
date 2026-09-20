@@ -153,11 +153,14 @@ export const CLOSE = new Set(['c', 'j', 'k', 'p', 't', 'x', 'z'])
  * never for building.
  */
 export const ONSETS = (
-  process.env.ONSETS ?? 'br bl dr fr fl gr gl vr sk sp st sl sm sn dj'
+  process.env.ONSETS ??
+  'br bl dr fr fl gr gl vr sk sp st sl sm sn dj ' +
+    'pr pl tr kr kl cr cl zl zm zn zb zd'
 ).split(' ')
 
 export const CODAS = (
-  'mp nt qk lp lx lz lt lc lk rp rz rt rk rx ft px kx bz gz dj tx dz sk sp st xt'
+  'mp nt qk lp lx lz lt lc lk rp rz rt rk rx ft px kx bz gz dj tx dz sk sp st xt ' +
+  'lb ld lg rb rd rg mb nd qg lf lv rf rv ls rs ms ns ps ks ts fs bd gd'
 ).split(' ')
 
 /** `x` and `j` are hushes and stand in no cluster. `tx` and `dj` are
@@ -166,12 +169,40 @@ const DIGRAPH = new Set(['tx', 'dj'])
 const hush = (pair: string) =>
   !DIGRAPH.has(pair) && [...pair].some(one => one === 'x' || one === 'j')
 
-export const ONSET_OK = ONSETS.filter(
-  one => OPEN.has(one[0]) && !hush(one),
-)
-export const CODA_OK = CODAS.filter(
-  one => CLOSE.has(one[1]) && !hush(one),
-)
+/**
+ * THE PILES NO LONGER GATE THE CLUSTERS. 2026-09-19.
+ *
+ * `OPEN` and `CLOSE` above still describe the sounds, and the comment
+ * there still explains what they were FOR, but they are no longer
+ * applied here. Twelve onsets and twenty three codas come back:
+ *
+ * ```text
+ * pr pl tr kr kl cr cl zl zm zn zb zd
+ * lb ld lg rb rd rg mb nd qg lf lv rf rv ls rs ms ns ps ks ts fs bd gd
+ * ```
+ *
+ * **This is a real trade and the cost is not zero.** With the piles a
+ * compound is readable BY RULE: no sound sits on both sides of a seam,
+ * so no second cut exists and `v16:decode` proves it outright. Without
+ * them `mimprim` reads as `mim + prim` or `mimp + rim`, and the fix is
+ * a marker: an `l` goes in wherever the cut is in doubt, which was
+ * measured at 0.71% of seams. Readability now depends on that rule
+ * being applied, where before it depended on nothing.
+ *
+ * What it buys, on `CVC`, `CVCC` and `CCVC` alone:
+ *
+ * ```text
+ *                     CVC   CVCC   CCVC   usable   seams
+ * piles kept         1122   1052    876    3,050   25.0%
+ * piles dropped      1122   1947   1501    4,570   26.9%
+ * ```
+ *
+ * 4,570 against 3,050, which is the first time the three short shapes
+ * can carry the whole 4,096 with no two syllable words at all. The
+ * seam rate moves 1.9 points.
+ */
+export const ONSET_OK = ONSETS.filter(one => !hush(one))
+export const CODA_OK = CODAS.filter(one => !hush(one))
 
 export const SIMILAR_GROUPS: Array<Array<string>> = [
   /**
@@ -268,6 +299,30 @@ export const ADJACENT = new Set('ie ei ea ae ao oa ou uo'.split(' '))
 
 export const vowelsClose = (a: string, b: string) =>
   a === b || ADJACENT.has(a + b)
+
+/**
+ * IN A THREE LETTER WORD ALL FIVE VOWELS ARE FAR ENOUGH APART.
+ *
+ * `i e a o u` are five points with nothing between them, and a `CVC`
+ * carries exactly one. It is the loudest, longest part of the word and
+ * there is no second vowel competing for the ear, so `mid` and `med`
+ * are two words and not one word twice.
+ *
+ * The adjacency ladder still holds in the longer shapes, where a word
+ * carries two vowels and the ear has to keep both.
+ */
+export const vowelsCloseAt = (a: string, b: string, shape: Shape) =>
+  SHORT(shape) ? a === b : vowelsClose(a, b)
+
+/**
+ * ONE SYLLABLE, WHICH IS WHERE THE LOOSER TABLE APPLIES.
+ *
+ * `CVC`, `CVCC` and `CCVC` all carry exactly ONE vowel and are said in
+ * one beat. `CVCVC` carries two, and a word with two vowels gives the
+ * ear more to hold and less attention for each part, so it keeps the
+ * stricter table.
+ */
+export const SHORT = (shape: Shape) => shape !== 'CVCVC'
 
 /**
  * TWO FRICATIVES MEETING NEED A BREAKER, not just two sibilants.
@@ -528,8 +583,8 @@ function medialHOk(word: string): boolean {
  * the cost is a handful of forms out of a hundred and fifty thousand.
  */
 const TABOO = [
-  'neg', 'nig', 'fag', 'fuk', 'kok', 'kuk', 'pis', 'kum', 'jiz', 'kunt',
-  'kok', 'dik', 'tit', 'rap', 'nazi', 'jap', 'gip',
+  'neg', 'nek', 'nig', 'nik', 'fag', 'fak', 'fuk', 'kok', 'kuk', 'pis',
+  'kum', 'jiz', 'kunt', 'dik', 'tit', 'rap', 'nazi', 'jap', 'gip',
 ]
 
 const tabooOk = (word: string) => !TABOO.some(one => word.includes(one))
@@ -555,23 +610,45 @@ function liquidOk(word: string): boolean {
   return true
 }
 
-export function every(shape: Shape): Array<string> {
+/**
+ * EVERY LEGALITY TEST THAT READS THE WHOLE WORD, in one place.
+ *
+ * A rule must not be addable to one shape's generator and missable by
+ * the others. That is how `r.r` would have gone in. Exported because a
+ * generator for a shape this file does not have, such as a probe
+ * weighing `CCVCC`, must ask the same questions rather than copy them.
+ */
+export function wordOk(word: string): boolean {
+  if (word.startsWith(WA)) return false
+  return (
+    rhymeOk(word) &&
+    liquidOk(word) &&
+    dentalOk(word) &&
+    hushOk(word) &&
+    medialHOk(word) &&
+    tabooOk(word)
+  )
+}
+
+/**
+ * The cluster lists are ARGUMENTS, so a question can be asked of a
+ * phonology this file does not have.
+ *
+ * They default to the live ones, so every existing caller is unchanged.
+ * What they buy is that a probe weighing a different onset or coda list
+ * gets the legality tests from HERE rather than copying them, and the
+ * comment below is the reason that matters: a rule added to one
+ * generator and missed by a hand written copy is exactly the bug this
+ * function exists to prevent.
+ */
+export function every(
+  shape: Shape,
+  onsets: Array<string> = ONSET_OK,
+  codas: Array<string> = CODA_OK,
+): Array<string> {
   const out: Array<string> = []
-  // Every legality test that reads the whole word lives here, so a
-  // rule cannot be added to one shape's generator and missed by the
-  // other three. That is how `r.r` would have gone in.
   const push = (word: string) => {
-    if (word.startsWith(WA)) return
-    if (
-      rhymeOk(word) &&
-      liquidOk(word) &&
-      dentalOk(word) &&
-      hushOk(word) &&
-      medialHOk(word) &&
-      tabooOk(word)
-    ) {
-      out.push(word)
-    }
+    if (wordOk(word)) out.push(word)
   }
   if (shape === 'CVC') {
     for (const a of CONSONANTS) {
@@ -588,12 +665,12 @@ export function every(shape: Shape): Array<string> {
     for (const a of CONSONANTS) {
       if (NO_OPEN.has(a)) continue
       for (const v of VOWELS) {
-        for (const coda of CODA_OK) push(a + v + coda)
+        for (const coda of codas) push(a + v + coda)
       }
     }
   }
   if (shape === 'CCVC') {
-    for (const onset of ONSET_OK) {
+    for (const onset of onsets) {
       for (const v of VOWELS) {
         for (const b of CONSONANTS) {
           if (NO_CLOSE.has(b)) continue
@@ -821,14 +898,62 @@ for (const [a, b] of NASAL_STOP) {
   nearOnset.get(b)?.delete(a)
 }
 
+/**
+ * AT THE FRONT OF A THREE LETTER WORD, ONLY VOICING IN A FRICATIVE.
+ *
+ * ```text
+ * dum  bum     negative, and boom. both stand
+ * bad  dad     tangent, and dad
+ * piq  tiq     request, and outside
+ * ```
+ *
+ * A consonant that opens a word is the one sound in it with nothing in
+ * front to mask it, and a stop opening a word is a silence and then a
+ * burst whose shape says where the mouth was closed. `b` and `d` and
+ * `g` are three different bursts, and so are `p` and `t` and `k`, and a
+ * burst against its own voiced twin differs in when the voice starts,
+ * which is again at the front where it is heard best.
+ *
+ * **What survives is the four fricative voicing pairs**, and only those:
+ *
+ * ```text
+ * s z     f v     c C     x j
+ * ```
+ *
+ * A fricative is a continuous noise rather than an event, so there is no
+ * burst to tell apart and the only difference is whether the voice is
+ * running under it. That one is genuinely lost in a short word.
+ *
+ * **The coda is the opposite case and keeps its table.** A stop at the
+ * end of a word is usually not released at all, so `b` and `d` and `g`
+ * arrive as the same piece of silence. That is why the stops stay near
+ * one another there, and why this loosening is scoped to `CVC` onsets.
+ */
+const FRICATIVE_VOICING: Array<[string, string]> = [
+  ['s', 'z'],
+  ['f', 'v'],
+  ['c', 'C'],
+  ['x', 'j'],
+]
+
+const nearShortOnset = new Map<string, Set<string>>()
+for (const one of CONSONANTS) nearShortOnset.set(one, new Set([one]))
+for (const [a, b] of FRICATIVE_VOICING) {
+  nearShortOnset.get(a)?.add(b)
+  nearShortOnset.get(b)?.add(a)
+}
+
 export const similarAt = (
   a: string,
   b: string,
   at: number,
   shape: Shape,
 ) => {
-  if (!CODA_AT[shape].includes(at)) return nearOnset.get(a)?.has(b) ?? false
-  const table = shape === 'CVC' ? nearShortCoda : nearCoda
+  if (!CODA_AT[shape].includes(at)) {
+    const table = SHORT(shape) ? nearShortOnset : nearOnset
+    return table.get(a)?.has(b) ?? false
+  }
+  const table = SHORT(shape) ? nearShortCoda : nearCoda
   return table.get(a)?.has(b) ?? false
 }
 
@@ -861,6 +986,17 @@ export const NEAR_VOWEL = new Map(
   ]),
 )
 
+/**
+ * The same table, per shape, because `CVC` holds no near vowels at all.
+ *
+ * The mutation walkers in `ceiling.ts` and `final.ts` read this to build
+ * their conflict graphs. They MUST read the shape-aware one, or a rule
+ * that reaches `scores` never reaches them, which is the failure this
+ * file has already been bitten by once.
+ */
+export const nearVowelAt = (one: string, shape: Shape) =>
+  SHORT(shape) ? [] : (NEAR_VOWEL.get(one) ?? [])
+
 const nearAtCache = new Map<string, Array<string>>()
 
 export function nearAt(one: string, at: number, shape: Shape) {
@@ -884,7 +1020,7 @@ export function scores(a: string, b: string, shape: Shape): Array<number> {
     }
     out.push(
       vowelAt.has(at)
-        ? vowelsClose(a[at], b[at])
+        ? vowelsCloseAt(a[at], b[at], shape)
           ? 1
           : 2
         : similarAt(a[at], b[at], at, shape)

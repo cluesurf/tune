@@ -1,0 +1,1664 @@
+bird          animal    named     noun             33    17
+insect        animal    named     noun             25    15
+bug           animal    named     noun             20    15
+bear          animal    named     verb             19    13
+dog           animal    named     noun             19    12
+fish          animal    named     verb             21    11
+shell         animal    named     noun             15    12
+fly           animal    named     verb             22    10
+wing          animal    named     verb             13     9
+horn          animal    named     noun              8     8
+horse         animal    named     verb             15     4
+cat           animal    named     noun              6     4
+bee           animal    named     noun             15     1
+spider        animal    named     noun              8     2
+beast         animal    named     noun              3     3
+lizard        animal    named     noun              3     2
+pig           animal    named     noun              6     1
+worm          animal    named     noun              6     1
+fox           animal    named     noun              5     1
+sheep         animal    named     noun              5     1
+tail          animal    named     noun              5     1
+cow           animal    named     noun              8     0
+feather       animal    named     noun              4     1
+bat           animal    named     noun              3     1
+deer          animal    named     noun              2     1
+fur           animal    named     noun              2     1
+mouse         animal    named     noun              2     1
+crab          animal    named     noun              1     1
+lion          animal    named     noun              1     1
+shark         animal    named     noun              1     1
+ant           animal    named     noun              2     0
+bull          animal    named     noun              2     0
+cattle        animal    named     noun              2     0
+chick         animal    named     noun              1     0
+claw          animal    named     verb              1     0
+crow          animal    named     noun              1     0
+duck          animal    named     noun              1     0
+frog          animal    named     noun              1     0
+lamb          animal    named     noun              1     0
+owl           animal    named     noun              1     0
+ape           animal    named     noun              0     0
+eagle         animal    named     noun              0     0
+elephant      animal    named     noun              0     0
+goat          animal    named     noun              0     0
+goose         animal    named     noun              0     0
+hen           animal    named     noun              0     0
+monkey        animal    named     verb              0     0
+moth          animal    named     noun              0     0
+rabbit        animal    named     noun              0     0
+rat           animal    named     verb              0     0
+turtle        animal    named     noun              0     0
+whale         animal    named     noun              0     0
+wolf          animal    named     noun              0     0
+picture       art       named     noun             58    46
+story         art       named     noun             51    38
+art           art       named     noun             27    17
+tale          art       named     noun             21    17
+game          art       named     verb             22    13
+music         art       named     noun             25     5
+beauty        art       named     noun             11     8
+sing          art       named     verb              9     6
+dance         art       named     verb             11     3
+paint         art       named     verb              6     4
+toy           art       named     noun              2     2
+flute         art       named     noun              0     0
+essence       being     overflow  noun              1     1
+actual        being     overflow  adjective         0     0
+necessary     being     overflow  adjective         0     0
+skin          body      named     noun             72    38
+hair          body      named     noun             45    31
+heart         body      named     noun             49    27
+head          body      named     verb             42    19
+bone          body      named     verb             26    20
+hand          body      named     verb             45    12
+leg           body      named     noun             23    17
+foot          body      named     noun             30    12
+muscle        body      named     noun             26    11
+arm           body      named     verb             19     9
+ear           body      named     noun             21     6
+throat        body      named     noun             15     6
+nerve         body      named     noun             24     3
+brain         body      named     noun             17     4
+limb          body      named     noun              6     6
+joint         body      named     noun             18     2
+stomach       body      named     noun             12     3
+tongue        body      named     noun              5     4
+flesh         body      named     verb              9     2
+chest         body      named     noun              8     2
+toe           body      named     noun              4     3
+spine         body      named     noun              7     2
+tooth         body      named     noun              7     2
+vein          body      named     noun              6     2
+nail          body      named     verb              4     2
+rib           body      named     noun              3     2
+breast        body      named     noun             10     0
+knee          body      named     noun              4     1
+lung          body      named     noun              4     1
+neck          body      named     noun              7     0
+artery        body      named     noun              2     1
+bowel         body      named     noun              2     1
+palm          body      named     noun              2     1
+skull         body      named     noun              2     1
+womb          body      named     noun              2     1
+heel          body      named     noun              1     1
+finger        body      named     noun              2     0
+hip           body      named     noun              2     0
+kidney        body      named     noun              2     0
+shoulder      body      named     noun              2     0
+waist         body      named     noun              2     0
+wrist         body      named     noun              2     0
+bladder       body      named     noun              1     0
+cheek         body      named     noun              1     0
+ankle         body      named     noun              0     0
+beard         body      named     noun              0     0
+chin          body      named     noun              0     0
+elbow         body      named     noun              0     0
+eyelash       body      named     noun              0     0
+thumb         body      named     noun              0     0
+room          build     named     noun             46    43
+house         build     named     verb             37    29
+road          build     named     noun             27    13
+wall          build     named     noun             17    10
+farm          build     named     verb             13     8
+city          build     named     noun             12     6
+floor         build     named     noun              9     6
+town          build     named     noun              7     4
+fence         build     named     verb              6     3
+door          build     named     noun              9     1
+street        build     named     noun              3     2
+window        build     named     noun              5     1
+yard          build     named     noun              2     0
+bridge        build     named     verb              0     0
+stair         build     named     noun              0     0
+village       build     named     noun              0     0
+produce       cause     overflow  verb              3     1
+transform     cause     overflow  verb              2     0
+influence     cause     overflow  verb              1     0
+cloth         cloth     named     noun             61    51
+thread        cloth     named     verb             22    19
+coat          cloth     named     verb             14    12
+fabric        cloth     named     noun             14     9
+dress         cloth     named     verb              9     6
+shirt         cloth     named     noun              5     5
+sew           cloth     named     verb              6     2
+button        cloth     named     noun              5     2
+hat           cloth     named     noun              4     2
+weave         cloth     named     verb              7     1
+shoe          cloth     named     noun              3     1
+silk          cloth     named     noun              3     1
+wool          cloth     named     noun              3     1
+collar        cloth     named     noun              1     1
+leather       cloth     named     noun              1     1
+pocket        cloth     named     noun              1     1
+belt          cloth     named     verb              2     0
+sleeve        cloth     named     noun              2     0
+cotton        cloth     named     noun              0     0
+shadow        cosmos    overflow  noun              4     0
+planet        cosmos    overflow  noun              1     0
+love          emotion   named     verb             54    39
+joy           emotion   named     noun             31    21
+happy         emotion   named     adjective        36    17
+fear          emotion   named     verb             31    16
+worry         emotion   named     verb             19    13
+trust         emotion   named     verb             19    12
+sad           emotion   named     adjective        33     8
+desire        emotion   named     verb             14    11
+hope          emotion   named     verb             14    11
+anger         emotion   named     verb             11     9
+hate          emotion   named     verb             11     7
+shame         emotion   named     noun             11     7
+proud         emotion   named     adjective        14     6
+sorrow        emotion   named     noun             11     6
+guilt         emotion   named     noun              8     6
+rage          emotion   named     verb              5     5
+comfort       emotion   named     verb              9     3
+surprise      emotion   named     verb              9     3
+excite        emotion   named     verb              7     3
+relief        emotion   named     noun              4     3
+mercy         emotion   named     noun              3     3
+passion       emotion   named     noun              3     3
+grief         emotion   named     noun              3     2
+pride         emotion   named     verb              2     2
+dread         emotion   named     noun              1     1
+pity          emotion   named     verb              1     1
+terror        emotion   named     noun              1     1
+bore          emotion   named     verb              3     0
+delight       emotion   named     verb              2     0
+jealous       emotion   named     adjective         1     0
+sympathy      emotion   named     noun              1     0
+anguish       emotion   named     noun              0     0
+compassion    emotion   named     noun              0     0
+despair       emotion   named     noun              0     0
+envy          emotion   named     verb              0     0
+glad          emotion   named     adjective         0     0
+lonely        emotion   named     adjective         0     0
+gravity       energy    overflow  noun              0     0
+food          food      named     noun             97    64
+eat           food      named     verb             46    34
+drink         food      named     verb             42    26
+meal          food      named     noun             35    24
+meat          food      named     noun             27    14
+cook          food      named     noun             29    12
+dish          food      named     verb             14    13
+pot           food      named     noun             14    13
+sugar         food      named     noun             14    12
+oil           food      named     verb             18    10
+taste         food      named     verb             12     8
+plate         food      named     noun              8     8
+bite          food      named     verb             11     7
+bread         food      named     noun             14     6
+egg           food      named     noun             26     3
+knife         food      named     noun              8     7
+cup           food      named     noun              8     4
+bowl          food      named     noun              6     4
+boil          food      named     verb              7     3
+milk          food      named     verb              7     3
+feast         food      named     noun              3     3
+chew          food      named     verb              4     2
+spoon         food      named     noun              2     2
+bake          food      named     verb              3     1
+fry           food      named     verb              2     1
+swallow       food      named     verb              2     1
+thirst        food      named     noun              1     1
+hunger        food      named     noun              2     0
+fork          food      named     verb              1     0
+soup          food      named     noun              1     0
+butter        food      named     noun              0     0
+cheese        food      named     noun              0     0
+category      form      overflow  noun              1     1
+proportion    form      overflow  noun              1     0
+symmetry      form      overflow  noun              0     0
+strong        health    named     adjective       183    51
+disease       health    named     noun             23    17
+health        health    named     noun             22    14
+sick          health    named     adjective        28    12
+hurt          health    named     verb             33    10
+ill           health    named     adjective        20    13
+sleep         health    named     verb             36     7
+heal          health    named     verb             19    10
+weak          health    named     adjective        18     5
+medicine      health    named     noun             17     5
+cure          health    named     verb              6     3
+fever         health    named     noun              1     0
+nurse         health    named     verb              1     0
+scar          health    named     verb              0     0
+wound         health    named     verb              0     0
+help          judged    named     verb             79    46
+animal        judged    named     adjective        63    35
+care          judged    named     verb             53    34
+believe       judged    named     verb             39    35
+support       judged    named     verb             61    27
+book          judged    named     verb             45    24
+message       judged    named     verb             38    23
+guide         judged    named     verb             30    21
+harm          judged    named     verb             29    21
+bag           judged    named     noun             24    21
+paper         judged    named     noun             26    19
+claim         judged    named     verb             22    19
+bed           judged    named     noun             36    15
+agree         judged    named     verb             22    18
+put           judged    named     verb             58     9
+task          judged    named     noun             19    17
+mood          judged    named     noun             20    16
+feel          judged    named     verb             35    12
+supply        judged    named     verb             21    15
+secret        judged    named     adjective        35    11
+deal          judged    named     verb             18    15
+pay           judged    named     verb             24    12
+young         judged    named     adjective        36     9
+fat           judged    named     adjective        26    11
+loud          judged    named     adjective        49     5
+sea           judged    named     noun             41     7
+treat         judged    named     verb             14    13
+board         judged    named     verb             13    13
+gather        judged    named     verb             25    10
+poison        judged    named     verb             19    11
+honor         judged    named     verb             18    11
+interest      judged    named     verb             14    12
+teach         judged    named     verb             22    10
+allow         judged    named     verb             21    10
+twist         judged    named     verb             33     7
+fun           judged    named     adjective        20    10
+trouble       judged    named     verb             15    11
+blame         judged    named     verb             14    11
+smell         judged    named     verb             15    10
+rank          judged    named     verb             12    10
+crime         judged    named     noun             11    10
+damage        judged    named     verb             15     9
+detail        judged    named     verb             15     9
+text          judged    named     verb             11    10
+manage        judged    named     verb             14     9
+opinion       judged    named     noun             10    10
+pad           judged    named     noun             10    10
+practice      judged    named     verb             14     9
+praise        judged    named     verb             14     9
+question      judged    named     verb             18     8
+trick         judged    named     verb             14     9
+hide          judged    named     verb             37     3
+print         judged    named     verb             13     9
+guard         judged    named     verb             19     7
+warm          judged    named     adjective        26     5
+wrap          judged    named     verb             22     6
+smart         judged    named     adjective        17     7
+sweet         judged    named     adjective        21     6
+gun           judged    named     verb             16     7
+wear          judged    named     verb             20     6
+polite        judged    named     adjective        11     8
+sex           judged    named     noun             11     8
+wet           judged    named     adjective        27     4
+mess          judged    named     verb             22     5
+respect       judged    named     verb             10     8
+germ          judged    named     noun             17     6
+race          judged    named     verb              9     8
+title         judged    named     noun              8     8
+win           judged    named     verb             12     7
+hear          judged    named     verb             15     6
+scent         judged    named     noun             10     7
+bold          judged    named     adjective        13     6
+mad           judged    named     adjective        13     6
+school        judged    named     noun             17     5
+spend         judged    named     verb             13     6
+cake          judged    named     verb              8     7
+charm         judged    named     verb             12     6
+fine          judged    named     adjective        20     4
+ocean         judged    named     noun             28     2
+shock         judged    named     verb             16     5
+tissue        judged    named     noun             12     6
+urge          judged    named     verb             12     6
+bar           judged    named     verb             11     6
+breathe       judged    named     verb             11     6
+dirty         judged    named     adjective        15     5
+grip          judged    named     verb              7     7
+hue           judged    named     noun              7     7
+murder        judged    named     verb              7     7
+shelter       judged    named     verb             10     6
+favor         judged    named     noun              9     6
+feed          judged    named     verb              9     6
+gentle        judged    named     adjective        17     4
+scare         judged    named     verb              9     6
+shop          judged    named     verb              9     6
+wise          judged    named     adjective        13     5
+camera        judged    named     noun              8     6
+capture       judged    named     verb              8     6
+chamber       judged    named     noun              8     6
+document      judged    named     verb              8     6
+nice          judged    named     adjective        16     4
+spell         judged    named     verb              8     6
+stitch        judged    named     verb              8     6
+wild          judged    named     adjective        20     3
+aim           judged    named     verb              7     6
+flavor        judged    named     verb              7     6
+juice         judged    named     verb              7     6
+luck          judged    named     noun              7     6
+pick          judged    named     verb             11     5
+pile          judged    named     verb              7     6
+pole          judged    named     noun              7     6
+poor          judged    named     adjective        19     3
+spouse        judged    named     noun              7     6
+spray         judged    named     verb              7     6
+tear          judged    named     verb             19     3
+vote          judged    named     verb             11     5
+alcohol       judged    named     noun              6     6
+approve       judged    named     verb              6     6
+bunch         judged    named     noun              6     6
+duty          judged    named     noun              6     6
+fuel          judged    named     verb              6     6
+instrument    judged    named     noun              6     6
+meter         judged    named     noun              6     6
+mist          judged    named     noun             10     5
+program       judged    named     verb              6     6
+religion      judged    named     noun             10     5
+role          judged    named     noun              6     6
+shoot         judged    named     shoot            10     5
+strap         judged    named     noun              6     6
+surgery       judged    named     noun              6     6
+choose        judged    named     verb             13     4
+crazy         judged    named     adjective        17     3
+explain       judged    named     verb              9     5
+steal         judged    named     verb             17     3
+wash          judged    named     verb             17     3
+ice           judged    named     noun             16     3
+offer         judged    named     verb             16     3
+regret        judged    named     verb              8     5
+serve         judged    named     verb              8     5
+culture       judged    named     noun              7     5
+tire          judged    named     verb             11     4
+alone         judged    named     adjective        10     4
+bow           judged    named     noun              6     5
+infect        judged    named     verb              6     5
+platform      judged    named     noun              6     5
+public        judged    named     adjective        18     2
+save          judged    named     verb             14     3
+strange       judged    named     adjective        26     0
+web           judged    named     noun             10     4
+cushion       judged    named     noun              5     5
+deed          judged    named     noun              5     5
+gland         judged    named     noun              9     4
+lady          judged    named     noun              5     5
+odor          judged    named     noun              5     5
+snow          judged    named     verb              9     4
+talent        judged    named     noun              5     5
+usual         judged    named     adjective         9     4
+struggle      judged    named     verb              8     4
+success       judged    named     noun              8     4
+suffer        judged    named     verb              8     4
+train         judged    named     verb              8     4
+argue         judged    named     verb              7     4
+climb         judged    named     verb             11     3
+country       judged    named     noun              7     4
+fashion       judged    named     noun              7     4
+grave         judged    named     adjective        11     3
+lie           judged    named     verb             11     3
+spoil         judged    named     verb             11     3
+challenge     judged    named     verb              6     4
+clash         judged    named     noun              6     4
+command       judged    named     verb              6     4
+fool          judged    named     noun              6     4
+party         judged    named     verb              6     4
+perform       judged    named     verb              6     4
+reptile       judged    named     noun              6     4
+snack         judged    named     noun              6     4
+special       judged    named     adjective        14     2
+bell          judged    named     noun              9     3
+fail          judged    named     verb              9     3
+fake          judged    named     adjective        21     0
+fee           judged    named     noun              5     4
+loyal         judged    named     adjective         5     4
+mate          judged    named     noun              5     4
+moisture      judged    named     noun              5     4
+month         judged    named     noun              9     3
+patient       judged    named     adjective         5     4
+plug          judged    named     verb              5     4
+prize         judged    named     verb              5     4
+puzzle        judged    named     verb              9     3
+attitude      judged    named     noun              4     4
+brave         judged    named     adjective        12     2
+invite        judged    named     verb              4     4
+pretty        judged    named     adjective         4     4
+rich          judged    named     adjective        12     2
+sac           judged    named     noun              4     4
+status        judged    named     noun              4     4
+evil          judged    named     adjective        11     2
+kid           judged    named     verb              7     3
+office        judged    named     noun              7     3
+tea           judged    named     noun             15     1
+urine         judged    named     noun              7     3
+welcome       judged    named     verb              7     3
+behind        judged    named     adjective         6     3
+danger        judged    named     noun              6     3
+decide        judged    named     verb              6     3
+drip          judged    named     verb              6     3
+fan           judged    named     noun              6     3
+information   judged    named     noun              6     3
+noble         judged    named     adjective        10     2
+page          judged    named     noun              6     3
+rail          judged    named     noun              6     3
+rude          judged    named     adjective        10     2
+tent          judged    named     noun              6     3
+achieve       judged    named     verb              5     3
+bomb          judged    named     verb              5     3
+courage       judged    named     noun              5     3
+iron          judged    named     verb              5     3
+jet           judged    named     verb              5     3
+sore          judged    named     adjective         5     3
+stab          judged    named     verb              5     3
+virus         judged    named     noun              5     3
+week          judged    named     noun              5     3
+winter        judged    named     noun              5     3
+author        judged    named     noun              4     3
+camp          judged    named     verb              4     3
+clever        judged    named     adjective         8     2
+computer      judged    named     noun              4     3
+cruel         judged    named     adjective         8     2
+demand        judged    named     verb              4     3
+fortune       judged    named     noun              4     3
+history       judged    named     noun              4     3
+injure        judged    named     verb              4     3
+island        judged    named     noun              4     3
+legal         judged    named     adjective        12     1
+obey          judged    named     verb              4     3
+profit        judged    named     noun              4     3
+rent          judged    named     verb              4     3
+sauce         judged    named     noun              4     3
+service       judged    named     verb              4     3
+toilet        judged    named     noun              4     3
+visit         judged    named     verb              4     3
+allergy       judged    named     noun              3     3
+employ        judged    named     noun              3     3
+fossil        judged    named     noun              3     3
+gender        judged    named     noun              3     3
+jacket        judged    named     noun              3     3
+lesson        judged    named     noun              3     3
+mat           judged    named     noun              3     3
+social        judged    named     adjective         7     2
+tub           judged    named     noun              3     3
+vegetable     judged    named     noun              3     3
+vow           judged    named     verb              3     3
+annoy         judged    named     verb              6     2
+lucky         judged    named     adjective         6     2
+moral         judged    named     adjective         6     2
+official      judged    named     adjective         6     2
+reward        judged    named     verb              6     2
+sport         judged    named     noun              6     2
+upset         judged    named     verb              6     2
+warn          judged    named     verb              6     2
+accuse        judged    named     verb              5     2
+cream         judged    named     noun              5     2
+decorate      judged    named     verb              9     1
+enjoy         judged    named     verb              5     2
+mask          judged    named     verb              5     2
+pan           judged    named     verb              5     2
+pen           judged    named     verb              5     2
+sweat         judged    named     verb              5     2
+assign        judged    named     verb              4     2
+award         judged    named     verb              4     2
+bank          judged    named     verb              4     2
+collect       judged    named     verb              4     2
+date          judged    named     verb              4     2
+develop       judged    named     verb              4     2
+jaw           judged    named     noun              4     2
+knock         judged    named     verb              4     2
+marry         judged    named     verb              4     2
+mud           judged    named     noun              8     1
+ornament      judged    named     noun              4     2
+personal      judged    named     adjective         8     1
+plastic       judged    named     adjective         4     2
+prison        judged    named     noun              4     2
+report        judged    named     verb              4     2
+smoke         judged    named     verb              8     1
+teen          judged    named     adjective         4     2
+thank         judged    named     verb              4     2
+verse         judged    named     noun              4     2
+ash           judged    named     noun              3     2
+brush         judged    named     verb              3     2
+candy         judged    named     noun              3     2
+company       judged    named     noun              3     2
+convince      judged    named     verb              3     2
+deity         judged    named     noun              3     2
+eager         judged    named     adjective         3     2
+educate       judged    named     verb              3     2
+enlist        judged    named     verb              3     2
+forest        judged    named     noun              3     2
+forgive       judged    named     verb              3     2
+ink           judged    named     verb             11     0
+nervous       judged    named     adjective         7     1
+saddle        judged    named     noun              3     2
+sexual        judged    named     adjective         3     2
+spear         judged    named     noun              3     2
+supervise     judged    named     verb              3     2
+swear         judged    named     verb              3     2
+tease         judged    named     verb              3     2
+tomb          judged    named     noun              3     2
+authority     judged    named     noun              2     2
+boss          judged    named     noun              2     2
+dear          judged    named     adjective         2     2
+debate        judged    named     verb              2     2
+diagnose      judged    named     verb              2     2
+diet          judged    named     noun              2     2
+disaster      judged    named     noun              2     2
+disk          judged    named     noun              2     2
+ditch         judged    named     verb              2     2
+earnest       judged    named     adjective         2     2
+excuse        judged    named     verb              2     2
+garment       judged    named     noun              2     2
+gram          judged    named     noun              2     2
+guy           judged    named     noun              2     2
+habit         judged    named     noun              2     2
+income        judged    named     noun              2     2
+inspire       judged    named     verb              2     2
+monster       judged    named     noun              2     2
+onion         judged    named     noun              2     2
+pardon        judged    named     noun              2     2
+persuade      judged    named     verb              2     2
+puppet        judged    named     noun              2     2
+rifle         judged    named     noun              2     2
+rival         judged    named     adjective         6     1
+robot         judged    named     noun              2     2
+romance       judged    named     noun              2     2
+scholar       judged    named     noun              2     2
+script        judged    named     noun              2     2
+skirt         judged    named     noun              2     2
+vacation      judged    named     noun              2     2
+watt          judged    named     noun              2     2
+wed           judged    named     verb              6     1
+bay           judged    overflow  noun              2     2
+blaze         judged    overflow  noun              2     2
+brace         judged    overflow  noun              2     2
+commotion     judged    overflow  noun              2     2
+concern       judged    overflow  verb              2     2
+contract      judged    overflow  verb              2     2
+cork          judged    overflow  noun              2     2
+couple        judged    overflow  verb              2     2
+dam           judged    overflow  verb              2     2
+excess        judged    overflow  adjective         6     1
+familiar      judged    overflow  adjective         2     2
+gaze          judged    overflow  verb              2     2
+grade         judged    overflow  verb              2     2
+intent        judged    overflow  verb              2     2
+knob          judged    overflow  noun              2     2
+ledge         judged    overflow  noun              2     2
+moist         judged    overflow  adjective         6     1
+numb          judged    overflow  adjective         2     2
+occupy        judged    overflow  verb              2     2
+phase         judged    overflow  verb              2     2
+pledge        judged    overflow  noun              2     2
+port          judged    overflow  noun              2     2
+projection    judged    overflow  noun              2     2
+qualify       judged    overflow  verb              2     2
+relax         judged    overflow  verb              2     2
+rinse         judged    overflow  noun              2     2
+scope         judged    overflow  noun              2     2
+scrap         judged    overflow  noun              2     2
+screw         judged    overflow  verb              2     2
+session       judged    overflow  noun              2     2
+silent        judged    overflow  adjective        10     0
+spark         judged    overflow  verb              2     2
+spout         judged    overflow  noun              2     2
+stake         judged    overflow  verb              2     2
+stalk         judged    overflow  verb              2     2
+stance        judged    overflow  noun              2     2
+strand        judged    overflow  noun              2     2
+texture       judged    overflow  noun              2     2
+thorough      judged    overflow  adjective         2     2
+valley        judged    overflow  noun              2     2
+bitter        judged    named     adjective         5     1
+cancel        judged    named     verb              5     1
+cave          judged    named     verb              5     1
+defense       judged    named     noun              5     1
+drunk         judged    named     adjective         5     1
+dull          judged    named     adjective         9     0
+environment   judged    named     noun              5     1
+famous        judged    named     adjective         5     1
+formal        judged    named     adjective         5     1
+ghost         judged    named     noun              5     1
+rob           judged    named     noun              5     1
+suggest       judged    named     verb              5     1
+tempt         judged    named     verb              5     1
+rear          judged    overflow  adjective         9     0
+surround      judged    overflow  verb              9     0
+trim          judged    overflow  verb              5     1
+herd          judged    named     noun              4     1
+mystery       judged    named     noun              4     1
+pest          judged    named     noun              4     1
+pet           judged    named     verb              4     1
+sorry         judged    named     adjective         4     1
+average       judged    overflow  adjective         4     1
+consider      judged    overflow  verb              4     1
+court         judged    overflow  verb              4     1
+direct        judged    overflow  adjective         4     1
+endure        judged    overflow  verb              4     1
+extend        judged    overflow  verb              8     0
+fasten        judged    overflow  verb              4     1
+flaw          judged    overflow  noun              4     1
+leak          judged    overflow  verb              4     1
+quake         judged    overflow  noun              4     1
+restore       judged    overflow  verb              8     0
+rot           judged    overflow  verb              4     1
+seize         judged    overflow  verb              4     1
+steer         judged    overflow  verb              4     1
+strain        judged    overflow  verb              4     1
+announce      judged    named     verb              3     1
+bleed         judged    named     verb              3     1
+brick         judged    named     noun              3     1
+card          judged    named     noun              3     1
+cheer         judged    named     verb              3     1
+club          judged    named     verb              3     1
+dispute       judged    named     verb              3     1
+entertain     judged    named     noun              3     1
+generous      judged    named     adjective         3     1
+loan          judged    named     verb              3     1
+mail          judged    named     verb              3     1
+military      judged    named     noun              3     1
+pee           judged    named     verb              3     1
+penalty       judged    named     noun              3     1
+rebel         judged    named     adjective         7     0
+scold         judged    named     noun              3     1
+slave         judged    named     noun              3     1
+summer        judged    named     noun              3     1
+tax           judged    named     verb              3     1
+troop         judged    named     noun              3     1
+advantage     judged    overflow  noun              3     1
+awkward       judged    overflow  adjective         3     1
+bet           judged    overflow  verb              3     1
+bury          judged    overflow  verb              7     0
+chase         judged    overflow  noun              3     1
+clay          judged    overflow  noun              3     1
+crash         judged    overflow  verb              3     1
+dawn          judged    overflow  noun              3     1
+dine          judged    overflow  verb              3     1
+dissolve      judged    overflow  verb              3     1
+drain         judged    overflow  verb              3     1
+fade          judged    overflow  verb              3     1
+flex          judged    overflow  noun              7     0
+float         judged    overflow  verb              7     0
+forbid        judged    overflow  verb              7     0
+foresee       judged    overflow  verb              3     1
+forget        judged    overflow  verb              3     1
+insert        judged    overflow  verb              3     1
+keen          judged    overflow  adjective         3     1
+launch        judged    overflow  verb              3     1
+mock          judged    overflow  verb              7     0
+obvious       judged    overflow  adjective         3     1
+preserve      judged    overflow  verb              3     1
+recover       judged    overflow  verb              7     0
+refer         judged    overflow  verb              3     1
+ruin          judged    overflow  verb              3     1
+sand          judged    overflow  noun              7     0
+shelf         judged    overflow  noun              3     1
+shut          judged    overflow  adjective         3     1
+similar       judged    overflow  adjective         3     1
+slant         judged    overflow  noun              7     0
+sled          judged    overflow  noun              3     1
+stare         judged    overflow  verb              3     1
+tendency      judged    overflow  noun              3     1
+toss          judged    overflow  verb              3     1
+tread         judged    overflow  noun              3     1
+anti          judged    named     noun              6     0
+anxious       judged    named     adjective         2     1
+assurance     judged    named     noun              2     1
+beg           judged    named     verb              2     1
+brand         judged    named     verb              2     1
+bride         judged    named     noun              2     1
+brown         judged    named     adjective         2     1
+candle        judged    named     noun              2     1
+cereal        judged    named     noun              2     1
+comedy        judged    named     noun              2     1
+complain      judged    named     verb              2     1
+drama         judged    named     noun              2     1
+ego           judged    named     noun              2     1
+embarrass     judged    named     verb              2     1
+evaluate      judged    named     verb              2     1
+fame          judged    named     noun              2     1
+flatter       judged    named     verb              2     1
+flock         judged    named     verb              2     1
+folk          judged    named     noun              2     1
+fuss          judged    named     verb              2     1
+govern        judged    named     verb              2     1
+grape         judged    named     noun              2     1
+graph         judged    named     noun              2     1
+honest        judged    named     adjective         2     1
+hug           judged    named     verb              2     1
+instruct      judged    named     verb              2     1
+jam           judged    named     verb              2     1
+jelly         judged    named     noun              2     1
+mob           judged    named     noun              2     1
+nap           judged    named     noun              2     1
+paddle        judged    named     noun              2     1
+pilot         judged    named     noun              2     1
+popular       judged    named     adjective         2     1
+pretend       judged    named     verb              2     1
+promote       judged    named     verb              2     1
+acquire       judged    overflow  verb              2     1
+arch          judged    overflow  verb              2     1
+bolt          judged    overflow  noun              2     1
+breeze        judged    overflow  noun              2     1
+calculate     judged    overflow  verb              2     1
+cease         judged    overflow  verb              2     1
+chaos         judged    overflow  noun              2     1
+coil          judged    overflow  noun              2     1
+crisp         judged    overflow  adjective         2     1
+deny          judged    overflow  verb              2     1
+difficult     judged    overflow  adjective         6     0
+disc          judged    overflow  noun              2     1
+due           judged    overflow  adjective         2     1
+dye           judged    overflow  verb              2     1
+extract       judged    overflow  verb              2     1
+fare          judged    overflow  noun              2     1
+flinch        judged    overflow  noun              2     1
+fragment      judged    overflow  verb              2     1
+gel           judged    overflow  noun              2     1
+giant         judged    overflow  adjective         2     1
+glory         judged    overflow  noun              2     1
+grind         judged    overflow  verb              6     0
+hatch         judged    overflow  verb              2     1
+ignore        judged    overflow  verb              2     1
+intense       judged    overflow  adjective         6     0
+let           judged    overflow  verb              6     0
+mature        judged    overflow  adjective         2     1
+mine          judged    overflow  verb              2     1
+modest        judged    overflow  adjective         2     1
+murmur        judged    overflow  noun              2     1
+nucleus       judged    overflow  noun              2     1
+owe           judged    overflow  verb              2     1
+pop           judged    overflow  verb              2     1
+prompt        judged    overflow  adjective         2     1
+man           kin       named     noun             48    37
+woman         kin       named     noun             35    20
+marriage      kin       named     noun             16    13
+girl          kin       named     noun              8     5
+boy           kin       named     noun              5     4
+mother        kin       named     noun              9     2
+brother       kin       named     noun              7     1
+father        kin       named     noun              4     1
+adult         kin       named     adjective         2     1
+ancestor      kin       named     noun              1     0
+elder         kin       named     adjective         1     0
+sister        kin       named     noun              1     0
+cousin        kin       named     noun              0     0
+die           life      overflow  verb              2     1
+born          life      overflow  verb              0     0
+principle     logic     overflow  noun              1     1
+evidence      logic     overflow  noun              0     0
+unless        logic     overflow  unless            0     0
+concept       mind      overflow  noun              1     1
+illusion      mind      overflow  noun              0     0
+perceive      mind      overflow  verb              0     0
+rotate        motion    overflow  verb              4     1
+approach      motion    overflow  verb              3     1
+drift         motion    overflow  verb              2     1
+orbit         motion    overflow  verb              1     0
+circulate     motion    overflow  verb              0     0
+depart        motion    overflow  verb              0     0
+form          pinned    pinned    verb            136   115
+color         pinned    pinned    verb             71    50
+liquid        pinned    pinned    adjective        69    39
+plan          pinned    pinned    verb             53    42
+great         pinned    pinned    adjective       103    13
+clean         pinned    pinned    adjective        60    17
+bring         pinned    pinned    verb             55     8
+blood         pinned    pinned    noun             44     5
+human         pinned    pinned    noun             15     9
+problem       pinned    pinned    noun             10    10
+hunt          pinned    pinned    verb             12     8
+trade         pinned    pinned    verb             21     4
+please        pinned    pinned    please            8     6
+gene          pinned    pinned    noun              6     6
+track         pinned    pinned    verb              9     5
+dream         pinned    pinned    verb              9     4
+joke          pinned    pinned    verb              9     4
+trap          pinned    pinned    verb             11     3
+prove         pinned    pinned    verb              9     3
+mountain      pinned    pinned    noun              6     3
+simple        pinned    pinned    adjective        13     1
+lip           pinned    pinned    noun              8     2
+solve         pinned    pinned    verb              4     3
+plane         pinned    pinned    noun              5     2
+triangle      pinned    pinned    noun              8     1
+drum          pinned    pinned    verb              5     1
+click         pinned    pinned    verb              1     1
+hello         pinned    pinned    hello             1     1
+molecule      pinned    pinned    noun              1     1
+braid         pinned    pinned    noun              1     0
+jewel         pinned    pinned    noun              1     0
+brow          pinned    pinned    noun              0     0
+justice       pinned    pinned    adjective         0     0
+our           pinned    pinned    noun              0     0
+sneeze        pinned    pinned    verb              0     0
+strength      pinned    pinned                      0     0
+speech        pinned    pinned                      0     0
+me            pinned    pinned                      0     0
+your          pinned    pinned                      0     0
+its           pinned    pinned                      0     0
+their         pinned    pinned                      0     0
+wood          plant     named     noun             34     7
+grain         plant     named     noun             12     7
+grass         plant     named     noun             14     5
+bark          plant     named     verb              4     4
+stem          plant     named     verb              4     4
+nut           plant     named     noun              5     3
+bush          plant     named     noun              4     2
+berry         plant     named     noun              2     2
+corn          plant     named     noun              2     1
+bean          plant     named     noun              2     0
+fern          plant     named     noun              1     0
+herb          plant     named     noun              1     0
+pea           plant     named     noun              1     0
+apple         plant     named     noun              0     0
+moss          plant     named     noun              0     0
+petal         plant     named     noun              0     0
+rice          plant     named     noun              0     0
+thorn         plant     named     noun              0     0
+vine          plant     named     noun              0     0
+wheat         plant     named     noun              0     0
+attribute     quality   overflow  verb              0     0
+total         quantity  overflow  verb              8     0
+decrease      quantity  overflow  verb              2     0
+degree        quantity  overflow  noun              1     0
+multiply      quantity  overflow  verb              0     0
+quantity      quantity  overflow  noun              0     0
+ratio         quantity  overflow  noun              0     0
+belong        relation  overflow  verb              2     0
+mirror        relation  overflow  verb              1     0
+correspond    relation  overflow  verb              0     0
+differ        relation  overflow  verb              0     0
+exclude       relation  overflow  verb              0     0
+person        social    named     noun            377   358
+people        social    named     noun             44    29
+friend        social    named     noun             31    23
+doctor        social    named     noun             21    19
+member        social    named     noun             15    15
+crowd         social    named     verb             16    11
+partner       social    named     noun             15    11
+team          social    named     noun             11     7
+thief         social    named     noun              8     4
+chief         social    named     adjective        10     3
+king          social    named     noun              9     3
+student       social    named     noun              5     3
+guest         social    named     noun              4     3
+nation        social    named     noun              4     3
+enemy         social    named     noun              4     2
+master        social    named     verb              3     2
+host          social    named     noun              3     1
+citizen       social    named     noun              1     0
+custom        social    named     noun              0     0
+word          speech    named     noun            110    86
+say           speech    named     verb             47    28
+speak         speech    named     verb             50    19
+tell          speech    named     verb             27    14
+answer        speech    named     verb             17    14
+ask           speech    named     verb             21    10
+cry           speech    named     verb             11     9
+shout         speech    named     verb             11     9
+laugh         speech    named     verb              9     7
+language      speech    named     noun             11     6
+whisper       speech    named     verb              0     0
+bless         spirit    overflow  verb              3     1
+curse         spirit    overflow  noun              3     1
+divine        spirit    overflow  adjective         6     0
+fate          spirit    overflow  noun              2     1
+pray          spirit    overflow  verb              1     1
+sin           spirit    overflow  noun              1     1
+angel         spirit    overflow  noun              1     0
+legend        spirit    overflow  noun              1     0
+meditate      spirit    overflow  verb              1     0
+omen          spirit    overflow  noun              1     0
+sacrifice     spirit    overflow  verb              1     0
+altar         spirit    overflow  noun              0     0
+demon         spirit    overflow  noun              0     0
+destiny       spirit    overflow  noun              0     0
+devil         spirit    overflow  noun              0     0
+enlighten     spirit    overflow  verb              0     0
+miracle       spirit    overflow  noun              0     0
+myth          spirit    overflow  noun              0     0
+oracle        spirit    overflow  noun              0     0
+prophecy      spirit    overflow  noun              0     0
+ritual        spirit    overflow  noun              0     0
+virtue        spirit    overflow  noun              0     0
+late          time      overflow  adjective         7     0
+hour          time      overflow  noun              1     1
+era           time      overflow  noun              1     0
+soon          time      overflow  adjective         1     0
+century       time      overflow  noun              0     0
+interval      time      overflow  noun              0     0
+minute        time      overflow  noun              0     0
+device        tool      named     noun             28    27
+handle        tool      named     verb             15    13
+blade         tool      named     noun             11     9
+wheel         tool      named     verb             15     8
+rope          tool      named     verb              8     4
+pin           tool      named     verb              9     3
+axe           tool      named     noun              4     4
+saw           tool      named     verb              6     3
+engine        tool      named     noun              5     3
+hammer        tool      named     verb              2     2
+lever         tool      named     noun              2     1
+needle        tool      named     noun              2     0
+pump          tool      named     verb              0     0
+car           travel    named     noun             26    12
+drive         travel    named     verb             25    10
+ship          travel    named     verb             15    10
+boat          travel    named     verb             16     8
+ride          travel    named     verb             11     8
+journey       travel    named     noun             10     6
+cart          travel    named     noun              8     5
+sail          travel    named     verb              7     2
+wagon         travel    named     noun              0     0
+fight         war       named     verb             46    30
+kill          war       named     verb             31    22
+weapon        war       named     noun             24    20
+attack        war       named     verb             21    14
+shield        war       named     noun              8     8
+war           war       named     verb             13     5
+battle        war       named     verb             10     5
+sword         war       named     noun              9     4
+victory       war       named     noun              4     1
+arrow         war       named     noun              1     1
+defeat        war       named     verb              3     0
+defend        war       named     verb              1     0
+skill         work      named     noun             60    41
+build         work      named     verb             52    35
+money         work      named     noun             49    21
+job           work      named     noun             27    15
+sell          work      named     verb             19    12
+craft         work      named     verb             13    13
+price         work      named     verb             10     8
+buy           work      named     verb             12     7
+labor         work      named     verb              3     2
+debt          work      named     noun              2     2
+carve         work      named     verb              5     1
+market        work      named     verb              5     1
+coin          work      named     noun              1     1
+hire          work      named     verb              1     1
+wage          work      named     noun              1     0
+do            world     by rank   verb             66    49
+box           world     by rank   verb             58    49
+science       world     by rank   noun             43    43
+new           world     by rank   adjective       120    16
+able          world     by rank   adjective        42    24
+expert        world     by rank   adjective        26    26
+stuff         world     by rank   verb             15    15
+dirt          world     by rank   noun             21    13
+want          world     by rank   verb             19    12
+meet          world     by rank   verb             22    11
+worth         world     by rank   verb             18    12
+letter        world     by rank   noun             19    10
+aid           world     by rank   verb             13    11
+promise       world     by rank   verb             17    10
+effort        world     by rank   noun             12    11
+own           world     by rank   adjective        21     8
+keep          world     by rank   verb             27     6
+normal        world     by rank   adjective        13     9
+bubble        world     by rank   verb             15     8
+emotion       world     by rank   noun             11     9
+sure          world     by rank   adjective        14     8
+wish          world     by rank   verb             10     9
+label         world     by rank   verb             12     8
+wonder        world     by rank   verb             16     7
+fair          world     by rank   adjective        15     7
+listen        world     by rank   verb             11     8
+raise         world     by rank   verb             27     4
+issue         world     by rank   verb              8     8
+stress        world     by rank   verb             10     7
+peak          world     by rank   verb              8     7
+trip          world     by rank   verb              8     7
+compound      world     by rank   verb              7     7
+satisfy       world     by rank   verb             11     6
+suit          world     by rank   verb             10     6
+vessel        world     by rank   noun             10     6
+try           world     by rank   verb             13     5
+grasp         world     by rank   verb              7     6
+stable        world     by rank   adjective         7     6
+brief         world     by rank   adjective         9     5
+ahead         world     by rank   adjective         7     5
+earn          world     by rank   verb              4     4
+smile         world     by rank   verb              4     4
+bulge         world     by rank   noun              4     2
+loyalty       world     by rank   noun              4     1
+propose       world     by rank   verb              2     1
+purchase      world     by rank   verb              2     1
+quote         world     by rank   verb              2     1
+recognize     world     by rank   verb              2     1
+regard        world     by rank   verb              2     1
+rely          world     by rank   verb              2     1
+resist        world     by rank   verb              2     1
+revenge       world     by rank   noun              2     1
+rim           world     by rank   noun              2     1
+royal         world     by rank   adjective         6     0
+rumor         world     by rank   noun              2     1
+scoop         world     by rank   noun              2     1
+seem          world     by rank   verb              2     1
+shore         world     by rank   verb              2     1
+shrink        world     by rank   verb              2     1
+sibling       world     by rank   noun              2     1
+sip           world     by rank   verb              2     1
+sober         world     by rank   verb              2     1
+sour          world     by rank   adjective         6     0
+sparkle       world     by rank   verb              6     0
+spiral        world     by rank   verb              2     1
+spool         world     by rank   noun              2     1
+sting         world     by rank   verb              2     1
+stock         world     by rank   noun              2     1
+straw         world     by rank   noun              2     1
+stroll        world     by rank   noun              2     1
+swing         world     by rank   verb              6     0
+temporary     world     by rank   adjective         2     1
+thaw          world     by rank   noun              2     1
+tile          world     by rank   verb              2     1
+tin           world     by rank   noun              2     1
+toast         world     by rank   noun              2     1
+tough         world     by rank   adjective         6     0
+treasure      world     by rank   noun              2     1
+uniform       world     by rank   noun              2     1
+uterus        world     by rank   noun              2     1
+wine          world     by rank   noun              2     1
+wipe          world     by rank   verb              6     0
+yield         world     by rank   verb              2     1
+abandon       world     by rank   verb              1     1
+abstain       world     by rank   noun              1     1
+accelerate    world     by rank   verb              1     1
+accent        world     by rank   verb              1     1
+addict        world     by rank   noun              1     1
+alter         world     by rank   verb              1     1
+amp           world     by rank   noun              1     1
+ancient       world     by rank   adjective         5     0
+anesthetic    world     by rank   adjective         1     1
+anus          world     by rank   noun              1     1
+applause      world     by rank   noun              1     1
+aspect        world     by rank   noun              1     1
+assault       world     by rank   noun              1     1
+athlete       world     by rank   noun              1     1
+attempt       world     by rank   verb              1     1
+badge         world     by rank   noun              1     1
+ban           world     by rank   verb              1     1
+basis         world     by rank   noun              1     1
+bead          world     by rank   noun              1     1
+become        world     by rank   verb              5     0
+blemish       world     by rank   noun              1     1
+blind         world     by rank   adjective         1     1
+blink         world     by rank   verb              1     1
+blog          world     by rank   noun              1     1
+blunt         world     by rank   adjective         1     1
+bribe         world     by rank   verb              1     1
+bully         world     by rank   verb              1     1
+bun           world     by rank   noun              1     1
+captain       world     by rank   noun              1     1
+ceramic       world     by rank   adjective         1     1
+chair         world     by rank   verb              1     1
+champion      world     by rank   noun              1     1
+chant         world     by rank   verb              1     1
+chunk         world     by rank   noun              1     1
+chute         world     by rank   verb              1     1
+clasp         world     by rank   noun              1     1
+clause        world     by rank   noun              1     1
+client        world     by rank   noun              1     1
+climate       world     by rank   noun              1     1
+clip          world     by rank   verb              1     1
+coast         world     by rank   noun              1     1
+coffee        world     by rank   noun              1     1
+comb          world     by rank   noun              1     1
+commit        world     by rank   verb              1     1
+comparison    world     by rank   noun              1     1
+comply        world     by rank   verb              1     1
+conquer       world     by rank   verb              1     1
+consequence   world     by rank   noun              1     1
+construct     world     by rank   verb              1     1
+consume       world     by rank   verb              1     1
+cot           world     by rank   noun              1     1
+crave         world     by rank   verb              1     1
+credit        world     by rank   verb              1     1
+crew          world     by rank   noun              1     1
+critique      world     by rank   noun              1     1
+crocodile     world     by rank   noun              1     1
+crust         world     by rank   noun              1     1
+cube          world     by rank   verb              1     1
+cuddle        world     by rank   noun              1     1
+cue           world     by rank   verb              1     1
+dart          world     by rank   verb              1     1
+debris        world     by rank   noun              1     1
+decent        world     by rank   adjective         1     1
+declare       world     by rank   verb              5     0
+dent          world     by rank   noun              1     1
+dessert       world     by rank   noun              1     1
+dial          world     by rank   noun              1     1
+digest        world     by rank   verb              1     1
+discover      world     by rank   verb              1     1
+dome          world     by rank   noun              1     1
+dough         world     by rank   noun              1     1
+enroll        world     by rank   verb              1     1
+erase         world     by rank   verb              1     1
+essay         world     by rank   noun              1     1
+establish     world     by rank   verb              1     1
+estimate      world     by rank   verb              1     1
+evacuate      world     by rank   verb              1     1
+evening       world     by rank   noun              5     0
+exposure      world     by rank   noun              1     1
+expression    world     by rank   noun              1     1
+fad           world     by rank   noun              1     1
+fantasy       world     by rank   noun              1     1
+fertile       world     by rank   adjective         1     1
+festival      world     by rank   noun              1     1
+fiction       world     by rank   noun              1     1
+fist          world     by rank   noun              1     1
+flap          world     by rank   noun              1     1
+flare         world     by rank   verb              1     1
+fowl          world     by rank   noun              1     1
+fraction      world     by rank   noun              1     1
+fright        world     by rank   noun              1     1
+frost         world     by rank   verb              1     1
+furnace       world     by rank   noun              1     1
+furniture     world     by rank   noun              1     1
+fuse          world     by rank   noun              1     1
+fuzz          world     by rank   verb              1     1
+gang          world     by rank   verb              1     1
+gem           world     by rank   noun              1     1
+giggle        world     by rank   verb              1     1
+glaze         world     by rank   noun              1     1
+gradual       world     by rank   adjective         1     1
+grate         world     by rank   verb              1     1
+greet         world     by rank   verb              1     1
+grin          world     by rank   noun              1     1
+grudge        world     by rank   noun              1     1
+gull          world     by rank   noun              1     1
+gulp          world     by rank   verb              5     0
+gum           world     by rank   noun              5     0
+harmony       world     by rank   noun              1     1
+harp          world     by rank   noun              1     1
+haze          world     by rank   noun              1     1
+honey         world     by rank   noun              5     0
+hotel         world     by rank   noun              1     1
+hull          world     by rank   noun              1     1
+hum           world     by rank   noun              1     1
+humid         world     by rank   adjective         1     1
+humor         world     by rank   noun              1     1
+icon          world     by rank   noun              1     1
+ideal         world     by rank   adjective         5     0
+imitate       world     by rank   verb              1     1
+impress       world     by rank   verb              1     1
+industry      world     by rank   noun              1     1
+inn           world     by rank   noun              1     1
+install       world     by rank   verb              1     1
+instinct      world     by rank   noun              1     1
+insult        world     by rank   verb              1     1
+jail          world     by rank   noun              1     1
+jerk          world     by rank   noun              1     1
+jewelry       world     by rank   noun              1     1
+jolt          world     by rank   noun              1     1
+journal       world     by rank   noun              1     1
+jug           world     by rank   noun              1     1
+kin           world     by rank   noun              1     1
+kiss          world     by rank   verb              1     1
+kit           world     by rank   noun              1     1
+knuckle       world     by rank   noun              1     1
+lake          world     by rank   noun              1     1
+lash          world     by rank   verb              1     1
+latch         world     by rank   verb              1     1
+lend          world     by rank   verb              1     1
+lice          world     by rank   noun              1     1
+loft          world     by rank   noun              1     1
+lure          world     by rank   noun              1     1
+mania         world     by rank   noun              1     1
+masculine     world     by rank   adjective         1     1
+mast          world     by rank   noun              1     1
+melody        world     by rank   noun              1     1
+minister      world     by rank   noun              1     1
+mode          world     by rank   noun              1     1
+monopoly      world     by rank   noun              1     1
+morning       world     by rank   noun              5     0
+motive        world     by rank   noun              1     1
+mount         world     by rank   verb              1     1
+mug           world     by rank   noun              1     1
+mush          world     by rank   noun              1     1
+native        world     by rank   noun              5     0
+negotiate     world     by rank   verb              1     1
+oar           world     by rank   noun              1     1
+oath          world     by rank   noun              1     1
+observe       world     by rank   verb              1     1
+occasion      world     by rank   noun              1     1
+ointment      world     by rank   noun              1     1
+okay          world     by rank   okay              1     1
+ore           world     by rank   noun              1     1
+ovary         world     by rank   noun              1     1
+oven          world     by rank   noun              1     1
+package       world     by rank   verb              1     1
+pal           world     by rank   noun              1     1
+parade        world     by rank   noun              1     1
+patch         world     by rank   verb              1     1
+peach         world     by rank   noun              1     1
+pellet        world     by rank   noun              1     1
+penis         world     by rank   noun              1     1
+pill          world     by rank   noun              1     1
+pinch         world     by rank   noun              1     1
+pink          world     by rank   adjective         1     1
+plume         world     by rank   noun              1     1
+pod           world     by rank   noun              1     1
+pool          world     by rank   verb              1     1
+poop          world     by rank   verb              1     1
+porch         world     by rank   noun              1     1
+pose          world     by rank   verb              1     1
+preach        world     by rank   verb              1     1
+pregnant      world     by rank   adjective         1     1
+prick         world     by rank   noun              1     1
+profile       world     by rank   verb              1     1
+project       world     by rank   verb              1     1
+pronounce     world     by rank   verb              1     1
+propaganda    world     by rank   noun              1     1
+protest       world     by rank   verb              1     1
+puff          world     by rank   noun              1     1
+punch         world     by rank   verb              1     1
+puncture      world     by rank   noun              1     1
+rack          world     by rank   verb              1     1
+register      world     by rank   verb              1     1
+reign         world     by rank   verb              1     1
+rein          world     by rank   verb              1     1
+remedy        world     by rank   verb              1     1
+remember      world     by rank   verb              5     0
+repair        world     by rank   verb              5     0
+reputation    world     by rank   noun              1     1
+resent        world     by rank   verb              1     1
+residue       world     by rank   noun              1     1
+rite          world     by rank   noun              1     1
+roast         world     by rank   verb              1     1
+rocket        world     by rank   noun              1     1
+routine       world     by rank   adjective         1     1
+salad         world     by rank   noun              1     1
+sandwich      world     by rank   noun              1     1
+sane          world     by rank   noun              1     1
+sausage       world     by rank   noun              1     1
+scalp         world     by rank   noun              1     1
+scheme        world     by rank   noun              1     1
+sect          world     by rank   noun              1     1
+seminar       world     by rank   noun              1     1
+sensation     world     by rank   noun              1     1
+serum         world     by rank   noun              1     1
+shard         world     by rank   noun              1     1
+sheath        world     by rank   noun              1     1
+shrine        world     by rank   noun              1     1
+sly           world     by rank   adjective         5     0
+snatch        world     by rank   verb              1     1
+sniff         world     by rank   verb              1     1
+snout         world     by rank   noun              1     1
+soap          world     by rank   noun              5     0
+sole          world     by rank   adjective         1     1
+soothe        world     by rank   verb              5     0
+spade         world     by rank   noun              1     1
+spare         world     by rank   adjective         1     1
+spasm         world     by rank   noun              1     1
+spawn         world     by rank   verb              1     1
+speck         world     by rank   noun              1     1
+spit          world     by rank   verb              5     0
+splendor      world     by rank   noun              1     1
+sponsor       world     by rank   verb              1     1
+square        world     by rank   verb              1     1
+stash         world     by rank   noun              1     1
+statue        world     by rank   noun              1     1
+sterile       world     by rank   adjective         1     1
+steward       world     by rank   noun              1     1
+stool         world     by rank   noun              1     1
+strict        world     by rank   adjective         1     1
+stupid        world     by rank   adjective         1     1
+subscribe     world     by rank   verb              1     1
+succeed       world     by rank   verb              1     1
+surrender     world     by rank   noun              1     1
+sync          world     by rank   noun              1     1
+tablet        world     by rank   noun              1     1
+temper        world     by rank   verb              1     1
+thrust        world     by rank   verb              1     1
+tilt          world     by rank   noun              5     0
+token         world     by rank   adjective         1     1
+ton           world     by rank   noun              1     1
+trace         world     by rank   noun              1     1
+transfer      world     by rank   verb              1     1
+translate     world     by rank   verb              1     1
+traverse      world     by rank   noun              1     1
+tremor        world     by rank   noun              1     1
+trend         world     by rank   verb              1     1
+tumor         world     by rank   noun              1     1
+tutor         world     by rank   noun              1     1
+typical       world     by rank   adjective         1     1
+umbrella      world     by rank   noun              1     1
+unite         world     by rank   verb              1     1
+valid         world     by rank   adjective         1     1
+van           world     by rank   noun              1     1
+vault         world     by rank   noun              1     1
+verify        world     by rank   verb              1     1
+violate       world     by rank   verb              1     1
+vomit         world     by rank   verb              1     1
+ware          world     by rank   noun              1     1
+wax           world     by rank   verb              5     0
+witness       world     by rank   noun              1     1
+wizard        world     by rank   noun              1     1
+yell          world     by rank   verb              1     1
+zip           world     by rank   verb              1     1
+attach        world     by rank   verb              4     0
+beside        world     by rank   adjective         4     0
+blast         world     by rank   verb              4     0
+broad         world     by rank   adjective         4     0
+cheat         world     by rank   verb              4     0
+confirm       world     by rank   verb              4     0
+deceit        world     by rank   noun              4     0
+discuss       world     by rank   verb              4     0
+dual          world     by rank   adjective         4     0
+express       world     by rank   adjective         4     0
+filter        world     by rank   verb              4     0
+flag          world     by rank   verb              4     0
+humble        world     by rank   adjective         4     0
+immune        world     by rank   noun              4     0
+internal      world     by rank   adjective         4     0
+non           world     by rank   non               4     0
+plain         world     by rank   adjective         4     0
+prepare       world     by rank   verb              4     0
+random        world     by rank   adjective         4     0
+require       world     by rank   verb              4     0
+slippery      world     by rank   adjective         4     0
+sneak         world     by rank   verb              4     0
+splash        world     by rank   verb              4     0
+stubborn      world     by rank   adjective         4     0
+urgent        world     by rank   adjective         4     0
+visual        world     by rank   adjective         4     0
+wake          world     by rank   verb              4     0
+weird         world     by rank   adjective         4     0
+alert         world     by rank   adjective         3     0
+allure        world     by rank   noun              3     0
+amuse         world     by rank   verb              3     0
+assume        world     by rank   verb              3     0
+automatic     world     by rank   adjective         3     0
+betray        world     by rank   verb              3     0
+buzz          world     by rank   verb              3     0
+cautious      world     by rank   adjective         3     0
+central       world     by rank   adjective         3     0
+constant      world     by rank   adjective         3     0
+curious       world     by rank   adjective         3     0
+curl          world     by rank   verb              3     0
+dare          world     by rank   verb              3     0
+diplomatic    world     by rank   adjective         3     0
+drag          world     by rank   verb              3     0
+dummy         world     by rank   adjective         3     0
+encourage     world     by rank   verb              3     0
+external      world     by rank   adjective         3     0
+faint         world     by rank   adjective         3     0
+flip          world     by rank   verb              3     0
+funeral       world     by rank   noun              3     0
+hay           world     by rank   noun              3     0
+hog           world     by rank   noun              3     0
+hood          world     by rank   noun              3     0
+interrupt     world     by rank   verb              3     0
+isolate       world     by rank   verb              3     0
+lazy          world     by rank   adjective         3     0
+lineage       world     by rank   noun              3     0
+mutual        world     by rank   adjective         3     0
+navy          world     by rank   noun              3     0
+noon          world     by rank   noun              3     0
+pierce        world     by rank   noun              3     0
+plead         world     by rank   verb              3     0
+private       world     by rank   adjective         3     0
+pulse         world     by rank   noun              3     0
+punish        world     by rank   verb              3     0
+raw           world     by rank   adjective         3     0
+reckless      world     by rank   adjective         3     0
+rescue        world     by rank   noun              3     0
+secure        world     by rank   adjective         3     0
+smash         world     by rank   verb              3     0
+society       world     by rank   noun              3     0
+spike         world     by rank   noun              3     0
+staff         world     by rank   verb              3     0
+steep         world     by rank   adjective         3     0
+stiff         world     by rank   adjective         3     0
+survive       world     by rank   verb              3     0
+swamp         world     by rank   noun              3     0
+sway          world     by rank   verb              3     0
+tangle        world     by rank   verb              3     0
+theater       world     by rank   noun              3     0
+tremble       world     by rank   verb              3     0
+absolute      world     by rank   adjective         2     0
+abundant      world     by rank   adjective         2     0
+adequate      world     by rank   adjective         2     0
+ally          world     by rank   noun              2     0
+appendix      world     by rank   noun              2     0
+barren        world     by rank   adjective         2     0
+bob           world     by rank   noun              2     0
+cable         world     by rank   noun              2     0
+calendar      world     by rank   noun              2     0
+clap          world     by rank   verb              2     0
+clumsy        world     by rank   adjective         2     0
+collapse      world     by rank   verb              2     0
+community     world     by rank   noun              2     0
+cozy          world     by rank   adjective         2     0
+crease        world     by rank   noun              2     0
+creep         world     by rank   verb              2     0
+cute          world     by rank   adjective         2     0
+dash          world     by rank   verb              2     0
+deceive       world     by rank   verb              2     0
+define        world     by rank   verb              2     0
+defy          world     by rank   verb              2     0
+dense         world     by rank   adjective         2     0
+devote        world     by rank   verb              2     0
+disappoint    world     by rank   verb              2     0
+elevate       world     by rank   verb              2     0
+embryo        world     by rank   noun              2     0
+engage        world     by rank   verb              2     0
+entire        world     by rank   adjective         2     0
+exercise      world     by rank   verb              2     0
+expand        world     by rank   verb              2     0
+explode       world     by rank   verb              2     0
+fierce        world     by rank   adjective         2     0
+flee          world     by rank   verb              2     0
+foreign       world     by rank   adjective         2     0
+foul          world     by rank   adjective         2     0
+fragrant      world     by rank   adjective         2     0
+fringe        world     by rank   adjective         2     0
+gesture       world     by rank   noun              2     0
+gloom         world     by rank   noun              2     0
+grand         world     by rank   adjective         2     0
+grid          world     by rank   noun              2     0
+grill         world     by rank   verb              2     0
+guarantee     world     by rank   verb              2     0
+hasty         world     by rank   adjective         2     0
+idol          world     by rank   noun              2     0
+inform        world     by rank   verb              2     0
+kept          world     by rank   verb              2     0
+knight        world     by rank   noun              2     0
+knit          world     by rank   verb              2     0
+lateral       world     by rank   adjective         2     0
+lemon         world     by rank   noun              2     0
+lens          world     by rank   noun              2     0
+luggage       world     by rank   noun              2     0
+luxury        world     by rank   noun              2     0
+minor         world     by rank   adjective         2     0
+nipple        world     by rank   noun              2     0
+notch         world     by rank   noun              2     0
+pale          world     by rank   adjective         2     0
+particular    world     by rank   adjective         2     0
+passage       world     by rank   noun              2     0
+population    world     by rank   noun              2     0
+practical     world     by rank   adjective         2     0
+predict       world     by rank   verb              2     0
+prefer        world     by rank   verb              2     0
+quit          world     by rank   verb              2     0
+rapid         world     by rank   adjective         2     0
+reproduce     world     by rank   verb              2     0
+research      world     by rank   verb              2     0
+review        world     by rank   verb              2     0
+scrape        world     by rank   verb              2     0
+sensitive     world     by rank   adjective         2     0
+shy           world     by rank   adjective         2     0
+skip          world     by rank   noun              2     0
+snap          world     by rank   verb              2     0
+spice         world     by rank   verb              2     0
+spy           world     by rank   verb              2     0
+stew          world     by rank   noun              2     0
+strategy      world     by rank   noun              2     0
+strut         world     by rank   noun              2     0
+superior      world     by rank   adjective         2     0
+swim          world     by rank   verb              2     0
+switch        world     by rank   verb              2     0
+tobacco       world     by rank   noun              2     0
+tow           world     by rank   noun              2     0
+toxic         world     by rank   adjective         2     0
+trash         world     by rank   noun              2     0
+unique        world     by rank   adjective         2     0
+universal     world     by rank   adjective         2     0
+unravel       world     by rank   verb              2     0
+vertical      world     by rank   adjective         2     0
+wiggle        world     by rank   noun              2     0
+absurd        world     by rank   adjective         1     0
+adhesive      world     by rank   adjective         1     0
+admit         world     by rank   verb              1     0
+adventure     world     by rank   noun              1     0
+aggressive    world     by rank   adjective         1     0
+alien         world     by rank   noun              1     0
+altitude      world     by rank   noun              1     0
+apparent      world     by rank   adjective         1     0
+appreciate    world     by rank   verb              1     0
+arena         world     by rank   noun              1     0
+arrogant      world     by rank   adjective         1     0
+arson         world     by rank   noun              1     0
+artificial    world     by rank   adjective         1     0
+associate     world     by rank   verb              1     0
+atmosphere    world     by rank   noun              1     0
+attend        world     by rank   verb              1     0
+aversion      world     by rank   noun              1     0
+await         world     by rank   verb              1     0
+awful         world     by rank   adjective         1     0
+balloon       world     by rank   noun              1     0
+banana        world     by rank   noun              1     0
+barley        world     by rank   noun              1     0
+beer          world     by rank   noun              1     0
+beneath       world     by rank   adjective         1     0
+bid           world     by rank   verb              1     0
+blot          world     by rank   noun              1     0
+bonus         world     by rank   noun              1     0
+borrow        world     by rank   verb              1     0
+brag          world     by rank   noun              1     0
+bruise        world     by rank   verb              1     0
+burp          world     by rank   verb              1     0
+burrow        world     by rank   noun              1     0
+cabbage       world     by rank   noun              1     0
+casual        world     by rank   adjective         1     0
+caution       world     by rank   verb              1     0
+celebrate     world     by rank   verb              1     0
+certificate   world     by rank   noun              1     0
+chaotic       world     by rank   adjective         1     0
+char          world     by rank   noun              1     0
+choir         world     by rank   noun              1     0
+choke         world     by rank   noun              1     0
+chronic       world     by rank   adjective         1     0
+clamp         world     by rank   noun              1     0
+clan          world     by rank   noun              1     0
+clatter       world     by rank   noun              1     0
+cliff         world     by rank   noun              1     0
+clot          world     by rank   noun              1     0
+cluster       world     by rank   noun              1     0
+cob           world     by rank   noun              1     0
+cock          world     by rank   noun              1     0
+college       world     by rank   noun              1     0
+colon         world     by rank   noun              1     0
+combat        world     by rank   verb              1     0
+compete       world     by rank   verb              1     0
+compress      world     by rank   noun              1     0
+condemn       world     by rank   verb              1     0
+confess       world     by rank   verb              1     0
+confine       world     by rank   noun              1     0
+consent       world     by rank   verb              1     0
+contaminate   world     by rank   verb              1     0
+corpse        world     by rank   noun              1     0
+council       world     by rank   noun              1     0
+crimson       world     by rank   noun              1     0
+crooked       world     by rank   verb              1     0
+crucial       world     by rank   adjective         1     0
+crude         world     by rank   adjective         1     0
+cucumber      world     by rank   noun              1     0
+cunning       world     by rank   adjective         1     0
+damp          world     by rank   adjective         1     0
+dandy         world     by rank   noun              1     0
+dangle        world     by rank   noun              1     0
+daze          world     by rank   verb              1     0
+decline       world     by rank   verb              1     0
+dedicate      world     by rank   verb              1     0
+definite      world     by rank   adjective         1     0
+delegate      world     by rank   verb              1     0
+deliver       world     by rank   verb              1     0
+demonstrate   world     by rank   verb              1     0
+describe      world     by rank   verb              1     0
+deserve       world     by rank   verb              1     0
+dew           world     by rank   noun              1     0
+diligent      world     by rank   adjective         1     0
+diminish      world     by rank   verb              1     0
+disguise      world     by rank   verb              1     0
+dispatch      world     by rank   verb              1     0
+disrupt       world     by rank   verb              1     0
+distinct      world     by rank   adjective         1     0
+district      world     by rank   noun              1     0
+divorce       world     by rank   verb              1     0
+dizzy         world     by rank   adjective         1     0
+donate        world     by rank   verb              1     0
+dose          world     by rank   noun              1     0
+drill         world     by rank   verb              1     0
+drool         world     by rank   noun              1     0
+dumpling      world     by rank   verb              1     0
+dusk          world     by rank   noun              1     0
+elegant       world     by rank   adjective         1     0
+embrace       world     by rank   verb              1     0
+enthusiastic  world     by rank   adjective         1     0
+entice        world     by rank   verb              1     0
+escort        world     by rank   noun              1     0
+exceed        world     by rank   verb              1     0
+exclusive     world     by rank   adjective         1     0
+expel         world     by rank   verb              1     0
+expose        world     by rank   verb              1     0
+feces         world     by rank   noun              1     0
+fizz          world     by rank   noun              1     0
+flair         world     by rank   noun              1     0
+flake         world     by rank   verb              1     0
+flax          world     by rank   noun              1     0
+fluff         world     by rank   noun              1     0
+font          world     by rank   noun              1     0
+fortunate     world     by rank   adjective         1     0
+fragile       world     by rank   adjective         1     0
+fragrance     world     by rank   noun              1     0
+frown         world     by rank   verb              1     0
+fumble        world     by rank   noun              1     0
+funnel        world     by rank   noun              1     0
+global        world     by rank   adjective         1     0
+gloss         world     by rank   verb              1     0
+gossip        world     by rank   verb              1     0
+gourd         world     by rank   noun              1     0
+grease        world     by rank   noun              1     0
+greed         world     by rank   noun              1     0
+groove        world     by rank   noun              1     0
+grumpy        world     by rank   adjective         1     0
+harbor        world     by rank   noun              1     0
+harvest       world     by rank   verb              1     0
+heir          world     by rank   noun              1     0
+helm          world     by rank   noun              1     0
+heritage      world     by rank   noun              1     0
+hesitate      world     by rank   verb              1     0
+hoof          world     by rank   noun              1     0
+horizontal    world     by rank   adjective         1     0
+hospital      world     by rank   noun              1     0
+hostile       world     by rank   adjective         1     0
+inflate       world     by rank   verb              1     0
+initiate      world     by rank   verb              1     0
+inquire       world     by rank   verb              1     0
+inquisitive   world     by rank   adjective         1     0
+instant       world     by rank   adjective         1     0

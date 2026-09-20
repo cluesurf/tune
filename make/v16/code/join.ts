@@ -25,7 +25,8 @@
 import { readFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { VOWELS, breaker } from './sound'
+import { VOWELS } from './sound'
+import { seamOf } from './seam'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../../../base/v16')
@@ -36,64 +37,54 @@ const read = (name: string) =>
     .map(one => one.trim())
     .filter(Boolean)
 
-const short = [...read('cvc.txt'), ...read('cvcc.txt'), ...read('ccvc.txt')]
-const long = read('cvcvc.txt')
+/**
+ * THE 4,096 THE LANGUAGE HAS, not the pool they were drawn from.
+ *
+ * This read `cvc.txt`, `cvcc.txt`, `ccvc.txt` and `cvcvc.txt`, which
+ * are the USABLE pools at distance 2 and come to 6,680. Every rate
+ * below was therefore computed over two and a half thousand words that
+ * are not in the language, and once `CVCVC` was dropped that included a
+ * whole shape of them.
+ */
+const short = [
+  ...read('final-cvc.txt'),
+  ...read('final-cvcc.txt'),
+  ...read('final-ccvc.txt'),
+]
+const long = read('final-cvcvc.txt')
 const roots = [...short, ...long]
-const legal = new Set(roots)
 
 const SONOROUS = new Set(['l', 'r', 'm', 'n', 'q', 'w', 'y'])
 
 const isVowel = (ch: string) => VOWELS.includes(ch)
 
-/** The consonants a root ends on, and the ones it starts with. */
-const tail = (one: string) => {
-  let at = one.length
-  while (at > 0 && !isVowel(one[at - 1])) at--
-  return one.slice(at)
-}
-const head = (one: string) => {
-  let at = 0
-  while (at < one.length && !isVowel(one[at])) at++
-  return one.slice(0, at)
-}
-
 /**
- * The shared rule, plus the CLUSTER case this file alone cares about.
+ * ONE RULE, IN `seam.ts`, AND THIS FILE NO LONGER KEEPS ITS OWN.
  *
- * `breaker` in `sound.ts` covers the same sound and two fricatives.
- * What it does not know is the four and five consonant seam, which
- * only arises here where two clusters meet.
+ * The cluster clause started here, because this is where two clusters
+ * first met, and the copy in this file was the whole rule for a while.
+ * That is exactly the shape of thing that drifts: `seam.ts` later grew
+ * the cut clause, which is what makes a compound readable at all, and a
+ * second copy here would have gone on reporting a readable language
+ * while the real one was not.
  */
-function seamMark(a: string, b: string): string {
-  const shared = breaker(a, b)
-  if (shared) return shared
-  const seam = tail(a) + head(b)
-  if (seam.length >= 4 && ![...seam].some(one => SONOROUS.has(one))) {
-    return 'l'
-  }
-  return ''
-}
-
-const join = (a: string, b: string) => a + seamMark(a, b) + b
+const SEAM = seamOf(roots)
+const seamMark = SEAM.mark
+const join = SEAM.join
 
 /**
  * Every pair of roots that could have produced this surface.
  *
- * Unlike v8 there is no shortcut: a `CC` may be inside a root, so the
- * split has to be tried at every position a root could end.
+ * `SEAM.parses` rather than a loop over cut positions, which is the
+ * same rule the reader uses and the same one `v16:decode` is graded on.
+ * The loop that was here tried the cut at `at` and `at + 1` only, so it
+ * could not see a `wa` mark at all, and `wa` is the one breaker longer
+ * than a letter.
  */
 function readings(word: string): Array<string> {
-  const out: Array<string> = []
-  for (const at of [3, 4, 5]) {
-    const left = word.slice(0, at)
-    if (!legal.has(left)) continue
-    for (const from of [at, at + 1]) {
-      const right = word.slice(from)
-      if (!legal.has(right)) continue
-      if (join(left, right) === word) out.push(`${left}+${right}`)
-    }
-  }
-  return out
+  return SEAM.parses(word, 8)
+    .filter(one => one.length === 2)
+    .map(one => one.join('+'))
 }
 
 process.stdout.write(
