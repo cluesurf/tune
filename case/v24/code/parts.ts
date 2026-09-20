@@ -31,11 +31,19 @@
  * bad part is paid by whoever runs the loop next and cannot see why
  * the number did not move.
  *
+ * `--split` ALSO READS THE UNMERGED SLICE FILES under
+ * `exploration/split/`. Without it this only sees rows that have
+ * already been folded into `ask-split.csv`, so a worker cannot check
+ * the twenty rows they just wrote until after they are committed, and
+ * `merge` never re-answers a word. That is backwards: the whole point
+ * of the gate is to catch a dangling part BEFORE it is permanent.
+ *
  * Usage:
  *   pnpm --dir deck/tune v24:parts
+ *   pnpm --dir deck/tune v24:parts -- --split
  */
 
-import { readFileSync } from 'fs'
+import { readdirSync, readFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { parse } from 'csv-parse/sync'
@@ -68,9 +76,23 @@ for (const one of read(resolve(TERM, 'english.csv'))) {
   if (term) canSeat.add(term)
 }
 
+const SPLIT = process.argv.includes('--split')
+
+/** Every row to judge: what is folded in, plus the slices if asked. */
+const rows = read(resolve(OUT, 'ask-split.csv'))
+const slices: Array<string> = []
+
+if (SPLIT) {
+  const dir = resolve(OUT, 'split')
+  for (const name of readdirSync(dir).sort()) {
+    if (!name.endsWith('.csv')) continue
+    slices.push(name)
+    rows.push(...read(resolve(dir, name)))
+  }
+}
+
 const judged = new Map<string, Array<string>>()
 const ruled = new Set<string>()
-const rows = read(resolve(OUT, 'ask-split.csv'))
 for (const one of rows) {
   const leaf = (one.leaf ?? '').trim().toLowerCase()
   if (!leaf) continue
@@ -123,7 +145,10 @@ const show = (map: Map<string, Array<string>>, cap: number) =>
 
 process.stdout.write(
   `THE PARTS OF EVERY JUDGED COMPOUND\n\n` +
-    `  rows in ask-split.csv   ${rows.length}\n` +
+    (SPLIT
+      ? `  reading the slices too  ${slices.length ? slices.join(' ') : 'none'}\n`
+      : `  folded rows only. Add --split to check the slices too\n`) +
+    `  rows judged             ${rows.length}\n` +
     `  compounds               ${judged.size}\n` +
     `  every part sayable      ${ok}\n` +
     `  compound with no parts  ${empty.length}` +

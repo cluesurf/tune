@@ -143,578 +143,577 @@ unit,jok,3,by load,25,24
 value,xid,3,holds a short form,37,24
 vehicle,yan,3,pinned,28,24
 voice,voz,3,pinned,35,24
-angle,meC,3,by load,30,23
+angle,naf,3,by load,30,23
 knowledge,yig,3,holds a short form,28,23
-message,kad,3,by load,38,23
-go,naf,3,by load,57,22
+message,meC,3,by load,38,23
+go,saC,3,by load,57,22
 image,mij,3,pinned,36,22
-kill,saC,3,by load,31,22
-material,tam,3,by load,22,22
+kill,tam,3,by load,31,22
+material,vut,3,by load,22,22
 reason,zib,3,holds a short form,25,22
-bag,zar,3,by load,24,21
-creature,Cop,3,by load,21,21
+bag,Cop,3,by load,24,21
+creature,bej,3,by load,21,21
 face,fes,3,pinned,35,21
-guide,xad,3,by load,30,21
-joy,wom,3,by load,31,21
-money,vut,3,by load,49,21
+guide,zar,3,by load,30,21
+joy,xad,3,by load,31,21
+money,wom,3,by load,49,21
 turn,tun,3,pinned,60,21
-bone,faf,3,by load,26,20
+bone,gec,3,by load,26,20
 cell,kox,3,pinned,31,20
-draw,bej,3,by load,38,20
-figure,gec,3,by load,24,20
+draw,dax,3,by load,38,20
+figure,heC,3,by load,24,20
 full,fal,3,echoes the english,55,20
 nature,nox,3,pinned,39,20
 note,nos,3,pinned,25,20
 system,Cip,3,holds a short form,21,20
 walk,wok,3,pinned,36,20
-weapon,heC,3,by load,24,20
-woman,dax,3,by load,35,20
+weapon,jov,3,by load,24,20
+woman,faf,3,by load,35,20
 bad,vat,3,pinned,172,19
-chance,koj,3,by load,25,19
-claim,las,3,by load,22,19
-doctor,maq,3,by load,21,19
+chance,las,3,by load,25,19
+claim,maq,3,by load,22,19
+doctor,nax,3,by load,21,19
 head,hed,3,echoes the english,42,19
-paper,jov,3,by load,26,19
+paper,koj,3,by load,26,19
 sense,zox,3,pinned,25,19
 start,sam,3,pinned,38,19
 through,cib,3,holds a short form,23,19
 agent,gaq,3,pinned,18,18
-agree,Cok,3,by load,22,18
+agree,beC,3,by load,22,18
 create,bam,3,pinned,41,18
 link,liq,3,pinned,32,18
-list,zob,3,by load,27,18
-metal,yes,3,by load,32,18
+list,Cok,3,by load,27,18
+metal,zob,3,by load,32,18
 mix,mim,3,pinned,77,18
 position,pot,3,pinned,21,18
-remove,nax,3,by load,172,18
+remove,soq,3,by load,172,18
 seed,sid,3,pinned,34,18
-shine,vuk,3,by load,37,18
-tight,woq,3,by load,33,18
-travel,soq,3,by load,38,18
-art,fax,3,by load,27,17
-bird,dac,3,by load,33,17
+shine,woq,3,by load,37,18
+tight,yes,3,by load,33,18
+travel,vuk,3,by load,38,18
+art,gag,3,by load,27,17
+bird,fax,3,by load,33,17
 cause,kaz,3,pinned,50,17
 day,yam,3,pinned,29,17
-disease,gag,3,by load,23,17
-fact,naj,3,by load,19,17
+disease,joc,3,by load,23,17
+fact,pax,3,by load,19,17
 for,dij,3,holds a short form,41,17
-happy,beC,3,by load,36,17
-heat,caq,3,by load,35,17
+happy,caq,3,by load,36,17
+heat,dac,3,by load,35,17
 leg,leg,3,echoes the english,23,17
-load,laz,3,by load,20,17
+load,naj,3,by load,20,17
 machine,jip,3,pinned,26,17
-matter,ros,3,by load,18,17
+matter,soz,3,by load,18,17
 real,ral,3,pinned,23,17
-record,joc,3,by load,22,17
+record,koC,3,by load,22,17
 structure,fip,3,holds a short form,18,17
-tale,koC,3,by load,21,17
-task,pax,3,by load,19,17
+tale,laz,3,by load,21,17
+task,ros,3,by load,19,17
 wrong,raq,3,pinned,128,17
 ball,bal,3,pinned,16,16
-charge,yef,3,by load,19,16
-faith,vuv,3,by load,25,16
+charge,zot,3,by load,19,16
+faith,wop,3,by load,25,16
 fear,fiC,3,pinned,31,16
 gain,gam,3,pinned,23,16
-happen,wop,3,by load,21,16
+happen,xaz,3,by load,21,16
 mood,mud,3,echoes the english,20,16
 new,giq,3,holds a short form,120,16
-shake,soz,3,by load,34,16
-sheet,zot,3,by load,18,16
-stage,xaz,3,by load,20,16
+shake,vuv,3,by load,34,16
+sheet,Cov,3,by load,18,16
+stage,yef,3,by load,20,16
 to,jik,3,holds a short form,85,16
 trait,kiz,3,holds a short form,16,16
 age,lid,3,holds a short form,17,15
-bed,Cov,3,by load,36,15
-bug,jor,3,by load,20,15
+bed,cag,3,by load,36,15
+bug,naC,3,by load,20,15
 code,kod,3,pinned,19,15
-deal,naC,3,by load,18,15
+deal,paj,3,by load,18,15
 fill,fim,3,pinned,31,15
-flower,cag,3,by load,31,15
+flower,faj,3,by load,31,15
 focus,mip,3,holds a short form,16,15
 gas,gas,3,echoes the english,22,15
-insect,faj,3,by load,25,15
+insect,han,3,by load,25,15
 limit,lim,3,pinned,20,15
 long,loq,3,echoes the english,67,15
 member,nid,3,holds a short form,15,15
-supply,han,3,by load,21,15
+supply,jor,3,by load,21,15
 test,tes,3,pinned,26,15
 tube,tub,3,echoes the english,28,15
-answer,yex,3,by load,17,14
-attack,vuc,3,by load,21,14
+answer,zok,3,by load,17,14
+attack,wos,3,by load,21,14
 breath,ruc,3,pinned,29,14
 call,kug,3,pinned,27,14
-class,wos,3,by load,18,14
-health,tat,3,by load,22,14
+class,yex,3,by load,18,14
+health,vuc,3,by load,22,14
 high,pib,3,holds a short form,73,14
 join,rit,3,holds a short form,70,14
 match,mas,3,pinned,19,14
-meat,rof,3,by load,27,14
+meat,sof,3,by load,27,14
 motion,vif,3,holds a short form,18,14
 pass,pas,3,echoes the english,24,14
 rock,rak,3,pinned,25,14
 run,rin,3,pinned,22,14
-share,paj,3,by load,56,14
-tell,sof,3,by load,27,14
+share,rof,3,by load,56,14
+tell,tat,3,by load,27,14
 with,wim,3,pinned,37,14
-bear,maz,3,by load,19,13
+bear,nal,3,by load,19,13
 birth,yib,3,holds a short form,21,13
-board,woz,3,by load,13,13
-carry,zok,3,by load,30,13
-copy,cab,3,by load,28,13
-craft,xac,3,by load,13,13
-design,paC,3,by load,16,13
-dirt,faC,3,by load,21,13
+board,xac,3,by load,13,13
+carry,Col,3,by load,30,13
+copy,dom,3,by load,28,13
+craft,yej,3,by load,13,13
+design,rox,3,by load,16,13
+dirt,jub,3,by load,21,13
 dish,dix,3,echoes the english,14,13
 effect,zak,3,pinned,13,13
-fold,jub,3,by load,21,13
-game,dom,3,by load,22,13
-handle,soj,3,by load,15,13
-ill,kus,3,by load,20,13
+fold,kus,3,by load,21,13
+game,faC,3,by load,22,13
+handle,tas,3,by load,15,13
+ill,maz,3,by load,20,13
 inside,tuq,3,pinned,54,13
 law,wiz,3,holds a short form,40,13
-marriage,rox,3,by load,16,13
+marriage,soj,3,by load,16,13
 period,zit,3,holds a short form,15,13
-pot,tas,3,by load,14,13
+pot,woz,3,by load,14,13
 result,seq,3,pinned,18,13
 road,rod,3,echoes the english,27,13
 tone,kup,3,pinned,15,13
-watch,Col,3,by load,29,13
-worry,nal,3,by load,19,13
-car,bav,3,by load,26,12
-coat,nop,3,by load,14,12
-cook,zov,3,by load,29,12
+watch,cab,3,by load,29,13
+worry,paC,3,by load,19,13
+car,caz,3,by load,26,12
+coat,roj,3,by load,14,12
+cook,Cud,3,by load,29,12
 death,Cis,3,holds a short form,27,12
 dog,dog,3,echoes the english,19,12
 example,cit,3,holds a short form,15,12
 feel,fiq,3,pinned,35,12
 field,cuv,3,pinned,14,12
-foot,yej,3,by load,30,12
+foot,zov,3,by load,30,12
 individual,baq,3,pinned,12,12
-interest,roj,3,by load,14,12
+interest,soC,3,by load,14,12
 leaf,lif,3,pinned,20,12
-learn,caz,3,by load,24,12
+learn,gaz,3,by load,24,12
 moment,diC,3,holds a short form,12,12
 more,mor,3,pinned,22,12
-pay,gaz,3,by load,24,12
+pay,jut,3,by load,24,12
 read,rid,3,pinned,19,12
-sell,jut,3,by load,19,12
-shell,mav,3,by load,15,12
-sick,Cud,3,by load,28,12
+sell,kuz,3,by load,19,12
+shell,nop,3,by load,15,12
+sick,bav,3,by load,28,12
 source,kos,3,pinned,13,12
 store,tor,3,pinned,26,12
-sugar,soC,3,by load,14,12
+sugar,taz,3,by load,14,12
 want,bip,3,holds a short form,19,12
-well,kuz,3,by load,19,12
-worth,laj,3,by load,18,12
-aid,pof,3,by load,13,11
-arrange,Cup,3,by load,19,11
-bind,has,3,by load,15,11
-blame,laC,3,by load,14,11
+well,laj,3,by load,19,12
+worth,mav,3,by load,18,12
+aid,roC,3,by load,13,11
+arrange,caf,3,by load,19,11
+bind,juk,3,by load,15,11
+blame,maj,3,by load,14,11
 bright,mar,3,pinned,28,11
-cost,roC,3,by load,13,11
-crowd,gaf,3,by load,16,11
-desire,maj,3,by load,14,11
+cost,sum,3,by load,13,11
+crowd,has,3,by load,16,11
+desire,noj,3,by load,14,11
 drug,som,3,pinned,16,11
-effort,sum,3,by load,12,11
+effort,woj,3,by load,12,11
 energy,xiq,3,pinned,16,11
 enough,fiz,3,holds a short form,15,11
-fat,wox,3,by load,26,11
+fat,yeC,3,by load,26,11
 fish,fix,3,echoes the english,21,11
-fluid,noj,3,by load,14,11
-frame,xon,3,by load,11,11
-honor,doq,3,by load,18,11
+fluid,pof,3,by load,14,11
+frame,yag,3,by load,11,11
+honor,gaf,3,by load,18,11
 hope,hop,3,pinned,14,11
-meet,zoc,3,by load,22,11
-muscle,yeC,3,by load,26,11
+meet,Cup,3,by load,22,11
+muscle,zoc,3,by load,26,11
 notice,gig,3,holds a short form,15,11
-organ,woj,3,by load,12,11
-partner,juk,3,by load,15,11
-poison,caf,3,by load,19,11
-secret,taz,3,by load,35,11
+organ,xon,3,by load,12,11
+partner,kuf,3,by load,15,11
+poison,doq,3,by load,19,11
+secret,wox,3,by load,35,11
 self,sef,3,pinned,47,11
 send,sed,3,pinned,34,11
-trouble,kuf,3,by load,15,11
+trouble,laC,3,by load,15,11
 true,toc,3,pinned,20,11
 understand,das,3,pinned,17,11
 wave,wev,3,pinned,25,11
 allow,jif,3,holds a short form,21,10
-ask,mom,3,by load,21,10
+ask,nuq,3,by load,21,10
 center,vaq,3,pinned,21,10
-circle,baj,3,by load,28,10
-complete,Cuk,3,by load,32,10
-crime,caj,3,by load,11,10
+circle,cax,3,by load,28,10
+complete,baj,3,by load,32,10
+crime,dob,3,by load,11,10
 deep,hif,3,holds a short form,57,10
 direction,dim,3,pinned,13,10
-drive,cax,3,by load,25,10
+drive,gaC,3,by load,25,10
 fall,zor,3,pinned,26,10
 female,fem,3,pinned,36,10
 find,fan,3,pinned,25,10
-fix,yag,3,by load,35,10
-fly,juf,3,by load,22,10
-fun,nuq,3,by load,20,10
-gather,gaC,3,by load,25,10
-heal,pox,3,by load,19,10
-hurt,zug,3,by load,33,10
+fix,zug,3,by load,35,10
+fly,kux,3,by load,22,10
+fun,pox,3,by load,20,10
+gather,haz,3,by load,25,10
+heal,ruq,3,by load,19,10
+hurt,Cuk,3,by load,33,10
 judge,kif,3,holds a short form,19,10
-letter,ruq,3,by load,19,10
-mass,yab,3,by load,16,10
+letter,tax,3,by load,19,10
+mass,zub,3,by load,16,10
 mouth,muc,3,pinned,18,10
 now,xom,3,pinned,14,10
-oil,tax,3,by load,18,10
-opinion,fob,3,by load,10,10
-pad,hax,3,by load,10,10
-promise,woc,3,by load,17,10
+oil,woc,3,by load,18,10
+opinion,hax,3,by load,10,10
+pad,juC,3,by load,10,10
+promise,xoq,3,by load,17,10
 pull,xop,3,pinned,42,10
 ring,riq,3,echoes the english,19,10
 same,sem,3,pinned,65,10
 ship,xip,3,echoes the english,15,10
-smell,zub,3,by load,15,10
-strike,haz,3,by load,23,10
-swell,Cuf,3,by load,15,10
-teach,kux,3,by load,22,10
-text,dob,3,by load,11,10
-wall,xoq,3,by load,17,10
+smell,Cuf,3,by load,15,10
+strike,juf,3,by load,23,10
+swell,caj,3,by load,15,10
+teach,mom,3,by load,22,10
+text,fob,3,by load,11,10
+wall,yab,3,by load,17,10
 world,miz,3,holds a short form,14,10
-against,kuC,3,by load,53,9
-anger,gom,3,by load,11,9
-arm,rug,3,by load,19,9
+against,lon,3,by load,53,9
+anger,haj,3,by load,11,9
+arm,sud,3,by load,19,9
 at,piz,3,holds a short form,11,9
 big,big,3,echoes the english,121,9
 bit,vij,3,pinned,9,9
-burn,moq,3,by load,32,9
-carbon,haj,3,by load,11,9
-cry,mog,3,by load,11,9
-damage,sud,3,by load,15,9
-detail,taC,3,by load,15,9
-emotion,poC,3,by load,11,9
-fabric,yat,3,by load,14,9
-glow,xog,3,by load,15,9
+burn,nub,3,by load,32,9
+carbon,mog,3,by load,11,9
+cry,poC,3,by load,11,9
+damage,taC,3,by load,15,9
+detail,xog,3,by load,15,9
+emotion,tom,3,by load,11,9
+fabric,zut,3,by load,14,9
+glow,yat,3,by load,15,9
 goal,gol,3,pinned,12,9
 less,les,3,pinned,24,9
-manage,zut,3,by load,14,9
-normal,dos,3,by load,13,9
-practice,bom,3,by load,14,9
-praise,cal,3,by load,14,9
+manage,bom,3,by load,14,9
+normal,fot,3,by load,13,9
+practice,cal,3,by load,14,9
+praise,dos,3,by load,14,9
 push,pex,3,pinned,33,9
-put,juC,3,by load,58,9
+put,kuC,3,by load,58,9
 rise,rez,3,pinned,27,9
-round,lon,3,by load,35,9
-search,poj,3,by load,22,9
+round,moq,3,by load,35,9
+search,rug,3,by load,22,9
 seek,sik,3,pinned,11,9
-term,tom,3,by load,10,9
-throw,nub,3,by load,27,9
+term,wun,3,by load,10,9
+throw,poj,3,by load,27,9
 tree,tok,3,pinned,24,9
 whole,hol,3,pinned,20,9
-wing,fot,3,by load,13,9
+wing,gom,3,by load,13,9
 wish,wix,3,echoes the english,10,9
 year,yez,3,pinned,13,9
 young,nip,3,holds a short form,36,9
-activity,lob,3,by load,8,8
-appear,fox,3,by load,9,8
-band,nuz,3,by load,13,8
-beauty,toq,3,by load,11,8
-boat,doz,3,by load,16,8
-bubble,fof,3,by load,15,8
+activity,moz,3,by load,8,8
+appear,gob,3,by load,9,8
+band,pum,3,by load,13,8
+beauty,wug,3,by load,11,8
+boat,fof,3,by load,16,8
+bubble,gon,3,by load,15,8
 character,xiz,3,holds a short form,9,8
-corner,boz,3,by load,10,8
+corner,coq,3,by load,10,8
 distance,sin,3,pinned,9,8
-earth,wun,3,by load,40,8
-firm,xoz,3,by load,22,8
+earth,xoz,3,by load,40,8
+firm,yaz,3,by load,22,8
 follow,six,3,holds a short form,30,8
 function,fuq,3,pinned,10,8
 god,gad,3,pinned,21,8
 grow,viC,3,holds a short form,28,8
 guess,ges,3,echoes the english,19,8
-issue,moz,3,by load,8,8
+issue,nux,3,by load,8,8
 key,cux,3,pinned,16,8
-label,rup,3,by load,12,8
-listen,wug,3,by load,11,8
-method,pum,3,by load,13,8
-own,yaz,3,by load,21,8
+label,sux,3,by load,12,8
+listen,xof,3,by load,11,8
+method,rup,3,by load,13,8
+own,zuv,3,by load,21,8
 pack,pak,3,echoes the english,8,8
 particle,rav,3,pinned,10,8
 pleasure,zim,3,pinned,11,8
-polite,xof,3,by load,11,8
-price,coq,3,by load,10,8
-question,com,3,by load,18,8
-race,gob,3,by load,9,8
+polite,yaf,3,by load,11,8
+price,dof,3,by load,10,8
+question,doz,3,by load,18,8
+race,lob,3,by load,9,8
 red,red,3,pinned,28,8
 release,rem,3,pinned,18,8
-respect,dof,3,by load,10,8
-ride,yaf,3,by load,11,8
+respect,fox,3,by load,10,8
+ride,zuc,3,by load,11,8
 sad,sad,3,echoes the english,33,8
 scale,yit,3,holds a short form,8,8
-sex,zuc,3,by load,11,8
-shade,sux,3,by load,12,8
-shield,nux,3,by load,8,8
-slide,gon,3,by load,15,8
+sex,boz,3,by load,11,8
+shade,toq,3,by load,12,8
+shield,pun,3,by load,8,8
+slide,hac,3,by load,15,8
 sure,xar,3,echoes the english,14,8
-title,pun,3,by load,8,8
-waste,zuv,3,by load,21,8
-wheel,hac,3,by load,15,8
-acid,ruz,3,by load,8,7
+title,rus,3,by load,8,8
+waste,com,3,by load,21,8
+wheel,nuz,3,by load,15,8
+acid,wus,3,by load,8,7
 after,fap,3,pinned,34,7
 baby,pup,3,pinned,16,7
 beam,bim,3,echoes the english,8,7
 beat,bit,3,pinned,16,7
-bite,mox,3,by load,11,7
-burst,wup,3,by load,17,7
-buy,foj,3,by load,12,7
-cake,wus,3,by load,8,7
-compound,cob,3,by load,7,7
+bite,nuj,3,by load,11,7
+burst,xoC,3,by load,17,7
+buy,hon,3,by load,12,7
+cake,yaj,3,by load,8,7
+compound,doj,3,by load,7,7
 connect,kog,3,pinned,12,7
 cycle,rol,3,pinned,8,7
 destroy,xiv,3,pinned,13,7
-display,hon,3,by load,12,7
+display,loz,3,by load,12,7
 enter,neb,3,pinned,14,7
-fair,bof,3,by load,15,7
-flat,suj,3,by load,36,7
-free,rus,3,by load,44,7
+fair,cog,3,by load,15,7
+flat,wup,3,by load,36,7
+free,suj,3,by load,44,7
 gap,gap,3,echoes the english,8,7
-gun,xoC,3,by load,16,7
+gun,yax,3,by load,16,7
 hate,het,3,pinned,11,7
-hue,doj,3,by load,7,7
+hue,foC,3,by load,7,7
 laugh,laf,3,echoes the english,9,7
-murder,foC,3,by load,7,7
+murder,gos,3,by load,7,7
 peace,him,3,pinned,15,7
-peak,yaj,3,by load,8,7
-pressure,cog,3,by load,15,7
+peak,box,3,by load,8,7
+pressure,dox,3,by load,15,7
 quiet,xus,3,pinned,18,7
 rain,rex,3,pinned,12,7
 rest,req,3,pinned,15,7
-scent,puq,3,by load,10,7
+scent,ruz,3,by load,10,7
 sea,xan,3,pinned,41,7
-season,box,3,by load,8,7
-shame,nuj,3,by load,11,7
-soak,dox,3,by load,14,7
+season,cob,3,by load,8,7
+shame,puq,3,by load,11,7
+soak,foj,3,by load,14,7
 soil,ris,3,pinned,9,7
-steady,yax,3,by load,16,7
+steady,bof,3,by load,16,7
 team,tim,3,echoes the english,11,7
 tune,kip,3,pinned,8,7
 wide,wid,3,pinned,29,7
-win,loz,3,by load,12,7
+win,mox,3,by load,12,7
 wood,wod,3,pinned,34,7
 about,fiv,3,holds a short form,8,6
-aim,loC,3,by load,7,6
-alcohol,goj,3,by load,6,6
-approve,hof,3,by load,6,6
+aim,mug,3,by load,7,6
+alcohol,hof,3,by load,6,6
+approve,lum,3,by load,6,6
 arrive,hix,3,holds a short form,6,6
-bar,tov,3,by load,11,6
-bold,lox,3,by load,13,6
-bread,doC,3,by load,14,6
+bar,xug,3,by load,11,6
+bold,moC,3,by load,13,6
+bread,fum,3,by load,14,6
 calm,kam,3,pinned,33,6
-camera,wux,3,by load,8,6
-cap,mug,3,by load,7,6
-capture,xup,3,by load,8,6
-chamber,yoq,3,by load,8,6
-city,nul,3,by load,12,6
+camera,xup,3,by load,8,6
+cap,puz,3,by load,7,6
+capture,yoq,3,by load,8,6
+chamber,coz,3,by load,8,6
+city,pud,3,by load,12,6
 confuse,kof,3,pinned,18,6
 course,gib,3,holds a short form,8,6
-document,coz,3,by load,8,6
+document,duq,3,by load,8,6
 doubt,deq,3,holds a short form,10,6
-duty,lum,3,by load,6,6
-ear,moj,3,by load,21,6
-element,puf,3,by load,6,6
-favor,loj,3,by load,9,6
+duty,puf,3,by load,6,6
+ear,nuC,3,by load,21,6
+element,wuC,3,by load,6,6
+favor,mum,3,by load,9,6
 feature,jiC,3,holds a short form,6,6
 feed,fid,3,echoes the english,9,6
-flavor,puz,3,by load,7,6
-fuel,wuC,3,by load,6,6
+flavor,ruC,3,by load,7,6
+fuel,xuc,3,by load,6,6
 future,tis,3,pinned,13,6
-germ,wuz,3,by load,17,6
-guilt,duq,3,by load,8,6
+germ,xuq,3,by load,17,6
+guilt,fug,3,by load,8,6
 have,hav,3,pinned,11,6
-hear,yaC,3,by load,15,6
-instrument,xuc,3,by load,6,6
+hear,boj,3,by load,15,6
+instrument,yob,3,by load,6,6
 into,bis,3,holds a short form,11,6
-journey,cos,3,by load,10,6
-keep,gos,3,by load,27,6
-language,xug,3,by load,11,6
-limb,yob,3,by load,6,6
-luck,ruC,3,by load,7,6
-mad,moC,3,by load,13,6
+journey,fun,3,by load,10,6
+keep,hoq,3,by load,27,6
+language,yon,3,by load,11,6
+limb,buq,3,by load,6,6
+luck,wuj,3,by load,7,6
+mad,nul,3,by load,13,6
 map,map,3,pinned,13,6
-meter,buq,3,by load,6,6
-night,sul,3,by load,19,6
+meter,cox,3,by load,6,6
+night,toz,3,by load,19,6
 of,zif,3,holds a short form,45,6
 pattern,tan,3,pinned,8,6
-pile,wuj,3,by load,7,6
-pole,xuz,3,by load,7,6
-program,cox,3,by load,6,6
-proud,fum,3,by load,14,6
+pile,xuz,3,by load,7,6
+pole,yog,3,by load,7,6
+program,dus,3,by load,6,6
+proud,goz,3,by load,14,6
 purpose,kix,3,holds a short form,6,6
 rate,rat,3,pinned,6,6
-reach,boj,3,by load,15,6
-role,dus,3,by load,6,6
-root,fup,3,by load,6,6
-satisfy,yon,3,by load,11,6
-scare,mum,3,by load,9,6
-shelter,fun,3,by load,10,6
-shop,pus,3,by load,9,6
-sing,toj,3,by load,9,6
-solid,goz,3,by load,14,6
-sorrow,boC,3,by load,11,6
-spell,fug,3,by load,8,6
-spouse,yog,3,by load,7,6
-spray,bun,3,by load,7,6
-stable,cof,3,by load,7,6
-star,hoq,3,by load,22,6
-stitch,gox,3,by load,8,6
-straight,xuq,3,by load,17,6
-suit,gof,3,by load,10,6
-surgery,goC,3,by load,6,6
-sweet,nuC,3,by load,21,6
-tie,toz,3,by load,18,6
-tissue,pud,3,by load,12,6
-urge,rux,3,by load,12,6
-vessel,hos,3,by load,10,6
-wear,pug,3,by load,20,6
-wrap,lof,3,by load,22,6
-10^3,coj,3,by load,15,5
+reach,doC,3,by load,15,6
+role,fup,3,by load,6,6
+root,goC,3,by load,6,6
+satisfy,boC,3,by load,11,6
+scare,pus,3,by load,9,6
+shelter,gof,3,by load,10,6
+shop,toj,3,by load,9,6
+sing,wux,3,by load,9,6
+solid,lox,3,by load,14,6
+sorrow,cos,3,by load,11,6
+spell,gox,3,by load,8,6
+spouse,bun,3,by load,7,6
+spray,cof,3,by load,7,6
+stable,goj,3,by load,7,6
+star,lof,3,by load,22,6
+stitch,loC,3,by load,8,6
+straight,yaC,3,by load,17,6
+suit,hos,3,by load,10,6
+surgery,hox,3,by load,6,6
+sweet,pug,3,by load,21,6
+tie,wuz,3,by load,18,6
+tissue,rux,3,by load,12,6
+urge,tov,3,by load,12,6
+vessel,loj,3,by load,10,6
+wear,sul,3,by load,20,6
+wrap,moj,3,by load,22,6
+10^3,duz,3,by load,15,5
 across,pif,3,holds a short form,15,5
 add,liz,3,holds a short form,27,5
-ahead,yoz,3,by load,7,5
+ahead,bus,3,by load,7,5
 along,tif,3,holds a short form,5,5
-atom,bus,3,by load,7,5
-battle,puj,3,by load,10,5
+atom,cun,3,by load,7,5
+battle,tut,3,by load,10,5
 before,bef,3,pinned,74,5
-benefit,duj,3,by load,5,5
-bow,tuz,3,by load,6,5
-cart,hoC,3,by load,8,5
-cast,cun,3,by load,7,5
+benefit,fux,3,by load,5,5
+bow,yof,3,by load,6,5
+cart,mul,3,by load,8,5
+cast,dux,3,by load,7,5
 come,kom,3,pinned,27,5
-conduct,fux,3,by load,5,5
-culture,dux,3,by load,7,5
-curve,mup,3,by load,22,5
-cushion,huq,3,by load,5,5
+conduct,huq,3,by load,5,5
+culture,fuf,3,by load,7,5
+curve,pux,3,by load,22,5
+cushion,luz,3,by load,5,5
 data,daq,3,pinned,12,5
-deed,luz,3,by load,5,5
-dirty,duz,3,by load,15,5
-explain,cum,3,by load,9,5
+deed,tux,3,by load,5,5
+dirty,fus,3,by load,15,5
+explain,duf,3,by load,9,5
 eye,haq,3,pinned,53,5
 far,fad,3,pinned,40,5
-gear,fuf,3,by load,7,5
-girl,mul,3,by load,8,5
-glance,tux,3,by load,5,5
+gear,gub,3,by load,7,5
+girl,puC,3,by load,8,5
+glance,yox,3,by load,5,5
 holy,mif,3,holds a short form,26,5
-infect,yof,3,by load,6,5
-knot,gub,3,by load,7,5
-lady,yox,3,by load,5,5
+infect,buz,3,by load,6,5
+knot,hun,3,by load,7,5
+lady,buf,3,by load,5,5
 location,sij,3,holds a short form,9,5
 lose,lom,3,pinned,18,5
-loud,hox,3,by load,49,5
+loud,luq,3,by load,49,5
 magic,muj,3,pinned,12,5
 male,mof,3,pinned,18,5
-medicine,bup,3,by load,17,5
+medicine,coj,3,by load,17,5
 mess,mes,3,echoes the english,22,5
 model,mad,3,pinned,11,5
-music,luq,3,by load,25,5
-odor,buf,3,by load,5,5
+music,mup,3,by load,25,5
+odor,cug,3,by load,5,5
 other,kor,3,pinned,12,5
-panel,cug,3,by load,5,5
+panel,duC,3,by load,5,5
 parent,sas,3,pinned,6,5
-pick,lud,3,by load,11,5
-platform,buz,3,by load,6,5
-post,duf,3,by load,9,5
+pick,mux,3,by load,11,5
+platform,cuq,3,by load,6,5
+post,fuz,3,by load,9,5
 pure,niz,3,holds a short form,17,5
-rage,duC,3,by load,5,5
+rage,fuj,3,by load,5,5
 receive,rek,3,pinned,8,5
-reduce,pux,3,by load,22,5
-regret,puC,3,by load,8,5
-religion,tut,3,by load,10,5
+reduce,yot,3,by load,22,5
+regret,tus,3,by load,8,5
+religion,yos,3,by load,10,5
 repeat,rep,3,pinned,34,5
-rod,fuj,3,by load,5,5
-scene,fuz,3,by load,9,5
-serve,tus,3,by load,8,5
-shirt,guz,3,by load,5,5
+rod,guz,3,by load,5,5
+scene,gug,3,by load,9,5
+serve,yoz,3,by load,8,5
+shirt,luf,3,by load,5,5
 shock,xak,3,echoes the english,16,5
-shoot,yos,3,by load,10,5
-standard,hun,3,by load,7,5
+shoot,cum,3,by load,10,5
+standard,tuz,3,by load,7,5
 still,rix,3,holds a short form,11,5
-talent,luf,3,by load,5,5
+talent,tuj,3,by load,5,5
 thin,cin,3,echoes the english,49,5
-try,fus,3,by load,13,5
-version,cuq,3,by load,6,5
-vision,gug,3,by load,9,5
-vote,mux,3,by load,11,5
-war,guq,3,by load,13,5
-weak,yot,3,by load,18,5
-wise,hoj,3,by load,13,5
+try,guq,3,by load,13,5
+version,duj,3,by load,6,5
+vision,hoC,3,by load,9,5
+vote,puj,3,by load,11,5
+war,hoj,3,by load,13,5
+weak,bup,3,by load,18,5
+wise,lud,3,by load,13,5
 above,suz,3,pinned,19,4
 absorb,bas,3,pinned,4,4
 accept,kak,3,pinned,10,4
 align,lag,3,pinned,4,4
-alone,cus,3,by load,10,4
-argue,huz,3,by load,7,4
+alone,gux,3,by load,10,4
+argue,yun,3,by load,7,4
 attention,lix,3,holds a short form,4,4
 begin,biz,3,holds a short form,19,4
-beyond,cut,3,by load,26,4
+beyond,dul,3,by load,26,4
 bottom,ded,3,holds a short form,12,4
 bowl,bol,3,echoes the english,6,4
-cat,huC,3,by load,6,4
-challenge,yut,3,by load,6,4
-cold,dul,3,by load,22,4
-command,hul,3,by load,6,4
-country,yun,3,by load,7,4
-cup,hus,3,by load,8,4
+cat,yut,3,by load,6,4
+challenge,hul,3,by load,6,4
+cold,fuC,3,by load,22,4
+command,yus,3,by load,6,4
+country,cul,3,by load,7,4
+cup,luC,3,by load,8,4
 depend,hij,3,holds a short form,6,4
-exchange,cul,3,by load,7,4
+exchange,yuq,3,by load,7,4
 family,fam,3,pinned,16,4
-fashion,yuq,3,by load,7,4
-fine,fuC,3,by load,20,4
+fashion,hux,3,by load,7,4
+fine,guf,3,by load,20,4
 foam,fom,3,echoes the english,6,4
 fog,fog,3,echoes the english,8,4
 fool,ful,3,echoes the english,6,4
 front,keg,3,pinned,18,4
-gentle,guf,3,by load,17,4
+gentle,hup,3,by load,17,4
 gut,gut,3,pinned,8,4
 here,hem,3,pinned,5,4
-hill,luC,3,by load,8,4
-horse,lux,3,by load,15,4
+hill,yum,3,by load,8,4
+horse,yoC,3,by load,15,4
 include,jeb,3,holds a short form,6,4
 increase,Civ,3,holds a short form,22,4
 log,log,3,echoes the english,4,4
 many,vet,3,holds a short form,80,4
 near,nen,3,pinned,23,4
-net,yoC,3,by load,11,4
-nice,hup,3,by load,16,4
-option,yus,3,by load,6,4
+net,buj,3,by load,11,4
+nice,lux,3,by load,16,4
+option,yuv,3,by load,6,4
 pair,gis,3,holds a short form,11,4
-party,yuv,3,by load,6,4
+party,yux,3,by load,6,4
 past,sut,3,pinned,14,4
-perform,yux,3,by load,6,4
+perform,yuj,3,by load,6,4
 possible,sos,3,pinned,9,4
 property,kij,3,holds a short form,5,4
-raise,yoj,3,by load,27,4
+raise,bux,3,by load,27,4
 region,rej,3,pinned,8,4
-reptile,yuj,3,by load,6,4
 response,paq,3,pinned,7,4
 rhythm,rij,3,pinned,6,4
 risk,rim,3,pinned,13,4
-roll,luj,3,by load,9,4
+roll,yor,3,by load,9,4
 rope,rop,3,echoes the english,8,4
-route,yor,3,by load,9,4
+route,buC,3,by load,9,4
 sac,sak,3,echoes the english,4,4
-seal,hux,3,by load,7,4
-slice,yug,3,by load,7,4
-slow,tuj,3,by load,28,4
+seal,yug,3,by load,7,4
+slice,huj,3,by load,7,4
+slow,yoj,3,by load,28,4
 snake,his,3,pinned,5,4
-snow,buC,3,by load,9,4
-struggle,yum,3,by load,8,4
-success,cuj,3,by load,8,4
-suffer,gul,3,by load,8,4
+snow,cuz,3,by load,9,4
+struggle,cuj,3,by load,8,4
+success,gul,3,by load,8,4
+suffer,huz,3,by load,8,4
 sun,san,3,pinned,59,4
-sword,cuz,3,by load,9,4
-table,huj,3,by load,7,4
+sword,guC,3,by load,9,4
+table,yub,3,by load,7,4
 thief,cif,3,echoes the english,8,4
-tire,buj,3,by load,11,4
+tire,cus,3,by load,11,4
 under,yis,3,holds a short form,58,4
 union,nun,3,pinned,4,4
-usual,guC,3,by load,9,4
+usual,hus,3,by load,9,4
 wait,wet,3,pinned,10,4
-web,gux,3,by load,10,4
-wet,bux,3,by load,27,4
-width,yub,3,by load,7,4
+web,luj,3,by load,10,4
+wet,cut,3,by load,27,4
+width,huC,3,by load,7,4
 will,wul,3,pinned,7,4
 without,ziC,3,holds a short form,50,4
 all,con,3,pinned,18,3
@@ -934,6 +933,7 @@ certain,ket,3,pinned,5,0
 choice,tox,3,pinned,0,0
 clarify,kaf,3,pinned,0,0
 coal,kol,3,echoes the english,0,0
+cod,kad,3,echoes the english,0,0
 collection,lok,3,pinned,0,0
 computation,xit,3,pinned,0,0
 confidence,non,3,pinned,0,0
@@ -1267,412 +1267,413 @@ press,pres,4,echoes the english,15,5
 school,skul,4,echoes the english,17,5
 track,drak,4,pinned,9,5
 warm,worm,4,echoes the english,26,5
-alloy,wimp,4,by load,4,4
-attitude,ximp,4,by load,4,4
-axe,yimp,4,by load,4,4
+alloy,ximp,4,by load,4,4
+attitude,yimp,4,by load,4,4
+axe,zint,4,by load,4,4
 bark,bark,4,echoes the english,4,4
-barrier,zint,4,by load,4,4
-boy,fimp,4,by load,5,4
+barrier,Citx,4,by load,4,4
+boy,gimp,4,by load,5,4
 brain,bren,4,echoes the english,17,4
 choose,txuz,4,echoes the english,13,4
 clash,klax,4,echoes the english,6,4
 clock,klak,4,echoes the english,4,4
-crack,Citx,4,by load,4,4
+crack,bind,4,by load,4,4
 dream,drim,4,pinned,9,4
-earn,bind,4,by load,4,4
-error,cind,4,by load,4,4
-fee,gimp,4,by load,5,4
+earn,cind,4,by load,4,4
+error,dind,4,by load,4,4
+fee,hiqk,4,by load,5,4
 flame,flem,4,echoes the english,7,4
 gauge,gedj,4,echoes the english,5,4
-invite,dind,4,by load,4,4
+invite,find,4,by load,4,4
 joke,djok,4,pinned,9,4
-loyal,hiqk,4,by load,5,4
-mate,jint,4,by load,5,4
-moisture,kint,4,by load,5,4
-neat,find,4,by load,4,4
-organism,gind,4,by load,4,4
+loyal,jint,4,by load,5,4
+mate,kint,4,by load,5,4
+moisture,nimp,4,by load,5,4
+neat,gind,4,by load,4,4
+organism,higd,4,by load,4,4
 paint,pent,4,echoes the english,6,4
-patient,nimp,4,by load,5,4
+patient,pint,4,by load,5,4
 plot,plat,4,echoes the english,5,4
 plug,plag,4,echoes the english,5,4
-pretty,higd,4,by load,4,4
-prize,pint,4,by load,5,4
-product,jikt,4,by load,4,4
-progress,rimp,4,by load,5,4
-site,Cint,4,by load,6,4
-situation,bimp,4,by load,6,4
-smile,kitx,4,by load,4,4
+pretty,jikt,4,by load,4,4
+prize,rimp,4,by load,5,4
+product,kitx,4,by load,4,4
+progress,simp,4,by load,5,4
+reptile,Cint,4,by load,6,4
+site,bimp,4,by load,6,4
+situation,cimp,4,by load,6,4
+smile,lind,4,by load,4,4
 smooth,smuC,4,echoes the english,25,4
 snack,snak,4,echoes the english,6,4
-status,lind,4,by load,4,4
+status,nind,4,by load,4,4
 stem,stem,4,echoes the english,4,4
-tap,cimp,4,by load,6,4
-temperature,simp,4,by load,5,4
-tip,nind,4,by load,4,4
-tongue,tint,4,by load,5,4
+tap,dimp,4,by load,6,4
+temperature,tint,4,by load,5,4
+tip,rind,4,by load,4,4
+tongue,vint,4,by load,5,4
 town,taun,4,echoes the english,7,4
 trade,drad,4,pinned,21,4
 train,tren,4,echoes the english,8,4
-wander,dimp,4,by load,6,4
-wire,vint,4,by load,5,4
-ache,zent,4,by load,3,3
-achieve,nizb,4,by load,5,3
-adjust,nifk,4,by load,4,3
-allergy,Cetx,4,by load,3,3
-arc,bemp,4,by load,3,3
-author,pifk,4,by load,4,3
+wander,fimp,4,by load,6,4
+wire,wimp,4,by load,5,4
+ache,Cetx,4,by load,3,3
+achieve,pizg,4,by load,5,3
+adjust,pifk,4,by load,4,3
+allergy,bemp,4,by load,3,3
+arc,cift,4,by load,3,3
+author,risk,4,by load,4,3
 beast,bist,4,echoes the english,3,3
-bell,vikt,4,by load,9,3
-bias,risk,4,by load,4,3
-blow,giqk,4,by load,12,3
-boil,jifk,4,by load,7,3
-bomb,pizg,4,by load,5,3
-bundle,cift,4,by load,3,3
+bell,wiqk,4,by load,9,3
+bias,sisk,4,by load,4,3
+blow,hidj,4,by load,12,3
+boil,kisp,4,by load,7,3
+bomb,tizg,4,by load,5,3
+bundle,dift,4,by load,3,3
 camp,kamp,4,echoes the english,4,3
-ceremony,tizg,4,by load,5,3
-channel,dift,4,by load,3,3
+ceremony,vizb,4,by load,5,3
+channel,fift,4,by load,3,3
 chief,txif,4,echoes the english,10,3
-climb,kikt,4,by load,11,3
-comfort,wiqk,4,by load,9,3
-computer,sisk,4,by load,4,3
-conflict,gigd,4,by load,8,3
-continent,fift,4,by load,3,3
-cord,tifk,4,by load,4,3
-courage,vizb,4,by load,5,3
-crazy,yind,4,by load,17,3
-crystal,hend,4,by load,3,3
-cure,sigd,4,by load,6,3
-dance,liqk,4,by load,11,3
-danger,tisp,4,by load,6,3
-decide,visk,4,by load,6,3
-demand,vifk,4,by load,4,3
-dip,wisk,4,by load,4,3
+climb,liqk,4,by load,11,3
+comfort,xiqk,4,by load,9,3
+computer,tifk,4,by load,4,3
+conflict,hisk,4,by load,8,3
+continent,hend,4,by load,3,3
+cord,vifk,4,by load,4,3
+courage,xisp,4,by load,5,3
+crazy,zitx,4,by load,17,3
+crystal,jezg,4,by load,3,3
+cure,tisp,4,by load,6,3
+dance,migd,4,by load,11,3
+danger,visk,4,by load,6,3
+decide,wigd,4,by load,6,3
+demand,wisk,4,by load,4,3
+dip,xizg,4,by load,4,3
 drip,drip,4,echoes the english,6,3
-dust,xisp,4,by load,5,3
-egg,rind,4,by load,26,3
-employ,jezg,4,by load,3,3
-engine,yidj,4,by load,5,3
-examine,ketx,4,by load,3,3
-excite,kisp,4,by load,7,3
-factor,memp,4,by load,3,3
-fail,xiqk,4,by load,9,3
-fan,wigd,4,by load,6,3
+dust,yidj,4,by load,5,3
+egg,sind,4,by load,26,3
+employ,ketx,4,by load,3,3
+engine,zizg,4,by load,5,3
+examine,memp,4,by load,3,3
+excite,ligd,4,by load,7,3
+factor,netx,4,by load,3,3
+fail,yiqk,4,by load,9,3
+fan,xigd,4,by load,6,3
 fault,folt,4,echoes the english,3,3
 feast,fist,4,echoes the english,3,3
-fence,xigd,4,by load,6,3
+fence,yigd,4,by load,6,3
 flash,flax,4,echoes the english,6,3
-fortune,xizg,4,by load,4,3
-fossil,netx,4,by load,3,3
+fortune,yisk,4,by load,4,3
+fossil,petx,4,by load,3,3
 freeze,friz,4,echoes the english,13,3
-gender,petx,4,by load,3,3
-glue,yisk,4,by load,4,3
-grace,rift,4,by load,3,3
-grave,migd,4,by load,11,3
+gender,rift,4,by load,3,3
+glue,zifk,4,by load,4,3
+grace,sift,4,by load,3,3
+grave,nitx,4,by load,11,3
 guest,gest,4,echoes the english,4,3
-hall,sift,4,by load,3,3
+hall,vetx,4,by load,3,3
 hide,haid,4,echoes the english,37,3
-history,zifk,4,by load,4,3
-ice,bigd,4,by load,16,3
-impact,Cent,4,by load,4,3
-information,yigd,4,by load,6,3
-injure,bift,4,by load,4,3
-iron,zizg,4,by load,5,3
-island,cizb,4,by load,4,3
-jacket,vetx,4,by load,3,3
+history,Cent,4,by load,4,3
+ice,diqk,4,by load,16,3
+impact,bift,4,by load,4,3
+information,zisp,4,by load,6,3
+injure,cizb,4,by load,4,3
+iron,Cifk,4,by load,5,3
+island,dizb,4,by load,4,3
+jacket,wift,4,by load,3,3
 jet,djet,4,echoes the english,5,3
-king,yiqk,4,by load,9,3
-lesson,wift,4,by load,3,3
-lie,nitx,4,by load,11,3
-lock,hidj,4,by load,12,3
+king,zikt,4,by load,9,3
+lesson,xemp,4,by load,3,3
+lie,pidj,4,by load,11,3
+lock,jisk,4,by load,12,3
 lump,lamp,4,echoes the english,4,3
-magnet,dizb,4,by load,4,3
-march,xemp,4,by load,3,3
-mercy,yift,4,by load,3,3
-milk,ligd,4,by load,7,3
-mineral,zegd,4,by load,3,3
-month,zikt,4,by load,9,3
+magnet,fizg,4,by load,4,3
+march,yift,4,by load,3,3
+mercy,zegd,4,by load,3,3
+milk,midj,4,by load,7,3
+mineral,Cekt,4,by load,3,3
+month,Cisp,4,by load,9,3
 mountain,mant,4,pinned,6,3
-nation,fizg,4,by load,4,3
-nerve,sind,4,by load,24,3
-nut,Cifk,4,by load,5,3
-obey,gizb,4,by load,4,3
-offer,diqk,4,by load,16,3
-office,midj,4,by load,7,3
-page,zisp,4,by load,6,3
-passion,Cekt,4,by load,3,3
-pin,Cisp,4,by load,9,3
-pit,jesp,4,by load,4,3
-poor,vitx,4,by load,19,3
-powder,cemp,4,by load,3,3
-profit,kent,4,by load,4,3
-proper,bizb,4,by load,5,3
+nation,gizb,4,by load,4,3
+nerve,tidj,4,by load,24,3
+nut,bizb,4,by load,5,3
+obey,jesp,4,by load,4,3
+offer,fiqk,4,by load,16,3
+office,nisk,4,by load,7,3
+page,Cizg,4,by load,6,3
+passion,cemp,4,by load,3,3
+pin,cigd,4,by load,9,3
+pit,kent,4,by load,4,3
+poor,xind,4,by load,19,3
+powder,femp,4,by load,3,3
+profit,lizg,4,by load,4,3
+proper,cisk,4,by load,5,3
 prove,bruv,4,pinned,9,3
-puzzle,cigd,4,by load,9,3
-rail,Cizg,4,by load,6,3
-ray,digd,4,by load,9,3
-relief,lizg,4,by load,4,3
-remain,cidj,4,by load,6,3
+puzzle,digd,4,by load,9,3
+rail,cidj,4,by load,6,3
+ray,figd,4,by load,9,3
+relief,mift,4,by load,4,3
+remain,fidj,4,by load,6,3
 rent,rent,4,echoes the english,4,3
-river,nisk,4,by load,7,3
-row,fidj,4,by load,6,3
-sample,gidj,4,by load,6,3
-sauce,mift,4,by load,4,3
-save,fiqk,4,by load,14,3
-saw,hizb,4,by load,6,3
-series,femp,4,by load,3,3
-service,nent,4,by load,4,3
-settle,hisk,4,by load,8,3
-signal,pidj,4,by load,11,3
-sit,jent,4,by load,6,3
+river,pikt,4,by load,7,3
+row,gidj,4,by load,6,3
+sample,hizb,4,by load,6,3
+sauce,nent,4,by load,4,3
+save,giqk,4,by load,14,3
+saw,jent,4,by load,6,3
+series,gemp,4,by load,3,3
+service,rizb,4,by load,4,3
+settle,jifk,4,by load,8,3
+signal,riqk,4,by load,11,3
+sit,kizg,4,by load,6,3
 solve,salk,4,pinned,4,3
-sore,cisk,4,by load,5,3
-sphere,gemp,4,by load,3,3
-spoil,riqk,4,by load,11,3
-spoke,gisk,4,by load,5,3
+sore,gisk,4,by load,5,3
+sphere,heqk,4,by load,3,3
+spoil,tikt,4,by load,11,3
+spoke,hift,4,by load,5,3
 stab,stab,4,echoes the english,5,3
-steal,zitx,4,by load,17,3
-stomach,jisk,4,by load,12,3
-student,hift,4,by load,5,3
-sum,rizb,4,by load,4,3
-surprise,figd,4,by load,9,3
-symbol,tikt,4,by load,10,3
-tape,heqk,4,by load,3,3
-tear,xind,4,by load,19,3
-tension,sizb,4,by load,4,3
-tent,kizg,4,by load,6,3
-toe,temp,4,by load,4,3
-toilet,vent,4,by load,4,3
+steal,Cikt,4,by load,17,3
+stomach,kikt,4,by load,12,3
+student,jekt,4,by load,5,3
+sum,sizb,4,by load,4,3
+surprise,gigd,4,by load,9,3
+symbol,vikt,4,by load,10,3
+tape,jefk,4,by load,3,3
+tear,yind,4,by load,19,3
+tension,temp,4,by load,4,3
+tent,nizb,4,by load,6,3
+toe,vent,4,by load,4,3
+toilet,wizb,4,by load,4,3
 trap,dras,4,pinned,11,3
-urine,pikt,4,by load,7,3
-vegetable,jefk,4,by load,3,3
-virus,jekt,4,by load,5,3
-visit,wizb,4,by load,4,3
-vow,kesk,4,by load,3,3
-wash,Cikt,4,by load,17,3
-week,kifk,4,by load,5,3
-welcome,rigd,4,by load,7,3
-wild,tidj,4,by load,20,3
-winter,mizg,4,by load,5,3
-worship,yizb,4,by load,4,3
-10^2,cend,4,by load,11,2
-access,heft,4,by load,3,2
-accident,jaic,4,by load,3,2
-account,geft,4,by load,2,2
-accuse,fegd,4,by load,5,2
-alike,hain,4,by load,2,2
-annoy,nefk,4,by load,6,2
-ash,kaiq,4,by load,3,2
-assign,tezg,4,by load,4,2
-award,vefk,4,by load,4,2
-balm,jaup,4,by load,2,2
+urine,rigd,4,by load,7,3
+vegetable,kesk,4,by load,3,3
+virus,kifk,4,by load,5,3
+visit,yizb,4,by load,4,3
+vow,lemp,4,by load,3,3
+wash,bigd,4,by load,17,3
+week,mizg,4,by load,5,3
+welcome,sigd,4,by load,7,3
+wild,vitx,4,by load,20,3
+winter,nifk,4,by load,5,3
+worship,zent,4,by load,4,3
+10^2,deqk,4,by load,11,2
+access,jaic,4,by load,3,2
+accident,kaiq,4,by load,3,2
+account,hain,4,by load,2,2
+accuse,hesk,4,by load,5,2
+alike,jaup,4,by load,2,2
+annoy,pezg,4,by load,6,2
+ash,lesk,4,by load,3,2
+assign,vefk,4,by load,4,2
+award,wegd,4,by load,4,2
+balm,kaib,4,by load,2,2
 bank,baqk,4,echoes the english,4,2
-bare,hesk,4,by load,5,2
-bay,kaib,4,by load,2,2
-berry,left,4,by load,2,2
-blaze,main,4,by load,2,2
+bare,jaik,4,by load,5,2
+bay,left,4,by load,2,2
+berry,main,4,by load,2,2
+blaze,naib,4,by load,2,2
 bloom,blum,4,echoes the english,3,2
-boss,naib,4,by load,2,2
-bounce,pezg,4,by load,6,2
-brace,paid,4,by load,2,2
-brave,Cesp,4,by load,12,2
+boss,paid,4,by load,2,2
+bounce,regd,4,by load,6,2
+brace,rain,4,by load,2,2
+brave,beqk,4,by load,12,2
 breed,brid,4,echoes the english,3,2
 brush,brax,4,echoes the english,3,2
-bulge,wegd,4,by load,4,2
-burden,lesk,4,by load,3,2
-button,jaik,4,by load,5,2
-can,yend,4,by load,16,2
-candy,meft,4,by load,3,2
-chew,xesk,4,by load,4,2
+bulge,xesk,4,by load,4,2
+burden,meft,4,by load,3,2
+button,kaim,4,by load,5,2
+can,zetx,4,by load,16,2
+candy,naiq,4,by load,3,2
+chew,yedj,4,by load,4,2
 chop,txap,4,echoes the english,3,2
-clever,reqk,4,by load,8,2
-collect,yedj,4,by load,4,2
-commotion,rain,4,by load,2,2
-company,naiq,4,by load,3,2
-concern,saim,4,by load,2,2
-content,reft,4,by load,3,2
-contest,sesk,4,by load,3,2
-contract,taiq,4,by load,2,2
-convince,vaid,4,by load,3,2
-cool,jaid,4,by load,9,2
+clever,send,4,by load,8,2
+collect,zefk,4,by load,4,2
+commotion,saim,4,by load,2,2
+company,reft,4,by load,3,2
+concern,taiq,4,by load,2,2
+content,sesk,4,by load,3,2
+contest,vaid,4,by load,3,2
+contract,vaik,4,by load,2,2
+convince,xeft,4,by load,3,2
+cool,kezb,4,by load,9,2
 cork,kork,4,echoes the english,2,2
-correct,send,4,by load,8,2
-couple,vaik,4,by load,2,2
+correct,tekt,4,by load,8,2
+couple,weft,4,by load,2,2
 cream,krim,4,echoes the english,5,2
-cruel,tekt,4,by load,8,2
+cruel,wend,4,by load,8,2
 crush,krax,4,echoes the english,5,2
-current,gend,4,by load,10,2
-date,zefk,4,by load,4,2
-dear,weft,4,by load,2,2
-debate,xain,4,by load,2,2
-debt,yaim,4,by load,2,2
-decay,zesp,4,by load,7,2
-deity,xeft,4,by load,3,2
-develop,Caip,4,by load,4,2
-diagnose,zaiv,4,by load,2,2
-diet,Caup,4,by load,2,2
-disaster,baiq,4,by load,2,2
+current,hegd,4,by load,10,2
+date,Caip,4,by load,4,2
+dear,xain,4,by load,2,2
+debate,yaim,4,by load,2,2
+debt,zaiv,4,by load,2,2
+decay,Cezg,4,by load,7,2
+deity,yezb,4,by load,3,2
+develop,bezb,4,by load,4,2
+diagnose,Caup,4,by load,2,2
+diet,baiq,4,by load,2,2
+disaster,caim,4,by load,2,2
 disk,disk,4,echoes the english,2,2
 ditch,ditx,4,echoes the english,2,2
-dive,yezb,4,by load,3,2
-dot,regd,4,by load,6,2
-dwell,zaip,4,by load,3,2
-eager,Caiv,4,by load,3,2
-earnest,caim,4,by load,2,2
-educate,baim,4,by load,3,2
-enemy,bezb,4,by load,4,2
-enjoy,kaim,4,by load,5,2
-enlist,cezb,4,by load,3,2
-evil,deqk,4,by load,11,2
-excuse,dain,4,by load,2,2
-expect,kezb,4,by load,9,2
-extreme,Cezg,4,by load,7,2
-familiar,faim,4,by load,2,2
-fiber,legd,4,by load,5,2
-final,wemp,4,by load,19,2
+dive,zaip,4,by load,3,2
+dot,seqk,4,by load,6,2
+dwell,Caiv,4,by load,3,2
+eager,baim,4,by load,3,2
+earnest,dain,4,by load,2,2
+educate,cezb,4,by load,3,2
+enemy,cedj,4,by load,4,2
+enjoy,legd,4,by load,5,2
+enlist,deft,4,by load,3,2
+evil,fend,4,by load,11,2
+excuse,faim,4,by load,2,2
+expect,megd,4,by load,9,2
+extreme,begd,4,by load,7,2
+familiar,gaim,4,by load,2,2
+fiber,mesk,4,by load,5,2
+final,xend,4,by load,19,2
 flesh,flex,4,echoes the english,9,2
 flood,flad,4,echoes the english,3,2
-forest,deft,4,by load,3,2
-forgive,fezb,4,by load,3,2
+forest,fezb,4,by load,3,2
+forgive,gezg,4,by load,3,2
 fresh,frex,4,echoes the english,11,2
-fungus,gezg,4,by load,3,2
-garment,gaim,4,by load,2,2
-gaze,haiq,4,by load,2,2
-glide,cedj,4,by load,4,2
+fungus,haim,4,by load,3,2
+garment,haiq,4,by load,2,2
+gaze,jauk,4,by load,2,2
+glide,fedj,4,by load,4,2
 grab,grab,4,echoes the english,9,2
-grade,jauk,4,by load,2,2
+grade,kait,4,by load,2,2
 gram,gram,4,echoes the english,2,2
-grant,fedj,4,by load,4,2
+grant,gekt,4,by load,4,2
 grief,grif,4,echoes the english,3,2
-guy,kait,4,by load,2,2
-habit,maiq,4,by load,2,2
-hammer,nait,4,by load,2,2
-hat,gekt,4,by load,4,2
-heap,haim,4,by load,3,2
-heavy,vekt,4,by load,24,2
-height,hezb,4,by load,4,2
-hint,mesk,4,by load,5,2
-hollow,jaiv,4,by load,4,2
-hurry,begd,4,by load,7,2
-improve,ceqk,4,by load,7,2
-income,raiq,4,by load,2,2
-inherit,degd,4,by load,7,2
-inspire,saiq,4,by load,2,2
-intent,taig,4,by load,2,2
-involve,naim,4,by load,5,2
-jaw,kain,4,by load,4,2
-labor,jaud,4,by load,3,2
-leave,nest,4,by load,33,2
+guy,maiq,4,by load,2,2
+habit,nait,4,by load,2,2
+hammer,raiq,4,by load,2,2
+hat,hezb,4,by load,4,2
+heap,jaud,4,by load,3,2
+heavy,wemp,4,by load,24,2
+height,jaiv,4,by load,4,2
+hint,naim,4,by load,5,2
+hollow,kain,4,by load,4,2
+hurry,ceqk,4,by load,7,2
+improve,degd,4,by load,7,2
+income,saiq,4,by load,2,2
+inherit,feqk,4,by load,7,2
+inspire,taig,4,by load,2,2
+intent,vaiv,4,by load,2,2
+involve,pefk,4,by load,5,2
+jaw,mezb,4,by load,4,2
+labor,kaig,4,by load,3,2
+leave,pekt,4,by load,33,2
 ledge,ledj,4,echoes the english,2,2
 lip,glip,4,pinned,8,2
-lizard,kaig,4,by load,3,2
-lucky,seqk,4,by load,6,2
-main,pekt,4,by load,32,2
-marry,mezb,4,by load,4,2
+lizard,lezb,4,by load,3,2
+lucky,vezg,4,by load,6,2
+main,semp,4,by load,32,2
+marry,nain,4,by load,4,2
 mask,mask,4,echoes the english,5,2
-master,lezb,4,by load,3,2
-medium,maim,4,by load,3,2
-melt,wend,4,by load,8,2
-mold,naig,4,by load,3,2
-monster,vaiv,4,by load,2,2
-moral,vezg,4,by load,6,2
-mother,megd,4,by load,9,2
-nail,nain,4,by load,4,2
-noble,hegd,4,by load,10,2
-numb,woim,4,by load,2,2
-occupy,xaiq,4,by load,2,2
-occur,paiq,4,by load,3,2
-ocean,tetx,4,by load,28,2
-official,weqk,4,by load,6,2
-onion,yain,4,by load,2,2
-ornament,paim,4,by load,4,2
-pace,raim,4,by load,3,2
-pan,pefk,4,by load,5,2
-pardon,zaic,4,by load,2,2
-persuade,Cauk,4,by load,2,2
-phase,baig,4,by load,2,2
-physical,feqk,4,by load,7,2
+master,maim,4,by load,3,2
+medium,naig,4,by load,3,2
+melt,xeqk,4,by load,8,2
+mold,paiq,4,by load,3,2
+monster,woim,4,by load,2,2
+moral,weqk,4,by load,6,2
+mother,nezg,4,by load,9,2
+nail,paim,4,by load,4,2
+noble,jaid,4,by load,10,2
+numb,xaiq,4,by load,2,2
+occupy,yain,4,by load,2,2
+occur,raim,4,by load,3,2
+ocean,vekt,4,by load,28,2
+official,xegd,4,by load,6,2
+onion,zaic,4,by load,2,2
+ornament,rezg,4,by load,4,2
+pace,sezb,4,by load,3,2
+pan,redj,4,by load,5,2
+pardon,Cauk,4,by load,2,2
+persuade,baig,4,by load,2,2
+phase,cain,4,by load,2,2
+physical,geqk,4,by load,7,2
 plane,blun,4,pinned,5,2
-plastic,rezg,4,by load,4,2
-poke,sezb,4,by load,3,2
+plastic,tefk,4,by load,4,2
+poke,tain,4,by load,3,2
 port,port,4,echoes the english,2,2
-pour,xegd,4,by load,6,2
-pride,cain,4,by load,2,2
-prison,tefk,4,by load,4,2
-projection,daiq,4,by load,2,2
-provide,nezg,4,by load,9,2
-public,xend,4,by load,18,2
-puppet,faiq,4,by load,2,2
-qualify,gain,4,by load,2,2
-refuse,geqk,4,by load,7,2
-regular,xezb,4,by load,4,2
-relax,haig,4,by load,2,2
-replace,redj,4,by load,5,2
-reply,tain,4,by load,3,2
-report,yesk,4,by load,4,2
-represent,vaip,4,by load,3,2
-reward,yegd,4,by load,6,2
-rich,beqk,4,by load,12,2
-rid,wezg,4,by load,3,2
-rifle,jauv,4,by load,2,2
-rinse,kais,4,by load,2,2
-robot,lain,4,by load,2,2
-romance,maig,4,by load,2,2
-saddle,xaim,4,by load,3,2
-sail,jaip,4,by load,7,2
+pour,yegd,4,by load,6,2
+pride,daiq,4,by load,2,2
+prison,xezb,4,by load,4,2
+projection,faiq,4,by load,2,2
+provide,reqk,4,by load,9,2
+public,yend,4,by load,18,2
+puppet,gain,4,by load,2,2
+qualify,haig,4,by load,2,2
+refuse,jaip,4,by load,7,2
+regular,yesk,4,by load,4,2
+relax,jauv,4,by load,2,2
+replace,sedj,4,by load,5,2
+reply,vaip,4,by load,3,2
+report,zaid,4,by load,4,2
+represent,wezg,4,by load,3,2
+reward,zezg,4,by load,6,2
+rich,cend,4,by load,12,2
+rid,xaim,4,by load,3,2
+rifle,kais,4,by load,2,2
+rinse,lain,4,by load,2,2
+robot,maig,4,by load,2,2
+romance,nais,4,by load,2,2
+saddle,yeft,4,by load,3,2
+sail,kefk,4,by load,7,2
 scan,skan,4,echoes the english,3,2
-scatter,xeqk,4,by load,8,2
-scholar,nais,4,by load,2,2
-scope,raig,4,by load,2,2
-screw,saig,4,by load,2,2
-script,vaic,4,by load,2,2
-session,woin,4,by load,2,2
-sew,zezg,4,by load,6,2
-sexual,yeft,4,by load,3,2
-sharp,lemp,4,by load,59,2
+scatter,yeqk,4,by load,8,2
+scholar,raig,4,by load,2,2
+scope,saig,4,by load,2,2
+screw,vaic,4,by load,2,2
+script,woin,4,by load,2,2
+session,xaig,4,by load,2,2
+sew,Caid,4,by load,6,2
+sexual,zaik,4,by load,3,2
+sharp,nest,4,by load,59,2
 short,xort,4,echoes the english,45,2
-skirt,xaig,4,by load,2,2
-slight,Caid,4,by load,6,2
+skirt,yaiq,4,by load,2,2
+slight,besk,4,by load,6,2
 slim,slim,4,echoes the english,4,2
-slip,sedj,4,by load,5,2
+slip,tezg,4,by load,5,2
 slope,slop,4,echoes the english,3,2
-social,kefk,4,by load,7,2
-sort,zaid,4,by load,4,2
-spear,zaik,4,by load,3,2
-special,zetx,4,by load,14,2
-spider,yeqk,4,by load,8,2
-spill,Caik,4,by load,4,2
+social,leqk,4,by load,7,2
+sort,Caik,4,by load,4,2
+spear,Caud,4,by load,3,2
+special,Cesp,4,by load,14,2
+spider,zesp,4,by load,8,2
+spill,beft,4,by load,4,2
 spoon,spun,4,echoes the english,2,2
-spout,yaiq,4,by load,2,2
-squeeze,leqk,4,by load,7,2
+spout,zaud,4,by load,2,2
+squeeze,medj,4,by load,7,2
 stack,stak,4,echoes the english,3,2
-stain,medj,4,by load,7,2
-stake,zaud,4,by load,2,2
+stain,nefk,4,by load,7,2
+stake,Cauv,4,by load,2,2
 stalk,stok,4,echoes the english,2,2
-stance,Cauv,4,by load,2,2
-street,Caud,4,by load,3,2
-stripe,beft,4,by load,4,2
-suck,bain,4,by load,3,2
-sudden,semp,4,by load,30,2
-supervise,cefk,4,by load,3,2
+stance,baib,4,by load,2,2
+street,bain,4,by load,3,2
+stripe,cesk,4,by load,4,2
+suck,cefk,4,by load,3,2
+sudden,tetx,4,by load,30,2
+supervise,daim,4,by load,3,2
 swap,swap,4,echoes the english,4,2
-swear,daim,4,by load,3,2
+swear,feft,4,by load,3,2
 sweat,swet,4,echoes the english,5,2
 sweep,swip,4,echoes the english,3,2
-teen,cesk,4,by load,4,2
-texture,baib,4,by load,2,2
+teen,dezb,4,by load,4,2
+texture,caiq,4,by load,2,2
 thank,caqk,4,echoes the english,4,2
-theory,dezb,4,by load,4,2
-thorough,caiq,4,by load,2,2
-toy,daig,4,by load,2,2
-upset,besk,4,by load,6,2
-vacation,faig,4,by load,2,2
-valley,gaiq,4,by load,2,2
-vein,cegd,4,by load,6,2
-verse,fesk,4,by load,4,2
-warn,dedj,4,by load,6,2
-watt,jauc,4,by load,2,2
-weather,fend,4,by load,11,2
-wrinkle,feft,4,by load,3,2
+theory,fesk,4,by load,4,2
+thorough,daig,4,by load,2,2
+toy,faig,4,by load,2,2
+upset,cegd,4,by load,6,2
+vacation,gaiq,4,by load,2,2
+valley,jauc,4,by load,2,2
+vein,dedj,4,by load,6,2
+verse,heft,4,by load,4,2
+warn,fegd,4,by load,6,2
+watt,kaiz,4,by load,2,2
+weather,gend,4,by load,11,2
+wrinkle,geft,4,by load,3,2
 10^6,caib,4,by load,5,1
 abandon,naus,4,by load,1,1
 abstain,paub,4,by load,1,1
@@ -1684,7 +1685,7 @@ adult,faix,4,by load,2,1
 advance,woig,4,by load,6,1
 advantage,Casp,4,by load,3,1
 alter,vafk,4,by load,1,1
-amaze,faib,4,by load,8,1
+amaze,gaig,4,by load,8,1
 amp,womp,4,by load,1,1
 anesthetic,xaub,4,by load,1,1
 announce,baif,4,by load,3,1
@@ -1708,7 +1709,7 @@ ban,gaun,4,by load,1,1
 basis,haug,4,by load,1,1
 bat,faiz,4,by load,3,1
 bead,join,4,by load,1,1
-bee,pais,4,by load,15,1
+bee,raib,4,by load,15,1
 bet,gais,4,by load,3,1
 bitter,dait,4,by load,5,1
 bleed,blid,4,echoes the english,3,1
@@ -1723,7 +1724,7 @@ breeze,briz,4,echoes the english,2,1
 bribe,nauz,4,by load,1,1
 brick,brik,4,echoes the english,3,1
 bride,maij,4,by load,2,1
-brother,mait,4,by load,7,1
+brother,naix,4,by load,7,1
 brown,nauq,4,by load,2,1
 bully,paut,4,by load,1,1
 bun,raug,4,by load,1,1
@@ -1764,7 +1765,7 @@ consequence,maub,4,by load,1,1
 consider,Cakt,4,by load,4,1
 construct,nauf,4,by load,1,1
 consume,paus,4,by load,1,1
-core,naix,4,by load,7,1
+core,paiz,4,by load,7,1
 corn,korn,4,echoes the english,2,1
 cot,raub,4,by load,1,1
 court,baiz,4,by load,4,1
@@ -1782,11 +1783,11 @@ curse,naum,4,by load,3,1
 dart,caub,4,by load,1,1
 debris,daub,4,by load,1,1
 decent,faub,4,by load,1,1
-decorate,zaup,4,by load,9,1
+decorate,Cant,4,by load,9,1
 deer,zakt,4,by load,2,1
 defense,hais,4,by load,5,1
-delay,Cant,4,by load,9,1
-delicate,paiz,4,by load,7,1
+delay,bait,4,by load,9,1
+delicate,rait,4,by load,7,1
 dent,dent,4,echoes the english,1,1
 deny,Carn,4,by load,2,1
 dessert,gaug,4,by load,1,1
@@ -1799,41 +1800,41 @@ disc,caix,4,by load,2,1
 discover,kauf,4,by load,1,1
 dispute,raif,4,by load,3,1
 dissolve,saix,4,by load,3,1
-distant,kaiz,4,by load,26,1
+distant,laiq,4,by load,26,1
 dome,laub,4,by load,1,1
-door,bait,4,by load,9,1
+door,caig,4,by load,9,1
 dough,maut,4,by load,1,1
 drain,taix,4,by load,3,1
 drama,daij,4,by load,2,1
 dread,dred,4,echoes the english,1,1
 drum,drom,4,pinned,5,1
-dry,maib,4,by load,16,1
+dry,pais,4,by load,16,1
 due,faij,4,by load,2,1
 dye,gaix,4,by load,2,1
-ease,rait,4,by load,7,1
-echo,caig,4,by load,9,1
+ease,sais,4,by load,7,1
+echo,daib,4,by load,9,1
 ego,haiC,4,by load,2,1
-electric,laiq,4,by load,25,1
+electric,maib,4,by load,25,1
 embarrass,jarb,4,by load,2,1
 endure,dais,4,by load,4,1
 enroll,naux,4,by load,1,1
 entertain,vauc,4,by load,3,1
 environment,jakt,4,by load,5,1
 erase,pauz,4,by load,1,1
-escape,sais,4,by load,7,1
+escape,tais,4,by load,7,1
 essay,raut,4,by load,1,1
 establish,saus,4,by load,1,1
 estimate,taus,4,by load,1,1
 evacuate,valp,4,by load,1,1
 evaluate,kauq,4,by load,2,1
-exact,gaig,4,by load,8,1
+exact,haip,4,by load,8,1
 exposure,wodj,4,by load,1,1
 expression,xauz,4,by load,1,1
 extract,laij,4,by load,2,1
 fad,yaub,4,by load,1,1
 fade,wois,4,by load,3,1
 fame,maiC,4,by load,2,1
-fancy,daib,4,by load,9,1
+fancy,faib,4,by load,9,1
 fantasy,zalf,4,by load,1,1
 fare,naug,4,by load,2,1
 fasten,fais,4,by load,4,1
@@ -1880,7 +1881,7 @@ greet,xauf,4,by load,1,1
 grin,grin,4,echoes the english,1,1
 harmony,yaut,4,by load,1,1
 harp,zoim,4,by load,1,1
-harsh,taip,4,by load,12,1
+harsh,vaud,4,by load,12,1
 hatch,baum,4,by load,2,1
 heel,Coib,4,by load,1,1
 hello,grit,4,pinned,1,1
@@ -1888,7 +1889,7 @@ herd,kaij,4,by load,4,1
 hire,bauz,4,by load,1,1
 honest,caij,4,by load,2,1
 host,Cazg,4,by load,3,1
-hot,vaud,4,by load,12,1
+hot,woiq,4,by load,12,1
 hotel,caus,4,by load,1,1
 humid,daus,4,by load,1,1
 humor,faus,4,by load,1,1
@@ -1920,13 +1921,13 @@ lake,bauf,4,by load,1,1
 latch,cauz,4,by load,1,1
 leak,maiz,4,by load,4,1
 leather,dauz,4,by load,1,1
-legal,woiq,4,by load,12,1
+legal,xaib,4,by load,12,1
 lend,lend,4,echoes the english,1,1
 lever,haum,4,by load,2,1
 lice,fauz,4,by load,1,1
 lion,gaus,4,by load,1,1
 loan,caiz,4,by load,3,1
-local,haip,4,by load,8,1
+local,jant,4,by load,8,1
 loft,loft,4,echoes the english,1,1
 loyalty,naiC,4,by load,4,1
 mail,daif,4,by load,3,1
@@ -1947,22 +1948,21 @@ monopoly,pauj,4,by load,1,1
 motive,rauf,4,by load,1,1
 mount,saux,4,by load,1,1
 mouse,maus,4,echoes the english,2,1
-mud,jant,4,by load,8,1
+mud,kaif,4,by load,8,1
 mug,taux,4,by load,1,1
 murmur,maum,4,by load,2,1
 mush,voiq,4,by load,1,1
 mystery,paix,4,by load,4,1
 nap,naub,4,by load,2,1
-narrow,raib,4,by load,15,1
+narrow,saib,4,by load,15,1
 negotiate,woft,4,by load,1,1
-nervous,tais,4,by load,7,1
 nucleus,pauq,4,by load,2,1
 oar,xaul,4,by load,1,1
 oath,yauz,4,by load,1,1
 observe,zoiq,4,by load,1,1
 obvious,gaiz,4,by load,3,1
 occasion,Cois,4,by load,1,1
-odd,xaib,4,by load,10,1
+odd,yaig,4,by load,10,1
 ointment,baux,4,by load,1,1
 okay,cauf,4,by load,1,1
 ore,dauf,4,by load,1,1
@@ -1979,7 +1979,7 @@ pee,haix,4,by load,3,1
 pellet,lauf,4,by load,1,1
 penalty,jafk,4,by load,3,1
 penis,maux,4,by load,1,1
-personal,kaif,4,by load,8,1
+personal,laig,4,by load,8,1
 pest,pest,4,echoes the english,4,1
 pet,raiz,4,by load,4,1
 pill,namp,4,by load,1,1
@@ -2048,7 +2048,7 @@ sect,sekt,4,echoes the english,1,1
 seize,vauv,4,by load,4,1
 seminar,gaux,4,by load,1,1
 sensation,hauC,4,by load,1,1
-serious,laig,4,by load,8,1
+serious,mait,4,by load,8,1
 serum,joiC,4,by load,1,1
 shard,lauj,4,by load,1,1
 shark,xark,4,echoes the english,1,1
@@ -2090,7 +2090,7 @@ steer,xaiz,4,by load,4,1
 sterile,baul,4,by load,1,1
 steward,caul,4,by load,1,1
 sting,stiq,4,echoes the english,2,1
-stir,yaig,4,by load,10,1
+stir,zaup,4,by load,10,1
 stock,xaug,4,by load,2,1
 stool,dauC,4,by load,1,1
 strain,yais,4,by load,4,1
@@ -2107,7 +2107,7 @@ sync,siqk,4,echoes the english,1,1
 tablet,kakt,4,by load,1,1
 tail,vauk,4,by load,5,1
 tax,zadj,4,by load,3,1
-tea,saib,4,by load,15,1
+tea,taip,4,by load,15,1
 temper,lauC,4,by load,1,1
 temporary,bauq,4,by load,2,1
 tempt,woib,4,by load,5,1
@@ -2159,16 +2159,16 @@ zip,zoiz,4,by load,1,1
 20,moip,4,by load,0,0
 abbey,noic,4,by load,0,0
 abbot,poic,4,by load,0,0
-absolute,mazb,4,by load,2,0
+absolute,narb,4,by load,2,0
 abundance,roip,4,by load,0,0
-abundant,narb,4,by load,2,0
+abundant,parm,4,by load,2,0
 acacia,soip,4,by load,0,0
 academy,toik,4,by load,0,0
 accumulate,vorb,4,by load,0,0
 acute,xoic,4,by load,0,0
 additionally,yalv,4,by load,0,0
 address,zolk,4,by load,0,0
-adequate,parm,4,by load,2,0
+adequate,radj,4,by load,2,0
 adhere,Cukt,4,by load,0,0
 adjacent,boid,4,by load,0,0
 adjoining,coip,4,by load,0,0
@@ -2197,158 +2197,158 @@ alkaline,doip,4,by load,0,0
 allege,foid,4,by load,0,0
 alley,goip,4,by load,0,0
 alligator,hoit,4,by load,0,0
-allure,faqk,4,by load,3,0
+allure,gaqk,4,by load,3,0
 almond,kogd,4,by load,0,0
 aloe,loik,4,by load,0,0
 altar,moiv,4,by load,0,0
 alum,nond,4,by load,0,0
 amaranth,potx,4,by load,0,0
 amber,roiv,4,by load,0,0
-ambush,soiv,4,by load,0,0
-amine,toic,4,by load,0,0
-amomum,volf,4,by load,0,0
-amphitheatre,xond,4,by load,0,0
-amphora,yoid,4,by load,0,0
-amulet,zunt,4,by load,0,0
-anaconda,Cuzg,4,by load,0,0
-anal,boik,4,by load,0,0
+ambrosia,soiv,4,by load,0,0
+ambush,toic,4,by load,0,0
+amine,volf,4,by load,0,0
+amomum,xond,4,by load,0,0
+amphitheatre,yoid,4,by load,0,0
+amphora,zunt,4,by load,0,0
+amulet,Cuzg,4,by load,0,0
+anaconda,boik,4,by load,0,0
+anal,coiv,4,by load,0,0
 ancestor,wuft,4,by load,1,0
-anchor,coiv,4,by load,0,0
+anchor,doik,4,by load,0,0
 ancient,jozg,4,by load,5,0
-andron,doik,4,by load,0,0
+andron,foip,4,by load,0,0
 angel,xalv,4,by load,1,0
-angelica,foip,4,by load,0,0
-angle.,goik,4,by load,0,0
-angrily,hoik,4,by load,0,0
-anhui,kotx,4,by load,0,0
-anise,loiv,4,by load,0,0
-ankle,moic,4,by load,0,0
-annex,notx,4,by load,0,0
-ant,radj,4,by load,2,0
-antiderivative,pokt,4,by load,0,0
-anvil,roic,4,by load,0,0
-ape,soic,4,by load,0,0
-apetalous,tont,4,by load,0,0
-apex,vunt,4,by load,0,0
-appendage,xoqk,4,by load,0,0
-apple,yoip,4,by load,0,0
-appoint,zutx,4,by load,0,0
-apricot,Cufk,4,by load,0,0
-aquatic,boiv,4,by load,0,0
-aqueduct,comp,4,by load,0,0
-arable,doiv,4,by load,0,0
-arborophila,foik,4,by load,0,0
-archeological,goiv,4,by load,0,0
-archipelago,hoiv,4,by load,0,0
+angelica,goik,4,by load,0,0
+angle.,hoik,4,by load,0,0
+angrily,kotx,4,by load,0,0
+anhui,loiv,4,by load,0,0
+anise,moic,4,by load,0,0
+ankle,notx,4,by load,0,0
+annex,pokt,4,by load,0,0
+ant,sask,4,by load,2,0
+antiderivative,roic,4,by load,0,0
+anvil,soic,4,by load,0,0
+ape,tont,4,by load,0,0
+apetalous,vunt,4,by load,0,0
+apex,xoqk,4,by load,0,0
+appendage,yoip,4,by load,0,0
+apple,zutx,4,by load,0,0
+appoint,Cufk,4,by load,0,0
+apricot,boiv,4,by load,0,0
+aquatic,comp,4,by load,0,0
+aqueduct,doiv,4,by load,0,0
+arable,foik,4,by load,0,0
+arborophila,goiv,4,by load,0,0
+archeological,hoiv,4,by load,0,0
+archipelago,loic,4,by load,0,0
 arena,yask,4,by load,1,0
-arise,loic,4,by load,0,0
-aristocrat,moqk,4,by load,0,0
-armadillo,nokt,4,by load,0,0
-armory,posp,4,by load,0,0
-armpit,romp,4,by load,0,0
-arnica,somp,4,by load,0,0
-arrest,totx,4,by load,0,0
-arrondissement,vutx,4,by load,0,0
-artemisia,xogd,4,by load,0,0
-article,yoik,4,by load,0,0
-artisan,zukt,4,by load,0,0
-ascend,boic,4,by load,0,0
-ascent,cond,4,by load,0,0
-aspen,doic,4,by load,0,0
-asphodel,foiv,4,by load,0,0
-assemble,goic,4,by load,0,0
-assist,hoic,4,by load,0,0
+arise,moqk,4,by load,0,0
+aristocrat,nokt,4,by load,0,0
+armadillo,posp,4,by load,0,0
+armory,romp,4,by load,0,0
+armpit,somp,4,by load,0,0
+arnica,totx,4,by load,0,0
+arrest,vutx,4,by load,0,0
+arrondissement,xogd,4,by load,0,0
+artemisia,yoik,4,by load,0,0
+article,zukt,4,by load,0,0
+artisan,boic,4,by load,0,0
+ascend,cond,4,by load,0,0
+ascent,doic,4,by load,0,0
+aspen,foiv,4,by load,0,0
+asphodel,goic,4,by load,0,0
+assemble,hoic,4,by load,0,0
+assist,kozg,4,by load,0,0
 associate,zokt,4,by load,1,0
-astringent,kozg,4,by load,0,0
-atoll,lomp,4,by load,0,0
-august,mogd,4,by load,0,0
-aunt,nosp,4,by load,0,0
-auratus,pozg,4,by load,0,0
-aurochs,rond,4,by load,0,0
-aurora,sond,4,by load,0,0
-autumn,tokt,4,by load,0,0
-avenue,vukt,4,by load,0,0
-awl,xosk,4,by load,0,0
-awning,yoiv,4,by load,0,0
-azalea,zusp,4,by load,0,0
-bachelor,bomp,4,by load,0,0
-backward,coqk,4,by load,0,0
-bagatelle,domp,4,by load,0,0
-bald,foic,4,by load,0,0
-ballast,gomp,4,by load,0,0
-bamboo,homp,4,by load,0,0
+astringent,lomp,4,by load,0,0
+atoll,mogd,4,by load,0,0
+august,nosp,4,by load,0,0
+aunt,pozg,4,by load,0,0
+auratus,rond,4,by load,0,0
+aurochs,sond,4,by load,0,0
+aurora,tokt,4,by load,0,0
+autumn,vukt,4,by load,0,0
+avenue,xosk,4,by load,0,0
+awl,yoiv,4,by load,0,0
+awning,zusp,4,by load,0,0
+azalea,bomp,4,by load,0,0
+bachelor,coqk,4,by load,0,0
+backward,domp,4,by load,0,0
+bagatelle,foic,4,by load,0,0
+bald,gomp,4,by load,0,0
+ballast,homp,4,by load,0,0
+bamboo,kofk,4,by load,0,0
 banana,Corm,4,by load,1,0
-banco,kofk,4,by load,0,0
-bane,lond,4,by load,0,0
-baneberry,modj,4,by load,0,0
-banyan,nozg,4,by load,0,0
-barbarian,pofk,4,by load,0,0
-barbel,roqk,4,by load,0,0
-barium,soqk,4,by load,0,0
+banco,lond,4,by load,0,0
+bane,modj,4,by load,0,0
+baneberry,nozg,4,by load,0,0
+banyan,pofk,4,by load,0,0
+barbarian,roqk,4,by load,0,0
+barbel,soqk,4,by load,0,0
+barium,tosp,4,by load,0,0
 barley,baft,4,by load,1,0
 barn,barn,4,echoes the english,0,0
-barrel,tosp,4,by load,0,0
-basalt,vusp,4,by load,0,0
-basil,xozb,4,by load,0,0
-basilica,yoic,4,by load,0,0
-basin,zuzg,4,by load,0,0
-basket,bond,4,by load,0,0
+barrel,vusp,4,by load,0,0
+basalt,xozb,4,by load,0,0
+basil,yoic,4,by load,0,0
+basilica,zuzg,4,by load,0,0
+basin,bond,4,by load,0,0
+basket,cogd,4,by load,0,0
 bast,bast,4,echoes the english,0,0
-bathe,cogd,4,by load,0,0
-bazaar,dond,4,by load,0,0
+bathe,dond,4,by load,0,0
+bazaar,fomp,4,by load,0,0
 beach,bitx,4,echoes the english,0,0
-beak,fomp,4,by load,0,0
-beakstalk,gond,4,by load,0,0
-beanie,hond,4,by load,0,0
-beard,loqk,4,by load,0,0
-beaver,mosk,4,by load,0,0
-beech,nofk,4,by load,0,0
+beak,gond,4,by load,0,0
+beakstalk,hond,4,by load,0,0
+beanie,loqk,4,by load,0,0
+beard,mosk,4,by load,0,0
+beaver,nofk,4,by load,0,0
+beech,porm,4,by load,0,0
 beer,caft,4,by load,1,0
-beet,porm,4,by load,0,0
-beggar,rogd,4,by load,0,0
-behavioural,sogd,4,by load,0,0
-bellows,tozg,4,by load,0,0
-belly,vuzg,4,by load,0,0
-beloved,xoft,4,by load,0,0
-belt,sask,4,by load,2,0
-bent,yomp,4,by load,0,0
-beribboned,zufk,4,by load,0,0
-beside,yand,4,by load,4,0
-betel,boqk,4,by load,0,0
-bewitch,codj,4,by load,0,0
-bidentate,doqk,4,by load,0,0
-bier,fond,4,by load,0,0
-bile,goqk,4,by load,0,0
+beet,rogd,4,by load,0,0
+beggar,sogd,4,by load,0,0
+behavioural,tozg,4,by load,0,0
+bellows,vuzg,4,by load,0,0
+belly,xoft,4,by load,0,0
+beloved,yomp,4,by load,0,0
+belt,tazg,4,by load,2,0
+bent,zufk,4,by load,0,0
+beribboned,boqk,4,by load,0,0
+beside,zoix,4,by load,4,0
+betel,codj,4,by load,0,0
+bewitch,doqk,4,by load,0,0
+bidentate,fond,4,by load,0,0
+bier,goqk,4,by load,0,0
+bile,hoqk,4,by load,0,0
 billion,dolc,4,pinned,0,0
-bin,hoqk,4,by load,0,0
-bipinnate,logd,4,by load,0,0
-birch,mozb,4,by load,0,0
-bishop,norn,4,by load,0,0
-bitch,rodj,4,by load,0,0
-blacksmith,sodj,4,by load,0,0
+bin,logd,4,by load,0,0
+bipinnate,mozb,4,by load,0,0
+birch,norn,4,by load,0,0
+bishop,rodj,4,by load,0,0
+bitch,sodj,4,by load,0,0
+blacksmith,tofk,4,by load,0,0
 bladder,daft,4,by load,1,0
-blanching,tofk,4,by load,0,0
-blanket,vufk,4,by load,0,0
-bleat,xorm,4,by load,0,0
-blister,yond,4,by load,0,0
-bloc,bogd,4,by load,0,0
+blanching,vufk,4,by load,0,0
+blanket,xorm,4,by load,0,0
+bleat,yond,4,by load,0,0
+blister,bogd,4,by load,0,0
+bloc,cosk,4,by load,0,0
 bluff,blaf,4,echoes the english,0,0
-boa,cosk,4,by load,0,0
-boar,dogd,4,by load,0,0
-bogeyman,foqk,4,by load,0,0
-bolivar,godj,4,by load,0,0
-boor,hogd,4,by load,0,0
-boot,kolp,4,by load,0,0
-bore,gaqk,4,by load,3,0
+boa,dogd,4,by load,0,0
+boar,foqk,4,by load,0,0
+bogeyman,godj,4,by load,0,0
+bolivar,hogd,4,by load,0,0
+boor,kolp,4,by load,0,0
+boot,lodj,4,by load,0,0
+bore,hagd,4,by load,3,0
 born,born,4,echoes the english,0,0
-bosom,lodj,4,by load,0,0
-bot,moft,4,by load,0,0
-bottle,norg,4,by load,0,0
-boulevard,polk,4,by load,0,0
-bound,rosk,4,by load,0,0
-bovine,sosk,4,by load,0,0
-bowstring,torn,4,by load,0,0
-bra,yoqk,4,by load,0,0
+bosom,moft,4,by load,0,0
+bot,norg,4,by load,0,0
+bottle,polk,4,by load,0,0
+boulevard,rosk,4,by load,0,0
+bound,sosk,4,by load,0,0
+bovine,torn,4,by load,0,0
+bowstring,yoqk,4,by load,0,0
 braid,bred,4,pinned,1,0
 brake,bodj,4,by load,0,0
 bran,bran,4,echoes the english,0,0
@@ -2375,7 +2375,7 @@ bud,xolk,4,by load,0,0
 buddha,yogd,4,by load,0,0
 buffalo,bosk,4,by load,0,0
 bulb,coft,4,by load,0,0
-bull,tazg,4,by load,2,0
+bull,voiC,4,by load,2,0
 bullet,dosk,4,by load,0,0
 bulrush,fodj,4,by load,0,0
 bumblebee,gosk,4,by load,0,0
@@ -2394,7 +2394,7 @@ butterfly,xolv,4,by load,0,0
 buttocks,yodj,4,by load,0,0
 buzzard,bozb,4,by load,0,0
 cabbage,gazb,4,by load,1,0
-cable,voiC,4,by load,2,0
+cable,wusk,4,by load,2,0
 cache,dozb,4,by load,0,0
 cage,fozb,4,by load,0,0
 caid,gozb,4,by load,0,0
@@ -2406,268 +2406,268 @@ calvary,putx,4,by load,0,0
 camel,rolk,4,by load,0,0
 campanile,sorm,4,by load,0,0
 camphor,tolf,4,by load,0,0
-candidate,xolc,4,by load,0,0
-cane,yosk,4,by load,0,0
-canine,boft,4,by load,0,0
-cannabis,corb,4,by load,0,0
-canoe,doft,4,by load,0,0
-capable,foft,4,by load,0,0
-capital,goft,4,by load,0,0
-capybara,hoft,4,by load,0,0
-carassius,kutx,4,by load,0,0
-caribou,lorm,4,by load,0,0
+candelabrum,xolc,4,by load,0,0
+candidate,yosk,4,by load,0,0
+cane,boft,4,by load,0,0
+canine,corb,4,by load,0,0
+cannabis,doft,4,by load,0,0
+canoe,foft,4,by load,0,0
+capable,goft,4,by load,0,0
+capital,hoft,4,by load,0,0
+capybara,kutx,4,by load,0,0
+carassius,lorm,4,by load,0,0
+caribou,molc,4,by load,0,0
 carp,karp,4,echoes the english,0,0
-carpenter,molc,4,by load,0,0
-carrot,nutx,4,by load,0,0
-cartilage,pukt,4,by load,0,0
-cartilaginous,rolv,4,by load,0,0
-caryopteris,sorg,4,by load,0,0
-cash,tunt,4,by load,0,0
-cashew,xump,4,by load,0,0
-cassette,yozb,4,by load,0,0
-cassia,colk,4,by load,0,0
-castle,dorm,4,by load,0,0
-catalpa,gorm,4,by load,0,0
-caterpillar,kusp,4,by load,0,0
-cathedral,lord,4,by load,0,0
-catnip,mump,4,by load,0,0
-cattle,wusk,4,by load,2,0
-caught,nukt,4,by load,0,0
-cavern,pusp,4,by load,0,0
-cavity,rolc,4,by load,0,0
-cedar,tutx,4,by load,0,0
-ceiling,xund,4,by load,0,0
-celery,yoft,4,by load,0,0
-cellar,borg,4,by load,0,0
-cement,colf,4,by load,0,0
-cemetery,dorb,4,by load,0,0
-census,kuzg,4,by load,0,0
-centaur,lump,4,by load,0,0
-centaurium,mund,4,by load,0,0
-ceremonial,nusk,4,by load,0,0
+carpenter,nutx,4,by load,0,0
+carrot,pukt,4,by load,0,0
+cartilage,rolv,4,by load,0,0
+cartilaginous,sorg,4,by load,0,0
+caryopteris,tunt,4,by load,0,0
+cash,xump,4,by load,0,0
+cashew,yozb,4,by load,0,0
+cassette,colk,4,by load,0,0
+cassia,dorm,4,by load,0,0
+castle,gorm,4,by load,0,0
+catalpa,kusp,4,by load,0,0
+caterpillar,lord,4,by load,0,0
+cathedral,mump,4,by load,0,0
+catnip,nukt,4,by load,0,0
+cattle,yagd,4,by load,2,0
+caught,pusp,4,by load,0,0
+cavern,rolc,4,by load,0,0
+cavity,tutx,4,by load,0,0
+cedar,xund,4,by load,0,0
+ceiling,yoft,4,by load,0,0
+celery,borg,4,by load,0,0
+cellar,colf,4,by load,0,0
+cement,dorb,4,by load,0,0
+cemetery,kuzg,4,by load,0,0
+census,lump,4,by load,0,0
+centaur,mund,4,by load,0,0
+centaurium,nusk,4,by load,0,0
+ceremonial,puzg,4,by load,0,0
 chaff,txaf,4,echoes the english,0,0
-chakra,puzg,4,by load,0,0
-chalk,rump,4,by load,0,0
-chaparral,solv,4,by load,0,0
-chapel,tukt,4,by load,0,0
+chakra,rump,4,by load,0,0
+chalk,solv,4,by load,0,0
+chaparral,tukt,4,by load,0,0
+chapel,xuqk,4,by load,0,0
 char,haft,4,by load,1,0
-charcoal,xuqk,4,by load,0,0
-chaste,yorm,4,by load,0,0
-chat,cump,4,by load,0,0
+charcoal,yorm,4,by load,0,0
+chaste,cump,4,by load,0,0
+chat,dolk,4,by load,0,0
 cheap,txip,4,echoes the english,0,0
-cheat,zoix,4,by load,4,0
+cheat,Cokt,4,by load,4,0
 cheek,txik,4,echoes the english,1,0
 cheese,txiz,4,echoes the english,0,0
-cheetah,dolk,4,by load,0,0
-chenopodium,golk,4,by load,0,0
-cherry,holk,4,by load,0,0
+cheetah,golk,4,by load,0,0
+chenopodium,holk,4,by load,0,0
+cherry,kufk,4,by load,0,0
 chess,txes,4,echoes the english,0,0
-chestnut,kufk,4,by load,0,0
+chestnut,lund,4,by load,0,0
 chick,jolf,4,by load,1,0
-chimney,lund,4,by load,0,0
-chin,muqk,4,by load,0,0
-chinense,nuzb,4,by load,0,0
-chisel,pufk,4,by load,0,0
-christ,rund,4,by load,0,0
-chrysanthemum,solc,4,by load,0,0
-church,tusp,4,by load,0,0
-cicada,xugd,4,by load,0,0
-cider,yorb,4,by load,0,0
-cinema,bolv,4,by load,0,0
-cinnabar,cund,4,by load,0,0
-cinnamon,dolv,4,by load,0,0
-cinquefoil,folv,4,by load,0,0
-circuit,golv,4,by load,0,0
-circular,holc,4,by load,0,0
-cistanche,luqk,4,by load,0,0
-citadel,mugd,4,by load,0,0
-citrus,nufk,4,by load,0,0
+chimney,muqk,4,by load,0,0
+chin,nuzb,4,by load,0,0
+chinense,pufk,4,by load,0,0
+chisel,rund,4,by load,0,0
+christ,solc,4,by load,0,0
+chrysanthemum,tusp,4,by load,0,0
+church,xugd,4,by load,0,0
+cicada,yorb,4,by load,0,0
+cider,bolv,4,by load,0,0
+cinema,cund,4,by load,0,0
+cinnabar,dolv,4,by load,0,0
+cinnamon,folv,4,by load,0,0
+cinquefoil,golv,4,by load,0,0
+circuit,holc,4,by load,0,0
+circular,luqk,4,by load,0,0
+cistanche,mugd,4,by load,0,0
+citadel,nufk,4,by load,0,0
+citrus,prin,4,by load,0,0
 clam,klam,4,echoes the english,0,0
 clan,kalc,4,by load,1,0
 claw,lazg,4,by load,1,0
-cleanse,prin,4,by load,0,0
-cleaver,ruqk,4,by load,0,0
+cleanse,ruqk,4,by load,0,0
+cleaver,sump,4,by load,0,0
 cliff,klif,4,echoes the english,1,0
 cling,kliq,4,echoes the english,0,0
-clinic,sump,4,by load,0,0
+clinic,tuzg,4,by load,0,0
 cloak,klok,4,echoes the english,0,0
-clove,tuzg,4,by load,0,0
-clover,xusk,4,by load,0,0
+clove,xusk,4,by load,0,0
+clover,yolk,4,by load,0,0
 cluster,noid,4,by load,1,0
-coarse,yolk,4,by load,0,0
+coarse,bolc,4,by load,0,0
 cock,palf,4,by load,1,0
-cockroach,bolc,4,by load,0,0
-coconut,cuqk,4,by load,0,0
-coëst,dump,4,by load,0,0
-coir,folc,4,by load,0,0
-collapse,yagd,4,by load,2,0
+cockroach,cuqk,4,by load,0,0
+coconut,dump,4,by load,0,0
+coëst,folc,4,by load,0,0
+coir,golc,4,by load,0,0
+collapse,zoiC,4,by load,2,0
 college,sarm,4,by load,1,0
-colocynth,golc,4,by load,0,0
+colocynth,hump,4,by load,0,0
 colon,tarb,4,by load,1,0
-colonel,hump,4,by load,0,0
-colonial,krib,4,by load,0,0
-colony,lugd,4,by load,0,0
-coltsfoot,mudj,4,by load,0,0
-column,prig,4,by load,0,0
-columnar,rugd,4,by load,0,0
-coma,sund,4,by load,0,0
-comma,tufk,4,by load,0,0
-commerce,xuzb,4,by load,0,0
-commercial,yolv,4,by load,0,0
+colonel,krib,4,by load,0,0
+colonial,lugd,4,by load,0,0
+colony,mudj,4,by load,0,0
+coltsfoot,prig,4,by load,0,0
+column,rugd,4,by load,0,0
+columnar,sund,4,by load,0,0
+coma,tufk,4,by load,0,0
+comma,xuzb,4,by load,0,0
+commerce,yolv,4,by load,0,0
+commercial,bump,4,by load,0,0
 common,damp,4,by load,16,0
-commune,bump,4,by load,0,0
-communism,cugd,4,by load,0,0
-community,zoiC,4,by load,2,0
-companion,dund,4,by load,0,0
-comparative,fump,4,by load,0,0
-compatriot,gump,4,by load,0,0
+commune,cugd,4,by load,0,0
+communism,dund,4,by load,0,0
+community,Cozg,4,by load,2,0
+companion,fump,4,by load,0,0
+comparative,gump,4,by load,0,0
+compatriot,hund,4,by load,0,0
 compete,vokt,4,by load,1,0
-complicated,hund,4,by load,0,0
-concave,krit,4,by load,0,0
-conceal,ludj,4,by load,0,0
-concord,muzg,4,by load,0,0
-condole,prib,4,by load,0,0
-condor,rudj,4,by load,0,0
-cone,suqk,4,by load,0,0
-conference,txim,4,by load,0,0
-confluence,xuft,4,by load,0,0
-conger,yolc,4,by load,0,0
-congratulate,bund,4,by load,0,0
-conjunction,cudj,4,by load,0,0
-conquest,duqk,4,by load,0,0
-consanguineous,fund,4,by load,0,0
-constancy,guqk,4,by load,0,0
-constant,hagd,4,by load,3,0
-constitute,huqk,4,by load,0,0
-container,lusk,4,by load,0,0
-contorted,muft,4,by load,0,0
-controversial,prit,4,by load,0,0
-coolie,sugd,4,by load,0,0
-cooperate,txid,4,by load,0,0
-cop,xlim,4,by load,0,0
-coral,yump,4,by load,0,0
-coriander,buqk,4,by load,0,0
-coronarium,cusk,4,by load,0,0
-corozo,dugd,4,by load,0,0
+complicated,krit,4,by load,0,0
+concave,ludj,4,by load,0,0
+conceal,muzg,4,by load,0,0
+concord,prib,4,by load,0,0
+condole,rudj,4,by load,0,0
+condor,suqk,4,by load,0,0
+cone,txim,4,by load,0,0
+conference,xuft,4,by load,0,0
+confluence,yolc,4,by load,0,0
+conger,bund,4,by load,0,0
+congratulate,cudj,4,by load,0,0
+conjunction,duqk,4,by load,0,0
+conquest,fund,4,by load,0,0
+consanguineous,guqk,4,by load,0,0
+constancy,huqk,4,by load,0,0
+constant,jofk,4,by load,3,0
+constitute,lusk,4,by load,0,0
+container,muft,4,by load,0,0
+contorted,prit,4,by load,0,0
+controversial,sugd,4,by load,0,0
+convolvulus,txid,4,by load,0,0
+coolie,xlim,4,by load,0,0
+cooperate,yump,4,by load,0,0
+cop,buqk,4,by load,0,0
+coral,cusk,4,by load,0,0
+coriander,dugd,4,by load,0,0
+corozo,fuqk,4,by load,0,0
 corpse,xalc,4,by load,1,0
-corral,fuqk,4,by load,0,0
-corregimiento,gudj,4,by load,0,0
-corridor,hugd,4,by load,0,0
-corroded,kriv,4,by load,0,0
-cotoneaster,luzb,4,by load,0,0
-cottage,priv,4,by load,0,0
-cotton,ruzg,4,by load,0,0
-couch,sudj,4,by load,0,0
-cough,xliq,4,by load,0,0
+corral,gudj,4,by load,0,0
+corregimiento,hugd,4,by load,0,0
+corridor,kriv,4,by load,0,0
+corroded,luzb,4,by load,0,0
+cotoneaster,priv,4,by load,0,0
+cottage,ruzg,4,by load,0,0
+cotton,sudj,4,by load,0,0
+couch,xliq,4,by load,0,0
+cough,yund,4,by load,0,0
 council,yazb,4,by load,1,0
-courteous,yund,4,by load,0,0
-courtyard,bugd,4,by load,0,0
-cove,cuzb,4,by load,0,0
-covering,dudj,4,by load,0,0
+courteous,bugd,4,by load,0,0
+courtyard,cuzb,4,by load,0,0
+cove,dudj,4,by load,0,0
+covering,fugd,4,by load,0,0
 cow,magd,4,by load,8,0
-coward,fugd,4,by load,0,0
-coyote,gukt,4,by load,0,0
+coward,gukt,4,by load,0,0
+coyote,hudj,4,by load,0,0
 crag,krag,4,echoes the english,0,0
-crane,hudj,4,by load,0,0
+crane,kric,4,by load,0,0
 crawl,krol,4,echoes the english,0,0
 creek,krik,4,echoes the english,0,0
-creep,Cozg,4,by load,2,0
-crenulate,kric,4,by load,0,0
+creep,cask,4,by load,2,0
+crenulate,luft,4,by load,0,0
 cress,kres,4,echoes the english,0,0
-cricket,luft,4,by load,0,0
+cricket,pric,4,by load,0,0
 crooked,zosp,4,by load,1,0
 crop,krap,4,echoes the english,0,0
-crouch,pric,4,by load,0,0
-croup,ruft,4,by load,0,0
+crouch,ruft,4,by load,0,0
+croup,susk,4,by load,0,0
 crow,Corg,4,by load,1,0
-crucified,susk,4,by load,0,0
+crucified,xlig,4,by load,0,0
 cruise,kruz,4,echoes the english,0,0
-cuckoo,xlig,4,by load,0,0
+cuckoo,yuqk,4,by load,0,0
 cucumber,carm,4,by load,1,0
-cultivate,yuqk,4,by load,0,0
-curl,jofk,4,by load,3,0
-currant,budj,4,by load,0,0
-currency,cuft,4,by load,0,0
-curry,dusk,4,by load,0,0
-curtailed,fudj,4,by load,0,0
-curtain,gusk,4,by load,0,0
+cultivate,budj,4,by load,0,0
+curl,karn,4,by load,3,0
+currant,cuft,4,by load,0,0
+currency,dusk,4,by load,0,0
+curry,fudj,4,by load,0,0
+curtailed,gusk,4,by load,0,0
+curtain,husk,4,by load,0,0
 cusp,kasp,4,echoes the english,0,0
-custom,husk,4,by load,0,0
-cute,cask,4,by load,2,0
-cuttlefish,krem,4,by load,0,0
-cylinder,prem,4,by load,0,0
-cylindrical,suzb,4,by load,0,0
-cypress,xlib,4,by load,0,0
-dagger,yugd,4,by load,0,0
-daisy,busk,4,by load,0,0
+custom,krem,4,by load,0,0
+cute,gadj,4,by load,2,0
+cuttlefish,prem,4,by load,0,0
+cylinder,suzb,4,by load,0,0
+cylindrical,xlib,4,by load,0,0
+cypress,yugd,4,by load,0,0
+dagger,busk,4,by load,0,0
+daisy,crim,4,by load,0,0
 dandy,darm,4,by load,1,0
-daphne,crim,4,by load,0,0
-darling,duzb,4,by load,0,0
-darnels,fusk,4,by load,0,0
-deadnettle,guzb,4,by load,0,0
-deceit,Cokt,4,by load,4,0
-deceive,gadj,4,by load,2,0
-deceptive,huzb,4,by load,0,0
+daphne,duzb,4,by load,0,0
+darling,fusk,4,by load,0,0
+darnels,guzb,4,by load,0,0
+deadnettle,huzb,4,by load,0,0
+deceit,bagd,4,by load,4,0
+deceive,hask,4,by load,2,0
+deceptive,kreb,4,by load,0,0
 decillion,fosk,4,pinned,0,0
-decussated,kreb,4,by load,0,0
-defect,preb,4,by load,0,0
+decussated,preb,4,by load,0,0
+defect,suft,4,by load,0,0
 defend,gaft,4,by load,1,0
-defendant,suft,4,by load,0,0
-demon,xlit,4,by load,0,0
-den,yudj,4,by load,0,0
-dense,hask,4,by load,2,0
-departure,buzb,4,by load,0,0
-depot,criq,4,by load,0,0
-deprive,duft,4,by load,0,0
-descend,fuzb,4,by load,0,0
-desert,guft,4,by load,0,0
-deserticola,huft,4,by load,0,0
+defendant,xlit,4,by load,0,0
+demon,yudj,4,by load,0,0
+den,buzb,4,by load,0,0
+dense,jorg,4,by load,2,0
+departure,criq,4,by load,0,0
+depot,duft,4,by load,0,0
+deprive,fuzb,4,by load,0,0
+descend,guft,4,by load,0,0
+desert,huft,4,by load,0,0
+deserticola,kret,4,by load,0,0
 desk,desk,4,echoes the english,0,0
-despicable,kret,4,by load,0,0
-destitute,pret,4,by load,0,0
-destructive,smim,4,by load,0,0
-devil,txiC,4,by load,0,0
+despicable,pret,4,by load,0,0
+destitute,smim,4,by load,0,0
+destructive,txiC,4,by load,0,0
+devil,xlis,4,by load,0,0
 dew,junt,4,by load,1,0
-dhow,xlis,4,by load,0,0
-diabetes,yusk,4,by load,0,0
-diabolic,buft,4,by load,0,0
-diandrous,crig,4,by load,0,0
-dice,djiq,4,by load,0,0
-dichotomous,fuft,4,by load,0,0
-did,krek,4,by load,0,0
+dhow,yusk,4,by load,0,0
+diabetes,buft,4,by load,0,0
+diabolic,crig,4,by load,0,0
+diandrous,djiq,4,by load,0,0
+dice,fuft,4,by load,0,0
+dichotomous,krek,4,by load,0,0
+did,prek,4,by load,0,0
 difficult,xazb,4,by load,6,0
-dike,prek,4,by load,0,0
-dill,smiq,4,by load,0,0
+dike,smiq,4,by load,0,0
+dill,xliz,4,by load,0,0
 diminish,koid,4,by load,1,0
-dinner,xliz,4,by load,0,0
-diocese,yuzb,4,by load,0,0
-disagreeing,crib,4,by load,0,0
-discharge,djig,4,by load,0,0
-discordant,frim,4,by load,0,0
-discount,griq,4,by load,0,0
-disorder,smig,4,by load,0,0
-disperse,txed,4,by load,0,0
-dissected,xlif,4,by load,0,0
-distaff,yuft,4,by load,0,0
+dinner,yuzb,4,by load,0,0
+diocese,crib,4,by load,0,0
+disagreeing,djig,4,by load,0,0
+discharge,frim,4,by load,0,0
+discordant,griq,4,by load,0,0
+discount,smig,4,by load,0,0
+disorder,txed,4,by load,0,0
+disperse,xlif,4,by load,0,0
+dissected,yuft,4,by load,0,0
+distaff,crit,4,by load,0,0
 distinct,laft,4,by load,1,0
-distorted,crit,4,by load,0,0
-distress,djib,4,by load,0,0
+distorted,djib,4,by load,0,0
+distress,friq,4,by load,0,0
 district,malp,4,by load,1,0
-divaricata,friq,4,by load,0,0
-diverging,grig,4,by load,0,0
-doll,krev,4,by load,0,0
-dollar,pref,4,by load,0,0
-dolphin,smid,4,by load,0,0
-domain,txep,4,by load,0,0
-done,xliC,4,by load,0,0
-donkey,brip,4,by load,0,0
-double,cris,4,by load,0,0
-dovecote,djit,4,by load,0,0
-downwards,frig,4,by load,0,0
-draba,krec,4,by load,0,0
+divaricata,grig,4,by load,0,0
+diverging,krev,4,by load,0,0
+doll,pref,4,by load,0,0
+dollar,smid,4,by load,0,0
+dolphin,txep,4,by load,0,0
+domain,xliC,4,by load,0,0
+done,brip,4,by load,0,0
+donkey,cris,4,by load,0,0
+double,djit,4,by load,0,0
+dovecote,frig,4,by load,0,0
+downwards,krec,4,by load,0,0
+draba,preC,4,by load,0,0
 drag,drag,4,echoes the english,3,0
-dragon,preC,4,by load,0,0
-dragoness,smis,4,by load,0,0
+dragon,smis,4,by load,0,0
 dragonfly,xlem,4,by load,0,0
 drill,noip,4,by load,1,0
 drowsiness,criz,4,by load,0,0
@@ -2704,7 +2704,7 @@ elder,sarb,4,by load,1,0
 electoral,xlet,4,by load,0,0
 elegant,talk,4,by load,1,0
 elephant,brix,4,by load,0,0
-elevate,jorg,4,by load,2,0
+elevate,kalk,4,by load,2,0
 elite,crem,4,by load,0,0
 elliptical,djeq,4,by load,0,0
 elm,frif,4,by load,0,0
@@ -2726,7 +2726,7 @@ engraved,xlez,4,by load,0,0
 enlighten,creg,4,by load,0,0
 enmesh,djeb,4,by load,0,0
 entangled,frij,4,by load,0,0
-entire,kalk,4,by load,2,0
+entire,maft,4,by load,2,0
 entwine,griC,4,by load,0,0
 envy,krac,4,by load,0,0
 episcopal,pron,4,by load,0,0
@@ -2750,11 +2750,11 @@ excelling,prot,4,by load,0,0
 excrement,smet,4,by load,0,0
 executioner,txaC,4,by load,0,0
 exile,xlam,4,by load,0,0
-expand,maft,4,by load,2,0
+expand,nalk,4,by load,2,0
 expenses,breg,4,by load,0,0
 expensive,cres,4,by load,0,0
 experiment,djef,4,by load,0,0
-express,bagd,4,by load,4,0
+express,cagd,4,by load,4,0
 extend,nazg,4,by load,8,0
 extensive,freq,4,by load,0,0
 extinguish,greg,4,by load,0,0
@@ -2767,69 +2767,69 @@ farmstead,brep,4,by load,0,0
 fastigiate,crez,4,by load,0,0
 fathom,djeC,4,by load,0,0
 feces,yaft,4,by load,1,0
-felicitous,freg,4,by load,0,0
-fellow,gred,4,by load,0,0
-felt,krok,4,by load,0,0
-fennel,prof,4,by load,0,0
-fenugreek,smez,4,by load,0,0
+fellow,freg,4,by load,0,0
+felt,gred,4,by load,0,0
+fennel,krok,4,by load,0,0
+fenugreek,prof,4,by load,0,0
 fern,zozg,4,by load,1,0
-ferry,txon,4,by load,0,0
-fetter,xlag,4,by load,0,0
+ferry,smez,4,by load,0,0
+fetter,txon,4,by load,0,0
 fever,Corf,4,by load,1,0
-fierce,nalk,4,by load,2,0
-fifty,brez,4,by load,0,0
-film,cref,4,by load,0,0
-filth,freb,4,by load,0,0
-fin,kros,4,by load,0,0
-finger,part,4,by load,2,0
-fir,proC,4,by load,0,0
-fireplace,smef,4,by load,0,0
-fjord,txog,4,by load,0,0
+fierce,part,4,by load,2,0
+fifty,xlag,4,by load,0,0
+film,brez,4,by load,0,0
+filth,cref,4,by load,0,0
+fin,freb,4,by load,0,0
+finger,sazb,4,by load,2,0
+fir,kros,4,by load,0,0
+fireplace,proC,4,by load,0,0
+fjord,smef,4,by load,0,0
 flag,flag,4,echoes the english,4,0
-flamingo,xlab,4,by load,0,0
+flamingo,txog,4,by load,0,0
 flax,carb,4,by load,1,0
-flea,brev,4,by load,0,0
-fleabane,djaq,4,by load,0,0
+flea,xlab,4,by load,0,0
+fleabane,brev,4,by load,0,0
 fleece,flis,4,echoes the english,0,0
-fleetfooted,fret,4,by load,0,0
-flexible,grez,4,by load,0,0
-flies,krov,4,by load,0,0
-flight,prun,4,by load,0,0
+fleetfooted,djaq,4,by load,0,0
+flexible,fret,4,by load,0,0
+flies,grez,4,by load,0,0
+flight,krov,4,by load,0,0
 flip,flip,4,echoes the english,3,0
 float,rand,4,by load,7,0
-floccose,smex,4,by load,0,0
-flour,txod,4,by load,0,0
+floccose,prun,4,by load,0,0
+flour,smex,4,by load,0,0
 flute,flut,4,echoes the english,0,0
-foliage,xlat,4,by load,0,0
+foliage,txod,4,by load,0,0
 font,dark,4,by load,1,0
 forbid,saqk,4,by load,7,0
-forceps,brex,4,by load,0,0
-ford,crej,4,by load,0,0
-forecastle,fres,4,by load,0,0
-foreign,sazb,4,by load,2,0
-forelock,gref,4,by load,0,0
-forerunner,kroc,4,by load,0,0
-forge,prug,4,by load,0,0
+forceps,xlat,4,by load,0,0
+ford,brex,4,by load,0,0
+forecastle,crej,4,by load,0,0
+foreign,tafk,4,by load,2,0
+forelock,fres,4,by load,0,0
+forerunner,gref,4,by load,0,0
+forge,kroc,4,by load,0,0
 fork,fork,4,echoes the english,1,0
-fort,smej,4,by load,0,0
-fortified,txop,4,by load,0,0
-fortress,xlas,4,by load,0,0
-forward,brej,4,by load,0,0
-found,cram,4,by load,0,0
-fountain,frez,4,by load,0,0
-fourfold,grex,4,by load,0,0
-fracture,prub,4,by load,0,0
+fort,prug,4,by load,0,0
+fortified,smej,4,by load,0,0
+fortress,txop,4,by load,0,0
+forward,xlas,4,by load,0,0
+found,brej,4,by load,0,0
+fountain,cram,4,by load,0,0
+fourfold,frez,4,by load,0,0
+fracture,grex,4,by load,0,0
 fragrance,farb,4,by load,1,0
-fragrant,tafk,4,by load,2,0
-frankincense,smeC,4,by load,0,0
-freedom,txov,4,by load,0,0
-friar,xlaz,4,by load,0,0
-friendship,brec,4,by load,0,0
+fragrant,vont,4,by load,2,0
+frankincense,prub,4,by load,0,0
+freedom,smeC,4,by load,0,0
+friar,txov,4,by load,0,0
+friendship,xlaz,4,by load,0,0
 frog,frog,4,echoes the english,1,0
-frontier,craq,4,by load,0,0
+frontier,brec,4,by load,0,0
+frugal,craq,4,by load,0,0
 fujian,djat,4,by load,0,0
 fundamental,fref,4,by load,0,0
-funeral,karn,4,by load,3,0
+funeral,laqk,4,by load,3,0
 funereal,grej,4,by load,0,0
 funnel,garm,4,by load,1,0
 furrow,krun,4,by load,0,0
@@ -2891,7 +2891,7 @@ gravel,frag,4,by load,0,0
 grease,gris,4,echoes the english,1,0
 greaved,grak,4,by load,0,0
 greed,grid,4,echoes the english,1,0
-grill,vont,4,by load,2,0
+grill,wuzb,4,by load,2,0
 grind,yamp,4,by load,6,0
 groove,gruv,4,echoes the english,1,0
 grotto,kruC,4,by load,0,0
@@ -2957,7 +2957,7 @@ hieroglyphic,frax,4,by load,0,0
 hilar,gral,4,by load,0,0
 hillock,plek,4,by load,0,0
 hindered,smom,4,by load,0,0
-hip,wuzb,4,by load,2,0
+hip,xalp,4,by load,2,0
 hoard,hord,4,echoes the english,0,0
 hoarse,xlor,4,by load,0,0
 hoe,broq,4,by load,0,0
@@ -2969,11 +2969,11 @@ hospital,noik,4,by load,1,0
 hostel,grom,4,by load,0,0
 hostile,poib,4,by load,1,0
 hubei,kliC,4,by load,0,0
-humble,cagd,4,by load,4,0
+humble,dagd,4,by load,4,0
 hump,hamp,4,echoes the english,0,0
 humulus,plev,4,by load,0,0
 hundred,yemp,4,pinned,0,0
-hunger,xalp,4,by load,2,0
+hunger,yadj,4,by load,2,0
 husband,smoq,4,by load,0,0
 hut,triC,4,by load,0,0
 hyacinth,xlum,4,by load,0,0
@@ -3026,7 +3026,7 @@ invisible,talf,4,by load,1,0
 iris,xlus,4,by load,0,0
 irrigate,brov,4,by load,0,0
 islet,cruq,4,by load,0,0
-isolate,laqk,4,by load,3,0
+isolate,narn,4,by load,3,0
 itch,frob,4,by load,0,0
 its,hint,4,pinned,0,0
 ivory,grof,4,by load,0,0
@@ -3056,14 +3056,14 @@ kerria,plac,4,by load,0,0
 kettle,smoj,4,by load,0,0
 khan,trab,4,by load,0,0
 kick,vozg,4,by load,1,0
-kidney,yadj,4,by load,2,0
+kidney,zont,4,by load,2,0
 kilo,xluC,4,by load,0,0
 kilometre,crut,4,by load,0,0
 kindergarten,driq,4,by load,0,0
 kindled,froz,4,by load,0,0
 kite,groC,4,by load,0,0
 kneel,klat,4,by load,0,0
-knight,zont,4,by load,2,0
+knight,Cofk,4,by load,2,0
 known,plon,4,by load,0,0
 kohl,smoC,4,by load,0,0
 krypton,crus,4,by load,0,0
@@ -3079,7 +3079,7 @@ lamp,zofk,4,by load,1,0
 lance,drid,4,by load,0,0
 lantern,frox,4,by load,0,0
 laoshan,gruq,4,by load,0,0
-lateral,Cofk,4,by load,2,0
+lateral,bazg,4,by load,2,0
 lath,klav,4,by load,0,0
 latticed,plop,4,by load,0,0
 laughter,smum,4,by load,0,0
@@ -3090,7 +3090,7 @@ lease,grud,4,by load,0,0
 least,list,4,echoes the english,1,0
 leech,litx,4,echoes the english,0,0
 leek,plok,4,by load,0,0
-lemon,bazg,4,by load,2,0
+lemon,cazb,4,by load,2,0
 lentil,smuq,4,by load,0,0
 leopard,trac,4,by load,0,0
 leprosy,brup,4,by load,0,0
@@ -3105,7 +3105,7 @@ lily,smug,4,by load,0,0
 lime,laim,4,echoes the english,0,0
 limnophilous,tron,4,by load,0,0
 limp,limp,4,echoes the english,1,0
-lineage,narn,4,by load,3,0
+lineage,pafk,4,by load,3,0
 linen,cruj,4,by load,0,0
 ling,driz,4,by load,0,0
 lingual,frol,4,by load,0,0
@@ -3175,603 +3175,604 @@ me,must,4,pinned,0,0
 mead,truk,4,by load,0,0
 meadow,blig,4,by load,0,0
 meadowrue,drep,4,by load,0,0
-mealy,frux,4,by load,0,0
-mediator,glix,4,by load,0,0
-medina,klup,4,by load,0,0
-mediocre,snin,4,by load,0,0
-melia,truv,4,by load,0,0
-melon,fruj,4,by load,0,0
-membrane,glij,4,by load,0,0
+mediator,frux,4,by load,0,0
+medina,glix,4,by load,0,0
+mediocre,klup,4,by load,0,0
+melia,snin,4,by load,0,0
+melon,truv,4,by load,0,0
+membrane,fruj,4,by load,0,0
 mend,mend,4,echoes the english,0,0
-mental,kluk,4,by load,0,0
-merchant,snib,4,by load,0,0
-merged,blip,4,by load,0,0
-meridian,drez,4,by load,0,0
-messenger,fruC,4,by load,0,0
-metalwright,glic,4,by load,0,0
-metro,kluv,4,by load,0,0
-metropolis,snit,4,by load,0,0
-mica,blis,4,by load,0,0
-midday,dref,4,by load,0,0
-midpoint,frul,4,by load,0,0
-midwife,glem,4,by load,0,0
-mignonette,kluc,4,by load,0,0
-mildew,snik,4,by load,0,0
-mile,twiq,4,by load,0,0
-mill,blif,4,by load,0,0
-millet,drex,4,by load,0,0
+mental,glij,4,by load,0,0
+merchant,kluk,4,by load,0,0
+merged,snib,4,by load,0,0
+meridian,blip,4,by load,0,0
+messenger,drez,4,by load,0,0
+metalwright,fruC,4,by load,0,0
+metro,glic,4,by load,0,0
+metropolis,kluv,4,by load,0,0
+mica,snit,4,by load,0,0
+midday,blis,4,by load,0,0
+midpoint,dref,4,by load,0,0
+midwife,frul,4,by load,0,0
+mignonette,glem,4,by load,0,0
+mildew,kluc,4,by load,0,0
+mile,snik,4,by load,0,0
+mill,twiq,4,by load,0,0
+millet,blif,4,by load,0,0
 million,neqk,4,pinned,0,0
 mimic,dalp,4,by load,1,0
-mingled,flim,4,by load,0,0
+mingled,drex,4,by load,0,0
 mink,miqk,4,echoes the english,0,0
-minnow,gleq,4,by load,0,0
+minnow,flim,4,by load,0,0
 mint,mint,4,echoes the english,1,0
-mirage,blix,4,by load,0,0
-miserable,drej,4,by load,0,0
-misfortune,fliq,4,by load,0,0
-mistletoe,gleg,4,by load,0,0
-mixture,kwiq,4,by load,0,0
-moat,sniC,4,by load,0,0
+mirage,gleq,4,by load,0,0
+miserable,blix,4,by load,0,0
+misfortune,drej,4,by load,0,0
+mistletoe,fliq,4,by load,0,0
+mixture,gleg,4,by load,0,0
+moat,kwiq,4,by load,0,0
 mobile,falk,4,by load,1,0
 mock,voif,4,by load,7,0
-mockery,twib,4,by load,0,0
-moderate,blij,4,by load,0,0
+mockery,sniC,4,by load,0,0
+moderate,twib,4,by load,0,0
 modern,halk,4,by load,1,0
-modified,dreC,4,by load,0,0
-modius,flig,4,by load,0,0
-mogote,gleb,4,by load,0,0
-mole,kwib,4,by load,0,0
-monarch,snen,4,by load,0,0
-monastery,twit,4,by load,0,0
+modified,blij,4,by load,0,0
+modius,dreC,4,by load,0,0
+mogote,flig,4,by load,0,0
+mole,gleb,4,by load,0,0
+monarch,kwib,4,by load,0,0
+monastery,snen,4,by load,0,0
 monk,maqk,4,echoes the english,0,0
-monkey,bliC,4,by load,0,0
-monument,flid,4,by load,0,0
-moor,glet,4,by load,0,0
-mora,kwit,4,by load,0,0
-moraine,sned,4,by load,0,0
+monkey,twit,4,by load,0,0
+monument,bliC,4,by load,0,0
+moor,flid,4,by load,0,0
+mora,glet,4,by load,0,0
+moraine,kwit,4,by load,0,0
 morning,sagd,4,by load,5,0
-morphine,twis,4,by load,0,0
-mortar,blem,4,by load,0,0
-mosque,gles,4,by load,0,0
-mosquito,snep,4,by load,0,0
-motel,twiz,4,by load,0,0
-moth,bleq,4,by load,0,0
-motorcycle,draz,4,by load,0,0
-moustache,glez,4,by load,0,0
-mr,kwis,4,by load,0,0
-mugwort,snek,4,by load,0,0
-mulberry,twif,4,by load,0,0
-mule,bleg,4,by load,0,0
-mullah,draf,4,by load,0,0
-mullein,fliz,4,by load,0,0
-multiform,glef,4,by load,0,0
-multitude,kwiz,4,by load,0,0
-municipal,snev,4,by load,0,0
-mushroom,twix,4,by load,0,0
-musk,drax,4,by load,0,0
-mussel,flif,4,by load,0,0
-mustang,glex,4,by load,0,0
-mute,kwif,4,by load,0,0
-mutilated,snec,4,by load,0,0
-mutual,pafk,4,by load,3,0
-myrrh,twij,4,by load,0,0
-myrtle,blep,4,by load,0,0
-naked,draj,4,by load,0,0
-nanny,flix,4,by load,0,0
-napkin,glej,4,by load,0,0
-nasal,kwix,4,by load,0,0
+morphine,sned,4,by load,0,0
+mortar,twis,4,by load,0,0
+mosque,blem,4,by load,0,0
+mosquito,gles,4,by load,0,0
+motel,snep,4,by load,0,0
+moth,twiz,4,by load,0,0
+motorcycle,bleq,4,by load,0,0
+moustache,draz,4,by load,0,0
+mr,glez,4,by load,0,0
+mugwort,kwis,4,by load,0,0
+mulberry,snek,4,by load,0,0
+mule,twif,4,by load,0,0
+mullah,bleg,4,by load,0,0
+mullein,draf,4,by load,0,0
+multiform,fliz,4,by load,0,0
+multitude,glef,4,by load,0,0
+municipal,kwiz,4,by load,0,0
+mushroom,snev,4,by load,0,0
+musk,twix,4,by load,0,0
+mussel,drax,4,by load,0,0
+mustang,flif,4,by load,0,0
+mute,glex,4,by load,0,0
+mutilated,kwif,4,by load,0,0
+mutual,ragd,4,by load,3,0
+myrrh,snec,4,by load,0,0
+myrtle,twij,4,by load,0,0
+naked,blep,4,by load,0,0
+nanny,draj,4,by load,0,0
+napkin,flix,4,by load,0,0
+nasal,glej,4,by load,0,0
 native,takt,4,by load,5,0
-navel,snan,4,by load,0,0
-navy,ragd,4,by load,3,0
-nearby,twiC,4,by load,0,0
-nebula,draC,4,by load,0,0
+navel,kwix,4,by load,0,0
+navy,tasp,4,by load,3,0
+nearby,snan,4,by load,0,0
+nebula,twiC,4,by load,0,0
 neck,wuqk,4,by load,7,0
-needle,cazb,4,by load,2,0
-negro,flij,4,by load,0,0
-neighbor,gleC,4,by load,0,0
-nemerosa,kwij,4,by load,0,0
-nemorosa,twem,4,by load,0,0
-neon,blez,4,by load,0,0
-nephew,dral,4,by load,0,0
-ngo,fliC,4,by load,0,0
-nibble,glan,4,by load,0,0
-nightingale,kwiC,4,by load,0,0
-nocturnal,snat,4,by load,0,0
-nodding,tweq,4,by load,0,0
-nomad,blef,4,by load,0,0
-nook,droq,4,by load,0,0
-noon,tasp,4,by load,3,0
-nopal,glaq,4,by load,0,0
-nor,kwem,4,by load,0,0
-nostril,tweg,4,by load,0,0
-notch,dazb,4,by load,2,0
-nouns,blex,4,by load,0,0
-nourishing,drog,4,by load,0,0
-novel,fleq,4,by load,0,0
-novelty,glag,4,by load,0,0
-numerary,kweq,4,by load,0,0
-nun,snav,4,by load,0,0
-nunatak,tweb,4,by load,0,0
+needle,dazb,4,by load,2,0
+negro,draC,4,by load,0,0
+neighbor,flij,4,by load,0,0
+nemerosa,gleC,4,by load,0,0
+nemorosa,kwij,4,by load,0,0
+neon,twem,4,by load,0,0
+nephew,blez,4,by load,0,0
+ngo,dral,4,by load,0,0
+nibble,fliC,4,by load,0,0
+nightingale,glan,4,by load,0,0
+nocturnal,kwiC,4,by load,0,0
+nodding,snat,4,by load,0,0
+nomad,tweq,4,by load,0,0
+nook,blef,4,by load,0,0
+noon,voij,4,by load,3,0
+nopal,droq,4,by load,0,0
+nor,glaq,4,by load,0,0
+nostril,kwem,4,by load,0,0
+notch,fazg,4,by load,2,0
+nouns,tweg,4,by load,0,0
+nourishing,blex,4,by load,0,0
+novel,drog,4,by load,0,0
+novelty,fleq,4,by load,0,0
+numerary,glag,4,by load,0,0
+nun,kweq,4,by load,0,0
+nunatak,snav,4,by load,0,0
 nurse,jusp,4,by load,1,0
-nutmeg,blej,4,by load,0,0
-nutrition,drob,4,by load,0,0
+nutmeg,tweb,4,by load,0,0
+nutrition,blej,4,by load,0,0
 oak,koik,4,by load,1,0
-oasis,fleg,4,by load,0,0
+oasis,drob,4,by load,0,0
 oat,larg,4,by load,1,0
-oblique,kweg,4,by load,0,0
-obscene,snac,4,by load,0,0
-obtain,twet,4,by load,0,0
-occipital,bleC,4,by load,0,0
+oblique,fleg,4,by load,0,0
+obscene,kweg,4,by load,0,0
+obtain,snac,4,by load,0,0
+occipital,twet,4,by load,0,0
 octillion,zotx,4,pinned,0,0
-odeon,drot,4,by load,0,0
-oily,fleb,4,by load,0,0
-olive,glap,4,by load,0,0
+odeon,bleC,4,by load,0,0
+oily,drot,4,by load,0,0
+olive,fleb,4,by load,0,0
 omen,malc,4,by load,1,0
-ooze,kweb,4,by load,0,0
-opal,snar,4,by load,0,0
-opaque,twes,4,by load,0,0
-opening,blaq,4,by load,0,0
-opera,dros,4,by load,0,0
-ophthalmic,flet,4,by load,0,0
-orach,kwet,4,by load,0,0
-orangutan,snon,4,by load,0,0
-orchard,twez,4,by load,0,0
-orchid,blad,4,by load,0,0
-oread,droz,4,by load,0,0
-oregano,fles,4,by load,0,0
-orient,glaz,4,by load,0,0
-orifice,kwes,4,by load,0,0
-oriole,snog,4,by load,0,0
-orphan,twef,4,by load,0,0
-osmunda,blap,4,by load,0,0
-ostrich,drov,4,by load,0,0
-otter,flez,4,by load,0,0
-ounce,glaf,4,by load,0,0
+ooze,glap,4,by load,0,0
+opal,kweb,4,by load,0,0
+opaque,snar,4,by load,0,0
+opening,twes,4,by load,0,0
+opera,blaq,4,by load,0,0
+ophthalmic,dros,4,by load,0,0
+orach,flet,4,by load,0,0
+orangutan,kwet,4,by load,0,0
+orchard,snon,4,by load,0,0
+orchid,twez,4,by load,0,0
+oread,blad,4,by load,0,0
+oregano,droz,4,by load,0,0
+orient,fles,4,by load,0,0
+orifice,glaz,4,by load,0,0
+oriole,kwes,4,by load,0,0
+orphan,snog,4,by load,0,0
+osmunda,twef,4,by load,0,0
+ostrich,blap,4,by load,0,0
+otter,drov,4,by load,0,0
+ounce,flez,4,by load,0,0
 our,wolt,4,pinned,0,0
-outwards,kwez,4,by load,0,0
+outwards,glaf,4,by load,0,0
 oval,poit,4,by load,1,0
-overflow,snod,4,by load,0,0
-overflowing,twex,4,by load,0,0
-overthrown,drox,4,by load,0,0
+overflow,kwez,4,by load,0,0
+overflowing,snod,4,by load,0,0
+overthrown,twex,4,by load,0,0
 owl,ralc,4,by load,1,0
-ox,flef,4,by load,0,0
-oyster,glaj,4,by load,0,0
-pacify,kwef,4,by load,0,0
-pail,snop,4,by load,0,0
-palace,twej,4,by load,0,0
-pale,fazg,4,by load,2,0
-pallidum,blaz,4,by load,0,0
-palmita,droj,4,by load,0,0
-paltrini,glaC,4,by load,0,0
-panorama,kwex,4,by load,0,0
-panther,snov,4,by load,0,0
-papyraceous,tweC,4,by load,0,0
-papyrus,droc,4,by load,0,0
-par,flej,4,by load,0,0
-parakeet,glar,4,by load,0,0
+ox,drox,4,by load,0,0
+oyster,flef,4,by load,0,0
+pacify,glaj,4,by load,0,0
+pail,kwef,4,by load,0,0
+palace,snop,4,by load,0,0
+pale,gask,4,by load,2,0
+pallidum,twej,4,by load,0,0
+palmita,blaz,4,by load,0,0
+paltrini,droj,4,by load,0,0
+panorama,glaC,4,by load,0,0
+panther,kwex,4,by load,0,0
+papyraceous,snov,4,by load,0,0
+papyrus,tweC,4,by load,0,0
+par,droc,4,by load,0,0
+parakeet,flej,4,by load,0,0
 parasite,salc,4,by load,1,0
 park,toib,4,by load,1,0
-parrot,kwej,4,by load,0,0
-parsley,snoc,4,by load,0,0
-parsnip,twam,4,by load,0,0
-particular,gask,4,by load,2,0
-partition,blax,4,by load,0,0
-partridge,drol,4,by load,0,0
-pasha,fleC,4,by load,0,0
-paste,glom,4,by load,0,0
-pasturage,kweC,4,by load,0,0
-pasture,snor,4,by load,0,0
-patio,twaq,4,by load,0,0
-paved,blaj,4,by load,0,0
-pavement,drum,4,by load,0,0
-pavilion,flam,4,by load,0,0
-paw,gloq,4,by load,0,0
+parrot,glar,4,by load,0,0
+parsley,kwej,4,by load,0,0
+parsnip,snoc,4,by load,0,0
+particular,hazb,4,by load,2,0
+partition,twam,4,by load,0,0
+partridge,blax,4,by load,0,0
+pasha,drol,4,by load,0,0
+paste,fleC,4,by load,0,0
+pasturage,glom,4,by load,0,0
+pasture,kweC,4,by load,0,0
+patio,snor,4,by load,0,0
+paved,twaq,4,by load,0,0
+pavement,blaj,4,by load,0,0
+pavilion,drum,4,by load,0,0
+paw,flam,4,by load,0,0
 pea,vofk,4,by load,1,0
-peacock,kwam,4,by load,0,0
-pear,snun,4,by load,0,0
-pearl,twag,4,by load,0,0
-peat,blaC,4,by load,0,0
-pebble,druq,4,by load,0,0
-pecan,flaq,4,by load,0,0
-pedestal,glog,4,by load,0,0
-pedestrian,kwaq,4,by load,0,0
-peeled,snud,4,by load,0,0
-pelican,twab,4,by load,0,0
-pencil,blar,4,by load,0,0
-pendant,drug,4,by load,0,0
-pending,glob,4,by load,0,0
-penetrate,kwag,4,by load,0,0
-peninsula,snup,4,by load,0,0
-penitentiary,twat,4,by load,0,0
-pennycress,blom,4,by load,0,0
-peony,drub,4,by load,0,0
-peperomia,glot,4,by load,0,0
-pepper,kwab,4,by load,0,0
-perch,snuk,4,by load,0,0
-perennial,twas,4,by load,0,0
-perforated,bloq,4,by load,0,0
-perfumed,drut,4,by load,0,0
-permeable,glos,4,by load,0,0
-persimmon,kwat,4,by load,0,0
-pestle,snuv,4,by load,0,0
-pheasant,twaz,4,by load,0,0
-phenomenon,drus,4,by load,0,0
-phile,flas,4,by load,0,0
-phoenix,glof,4,by load,0,0
-phone,kwas,4,by load,0,0
-photo,snuc,4,by load,0,0
-phragmites,twaf,4,by load,0,0
-piano,blob,4,by load,0,0
-pie,druz,4,by load,0,0
-pier,flaz,4,by load,0,0
-pierce,voij,4,by load,3,0
-piety,glox,4,by load,0,0
-pigeon,kwaz,4,by load,0,0
+peacock,gloq,4,by load,0,0
+pear,kwam,4,by load,0,0
+pearl,snun,4,by load,0,0
+peat,twag,4,by load,0,0
+pebble,blaC,4,by load,0,0
+pecan,druq,4,by load,0,0
+pedestal,flaq,4,by load,0,0
+pedestrian,glog,4,by load,0,0
+peeled,kwaq,4,by load,0,0
+pelican,snud,4,by load,0,0
+pencil,twab,4,by load,0,0
+pendant,blar,4,by load,0,0
+pending,drug,4,by load,0,0
+penetrate,glob,4,by load,0,0
+peninsula,kwag,4,by load,0,0
+penitentiary,snup,4,by load,0,0
+pennycress,twat,4,by load,0,0
+peony,blom,4,by load,0,0
+peperomia,drub,4,by load,0,0
+pepper,glot,4,by load,0,0
+perch,kwab,4,by load,0,0
+perennial,snuk,4,by load,0,0
+perforated,twas,4,by load,0,0
+perfumed,bloq,4,by load,0,0
+permeable,drut,4,by load,0,0
+persimmon,glos,4,by load,0,0
+pestle,kwat,4,by load,0,0
+pheasant,snuv,4,by load,0,0
+phenomenon,twaz,4,by load,0,0
+phile,drus,4,by load,0,0
+phoenix,flas,4,by load,0,0
+phone,glof,4,by load,0,0
+photo,kwas,4,by load,0,0
+phragmites,snuc,4,by load,0,0
+piano,twaf,4,by load,0,0
+pie,blob,4,by load,0,0
+pier,druz,4,by load,0,0
+pierce,wudj,4,by load,3,0
+piety,flaz,4,by load,0,0
+pigeon,glox,4,by load,0,0
 pike,paik,4,echoes the english,0,0
-pilgrim,twax,4,by load,0,0
-pillow,blot,4,by load,0,0
-pincers,druf,4,by load,0,0
+pilgrim,kwaz,4,by load,0,0
+pillow,twax,4,by load,0,0
+pincers,blot,4,by load,0,0
 pine,pain,4,echoes the english,0,0
-pioneer,flaf,4,by load,0,0
-pious,gloj,4,by load,0,0
-pisiform,kwaf,4,by load,0,0
-pita,twaj,4,by load,0,0
-pitch,blos,4,by load,0,0
-pittosporum,drux,4,by load,0,0
-plague,gloC,4,by load,0,0
+pioneer,druf,4,by load,0,0
+pious,flaf,4,by load,0,0
+pisiform,gloj,4,by load,0,0
+pita,kwaf,4,by load,0,0
+pitch,twaj,4,by load,0,0
+pittosporum,blos,4,by load,0,0
+plague,drux,4,by load,0,0
 plain,plen,4,echoes the english,4,0
-plaster,kwax,4,by load,0,0
-plateau,twaC,4,by load,0,0
-play,bloz,4,by load,0,0
-player,druj,4,by load,0,0
-pleasant,flaj,4,by load,0,0
+plaster,gloC,4,by load,0,0
+plateau,kwax,4,by load,0,0
+play,twaC,4,by load,0,0
+player,bloz,4,by load,0,0
+pleasant,druj,4,by load,0,0
 pleat,plit,4,echoes the english,0,0
-pliable,glum,4,by load,0,0
-plinth,kwaj,4,by load,0,0
-plough,spiv,4,by load,0,0
-plow,twal,4,by load,0,0
+pliable,flaj,4,by load,0,0
+plinth,glum,4,by load,0,0
+plough,kwaj,4,by load,0,0
+plow,spiv,4,by load,0,0
 plum,plam,4,echoes the english,0,0
 plus,plas,4,echoes the english,0,0
-poet,blof,4,by load,0,0
+poet,twal,4,by load,0,0
 police,xoik,4,by load,1,0
-polish,druC,4,by load,0,0
-political,flaC,4,by load,0,0
-polje,gluq,4,by load,0,0
+polish,blof,4,by load,0,0
+political,druC,4,by load,0,0
+polje,flaC,4,by load,0,0
 poll,zorn,4,by load,1,0
-pomace,kwaC,4,by load,0,0
-pomelo,spic,4,by load,0,0
-pomp,twom,4,by load,0,0
-pond,blox,4,by load,0,0
-pony,drul,4,by load,0,0
-pope,flar,4,by load,0,0
-poplar,glug,4,by load,0,0
-porcelain,kwal,4,by load,0,0
-porcupine,twoq,4,by load,0,0
-potash,bloj,4,by load,0,0
-potato,flom,4,by load,0,0
-pottery,glub,4,by load,0,0
-pouch,kwom,4,by load,0,0
-poultice,twog,4,by load,0,0
+pomace,gluq,4,by load,0,0
+pomelo,kwaC,4,by load,0,0
+pomp,spic,4,by load,0,0
+pond,twom,4,by load,0,0
+pony,blox,4,by load,0,0
+pope,drul,4,by load,0,0
+poplar,flar,4,by load,0,0
+porcelain,glug,4,by load,0,0
+porcupine,kwal,4,by load,0,0
+potash,twoq,4,by load,0,0
+potato,bloj,4,by load,0,0
+pottery,flom,4,by load,0,0
+pouch,glub,4,by load,0,0
+poultice,kwom,4,by load,0,0
 power42,resp,4,pinned,0,0
 power45,lorf,4,pinned,0,0
-praiseworthy,blor,4,by load,0,0
+praiseworthy,twog,4,by load,0,0
 precious,Cunt,4,by load,1,0
-prefecture,floq,4,by load,0,0
-premiere,glut,4,by load,0,0
-president,kwoq,4,by load,0,0
-presiding,spes,4,by load,0,0
-prestige,twob,4,by load,0,0
-prim,flog,4,by load,0,0
-primary,glus,4,by load,0,0
-prince,kwog,4,by load,0,0
-prism,spev,4,by load,0,0
-private,wudj,4,by load,3,0
-privet,twot,4,by load,0,0
-procedure,bluq,4,by load,0,0
-profane,flob,4,by load,0,0
-professor,gluz,4,by load,0,0
-profound,kwob,4,by load,0,0
-proliferous,spec,4,by load,0,0
-promenade,twos,4,by load,0,0
+prefecture,blor,4,by load,0,0
+premiere,floq,4,by load,0,0
+president,glut,4,by load,0,0
+presiding,kwoq,4,by load,0,0
+prestige,spes,4,by load,0,0
+prim,twob,4,by load,0,0
+primary,flog,4,by load,0,0
+prince,glus,4,by load,0,0
+prism,kwog,4,by load,0,0
+private,xarm,4,by load,3,0
+privet,spev,4,by load,0,0
+procedure,twot,4,by load,0,0
+profane,bluq,4,by load,0,0
+professor,flob,4,by load,0,0
+profound,gluz,4,by load,0,0
+proliferous,kwob,4,by load,0,0
+promenade,spec,4,by load,0,0
 prominent,balv,4,by load,1,0
-pronoun,blug,4,by load,0,0
+pronoun,twos,4,by load,0,0
 prop,prap,4,echoes the english,0,0
 prophet,calf,4,by load,1,0
-prosimian,flot,4,by load,0,0
-prosperous,gluf,4,by load,0,0
+prosimian,blug,4,by load,0,0
+prosperous,flot,4,by load,0,0
 prostitute,dalv,4,by load,1,0
-prostrated,kwot,4,by load,0,0
-protrude,spam,4,by load,0,0
-province,twoz,4,by load,0,0
-pudendum,blub,4,by load,0,0
-puffin,flos,4,by load,0,0
-pukara,glux,4,by load,0,0
-pulpit,kwos,4,by load,0,0
-punctuated,twof,4,by load,0,0
-puppy,blut,4,by load,0,0
-purge,floz,4,by load,0,0
-purslane,gluj,4,by load,0,0
-pursue,kwoz,4,by load,0,0
+prostrated,gluf,4,by load,0,0
+protrude,kwot,4,by load,0,0
+province,spam,4,by load,0,0
+pudendum,twoz,4,by load,0,0
+puffin,blub,4,by load,0,0
+pukara,flos,4,by load,0,0
+pulpit,glux,4,by load,0,0
+punctuated,kwos,4,by load,0,0
+puppy,twof,4,by load,0,0
+purge,blut,4,by load,0,0
+purslane,floz,4,by load,0,0
+pursue,gluj,4,by load,0,0
 pus,falv,4,by load,1,0
-pustule,spaC,4,by load,0,0
-pyramid,twox,4,by load,0,0
-pyramidal,blus,4,by load,0,0
-pyre,flof,4,by load,0,0
-qadi,gluC,4,by load,0,0
-qin,kwof,4,by load,0,0
-quadrangle,twoj,4,by load,0,0
-quadrangular,bluz,4,by load,0,0
-quail,flox,4,by load,0,0
-quarrel,kwox,4,by load,0,0
-quarry,spod,4,by load,0,0
-quartz,twoC,4,by load,0,0
-quay,bluf,4,by load,0,0
+pustule,kwoz,4,by load,0,0
+pyramid,spaC,4,by load,0,0
+pyramidal,twox,4,by load,0,0
+pyre,blus,4,by load,0,0
+qadi,flof,4,by load,0,0
+qin,gluC,4,by load,0,0
+quadrangle,kwof,4,by load,0,0
+quadrangular,twoj,4,by load,0,0
+quail,bluz,4,by load,0,0
+quarrel,flox,4,by load,0,0
+quarry,kwox,4,by load,0,0
+quartz,spod,4,by load,0,0
+quay,twoC,4,by load,0,0
 queen,kwin,4,echoes the english,0,0
 quintillion,kegd,4,pinned,0,0
-quiver,floj,4,by load,0,0
-rabbit,kwoj,4,by load,0,0
-rabona,spop,4,by load,0,0
-radiant,twol,4,by load,0,0
-radiated,blux,4,by load,0,0
-radiation,floC,4,by load,0,0
-radish,kwoC,4,by load,0,0
-radon,spov,4,by load,0,0
+quiver,bluf,4,by load,0,0
+rabbit,floj,4,by load,0,0
+rabona,kwoj,4,by load,0,0
+radiant,spop,4,by load,0,0
+radiated,twol,4,by load,0,0
+radiation,blux,4,by load,0,0
+radish,floC,4,by load,0,0
+radon,kwoC,4,by load,0,0
 raft,raft,4,echoes the english,1,0
 raid,halv,4,by load,1,0
-rainbow,twum,4,by load,0,0
-rake,bluj,4,by load,0,0
-ram,kwol,4,by load,0,0
-ramiflorous,spoc,4,by load,0,0
-rampart,twuq,4,by load,0,0
-ranunculus,bluC,4,by load,0,0
-raphe,flum,4,by load,0,0
-rapid,hazb,4,by load,2,0
-raspberry,kwum,4,by load,0,0
-rat,twug,4,by load,0,0
-raven,fluq,4,by load,0,0
-ravine,kwuq,4,by load,0,0
-reaper,spub,4,by load,0,0
-rebellion,twub,4,by load,0,0
-receding,flug,4,by load,0,0
-receipt,kwug,4,by load,0,0
-reckless,xarm,4,by load,3,0
-recommend,sput,4,by load,0,0
-reddening,twut,4,by load,0,0
-reed,flub,4,by load,0,0
-reef,kwub,4,by load,0,0
-reform,spuk,4,by load,0,0
-regalis,twus,4,by load,0,0
-reindeer,kwut,4,by load,0,0
-rejoiced,spuv,4,by load,0,0
-relationship,twuz,4,by load,0,0
-relative,flus,4,by load,0,0
-relay,kwus,4,by load,0,0
+rainbow,spov,4,by load,0,0
+rake,twum,4,by load,0,0
+ram,bluj,4,by load,0,0
+ramiflorous,kwol,4,by load,0,0
+rampart,spoc,4,by load,0,0
+ranunculus,twuq,4,by load,0,0
+raphe,bluC,4,by load,0,0
+rapid,jolp,4,by load,2,0
+raspberry,flum,4,by load,0,0
+rat,kwum,4,by load,0,0
+raven,twug,4,by load,0,0
+ravine,fluq,4,by load,0,0
+reaper,kwuq,4,by load,0,0
+rebellion,spub,4,by load,0,0
+receding,twub,4,by load,0,0
+receipt,flug,4,by load,0,0
+reckless,yaqk,4,by load,3,0
+recommend,kwug,4,by load,0,0
+reddening,sput,4,by load,0,0
+reed,twut,4,by load,0,0
+reef,flub,4,by load,0,0
+reform,kwub,4,by load,0,0
+regalis,spuk,4,by load,0,0
+reindeer,twus,4,by load,0,0
+rejoiced,kwut,4,by load,0,0
+relationship,spuv,4,by load,0,0
+relative,twuz,4,by load,0,0
+relay,flus,4,by load,0,0
 remote,juzg,4,by load,1,0
-renaissance,spuc,4,by load,0,0
-repeatedly,twuf,4,by load,0,0
-republic,fluz,4,by load,0,0
-rescue,yaqk,4,by load,3,0
-resemble,kwuz,4,by load,0,0
-reserve,twux,4,by load,0,0
-reservoir,fluf,4,by load,0,0
-residence,kwuf,4,by load,0,0
-residential,twuj,4,by load,0,0
-resin,flux,4,by load,0,0
-resolute,kwux,4,by load,0,0
-resort,twuC,4,by load,0,0
-restaurant,fluj,4,by load,0,0
-restharrow,kwuj,4,by load,0,0
-retreat,twul,4,by load,0,0
-reverse,fluC,4,by load,0,0
-revive,kwuC,4,by load,0,0
-revolve,kwul,4,by load,0,0
-rhino,stor,4,by load,0,0
-rhomboidal,skig,4,by load,0,0
-rhubarb,skib,4,by load,0,0
-ribbon,skit,4,by load,0,0
+renaissance,kwus,4,by load,0,0
+repeatedly,spuc,4,by load,0,0
+republic,twuf,4,by load,0,0
+rescue,zoij,4,by load,3,0
+resemble,fluz,4,by load,0,0
+reserve,kwuz,4,by load,0,0
+reservoir,twux,4,by load,0,0
+residence,fluf,4,by load,0,0
+residential,kwuf,4,by load,0,0
+resin,twuj,4,by load,0,0
+resolute,flux,4,by load,0,0
+resort,kwux,4,by load,0,0
+restaurant,twuC,4,by load,0,0
+restharrow,fluj,4,by load,0,0
+retreat,kwuj,4,by load,0,0
+reverse,twul,4,by load,0,0
+revive,fluC,4,by load,0,0
+revolve,kwuC,4,by load,0,0
+rhino,kwul,4,by load,0,0
+rhomboidal,stor,4,by load,0,0
+rhubarb,skig,4,by load,0,0
+ribbon,skib,4,by load,0,0
 rice,rais,4,echoes the english,0,0
-riddle,skis,4,by load,0,0
+riddle,skit,4,by load,0,0
 ridge,ridj,4,echoes the english,1,0
-rig,skiz,4,by load,0,0
-rigid,skif,4,by load,0,0
-rip,skij,4,by load,0,0
-ripe,skiC,4,by load,0,0
-ripening,sken,4,by load,0,0
-rivet,skeq,4,by load,0,0
-roar,skeg,4,by load,0,0
-rodeo,skeb,4,by load,0,0
-roe,sket,4,by load,0,0
-roebuck,skez,4,by load,0,0
-romano,skef,4,by load,0,0
-rook,skex,4,by load,0,0
+rig,skis,4,by load,0,0
+rigid,skiz,4,by load,0,0
+rip,skif,4,by load,0,0
+ripe,skij,4,by load,0,0
+ripening,skiC,4,by load,0,0
+rivet,sken,4,by load,0,0
+roar,skeq,4,by load,0,0
+rodeo,skeg,4,by load,0,0
+roe,skeb,4,by load,0,0
+roebuck,sket,4,by load,0,0
+romano,skez,4,by load,0,0
+rook,skef,4,by load,0,0
 roost,rust,4,echoes the english,0,0
-rose,skej,4,by load,0,0
-roughened,skeC,4,by load,0,0
+rose,skex,4,by load,0,0
+roughened,skej,4,by load,0,0
 royal,Cotx,4,by load,6,0
-rugosa,skaq,4,by load,0,0
-rupture,skag,4,by load,0,0
-rural,skad,4,by load,0,0
+rugosa,skeC,4,by load,0,0
+rupture,skaq,4,by load,0,0
+rural,skag,4,by load,0,0
 rust,rast,4,echoes the english,0,0
-rye,skap,4,by load,0,0
-sabadilla,skas,4,by load,0,0
-sack,skaz,4,by load,0,0
-sacrament,skav,4,by load,0,0
-safari,skaj,4,by load,0,0
-saffron,skac,4,by load,0,0
-saint,skom,4,by load,0,0
-salamander,skoq,4,by load,0,0
-sale,skog,4,by load,0,0
-sambuca,skob,4,by load,0,0
-sanctuary,skot,4,by load,0,0
+rye,skad,4,by load,0,0
+sabadilla,skap,4,by load,0,0
+sack,skas,4,by load,0,0
+sacrament,skaz,4,by load,0,0
+safari,skav,4,by load,0,0
+saffron,skaj,4,by load,0,0
+saint,skac,4,by load,0,0
+salamander,skom,4,by load,0,0
+sale,skoq,4,by load,0,0
+sambuca,skog,4,by load,0,0
+sanctuary,skob,4,by load,0,0
 sand,sand,4,echoes the english,7,0
-sandalwood,skos,4,by load,0,0
-sardine,skoz,4,by load,0,0
-sassafras,skof,4,by load,0,0
-satyr,skox,4,by load,0,0
-savage,skoj,4,by load,0,0
-savanna,skoC,4,by load,0,0
-scallop,skol,4,by load,0,0
-scammony,skum,4,by load,0,0
-scar,skuq,4,by load,0,0
-scarlet,skug,4,by load,0,0
-scenery,skud,4,by load,0,0
-scissors,skus,4,by load,0,0
-scorpion,skuz,4,by load,0,0
-scrambled,skuf,4,by load,0,0
-sculpture,skux,4,by load,0,0
-scurfy,skuj,4,by load,0,0
+sandalwood,skot,4,by load,0,0
+sardine,skos,4,by load,0,0
+sassafras,skoz,4,by load,0,0
+satyr,skof,4,by load,0,0
+savage,skox,4,by load,0,0
+savanna,skoj,4,by load,0,0
+scammony,skoC,4,by load,0,0
+scar,skol,4,by load,0,0
+scarlet,skum,4,by load,0,0
+scenery,skuq,4,by load,0,0
+scissors,skug,4,by load,0,0
+scorpion,skud,4,by load,0,0
+scrambled,skus,4,by load,0,0
+sculpture,skuz,4,by load,0,0
+scurfy,skuf,4,by load,0,0
 scythe,saiC,4,echoes the english,0,0
-sealed,skuC,4,by load,0,0
-seat,sliq,4,by load,0,0
-sedan,slig,4,by load,0,0
+sealed,skux,4,by load,0,0
+seat,skuj,4,by load,0,0
+sedan,skuC,4,by load,0,0
 seductive,koiv,4,by load,1,0
-seedlings,slid,4,by load,0,0
-seeker,slis,4,by load,0,0
-senate,sliz,4,by load,0,0
-sensitive,jolp,4,by load,2,0
+seedlings,sliq,4,by load,0,0
+seeker,slig,4,by load,0,0
+senate,slid,4,by load,0,0
+sensitive,kalv,4,by load,2,0
 septillion,seft,4,pinned,0,0
-sergeant,slif,4,by load,0,0
-serpent,slix,4,by load,0,0
-servant,slij,4,by load,0,0
-sesame,sliC,4,by load,0,0
-sessile,slem,4,by load,0,0
-sever,sleq,4,by load,0,0
+sergeant,slis,4,by load,0,0
+serpent,sliz,4,by load,0,0
+servant,slif,4,by load,0,0
+sesame,slix,4,by load,0,0
+sessile,slij,4,by load,0,0
+sever,sliC,4,by load,0,0
 sextillion,holv,4,pinned,0,0
-shadow,dagd,4,by load,4,0
-shaggy,sleg,4,by load,0,0
-shako,slep,4,by load,0,0
-shaky,sles,4,by load,0,0
-shallow,slez,4,by load,0,0
-sharpened,slef,4,by load,0,0
-shatter,slex,4,by load,0,0
-shave,slej,4,by load,0,0
-she,sleC,4,by load,0,0
-sheikh,slam,4,by load,0,0
-shepherd,slaq,4,by load,0,0
-shingle,slat,4,by load,0,0
-shit,slas,4,by load,0,0
-shot,slaz,4,by load,0,0
-shoulder,kalv,4,by load,2,0
-shovel,slaf,4,by load,0,0
-shrew,slax,4,by load,0,0
-shrimp,slaj,4,by load,0,0
-shrub,slaC,4,by load,0,0
-shuttle,slar,4,by load,0,0
-sickle,slom,4,by load,0,0
+shadow,faqk,4,by load,4,0
+shaggy,slem,4,by load,0,0
+shako,sleq,4,by load,0,0
+shaky,sleg,4,by load,0,0
+shallow,slep,4,by load,0,0
+sharpened,sles,4,by load,0,0
+shatter,slez,4,by load,0,0
+shave,slef,4,by load,0,0
+she,slex,4,by load,0,0
+sheikh,slej,4,by load,0,0
+shepherd,sleC,4,by load,0,0
+shingle,slam,4,by load,0,0
+shit,slaq,4,by load,0,0
+shot,slat,4,by load,0,0
+shoulder,marm,4,by load,2,0
+shovel,slas,4,by load,0,0
+shrew,slaz,4,by load,0,0
+shrimp,slaf,4,by load,0,0
+shrub,slax,4,by load,0,0
+shuttle,slaj,4,by load,0,0
+sickle,slaC,4,by load,0,0
 siege,sidj,4,echoes the english,0,0
-sigh,sloq,4,by load,0,0
+sigh,slar,4,by load,0,0
 sight,sait,4,pinned,0,0
-signboard,slog,4,by load,0,0
+signboard,slom,4,by load,0,0
 silent,josp,4,by load,10,0
-silkworm,slod,4,by load,0,0
-silo,slos,4,by load,0,0
-silt,sloz,4,by load,0,0
-sinewy,slof,4,by load,0,0
+silkworm,sloq,4,by load,0,0
+silo,slog,4,by load,0,0
+silt,slod,4,by load,0,0
+sinewy,slos,4,by load,0,0
 single,Cont,4,by load,40,0
 sister,larf,4,by load,1,0
-sixty,slox,4,by load,0,0
-ski,sloj,4,by load,0,0
+sixty,sloz,4,by load,0,0
+ski,slof,4,by load,0,0
 slab,slab,4,echoes the english,0,0
 slag,slag,4,echoes the english,0,0
-slender,sloC,4,by load,0,0
+slender,slox,4,by load,0,0
 sluice,slus,4,echoes the english,0,0
-smartweed,slor,4,by load,0,0
-smilax,slum,4,by load,0,0
+smartweed,sloj,4,by load,0,0
+smilax,sloC,4,by load,0,0
 snail,moid,4,by load,1,0
-snare,sluq,4,by load,0,0
-snarl,slug,4,by load,0,0
+snare,slor,4,by load,0,0
+snarl,slum,4,by load,0,0
 sneeze,sniz,4,pinned,0,0
-snowy,slub,4,by load,0,0
+snowy,sluq,4,by load,0,0
 snub,snab,4,echoes the english,0,0
 soap,voix,4,by load,5,0
-soar,slut,4,by load,0,0
-society,zoij,4,by load,3,0
-soda,sluz,4,by load,0,0
-sofa,sluf,4,by load,0,0
-solace,slux,4,by load,0,0
-solar,sluj,4,by load,0,0
-soldier,sluC,4,by load,0,0
-solitary,swig,4,by load,0,0
-solitude,swid,4,by load,0,0
+soar,slug,4,by load,0,0
+society,Cosp,4,by load,3,0
+soda,slub,4,by load,0,0
+sofa,slut,4,by load,0,0
+solace,sluz,4,by load,0,0
+solar,sluf,4,by load,0,0
+soldier,slux,4,by load,0,0
+solitary,sluj,4,by load,0,0
+solitude,sluC,4,by load,0,0
 solo,noiv,4,by load,1,0
-sombrero,swis,4,by load,0,0
-somersault,swiz,4,by load,0,0
-somewhat,swif,4,by load,0,0
-soot,swix,4,by load,0,0
-sorrel,swij,4,by load,0,0
-sought,swiC,4,by load,0,0
-souq,swem,4,by load,0,0
+sombrero,swig,4,by load,0,0
+somersault,swid,4,by load,0,0
+somewhat,swis,4,by load,0,0
+soot,swiz,4,by load,0,0
+sorrel,swif,4,by load,0,0
+sought,swix,4,by load,0,0
+souq,swij,4,by load,0,0
 sour,dand,4,by load,6,0
-sovereign,sweq,4,by load,0,0
-sow,sweg,4,by load,0,0
-sown,sweb,4,by load,0,0
+sovereign,swiC,4,by load,0,0
+sow,swem,4,by load,0,0
+sown,sweq,4,by load,0,0
 spar,spar,4,echoes the english,0,0
 sparkle,gand,4,by load,6,0
-sparrow,swes,4,by load,0,0
-sparse,swez,4,by load,0,0
+sparrow,sweg,4,by load,0,0
+sparse,sweb,4,by load,0,0
 speech,spix,4,pinned,0,0
-spelt,swef,4,by load,0,0
-spherical,swex,4,by load,0,0
-sphinx,swej,4,by load,0,0
-spike,Cosp,4,by load,3,0
-spindle,sweC,4,by load,0,0
-spire,swaq,4,by load,0,0
-spiritual,swag,4,by load,0,0
-splendid,swad,4,by load,0,0
+spelt,swes,4,by load,0,0
+spherical,swez,4,by load,0,0
+sphinx,swef,4,by load,0,0
+spike,dadj,4,by load,3,0
+spindle,swex,4,by load,0,0
+spire,swej,4,by load,0,0
+spiritual,sweC,4,by load,0,0
+spit,wugd,4,by load,5,0
+splendid,swaq,4,by load,0,0
 spontaneous,poiv,4,by load,1,0
-spur,swas,4,by load,0,0
-spurge,swaz,4,by load,0,0
-spyder,swaf,4,by load,0,0
-squad,swax,4,by load,0,0
-squamulose,swaj,4,by load,0,0
+spur,swag,4,by load,0,0
+spurge,swad,4,by load,0,0
+spyder,swas,4,by load,0,0
+squad,swaz,4,by load,0,0
+squamulose,swaf,4,by load,0,0
 squirm,roid,4,by load,1,0
-squirrel,swaC,4,by load,0,0
-staff,dadj,4,by load,3,0
-stagnating,swal,4,by load,0,0
-stair,swom,4,by load,0,0
-stalemate,swoq,4,by load,0,0
-stank,swog,4,by load,0,0
-starling,swob,4,by load,0,0
+squirrel,swax,4,by load,0,0
+staff,fadj,4,by load,3,0
+stagnating,swaj,4,by load,0,0
+stair,swaC,4,by load,0,0
+stalemate,swal,4,by load,0,0
+stank,swom,4,by load,0,0
+starling,swoq,4,by load,0,0
 steam,soid,4,by load,1,0
-steel,swot,4,by load,0,0
+steel,swog,4,by load,0,0
 steep,stip,4,echoes the english,3,0
-stelleriana,swos,4,by load,0,0
+stelleriana,swob,4,by load,0,0
 steppe,step,4,echoes the english,0,0
-stipulate,swoz,4,by load,0,0
-stipulated,swof,4,by load,0,0
-stockade,swox,4,by load,0,0
-stonecrop,swoj,4,by load,0,0
-stout,swoC,4,by load,0,0
+stipulate,swot,4,by load,0,0
+stipulated,swos,4,by load,0,0
+stockade,swoz,4,by load,0,0
+stonecrop,swof,4,by load,0,0
+stout,swox,4,by load,0,0
 strange,cand,4,by load,26,0
-strangle,swol,4,by load,0,0
-strawberry,swum,4,by load,0,0
+strangle,swoj,4,by load,0,0
+strawberry,swoC,4,by load,0,0
 strength,gruk,4,pinned,0,0
-stricken,swuq,4,by load,0,0
-strife,swug,4,by load,0,0
+stricken,swol,4,by load,0,0
+strife,swum,4,by load,0,0
 strive,toit,4,by load,1,0
-stroke,swub,4,by load,0,0
-stud,swut,4,by load,0,0
-studio,swus,4,by load,0,0
-submerge,swuz,4,by load,0,0
+stroke,swuq,4,by load,0,0
+stud,swug,4,by load,0,0
+studio,swub,4,by load,0,0
+submerge,swut,4,by load,0,0
 substitute,vorn,4,by load,1,0
-suburb,swuf,4,by load,0,0
-suburban,swux,4,by load,0,0
+suburb,swus,4,by load,0,0
+suburban,swuz,4,by load,0,0
 such,satx,4,echoes the english,0,0
-suitable,swuj,4,by load,0,0
-sulfur,swuC,4,by load,0,0
-sulphur,swul,4,by load,0,0
-superior,marm,4,by load,2,0
+suitable,swuf,4,by load,0,0
+sulfur,swux,4,by load,0,0
+sulphur,swuj,4,by load,0,0
+summit,swuC,4,by load,0,0
+sunflower,swul,4,by load,0,0
+superior,nalf,4,by load,2,0
 surround,kazg,4,by load,9,0
 swan,swan,4,echoes the english,0,0
-sway,fadj,4,by load,3,0
+sway,gagd,4,by load,3,0
 swim,swim,4,echoes the english,2,0
 swing,swiq,4,echoes the english,6,0
-tangle,gagd,4,by load,3,0
+tangle,jorn,4,by load,3,0
 tank,taqk,4,echoes the english,0,0
 tend,tend,4,echoes the english,0,0
 terrify,trif,4,pinned,0,0
 thatch,catx,4,echoes the english,0,0
-theater,jorn,4,by load,3,0
+theater,lagd,4,by load,3,0
 their,Ceft,4,pinned,0,0
 thigh,xoiv,4,by load,1,0
 thorax,crak,4,pinned,0,0
@@ -3782,14 +3783,13 @@ throne,cron,4,pinned,0,0
 thunder,crum,4,pinned,0,0
 thyme,taim,4,echoes the english,0,0
 tide,taid,4,echoes the english,0,0
-tilt,wugd,4,by load,5,0
+tilt,xaft,4,by load,5,0
 timber,yalk,4,by load,1,0
-tobacco,nalf,4,by load,2,0
+tobacco,palk,4,by load,2,0
 tomorrow,zorb,4,by load,1,0
-tow,palk,4,by load,2,0
 trail,Cutx,4,by load,1,0
 transparent,balc,4,by load,1,0
-tremble,lagd,4,by load,3,0
+tremble,mazb,4,by load,3,0
 tribe,coid,4,by load,1,0
 trillion,bedj,4,pinned,0,0
 trot,trat,4,echoes the english,0,0
@@ -3807,7 +3807,7 @@ vibrate,jufk,4,by load,1,0
 video,koic,4,by load,1,0
 vine,vain,4,echoes the english,0,0
 waist,west,4,echoes the english,2,0
-wax,xaft,4,by load,5,0
+wax,yand,4,by load,5,0
 wedge,wedj,4,echoes the english,0,0
 wharf,worf,4,echoes the english,0,0
 which,witx,4,echoes the english,0,0
@@ -3902,57 +3902,57 @@ spleen,splin,5,echoes the english,1,0
 stink,stiqk,5,echoes the english,0,0
 strait,stret,5,echoes the english,0,0
 stump,stamp,5,echoes the english,0,0
-summit,Cintx,5,by load,0,0
-sunflower,bindj,5,by load,0,0
-sunshine,cindj,5,by load,0,0
-super,dindj,5,by load,0,0
-surge,gindj,5,by load,0,0
+sunshine,Cintx,5,by load,0,0
+super,bindj,5,by load,0,0
+surge,cindj,5,by load,0,0
 swamp,swamp,5,echoes the english,3,0
 swarm,sworm,5,echoes the english,0,0
-swept,jaint,5,by load,0,0
+swept,dindj,5,by load,0,0
 swift,swift,5,echoes the english,0,0
 switch,switx,5,echoes the english,2,0
-symmetric,kintx,5,by load,0,0
-synagogue,lindj,5,by load,0,0
-synthetic,mindj,5,by load,0,0
-syrup,nintx,5,by load,0,0
-tadpole,rindj,5,by load,0,0
-taffeta,sindj,5,by load,0,0
-tamandua,tintx,5,by load,0,0
-tamarind,vindj,5,by load,0,0
-tamarisk,windj,5,by load,0,0
-tame,xiqkc,5,by load,0,0
-tan,yindj,5,by load,0,0
-tangerine,zintx,5,by load,0,0
-tar,Centx,5,by load,0,0
-taro,biqkc,5,by load,0,0
-tassel,cendj,5,by load,0,0
-tatars,diqkc,5,by load,0,0
-tawny,fiqkc,5,by load,0,0
-telegraph,giqkc,5,by load,0,0
-temple,hiqkc,5,by load,0,0
-temporal,jaikt,5,by load,0,0
-tendon,kentx,5,by load,0,0
-tentacle,liqkc,5,by load,0,0
-terrace,miqkc,5,by load,0,0
-tesselate,nentx,5,by load,0,0
-testicle,pendj,5,by load,0,0
-thesis,riqkc,5,by load,0,0
-thicket,siqkc,5,by load,0,0
-thistle,tentx,5,by load,0,0
+symmetric,gindj,5,by load,0,0
+synagogue,jaint,5,by load,0,0
+synthetic,kintx,5,by load,0,0
+syrup,lindj,5,by load,0,0
+tadpole,mindj,5,by load,0,0
+taffeta,nintx,5,by load,0,0
+tamandua,rindj,5,by load,0,0
+tamarind,sindj,5,by load,0,0
+tamarisk,tintx,5,by load,0,0
+tame,vindj,5,by load,0,0
+tan,windj,5,by load,0,0
+tangerine,xiqkc,5,by load,0,0
+tar,yindj,5,by load,0,0
+taro,zintx,5,by load,0,0
+tassel,Centx,5,by load,0,0
+tatars,biqkc,5,by load,0,0
+tawny,cendj,5,by load,0,0
+telegraph,diqkc,5,by load,0,0
+temple,fiqkc,5,by load,0,0
+temporal,giqkc,5,by load,0,0
+tendon,hiqkc,5,by load,0,0
+tentacle,jaikt,5,by load,0,0
+terrace,kentx,5,by load,0,0
+tesselate,liqkc,5,by load,0,0
+testicle,miqkc,5,by load,0,0
+thesis,nentx,5,by load,0,0
+thicket,pendj,5,by load,0,0
+thistle,riqkc,5,by load,0,0
 thrive,craiv,5,pinned,0,0
-thunderclap,ventx,5,by load,0,0
-thyrsus,wiqkc,5,by load,0,0
-tiger,xeqkc,5,by load,0,0
-tofu,yiqkc,5,by load,0,0
-toga,zentx,5,by load,0,0
-toll,Caint,5,by load,0,0
-tomato,caimp,5,by load,0,0
-tongs,dendj,5,by load,0,0
-torch,fendj,5,by load,0,0
-tortoise,gendj,5,by load,0,0
-tour,hendj,5,by load,0,0
-toward,jaisp,5,by load,0,0
+thunderclap,siqkc,5,by load,0,0
+thyrsus,tentx,5,by load,0,0
+tiger,ventx,5,by load,0,0
+tofu,wiqkc,5,by load,0,0
+toga,xeqkc,5,by load,0,0
+toll,yiqkc,5,by load,0,0
+tomato,zentx,5,by load,0,0
+tongs,Caint,5,by load,0,0
+torch,caimp,5,by load,0,0
+torment,dendj,5,by load,0,0
+tortoise,fendj,5,by load,0,0
+tour,gendj,5,by load,0,0
+toward,hendj,5,by load,0,0
+tower,jaisp,5,by load,0,0
 transit,kaint,5,by load,0,0
 transitory,lendj,5,by load,0,0
 transverse,mendj,5,by load,0,0

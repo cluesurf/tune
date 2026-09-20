@@ -714,3 +714,44 @@ were both still reading it. Both now read `word-short.txt`, which is
 the half that carries `said as X` and therefore the half that gets
 edited. The numbers did not move, because the two files still agreed:
 648 concepts each, zero difference.
+
+## Two of the three failing tests were never evaluated
+
+`rule.test.ts` reported three failures beside each other, which read
+as three broken properties of the language. It was one.
+
+```text
+2 roots, 500 compounds   Test timed out in 5000ms
+3 roots, 500 compounds   AssertionError: graumplautxem reads 2 ways
+4 roots, 500 compounds   Test timed out in 5000ms
+```
+
+**A timeout is an unanswered question wearing the clothes of a
+failure.** Whether a two root or a four root compound reads back was
+simply not known, and had not been known for as long as the suite had
+been quoted. Given room, depth two passes all 500, and that is the
+first time anybody has seen it do so.
+
+The work is genuinely slow rather than stuck: `doubt` asks `read` for
+every fresh pair and `read` walks the whole pool, so a deeper compound
+is dearer twice over. At 500 compounds depth four ran 754 seconds
+without finishing.
+
+**So the sample shrinks with depth, and the count is in the test
+name.** A smaller sample that RUNS beats a bigger one that is killed,
+because a killed test proves nothing and reads on the summary line
+exactly like a broken one. 500 at depth two and three, 100 at depth
+four.
+
+```text
+before   3 failed | 129 passed     two of them unevaluated
+after    1 failed | 131 passed     the one real defect
+```
+
+The remaining failure is real and understood: `graum + plautx + xem`
+spells `graumplautxem`, which also reads as `graump + laut + xem`. The
+cut clause that would part them is PAIRWISE, and `graum + plautx` is
+unambiguous on its own because `lautx` is not in the pool. The third
+root plus the twin collapse of `plautx + xem` frees the `x`, and no
+pairwise test can see that. Roughly one compound in five hundred at
+depth three, and none in five hundred at depth two.

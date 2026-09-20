@@ -52,10 +52,10 @@ word,occurrences,meanings_it_unlocks
 "saltillo",197,1
 "insane",197,1
 "skerry",196,1
+"scallop",196,1
 "railway",195,1
 "viola",195,1
 "qalandar",193,1
-"gallery",193,1
 "martyr",192,1
 "panda",192,1
 "payee",191,1
@@ -84,8 +84,6 @@ word,occurrences,meanings_it_unlocks
 "convalescent",175,1
 "enclosing",175,1
 "bard",175,1
-"din",175,1
-"chosen",174,1
 "bro",174,1
 "avail",174,1
 "lute",174,1
@@ -185,6 +183,7 @@ word,occurrences,meanings_it_unlocks
 "madam",149,1
 "clown",149,1
 "carriage",149,2
+"bray",148,1
 "sable",148,1
 "gust",148,1
 "enriched",147,1
@@ -206,7 +205,6 @@ word,occurrences,meanings_it_unlocks
 "howler",144,1
 "razor",144,2
 "marmot",143,1
-"gnawed",143,1
 "incompetent",143,1
 "ironmonger",142,1
 "jib",142,1
@@ -237,12 +235,10 @@ word,occurrences,meanings_it_unlocks
 "unchangeable",135,1
 "semicircular",135,1
 "hymn",135,1
-"chaplet",134,1
 "inquiry",134,1
 "bruise",134,1
 "saudade",134,1
 "ulcer",134,1
-"malt",133,1
 "stirrup",133,1
 "foehn",133,1
 "smith",133,1
@@ -269,7 +265,6 @@ word,occurrences,meanings_it_unlocks
 "colt",129,1
 "pulmonary",128,1
 "soccer",128,1
-"saviour",127,1
 "chrysalis",127,1
 "pariah",127,1
 "puddle",127,1
@@ -306,8 +301,6 @@ word,occurrences,meanings_it_unlocks
 "bio",120,1
 "pampas",120,1
 "yeshiva",120,1
-"euro",120,1
-"dowry",119,1
 "oxymel",119,1
 "protein",119,1
 "rejoicing",119,1
@@ -334,7 +327,6 @@ word,occurrences,meanings_it_unlocks
 "mortgage",115,1
 "soursop",115,1
 "pyro",115,1
-"cod",115,1
 "groan",115,2
 "dormouse",114,1
 "prattle",114,1
@@ -392,7 +384,6 @@ word,occurrences,meanings_it_unlocks
 "epazote",106,1
 "zenith",106,1
 "okra",106,2
-"unwilling",105,1
 "mesa",105,1
 "lux",105,1
 "elegance",105,1
@@ -432,7 +423,6 @@ word,occurrences,meanings_it_unlocks
 "oboe",100,1
 "textile",100,1
 "gable",100,1
-"plover",100,1
 "domestic",99,1
 "imam",99,1
 "duma",99,1
@@ -442,7 +432,6 @@ word,occurrences,meanings_it_unlocks
 "steeplechase",99,1
 "machete",99,1
 "cistern",99,1
-"diarrhea",98,1
 "unskilled",98,1
 "immigrant",98,1
 "stipe",98,1
@@ -451,7 +440,6 @@ word,occurrences,meanings_it_unlocks
 "blackberry",98,1
 "christmas",98,1
 "fistula",98,1
-"fodder",98,2
 "file",98,2
 "coppersmith",97,1
 "chlorine",97,1
@@ -538,7 +526,6 @@ word,occurrences,meanings_it_unlocks
 "azo",87,1
 "brewery",87,1
 "ogre",87,1
-"weft",87,1
 "amusement",87,2
 "topaz",86,1
 "gaunt",86,1
@@ -546,12 +533,10 @@ word,occurrences,meanings_it_unlocks
 "ayatollah",86,1
 "observatory",86,1
 "smear",86,1
-"sheaf",86,1
 "living",86,3
 "felloe",85,1
 "tab",85,1
 "collie",85,1
-"moose",85,1
 "leftoid",85,1
 "hornero",85,1
 "prosperity",85,1
@@ -608,7 +593,6 @@ word,occurrences,meanings_it_unlocks
 "calamity",79,1
 "refill",79,1
 "stew",79,1
-"written",79,3
 "northwestern",78,1
 "trypanosome",78,1
 "beryl",78,1
@@ -629,7 +613,7 @@ word,occurrences,meanings_it_unlocks
 "unthreshed",77,1
 "arabian",77,1
 "jaguar",77,1
-"halter",76,1
+"tow",77,1
 "anointed",76,1
 "heiress",76,1
 "coachman",76,1
@@ -743,7 +727,6 @@ word,occurrences,meanings_it_unlocks
 "century",64,1
 "whistle",64,1
 "linstock",64,1
-"hermit",64,1
 "copra",64,1
 "piranha",64,1
 "privilege",64,1
@@ -830,7 +813,6 @@ word,occurrences,meanings_it_unlocks
 "retirement",57,1
 "minaret",57,1
 "cult",57,1
-"rowan",57,2
 "whirl",56,1
 "patchwork",56,1
 "slate",56,1
@@ -951,6 +933,7 @@ word,occurrences,meanings_it_unlocks
 "mojarra",49,1
 "hoodlums",49,1
 "crate",49,2
+"written",49,2
 "nectar",48,1
 "unwavering",48,1
 "circumcised",48,1
@@ -973,6 +956,7 @@ word,occurrences,meanings_it_unlocks
 "reclining",47,1
 "tragic",47,1
 "ulna",47,1
+"bra",47,1
 "shaman",47,1
 "amble",47,1
 "burgundy",47,1
@@ -1030,7 +1014,6 @@ word,occurrences,meanings_it_unlocks
 "abyss",44,1
 "butch",44,1
 "welfare",44,1
-"rudder",44,1
 "adze",44,1
 "hospice",44,1
 "kowtow",44,1
@@ -1058,7 +1041,6 @@ word,occurrences,meanings_it_unlocks
 "headkerchief",43,1
 "prospector",43,1
 "quinoa",43,1
-"specimen",43,1
 "boulder",43,1
 "secure",43,1
 "turbot",43,1
@@ -1168,7 +1150,6 @@ word,occurrences,meanings_it_unlocks
 "artist",38,1
 "uncastrated",38,2
 "firstborn",38,2
-"urinating",37,1
 "semiotics",37,1
 "bastardy",37,1
 "trident",37,1
@@ -1330,8 +1311,6 @@ word,occurrences,meanings_it_unlocks
 "tilde",32,1
 "epaulette",32,1
 "plundered",32,3
-"endowment",31,1
-"prow",31,1
 "onyx",31,1
 "licked",31,1
 "prodigality",31,1
@@ -1392,7 +1371,6 @@ word,occurrences,meanings_it_unlocks
 "peasy",30,1
 "technology",30,1
 "conservatory",30,1
-"miniature",30,1
 "goad",30,1
 "plucked",30,2
 "devour",29,1
@@ -1465,7 +1443,6 @@ word,occurrences,meanings_it_unlocks
 "thole",28,1
 "jesus",28,1
 "condom",28,1
-"alkane",28,1
 "commando",28,1
 "hazard",28,2
 "unleavened",27,1
@@ -1739,7 +1716,6 @@ word,occurrences,meanings_it_unlocks
 "bushel",21,1
 "twelfths",21,2
 "poo",21,2
-"taunt",20,1
 "usk",20,1
 "fainting",20,1
 "quelea",20,1
@@ -1812,7 +1788,6 @@ word,occurrences,meanings_it_unlocks
 "sloe",19,1
 "vouch",19,1
 "screamer",19,1
-"withering",19,1
 "tipsiness",19,1
 "hamsa",19,1
 "calamities",19,1
@@ -1971,7 +1946,6 @@ word,occurrences,meanings_it_unlocks
 "plaice",16,1
 "sonata",16,1
 "gigue",16,1
-"pipit",16,1
 "provisions",16,2
 "piglet",15,1
 "trampled",15,1
@@ -1999,3 +1973,29 @@ word,occurrences,meanings_it_unlocks
 "tureen",15,1
 "calli",15,1
 "satay",15,1
+"mammal",15,1
+"decagram",15,1
+"hussar",15,1
+"diol",15,1
+"pharaoh",15,1
+"erhu",15,1
+"headquarters",15,1
+"fishmonger",15,1
+"anode",15,1
+"audience",15,1
+"aviculture",15,1
+"babiche",15,1
+"balise",15,1
+"greengrocer",15,1
+"couloir",15,1
+"curare",15,1
+"diadem",15,1
+"ducat",15,1
+"vintage",15,1
+"phono",15,1
+"ocrea",15,1
+"fertiliser",15,1
+"halva",15,1
+"equine",15,1
+"innocence",15,1
+"joust",15,1

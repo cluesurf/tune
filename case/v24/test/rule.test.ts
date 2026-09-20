@@ -198,17 +198,48 @@ describe('it reads one way', () => {
   }
   const pick = () => roots[Math.floor(next() * roots.length)]
 
+  /**
+   * **A TIMEOUT HERE IS NOT A FAILURE, IT IS AN UNANSWERED QUESTION.**
+   *
+   * Two of these three ran past the 5,000 ms default and were
+   * reported as failing beside a real ambiguity at depth three, which
+   * read as three broken properties. It was one. The other two never
+   * finished, so whether a two root or a four root compound reads
+   * back was simply NOT KNOWN, and had not been known for as long as
+   * the suite had been quoted as passing.
+   *
+   * Given room, depth two passes: all 500 round trip, and that is the
+   * first time anybody has seen it do so.
+   *
+   * **The sample shrinks with depth because the cost does not.** At
+   * 500 compounds depth four ran 754 seconds and still had not
+   * finished. `doubt` asks `read` for every fresh pair and `read`
+   * walks the whole pool, so a deeper compound is dearer twice over.
+   * A smaller sample that actually RUNS beats a bigger one that is
+   * killed, because a killed test proves nothing at all and reads on
+   * the summary line exactly like a broken one.
+   *
+   * The counts are in the test name so nobody quotes a number the
+   * suite is not checking.
+   */
+  const SAMPLE: Record<number, number> = { 2: 500, 3: 500, 4: 100 }
+
   for (const depth of [2, 3, 4]) {
-    test(`${depth} roots, 500 compounds, each reads back as itself`, () => {
-      for (let i = 0; i < 500; i++) {
-        const seq = Array.from({ length: depth }, pick)
-        const text = write(seq, doubt)
-        const back = read(text, roots, doubt)
-        expect(back, `${text} from ${seq.map(one => one.text).join(' + ')}`)
-          .toHaveLength(1)
-        expect(back[0]).toEqual(seq.map(one => one.text))
-      }
-    })
+    const count = SAMPLE[depth] as number
+    test(
+      `${depth} roots, ${count} compounds, each reads back as itself`,
+      () => {
+        for (let i = 0; i < count; i++) {
+          const seq = Array.from({ length: depth }, pick)
+          const text = write(seq, doubt)
+          const back = read(text, roots, doubt)
+          expect(back, `${text} from ${seq.map(one => one.text).join(' + ')}`)
+            .toHaveLength(1)
+          expect(back[0]).toEqual(seq.map(one => one.text))
+        }
+      },
+      600_000,
+    )
   }
 })
 

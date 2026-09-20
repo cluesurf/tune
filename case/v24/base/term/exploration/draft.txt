@@ -1,167 +1,4 @@
 word                species  problem                         seated  canseat  verdict  parts  note
-ne                  667      no seat and not in english.csv          no
-lathe               666      no seat and not in english.csv          no
-sargue              663      no seat and not in english.csv          no
-tigrine             661      no seat and not in english.csv          no
-windpipe            655      no seat and not in english.csv          no
-gregarious          654      no seat and not in english.csv          no
-wand                650      no seat and not in english.csv          no
-calfskin            648      no seat and not in english.csv          no
-glutton             643      no seat and not in english.csv          no
-squill              643      no seat and not in english.csv          no
-currycomb           642      no seat and not in english.csv          no
-household           641      no seat and not in english.csv          no
-pirate              638      no seat and not in english.csv          no
-sheaf               636      no seat and not in english.csv          no
-gallery             635      no seat and not in english.csv          no
-glade               634      no seat and not in english.csv          no
-pied                633      no seat and not in english.csv          no
-cornice             632      no seat and not in english.csv          no
-oblivion            631      no seat and not in english.csv          no
-oid                 630      no seat and not in english.csv          no
-ryegrass            626      no seat and not in english.csv          no
-honeybee            626      no seat and not in english.csv          no
-lancet              625      no seat and not in english.csv          no
-dragoness           624      looks inflected                 smis    no
-salmon              623      no seat and not in english.csv          no
-syriacus            620      no seat and not in english.csv          no
-bray                619      no seat and not in english.csv          no
-grainfield          618      no seat and not in english.csv          no
-ply                 617      no seat and not in english.csv          no
-blackbird           616      no seat and not in english.csv          no
-interchange         613      no seat and not in english.csv          no
-lament              613      no seat and not in english.csv          no
-mitred              613      no seat and not in english.csv          no
-sputum              612      no seat and not in english.csv          no
-ventral             611      no seat and not in english.csv          no
-poppyhead           609      no seat and not in english.csv          no
-scapular            607      no seat and not in english.csv          no
-notable             603      no seat and not in english.csv          no
-drab                599      no seat and not in english.csv          no
-hilly               599      looks inflected                         no
-wavily              596      looks inflected                         no
-phallus             593      no seat and not in english.csv          no
-pursuit             590      no seat and not in english.csv          no
-suffused            588      no seat and not in english.csv          no
-ocular              587      no seat and not in english.csv          no
-mamma               586      no seat and not in english.csv          no
-irritable           585      no seat and not in english.csv          no
-oblivious           581      no seat and not in english.csv          no
-eryngo              580      no seat and not in english.csv          no
-prodigious          579      looks inflected                         no
-practitioner        578      no seat and not in english.csv          no
-crook               577      no seat and not in english.csv          no
-unwilling           577      no seat and not in english.csv          no
-knew                577      no seat and not in english.csv          no
-brightest           572      no seat and not in english.csv          no
-codfish             569      no seat and not in english.csv          no
-played              566      no seat and not in english.csv          no
-prow                564      no seat and not in english.csv          no
-diarrhea            562      no seat and not in english.csv          no
-cervine             562      no seat and not in english.csv          no
-taunt               560      no seat and not in english.csv          no
-dowry               558      no seat and not in english.csv          no
-bipartite           558      no seat and not in english.csv          no
-bisnaga             557      no seat and not in english.csv          no
-plaything           555      no seat and not in english.csv          no
-gore                554      no seat and not in english.csv          no
-siphon              553      no seat and not in english.csv          no
-lethargy            550      no seat and not in english.csv          no
-chthonic            547      no seat and not in english.csv          no
-whither             546      no seat and not in english.csv          no
-scalloped           545      no seat and not in english.csv          no
-nutshell            545      no seat and not in english.csv          no
-mangy               545      no seat and not in english.csv          no
-azole               544      no seat and not in english.csv          no
-ploughed            543      no seat and not in english.csv          no
-shortened           542      no seat and not in english.csv          no
-tapeworm            542      no seat and not in english.csv          no
-porcine             542      no seat and not in english.csv          no
-dimorphic           541      no seat and not in english.csv          no
-behavior            539      no seat and not in english.csv          no
-pipkin              538      no seat and not in english.csv          no
-emulator            538      no seat and not in english.csv          no
-underground         536      no seat and not in english.csv          no
-septum              536      no seat and not in english.csv          no
-canthus             534      no seat and not in english.csv          no
-racehorse           533      no seat and not in english.csv          no
-mealy               532      looks inflected                 frux    no
-inhabiting          530      no seat and not in english.csv          no
-watertight          530      no seat and not in english.csv          no
-cockchafer          530      no seat and not in english.csv          no
-expectant           528      no seat and not in english.csv          no
-putrefaction        528      no seat and not in english.csv          no
-necklace            527      no seat and not in english.csv          no
-cephalic            527      no seat and not in english.csv          no
-euro                526      no seat and not in english.csv          no
-hindrance           522      no seat and not in english.csv          no
-sawfish             520      no seat and not in english.csv          no
-errant              517      no seat and not in english.csv          no
-bodily              516      looks inflected                         no
-pluck               516      no seat and not in english.csv          no
-bleak               514      no seat and not in english.csv          no
-nanotech            512      no seat and not in english.csv          no
-moose               509      no seat and not in english.csv          no
-crustacean          509      no seat and not in english.csv          no
-stag                508      no seat and not in english.csv          no
-biliary             507      no seat and not in english.csv          no
-marjoram            506      no seat and not in english.csv          no
-zealous             504      looks inflected                         no
-mantis              502      no seat and not in english.csv          no
-necrosis            501      no seat and not in english.csv          no
-gnawed              499      no seat and not in english.csv          no
-plūtō               498      not a word                              no
-libation            494      no seat and not in english.csv          no
-nova                494      no seat and not in english.csv          no
-rowan               492      no seat and not in english.csv          no
-miniature           489      no seat and not in english.csv          no
-fungi               489      no seat and not in english.csv          no
-teratological       487      no seat and not in english.csv          no
-malt                487      no seat and not in english.csv          no
-fumatory            486      no seat and not in english.csv          no
-alkane              486      no seat and not in english.csv          no
-lammergeier         484      no seat and not in english.csv          no
-written             484      no seat and not in english.csv          no
-crypt               484      no seat and not in english.csv          no
-stammering          482      no seat and not in english.csv          no
-naiad               482      no seat and not in english.csv          no
-were                477      no seat and not in english.csv          no
-farro               477      no seat and not in english.csv          no
-acquaintance        476      looks inflected                         no
-nit                 476      no seat and not in english.csv          no
-gastric             475      no seat and not in english.csv          no
-equalized           474      no seat and not in english.csv          no
-resonant            470      no seat and not in english.csv          no
-northwestern        469      no seat and not in english.csv          no
-morsel              468      no seat and not in english.csv          no
-conch               467      no seat and not in english.csv          no
-castrated           464      no seat and not in english.csv          no
-surfeit             464      no seat and not in english.csv          no
-sometimes           464      no seat and not in english.csv          no
-creticus            460      no seat and not in english.csv          no
-nervous             459      looks inflected                 tais    yes
-chaplet             458      no seat and not in english.csv          no
-loins               456      no seat and not in english.csv          no
-balsam              455      no seat and not in english.csv          no
-hermit              454      no seat and not in english.csv          no
-springhouse         453      no seat and not in english.csv          no
-halter              453      no seat and not in english.csv          no
-lapse               452      no seat and not in english.csv          no
-subterranean        451      no seat and not in english.csv          no
-chickweed           450      no seat and not in english.csv          no
-stonecutter         450      no seat and not in english.csv          no
-spatulate           449      no seat and not in english.csv          no
-nard                448      no seat and not in english.csv          no
-sororal             448      no seat and not in english.csv          no
-ajwain              448      no seat and not in english.csv          no
-voracious           448      no seat and not in english.csv          no
-fodder              446      no seat and not in english.csv          no
-crocus              444      no seat and not in english.csv          no
-pipit               444      no seat and not in english.csv          no
-withering           442      no seat and not in english.csv          no
-hewing              442      no seat and not in english.csv          no
-shear               440      no seat and not in english.csv          no
-clod                439      no seat and not in english.csv          no
 gangrene            439      no seat and not in english.csv          no
 anorectal           438      no seat and not in english.csv          no
 byssus              438      no seat and not in english.csv          no
@@ -186,66 +23,6 @@ tray                420      no seat and not in english.csv          no
 eaglestone          418      no seat and not in english.csv          no
 reefing             417      no seat and not in english.csv          no
 chelate             417      no seat and not in english.csv          no
-specimen            416      no seat and not in english.csv          no
-vane                415      no seat and not in english.csv          no
-bashful             414      looks inflected                         no
-congius             414      no seat and not in english.csv          no
-firebrand           413      no seat and not in english.csv          no
-urinating           410      no seat and not in english.csv          no
-ropemaker           410      no seat and not in english.csv          no
-tit                 410      no seat and not in english.csv          no
-flourishing         410      no seat and not in english.csv          no
-herpes              409      no seat and not in english.csv          no
-venom               408      no seat and not in english.csv          no
-din                 408      no seat and not in english.csv          no
-armored             406      no seat and not in english.csv          no
-shrublike           405      looks inflected                         no
-ijssel              405      no seat and not in english.csv          no
-bandage             403      no seat and not in english.csv          no
-streamside          402      no seat and not in english.csv          no
-grandson            400      no seat and not in english.csv          no
-infant              398      no seat and not in english.csv          no
-ovum                397      no seat and not in english.csv          no
-cerulean            397      no seat and not in english.csv          no
-piglet              397      no seat and not in english.csv          no
-rudder              396      no seat and not in english.csv          no
-vermicular          396      no seat and not in english.csv          no
-helot               395      no seat and not in english.csv          no
-chosen              395      no seat and not in english.csv          no
-watchfires          395      no seat and not in english.csv          no
-clypeus             394      no seat and not in english.csv          no
-sung                394      no seat and not in english.csv          no
-felicitous          392      looks inflected                 freg    no
-nilotic             392      no seat and not in english.csv          no
-moldiness           392      looks inflected                         no
-bonito              392      no seat and not in english.csv          no
-swathe              391      no seat and not in english.csv          no
-endowment           391      looks inflected                         no
-plover              390      no seat and not in english.csv          no
-bisected            390      no seat and not in english.csv          no
-fume                390      no seat and not in english.csv          no
-parrotfish          389      no seat and not in english.csv          no
-saucepan            389      no seat and not in english.csv          no
-splay               388      no seat and not in english.csv          no
-saviour             388      no seat and not in english.csv          no
-daw                 386      no seat and not in english.csv          no
-condyle             383      no seat and not in english.csv          no
-fastidious          378      no seat and not in english.csv          no
-earthling           378      no seat and not in english.csv          no
-seizure             378      no seat and not in english.csv          no
-anodyne             377      no seat and not in english.csv          no
-vehement            377      no seat and not in english.csv          no
-cinerarium          376      no seat and not in english.csv          no
-teat                374      no seat and not in english.csv          no
-weft                373      no seat and not in english.csv          no
-pygidium            373      no seat and not in english.csv          no
-yoking              372      no seat and not in english.csv          no
-trigonal            372      no seat and not in english.csv          no
-bracelet            372      no seat and not in english.csv          no
-thunderstorm        371      no seat and not in english.csv          no
-sowing              370      no seat and not in english.csv          no
-foal                370      no seat and not in english.csv          no
-costus              369      no seat and not in english.csv          no
 maiming             368      no seat and not in english.csv          no
 problematic         366      no seat and not in english.csv          no
 trapezoid           365      no seat and not in english.csv          no
@@ -286,7 +63,7 @@ rasp                344      no seat and not in english.csv          no
 wan                 344      no seat and not in english.csv          no
 yale                343      no seat and not in english.csv          no
 soldierly           342      looks inflected                         no
-angrily             342      looks inflected                 hoik    no
+angrily             342      looks inflected                 kotx    no
 ellipsis            341      no seat and not in english.csv          no
 lawlessness         341      looks inflected                         no
 urinated            339      no seat and not in english.csv          no
@@ -306,7 +83,6 @@ herald              332      no seat and not in english.csv          no
 addition            331      looks inflected                         no
 rainstorm           331      no seat and not in english.csv          no
 deputy              330      no seat and not in english.csv          no
-frugal              329      no seat and not in english.csv          no
 auricular           328      no seat and not in english.csv          no
 revile              327      no seat and not in english.csv          no
 crayfish            327      no seat and not in english.csv          no
@@ -318,7 +94,7 @@ likelihood          322      no seat and not in english.csv          no
 elude               321      no seat and not in english.csv          no
 eth                 320      no seat and not in english.csv          no
 cheeklet            319      no seat and not in english.csv          no
-partition           318      looks inflected                 blax    no
+partition           318      looks inflected                 twam    no
 midriff             317      no seat and not in english.csv          no
 varicocele          317      no seat and not in english.csv          no
 kindle              316      no seat and not in english.csv          no
@@ -382,7 +158,7 @@ legendary           284      no seat and not in english.csv          no
 catfish             284      no seat and not in english.csv          no
 senile              283      no seat and not in english.csv          no
 malformed           283      no seat and not in english.csv          no
-destructive         282      looks inflected                 smim    no
+destructive         282      looks inflected                 txiC    no
 accomplice          282      no seat and not in english.csv          no
 wau                 282      no seat and not in english.csv          no
 obligation          281      looks inflected                         yes
@@ -668,7 +444,6 @@ myna                179      no seat and not in english.csv          no
 hardened            178      no seat and not in english.csv          no
 surgical            178      no seat and not in english.csv          no
 doorpost            178      no seat and not in english.csv          no
-candelabrum         177      no seat and not in english.csv          no
 manger              177      no seat and not in english.csv          no
 austere             177      no seat and not in english.csv          no
 reedbed             177      no seat and not in english.csv          no
@@ -681,7 +456,7 @@ perennate           175      no seat and not in english.csv          no
 charioteer          175      no seat and not in english.csv          no
 boredom             175      no seat and not in english.csv          no
 cobwebbed           174      no seat and not in english.csv          no
-prosperous          173      looks inflected                 gluf    no
+prosperous          173      looks inflected                 flot    no
 galaxy              173      no seat and not in english.csv          no
 tessera             173      no seat and not in english.csv          no
 allis               173      no seat and not in english.csv          no
@@ -772,7 +547,6 @@ sunbeam             151      no seat and not in english.csv          no
 unsettled           151      no seat and not in english.csv          no
 mantle              151      no seat and not in english.csv          no
 dutiful             151      looks inflected                         no
-ambrosia            150      no seat and not in english.csv          no
 woodcock            150      no seat and not in english.csv          no
 excision            150      no seat and not in english.csv          no
 fugitive            150      no seat and not in english.csv          no
@@ -780,7 +554,7 @@ freedman            150      no seat and not in english.csv          no
 tolerance           150      looks inflected                         no
 beheld              150      no seat and not in english.csv          no
 denude              149      no seat and not in english.csv          no
-radiation           149      looks inflected                 floC    no
+radiation           149      looks inflected                 blux    no
 bipedal             149      no seat and not in english.csv          no
 tuff                149      no seat and not in english.csv          no
 dissection          149      no seat and not in english.csv          no
@@ -1475,7 +1249,6 @@ primordial          68       no seat and not in english.csv          no
 salve               68       no seat and not in english.csv          no
 earhole             68       no seat and not in english.csv          no
 paradisiacal        68       no seat and not in english.csv          no
-tormented           68       no seat and not in english.csv          no
 heather             68       no seat and not in english.csv          no
 rhodium             68       no seat and not in english.csv          no
 recent              68       no seat and not in english.csv          no
@@ -1823,13 +1596,14 @@ astonished          49       no seat and not in english.csv          no
 nose.               49       not a word                              no
 cobbler             49       no seat and not in english.csv          no
 pox                 49       no seat and not in english.csv          no
-relative            49       looks inflected                 flus    no
+relative            49       looks inflected                 twuz    no
 bloodshed           49       no seat and not in english.csv          no
 díaz                49       not a word                              no
 beehive             49       no seat and not in english.csv          no
 superbly            49       looks inflected                         no
 lysine              49       no seat and not in english.csv          no
 dominant            49       no seat and not in english.csv          no
+scallop             49       no seat and not in english.csv          no
 rend                49       no seat and not in english.csv          no
 oligopolistic       49       no seat and not in english.csv          no
 bookcase            48       no seat and not in english.csv          no
@@ -2857,7 +2631,7 @@ rulerless           20       looks inflected                         no
 antagonistic        20       no seat and not in english.csv          no
 baldness            20       looks inflected                         no
 cortez              20       no seat and not in english.csv          no
-activity            20       looks inflected                 lob     yes
+activity            20       looks inflected                 moz     yes
 shrilly             20       looks inflected                         no
 prudence            20       looks inflected                         no
 neckcloth           20       no seat and not in english.csv          no
@@ -3079,7 +2853,7 @@ brought             16       no seat and not in english.csv          no
 location            16       looks inflected                 sij     yes
 hymn                16       no seat and not in english.csv          no
 competition         16       no seat and not in english.csv          no
-pavement            16       looks inflected                 drum    no
+pavement            16       looks inflected                 blaj    no
 lyric               16       no seat and not in english.csv          no
 sagulate            16       no seat and not in english.csv          no
 tennessee           16       no seat and not in english.csv          no
@@ -3164,7 +2938,6 @@ clothe              15       no seat and not in english.csv          no
 catchfly            15       no seat and not in english.csv          no
 graecum             15       no seat and not in english.csv          no
 colophon            15       no seat and not in english.csv          no
-i.d.                15       not a word                              no
 recurrent           15       no seat and not in english.csv          no
 console             15       no seat and not in english.csv          no
 adorable            15       no seat and not in english.csv          no
@@ -3734,7 +3507,7 @@ tinkling            10       no seat and not in english.csv          no
 haggler             10       no seat and not in english.csv          no
 widowed             10       no seat and not in english.csv          no
 ire                 10       no seat and not in english.csv          no
-repeatedly          10       looks inflected                 twuf    no
+repeatedly          10       looks inflected                 spuc    no
 arboretum           10       no seat and not in english.csv          no
 consecrated         10       no seat and not in english.csv          no
 frontlet            10       no seat and not in english.csv          no
@@ -4600,7 +4373,7 @@ jezebel             6        no seat and not in english.csv          no
 oahu                6        no seat and not in english.csv          no
 gracefully          6        looks inflected                         no
 mojave              6        no seat and not in english.csv          no
-information         6        looks inflected                 yigd    yes
+information         6        looks inflected                 zisp    yes
 hyssop              6        no seat and not in english.csv          no
 gabriel             6        no seat and not in english.csv          no
 foreboding          6        no seat and not in english.csv          no
@@ -5211,7 +4984,6 @@ themselves          5        no seat and not in english.csv          no
 propitiation        5        no seat and not in english.csv          no
 dermal              5        no seat and not in english.csv          no
 magnolia            4        no seat and not in english.csv          no
-convolvulus         4        no seat and not in english.csv          no
 fortifying          4        no seat and not in english.csv          no
 mow                 4        no seat and not in english.csv          no
 discard             4        no seat and not in english.csv          no
@@ -5232,6 +5004,7 @@ foxglove            4        no seat and not in english.csv          no
 meteorological      4        no seat and not in english.csv          no
 laserwort           4        no seat and not in english.csv          no
 eliminate           4        no seat and not in english.csv          no
+coronarium          4        no seat and not in english.csv          no
 cud                 4        no seat and not in english.csv          no
 begonia             4        no seat and not in english.csv          no
 khaki               4        no seat and not in english.csv          no
@@ -8010,6 +7783,7 @@ damnable            1        no seat and not in english.csv          no
 pincushions         1        no seat and not in english.csv          no
 scouring            1        no seat and not in english.csv          no
 ere                 1        no seat and not in english.csv          no
+i.d.                1        not a word                              no
 oldfashioned        1        no seat and not in english.csv          no
 weigelia            1        no seat and not in english.csv          no
 indehiscent         1        no seat and not in english.csv          no
@@ -9285,7 +9059,6 @@ riseley             1        no seat and not in english.csv          no
 orlando             1        no seat and not in english.csv          no
 flatland            1        no seat and not in english.csv          no
 jayshrike           1        no seat and not in english.csv          no
-towered             1        no seat and not in english.csv          no
 khuzestan           1        no seat and not in english.csv          no
 walia               1        no seat and not in english.csv          no
 chiffchaff          1        no seat and not in english.csv          no
