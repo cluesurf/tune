@@ -456,8 +456,13 @@ faind vaind    cluster coda     one of them goes
 | ${say('the cut is in doubt')} | a liquid | the cut is in doubt | ${pct(count.doubt)} |
 
 Every example above is the bare seam. **Said aloud a noun takes the
-ending \`-a\`**, and the stress is penultimate, so \`rij + drom\` is
-spoken \`rijdroma\`, /ɾiʒˈdɾoma/.
+ending \`-a\`**, and the stress falls on the second to last VOWEL, so
+\`rij + drom\` is spoken \`rijdroma\`, /ɾiʒdɾˈoma/.
+
+**A liquid joiner takes a helper vowel in speech and never in
+writing**, or a voice runs the three consonants together and the
+joiner is not heard: \`djulrluna\` is said \`djulırluna\`,
+/dʒulɯɾlˈuna/. \`ı\` is \`ɯ\`, and it is four of these ten words.
 
 ### Which liquid
 
