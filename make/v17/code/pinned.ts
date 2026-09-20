@@ -24,29 +24,25 @@
  *   pnpm --dir deck/tune v17:pinned
  */
 
-import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 import { inTuneOrder } from '../../v16/code/order'
-import { ceiling, everyRoot, templateOf, type Root } from './rule'
+import { PINNED, pool } from './pin'
+import { everyRoot, templateOf, type Root } from './rule'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../term')
-const PIN = resolve(here, '../../../base/v16/term/pin-placed.csv')
 
 mkdirSync(BASE, { recursive: true })
 
-/** concept,form,asked */
-const pins: Array<[string, string]> = []
-for (const line of readFileSync(PIN, 'utf-8').split('\n').slice(1)) {
-  const cut = line.split(',')
-  const concept = (cut[0] ?? '').trim()
-  const form = (cut[1] ?? '').trim()
-  if (concept && form) pins.push([concept, form])
-}
+const pins: Array<[string, string]> = [...PINNED].map(([form, concept]) => [
+  concept,
+  form,
+])
 
-const got = ceiling(everyRoot())
+const got = pool()
 const alive = new Map(got.kept.map(one => [one.text, one]))
 const legal = new Map(everyRoot().map(one => [one.text, one]))
 
@@ -60,7 +56,11 @@ const legal = new Map(everyRoot().map(one => [one.text, one]))
  */
 function why(form: string) {
   if (alive.has(form)) return ''
-  if (legal.has(form)) return 'lost to the distance rule'
+  // With the pins seated first this is empty, and it stays here as the
+  // witness: a pin that is legal and still not in the pool means some
+  // OTHER pin took its place, which is a collision between two words
+  // rather than a rule refusing one.
+  if (legal.has(form)) return 'another pin took its place'
   if (form.startsWith('w')) return 'opens on w, which v17 reserves'
   if (form.length === 5) return 'two syllables, which v17 has no shape for'
   return 'the sound rules refuse it'

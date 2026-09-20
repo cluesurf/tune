@@ -21,10 +21,10 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 import { inTuneOrder, writeList } from '../../v16/code/order'
+import { pool } from './pin'
 import {
   DIPHTHONG,
   TEMPLATE,
-  ceiling,
   everyRoot,
   inIpa,
   templateOf,
@@ -35,7 +35,7 @@ const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../term')
 
 const all = everyRoot()
-const got = ceiling(all)
+const got = pool()
 
 const split = (roots: Array<Root>) => {
   const by = new Map<string, Array<string>>()

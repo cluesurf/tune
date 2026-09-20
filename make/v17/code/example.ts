@@ -9,15 +9,38 @@
  * table made its meanings up and one of them contradicted the lexicon:
  * `bam` was glossed "drum" where v16 pins drum at `drom`. A guide that
  * disagrees with the words it is teaching is worse than one with blank
- * cells, so every root below is a pin that survives into v17's pool,
- * and its gloss is the pin's own concept.
+ * cells, so every root below is a pin, and its gloss is the pin's own
+ * concept. 460 of the 485 pins are v17 roots, once the pins are seated
+ * before the rest of the pool.
  *
- * 314 of the 485 pins are still v17 roots. The other 171 are lost to
- * the tighter distance rule, the cut cluster lists, or the `w` ban.
+ * **And the pairs are things rather than relations.** The second
+ * version was pinned and still unreadable, because it took whatever
+ * pair the case allowed: `mom parent`, `hundred blue`, `down the`. A
+ * reader cannot tell a joiner rule from a nonsense compound, so the
+ * pairs here are two nouns that stand together without explanation.
  *
- * The COMPOUND meanings are still readings rather than lexicon: v17
- * has no compounds yet, so `mom mind` is what the two roots say side
- * by side, not an attested word.
+ * ```text
+ * drum rhythm   seed tree    leaf life     jewel moon
+ * tree garden   drum mind    voice sound   dark day
+ * ```
+ *
+ * An EMPTY pair means no pinned pair reaches that case at all, and the
+ * guide then takes the first pair in the pool that does and prints it
+ * with no gloss. Three cases are in that state: a coda opening on `z`,
+ * one opening on `s` reaches only number words, and a cut in doubt is
+ * a property of the pool rather than of any two meanings.
+ *
+ * **The fricative pair was five rows and is one.** While it wrote a
+ * mark inside the left root and a `w` for the right root's dropped
+ * sound, every place the mark had trouble standing needed its own
+ * example: a `dj` coda, a coda opening on a liquid, a cluster on the
+ * right. `lilfwit`, `vorzwum` and `berdjwum` were the cost, and they
+ * sounded wrong. A liquid joins them all now, so one example covers
+ * the case.
+ *
+ * The COMPOUND meanings are readings rather than lexicon: v17 has no
+ * compounds yet, so `drum rhythm` is what the two roots say side by
+ * side, not an attested word.
  */
 
 export type Example = {
@@ -29,71 +52,55 @@ export type Example = {
 
 export const CHOSEN: Record<string, Example> = {
   'nothing written': {
-    pair: ['mam', 'sas', 'mom parent'],
+    pair: ['rij', 'drom', 'rhythm drum'],
     wrote: 'nothing',
   },
   'two stops of one place, voiceless left': {
-    pair: ['dot', 'dan', 'down the'],
+    pair: ['tok', 'gan', 'tree garden'],
     wrote: 'an s',
   },
   'two stops of one place, voiced left': {
-    pair: ['bab', 'pob', 'grandfather right'],
+    pair: ['sid', 'tok', 'seed tree'],
     wrote: 'a z',
   },
   'after a cluster coda': {
-    pair: ['yemp', 'bag', 'hundred blue'],
+    pair: ['mant', 'drom', 'mountain drum'],
     wrote: 'an s, the cluster unchanged',
   },
   'after a coda opening on s': {
-    pair: ['bisk', 'gan', ''],
+    pair: ['must', 'drom', ''],
     wrote: 'a liquid, not an s',
   },
   'after a coda opening on z': {
-    pair: ['bazb', 'pan', ''],
+    pair: ['', '', ''],
     wrote: 'an r, not a z',
   },
-  'a fricative voicing pair, voiceless left': {
-    pair: ['sas', 'zor', 'parent fall'],
-    wrote: 'an l before the coda, a w before the vowel',
-  },
-  'a fricative voicing pair, voiced left': {
-    pair: ['siz', 'sas', 'nothing parent'],
-    wrote: 'an r before the coda, a w before the vowel',
-  },
-  'a fricative pair, dj or tx coda': {
-    pair: ['badj', 'xag', ''],
-    wrote: 'the mark before the whole coda',
-  },
-  'a fricative pair, liquid coda': {
-    pair: ['larf', 'vag', ''],
-    wrote: 'a liquid, both roots whole',
-  },
-  'a fricative pair, cluster right': {
-    pair: ['baz', 'skas', ''],
+  'a fricative voicing pair': {
+    pair: ['lif', 'vit', 'leaf life'],
     wrote: 'a liquid, both roots whole',
   },
   'the same sound doubled': {
-    pair: ['bab', 'bag', 'grandfather blue'],
+    pair: ['vit', 'tok', 'life tree'],
     wrote: 'the sound once, then a w',
   },
   'the same sound doubled, cluster right': {
-    pair: ['bas', 'skas', ''],
+    pair: ['red', 'drom', 'red drum'],
     wrote: 'a liquid, both roots whole',
   },
   'a doubled nasal': {
-    pair: ['mam', 'man', 'mom mind'],
+    pair: ['drom', 'man', 'drum mind'],
     wrote: 'a z, both sounds kept',
   },
   'a doubled liquid': {
-    pair: ['yul', 'lif', 'yellow leaf'],
-    wrote: 'an s, both sounds kept',
+    pair: ['djul', 'lun', 'jewel moon'],
+    wrote: 'an r after l, a z after r, both sounds kept',
   },
   'a root opening on y': {
-    pair: ['mam', 'yul', 'mom yellow'],
+    pair: ['ram', 'yam', 'dark day'],
     wrote: 'a liquid',
   },
   'the cut is in doubt': {
-    pair: ['mim', 'plin', ''],
+    pair: ['', '', ''],
     wrote: 'a liquid, or it reads two ways',
   },
 }

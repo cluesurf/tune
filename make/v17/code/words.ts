@@ -32,12 +32,13 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 import { CHOSEN, speakable } from './example'
-import { ceiling, everyRoot, write } from './rule'
+import { pool } from './pin'
+import { write } from './rule'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../term/words.csv')
 
-const got = ceiling(everyRoot())
+const got = pool()
 const at = new Map(got.kept.map(one => [one.text, one]))
 
 const rows: Array<string> = []
@@ -45,6 +46,10 @@ const skipped: Array<string> = []
 
 for (const [rule, one] of Object.entries(CHOSEN)) {
   const [left, right, meaning] = one.pair
+  if (!left) {
+    skipped.push(`no pinned pair reaches ${rule}`)
+    continue
+  }
   const a = at.get(left)
   const b = at.get(right)
   if (!a || !b) {

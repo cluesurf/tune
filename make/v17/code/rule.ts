@@ -520,8 +520,29 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
     }
     case 'nasal':
       return just('z')
+    /**
+     * A DOUBLED LIQUID, AND ONLY A DOUBLED ONE.
+     *
+     * `l` meeting `l` is one long `l` to a listener and `r` meeting `r`
+     * is one long `r`, so those two seams need something between them.
+     * `l` meeting `r` and `r` meeting `l` do not: the two sounds are
+     * already distinct, they abut with nothing written, and the pool
+     * reads clean that way.
+     *
+     * ```text
+     * -l + l-    lrl      djul + lun = djulrlun
+     * -l + r-    lr       nothing written
+     * -r + r-    rzr
+     * -r + l-    rl       nothing written
+     * ```
+     *
+     * **The two halves are not the same letter, because the stumble is
+     * not the same.** `lrl` is easy to say and `rlr` is not, so between
+     * two `r` sounds the joiner leaves the liquids altogether and takes
+     * a `z`.
+     */
     case 'liquid':
-      return just('s')
+      return just(last(a.text) === 'l' ? 'r' : 'z')
     /**
      * The `w` forms need ONE consonant to work on. Against a cluster
      * there is nothing to drop cleanly, so both roots stay whole and a
@@ -531,30 +552,25 @@ export function seam(a: Root, b: Root, doubt = false): Seam {
       return cluster
         ? liquid(a, b)
         : { mark: '', joiner: '', dropped: true }
+    /**
+     * A FRICATIVE VOICING PAIR TAKES THE LIQUID, AND BOTH ROOTS STAY
+     * WHOLE.
+     *
+     * It used to write a mark inside the left root and a `w` for the
+     * right root's dropped first sound, the way `twin` still does:
+     * `lif + vit` was `lilfwit` and `voz + sum` was `vorzwum`. It was
+     * unambiguous and it sounded wrong. Three sounds move for a seam
+     * that only has to keep `f` and `v` apart, the left root is no
+     * longer its own spelling, and `berdjwum` hides `bedj` entirely.
+     *
+     * A liquid does the one job the case needs. `liflvit`, `vozlsum`,
+     * `bedjlxum`. The exceptions in `liquid` keep it off another
+     * liquid, and the three codas that opened on one, `lf`, `lc` and
+     * `rf`, stop being a special case because there is no longer a
+     * mark needing somewhere to stand.
+     */
     case 'fricPair':
-      /**
-       * THE MARK NEEDS SOMEWHERE TO STAND.
-       *
-       * It goes before the whole coda, so a coda opening on a liquid
-       * puts it in front of that liquid: `larf + vag` would be
-       * `lalrfwag`, an `l` wedged ahead of an `r`, and `lf` and `lc`
-       * would give `llf` and `llc`. Those three are every coda that
-       * opens on a liquid and closes on a fricative, and they fall back
-       * to the plain `l` with both roots whole: `larflvag`.
-       */
-      return cluster || (a.co.length === 2 && isLiquid(a.co[0]))
-        ? liquid(a, b)
-        : {
-            /**
-             * The mark stands before the WHOLE coda, not before its
-             * last sound. For a one sound coda the two coincide, which
-             * is why `-lsw-` reads like a letter insertion. They do not
-             * coincide for `dj` and `tx`, and those settle it.
-             */
-            mark: VOICELESS.includes(last(a.text)) ? 'l' : 'r',
-            joiner: '',
-            dropped: true,
-          }
+      return liquid(a, b)
     default:
       return doubt ? liquid(a, b) : NONE
   }

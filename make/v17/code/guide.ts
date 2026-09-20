@@ -15,16 +15,14 @@ import { writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
+import { CHOSEN } from './example'
+import { pool } from './pin'
 import {
-  CODA_ONE,
   CODA_TWO,
   DIPHTHONG,
-  ONSET_ONE,
   ONSET_TWO,
   TEMPLATE,
   VOWEL,
-  ceiling,
-  everyRoot,
   fricMate,
   inIpa,
   kindOf,
@@ -38,8 +36,7 @@ import {
 const here = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(here, '../cheatsheet.md')
 
-const all = everyRoot()
-const got = ceiling(all)
+const got = pool()
 const total = got.kept.length
 
 /** A 4,096 drawn across the templates in proportion. */
@@ -210,37 +207,13 @@ const CASE: Array<[string, (a: Root, b: Root) => boolean]> = [
     'after a coda opening on z',
     (a, b) => kindOf(a, b) === 'stop' && a.co.length === 2 && a.co[0] === 'z',
   ],
-  [
-    'a fricative voicing pair, voiceless left',
-    (a, b) =>
-      kindOf(a, b) === 'fricPair' &&
-      VOICELESS.includes(lastOf(a.text)) &&
-      b.on.length === 1 &&
-      a.co.length === 1,
-  ],
-  [
-    'a fricative voicing pair, voiced left',
-    (a, b) =>
-      kindOf(a, b) === 'fricPair' &&
-      !VOICELESS.includes(lastOf(a.text)) &&
-      b.on.length === 1 &&
-      a.co.length === 1,
-  ],
-  [
-    'a fricative pair, dj or tx coda',
-    (a, b) =>
-      kindOf(a, b) === 'fricPair' &&
-      b.on.length === 1 &&
-      (a.co === 'dj' || a.co === 'tx'),
-  ],
-  [
-    'a fricative pair, liquid coda',
-    (a, b) =>
-      kindOf(a, b) === 'fricPair' &&
-      b.on.length === 1 &&
-      a.co.length === 2 &&
-      'lr'.includes(a.co[0]),
-  ],
+  // One row, where there were five. The fricative pair used to write a
+  // mark inside the left root and a `w` for the right root's dropped
+  // sound, and every one of those five rows was a place the mark had
+  // trouble standing: a `dj` coda, a coda opening on a liquid, a
+  // cluster on the right. With a liquid doing the job there is one
+  // rule and nothing to except.
+  ['a fricative voicing pair', (a, b) => kindOf(a, b) === 'fricPair'],
   [
     'the same sound doubled',
     (a, b) => kindOf(a, b) === 'twin' && b.on.length === 1,
@@ -252,60 +225,38 @@ const CASE: Array<[string, (a: Root, b: Root) => boolean]> = [
     'the same sound doubled, cluster right',
     (a, b) => kindOf(a, b) === 'twin' && b.on.length > 1,
   ],
-  [
-    'a fricative pair, cluster right',
-    (a, b) => kindOf(a, b) === 'fricPair' && b.on.length > 1,
-  ],
   ['the cut is in doubt', (a, b) => kindOf(a, b) === '' && doubt(a, b)],
 ]
 
 /**
  * THE EXAMPLES ARE CHOSEN, then checked against the pool.
  *
- * Taking whatever the search hit first gave every row a `mi` or a `di`
- * and words like `CakCak`, which are legal and unreadable. These are
- * picked instead: short, built from sounds a reader meets without a
- * table, and one per case.
- *
- * **The meanings are invented and v17 has no lexicon yet.** They are
- * here so a row reads as a word rather than as a string, and a case
- * with no plausible reading is left unnamed rather than given a
- * stretched one. Nothing downstream reads this table.
+ * `example.ts` holds the table, because the video reads it too and a
+ * second copy is a copy that drifts. Each pick is checked here: it has
+ * to be in the pool AND be the case it is filed under, or the row
+ * would teach the wrong rule. A pick that fails is REPORTED and then
+ * replaced by the first pair in the pool that fits, so a stale pick
+ * cannot quietly become an unglossed one.
  */
-const CHOSEN: Record<string, [string, string, string]> = {
-  'nothing written': ['bal', 'dan', 'still water'],
-  'two stops of one place, voiceless left': ['bat', 'dan', 'night water'],
-  'two stops of one place, voiced left': ['bag', 'kan', ''],
-  'after a cluster coda': ['balk', 'gan', ''],
-  'after a coda opening on s': ['bisk', 'gan', ''],
-  'after a coda opening on z': ['bazb', 'pan', ''],
-  'a fricative voicing pair, voiceless left': ['bas', 'zak', 'breath light'],
-  'a fricative voicing pair, voiced left': ['baz', 'sag', ''],
-  'a fricative pair, dj or tx coda': ['badj', 'xag', ''],
-  'a fricative pair, liquid coda': ['larf', 'vag', ''],
-  'a fricative pair, cluster right': ['baz', 'skas', ''],
-  'the same sound doubled': ['bas', 'sag', 'breath song'],
-  'the same sound doubled, cluster right': ['bas', 'skas', ''],
-  'a doubled nasal': ['bam', 'man', 'drum mind'],
-  'a doubled liquid': ['bal', 'lan', 'still land'],
-  'a root opening on y': ['bal', 'yan', 'still flame'],
-  'the cut is in doubt': ['mim', 'plin', ''],
-}
-
 const example = new Map<string, string>()
 const meaning = new Map<string, string>()
+const refused: Array<string> = []
+
 for (const [name, fits] of CASE) {
   const pick = CHOSEN[name]
-  if (pick) {
-    const a = byText.get(pick[0])
-    const b = byText.get(pick[1])
-    // A chosen pair has to be in the pool AND be the case it is filed
-    // under, or the row would teach the wrong rule.
+  if (pick && pick.pair[0]) {
+    const a = byText.get(pick.pair[0])
+    const b = byText.get(pick.pair[1])
     if (a && b && fits(a, b)) {
       example.set(name, `${a.text} + ${b.text} = ${write([a, b], doubt)}`)
-      if (pick[2]) meaning.set(name, pick[2])
+      if (pick.pair[2]) meaning.set(name, pick.pair[2])
       continue
     }
+    refused.push(
+      `${pick.pair[0]} + ${pick.pair[1]}   ${
+        !a || !b ? 'not both in the pool' : 'not this case'
+      }, ${name}`,
+    )
   }
   outer: for (const a of roots) {
     for (const b of roots) {
@@ -496,23 +447,21 @@ faind vaind    cluster coda     one of them goes
 | ${say('after a cluster coda')} | \`s\` or \`z\` | the same, after a cluster coda | above |
 | ${say('after a coda opening on s')} | a liquid | the same, after a coda opening on \`s\` | above |
 | ${say('after a coda opening on z')} | \`r\` | the same, after a coda opening on \`z\` | above |
-| ${say('a fricative voicing pair, voiceless left')} | \`l\` before the coda, \`w\` before the right vowel | a fricative voicing pair, voiceless left | ${pct(count.fricPair)} |
-| ${say('a fricative voicing pair, voiced left')} | \`r\` before the coda, \`w\` before the right vowel | a fricative voicing pair, voiced left | above |
-| ${say('a fricative pair, dj or tx coda')} | the mark before the WHOLE coda | the same, with a \`dj\` or \`tx\` coda | above |
-| ${say('a fricative pair, liquid coda')} | a liquid, both roots whole | the same, where the coda opens on a liquid | above |
-| ${say('a fricative pair, cluster right')} | a liquid, both roots whole | the same, cluster on the right | above |
+| ${say('a fricative voicing pair')} | a liquid | a fricative voicing pair | ${pct(count.fricPair)} |
 | ${say('the same sound doubled')} | the sound once, then \`w\` | the same sound doubled | ${pct(count.twin)} |
 | ${say('the same sound doubled, cluster right')} | a liquid, both roots whole | the same, cluster on the right | above |
 | ${say('a doubled nasal')} | \`z\` | a doubled nasal | ${pct(count.nasal)} |
-| ${say('a doubled liquid')} | \`s\` | a doubled liquid | ${pct(count.liquid)} |
+| ${say('a doubled liquid')} | \`r\` after \`l\`, \`z\` after \`r\` | a doubled liquid | ${pct(count.liquid)} |
 | ${say('a root opening on y')} | a liquid | a root opening on \`y\` | ${pct(count.glide)} |
 | ${say('the cut is in doubt')} | a liquid | the cut is in doubt | ${pct(count.doubt)} |
 
 ### Which liquid
 
-Six of the rows above write "a liquid" rather than an \`l\`, because an
-\`l\` stops being a joiner the moment it lands beside another one. \`ll\`
-is one long \`l\` to a listener, and \`lr\` and \`rl\` are a stumble.
+Five of the rows above write "a liquid" rather than an \`l\`, because an
+\`l\` stops being a joiner the moment it lands beside another one: \`ll\`
+is one long \`l\` to a listener, and a joiner nobody can hear is not a
+joiner. So the letter moves, and where both liquids are already spoken
+for it leaves the liquids entirely.
 
 \`\`\`
 the coda is l and a consonant        r      balc + Cak = balcrCak
@@ -528,11 +477,9 @@ it. A seam is not inside a root, and a vowel is the one thing that
 cannot be mistaken for cluster material, so it is the safest joiner the
 language has and the least available inside a word.
 
-**The mark stands before the WHOLE coda**, not before its last sound.
-For a one sound coda the two coincide, which is why \`-lsw-\` reads like
-a letter insertion. \`dj\` and \`tx\` are what settle it, and a coda
-opening on a liquid is why the mark sometimes cannot stand at all: it
-would land in front of that liquid.
+Every joiner stands BETWEEN two roots, so both keep their spelling and
+the joiner lifts back out. One row does not: a doubled sound is said
+once and followed by a \`w\`, so \`vit + tok\` is \`vitwok\`.
 
 ## How often anything is written
 
@@ -562,9 +509,8 @@ disagreement can span three roots without appearing in any pair.
 
 Three facts carry it. **No root holds a \`w\`**, so a \`w\` is always a
 joiner. **No root opens or closes on a vowel**, so a vowel between two
-consonants is never root material. **A mark before a coda is an \`l\` or
-an \`r\` the coda list does not allow there**, so it can be lifted back
-out.
+consonants is never root material. **A joiner sits where the cluster
+lists allow no such letter**, so it can be lifted back out.
 
 ## How many roots
 
@@ -591,5 +537,11 @@ process.stdout.write(
     `  for the cut      ${pct(count.doubt)}\n` +
     `  anything at all  ${pct(sound + count.doubt)}\n` +
     `  read two ways    ${twice} of ${pairs.toLocaleString()} pairs\n` +
-    deep.map(([d, w]) => `  depth ${d}          ${w} of 2,000\n`).join(''),
+    deep.map(([d, w]) => `  depth ${d}          ${w} of 2,000\n`).join('') +
+    (refused.length
+      ? `\n  ${refused.length} chosen example${
+          refused.length === 1 ? '' : 's'
+        } refused, the pool answered instead\n` +
+        refused.map(one => `    ${one}\n`).join('')
+      : ''),
 )
