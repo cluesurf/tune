@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-16T09:21:11.587Z",
+  "model": "gpt-5",
+  "readings": 145,
+  "placed": 70,
+  "percentile": 51.68571428571429,
+  "trueMean": 0.6450325041599404,
+  "shuffledMean": 0.6326146897600434,
+  "lift": 0.012417814399896976,
+  "verdict": "NOTHING. At chance. Do not use it, and say so.",
+  "second": "The score does depend on the meaning."
+}

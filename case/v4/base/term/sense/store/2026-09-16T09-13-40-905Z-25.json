@@ -1,0 +1,624 @@
+[
+  {
+    "term": "bind",
+    "senses": [
+      "tie or fasten tightly together",
+      "place under legal, moral, or other obligation",
+      "stick or cohere; form a bond",
+      "secure the pages of a book within a cover",
+      "a difficult situation or tight spot (noun)",
+      "associate or assign a name/resource in computing"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.6,
+      "fast": 0.2,
+      "open": -0.8,
+      "heavy": 0.3,
+      "smooth": 0.1,
+      "inward": 0.6,
+      "pleasant": -0.4
+    },
+    "motion": "tightens",
+    "essence": "To bind is to tie or secure things so they cannot move apart.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "clean",
+    "senses": [
+      "free from dirt, marks, or impurities",
+      "remove dirt or impurities from",
+      "morally pure or innocent",
+      "without contraband or illegal substances",
+      "simple, uncluttered in style or design",
+      "free of explicit content",
+      "fair or within the rules in sport"
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": 0,
+      "fast": 0.1,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.7,
+      "inward": -0.4,
+      "pleasant": 0.7
+    },
+    "motion": "clears",
+    "essence": "Clean means free of dirt or impurities.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "curse",
+    "senses": [
+      "invoke harm or misfortune on someone or something",
+      "utter offensive or profane words",
+      "a malediction or hex (noun)",
+      "a persistent source of trouble or misfortune",
+      "menstruation (slang)"
+    ],
+    "feel": {
+      "bright": -0.7,
+      "hard": 0.2,
+      "fast": 0.4,
+      "open": -0.6,
+      "heavy": 0.3,
+      "smooth": -0.5,
+      "inward": -0.4,
+      "pleasant": -0.9
+    },
+    "motion": "blights",
+    "essence": "To curse is to utter a wish of harm or cast a malign word on someone or something.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "city",
+    "senses": [
+      "a large, densely settled urban municipality",
+      "the inhabitants or government of a city",
+      "a city’s central business/financial district (e.g., the City of London)",
+      "the core urban area as distinct from suburbs"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.5,
+      "fast": 0.6,
+      "open": -0.5,
+      "heavy": 0.6,
+      "smooth": -0.2,
+      "inward": -0.6,
+      "pleasant": 0.2
+    },
+    "motion": "grows",
+    "essence": "A city is a large, densely settled and administratively defined urban community.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "enjoy",
+    "senses": [
+      "take delight or pleasure in",
+      "possess or benefit from"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.4,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": 0.7,
+      "pleasant": 1
+    },
+    "motion": "savors",
+    "essence": "To enjoy is to take pleasure in something.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "i",
+    "senses": [
+      "first-person singular pronoun referring to the speaker or writer",
+      "the imaginary unit in mathematics (√−1)",
+      "the letter i as a character"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.1,
+      "inward": 1,
+      "pleasant": 0.2
+    },
+    "motion": "none",
+    "essence": "“I” is the first-person singular pronoun referring to the speaker or writer.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "catch",
+    "senses": [
+      "seize, capture, or intercept",
+      "contract or become afflicted with (an illness)",
+      "hear or understand",
+      "capture or record (e.g., on film or audio)",
+      "board or make (a vehicle or event)",
+      "a hidden drawback (noun)",
+      "a game or act of throwing and catching (noun)",
+      "a snag or hitch that causes a hang-up"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.6,
+      "fast": 0.8,
+      "open": -0.6,
+      "heavy": 0.2,
+      "smooth": -0.2,
+      "inward": -0.4,
+      "pleasant": 0.1
+    },
+    "motion": "grabs",
+    "essence": "To catch is to seize or intercept something in motion.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "able",
+    "senses": [
+      "having the power or skill to do something",
+      "competent or talented; skillful",
+      "legally or mentally competent",
+      "a descriptor of naval rank (able seaman)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.3,
+      "fast": 0.3,
+      "open": 0.5,
+      "heavy": -0.3,
+      "smooth": 0.6,
+      "inward": 0.2,
+      "pleasant": 0.6
+    },
+    "motion": "enables",
+    "essence": "Able means having the power, skill, or means to do something.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "along",
+    "senses": [
+      "moving in a constant direction on a path or line",
+      "in company with; together with",
+      "progressing or developing",
+      "bringing someone or something with one"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.3,
+      "heavy": -0.2,
+      "smooth": 0.7,
+      "inward": -0.3,
+      "pleasant": 0.2
+    },
+    "motion": "goes",
+    "essence": "Along indicates movement on a line or in company with someone or something.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "divide",
+    "senses": [
+      "separate or split into parts",
+      "perform the arithmetic operation of division",
+      "share out among people",
+      "cause disagreement or disunity",
+      "a ridge or boundary separating drainage basins (noun)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.1,
+      "fast": 0.2,
+      "open": -0.6,
+      "heavy": 0.2,
+      "smooth": -0.4,
+      "inward": -0.3,
+      "pleasant": -0.5
+    },
+    "motion": "splits",
+    "essence": "To divide is to separate something into parts.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "before",
+    "senses": [
+      "earlier than in time",
+      "in front of in space or order",
+      "in the presence of (an authority or person)",
+      "rather than; sooner than"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": 0,
+      "open": 0,
+      "heavy": 0,
+      "smooth": 0.3,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "precedes",
+    "essence": "Before marks earlier time or position in front of something else.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "big",
+    "senses": [
+      "of large size or extent",
+      "important or influential",
+      "grown-up or older (e.g., big sister)",
+      "generous or magnanimous",
+      "boastful or pretentious"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": -0.2,
+      "open": 0.3,
+      "heavy": 0.6,
+      "smooth": 0.1,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "expands",
+    "essence": "Big means of large size, extent, or importance.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "count",
+    "senses": [
+      "determine the total number of",
+      "include or regard as; consider",
+      "matter; have importance",
+      "a nobleman of certain European countries (noun)",
+      "a total or tally (noun)",
+      "keep or mark time or rhythm",
+      "compute or tally programmatically"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.2,
+      "fast": -0.2,
+      "open": -0.1,
+      "heavy": -0.1,
+      "smooth": 0.3,
+      "inward": 0.3,
+      "pleasant": 0.1
+    },
+    "motion": "tallies",
+    "essence": "To count is to determine a total by enumerating units.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "because",
+    "senses": [
+      "for the reason that; since (subordinating conjunction)",
+      "informal clipped form ('cause)",
+      "used in stylistic fragments ('Because X')"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": 0,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "explains",
+    "essence": "Because introduces a reason or cause for what is stated.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "breath",
+    "senses": [
+      "the air taken into or expelled from the lungs",
+      "a single act of breathing",
+      "a brief pause or rest",
+      "a trace or hint",
+      "the smell of a person’s exhalation"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.7,
+      "fast": -0.2,
+      "open": 0.5,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": 0.4,
+      "pleasant": 0.3
+    },
+    "motion": "cycles",
+    "essence": "Breath is the air taken into and expelled from the lungs.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "axis",
+    "senses": [
+      "a line about which a body rotates or is symmetrically arranged",
+      "a reference line in a coordinate system",
+      "an alignment or alliance of powers",
+      "the second cervical vertebra",
+      "a central theme or pivot (figurative)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.7,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": 0.1,
+      "smooth": 0.6,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "holds",
+    "essence": "An axis is an imaginary or real line about which something turns or is symmetrically arranged.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bat",
+    "senses": [
+      "a nocturnal flying mammal",
+      "a club used to hit a ball in sports",
+      "to hit with a bat",
+      "to flutter the eyelids",
+      "a turn at hitting in baseball (at bat)"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.1,
+      "fast": 0.4,
+      "open": 0.3,
+      "heavy": -0.6,
+      "smooth": 0.3,
+      "inward": 0.5,
+      "pleasant": -0.2
+    },
+    "motion": "flits",
+    "essence": "A bat is a nocturnal flying mammal with membranous wings.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "call",
+    "senses": [
+      "summon or contact by speaking or telephoning",
+      "give a name to; label",
+      "an announced decision or judgment",
+      "visit briefly",
+      "demand or request",
+      "a cry or sound to attract attention",
+      "a right to buy a security (call option)",
+      "to invoke a function in computing"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0.5,
+      "open": 0.4,
+      "heavy": -0.2,
+      "smooth": 0.2,
+      "inward": -0.6,
+      "pleasant": 0.1
+    },
+    "motion": "summons",
+    "essence": "To call is to summon, contact, or name by speaking or signaling.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "blood",
+    "senses": [
+      "the red fluid that circulates through the body",
+      "family lineage or ancestry",
+      "violence or killing (as in bloodshed)",
+      "to smear with blood or initiate into a group"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.9,
+      "fast": -0.1,
+      "open": -0.6,
+      "heavy": 0.3,
+      "smooth": 0.5,
+      "inward": 0.8,
+      "pleasant": -0.6
+    },
+    "motion": "flows",
+    "essence": "Blood is the circulating bodily fluid that transports oxygen, nutrients, and cells.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bolt",
+    "senses": [
+      "a metal fastener with a head and threaded shaft",
+      "a sliding bar that secures a door",
+      "a flash of lightning",
+      "a roll of fabric of standard length",
+      "to run suddenly and swiftly",
+      "to swallow food hastily"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.9,
+      "fast": 0,
+      "open": -0.8,
+      "heavy": 0.4,
+      "smooth": 0.2,
+      "inward": 0.3,
+      "pleasant": 0
+    },
+    "motion": "secures",
+    "essence": "A bolt is a metal fastener with a head and threaded shaft used with a nut.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "crowd",
+    "senses": [
+      "a large number of people gathered closely together",
+      "the general public or a particular set of people",
+      "to press closely or fill too tightly",
+      "to harass or impede by proximity (as in sports)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.2,
+      "fast": 0.4,
+      "open": -0.7,
+      "heavy": 0.5,
+      "smooth": -0.3,
+      "inward": -0.6,
+      "pleasant": -0.1
+    },
+    "motion": "gathers",
+    "essence": "A crowd is a large number of people gathered closely together.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "circle",
+    "senses": [
+      "a round plane figure with all points equidistant from the center",
+      "a group of people sharing interests or connections",
+      "to move all the way around; encircle",
+      "a ring-shaped mark or object"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.2,
+      "fast": 0,
+      "open": -0.7,
+      "heavy": 0,
+      "smooth": 1,
+      "inward": 0.1,
+      "pleasant": 0.4
+    },
+    "motion": "encloses",
+    "essence": "A circle is a closed curve with all points at a constant distance from the center.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "berry",
+    "senses": [
+      "a small pulpy fruit",
+      "in botany, a simple fleshy fruit with seeds in the pulp",
+      "to pick or gather berries",
+      "a surname or place name"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.4,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.5,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.6
+    },
+    "motion": "ripens",
+    "essence": "A berry is a small, pulpy, often edible fruit.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "birth",
+    "senses": [
+      "the act or process of being born",
+      "the origin or beginning of something",
+      "lineage or social status by parentage",
+      "to give birth"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.5,
+      "fast": -0.6,
+      "open": 0.6,
+      "heavy": 0.4,
+      "smooth": -0.4,
+      "inward": 0.7,
+      "pleasant": 0.2
+    },
+    "motion": "emerges",
+    "essence": "Birth is the process by which a new baby or animal is brought into the world.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "cycle",
+    "senses": [
+      "a sequence of events that repeats in the same order",
+      "a bicycle or motorcycle (noun)",
+      "to ride a bicycle (verb)",
+      "a program or machine operating sequence",
+      "an economic or biological period",
+      "a unit of oscillation in physics"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": -0.1,
+      "open": 0.1,
+      "heavy": 0,
+      "smooth": 0.6,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "repeats",
+    "essence": "A cycle is a sequence of events that repeats in the same order.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  }
+]

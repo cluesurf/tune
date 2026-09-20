@@ -1,0 +1,4059 @@
+[
+  {
+    "term": "a",
+    "senses": [
+      "An indefinite article marking a single, nonspecific count noun.",
+      "The letter A.",
+      "A grade denoting excellence.",
+      "The musical note A.",
+      "Blood type A."
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.1
+    },
+    "motion": "introduces",
+    "essence": "A function word that introduces a single, nonspecific thing.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "abandon",
+    "senses": [
+      "to give up completely; leave behind",
+      "reckless freedom; lack of restraint (with abandon)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.1,
+      "fast": 0.3,
+      "open": -0.4,
+      "heavy": 0.5,
+      "smooth": -0.3,
+      "inward": 0.2,
+      "pleasant": -0.8
+    },
+    "motion": "leaves",
+    "essence": "To give up or desert something or someone completely.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "able",
+    "senses": [
+      "having the power or skill to do something",
+      "competent or talented; skillful",
+      "legally or mentally competent",
+      "a descriptor of naval rank (able seaman)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.3,
+      "fast": 0.3,
+      "open": 0.5,
+      "heavy": -0.3,
+      "smooth": 0.6,
+      "inward": 0.2,
+      "pleasant": 0.6
+    },
+    "motion": "enables",
+    "essence": "Able means having the power, skill, or means to do something.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "about",
+    "senses": [
+      "concerning; on the subject of",
+      "approximately; around",
+      "around in various places",
+      "on the point of (about to)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.5,
+      "inward": -0.3,
+      "pleasant": 0.1
+    },
+    "motion": "relates",
+    "essence": "A preposition meaning “on the subject of.”",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "above",
+    "senses": [
+      "At a higher level or position than.",
+      "Earlier in text or speech.",
+      "Superior in rank or quality.",
+      "In or into the sky or heaven (poetic/idiomatic)."
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.8,
+      "heavy": -0.6,
+      "smooth": 0.3,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "rises",
+    "essence": "A relation indicating something is at a higher place or level.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "abroad",
+    "senses": [
+      "in or to a foreign country or countries",
+      "widely circulated or at large",
+      "out of doors; outside"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": -0.2,
+      "open": 0.8,
+      "heavy": -0.4,
+      "smooth": 0.2,
+      "inward": -0.7,
+      "pleasant": 0.3
+    },
+    "motion": "travel",
+    "essence": "In or to foreign lands, or more generally out in the world at large.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "absense",
+    "senses": [
+      "a misspelling of absence",
+      "absence: the state of not being present",
+      "absence: a lack or deficiency of something",
+      "absence: a period of being away from work or school"
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": -0.5,
+      "fast": -0.3,
+      "open": 0.1,
+      "heavy": -0.3,
+      "smooth": 0.1,
+      "inward": 0.3,
+      "pleasant": -0.5
+    },
+    "motion": "none",
+    "essence": "The state of something or someone not being present.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "absolute",
+    "senses": [
+      "complete and unconditional; not limited",
+      "not relative or comparative; independent",
+      "in mathematics, the magnitude without regard to sign (absolute value)",
+      "nearly pure (as in absolute alcohol)",
+      "unrestricted authority (absolute monarchy)"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0.8,
+      "fast": 0.4,
+      "open": -0.7,
+      "heavy": 0.6,
+      "smooth": 0.5,
+      "inward": 0.2,
+      "pleasant": -0.1
+    },
+    "motion": "fix",
+    "essence": "Complete and unconditional, admitting no exceptions.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "across",
+    "senses": [
+      "from one side to the other",
+      "on or to the other side of",
+      "throughout"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.2,
+      "smooth": 0.3,
+      "inward": -0.4,
+      "pleasant": 0.1
+    },
+    "motion": "spans",
+    "essence": "Extending or moving from one side to the other.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "add",
+    "senses": [
+      "To combine quantities or include something extra.",
+      "To say further in speech or writing.",
+      "To increase by a specified amount."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.1,
+      "fast": 0.4,
+      "open": 0.4,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "accumulates",
+    "essence": "An act of increasing a total or including something more.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "after",
+    "senses": [
+      "Later than in time; following.",
+      "In pursuit of.",
+      "According to the style of.",
+      "Named for or concerning."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "follows",
+    "essence": "A relation that places one event or thing later than another.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "alive",
+    "senses": [
+      "Living; not dead.",
+      "Active or in operation.",
+      "Alert, animated, or sensitive to.",
+      "Filled with activity."
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": -0.2,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.2,
+      "smooth": -0.1,
+      "inward": -0.1,
+      "pleasant": 0.8
+    },
+    "motion": "grows",
+    "essence": "The state of being living and active.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "all",
+    "senses": [
+      "The whole of; every one of.",
+      "Completely or entirely.",
+      "The greatest possible amount."
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.1,
+      "fast": 0,
+      "open": 0.7,
+      "heavy": 0.2,
+      "smooth": 0.2,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "encompasses",
+    "essence": "A word meaning the entire amount or every member without exception.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "along",
+    "senses": [
+      "moving in a constant direction on a path or line",
+      "in company with; together with",
+      "progressing or developing",
+      "bringing someone or something with one"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.3,
+      "heavy": -0.2,
+      "smooth": 0.7,
+      "inward": -0.3,
+      "pleasant": 0.2
+    },
+    "motion": "goes",
+    "essence": "Along indicates movement on a line or in company with someone or something.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "also",
+    "senses": [
+      "In addition; too.",
+      "Similarly or likewise."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.5,
+      "heavy": -0.4,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.2
+    },
+    "motion": "adds",
+    "essence": "A connector that introduces an additional item or idea.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "always",
+    "senses": [
+      "at all times; on every occasion",
+      "forever; continually"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.3,
+      "fast": -0.6,
+      "open": -0.3,
+      "heavy": 0.2,
+      "smooth": 0.6,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "endures",
+    "essence": "At every time without exception.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "among",
+    "senses": [
+      "in the middle of; surrounded by",
+      "shared by; to each of",
+      "amid (figurative)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": 0,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.2
+    },
+    "motion": "mingles",
+    "essence": "Being in the midst of or part of a group.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "ancestor",
+    "senses": [
+      "A person from whom one is descended.",
+      "A forerunner of a type, species, or technology."
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.1,
+      "fast": -0.5,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": -0.2,
+      "inward": 0.6,
+      "pleasant": 0.2
+    },
+    "motion": "precedes",
+    "essence": "A forebear in a lineage or an earlier form that gave rise to later ones.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "and",
+    "senses": [
+      "a coordinating conjunction adding one thing to another",
+      "used to imply result or continuation"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.6,
+      "heavy": -0.4,
+      "smooth": 0.8,
+      "inward": -0.5,
+      "pleasant": 0.4
+    },
+    "motion": "links",
+    "essence": "A connector that joins words, phrases, or ideas.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "angle",
+    "senses": [
+      "The figure formed by two lines or planes meeting.",
+      "A viewpoint or approach to a topic.",
+      "To fish with a hook and line.",
+      "To position or seek advantage.",
+      "A corner or projecting point."
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.6,
+      "fast": 0,
+      "open": -0.4,
+      "heavy": 0,
+      "smooth": -0.5,
+      "inward": -0.1,
+      "pleasant": 0.1
+    },
+    "motion": "rotates",
+    "essence": "A measure or turn where lines or directions meet, or a way of looking at something.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "animal",
+    "senses": [
+      "A living organism of the kingdom Animalia.",
+      "A person characterized by base or vigorous traits (figurative).",
+      "A thing of a particular type (“a different animal”)."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.1,
+      "fast": 0.3,
+      "open": 0.2,
+      "heavy": 0.3,
+      "smooth": -0.1,
+      "inward": -0.4,
+      "pleasant": 0.3
+    },
+    "motion": "moves",
+    "essence": "A living creature that feeds, grows, and moves by its own power.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "answer",
+    "senses": [
+      "A reply that addresses a question.",
+      "A solution that resolves a problem.",
+      "To respond to someone.",
+      "To be satisfactory for a need or purpose.",
+      "In law, a defendant’s written response."
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": 0.3,
+      "fast": 0.2,
+      "open": -0.4,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": -0.6,
+      "pleasant": 0.7
+    },
+    "motion": "resolves",
+    "essence": "Something that addresses and settles a question or problem.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "ant",
+    "senses": [
+      "a small social insect of the family Formicidae"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.3,
+      "fast": 0.4,
+      "open": -0.3,
+      "heavy": -0.8,
+      "smooth": -0.2,
+      "inward": -0.2,
+      "pleasant": -0.1
+    },
+    "motion": "scurries",
+    "essence": "A small, social insect that lives in colonies.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "arc",
+    "senses": [
+      "a curved line or part of a circle",
+      "to form or move in a curve",
+      "the progression of a storyline or character"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.2,
+      "smooth": 0.8,
+      "inward": -0.1,
+      "pleasant": 0.3
+    },
+    "motion": "curves",
+    "essence": "A segment shaped like part of a circle.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "arm",
+    "senses": [
+      "The upper limb of a human or similar appendage.",
+      "A projecting part of an object or chair.",
+      "A branch of an organization.",
+      "To equip with weapons (verb)."
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.3,
+      "fast": 0.2,
+      "open": -0.1,
+      "heavy": 0.2,
+      "smooth": -0.2,
+      "inward": -0.2,
+      "pleasant": 0.1
+    },
+    "motion": "reaches",
+    "essence": "A limb or projecting part used to extend, hold, or act.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "around",
+    "senses": [
+      "on all sides of; surrounding",
+      "nearby or in the vicinity",
+      "approximately or about",
+      "in circulation or existence",
+      "to turn so as to face another direction"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": -0.2,
+      "pleasant": 0.1
+    },
+    "motion": "circle",
+    "essence": "Situated or moving on all sides, nearby, or approximately.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "art",
+    "senses": [
+      "Creative human expression in visual, auditory, or performative forms.",
+      "Works produced by such expression.",
+      "Skill or craft acquired by practice.",
+      "The academic disciplines of the arts and humanities."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.2,
+      "fast": -0.2,
+      "open": 0.6,
+      "heavy": -0.1,
+      "smooth": 0,
+      "inward": -0.5,
+      "pleasant": 0.6
+    },
+    "motion": "expresses",
+    "essence": "The practice and products of making meaning through creative forms.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "ask",
+    "senses": [
+      "to request information or an answer",
+      "to request or demand something",
+      "the price requested for something (noun)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.1,
+      "fast": 0,
+      "open": 0.6,
+      "heavy": -0.2,
+      "smooth": 0.4,
+      "inward": -0.6,
+      "pleasant": 0.3
+    },
+    "motion": "seeks",
+    "essence": "To request information, help, or a favor.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "away",
+    "senses": [
+      "at or to a distance from a place; not here",
+      "playing or situated on an opponent’s ground (sports)",
+      "continuously or steadily (as in work away)",
+      "at a specified time in the future (as in months away)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.6,
+      "heavy": -0.4,
+      "smooth": 0.2,
+      "inward": -0.6,
+      "pleasant": -0.1
+    },
+    "motion": "depart",
+    "essence": "At or moving to a distance from the current place.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "axis",
+    "senses": [
+      "a line about which a body rotates or is symmetrically arranged",
+      "a reference line in a coordinate system",
+      "an alignment or alliance of powers",
+      "the second cervical vertebra",
+      "a central theme or pivot (figurative)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.7,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": 0.1,
+      "smooth": 0.6,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "holds",
+    "essence": "An axis is an imaginary or real line about which something turns or is symmetrically arranged.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "baby",
+    "senses": [
+      "A very young child or infant.",
+      "The young of an animal.",
+      "A term of endearment for a loved one.",
+      "To coddle or treat indulgently (verb).",
+      "Something small or specially sized."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.6,
+      "fast": -0.4,
+      "open": 0.4,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": -0.3,
+      "pleasant": 0.8
+    },
+    "motion": "grows",
+    "essence": "A very young human (or animal) at the earliest stage of life.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "back",
+    "senses": [
+      "the rear surface of the human body",
+      "the rear part of something",
+      "to support; to endorse",
+      "toward the rear; in return"
+    ],
+    "feel": {
+      "bright": -0.1,
+      "hard": 0.3,
+      "fast": 0,
+      "open": -0.2,
+      "heavy": 0.2,
+      "smooth": 0.2,
+      "inward": 0.3,
+      "pleasant": 0
+    },
+    "motion": "supports",
+    "essence": "The rear part of a person or thing that provides support.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bad",
+    "senses": [
+      "of poor quality; not good",
+      "morally wrong or evil",
+      "severe or serious in degree"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": -0.2,
+      "fast": 0.1,
+      "open": -0.2,
+      "heavy": 0.3,
+      "smooth": -0.6,
+      "inward": 0,
+      "pleasant": -0.9
+    },
+    "motion": "spoils",
+    "essence": "Of poor quality or causing negative outcomes.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bag",
+    "senses": [
+      "A flexible container with an opening.",
+      "To put into a bag; to capture or secure.",
+      "A woman (derogatory, “old bag”).",
+      "Loose skin under the eyes (bags).",
+      "To abandon or give up on something (informal)."
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": -0.6,
+      "fast": 0,
+      "open": -0.7,
+      "heavy": 0,
+      "smooth": -0.2,
+      "inward": 0.5,
+      "pleasant": 0.1
+    },
+    "motion": "contains",
+    "essence": "A soft container used to hold or carry things.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "balance",
+    "senses": [
+      "a state of equilibrium",
+      "to keep or put in equilibrium",
+      "the remainder after subtraction",
+      "a device for weighing"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.4,
+      "fast": -0.4,
+      "open": 0,
+      "heavy": 0,
+      "smooth": 0.7,
+      "inward": 0.2,
+      "pleasant": 0.7
+    },
+    "motion": "levels",
+    "essence": "A condition of equal or stable distribution.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bark",
+    "senses": [
+      "The sharp, explosive sound a dog makes.",
+      "The tough outer covering of a tree.",
+      "To speak abruptly or harshly.",
+      "A sailing ship (barque), variant spelling."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0.7,
+      "open": 0.1,
+      "heavy": -0.5,
+      "smooth": -0.6,
+      "inward": -0.6,
+      "pleasant": -0.4
+    },
+    "motion": "bursts",
+    "essence": "A sudden, sharp vocalization, especially by a dog.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "bat",
+    "senses": [
+      "a nocturnal flying mammal",
+      "a club used to hit a ball in sports",
+      "to hit with a bat",
+      "to flutter the eyelids",
+      "a turn at hitting in baseball (at bat)"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.1,
+      "fast": 0.4,
+      "open": 0.3,
+      "heavy": -0.6,
+      "smooth": 0.3,
+      "inward": 0.5,
+      "pleasant": -0.2
+    },
+    "motion": "flits",
+    "essence": "A bat is a nocturnal flying mammal with membranous wings.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "be",
+    "senses": [
+      "To exist or have reality.",
+      "To occur or take place.",
+      "To occupy a role, identity, or state.",
+      "Auxiliary verb forming tenses and passives."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.1,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "exists",
+    "essence": "The basic verb that marks existence, identity, or state.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "bean",
+    "senses": [
+      "an edible seed or pod of certain plants",
+      "the plant producing such seeds",
+      "slang for the head; a small amount of money"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.1,
+      "fast": 0,
+      "open": -0.1,
+      "heavy": -0.4,
+      "smooth": 0.3,
+      "inward": -0.1,
+      "pleasant": 0.5
+    },
+    "motion": "sprouts",
+    "essence": "An edible seed or pod of a legume plant.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bear",
+    "senses": [
+      "a large, heavy mammal of the family Ursidae",
+      "to carry or support",
+      "to endure",
+      "a person expecting prices to fall (finance)",
+      "to move in a specified direction"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.7,
+      "fast": -0.1,
+      "open": -0.3,
+      "heavy": 0.9,
+      "smooth": -0.2,
+      "inward": 0.3,
+      "pleasant": -0.1
+    },
+    "motion": "lumbers",
+    "essence": "A large, powerful mammal with a heavy body, thick fur, and strong claws.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "beast",
+    "senses": [
+      "a large or dangerous animal",
+      "a brutal, aggressive, or inhumane person",
+      "something very difficult to handle or defeat"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.2,
+      "fast": 0.3,
+      "open": 0.3,
+      "heavy": 0.5,
+      "smooth": -0.4,
+      "inward": -0.5,
+      "pleasant": -0.4
+    },
+    "motion": "prowls",
+    "essence": "A powerful or fearsome animal, or figuratively a person or thing with brute force.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "beat",
+    "senses": [
+      "To strike repeatedly or rhythmically.",
+      "A rhythm or regular pulse in music.",
+      "To defeat or surpass.",
+      "Exhausted or worn out (informal).",
+      "A regular route or area of duty."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.4,
+      "fast": 0.6,
+      "open": -0.1,
+      "heavy": 0,
+      "smooth": -0.2,
+      "inward": -0.4,
+      "pleasant": 0.1
+    },
+    "motion": "pulses",
+    "essence": "A repeated strike or rhythmic pulse, or the act of overcoming.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "because",
+    "senses": [
+      "for the reason that; since (subordinating conjunction)",
+      "informal clipped form ('cause)",
+      "used in stylistic fragments ('Because X')"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": 0,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "explains",
+    "essence": "Because introduces a reason or cause for what is stated.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "become",
+    "senses": [
+      "to begin to be; to turn into",
+      "to be suitable or look good on"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.2,
+      "fast": -0.1,
+      "open": 0.5,
+      "heavy": -0.2,
+      "smooth": 0.5,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "turns",
+    "essence": "To change into or come to be something.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bee",
+    "senses": [
+      "a social, stinging insect that gathers nectar and pollen",
+      "a gathering for communal work or a contest (e.g., spelling bee)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.4,
+      "fast": 0.7,
+      "open": 0.5,
+      "heavy": -0.8,
+      "smooth": -0.3,
+      "inward": -0.6,
+      "pleasant": 0.1
+    },
+    "motion": "buzz",
+    "essence": "A flying social insect that collects nectar and helps pollinate plants.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "before",
+    "senses": [
+      "earlier than in time",
+      "in front of in space or order",
+      "in the presence of (an authority or person)",
+      "rather than; sooner than"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": 0,
+      "open": 0,
+      "heavy": 0,
+      "smooth": 0.3,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "precedes",
+    "essence": "Before marks earlier time or position in front of something else.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "begin",
+    "senses": [
+      "to start; to come into being or action",
+      "to commence a journey or activity",
+      "to originate"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.2,
+      "fast": 0.6,
+      "open": 0.6,
+      "heavy": -0.2,
+      "smooth": 0,
+      "inward": -0.2,
+      "pleasant": 0.4
+    },
+    "motion": "starts",
+    "essence": "To initiate an action, process, or event.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "believe",
+    "senses": [
+      "To accept something as true.",
+      "To have confidence in or trust.",
+      "To have religious faith.",
+      "To think or suppose."
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": 0.1,
+      "fast": -0.4,
+      "open": -0.3,
+      "heavy": 0.3,
+      "smooth": 0.1,
+      "inward": 0.9,
+      "pleasant": 0.2
+    },
+    "motion": "holds",
+    "essence": "To accept or trust a claim as true, often inwardly and without proof.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "belong",
+    "senses": [
+      "to be the property of",
+      "to be rightly placed or suited to",
+      "to fit in socially"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.5,
+      "fast": -0.3,
+      "open": -0.6,
+      "heavy": 0.2,
+      "smooth": 0.5,
+      "inward": -0.1,
+      "pleasant": 0
+    },
+    "motion": "attaches",
+    "essence": "To be the property of someone or to be rightly placed with something.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "belt",
+    "senses": [
+      "a strip worn around the waist",
+      "a region or band around something",
+      "to fasten or encircle with a belt; to hit or sing loudly"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.4,
+      "fast": 0,
+      "open": -0.6,
+      "heavy": -0.2,
+      "smooth": 0.5,
+      "inward": -0.1,
+      "pleasant": 0.1
+    },
+    "motion": "wraps",
+    "essence": "A strap or band that encircles and secures.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bend",
+    "senses": [
+      "To curve or cause to curve by applying force.",
+      "To incline or direct something (e.g., attention or effort).",
+      "A curved section in a path or object.",
+      "To modify a rule or truth (figurative)."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.3,
+      "fast": -0.1,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "curves",
+    "essence": "A yielding change of direction or shape into a curve.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "berry",
+    "senses": [
+      "a small pulpy fruit",
+      "in botany, a simple fleshy fruit with seeds in the pulp",
+      "to pick or gather berries",
+      "a surname or place name"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.4,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.5,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.6
+    },
+    "motion": "ripens",
+    "essence": "A berry is a small, pulpy, often edible fruit.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "between",
+    "senses": [
+      "in the space, time, or interval separating two or more things",
+      "shared by or connecting two or more parties",
+      "in an intermediate state or position"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.1,
+      "fast": -0.4,
+      "open": 0.6,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": -0.4,
+      "pleasant": 0
+    },
+    "motion": "bridge",
+    "essence": "Occupying or relating to the space or relation separating things.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "big",
+    "senses": [
+      "of large size or extent",
+      "important or influential",
+      "grown-up or older (e.g., big sister)",
+      "generous or magnanimous",
+      "boastful or pretentious"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": -0.2,
+      "open": 0.3,
+      "heavy": 0.6,
+      "smooth": 0.1,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "expands",
+    "essence": "Big means of large size, extent, or importance.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bind",
+    "senses": [
+      "tie or fasten tightly together",
+      "place under legal, moral, or other obligation",
+      "stick or cohere; form a bond",
+      "secure the pages of a book within a cover",
+      "a difficult situation or tight spot (noun)",
+      "associate or assign a name/resource in computing"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.6,
+      "fast": 0.2,
+      "open": -0.8,
+      "heavy": 0.3,
+      "smooth": 0.1,
+      "inward": 0.6,
+      "pleasant": -0.4
+    },
+    "motion": "tightens",
+    "essence": "To bind is to tie or secure things so they cannot move apart.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "birth",
+    "senses": [
+      "the act or process of being born",
+      "the origin or beginning of something",
+      "lineage or social status by parentage",
+      "to give birth"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.5,
+      "fast": -0.6,
+      "open": 0.6,
+      "heavy": 0.4,
+      "smooth": -0.4,
+      "inward": 0.7,
+      "pleasant": 0.2
+    },
+    "motion": "emerges",
+    "essence": "Birth is the process by which a new baby or animal is brought into the world.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bitter",
+    "senses": [
+      "having a sharp, unpleasant taste",
+      "painful or harsh; full of resentment",
+      "a type of strongly hopped beer"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": 0.3,
+      "fast": 0.2,
+      "open": -0.4,
+      "heavy": 0.1,
+      "smooth": -0.6,
+      "inward": 0.6,
+      "pleasant": -0.8
+    },
+    "motion": "stings",
+    "essence": "A sharp, harsh taste or feeling that is unpleasant.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "bless",
+    "senses": [
+      "to confer divine favor or well-being on",
+      "to make holy; consecrate",
+      "to praise or thank; to invoke good wishes"
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": -0.2,
+      "fast": 0.1,
+      "open": 0.5,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.9
+    },
+    "motion": "bestows",
+    "essence": "An act of conferring favor, protection, or sanctity.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "blood",
+    "senses": [
+      "the red fluid that circulates through the body",
+      "family lineage or ancestry",
+      "violence or killing (as in bloodshed)",
+      "to smear with blood or initiate into a group"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.9,
+      "fast": -0.1,
+      "open": -0.6,
+      "heavy": 0.3,
+      "smooth": 0.5,
+      "inward": 0.8,
+      "pleasant": -0.6
+    },
+    "motion": "flows",
+    "essence": "Blood is the circulating bodily fluid that transports oxygen, nutrients, and cells.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "body",
+    "senses": [
+      "the physical structure of a person or animal",
+      "a corpse",
+      "the main or central part of something",
+      "substantiality or fullness (as in wine)",
+      "an organized group of people"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.2,
+      "fast": 0,
+      "open": -0.6,
+      "heavy": 0.6,
+      "smooth": 0,
+      "inward": 0.4,
+      "pleasant": 0.1
+    },
+    "motion": "lives",
+    "essence": "The physical organism of a living person or animal.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "bolt",
+    "senses": [
+      "a metal fastener with a head and threaded shaft",
+      "a sliding bar that secures a door",
+      "a flash of lightning",
+      "a roll of fabric of standard length",
+      "to run suddenly and swiftly",
+      "to swallow food hastily"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.9,
+      "fast": 0,
+      "open": -0.8,
+      "heavy": 0.4,
+      "smooth": 0.2,
+      "inward": 0.3,
+      "pleasant": 0
+    },
+    "motion": "secures",
+    "essence": "A bolt is a metal fastener with a head and threaded shaft used with a nut.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bone",
+    "senses": [
+      "the rigid calcified tissue forming the skeleton",
+      "a single skeletal element",
+      "to remove bones from something",
+      "to study intensively (bone up)",
+      "dice (slang)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.9,
+      "fast": 0,
+      "open": -0.6,
+      "heavy": 0.3,
+      "smooth": 0.5,
+      "inward": 0.7,
+      "pleasant": 0
+    },
+    "motion": "support",
+    "essence": "The hard structural tissue that supports and protects the body.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "both",
+    "senses": [
+      "the two together; each of two"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.1,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": -0.1,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "pairs",
+    "essence": "Refers jointly to two items.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "box",
+    "senses": [
+      "a rigid container with flat sides and a lid",
+      "to fight with fists",
+      "to enclose or confine"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.6,
+      "fast": 0,
+      "open": -0.7,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": 0.3,
+      "pleasant": 0.1
+    },
+    "motion": "contains",
+    "essence": "A rigid container for holding things.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "brain",
+    "senses": [
+      "the organ in the skull that controls thought and bodily functions",
+      "intellectual ability or the mind",
+      "an intelligent person (often plural, as in the brains of the group)",
+      "to strike on the head (verb, figurative or literal)"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.8,
+      "fast": 0.6,
+      "open": -0.7,
+      "heavy": 0.2,
+      "smooth": -0.3,
+      "inward": 0.9,
+      "pleasant": 0.1
+    },
+    "motion": "fire",
+    "essence": "The central organ that processes information and coordinates the nervous system.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "branch",
+    "senses": [
+      "a limb of a tree growing from the trunk or a larger bough",
+      "a subdivision of an organization or field",
+      "to diverge into different paths (verb)",
+      "a divergent line of development in version control"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.6,
+      "fast": -0.7,
+      "open": 0.6,
+      "heavy": -0.2,
+      "smooth": -0.2,
+      "inward": -0.6,
+      "pleasant": 0.5
+    },
+    "motion": "extends",
+    "essence": "A woody limb that grows out from a tree’s trunk or a larger bough.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "break",
+    "senses": [
+      "to separate into pieces or damage so it no longer works",
+      "to interrupt the continuity of",
+      "to escape or burst out",
+      "to violate a rule",
+      "a pause or gap (noun)"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": -0.6,
+      "fast": 0.8,
+      "open": 0.6,
+      "heavy": 0.2,
+      "smooth": -0.8,
+      "inward": -0.4,
+      "pleasant": -0.7
+    },
+    "motion": "shatters",
+    "essence": "To damage or split something so it is no longer whole or working.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "breath",
+    "senses": [
+      "the air taken into or expelled from the lungs",
+      "a single act of breathing",
+      "a brief pause or rest",
+      "a trace or hint",
+      "the smell of a person’s exhalation"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.7,
+      "fast": -0.2,
+      "open": 0.5,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": 0.4,
+      "pleasant": 0.3
+    },
+    "motion": "cycles",
+    "essence": "Breath is the air taken into and expelled from the lungs.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "bring",
+    "senses": [
+      "to carry or convey something or someone to a place or person",
+      "to cause to happen or cause to be in a certain state",
+      "to present or initiate (e.g., a legal action)",
+      "to fetch or deliver",
+      "to yield or sell for (a price)",
+      "to rear or raise (bring up)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.1,
+      "fast": 0.1,
+      "open": -0.1,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": 0.4,
+      "pleasant": 0.3
+    },
+    "motion": "carry",
+    "essence": "To convey something or someone to a destination or cause it to arrive at a state.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "broken",
+    "senses": [
+      "damaged or no longer working; not whole",
+      "fractured or cracked",
+      "violated (as of promises or rules)",
+      "emotionally crushed",
+      "interrupted or halting (as of speech or sleep)"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.6,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": 0.3,
+      "smooth": -0.8,
+      "inward": 0,
+      "pleasant": -0.7
+    },
+    "motion": "none",
+    "essence": "In a damaged state that prevents proper function or wholeness.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "bug",
+    "senses": [
+      "a small insect or similar arthropod",
+      "a flaw or defect in software or a system",
+      "a concealed listening device",
+      "to annoy or bother",
+      "a mild illness, especially viral (a bug)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.2,
+      "fast": 0.5,
+      "open": 0.3,
+      "heavy": -0.8,
+      "smooth": -0.3,
+      "inward": -0.5,
+      "pleasant": -0.4
+    },
+    "motion": "scuttle",
+    "essence": "A small creeping creature, or by extension a small flaw or hidden device.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "build",
+    "senses": [
+      "to construct by assembling parts or materials",
+      "the physical proportions of a body",
+      "a compiled or packaged version of software",
+      "to increase or develop gradually (as in build up)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.7,
+      "fast": -0.5,
+      "open": -0.3,
+      "heavy": 0.6,
+      "smooth": 0.2,
+      "inward": -0.5,
+      "pleasant": 0.6
+    },
+    "motion": "construct",
+    "essence": "To make something by putting parts together into a coherent structure.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "bush",
+    "senses": [
+      "a low, branching shrub",
+      "wild or rural country; the outback",
+      "pubic hair (slang)",
+      "a metal lining or sleeve (engineering, bushing)",
+      "a surname (notably of U.S. presidents)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.3,
+      "fast": -0.6,
+      "open": -0.3,
+      "heavy": 0.2,
+      "smooth": -0.4,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "grow",
+    "essence": "A dense, branching shrub, and by extension wild rural country.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "but",
+    "senses": [
+      "a conjunction introducing contrast or exception",
+      "a preposition meaning except for",
+      "an adverb meaning only or merely"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.4,
+      "fast": 0.6,
+      "open": -0.4,
+      "heavy": -0.2,
+      "smooth": -0.2,
+      "inward": -0.3,
+      "pleasant": -0.1
+    },
+    "motion": "contrast",
+    "essence": "A word used to mark exception or introduce an opposing idea.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "buy",
+    "senses": [
+      "to obtain by paying money",
+      "to accept as true; believe",
+      "to bribe or secure by payment"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.1,
+      "fast": 0.2,
+      "open": -0.1,
+      "heavy": -0.1,
+      "smooth": 0.4,
+      "inward": -0.3,
+      "pleasant": 0.4
+    },
+    "motion": "exchanges",
+    "essence": "To acquire something in return for payment.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "cable",
+    "senses": [
+      "a thick, strong rope or insulated bundle of wires for power or data",
+      "television service delivered via cables",
+      "to send a telegram (dated)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.7,
+      "fast": 0,
+      "open": -0.4,
+      "heavy": 0.6,
+      "smooth": 0.4,
+      "inward": 0.2,
+      "pleasant": 0
+    },
+    "motion": "connects",
+    "essence": "A thick, strong rope or insulated bundle of wires used to carry force or signals.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "call",
+    "senses": [
+      "summon or contact by speaking or telephoning",
+      "give a name to; label",
+      "an announced decision or judgment",
+      "visit briefly",
+      "demand or request",
+      "a cry or sound to attract attention",
+      "a right to buy a security (call option)",
+      "to invoke a function in computing"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0.5,
+      "open": 0.4,
+      "heavy": -0.2,
+      "smooth": 0.2,
+      "inward": -0.6,
+      "pleasant": 0.1
+    },
+    "motion": "summons",
+    "essence": "To call is to summon, contact, or name by speaking or signaling.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "calm",
+    "senses": [
+      "free from excitement or agitation; peaceful",
+      "to make or become tranquil",
+      "the absence of wind"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.4,
+      "fast": -0.6,
+      "open": 0.3,
+      "heavy": -0.6,
+      "smooth": 0.9,
+      "inward": 0.4,
+      "pleasant": 0.8
+    },
+    "motion": "settles",
+    "essence": "A state of quietness and tranquility.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "can",
+    "senses": [
+      "to be able to; to have permission to",
+      "a metal container",
+      "to preserve food in cans",
+      "to dismiss from a job (slang)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.2,
+      "fast": 0.2,
+      "open": 0.7,
+      "heavy": -0.5,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.6
+    },
+    "motion": "enables",
+    "essence": "An auxiliary indicating ability or permission.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "care",
+    "senses": [
+      "to feel concern or interest; to mind",
+      "to look after or provide for",
+      "serious attention or consideration (noun)",
+      "protective custody or treatment (in care)"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.3,
+      "fast": -0.4,
+      "open": 0.5,
+      "heavy": 0.2,
+      "smooth": 0.5,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "tends",
+    "essence": "To have concern or interest, often leading to attentive action.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "carry",
+    "senses": [
+      "to support and move something from one place to another",
+      "to have on one's person",
+      "to sustain or convey figuratively (a tune, burden, responsibility)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.5,
+      "fast": -0.1,
+      "open": -0.3,
+      "heavy": 0.6,
+      "smooth": 0.2,
+      "inward": -0.1,
+      "pleasant": -0.1
+    },
+    "motion": "bears",
+    "essence": "To hold and transport something.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "catch",
+    "senses": [
+      "seize, capture, or intercept",
+      "contract or become afflicted with (an illness)",
+      "hear or understand",
+      "capture or record (e.g., on film or audio)",
+      "board or make (a vehicle or event)",
+      "a hidden drawback (noun)",
+      "a game or act of throwing and catching (noun)",
+      "a snag or hitch that causes a hang-up"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.6,
+      "fast": 0.8,
+      "open": -0.6,
+      "heavy": 0.2,
+      "smooth": -0.2,
+      "inward": -0.4,
+      "pleasant": 0.1
+    },
+    "motion": "grabs",
+    "essence": "To catch is to seize or intercept something in motion.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "cause",
+    "senses": [
+      "a reason or motive that produces an effect",
+      "a principle or movement one supports",
+      "to make something happen",
+      "a legal case"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0.4,
+      "fast": 0,
+      "open": -0.2,
+      "heavy": 0.2,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.1
+    },
+    "motion": "produces",
+    "essence": "A reason or motive that brings about an effect.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "change",
+    "senses": [
+      "to make or become different",
+      "the act or result of becoming different",
+      "coins of small denomination; money returned after payment",
+      "to exchange one thing for another",
+      "to put on different clothes"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.3,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.2,
+      "smooth": -0.1,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "shift",
+    "essence": "The process by which something becomes different from what it was.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "child",
+    "senses": [
+      "a young human being",
+      "an offspring",
+      "a person with a childish temperament"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.2,
+      "fast": 0.3,
+      "open": 0.3,
+      "heavy": -0.5,
+      "smooth": -0.1,
+      "inward": -0.2,
+      "pleasant": 0.7
+    },
+    "motion": "grows",
+    "essence": "A young person who is not yet an adult.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "choose",
+    "senses": [
+      "to select from options",
+      "to decide or prefer"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.2,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.1,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.4
+    },
+    "motion": "selects",
+    "essence": "To pick one option over others.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "circle",
+    "senses": [
+      "a round plane figure with all points equidistant from the center",
+      "a group of people sharing interests or connections",
+      "to move all the way around; encircle",
+      "a ring-shaped mark or object"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.2,
+      "fast": 0,
+      "open": -0.7,
+      "heavy": 0,
+      "smooth": 1,
+      "inward": 0.1,
+      "pleasant": 0.4
+    },
+    "motion": "encloses",
+    "essence": "A circle is a closed curve with all points at a constant distance from the center.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "city",
+    "senses": [
+      "a large, densely settled urban municipality",
+      "the inhabitants or government of a city",
+      "a city’s central business/financial district (e.g., the City of London)",
+      "the core urban area as distinct from suburbs"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.5,
+      "fast": 0.6,
+      "open": -0.5,
+      "heavy": 0.6,
+      "smooth": -0.2,
+      "inward": -0.6,
+      "pleasant": 0.2
+    },
+    "motion": "grows",
+    "essence": "A city is a large, densely settled and administratively defined urban community.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "clamp",
+    "senses": [
+      "a device that holds or presses things tightly together",
+      "to fasten or press firmly with a clamp",
+      "to impose strict control (clamp down)",
+      "a surgical instrument for gripping tissue"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.8,
+      "fast": 0.3,
+      "open": -0.9,
+      "heavy": 0.3,
+      "smooth": -0.2,
+      "inward": 0.5,
+      "pleasant": -0.1
+    },
+    "motion": "grip",
+    "essence": "A means of holding something tightly in place by pressure.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "clean",
+    "senses": [
+      "free from dirt, marks, or impurities",
+      "remove dirt or impurities from",
+      "morally pure or innocent",
+      "without contraband or illegal substances",
+      "simple, uncluttered in style or design",
+      "free of explicit content",
+      "fair or within the rules in sport"
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": 0,
+      "fast": 0.1,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.7,
+      "inward": -0.4,
+      "pleasant": 0.7
+    },
+    "motion": "clears",
+    "essence": "Clean means free of dirt or impurities.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "clear",
+    "senses": [
+      "easy to see through or understand; free of obstruction or confusion",
+      "to remove obstructions or make free of",
+      "completely or entirely (adverb)",
+      "of weather: free of clouds or precipitation",
+      "of payments: to be processed and settled"
+    ],
+    "feel": {
+      "bright": 0.9,
+      "hard": 0,
+      "fast": 0.4,
+      "open": 0.6,
+      "heavy": -0.6,
+      "smooth": 0.7,
+      "inward": -0.3,
+      "pleasant": 0.7
+    },
+    "motion": "clarify",
+    "essence": "Free from obstruction or confusion, making things easy to see or understand.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "climb",
+    "senses": [
+      "to ascend using limbs or effort",
+      "to rise in level, status, or amount",
+      "a hike or ascent (noun)"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.5,
+      "fast": -0.1,
+      "open": 0.5,
+      "heavy": 0.4,
+      "smooth": -0.3,
+      "inward": -0.4,
+      "pleasant": 0.3
+    },
+    "motion": "ascends",
+    "essence": "To move upward, typically by gripping surfaces with hands and feet.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "cloth",
+    "senses": [
+      "woven or knitted fabric",
+      "a specific piece of fabric for a purpose (e.g., tablecloth)",
+      "the professional garb or status of clergy"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.6,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.2,
+      "smooth": 0.5,
+      "inward": 0,
+      "pleasant": 0.3
+    },
+    "motion": "drapes",
+    "essence": "A material made of woven or knitted fibers used for covering or making garments.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "code",
+    "senses": [
+      "a system of symbols or rules for representing information",
+      "computer program instructions written in a programming language",
+      "a body of laws or standards",
+      "a cipher or method of secret writing",
+      "the genetic code specifying protein synthesis"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.6,
+      "fast": 0.5,
+      "open": -0.3,
+      "heavy": -0.3,
+      "smooth": 0.4,
+      "inward": 0.4,
+      "pleasant": 0.1
+    },
+    "motion": "compile",
+    "essence": "A structured system of symbols and rules that encodes information or instructions.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "cold",
+    "senses": [
+      "low temperature; lack of warmth",
+      "emotionally distant",
+      "a common viral illness",
+      "unfriendly or without enthusiasm"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.6,
+      "fast": -0.6,
+      "open": 0.2,
+      "heavy": 0.3,
+      "smooth": 0.2,
+      "inward": 0.2,
+      "pleasant": -0.5
+    },
+    "motion": "cools",
+    "essence": "The state of low temperature or lack of warmth.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "come",
+    "senses": [
+      "to move or arrive toward the speaker, place, or time",
+      "to happen or occur",
+      "to reach or develop to a state or condition",
+      "to orgasm (informal)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0,
+      "fast": 0.2,
+      "open": -0.1,
+      "heavy": 0,
+      "smooth": 0.3,
+      "inward": 0.7,
+      "pleasant": 0.3
+    },
+    "motion": "approach",
+    "essence": "To move or arrive toward a point in space, time, or condition.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "complex",
+    "senses": [
+      "consisting of many interrelated parts; not simple",
+      "a group of buildings or related facilities",
+      "a psychological constellation of associated ideas and impulses",
+      "in mathematics, involving complex numbers"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": 0.3,
+      "fast": -0.4,
+      "open": -0.2,
+      "heavy": 0.5,
+      "smooth": -0.4,
+      "inward": 0.2,
+      "pleasant": -0.2
+    },
+    "motion": "entangle",
+    "essence": "Having many connected parts that make it hard to understand.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "cone",
+    "senses": [
+      "a solid shape with a circular base tapering to a point",
+      "the seed-bearing structure of conifers",
+      "a traffic warning cone",
+      "an ice-cream cone"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.3,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": -0.3,
+      "smooth": 0.8,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "tapers",
+    "essence": "A shape with a circular base that narrows smoothly to a single point.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "constant",
+    "senses": [
+      "occurring continuously; unchanging",
+      "a fixed value (especially in mathematics)",
+      "faithful; steadfast"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.6,
+      "fast": -0.7,
+      "open": -0.4,
+      "heavy": 0.3,
+      "smooth": 0.7,
+      "inward": 0.2,
+      "pleasant": 0.1
+    },
+    "motion": "holds",
+    "essence": "Something that does not change.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "contain",
+    "senses": [
+      "to hold or have within",
+      "to keep within limits; restrain",
+      "to prevent the spread of something harmful",
+      "to include as a part or element"
+    ],
+    "feel": {
+      "bright": -0.1,
+      "hard": 0.7,
+      "fast": -0.3,
+      "open": -0.8,
+      "heavy": 0.3,
+      "smooth": 0.3,
+      "inward": 0.8,
+      "pleasant": -0.2
+    },
+    "motion": "hold",
+    "essence": "To keep something inside boundaries or within limits.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "cool",
+    "senses": [
+      "moderately cold in temperature",
+      "to make or become less warm",
+      "calm, self-possessed, or unemotional",
+      "fashionable or impressive (slang)",
+      "composure or detachment (noun)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": -0.3,
+      "open": 0.1,
+      "heavy": -0.2,
+      "smooth": 0.5,
+      "inward": 0.2,
+      "pleasant": 0.4
+    },
+    "motion": "chill",
+    "essence": "Moderately low in temperature, often also implying calmness or ease.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "copy",
+    "senses": [
+      "a thing made to be identical to another",
+      "to make a duplicate of something",
+      "text or content for publication or advertising (copy)",
+      "to imitate someone or something"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.3,
+      "fast": 0.6,
+      "open": 0.6,
+      "heavy": -0.2,
+      "smooth": 0.6,
+      "inward": -0.5,
+      "pleasant": 0.2
+    },
+    "motion": "replicate",
+    "essence": "A duplicate of something, or the act of duplicating it.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "count",
+    "senses": [
+      "determine the total number of",
+      "include or regard as; consider",
+      "matter; have importance",
+      "a nobleman of certain European countries (noun)",
+      "a total or tally (noun)",
+      "keep or mark time or rhythm",
+      "compute or tally programmatically"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.2,
+      "fast": -0.2,
+      "open": -0.1,
+      "heavy": -0.1,
+      "smooth": 0.3,
+      "inward": 0.3,
+      "pleasant": 0.1
+    },
+    "motion": "tallies",
+    "essence": "To count is to determine a total by enumerating units.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "country",
+    "senses": [
+      "a nation with its own government and borders",
+      "the people of a nation",
+      "rural areas as opposed to towns and cities"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.4,
+      "fast": -0.6,
+      "open": -0.7,
+      "heavy": 0.6,
+      "smooth": -0.2,
+      "inward": -0.3,
+      "pleasant": 0.1
+    },
+    "motion": "governs",
+    "essence": "A political state with defined territory, population, and government.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "crowd",
+    "senses": [
+      "a large number of people gathered closely together",
+      "the general public or a particular set of people",
+      "to press closely or fill too tightly",
+      "to harass or impede by proximity (as in sports)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.2,
+      "fast": 0.4,
+      "open": -0.7,
+      "heavy": 0.5,
+      "smooth": -0.3,
+      "inward": -0.6,
+      "pleasant": -0.1
+    },
+    "motion": "gathers",
+    "essence": "A crowd is a large number of people gathered closely together.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "cube",
+    "senses": [
+      "a solid with six equal square faces",
+      "the third power of a number",
+      "a small square piece of food or material",
+      "to cut into cubes"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.8,
+      "fast": 0,
+      "open": -0.8,
+      "heavy": 0.2,
+      "smooth": 0.6,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "rest",
+    "essence": "A regular solid figure with six equal square faces meeting at right angles.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "current",
+    "senses": [
+      "a flow of water, air, or electricity",
+      "belonging to the present time"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0.6,
+      "open": 0.3,
+      "heavy": -0.2,
+      "smooth": 0.7,
+      "inward": -0.3,
+      "pleasant": 0.2
+    },
+    "motion": "flows",
+    "essence": "A steady flow in a medium such as water, air, or electricity.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:10:59.027Z"
+  },
+  {
+    "term": "curse",
+    "senses": [
+      "invoke harm or misfortune on someone or something",
+      "utter offensive or profane words",
+      "a malediction or hex (noun)",
+      "a persistent source of trouble or misfortune",
+      "menstruation (slang)"
+    ],
+    "feel": {
+      "bright": -0.7,
+      "hard": 0.2,
+      "fast": 0.4,
+      "open": -0.6,
+      "heavy": 0.3,
+      "smooth": -0.5,
+      "inward": -0.4,
+      "pleasant": -0.9
+    },
+    "motion": "blights",
+    "essence": "To curse is to utter a wish of harm or cast a malign word on someone or something.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "curve",
+    "senses": [
+      "a smoothly bending line or surface",
+      "a plotted line on a graph",
+      "to bend or cause to bend",
+      "a curved pitch in sports",
+      "a grading adjustment based on distribution"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": -0.1,
+      "open": 0.1,
+      "heavy": -0.2,
+      "smooth": 0.8,
+      "inward": -0.1,
+      "pleasant": 0.3
+    },
+    "motion": "bend",
+    "essence": "A line that departs from straightness in a continuous, smooth way.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "cut",
+    "senses": [
+      "to sever or divide with a sharp edge",
+      "to reduce, remove, or stop",
+      "a slice, wound, or opening",
+      "a transition in film editing",
+      "the style or shape of a garment or gemstone",
+      "to skip (class, a meeting)",
+      "to dilute (a substance) with another",
+      "a portion of meat"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.6,
+      "fast": 0.8,
+      "open": -0.1,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": -0.4,
+      "pleasant": -0.5
+    },
+    "motion": "sever",
+    "essence": "To divide or remove by using a sharp edge.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "cycle",
+    "senses": [
+      "a sequence of events that repeats in the same order",
+      "a bicycle or motorcycle (noun)",
+      "to ride a bicycle (verb)",
+      "a program or machine operating sequence",
+      "an economic or biological period",
+      "a unit of oscillation in physics"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": -0.1,
+      "open": 0.1,
+      "heavy": 0,
+      "smooth": 0.6,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "repeats",
+    "essence": "A cycle is a sequence of events that repeats in the same order.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "dark",
+    "senses": [
+      "the absence or near absence of light",
+      "a deep or low shade in color",
+      "gloominess or secrecy; evil or grim character"
+    ],
+    "feel": {
+      "bright": -1,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": 0.2,
+      "inward": 0.7,
+      "pleasant": -0.5
+    },
+    "motion": "envelop",
+    "essence": "A state in which little or no light is present.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "day",
+    "senses": [
+      "a period of 24 hours",
+      "the part of a day with daylight; daytime",
+      "a specific calendar day",
+      "an era or time of life"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0,
+      "fast": -0.2,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.5,
+      "inward": -0.2,
+      "pleasant": 0.4
+    },
+    "motion": "dawns",
+    "essence": "The 24-hour cycle marked by Earth's rotation, especially its lighted portion.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "dead",
+    "senses": [
+      "no longer alive",
+      "inactive or inoperative",
+      "total or complete (dead silence)",
+      "dull or lacking emotion"
+    ],
+    "feel": {
+      "bright": -0.8,
+      "hard": 0.5,
+      "fast": -0.9,
+      "open": -0.8,
+      "heavy": 0.8,
+      "smooth": 0.2,
+      "inward": 0.7,
+      "pleasant": -0.9
+    },
+    "motion": "cease",
+    "essence": "Devoid of life or function.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "death",
+    "senses": [
+      "the cessation of life in an organism",
+      "the state of being dead",
+      "personified Death",
+      "the end or extinction of something (figurative)",
+      "capital punishment"
+    ],
+    "feel": {
+      "bright": -0.8,
+      "hard": 0.6,
+      "fast": 0.6,
+      "open": -0.8,
+      "heavy": 0.9,
+      "smooth": -0.4,
+      "inward": 0.6,
+      "pleasant": -0.9
+    },
+    "motion": "end",
+    "essence": "The end of life and of vital functions.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "debt",
+    "senses": [
+      "money or value owed to another",
+      "a moral or social obligation owed",
+      "a figurative liability (e.g., technical debt)",
+      "national or public borrowing"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.6,
+      "fast": -0.4,
+      "open": -0.7,
+      "heavy": 0.8,
+      "smooth": -0.2,
+      "inward": 0.2,
+      "pleasant": -0.7
+    },
+    "motion": "accrues",
+    "essence": "An obligation to repay what has been borrowed or owed.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "decide",
+    "senses": [
+      "to choose or resolve after consideration",
+      "to determine or settle a question or dispute",
+      "to bring a contest or issue to a resolution",
+      "to choose something (decide on)"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": 0.5,
+      "fast": 0.4,
+      "open": -0.6,
+      "heavy": 0.1,
+      "smooth": 0.5,
+      "inward": 0.6,
+      "pleasant": 0.2
+    },
+    "motion": "resolves",
+    "essence": "The act of choosing one option and settling on it.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "disc",
+    "senses": [
+      "a thin, flat circular object or shape",
+      "an optical storage medium such as a CD or DVD",
+      "an anatomical structure such as an intervertebral disc"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.6,
+      "fast": 0,
+      "open": -0.6,
+      "heavy": -0.5,
+      "smooth": 0.7,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "spin",
+    "essence": "A flat circular form or object.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "divide",
+    "senses": [
+      "separate or split into parts",
+      "perform the arithmetic operation of division",
+      "share out among people",
+      "cause disagreement or disunity",
+      "a ridge or boundary separating drainage basins (noun)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.1,
+      "fast": 0.2,
+      "open": -0.6,
+      "heavy": 0.2,
+      "smooth": -0.4,
+      "inward": -0.3,
+      "pleasant": -0.5
+    },
+    "motion": "splits",
+    "essence": "To divide is to separate something into parts.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "door",
+    "senses": [
+      "a movable barrier used to open and close an entrance",
+      "the doorway or entrance itself",
+      "an opportunity or means of access (figurative)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.8,
+      "fast": 0.2,
+      "open": 0,
+      "heavy": 0.5,
+      "smooth": 0.4,
+      "inward": 0.6,
+      "pleasant": 0.1
+    },
+    "motion": "swing",
+    "essence": "A hinged or sliding panel that opens and closes a passage.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "doubt",
+    "senses": [
+      "uncertainty or lack of conviction about something",
+      "to feel unsure of or question the truth of",
+      "to be undecided or hesitate to believe",
+      "to cause uncertainty"
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": -0.3,
+      "fast": -0.6,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": -0.4,
+      "inward": 0.7,
+      "pleasant": -0.5
+    },
+    "motion": "waver",
+    "essence": "A state of uncertainty about truth, belief, or decision.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "dream",
+    "senses": [
+      "the succession of images, ideas, and emotions that occur in sleep",
+      "an aspiration or cherished goal",
+      "a person or thing that is ideal or wonderful",
+      "to daydream or imagine"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.7,
+      "fast": -0.4,
+      "open": 0.7,
+      "heavy": -0.7,
+      "smooth": 0.3,
+      "inward": 0.9,
+      "pleasant": 0.2
+    },
+    "motion": "drift",
+    "essence": "The involuntary flow of images and feelings that arises during sleep.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "drift",
+    "senses": [
+      "to be carried slowly by a current of air or water",
+      "a gradual change or tendency",
+      "a mass of material carried and left by wind or water (e.g., snowdrift)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.6,
+      "fast": -0.8,
+      "open": 0.6,
+      "heavy": -0.6,
+      "smooth": 0.8,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "drift",
+    "essence": "To move gently along under the influence of an external current.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "dry",
+    "senses": [
+      "free from moisture",
+      "not sweet (as in wine), or understated in humor",
+      "lacking interest or warmth; dull",
+      "arid in climate or conditions",
+      "to make or become dry"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.3,
+      "fast": -0.5,
+      "open": 0.1,
+      "heavy": -0.3,
+      "smooth": -0.2,
+      "inward": -0.1,
+      "pleasant": -0.4
+    },
+    "motion": "evaporate",
+    "essence": "Lacking or free from moisture.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "dust",
+    "senses": [
+      "fine dry particles that drift in the air and settle on surfaces",
+      "to remove dust from something",
+      "to sprinkle with a fine powder",
+      "tiny particles in space (cosmic dust)",
+      "slang: to defeat or finish off decisively"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.7,
+      "fast": -0.4,
+      "open": 0.1,
+      "heavy": -0.8,
+      "smooth": -0.3,
+      "inward": -0.4,
+      "pleasant": -0.6
+    },
+    "motion": "settle",
+    "essence": "Fine, lightweight particles that drift and accumulate.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "duty",
+    "senses": [
+      "a moral or legal obligation",
+      "a task or role that one is required to perform",
+      "a tax on imports, exports, or goods"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.8,
+      "fast": -0.5,
+      "open": -0.7,
+      "heavy": 0.7,
+      "smooth": 0.2,
+      "inward": 0.4,
+      "pleasant": -0.3
+    },
+    "motion": "bind",
+    "essence": "An obligation that compels a person to act in a certain way.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "each",
+    "senses": [
+      "every individual one of a group considered separately",
+      "as an adverb meaning per item"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.3,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": -0.4,
+      "smooth": 0.5,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "allocates",
+    "essence": "Referring to members of a group one by one.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "ear",
+    "senses": [
+      "the organ of hearing and balance",
+      "the seed-bearing head of a cereal plant (ear of corn)",
+      "a natural ability to discern sounds or music"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": -0.4,
+      "fast": 0.4,
+      "open": 0.6,
+      "heavy": -0.5,
+      "smooth": 0.3,
+      "inward": 0.4,
+      "pleasant": 0.2
+    },
+    "motion": "listen",
+    "essence": "The sensory organ that detects sound and aids balance.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "early",
+    "senses": [
+      "before the usual or expected time",
+      "near the beginning of a period, process, or sequence",
+      "done in advance"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0,
+      "fast": 0.3,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "precede",
+    "essence": "Happening sooner than is usual or expected.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "effort",
+    "senses": [
+      "physical or mental exertion",
+      "an attempt to achieve something",
+      "the force applied in mechanics"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.6,
+      "fast": -0.2,
+      "open": -0.3,
+      "heavy": 0.5,
+      "smooth": -0.3,
+      "inward": 0.3,
+      "pleasant": -0.1
+    },
+    "motion": "strive",
+    "essence": "The exertion applied to accomplish a task or goal.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "eight",
+    "senses": [
+      "the cardinal number 8",
+      "the figure-eight shape",
+      "a group or set of eight",
+      "the time indicated as eight o'clock"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.7,
+      "fast": 0.4,
+      "open": -0.6,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": 0.1,
+      "pleasant": 0
+    },
+    "motion": "count",
+    "essence": "The number equal to seven plus one.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "elder",
+    "senses": [
+      "a person who is older or of higher rank",
+      "older of two or more",
+      "a leader or respected senior in a community or church",
+      "a shrub or tree of the genus Sambucus (elder)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": -0.5,
+      "open": -0.2,
+      "heavy": 0.3,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "endure",
+    "essence": "A person older than another or of senior standing.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "enemy",
+    "senses": [
+      "a person or group that is actively hostile or opposed",
+      "a harmful or opposing force",
+      "an opposing military force"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": 0.6,
+      "fast": -0.1,
+      "open": -0.5,
+      "heavy": 0.7,
+      "smooth": -0.6,
+      "inward": -0.3,
+      "pleasant": -0.9
+    },
+    "motion": "opposes",
+    "essence": "Someone or something that is actively hostile to you.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "enjoy",
+    "senses": [
+      "take delight or pleasure in",
+      "possess or benefit from"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.4,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": 0.7,
+      "pleasant": 1
+    },
+    "motion": "savors",
+    "essence": "To enjoy is to take pleasure in something.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "enter",
+    "senses": [
+      "to go into a place or area",
+      "to join or enroll in something",
+      "to input data into a system",
+      "to make an appearance onstage or in a scene"
+    ],
+    "feel": {
+      "bright": -0.1,
+      "hard": 0,
+      "fast": 0.3,
+      "open": -0.5,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": 0.9,
+      "pleasant": 0.1
+    },
+    "motion": "cross",
+    "essence": "To go or be put inside a place, group, or system.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "envy",
+    "senses": [
+      "a resentful desire for what someone else has",
+      "to feel envy of"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": 0.1,
+      "fast": -0.4,
+      "open": -0.5,
+      "heavy": 0.5,
+      "smooth": -0.5,
+      "inward": 0.7,
+      "pleasant": -0.7
+    },
+    "motion": "covets",
+    "essence": "A painful desire for another’s advantages or possessions.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "every",
+    "senses": [
+      "each of all the individual members of a group considered together",
+      "used for emphasis (as in every bit)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.5,
+      "heavy": 0.1,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0
+    },
+    "motion": "span",
+    "essence": "Refers to all members of a set taken individually.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "faith",
+    "senses": [
+      "strong trust or belief without requiring proof, especially religious",
+      "a religion or belief system",
+      "fidelity or loyalty",
+      "confidence in someone or something"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.6,
+      "fast": -0.6,
+      "open": 0.2,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": 0.8,
+      "pleasant": 0.7
+    },
+    "motion": "trusts",
+    "essence": "Confident belief or trust, often in religious terms, without needing proof.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "fast",
+    "senses": [
+      "moving or happening quickly",
+      "firmly fixed or held (hold fast)",
+      "to abstain from food, especially for religious reasons",
+      "uninhibited or wild in lifestyle (old-fashioned)"
+    ],
+    "feel": {
+      "bright": -0.1,
+      "hard": 0,
+      "fast": 1,
+      "open": 0.4,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": -0.5,
+      "pleasant": 0.4
+    },
+    "motion": "speed",
+    "essence": "Moving or occurring with great speed.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "fate",
+    "senses": [
+      "a predetermined course of events beyond a person's control; destiny",
+      "doom or inevitable outcome",
+      "the Fates as mythological personifications",
+      "one's allotted fortune or lot"
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": 0.7,
+      "fast": -0.6,
+      "open": -0.8,
+      "heavy": 0.6,
+      "smooth": 0.3,
+      "inward": -0.5,
+      "pleasant": -0.3
+    },
+    "motion": "unfolds",
+    "essence": "The inevitable destiny or outcome that is seen as fixed beyond personal control.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "father",
+    "senses": [
+      "a male parent",
+      "a priest or clergyman (title)",
+      "an originator or founder",
+      "to beget or sire",
+      "God the Father (religious title)"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.4,
+      "fast": -0.5,
+      "open": 0,
+      "heavy": 0.5,
+      "smooth": 0.3,
+      "inward": 0.3,
+      "pleasant": 0.5
+    },
+    "motion": "guide",
+    "essence": "A male parent and, by extension, a protector or originator.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "feel",
+    "senses": [
+      "to perceive by touch or physical sensation",
+      "to experience an emotion or internal state",
+      "to have an opinion or impression",
+      "to give a particular tactile sensation"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0,
+      "fast": 0.3,
+      "open": -0.4,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0.6,
+      "pleasant": 0.1
+    },
+    "motion": "sense",
+    "essence": "To perceive or experience through touch or inner sensation.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "fight",
+    "senses": [
+      "a violent struggle between opponents",
+      "an argument or heated dispute",
+      "a determined effort or struggle toward a goal",
+      "a bout in combat sports"
+    ],
+    "feel": {
+      "bright": -0.3,
+      "hard": 0.7,
+      "fast": 0.7,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": -0.7,
+      "inward": -0.6,
+      "pleasant": -0.7
+    },
+    "motion": "clash",
+    "essence": "A struggle in which opposing forces attempt to overcome each other.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "five",
+    "senses": [
+      "the number 5",
+      "a group or set of five",
+      "the symbol representing the number (5, V)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.6,
+      "fast": -0.6,
+      "open": -0.4,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0.3,
+      "pleasant": 0.1
+    },
+    "motion": "none",
+    "essence": "The integer one greater than four and one less than six.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "flat",
+    "senses": [
+      "level and even in surface, without curves or raised areas",
+      "an apartment (especially in British English)",
+      "lacking liveliness or interest; dull",
+      "deflated or without carbonation",
+      "a musical note lowered by a semitone",
+      "fixed and uniform (as in a flat rate)",
+      "a tire with no air",
+      "completely; outright (adverb)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": -0.7,
+      "open": 0.4,
+      "heavy": 0,
+      "smooth": 0.9,
+      "inward": -0.3,
+      "pleasant": 0
+    },
+    "motion": "flatten",
+    "essence": "Even and level, without raised features.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "focus",
+    "senses": [
+      "concentrated attention or the center of interest",
+      "the point at which an image is sharp (optics), or the act of adjusting to clarity",
+      "a central or most important point (figurative)",
+      "to concentrate effort or energy"
+    ],
+    "feel": {
+      "bright": 0.9,
+      "hard": 0.5,
+      "fast": 0.2,
+      "open": -0.6,
+      "heavy": 0.1,
+      "smooth": 0.4,
+      "inward": 0.7,
+      "pleasant": 0.4
+    },
+    "motion": "narrow",
+    "essence": "Concentration of attention or clarity at a central point.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "fraction",
+    "senses": [
+      "a numerical quantity that is not a whole number",
+      "a small part of something",
+      "a component separated by fractionation"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.5,
+      "fast": 0,
+      "open": -0.4,
+      "heavy": -0.4,
+      "smooth": 0.4,
+      "inward": 0.2,
+      "pleasant": 0.2
+    },
+    "motion": "divides",
+    "essence": "A way of expressing a part of a whole using a numerator over a denominator.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "friend",
+    "senses": [
+      "a person with whom one has a bond of mutual affection and support",
+      "to add someone as a contact on a social platform"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.2,
+      "fast": -0.3,
+      "open": 0.7,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": -0.5,
+      "pleasant": 0.9
+    },
+    "motion": "support",
+    "essence": "A person with whom one shares mutual affection, trust, and help.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "function",
+    "senses": [
+      "the purpose or role of something",
+      "to work or operate as intended",
+      "a mathematical relation mapping inputs to outputs",
+      "a formal social event"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.4,
+      "fast": -0.2,
+      "open": -0.5,
+      "heavy": 0.1,
+      "smooth": 0.4,
+      "inward": 0.2,
+      "pleasant": 0.1
+    },
+    "motion": "operate",
+    "essence": "The purpose something serves or the way it works.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "gather",
+    "senses": [
+      "to collect things or people into one place or group",
+      "to assemble or come together",
+      "to infer or conclude from evidence",
+      "to draw together in folds or pleats",
+      "of clouds or darkness: to accumulate",
+      "to gain speed, strength, or momentum",
+      "to compose oneself"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.2,
+      "fast": -0.4,
+      "open": -0.5,
+      "heavy": 0.1,
+      "smooth": 0.3,
+      "inward": 0.6,
+      "pleasant": 0.3
+    },
+    "motion": "collect",
+    "essence": "To bring separate things together into a single group or place.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "glad",
+    "senses": [
+      "feeling pleasure or happiness",
+      "willing or eager (as in glad to help)"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": -0.1,
+      "fast": 0.3,
+      "open": 0.6,
+      "heavy": -0.7,
+      "smooth": 0.5,
+      "inward": -0.4,
+      "pleasant": 1
+    },
+    "motion": "lift",
+    "essence": "Feeling happy or pleased.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "god",
+    "senses": [
+      "a deity or supernatural being worshiped as having power over the world",
+      "the supreme being in monotheistic traditions",
+      "an object of ardent admiration or devotion"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.4,
+      "fast": -0.6,
+      "open": 0.3,
+      "heavy": 0.6,
+      "smooth": 0,
+      "inward": 0.3,
+      "pleasant": 0.2
+    },
+    "motion": "none",
+    "essence": "A supernatural being regarded with reverence and believed to wield great power.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "guest",
+    "senses": [
+      "a person who is invited to visit, stay, or participate",
+      "a customer at a hotel or restaurant",
+      "a temporary performer or participant on a show or event",
+      "a non-privileged user or account in computing"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.2,
+      "fast": 0.2,
+      "open": 0.6,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": -0.6,
+      "pleasant": 0.6
+    },
+    "motion": "visit",
+    "essence": "A person received by others for hospitality or participation.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "hate",
+    "senses": [
+      "intense dislike or hostility",
+      "to feel strong aversion toward",
+      "something detested"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": 0.6,
+      "fast": 0.3,
+      "open": -0.6,
+      "heavy": 0.7,
+      "smooth": -0.6,
+      "inward": 0.6,
+      "pleasant": -1
+    },
+    "motion": "seethe",
+    "essence": "A powerful feeling of aversion toward someone or something.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "hell",
+    "senses": [
+      "a realm or state of punitive suffering after death",
+      "extreme misery or torment in life (figurative)",
+      "an exclamation or intensifier",
+      "a chaotic or disastrous situation"
+    ],
+    "feel": {
+      "bright": -0.9,
+      "hard": 0.8,
+      "fast": -0.7,
+      "open": -0.8,
+      "heavy": 0.9,
+      "smooth": -0.8,
+      "inward": 0.3,
+      "pleasant": -1
+    },
+    "motion": "burn",
+    "essence": "A state or place of extreme, punitive suffering.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "i",
+    "senses": [
+      "first-person singular pronoun referring to the speaker or writer",
+      "the imaginary unit in mathematics (√−1)",
+      "the letter i as a character"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.1,
+      "inward": 1,
+      "pleasant": 0.2
+    },
+    "motion": "none",
+    "essence": "“I” is the first-person singular pronoun referring to the speaker or writer.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:13:40.905Z"
+  },
+  {
+    "term": "if",
+    "senses": [
+      "introduces a condition on which something depends",
+      "whether",
+      "a conditional construct in programming and logic"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.4,
+      "fast": 0.3,
+      "open": 0.7,
+      "heavy": -0.2,
+      "smooth": 0.4,
+      "inward": 0.2,
+      "pleasant": 0.1
+    },
+    "motion": "branch",
+    "essence": "A word that marks a condition for an outcome.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "kind",
+    "senses": [
+      "having a benevolent, considerate nature (adjective)",
+      "a type or class of things (noun)"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": -0.4,
+      "fast": -0.2,
+      "open": 0.6,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": -0.5,
+      "pleasant": 0.8
+    },
+    "motion": "nurtures",
+    "essence": "Having a gentle, benevolent disposition toward others.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "knot",
+    "senses": [
+      "an interlaced fastening made in rope or cord",
+      "a hard, cross-grained spot in wood",
+      "a tangle or snarl",
+      "a unit of speed equal to one nautical mile per hour",
+      "a tight, tense feeling in muscles",
+      "marriage, as in 'tie the knot'"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.7,
+      "fast": 0.3,
+      "open": -0.8,
+      "heavy": 0.2,
+      "smooth": -0.6,
+      "inward": 0.4,
+      "pleasant": -0.1
+    },
+    "motion": "tighten",
+    "essence": "A tied interlacing that binds material onto itself.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "language",
+    "senses": [
+      "a system of words and grammar used for human communication",
+      "a style or manner of expression",
+      "a formal system for programming computers"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": -0.2,
+      "fast": 0.2,
+      "open": 0.7,
+      "heavy": -0.4,
+      "smooth": 0.6,
+      "inward": -0.1,
+      "pleasant": 0.3
+    },
+    "motion": "communicates",
+    "essence": "A structured system of symbols and rules for expressing and understanding meaning.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:15:15.616Z"
+  },
+  {
+    "term": "loop",
+    "senses": [
+      "a curve or shape that bends around and crosses or meets itself",
+      "a sequence that repeats cyclically (especially in computing)",
+      "a ring-shaped or folded part for holding or passing something through",
+      "a railroad or road turning that brings a route back on itself",
+      "a short audio or video segment repeated continuously"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.4,
+      "fast": 0,
+      "open": -0.8,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": 0.5,
+      "pleasant": -0.1
+    },
+    "motion": "cycle",
+    "essence": "A path or shape that turns back to meet itself, often implying repetition.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "maybe",
+    "senses": [
+      "possibly; perhaps",
+      "a possibility rather than a certainty (noun)"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": -0.6,
+      "fast": -0.3,
+      "open": 0.5,
+      "heavy": -0.5,
+      "smooth": -0.2,
+      "inward": 0.3,
+      "pleasant": -0.1
+    },
+    "motion": "hedge",
+    "essence": "An expression of uncertainty meaning possibly but not certainly.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "mean",
+    "senses": [
+      "to intend or have as a purpose",
+      "to signify or convey a particular idea",
+      "to result in or have as a consequence",
+      "unkind or nasty (adjective)",
+      "the mathematical average (noun/adj)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.3,
+      "fast": 0.3,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0.6,
+      "pleasant": 0
+    },
+    "motion": "intend",
+    "essence": "To have in mind as one's purpose or to signify something.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:17:13.048Z"
+  },
+  {
+    "term": "much",
+    "senses": [
+      "a large amount or quantity",
+      "to a great extent or degree",
+      "approximately or nearly (as in much the same)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": 0.5,
+      "smooth": 0,
+      "inward": 0,
+      "pleasant": 0.2
+    },
+    "motion": "accumulate",
+    "essence": "A large quantity or degree of something.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "multiply",
+    "senses": [
+      "to increase in number or amount",
+      "to perform the arithmetic operation of multiplication",
+      "to reproduce or propagate"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.2,
+      "fast": 0.4,
+      "open": 0.7,
+      "heavy": 0.4,
+      "smooth": 0.3,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "expand",
+    "essence": "To increase a quantity or count, whether by arithmetic combination or by reproduction.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "name",
+    "senses": [
+      "a word or words by which a person or thing is known",
+      "to identify or designate by a name",
+      "reputation or standing (as in make a name)",
+      "to nominate or appoint"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.2,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": -0.2,
+      "smooth": 0.3,
+      "inward": -0.7,
+      "pleasant": 0.2
+    },
+    "motion": "fix",
+    "essence": "A label that identifies a person, place, or thing.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "prove",
+    "senses": [
+      "to establish the truth or validity of something by evidence or reasoning",
+      "to test or try out",
+      "to allow dough to rise (baking)",
+      "to turn out or be found to be (prove to be)"
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": 0.7,
+      "fast": -0.2,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.3
+    },
+    "motion": "establish",
+    "essence": "To show convincingly that something is true or valid.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "rhythm",
+    "senses": [
+      "a repeated, patterned arrangement of beats or accents in time",
+      "regular recurrence in movement or processes (e.g., biological rhythms)",
+      "cadence or flow in speech or writing"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.3,
+      "fast": 0,
+      "open": 0.3,
+      "heavy": -0.1,
+      "smooth": 0.8,
+      "inward": -0.3,
+      "pleasant": 0.6
+    },
+    "motion": "pulse",
+    "essence": "A recurring pattern in time that organizes movement or sound.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "say",
+    "senses": [
+      "to express in words",
+      "to state, claim, or declare",
+      "to suppose for the sake of argument",
+      "one’s opportunity to express a view (have a say)"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": -0.1,
+      "fast": 0.6,
+      "open": 0.8,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": -0.9,
+      "pleasant": 0.2
+    },
+    "motion": "speak",
+    "essence": "To express something in spoken words.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  },
+  {
+    "term": "very",
+    "senses": [
+      "an adverb that intensifies degree",
+      "as an adjective: exact or precise (the very same)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.2,
+      "fast": 0.7,
+      "open": 0.3,
+      "heavy": -0.2,
+      "smooth": 0.4,
+      "inward": -0.4,
+      "pleasant": 0
+    },
+    "motion": "amplify",
+    "essence": "An intensifier that increases the degree of what it modifies.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:22:31.252Z"
+  }
+]

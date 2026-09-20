@@ -1,0 +1,481 @@
+[
+  {
+    "term": "a",
+    "senses": [
+      "An indefinite article marking a single, nonspecific count noun.",
+      "The letter A.",
+      "A grade denoting excellence.",
+      "The musical note A.",
+      "Blood type A."
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.1
+    },
+    "motion": "introduces",
+    "essence": "A function word that introduces a single, nonspecific thing.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "above",
+    "senses": [
+      "At a higher level or position than.",
+      "Earlier in text or speech.",
+      "Superior in rank or quality.",
+      "In or into the sky or heaven (poetic/idiomatic)."
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.8,
+      "heavy": -0.6,
+      "smooth": 0.3,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "rises",
+    "essence": "A relation indicating something is at a higher place or level.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "add",
+    "senses": [
+      "To combine quantities or include something extra.",
+      "To say further in speech or writing.",
+      "To increase by a specified amount."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.1,
+      "fast": 0.4,
+      "open": 0.4,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "accumulates",
+    "essence": "An act of increasing a total or including something more.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "after",
+    "senses": [
+      "Later than in time; following.",
+      "In pursuit of.",
+      "According to the style of.",
+      "Named for or concerning."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "follows",
+    "essence": "A relation that places one event or thing later than another.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "alive",
+    "senses": [
+      "Living; not dead.",
+      "Active or in operation.",
+      "Alert, animated, or sensitive to.",
+      "Filled with activity."
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": -0.2,
+      "fast": 0,
+      "open": 0.2,
+      "heavy": -0.2,
+      "smooth": -0.1,
+      "inward": -0.1,
+      "pleasant": 0.8
+    },
+    "motion": "grows",
+    "essence": "The state of being living and active.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "all",
+    "senses": [
+      "The whole of; every one of.",
+      "Completely or entirely.",
+      "The greatest possible amount."
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.1,
+      "fast": 0,
+      "open": 0.7,
+      "heavy": 0.2,
+      "smooth": 0.2,
+      "inward": -0.2,
+      "pleasant": 0.2
+    },
+    "motion": "encompasses",
+    "essence": "A word meaning the entire amount or every member without exception.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "also",
+    "senses": [
+      "In addition; too.",
+      "Similarly or likewise."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.5,
+      "heavy": -0.4,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0.2
+    },
+    "motion": "adds",
+    "essence": "A connector that introduces an additional item or idea.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "ancestor",
+    "senses": [
+      "A person from whom one is descended.",
+      "A forerunner of a type, species, or technology."
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0.1,
+      "fast": -0.5,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": -0.2,
+      "inward": 0.6,
+      "pleasant": 0.2
+    },
+    "motion": "precedes",
+    "essence": "A forebear in a lineage or an earlier form that gave rise to later ones.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "angle",
+    "senses": [
+      "The figure formed by two lines or planes meeting.",
+      "A viewpoint or approach to a topic.",
+      "To fish with a hook and line.",
+      "To position or seek advantage.",
+      "A corner or projecting point."
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.6,
+      "fast": 0,
+      "open": -0.4,
+      "heavy": 0,
+      "smooth": -0.5,
+      "inward": -0.1,
+      "pleasant": 0.1
+    },
+    "motion": "rotates",
+    "essence": "A measure or turn where lines or directions meet, or a way of looking at something.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "animal",
+    "senses": [
+      "A living organism of the kingdom Animalia.",
+      "A person characterized by base or vigorous traits (figurative).",
+      "A thing of a particular type (“a different animal”)."
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": -0.1,
+      "fast": 0.3,
+      "open": 0.2,
+      "heavy": 0.3,
+      "smooth": -0.1,
+      "inward": -0.4,
+      "pleasant": 0.3
+    },
+    "motion": "moves",
+    "essence": "A living creature that feeds, grows, and moves by its own power.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "answer",
+    "senses": [
+      "A reply that addresses a question.",
+      "A solution that resolves a problem.",
+      "To respond to someone.",
+      "To be satisfactory for a need or purpose.",
+      "In law, a defendant’s written response."
+    ],
+    "feel": {
+      "bright": 0.8,
+      "hard": 0.3,
+      "fast": 0.2,
+      "open": -0.4,
+      "heavy": -0.3,
+      "smooth": 0.5,
+      "inward": -0.6,
+      "pleasant": 0.7
+    },
+    "motion": "resolves",
+    "essence": "Something that addresses and settles a question or problem.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "arm",
+    "senses": [
+      "The upper limb of a human or similar appendage.",
+      "A projecting part of an object or chair.",
+      "A branch of an organization.",
+      "To equip with weapons (verb)."
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.3,
+      "fast": 0.2,
+      "open": -0.1,
+      "heavy": 0.2,
+      "smooth": -0.2,
+      "inward": -0.2,
+      "pleasant": 0.1
+    },
+    "motion": "reaches",
+    "essence": "A limb or projecting part used to extend, hold, or act.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "art",
+    "senses": [
+      "Creative human expression in visual, auditory, or performative forms.",
+      "Works produced by such expression.",
+      "Skill or craft acquired by practice.",
+      "The academic disciplines of the arts and humanities."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.2,
+      "fast": -0.2,
+      "open": 0.6,
+      "heavy": -0.1,
+      "smooth": 0,
+      "inward": -0.5,
+      "pleasant": 0.6
+    },
+    "motion": "expresses",
+    "essence": "The practice and products of making meaning through creative forms.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "baby",
+    "senses": [
+      "A very young child or infant.",
+      "The young of an animal.",
+      "A term of endearment for a loved one.",
+      "To coddle or treat indulgently (verb).",
+      "Something small or specially sized."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.6,
+      "fast": -0.4,
+      "open": 0.4,
+      "heavy": 0.2,
+      "smooth": 0.4,
+      "inward": -0.3,
+      "pleasant": 0.8
+    },
+    "motion": "grows",
+    "essence": "A very young human (or animal) at the earliest stage of life.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "bag",
+    "senses": [
+      "A flexible container with an opening.",
+      "To put into a bag; to capture or secure.",
+      "A woman (derogatory, “old bag”).",
+      "Loose skin under the eyes (bags).",
+      "To abandon or give up on something (informal)."
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": -0.6,
+      "fast": 0,
+      "open": -0.7,
+      "heavy": 0,
+      "smooth": -0.2,
+      "inward": 0.5,
+      "pleasant": 0.1
+    },
+    "motion": "contains",
+    "essence": "A soft container used to hold or carry things.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "bark",
+    "senses": [
+      "The sharp, explosive sound a dog makes.",
+      "The tough outer covering of a tree.",
+      "To speak abruptly or harshly.",
+      "A sailing ship (barque), variant spelling."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0.7,
+      "open": 0.1,
+      "heavy": -0.5,
+      "smooth": -0.6,
+      "inward": -0.6,
+      "pleasant": -0.4
+    },
+    "motion": "bursts",
+    "essence": "A sudden, sharp vocalization, especially by a dog.",
+    "domain": "nature",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "be",
+    "senses": [
+      "To exist or have reality.",
+      "To occur or take place.",
+      "To occupy a role, identity, or state.",
+      "Auxiliary verb forming tenses and passives."
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.1,
+      "heavy": 0,
+      "smooth": 0.2,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "exists",
+    "essence": "The basic verb that marks existence, identity, or state.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "beat",
+    "senses": [
+      "To strike repeatedly or rhythmically.",
+      "A rhythm or regular pulse in music.",
+      "To defeat or surpass.",
+      "Exhausted or worn out (informal).",
+      "A regular route or area of duty."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.4,
+      "fast": 0.6,
+      "open": -0.1,
+      "heavy": 0,
+      "smooth": -0.2,
+      "inward": -0.4,
+      "pleasant": 0.1
+    },
+    "motion": "pulses",
+    "essence": "A repeated strike or rhythmic pulse, or the act of overcoming.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "believe",
+    "senses": [
+      "To accept something as true.",
+      "To have confidence in or trust.",
+      "To have religious faith.",
+      "To think or suppose."
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": 0.1,
+      "fast": -0.4,
+      "open": -0.3,
+      "heavy": 0.3,
+      "smooth": 0.1,
+      "inward": 0.9,
+      "pleasant": 0.2
+    },
+    "motion": "holds",
+    "essence": "To accept or trust a claim as true, often inwardly and without proof.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  },
+  {
+    "term": "bend",
+    "senses": [
+      "To curve or cause to curve by applying force.",
+      "To incline or direct something (e.g., attention or effort).",
+      "A curved section in a path or object.",
+      "To modify a rule or truth (figurative)."
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.3,
+      "fast": -0.1,
+      "open": -0.2,
+      "heavy": 0,
+      "smooth": 0.5,
+      "inward": 0.1,
+      "pleasant": 0.1
+    },
+    "motion": "curves",
+    "essence": "A yielding change of direction or shape into a curve.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:09:05.291Z"
+  }
+]

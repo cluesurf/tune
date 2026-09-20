@@ -1,0 +1,713 @@
+object            being     named                   verb             52    35
+be                being     named                   verb             45    30
+essence           being     named                   noun              1     1
+actual            being     named                   adjective         0     0
+necessary         being     named                   adjective         0     0
+entity            being     named                                     0     0
+control           cause     named                   verb             46    31
+allow             cause     named                   verb             21    10
+purpose           cause     named                   noun              6     6
+depend            cause     named                   verb              6     4
+origin            cause     named                   noun              4     3
+trigger           cause     named                   verb              3     3
+prevent           cause     named                   verb             10     1
+affect            cause     named                   verb              3     2
+produce           cause     named                   verb              3     1
+let               cause     named                   verb              6     0
+become            cause     named                   verb              5     0
+transform         cause     named                   verb              2     0
+influence         cause     named                   verb              1     0
+walk              core      named                   verb             36    20
+feature           core      named                   verb              6     6
+will              core      named                   verb              7     4
+west              core      named                   noun              4     3
+action            core      named                                     0     0
+touching          core      named                                     0     0
+not touching      core      named                                     0     0
+x                 core      named                                     0     0
+y                 core      named                                     0     0
+z                 core      named                                     0     0
+world             cosmos    named                   noun             14    10
+form              form      named                   verb            136   115
+shape             form      named                   verb            122   103
+system            form      named                   noun             21    20
+structure         form      named                   noun             18    17
+class             form      named                   noun             18    14
+scale             form      named                   verb              8     8
+category          form      named                   noun              1     1
+proportion        form      named                   noun              1     0
+symmetry          form      named                   noun              0     0
+not               function  role                    adverb         1077     3
+again             function  role                    adverb          258    47
+away              function  role                    adverb          119    80
+around            function  role                    preposition      46    34
+apart             function  role                    adverb           37    33
+to                function  role                    conjunction      85    16
+much              function  role                    determiner       29    24
+from              function  role                    preposition      40    18
+for               function  role                    preposition      41    17
+through           function  role                    preposition      23    19
+many              function  role                    adjective        80     4
+with              function  role                    preposition      37    14
+of                function  role                    preposition      45     6
+without           function  role                    preposition      50     4
+little            function  role                    adjective        53     0
+at                function  role                    preposition      11     9
+across            function  role                    preposition      15     5
+into              function  role                    preposition      11     6
+about             function  role                    preposition       8     6
+still             function  role                    adjective        11     5
+by                function  role                    preposition      18     3
+shoot             function  role                    interjection     10     5
+along             function  role                    preposition       5     5
+too               function  role                    adverb           23     0
+very              function  role                    adverb           21     0
+often             function  role                    adverb            6     3
+than              function  role                    preposition      10     2
+within            function  role                    preposition       8     2
+never             function  role                    adverb           13     0
+who               function  role                    noun             12     0
+always            function  role                    adverb            7     1
+as                function  role                    preposition       5     1
+even              function  role                    conjunction       9     0
+both              function  role                    determiner        4     1
+just              function  role                    adverb            3     1
+upon              function  role                    preposition       3     1
+every             function  role                    determiner        6     0
+if                function  role                    conjunction       2     1
+how               function  role                    adverb            1     1
+okay              function  role                    interjection      1     1
+onto              function  role                    preposition       1     1
+till              function  role                    preposition       1     1
+why               function  role                    adverb            1     1
+a                 function  role                    determiner        4     0
+non               function  role                    adverb            4     0
+and               function  role                    conjunction       3     0
+few               function  role                    determiner        3     0
+once              function  role                    adverb            3     0
+almost            function  role                    adverb            2     0
+each              function  role                    determiner        1     0
+least             function  role                    determiner        1     0
+or                function  role                    conjunction       1     0
+rare              function  role                    adjective         1     0
+some              function  role                    determiner        1     0
+these             function  role                    determiner        1     0
+tomorrow          function  role                    adverb            1     0
+what              function  role                    determiner        1     0
+while             function  role                    conjunction       1     0
+yet               function  role                    conjunction       1     0
+abroad            function  role                    adverb            0     0
+ago               function  role                    adverb            0     0
+ah                function  role                    interjection      0     0
+aha               function  role                    interjection      0     0
+alas              function  role                    interjection      0     0
+already           function  role                    adverb            0     0
+also              function  role                    adverb            0     0
+although          function  role                    conjunction       0     0
+another           function  role                    determiner        0     0
+because           function  role                    conjunction       0     0
+bravo             function  role                    interjection      0     0
+but               function  role                    conjunction       0     0
+during            function  role                    preposition       0     0
+either            function  role                    conjunction       0     0
+ever              function  role                    adverb            0     0
+except            function  role                    preposition       0     0
+hey               function  role                    interjection      0     0
+hmm               function  role                    interjection      0     0
+hooray            function  role                    interjection      0     0
+huh               function  role                    interjection      0     0
+maybe             function  role                    adverb            0     0
+my                function  role                    noun              0     0
+neither           function  role                    determiner        0     0
+none              function  role                    noun              0     0
+nor               function  role                    conjunction       0     0
+oh                function  role                    interjection      0     0
+only              function  role                    adverb            0     0
+oops              function  role                    interjection      0     0
+ouch              function  role                    interjection      0     0
+our               function  role                    noun              0     0
+ow                function  role                    interjection      0     0
+per               function  role                    preposition       0     0
+perhaps           function  role                    adverb            0     0
+phew              function  role                    interjection      0     0
+plus              function  role                    conjunction       0     0
+quite             function  role                    adverb            0     0
+rather            function  role                    adverb            0     0
+several           function  role                    determiner        0     0
+shh               function  role                    interjection      0     0
+shit              function  role                    interjection      0     0
+since             function  role                    preposition       0     0
+so                function  role                    conjunction       0     0
+such              function  role                    adverb            0     0
+then              function  role                    adverb            0     0
+therefore         function  role                    conjunction       0     0
+those             function  role                    determiner        0     0
+though            function  role                    conjunction       0     0
+thus              function  role                    adverb            0     0
+today             function  role                    adverb            0     0
+ugh               function  role                    interjection      0     0
+uh                function  role                    interjection      0     0
+unless            function  role                    conjunction       0     0
+until             function  role                    preposition       0     0
+via               function  role                    preposition       0     0
+we                function  role                    noun              0     0
+when              function  role                    adverb            0     0
+where             function  role                    adverb            0     0
+whether           function  role                    conjunction       0     0
+which             function  role                    determiner        0     0
+whoa              function  role                    interjection      0     0
+wow               function  role                    interjection      0     0
+yay               function  role                    interjection      0     0
+yesterday         function  role                    adverb            0     0
+yuck              function  role                    interjection      0     0
+live              life      named                   adjective        58    17
+death             life      named                   noun             27    12
+birth             life      named                   noun             21    13
+breathe           life      named                   verb             11     6
+die               life      named                   verb              2     1
+born              life      named                   verb              0     0
+condition         logic     named                   noun             32    30
+reason            logic     named                   verb             25    22
+law               logic     named                   noun             40    13
+example           logic     named                   noun             15    12
+follow            logic     named                   verb             30     8
+principle         logic     named                   noun              1     1
+valid             logic     named                   adjective         1     1
+assume            logic     named                   verb              3     0
+contradict        logic     named                   verb              0     0
+evidence          logic     named                   noun              0     0
+imply             logic     named                   verb              0     0
+infer             logic     named                   verb              0     0
+think             mind      named                   verb             92    69
+idea              mind      named                   noun             63    56
+mean              mind      named                   adjective        44    30
+knowledge         mind      named                   noun             28    23
+focus             mind      named                   verb             16    15
+learn             mind      named                   verb             24    12
+want              mind      named                   verb             19    12
+judge             mind      named                   verb             19    10
+notice            mind      named                   verb             15    11
+guess             mind      named                   verb             19     8
+doubt             mind      named                   verb             10     6
+attention         mind      named                   noun              4     4
+concept           mind      named                   noun              1     1
+intend            mind      named                   verb              1     0
+illusion          mind      named                   noun              0     0
+perceive          mind      named                   verb              0     0
+pass              motion    named                   verb             24    14
+motion            motion    named                   noun             18    14
+shift             motion    named                   verb             14    10
+speed             motion    named                   verb             16     9
+course            motion    named                   noun              8     6
+arrive            motion    named                   verb              6     6
+spin              motion    named                   verb             17     1
+rotate            motion    named                   verb              4     1
+approach          motion    named                   verb              3     1
+depart            motion    named                   verb              0     0
+place             pinned    pinned at three sounds  verb            289   257
+part              pinned    pinned at three sounds  verb            286   255
+thing             pinned    pinned at three sounds  noun            237   237
+make              pinned    pinned at three sounds  verb            426   182
+state             pinned    pinned at three sounds  verb            212   206
+time              pinned    pinned at three sounds  verb            192   172
+way               pinned    pinned at three sounds  noun            183   165
+out               pinned    pinned at three sounds  preposition     222   149
+sound             pinned    pinned at three sounds  verb            192   153
+up                pinned    pinned at three sounds  preposition     183   139
+move              pinned    pinned at three sounds  verb            183   124
+group             pinned    pinned at three sounds  noun            174   119
+work              pinned    pinned at three sounds  verb            145   109
+back              pinned    pinned at three sounds  verb            151   104
+tool              pinned    pinned at three sounds  noun            121   110
+change            pinned    pinned at three sounds  verb            152    86
+talk              pinned    pinned at three sounds  verb            142    86
+write             pinned    pinned at three sounds  verb            114    91
+line              pinned    pinned at three sounds  verb            104    86
+down              pinned    pinned at three sounds  preposition     120    80
+hold              pinned    pinned at three sounds  verb            151    70
+in                pinned    pinned at three sounds  preposition     141    70
+type              pinned    pinned at three sounds  verb             85    80
+rule              pinned    pinned at three sounds  verb             96    75
+point             pinned    pinned at three sounds  verb             88    76
+relation          pinned    pinned at three sounds  noun             92    74
+space             pinned    pinned at three sounds  noun             87    73
+path              pinned    pinned at three sounds  noun             75    67
+amount            pinned    pinned at three sounds  noun             70    67
+body              pinned    pinned at three sounds  noun            109    48
+life              pinned    pinned at three sounds  noun            104    49
+power             pinned    pinned at three sounds  verb             67    53
+flow              pinned    pinned at three sounds  verb             65    51
+give              pinned    pinned at three sounds  verb            145    29
+use               pinned    pinned at three sounds  verb             68    48
+take              pinned    pinned at three sounds  verb            151    26
+force             pinned    pinned at three sounds  verb             81    43
+bad               pinned    pinned at three sounds  adjective       172    19
+event             pinned    pinned at three sounds  noun             52    47
+lead              pinned    pinned at three sounds  verb             56    43
+order             pinned    pinned at three sounds  verb             52    42
+open              pinned    pinned at three sounds  adjective        72    36
+name              pinned    pinned at three sounds  verb             56    39
+one               pinned    pinned at three sounds  value            84    31
+end               pinned    pinned at three sounds  verb             66    33
+off               pinned    pinned at three sounds  preposition      53    36
+wrong             pinned    pinned at three sounds  adjective       128    17
+good              pinned    pinned at three sounds  adjective        70    29
+number            pinned    pinned at three sounds  noun             58    32
+stop              pinned    pinned at three sounds  verb             83    24
+right             pinned    pinned at three sounds  adjective        44    32
+like              pinned    pinned at three sounds  verb             51    30
+size              pinned    pinned at three sounds  verb             40    32
+no                pinned    pinned at three sounds  determiner      163     1
+process           pinned    pinned at three sounds  verb             33    33
+close             pinned    pinned at three sounds  adjective        52    28
+know              pinned    pinned at three sounds  verb             39    31
+contain           pinned    pinned at three sounds  verb             34    32
+hit               pinned    pinned at three sounds  verb             59    25
+spirit            pinned    pinned at three sounds  noun             40    28
+mix               pinned    pinned at three sounds  verb             77    18
+pain              pinned    pinned at three sounds  noun             39    27
+see               pinned    pinned at three sounds  verb             43    26
+mind              pinned    pinned at three sounds  verb             46    25
+on                pinned    pinned at three sounds  preposition      50    24
+surface           pinned    pinned at three sounds  verb             32    28
+turn              pinned    pinned at three sounds  verb             60    21
+home              pinned    pinned at three sounds  noun             39    25
+safe              pinned    pinned at three sounds  adjective        39    25
+step              pinned    pinned at three sounds  verb             41    24
+child             pinned    pinned at three sounds  noun             37    24
+edge              pinned    pinned at three sounds  verb             35    24
+voice             pinned    pinned at three sounds  verb             35    24
+need              pinned    pinned at three sounds  verb             32    24
+image             pinned    pinned at three sounds  noun             36    22
+vehicle           pinned    pinned at three sounds  noun             28    24
+face              pinned    pinned at three sounds  verb             35    21
+nature            pinned    pinned at three sounds  noun             39    20
+cause             pinned    pinned at three sounds  verb             50    17
+start             pinned    pinned at three sounds  verb             38    19
+create            pinned    pinned at three sounds  verb             41    18
+cell              pinned    pinned at three sounds  noun             31    20
+inside            pinned    pinned at three sounds  adjective        54    13
+seed              pinned    pinned at three sounds  verb             34    18
+note              pinned    pinned at three sounds  verb             25    20
+same              pinned    pinned at three sounds  adjective        65    10
+link              pinned    pinned at three sounds  verb             32    18
+sense             pinned    pinned at three sounds  verb             25    19
+day               pinned    pinned at three sounds  noun             29    17
+before            pinned    pinned at three sounds  conjunction      74     5
+machine           pinned    pinned at three sounds  noun             26    17
+position          pinned    pinned at three sounds  verb             21    18
+fill              pinned    pinned at three sounds  verb             31    15
+real              pinned    pinned at three sounds  adjective        23    17
+self              pinned    pinned at three sounds  noun             47    11
+agent             pinned    pinned at three sounds  noun             18    18
+gain              pinned    pinned at three sounds  verb             23    16
+test              pinned    pinned at three sounds  verb             26    15
+breath            pinned    pinned at three sounds  noun             29    14
+call              pinned    pinned at three sounds  verb             27    14
+rock              pinned    pinned at three sounds  verb             25    14
+ball              pinned    pinned at three sounds  noun             16    16
+limit             pinned    pinned at three sounds  verb             20    15
+code              pinned    pinned at three sounds  verb             19    15
+run               pinned    pinned at three sounds  verb             22    14
+send              pinned    pinned at three sounds  verb             34    11
+female            pinned    pinned at three sounds  adjective        36    10
+match             pinned    pinned at three sounds  verb             19    14
+sun               pinned    pinned at three sounds  noun             59     4
+store             pinned    pinned at three sounds  verb             26    12
+three             pinned    pinned at three sounds  value            66     2
+eye               pinned    pinned at three sounds  verb             53     5
+two               pinned    pinned at three sounds  value            61     3
+bright            pinned    pinned at three sounds  adjective        28    11
+more              pinned    pinned at three sounds  adverb           22    12
+result            pinned    pinned at three sounds  verb             18    13
+leaf              pinned    pinned at three sounds  noun             20    12
+read              pinned    pinned at three sounds  verb             19    12
+tone              pinned    pinned at three sounds  verb             15    13
+fall              pinned    pinned at three sounds  verb             26    10
+effect            pinned    pinned at three sounds  verb             13    13
+find              pinned    pinned at three sounds  verb             25    10
+true              pinned    pinned at three sounds  adjective        20    11
+rise              pinned    pinned at three sounds  verb             27     9
+after             pinned    pinned at three sounds  preposition      34     7
+field             pinned    pinned at three sounds  verb             14    12
+center            pinned    pinned at three sounds  verb             21    10
+source            pinned    pinned at three sounds  noun             13    12
+understand        pinned    pinned at three sounds  verb             17    11
+drug              pinned    pinned at three sounds  noun             16    11
+energy            pinned    pinned at three sounds  noun             16    11
+far               pinned    pinned at three sounds  adjective        40     5
+individual        pinned    pinned at three sounds  adjective        12    12
+less              pinned    pinned at three sounds  noun             24     9
+red               pinned    pinned at three sounds  adjective        28     8
+tree              pinned    pinned at three sounds  noun             24     9
+false             pinned    pinned at three sounds  adjective        46     3
+mouth             pinned    pinned at three sounds  verb             18    10
+calm              pinned    pinned at three sounds  adjective        33     6
+whole             pinned    pinned at three sounds  adjective        20     9
+lack              pinned    pinned at three sounds  verb             46     2
+now               pinned    pinned at three sounds  conjunction      14    10
+repeat            pinned    pinned at three sounds  verb             34     5
+direction         pinned    pinned at three sounds  noun             13    10
+god               pinned    pinned at three sounds  noun             21     8
+release           pinned    pinned at three sounds  verb             18     8
+between           pinned    pinned at three sounds  preposition      37     3
+year              pinned    pinned at three sounds  noun             13     9
+goal              pinned    pinned at three sounds  noun             12     9
+key               pinned    pinned at three sounds  verb             16     8
+come              pinned    pinned at three sounds  verb             27     5
+seek              pinned    pinned at three sounds  verb             11     9
+quiet             pinned    pinned at three sounds  adjective        18     7
+bit               pinned    pinned at three sounds  verb              9     9
+baby              pinned    pinned at three sounds  noun             16     7
+peace             pinned    pinned at three sounds  noun             15     7
+pleasure          pinned    pinned at three sounds  noun             11     8
+rest              pinned    pinned at three sounds  verb             15     7
+confuse           pinned    pinned at three sounds  verb             18     6
+enter             pinned    pinned at three sounds  verb             14     7
+function          pinned    pinned at three sounds  verb             10     8
+particle          pinned    pinned at three sounds  noun             10     8
+destroy           pinned    pinned at three sounds  noun             13     7
+distance          pinned    pinned at three sounds  noun              9     8
+middle            pinned    pinned at three sounds  noun             29     3
+connect           pinned    pinned at three sounds  verb             12     7
+get               pinned    pinned at three sounds  verb             36     1
+rain              pinned    pinned at three sounds  verb             12     7
+near              pinned    pinned at three sounds  adjective        23     4
+return            pinned    pinned at three sounds  verb             27     3
+lose              pinned    pinned at three sounds  verb             18     5
+male              pinned    pinned at three sounds  adjective        18     5
+below             pinned    pinned at three sounds  adjective        37     0
+future            pinned    pinned at three sounds  adjective        13     6
+map               pinned    pinned at three sounds  verb             13     6
+soil              pinned    pinned at three sounds  noun              9     7
+cycle             pinned    pinned at three sounds  verb              8     7
+outside           pinned    pinned at three sounds  adjective        28     2
+tune              pinned    pinned at three sounds  verb              8     7
+have              pinned    pinned at three sounds  verb             11     6
+front             pinned    pinned at three sounds  noun             18     4
+data              pinned    pinned at three sounds  noun             12     5
+family            pinned    pinned at three sounds  noun             16     4
+magic             pinned    pinned at three sounds  noun             12     5
+other             pinned    pinned at three sounds  adjective        12     5
+pattern           pinned    pinned at three sounds  noun              8     6
+model             pinned    pinned at three sounds  verb             11     5
+all               pinned    pinned at three sounds  adjective        18     3
+past              pinned    pinned at three sounds  verb             14     4
+rate              pinned    pinned at three sounds  verb              6     6
+risk              pinned    pinned at three sounds  verb             13     4
+cross             pinned    pinned at three sounds  verb             20     2
+receive           pinned    pinned at three sounds  verb              8     5
+ten               pinned    pinned at three sounds  value            15     3
+accept            pinned    pinned at three sounds  verb             10     4
+next              pinned    pinned at three sounds  adjective        22     1
+parent            pinned    pinned at three sounds  noun              6     5
+protect           pinned    pinned at three sounds  verb             14     3
+seven             pinned    pinned at three sounds  value            26     0
+sky               pinned    pinned at three sounds  noun             22     1
+four              pinned    pinned at three sounds  value            21     1
+possible          pinned    pinned at three sounds  adjective         9     4
+gut               pinned    pinned at three sounds  noun              8     4
+region            pinned    pinned at three sounds  noun              8     4
+empty             pinned    pinned at three sounds  adjective        19     1
+response          pinned    pinned at three sounds  noun              7     4
+memory            pinned    pinned at three sounds  noun             14     2
+rhythm            pinned    pinned at three sounds  noun              6     4
+gold              pinned    pinned at three sounds  adjective         9     3
+here              pinned    pinned at three sounds  noun              5     4
+snake             pinned    pinned at three sounds  verb              5     4
+absorb            pinned    pinned at three sounds  verb              4     4
+align             pinned    pinned at three sounds  verb              4     4
+dark              pinned    pinned at three sounds  adjective        16     1
+union             pinned    pinned at three sounds  noun              4     4
+aware             pinned    pinned at three sounds  adjective         7     3
+five              pinned    pinned at three sounds  value            14     1
+request           pinned    pinned at three sounds  verb              6     3
+son               pinned    pinned at three sounds  noun              6     3
+nose              pinned    pinned at three sounds  noun              9     2
+miss              pinned    pinned at three sounds  verb             12     1
+present           pinned    pinned at three sounds  adjective         4     3
+solution          pinned    pinned at three sounds  noun              4     3
+awake             pinned    pinned at three sounds  adjective         3     3
+balance           pinned    pinned at three sounds  verb              7     2
+presence          pinned    pinned at three sounds  noun              3     3
+zone              pinned    pinned at three sounds  verb              3     3
+black             pinned    pinned at three sounds  adjective         6     2
+separate          pinned    pinned at three sounds  adjective        14     0
+complex           pinned    pinned at three sounds  adjective         4     2
+garden            pinned    pinned at three sounds  verb              4     2
+oppose            pinned    pinned at three sounds  verb              8     1
+yellow            pinned    pinned at three sounds  adjective         8     1
+yes               pinned    pinned at three sounds  interjection      4     2
+attract           pinned    pinned at three sounds  verb              7     1
+gate              pinned    pinned at three sounds  verb              3     2
+moon              pinned    pinned at three sounds  noun              7     1
+six               pinned    pinned at three sounds  value            11     0
+target            pinned    pinned at three sounds  verb              3     2
+clue              pinned    pinned at three sounds  noun              2     2
+continue          pinned    pinned at three sounds  verb              6     1
+lord              pinned    pinned at three sounds  noun              2     2
+sequence          pinned    pinned at three sounds  noun              2     2
+south             pinned    pinned at three sounds  adjective         2     2
+sustain           pinned    pinned at three sounds  verb              2     2
+there             pinned    pinned at three sounds  noun              2     2
+volume            pinned    pinned at three sounds  noun              2     2
+eight             pinned    pinned at three sounds  value             5     1
+mesh              pinned    pinned at three sounds  noun              4     1
+original          pinned    pinned at three sounds  adjective         4     1
+perfect           pinned    pinned at three sounds  adjective         8     0
+soul              pinned    pinned at three sounds  noun              4     1
+experience        pinned    pinned at three sounds  verb              3     1
+general           pinned    pinned at three sounds  adjective         3     1
+green             pinned    pinned at three sounds  adjective         3     1
+heaven            pinned    pinned at three sounds  noun              7     0
+nine              pinned    pinned at three sounds  value             3     1
+positive          pinned    pinned at three sounds  adjective         7     0
+universe          pinned    pinned at three sounds  noun              3     1
+compare           pinned    pinned at three sounds  noun              2     1
+exit              pinned    pinned at three sounds  verb              2     1
+inhale            pinned    pinned at three sounds  verb              2     1
+nest              pinned    pinned at three sounds  noun              2     1
+select            pinned    pinned at three sounds  adjective         2     1
+specific          pinned    pinned at three sounds  adjective         2     1
+any               pinned    pinned at three sounds  determiner        5     0
+axis              pinned    pinned at three sounds  noun              1     1
+blue              pinned    pinned at three sounds  adjective         1     1
+certain           pinned    pinned at three sounds  adjective         5     0
+duration          pinned    pinned at three sounds  noun              1     1
+east              pinned    pinned at three sounds  adjective         1     1
+exist             pinned    pinned at three sounds  verb              1     1
+frequency         pinned    pinned at three sounds  noun              1     1
+hop               pinned    pinned at three sounds  verb              1     1
+identity          pinned    pinned at three sounds  noun              1     1
+instance          pinned    pinned at three sounds  noun              1     1
+silence           pinned    pinned at three sounds  verb              1     1
+silver            pinned    pinned at three sounds  adjective         1     1
+span              pinned    pinned at three sounds  verb              1     1
+the               pinned    pinned at three sounds  determiner        4     0
+among             pinned    pinned at three sounds  preposition       3     0
+dad               pinned    pinned at three sounds  noun              3     0
+neutral           pinned    pinned at three sounds  adjective         3     0
+reject            pinned    pinned at three sounds  verb              3     0
+sink              pinned    pinned at three sounds  verb              3     0
+that              pinned    pinned at three sounds  determiner        3     0
+conscious         pinned    pinned at three sounds  adjective         2     0
+imagine           pinned    pinned at three sounds  verb              2     0
+nothing           pinned    pinned at three sounds  noun              2     0
+this              pinned    pinned at three sounds  determiner        2     0
+twelve            pinned    pinned at three sounds  value             2     0
+contact           pinned    pinned at three sounds  verb              1     0
+convert           pinned    pinned at three sounds  verb              1     0
+copper            pinned    pinned at three sounds  noun              1     0
+density           pinned    pinned at three sounds  noun              1     0
+detect            pinned    pinned at three sounds  verb              1     0
+digit             pinned    pinned at three sounds  noun              1     0
+else              pinned    pinned at three sounds  determiner        1     0
+explore           pinned    pinned at three sounds  verb              1     0
+gray              pinned    pinned at three sounds  adjective         1     0
+minimum           pinned    pinned at three sounds  adjective         1     0
+north             pinned    pinned at three sounds  adjective         1     0
+obstacle          pinned    pinned at three sounds  noun              1     0
+orange            pinned    pinned at three sounds  adjective         1     0
+parallel          pinned    pinned at three sounds  verb              1     0
+permanent         pinned    pinned at three sounds  adjective         1     0
+purple            pinned    pinned at three sounds  adjective         1     0
+reflect           pinned    pinned at three sounds  verb              1     0
+threshold         pinned    pinned at three sounds  noun              1     0
+vague             pinned    pinned at three sounds  adjective         1     0
+vibe              pinned    pinned at three sounds  verb              1     0
+void              pinned    pinned at three sounds  verb              1     0
+you               pinned    pinned at three sounds  noun              1     0
+algorithm         pinned    pinned at three sounds  noun              0     0
+boom              pinned    pinned at three sounds  verb              0     0
+byte              pinned    pinned at three sounds  noun              0     0
+capacity          pinned    pinned at three sounds  noun              0     0
+daughter          pinned    pinned at three sounds  noun              0     0
+dimension         pinned    pinned at three sounds  noun              0     0
+eternal           pinned    pinned at three sounds  adjective         0     0
+finite            pinned    pinned at three sounds  adjective         0     0
+hell              pinned    pinned at three sounds  interjection      0     0
+infinite          pinned    pinned at three sounds  adjective         0     0
+intuition         pinned    pinned at three sounds  noun              0     0
+it                pinned    pinned at three sounds  noun              0     0
+left              pinned    pinned at three sounds  adjective         0     0
+maximum           pinned    pinned at three sounds  adjective         0     0
+merge             pinned    pinned at three sounds  verb              0     0
+mmm               pinned    pinned at three sounds  interjection      0     0
+network           pinned    pinned at three sounds  verb              0     0
+node              pinned    pinned at three sounds  noun              0     0
+perpendicular     pinned    pinned at three sounds  adjective         0     0
+persist           pinned    pinned at three sounds  verb              0     0
+plural            pinned    pinned at three sounds  adjective         0     0
+potential         pinned    pinned at three sounds  adjective         0     0
+previous          pinned    pinned at three sounds  adjective         0     0
+realm             pinned    pinned at three sounds  noun              0     0
+reference         pinned    pinned at three sounds  verb              0     0
+repel             pinned    pinned at three sounds  verb              0     0
+spec              pinned    pinned at three sounds  noun              0     0
+surf              pinned    pinned at three sounds  verb              0     0
+uncertain         pinned    pinned at three sounds  adjective         0     0
+variable          pinned    pinned at three sounds  adjective         0     0
+zero              pinned    pinned at three sounds  value             0     0
+mom               pinned    pinned at three sounds                    0     0
+math              pinned    pinned at three sounds                    0     0
+I                 pinned    pinned at three sounds                    0     0
+intersection      pinned    pinned at three sounds                    0     0
+intensity         pinned    pinned at three sounds                    0     0
+grandmother       pinned    pinned at three sounds                    0     0
+confidence        pinned    pinned at three sounds                    0     0
+constraint        pinned    pinned at three sounds                    0     0
+unpredictable     pinned    pinned at three sounds                    0     0
+uniformity        pinned    pinned at three sounds                    0     0
+song              pinned    pinned at three sounds                    0     0
+diversity         pinned    pinned at three sounds                    0     0
+ignorant          pinned    pinned at three sounds                    0     0
+disconnect        pinned    pinned at three sounds                    0     0
+different         pinned    pinned at three sounds                    0     0
+timestamp         pinned    pinned at three sounds                    0     0
+discrete          pinned    pinned at three sounds                    0     0
+negative          pinned    pinned at three sounds                    0     0
+reserved dub      pinned    pinned at three sounds                    0     0
+being             pinned    pinned at three sounds                    0     0
+reserved bid      pinned    pinned at three sounds                    0     0
+grandfather       pinned    pinned at three sounds                    0     0
+boundary          pinned    pinned at three sounds                    0     0
+absense           pinned    pinned at three sounds                    0     0
+border            pinned    pinned at three sounds                    0     0
+cosine            pinned    pinned at three sounds                    0     0
+x axis            pinned    pinned at three sounds                    0     0
+predictable       pinned    pinned at three sounds                    0     0
+capability        pinned    pinned at three sounds                    0     0
+passive           pinned    pinned at three sounds                    0     0
+exhale            pinned    pinned at three sounds                    0     0
+polarity          pinned    pinned at three sounds                    0     0
+active            pinned    pinned at three sounds                    0     0
+y axis            pinned    pinned at three sounds                    0     0
+choice            pinned    pinned at three sounds                    0     0
+sine              pinned    pinned at three sounds                    0     0
+action type       pinned    pinned at three sounds                    0     0
+recursion         pinned    pinned at three sounds                    0     0
+object type       pinned    pinned at three sounds                    0     0
+tangent           pinned    pinned at three sounds                    0     0
+clarify           pinned    pinned at three sounds                    0     0
+feature type      pinned    pinned at three sounds                    0     0
+z axis            pinned    pinned at three sounds                    0     0
+reserved hum      pinned    pinned at three sounds                    0     0
+action instance   pinned    pinned at three sounds                    0     0
+object instance   pinned    pinned at three sounds                    0     0
+feature instance  pinned    pinned at three sounds                    0     0
+belief            pinned    pinned at three sounds                    0     0
+eleven            pinned    pinned at three sounds                    0     0
+follower          pinned    pinned at three sounds                    0     0
+computation       pinned    pinned at three sounds                    0     0
+paradise          pinned    pinned at three sounds                    0     0
+wisdom            pinned    pinned at three sounds                    0     0
+continuous        pinned    pinned at three sounds                    0     0
+they              pinned    pinned at three sounds                    0     0
+thirteen          pinned    pinned at three sounds                    0     0
+torture           pinned    pinned at three sounds                    0     0
+impermanent       pinned    pinned at three sounds                    0     0
+doing             pinned    pinned at three sounds                    0     0
+orientation       pinned    pinned at three sounds                    0     0
+fourteen          pinned    pinned at three sounds                    0     0
+reserved lij      pinned    pinned at three sounds                    0     0
+leader            pinned    pinned at three sounds                    0     0
+fifteen           pinned    pinned at three sounds                    0     0
+collection        pinned    pinned at three sounds                    0     0
+quality           quality   named                   noun             63    63
+clear             quality   named                   adjective        87    38
+trait             quality   named                   noun             16    16
+character         quality   named                   noun              9     8
+pure              quality   named                   adjective        17     5
+property          quality   named                   noun              5     4
+attribute         quality   named                   verb              0     0
+measure           quantity  named                   verb             95    84
+level             quantity  named                   verb             35    29
+count             quantity  named                   verb             43    25
+full              quantity  named                   adjective        55    20
+value             quantity  named                   verb             37    24
+enough            quantity  named                   adjective        15    11
+rank              quantity  named                   verb             12    10
+sum               quantity  named                   verb              4     3
+most              quantity  named                   adjective         9     1
+excess            quantity  named                   adjective         6     1
+total             quantity  named                   verb              8     0
+degree            quantity  named                   noun              1     0
+quantity          quantity  named                   noun              0     0
+ratio             quantity  named                   noun              0     0
+set               relation  named                   verb             75    31
+join              relation  named                   verb             70    14
+member            relation  named                   noun             15    15
+bond              relation  named                   verb             12    11
+pair              relation  named                   verb             11     4
+combine           relation  named                   verb             17     2
+include           relation  named                   verb              6     4
+opposite          relation  named                   adjective        12     0
+similar           relation  named                   adjective         3     1
+belong            relation  named                   verb              2     0
+mirror            relation  named                   verb              1     0
+correspond        relation  named                   verb              0     0
+differ            relation  named                   verb              0     0
+exclude           relation  named                   verb              0     0
+tiny              said      said by hand            adjective        76     1
+under             said      said by hand            adjective        58     4
+add               said      said by hand            verb             27     5
+increase          said      said by hand            verb             22     4
+above             said      said by hand            adjective        19     4
+behind            said      said by hand            adjective         6     3
+chip              said      said by hand            verb              4     3
+divide            said      said by hand            verb              8     2
+huge              said      said by hand            adjective        11     0
+decrease          said      said by hand            verb              2     0
+multiply          said      said by hand            verb              0     0
+subtract          said      said by hand            verb              0     0
+light             scale     named                   adjective       199    68
+small             scale     named                   adjective       327    15
+strong            scale     named                   adjective       183    51
+new               scale     named                   adjective       120    16
+hard              scale     named                   adjective        70    22
+big               scale     named                   adjective       121     9
+fast              scale     named                   adjective        58    24
+high              scale     named                   adjective        73    14
+long              scale     named                   adjective        67    15
+soft              scale     named                   adjective        73     8
+deep              scale     named                   adjective        57    10
+large             scale     named                   adjective        78     3
+young             scale     named                   adjective        36     9
+low               scale     named                   adjective        54     3
+grow              scale     named                   verb             28     8
+wide              scale     named                   adjective        29     7
+short             scale     named                   adjective        45     2
+slow              scale     named                   adjective        28     4
+old               scale     named                   adjective        39     0
+cold              scale     named                   adjective        22     4
+weak              scale     named                   adjective        18     5
+heavy             scale     named                   adjective        24     2
+narrow            scale     named                   adjective        15     1
+thick             scale     named                   adjective        14     1
+hot               scale     named                   adjective        12     1
+shrink            scale     named                   verb              2     1
+area              space     named                   noun            137   127
+side              space     named                   verb             79    48
+top               space     named                   verb             51    29
+over              space     named                   adjective        47    25
+corner            space     named                   noun             10     8
+location          space     named                   noun              9     5
+bottom            space     named                   adjective        12     4
+holy              spirit    named                   adjective        26     5
+sacred            spirit    named                   adjective        14     1
+divine            spirit    named                   adjective         6     0
+fate              spirit    named                   noun              2     1
+age               time      named                   verb             17    15
+period            time      named                   noun             15    13
+moment            time      named                   noun             12    12
+night             time      named                   noun             19     6
+season            time      named                   noun              8     7
+begin             time      named                   verb             19     4
+early             time      named                   adjective        18     1
+pause             time      named                   verb             10     3
+late              time      named                   adjective         7     0
+hour              time      named                   noun              1     1
+era               time      named                   noun              1     0
+soon              time      named                   adjective         1     0
+interval          time      named                   noun              0     0
+minute            time      named                   noun              0     0
