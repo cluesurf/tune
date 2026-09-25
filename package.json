@@ -1,8 +1,19 @@
 {
   "name": "tune",
   "displayName": "tune",
-  "description": "An Intermediate Constructed Language",
+  "description": "A measured speaking language Λ",
   "license": "Apache-2.0",
+  "keywords": [
+    "constructed language",
+    "conlang",
+    "linguistics",
+    "language"
+  ],
+  "archive": {
+    "identifier": "tune-talk",
+    "title": "Tune",
+    "cover": "view/tune.svg"
+  },
   "publisher": "cluesurf",
   "repository": {
     "type": "git",
