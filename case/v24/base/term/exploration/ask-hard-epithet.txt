@@ -1,0 +1,431 @@
+You are naming living things for a constructed language whose
+words are built from about 4000 plain concepts. Every name must be
+a literal compound of ordinary concrete words.
+
+Each line below is a Latin name that carries NO meaning: it is a
+person's surname, a place, or a word whose sense is lost. It must
+be replaced by a description of the actual living thing.
+
+For each one, do four things in order.
+
+1 DESCRIBE it richly, in prose. What does it look like: shape,
+  colour, size, texture, the leaf, the flower, the seed, the fruit.
+  Where does it live: ground, water, rock, tree bark, bog, desert,
+  cold, hot. What does it do: climb, creep, float, sting, cling,
+  open at night, die back in winter. How does it meet the senses:
+  smell, taste, touch, the sound of it in wind. What do people use
+  it for: food, medicine, dye, rope, timber, thatch. And above all,
+  what would a person notice FIRST on meeting it.
+
+2 GATHER every trait from that description that could name it.
+
+3 DISTIL to the two or three most telling. Ranked, in this order:
+  MINIMALISM, fewest parts. ACCURACY, it must be true of this group
+  and not of its neighbours. OBVIOUSNESS, a speaker meeting the
+  plant should be able to guess the name.
+
+4 NAME it as two or three plain English concepts joined by +.
+
+Rules.
+Never use a proper name, a person, a place, a people, or a god.
+Never use a technical botanical term. Say leaf cup, not calyx; say
+spore box, not capsule; say seed leaf, not cotyledon.
+Use plain concrete words a hunter gatherer would know, plus
+ordinary modern ones.
+A name is a CONCEPT, not a word form: write horn, not horned.
+The name must distinguish this group from the ones beside it, so
+read the sibling names given and do not pick a trait they share.
+If you genuinely do not know the group, say so in `why` and leave
+`name` empty. An invented description is worse than a gap.
+
+Reply with JSON only, no prose around it:
+{"answers":[{"word":"","kind":"genus","described":"","traits":"",
+"name":"x + y","why":""}]}
+
+── the epithet words, worst first ──
+
+  crassipes   blocks 2 species
+      Lepisorus crassipes   瓦韦属粗柄瓦韦   wǎ wéi shǔ cū bǐng wǎ wéi
+      Angiopteris crassipes   观音座莲属大脚观音座莲   guān yīn zuò lián shǔ dà jiǎo guān yīn zuò lián
+      beside: Lepisorus, Angiopteris
+
+  exannulata   blocks 1 species
+      Warnstorfia exannulata   范氏藓属范氏藓   fàn shì xiǎn shǔ fàn shì xiǎn
+      beside: Warnstorfia
+
+  fluitans   blocks 1 species
+      Warnstorfia fluitans   范氏藓属浮生范氏藓   fàn shì xiǎn shǔ fú shēng fàn shì xiǎn
+      beside: Warnstorfia
+
+  decidua   blocks 1 species
+      Larix decidua   落叶松属欧洲落叶松   luò yè sōng shǔ ōu zhōu luò yè sōng
+      beside: Larix
+
+  filamentosa   blocks 1 species
+      Burmannia filamentosa   水玉簪属粤东水玉簪   shuǐ yù zān shǔ yuè dōng shuǐ yù zān
+      beside: Burmannia
+
+  althaeoides   blocks 1 species
+      Dioscorea althaeoides   薯蓣属蜀葵叶薯蓣   shǔ yù shǔ shǔ kuí yè shǔ yù
+      beside: Dioscorea
+
+  proboscideum   blocks 1 species
+      Pennilabium proboscideum   巾唇兰属巾唇兰   jīn chún lán shǔ jīn chún lán
+      beside: Pennilabium
+
+  ramentaceum   blocks 1 species
+      Sedum ramentaceum   景天属糠秕景天   jǐng tiān shǔ kāng bǐ jǐng tiān
+      beside: Sedum
+
+  miyalomontis   blocks 1 species
+      Astragalus miyalomontis   黄芪属米亚罗黄芪   huáng qí shǔ mǐ yà luó huáng qí
+      beside: Astragalus
+
+  cytisoides   blocks 1 species
+      Campylotropis cytisoides   笐子梢属金雀儿笐子梢   hàng zi shāo shǔ jīn què er hàng zi shāo
+      beside: Campylotropis
+
+  caffra   blocks 1 species
+      Erythrina caffra   刺桐属南非刺桐   cì tóng shǔ nán fēi cì tóng
+      beside: Erythrina
+
+  chappar   blocks 1 species
+      Flemingia chappar   千斤拔属墨江千斤拔   qiān jīn bá shǔ mò jiāng qiān jīn bá
+      beside: Flemingia
+
+  grallatoria   blocks 1 species
+      Carex grallatoria   薹草属   tái cǎo shǔ
+      beside: Carex
+
+  compactus   blocks 1 species
+      Cyperus compactus   莎草属密穗砖子苗   suō cǎo shǔ mì suì zhuān zi miáo
+      beside: Cyperus
+
+  haspan   blocks 1 species
+      Cyperus haspan   莎草属畦畔莎草   suō cǎo shǔ qí pàn suō cǎo
+      beside: Cyperus
+
+  juncoides   blocks 1 species
+      Schoenoplectiella juncoides   萤蔺属萤蔺   yíng lìn shǔ yíng lìn
+      beside: Schoenoplectiella
+
+  syzigachne   blocks 1 species
+      Beckmannia syzigachne   菵草属菵草   wǎng cǎo shǔ wǎng cǎo
+      beside: Beckmannia
+
+  gidarba   blocks 1 species
+      Cymbopogon gidarba   香茅属   xiāng máo shǔ
+      beside: Cymbopogon
+
+  inaequilaterus   blocks 1 species
+      Indocalamus inaequilaterus   箬竹属粤西箬竹   ruò zhú shǔ yuè xī ruò zhú
+      beside: Indocalamus
+
+  sayanuka   blocks 1 species
+      Leersia sayanuka   假稻属秕壳草   jiǎ dào shǔ bǐ ké cǎo
+      beside: Leersia
+
+  jaculans   blocks 1 species
+      Schizostachyum jaculans   [／思]簩竹属岭南[/思]簩竹   sī láo zhú shǔ lǐng nán sī láo zhú
+      beside: Schizostachyum
+
+  longinternodium   blocks 1 species
+      Schizostachyum longinternodium   [／思]簩竹属长节间／思簩竹   sī láo zhú shǔ cháng jié jiān sī láo zhú
+      beside: Schizostachyum
+
+  fastuosa   blocks 1 species
+      Semiarundinaria fastuosa   业平竹属业平竹   yè píng zhú shǔ yè píng zhú
+      beside: Semiarundinaria
+
+  alternativa   blocks 1 species
+      Aspidistra alternativa   蜘蛛抱蛋属忻城蜘蛛抱蛋   zhī zhū bào dàn shǔ xīn chéng zhī zhū bào dàn
+      beside: Aspidistra
+
+  oxalidifolia   blocks 1 species
+      Corydalis oxalidifolia   紫堇属假酢浆草   zǐ jǐn shǔ jiǎ cù jiāng cǎo
+      beside: Corydalis
+
+  fimbrilligerum   blocks 1 species
+      Glaucium fimbrilligerum   海罂粟属海罂粟   hǎi yīng sù shǔ hǎi yīng sù
+      beside: Glaucium
+
+  vinifera   blocks 1 species
+      Berberis vinifera   小檗属可食小檗   xiǎo bò shǔ kě shí xiǎo bò
+      beside: Berberis
+
+  foetida   blocks 1 species
+      Cimicifuga foetida   升麻属   shēng má shǔ
+      beside: Cimicifuga
+
+  eriosylum   blocks 1 species
+      Delphinium eriosylum   翠雀属   cuì què shǔ
+      beside: Delphinium
+
+  obsoletidentata   blocks 1 species
+      Sorbus obsoletidentata   花楸属宾川花楸   huā qiū shǔ bīn chuān huā qiū
+      beside: Sorbus
+
+  chanicioraea   blocks 1 species
+      Spiraea chanicioraea   绣线菊属阿拉善绣线菊   xiù xiàn jú shǔ ā lā shàn xiù xiàn jú
+      beside: Spiraea
+
+  s-stylata   blocks 1 species
+      Elaeagnus s-stylata   胡颓子属之形柱胡颓子   hú tuí zǐ shǔ zhī xíng zhù hú tuí zǐ
+      beside: Elaeagnus
+
+  iners   blocks 1 species
+      Droguetia iners   单蕊麻属   dān ruǐ má shǔ
+      beside: Droguetia
+
+  urens   blocks 1 species
+      Urtica urens   荨麻属欧荨麻   qián má shǔ ōu qián má
+      beside: Urtica
+
+  elaterium   blocks 1 species
+      Ecballium elaterium   喷瓜属喷瓜   pēn guā shǔ pēn guā
+      beside: Ecballium
+
+  emarginata   blocks 1 species
+      Roureopsis emarginata   朱果藤属朱果藤   zhū guǒ téng shǔ zhū guǒ téng
+      beside: Roureopsis
+
+  jangomas   blocks 1 species
+      Flacourtia jangomas   刺篱木属云南刺篱木   cì lí mù shǔ yún nán cì lí mù
+      beside: Flacourtia
+
+  amphibola   blocks 1 species
+      Salix amphibola   柳属九鼎柳   liǔ shǔ jiǔ dǐng liǔ
+      beside: Salix
+
+  ovoidea   blocks 1 species
+      Tirpitzia ovoidea   青篱柴属米念芭   qīng lí chái shǔ mǐ niàn bā
+      beside: Tirpitzia
+
+  oxyrhinchum   blocks 1 species
+      Erodium oxyrhinchum   牻牛儿苗属尖喙牻牛儿苗   máng niú er miáo shǔ jiān huì máng niú er miáo
+      beside: Erodium
+
+  anacardiifolius   blocks 1 species
+      Drimycarpus anacardiifolius   辛果漆属大果辛果漆   xīn guǒ qī shǔ dà guǒ xīn guǒ qī
+      beside: Drimycarpus
+
+  cobbe   blocks 1 species
+      Allophylus cobbe   异木患属   yì mù huàn shǔ
+      beside: Allophylus
+
+  celtidifolia   blocks 1 species
+      Grewia celtidifolia   扁担杆属朴叶扁担杆   biǎn dan gǎn shǔ pò yè biǎn dan gǎn
+      beside: Grewia
+
+  senilis   blocks 1 species
+      Draba senilis   葶苈属衰老葶苈   tíng lì shǔ shuāi lǎo tíng lì
+      beside: Draba
+
+  tenue   blocks 1 species
+      Eutrema tenue   山萮菜属日本山萮菜   shān yú cài shǔ rì běn shān yú cài
+      beside: Eutrema
+
+  kousa   blocks 1 species
+      Cornus kousa   山茱萸属   shān zhū yú shǔ
+      beside: Cornus
+
+  ulotricha   blocks 1 species
+      Cornus ulotricha   山茱萸属卷毛梾木   shān zhū yú shǔ juǎn máo lái mù
+      beside: Cornus
+
+  melampyroides   blocks 1 species
+      Lysimachia melampyroides   珍珠菜属山罗过路黄   zhēn zhū cài shǔ shān luó guò lù huáng
+      beside: Lysimachia
+
+  sarcocarpa   blocks 1 species
+      Sinojackia sarcocarpa   秤锤树属���果秤锤树   chèng chuí shù shǔ ròu guǒ chèng chuí shù
+      beside: Sinojackia
+
+  loganioides   blocks 1 species
+      Hedyotis loganioides   耳草属粤港耳草   ěr cǎo shǔ yuè gǎng ěr cǎo
+      beside: Hedyotis
+
+  mengtze   blocks 1 species
+      Didymocarpus mengtze   长蒴苣苔属蒙自长蒴苣苔   cháng shuò jù tái shǔ méng zì cháng shuò jù tái
+      beside: Didymocarpus
+
+  beccabunga   blocks 1 species
+      Veronica beccabunga   婆婆纳属   pó po nà shǔ
+      beside: Veronica
+
+  proximus   blocks 1 species
+      Thymus proximus   百里香属拟百里香   bǎi lǐ xiāng shǔ nǐ bǎi lǐ xiāng
+      beside: Thymus
+
+  cymbalaria   blocks 1 species
+      Pedicularis cymbalaria   马先蒿属舟形马先蒿   mǎ xiān hāo shǔ zhōu xíng mǎ xiān hāo
+      beside: Pedicularis
+
+  melampyriflora   blocks 1 species
+      Pedicularis melampyriflora   马先蒿属山罗花马先蒿   mǎ xiān hāo shǔ shān luó huā mǎ xiān hāo
+      beside: Pedicularis
+
+  proboscidea   blocks 1 species
+      Pedicularis proboscidea   马先蒿属鼻喙马先蒿   mǎ xiān hāo shǔ bí huì mǎ xiān hāo
+      beside: Pedicularis
+
+  pseudomelampyriflora   blocks 1 species
+      Pedicularis pseudomelampyriflora   马先蒿属假山罗花马先蒿   mǎ xiān hāo shǔ jiǎ shān luó huā mǎ xiān hāo
+      beside: Pedicularis
+
+  scolopax   blocks 1 species
+      Pedicularis scolopax   马先蒿属鹬形马先蒿   mǎ xiān hāo shǔ yù xíng mǎ xiān hāo
+      beside: Pedicularis
+
+  sigmoidea   blocks 1 species
+      Pedicularis sigmoidea   马先蒿属之形喙马先蒿   mǎ xiān hāo shǔ zhī xíng huì mǎ xiān hāo
+      beside: Pedicularis
+
+  tantalorhyncha   blocks 1 species
+      Pedicularis tantalorhyncha   马先蒿属颤喙马先蒿   mǎ xiān hāo shǔ chàn huì mǎ xiān hāo
+      beside: Pedicularis
+
+  knoxiifolium   blocks 1 species
+      Cosmianthemum knoxiifolium   秋英爵床属秋英爵床   qiū yīng jué chuáng shǔ qiū yīng jué chuáng
+      beside: Cosmianthemum
+
+  bipinnatifidus   blocks 1 species
+      Panax bipinnatifidus   人参属疙瘩七   rén shēn shǔ gē da qī
+      beside: Panax
+
+  tadshikorum   blocks 1 species
+      Aegopodium tadshikorum   羊角芹属塔什克羊角芹   yáng jiǎo qín shǔ tǎ shí kè yáng jiǎo qín
+      beside: Aegopodium
+
+  moschata   blocks 1 species
+      Ferula moschata   阿魏属麝香阿魏   ā wèi shǔ shè xiāng ā wèi
+      beside: Ferula
+
+  ovina   blocks 1 species
+      Ferula ovina   阿魏属羊食阿魏   ā wèi shǔ yáng shí ā wèi
+      beside: Ferula
+
+  teterrima   blocks 1 species
+      Ferula teterrima   阿魏属臭阿魏   ā wèi shǔ chòu ā wèi
+      beside: Ferula
+
+  ptarmicoides   blocks 1 species
+      Achillea ptarmicoides   蓍属短瓣蓍   shī shǔ duǎn bàn shī
+      beside: Achillea
+
+  gilvescens   blocks 1 species
+      Artemisia gilvescens   蒿属湘赣艾   hāo shǔ xiāng gàn ài
+      beside: Artemisia
+
+  actinotus   blocks 1 species
+      Senecio actinotus   千里光属湖南千里光   qiān lǐ guāng shǔ hú nán qiān lǐ guāng
+      beside: Senecio
+
+  coriaceisquamus   blocks 1 species
+      Senecio coriaceisquamus   千里光属革苞千里光   qiān lǐ guāng shǔ gé bāo qiān lǐ guāng
+      beside: Senecio
+
+  dubitabilis   blocks 1 species
+      Senecio dubitabilis   千里光属北千里光   qiān lǐ guāng shǔ běi qiān lǐ guāng
+      beside: Senecio
+
+  multilobus   blocks 1 species
+      Senecio multilobus   千里光属多裂千里光   qiān lǐ guāng shǔ duō liè qiān lǐ guāng
+      beside: Senecio
+
+  finitum   blocks 1 species
+      Seriphidium finitum   绢蒿属东北蛔蒿   juàn hāo shǔ dōng běi huí hāo
+      beside: Seriphidium
+
+  cinerariifolium   blocks 1 species
+      Tanacetum cinerariifolium   菊蒿属除虫菊   jú hāo shǔ chú chóng jú
+      beside: Tanacetum
+
+  stepposus   blocks 1 species
+      Tragopogon stepposus   婆罗门参属草原婆罗门参   pó luó mén shēn shǔ cǎo yuán pó luó mén shēn
+      beside: Tragopogon
+
+  mullaha   blocks 1 species
+      Viburnum mullaha   荚蒾属西域荚蒾   jiá mí shǔ xī yù jiá mí
+      beside: Viburnum
+
+  dianyuecola   blocks 1 species
+      Angiopteris dianyuecola   观音座莲属滇越观音座莲   guān yīn zuò lián shǔ diān yuè guān yīn zuò lián
+      beside: Angiopteris
+
+  molesta   blocks 1 species
+      Salvinia molesta   槐叶蘋属人厌槐叶蘋   huái yè pín shǔ rén yàn huái yè pín
+      beside: Salvinia
+
+  aquilinum   blocks 1 species
+      Pteridium aquilinum   蕨属   jué shǔ
+      beside: Pteridium
+
+  asterolepis   blocks 1 species
+      Lepisorus asterolepis   瓦韦属黄瓦韦   wǎ wéi shǔ huáng wǎ wéi
+      beside: Lepisorus
+
+  megasorus   blocks 1 species
+      Lepisorus megasorus   瓦韦属宝岛瓦韦   wǎ wéi shǔ bǎo dǎo wǎ wéi
+      beside: Lepisorus
+
+  obscurevenulosus   blocks 1 species
+      Lepisorus obscurevenulosus   瓦韦属粤瓦韦   wǎ wéi shǔ yuè wǎ wéi
+      beside: Lepisorus
+
+  scolopendrium   blocks 1 species
+      Lepisorus scolopendrium   瓦韦属棕鳞瓦韦   wǎ wéi shǔ zōng lín wǎ wéi
+      beside: Lepisorus
+
+  suboligolepidus   blocks 1 species
+      Lepisorus suboligolepidus   瓦韦属拟鳞瓦韦   wǎ wéi shǔ nǐ lín wǎ wéi
+      beside: Lepisorus
+
+  ensata   blocks 1 species
+      Pyrrosia ensata   石韦属剑叶石韦   shí wéi shǔ jiàn yè shí wéi
+      beside: Pyrrosia
+
+  kawakarpo   blocks 1 species
+      Saussurea kawakarpo   风毛菊属梅里雪山雪莲   fēng máo jú shǔ méi lǐ xuě shān xuě lián
+      beside: Saussurea
+
+  purpureokylin   blocks 1 species
+      Primulina purpureokylin   报春苣苔属紫麟报春苣苔   bào chūn jù tái shǔ zǐ lín bào chūn jù tái
+      beside: Primulina
+
+  ecalcarata   blocks 1 species
+      Aquilegia ecalcarata   耧斗菜属无距耧斗菜   lóu dǒu cài shǔ wú jù lóu dǒu cài
+      beside: Aquilegia
+
+  baloot   blocks 1 species
+      Quercus baloot   栎属巴洛特栎   lì shǔ bā luò tè lì
+      beside: Quercus
+
+  endivia   blocks 1 species
+      Cichorium endivia   菊苣属栽培菊苣   jú jù shǔ zāi péi jú jù
+      beside: Cichorium
+
+  senkakuinsulare   blocks 1 species
+      Asarum senkakuinsulare   细辛属钓鱼岛细辛   xì xīn shǔ diào yú dǎo xì xīn
+      beside: Asarum
+
+  appressa   blocks 1 species
+      Balanophora appressa   蛇菰属粤西蛇菰   shé gū shǔ yuè xī shé gū
+      beside: Balanophora
+
+  perpetua   blocks 1 species
+      Camellia perpetua   山茶属四季花金花茶   shān chá shǔ sì jì huā jīn huā chá
+      beside: Camellia
+
+  omerumbellatum   blocks 1 species
+      Bulbophyllum omerumbellatum   石豆兰属乐氏卷瓣兰   shí dòu lán shǔ lè shì juǎn bàn lán
+      beside: Bulbophyllum
+
+  evoluta   blocks 1 species
+      Viola evoluta   堇菜属罗霄堇菜   jǐn cài shǔ luó xiāo jǐn cài
+      beside: Viola
+
+  lamyroides   blocks 1 species
+      Cirsium lamyroides   蓟属阿拉套蓟   jì shǔ ā lā tào jì
+      beside: Cirsium
+

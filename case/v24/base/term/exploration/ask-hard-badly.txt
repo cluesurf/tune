@@ -1,0 +1,2051 @@
+You are naming living things for a constructed language whose
+words are built from about 4000 plain concepts. Every name must be
+a literal compound of ordinary concrete words.
+
+Each line below is a Latin name that carries NO meaning: it is a
+person's surname, a place, or a word whose sense is lost. It must
+be replaced by a description of the actual living thing.
+
+For each one, do four things in order.
+
+1 DESCRIBE it richly, in prose. What does it look like: shape,
+  colour, size, texture, the leaf, the flower, the seed, the fruit.
+  Where does it live: ground, water, rock, tree bark, bog, desert,
+  cold, hot. What does it do: climb, creep, float, sting, cling,
+  open at night, die back in winter. How does it meet the senses:
+  smell, taste, touch, the sound of it in wind. What do people use
+  it for: food, medicine, dye, rope, timber, thatch. And above all,
+  what would a person notice FIRST on meeting it.
+
+2 GATHER every trait from that description that could name it.
+
+3 DISTIL to the two or three most telling. Ranked, in this order:
+  MINIMALISM, fewest parts. ACCURACY, it must be true of this group
+  and not of its neighbours. OBVIOUSNESS, a speaker meeting the
+  plant should be able to guess the name.
+
+4 NAME it as two or three plain English concepts joined by +.
+
+Rules.
+Never use a proper name, a person, a place, a people, or a god.
+Never use a technical botanical term. Say leaf cup, not calyx; say
+spore box, not capsule; say seed leaf, not cotyledon.
+Use plain concrete words a hunter gatherer would know, plus
+ordinary modern ones.
+A name is a CONCEPT, not a word form: write horn, not horned.
+The name must distinguish this group from the ones beside it, so
+read the sibling names given and do not pick a trait they share.
+If you genuinely do not know the group, say so in `why` and leave
+`name` empty. An invented description is worse than a gap.
+
+Reply with JSON only, no prose around it:
+{"answers":[{"word":"","kind":"genus","described":"","traits":"",
+"name":"x + y","why":""}]}
+
+── genus words that READ, but read badly ──
+
+Each of these produced a name, and the name is wrong: two genera
+landed on one word, or a lark or a person got into the gloss, or
+it took four roots to say one thing. The Chinese name is given
+beside each, because it is usually right where the Latin is not.
+
+  Asplenium   103 species
+      latin reads: miltwaste + forms instrument nouns
+      chinese: 铁角蕨属黑色铁角蕨   tiě jiǎo jué shǔ hēi sè tiě jiǎo jué
+      wrong because: 21 letters
+
+  Geranium   54 species
+      latin reads: crane + forms instrument nouns
+      chinese: 老鹳草属白花老鹳草   lǎo guàn cǎo shǔ bái huā lǎo guàn cǎo
+      wrong because: 15 letters
+
+  Michelia   46 species
+      latin reads: white + orchid
+      chinese: 含笑属白兰   hán xiào shǔ bái lán
+      wrong because: 14 letters
+
+  Pogostemon   29 species
+      latin reads: beard + bone + number one
+      chinese: 刺蕊草属短冠刺蕊草   cì ruǐ cǎo shǔ duǎn guān cì ruǐ cǎo
+      wrong because: 14 letters
+
+  Aleuritopteris   28 species
+      latin reads: wheatmeal + continue + wing
+      chinese: 粉背蕨属小叶中国蕨   fěn bèi jué shǔ xiǎo yè zhōng guó jué
+      wrong because: 14 letters
+
+  Fritillaria   24 species
+      latin reads: dicebox + holm oak
+      chinese: 贝母属安徽贝母   bèi mǔ shǔ ān huī bèi mǔ
+      wrong because: 18 letters
+
+  Croton   23 species
+      latin reads: tick
+      chinese: 巴豆属银叶巴豆   bā dòu shǔ yín yè bā dòu
+      wrong because: same word as Ricinus
+
+  Limonium   23 species
+      latin reads: beet
+      chinese: 补血草属黄花补血草   bǔ xuè cǎo shǔ huáng huā bǔ xuè cǎo
+      wrong because: same word as Beta
+
+  Crepidium   21 species
+      latin reads: boot
+      chinese: 沼兰属浅裂沼兰   zhǎo lán shǔ qiǎn liè zhǎo lán
+      wrong because: same word as Crepis
+
+  Pogonatum   20 species
+      latin reads: beard
+      chinese: 小金发藓属小金发藓   xiǎo jīn fà xiǎn shǔ xiǎo jīn fà xiǎn
+      wrong because: same word as Tragopogon
+
+  Maianthemum   20 species
+      latin reads: form + flower
+      chinese: 舞鹤草属高大鹿药   wǔ hè cǎo shǔ gāo dà lù yào
+      wrong because: same word as Prasanthus, Atropanthe, Lycianthes
+
+  Cornus   20 species
+      latin reads: city
+      chinese: 山茱萸属红瑞木   shān zhū yú shǔ hóng ruì mù
+      wrong because: same word as Eleusine, Carallia, Pometia
+
+  Hypodematium   20 species
+      latin reads: under + band + Tium
+      chinese: 肿足蕨属肿足蕨   zhǒng zú jué shǔ zhǒng zú jué
+      wrong because: a name in the gloss
+
+  Disporum   19 species
+      latin reads: ten thousand + old age + bamboo
+      chinese: 万寿竹属尖被万寿竹   wàn shòu zhú shǔ jiān bèi wàn shòu zhú
+      wrong because: 18 letters
+
+  Anoectochilus   19 species
+      latin reads: ruthless + Dirphys
+      chinese: 金线兰属保亭金线兰   jīn xiàn lán shǔ bǎo tíng jīn xiàn lán
+      wrong because: a name in the gloss
+
+  Roscoea   19 species
+      latin reads: elephant + tooth + take part in
+      chinese: 象牙参属高山象牙参   xiàng yá shēn shǔ gāo shān xiàng yá shēn
+      wrong because: 16 letters
+
+  Ajuga   19 species
+      latin reads: sinew + bone + grass
+      chinese: 筋骨草属九味一枝蒿   jīn gǔ cǎo shǔ jiǔ wèi yī zhī hāo
+      wrong because: 14 letters
+
+  Stachys   19 species
+      latin reads: ear
+      chinese: 水苏属少毛甘露子   shuǐ sū shǔ shǎo máo gān lù zǐ
+      wrong because: same word as Otolejeunea
+
+  Libanotis   19 species
+      latin reads: rosemary
+      chinese: 岩风属狼山岩风   yán fēng shǔ láng shān yán fēng
+      wrong because: same word as Ulex, Rosmarinus
+
+  Tongoloa   19 species
+      latin reads: Tonga + deadly
+      chinese: 东俄芹属宜昌东俄芹   dōng é qín shǔ yí chāng dōng é qín
+      wrong because: a name in the gloss
+
+  Crepis   19 species
+      latin reads: boot
+      chinese: 还阳参属果山还阳参   huán yáng shēn shǔ guǒ shān huán yáng shēn
+      wrong because: same word as Crepidium
+
+  Campylopus   18 species
+      latin reads: bent + Opus
+      chinese: 曲柄藓属长叶曲柄藓   qū bǐng xiǎn shǔ cháng yè qū bǐng xiǎn
+      wrong because: a name in the gloss
+
+  Neckera   18 species
+      latin reads: nor + death
+      chinese: 平藓属不丹平藓   píng xiǎn shǔ bù dān píng xiǎn
+      wrong because: same word as Indoneckera
+
+  Eleutherococcus   18 species
+      latin reads: Eleutherus + grain
+      chinese: 五加属宝兴五加   wǔ jiā shǔ bǎo xīng wǔ jiā
+      wrong because: a name in the gloss
+
+  Tragopogon   18 species
+      latin reads: bearded
+      chinese: 婆罗门参属阿勒泰婆罗门参   pó luó mén shēn shǔ ā lè tài pó luó mén shēn
+      wrong because: same word as Pogonatum
+
+  Luisia   17 species
+      latin reads: ornamental hairpin + seed + thighs
+      chinese: 钗子股属小花钗子股   chāi zi gǔ shǔ xiǎo huā chāi zi gǔ
+      wrong because: 15 letters
+
+  Thrixspermum   17 species
+      latin reads: Thracian + seed
+      chinese: 白点兰属抱茎白点兰   bái diǎn lán shǔ bào jīng bái diǎn lán
+      wrong because: a name in the gloss, same word as Craniospermum, Trachyspermum
+
+  Vigna   17 species
+      latin reads: small kidney bean + bean
+      chinese: 豇豆属乌头叶豇豆   jiāng dòu shǔ wū tóu yè jiāng dòu
+      wrong because: 14 letters
+
+  Hiptage   17 species
+      latin reads: wind + stringed musical instrument + fruit
+      chinese: 风筝果属尖叶风筝果   fēng zheng guǒ shǔ jiān yè fēng zheng guǒ
+      wrong because: 21 letters
+
+  Crawfurdia   17 species
+      latin reads: creeper + dragon + gall bladder
+      chinese: 蔓龙胆属大花蔓龙胆   màn lóng dǎn shǔ dà huā màn lóng dǎn
+      wrong because: 16 letters
+
+  Lomatogonium   17 species
+      latin reads: fringe
+      chinese: 肋柱花属美丽肋柱花   lèi zhù huā shǔ měi lì lèi zhù huā
+      wrong because: same word as Crossidium, Trachyloma
+
+  Clinopodium   17 species
+      latin reads: bend + balcony
+      chinese: 风轮菜属风轮菜   fēng lún cài shǔ fēng lún cài
+      wrong because: 15 letters
+
+  Plagiothecium   16 species
+      latin reads: slanted + storage space
+      chinese: 棉藓属圆条棉藓   mián xiǎn shǔ yuán tiáo mián xiǎn
+      wrong because: 14 letters
+
+  Gollania   16 species
+      latin reads: coarse + branch + moss
+      chinese: 粗枝藓属阿里粗枝藓   cū zhī xiǎn shǔ ā lǐ cū zhī xiǎn
+      wrong because: 14 letters
+
+  Actinodaphne   16 species
+      latin reads: ray + Daphne
+      chinese: 黄肉楠属南投黄肉楠   huáng ròu nán shǔ nán tóu huáng ròu nán
+      wrong because: a name in the gloss, same word as Actinoschoenus, Actinocarya, Actinostachys
+
+  Pyrus   16 species
+      latin reads: wheat
+      chinese: 梨属杏叶梨   lí shǔ xìng yè lí
+      wrong because: same word as Triticum
+
+  Gynostemma   16 species
+      latin reads: feminine + garland
+      chinese: 绞股蓝属聚果绞股蓝   jiǎo gǔ lán shǔ jù guǒ jiǎo gǔ lán
+      wrong because: same word as Argostemma, Gomphostemma
+
+  Atriplex   16 species
+      latin reads: orach
+      chinese: 滨藜属白滨藜   bīn lí shǔ bái bīn lí
+      wrong because: same word as Atraphaxis
+
+  Mitreola   16 species
+      latin reads: turban + Olaf
+      chinese: 度量草属长叶度量草   dù liáng cǎo shǔ cháng yè dù liáng cǎo
+      wrong because: a name in the gloss, same word as Mitella
+
+  Vitex   16 species
+      latin reads: chaste tree
+      chinese: 牡荆属穗花牡荆   mǔ jīng shǔ suì huā mǔ jīng
+      wrong because: same word as Lygisma
+
+  Ulota   15 species
+      latin reads: curled + leaf + moss
+      chinese: 卷叶藓属卷叶藓   juǎn yè xiǎn shǔ juǎn yè xiǎn
+      wrong because: same word as Anastrepta
+
+  Ectropothecium   15 species
+      latin reads: inclined one side + seed (capsule) + moss
+      chinese: 偏蒴藓属蕨叶偏蒴藓   piān shuò xiǎn shǔ jué yè piān shuò xiǎn
+      wrong because: 20 letters
+
+  Cissus   15 species
+      latin reads: ivy
+      chinese: 白粉藤属贴生白粉藤   bái fěn téng shǔ tiē shēng bái fěn téng
+      wrong because: same word as Hedera
+
+  Gomphostemma   15 species
+      latin reads: Gomphi + garland
+      chinese: 锥花属木锥花   zhuī huā shǔ mù zhuī huā
+      wrong because: a name in the gloss, same word as Gynostemma, Argostemma
+
+  Haplopteris   15 species
+      latin reads: haploid
+      chinese: 书带蕨属剑叶书带蕨   shū dài jué shǔ jiàn yè shū dài jué
+      wrong because: same word as Haplocladium, Haplohymenium, Haplospondias
+
+  Thuidium   14 species
+      latin reads: sacrifice
+      chinese: 羽藓属绿羽藓   yǔ xiǎn shǔ lǜ yǔ xiǎn
+      wrong because: same word as Indothuidium
+
+  Veratrum   14 species
+      latin reads: hellebore
+      chinese: 藜芦属兴安藜芦   lí lú shǔ xīng ān lí lú
+      wrong because: same word as Helleborus
+
+  Nervilia   14 species
+      latin reads: sinew + Rachel
+      chinese: 芋兰属广布芋兰   yù lán shǔ guǎng bù yù lán
+      wrong because: a name in the gloss
+
+  Vanda   14 species
+      latin reads: ten thousand + replace + orchid
+      chinese: 万代兰属垂头万代兰   wàn dài lán shǔ chuí tóu wàn dài lán
+      wrong because: 15 letters, same word as Vandopsis
+
+  Trifolium   14 species
+      latin reads: clover
+      chinese: 车轴草属埃及车轴草   chē zhóu cǎo shǔ āi jí chē zhóu cǎo
+      wrong because: same word as Cytisus
+
+  Pseudostellaria   14 species
+      latin reads: false
+      chinese: 孩儿参属蔓孩儿参   hái er shēn shǔ màn hái er shēn
+      wrong because: same word as Pseudobryum, Pseudotsuga, Pseudosorghum
+
+  Mycetia   14 species
+      latin reads: gland + calyx + tree
+      chinese: 腺萼木属安龙腺萼木   xiàn è mù shǔ ān lóng xiàn è mù
+      wrong because: 15 letters
+
+  Veronicastrum   14 species
+      latin reads: female name + star
+      chinese: 腹水草属爬岩红   fù shuǐ cǎo shǔ pá yán hóng
+      wrong because: same word as Asterella, Circaeaster
+
+  Ligusticum   14 species
+      latin reads: lovage
+      chinese: 北藁本属白叶藁本   běi gǎo běn shǔ bái yè gǎo běn
+      wrong because: same word as Levisticum
+
+  Asterella   13 species
+      latin reads: stellar + suffix
+      chinese: 花萼苔属狭叶花萼苔   huā è tái shǔ xiá yè huā è tái
+      wrong because: same word as Circaeaster, Veronicastrum
+
+  Sunipia   13 species
+      latin reads: Sunium + pious
+      chinese: 大苞兰属黄花大苞兰   dà bāo lán shǔ huáng huā dà bāo lán
+      wrong because: a name in the gloss
+
+  Gelidocalamus   13 species
+      latin reads: indifferently + firewood + mouse
+      chinese: 短枝竹属亮竿竹   duǎn zhī zhú shǔ liàng gān zhú
+      wrong because: 16 letters
+
+  Themeda   13 species
+      latin reads: coarse grass
+      chinese: 菅属瘤菅   jiān shǔ liú jiān
+      wrong because: same word as Asperugo
+
+  Fragaria   13 species
+      latin reads: strawberry + holm oak
+      chinese: 草莓属草莓   cǎo méi shǔ cǎo méi
+      wrong because: 15 letters
+
+  Dysoxylum   13 species
+      latin reads: difficult + Oxylus
+      chinese: 樫木属高大樫木   jiān mù shǔ gāo dà jiān mù
+      wrong because: a name in the gloss
+
+  Braya   13 species
+      latin reads: flesh + leaf + water-chestnuts
+      chinese: 肉叶荠属红花肉叶荠   ròu yè jì shǔ hóng huā ròu yè jì
+      wrong because: 14 letters
+
+  Ternstroemia   13 species
+      latin reads: three each + owl + I may
+      chinese: 厚皮香属角柄厚皮香   hòu pí xiāng shǔ jiǎo bǐng hòu pí xiāng
+      wrong because: 15 letters
+
+  Pyrenaria   13 species
+      latin reads: seed + holm oak
+      chinese: 核果茶属叶萼核果茶   hé guǒ chá shǔ yè è hé guǒ chá
+      wrong because: 14 letters
+
+  Saurauia   13 species
+      latin reads: water + east + elder brother
+      chinese: 水东哥属蜡质水东哥   shuǐ dōng gē shǔ là zhì shuǐ dōng gē
+      wrong because: 14 letters
+
+  Biondia   13 species
+      latin reads: Bion + throughout
+      chinese: 秦岭藤属秦岭藤   qín lǐng téng shǔ qín lǐng téng
+      wrong because: a name in the gloss
+
+  Olea   13 species
+      latin reads: olive
+      chinese: 木樨榄属滨木樨榄   mù xi lǎn shǔ bīn mù xi lǎn
+      wrong because: same word as Oleandra
+
+  Pseudophegopteris   13 species
+      latin reads: false + Phegus + wing
+      chinese: 紫柄蕨属耳状紫柄蕨   zǐ bǐng jué shǔ ěr zhuàng zǐ bǐng jué
+      wrong because: a name in the gloss
+
+  Drynaria   13 species
+      latin reads: tree + holm oak
+      chinese: 槲蕨属崖姜   hú jué shǔ yá jiāng
+      wrong because: 14 letters
+
+  Syntrichia   12 species
+      latin reads: hair + named after
+      chinese: 赤藓属北美赤藓   chì xiǎn shǔ běi měi chì xiǎn
+      wrong because: same word as Comarum, Metapilea
+
+  Cephalozia   12 species
+      latin reads: big + calyx + moss
+      chinese: 大萼苔属钝瓣大萼苔   dà è tái shǔ dùn bàn dà è tái
+      wrong because: same word as Cephaloziella
+
+  Lirianthe   12 species
+      latin reads: Madonna lily + flower
+      chinese: 长喙木兰属绢毛木兰   cháng huì mù lán shǔ juàn máo mù lán
+      wrong because: a name in the gloss
+
+  Eria   12 species
+      latin reads: very
+      chinese: 毛兰属匍茎毛兰   máo lán shǔ pú jīng máo lán
+      wrong because: same word as Eriodes, Eriophyton
+
+  Micranthes   12 species
+      latin reads: small + flower + s
+      chinese: 亭阁草属黑亭阁草   tíng gé cǎo shǔ hēi tíng gé cǎo
+      wrong because: same word as Elachanthemum
+
+  Cyclea   12 species
+      latin reads: circle
+      chinese: 轮环藤属毛叶轮环藤   lún huán téng shǔ máo yè lún huán téng
+      wrong because: same word as Cyclocarya
+
+  Atraphaxis   12 species
+      latin reads: orach
+      chinese: 木蓼属沙木蓼   mù liǎo shǔ shā mù liǎo
+      wrong because: same word as Atriplex
+
+  Fagopyrum   12 species
+      latin reads: beech tree
+      chinese: 荞麦属疏穗野荞麦   qiáo mài shǔ shū suì yě qiáo mài
+      wrong because: same word as Fagus
+
+  Comastoma   12 species
+      latin reads: hair + mouth
+      chinese: 喉毛花属蓝钟喉毛花   hóu máo huā shǔ lán zhōng hóu máo huā
+      wrong because: same word as Trichostomum
+
+  Cuscuta   12 species
+      latin reads: dodder + thread + seed
+      chinese: 菟丝子属杯花菟丝子   tù sī zǐ shǔ bēi huā tù sī zǐ
+      wrong because: 15 letters
+
+  Mosla   12 species
+      latin reads: stone + water-chestnuts + china grass
+      chinese: 石荠苧属小花荠苧   shí jì níng shǔ xiǎo huā jì níng
+      wrong because: 15 letters
+
+  Cystopteris   12 species
+      latin reads: cystic + species of fern
+      chinese: 冷蕨属光叶蕨   lěng jué shǔ guāng yè jué
+      wrong because: 14 letters
+
+  Metathelypteris   12 species
+      latin reads: after + bracken
+      chinese: 凸轴蕨属微毛凸轴蕨   tū zhóu jué shǔ wēi máo tū zhóu jué
+      wrong because: same word as Thelypteris
+
+  Helictotrichon   11 species
+      latin reads: Aegium + whole + veil + honor
+      chinese: 山燕麦属冷杉山燕麦   shān yàn mài shǔ lěng shān shān yàn mài
+      wrong because: a name in the gloss
+
+  Pennisetum   11 species
+      latin reads: Peneus + not + bristle
+      chinese: 狼尾草属狼尾草   láng wěi cǎo shǔ láng wěi cǎo
+      wrong because: a name in the gloss
+
+  Sinobambusa   11 species
+      latin reads: sinus
+      chinese: 唐竹属独山唐竹   táng zhú shǔ dú shān táng zhú
+      wrong because: same word as Sinosassafras, Sinowilsonia, Sinocrassula
+
+  Sporobolus   11 species
+      latin reads: mouse + tail + unhusked millet
+      chinese: 鼠尾粟属卡鲁满穗鼠尾粟   shǔ wěi sù shǔ kǎ lǔ mǎn suì shǔ wěi sù
+      wrong because: 18 letters
+
+  Ludwigia   11 species
+      latin reads: male adult + fragrant + smartweed
+      chinese: 丁香蓼属水龙   dīng xiāng liǎo shǔ shuǐ lóng
+      wrong because: 15 letters
+
+  Clausena   11 species
+      latin reads: nail + Siena
+      chinese: 黄皮属细叶黄皮   huáng pí shǔ xì yè huáng pí
+      wrong because: a name in the gloss
+
+  Reevesia   11 species
+      latin reads: pillar + flower
+      chinese: 梭罗树属台湾梭罗树   suō luó shù shǔ tái wān suō luó shù
+      wrong because: same word as Stylosanthes
+
+  Hilliella   11 species
+      latin reads: bladder + fruit + water-chestnuts
+      chinese: 脬果荠属脬果荠   pāo guǒ jì shǔ pāo guǒ jì
+      wrong because: 15 letters
+
+  Myrsine   11 species
+      latin reads: myrtle
+      chinese: 铁仔属拟密花树   tiě zǎi shǔ nǐ mì huā shù
+      wrong because: same word as Myrtus
+
+  Convolvulus   11 species
+      latin reads: caterpillar
+      chinese: 旋花属银灰旋花   xuán huā shǔ yín huī xuán huā
+      wrong because: same word as Eruca
+
+  Conioselinum   11 species
+      latin reads: mountain + kind of herb
+      chinese: 山芎属山芎   shān xiōng shǔ shān xiōng
+      wrong because: 15 letters
+
+  Galatella   11 species
+      latin reads: milk + luxuriance of growth
+      chinese: 乳菀属阿尔泰乳菀   rǔ wǎn shǔ ā ěr tài rǔ wǎn
+      wrong because: 15 letters
+
+  Paraprenanthes   11 species
+      latin reads: beside
+      chinese: 假福王草属林生假福王草   jiǎ fú wáng cǎo shǔ lín shēng jiǎ fú wáng cǎo
+      wrong because: same word as Parasassafras, Parvatia, Parabaena
+
+  Crepidomanes   11 species
+      latin reads: base + Manes
+      chinese: 假脉蕨属南洋假脉蕨   jiǎ mài jué shǔ nán yáng jiǎ mài jué
+      wrong because: a name in the gloss
+
+  Metagentiana   11 species
+      latin reads: narrow + stamen + dragon + gall bladder
+      chinese: 狭蕊龙胆属翅萼龙胆   xiá ruǐ lóng dǎn shǔ chì è lóng dǎn
+      wrong because: 23 letters
+
+  Mnium   10 species
+      latin reads: hold in hand + lantern + moss
+      chinese: 提灯藓属变色提灯藓   tí dēng xiǎn shǔ biàn sè tí dēng xiǎn
+      wrong because: 17 letters
+
+  Typhonium   10 species
+      latin reads: comet
+      chinese: 犁头尖属白脉犁头尖   lí tóu jiān shǔ bái mài lí tóu jiān
+      wrong because: same word as Pogonia
+
+  Aristida   10 species
+      latin reads: three + awn + grass
+      chinese: 三芒草属三芒草   sān máng cǎo shǔ sān máng cǎo
+      wrong because: 14 letters
+
+  Chimonocalamus   10 species
+      latin reads: chi + mono + reed
+      chinese: 香竹属御香竹   xiāng zhú shǔ yù xiāng zhú
+      wrong because: same word as Arundina, Canna, Donax
+
+  Rhamnella   10 species
+      latin reads: Nautes + little
+      chinese: 猫乳属尾叶猫乳   māo rǔ shǔ wěi yè māo rǔ
+      wrong because: a name in the gloss, same word as Himalaiella
+
+  Alnus   10 species
+      latin reads: alder
+      chinese: 桤木属桤木   qī mù shǔ qī mù
+      wrong because: same word as Clethra
+
+  Homalium   10 species
+      latin reads: same + wing
+      chinese: 天料木属短穗天料木   tiān liào mù shǔ duǎn suì tiān liào mù
+      wrong because: same word as Homalia
+
+  Sonerila   10 species
+      latin reads: Son + domestic
+      chinese: 蜂斗草属蜂斗草   fēng dǒu cǎo shǔ fēng dǒu cǎo
+      wrong because: a name in the gloss
+
+  Helicteres   10 species
+      latin reads: Aegium + rounded
+      chinese: 山芝麻属山芝麻   shān zhī ma shǔ shān zhī ma
+      wrong because: a name in the gloss
+
+  Dontostemon   10 species
+      latin reads: gift + roasted + Emona
+      chinese: 花旗杆属厚叶花旗杆   huā qí gān shǔ hòu yè huā qí gān
+      wrong because: a name in the gloss
+
+  Smelowskia   10 species
+      latin reads: celery + leaf + water-chestnuts
+      chinese: 芹叶荠属藏荠   qín yè jì shǔ zàng jì
+      wrong because: 14 letters
+
+  Myricaria   10 species
+      latin reads: myriad + Caria
+      chinese: 水柏枝属白花水柏枝   shuǐ bǎi zhī shǔ bái huā shuǐ bǎi zhī
+      wrong because: a name in the gloss, same word as Polypleurum
+
+  Bassia   10 species
+      latin reads: sand + ice + chenopodium album
+      chinese: 沙冰藜属刺果藜   shā bīng lí shǔ cì guǒ lí
+      wrong because: 17 letters
+
+  Aucuba   10 species
+      latin reads: peach + leaf + coral + coral
+      chinese: 桃叶珊瑚属斑叶珊瑚   táo yè shān hú shǔ bān yè shān hú
+      wrong because: 15 letters
+
+  Erycibe   10 species
+      latin reads: male adult + fair + vine
+      chinese: 丁公藤属九来龙   dīng gōng téng shǔ jiǔ lái lóng
+      wrong because: 14 letters
+
+  Lycianthes   10 species
+      latin reads: Hanno + flower + s
+      chinese: 红丝线属红丝线   hóng sī xiàn shǔ hóng sī xiàn
+      wrong because: a name in the gloss, same word as Prasanthus, Maianthemum, Atropanthe
+
+  Whytockia   10 species
+      latin reads: strange + leaf + lettuce + moss
+      chinese: 异叶苣苔属毕节异叶苣苔   yì yè jù tái shǔ bì jié yì yè jù tái
+      wrong because: 14 letters
+
+  Chondrilla   10 species
+      latin reads: powder + bract + chrysanthemum
+      chinese: 粉苞菊属沙地粉苞菊   fěn bāo jú shǔ shā dì fěn bāo jú
+      wrong because: 15 letters
+
+  Ptychomitrium   9 species
+      latin reads: winnower + mound + cake
+      chinese: 缩叶藓属齿边缩叶藓   suō yè xiǎn shǔ chǐ biān suō yè xiǎn
+      wrong because: 16 letters
+
+  Dicranodontium   9 species
+      latin reads: two + cornel + tooth
+      chinese: 青毛藓属粗叶青毛藓   qīng máo xiǎn shǔ cū yè qīng máo xiǎn
+      wrong because: 14 letters
+
+  Trichostomum   9 species
+      latin reads: hair + mouth
+      chinese: 毛口藓属毛口藓   máo kǒu xiǎn shǔ máo kǒu xiǎn
+      wrong because: same word as Comastoma
+
+  Campylium   9 species
+      latin reads: bent + forms instrument nouns
+      chinese: 细湿藓属短尖拟细湿藓   xì shī xiǎn shǔ duǎn jiān nǐ xì shī xiǎn
+      wrong because: 14 letters
+
+  Leptopterigynandrum   9 species
+      latin reads: husked + wing + woman + andron
+      chinese: 叉羽藓属角疣叉羽藓   chà yǔ xiǎn shǔ jiǎo yóu chà yǔ xiǎn
+      wrong because: 16 letters
+
+  Pelekium   9 species
+      latin reads: Peleus + column
+      chinese: 鹤嘴藓属纤枝鹤嘴藓   hè zuǐ xiǎn shǔ xiān zhī hè zuǐ xiǎn
+      wrong because: a name in the gloss, same word as Phylacium
+
+  Brotherella   9 species
+      latin reads: shipworm + beast + little
+      chinese: 小锦藓属扁枝小锦藓   xiǎo jǐn xiǎn shǔ biǎn zhī xiǎo jǐn xiǎn
+      wrong because: 14 letters
+
+  Leptolejeunea   9 species
+      latin reads: slender
+      chinese: 薄鳞苔属斑点薄鳞苔   báo lín tái shǔ bān diǎn báo lín tái
+      wrong because: same word as Leptobryum, Leptocladium, Leptohymenium
+
+  Syndiclis   9 species
+      latin reads: representative + lawsuit
+      chinese: 油果樟属安龙油果樟   yóu guǒ zhāng shǔ ān lóng yóu guǒ zhāng
+      wrong because: 14 letters
+
+  Sinocrassula   9 species
+      latin reads: sinus
+      chinese: 石莲属长萼石莲   shí lián shǔ cháng è shí lián
+      wrong because: same word as Sinosassafras, Sinowilsonia, Sinodolichos
+
+  Brachiaria   9 species
+      latin reads: arm + holm oak
+      chinese: 臂形草属臂形草   bì xíng cǎo shǔ bì xíng cǎo
+      wrong because: 14 letters
+
+  Rhaphiolepis   9 species
+      latin reads: turnip + yawn + scale
+      chinese: 石斑木属锈毛石斑木   shí bān mù shǔ xiù máo shí bān mù
+      wrong because: 14 letters
+
+  Rotala   9 species
+      latin reads: joint + joint + vegetable
+      chinese: 节节菜属异叶节节菜   jié jié cài shǔ yì yè jié jié cài
+      wrong because: 16 letters
+
+  Allophylus   9 species
+      latin reads: foreign
+      chinese: 异木患属波叶异木患   yì mù huàn shǔ bō yè yì mù huàn
+      wrong because: same word as Xenochila
+
+  Firmiana   9 species
+      latin reads: chinese parasol tree + tung
+      chinese: 梧桐属龙州梧桐   wú tóng shǔ lóng zhōu wú tóng
+      wrong because: 14 letters
+
+  Pterospermum   9 species
+      latin reads: wing + seed
+      chinese: 翅子树属翻白叶树   chì zǐ shù shǔ fān bái yè shù
+      wrong because: same word as Apterosperma
+
+  Alyxia   9 species
+      latin reads: captured
+      chinese: 链珠藤属橄榄果链珠藤   liàn zhū téng shǔ gǎn lǎn guǒ liàn zhū téng
+      wrong because: same word as Imbralyx
+
+  Raphiocarpus   9 species
+      latin reads: turnip + yawn + carver
+      chinese: 漏斗苣苔属长梗漏斗苣苔   lòu dǒu jù tái shǔ cháng gěng lòu dǒu jù tái
+      wrong because: 15 letters
+
+  Sinocarum   9 species
+      latin reads: sinus
+      chinese: 小芹属紫茎小芹   xiǎo qín shǔ zǐ jīng xiǎo qín
+      wrong because: same word as Sinosassafras, Sinowilsonia, Sinocrassula
+
+  Alseodaphnopsis   9 species
+      latin reads: Ausa + move + Daphne + appearance
+      chinese: 北油丹属北油丹   běi yóu dān shǔ běi yóu dān
+      wrong because: a name in the gloss
+
+  Kuepferia   9 species
+      latin reads: ear + pleat + dragon + gall bladder
+      chinese: 耳褶龙胆属石竹叶龙胆   ěr zhě lóng dǎn shǔ shí zhú yè lóng dǎn
+      wrong because: 19 letters
+
+  Atrichum   8 species
+      latin reads: Atreid + fluid
+      chinese: 仙鹤藓属狭叶仙鹤藓   xiān hè xiǎn shǔ xiá yè xiān hè xiǎn
+      wrong because: a name in the gloss
+
+  Polytrichastrum   8 species
+      latin reads: many + hair
+      chinese: 拟金发藓属拟金发藓   nǐ jīn fà xiǎn shǔ nǐ jīn fà xiǎn
+      wrong because: same word as Polytrichum
+
+  Calyptothecium   8 species
+      latin reads: to cover + storage space
+      chinese: 耳平藓属无肋耳平藓   ěr píng xiǎn shǔ wú lèi ěr píng xiǎn
+      wrong because: 15 letters
+
+  Pterobryopsis   8 species
+      latin reads: wing + sea lettuce
+      chinese: 拟蕨藓属尖叶拟蕨藓   nǐ jué xiǎn shǔ jiān yè nǐ jué xiǎn
+      wrong because: same word as Pterobryon
+
+  Cephaloziella   8 species
+      latin reads: like + big + calyx + moss
+      chinese: 拟大萼苔属短萼拟大萼苔   nǐ dà è tái shǔ duǎn è nǐ dà è tái
+      wrong because: same word as Cephalozia
+
+  Cajanus   8 species
+      latin reads: tree + bean
+      chinese: 木豆属木豆   mù dòu shǔ mù dòu
+      wrong because: same word as Dendrolobium
+
+  Piptatherum   8 species
+      latin reads: fall + awn + grass
+      chinese: 落芒草属等颖落芒草   luò máng cǎo shǔ děng yǐng luò máng cǎo
+      wrong because: 14 letters
+
+  Heteropolygonatum   8 species
+      latin reads: varied
+      chinese: 异黄精属金佛山异黄精   yì huáng jīng shǔ jīn fó shān yì huáng jīng
+      wrong because: same word as Heterocladium, Heterolamium, Heteropanax
+
+  Melicope   8 species
+      latin reads: honey + dogwood + dogwood
+      chinese: 蜜茱萸属海南蜜茱萸   mì zhū yú shǔ hǎi nán mì zhū yú
+      wrong because: 15 letters
+
+  Aglaia   8 species
+      latin reads: rice + small thing + orchid
+      chinese: 米仔兰属山椤   mǐ zǎi lán shǔ shān luó
+      wrong because: 16 letters
+
+  Anabasis   8 species
+      latin reads: horsetail
+      chinese: 假木贼属无叶假木���   jiǎ mù zéi shǔ wú yè jiǎ mù zéi
+      wrong because: same word as Hippuris
+
+  Clethra   8 species
+      latin reads: alder
+      chinese: 桤叶树属髭脉桤叶树   qī yè shù shǔ zī mài qī yè shù
+      wrong because: same word as Alnus
+
+  Alstonia   8 species
+      latin reads: yellow + flower + sheep + horn + cotton
+      chinese: 鸡骨常山属黄花羊角棉   jī gǔ cháng shān shǔ huáng huā yáng jiǎo mián
+      wrong because: 15 letters
+
+  Leucas   8 species
+      latin reads: embroider + ball + defend + wind
+      chinese: 绣球防风属蜂巢草   xiù qiú fáng fēng shǔ fēng cháo cǎo
+      wrong because: 15 letters
+
+  Allardia   8 species
+      latin reads: flat + awn + chrysanthemum
+      chinese: 扁芒菊属西藏扁芒菊   biǎn máng jú shǔ xī zàng biǎn máng jú
+      wrong because: 14 letters
+
+  Centaurea   8 species
+      latin reads: Centaurea centaurium
+      chinese: 矢车菊属藏掖花   shǐ chē jú shǔ cáng yē huā
+      wrong because: a name in the gloss
+
+  Faberia   8 species
+      latin reads: flower + belt ornament + chrysanthemum
+      chinese: 花佩菊属小花花佩菊   huā pèi jú shǔ xiǎo huā huā pèi jú
+      wrong because: 14 letters
+
+  Himalaiella   8 species
+      latin reads: Himalayas + little
+      chinese: 须弥菊属普兰须弥菊   xū mí jú shǔ pǔ lán xū mí jú
+      wrong because: a name in the gloss, same word as Rhamnella
+
+  Onychium   8 species
+      latin reads: onyx + forms instrument nouns
+      chinese: 金粉蕨属狭叶金粉蕨   jīn fěn jué shǔ xiá yè jīn fěn jué
+      wrong because: 18 letters
+
+  Erythranthe   8 species
+      latin reads: red + flower
+      chinese: 沟酸浆属匍生沟酸浆   gōu suān jiāng shǔ pú shēng gōu suān jiāng
+      wrong because: same word as Carthamus
+
+  Sabulina   8 species
+      latin reads: mountain + varnish + father's sister
+      chinese: 山漆姑属腺毛山漆姑   shān qī gū shǔ xiàn máo shān qī gū
+      wrong because: 17 letters
+
+  Oligotrichum   7 species
+      latin reads: few + hair
+      chinese: 小赤藓属高栉小赤藓   xiǎo chì xiǎn shǔ gāo zhì xiǎo chì xiǎn
+      wrong because: same word as Oligochaeta
+
+  Acroporium   7 species
+      latin reads: end + pore + forms instrument nouns
+      chinese: 顶胞藓属密叶顶胞藓   dǐng bāo xiǎn shǔ mì yè dǐng bāo xiǎn
+      wrong because: 20 letters
+
+  Schistochila   7 species
+      latin reads: fork of road + tongue + moss
+      chinese: 歧舌苔属尖叶歧舌苔   qí shé tái shǔ jiān yè qí shé tái
+      wrong because: 17 letters
+
+  Nardia   7 species
+      latin reads: passive indicator 'by' + seed (capsule) + moss
+      chinese: 被蒴苔属南亚被蒴苔   bèi shuò tái shǔ nán yà bèi shuò tái
+      wrong because: 21 letters
+
+  Lopholejeunea   7 species
+      latin reads: nape
+      chinese: 冠鳞苔属锡兰冠鳞苔   guān lín tái shǔ xī lán guān lín tái
+      wrong because: same word as Monolophus
+
+  Pseudotsuga   7 species
+      latin reads: false
+      chinese: 黄杉属短叶黄杉   huáng shān shǔ duǎn yè huáng shān
+      wrong because: same word as Pseudobryum, Pseudosorghum, Pseudocydonia
+
+  Phrynium   7 species
+      latin reads: toad + forms instrument nouns
+      chinese: 柊叶属海南柊叶   zhōng yè shǔ hǎi nán zhōng yè
+      wrong because: 14 letters
+
+  Tupistra   7 species
+      latin reads: blow + Istros
+      chinese: 长柱开口箭属伞柱开口箭   cháng zhù kāi kǒu jiàn shǔ sǎn zhù kāi kǒu jiàn
+      wrong because: a name in the gloss, same word as Rhapis
+
+  Debregeasia   7 species
+      latin reads: reversal + brainpan + exist
+      chinese: 水麻属椭圆叶水麻   shuǐ má shǔ tuǒ yuán yè shuǐ má
+      wrong because: 14 letters
+
+  Atalantia   7 species
+      latin reads: wine + rice-cakes + thorn
+      chinese: 酒饼簕属尖叶酒饼簕   jiǔ bǐng lè shǔ jiān yè jiǔ bǐng lè
+      wrong because: 16 letters
+
+  Ailanthus   7 species
+      latin reads: Elath + jackal
+      chinese: 臭椿属臭椿   chòu chūn shǔ chòu chūn
+      wrong because: a name in the gloss
+
+  Triumfetta   7 species
+      latin reads: thorn + seed (capsule) + hemp
+      chinese: 刺蒴麻属单毛刺蒴麻   cì shuò má shǔ dān máo cì shuò má
+      wrong because: 15 letters
+
+  Crucihimalaya   7 species
+      latin reads: cross + thong + wing
+      chinese: 须弥芥属腋花须弥芥   xū mí jiè shǔ yè huā xū mí jiè
+      wrong because: 14 letters
+
+  Noccaea   7 species
+      latin reads: mountain + pennycress + lucky place
+      chinese: 山菥蓂属西藏山菥蓂   shān xī mì shǔ xī zàng shān xī mì
+      wrong because: 15 letters
+
+  Argostemma   7 species
+      latin reads: Argo + garland
+      chinese: 雪花属异色雪花   xuě huā shǔ yì sè xuě huā
+      wrong because: a name in the gloss, same word as Gynostemma, Gomphostemma
+
+  Benkara   7 species
+      latin reads: went + head
+      chinese: 鸡爪簕属多刺鸡爪簕   jī zhǎo lè shǔ duō cì jī zhǎo lè
+      wrong because: same word as Crassocephalum
+
+  Phelipanche   7 species
+      latin reads: speak + fat + Ancha
+      chinese: 小苞列当属小苞列当   xiǎo bāo liè dāng shǔ xiǎo bāo liè dāng
+      wrong because: a name in the gloss
+
+  Radermachera   7 species
+      latin reads: radon + hedgehog + leanness + Hera
+      chinese: 菜豆树属美叶菜豆树   cài dòu shù shǔ měi yè cài dòu shù
+      wrong because: 15 letters, a name in the gloss
+
+  Macropanax   7 species
+      latin reads: large
+      chinese: 大参属显脉大参   dà shēn shǔ xiǎn mài dà shēn
+      wrong because: same word as Macrosolen
+
+  Doronicum   7 species
+      latin reads: many + betel-nut tree + chrysanthemum
+      chinese: 多榔菊属阿尔泰多榔菊   duō láng jú shǔ ā ěr tài duō láng jú
+      wrong because: 17 letters
+
+  Gamochaeta   7 species
+      latin reads: combine + crown + mouse + bent
+      chinese: 合冠鼠曲属直茎合冠鼠曲   hé guān shǔ qū shǔ zhí jīng hé guān shǔ qū
+      wrong because: 16 letters
+
+  Soroseris   7 species
+      latin reads: heap + Eris
+      chinese: 绢毛苣属矮生绢毛苣   juàn máo jù shǔ ǎi shēng juàn máo jù
+      wrong because: a name in the gloss, same word as Mukia, Korthalsella
+
+  Diplopterygium   7 species
+      latin reads: something double + fin
+      chinese: 里白属中华里白   lǐ bái shǔ zhōng huá lǐ bái
+      wrong because: 14 letters
+
+  Polytrichum   6 species
+      latin reads: many + hair
+      chinese: 金发藓属金发藓   jīn fà xiǎn shǔ jīn fà xiǎn
+      wrong because: same word as Polytrichastrum
+
+  Symphyodon   6 species
+      latin reads: grow together + instance of giving
+      chinese: 刺果藓属平叶刺果藓   cì guǒ xiǎn shǔ píng yè cì guǒ xiǎn
+      wrong because: 15 letters
+
+  Thamnobryum   6 species
+      latin reads: tree + moss
+      chinese: 木藓属木藓   mù xiǎn shǔ mù xiǎn
+      wrong because: same word as Pleuroziopsis
+
+  Lophozia   6 species
+      latin reads: split + leaf + moss
+      chinese: 裂叶苔属倾立裂叶苔   liè yè tái shǔ qīng lì liè yè tái
+      wrong because: same word as Lophoziopsis
+
+  Chiastocaulon   6 species
+      latin reads: crosspiece + childbirth + pipe
+      chinese: 树羽苔属树羽苔   shù yǔ tái shǔ shù yǔ tái
+      wrong because: 16 letters
+
+  Caryodaphnopsis   6 species
+      latin reads: nut + Daphnis + view
+      chinese: 檬果樟属老挝檬果樟   méng guǒ zhāng shǔ lǎo wō méng guǒ zhāng
+      wrong because: a name in the gloss
+
+  Stemona   6 species
+      latin reads: warp
+      chinese: 百部属百部   bǎi bù shǔ bǎi bù
+      wrong because: same word as Synstemon
+
+  Chiloschista   6 species
+      latin reads: Chilon + young branch
+      chinese: 异型兰属广东异型兰   yì xíng lán shǔ guǎng dōng yì xíng lán
+      wrong because: a name in the gloss
+
+  Rhodoleia   6 species
+      latin reads: rose-colored + Leah
+      chinese: 红花荷属红花荷   hóng huā hé shǔ hóng huā hé
+      wrong because: a name in the gloss, same word as Rhodobryum
+
+  Canavalia   6 species
+      latin reads: Cana + tribe
+      chinese: 刀豆属小刀豆   dāo dòu shǔ xiǎo dāo dòu
+      wrong because: a name in the gloss
+
+  Arenga   6 species
+      latin reads: coir-palm + betel-nut tree
+      chinese: 桄榔属双籽棕   guāng láng shǔ shuāng zǐ zōng
+      wrong because: 19 letters
+
+  Boesenbergia   6 species
+      latin reads: cattle + old man + Berga
+      chinese: 凹唇姜属白斑凹唇姜   āo chún jiāng shǔ bái bān āo chún jiāng
+      wrong because: a name in the gloss
+
+  Kaempferia   6 species
+      latin reads: mountain + crab-apple tree
+      chinese: 山柰属白花山柰   shān nài shǔ bái huā shān nài
+      wrong because: 15 letters
+
+  Leptopus   6 species
+      latin reads: thin + Opus
+      chinese: 雀舌木属薄叶雀舌木   què shé mù shǔ báo yè què shé mù
+      wrong because: a name in the gloss
+
+  Hemilophia   6 species
+      latin reads: half
+      chinese: 半脊荠属柔毛半脊荠   bàn jǐ jì shǔ róu máo bàn jǐ jì
+      wrong because: same word as Semiarundinaria, Hemidiodia
+
+  Sterigmostemum   6 species
+      latin reads: few + gland + claw + flower + mustard plant
+      chinese: 棒果芥属少腺爪花芥   bàng guǒ jiè shǔ shǎo xiàn zhǎo huā jiè
+      wrong because: 20 letters
+
+  Parrya   6 species
+      latin reads: owl
+      chinese: 条果芥属柳叶条果芥   tiáo guǒ jiè shǔ liǔ yè tiáo guǒ jiè
+      wrong because: same word as Parryodes
+
+  Dichroa   6 species
+      latin reads: two + Christ
+      chinese: 常山属大明常山   cháng shān shǔ dà míng cháng shān
+      wrong because: a name in the gloss
+
+  Nothapodytes   6 species
+      latin reads: false + firewood + dragon + tree
+      chinese: 假柴龙树属厚叶假柴龙树   jiǎ chái lóng shù shǔ hòu yè jiǎ chái lóng shù
+      wrong because: 17 letters
+
+  Melodinus   6 species
+      latin reads: honey + Odin
+      chinese: 山橙属台湾山橙   shān chéng shǔ tái wān shān chéng
+      wrong because: a name in the gloss
+
+  Secamone   6 species
+      latin reads: carassius auratus + fish + vine
+      chinese: 鲫鱼藤属斑皮鲫鱼藤   jì yú téng shǔ bān pí jì yú téng
+      wrong because: 15 letters
+
+  Wrightia   6 species
+      latin reads: fall over + condole + writing brush
+      chinese: 倒吊笔属胭木   dào diào bǐ shǔ yān mù
+      wrong because: 17 letters
+
+  Physalis   6 species
+      latin reads: ocean + sour + any thick fluid
+      chinese: 洋酸浆属苦蘵   yáng suān jiāng shǔ kǔ zhī
+      wrong because: 16 letters
+
+  Beccarinda   6 species
+      latin reads: bread + Car + Indian
+      chinese: 横蒴苣苔属饰岩横蒴苣苔   héng shuò jù tái shǔ shì yán héng shuò jù tái
+      wrong because: a name in the gloss
+
+  Cistanche   6 species
+      latin reads: chest + Ancha
+      chinese: 肉苁蓉属肉苁蓉   ròu cōng róng shǔ ròu cōng róng
+      wrong because: a name in the gloss, same word as Pecteilis
+
+  Heteropanax   6 species
+      latin reads: varied
+      chinese: 幌伞枫属短梗幌伞枫   huǎng sǎn fēng shǔ duǎn gěng huǎng sǎn fēng
+      wrong because: same word as Heterocladium, Heteropolygonatum, Heterolamium
+
+  Cicerbita   6 species
+      latin reads: cliff + take part in
+      chinese: 岩参属抱茎岩参   yán shēn shǔ bào jīng yán shēn
+      wrong because: 14 letters
+
+  Gnaphalium   6 species
+      latin reads: wet + mouse + bent + grass
+      chinese: 湿鼠曲草属星芒湿鼠曲草   shī shǔ qū cǎo shǔ xīng máng shī shǔ qū cǎo
+      wrong because: 15 letters
+
+  Ixeris   6 species
+      latin reads: bitter + plant name + vegetable
+      chinese: 苦荬菜属中华苦荬菜   kǔ mǎi cài shǔ zhōng huá kǔ mǎi cài
+      wrong because: 16 letters
+
+  Solidago   6 species
+      latin reads: one + branch + yellow + flower
+      chinese: 一枝黄花属高大一枝黄花   yī zhī huáng huā shǔ gāo dà yī zhī huáng huā
+      wrong because: 16 letters
+
+  Chamaelirium   6 species
+      latin reads: terrestrial + Madonna lily
+      chinese: 仙杖花属绿花白丝草   xiān zhàng huā shǔ lǜ huā bái sī cǎo
+      wrong because: a name in the gloss
+
+  Vickifunkia   6 species
+      latin reads: without + scabbard + sack + i
+      chinese: 无鞘橐吾属无鞘橐吾   wú qiào tuó wú shǔ wú qiào tuó wú
+      wrong because: 14 letters
+
+  Distichium   5 species
+      latin reads: not + Teichium
+      chinese: 对叶藓属短柄对叶藓   duì yè xiǎn shǔ duǎn bǐng duì yè xiǎn
+      wrong because: a name in the gloss, same word as Disanthus
+
+  Cynodontium   5 species
+      latin reads: dog + tooth + Tium
+      chinese: 狗牙藓属高山狗牙藓   gǒu yá xiǎn shǔ gāo shān gǒu yá xiǎn
+      wrong because: a name in the gloss, same word as Cynodon
+
+  Dicranoloma   5 species
+      latin reads: two + cornel + fringe
+      chinese: 锦叶藓属大锦叶藓   jǐn yè xiǎn shǔ dà jǐn yè xiǎn
+      wrong because: 15 letters
+
+  Calliergon   5 species
+      latin reads: beautiful + work
+      chinese: 湿原藓属湿原藓   shī yuán xiǎn shǔ shī yuán xiǎn
+      wrong because: same word as Calliergonella
+
+  Schwetschkea   5 species
+      latin reads: adhere to + dry + moss
+      chinese: 附干藓属短枝附干藓   fù gàn xiǎn shǔ duǎn zhī fù gàn xiǎn
+      wrong because: same word as Schwetschkeopsis
+
+  Floribundaria   5 species
+      latin reads: floral + cattle + Sibae
+      chinese: 丝带藓属丝带藓   sī dài xiǎn shǔ sī dài xiǎn
+      wrong because: a name in the gloss
+
+  Trichosteleum   5 species
+      latin reads: hair + bone + Leon
+      chinese: 刺疣藓属垂蒴刺疣藓   cì yóu xiǎn shǔ chuí shuò cì yóu xiǎn
+      wrong because: a name in the gloss
+
+  Haplohymenium   5 species
+      latin reads: haploid + Hymen
+      chinese: 多枝藓属鞭枝多枝藓   duō zhī xiǎn shǔ biān zhī duō zhī xiǎn
+      wrong because: a name in the gloss, same word as Haplocladium, Haplospondias, Haplopteris
+
+  Tacca   5 species
+      latin reads: white + stalk + arrow + root + yam
+      chinese: 蒟蒻薯属白柄箭根薯   jǔ ruò shǔ shǔ bái bǐng jiàn gēn shǔ
+      wrong because: 17 letters
+
+  Cyrtosia   5 species
+      latin reads: swelling
+      chinese: 肉果兰属二色肉果兰   ròu guǒ lán shǔ èr sè ròu guǒ lán
+      wrong because: same word as Bryobium, Myrtama, Phytolacca
+
+  Myrmechis   5 species
+      latin reads: Myron + means
+      chinese: 全唇兰属全唇兰   quán chún lán shǔ quán chún lán
+      wrong because: a name in the gloss
+
+  Papilionanthe   5 species
+      latin reads: papal + Troy + flower
+      chinese: 凤蝶兰属白花凤蝶兰   fèng dié lán shǔ bái huā fèng dié lán
+      wrong because: a name in the gloss
+
+  Distyliopsis   5 species
+      latin reads: false + mosquito + mother
+      chinese: 假蚊母属假蚊母   jiǎ wén mǔ shǔ jiǎ wén mǔ
+      wrong because: 15 letters
+
+  Clitoria   5 species
+      latin reads: town
+      chinese: 蝶豆属镰刀荚蝶豆   dié dòu shǔ lián dāo jiá dié dòu
+      wrong because: same word as Helodium, Hypserpa, Pertusadina
+
+  Corethrodendron   5 species
+      latin reads: Persephone + clamor + tree
+      chinese: 羊柴属羊柴   yáng chái shǔ yáng chái
+      wrong because: a name in the gloss
+
+  Dendrolobium   5 species
+      latin reads: tree + bean
+      chinese: 假木豆属两节假木豆   jiǎ mù dòu shǔ liǎng jié jiǎ mù dòu
+      wrong because: same word as Cajanus
+
+  Glycine   5 species
+      latin reads: big + bean
+      chinese: 大豆属扁豆荚大豆   dà dòu shǔ biǎn dòu jiá dà dòu
+      wrong because: same word as Ophrestia
+
+  Pinanga   5 species
+      latin reads: mountain + betel-nut + betel-nut tree
+      chinese: 山槟榔属滇缅山槟榔   shān bīng láng shǔ diān miǎn shān bīng láng
+      wrong because: 22 letters
+
+  Rhapis   5 species
+      latin reads: blow
+      chinese: 棕竹属棕竹   zōng zhú shǔ zōng zhú
+      wrong because: same word as Tupistra
+
+  Wallichia   5 species
+      latin reads: tile + reason + hemp palm
+      chinese: 瓦理棕属琴叶瓦理棕   wǎ lǐ zōng shǔ qín yè wǎ lǐ zōng
+      wrong because: 16 letters
+
+  Pontederia   5 species
+      latin reads: weaver's shuttle + fish + grass
+      chinese: 梭鱼草属凤眼莲   suō yú cǎo shǔ fèng yǎn lián
+      wrong because: 16 letters
+
+  Canna   5 species
+      latin reads: reed
+      chinese: 美人蕉属柔瓣美人蕉   měi rén jiāo shǔ róu bàn měi rén jiāo
+      wrong because: same word as Arundina, Donax, Arundo
+
+  Cenchrus   5 species
+      latin reads: millet
+      chinese: 蒺藜草属水牛草   jí lí cǎo shǔ shuǐ niú cǎo
+      wrong because: same word as Milium
+
+  Hyparrhenia   5 species
+      latin reads: reality + Rhenea
+      chinese: 苞茅属短梗苞茅   bāo máo shǔ duǎn gěng bāo máo
+      wrong because: a name in the gloss
+
+  Lolium   5 species
+      latin reads: darnel
+      chinese: 黑麦草属多花黑麦草   hēi mài cǎo shǔ duō huā hēi mài cǎo
+      wrong because: same word as Zizania
+
+  Streptopus   5 species
+      latin reads: twisted + Opus
+      chinese: 扭柄花属丝梗扭柄花   niǔ bǐng huā shǔ sī gěng niǔ bǐng huā
+      wrong because: a name in the gloss, same word as Streblus
+
+  Chamaerhodos   5 species
+      latin reads: terrestrial + Rhodes
+      chinese: 地蔷薇属阿尔泰地蔷薇   dì qiáng wēi shǔ ā ěr tài dì qiáng wēi
+      wrong because: a name in the gloss
+
+  Sibbaldianthe   5 species
+      latin reads: sharp + bleating + divine + Thee
+      chinese: 毛莓草属毛莓草   máo méi cǎo shǔ máo méi cǎo
+      wrong because: a name in the gloss
+
+  Frangula   5 species
+      latin reads: naked + bud + mouse + plum
+      chinese: 裸芽鼠李属欧鼠李   luǒ yá shǔ lǐ shǔ ōu shǔ lǐ
+      wrong because: 16 letters
+
+  Zehneria   5 species
+      latin reads: knot + seed + melon
+      chinese: 马瓟儿属纽子瓜   mǎ báo er shǔ niǔ zi guā
+      wrong because: 17 letters
+
+  Loeseneriella   5 species
+      latin reads: Lois + oleander + little
+      chinese: 翅子藤属程香仔树   chì zǐ téng shǔ chéng xiāng zǎi shù
+      wrong because: a name in the gloss
+
+  Pelargonium   5 species
+      latin reads: stork + Mount Oneum
+      chinese: 天竺葵属家天竺葵   tiān zhú kuí shǔ jiā tiān zhú kuí
+      wrong because: a name in the gloss
+
+  Allomorphia   5 species
+      latin reads: nonself + form
+      chinese: 异形木属异形木   yì xíng mù shǔ yì xíng mù
+      wrong because: same word as Allospondias
+
+  Mangifera   5 species
+      latin reads: southern China + to bear
+      chinese: 杧果属杧果   máng guǒ shǔ máng guǒ
+      wrong because: a name in the gloss
+
+  Alyssum   5 species
+      latin reads: agitation + Syme
+      chinese: 庭荠属欧洲庭荠   tíng jì shǔ ōu zhōu tíng jì
+      wrong because: a name in the gloss
+
+  Barbarea   5 species
+      latin reads: mountain + mustard plant
+      chinese: 山芥属羽裂山芥   shān jiè shǔ yǔ liè shān jiè
+      wrong because: 17 letters
+
+  Brassica   5 species
+      latin reads: cabbage
+      chinese: 芸薹属鸡冠菜   yún tái shǔ jī guān cài
+      wrong because: same word as Crambe
+
+  Goldbachia   5 species
+      latin reads: four + squared timber + water-chestnuts
+      chinese: 四棱荠属短梗四棱荠   sì léng jì shǔ duǎn gěng sì léng jì
+      wrong because: 18 letters
+
+  Stevenia   5 species
+      latin reads: bright + south + mustard plant
+      chinese: 曙南芥属曙南芥   shǔ nán jiè shǔ shǔ nán jiè
+      wrong because: 19 letters
+
+  Macrosolen   5 species
+      latin reads: large
+      chinese: 鞘花属双花鞘花   qiào huā shǔ shuāng huā qiào huā
+      wrong because: same word as Macropanax
+
+  Spergularia   5 species
+      latin reads: cow + varnish + father's sister
+      chinese: 牛漆姑属二蕊牛漆姑   niú qī gū shǔ èr ruǐ niú qī gū
+      wrong because: 18 letters
+
+  Phytolacca   5 species
+      latin reads: plant + swelling
+      chinese: 商陆属商陆   shāng lù shǔ shāng lù
+      wrong because: same word as Bryobium, Cyrtosia, Myrtama
+
+  Gardneria   5 species
+      latin reads: type of raspberry + goosefoot + kudzu
+      chinese: 蓬莱葛属狭叶蓬莱葛   péng lái gé shǔ xiá yè péng lái gé
+      wrong because: 18 letters
+
+  Tabernaemontana   5 species
+      latin reads: shop + Montana
+      chinese: 狗牙花属药用狗牙花   gǒu yá huā shǔ yào yòng gǒu yá huā
+      wrong because: a name in the gloss
+
+  Maharanga   5 species
+      latin reads: swell + calyx + purple + grass
+      chinese: 胀萼紫草属二色胀萼紫草   zhàng è zǐ cǎo shǔ èr sè zhàng è zǐ cǎo
+      wrong because: 17 letters
+
+  Rochelia   5 species
+      latin reads: twins + fruit + crane + louse
+      chinese: 孪果鹤虱属孪果鹤虱   luán guǒ hè shī shǔ luán guǒ hè shī
+      wrong because: 16 letters
+
+  Lindenbergia   5 species
+      latin reads: bell + calyx + grass
+      chinese: 钟萼草属封开钟萼草   zhōng è cǎo shǔ fēng kāi zhōng è cǎo
+      wrong because: 16 letters
+
+  Matsumurella   5 species
+      latin reads: small + wild + sesame + hemp
+      chinese: 小野芝麻属小野芝麻   xiǎo yě zhī ma shǔ xiǎo yě zhī ma
+      wrong because: 16 letters
+
+  Glechoma   5 species
+      latin reads: live + blood + cinnabar (native hgs)
+      chinese: 活血丹属白透骨消   huó xuè dān shǔ bái tòu gǔ xiāo
+      wrong because: 19 letters
+
+  Schnabelia   5 species
+      latin reads: four + squared timber + grass
+      chinese: 四棱草属金腺莸   sì léng cǎo shǔ jīn xiàn yóu
+      wrong because: 15 letters
+
+  Barleria   5 species
+      latin reads: baris + ornaments
+      chinese: 假杜鹃属假杜鹃   jiǎ dù juān shǔ jiǎ dù juān
+      wrong because: same word as Teyleria
+
+  Pararuellia   5 species
+      latin reads: beside
+      chinese: 地皮消属节翅地皮消   dì pí xiāo shǔ jié chì dì pí xiāo
+      wrong because: same word as Parasassafras, Parvatia, Parabaena
+
+  Catalpa   5 species
+      latin reads: down + Alps
+      chinese: 梓属楸   zǐ shǔ qiū
+      wrong because: a name in the gloss, same word as Coelachne
+
+  Heteroplexis   5 species
+      latin reads: varied + composite
+      chinese: 异裂菊属凹脉异裂菊   yì liè jú shǔ āo mài yì liè jú
+      wrong because: 14 letters
+
+  Nemosenecio   5 species
+      latin reads: distribute + old man
+      chinese: 羽叶菊属裸果羽叶菊   yǔ yè jú shǔ luǒ guǒ yǔ yè jú
+      wrong because: 15 letters
+
+  Pluchea   5 species
+      latin reads: broad + bract + chrysanthemum
+      chinese: 阔苞菊属美洲阔苞菊   kuò bāo jú shǔ měi zhōu kuò bāo jú
+      wrong because: 15 letters
+
+  Abelia   5 species
+      latin reads: glutinous rice + rice + stripe
+      chinese: 糯米条属糯米条   nuò mǐ tiáo shǔ nuò mǐ tiáo
+      wrong because: 16 letters
+
+  Stegnogramma   5 species
+      latin reads: holy + fern
+      chinese: 溪边蕨属圣蕨   xī biān jué shǔ shèng jué
+      wrong because: 19 letters
+
+  Oleandra   5 species
+      latin reads: olive + Simois
+      chinese: 蓧蕨属华南蓧蕨   tiáo jué shǔ huá nán tiáo jué
+      wrong because: a name in the gloss, same word as Olea
+
+  Grubovia   5 species
+      latin reads: fog + ice + chenopodium album
+      chinese: 雾冰藜属短齿雾冰藜   wù bīng lí shǔ duǎn chǐ wù bīng lí
+      wrong because: 16 letters
+
+  Symblepharis   4 species
+      latin reads: Syme + eyelash
+      chinese: 合睫藓属大合睫藓   hé jié xiǎn shǔ dà hé jié xiǎn
+      wrong because: a name in the gloss, same word as Blepharis
+
+  Paraleucobryum   4 species
+      latin reads: beside + white + sea lettuce
+      chinese: 拟白发藓属拟白发藓   nǐ bái fà xiǎn shǔ nǐ bái fà xiǎn
+      wrong because: 14 letters
+
+  Crossidium   4 species
+      latin reads: fringe
+      chinese: 流苏藓属短丝流苏藓   liú sū xiǎn shǔ duǎn sī liú sū xiǎn
+      wrong because: same word as Trachyloma, Lomatogonium
+
+  Leptodontium   4 species
+      latin reads: thin + tooth + Tium
+      chinese: 薄齿藓属厚壁薄齿藓   báo chǐ xiǎn shǔ hòu bì báo chǐ xiǎn
+      wrong because: a name in the gloss
+
+  Plagiobryum   4 species
+      latin reads: slanted
+      chinese: 平蒴藓属尖叶平蒴藓   píng shuò xiǎn shǔ jiān yè píng shuò xiǎn
+      wrong because: same word as Plagiostachys
+
+  Rhodobryum   4 species
+      latin reads: rose-colored
+      chinese: 大叶藓属暖地大叶藓   dà yè xiǎn shǔ nuǎn dì dà yè xiǎn
+      wrong because: same word as Rhodoleia
+
+  Garovaglia   4 species
+      latin reads: garum + town + Rachel
+      chinese: 绳藓属狭叶绳藓   shéng xiǎn shǔ xiá yè shéng xiǎn
+      wrong because: a name in the gloss
+
+  Cyathophorum   4 species
+      latin reads: ladle + to bear
+      chinese: 雉尾藓属粗齿雉尾藓   zhì wěi xiǎn shǔ cū chǐ zhì wěi xiǎn
+      wrong because: 14 letters
+
+  Haplocladium   4 species
+      latin reads: haploid
+      chinese: 小羽藓属狭叶小羽藓   xiǎo yǔ xiǎn shǔ xiá yè xiǎo yǔ xiǎn
+      wrong because: same word as Haplohymenium, Haplospondias, Haplopteris
+
+  Trachypodopsis   4 species
+      latin reads: Trachis + foot + view
+      chinese: 拟扭叶藓属大耳拟扭叶藓   nǐ niǔ yè xiǎn shǔ dà ěr nǐ niǔ yè xiǎn
+      wrong because: a name in the gloss
+
+  Wijkia   4 species
+      latin reads: thorn + branch + moss
+      chinese: 刺枝藓属弯叶刺枝藓   cì zhī xiǎn shǔ wān yè cì zhī xiǎn
+      wrong because: 14 letters
+
+  Macrothamnium   4 species
+      latin reads: long + Otho + bowl
+      chinese: 南木藓属爪哇南木藓   nán mù xiǎn shǔ zhǎo wā nán mù xiǎn
+      wrong because: a name in the gloss
+
+  Pallavicinia   4 species
+      latin reads: belt + leaf + moss
+      chinese: 带叶苔属多形带叶苔   dài yè tái shǔ duō xíng dài yè tái
+      wrong because: same word as Hattorianthus
+
+  Anthoceros   4 species
+      latin reads: wagtail + full of wax
+      chinese: 角苔属空腔角苔   jiǎo tái shǔ kōng qiāng jiǎo tái
+      wrong because: 19 letters
+
+  Folioceros   4 species
+      latin reads: coarse woolen cloth + horn + moss
+      chinese: 褐角苔属乳孢褐角苔   hè jiǎo tái shǔ rǔ bāo hè jiǎo tái
+      wrong because: 19 letters
+
+  Stuckenia   4 species
+      latin reads: fine-toothed comb + tooth + eye + seed + vegetable
+      chinese: 篦齿眼子菜属钝叶菹草   bì chǐ yǎn zi cài shǔ dùn yè zū cǎo
+      wrong because: 24 letters
+
+  Conchidium   4 species
+      latin reads: shell
+      chinese: 蛤兰属高山蛤兰   gé lán shǔ gāo shān gé lán
+      wrong because: same word as Lopidium
+
+  Dendrolirium   4 species
+      latin reads: tree + Madonna lily
+      chinese: 绒兰属白绵绒兰   róng lán shǔ bái mián róng lán
+      wrong because: a name in the gloss
+
+  Pecteilis   4 species
+      latin reads: chest + diminutive
+      chinese: 白蝶兰属滇南白蝶兰   bái dié lán shǔ diān nán bái dié lán
+      wrong because: same word as Cistanche
+
+  Loropetalum   4 species
+      latin reads: thong + husk
+      chinese: 檵木属檵木   jì mù shǔ jì mù
+      wrong because: 15 letters
+
+  Rodgersia   4 species
+      latin reads: ghost + lantern + stand for lamp
+      chinese: 鬼灯檠属七叶鬼灯檠   guǐ dēng qíng shǔ qī yè guǐ dēng qíng
+      wrong because: 20 letters
+
+  Mimosa   4 species
+      latin reads: hold in mouth + disgrace + grass
+      chinese: 含羞草属光荚含羞草   hán xiū cǎo shǔ guāng jiá hán xiū cǎo
+      wrong because: 16 letters
+
+  Guihaia   4 species
+      latin reads: stone + mountain + hemp palm
+      chinese: 石山棕属石山棕   shí shān zōng shǔ shí shān zōng
+      wrong because: 17 letters
+
+  Trachycarpus   4 species
+      latin reads: Trachis + fruit
+      chinese: 棕榈属棕榈   zōng lǘ shǔ zōng lǘ
+      wrong because: a name in the gloss, same word as Psophocarpus, Leiocarpaea
+
+  Mnesithea   4 species
+      latin reads: dense + ear + empty + axle + thatch
+      chinese: 毛俭草属密穗空轴茅   máo jiǎn cǎo shǔ mì suì kōng zhóu máo
+      wrong because: same word as Baolia
+
+  Triticum   4 species
+      latin reads: wheat
+      chinese: 小麦属小麦   xiǎo mài shǔ xiǎo mài
+      wrong because: same word as Pyrus
+
+  Dicranostigma   4 species
+      latin reads: two + cornel + stigma
+      chinese: 秃疮花属河南秃疮花   tū chuāng huā shǔ hé nán tū chuāng huā
+      wrong because: 16 letters
+
+  Cathcartia   4 species
+      latin reads: mugwort + branch + seven
+      chinese: 蒿枝七属贡山蒿枝七   hāo zhī qī shǔ gòng shān hāo zhī qī
+      wrong because: 14 letters
+
+  Fagus   4 species
+      latin reads: beech tree
+      chinese: 水青冈属米心水青冈   shuǐ qīng gāng shǔ mǐ xīn shuǐ qīng gāng
+      wrong because: same word as Fagopyrum
+
+  Carallia   4 species
+      latin reads: city + Allia
+      chinese: 竹节树属竹节树   zhú jié shù shǔ zhú jié shù
+      wrong because: a name in the gloss, same word as Eleusine, Cornus, Pometia
+
+  Chamerion   4 species
+      latin reads: Ham + wool
+      chinese: 柳兰属柳兰   liǔ lán shǔ liǔ lán
+      wrong because: a name in the gloss
+
+  Orychophragmus   4 species
+      latin reads: pickaxe + mound + blockage
+      chinese: 诸葛菜属诸葛菜   zhū gě cài shǔ zhū gě cài
+      wrong because: 16 letters
+
+  Yinshania   4 species
+      latin reads: 'female' principle + mountain + water-chestnuts
+      chinese: 阴山荠属阴山荠   yīn shān jì shǔ yīn shān jì
+      wrong because: 18 letters
+
+  Axyris   4 species
+      latin reads: axle + chenopodium album
+      chinese: 轴藜属轴藜   zhóu lí shǔ zhóu lí
+      wrong because: 16 letters
+
+  Krascheninnikovia   4 species
+      latin reads: camel + silk + chenopodium album
+      chinese: 驼绒藜属华北驼绒藜   tuó róng lí shǔ huá běi tuó róng lí
+      wrong because: 16 letters
+
+  Petrosimonia   4 species
+      latin reads: stone + Simon
+      chinese: 叉毛蓬属灰绿叉毛蓬   chà máo péng shǔ huī lǜ chà máo péng
+      wrong because: a name in the gloss
+
+  OPUNTIA   4 species
+      latin reads: immortal + person + palm of hand
+      chinese: 仙人掌属梨果仙人掌   xiān rén zhǎng shǔ lí guǒ xiān rén zhǎng
+      wrong because: 19 letters
+
+  Neonauclea   4 species
+      latin reads: new + crow + sandalwood
+      chinese: 新乌檀属新乌檀   xīn wū tán shǔ xīn wū tán
+      wrong because: same word as Neotrichocolea, Neoshirakia, Neopallasia
+
+  Jasminanthes   4 species
+      latin reads: Ionic + projecting + wagtail + s
+      chinese: 黑鳗藤属假木通   hēi mán téng shǔ jiǎ mù tōng
+      wrong because: a name in the gloss
+
+  Tournefortia   4 species
+      latin reads: purple + cinnabar (native hgs)
+      chinese: 紫丹属银毛树   zǐ dān shǔ yín máo shù
+      wrong because: 14 letters
+
+  Anisodus   4 species
+      latin reads: participle + tooth
+      chinese: 山莨菪属三分三   shān làng dàng shǔ sān fēn sān
+      wrong because: same word as Helicodontium, Leiodontium
+
+  Anna   4 species
+      latin reads: big + bract + lettuce + moss
+      chinese: 大苞苣苔属软叶大苞苣苔   dà bāo jù tái shǔ ruǎn yè dà bāo jù tái
+      wrong because: 17 letters
+
+  Prunella   4 species
+      latin reads: summer + dried out + grass
+      chinese: 夏枯草属山菠菜   xià kū cǎo shǔ shān bō cài
+      wrong because: 16 letters
+
+  Asystasia   4 species
+      latin reads: ten + ten thousand + error
+      chinese: 十万错属十万错   shí wàn cuò shǔ shí wàn cuò
+      wrong because: 14 letters
+
+  Dicliptera   4 species
+      latin reads: two + Clio + wing
+      chinese: 狗肝菜属印度狗肝菜   gǒu gān cài shǔ yìn dù gǒu gān cài
+      wrong because: a name in the gloss, same word as Dipteris
+
+  Ruellia   4 species
+      latin reads: compete + mountain + blue
+      chinese: 芦莉草属赛山蓝   lú lì cǎo shǔ sài shān lán
+      wrong because: 15 letters
+
+  Aegopodium   4 species
+      latin reads: Aegeus + balcony
+      chinese: 羊角芹属东北羊角芹   yáng jiǎo qín shǔ dōng běi yáng jiǎo qín
+      wrong because: a name in the gloss, same word as Lycopodium
+
+  Schulzia   4 species
+      latin reads: bract + split + celery
+      chinese: 苞裂芹属白花苞裂芹   bāo liè qín shǔ bái huā bāo liè qín
+      wrong because: 17 letters
+
+  Trachyspermum   4 species
+      latin reads: Trachis + seed
+      chinese: 糙果芹属细叶糙果芹   cāo guǒ qín shǔ xì yè cāo guǒ qín
+      wrong because: a name in the gloss, same word as Thrixspermum, Craniospermum
+
+  Lapsanastrum   4 species
+      latin reads: mustard plant + star
+      chinese: 稻槎菜属稻槎菜   dào chá cài shǔ dào chá cài
+      wrong because: 15 letters
+
+  Launaea   4 species
+      latin reads: wooden peg + fruit + chrysanthemum
+      chinese: 栓果菊属光茎栓果菊   shuān guǒ jú shǔ guāng jīng shuān guǒ jú
+      wrong because: 14 letters
+
+  Leibnitzia   4 species
+      latin reads: big + male adult + grass
+      chinese: 大丁草属大丁草   dà dīng cǎo shǔ dà dīng cǎo
+      wrong because: 14 letters
+
+  Leycesteria   4 species
+      latin reads: ghost + blow + bamboo flute
+      chinese: 鬼吹箫属鬼吹箫   guǐ chuī xiāo shǔ guǐ chuī xiāo
+      wrong because: 17 letters
+
+  Lycopodium   4 species
+      latin reads: Phaedromus + balcony
+      chinese: 石松属东北石松   shí sōng shǔ dōng běi shí sōng
+      wrong because: a name in the gloss, same word as Aegopodium
+
+  Dipteris   4 species
+      latin reads: two-winged
+      chinese: 双扇蕨属中华双扇蕨   shuāng shàn jué shǔ zhōng huá shuāng shàn jué
+      wrong because: same word as Dicliptera
+
+  Phegopteris   4 species
+      latin reads: Phegus + wing
+      chinese: 卵果蕨属卵果蕨   luǎn guǒ jué shǔ luǎn guǒ jué
+      wrong because: a name in the gloss, same word as Callistopteris
+
+  Physematium   4 species
+      latin reads: stature + sign + Tium
+      chinese: 二羽岩蕨属长叶滇蕨   èr yǔ yán jué shǔ cháng yè diān jué
+      wrong because: a name in the gloss
+
+  Dilutineuron   4 species
+      latin reads: washed away + sinew
+      chinese: 丛枝藓属黄丛枝藓   cóng zhī xiǎn shǔ huáng cóng zhī xiǎn
+      wrong because: 14 letters
+
+  Chrysojasminum   4 species
+      latin reads: gold + Ionic
+      chinese: 探春花属探春花   tàn chūn huā shǔ tàn chūn huā
+      wrong because: a name in the gloss
+
+  Hellenia   4 species
+      latin reads: shut + scabbard + ginger
+      chinese: 闭鞘姜属闭鞘姜   bì qiào jiāng shǔ bì qiào jiāng
+      wrong because: 15 letters
+
+  Sitobolium   4 species
+      latin reads: food + Corioli
+      chinese: 碗蕨属烟斗蕨   wǎn jué shǔ yān dǒu jué
+      wrong because: a name in the gloss
+
+  Blindia   3 species
+      latin reads: small + ear + moss
+      chinese: 小穗藓属小穗藓   xiǎo suì xiǎn shǔ xiǎo suì xiǎn
+      wrong because: same word as Blindiadelphus
+
+  Archidium   3 species
+      latin reads: comparative
+      chinese: 无轴藓属无轴藓   wú zhóu xiǎn shǔ wú zhóu xiǎn
+      wrong because: same word as Archakebia, Archangelica
+
+  Breutelia   3 species
+      latin reads: hot + marsh + moss
+      chinese: 热泽藓属大热泽藓   rè zé xiǎn shǔ dà rè zé xiǎn
+      wrong because: 14 letters
+
+  Trachycystis   3 species
+      latin reads: Trachis + bladder
+      chinese: 疣灯藓属鞭枝疣灯藓   yóu dēng xiǎn shǔ biān zhī yóu dēng xiǎn
+      wrong because: a name in the gloss
+
+  Fontinalis   3 species
+      latin reads: spring
+      chinese: 水藓属水藓   shuǐ xiǎn shǔ shuǐ xiǎn
+      wrong because: same word as Vernicia, Pegia
+
+  Myurella   3 species
+      latin reads: small + mouse + tail + moss
+      chinese: 小鼠尾藓属小鼠尾藓   xiǎo shǔ wěi xiǎn shǔ xiǎo shǔ wěi xiǎn
+      wrong because: 15 letters
+
+  Homalothecium   3 species
+      latin reads: same + threshing floor + storage space
+      chinese: 同蒴藓属无疣同蒴藓   tóng shuò xiǎn shǔ wú yóu tóng shuò xiǎn
+      wrong because: 22 letters
+
+  Cryptopapillaria   3 species
+      latin reads: hidden + pimple + place
+      chinese: 隐松萝藓属细尖隐松萝藓   yǐn sōng luó xiǎn shǔ xì jiān yǐn sōng luó xiǎn
+      wrong because: 14 letters
+
+  Clastobryopsis   3 species
+      latin reads: vinedresser + sea lettuce + view
+      chinese: 拟疣胞藓属短茎拟疣胞藓   nǐ yóu bāo xiǎn shǔ duǎn jīng nǐ yóu bāo xiǎn
+      wrong because: 17 letters
+
+  Pylaisiadelpha   3 species
+      latin reads: wing + will know + sister
+      chinese: 毛锦藓属弯叶毛锦藓   máo jǐn xiǎn shǔ wān yè máo jǐn xiǎn
+      wrong because: 14 letters
+
+  Hylocomiastrum   3 species
+      latin reads: wood + courteous + Ionic
+      chinese: 星塔藓属喜马拉雅星塔藓   xīng tǎ xiǎn shǔ xǐ mǎ lā yǎ xīng tǎ xiǎn
+      wrong because: a name in the gloss, same word as Hylocomium
+
+  Leptohymenium   3 species
+      latin reads: slender + Hymen
+      chinese: 薄膜藓属短柄薄膜藓   báo mó xiǎn shǔ duǎn bǐng báo mó xiǎn
+      wrong because: a name in the gloss, same word as Leptobryum, Leptocladium, Leptolejeunea
+
+  Rhytidiadelphus   3 species
+      latin reads: wrinkle + interests + Delphian
+      chinese: 拟垂枝藓属仰尖拟垂枝藓   nǐ chuí zhī xiǎn shǔ yǎng jiān nǐ chuí zhī xiǎn
+      wrong because: a name in the gloss
+
+  Horikawaea   3 species
+      latin reads: pouch + leaf + moss
+      chinese: 兜叶藓属平尖兜叶藓   dōu yè xiǎn shǔ píng jiān dōu yè xiǎn
+      wrong because: same word as Denotarisia
+
+  Himantocladium   3 species
+      latin reads: thong + opposite + shoot
+      chinese: 波叶藓属轮叶波叶藓   bō yè xiǎn shǔ lún yè bō yè xiǎn
+      wrong because: 15 letters
+
+  Haplomitrium   3 species
+      latin reads: naked + seed (capsule) + moss
+      chinese: 裸蒴苔属爪哇裸蒴苔   luǒ shuò tái shǔ zhǎo wā luǒ shuò tái
+      wrong because: 14 letters
+
+  Saccogynidium   3 species
+      latin reads: sack + woman + male given name
+      chinese: 拟囊萼苔属刺叶拟囊萼苔   nǐ náng è tái shǔ cì yè nǐ náng è tái
+      wrong because: 16 letters
+
+  Barbilophozia   3 species
+      latin reads: barbel + nape + einkorn wheat
+      chinese: 细裂瓣苔属细裂瓣苔   xì liè bàn tái shǔ xì liè bàn tái
+      wrong because: 24 letters
+
+  Diplasiolejeunea   3 species
+      latin reads: double
+      chinese: 双鳞苔属凹叶双鳞苔   shuāng lín tái shǔ āo yè shuāng lín tái
+      wrong because: same word as Diplopanax, Diploblechnum
+
+  Microlejeunea   3 species
+      latin reads: tiny
+      chinese: 纤鳞苔属斑叶纤鳞苔   xiān lín tái shǔ bān yè xiān lín tái
+      wrong because: same word as Microstachys
+
+  Hesperocyparis   3 species
+      latin reads: Hesperid + fleetfooted + bow drill
+      chinese: 美洲柏木属美洲柏木   měi zhōu bǎi mù shǔ měi zhōu bǎi mù
+      wrong because: a name in the gloss
+
+  Alseodaphne   3 species
+      latin reads: Ausa + move + Daphne
+      chinese: 油丹属细梗油丹   yóu dān shǔ xì gěng yóu dān
+      wrong because: a name in the gloss, same word as Eobruchia
+
+  Dehaasia   3 species
+      latin reads: lotus + cassia or cinnamon
+      chinese: 莲桂属莲桂   lián guì shǔ lián guì
+      wrong because: 15 letters
+
+  Dienia   3 species
+      latin reads: without + ear + lake + orchid
+      chinese: 无耳沼兰属筒穗无耳沼兰   wú ěr zhǎo lán shǔ tǒng suì wú ěr zhǎo lán
+      wrong because: 15 letters
+
+  Pogonia   3 species
+      latin reads: comet
+      chinese: 朱兰属朱兰   zhū lán shǔ zhū lán
+      wrong because: same word as Typhonium
+
+  Schoenorchis   3 species
+      latin reads: Plataea + orchid
+      chinese: 匙唇兰属匙唇兰   chí chún lán shǔ chí chún lán
+      wrong because: a name in the gloss
+
+  Exbucklandia   3 species
+      latin reads: out + Buckland
+      chinese: 马蹄荷属长瓣马蹄荷   mǎ tí hé shǔ cháng bàn mǎ tí hé
+      wrong because: a name in the gloss
+
+  Strelitzia   3 species
+      latin reads: crane + look at + orchid
+      chinese: 鹤望兰属扇芭蕉   hè wàng lán shǔ shàn bā jiāo
+      wrong because: 14 letters
+
+  Etlingera   3 species
+      latin reads: fennel + fragrant + sand + humaneness
+      chinese: 茴香砂仁属火炬姜   huí xiāng shā rén shǔ huǒ jù jiāng
+      wrong because: 16 letters
+
+  Bulbostylis   3 species
+      latin reads: ball + pillar + grass
+      chinese: 球柱草属球柱草   qiú zhù cǎo shǔ qiú zhù cǎo
+      wrong because: 15 letters
+
+  Gahnia   3 species
+      latin reads: black + sedge + grass
+      chinese: 黑莎草属散穗黑莎草   hēi suō cǎo shǔ sàn suì hēi suō cǎo
+      wrong because: 18 letters
+
+  Bothriochloa   3 species
+      latin reads: stinking + root + seed + grass
+      chinese: 孔颖草属臭根子草   kǒng yǐng cǎo shǔ chòu gēn zǐ cǎo
+      wrong because: 18 letters
+
+  Briza   3 species
+      latin reads: rye
+      chinese: 凌风草属大凌风草   líng fēng cǎo shǔ dà líng fēng cǎo
+      wrong because: same word as Secale
+
+  Diarrhena   3 species
+      latin reads: through
+      chinese: 龙常草属法利龙常草   lóng cháng cǎo shǔ fǎ lì lóng cháng cǎo
+      wrong because: same word as Perilla
+
+  Phacelurus   3 species
+      latin reads: lentil + Elyrus
+      chinese: 束尾草属束尾草   shù wěi cǎo shǔ shù wěi cǎo
+      wrong because: a name in the gloss
+
+  Phragmites   3 species
+      latin reads: reed
+      chinese: 芦苇属芦苇   lú wěi shǔ lú wěi
+      wrong because: same word as Arundina, Canna, Donax
+
+  Pseudopogonatherum   3 species
+      latin reads: false + beard + awn
+      chinese: 假金发草属   jiǎ jīn fà cǎo shǔ
+      wrong because: 14 letters
+
+  Secale   3 species
+      latin reads: black + wheat
+      chinese: 黑麦属黑麦   hēi mài shǔ hēi mài
+      wrong because: same word as Briza
+
+  Notholirion   3 species
+      latin reads: false + one hundred + combine
+      chinese: 假百合属假百合   jiǎ bǎi hé shǔ jiǎ bǎi hé
+      wrong because: 14 letters
+
+  Paraquilegia   3 species
+      latin reads: beside
+      chinese: 拟耧斗菜属乳突拟耧斗菜   nǐ lóu dǒu cài shǔ rǔ tū nǐ lóu dǒu cài
+      wrong because: same word as Parasassafras, Parvatia, Parabaena
+
+  Sorbaria   3 species
+      latin reads: Sora + barium
+      chinese: 珍珠梅属高丛珍珠梅   zhēn zhū méi shǔ gāo cóng zhēn zhū méi
+      wrong because: a name in the gloss
+
+  Reissantia   3 species
+      latin reads: flat + seed (capsule) + vine
+      chinese: 扁蒴藤属扁蒴藤   biǎn shuò téng shǔ biǎn shuò téng
+      wrong because: 14 letters
+
+  Triadica   3 species
+      latin reads: crow + tallow tree
+      chinese: 乌桕属山乌桕   wū jiù shǔ shān wū jiù
+      wrong because: 14 letters
+
+  Vernicia   3 species
+      latin reads: vernal
+      chinese: 油桐属油桐   yóu tóng shǔ yóu tóng
+      wrong because: same word as Fontinalis, Pegia
+
+  Adenia   3 species
+      latin reads: gland
+      chinese: 蒴莲属三开瓢   shuò lián shǔ sān kāi piáo
+      wrong because: same word as Anisadenia
+
+  Trapa   3 species
+      latin reads: water-chestnut
+      chinese: 菱属细果野菱   líng shǔ xì guǒ yě líng
+      wrong because: same word as Capsella
+
+  Tigridiopalma   3 species
+      latin reads: tiger + sweat + Palma
+      chinese: 虎颜花属虎颜花   hǔ yán huā shǔ hǔ yán huā
+      wrong because: a name in the gloss
+
+  Biebersteinia   3 species
+      latin reads: smoke + fall over + cow
+      chinese: 熏倒牛属熏倒牛   xūn dǎo niú shǔ xūn dǎo niú
+      wrong because: 14 letters
+
+  Peganum   3 species
+      latin reads: rue
+      chinese: 骆驼蓬属骆驼蓬   luò tuo péng shǔ luò tuo péng
+      wrong because: same word as Ruta, Cichorium
+
+  Phellodendron   3 species
+      latin reads: Phelloe + tree
+      chinese: 黄檗属黄檗   huáng bò shǔ huáng bò
+      wrong because: a name in the gloss, same word as Dendrochilum, Mayodendron
+
+  Buckleya   3 species
+      latin reads: rice + face + luxuriant vegetation
+      chinese: 米面蓊属棱果米面蓊   mǐ miàn wěng shǔ léng guǒ mǐ miàn wěng
+      wrong because: 16 letters
+
+  Halimocnemis   3 species
+      latin reads: aitch + to sharpen + Cnemis
+      chinese: 盐蓬属短苞盐蓬   yán péng shǔ duǎn bāo yán péng
+      wrong because: a name in the gloss
+
+  Nanophyton   3 species
+      latin reads: dwarf + plant
+      chinese: 小蓬属小蓬   xiǎo péng shǔ xiǎo péng
+      wrong because: same word as Nandina
+
+  Psilotrichum   3 species
+      latin reads: slender + hair
+      chinese: 林地苋属苋叶林地苋   lín dì xiàn shǔ xiàn yè lín dì xiàn
+      wrong because: same word as Psilopilum
+
+  Torricellia   3 species
+      latin reads: scabbard + stalk + tree
+      chinese: 鞘柄木属角叶鞘柄木   qiào bǐng mù shǔ jiǎo yè qiào bǐng mù
+      wrong because: 14 letters
+
+  Sinosideroxylon   3 species
+      latin reads: sinus
+      chinese: 铁榄属铁榄   tiě lǎn shǔ tiě lǎn
+      wrong because: same word as Sinosassafras, Sinowilsonia, Sinocrassula
+
+  Theligonum   3 species
+      latin reads: nipple + enlargement
+      chinese: 假繁缕属台湾假繁缕   jiǎ fán lǚ shǔ tái wān jiǎ fán lǚ
+      wrong because: 15 letters
+
+  Omphalotrigonotis   3 species
+      latin reads: bossed + trigon + bustard
+      chinese: 皿果草属皿果草   mǐn guǒ cǎo shǔ mǐn guǒ cǎo
+      wrong because: 14 letters
+
+  Corallodiscus   3 species
+      latin reads: coral + coral + lettuce + moss
+      chinese: 珊瑚苣苔属小石花   shān hú jù tái shǔ xiǎo shí huā
+      wrong because: 15 letters
+
+  Didymostigma   3 species
+      latin reads: Salina + stigma
+      chinese: 双片苣苔属光叶双片苣苔   shuāng piàn jù tái shǔ guāng yè shuāng piàn jù tái
+      wrong because: a name in the gloss
+
+  Bacopa   3 species
+      latin reads: false + horse + tooth + amaranth
+      chinese: 假马齿苋属麦花草   jiǎ mǎ chǐ xiàn shǔ mài huā cǎo
+      wrong because: 14 letters
+
+  Triaenophora   3 species
+      latin reads: three + bearing
+      chinese: 崖白菜属崖白菜   yá bái cài shǔ yá bái cài
+      wrong because: same word as Trianthema, Trilophozia
+
+  Hyssopus   3 species
+      latin reads: oregano
+      chinese: 神香草属硬尖神香草   shén xiāng cǎo shǔ yìng jiān shén xiāng cǎo
+      wrong because: same word as Origanum
+
+  Lagopsis   3 species
+      latin reads: appearance
+      chinese: 夏至草属毛穗夏至草   xià zhì cǎo shǔ máo suì xià zhì cǎo
+      wrong because: same word as Eulaliopsis, Arabidopsis
+
+  Schizonepeta   3 species
+      latin reads: cleft
+      chinese: 裂叶荆芥属小裂叶荆芥   liè yè jīng jiè shǔ xiǎo liè yè jīng jiè
+      wrong because: same word as Schismus, Schizomussaenda
+
+  Centranthera   3 species
+      latin reads: recklessly + hemp + grass
+      chinese: 胡麻草属胡麻草   hú má cǎo shǔ hú má cǎo
+      wrong because: same word as Centrantheropsis
+
+  Melampyrum   3 species
+      latin reads: Melampus + sorrel
+      chinese: 山罗花属天柱山罗花   shān luó huā shǔ tiān zhù shān luó huā
+      wrong because: a name in the gloss
+
+  Hedera   3 species
+      latin reads: ivy
+      chinese: 常春藤属   cháng chūn téng shǔ
+      wrong because: same word as Cissus
+

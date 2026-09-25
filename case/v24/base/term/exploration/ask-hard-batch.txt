@@ -1,0 +1,134 @@
+You are naming living things for a constructed language whose
+words are built from about 4000 plain concepts. A name must be a
+literal compound of ordinary concrete words.
+
+For each species you are given, do four things in order.
+
+1 DESCRIBE it richly. What does it look like: shape, colour, size,
+  texture, the leaf, the flower, the seed. Where does it live:
+  ground, water, rock, tree, cold, hot. What does it do: climb,
+  creep, float, sting, cling, open at night. How does it feel to
+  the senses: smell, taste, touch, sound in wind. What do people
+  use it for: food, medicine, dye, rope, timber. What would a
+  person notice FIRST on meeting it.
+
+2 GATHER the traits from that description that could name it.
+
+3 DISTIL to the two or three most telling. Ranked by: minimalism,
+  fewest parts; accuracy, it must be true of this species and not
+  its neighbours; obviousness, a speaker should guess it.
+
+4 NAME it as two or three plain English concepts joined by +.
+
+Rules. Never use a proper name, a person, a place, or a people.
+Never use a technical botanical term: say leaf cup, not calyx.
+Use only plain concrete words a hunter gatherer would know, plus
+ordinary modern ones. If you genuinely do not know the species,
+say so in `why` and leave `name` empty rather than inventing.
+
+Reply with JSON only:
+{"answers":[{"latin":"","described":"","traits":"","name":"x + y",
+"why":""}]}
+
+── the species ──
+
+Takakia lepidozioides   family Takakiaceae   chinese 藻苔属藻苔 zǎo tái shǔ zǎo tái
+Sphagnum luzonense   family Sphagnaceae   chinese 泥炭藓属吕宋泥炭藓 ní tàn xiǎn shǔ lǚ sòng ní tàn xiǎn
+Sphagnum magellanicum   family Sphagnaceae   chinese 泥炭藓属中位泥炭藓 ní tàn xiǎn shǔ zhōng wèi ní tàn xiǎn
+Andreaea morrisonensis   family Andreaeaceae   chinese 黑藓属玉山黑藓 hēi xiǎn shǔ yù shān hēi xiǎn
+Andreaea rupestris   family Andreaeaceae   chinese 黑藓属欧黑藓 hēi xiǎn shǔ ōu hēi xiǎn
+Andreaea taiwanensis   family Andreaeaceae   chinese 黑藓属台湾黑藓 hēi xiǎn shǔ tái wān hēi xiǎn
+Andreaea wangiana   family Andreaeaceae   chinese 黑藓属王氏黑藓 hēi xiǎn shǔ wáng shì hēi xiǎn
+Buxbaumia minakatae   family Buxbaumiaceae   chinese 烟杆藓属筒蒴烟杆藓 yān gǎn xiǎn shǔ tǒng shuò yān gǎn xiǎn
+Timmia austriaca   family Timmiaceae   chinese 美姿藓属南方美姿藓 měi zī xiǎn shǔ nán fāng měi zī xiǎn
+Timmia megapolitana   family Timmiaceae   chinese 美姿藓属美姿藓 měi zī xiǎn shǔ měi zī xiǎn
+Timmia norvegica   family Timmiaceae   chinese 美姿藓属挪威美姿藓 měi zī xiǎn shǔ nuó wēi měi zī xiǎn
+Timmia sphaerocarpa   family Timmiaceae   chinese 美姿藓属球蒴美姿藓 měi zī xiǎn shǔ qiú shuò měi zī xiǎn
+Physcomitrium courtoisii   family Funariaceae   chinese 立碗藓属江岸立碗藓 lì wǎn xiǎn shǔ jiāng àn lì wǎn xiǎn
+Drummondia prorepens   family Drummondiaceae   chinese 木衣藓属 mù yī xiǎn shǔ
+Drummondia sinensis   family Drummondiaceae   chinese 木衣藓属中华木衣藓 mù yī xiǎn shǔ zhōng huá mù yī xiǎn
+Drummondia thomsonii   family Drummondiaceae   chinese 木衣藓属西南木衣藓 mù yī xiǎn shǔ xī nán mù yī xiǎn
+Jaffueliobryum wrightii   family Ptychomitriaceae   chinese 缨齿藓属缨齿藓 yīng chǐ xiǎn shǔ yīng chǐ xiǎn
+Codriophorus carinatus   family Grimmiaceae   chinese 无尖藓属短无尖藓 wú jiān xiǎn shǔ duǎn wú jiān xiǎn
+Grimmia anodon   family Grimmiaceae   chinese 紫萼藓属无齿紫萼藓 zǐ è xiǎn shǔ wú chǐ zǐ è xiǎn
+Grimmia donniana   family Grimmiaceae   chinese 紫萼藓属卷边紫萼藓 zǐ è xiǎn shǔ juǎn biān zǐ è xiǎn
+Grimmia handelii   family Grimmiaceae   chinese 紫萼藓属韩氏紫萼藓 zǐ è xiǎn shǔ hán shì zǐ è xiǎn
+Grimmia subanodon   family Grimmiaceae   chinese 紫萼藓属拟无齿紫萼藓 zǐ è xiǎn shǔ nǐ wú chǐ zǐ è xiǎn
+Grimmia tergestina   family Grimmiaceae   chinese 紫萼藓属南欧紫萼藓 zǐ è xiǎn shǔ nán ōu zǐ è xiǎn
+Racomitrium joseph-hookeri   family Grimmiaceae   chinese 砂藓属霍氏砂藓 shā xiǎn shǔ huò shì shā xiǎn
+Schistidium chenii   family Grimmiaceae   chinese 连轴藓属陈氏连轴藓 lián zhóu xiǎn shǔ chén shì lián zhóu xiǎn
+Archidium ohioense   family Archidiaceae   chinese 无轴藓属中华无轴藓 wú zhóu xiǎn shǔ zhōng huá wú zhóu xiǎn
+Archidium yunnanense   family Archidiaceae   chinese 无轴藓属云南无轴藓 wú zhóu xiǎn shǔ yún nán wú zhóu xiǎn
+Bruchia sinensis   family Bruchiaceae   chinese 小烛藓属中华小烛藓 xiǎo zhú xiǎn shǔ zhōng huá xiǎo zhú xiǎn
+Bruchia vogesiaca   family Bruchiaceae   chinese 小烛藓属小烛藓 xiǎo zhú xiǎn shǔ xiǎo zhú xiǎn
+Pringleella sinensis   family Bruchiaceae   chinese 并列藓属中华并列藓 bìng liè xiǎn shǔ zhōng huá bìng liè xiǎn
+Kiaeria blyttii   family Rhabdoweisiaceae   chinese 凯氏藓属白氏凯氏藓 kǎi shì xiǎn shǔ bái shì kǎi shì xiǎn
+Kiaeria falcata   family Rhabdoweisiaceae   chinese 凯氏藓属镰叶凯氏藓 kǎi shì xiǎn shǔ lián yè kǎi shì xiǎn
+Kiaeria glacialis   family Rhabdoweisiaceae   chinese 凯氏藓属细叶凯氏藓 kǎi shì xiǎn shǔ xì yè kǎi shì xiǎn
+Kiaeria starkei   family Rhabdoweisiaceae   chinese 凯氏藓属泛生凯氏藓 kǎi shì xiǎn shǔ fàn shēng kǎi shì xiǎn
+Oreoweisia setschwanica   family Rhabdoweisiaceae   chinese 石毛藓属四川石毛藓 shí máo xiǎn shǔ sì chuān shí máo xiǎn
+Oreoweisia weisioides   family Rhabdoweisiaceae   chinese 石毛藓属小石毛藓 shí máo xiǎn shǔ xiǎo shí máo xiǎn
+Rhabdoweisia sinensis   family Rhabdoweisiaceae   chinese 粗石藓属中华粗石藓 cū shí xiǎn shǔ zhōng huá cū shí xiǎn
+Dicranum cheoi   family Dicranaceae   chinese 曲尾藓属周氏曲尾藓 qū wěi xiǎn shǔ zhōu shì qū wěi xiǎn
+Dicranum kashmirense   family Dicranaceae   chinese 曲尾藓属克什米尔曲尾藓 qū wěi xiǎn shǔ kè shí mǐ ěr qū wěi xiǎn
+Leucoloma mittenii   family Dicranaceae   chinese 白锦藓属梅氏白锦藓 bái jǐn xiǎn shǔ méi shì bái jǐn xiǎn
+Pseudochorisodontium hokinense   family Dicranaceae   chinese 无齿藓属韩氏无齿藓 wú chǐ xiǎn shǔ hán shì wú chǐ xiǎn
+Pseudochorisodontium setschwanicum   family Dicranaceae   chinese 无齿藓属四川无齿藓 wú chǐ xiǎn shǔ sì chuān wú chǐ xiǎn
+Campylopus schimperi   family Leucobryaceae   chinese 曲柄藓属辛氏曲柄藓 qū bǐng xiǎn shǔ xīn shì qū bǐng xiǎn
+Syrrhopodon chenii   family Calymperaceae   chinese 网藓属陈氏网藓 wǎng xiǎn shǔ chén shì wǎng xiǎn
+Fissidens beckettii   family Fissidentaceae   chinese 凤尾藓属尖肋凤尾藓 fèng wěi xiǎn shǔ jiān lèi fèng wěi xiǎn
+Fissidens bogoriensis   family Fissidentaceae   chinese 凤尾藓属拟透明凤尾藓 fèng wěi xiǎn shǔ nǐ tòu míng fèng wěi xiǎn
+Fissidens ceylonensis   family Fissidentaceae   chinese 凤尾藓属锡兰凤尾藓 fèng wěi xiǎn shǔ xī lán fèng wěi xiǎn
+Fissidens ganguleei   family Fissidentaceae   chinese 凤尾藓属拟粗肋凤尾藓 fèng wěi xiǎn shǔ nǐ cū lèi fèng wěi xiǎn
+Fissidens gardneri   family Fissidentaceae   chinese 凤尾藓属短肋凤尾藓 fèng wěi xiǎn shǔ duǎn lèi fèng wěi xiǎn
+Fissidens geppii   family Fissidentaceae   chinese 凤尾藓属黄边凤尾藓 fèng wěi xiǎn shǔ huáng biān fèng wěi xiǎn
+Fissidens giraldii   family Fissidentaceae   chinese 凤尾藓属格氏凤尾藓 fèng wěi xiǎn shǔ gé shì fèng wěi xiǎn
+Fissidens guangdongensis   family Fissidentaceae   chinese 凤尾藓属广东凤尾藓 fèng wěi xiǎn shǔ guǎng dōng fèng wěi xiǎn
+Fissidens hollianus   family Fissidentaceae   chinese 凤尾藓属糙柄凤尾藓 fèng wěi xiǎn shǔ cāo bǐng fèng wěi xiǎn
+Fissidens kinabaluensis   family Fissidentaceae   chinese 凤尾藓属拟狭叶凤尾藓 fèng wěi xiǎn shǔ nǐ xiá yè fèng wěi xiǎn
+Fissidens macaoensis   family Fissidentaceae   chinese 凤尾藓属澳门凤尾藓 fèng wěi xiǎn shǔ ào mén fèng wěi xiǎn
+Fissidens osmundoides   family Fissidentaceae   chinese 凤尾藓属欧洲凤尾藓 fèng wěi xiǎn shǔ ōu zhōu fèng wěi xiǎn
+Fissidens pursellii   family Fissidentaceae   chinese 凤尾藓属波瑟凤尾藓 fèng wěi xiǎn shǔ bō sè fèng wěi xiǎn
+Fissidens schusteri   family Fissidentaceae   chinese 凤尾藓属舒氏凤尾藓 fèng wěi xiǎn shǔ shū shì fèng wěi xiǎn
+Fissidens schwabei   family Fissidentaceae   chinese 凤尾藓属微疣凤尾藓 fèng wěi xiǎn shǔ wēi yóu fèng wěi xiǎn
+Fissidens teysmannianus   family Fissidentaceae   chinese 凤尾藓属南京凤尾藓 fèng wěi xiǎn shǔ nán jīng fèng wěi xiǎn
+Fissidens tosaensis   family Fissidentaceae   chinese 凤尾藓属拟小凤尾藓 fèng wěi xiǎn shǔ nǐ xiǎo fèng wěi xiǎn
+Fissidens wichurae   family Fissidentaceae   chinese 凤尾藓属狭叶凤尾藓 fèng wěi xiǎn shǔ xiá yè fèng wěi xiǎn
+Fissidens zolligeri   family Fissidentaceae   chinese 凤尾藓属车氏凤尾藓 fèng wěi xiǎn shǔ chē shì fèng wěi xiǎn
+Barbula dixoniana   family Pottiaceae   chinese 扭口藓属狄氏石灰藓 niǔ kǒu xiǎn shǔ dí shì shí huī xiǎn
+Chenia leptophylla   family Pottiaceae   chinese 陈氏藓属陈氏藓 chén shì xiǎn shǔ chén shì xiǎn
+Gyroweisia shansiensis   family Pottiaceae   chinese 圆口藓属五台山圆口藓 yuán kǒu xiǎn shǔ wǔ tái shān yuán kǒu xiǎn
+Hilpertia velenovskyi   family Pottiaceae   chinese 卵叶藓属卵叶藓 luǎn yè xiǎn shǔ luǎn yè xiǎn
+Leptodontium chenianum   family Pottiaceae   chinese 薄齿藓属陈氏薄齿藓 báo chǐ xiǎn shǔ chén shì báo chǐ xiǎn
+Molendoa hornschuchiana   family Pottiaceae   chinese 大丛藓属大丛藓 dà cóng xiǎn shǔ dà cóng xiǎn
+Molendoa schliephackei   family Pottiaceae   chinese 大丛藓属侧立藓 dà cóng xiǎn shǔ cè lì xiǎn
+Molendoa sendtneriana   family Pottiaceae   chinese 大丛藓属高山大丛藓 dà cóng xiǎn shǔ gāo shān dà cóng xiǎn
+Plaubelia involuta   family Pottiaceae   chinese 卷边藓属匙叶卷边藓 juǎn biān xiǎn shǔ chí yè juǎn biān xiǎn
+Reimersia inconspicua   family Pottiaceae   chinese 仰叶藓属仰叶藓 yǎng yè xiǎn shǔ yǎng yè xiǎn
+Tuerckheimia svihlae   family Pottiaceae   chinese 托氏藓属线叶托氏藓 tuō shì xiǎn shǔ xiàn yè tuō shì xiǎn
+Weissia newcomeri   family Pottiaceae   chinese 小石藓属钝叶小石藓 xiǎo shí xiǎn shǔ dùn yè xiǎo shí xiǎn
+Braunia delavayi   family Hedwigiaceae   chinese 赤枝藓属云南赤枝藓 chì zhī xiǎn shǔ yún nán chì zhī xiǎn
+Bartramia halleriana   family Bartramiaceae   chinese 珠藓属亮叶珠藓 zhū xiǎn shǔ liàng yè zhū xiǎn
+Breutelia dicranacea   family Bartramiaceae   chinese 热泽藓属仰叶热泽藓 rè zé xiǎn shǔ yǎng yè rè zé xiǎn
+Breutelia yunnanensis   family Bartramiaceae   chinese 热泽藓属云南热泽藓 rè zé xiǎn shǔ yún nán rè zé xiǎn
+Tayloria hornschuchii   family Splachnaceae   chinese 小壶藓属何氏小壶藓 xiǎo hú xiǎn shǔ hé shì xiǎo hú xiǎn
+Tayloria rudolphiana   family Splachnaceae   chinese 小壶藓属德氏小壶藓 xiǎo hú xiǎn shǔ dé shì xiǎo hú xiǎn
+Tayloria squarrosa   family Splachnaceae   chinese 小壶藓属仰叶小壶藓 xiǎo hú xiǎn shǔ yǎng yè xiǎo hú xiǎn
+Brachymenium immarginatum   family Bryaceae   chinese 短月藓属无边短月藓 duǎn yuè xiǎn shǔ wú biān duǎn yuè xiǎn
+Bryum handelii   family Bryaceae   chinese 真藓属韩氏真藓 zhēn xiǎn shǔ hán shì zhēn xiǎn
+Bryum kashmirense   family Bryaceae   chinese 真藓属喀什真藓 zhēn xiǎn shǔ kā shí zhēn xiǎn
+Mielichhoferia mielichhoferi   family Mniaceae   chinese 缺齿藓属缺齿藓 quē chǐ xiǎn shǔ quē chǐ xiǎn
+Mnium blyttii   family Mniaceae   chinese 提灯藓属变色提灯藓 tí dēng xiǎn shǔ biàn sè tí dēng xiǎn
+Mnium lycopodioiodes   family Mniaceae   chinese 提灯藓属长叶提灯藓 tí dēng xiǎn shǔ cháng yè tí dēng xiǎn
+Mnium thomsonii   family Mniaceae   chinese 提灯藓属偏叶提灯藓 tí dēng xiǎn shǔ piān yè tí dēng xiǎn
+Orthomnion handelii   family Mniaceae   chinese 立灯藓属挺枝立灯藓 lì dēng xiǎn shǔ tǐng zhī lì dēng xiǎn
+Orthomnion loheri   family Mniaceae   chinese 立灯藓属隐缘立灯藓 lì dēng xiǎn shǔ yǐn yuán lì dēng xiǎn
+Orthomnion yunnanense   family Mniaceae   chinese 立灯藓属云南立灯藓 lì dēng xiǎn shǔ yún nán lì dēng xiǎn
+Plagiomnium elimbatum   family Mniaceae   chinese 匐灯藓属无边匐灯藓 fú dēng xiǎn shǔ wú biān fú dēng xiǎn
+Pohlia drummondii   family Mniaceae   chinese 丝瓜藓属林地丝瓜藓 sī guā xiǎn shǔ lín dì sī guā xiǎn
+Pohlia hisae   family Mniaceae   chinese 丝瓜藓属纤毛丝瓜藓 sī guā xiǎn shǔ xiān máo sī guā xiǎn
+Pohlia lescuriana   family Mniaceae   chinese 丝瓜藓属美广口藓 sī guā xiǎn shǔ měi guǎng kǒu xiǎn
+Pohlia ludwigii   family Mniaceae   chinese 丝瓜藓属勒氏广口藓 sī guā xiǎn shǔ lè shì guǎng kǒu xiǎn
+Pohlia tapintzensis   family Mniaceae   chinese 丝瓜藓属大坪广口藓 sī guā xiǎn shǔ dà píng guǎng kǒu xiǎn
+Pohlia timmioides   family Mniaceae   chinese 丝瓜藓属狭叶丝瓜藓 sī guā xiǎn shǔ xiá yè sī guā xiǎn
+Pohlia wahlenbergii   family Mniaceae   chinese 丝瓜藓属白色广口藓 sī guā xiǎn shǔ bái sè guǎng kǒu xiǎn

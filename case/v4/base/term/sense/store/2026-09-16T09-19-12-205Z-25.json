@@ -1,0 +1,588 @@
+[
+  {
+    "term": "change",
+    "senses": [
+      "to make or become different",
+      "the act or result of becoming different",
+      "coins of small denomination; money returned after payment",
+      "to exchange one thing for another",
+      "to put on different clothes"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.3,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": -0.2,
+      "smooth": -0.1,
+      "inward": 0,
+      "pleasant": 0.1
+    },
+    "motion": "shift",
+    "essence": "The process by which something becomes different from what it was.",
+    "domain": "being",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "loop",
+    "senses": [
+      "a curve or shape that bends around and crosses or meets itself",
+      "a sequence that repeats cyclically (especially in computing)",
+      "a ring-shaped or folded part for holding or passing something through",
+      "a railroad or road turning that brings a route back on itself",
+      "a short audio or video segment repeated continuously"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": -0.4,
+      "fast": 0,
+      "open": -0.8,
+      "heavy": -0.6,
+      "smooth": 0.6,
+      "inward": 0.5,
+      "pleasant": -0.1
+    },
+    "motion": "cycle",
+    "essence": "A path or shape that turns back to meet itself, often implying repetition.",
+    "domain": "flow",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "dream",
+    "senses": [
+      "the succession of images, ideas, and emotions that occur in sleep",
+      "an aspiration or cherished goal",
+      "a person or thing that is ideal or wonderful",
+      "to daydream or imagine"
+    ],
+    "feel": {
+      "bright": -0.5,
+      "hard": -0.7,
+      "fast": -0.4,
+      "open": 0.7,
+      "heavy": -0.7,
+      "smooth": 0.3,
+      "inward": 0.9,
+      "pleasant": 0.2
+    },
+    "motion": "drift",
+    "essence": "The involuntary flow of images and feelings that arises during sleep.",
+    "domain": "mind",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "build",
+    "senses": [
+      "to construct by assembling parts or materials",
+      "the physical proportions of a body",
+      "a compiled or packaged version of software",
+      "to increase or develop gradually (as in build up)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.7,
+      "fast": -0.5,
+      "open": -0.3,
+      "heavy": 0.6,
+      "smooth": 0.2,
+      "inward": -0.5,
+      "pleasant": 0.6
+    },
+    "motion": "construct",
+    "essence": "To make something by putting parts together into a coherent structure.",
+    "domain": "do",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "dark",
+    "senses": [
+      "the absence or near absence of light",
+      "a deep or low shade in color",
+      "gloominess or secrecy; evil or grim character"
+    ],
+    "feel": {
+      "bright": -1,
+      "hard": 0,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": 0.4,
+      "smooth": 0.2,
+      "inward": 0.7,
+      "pleasant": -0.5
+    },
+    "motion": "envelop",
+    "essence": "A state in which little or no light is present.",
+    "domain": "sense",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "god",
+    "senses": [
+      "a deity or supernatural being worshiped as having power over the world",
+      "the supreme being in monotheistic traditions",
+      "an object of ardent admiration or devotion"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.4,
+      "fast": -0.6,
+      "open": 0.3,
+      "heavy": 0.6,
+      "smooth": 0,
+      "inward": 0.3,
+      "pleasant": 0.2
+    },
+    "motion": "none",
+    "essence": "A supernatural being regarded with reverence and believed to wield great power.",
+    "domain": "spirit",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "duty",
+    "senses": [
+      "a moral or legal obligation",
+      "a task or role that one is required to perform",
+      "a tax on imports, exports, or goods"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.8,
+      "fast": -0.5,
+      "open": -0.7,
+      "heavy": 0.7,
+      "smooth": 0.2,
+      "inward": 0.4,
+      "pleasant": -0.3
+    },
+    "motion": "bind",
+    "essence": "An obligation that compels a person to act in a certain way.",
+    "domain": "social",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "glad",
+    "senses": [
+      "feeling pleasure or happiness",
+      "willing or eager (as in glad to help)"
+    ],
+    "feel": {
+      "bright": 0.7,
+      "hard": -0.1,
+      "fast": 0.3,
+      "open": 0.6,
+      "heavy": -0.7,
+      "smooth": 0.5,
+      "inward": -0.4,
+      "pleasant": 1
+    },
+    "motion": "lift",
+    "essence": "Feeling happy or pleased.",
+    "domain": "feel",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "much",
+    "senses": [
+      "a large amount or quantity",
+      "to a great extent or degree",
+      "approximately or nearly (as in much the same)"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.4,
+      "heavy": 0.5,
+      "smooth": 0,
+      "inward": 0,
+      "pleasant": 0.2
+    },
+    "motion": "accumulate",
+    "essence": "A large quantity or degree of something.",
+    "domain": "prime",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "drift",
+    "senses": [
+      "to be carried slowly by a current of air or water",
+      "a gradual change or tendency",
+      "a mass of material carried and left by wind or water (e.g., snowdrift)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": -0.6,
+      "fast": -0.8,
+      "open": 0.6,
+      "heavy": -0.6,
+      "smooth": 0.8,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "drift",
+    "essence": "To move gently along under the influence of an external current.",
+    "domain": "move",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "absense",
+    "senses": [
+      "a misspelling of absence",
+      "absence: the state of not being present",
+      "absence: a lack or deficiency of something",
+      "absence: a period of being away from work or school"
+    ],
+    "feel": {
+      "bright": -0.6,
+      "hard": -0.5,
+      "fast": -0.3,
+      "open": 0.1,
+      "heavy": -0.3,
+      "smooth": 0.1,
+      "inward": 0.3,
+      "pleasant": -0.5
+    },
+    "motion": "none",
+    "essence": "The state of something or someone not being present.",
+    "domain": "other",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "away",
+    "senses": [
+      "at or to a distance from a place; not here",
+      "playing or situated on an opponent’s ground (sports)",
+      "continuously or steadily (as in work away)",
+      "at a specified time in the future (as in months away)"
+    ],
+    "feel": {
+      "bright": -0.2,
+      "hard": 0,
+      "fast": 0.2,
+      "open": 0.6,
+      "heavy": -0.4,
+      "smooth": 0.2,
+      "inward": -0.6,
+      "pleasant": -0.1
+    },
+    "motion": "depart",
+    "essence": "At or moving to a distance from the current place.",
+    "domain": "place",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "multiply",
+    "senses": [
+      "to increase in number or amount",
+      "to perform the arithmetic operation of multiplication",
+      "to reproduce or propagate"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": 0.2,
+      "fast": 0.4,
+      "open": 0.7,
+      "heavy": 0.4,
+      "smooth": 0.3,
+      "inward": -0.4,
+      "pleasant": 0.2
+    },
+    "motion": "expand",
+    "essence": "To increase a quantity or count, whether by arithmetic combination or by reproduction.",
+    "domain": "math",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "early",
+    "senses": [
+      "before the usual or expected time",
+      "near the beginning of a period, process, or sequence",
+      "done in advance"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0,
+      "fast": 0.3,
+      "open": 0.3,
+      "heavy": -0.4,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "precede",
+    "essence": "Happening sooner than is usual or expected.",
+    "domain": "time",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "complex",
+    "senses": [
+      "consisting of many interrelated parts; not simple",
+      "a group of buildings or related facilities",
+      "a psychological constellation of associated ideas and impulses",
+      "in mathematics, involving complex numbers"
+    ],
+    "feel": {
+      "bright": -0.4,
+      "hard": 0.3,
+      "fast": -0.4,
+      "open": -0.2,
+      "heavy": 0.5,
+      "smooth": -0.4,
+      "inward": 0.2,
+      "pleasant": -0.2
+    },
+    "motion": "entangle",
+    "essence": "Having many connected parts that make it hard to understand.",
+    "domain": "quality",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "every",
+    "senses": [
+      "each of all the individual members of a group considered together",
+      "used for emphasis (as in every bit)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": 0,
+      "open": 0.5,
+      "heavy": 0.1,
+      "smooth": 0.6,
+      "inward": -0.3,
+      "pleasant": 0
+    },
+    "motion": "span",
+    "essence": "Refers to all members of a set taken individually.",
+    "domain": "number",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "contain",
+    "senses": [
+      "to hold or have within",
+      "to keep within limits; restrain",
+      "to prevent the spread of something harmful",
+      "to include as a part or element"
+    ],
+    "feel": {
+      "bright": -0.1,
+      "hard": 0.7,
+      "fast": -0.3,
+      "open": -0.8,
+      "heavy": 0.3,
+      "smooth": 0.3,
+      "inward": 0.8,
+      "pleasant": -0.2
+    },
+    "motion": "hold",
+    "essence": "To keep something inside boundaries or within limits.",
+    "domain": "relate",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "elder",
+    "senses": [
+      "a person who is older or of higher rank",
+      "older of two or more",
+      "a leader or respected senior in a community or church",
+      "a shrub or tree of the genus Sambucus (elder)"
+    ],
+    "feel": {
+      "bright": 0.2,
+      "hard": 0,
+      "fast": -0.5,
+      "open": -0.2,
+      "heavy": 0.3,
+      "smooth": 0.3,
+      "inward": 0.2,
+      "pleasant": 0.3
+    },
+    "motion": "endure",
+    "essence": "A person older than another or of senior standing.",
+    "domain": "world",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "disc",
+    "senses": [
+      "a thin, flat circular object or shape",
+      "an optical storage medium such as a CD or DVD",
+      "an anatomical structure such as an intervertebral disc"
+    ],
+    "feel": {
+      "bright": 0,
+      "hard": 0.6,
+      "fast": 0,
+      "open": -0.6,
+      "heavy": -0.5,
+      "smooth": 0.7,
+      "inward": 0,
+      "pleasant": 0
+    },
+    "motion": "spin",
+    "essence": "A flat circular form or object.",
+    "domain": "shape",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "bee",
+    "senses": [
+      "a social, stinging insect that gathers nectar and pollen",
+      "a gathering for communal work or a contest (e.g., spelling bee)"
+    ],
+    "feel": {
+      "bright": 0.4,
+      "hard": 0.4,
+      "fast": 0.7,
+      "open": 0.5,
+      "heavy": -0.8,
+      "smooth": -0.3,
+      "inward": -0.6,
+      "pleasant": 0.1
+    },
+    "motion": "buzz",
+    "essence": "A flying social insect that collects nectar and helps pollinate plants.",
+    "domain": "animal",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "name",
+    "senses": [
+      "a word or words by which a person or thing is known",
+      "to identify or designate by a name",
+      "reputation or standing (as in make a name)",
+      "to nominate or appoint"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.2,
+      "fast": 0,
+      "open": -0.3,
+      "heavy": -0.2,
+      "smooth": 0.3,
+      "inward": -0.7,
+      "pleasant": 0.2
+    },
+    "motion": "fix",
+    "essence": "A label that identifies a person, place, or thing.",
+    "domain": "speak",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "brain",
+    "senses": [
+      "the organ in the skull that controls thought and bodily functions",
+      "intellectual ability or the mind",
+      "an intelligent person (often plural, as in the brains of the group)",
+      "to strike on the head (verb, figurative or literal)"
+    ],
+    "feel": {
+      "bright": 0.3,
+      "hard": -0.8,
+      "fast": 0.6,
+      "open": -0.7,
+      "heavy": 0.2,
+      "smooth": -0.3,
+      "inward": 0.9,
+      "pleasant": 0.1
+    },
+    "motion": "fire",
+    "essence": "The central organ that processes information and coordinates the nervous system.",
+    "domain": "body",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "code",
+    "senses": [
+      "a system of symbols or rules for representing information",
+      "computer program instructions written in a programming language",
+      "a body of laws or standards",
+      "a cipher or method of secret writing",
+      "the genetic code specifying protein synthesis"
+    ],
+    "feel": {
+      "bright": 0.5,
+      "hard": 0.6,
+      "fast": 0.5,
+      "open": -0.3,
+      "heavy": -0.3,
+      "smooth": 0.4,
+      "inward": 0.4,
+      "pleasant": 0.1
+    },
+    "motion": "compile",
+    "essence": "A structured system of symbols and rules that encodes information or instructions.",
+    "domain": "make",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "friend",
+    "senses": [
+      "a person with whom one has a bond of mutual affection and support",
+      "to add someone as a contact on a social platform"
+    ],
+    "feel": {
+      "bright": 0.6,
+      "hard": 0.2,
+      "fast": -0.3,
+      "open": 0.7,
+      "heavy": -0.5,
+      "smooth": 0.6,
+      "inward": -0.5,
+      "pleasant": 0.9
+    },
+    "motion": "support",
+    "essence": "A person with whom one shares mutual affection, trust, and help.",
+    "domain": "people",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  },
+  {
+    "term": "door",
+    "senses": [
+      "a movable barrier used to open and close an entrance",
+      "the doorway or entrance itself",
+      "an opportunity or means of access (figurative)"
+    ],
+    "feel": {
+      "bright": 0.1,
+      "hard": 0.8,
+      "fast": 0.2,
+      "open": 0,
+      "heavy": 0.5,
+      "smooth": 0.4,
+      "inward": 0.6,
+      "pleasant": 0.1
+    },
+    "motion": "swing",
+    "essence": "A hinged or sliding panel that opens and closes a passage.",
+    "domain": "thing",
+    "model": "gpt-5",
+    "at": "2026-09-16T09:19:12.205Z"
+  }
+]

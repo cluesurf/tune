@@ -1,0 +1,609 @@
+english    ipa          form        shape  state                uses  head
+sound      saʊnd        saund       CDCC   free                  192   153
+light      laɪt         lait        CDC    free                  199    68
+cloth      klɔːθ        kloc        CCVC   free                   61    51
+land       lænd         land        CVCC   free                   64    43
+sign       saɪn         sain        CDC    free                   52    40
+plant      plænt        plant       CCVCC  free                   66    34
+house      haʊs         haus        CDC    free                   37    29
+pain       peɪn         pen         CVC    free                   39    27
+drink      dɹɪŋk        driqk       CCVCC  free                   42    26
+mind       maɪnd        maind       CDCC   free                   46    25
+ground     ɡɹaʊnd       graund      CCDCC  free                   34    23
+base       beɪs         bes         CVC    free                   27    24
+wind       wɪnd         wind        CVCC   free                   32    17
+tube       tuːb         tub         CVC    free                   28    15
+gas        ɡæs          gas         CVC    free                   22    15
+foot       fʊt          fut         CVC    free                   30    12
+bright     bɹaɪt        brait       CCDC   free                   28    11
+dog        dɔːɡ         dog         CVC    free                   19    12
+dish       dɪʃ          dix         CVC    free                   14    13
+ring       ɹɪŋ          riq         CVC    free                   19    10
+shout      ʃaʊt         xaut        CDC    free                   11     9
+chain      tʃeɪn        txen        CCVC   free                   12     8
+glass      ɡlæs         glas        CCVC   free                   12     8
+throat     θɹoʊt        crot        CCVC   free                   15     6
+school     skuːl        skul        CCVC   free                   17     5
+knife      naɪf         naif        CDC    free                    8     7
+fruit      fɹuːt        frut        CCVC   free                   11     6
+grass      ɡɹæs         gras        CCVC   free                   14     5
+dress      dɹɛs         dres        CCVC   free                    9     6
+floor      flɔːɹ        flor        CCVC   free                    9     6
+juice      dʒuːs        djus        CCVC   free                    7     6
+root       ruːt         rut         CVC    free                    6     6
+mound      maʊnd        maund       CDCC   free                    5     5
+train      tɹeɪn        tren        CCVC   free                    8     4
+flame      fleɪm        flem        CCVC   free                    7     4
+town       taʊn         taun        CDC    free                    7     4
+paint      peɪnt        pent        CVCC   free                    6     4
+gauge      ɡeɪdʒ        gedj        CVCC   free                    5     4
+snake      sneɪk        snek        CCVC   free                    5     4
+clock      klɑːk        klak        CCVC   free                    4     4
+spine      spaɪn        spain       CCDC   free                    7     2
+tooth      tuːθ         tuc         CVC    free                    7     2
+mask       mæsk         mask        CVCC   free                    5     2
+pen        pɛn          pen         CVC    free                    5     2
+plane      pleɪn        plen        CCVC   free                    5     2
+bank       bæŋk         baqk        CVCC   free                    4     2
+brush      bɹʌʃ         brax        CCVC   free                    3     2
+cloud      klaʊd        klaud       CCDC   free                    3     2
+dam        dæm          dam         CVC    free                    2     2
+ledge      lɛdʒ         ledj        CVCC   free                    2     2
+pig        pɪɡ          pig         CVC    free                    6     1
+spoon      spuːn        spun        CCVC   free                    2     2
+lung       lʌŋ          laq         CVC    free                    4     1
+bat        bæt          bat         CVC    free                    3     1
+dawn       dɔːn         don         CVC    free                    3     1
+sand       sænd         sand        CVCC   free                    7     0
+breeze     bɹiːz        briz        CCVC   free                    2     1
+corn       kɔːɹn        korn        CVCC   free                    2     1
+mouse      maʊs         maus        CDC    free                    2     1
+skull      skʌl         skal        CCVC   free                    2     1
+chant      tʃænt        txant       CCVCC  free                    1     1
+gem        dʒɛm         djem        CCVC   free                    1     1
+haze       heɪz         hez         CVC    free                    1     1
+peach      piːtʃ        pitx        CVCC   free                    1     1
+pool       puːl         pul         CVC    free                    1     1
+spade      speɪd        sped        CCVC   free                    1     1
+plain      pleɪn        plen        CCVC   free                    4     0
+sink       sɪŋk         siqk        CVCC   free                    3     0
+swamp      swɑːmp       swamp       CCVCC  free                    3     0
+bean       biːn         bin         CVC    free                    2     0
+bruise     bɹuːz        bruz        CCVC   free                    1     0
+cheek      tʃiːk        txik        CCVC   free                    1     0
+dusk       dʌsk         dask        CVCC   free                    1     0
+frog       fɹɔːɡ        frog        CCVC   free                    1     0
+grease     ɡɹiːs        gris        CCVC   free                    1     0
+lamp       læmp         lamp        CVCC   free                    1     0
+ridge      ɹɪdʒ         ridj        CVCC   free                    1     0
+bluff      blʌf         blaf        CCVC   free                    0     0
+bog        bɔːɡ         bog         CVC    free                    0     0
+bridge     bɹɪdʒ        bridj       CCVCC  free                    0     0
+creek      kɹiːk        krik        CCVC   free                    0     0
+desk       dɛsk         desk        CVCC   free                    0     0
+drought    dɹaʊt        draut       CCDC   free                    0     0
+glyph      ɡlɪf         glif        CCVC   free                    0     0
+goat       ɡoʊt         got         CVC    free                    0     0
+goose      ɡuːs         gus         CVC    free                    0     0
+lime       laɪm         laim        CDC    free                    0     0
+loaf       loʊf         lof         CVC    free                    0     0
+moss       mɔːs         mos         CVC    free                    0     0
+pine       paɪn         pain        CDC    free                    0     0
+pitch      pɪtʃ         pitx        CVCC   free                    0     0
+rice       raɪs         rais        CDC    free                    0     0
+thumb      θʌm          cam         CVC    free                    0     0
+wedge      wɛdʒ         wedj        CVCC   free                    0     0
+wheat      wiːt         wit         CVC    free                    0     0
+wound      wuːnd        wund        CVCC   free                    0     0
+song       sɔːŋ         soq         CVC    free                    0     0
+speech     spiːtʃ       spitx       CCVCC  free                    0     0
+back       bæk          bak         CVC    crowded               151   104
+space      speɪs        spes        CCVC   crowded                87    73
+food       fuːd         fud         CVC    crowded                97    64
+mark       mɑːɹk        mark        CVCC   crowded                85    64
+skin       skɪn         skin        CCVC   crowded                72    38
+heart      hɑːɹt        hart        CVCC   crowded                49    27
+book       bʊk          buk         CVC    crowded                45    24
+stone      stoʊn        ston        CCVC   crowded                36    24
+head       hɛd          hed         CVC    crowded                42    19
+heat       hiːt         hit         CVC    crowded                35    17
+thread     θɹɛd         cred        CCVC   crowded                22    19
+hand       hænd         hand        CVCC   crowded                45    12
+leg        lɛɡ          leg         CVC    crowded                23    17
+breath     bɹɛθ         brec        CCVC   crowded                29    14
+call       kɔːl         kol         CVC    crowded                27    14
+meat       miːt         mit         CVC    crowded                27    14
+road       ɹoʊd         rod         CVC    crowded                27    13
+death      dɛθ          dec         CVC    crowded                27    12
+stuff      stʌf         staf        CCVC   crowded                15    15
+car        kɑːɹ         kar         CVC    crowded                26    12
+fat        fæt          fat         CVC    crowded                26    11
+fish       fɪʃ          fix         CVC    crowded                21    11
+blood      blʌd         blad        CCVC   crowded                44     5
+sleep      sliːp        slip        CCVC   crowded                36     7
+coat       koʊt         kot         CVC    crowded                14    12
+mouth      maʊθ         mauc        CDC    crowded                18    10
+pipe       paɪp         paip        CDC    crowded                16    10
+ship       ʃɪp          xip         CVC    crowded                15    10
+salt       sɔːlt        solt        CVCC   crowded                16     9
+hide       haɪd         haid        CDC    crowded                37     3
+boat       boʊt         bot         CVC    crowded                16     8
+blade      bleɪd        bled        CCVC   crowded                11     9
+star       stɑːɹ        star        CCVC   crowded                22     6
+taste      teɪst        test        CVCC   crowded                12     8
+grain      ɡɹeɪn        gren        CCVC   crowded                12     7
+plate      pleɪt        plet        CCVC   crowded                 8     8
+cake       keɪk         kek         CVC    crowded                 8     7
+peak       piːk         pik         CVC    crowded                 8     7
+brain      bɹeɪn        bren        CCVC   crowded                17     4
+mist       mɪst         mist        CVCC   crowded                10     5
+track      tɹæk         trak        CCVC   crowded                 9     5
+cart       kɑːɹt        kart        CVCC   crowded                 8     5
+storm      stɔːɹm       storm       CCVCC  crowded                 7     5
+sword      sɔːɹd        sord        CVCC   crowded                 9     4
+fog        fɔːɡ         fog         CVC    crowded                 8     4
+rope       ɹoʊp         rop         CVC    crowded                 8     4
+trap       tɹæp         trap        CCVC   crowded                11     3
+bowl       boʊl         bol         CVC    crowded                 6     4
+cat        kæt          kat         CVC    crowded                 6     4
+foam       foʊm         fom         CVC    crowded                 6     4
+bark       bɑːɹk        bark        CVCC   crowded                 4     4
+stem       stɛm         stem        CCVC   crowded                 4     4
+page       peɪdʒ        pedj        CVCC   crowded                 6     3
+shed       ʃɛd          xed         CVC    crowded                 6     3
+dust       dʌst         dast        CVCC   crowded                 5     3
+camp       kæmp         kamp        CVCC   crowded                 4     3
+chest      tʃɛst        txest       CCVCC  crowded                 8     2
+cord       kɔːɹd        kord        CVCC   crowded                 4     3
+lip        lɪp          lip         CVC    crowded                 8     2
+cream      kɹiːm        krim        CCVC   crowded                 5     2
+hat        hæt          hat         CVC    crowded                 4     2
+hook       hʊk          huk         CVC    crowded                 4     2
+smoke      smoʊk        smok        CCVC   crowded                 8     1
+flood      flʌd         flad        CCVC   crowded                 3     2
+rib        ɹɪb          rib         CVC    crowded                 3     2
+slope      sloʊp        slop        CCVC   crowded                 3     2
+breast     bɹɛst        brest       CCVCC  crowded                10     0
+port       pɔːɹt        port        CVCC   crowded                 2     2
+spark      spɑːɹk       spark       CCVCC  crowded                 2     2
+cave       keɪv         kev         CVC    crowded                 5     1
+sheep      ʃiːp         xip         CVC    crowded                 5     1
+brick      bɹɪk         brik        CCVC   crowded                 3     1
+bolt       boʊlt        bolt        CVCC   crowded                 2     1
+grape      ɡɹeɪp        grep        CCVC   crowded                 2     1
+shore      ʃɔːɹ         xor         CVC    crowded                 2     1
+coast      koʊst        kost        CVCC   crowded                 1     1
+crab       kɹæb         krab        CCVC   crowded                 1     1
+frost      fɹɔːst       frost       CCVCC  crowded                 1     1
+mount      maʊnt        maunt       CDCC   crowded                 1     1
+shark      ʃɑːɹk        xark        CVCC   crowded                 1     1
+hood       hʊd          hud         CVC    crowded                 3     0
+spice      spaɪs        spais       CCDC   crowded                 2     0
+switch     swɪtʃ        switx       CCVCC  crowded                 2     0
+waist      weɪst        west        CVCC   crowded                 2     0
+wrist      ɹɪst         rist        CVCC   crowded                 2     0
+yard       jɑːɹd        yard        CVCC   crowded                 2     0
+clamp      klæmp        klamp       CCVCC  crowded                 1     0
+cliff      klɪf         klif        CCVC   crowded                 1     0
+duck       dʌk          dak         CVC    crowded                 1     0
+fork       fɔːɹk        fork        CVCC   crowded                 1     0
+mint       mɪnt         mint        CVCC   crowded                 1     0
+sap        sæp          sap         CVC    crowded                 1     0
+soup       suːp         sup         CVC    crowded                 1     0
+steam      stiːm        stim        CCVC   crowded                 1     0
+beach      biːtʃ        bitx        CVCC   crowded                 0     0
+broth      bɹɔːθ        broc        CCVC   crowded                 0     0
+cage       keɪdʒ        kedj        CVCC   crowded                 0     0
+chalk      tʃɔːk        txok        CCVC   crowded                 0     0
+cheese     tʃiːz        txiz        CCVC   crowded                 0     0
+chin       tʃɪn         txin        CCVC   crowded                 0     0
+crest      kɹɛst        krest       CCVCC  crowded                 0     0
+fort       fɔːɹt        fort        CVCC   crowded                 0     0
+hut        hʌt          hat         CVC    crowded                 0     0
+myth       mɪθ          mic         CVC    crowded                 0     0
+paste      peɪst        pest        CVCC   crowded                 0     0
+peg        pɛɡ          peg         CVC    crowded                 0     0
+pond       pɑːnd        pand        CVCC   crowded                 0     0
+pump       pʌmp         pamp        CVCC   crowded                 0     0
+rug        rʌɡ          rag         CVC    crowded                 0     0
+scar       skɑːɹ        skar        CCVC   crowded                 0     0
+scarf      skɑːɹf       skarf       CCVCC  crowded                 0     0
+shin       ʃɪn          xin         CVC    crowded                 0     0
+tide       taɪd         taid        CDC    crowded                 0     0
+valve      vælv         valv        CVCC   crowded                 0     0
+vine       vaɪn         vain        CDC    crowded                 0     0
+zinc       zɪŋk         ziqk        CVCC   crowded                 0     0
+tool       tuːl         tul         CVC    held by tool          121   110
+path       pæθ          pac         CVC    held by path           75    67
+lead       lɛd          led         CVC    held by threshold      56    43
+room       ɹuːm         rum         CVC    held by realm          46    43
+name       neɪm         nem         CVC    held by minimum        56    39
+case       keɪs         kes         CVC    held by exist          32    30
+home       hoʊm         hom         CVC    held by home           39    25
+face       feɪs         fes         CVC    held by face           35    21
+bone       boʊn         bon         CVC    held by exit           26    20
+seed       siːd         sid         CVC    held by seed           34    18
+bed        bɛd          bed         CVC    held by separate       36    15
+sheet      ʃiːt         xit         CVC    held by computation    18    16
+rock       ɹɑːk         rak         CVC    held by rock           25    14
+sun        sʌn          san         CVC    held by sun            59     4
+wave       weɪv         wev         CVC    held by wave           25    11
+leaf       liːf         lif         CVC    held by leaf           20    12
+tone       toʊn         ton         CVC    held by contain        15    13
+pot        pɑːt         pat         CVC    held by passive        14    13
+wood       wʊd          wud         CVC    held by would          34     7
+wall       wɔːl         wol         CVC    held by we             17    10
+rain       ɹeɪn         ren         CVC    held by relation       12     7
+bread      bɹɛd         bred        CCVC   held by braid          14     6
+map        mæp          map         CVC    held by map            13     6
+shop       ʃɑːp         xap         CVC    held by chip            9     6
+cap        kæp          kap         CVC    held by tangent         7     6
+net        nɛt          net         CVC    held by network        11     4
+dream      dɹiːm        drim        CCVC   held by dream           9     4
+cup        kʌp          kap         CVC    held by tangent         8     4
+pin        pɪn          pin         CVC    held by purple          9     3
+tongue     tʌŋ          taq         CVC    held by way             5     4
+nose       noʊz         noz         CVC    held by nose            9     2
+nut        nʌt          nat         CVC    held by amount          5     3
+sauce      sɔːs         sos         CVC    held by possible        4     3
+hall       hɔːl         hol         CVC    held by whole           3     3
+vein       veɪn         ven         CVC    held by event           6     2
+door       dɔːɹ         dor         CVC    held by order           9     1
+pan        pæn          pan         CVC    held by span            5     2
+mud        mʌd          mad         CVC    held by model           8     1
+gate       ɡeɪt         get         CVC    held by gate            3     2
+moon       muːn         mun         CVC    held by intuition       7     1
+wool       wʊl          wul         CVC    held by will            3     1
+palm       pɑːm         pam         CVC    held by parallel        2     1
+tin        tɪn          tin         CVC    held by out             2     1
+gum        ɡʌm          gam         CVC    held by gain            5     0
+lake       leɪk         lek         CVC    held by select          1     1
+soap       soʊp         sop         CVC    held by stop            5     0
+sole       soʊl         sol         CVC    held by soul            1     1
+noon       nuːn         nun         CVC    held by union           3     0
+hip        hɪp          hip         CVC    held by group           2     0
+lamb       læm          lam         CVC    held by lack            1     0
+rat        ræt          rat         CVC    held by rate            0     0
+soot       sʊt          sut         CVC    held by past            0     0
+tar        tɑːɹ         tar         CVC    held by target          0     0
+word       wɜːɹd        werd               refused               110    86
+measure    ˈmɛʒəɹ       mejar              refused                95    84
+body       ˈbɑːdi       badi               refused               109    48
+water      ˈwɔːtəɹ      wotar              refused               122    43
+box        bɑːks        baks               refused                58    49
+noise      nɔɪz         noiz               refused                51    50
+picture    ˈpɪktʃəɹ     piktxar            refused                58    46
+liquid     ˈlɪkwɪd      likwid             refused                69    39
+story      ˈstɔːɹi      stori              refused                51    38
+hair       hɛɹ          her                refused                45    31
+fire       faɪəɹ        faiar              refused                60    26
+substance  ˈsʌbstəns    sabstans           refused                29    28
+device     dɪˈvaɪs      divais             refused                28    27
+meal       miːl         mil                refused                35    24
+voice      vɔɪs         vois               refused                35    24
+message    ˈmɛsɪdʒ      mesidj             refused                38    23
+image      ˈɪmɪdʒ       imidj              refused                36    22
+material   məˈtɪɹiəl    matirial           refused                22    22
+metal      ˈmɛtəl       metal              refused                32    18
+paper      ˈpeɪpəɹ      pepar              refused                26    19
+bird       bɜːɹd        berd               refused                33    17
+machine    məˈʃiːn      maxin              refused                26    17
+law        lɔː          lo                 refused                40    13
+flower     ˈflaʊəɹ      flauar             refused                31    15
+record     ˈɹɛkɔːɹd     rekord             refused                22    17
+matter     ˈmætəɹ       matar              refused                18    17
+watch      wɑːtʃ        watx               refused                29    13
+birth      bɜːɹθ        berc               refused                21    13
+eye        aɪ           ai                 refused                53     5
+earth      ɜːɹθ         erc                refused                40     8
+bear       bɛɹ          ber                refused                19    13
+muscle     ˈmʌsəl       masal              refused                26    11
+sea        siː          si                 refused                41     7
+well       wɛl          wel                refused                19    12
+field      fiːld        fild               refused                14    12
+fly        flaɪ         flai               refused                22    10
+string     stɹɪŋ        striq              refused                18    11
+sugar      ˈʃʊɡəɹ       xugar              refused                14    12
+tree       tɹiː         tri                refused                24     9
+letter     ˈlɛtəɹ       letar              refused                19    10
+oil        ɔɪl          oil                refused                18    10
+arm        ɑːɹm         arm                refused                19     9
+smell      smɛl         smel               refused                15    10
+swell      swɛl         swel               refused                15    10
+world      wɜːɹld       werld              refused                14    10
+glow       ɡloʊ         glo                refused                15     9
+text       tɛkst        tekst              refused                11    10
+fabric     ˈfæbɹɪk      fabrik             refused                14     9
+key        kiː          ki                 refused                16     8
+carbon     ˈkɑːɹbən     karban             refused                11     9
+cry        kɹaɪ         krai               refused                11     9
+wheel      wiːl         wil                refused                15     8
+term       tɜːɹm        term               refused                10     9
+ear        ɪɹ           ir                 refused                21     6
+scale      skeɪl        skel               refused                 8     8
+shield     ʃiːld        xild               refused                 8     8
+title      ˈtaɪtəl      taital             refused                 8     8
+egg        ɛɡ           eg                 refused                26     3
+solid      ˈsɑːlɪd      salid              refused                14     6
+soil       sɔɪl         soil               refused                 9     7
+acid       ˈæsɪd        asid               refused                 8     7
+city       ˈsɪti        siti               refused                12     6
+nerve      nɜːɹv        nerv               refused                24     3
+ocean      ˈoʊʃən       oxan               refused                28     2
+season     ˈsiːzən      sizan              refused                 8     7
+hue        hjuː         hyu                refused                 7     7
+language   ˈlæŋɡwɪdʒ    laqgwidj           refused                11     6
+stream     stɹiːm       strim              refused                10     6
+camera     ˈkæmɹə       kamra              refused                 8     6
+chamber    ˈtʃeɪmbəɹ    txembar            refused                 8     6
+horse      hɔːɹs        hors               refused                15     4
+range      ɹeɪndʒ       rendj              refused                 7     6
+spray      spɹeɪ        spre               refused                 7     6
+stable     ˈsteɪbəl     stebal             refused                 7     6
+alcohol    ˈælkəhɔːl    alkahol            refused                 6     6
+meter      ˈmiːtəɹ      mitar              refused                 6     6
+strap      stɹæp        strap              refused                 6     6
+ice        aɪs          ais                refused                16     3
+gear       ɡɪɹ          gir                refused                 7     5
+bow        boʊ          bo                 refused                 6     5
+joint      dʒɔɪnt       djoint             refused                18     2
+parent     ˈpɛɹənt      perant             refused                 6     5
+sky        skaɪ         skai               refused                22     1
+shirt      ʃɜːɹt        xert               refused                 5     5
+snow       snoʊ         sno                refused                 9     4
+hill       hɪl          hil                refused                 8     4
+stomach    ˈstʌmək      stamak             refused                12     3
+seal       siːl         sil                refused                 7     4
+signal     ˈsɪɡnəl      signal             refused                11     3
+table      ˈteɪbəl      tebal              refused                 7     4
+screen     skɹiːn       skrin              refused                 6     4
+symbol     ˈsɪmbəl      simbal             refused                10     3
+gold       ɡoʊld        gold               refused                 9     3
+wire       waɪəɹ        waiar              refused                 5     4
+alloy      ˈælɔɪ        aloi               refused                 4     4
+axe        æks          aks                refused                 4     4
+bee        biː          bi                 refused                15     1
+milk       mɪlk         milk               refused                 7     3
+river      ˈɹɪvəɹ       rivar              refused                 7     3
+tea        tiː          ti                 refused                15     1
+current    ˈkɜːɹənt     kerant             refused                10     2
+fence      fɛns         fens               refused                 6     3
+mountain   ˈmaʊntən     mauntan            refused                 6     3
+saw        sɔː          so                 refused                 6     3
+engine     ˈɛndʒɪn      endjin             refused                 5     3
+iron       ˈaɪəɹn       aiarn              refused                 5     3
+mother     ˈmʌðəɹ       maCar              refused                 9     2
+winter     ˈwɪntəɹ      wintar             refused                 5     3
+branch     bɹæntʃ       brantx             refused                 4     3
+glue       ɡluː         glu                refused                 4     3
+history    ˈhɪstəɹi     histari            refused                 4     3
+island     ˈaɪlənd      ailand             refused                 4     3
+spider     ˈspaɪdəɹ     spaidar            refused                 8     2
+toe        toʊ          to                 refused                 4     3
+channel    ˈtʃænəl      txanal             refused                 3     3
+crystal    ˈkɹɪstəl     kristal            refused                 3     3
+jacket     ˈdʒækɪt      djakit             refused                 3     3
+march      mɑːɹtʃ       martx              refused                 3     3
+mineral    ˈmɪnəɹəl     minaral            refused                 3     3
+powder     ˈpaʊdəɹ      paudar             refused                 3     3
+spring     spɹɪŋ        spriq              refused                 7     2
+vegetable  ˈvɛdʒtəbəl   vedjtabal          refused                 3     3
+button     ˈbʌtən       batan              refused                 5     2
+echo       ˈɛkoʊ        eko                refused                 9     1
+fiber      ˈfaɪbəɹ      faibar             refused                 5     2
+garden     ˈɡɑːɹdən     gardan             refused                 4     2
+jaw        dʒɔː         djo                refused                 4     2
+nail       neɪl         nel                refused                 4     2
+plastic    ˈplæstɪk     plastik            refused                 4     2
+prison     ˈpɹɪzən      prizan             refused                 4     2
+theory     ˈθɪɹi        ciri               refused                 4     2
+ash        æʃ           ax                 refused                 3     2
+brother    ˈbɹʌðəɹ      braCar             refused                 7     1
+forest     ˈfɔːɹəst     forast             refused                 3     2
+ink        ɪŋk          iqk                refused                11     0
+lizard     ˈlɪzəɹd      lizard             refused                 3     2
+medium     ˈmiːdiəm     midiam             refused                 3     2
+spear      spɪɹ         spir               refused                 3     2
+street     stɹiːt       strit              refused                 3     2
+bay        beɪ          be                 refused                 2     2
+berry      ˈbɛɹi        beri               refused                 2     2
+garment    ˈɡɑːɹmənt    garmant            refused                 2     2
+hammer     ˈhæməɹ       hamar              refused                 2     2
+onion      ˈʌnjən       anyan              refused                 2     2
+robot      ˈɹoʊbɑːt     robat              refused                 2     2
+screw      skɹuː        skru               refused                 2     2
+script     skɹɪpt       skript             refused                 2     2
+skirt      skɜːɹt       skert              refused                 2     2
+strand     stɹænd       strand             refused                 2     2
+valley     ˈvæli        vali               refused                 2     2
+fox        fɑːks        faks               refused                 5     1
+market     ˈmɑːɹkɪt     markit             refused                 5     1
+window     ˈwɪndoʊ      windo              refused                 5     1
+cow        kaʊ          kau                refused                 8     0
+father     ˈfɑːðəɹ      faCar              refused                 4     1
+knee       niː          ni                 refused                 4     1
+clay       kleɪ         kle                refused                 3     1
+heaven     ˈhɛvən       hevan              refused                 7     0
+neck       nɛk          nek                refused                 7     0
+shelf      ʃɛlf         xelf               refused                 3     1
+shoe       ʃuː          xu                 refused                 3     1
+silk       sɪlk         silk               refused                 3     1
+summer     ˈsʌməɹ       samar              refused                 3     1
+arch       ɑːɹtʃ        artx               refused                 2     1
+artery     ˈɑːɹtəɹi     artari             refused                 2     1
+candle     ˈkændəl      kandal             refused                 2     1
+deer       dɪɹ          dir                refused                 2     1
+dye        daɪ          dai                refused                 2     1
+fur        fɜːɹ         fer                refused                 2     1
+lever      ˈlɛvəɹ       levar              refused                 2     1
+tile       taɪl         tail               refused                 2     1
+wine       waɪn         wain               refused                 2     1
+arrow      ˈæɹoʊ        aro                refused                 1     1
+ceramic    səˈɹæmɪk     saramik            refused                 1     1
+chair      tʃɛɹ         txer               refused                 1     1
+coffee     ˈkɔːfi       kofi               refused                 1     1
+heel       hiːl         hil                refused                 1     1
+honey      ˈhʌni        hani               refused                 5     0
+inn        ɪn           in                 refused                 1     1
+knuckle    ˈnʌkəl       nakal              refused                 1     1
+leather    ˈlɛðəɹ       leCar              refused                 1     1
+lion       ˈlaɪən       laian              refused                 1     1
+ore        ɔːɹ          or                 refused                 1     1
+oven       ˈʌvən        avan               refused                 1     1
+porch      pɔːɹtʃ       portx              refused                 1     1
+salad      ˈsæləd       salad              refused                 1     1
+shrine     ʃɹaɪn        xrain              refused                 1     1
+silver     ˈsɪlvəɹ      silvar             refused                 1     1
+wax        wæks         waks               refused                 5     0
+shadow     ˈʃædoʊ       xado               refused                 4     0
+pulse      pʌls         pals               refused                 3     0
+ant        ænt          ant                refused                 2     0
+belt       bɛlt         belt               refused                 2     0
+cable      ˈkeɪbəl      kebal              refused                 2     0
+embryo     ˈɛmbɹioʊ     embrio             refused                 2     0
+finger     ˈfɪŋɡəɹ      fiqgar             refused                 2     0
+kidney     ˈkɪdni       kidni              refused                 2     0
+lemon      ˈlɛmən       leman              refused                 2     0
+lens       lɛnz         lenz               refused                 2     0
+needle     ˈniːdəl      nidal              refused                 2     0
+shoulder   ˈʃoʊldəɹ     xoldar             refused                 2     0
+stew       stuː         stu                refused                 2     0
+banana     bəˈnænə      banana             refused                 1     0
+barley     ˈbɑːɹli      barli              refused                 1     0
+beer       bɪɹ          bir                refused                 1     0
+bladder    ˈblædəɹ      bladar             refused                 1     0
+cabbage    ˈkæbɪdʒ      kabidj             refused                 1     0
+cluster    ˈklʌstəɹ     klastar            refused                 1     0
+college    ˈkɑːlɪdʒ     kalidj             refused                 1     0
+colon      ˈkoʊlən      kolan              refused                 1     0
+copper     ˈkɑːpəɹ      kapar              refused                 1     0
+corpse     kɔːɹps       korps              refused                 1     0
+crow       kɹoʊ         kro                refused                 1     0
+dew        djuː         dyu                refused                 1     0
+drill      dɹɪl         dril               refused                 1     0
+fern       fɜːɹn        fern               refused                 1     0
+fever      ˈfiːvəɹ      fivar              refused                 1     0
+harbor     ˈhɑːɹbəɹ     harbar             refused                 1     0
+herb       ɜːɹb         erb                refused                 1     0
+hospital   ˈhɑːspɪtəl   haspital           refused                 1     0
+intestine  ɪnˈtɛstɪn    intestin           refused                 1     0
+ladder     ˈlædəɹ       ladar              refused                 1     0
+legend     ˈlɛdʒənd     ledjand            refused                 1     0
+library    ˈlaɪbɹɛɹi    laibreri           refused                 1     0
+marsh      mɑːɹʃ        marx               refused                 1     0
+may        meɪ          me                 refused                 1     0
+mirror     ˈmɪrəɹ       mirar              refused                 1     0
+oak        oʊk          ok                 refused                 1     0
+oat        oʊt          ot                 refused                 1     0
+orange     ˈɔːɹɪndʒ     orindj             refused                 1     0
+orbit      ˈɔːɹbɪt      orbit              refused                 1     0
+owl        aʊl          aul                refused                 1     0
+pastry     ˈpeɪstɹi     pestri             refused                 1     0
+pea        piː          pi                 refused                 1     0
+planet     ˈplænɪt      planit             refused                 1     0
+pupil      ˈpjuːpəl     pyupal             refused                 1     0
+sister     ˈsɪstəɹ      sistar             refused                 1     0
+thigh      θaɪ          cai                refused                 1     0
+trail      tɹeɪl        trel               refused                 1     0
+tunnel     ˈtʌnəl       tanal              refused                 1     0
+vapor      ˈveɪpəɹ      vepar              refused                 1     0
+ankle      ˈæŋkəl       aqkal              refused                 0     0
+antenna    ænˈtɛnə      antena             refused                 0     0
+ape        eɪp          ep                 refused                 0     0
+apple      ˈæpəl        apal               refused                 0     0
+archive    ˈɑːɹkaɪv     arkaiv             refused                 0     0
+autumn     ˈɔːtəm       otam               refused                 0     0
+basin      ˈbeɪsən      besan              refused                 0     0
+battery    ˈbætəɹi      batari             refused                 0     0
+beard      bɪɹd         bird               refused                 0     0
+butter     ˈbʌtəɹ       batar              refused                 0     0
+cactus     ˈkæktəs      kaktas             refused                 0     0
+cancer     ˈkænsəɹ      kansar             refused                 0     0
+canvas     ˈkænvəs      kanvas             refused                 0     0
+canyon     ˈkænjən      kanyan             refused                 0     0
+capital    ˈkæpɪtəl     kapital            refused                 0     0
+cartilage  ˈkɑːɹtəlɪdʒ  kartalidj          refused                 0     0
+cascade    kæˈskeɪd     kasked             refused                 0     0
+castle     ˈkæsəl       kasal              refused                 0     0
+ceiling    ˈsiːlɪŋ      siliq              refused                 0     0
+cement     səˈmɛnt      sament             refused                 0     0
+chisel     ˈtʃɪzəl      txizal             refused                 0     0
+circuit    ˈsɜːɹkɪt     serkit             refused                 0     0
+compass    ˈkʌmpəs      kampas             refused                 0     0
+concrete   ˈkɑːnkɹiːt   kankrit            refused                 0     0
+cotton     ˈkɑːtən      katan              refused                 0     0
+cousin     ˈkʌzən       kazan              refused                 0     0
+crater     ˈkɹeɪtəɹ     kretar             refused                 0     0
+curtain    ˈkɜːɹtən     kertan             refused                 0     0
+custom     ˈkʌstəm      kastam             refused                 0     0
+desert     ˈdɛzəɹt      dezart             refused                 0     0
+diagram    ˈdaɪəɡɹæm    daiagram           refused                 0     0
+dialect    ˈdaɪəlɛkt    daialekt           refused                 0     0
+doctrine   ˈdɑːktɹɪn    daktrin            refused                 0     0
+eagle      ˈiːɡəl       igal               refused                 0     0
+elbow      ˈɛlboʊ       elbo               refused                 0     0
+elephant   ˈɛləfənt     elafant            refused                 0     0
+file       faɪl         fail               refused                 0     0
+forge      fɔːɹdʒ       fordj              refused                 0     0
+formula    ˈfɔːɹmjələ   formyala           refused                 0     0
+gasoline   ˈɡæsəliːn    gasalin            refused                 0     0
+hail       heɪl         hel                refused                 0     0
+hinge      hɪndʒ        hindj              refused                 0     0
+iris       ˈaɪɹɪs       airis              refused                 0     0
+itch       ɪtʃ          itx                refused                 0     0
+jungle     ˈdʒʌŋɡəl     djaqgal            refused                 0     0
+kangaroo   ˌkæŋɡəˈɹuː   kaqgaru            refused                 0     0
+lightning  ˈlaɪtnɪŋ     laitniq            refused                 0     0
+linen      ˈlɪnən       linan              refused                 0     0
+lobster    ˈlɑːbstəɹ    labstar            refused                 0     0
+meadow     ˈmɛdoʊ       medo               refused                 0     0
+melon      ˈmɛlən       melan              refused                 0     0
+midnight   ˈmɪdnaɪt     midnait            refused                 0     0
+monkey     ˈmʌŋki       maqki              refused                 0     0
+monument   ˈmɑːnjəmənt  manyamant          refused                 0     0
+mosquito   məˈskiːtoʊ   maskito            refused                 0     0
+motor      ˈmoʊtəɹ      motar              refused                 0     0
+navel      ˈneɪvəl      neval              refused                 0     0
+nickel     ˈnɪkəl       nikal              refused                 0     0
+nostril    ˈnɑːstɹəl    nastral            refused                 0     0
+nylon      ˈnaɪlɑːn     nailan             refused                 0     0
+octopus    ˈɑːktəpəs    aktapas            refused                 0     0
+offspring  ˈɔːfsprɪŋ    ofspriq            refused                 0     0
+palate     ˈpælət       palat              refused                 0     0
+pasture    ˈpæstʃəɹ     pastxar            refused                 0     0
+peninsula  pəˈnɪnsjələ  paninsyala         refused                 0     0
+pepper     ˈpɛpəɹ       pepar              refused                 0     0
+pillar     ˈpɪləɹ       pilar              refused                 0     0
+pillow     ˈpɪloʊ       pilo               refused                 0     0
+plasma     ˈplæzmə      plazma             refused                 0     0
+plateau    plæˈtoʊ      plato              refused                 0     0
+platinum   ˈplætɪnəm    platinam           refused                 0     0
+plow       plaʊ         plau               refused                 0     0
+potato     pəˈteɪtoʊ    pateto             refused                 0     0
+protein    ˈpɹoʊtiːn    protin             refused                 0     0
+rabbit     ˈɹæbɪt       rabit              refused                 0     0
+riddle     ˈɹɪdəl       ridal              refused                 0     0
+ripple     ˈɹɪpəl       ripal              refused                 0     0
+saturate   ˈsætʃəˌɹeɪt  satxaret           refused                 0     0
+scroll     skɹoʊl       skrol              refused                 0     0
+skeleton   ˈskɛlətən    skelatan           refused                 0     0
+snare      snɛɹ         sner               refused                 0     0
+sponge     spʌndʒ       spandj             refused                 0     0
+stair      stɛɹ         ster               refused                 0     0
+starch     stɑːɹtʃ      startx             refused                 0     0
+sulfur     ˈsʌlfəɹ      salfar             refused                 0     0
+summit     ˈsʌmɪt       samit              refused                 0     0
+sunrise    ˈsʌnɹaɪz     sanraiz            refused                 0     0
+sunset     ˈsʌnsɛt      sanset             refused                 0     0
+surf       sɜːɹf        serf               refused                 0     0
+thunder    ˈθʌndəɹ      candar             refused                 0     0
+tornado    tɔːɹˈneɪdoʊ  tornedo            refused                 0     0
+torso      ˈtɔːɹsoʊ     torso              refused                 0     0
+turtle     ˈtɜːɹtəl     tertal             refused                 0     0
+vacuum     ˈvækjuːm     vakyum             refused                 0     0
+veil       veɪl         vel                refused                 0     0
+village    ˈvɪlɪdʒ      vilidj             refused                 0     0
+weasel     ˈwiːzəl      wizal              refused                 0     0
+whale      weɪl         wel                refused                 0     0
+whisper    ˈwɪspəɹ      wispar             refused                 0     0
+wolf       wʊlf         wulf               refused                 0     0

@@ -1,0 +1,1121 @@
+[
+  {
+    "sound": "o",
+    "position": "vowel",
+    "evidence": 28,
+    "feel": {
+      "bright": 0.11071428571428574,
+      "hard": 0.25,
+      "fast": -0.07857142857142856,
+      "open": -0.2607142857142857,
+      "heavy": 0.16785714285714284,
+      "smooth": 0.2214285714285714,
+      "inward": 0.25000000000000006,
+      "pleasant": 0.01785714285714286
+    },
+    "spread": 0.23295780455381604,
+    "clusters": [
+      {
+        "name": "body, broken, cold",
+        "weight": 0.2857142857142857,
+        "words": [
+          "body",
+          "broken",
+          "cold",
+          "complex",
+          "country",
+          "doubt",
+          "god",
+          "knot"
+        ],
+        "feel": {
+          "bright": -0.17500000000000002,
+          "hard": 0.2125,
+          "fast": -0.31250000000000006,
+          "open": -0.225,
+          "heavy": 0.4375,
+          "smooth": -0.275,
+          "inward": 0.2375,
+          "pleasant": -0.2
+        }
+      },
+      {
+        "name": "both, choose, code",
+        "weight": 0.25,
+        "words": [
+          "both",
+          "choose",
+          "code",
+          "cone",
+          "copy",
+          "count",
+          "prove"
+        ],
+        "feel": {
+          "bright": 0.5,
+          "hard": 0.34285714285714286,
+          "fast": 0.10000000000000002,
+          "open": 0.04285714285714286,
+          "heavy": -0.1,
+          "smooth": 0.4857142857142857,
+          "inward": -0.014285714285714282,
+          "pleasant": 0.2
+        }
+      },
+      {
+        "name": "bolt, bone, box",
+        "weight": 0.25,
+        "words": [
+          "bolt",
+          "bone",
+          "box",
+          "constant",
+          "contain",
+          "door",
+          "focus"
+        ],
+        "feel": {
+          "bright": 0.18571428571428572,
+          "hard": 0.7142857142857143,
+          "fast": -0.08571428571428573,
+          "open": -0.5571428571428572,
+          "heavy": 0.3,
+          "smooth": 0.41428571428571426,
+          "inward": 0.5142857142857142,
+          "pleasant": 0.07142857142857142
+        }
+      }
+    ]
+  },
+  {
+    "sound": "n",
+    "position": "coda",
+    "evidence": 12,
+    "feel": {
+      "bright": 0.25833333333333336,
+      "hard": 0.04999999999999999,
+      "fast": 0.09999999999999999,
+      "open": -0.05000000000000001,
+      "heavy": -0.04166666666666668,
+      "smooth": 0.14999999999999997,
+      "inward": 0.13333333333333333,
+      "pleasant": 0.07499999999999998
+    },
+    "spread": 0.24154016405145248,
+    "clusters": [
+      {
+        "name": "bean, begin, between",
+        "weight": 0.4166666666666667,
+        "words": [
+          "bean",
+          "begin",
+          "between",
+          "can",
+          "clean"
+        ],
+        "feel": {
+          "bright": 0.4200000000000001,
+          "hard": 0.04,
+          "fast": 0.1,
+          "open": 0.42000000000000004,
+          "heavy": -0.3,
+          "smooth": 0.38,
+          "inward": -0.26000000000000006,
+          "pleasant": 0.44000000000000006
+        }
+      },
+      {
+        "name": "brain, contain, fraction",
+        "weight": 0.4166666666666667,
+        "words": [
+          "brain",
+          "contain",
+          "fraction",
+          "function",
+          "mean"
+        ],
+        "feel": {
+          "bright": 0.33999999999999997,
+          "hard": 0.21999999999999997,
+          "fast": 0.07999999999999999,
+          "open": -0.52,
+          "heavy": 0.039999999999999994,
+          "smooth": 0.2,
+          "inward": 0.54,
+          "pleasant": 0.04
+        }
+      }
+    ]
+  },
+  {
+    "sound": "r",
+    "position": "coda",
+    "evidence": 12,
+    "feel": {
+      "bright": 0.19166666666666668,
+      "hard": 0.16666666666666666,
+      "fast": -0.024999999999999994,
+      "open": -0.11666666666666665,
+      "heavy": 0.11666666666666668,
+      "smooth": 0.20833333333333334,
+      "inward": 0.3,
+      "pleasant": 0.18333333333333332
+    },
+    "spread": 0.2431395642553641,
+    "clusters": [
+      {
+        "name": "ancestor, bear, door",
+        "weight": 0.5833333333333334,
+        "words": [
+          "ancestor",
+          "bear",
+          "door",
+          "elder",
+          "enter",
+          "father",
+          "gather"
+        ],
+        "feel": {
+          "bright": 0.04285714285714285,
+          "hard": 0.2571428571428572,
+          "fast": -0.21428571428571427,
+          "open": -0.2571428571428572,
+          "heavy": 0.38571428571428573,
+          "smooth": 0.2,
+          "inward": 0.5,
+          "pleasant": 0.2
+        }
+      },
+      {
+        "name": "after, answer, clear",
+        "weight": 0.3333333333333333,
+        "words": [
+          "after",
+          "answer",
+          "clear",
+          "ear"
+        ],
+        "feel": {
+          "bright": 0.6,
+          "hard": -0.02500000000000001,
+          "fast": 0.25,
+          "open": 0.19999999999999998,
+          "heavy": -0.35,
+          "smooth": 0.425,
+          "inward": -0.12499999999999997,
+          "pleasant": 0.39999999999999997
+        }
+      }
+    ]
+  },
+  {
+    "sound": "t",
+    "position": "coda",
+    "evidence": 24,
+    "feel": {
+      "bright": 0.004166666666666676,
+      "hard": 0.20000000000000004,
+      "fast": 0.08750000000000002,
+      "open": -0.07916666666666665,
+      "heavy": -0.04583333333333334,
+      "smooth": 0.12916666666666668,
+      "inward": -0.11666666666666665,
+      "pleasant": -0.0625
+    },
+    "spread": 0.24668775212187144,
+    "clusters": [
+      {
+        "name": "about, art, bat",
+        "weight": 0.3333333333333333,
+        "words": [
+          "about",
+          "art",
+          "bat",
+          "current",
+          "drift",
+          "fast",
+          "flat",
+          "guest"
+        ],
+        "feel": {
+          "bright": 0.037500000000000006,
+          "hard": -0.1375,
+          "fast": 0.0625,
+          "open": 0.4375,
+          "heavy": -0.31249999999999994,
+          "smooth": 0.5249999999999999,
+          "inward": -0.3,
+          "pleasant": 0.2375
+        }
+      },
+      {
+        "name": "belt, bolt, constant",
+        "weight": 0.2916666666666667,
+        "words": [
+          "belt",
+          "bolt",
+          "constant",
+          "count",
+          "effort",
+          "eight",
+          "knot"
+        ],
+        "feel": {
+          "bright": 0.1285714285714286,
+          "hard": 0.5857142857142857,
+          "fast": -0.05714285714285712,
+          "open": -0.5142857142857142,
+          "heavy": 0.15714285714285717,
+          "smooth": 0.1857142857142857,
+          "inward": 0.21428571428571427,
+          "pleasant": 0.01428571428571429
+        }
+      },
+      {
+        "name": "ant, beat, but",
+        "weight": 0.16666666666666666,
+        "words": [
+          "ant",
+          "beat",
+          "but",
+          "cut"
+        ],
+        "feel": {
+          "bright": 0.175,
+          "hard": 0.42500000000000004,
+          "fast": 0.6000000000000001,
+          "open": -0.225,
+          "heavy": -0.25,
+          "smooth": -0.10000000000000002,
+          "inward": -0.32500000000000007,
+          "pleasant": -0.15
+        }
+      }
+    ]
+  },
+  {
+    "sound": "b",
+    "position": "onset",
+    "evidence": 45,
+    "feel": {
+      "bright": 0.07777777777777779,
+      "hard": 0.051111111111111114,
+      "fast": 0.03555555555555555,
+      "open": -0.04000000000000001,
+      "heavy": 0.03555555555555555,
+      "smooth": 0.08222222222222227,
+      "inward": 0.039999999999999994,
+      "pleasant": 0.060000000000000005
+    },
+    "spread": 0.25741742440492543,
+    "clusters": [
+      {
+        "name": "balance, bat, be",
+        "weight": 0.3333333333333333,
+        "words": [
+          "balance",
+          "bat",
+          "be",
+          "bean",
+          "because",
+          "become",
+          "before",
+          "begin",
+          "bend",
+          "berry",
+          "between",
+          "bless",
+          "both",
+          "breath",
+          "buy"
+        ],
+        "feel": {
+          "bright": 0.2733333333333333,
+          "hard": -0.08666666666666666,
+          "fast": 0.006666666666666667,
+          "open": 0.23333333333333334,
+          "heavy": -0.21333333333333335,
+          "smooth": 0.4066666666666666,
+          "inward": -0.026666666666666665,
+          "pleasant": 0.30000000000000004
+        }
+      },
+      {
+        "name": "back, bear, believe",
+        "weight": 0.26666666666666666,
+        "words": [
+          "back",
+          "bear",
+          "believe",
+          "belong",
+          "belt",
+          "bind",
+          "bitter",
+          "body",
+          "bolt",
+          "bone",
+          "box",
+          "bring"
+        ],
+        "feel": {
+          "bright": -0.08333333333333333,
+          "hard": 0.4666666666666666,
+          "fast": -0.025000000000000005,
+          "open": -0.49999999999999994,
+          "heavy": 0.2916666666666667,
+          "smooth": 0.17500000000000002,
+          "inward": 0.3833333333333333,
+          "pleasant": -0.041666666666666664
+        }
+      },
+      {
+        "name": "bad, bark, beast",
+        "weight": 0.2,
+        "words": [
+          "bad",
+          "bark",
+          "beast",
+          "beat",
+          "bee",
+          "break",
+          "broken",
+          "bug",
+          "but"
+        ],
+        "feel": {
+          "bright": -0.04444444444444445,
+          "hard": -0.022222222222222206,
+          "fast": 0.47777777777777763,
+          "open": 0.15555555555555556,
+          "heavy": -0.1111111111111111,
+          "smooth": -0.4666666666666667,
+          "inward": -0.36666666666666664,
+          "pleasant": -0.3777777777777778
+        }
+      }
+    ]
+  },
+  {
+    "sound": "u",
+    "position": "vowel",
+    "evidence": 16,
+    "feel": {
+      "bright": 0.125,
+      "hard": 0.23750000000000002,
+      "fast": 0.0875,
+      "open": -0.08125,
+      "heavy": 0.025,
+      "smooth": 0.16249999999999998,
+      "inward": -0.24999999999999997,
+      "pleasant": 0.006249999999999999
+    },
+    "spread": 0.27900346585668784,
+    "clusters": [
+      {
+        "name": "bug, but, buy",
+        "weight": 0.625,
+        "words": [
+          "bug",
+          "but",
+          "buy",
+          "current",
+          "curse",
+          "curve",
+          "cut",
+          "guest",
+          "much",
+          "multiply"
+        ],
+        "feel": {
+          "bright": 0.1,
+          "hard": 0.15,
+          "fast": 0.36,
+          "open": 0.12,
+          "heavy": -0.06,
+          "smooth": 0.19,
+          "inward": -0.33,
+          "pleasant": 0
+        }
+      },
+      {
+        "name": "build, bush, cube",
+        "weight": 0.3125,
+        "words": [
+          "build",
+          "bush",
+          "cube",
+          "duty",
+          "function"
+        ],
+        "feel": {
+          "bright": 0.3,
+          "hard": 0.6,
+          "fast": -0.36,
+          "open": -0.5199999999999999,
+          "heavy": 0.36,
+          "smooth": 0.2,
+          "inward": -0.06,
+          "pleasant": 0.14
+        }
+      }
+    ]
+  },
+  {
+    "sound": "y",
+    "position": "coda",
+    "evidence": 20,
+    "feel": {
+      "bright": 0.2,
+      "hard": 0.155,
+      "fast": 0.05,
+      "open": 0.065,
+      "heavy": 0.08499999999999999,
+      "smooth": 0.19499999999999998,
+      "inward": -0.15499999999999997,
+      "pleasant": 0.10000000000000002
+    },
+    "spread": 0.2832552755648262,
+    "clusters": [
+      {
+        "name": "away, baby, berry",
+        "weight": 0.6,
+        "words": [
+          "away",
+          "baby",
+          "berry",
+          "buy",
+          "copy",
+          "day",
+          "early",
+          "enjoy",
+          "every",
+          "multiply",
+          "say",
+          "very"
+        ],
+        "feel": {
+          "bright": 0.35000000000000003,
+          "hard": -0.02500000000000001,
+          "fast": 0.21666666666666665,
+          "open": 0.4166666666666666,
+          "heavy": -0.19166666666666665,
+          "smooth": 0.43333333333333335,
+          "inward": -0.26666666666666666,
+          "pleasant": 0.3333333333333333
+        }
+      },
+      {
+        "name": "body, carry, city",
+        "weight": 0.4,
+        "words": [
+          "body",
+          "carry",
+          "city",
+          "country",
+          "dry",
+          "duty",
+          "enemy",
+          "envy"
+        ],
+        "feel": {
+          "bright": -0.02500000000000001,
+          "hard": 0.42500000000000004,
+          "fast": -0.2,
+          "open": -0.4624999999999999,
+          "heavy": 0.5,
+          "smooth": -0.1625,
+          "inward": 0.012500000000000011,
+          "pleasant": -0.25
+        }
+      }
+    ]
+  },
+  {
+    "sound": "f",
+    "position": "onset",
+    "evidence": 12,
+    "feel": {
+      "bright": 0.275,
+      "hard": 0.3833333333333333,
+      "fast": -0.10833333333333334,
+      "open": -0.14166666666666666,
+      "heavy": 0.016666666666666666,
+      "smooth": 0.3333333333333333,
+      "inward": 0.05833333333333333,
+      "pleasant": 0.20000000000000004
+    },
+    "spread": 0.2856028903067342,
+    "clusters": [
+      {
+        "name": "feel, five, focus",
+        "weight": 0.4166666666666667,
+        "words": [
+          "feel",
+          "five",
+          "focus",
+          "fraction",
+          "function"
+        ],
+        "feel": {
+          "bright": 0.54,
+          "hard": 0.4,
+          "fast": -0.06,
+          "open": -0.45999999999999996,
+          "heavy": -0.04000000000000001,
+          "smooth": 0.32,
+          "inward": 0.39999999999999997,
+          "pleasant": 0.18
+        }
+      },
+      {
+        "name": "faith, father, flat",
+        "weight": 0.3333333333333333,
+        "words": [
+          "faith",
+          "father",
+          "flat",
+          "friend"
+        ],
+        "feel": {
+          "bright": 0.4,
+          "hard": 0.3,
+          "fast": -0.525,
+          "open": 0.325,
+          "heavy": -0.075,
+          "smooth": 0.5750000000000001,
+          "inward": 0.07500000000000001,
+          "pleasant": 0.525
+        }
+      }
+    ]
+  },
+  {
+    "sound": "c",
+    "position": "onset",
+    "evidence": 36,
+    "feel": {
+      "bright": 0.2305555555555555,
+      "hard": 0.22777777777777775,
+      "fast": 0.0611111111111111,
+      "open": -0.07500000000000001,
+      "heavy": 0.03611111111111111,
+      "smooth": 0.2944444444444444,
+      "inward": -0.027777777777777776,
+      "pleasant": 0.14722222222222214
+    },
+    "spread": 0.2993315718384433,
+    "clusters": [
+      {
+        "name": "call, calm, can",
+        "weight": 0.5833333333333334,
+        "words": [
+          "call",
+          "calm",
+          "can",
+          "care",
+          "cause",
+          "change",
+          "child",
+          "choose",
+          "circle",
+          "clean",
+          "clear",
+          "cloth",
+          "code",
+          "come",
+          "cone",
+          "cool",
+          "copy",
+          "count",
+          "current",
+          "curve",
+          "cycle"
+        ],
+        "feel": {
+          "bright": 0.38095238095238093,
+          "hard": 0.028571428571428574,
+          "fast": 0.08095238095238094,
+          "open": 0.17142857142857143,
+          "heavy": -0.20952380952380953,
+          "smooth": 0.4904761904761904,
+          "inward": 0.004761904761904773,
+          "pleasant": 0.3333333333333333
+        }
+      },
+      {
+        "name": "cable, carry, catch",
+        "weight": 0.4166666666666667,
+        "words": [
+          "cable",
+          "carry",
+          "catch",
+          "city",
+          "clamp",
+          "climb",
+          "cold",
+          "complex",
+          "constant",
+          "contain",
+          "country",
+          "crowd",
+          "cube",
+          "curse",
+          "cut"
+        ],
+        "feel": {
+          "bright": 0.019999999999999997,
+          "hard": 0.5066666666666666,
+          "fast": 0.03333333333333335,
+          "open": -0.41999999999999993,
+          "heavy": 0.37999999999999995,
+          "smooth": 0.02,
+          "inward": -0.07333333333333333,
+          "pleasant": -0.11333333333333334
+        }
+      }
+    ]
+  },
+  {
+    "sound": "a",
+    "position": "vowel",
+    "evidence": 63,
+    "feel": {
+      "bright": 0.17619047619047612,
+      "hard": 0.09047619047619046,
+      "fast": 0.022222222222222206,
+      "open": 0.07301587301587306,
+      "heavy": -0.05873015873015872,
+      "smooth": 0.23492063492063503,
+      "inward": -0.06507936507936507,
+      "pleasant": 0.1539682539682539
+    },
+    "spread": 0.3117700084811508,
+    "clusters": [
+      {
+        "name": "able, about, above",
+        "weight": 0.5555555555555556,
+        "words": [
+          "able",
+          "about",
+          "above",
+          "abroad",
+          "across",
+          "add",
+          "alive",
+          "all",
+          "along",
+          "also",
+          "and",
+          "animal",
+          "answer",
+          "arc",
+          "art",
+          "ask",
+          "away",
+          "baby",
+          "balance",
+          "bark",
+          "branch",
+          "call",
+          "calm",
+          "can",
+          "care",
+          "change",
+          "day",
+          "faith",
+          "fast",
+          "flat",
+          "glad",
+          "language",
+          "maybe",
+          "name",
+          "say"
+        ],
+        "feel": {
+          "bright": 0.31714285714285706,
+          "hard": -0.011428571428571429,
+          "fast": 0.017142857142857144,
+          "open": 0.40857142857142853,
+          "heavy": -0.24285714285714285,
+          "smooth": 0.36000000000000015,
+          "inward": -0.27142857142857135,
+          "pleasant": 0.3428571428571428
+        }
+      },
+      {
+        "name": "abandon, absense, absolute",
+        "weight": 0.4444444444444444,
+        "words": [
+          "abandon",
+          "absense",
+          "absolute",
+          "after",
+          "always",
+          "among",
+          "ancestor",
+          "angle",
+          "ant",
+          "arm",
+          "around",
+          "axis",
+          "back",
+          "bad",
+          "bag",
+          "bat",
+          "brain",
+          "cable",
+          "carry",
+          "catch",
+          "cause",
+          "clamp",
+          "dark",
+          "fate",
+          "father",
+          "fraction",
+          "gather",
+          "hate"
+        ],
+        "feel": {
+          "bright": -3.96508223080413e-18,
+          "hard": 0.21785714285714283,
+          "fast": 0.028571428571428564,
+          "open": -0.3464285714285715,
+          "heavy": 0.17142857142857143,
+          "smooth": 0.07857142857142858,
+          "inward": 0.19285714285714284,
+          "pleasant": -0.08214285714285714
+        }
+      }
+    ]
+  },
+  {
+    "sound": "e",
+    "position": "vowel",
+    "evidence": 42,
+    "feel": {
+      "bright": 0.13333333333333336,
+      "hard": 0.10952380952380954,
+      "fast": 0.052380952380952375,
+      "open": -0.021428571428571425,
+      "heavy": 0.014285714285714294,
+      "smooth": 0.19285714285714284,
+      "inward": 0.11428571428571424,
+      "pleasant": 0.035714285714285726
+    },
+    "spread": 0.31974742535508344,
+    "clusters": [
+      {
+        "name": "be, bean, beat",
+        "weight": 0.7380952380952381,
+        "words": [
+          "be",
+          "bean",
+          "beat",
+          "because",
+          "become",
+          "bee",
+          "before",
+          "begin",
+          "belong",
+          "belt",
+          "bend",
+          "berry",
+          "between",
+          "bless",
+          "breath",
+          "clean",
+          "clear",
+          "cycle",
+          "decide",
+          "dream",
+          "each",
+          "ear",
+          "early",
+          "eight",
+          "elder",
+          "enjoy",
+          "enter",
+          "every",
+          "feel",
+          "mean",
+          "very"
+        ],
+        "feel": {
+          "bright": 0.3354838709677419,
+          "hard": 0.025806451612903226,
+          "fast": 0.11935483870967739,
+          "open": 0.10322580645161288,
+          "heavy": -0.20645161290322586,
+          "smooth": 0.3870967741935484,
+          "inward": 0.06451612903225808,
+          "pleasant": 0.24838709677419352
+        }
+      },
+      {
+        "name": "bear, beast, believe",
+        "weight": 0.2619047619047619,
+        "words": [
+          "bear",
+          "beast",
+          "believe",
+          "break",
+          "dead",
+          "death",
+          "debt",
+          "effort",
+          "enemy",
+          "envy",
+          "hell"
+        ],
+        "feel": {
+          "bright": -0.43636363636363645,
+          "hard": 0.3454545454545455,
+          "fast": -0.13636363636363635,
+          "open": -0.3727272727272727,
+          "heavy": 0.6363636363636365,
+          "smooth": -0.35454545454545455,
+          "inward": 0.25454545454545446,
+          "pleasant": -0.5636363636363636
+        }
+      }
+    ]
+  },
+  {
+    "sound": "d",
+    "position": "onset",
+    "evidence": 15,
+    "feel": {
+      "bright": -0.16000000000000003,
+      "hard": 0.16666666666666666,
+      "fast": -0.22000000000000003,
+      "open": -0.2399999999999999,
+      "heavy": 0.09999999999999999,
+      "smooth": 0.12666666666666665,
+      "inward": 0.26666666666666666,
+      "pleasant": -0.27999999999999997
+    },
+    "spread": 0.325287729997987,
+    "clusters": [
+      {
+        "name": "day, decide, disc",
+        "weight": 0.4666666666666667,
+        "words": [
+          "day",
+          "decide",
+          "disc",
+          "divide",
+          "door",
+          "dry",
+          "duty"
+        ],
+        "feel": {
+          "bright": 0.31428571428571433,
+          "hard": 0.4428571428571428,
+          "fast": -0.05714285714285713,
+          "open": -0.29999999999999993,
+          "heavy": 0.04285714285714284,
+          "smooth": 0.24285714285714283,
+          "inward": 0.14285714285714285,
+          "pleasant": -0.07142857142857141
+        }
+      },
+      {
+        "name": "dark, dead, death",
+        "weight": 0.3333333333333333,
+        "words": [
+          "dark",
+          "dead",
+          "death",
+          "debt",
+          "doubt"
+        ],
+        "feel": {
+          "bright": -0.68,
+          "hard": 0.28,
+          "fast": -0.26,
+          "open": -0.58,
+          "heavy": 0.66,
+          "smooth": -0.12000000000000002,
+          "inward": 0.5800000000000001,
+          "pleasant": -0.7
+        }
+      }
+    ]
+  },
+  {
+    "sound": "d",
+    "position": "coda",
+    "evidence": 17,
+    "feel": {
+      "bright": 0.14117647058823526,
+      "hard": 0.047058823529411764,
+      "fast": -0.10588235294117647,
+      "open": 0.041176470588235314,
+      "heavy": 0.05294117647058823,
+      "smooth": 0.2529411764705883,
+      "inward": -0.09411764705882353,
+      "pleasant": 0.11176470588235293
+    },
+    "spread": 0.3267270025760877,
+    "clusters": [
+      {
+        "name": "abroad, add, and",
+        "weight": 0.5294117647058824,
+        "words": [
+          "abroad",
+          "add",
+          "and",
+          "around",
+          "bend",
+          "child",
+          "friend",
+          "glad",
+          "kind"
+        ],
+        "feel": {
+          "bright": 0.4,
+          "hard": -0.07777777777777778,
+          "fast": 0.022222222222222223,
+          "open": 0.4000000000000001,
+          "heavy": -0.3111111111111111,
+          "smooth": 0.4444444444444444,
+          "inward": -0.3444444444444444,
+          "pleasant": 0.5
+        }
+      },
+      {
+        "name": "bad, bind, blood",
+        "weight": 0.47058823529411764,
+        "words": [
+          "bad",
+          "bind",
+          "blood",
+          "build",
+          "cold",
+          "crowd",
+          "dead",
+          "god"
+        ],
+        "feel": {
+          "bright": -0.15000000000000002,
+          "hard": 0.1875,
+          "fast": -0.25,
+          "open": -0.36250000000000004,
+          "heavy": 0.46249999999999997,
+          "smooth": 0.037500000000000006,
+          "inward": 0.18749999999999997,
+          "pleasant": -0.32499999999999996
+        }
+      }
+    ]
+  },
+  {
+    "sound": "h",
+    "position": "coda",
+    "evidence": 11,
+    "feel": {
+      "bright": 0.11818181818181817,
+      "hard": 0.11818181818181817,
+      "fast": -0.11818181818181815,
+      "open": 0.07272727272727274,
+      "heavy": 0.03636363636363637,
+      "smooth": 0.0818181818181818,
+      "inward": 0.08181818181818182,
+      "pleasant": 0.17272727272727273
+    },
+    "spread": 0.3469836668669752,
+    "clusters": [
+      {
+        "name": "birth, both, branch",
+        "weight": 0.7272727272727273,
+        "words": [
+          "birth",
+          "both",
+          "branch",
+          "breath",
+          "cloth",
+          "each",
+          "faith",
+          "much"
+        ],
+        "feel": {
+          "bright": 0.2125,
+          "hard": -0.02500000000000001,
+          "fast": -0.26249999999999996,
+          "open": 0.3125,
+          "heavy": -0.11250000000000002,
+          "smooth": 0.2375,
+          "inward": 0.1375,
+          "pleasant": 0.3125
+        }
+      }
+    ]
+  },
+  {
+    "sound": "i",
+    "position": "vowel",
+    "evidence": 17,
+    "feel": {
+      "bright": 0.17647058823529413,
+      "hard": 0.1823529411764706,
+      "fast": -0.011764705882352936,
+      "open": -0.005882352941176483,
+      "heavy": 0.023529411764705865,
+      "smooth": 0.12941176470588237,
+      "inward": -0.047058823529411764,
+      "pleasant": 0.11764705882352941
+    },
+    "spread": 0.35341290288137955,
+    "clusters": [
+      {
+        "name": "bind, bitter, bring",
+        "weight": 0.5294117647058824,
+        "words": [
+          "bind",
+          "bitter",
+          "bring",
+          "circle",
+          "city",
+          "disc",
+          "divide",
+          "fight",
+          "five"
+        ],
+        "feel": {
+          "bright": 0.05555555555555555,
+          "hard": 0.4111111111111111,
+          "fast": 0.15555555555555556,
+          "open": -0.48888888888888893,
+          "heavy": 0.1444444444444445,
+          "smooth": 0.05555555555555555,
+          "inward": 0.05555555555555555,
+          "pleasant": -0.15555555555555556
+        }
+      },
+      {
+        "name": "big, birth, child",
+        "weight": 0.47058823529411764,
+        "words": [
+          "big",
+          "birth",
+          "child",
+          "climb",
+          "drift",
+          "friend",
+          "if",
+          "kind"
+        ],
+        "feel": {
+          "bright": 0.3125,
+          "hard": -0.07499999999999998,
+          "fast": -0.19999999999999998,
+          "open": 0.5375,
+          "heavy": -0.11249999999999999,
+          "smooth": 0.21250000000000002,
+          "inward": -0.1625,
+          "pleasant": 0.42500000000000004
+        }
+      }
+    ]
+  }
+]

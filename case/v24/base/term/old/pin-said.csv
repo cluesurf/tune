@@ -1,0 +1,55 @@
+concept,form,shape,list,state
+sound,saund,CDCC,long,free
+light,lait,CDC,short,free
+dark,dark,CVCC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+sight,sait,CDC,short,free
+feel,fiq,CVC,short,free
+touch,tatx,CVCC,long,free
+taste,test,CVCC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+smell,snif,CCVC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+sense,sant,CVCC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+voice,vois,,long,refused by the sound rules
+noise,noiz,,long,refused by the sound rules
+word,ward,,long,refused by the sound rules
+name,nem,CVC,short,taken by minimum
+sign,sain,CDC,short,free
+mind,maind,CDCC,long,free
+think,ciqk,CVCC,long,free
+learn,larn,,long,refused by the sound rules
+teach,titx,,long,refused by the sound rules
+find,faind,CDCC,long,free
+seek,sik,CVC,short,taken by seek
+look,luk,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+see,vis,CVC,short,taken by see
+read,rid,CVC,short,taken by read
+write,rat,CVC,short,taken by rate
+mean,min,CVC,short,taken by miss
+dream,drim,CCVC,long,taken by dream
+fact,fakt,,long,"refused, it holds fak"
+flow,faq,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+fly,flait,CCDC,long,free
+slide,slaid,CCDC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+spin,spin,CCVC,long,free
+push,pex,CVC,short,free
+pull,xop,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+pool,pul,CVC,short,free
+lift,lift,CVCC,long,free
+drip,drip,CCVC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+drop,drop,CCVC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+throw,croq,CCVC,long,free
+bring,briq,CCVC,long,taken by bring
+tech,tek,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+love,lav,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+hate,het,CVC,short,free
+fear,fiC,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+hope,hop,CVC,short,free
+care,kar,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+trust,trast,CCVCC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+wish,krix,CCVC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+balance,dub,CVC,short,taken by reserved dub
+beat,bit,CVC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+clue,kluq,CCVC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+surf,sarf,CVCC,long,"legal, a neighbour holds the seat, pinning it first takes it"
+snake,snek,CCVC,long,free
+vibe,vaib,CDC,short,"legal, a neighbour holds the seat, pinning it first takes it"
+chime,txaim,CCDC,long,"legal, a neighbour holds the seat, pinning it first takes it"

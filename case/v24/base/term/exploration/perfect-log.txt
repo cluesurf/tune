@@ -1,0 +1,936 @@
+── round 1 ──────────────────────────────
+
+WHICH 4,096
+
+  fields counted   taxon, hanzi, common, place, mineral
+  fields ABSENT    medicine, gene, tool, food, cloth, body, spirit
+                   no corpus, so nothing here speaks for them
+
+  candidates       17,123
+  seats            4,096
+  fixed first      825   pins, elements, short forms
+  judged           2,251   1941 compounds, 273 names, freeing a seat each
+  chosen           3,271
+  seated in all    4,096
+
+  meanings wanted  9,759   8,308,947 uses
+  sayable          94.84%
+  still open       3,573 meanings
+
+  CUT TO MAKE ROOM, 1,203 concepts
+
+  partner                  134 uses    11 head
+  letter                    64 uses    10 head
+  text                      11 uses    10 head
+  opinion                   10 uses    10 head
+  term                     154 uses     9 head
+  detail                    23 uses     9 head
+  emotion                   11 uses     9 head
+  listen                    18 uses     8 head
+  method                    15 uses     8 head
+  label                     12 uses     8 head
+  title                      8 uses     8 head
+  gun                      132 uses     7 head
+  acid                      43 uses     7 head
+  display                   12 uses     7 head
+  team                      11 uses     7 head
+  stress                    10 uses     7 head
+  season                     8 uses     7 head
+  germ                     645 uses     6 head
+  suit                     429 uses     6 head
+  document                 306 uses     6 head
+
+  REFUSED, FOLDED ONTO A SEAT ALREADY TAKEN  11
+  every one of these must be the SAME concept, not a collision
+
+  holly                 onto hole
+  curious               onto cure
+  version               onto verse
+  mention               onto mend
+  municipality          onto municipal
+  stability             onto stable
+  enchantment           onto enchant
+  conifer               onto coniferous
+  truth                 onto truthful
+  revel                 onto revelation
+
+  STILL OPEN, the ten most wanted
+
+  insurance policy         13,493
+  peak amplitude           13,467
+  river delta               5,481
+  hammerhead shark          4,679
+  holm oak                  4,040
+  half-                     3,978
+  super-                    3,628
+  set aside                 3,410
+  having cilia              3,361
+  art nouveau               3,351
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/choose-seated.csv, choose-cut.csv, choose-open.csv
+
+WORDS TUNE CAN KEEP THE SOUND OF
+
+  concepts          3812
+  with a written ipa   609
+  read into tune       608
+
+     341  refused
+     116  crowded
+      98  free
+      53  held
+
+  by shape, of the ones that are roots
+      67  CVC
+      59  CCVC
+      48  CVCC
+      15  CDC
+      15  CCVCC
+       5  CCDC
+       4  CDCC
+       1  CCDCC
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/echo.csv and echo.txt
+
+  A SAID-AS FORM ALREADY BELONGS TO A PIN, so it is refused
+    mean            wants min     held by miss in pinned.csv
+EVERY CONCEPT, GIVEN A FORM
+
+  concepts        4,102
+    pinned        510
+    short listed  648
+  roots free      7,153
+  echo the english   475
+  given a form    4,102
+
+  BY LENGTH
+
+  3 sounds    1,176
+  4 sounds    2,628
+  5 sounds      287
+  6 sounds       11
+
+  THE TWENTY HEAVIEST
+
+  saz       person                358 head
+  tex       act                   145 head
+  Cig       area                  127 head
+  form      form                  115 head
+  gim       shape                 103 head
+  voc       study                  95 head
+  wez       piece                  92 head
+  xez       word                   86 head
+  hig       measure                84 head
+  yeq       together               82 head
+  jib       away                   80 head
+  zat       cover                  70 head
+  ciqk      think                  69 head
+  Cav       kind                   66 head
+  cev       view                   65 head
+  fud       food                   64 head
+  mark      mark                   64 head
+  miq       quality                63 head
+  faf       item                   62 head
+  nim       idea                   56 head
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/form.csv
+
+THE SPECIES, SAID IN TUNE
+
+  accepted names   39,640
+  both words said  38,077
+    from latin     22,241
+    from english   15  of 454 asked with a name in hand
+    from folk      934  the local name, where the formal one said nothing
+    from chinese   15,821  of 39,640 asked with a name in hand
+  one word said    1,563
+  latin says none  1,670
+
+  concepts still missing  150
+
+  Takakia ceratophylla              zoitmos hornlif
+    algae + moss | horn + leaf
+    藻苔属角叶藻苔  zǎo tái shǔ jiǎo yè zǎo tái
+
+  Takakia lepidozioides             zoitmos
+    algae + moss
+    藻苔属藻苔  zǎo tái shǔ zǎo tái
+
+  Sphagnum acutifolioides           snekmos figdlif
+    peat + moss | sharpness + leaf
+    泥炭藓属拟尖叶泥炭藓  ní tàn xiǎn shǔ nǐ jiān yè ní tàn xiǎn
+
+  Sphagnum angustifolium            snekmos feqkllif
+    peat + moss | narrow + leaf
+    泥炭藓属小叶泥炭藓  ní tàn xiǎn shǔ xiǎo yè ní tàn xiǎn
+
+  Sphagnum angstroemii              snekmos katvonlif
+    peat + moss | cut off + leaf
+    泥炭藓属截叶泥炭藓  ní tàn xiǎn shǔ jié yè ní tàn xiǎn
+
+  Sphagnum capillifolium            snekmos bezlif
+    peat + moss | hair + leaf
+    泥炭藓属尖叶泥炭藓  ní tàn xiǎn shǔ jiān yè ní tàn xiǎn
+
+  Sphagnum chinense                 snekmos modland
+    peat + moss | middle + land
+    泥炭藓属中华泥炭藓  ní tàn xiǎn shǔ zhōng huá ní tàn xiǎn
+
+  Sphagnum compactum                snekmos maq
+    peat + moss | agreement
+    泥炭藓属密叶泥炭藓  ní tàn xiǎn shǔ mì yè ní tàn xiǎn
+
+  Sphagnum contortum                snekmos foiv
+    peat + moss | contorted
+    泥炭藓属扭枝泥炭藓  ní tàn xiǎn shǔ niǔ zhī ní tàn xiǎn
+
+  Sphagnum cuspidatulum             snekmos klekleCjev
+    peat + moss | made pointed + little
+    泥炭藓属拟狭叶泥炭藓  ní tàn xiǎn shǔ nǐ xiá yè ní tàn xiǎn
+
+  Sphagnum cuspidatum               snekmos klekleC
+    peat + moss | made pointed
+    泥炭藓属狭叶泥炭藓  ní tàn xiǎn shǔ xiá yè ní tàn xiǎn
+
+  Sphagnum denticulatum             snekmos tuc
+    peat + moss | toothed
+    泥炭藓属细齿泥炭藓  ní tàn xiǎn shǔ xì chǐ ní tàn xiǎn
+
+  Sphagnum falcatulum               snekmos yonjev
+    peat + moss | curved + little
+    泥炭藓属长叶泥炭藓  ní tàn xiǎn shǔ cháng yè ní tàn xiǎn
+
+  Sphagnum fallax                   snekmos tofk
+    peat + moss | deceptive
+    泥炭藓属假泥炭藓  ní tàn xiǎn shǔ jiǎ ní tàn xiǎn
+
+  Sphagnum fuscum                   snekmos dask
+    peat + moss | dusky
+    泥炭藓属锈色泥炭藓  ní tàn xiǎn shǔ xiù sè ní tàn xiǎn
+
+  THE TEN CONCEPTS BLOCKING THE MOST SPECIES
+
+  rebellion                   5
+  liver                       4
+  pedicel                     4
+  ileus                       4
+  viniferous                  3
+  salinity                    3
+  siliquose                   3
+  tapestry                    3
+  stimulating                 3
+  alexanders                  3
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/species.csv and /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/name-open.csv
+
+WHEN TWO SPECIES WANT THE SAME NAME
+
+  species with a name   38,077
+  distinct names        37,656
+  names shared          401
+  species sharing one   822   2.2%
+
+  THE MOST CROWDED NAMES
+
+  dajgras bez            5 species   edge + grass | hairy
+      Carex capillacea
+      Carex capillaris
+      Carex hirtelloides
+      Carex hirticaulis
+
+  twoztok raim           4 species   rose + tree | woolly
+      Rhododendron lanatoides
+      Rhododendron lanatum
+      Rhododendron lanigerum
+      Rhododendron vellereum
+
+  droqxeskmos feqkllif   3 species   phoenix + tail + moss | narrow + leaf
+      Fissidens angustifolius
+      Fissidens kinabaluensis
+      Fissidens wichurae
+
+  gokltam xort           3 species   vertebra | short + Shimei
+      Astragalus brachysemia
+      Astragalus breviscapus
+      Astragalus malcolmii
+
+  cornpaux corn          3 species   thorn + pea | Aegeus + thorn
+      Caragana aegacanthoides
+      Caragana spinifera
+      Caragana spinosa
+
+  dajgras frut           3 species   edge + grass | Cranaa + fruit
+      Carex cranaocarpa
+      Carex hebecarpa
+      Carex nudicarpa
+
+  kezb bag               3 species   onion | blue
+      Allium caeruleum
+      Allium caesium
+      Allium cyaneum
+
+  sleCpax cet            3 species   spur + flower | false
+      Corydalis pseudoadoxa
+      Corydalis pseudoalpestris
+      Corydalis pseudomairei
+
+  puktCen lutlstrim      3 species   ductile + then | south + stream
+      Elatostema nanchuanense
+      Elatostema pseudonanchuanense
+      Elatostema nanxiense
+
+  gaiqk bez              3 species   violet | hairy
+      Viola hirta
+      Viola pilosa
+      Viola thomsonii
+
+  nam klaudlut           3 species   name | cloud + south
+      Aquilaria yunnanensis
+      Philadelphus delavayi
+      Hippolytia yunnanensis
+
+  loxpax feqkllif        3 species   fuel + flower | narrow + leaf
+      Wikstroemia angustifolia
+      Wikstroemia chui
+      Wikstroemia stenophylla
+
+  spriqpax zut           3 species   spring + flower | beautiful
+      Primula bella
+      Primula calliantha
+      Primula pulchella
+
+  twoztok talk           3 species   rose + tree | bristly
+      Rhododendron tomentosum
+      Rhododendron setiferum
+      Rhododendron setosum
+
+  twoztok lif            3 species   rose + tree | Myrsinus + leaf
+      Rhododendron myrsinifolium
+      Rhododendron rhombifolium
+      Rhododendron siderophyllum
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/clash.csv
+
+
+── round 2 ──────────────────────────────
+
+WHICH 4,096
+
+  fields counted   taxon, hanzi, common, place, mineral
+  fields ABSENT    medicine, gene, tool, food, cloth, body, spirit
+                   no corpus, so nothing here speaks for them
+
+  candidates       7,935
+  seats            4,096
+  fixed first      825   pins, elements, short forms
+  judged           2,251   1941 compounds, 273 names, freeing a seat each
+  chosen           3,271
+  seated in all    4,096
+
+  meanings wanted  9,759   8,308,947 uses
+  sayable          97.52%
+  still open       3,235 meanings
+
+  CUT TO MAKE ROOM, 994 concepts
+
+  mention                    3 uses     2 head
+  central                 4850 uses     0 head
+  fairy                   2169 uses     0 head
+  restore                 1507 uses     0 head
+  attach                   846 uses     0 head
+  portal                   488 uses     0 head
+  hen                      453 uses     0 head
+  universal                410 uses     0 head
+  hay                      304 uses     0 head
+  predator                 228 uses     0 head
+  archive                  205 uses     0 head
+  choir                    200 uses     0 head
+  luxury                   192 uses     0 head
+  butt                     192 uses     0 head
+  barren                   186 uses     0 head
+  ideal                    182 uses     0 head
+  scarce                   172 uses     0 head
+  aura                     171 uses     0 head
+  parcel                   167 uses     0 head
+  taboo                    167 uses     0 head
+
+  REFUSED, FOLDED ONTO A SEAT ALREADY TAKEN  8
+  every one of these must be the SAME concept, not a collision
+
+  holly                 onto hole
+  municipality          onto municipal
+  mention               onto mend
+  curious               onto cure
+  stability             onto stable
+  inform                onto information
+  truthful              onto truth
+  assistance            onto assist
+
+  STILL OPEN, the ten most wanted
+
+  peak amplitude           13,467
+  river delta               5,481
+  hammerhead shark          4,679
+  holm oak                  4,040
+  half-                     3,978
+  super-                    3,628
+  set aside                 3,410
+  having cilia              3,361
+  art nouveau               3,351
+  nominal number            3,076
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/choose-seated.csv, choose-cut.csv, choose-open.csv
+
+WORDS TUNE CAN KEEP THE SOUND OF
+
+  concepts          3812
+  with a written ipa   609
+  read into tune       608
+
+     341  refused
+     116  crowded
+      98  free
+      53  held
+
+  by shape, of the ones that are roots
+      67  CVC
+      59  CCVC
+      48  CVCC
+      15  CDC
+      15  CCVCC
+       5  CCDC
+       4  CDCC
+       1  CCDCC
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/echo.csv and echo.txt
+
+  A SAID-AS FORM ALREADY BELONGS TO A PIN, so it is refused
+    mean            wants min     held by miss in pinned.csv
+EVERY CONCEPT, GIVEN A FORM
+
+  concepts        4,102
+    pinned        510
+    short listed  648
+  roots free      7,162
+  echo the english   521
+  given a form    4,102
+
+  BY LENGTH
+
+  3 sounds    1,184
+  4 sounds    2,631
+  5 sounds      277
+  6 sounds       10
+
+  THE TWENTY HEAVIEST
+
+  xez       person                358 head
+  yeq       act                   145 head
+  Cig       area                  127 head
+  form      form                  115 head
+  gim       shape                 103 head
+  zat       study                  95 head
+  Cav       piece                  92 head
+  cev       word                   86 head
+  hig       measure                84 head
+  gez       together               82 head
+  jib       away                   80 head
+  hef       cover                  70 head
+  ciqk      think                  69 head
+  jaC       kind                   66 head
+  kej       view                   65 head
+  fud       food                   64 head
+  mark      mark                   64 head
+  miq       quality                63 head
+  lej       item                   62 head
+  nim       idea                   56 head
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/form.csv
+
+THE SPECIES, SAID IN TUNE
+
+  accepted names   39,640
+  both words said  38,411
+    from latin     22,124
+    from english   14  of 454 asked with a name in hand
+    from folk      966  the local name, where the formal one said nothing
+    from chinese   16,273  of 39,640 asked with a name in hand
+  one word said    1,229
+  latin says none  1,670
+
+  concepts still missing  283
+
+  Takakia ceratophylla              coikmos hornlif
+    algae + moss | horn + leaf
+    藻苔属角叶藻苔  zǎo tái shǔ jiǎo yè zǎo tái
+
+  Takakia lepidozioides             coikmos
+    algae + moss
+    藻苔属藻苔  zǎo tái shǔ zǎo tái
+
+  Sphagnum acutifolioides           snunmos nestlif
+    peat + moss | sharpness + leaf
+    泥炭藓属拟尖叶泥炭藓  ní tàn xiǎn shǔ nǐ jiān yè ní tàn xiǎn
+
+  Sphagnum angustifolium            snunmos saiblif
+    peat + moss | narrow + leaf
+    泥炭藓属小叶泥炭藓  ní tàn xiǎn shǔ xiǎo yè ní tàn xiǎn
+
+  Sphagnum angstroemii              snunmos xeflvonlif
+    peat + moss | cut off + leaf
+    泥炭藓属截叶泥炭藓  ní tàn xiǎn shǔ jié yè ní tàn xiǎn
+
+  Sphagnum capillifolium            snunmos mejlif
+    peat + moss | hair + leaf
+    泥炭藓属尖叶泥炭藓  ní tàn xiǎn shǔ jiān yè ní tàn xiǎn
+
+  Sphagnum chinense                 snunmos modland
+    peat + moss | middle + land
+    泥炭藓属中华泥炭藓  ní tàn xiǎn shǔ zhōng huá ní tàn xiǎn
+
+  Sphagnum compactum                snunmos beC
+    peat + moss | agreement
+    泥炭藓属密叶泥炭藓  ní tàn xiǎn shǔ mì yè ní tàn xiǎn
+
+  Sphagnum contortum                snunmos txid
+    peat + moss | contorted
+    泥炭藓属扭枝泥炭藓  ní tàn xiǎn shǔ niǔ zhī ní tàn xiǎn
+
+  Sphagnum cuspidatulum             snunmos frubleCkeq
+    peat + moss | made pointed + little
+    泥炭藓属拟狭叶泥炭藓  ní tàn xiǎn shǔ nǐ xiá yè ní tàn xiǎn
+
+  Sphagnum cuspidatum               snunmos frubleC
+    peat + moss | made pointed
+    泥炭藓属狭叶泥炭藓  ní tàn xiǎn shǔ xiá yè ní tàn xiǎn
+
+  Sphagnum denticulatum             snunmos tuc
+    peat + moss | toothed
+    泥炭藓属细齿泥炭藓  ní tàn xiǎn shǔ xì chǐ ní tàn xiǎn
+
+  Sphagnum falcatulum               snunmos puxkeq
+    peat + moss | curved + little
+    泥炭藓属长叶泥炭藓  ní tàn xiǎn shǔ cháng yè ní tàn xiǎn
+
+  Sphagnum fallax                   snunmos yudj
+    peat + moss | deceptive
+    泥炭藓属假泥炭藓  ní tàn xiǎn shǔ jiǎ ní tàn xiǎn
+
+  Sphagnum fuscum                   snunmos dask
+    peat + moss | dusky
+    泥炭藓属锈色泥炭藓  ní tàn xiǎn shǔ xiù sè ní tàn xiǎn
+
+  THE TEN CONCEPTS BLOCKING THE MOST SPECIES
+
+  liver                       4
+  ileus                       4
+  undergarment                3
+  voyage                      3
+  dialect                     3
+  cogon                       3
+  conjugate                   3
+  diameter                    3
+  calamus                     3
+  viniferous                  3
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/species.csv and /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/name-open.csv
+
+WHEN TWO SPECIES WANT THE SAME NAME
+
+  species with a name   38,411
+  distinct names        37,991
+  names shared          400
+  species sharing one   820   2.1%
+
+  THE MOST CROWDED NAMES
+
+  dajgras mej            5 species   edge + grass | hairy
+      Carex capillacea
+      Carex capillaris
+      Carex hirtelloides
+      Carex hirticaulis
+
+  skebtok caif           4 species   rose + tree | woolly
+      Rhododendron lanatoides
+      Rhododendron lanatum
+      Rhododendron lanigerum
+      Rhododendron vellereum
+
+  flasvaukmos saiblif    3 species   phoenix + tail + moss | narrow + leaf
+      Fissidens angustifolius
+      Fissidens kinabaluensis
+      Fissidens wichurae
+
+  goksgec xort           3 species   vertebra | short + Shimei
+      Astragalus brachysemia
+      Astragalus breviscapus
+      Astragalus malcolmii
+
+  cornxoik corn          3 species   thorn + pea | Aegeus + thorn
+      Caragana aegacanthoides
+      Caragana spinifera
+      Caragana spinosa
+
+  dajgras frut           3 species   edge + grass | Cranaa + fruit
+      Carex cranaocarpa
+      Carex hebecarpa
+      Carex nudicarpa
+
+  zaic bag               3 species   onion | blue
+      Allium caeruleum
+      Allium caesium
+      Allium cyaneum
+
+  swejfaj cet            3 species   spur + flower | false
+      Corydalis pseudoadoxa
+      Corydalis pseudoalpestris
+      Corydalis pseudomairei
+
+  crifCen lutlstrim      3 species   ductile + then | south + stream
+      Elatostema nanchuanense
+      Elatostema pseudonanchuanense
+      Elatostema nanxiense
+
+  caidj mej              3 species   violet | hairy
+      Viola hirta
+      Viola pilosa
+      Viola thomsonii
+
+  nam klaudlut           3 species   name | cloud + south
+      Aquilaria yunnanensis
+      Philadelphus delavayi
+      Hippolytia yunnanensis
+
+  xucfaj saiblif         3 species   fuel + flower | narrow + leaf
+      Wikstroemia angustifolia
+      Wikstroemia chui
+      Wikstroemia stenophylla
+
+  spriqfaj wug           3 species   spring + flower | beautiful
+      Primula bella
+      Primula calliantha
+      Primula pulchella
+
+  skebtok nolp           3 species   rose + tree | bristly
+      Rhododendron tomentosum
+      Rhododendron setiferum
+      Rhododendron setosum
+
+  skebtok lif            3 species   rose + tree | Myrsinus + leaf
+      Rhododendron myrsinifolium
+      Rhododendron rhombifolium
+      Rhododendron siderophyllum
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/clash.csv
+
+
+── round 3 ──────────────────────────────
+
+WHICH 4,096
+
+  fields counted   taxon, hanzi, common, place, mineral
+  fields ABSENT    medicine, gene, tool, food, cloth, body, spirit
+                   no corpus, so nothing here speaks for them
+
+  candidates       7,935
+  seats            4,096
+  fixed first      825   pins, elements, short forms
+  judged           2,251   1941 compounds, 273 names, freeing a seat each
+  chosen           3,271
+  seated in all    4,096
+
+  meanings wanted  9,759   8,308,947 uses
+  sayable          97.52%
+  still open       3,235 meanings
+
+  CUT TO MAKE ROOM, 994 concepts
+
+  mention                    3 uses     2 head
+  central                 4850 uses     0 head
+  fairy                   2169 uses     0 head
+  restore                 1507 uses     0 head
+  attach                   846 uses     0 head
+  portal                   488 uses     0 head
+  hen                      453 uses     0 head
+  universal                410 uses     0 head
+  hay                      304 uses     0 head
+  predator                 228 uses     0 head
+  archive                  205 uses     0 head
+  choir                    200 uses     0 head
+  luxury                   192 uses     0 head
+  butt                     192 uses     0 head
+  barren                   186 uses     0 head
+  ideal                    182 uses     0 head
+  scarce                   172 uses     0 head
+  aura                     171 uses     0 head
+  parcel                   167 uses     0 head
+  taboo                    167 uses     0 head
+
+  REFUSED, FOLDED ONTO A SEAT ALREADY TAKEN  8
+  every one of these must be the SAME concept, not a collision
+
+  holly                 onto hole
+  municipality          onto municipal
+  mention               onto mend
+  curious               onto cure
+  stability             onto stable
+  inform                onto information
+  truthful              onto truth
+  assistance            onto assist
+
+  STILL OPEN, the ten most wanted
+
+  peak amplitude           13,467
+  river delta               5,481
+  hammerhead shark          4,679
+  holm oak                  4,040
+  half-                     3,978
+  super-                    3,628
+  set aside                 3,410
+  having cilia              3,361
+  art nouveau               3,351
+  nominal number            3,076
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/choose-seated.csv, choose-cut.csv, choose-open.csv
+
+WORDS TUNE CAN KEEP THE SOUND OF
+
+  concepts          3812
+  with a written ipa   609
+  read into tune       608
+
+     341  refused
+     116  crowded
+      98  free
+      53  held
+
+  by shape, of the ones that are roots
+      67  CVC
+      59  CCVC
+      48  CVCC
+      15  CDC
+      15  CCVCC
+       5  CCDC
+       4  CDCC
+       1  CCDCC
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/echo.csv and echo.txt
+
+  A SAID-AS FORM ALREADY BELONGS TO A PIN, so it is refused
+    mean            wants min     held by miss in pinned.csv
+EVERY CONCEPT, GIVEN A FORM
+
+  concepts        4,102
+    pinned        510
+    short listed  648
+  roots free      7,162
+  echo the english   521
+  given a form    4,102
+
+  BY LENGTH
+
+  3 sounds    1,184
+  4 sounds    2,631
+  5 sounds      277
+  6 sounds       10
+
+  THE TWENTY HEAVIEST
+
+  xez       person                358 head
+  yeq       act                   145 head
+  Cig       area                  127 head
+  form      form                  115 head
+  gim       shape                 103 head
+  zat       study                  95 head
+  Cav       piece                  92 head
+  cev       word                   86 head
+  hig       measure                84 head
+  gez       together               82 head
+  jib       away                   80 head
+  hef       cover                  70 head
+  ciqk      think                  69 head
+  jaC       kind                   66 head
+  kej       view                   65 head
+  fud       food                   64 head
+  mark      mark                   64 head
+  miq       quality                63 head
+  lej       item                   62 head
+  nim       idea                   56 head
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/form.csv
+
+THE SPECIES, SAID IN TUNE
+
+  accepted names   39,640
+  both words said  38,411
+    from latin     22,124
+    from english   14  of 454 asked with a name in hand
+    from folk      966  the local name, where the formal one said nothing
+    from chinese   16,273  of 39,640 asked with a name in hand
+  one word said    1,229
+  latin says none  1,670
+
+  concepts still missing  283
+
+  Takakia ceratophylla              coikmos hornlif
+    algae + moss | horn + leaf
+    藻苔属角叶藻苔  zǎo tái shǔ jiǎo yè zǎo tái
+
+  Takakia lepidozioides             coikmos
+    algae + moss
+    藻苔属藻苔  zǎo tái shǔ zǎo tái
+
+  Sphagnum acutifolioides           snunmos nestlif
+    peat + moss | sharpness + leaf
+    泥炭藓属拟尖叶泥炭藓  ní tàn xiǎn shǔ nǐ jiān yè ní tàn xiǎn
+
+  Sphagnum angustifolium            snunmos saiblif
+    peat + moss | narrow + leaf
+    泥炭藓属小叶泥炭藓  ní tàn xiǎn shǔ xiǎo yè ní tàn xiǎn
+
+  Sphagnum angstroemii              snunmos xeflvonlif
+    peat + moss | cut off + leaf
+    泥炭藓属截叶泥炭藓  ní tàn xiǎn shǔ jié yè ní tàn xiǎn
+
+  Sphagnum capillifolium            snunmos mejlif
+    peat + moss | hair + leaf
+    泥炭藓属尖叶泥炭藓  ní tàn xiǎn shǔ jiān yè ní tàn xiǎn
+
+  Sphagnum chinense                 snunmos modland
+    peat + moss | middle + land
+    泥炭藓属中华泥炭藓  ní tàn xiǎn shǔ zhōng huá ní tàn xiǎn
+
+  Sphagnum compactum                snunmos beC
+    peat + moss | agreement
+    泥炭藓属密叶泥炭藓  ní tàn xiǎn shǔ mì yè ní tàn xiǎn
+
+  Sphagnum contortum                snunmos txid
+    peat + moss | contorted
+    泥炭藓属扭枝泥炭藓  ní tàn xiǎn shǔ niǔ zhī ní tàn xiǎn
+
+  Sphagnum cuspidatulum             snunmos frubleCkeq
+    peat + moss | made pointed + little
+    泥炭藓属拟狭叶泥炭藓  ní tàn xiǎn shǔ nǐ xiá yè ní tàn xiǎn
+
+  Sphagnum cuspidatum               snunmos frubleC
+    peat + moss | made pointed
+    泥炭藓属狭叶泥炭藓  ní tàn xiǎn shǔ xiá yè ní tàn xiǎn
+
+  Sphagnum denticulatum             snunmos tuc
+    peat + moss | toothed
+    泥炭藓属细齿泥炭藓  ní tàn xiǎn shǔ xì chǐ ní tàn xiǎn
+
+  Sphagnum falcatulum               snunmos puxkeq
+    peat + moss | curved + little
+    泥炭藓属长叶泥炭藓  ní tàn xiǎn shǔ cháng yè ní tàn xiǎn
+
+  Sphagnum fallax                   snunmos yudj
+    peat + moss | deceptive
+    泥炭藓属假泥炭藓  ní tàn xiǎn shǔ jiǎ ní tàn xiǎn
+
+  Sphagnum fuscum                   snunmos dask
+    peat + moss | dusky
+    泥炭藓属锈色泥炭藓  ní tàn xiǎn shǔ xiù sè ní tàn xiǎn
+
+  THE TEN CONCEPTS BLOCKING THE MOST SPECIES
+
+  liver                       4
+  ileus                       4
+  undergarment                3
+  voyage                      3
+  dialect                     3
+  cogon                       3
+  conjugate                   3
+  diameter                    3
+  calamus                     3
+  viniferous                  3
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/species.csv and /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/name-open.csv
+
+WHEN TWO SPECIES WANT THE SAME NAME
+
+  species with a name   38,411
+  distinct names        37,991
+  names shared          400
+  species sharing one   820   2.1%
+
+  THE MOST CROWDED NAMES
+
+  dajgras mej            5 species   edge + grass | hairy
+      Carex capillacea
+      Carex capillaris
+      Carex hirtelloides
+      Carex hirticaulis
+
+  skebtok caif           4 species   rose + tree | woolly
+      Rhododendron lanatoides
+      Rhododendron lanatum
+      Rhododendron lanigerum
+      Rhododendron vellereum
+
+  flasvaukmos saiblif    3 species   phoenix + tail + moss | narrow + leaf
+      Fissidens angustifolius
+      Fissidens kinabaluensis
+      Fissidens wichurae
+
+  goksgec xort           3 species   vertebra | short + Shimei
+      Astragalus brachysemia
+      Astragalus breviscapus
+      Astragalus malcolmii
+
+  cornxoik corn          3 species   thorn + pea | Aegeus + thorn
+      Caragana aegacanthoides
+      Caragana spinifera
+      Caragana spinosa
+
+  dajgras frut           3 species   edge + grass | Cranaa + fruit
+      Carex cranaocarpa
+      Carex hebecarpa
+      Carex nudicarpa
+
+  zaic bag               3 species   onion | blue
+      Allium caeruleum
+      Allium caesium
+      Allium cyaneum
+
+  swejfaj cet            3 species   spur + flower | false
+      Corydalis pseudoadoxa
+      Corydalis pseudoalpestris
+      Corydalis pseudomairei
+
+  crifCen lutlstrim      3 species   ductile + then | south + stream
+      Elatostema nanchuanense
+      Elatostema pseudonanchuanense
+      Elatostema nanxiense
+
+  caidj mej              3 species   violet | hairy
+      Viola hirta
+      Viola pilosa
+      Viola thomsonii
+
+  nam klaudlut           3 species   name | cloud + south
+      Aquilaria yunnanensis
+      Philadelphus delavayi
+      Hippolytia yunnanensis
+
+  xucfaj saiblif         3 species   fuel + flower | narrow + leaf
+      Wikstroemia angustifolia
+      Wikstroemia chui
+      Wikstroemia stenophylla
+
+  spriqfaj wug           3 species   spring + flower | beautiful
+      Primula bella
+      Primula calliantha
+      Primula pulchella
+
+  skebtok nolp           3 species   rose + tree | bristly
+      Rhododendron tomentosum
+      Rhododendron setiferum
+      Rhododendron setosum
+
+  skebtok lif            3 species   rose + tree | Myrsinus + leaf
+      Rhododendron myrsinifolium
+      Rhododendron rhombifolium
+      Rhododendron siderophyllum
+
+  wrote /Users/lancepollard/base/crew/cluesurf/deck/tune/case/v24/base/term/exploration/clash.csv
