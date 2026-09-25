@@ -34,15 +34,49 @@ q never opens.  y w h never close.  no `wa`.  no medial h.
 one x or j per root, one c or C, no same liquid across a vowel
 ```
 
+**THE INVENTORY IS 27 SOUNDS, 22 CONSONANTS AND 5 VOWELS, AND IT IS
+CLOSED.** In IPA, which is what the voice sings:
+
+```text
+m n ŋ  b d ɡ  p t k  h  s z  f v  ʃ ʒ  θ ð  j l r w
+i e a o u
+```
+
+Seven letters spell differently in Tune than in IPA, and a conversion
+walks the letters ONCE rather than chaining replacements, because
+Tune's `j` is ʒ and Tune's `y` is IPA's `j`:
+
+```text
+q → ŋ    g → ɡ    x → ʃ    j → ʒ    c → θ    C → ð    y → j
+```
+
+`tuneToIpa()` in `etch/code/voice/tune.ts` is the one conversion, and
+`TUNE_INVENTORY` in `etch/code/voice/inventory.ts` is the list. A
+schwa (`ə`) and a glottal stop (`ʔ`) are carried beside the 27 for
+humming and calls and are not roots. A length mark (`aː`) is a
+duration, not a sound.
+
 **A BASE IS A CONCEPT, NEVER A WORD FORM.** `anger` not `angry`,
 `support` not `supportive`, `terrify` not `terrified`, `thorax` not
 `thoracic`.
 
 **NEVER A BASE:** proper names (`thomas`, `torah`), peoples, places,
 dynasties, religions (`thai`, `tangier`), words from the source
-grammar, ordinals and fractions (`third`, `tenth` are `inverse` plus
-the number), and anything plainly two words (`tennis`, `tram`,
-`tomahawk` are compounds).
+grammar, and anything plainly two words (`tennis`, `tram`, `tomahawk`
+are compounds).
+
+**A TERM IS GENDER FREE.** The agent slot is `person`, never `man`:
+`stone lay person`, not `stone lay man`. A word whose MEANING is
+gendered keeps it, because that is the concept: `maiden` is `young
+woman`, `stag` is `male deer`, `lad` is `young man`.
+
+**AN ORDINAL AND A FRACTION ARE DIFFERENT NUMBERS**, with two markers
+rather than one, and neither ever earns a seat:
+
+```text
+sixth, the position     order six      the one at place six
+a sixth, the part       inverse six    one part out of six
+```
 
 **THE ECHO IS ENGLISH FIRST, SANSKRIT SECOND.** Not Chinese, not
 Arabic. Where no English echo exists, ask what the word is in the

@@ -755,3 +755,56 @@ unambiguous on its own because `lautx` is not in the pool. The third
 root plus the twin collapse of `plautx + xem` frees the `x`, and no
 pairwise test can see that. Roughly one compound in five hundred at
 depth three, and none in five hundred at depth two.
+
+## The ambiguity does not reach the names, measured rather than guessed
+
+`rule.test.ts` finds one ambiguity in 500 random three root compounds
+and none in 500 two root ones, and that was reported as roughly one
+name in five hundred being unreadable, with a decision handed to the
+user about changing the spelling rule for every compound.
+
+**That was an extrapolation from the wrong population.** A sample of
+randomly drawn roots is not the corpus. `v24:ambig` asks the corpus:
+
+```text
+names looked at         3,000     every 97th row of species.csv
+distinct words read     3,417
+word halves checked     4,609
+READ MORE THAN ONE WAY      0     0.000%
+```
+
+A species name is a genus word and a species word with a space
+between, so nothing can slide across the gap and each half is read on
+its own. Each half is one or two roots, and depth two passes 500 of
+500. The failing test draws three roots into a single word, which the
+naming stage never does.
+
+So the rule stays as it is, and the open question was never open. The
+lesson is the cheaper one: **a rate measured on a sample of the pool
+is not a rate about the output**, and the output was sitting on disk
+the whole time waiting to be asked.
+
+## The two file disagreement: `pinned.csv` wins, and it was not mine to settle
+
+`word-short.txt` and `pinned.csv` disagree on two concepts, and both
+wanted forms are free and legal:
+
+```text
+flow   word-short.txt said as faq,  pinned.csv gives fol
+vibe   word-short.txt said as vaib, pinned.csv gives vab
+```
+
+**Both keep the `pinned.csv` form.** The user answered directly: keep
+`flow` as `fol` and `vibe` as `vab`.
+
+I had changed both to the `said as` form, on the reasoning that a
+hand written note is an instruction rather than a guess and that
+`vaib` is the better echo for `vibe`. That reasoning was not wrong on
+its face and the conclusion still was, because the precedence is
+already written down in `said.ts`: **where the two files disagree,
+`pinned.csv` wins.** A rule that exists is not re-derived from first
+principles every time it is inconvenient, and "the user wrote it
+somewhere" does not outrank "the user wrote the tie break".
+
+The older `said as` note is the stale half, which is exactly what
+`v24:said` reports it as.

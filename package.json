@@ -144,6 +144,8 @@
     "v24:why": "tsx case/v24/code/why.ts",
     "v24:pins": "tsx case/v24/code/pins.ts",
     "v24:parts": "tsx case/v24/code/parts.ts",
+    "v24:ambig": "tsx case/v24/code/ambig.ts",
+    "v24:samesay": "tsx case/v24/code/samesay.ts",
     "v24:merge": "tsx case/v24/code/merge.ts",
     "v24:said": "tsx case/v24/code/said.ts",
     "v24:draft": "tsx case/v24/code/draft.ts",

@@ -37,7 +37,14 @@
  *   pnpm --dir deck/tune v24:merge -- --commit
  */
 
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
+import {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  renameSync,
+  writeFileSync,
+} from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { parse } from 'csv-parse/sync'
@@ -116,12 +123,50 @@ for (const name of readdirSync(SPLIT).sort()) {
   }
 }
 
-if (COMMIT && added.length) {
-  let out = 'leaf,verdict,parts,why\n'
-  for (const [leaf, row] of held) {
-    out += `${leaf},${row.verdict},${row.parts},${row.why}\n`
+/**
+ * **A MERGED SLICE IS A SECOND COPY, SO IT DOES NOT STAY.**
+ *
+ * Once its rows are in `ask-split.csv` the slice holds the same
+ * decisions in a second place, and a second place is where a later
+ * hand edit lands and then disagrees. Worse, a fix applied to
+ * `ask-split.csv` and not to the slice is silently undone the moment
+ * anybody re-runs a tool that reads both.
+ *
+ * So a slice that merged cleanly moves to `split/done/`. Nothing is
+ * deleted, because the rule here is that no work is lost, and a
+ * person can see exactly which batch a judgement arrived in.
+ */
+const retired: Array<string> = []
+
+/**
+ * **RETIRE ON ANY CLEAN COMMIT, not only when rows were added.**
+ *
+ * Gating this on `added.length` left already merged slices sitting
+ * beside `ask-split.csv`, and a later hand fix to one of them never
+ * reached the merged file, because merge never re-answers a settled
+ * word. `pimp` drifted exactly that way: fixed in the slice, stale in
+ * the file every stage reads.
+ *
+ * A slice is retired once its rows are held, whether or not this run
+ * is what put them there. A DISAGREEING row blocks nothing, because
+ * the report names it and the standing answer is the one in use.
+ */
+if (COMMIT) {
+  if (added.length) {
+    let out = 'leaf,verdict,parts,why\n'
+    for (const [leaf, row] of held) {
+      out += `${leaf},${row.verdict},${row.parts},${row.why}\n`
+    }
+    writeFileSync(MAIN, out)
   }
-  writeFileSync(MAIN, out)
+
+  const DONE = resolve(SPLIT, 'done')
+  mkdirSync(DONE, { recursive: true })
+  for (const name of readdirSync(SPLIT).sort()) {
+    if (!name.endsWith('.csv')) continue
+    renameSync(resolve(SPLIT, name), resolve(DONE, name))
+    retired.push(name)
+  }
 }
 
 process.stdout.write(
@@ -139,9 +184,13 @@ process.stdout.write(
         '\n'
       : '') +
     (COMMIT
-      ? added.length
-        ? `  wrote ${MAIN}\n`
-        : `  nothing new to write\n`
+      ? (added.length ? `  wrote ${MAIN}\n` : `  nothing new to write\n`) +
+        `  retired ${retired.length} merged slice(s) to split/done/\n` +
+        retired
+          .slice(0, 8)
+          .map(one => `    ${one}\n`)
+          .join('') +
+        (retired.length > 8 ? `    and ${retired.length - 8} more\n` : '')
       : `  nothing written. Run again with --commit\n`),
 )
 
