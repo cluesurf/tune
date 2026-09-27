@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  A measured speaking language Λ
+  A measured speaking language Φ
 </p>
 
 <br/>
@@ -19,8 +19,8 @@
 
 ## What it is
 
-**Tune is a spoken language where a word built out of other words can
-be read exactly one way.** Every root is one syllable. Join two and the
+**Tune is a spoken language where a word built out of other words can be
+read exactly one way.** Every root is one syllable. Join two and the
 seam is never in doubt, so a listener cuts the word apart in the one
 place the writer put it together.
 
@@ -30,23 +30,23 @@ tok + gan   =  toksgan     tree garden
 horn + lif  =  hornlif     Takakia ceratophylla, the horn leaf moss
 ```
 
-| | |
-| :--- | :--- |
-| sounds | 27: **22 consonants, 5 vowels, 3 diphthongs** |
-| roots | **4,096**, every one a single syllable |
-| legal forms the rules allow | 15,361 |
-| forms that also stay apart in the ear | 7,625, so 3,529 spare |
-| ordered pairs of roots | 16,777,216, of which **0 read two ways** |
-| seams that write a joining letter | 28.62%, the other 71.38% write nothing |
-| mean length of a joined pair | 9.42 sounds |
+|                                       |                                               |
+| :------------------------------------ | :-------------------------------------------- |
+| sounds                                | 27: **22 consonants, 5 vowels, 3 diphthongs** |
+| roots                                 | **4,096**, every one a single syllable        |
+| legal forms the rules allow           | 15,361                                        |
+| forms that also stay apart in the ear | 7,625, so 3,529 spare                         |
+| ordered pairs of roots                | 16,777,216, of which **0 read two ways**      |
+| seams that write a joining letter     | 28.62%, the other 71.38% write nothing        |
+| mean length of a joined pair          | 9.42 sounds                                   |
 
 Three things are being held at once, and they pull against each other.
 
-1. **No compound is ambiguous.** Not at two roots, and not at any
-   depth. This is decided by a proof rather than by a spot check.
-2. **Nothing sounds like anything else.** No two roots of the same
-   shape differ by a single soft sound, which is what throws away 7,736
-   of the legal forms.
+1. **No compound is ambiguous.** Not at two roots, and not at any depth.
+   This is decided by a proof rather than by a spot check.
+2. **Nothing sounds like anything else.** No two roots of the same shape
+   differ by a single soft sound, which is what throws away 7,736 of the
+   legal forms.
 3. **Words stay short.** One syllable per root, and the shortest roots
    go to the concepts the most other concepts are built from.
 
@@ -57,49 +57,49 @@ quick guide is [case/v24/readme.md](case/v24/readme.md), written by
 
 ## Sounds
 
-| mark | sound | IPA | note |
-| :--: | :---- | :-- | :--- |
-| `m` | `mark` | | |
-| `n` | `note` | | |
-| `q` | `sing` | ŋ | the -ng sound |
-| `b` | `band` | | |
-| `d` | `deed` | | |
-| `g` | `gift` | ɡ | |
-| `p` | `play` | | |
-| `t` | `time` | | |
-| `k` | `king` | | |
-| `h` | `heal` | | |
-| `s` | `soul` | | |
-| `z` | `zone` | | |
-| `f` | `fire` | | |
-| `v` | `vibe` | | |
-| `x` | `ship` | ʃ | the "sh" sound |
-| `j` | `beige` | ʒ | the "g" sound there |
-| `c` | `thor` | θ | voiceless "th" |
-| `C` | `this` | ð | voiced "th" |
-| `y` | `yard` | j | |
-| `l` | `love` | | |
-| `r` | `rise` | | with a spanish, arabic or indian accent |
-| `w` | `wave` | | |
+| mark | sound   | IPA | note                                    |
+| :--: | :------ | :-- | :-------------------------------------- |
+| `m`  | `mark`  |     |                                         |
+| `n`  | `note`  |     |                                         |
+| `q`  | `sing`  | ŋ   | the -ng sound                           |
+| `b`  | `band`  |     |                                         |
+| `d`  | `deed`  |     |                                         |
+| `g`  | `gift`  | ɡ   |                                         |
+| `p`  | `play`  |     |                                         |
+| `t`  | `time`  |     |                                         |
+| `k`  | `king`  |     |                                         |
+| `h`  | `heal`  |     |                                         |
+| `s`  | `soul`  |     |                                         |
+| `z`  | `zone`  |     |                                         |
+| `f`  | `fire`  |     |                                         |
+| `v`  | `vibe`  |     |                                         |
+| `x`  | `ship`  | ʃ   | the "sh" sound                          |
+| `j`  | `beige` | ʒ   | the "g" sound there                     |
+| `c`  | `thor`  | θ   | voiceless "th"                          |
+| `C`  | `this`  | ð   | voiced "th"                             |
+| `y`  | `yard`  | j   |                                         |
+| `l`  | `love`  |     |                                         |
+| `r`  | `rise`  |     | with a spanish, arabic or indian accent |
+| `w`  | `wave`  |     |                                         |
 
-Vowels are the spanish `i e a o u`. The three diphthongs are `ai`,
-`au` and `oi`.
+Vowels are the spanish `i e a o u`. The three diphthongs are `ai`, `au`
+and `oi`.
 
 **`j` is the one letter that moves twice.** Tune's `j` is ʒ and Tune's
 `y` is IPA's j, so a chain of replacements would send `y` to `j` and
 that `j` on to `ʒ`. Every conversion walks the letters once instead.
 
 **`w` is a root letter again.** It was held back through v17 to mark a
-dropped sound at a seam. v24 marks that case with nothing, which
-returns `w` to the alphabet along with the `kw sw tw` openings, and
-returns 17 words that could not be spelled without it: `water`,
-`with`, `we`, `what`, `why`, `walk`, `wait`, `wave`.
+dropped sound at a seam. v24 marks that case with nothing, which returns
+`w` to the alphabet along with the `kw sw tw` openings, and returns 17
+words that could not be spelled without it: `water`, `with`, `we`,
+`what`, `why`, `walk`, `wait`, `wave`.
 
 ## Roots
 
-**Every root is one syllable.** It opens on a consonant, holds one
-vowel or one diphthong, and closes on a consonant. Either end may
-carry a cluster.
+**Every root is one syllable.** It opens on a consonant, holds one vowel
+or one diphthong, and closes on a consonant. Either end may carry a
+cluster.
 
 ```text
 CVC       CVCC      CVCCC     CVVC      CVVCC     CVVCCC
@@ -141,9 +141,9 @@ no liquid either side of the vowel when BOTH ends are clusters
 
 ## Nothing sounds like anything else
 
-The rules above say what is legal. This says what is worth using.
-`mir` and `nir` are both legal and one of them has to go, or a listener
-cannot tell them apart.
+The rules above say what is legal. This says what is worth using. `mir`
+and `nir` are both legal and one of them has to go, or a listener cannot
+tell them apart.
 
 **Two roots must be at least two steps apart, where one step is a near
 sound in one position.** A single soft difference is the only thing
@@ -157,8 +157,8 @@ two nuclei      never near, except ai oi, which close alike
 ```
 
 **Where a sound sits changes what it is near.** A sibilant's place is
-heard in the vowel that follows it, so `s` against `x` is one word
-twice at the end of a root and two words at the front of one.
+heard in the vowel that follows it, so `s` against `x` is one word twice
+at the end of a root and two words at the front of one.
 
 **In a root carrying a cluster, four more pairs count as near at every
 consonant position.**
@@ -175,8 +175,8 @@ faind vaind    cluster coda     one of them goes
 ```
 
 `CVC` and `CVVC` are exempt from that tightening, which is what keeps
-the short words. A cluster crowds the ear, and three sounds with
-nothing else competing do not.
+the short words. A cluster crowds the ear, and three sounds with nothing
+else competing do not.
 
 ## Joining
 
@@ -184,41 +184,40 @@ Roots run straight together, and 71.38% of seams write nothing at all.
 The rest write one letter, for one of two reasons: the two sounds
 **smear**, or the **cut** would be in doubt.
 
-| example | written | the seam | share |
-| :--- | :--- | :--- | ---: |
-| rij + drom = rijdrom<br>*rhythm drum* | nothing | anything else | 71.38% |
-| tok + gan = toksgan<br>*tree garden* | `s` | two stops of one place, voiceless left | 2.98% |
-| sid + tok = sidztok<br>*seed tree* | `z` | two stops of one place, voiced left | above |
-| mant + drom = mantsdrom<br>*mountain drum* | `s` or `z` | the same, after a cluster coda | above |
-| must + drom = mustldrom | a liquid | the same, after a coda opening on `s` | above |
-| lif + vit = liflvit<br>*leaf life* | a liquid | a fricative voicing pair | 1.90% |
-| vit + tok = vitok<br>*life tree* | the sound once | the same sound doubled | 4.84% |
-| red + drom = redldrom<br>*red drum* | a liquid, both roots whole | the same, cluster on the right | above |
-| drom + man = dromzman<br>*drum mind* | `z` | a doubled nasal | 0.27% |
-| djul + lun = djulrlun<br>*jewel moon* | `r` after `l`, `z` after `r` | a doubled liquid | 0.07% |
-| ram + yam = ramlyam<br>*dark day* | a liquid | a root opening on `y` | 2.00% |
-| mim + skliq = mimlskliq | a liquid | a three letter cluster at the seam | 15.91% |
-| mim + pifk = mimlpifk | a liquid | the cut is in doubt | 0.63% |
+| example                                    | written                      | the seam                               |  share |
+| :----------------------------------------- | :--------------------------- | :------------------------------------- | -----: |
+| rij + drom = rijdrom<br>_rhythm drum_      | nothing                      | anything else                          | 71.38% |
+| tok + gan = toksgan<br>_tree garden_       | `s`                          | two stops of one place, voiceless left |  2.98% |
+| sid + tok = sidztok<br>_seed tree_         | `z`                          | two stops of one place, voiced left    |  above |
+| mant + drom = mantsdrom<br>_mountain drum_ | `s` or `z`                   | the same, after a cluster coda         |  above |
+| must + drom = mustldrom                    | a liquid                     | the same, after a coda opening on `s`  |  above |
+| lif + vit = liflvit<br>_leaf life_         | a liquid                     | a fricative voicing pair               |  1.90% |
+| vit + tok = vitok<br>_life tree_           | the sound once               | the same sound doubled                 |  4.84% |
+| red + drom = redldrom<br>_red drum_        | a liquid, both roots whole   | the same, cluster on the right         |  above |
+| drom + man = dromzman<br>_drum mind_       | `z`                          | a doubled nasal                        |  0.27% |
+| djul + lun = djulrlun<br>_jewel moon_      | `r` after `l`, `z` after `r` | a doubled liquid                       |  0.07% |
+| ram + yam = ramlyam<br>_dark day_          | a liquid                     | a root opening on `y`                  |  2.00% |
+| mim + skliq = mimlskliq                    | a liquid                     | a three letter cluster at the seam     | 15.91% |
+| mim + pifk = mimlpifk                      | a liquid                     | the cut is in doubt                    |  0.63% |
 
-| | share |
-| :--- | ---: |
-| for SOUND, the six cases | 12.07% |
-| for the CUT, a three letter cluster | 15.91% |
-| for the CUT, this pool would read two ways | 0.63% |
-| **anything at all** | **28.62%** |
-| nothing written | 71.38% |
+|                                            |      share |
+| :----------------------------------------- | ---------: |
+| for SOUND, the six cases                   |     12.07% |
+| for the CUT, a three letter cluster        |     15.91% |
+| for the CUT, this pool would read two ways |      0.63% |
+| **anything at all**                        | **28.62%** |
+| nothing written                            |     71.38% |
 
 **The two cut rows are not the same kind of fact.** A three letter
 cluster takes a liquid because of what the two roots ARE, so it holds
-whatever words the language later gains. The last row is what THIS
-pool of 4,096 would otherwise spell two ways, so it moves when the
-words do.
+whatever words the language later gains. The last row is what THIS pool
+of 4,096 would otherwise spell two ways, so it moves when the words do.
 
 ### Which liquid
 
 Six of the rows above write "a liquid" rather than an `l`, because an
-`l` stops being a joiner the moment it lands beside another one. `ll`
-is one long `l` to a listener, and a joiner nobody can hear is not a
+`l` stops being a joiner the moment it lands beside another one. `ll` is
+one long `l` to a listener, and a joiner nobody can hear is not a
 joiner. So the letter moves, and where both liquids are spoken for it
 leaves the liquids entirely.
 
@@ -231,10 +230,10 @@ anything else                        l      bat + yan = batlyan
 ```
 
 **The `i` breaks the `il` and `ir` rhyme ban on purpose.** That rule
-governs ROOTS, where a close vowel before a liquid is swallowed into
-it. A seam is not inside a root, and a vowel is the one thing that
-cannot be mistaken for cluster material, so it is the safest joiner the
-language has and the least available inside a word.
+governs ROOTS, where a close vowel before a liquid is swallowed into it.
+A seam is not inside a root, and a vowel is the one thing that cannot be
+mistaken for cluster material, so it is the safest joiner the language
+has and the least available inside a word.
 
 Every joiner stands BETWEEN two roots, so both keep their spelling and
 the joiner lifts back out. One row does not. A doubled sound is said
@@ -255,8 +254,8 @@ Pairs are exhaustive. The deeper runs are samples, because a
 disagreement can span three roots without appearing in any pair.
 
 Two facts carry it. **No root opens or closes on a vowel**, so a vowel
-between two consonants is never root material. **A joiner sits where
-the cluster lists allow no such letter**, so it can be lifted back out.
+between two consonants is never root material. **A joiner sits where the
+cluster lists allow no such letter**, so it can be lifted back out.
 
 **The pair result is a proof and not a spot check.** Brute force does
 not scale, since 4,096 roots is 68 billion triples, so the question is
@@ -280,18 +279,18 @@ back and takes `w` out of the alphabet again, for comparing the two.
 
 ## How many roots there are
 
-| opening | legal | usable |
-| :--- | ---: | ---: |
-| one consonant | 6,458 | 3,281 |
-| a two letter cluster | 7,445 | 3,526 |
-| a three letter cluster | 1,458 | 818 |
-| **total** | **15,361** | **7,625** |
+| opening                |      legal |    usable |
+| :--------------------- | ---------: | --------: |
+| one consonant          |      6,458 |     3,281 |
+| a two letter cluster   |      7,445 |     3,526 |
+| a three letter cluster |      1,458 |       818 |
+| **total**              | **15,361** | **7,625** |
 
-**Legal** is what the sound rules allow. **Usable** is what survives
-the distance rule, and the gap is what that rule costs. The language
-spends 4,096 of the 7,625 and holds 3,529 spare. The per-shape table is
-in [case/v24/readme.md](case/v24/readme.md), and the lists themselves
-are in [case/v24/base/term/usable](case/v24/base/term/usable).
+**Legal** is what the sound rules allow. **Usable** is what survives the
+distance rule, and the gap is what that rule costs. The language spends
+4,096 of the 7,625 and holds 3,529 spare. The per-shape table is in
+[case/v24/readme.md](case/v24/readme.md), and the lists themselves are
+in [case/v24/base/term/usable](case/v24/base/term/usable).
 
 ## Words
 
@@ -337,8 +336,8 @@ twice is built fresh from its parts, like any language does.
 
 ### What a root's sound comes from
 
-Where the rules allow it, a root takes the sound of the English word
-for its concept. A speaker who meets `lif` for leaf or `drom` for drum
+Where the rules allow it, a root takes the sound of the English word for
+its concept. A speaker who meets `lif` for leaf or `drom` for drum
 already knows it, and that is the cheapest vocabulary a language will
 ever get.
 
@@ -347,10 +346,10 @@ leaf    lif        drum    drom       mind    man
 dark    dark       light   lait       sound   saund
 ```
 
-**English first, Sanskrit where English gives nothing.** Not Chinese
-and not Arabic. Their sound systems are far enough from Tune's that the
-echo does not survive the transcription, and a borrowed form that no
-longer sounds like its source has bought nothing.
+**English first, Sanskrit where English gives nothing.** Not Chinese and
+not Arabic. Their sound systems are far enough from Tune's that the echo
+does not survive the transcription, and a borrowed form that no longer
+sounds like its source has bought nothing.
 
 **Chinese is the model for compounding, not for sound.** It builds a
 technical vocabulary out of common concrete morphemes and almost never
@@ -373,8 +372,8 @@ a sign the base set is missing something.
 `person` heads 358 other concepts, `place` 257, `part` 255. A word a
 hundred other words lean on is said inside every one of those
 definitions, so its cost is multiplied rather than counted. **Three
-sounds are the scarcest thing the language has**, and they belong to
-the core concepts, the pins and the relations, not to whatever a domain
+sounds are the scarcest thing the language has**, and they belong to the
+core concepts, the pins and the relations, not to whatever a domain
 corpus happens to repeat.
 
 Ranked above frequency, which is the weakest signal and the loudest:
@@ -411,27 +410,26 @@ every other word.
 the second to last vowel. `rij + drom` is spoken `rijdroma`,
 /ɾiʒdɾˈoma/.
 
-**A liquid joiner takes a helper vowel in speech and never in
-writing**, or a voice runs the three consonants together and the joiner
-is not heard. `djulrluna` is said `djulırluna`, /dʒulɯɾlˈuna/, where
-`ı` is ɯ.
+**A liquid joiner takes a helper vowel in speech and never in writing**,
+or a voice runs the three consonants together and the joiner is not
+heard. `djulrluna` is said `djulırluna`, /dʒulɯɾlˈuna/, where `ı` is ɯ.
 
 ## What is in here
 
-| path | what |
-| :--- | :--- |
-| [case/v24/readme.md](case/v24/readme.md) | the generated quick guide, every figure measured at generation time |
-| [case/v24/design.md](case/v24/design.md) | the rules the vocabulary work obeys, the meaning side |
-| [case/v24/process.md](case/v24/process.md) | how the base set is built, step by step |
+| path                                           | what                                                                                   |
+| :--------------------------------------------- | :------------------------------------------------------------------------------------- |
+| [case/v24/readme.md](case/v24/readme.md)       | the generated quick guide, every figure measured at generation time                    |
+| [case/v24/design.md](case/v24/design.md)       | the rules the vocabulary work obeys, the meaning side                                  |
+| [case/v24/process.md](case/v24/process.md)     | how the base set is built, step by step                                                |
 | [case/v24/code/rule.ts](case/v24/code/rule.ts) | the sounds, the shapes and the seam, held ONCE, read by both the writer and the reader |
-| `case/v24/base/term/usable/` | every usable root, one file per shape, plus `all.txt` and `all-ipa.txt` |
-| `case/v24/base/term/legal/` | every root the sound rules allow, before the distance rule |
-| `case/v24/base/term/form.csv` | every seated concept, with its root, its length, and why it holds that one |
-| `case/v24/base/term/pinned.csv` | 478 concepts whose form never moves |
-| `case/v24/base/term/affix.csv` | the affix roots |
-| `case/v24/base/term/species.csv` | 39,640 species, and the Tune name for each one that has one |
-| `case/v17/base/voice/` | the recordings, and the video in both shapes |
-| [case/readme.md](case/readme.md) | every earlier version, and what each was for |
+| `case/v24/base/term/usable/`                   | every usable root, one file per shape, plus `all.txt` and `all-ipa.txt`                |
+| `case/v24/base/term/legal/`                    | every root the sound rules allow, before the distance rule                             |
+| `case/v24/base/term/form.csv`                  | every seated concept, with its root, its length, and why it holds that one             |
+| `case/v24/base/term/pinned.csv`                | 478 concepts whose form never moves                                                    |
+| `case/v24/base/term/affix.csv`                 | the affix roots                                                                        |
+| `case/v24/base/term/species.csv`               | 39,640 species, and the Tune name for each one that has one                            |
+| `case/v17/base/voice/`                         | the recordings, and the video in both shapes                                           |
+| [case/readme.md](case/readme.md)               | every earlier version, and what each was for                                           |
 
 ```text
 pnpm --dir deck/tune v24:every     the root lists
@@ -444,8 +442,8 @@ pnpm --dir deck/tune v24:test      the suite
 ## Where it stands
 
 The sound system is settled and measured. The vocabulary is not
-finished, and the numbers that say so are kept beside the ones that
-look good. Full list in [case/v24/todo.md](case/v24/todo.md).
+finished, and the numbers that say so are kept beside the ones that look
+good. Full list in [case/v24/todo.md](case/v24/todo.md).
 
 ```text
 39,640   accepted species
@@ -454,8 +452,8 @@ look good. Full list in [case/v24/todo.md](case/v24/todo.md).
  3,300   with no literal meaning known for either word
 ```
 
-The largest cause is one broken link in the loop: the count of species
-a missing concept blocks is written out and nothing reads it back, so a
+The largest cause is one broken link in the loop: the count of species a
+missing concept blocks is written out and nothing reads it back, so a
 concept blocking 741 species competes on its gloss frequency instead.
 Every figure above is plants and animals. Genes, minerals, medicines,
 tools and anatomy are untouched, so none of it should be quoted as
