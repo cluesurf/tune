@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/cluesurf/tune/blob/make/view/tune.svg?raw=true&v=2' height='222'/>
+  <img src='https://github.com/cluesurf/tune/blob/make/view/mark.svg?raw=true' height='222'/>
 </p>
 
 <h3 align='center'>tune</h3>
