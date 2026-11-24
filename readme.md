@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  <b>T</b>okenized <b>U</b>niverse for <b>N</b>uanced <b>E</b>xpression
+  <b>T</b>okenized <b>U</b>niverse for <b>N</b>avigating <b>E</b>xperience
 </p>
 
 <br/>
@@ -19,7 +19,7 @@
 
 ## What it is
 
-**Tune** (**T**okenized **U**niverse for **N**uanced **E**xpression)
+**Tune** (**T**okenized **U**niverse for **N**avigating **E**xperience)
 **is a spoken language where a word built out of other words can be
 read exactly one way.** Every root is one syllable. Join two and the
 seam is never in doubt, so a listener cuts the word apart in the one
