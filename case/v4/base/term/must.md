@@ -96,7 +96,7 @@ displacing anything.
 it off the list with a reason.
 
 The method for picking each word is in
-[`note/tune/readme.md`](../../../../../note/tune/readme.md). These are
+[`note/project/tune/readme.md`](../../../../../note/tune/readme.md). These are
 mostly standalone concepts rather than sets, so most of them want to be
 picked by feel and checked against
 [`../system/sound.md`](../system/sound.md), not derived from a pattern.

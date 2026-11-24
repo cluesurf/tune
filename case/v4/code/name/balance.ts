@@ -60,7 +60,7 @@ if (!named.length) {
   process.stdout.write(
     'No datasets found.\n\n' +
       'They live where `collected.md` says, under\n' +
-      '  /Users/lancepollard/base/land/base/datasets/\n' +
+      `  ${process.env.CLUESURF_LOCAL_DATASET_DIRECTORY?.trim() || '/Volumes/Data/datasets'}/\n` +
       'and DATASET_DIRECTORY overrides that.\n',
   )
   process.exit(1)

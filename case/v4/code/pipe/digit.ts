@@ -118,7 +118,7 @@ const VOWELS = CYCLES[args.cycle]
  * a hole is what zero is, and the sound says so. The positional rule
  * would give `mas`, which says nothing at all.
  *
- * Rule one from `note/tune/pipeline/rules-of-mapping.md`. A hand
+ * Rule one from `note/project/tune/pipeline/rules-of-mapping.md`. A hand
  * decision is the ground truth and a generated one fills the gaps
  * around it.
  */

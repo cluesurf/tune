@@ -4,7 +4,7 @@
  * **Reports by default and writes only on `--commit`.** Nothing here
  * edits `base.csv`, which is generated. A search writes CLAIMS, and a
  * claim only becomes the lexicon when it is made live and rendered.
- * That is the rule from `note/tune/pipeline/rules.md`: a model never
+ * That is the rule from `note/project/tune/pipeline/research/rules.md`: a model never
  * silently turns its own idea into one of your decisions.
  *
  * ## The division of labour

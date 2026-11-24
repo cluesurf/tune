@@ -19,7 +19,7 @@
  *
  * ## The assumptions, every one of them open
  *
- * `note/tune/grammar.md` lists twelve decisions that are not settled.
+ * `note/project/tune/archive/grammar.md` lists twelve decisions that are not settled.
  * Rendering needs five of them answered, so they are answered HERE and
  * nowhere else:
  *

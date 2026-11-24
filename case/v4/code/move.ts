@@ -12,7 +12,7 @@
  *
  * ## How a replacement is chosen
  *
- * The first rung of the ladder in `note/tune/pipeline/choosing-a-form.md`
+ * The first rung of the ladder in `note/project/tune/pipeline/choosing-a-form.md`
  * is the echo: keep as much of the sound as the form can hold. A word
  * that has to move should move as little as possible, because whoever
  * placed it had a reason and the reason was usually the sound.

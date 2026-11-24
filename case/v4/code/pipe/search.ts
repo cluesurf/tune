@@ -2,7 +2,7 @@
  * The search.
  *
  * Simulated annealing over the assignment, with the frozen words held
- * and everything else priced. `note/tune/pipeline/evolve.md` is the
+ * and everything else priced. `note/project/tune/pipeline/research/evolve.md` is the
  * design, `engine.md` is why it is shaped this way.
  *
  * ## On determinism
@@ -268,7 +268,7 @@ function applyKept(bench: Bench, move: Move): void {
  * Places every waiting concept on the best form available to it.
  *
  * **This is "enumerate, then filter, then judge" from
- * `note/tune/pipeline/readme.md`, and it belongs before the annealing
+ * `note/project/tune/pipeline/readme.md`, and it belongs before the annealing
  * rather than instead of it.**
  *
  * Annealing from nothing has to stumble onto a good echo by proposing it

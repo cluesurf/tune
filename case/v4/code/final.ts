@@ -167,7 +167,7 @@ const saidOften = new Map<string, number>()
 {
   const path = resolve(
     process.env.DATASET_DIRECTORY ??
-      '/Users/lancepollard/base/land/base/datasets',
+      `${process.env.CLUESURF_LOCAL_DATASET_DIRECTORY?.trim() || '/Volumes/Data/datasets'}`,
     'subtlex/subtlex-us.csv',
   )
   if (existsSync(path)) {

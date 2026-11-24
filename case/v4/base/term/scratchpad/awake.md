@@ -30,7 +30,7 @@ So the quartet carried two and a half meanings across four words.
 ```
 
 **Both diagonals are reversal pairs**, which is the rule in
-`note/tune/pipeline/philosophy.md` principle 3.
+`note/project/tune/pipeline/philosophy.md` principle 3.
 
 ```text
 dib  <->  bud        d i b  /  b u d      reversed, vowel i to u

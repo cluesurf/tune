@@ -15,7 +15,7 @@
  * The recorder reads columns 0, 1, 4, 5 and 6. The slide maker reads 0
  * to 3. Voice and locale are left empty so the run's own `VOICE` and
  * `LOCALE` govern, which is `tr-TR-AhmetNeural` per
- * `note/tune/pipeline/recording.md`.
+ * `note/project/tune/pipeline/recording.md`.
  *
  * **The word carries the noun ending `-a` and the roots do not.** Every
  * compound here is a noun, and a noun said aloud ends in `-a`, so the
@@ -98,7 +98,7 @@ for (const [rule, one] of Object.entries(CHOSEN)) {
    *
    * The ending is grammar rather than spelling, so it goes on the WORD
    * and never on the roots: `rij drom` are the parts and `rijdroma` is
-   * the word. `note/tune/pipeline/eight-words.md` is where it is
+   * the word. `note/project/tune/pipeline/eight-words.md` is where it is
    * settled, and `himnepa`, `zusa` and `xuva` are the recorded shape.
    *
    * It also moves the stress, which is the reason this cannot be left

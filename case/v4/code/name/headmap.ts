@@ -6,7 +6,7 @@
  *
  * That is how Chinese does it, measured at 100% on rank markers and
  * confirmed across 461 plant heads in
- * `note/tune/pipeline/chinese-plants.md`. This pulls the same
+ * `note/project/tune/pipeline/research/chinese-plants.md`. This pulls the same
  * structure out of every corpus on disk so the whole head system can
  * be read in one place and judged.
  *

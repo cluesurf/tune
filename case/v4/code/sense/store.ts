@@ -2,7 +2,7 @@
  * The batch store: resume, audit, and never pass an unjudged term.
  *
  * Step two of the build order in
- * `note/tune/pipeline/sound-bundles-build.md`.
+ * `note/project/tune/pipeline/idea/sound-bundles-build.md`.
  *
  * ## Three rules this exists to enforce
  *

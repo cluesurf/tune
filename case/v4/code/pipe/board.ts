@@ -2,7 +2,7 @@
  * The state the search moves, and the files it is read from.
  *
  * The genome is indexed by FORM, not by concept, which is the change
- * argued for in `note/tune/pipeline/fitness.md`. One array then carries
+ * argued for in `note/project/tune/pipeline/research/fitness.md`. One array then carries
  * both searches at once:
  *
  *   swap two positions              the assignment search
@@ -31,7 +31,7 @@ export const TERM = resolve(here, '../../base/term')
  *   4  empty, moves freely
  *
  * Tiers 2 and 3 are earned later by surviving challenges. See
- * `note/tune/pipeline/state.md`.
+ * `note/project/tune/pipeline/state.md`.
  */
 export type Tier = 0 | 1 | 2 | 3 | 4
 

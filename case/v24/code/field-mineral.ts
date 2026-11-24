@@ -57,7 +57,7 @@ import { cleanWord, isEnding, isNameWord } from './gloss'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const IMPORT = resolve(here, '../../../../../base/import')
-const DATA = '/Users/lancepollard/base/land/base/datasets'
+const DATA = `${process.env.CLUESURF_LOCAL_DATASET_DIRECTORY?.trim() || '/Volumes/Data/datasets'}`
 const NAMES = resolve(
   DATA,
   'rock-mineral-gem-names/rock-mineral-gem-names.tsv',

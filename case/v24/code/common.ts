@@ -52,7 +52,7 @@ const OUT = resolve(IMPORT, 'common')
  * and `fra`, and 73,351 rows are marked `eng`. A source that is right
  * beats a filter that is clever.
  */
-const DATA = '/Users/lancepollard/base/land/base/datasets/catalogue-life'
+const DATA = `${process.env.CLUESURF_LOCAL_DATASET_DIRECTORY?.trim() || '/Volumes/Data/datasets'}/catalogue-life`
 const VERN = resolve(DATA, 'VernacularName.tsv')
 /** `NameUsage.tsv`, cut to id and binomial. See the note below. */
 const TAXA = process.env.COL_TAXON ?? '/tmp/col/species-id.tsv'

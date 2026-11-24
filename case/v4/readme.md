@@ -797,7 +797,7 @@ case. `long.ts` counts them and checks the count against a closed form,
 which knows every rule but the taboo list and reports that one's take
 on its own. `fill.ts` picks the set. The arithmetic, the earlier Tunes'
 two syllable rules, and the ratios considered are written up in
-`note/library/tune/v4-two-syllable-counts.md` in the cluesurf repo.
+`note/project/tune/finding/v4-two-syllable-counts.md` in the cluesurf repo.
 
 ```bash
 pnpm --dir deck/tune v4:long

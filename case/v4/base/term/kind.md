@@ -21,7 +21,7 @@ Together with the 125 open concepts in [`must.md`](must.md) that is
 **200 wanting a `CVC`, against 376 free**, so the whole of both lists
 fits with 176 to spare.
 
-Carried over from `note/library/tune/last-word.md`, which is the
+Carried over from `note/project/tune/last-word.md`, which is the
 original and holds the reasoning below unchanged.
 
 ## What it is

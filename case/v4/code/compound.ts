@@ -1,7 +1,7 @@
 /**
  * Named things renamed by what they are.
  *
- * Read `note/tune/pipeline/renaming.md` for the method. In short:
+ * Read `note/project/tune/pipeline/archive/renaming.md` for the method. In short:
  *
  *   what would humans have called this if the technical historical
  *   name had never existed?
@@ -39,7 +39,7 @@ const OUT = resolve(TERM, 'compound')
 /**
  * The rocks, rebuilt twice: first as families, then on evidence.
  *
- * Read `note/tune/pipeline/compounding.md` for the rules and
+ * Read `note/project/tune/pipeline/compounding.md` for the rules and
  * `borrowing.md` for where the evidence came from. The change that
  * mattered is one sentence:
  *

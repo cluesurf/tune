@@ -19,7 +19,7 @@
  *
  * ## This is the compression node system, already built
  *
- * `note/tune/pipeline/compression.md` argues that a category earns one
+ * `note/project/tune/pipeline/compression.md` argues that a category earns one
  * of the 4,096 slots when it makes everything under it shorter, and
  * `tom` is the best example in the language:
  *
@@ -29,7 +29,7 @@
  *   every one of them transparent
  * ```
  *
- * `note/tune/pipeline/four-thousand.md` recommended `element` plus an
+ * `note/project/tune/pipeline/four-thousand.md` recommended `element` plus an
  * atomic number for the long tail, on the grounds that an element is
  * already a coordinate. **That was worse than what was already here**,
  * and this file is the correction. An atomic number is a coordinate

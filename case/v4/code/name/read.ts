@@ -1,7 +1,7 @@
 /**
  * Parsers for the collected name datasets.
  *
- * `note/platform/data/name/collected.md` is the handoff: three name
+ * `note/project/language/name/collected.md` is the handoff: three name
  * domains fetched, licensed and checked, two of them built. This reads
  * what is on disk and turns it into one shape the rest of the pipeline
  * can work on.
@@ -45,7 +45,7 @@ import { resolve } from 'path'
 /** Where `collected.md` says the built datasets live. */
 export const DATASETS =
   process.env.DATASET_DIRECTORY ??
-  '/Users/lancepollard/base/land/base/datasets'
+  `${process.env.CLUESURF_LOCAL_DATASET_DIRECTORY?.trim() || '/Volumes/Data/datasets'}`
 
 export type Named = {
   name: string

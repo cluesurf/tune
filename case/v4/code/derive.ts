@@ -696,7 +696,7 @@ const SENSE: Array<[string, string]> = [
   // the solver asking for the line to be deleted.
   //
   // **A decomposable category can earn a root by compressing what sits
-  // under it.** See `note/tune/pipeline/compression.md`.
+  // under it.** See `note/project/tune/pipeline/compression.md`.
   ['twig', 'small + branch'],
   ['tuber', 'thick + root'],
   ['chickpea', 'round + pea'],
@@ -2279,7 +2279,7 @@ const SENSE: Array<[string, string]> = [
   ['punctual', 'on + time'],
   ['percentage', 'percent + amount'],
   // `pen` is the writing tool and a pencil is one that rubs out. See
-  // note/tune/pipeline/heads.md: a head plus a modifier beats a root.
+  // note/project/tune/pipeline/research/heads.md: a head plus a modifier beats a root.
   ['pencil', 'erase + able + pen'],
   ['hind', 'back'],
   ['artwork', 'art + work'],

@@ -7,7 +7,7 @@
  *   HEARD   articulatory distance, from place, manner and voice
  *   READ    the eight mirror pairs of the tone script
  *
- * The read channel is exact. `note/tune/pipeline/fitness.md` argues why
+ * The read channel is exact. `note/project/tune/pipeline/research/fitness.md` argues why
  * that matters and why the two pull against each other on the words
  * that are most wanted.
  *

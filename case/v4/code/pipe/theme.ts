@@ -1,7 +1,7 @@
 /**
  * Laying out the concepts that have no form yet.
  *
- * Read `note/tune/pipeline/rules-of-mapping.md` first. The five rules
+ * Read `note/project/tune/pipeline/rules-of-mapping.md` first. The five rules
  * there were all written after this file broke them, and the previous
  * version of it is what they are about.
  *
@@ -718,7 +718,7 @@ for (const [name, list] of themes) {
     /**
      * Which rung of the ladder chose this form.
      *
-     * `note/tune/pipeline/choosing-a-form.md` sets the order: echo,
+     * `note/project/tune/pipeline/choosing-a-form.md` sets the order: echo,
      * then the vowel system, then the iconic, then what is left. A
      * form from the bottom rung is not a failure, but it has to SAY
      * it is from the bottom rung, or a later reader cannot tell a

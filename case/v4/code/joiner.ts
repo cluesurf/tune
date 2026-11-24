@@ -19,13 +19,13 @@
  * association rather than about which glyph plays which part.
  *
  * The spoken form of the current system is decided in
- * `note/tune/pipeline/joiners-spoken.md`.
+ * `note/project/tune/pipeline/archive/joiners-spoken.md`.
  *
  * ---
  *
  * The five joiners, parsed.
  *
- * `note/tune/pipeline/joiners.md` specifies a notation that serializes
+ * `note/project/tune/pipeline/joiners.md` specifies a notation that serializes
  * a semantic tree with no parentheses, using five characters:
  *
  * ```text
@@ -289,7 +289,7 @@ if (args.parse) {
 
 process.stdout.write(
   'THE FIVE JOINERS, AGAINST THE SPECIFICATION\n\n' +
-    '  Sections 42 and 48 of note/tune/pipeline/joiners.md, run.\n\n',
+    '  Sections 42 and 48 of note/project/tune/pipeline/joiners.md, run.\n\n',
 )
 
 let pass = 0

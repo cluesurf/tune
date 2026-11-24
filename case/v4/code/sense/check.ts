@@ -2,7 +2,7 @@
  * The gate. Nothing downstream is used until this has been read.
  *
  * Step five of the build order in
- * `note/tune/pipeline/sound-bundles-build.md`, and the step that can
+ * `note/project/tune/pipeline/idea/sound-bundles-build.md`, and the step that can
  * honestly end the project for the price of a sample.
  *
  * ## Why this exists

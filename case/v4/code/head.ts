@@ -1,7 +1,7 @@
 /**
  * Which semantic heads would free the most slots.
  *
- * `note/tune/pipeline/heads.md` argues that the candidate list is
+ * `note/project/tune/pipeline/research/heads.md` argues that the candidate list is
  * heavy with leaves and light with the heads that make leaves
  * unnecessary: `basket` is one slot and reaches one word, `container`
  * is one slot and reaches thirty.

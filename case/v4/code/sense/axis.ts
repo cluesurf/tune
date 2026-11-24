@@ -1,7 +1,7 @@
 /**
  * The eight feel axes, and every contract the sense pipeline shares.
  *
- * Read `note/tune/pipeline/sound-bundles-build.md` first. This is
+ * Read `note/project/tune/pipeline/idea/sound-bundles-build.md` first. This is
  * step one of the build order there, and everything downstream
  * depends on these eight being right, so they are fixed before any
  * money is spent on anything but the sample.

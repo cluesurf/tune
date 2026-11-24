@@ -4,7 +4,7 @@ A gloss, not a text. **The 51 closed words and every content root are
 written in English**, because neither has been assigned a form yet, so
 what is being tested here is the STRUCTURE.
 
-Written 2026-09-20 against `note/tune/grammar/reference.md`. It
+Written 2026-09-20 against `note/project/tune/grammar/reference.md`. It
 replaces an older translation made in the v0 lexicon and a different
 grammar, and shares nothing with it.
 

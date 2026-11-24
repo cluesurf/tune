@@ -2,7 +2,7 @@
 
 ## THE v24 CHEATSHEET. READ THIS FIRST, EVERY TIME
 
-The full version is `note/tool/tune/runbook.md`. This is the part that
+The full version is `note/project/tune/runbook.md`. This is the part that
 keeps having to be said out loud.
 
 **FOUR FILES HOLD DECISIONS. EVERYTHING ELSE IS OUTPUT.**

@@ -2,7 +2,7 @@
  * Phase one: what each English word MEANS, as eight numbers.
  *
  * Step three of the build order in
- * `note/tune/pipeline/sound-bundles-build.md`, and the only phase
+ * `note/project/tune/pipeline/idea/sound-bundles-build.md`, and the only phase
  * that costs money.
  *
  * ## Reports by default, writes on --commit
@@ -307,7 +307,7 @@ async function send(): Promise<void> {
       `gathered into ${file}\n\n` +
       'Next: READ THE SAMPLE BY HAND against its essence sentences.\n' +
       'That is where the axes get decided, and it is step three of the\n' +
-      'build order in note/tune/pipeline/sound-bundles-build.md.\n',
+      'build order in note/project/tune/pipeline/idea/sound-bundles-build.md.\n',
   )
 }
 

@@ -2,7 +2,7 @@
  * Phase two: what each sound carries, derived rather than asserted.
  *
  * Step seven of the build order in
- * `note/tune/pipeline/sound-bundles-build.md`, and free: this is
+ * `note/project/tune/pipeline/idea/sound-bundles-build.md`, and free: this is
  * arithmetic over what phase one already paid for.
  *
  * ## What a bundle is

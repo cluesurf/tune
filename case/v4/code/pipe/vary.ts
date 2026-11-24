@@ -27,7 +27,7 @@
  *
  * ## The three states
  *
- * From `note/tune/pipeline/state.md`, and the third one is what makes
+ * From `note/project/tune/pipeline/state.md`, and the third one is what makes
  * the search terminate.
  *
  * ```text

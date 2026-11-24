@@ -13,7 +13,7 @@
  * ```
  *
  * Both diagonals are consonant reversals with a vowel shift, which is
- * the opposition rule in `note/tune/pipeline/philosophy.md`. So a
+ * the opposition rule in `note/project/tune/pipeline/philosophy.md`. So a
  * quartet is a closed set of two opposite pairs and has to be settled
  * together.
  *

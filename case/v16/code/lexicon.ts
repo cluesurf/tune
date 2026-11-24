@@ -789,7 +789,7 @@ const long = weave(
 /**
  * ECHO: a form that SOUNDS like the English word.
  *
- * Rung one of the ladder in `note/tune/pipeline/choosing-a-form.md`,
+ * Rung one of the ladder in `note/project/tune/pipeline/choosing-a-form.md`,
  * and the assignment skipped straight past it to arbitrary forms out
  * of a pool. `rabbit` should be something like `rabet` and `forest`
  * something like `foras`, not `hayoc` and `miheg`.

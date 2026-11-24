@@ -2,7 +2,7 @@
  * How much a Tune word sounds like the English it means.
  *
  * This is the FIRST half of the ordering rule in
- * `note/tune/pipeline/philosophy.md`:
+ * `note/project/tune/pipeline/philosophy.md`:
  *
  *   I love having them sound like english words if they can, but if
  *   not, then mapping them to the experiential vibe of the components

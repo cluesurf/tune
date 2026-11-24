@@ -5,7 +5,7 @@
  * ## The one rule this file exists to keep
  *
  * A full score reads every near pair, which is millions of comparisons.
- * A swap touches two rows. `note/tune/pipeline/engine.md`:
+ * A swap touches two rows. `note/project/tune/pipeline/research/engine.md`:
  *
  *   Every objective goes in the inner loop only if it has a delta form.
  *
@@ -34,7 +34,7 @@ import { enactOf } from './enact'
 
 /**
  * Do not read these as measured. They are a starting point, and
- * `note/tune/pipeline/score.md` says the right way to get them is to fit
+ * `note/project/tune/pipeline/score.md` says the right way to get them is to fit
  * them to the words already chosen by hand. `pipe/fit.ts` does that and
  * writes `weight.json`, which overrides these when it exists.
  */
@@ -179,7 +179,7 @@ export function readWeights(): Weights {
  * plainly.** The right input is a frequency distribution over concepts
  * and Tune has no corpus, so this reads the hand-made lists instead:
  * a word named in `must`, `kind`, `build` or `root` counts double.
- * `note/tune/pipeline/engine.md` calls borrowing frequency at the
+ * `note/project/tune/pipeline/research/engine.md` calls borrowing frequency at the
  * concept layer the way to fix this properly.
  */
 function readImportance(): Map<string, number> {

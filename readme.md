@@ -11,7 +11,7 @@
 
 <h3 align='center'>tune</h3>
 <p align='center'>
-  A measured speaking language Φ
+  <b>T</b>okens of the <b>U</b>nified <b>N</b>etwork of <b>E</b>xperience
 </p>
 
 <br/>
@@ -19,7 +19,8 @@
 
 ## What it is
 
-**Tune is a spoken language where a word built out of other words can be
+**Tune** (**T**okens of the **U**nified **N**etwork of **E**xperience)
+**is a spoken language where a word built out of other words can be
 read exactly one way.** Every root is one syllable. Join two and the
 seam is never in doubt, so a listener cuts the word apart in the one
 place the writer put it together.
@@ -523,11 +524,4 @@ limitations under the License.
 
 ## ClueSurf
 
-Made by [ClueSurf](https://clue.surf), meditating on the universe ¤.
-Follow the work on [YouTube](https://youtube.com/@cluesurf),
-[X](https://x.com/cluesurf),
-[Instagram](https://instagram.com/cluesurf),
-[Substack](https://cluesurf.substack.com),
-[Facebook](https://facebook.com/cluesurf), and
-[LinkedIn](https://linkedin.com/company/cluesurf), and browse more of
-our open-source work here on [GitHub](https://github.com/cluesurf).
+Made by [ClueSurf](https://clue.surf), meditating on the universe.

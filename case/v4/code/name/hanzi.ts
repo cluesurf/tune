@@ -10,7 +10,7 @@
  * species   ceratophylla     species_c  角叶藻苔    jiǎo yè zǎo tái
  * ```
  *
- * `note/tune/pipeline/chinese-naming-systems.md` describes the grammar
+ * `note/project/tune/pipeline/research/chinese-naming-systems.md` describes the grammar
  * this follows, from the official specification:
  *
  * ```text
@@ -138,7 +138,7 @@ function glosses(): Map<string, Gloss> {
 /**
  * The other Chinese fields, from `chinese-names.tsv`.
  *
- * `note/platform/data/name/chinese.md` records 287,569 parsed rows
+ * `note/project/language/name/chinese.md` records 287,569 parsed rows
  * across six kinds, and the plant volume measured above is only one of
  * them. Reading the rest asks whether the morpheme inventory a flora
  * needs is the same one a pharmacopoeia and a phenotype list need, or

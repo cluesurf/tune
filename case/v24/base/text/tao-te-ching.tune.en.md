@@ -4,7 +4,7 @@ A gloss, not a text. **The 51 closed words and every content root are
 written in English**, because neither has been assigned a form yet, so
 what is being tested here is the STRUCTURE.
 
-Written 2026-09-20 against `note/tune/grammar/reference.md`, from the
+Written 2026-09-20 against `note/project/tune/grammar/reference.md`, from the
 Classical Chinese in `tao-te-ching.zh.md`, with the Wikisource English
 in `tao-te-ching.en.md` for sense. **`tao-te-ching.tune.md` is this
 text in v24 forms**, rendered from this file by

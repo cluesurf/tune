@@ -2,7 +2,7 @@
  * The evolutionary layer: a population, crossover, and memory.
  *
  * `search.ts` holds a single state and walks it. That is annealing, and
- * it is section 4 of `note/tune/pipeline/evolve.md`. This is the rest:
+ * it is section 4 of `note/project/tune/pipeline/research/evolve.md`. This is the rest:
  * many candidate lexicons at once, recombined rather than only mutated,
  * with a memory of what has already been tried and failed.
  *

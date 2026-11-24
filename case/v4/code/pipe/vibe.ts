@@ -26,7 +26,7 @@
  * ## What is approximate here, said plainly
  *
  * The concept tagging is keyword matching on an English gloss. It is a
- * BOOTSTRAP, and `note/tune/pipeline/score.md` says the real version is
+ * BOOTSTRAP, and `note/project/tune/pipeline/score.md` says the real version is
  * a model tagging the concepts in bulk and a person spot-checking. This
  * exists so the term is wired, measurable and arguable now rather than
  * waiting. Where a concept matches no keyword it scores neutral and
@@ -397,7 +397,7 @@ for (const [axis, sign, cues] of CUE) {
  *
  * Keyword matching stays as the fallback for untagged concepts, and it
  * is a fallback rather than the design: it failed its control, and
- * `note/tune/pipeline/found.md` has the numbers.
+ * `note/project/tune/pipeline/finding/found.md` has the numbers.
  */
 let TAGS: Map<string, { want: Vec; said: Set<Axis> }> | null = null
 

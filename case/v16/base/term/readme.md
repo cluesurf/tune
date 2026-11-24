@@ -124,7 +124,7 @@ off a function word.**
 
 ## Before these become the lexicon
 
-The twelve open decisions in `note/tune/grammar.md` come first,
+The twelve open decisions in `note/project/tune/archive/grammar.md` come first,
 especially which ending marks a relation and whether any ending is
 optional. Those decide the shape of nearly every word in a sentence,
 and assigning meaning before they are settled means assigning it twice.

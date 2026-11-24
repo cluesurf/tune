@@ -41,7 +41,7 @@ import { fileURLToPath } from 'url'
 import { BAD_RHYME, VOWELS, breaker, similarAt } from './sound'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const OUT = resolve(here, '../../../../../note/tune/one-syllable-options.md')
+const OUT = resolve(here, '../../../../../note/project/tune/research/one-syllable-options.md')
 
 const TABOO = [
   'neg', 'nek', 'nig', 'nik', 'fag', 'fak', 'fuk', 'kok', 'kuk', 'pis',
